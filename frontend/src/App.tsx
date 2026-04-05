@@ -12,7 +12,7 @@ import DonemDetay from '@/pages/donem/DonemDetay'
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950">
+    <div className="min-h-screen bg-surface text-primary transition-colors duration-150">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mukellef" element={<MukellefListesi />} />

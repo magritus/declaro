@@ -1,19 +1,23 @@
 import { useNavigate } from 'react-router-dom'
+import ThemeToggle from '@/components/ThemeToggle'
 
 export default function Home() {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white flex flex-col">
+    <div className="min-h-screen bg-surface text-primary flex flex-col">
       {/* Header */}
-      <header className="border-b border-slate-800 px-8 py-5">
+      <header className="border-b border-border-default px-8 py-5">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <span className="text-xl font-semibold tracking-tight text-slate-100">
+          <span className="text-xl font-semibold tracking-tight text-primary">
             Declaro
           </span>
-          <span className="text-xs font-medium text-slate-500 uppercase tracking-widest">
-            Kurumlar Vergisi Yardımcısı
-          </span>
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-medium text-muted uppercase tracking-widest">
+              Kurumlar Vergisi Yardımcısı
+            </span>
+            <ThemeToggle />
+          </div>
         </div>
       </header>
 
@@ -21,10 +25,10 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center justify-center px-8 py-24">
         <div className="max-w-2xl text-center space-y-8">
           <div className="space-y-4">
-            <h1 className="text-5xl font-bold tracking-tight text-white leading-tight">
+            <h1 className="text-5xl font-bold tracking-tight text-primary leading-tight">
               Declaro
             </h1>
-            <p className="text-xl text-slate-400 leading-relaxed">
+            <p className="text-xl text-secondary leading-relaxed">
               Kurumlar Vergisi beyanname süreçlerinizi adım adım yönetin.
               Mükellef kaydı, dönem tanımlama ve çalışma dosyası oluşturma
               tek platformda.
@@ -34,7 +38,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <button
               onClick={() => navigate('/mukellef')}
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-lg transition-colors duration-150 shadow-lg shadow-indigo-900/40"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-accent hover:bg-accent-hover text-white font-semibold rounded-lg transition-colors duration-150 shadow-lg shadow-indigo-900/40"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -48,7 +52,7 @@ export default function Home() {
             {[
               {
                 icon: (
-                  <svg className="w-5 h-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                 ),
@@ -57,7 +61,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg className="w-5 h-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 ),
@@ -66,7 +70,7 @@ export default function Home() {
               },
               {
                 icon: (
-                  <svg className="w-5 h-5 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <svg className="w-5 h-5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 ),
@@ -76,13 +80,13 @@ export default function Home() {
             ].map((f) => (
               <div
                 key={f.title}
-                className="bg-slate-900 border border-slate-800 rounded-xl p-5 space-y-2 hover:border-slate-700 transition-colors duration-150"
+                className="bg-surface-raised border border-border-default rounded-xl p-5 space-y-2 hover:border-border-default transition-colors duration-150"
               >
                 <div className="flex items-center gap-2">
                   {f.icon}
-                  <span className="text-sm font-semibold text-slate-200">{f.title}</span>
+                  <span className="text-sm font-semibold text-primary">{f.title}</span>
                 </div>
-                <p className="text-sm text-slate-500 leading-relaxed">{f.desc}</p>
+                <p className="text-sm text-muted leading-relaxed">{f.desc}</p>
               </div>
             ))}
           </div>

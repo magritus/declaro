@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const KALEM_ESLEME: Record<string, { ic_kod: string; kapi_sorulari: Array<{ id: string; soru: string; zorunlu_cevap: string; aciklama?: string }> }> = {
   egitim_rehabilitasyon: {
@@ -65,9 +66,12 @@ export default function Faz2AltKategoriAyirma() {
 
   return (
     <div className="max-w-2xl mx-auto p-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Alt Kategori Ayırma</h1>
-        <p className="text-gray-500 mt-1">Seçilen kategoriler için kapı sorularını yanıtlayın</p>
+      <div className="mb-8 flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-primary">Alt Kategori Ayırma</h1>
+          <p className="text-muted mt-1">Seçilen kategoriler için kapı sorularını yanıtlayın</p>
+        </div>
+        <ThemeToggle />
       </div>
 
       {seciliKategoriler.map((katId) => {
@@ -76,21 +80,21 @@ export default function Faz2AltKategoriAyirma() {
         const elinenMesaj = elinenler[esleme.ic_kod]
 
         return (
-          <div key={katId} className={`mb-6 p-4 border rounded-lg ${elinenMesaj ? 'border-red-300 bg-red-50' : 'border-gray-200'}`}>
-            <h3 className="font-semibold text-gray-800 mb-3">
+          <div key={katId} className={`mb-6 p-4 border rounded-lg ${elinenMesaj ? 'border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950' : 'border-border-default bg-surface-raised'}`}>
+            <h3 className="font-semibold text-primary mb-3">
               {katId === 'egitim_rehabilitasyon' ? 'Eğitim, Öğretim ve Rehabilitasyon İstisnası (Kod 305)' : katId}
             </h3>
 
             {elinenMesaj && (
-              <div className="mb-3 text-red-700 text-sm" data-testid={`${esleme.ic_kod}-elenme-ikonu`}>
+              <div className="mb-3 text-red-700 dark:text-red-300 text-sm" data-testid={`${esleme.ic_kod}-elenme-ikonu`}>
                 ❌ Bu kalem elendi: {elinenMesaj}
               </div>
             )}
 
             {esleme.kapi_sorulari.map((soru) => (
               <div key={soru.id} className="mb-3">
-                <p className="text-sm text-gray-700 mb-1">{soru.soru}</p>
-                {soru.aciklama && <p className="text-xs text-gray-400 mb-1">{soru.aciklama}</p>}
+                <p className="text-sm text-secondary mb-1">{soru.soru}</p>
+                {soru.aciklama && <p className="text-xs text-muted mb-1">{soru.aciklama}</p>}
                 <div className="flex gap-4">
                   {['evet', 'hayir'].map((sec) => (
                     <label key={sec} className="flex items-center gap-1 cursor-pointer">
@@ -100,10 +104,10 @@ export default function Faz2AltKategoriAyirma() {
                         value={sec}
                         checked={cevaplar[katId]?.[soru.id] === sec}
                         onChange={() => cevapGuncelle(katId, soru.id, sec)}
-                        className="accent-blue-600"
+                        className="accent-accent"
                         aria-label={sec === 'evet' ? 'Evet' : 'Hayır'}
                       />
-                      <span className="text-sm capitalize">{sec === 'evet' ? 'Evet' : 'Hayır'}</span>
+                      <span className="text-sm text-primary capitalize">{sec === 'evet' ? 'Evet' : 'Hayır'}</span>
                     </label>
                   ))}
                 </div>
@@ -113,9 +117,9 @@ export default function Faz2AltKategoriAyirma() {
         )
       })}
 
-      <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-        <p className="text-sm font-medium text-blue-800">Seçilen kalemler: {seciliKalemler.length}</p>
-        <ul className="mt-1 text-sm text-blue-700 list-disc list-inside">
+      <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded-lg">
+        <p className="text-sm font-medium text-blue-800 dark:text-blue-300">Seçilen kalemler: {seciliKalemler.length}</p>
+        <ul className="mt-1 text-sm text-blue-700 dark:text-blue-400 list-disc list-inside">
           {seciliKalemler.map((ic_kod) => <li key={ic_kod}>{ic_kod}</li>)}
         </ul>
       </div>
@@ -123,7 +127,7 @@ export default function Faz2AltKategoriAyirma() {
       <button
         onClick={devamEt}
         disabled={seciliKalemler.length === 0 || yukleniyor}
-        className="mt-6 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50 font-medium"
+        className="mt-6 w-full bg-accent text-white py-2 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium"
       >
         {yukleniyor ? 'Kaydediliyor...' : 'İstek Listesini Oluştur →'}
       </button>

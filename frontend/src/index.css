@@ -2,8 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply text-gray-900 antialiased;
-  }
+:root {
+  /* Light theme (default) */
+  --color-surface: oklch(98.5% 0.002 250);
+  --color-surface-raised: oklch(100% 0 0);
+  --color-surface-overlay: oklch(96% 0.003 250);
+  --color-border-default: oklch(88% 0.005 250);
+  --color-border-subtle: oklch(93% 0.003 250);
+  --color-text-primary: oklch(20% 0.01 250);
+  --color-text-secondary: oklch(40% 0.01 250);
+  --color-text-muted: oklch(55% 0.008 250);
+  --color-accent: oklch(55% 0.25 265);
+  --color-accent-hover: oklch(60% 0.25 265);
+}
+
+:root.dark {
+  /* Dark theme */
+  --color-surface: oklch(13% 0.015 250);
+  --color-surface-raised: oklch(17% 0.015 250);
+  --color-surface-overlay: oklch(20% 0.015 250);
+  --color-border-default: oklch(28% 0.015 250);
+  --color-border-subtle: oklch(23% 0.015 250);
+  --color-text-primary: oklch(95% 0.005 250);
+  --color-text-secondary: oklch(72% 0.01 250);
+  --color-text-muted: oklch(55% 0.01 250);
+  --color-accent: oklch(55% 0.25 265);
+  --color-accent-hover: oklch(60% 0.25 265);
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  transition: background-color 150ms ease, color 150ms ease;
 }

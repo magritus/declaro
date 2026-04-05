@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
+import ThemeToggle from '@/components/ThemeToggle'
 
 const ANA_KATEGORILER = [
   { id: 'istirak_kazanci', soru: 'İştirak kazancın var mı?', grup: 'zarar_olsa_dahi',
@@ -51,27 +52,30 @@ export default function Faz1AnaKategoriTarama() {
 
   return (
     <div className="max-w-2xl mx-auto p-8">
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold text-gray-900">Kategori Tarama</h1>
-        {!karDurumu && (
-          <div className="mt-2 p-3 bg-amber-50 border border-amber-200 rounded-md text-amber-800 text-sm">
-            ⚠️ Zarar nedeniyle "kazanç varsa indirilecek" grup otomatik atlandı
-          </div>
-        )}
+      <div className="mb-8 flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-primary">Kategori Tarama</h1>
+          {!karDurumu && (
+            <div className="mt-2 p-3 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-md text-amber-800 dark:text-amber-300 text-sm">
+              ⚠️ Zarar nedeniyle "kazanç varsa indirilecek" grup otomatik atlandı
+            </div>
+          )}
+        </div>
+        <ThemeToggle />
       </div>
 
       <div className="space-y-4">
         {gorunurKategoriler.map((kat) => (
-          <div key={kat.id} className="flex items-start gap-3 p-4 border border-gray-200 rounded-lg">
+          <div key={kat.id} className="flex items-start gap-3 p-4 border border-border-default bg-surface-raised rounded-lg">
             <div className="flex-1">
-              <p className="font-medium text-gray-800">{kat.soru}</p>
+              <p className="font-medium text-primary">{kat.soru}</p>
               {kat.grup === 'kazanc_varsa' && (
-                <span className="text-xs text-gray-400">Kazanç varsa indirilecek</span>
+                <span className="text-xs text-muted">Kazanç varsa indirilecek</span>
               )}
             </div>
             <button
               onClick={() => setAcikModal(kat.id)}
-              className="text-blue-500 hover:text-blue-700 text-lg"
+              className="text-accent hover:text-accent-hover text-lg"
               title="Bilgi"
             >
               ℹ
@@ -85,9 +89,9 @@ export default function Faz1AnaKategoriTarama() {
                     value={sec}
                     checked={cevaplar[kat.id] === (sec === 'Evet')}
                     onChange={() => setCevaplar((p) => ({ ...p, [kat.id]: sec === 'Evet' }))}
-                    className="accent-blue-600"
+                    className="accent-accent"
                   />
-                  <span className="text-sm">{sec}</span>
+                  <span className="text-sm text-primary">{sec}</span>
                 </label>
               ))}
             </div>
@@ -98,7 +102,7 @@ export default function Faz1AnaKategoriTarama() {
       <button
         onClick={devamEt}
         disabled={!enAzBirEvet || yukleniyor}
-        className="mt-8 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50 font-medium"
+        className="mt-8 w-full bg-accent text-white py-2 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium"
       >
         {yukleniyor ? 'Kaydediliyor...' : 'Devam →'}
       </button>
@@ -106,10 +110,10 @@ export default function Faz1AnaKategoriTarama() {
       {/* Info Modal */}
       {acikModal && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={() => setAcikModal(null)}>
-          <div className="bg-white rounded-lg p-6 max-w-md mx-4" onClick={(e) => e.stopPropagation()}>
-            <h3 className="font-bold text-lg mb-2">{ANA_KATEGORILER.find(k => k.id === acikModal)?.soru}</h3>
-            <p className="text-gray-700">{ANA_KATEGORILER.find(k => k.id === acikModal)?.bilgi}</p>
-            <button onClick={() => setAcikModal(null)} className="mt-4 text-blue-600 hover:underline">Kapat</button>
+          <div className="bg-surface-raised border border-border-default rounded-lg p-6 max-w-md mx-4" onClick={(e) => e.stopPropagation()}>
+            <h3 className="font-bold text-lg mb-2 text-primary">{ANA_KATEGORILER.find(k => k.id === acikModal)?.soru}</h3>
+            <p className="text-secondary">{ANA_KATEGORILER.find(k => k.id === acikModal)?.bilgi}</p>
+            <button onClick={() => setAcikModal(null)} className="mt-4 text-accent hover:underline">Kapat</button>
           </div>
         </div>
       )}
