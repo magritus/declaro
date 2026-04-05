@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Declaro Kalem Şeması",
+  "type": "object",
+  "required": ["ic_kod", "baslik", "beyanname_bolumu", "yiakv_etkisi"],
+  "properties": {
+    "ic_kod": { "type": "string", "minLength": 1 },
+    "baslik": { "type": "string" },
+    "beyanname_bolumu": { "type": "string", "enum": ["zarar_olsa_dahi", "kazanc_varsa"] },
+    "yiakv_etkisi": { "type": "string", "enum": ["dusulur", "dusulmez", "tartismali"] },
+    "durum": { "type": "string", "enum": ["aktif", "gecis", "mulga"] }
+  }
+}

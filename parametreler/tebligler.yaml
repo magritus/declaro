@@ -1,0 +1,31 @@
+# Önemli Tebliğ ve Mevzuat Referansları
+
+tebligler:
+  - no: "1 S.No.lu KV GT"
+    baslik: "1 Seri No.lu Kurumlar Vergisi Genel Tebliği"
+    resmi_gazete: "03.04.2007 / 26482"
+    url_hint: "mevzuat.gov.tr"
+
+  - no: "49 S.No.lu KV GT"
+    baslik: "49 Seri No.lu Kurumlar Vergisi Genel Tebliği"
+    yururluk: "2025-12-30"
+    aciklama: "YMM tasdik eşikleri — tek kalem 500K, toplam 1M TL"
+
+kanunlar:
+  - kod: KVK
+    tam_ad: "5520 Sayılı Kurumlar Vergisi Kanunu"
+    resmi_gazete: "21.06.2006 / 26205"
+
+  - kod: "5580"
+    tam_ad: "5580 Sayılı Özel Öğretim Kurumları Kanunu"
+    yururluk: "2007-02-08"
+
+  - kod: "7456"
+    tam_ad: "7456 Sayılı Kanun"
+    yururluk: "2023-07-15"
+    aciklama: "Bazı istisnalar mülga, finans sektörü KV oranı artışı"
+
+  - kod: "7524"
+    tam_ad: "7524 Sayılı Kanun"
+    yururluk: "2024-08-02"
+    aciklama: "YİAKV, nakdi sermaye düzenlemeleri"

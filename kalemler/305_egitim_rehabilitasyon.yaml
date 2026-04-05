@@ -1,0 +1,165 @@
+ic_kod: egitim_rehabilitasyon_5_1_i
+baslik: Eğitim, Öğretim ve Rehabilitasyon Kazanç İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 305 }
+  - { donem: 2025, kod: 305 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-ı
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.13
+  - 5580 Sayılı Kanun
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: egitim_saglik_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Özel okul, kreş/gündüz bakımevi veya rehabilitasyon merkezi işletiyor musun?"
+  info_modal: |
+    KVK 5/1-ı kapsamında özel okul (okul öncesi, ilköğretim, özel eğitim, ortaöğretim),
+    özel kreş ve gündüz bakımevleri ile rehabilitasyon merkezlerinin işletilmesinden elde
+    edilen kazançlar, faaliyete geçilen hesap döneminden itibaren **5 yıl** süreyle istisnadır.
+  kapi_sorulari:
+    - id: mev_5580_kapsami
+      soru: "MEB veya ASHB'den 5580 sayılı Kanun kapsamında kurum açma iznin var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Dershaneler ve etüt merkezleri kapsam dışıdır."
+    - id: donem_karda_mi
+      soru: "Bu dönem kârda mısın? (Bu istisna zararda kullanılamaz)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: bes_yil_icinde_mi
+      soru: "Faaliyete geçiş yılından itibaren 5 yıl içinde misin?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  istisna_suresi_yil: 5
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: kurum_turu
+      etiket: "Kurum türü"
+      tip: secenek
+      secenekler: [okul, kres_gunduz_bakim, rehabilitasyon]
+      zorunlu: true
+    - id: faaliyete_gecis_tarihi
+      etiket: "Faaliyete geçiş tarihi"
+      tip: tarih
+      zorunlu: true
+    - id: kapsam_ici_hasilat
+      etiket: "Kapsam içi toplam hasılat (okul/kreş/terapi ücretleri)"
+      tip: para
+      zorunlu: true
+      yardim: "Dahili yemek ve konaklama ücret içine dahil ise burada yer alır. Kantin, büfe, ayrı servis ücretleri kapsam dışıdır."
+    - id: kapsam_disi_hasilat
+      etiket: "Kapsam dışı hasılat (kantin, büfe, ayrı servis, kiralama)"
+      tip: para
+      zorunlu: false
+    - id: kapsam_ici_giderler
+      etiket: "Kapsam içi faaliyete ait giderler"
+      tip: para
+      zorunlu: true
+  formuller:
+    faaliyet_kari: "kapsam_ici_hasilat - kapsam_ici_giderler"
+    istisna_tutari: "max(faaliyet_kari * oran, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "faaliyet_kari > 0"
+      hata: "Kapsam içi faaliyet zararda — bu istisna uygulanamaz (Kazancın bulunması halinde indirilecek)"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-ı: Okul öncesi eğitim, ilköğretim, özel eğitim ve orta öğretim özel
+  okulları ile özel kreş ve gündüz bakımevleri ve rehabilitasyon merkezlerinin
+  işletilmesinden elde edilen kazançlar...
+
+  ## Kritik Noktalar
+  - Yükseköğretim kurumları ve dershaneler kapsam dışıdır
+  - 01.01.2017 sonrası kreş/gündüz bakımevi faaliyete başlamış olmalı (6745 s.K.)
+  - Rehabilitasyon merkezleri için Cumhurbaşkanı vergi muafiyeti kararı zorunlu
+  - 5 yıllık süre faaliyete geçilen hesap döneminin başından başlar
+  - Devir durumunda devralan kalan süreden yararlanır, yeni 5 yıl başlamaz
+
+  ## YİAKV Etkisi
+  KVK 5/1-ı istisnasının YİAKV matrahına etkisi tartışmalıdır; dönem mevzuatı
+  ve GİB açıklamalarıyla ayrıca analiz edilmelidir.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Eğitim/Bakım/Terapi Hizmeti Gelir Kaydı (İstisna Kapsamı)
+  Borç: 120 Alıcılar (veya 102 Bankalar)
+  Alacak: 600 Yurt İçi Satışlar — Kapsam İçi
+  Açıklama: Okul/kreş/terapi ücreti geliri — KVK 5/1-ı istisna kapsamı
+
+  ## Kayıt 2 — Kapsam Dışı Gelir Kaydı
+  Borç: 120 Alıcılar
+  Alacak: 649 Diğer Olağandışı Gelir — Kapsam Dışı
+  Açıklama: Kantin, ayrı servis geliri — istisna kapsamı dışında, matrahta kalır
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: MEB / ASHB Kurum Açma İzin Belgesi
+    detay: "5580 s.K. kapsamındaki faaliyet türünü ve faaliyete geçiş tarihini belgeler."
+    temin_yeri: MEB / Aile ve Sosyal Hizmetler Bakanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Hasılat ve Gider Ayrıştırma Tablosu (Kapsam İçi / Kapsam Dışı)
+    detay: "Kantin, büfe vb. gelirler ayrı hesaplarda izlenmeli"
+    temin_yeri: Muhasebe / ERP
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Başı-Sonu Bilanço ve Gelir Tablosu
+    detay: "Kapsam içi faaliyet kârının tespiti için"
+    temin_yeri: Muhasebe
+  - kategori: destekleyici
+    "no": 4
+    baslik: Önceki Yıl Vergi Beyannameleri (5 yıl takibi)
+    detay: "Faaliyete geçiş yılından itibaren kaçıncı yılda olunduğunun tespiti"
+    temin_yeri: GİB / Beyanname Arşivi
+  - kategori: destekleyici
+    "no": 5
+    baslik: Rehabilitasyon Merkezi — Vakıf Senedi + CB Vergi Muafiyeti Kararı
+    detay: "İki koşul birlikte zorunludur (sadece rehabilitasyon merkezleri için)"
+    temin_yeri: Vakıf/Dernek + Cumhurbaşkanlığı Kararı
+
+k_checklist:
+  - id: K1
+    soru: "Kurumun 5580 s.K. kapsamında MEB/ASHB kurum açma iznine sahip olduğu doğrulandı mı?"
+    referans: "KVK Md. 5/1-ı | 5580 s.K."
+  - id: K2
+    soru: "Kreş/gündüz bakımevinde 01.01.2017 sonrası faaliyet başlangıcı belgelendi mi?"
+    referans: "6745 s.K."
+  - id: K3
+    soru: "5 yıllık istisna süresinin başlangıç ve bitiş yılı doğrulandı mı?"
+    referans: "KVK Md. 5/1-ı | 1 S.No.lu KV GT 5.13"
+  - id: K4
+    soru: "Kapsam içi ve kapsam dışı hasılat ayrıştırması muhasebe kayıtlarıyla uyumlu mu?"
+    referans: "1 S.No.lu KV GT 5.13"
+  - id: K5
+    soru: "Kapsam dışı gelirler (kantin, büfe vb.) matrahtan düşülmemiş mi?"
+    referans: "GİB Özelgeleri"
+  - id: K6
+    soru: "Rehabilitasyon merkeziyse CB vergi muafiyeti kararı mevcut mu?"
+    referans: "KVK Md. 5/1-ı"
+  - id: K7
+    soru: "Devir durumunda devralan firmanın kalan süre hesabı doğru yapıldı mı?"
+    referans: "1 S.No.lu KV GT 5.13"
+  - id: K8
+    soru: "YİAKV matrahı ayrıca hesaplandı mı (tartışmalı durum)?"
+    referans: "KVK 32/C"
+  - id: K9
+    soru: "İstisna tutarı ticari kârı aşmıyor mu?"
+    referans: "KVK Md. 5/1-ı"
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

@@ -1,0 +1,19 @@
+# Kurumlar Vergisi Oranları — Dönem Bazlı
+oranlar:
+  - donem_baslangic: 2021
+    donem_bitis: 2022
+    genel_oran: 0.25
+    finans_sektoru_orani: 0.25
+    aciklama: "7316 s.K. ile geçici artış"
+
+  - donem_baslangic: 2023
+    donem_bitis: 2024
+    genel_oran: 0.25
+    finans_sektoru_orani: 0.30
+    aciklama: "7456 s.K. finans sektörü oranı artışı"
+
+  - donem_baslangic: 2025
+    donem_bitis: null
+    genel_oran: 0.25
+    finans_sektoru_orani: 0.30
+    aciklama: "7524 s.K. sonrası mevcut durum"

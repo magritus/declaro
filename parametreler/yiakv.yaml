@@ -1,0 +1,12 @@
+# Yurt İçi Asgari Kurumlar Vergisi (KVK 32/C)
+yururluk_baslangic: "2025-01-01"
+oran: 0.10
+aciklama: |
+  7524 s.K. ile 01.01.2025 tarihinden itibaren yürürlüğe girmiştir.
+  Her kalemin yiakv_etkisi bayrağına göre matrah farklılaşır.
+  tartismali_kalemler için dönem mevzuatı ve GİB açıklamaları takip edilmelidir.
+
+uygulama_kurallari:
+  dusulur: "Bu kalem YİAKV matrahından düşülür (normal KV ile aynı)"
+  dusulmez: "Bu kalem YİAKV matrahından düşülmez (matrahta kalır)"
+  tartismali: "Bu kalem için uygulama tartışmalı, dikkatli değerlendirilmeli"

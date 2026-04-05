@@ -1,0 +1,27 @@
+# Kritik Mevzuat Tarihleri
+
+esikler:
+  - tarih: "2017-01-01"
+    kanun: "6745 s.K."
+    aciklama: "Kreş ve gündüz bakımevleri KVK 5/1-ı kapsamına alındı"
+    etkilenen_kalemler: [egitim_rehabilitasyon_5_1_i]
+
+  - tarih: "2023-07-15"
+    kanun: "7456 s.K."
+    aciklama: "KVK 5/1-a-4 ve 5/1-a-5 mülga edildi (GYF/GYO geçiş)"
+    etkilenen_kalemler: [gsyf_gsyo_298, diger_fonlar_299, diger_fon_vuk279_300]
+
+  - tarih: "2025-01-01"
+    kanun: "7524 s.K."
+    aciklama: "YİAKV (KVK 32/C) yürürlüğe girdi; GYF/GYO kâr dağıtım şartı"
+    etkilenen_kalemler: [yiakv_hesap]
+
+  - tarih: "2025-02-05"
+    kanun: "Danıştay VDDK E:2024/774 K:2025/2"
+    aciklama: "Örtülü sermaye — borç alan zararda ise ödeme şartı tartışmalı"
+    etkilenen_kalemler: [ortulu_sermaye_306]
+
+  - tarih: "2025-12-30"
+    kanun: "49 No.lu KV GT"
+    aciklama: "YMM tasdik raporu eşikleri güncellendi"
+    etkilenen_kalemler: [tum_kalemler]

@@ -1,0 +1,20 @@
+# Mevzuat Limit ve Eşikleri
+
+bagis_yardim:
+  genel_tavan_orani: 0.05
+  aciklama: "Kurum kazancının %5'i — KVK 10/1-c genel tavanı"
+
+ortulu_sermaye:
+  esik_katsayi: 3.0
+  aciklama: "Özsermayenin 3 katını aşan borçlar örtülü sermaye sayılır — KVK 12"
+  iliskili_banka_orani: 0.50
+  aciklama_banka: "İlişkili banka borçlarında %50 oranı uygulanır"
+
+nakdi_sermaye_artisi:
+  faiz_orani_referans: "TCMB_1_YILLIK_MEVDUAT"
+  aciklama: "KVK 10/1-ı — TCMB faiz oranı referanslı"
+
+ymm_tasdik:
+  tek_kalem_esigi: 500000
+  toplam_esik: 1000000
+  aciklama: "49 No.lu Tebliğ: tek kalem ≥500.000 TL veya toplam ≥1.000.000 TL → YMM tasdik raporu"
