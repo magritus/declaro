@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { useWizardStore } from '@/store/wizardStore'
+import { useCalisma } from '@/api/calisma'
 import ThemeToggle from '@/components/ThemeToggle'
 
 const KALEM_ADLARI: Record<string, { baslik: string; kod: number }> = {
@@ -10,7 +11,10 @@ export default function IstekListesi() {
   const { calismaId } = useParams<{ calismaId: string }>()
   const navigate = useNavigate()
   const faz2 = useWizardStore((s) => s.faz2)
-  const seciliKalemler = faz2?.secilen_kalemler ?? []
+
+  // Önce backend'den oku (direkt URL erişiminde store boş olabilir)
+  const { data: calisma, isLoading } = useCalisma(calismaId ? Number(calismaId) : undefined)
+  const seciliKalemler = (calisma?.istek_listesi ?? faz2?.secilen_kalemler) ?? []
 
   return (
     <div className="max-w-2xl mx-auto p-8">
@@ -22,7 +26,11 @@ export default function IstekListesi() {
         <ThemeToggle />
       </div>
 
-      {seciliKalemler.length === 0 ? (
+      {isLoading ? (
+        <div className="flex justify-center py-12">
+          <div className="w-6 h-6 border-2 border-accent border-t-transparent rounded-full animate-spin" />
+        </div>
+      ) : seciliKalemler.length === 0 ? (
         <div className="p-6 border border-border-default bg-surface-raised rounded-lg text-center text-muted">
           Seçili kalem yok. Wizard&apos;a dönün.
         </div>
