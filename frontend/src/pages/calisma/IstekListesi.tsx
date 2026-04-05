@@ -50,6 +50,12 @@ export default function IstekListesi() {
       >
         Çalışma Kâğıtlarını Aç →
       </button>
+      <button
+        onClick={() => navigate(`/calisma/${calismaId}/ozet`)}
+        className="mt-3 w-full bg-white border border-blue-600 text-blue-600 py-2 px-4 rounded-md hover:bg-blue-50 font-medium"
+      >
+        Mali Kâr Özeti →
+      </button>
     </div>
   )
 }
