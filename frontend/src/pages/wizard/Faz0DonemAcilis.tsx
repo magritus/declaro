@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
@@ -19,15 +20,23 @@ export default function Faz0DonemAcilis() {
   const navigate = useNavigate()
   const setFaz0 = useWizardStore((s) => s.setFaz0)
 
+  const [apiError, setApiError] = useState<string | null>(null)
+
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<Faz0Form>({
     resolver: zodResolver(faz0Schema),
     defaultValues: { kkeg: 0, finansman_fonu: 0 },
   })
 
   const onSubmit = async (data: Faz0Form) => {
-    await apiClient.put(`/calisma/${calismaId}/wizard/faz0`, data)
-    setFaz0(data)
-    navigate(`/calisma/${calismaId}/wizard/faz1`)
+    setApiError(null)
+    try {
+      await apiClient.put(`/calisma/${calismaId}/wizard/faz0`, data)
+      setFaz0(data)
+      navigate(`/calisma/${calismaId}/wizard/faz1`)
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Bir hata oluştu'
+      setApiError(message)
+    }
   }
 
   return (
@@ -89,6 +98,12 @@ export default function Faz0DonemAcilis() {
         >
           {isSubmitting ? 'Kaydediliyor...' : 'Devam →'}
         </button>
+
+        {apiError && (
+          <div className="mt-3 p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded text-red-700 dark:text-red-300 text-sm">
+            {apiError}
+          </div>
+        )}
       </form>
     </div>
   )

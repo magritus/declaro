@@ -1,5 +1,6 @@
 import io
 import re
+import unicodedata
 from datetime import date
 from decimal import Decimal
 from typing import Any
@@ -31,7 +32,11 @@ CURRENCY_FORMAT = '#,##0.00 "₺"'
 # ─── Yardımcı fonksiyonlar ───────────────────────────────────────────────────
 
 def _temizle_dosya_adi(name: str) -> str:
-    return re.sub(r"[^\w\-_.]", "_", name)[:100]
+    # Normalize and strip non-ASCII (Turkish chars → ASCII equivalent or removed)
+    name = unicodedata.normalize('NFKD', name)
+    name = name.encode('ascii', 'ignore').decode('ascii')
+    name = re.sub(r'[^\w\-_.]', '_', name)
+    return name[:100]
 
 
 def _header_satiri(ws, row: int, cols: list[str]) -> None:

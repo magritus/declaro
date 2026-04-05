@@ -3,6 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from app.db.session import get_db
 from app.db.models.calisma import Calisma
+from app.db.models.donem import Donem
 from app.db.models.kalem_verisi import KalemVerisi
 from app.katalog.cache import get_katalog
 from app.pipeline.kalem_hesaplayici import kalem_hesapla
@@ -24,7 +25,7 @@ async def kalem_hesapla_endpoint(
     data: KalemHesaplaRequest,
     db: AsyncSession = Depends(get_db),
 ):
-    """Tek kalem hesaplar ve sonucu döner (DB'ye kaydetmez)."""
+    """Tek kalem hesaplar ve sonucu DB'ye kaydeder."""
     katalog = get_katalog()
     kalem = katalog.get(ic_kod)
     if not kalem:
@@ -33,6 +34,9 @@ async def kalem_hesapla_endpoint(
     calisma = await db.get(Calisma, calisma_id)
     if not calisma:
         raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
+
+    if ic_kod not in (calisma.istek_listesi or []):
+        raise HTTPException(status_code=400, detail=f"{ic_kod} bu çalışmanın istek listesinde değil")
 
     sonuc = kalem_hesapla(kalem, data.girdi_verileri)
 
@@ -86,7 +90,6 @@ async def pipeline_hesapla_endpoint(calisma_id: int, db: AsyncSession = Depends(
     kalem_verileri_db = {kv.ic_kod: kv.girdi_verileri or {} for kv in result.scalars().all()}
 
     # Dönem yılını al
-    from app.db.models.donem import Donem
     donem = await db.get(Donem, calisma.donem_id)
     donem_yili = donem.yil if donem else 2025
 

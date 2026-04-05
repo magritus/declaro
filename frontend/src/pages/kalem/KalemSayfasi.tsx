@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import VeriGirisiForm from '@/components/VeriGirisiForm'
 import ThemeToggle from '@/components/ThemeToggle'
+import ChecklistTab from '@/components/kalem/ChecklistTab'
+import BelgelerTab from '@/components/kalem/BelgelerTab'
 import {
   useKalemSchema,
   useHesapla,
@@ -50,8 +52,11 @@ export default function KalemSayfasi() {
       const sonuc = await hesaplaMutation.mutateAsync(data)
       setHesapSonucu(sonuc)
       await saveVeriMutation.mutateAsync(data)
-    } catch {
-      // Hata hesaplaMutation.error üzerinden gösterilir
+      setKayitMesaji('Veriler kaydedildi.')
+      setTimeout(() => setKayitMesaji(null), 3000)
+    } catch (err) {
+      // Error displayed via hesaplaMutation.error / saveVeriMutation.error in UI
+      console.error('Veri kaydetme hatası:', err)
     }
   }
 
@@ -73,6 +78,20 @@ export default function KalemSayfasi() {
     } catch {
       // mutasyon hatası gösterilir
     }
+  }
+
+  const handleChecklistChange = (id: string, value: 'uygun' | 'eksik' | 'risk') => {
+    setChecklistDurum((prev) => ({ ...prev, [id]: value }))
+  }
+
+  const handleBelgeChange = (no: string, field: 'durum' | 'not', value: string) => {
+    setBelgeDurum((prev) => ({
+      ...prev,
+      [no]: {
+        durum: field === 'durum' ? (value as 'uygun' | 'eksik') : (prev[no]?.durum ?? 'eksik'),
+        not: field === 'not' ? value : (prev[no]?.not ?? ''),
+      },
+    }))
   }
 
   if (schemaYukleniyor) {
@@ -159,12 +178,19 @@ export default function KalemSayfasi() {
       {/* Tab İçerikleri */}
 
       {activeTab === 'veri' && (
-        <VeriGirisiForm
-          alanlar={kalem.hesaplama_sablonu.veri_girisi_alanlari}
-          onSubmit={handleVeriSubmit}
-          isLoading={hesaplaMutation.isPending || saveVeriMutation.isPending}
-          hesapSonucu={hesapSonucu}
-        />
+        <>
+          <VeriGirisiForm
+            alanlar={kalem.hesaplama_sablonu.veri_girisi_alanlari}
+            onSubmit={handleVeriSubmit}
+            isLoading={hesaplaMutation.isPending || saveVeriMutation.isPending}
+            hesapSonucu={hesapSonucu}
+          />
+          {hesaplaMutation.error && (
+            <div className="mt-3 p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded text-sm text-red-700 dark:text-red-300">
+              Hesaplama hatası: {hesaplaMutation.error instanceof Error ? hesaplaMutation.error.message : 'Bilinmeyen hata'}
+            </div>
+          )}
+        </>
       )}
 
       {activeTab === 'hesaplamalar' && (
@@ -243,203 +269,39 @@ export default function KalemSayfasi() {
       )}
 
       {activeTab === 'checklist' && (
-        <div className="space-y-4">
-          <h2 className="text-base font-semibold text-primary">K-Checklist</h2>
-
-          {kalem.k_checklist.length === 0 ? (
-            <div className="p-6 bg-surface-overlay border border-border-default rounded-lg text-center text-muted text-sm">
-              Bu kalem için checklist maddesi bulunmuyor.
-            </div>
-          ) : (
-            <div className="space-y-3">
-              {kalem.k_checklist.map((madde) => {
-                const durum = checklistDurum[madde.id]
-                return (
-                  <div key={madde.id} className="p-4 border border-border-default bg-surface-raised rounded-lg space-y-2">
-                    <div className="flex items-start gap-3">
-                      <div className="flex-1">
-                        <p className="text-sm font-medium text-primary">{madde.soru}</p>
-                        {madde.aciklama && (
-                          <p className="text-xs text-muted mt-0.5">{madde.aciklama}</p>
-                        )}
-                      </div>
-                      {durum && (
-                        <span
-                          className={`text-xs px-2 py-0.5 rounded-full font-medium ${
-                            durum === 'uygun'
-                              ? 'bg-green-100 dark:bg-green-950 text-green-700 dark:text-green-300'
-                              : durum === 'eksik'
-                              ? 'bg-red-100 dark:bg-red-950 text-red-700 dark:text-red-300'
-                              : 'bg-yellow-100 dark:bg-yellow-950 text-yellow-700 dark:text-yellow-300'
-                          }`}
-                        >
-                          {durum === 'uygun' ? 'Uygun' : durum === 'eksik' ? 'Eksik' : 'Risk'}
-                        </span>
-                      )}
-                    </div>
-
-                    <div className="flex gap-4">
-                      {(['uygun', 'eksik', 'risk'] as const).map((val) => (
-                        <label key={val} className="flex items-center gap-1.5 cursor-pointer">
-                          <input
-                            type="radio"
-                            name={`checklist-${madde.id}`}
-                            value={val}
-                            checked={checklistDurum[madde.id] === val}
-                            onChange={() =>
-                              setChecklistDurum((prev) => ({ ...prev, [madde.id]: val }))
-                            }
-                            className="accent-accent"
-                          />
-                          <span
-                            className={`text-sm ${
-                              val === 'uygun'
-                                ? 'text-green-700 dark:text-green-400'
-                                : val === 'eksik'
-                                ? 'text-red-700 dark:text-red-400'
-                                : 'text-yellow-700 dark:text-yellow-400'
-                            }`}
-                          >
-                            {val === 'uygun' ? 'Uygun' : val === 'eksik' ? 'Eksik' : 'Risk'}
-                          </span>
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          )}
-
+        <>
+          <ChecklistTab
+            items={kalem.k_checklist}
+            durum={checklistDurum}
+            onChange={handleChecklistChange}
+            onSave={handleChecklistKaydet}
+            isSaving={updateChecklistMutation.isPending}
+            kayitMesaji={kayitMesaji}
+          />
           {updateChecklistMutation.isError && (
-            <div className="p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-md text-red-700 dark:text-red-300 text-sm">
+            <div className="mt-3 p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-md text-red-700 dark:text-red-300 text-sm">
               Checklist kaydedilemedi. Lütfen tekrar deneyin.
             </div>
           )}
-
-          <button
-            onClick={handleChecklistKaydet}
-            disabled={updateChecklistMutation.isPending || kalem.k_checklist.length === 0}
-            className="w-full bg-accent text-white py-2.5 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium text-sm transition-colors"
-          >
-            {updateChecklistMutation.isPending ? 'Kaydediliyor...' : 'Kaydet'}
-          </button>
-        </div>
+        </>
       )}
 
       {activeTab === 'belgeler' && (
-        <div className="space-y-4">
-          <h2 className="text-base font-semibold text-primary">Belgeler</h2>
-
-          {kalem.belge_listesi.length === 0 ? (
-            <div className="p-6 bg-surface-overlay border border-border-default rounded-lg text-center text-muted text-sm">
-              Bu kalem için belge listesi bulunmuyor.
-            </div>
-          ) : (
-            <div className="border border-border-default rounded-lg overflow-hidden">
-              <table className="w-full text-sm">
-                <thead className="bg-surface-overlay border-b border-border-default">
-                  <tr>
-                    <th className="text-left px-4 py-3 text-xs font-semibold text-muted uppercase tracking-wide">
-                      Belge No
-                    </th>
-                    <th className="text-left px-4 py-3 text-xs font-semibold text-muted uppercase tracking-wide">
-                      Başlık
-                    </th>
-                    <th className="text-left px-4 py-3 text-xs font-semibold text-muted uppercase tracking-wide">
-                      Kategori
-                    </th>
-                    <th className="text-left px-4 py-3 text-xs font-semibold text-muted uppercase tracking-wide">
-                      Durum
-                    </th>
-                    <th className="text-left px-4 py-3 text-xs font-semibold text-muted uppercase tracking-wide">
-                      Not
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border-subtle">
-                  {kalem.belge_listesi.map((belge, idx) => (
-                    <tr
-                      key={belge.belge_no}
-                      className={idx % 2 === 0 ? 'bg-surface-raised' : 'bg-surface-overlay'}
-                    >
-                      <td className="px-4 py-3 font-mono text-xs text-muted">
-                        {belge.belge_no}
-                      </td>
-                      <td className="px-4 py-3 text-primary">
-                        {belge.baslik}
-                        {belge.aciklama && (
-                          <p className="text-xs text-muted mt-0.5">{belge.aciklama}</p>
-                        )}
-                      </td>
-                      <td className="px-4 py-3">
-                        <span
-                          className={`text-xs px-2 py-0.5 rounded-full font-medium ${
-                            belge.kategori === 'zorunlu'
-                              ? 'bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300'
-                              : 'bg-surface-overlay text-secondary'
-                          }`}
-                        >
-                          {belge.kategori === 'zorunlu' ? 'Zorunlu' : 'Destekleyici'}
-                        </span>
-                      </td>
-                      <td className="px-4 py-3">
-                        <select
-                          className="px-2 py-1 border border-border-default rounded text-xs bg-surface-raised text-primary focus:outline-none focus:ring-1 focus:ring-accent"
-                          value={belgeDurum[belge.belge_no]?.durum ?? ''}
-                          onChange={(e) =>
-                            setBelgeDurum((prev) => ({
-                              ...prev,
-                              [belge.belge_no]: {
-                                durum: e.target.value as 'uygun' | 'eksik',
-                                not: prev[belge.belge_no]?.not ?? '',
-                              },
-                            }))
-                          }
-                        >
-                          <option value="">Seçiniz</option>
-                          <option value="uygun">Uygun</option>
-                          <option value="eksik">Eksik</option>
-                        </select>
-                      </td>
-                      <td className="px-4 py-3">
-                        <input
-                          type="text"
-                          placeholder="Not ekle..."
-                          className="w-full px-2 py-1 border border-border-default rounded text-xs bg-surface-raised text-primary placeholder-muted focus:outline-none focus:ring-1 focus:ring-accent"
-                          value={belgeDurum[belge.belge_no]?.not ?? ''}
-                          onChange={(e) =>
-                            setBelgeDurum((prev) => ({
-                              ...prev,
-                              [belge.belge_no]: {
-                                durum: prev[belge.belge_no]?.durum ?? 'eksik',
-                                not: e.target.value,
-                              },
-                            }))
-                          }
-                        />
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
-
+        <>
+          <BelgelerTab
+            items={kalem.belge_listesi}
+            durum={belgeDurum}
+            onChange={handleBelgeChange}
+            onSave={handleBelgelerKaydet}
+            isSaving={updateBelgelerMutation.isPending}
+            kayitMesaji={kayitMesaji}
+          />
           {updateBelgelerMutation.isError && (
-            <div className="p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-md text-red-700 dark:text-red-300 text-sm">
+            <div className="mt-3 p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-md text-red-700 dark:text-red-300 text-sm">
               Belgeler kaydedilemedi. Lütfen tekrar deneyin.
             </div>
           )}
-
-          <button
-            onClick={handleBelgelerKaydet}
-            disabled={updateBelgelerMutation.isPending || kalem.belge_listesi.length === 0}
-            className="w-full bg-accent text-white py-2.5 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium text-sm transition-colors"
-          >
-            {updateBelgelerMutation.isPending ? 'Kaydediliyor...' : 'Kaydet'}
-          </button>
-        </div>
+        </>
       )}
 
       {activeTab === 'muhasebe' && (

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from app.db.session import get_db
@@ -23,8 +23,14 @@ async def mukellef_olustur(data: MukellefCreate, db: AsyncSession = Depends(get_
 
 
 @router.get("", response_model=list[MukellefResponse])
-async def mukellef_listele(db: AsyncSession = Depends(get_db)):
-    result = await db.execute(select(Mukellef).order_by(Mukellef.unvan))
+async def mukellef_listele(
+    skip: int = 0,
+    limit: int = Query(default=50, le=200),
+    db: AsyncSession = Depends(get_db),
+):
+    result = await db.execute(
+        select(Mukellef).order_by(Mukellef.unvan).offset(skip).limit(limit)
+    )
     return result.scalars().all()
 
 

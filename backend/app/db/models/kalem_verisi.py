@@ -1,11 +1,14 @@
 from datetime import datetime
-from sqlalchemy import String, Numeric, ForeignKey, DateTime, JSON, func
+from sqlalchemy import String, Numeric, ForeignKey, DateTime, JSON, UniqueConstraint, func
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.db.base import Base
 
 
 class KalemVerisi(Base):
     __tablename__ = "kalem_verisi"
+    __table_args__ = (
+        UniqueConstraint('calisma_id', 'ic_kod', name='uq_calisma_kalem'),
+    )
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
     calisma_id: Mapped[int] = mapped_column(ForeignKey("calisma.id"), nullable=False, index=True)

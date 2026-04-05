@@ -64,6 +64,12 @@ async def wizard_faz1(calisma_id: int, data: WizardFaz1Girdi, db: AsyncSession =
     if not calisma:
         raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
 
+    if calisma.wizard_faz < 1:
+        raise HTTPException(status_code=400, detail="Faz 0 tamamlanmadan faz 1 başlatılamaz")
+
+    if not any(data.secilen_kategoriler.values()):
+        raise HTTPException(status_code=400, detail="En az bir kategori seçilmelidir")
+
     mevcut = dict(calisma.wizard_cevaplari or {})
     mevcut["faz1"] = data.secilen_kategoriler
     calisma.wizard_cevaplari = mevcut
@@ -79,6 +85,9 @@ async def wizard_faz2(calisma_id: int, data: WizardFaz2Girdi, db: AsyncSession =
     calisma = await db.get(Calisma, calisma_id)
     if not calisma:
         raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
+
+    if calisma.wizard_faz < 2:
+        raise HTTPException(status_code=400, detail="Faz 1 tamamlanmadan faz 2 başlatılamaz")
 
     mevcut = dict(calisma.wizard_cevaplari or {})
     mevcut["faz2"] = data.kapi_soru_cevaplari
@@ -100,6 +109,9 @@ async def kalem_veri_kaydet(
     if not calisma:
         raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
 
+    if ic_kod not in (calisma.istek_listesi or []):
+        raise HTTPException(status_code=400, detail=f"{ic_kod} bu çalışmanın istek listesinde değil")
+
     result = await db.execute(
         select(KalemVerisi).where(KalemVerisi.calisma_id == calisma_id, KalemVerisi.ic_kod == ic_kod)
     )
@@ -120,6 +132,12 @@ async def kalem_veri_kaydet(
 async def k_checklist_guncelle(
     calisma_id: int, ic_kod: str, data: KChecklistGuncelle, db: AsyncSession = Depends(get_db)
 ):
+    calisma = await db.get(Calisma, calisma_id)
+    if not calisma:
+        raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
+    if ic_kod not in (calisma.istek_listesi or []):
+        raise HTTPException(status_code=400, detail=f"{ic_kod} bu çalışmanın istek listesinde değil")
+
     result = await db.execute(
         select(KalemVerisi).where(KalemVerisi.calisma_id == calisma_id, KalemVerisi.ic_kod == ic_kod)
     )
@@ -136,6 +154,12 @@ async def k_checklist_guncelle(
 async def belge_durumu_guncelle(
     calisma_id: int, ic_kod: str, data: BelgeDurumuGuncelle, db: AsyncSession = Depends(get_db)
 ):
+    calisma = await db.get(Calisma, calisma_id)
+    if not calisma:
+        raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
+    if ic_kod not in (calisma.istek_listesi or []):
+        raise HTTPException(status_code=400, detail=f"{ic_kod} bu çalışmanın istek listesinde değil")
+
     result = await db.execute(
         select(KalemVerisi).where(KalemVerisi.calisma_id == calisma_id, KalemVerisi.ic_kod == ic_kod)
     )

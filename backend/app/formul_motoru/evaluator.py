@@ -1,3 +1,4 @@
+import re
 from datetime import date, datetime
 from decimal import Decimal, ROUND_HALF_UP
 from typing import Any
@@ -23,7 +24,12 @@ YASAK_KELIMELER = [
     "__import__", "__builtins__", "__class__", "__globals__",
     "exec", "eval", "compile", "open", "os", "sys",
     "subprocess", "importlib", "getattr", "setattr", "delattr",
+    "vars", "dir", "type", "hasattr", "callable", "iter", "next",
+    "__dict__", "__doc__", "__module__",
 ]
+
+# Kısa kelimeler (1-3 karakter) — substring eşleşmesini önlemek için kelime sınırı kullan
+_KISA_YASAK_KELIMELER = {k for k in YASAK_KELIMELER if len(k) <= 3}
 
 
 def _gecen_yil_sayisi(tarih_str: str | date) -> int:
@@ -53,8 +59,13 @@ def _guvenlik_kontrol(formul: str) -> None:
     """Formülde yasak kelime var mı kontrol et."""
     formul_lower = formul.lower()
     for yasak in YASAK_KELIMELER:
-        if yasak in formul_lower:
-            raise EvaluatorGuvenlikHatasi(f"Güvenlik ihlali: '{yasak}' formülde kullanılamaz")
+        if yasak in _KISA_YASAK_KELIMELER:
+            # Kısa kelimeler için kelime sınırı kullan (örn: "os" → "cos" içinde eşleşmesin)
+            if re.search(r'\b' + re.escape(yasak) + r'\b', formul_lower):
+                raise EvaluatorGuvenlikHatasi(f"Güvenlik ihlali: '{yasak}' formülde kullanılamaz")
+        else:
+            if yasak in formul_lower:
+                raise EvaluatorGuvenlikHatasi(f"Güvenlik ihlali: '{yasak}' formülde kullanılamaz")
 
 
 class ForumulEvaluator:
@@ -95,6 +106,7 @@ class ForumulEvaluator:
                 temiz_context[k] = v
 
         evaluator = SimpleEval()
+        evaluator.ATTR_INDEX_FALLBACK = False
         evaluator.functions = self.IZIN_VERILEN_FONKSIYONLAR
         evaluator.names = temiz_context
 
@@ -139,6 +151,7 @@ class ForumulEvaluator:
             try:
                 _guvenlik_kontrol(kural)
                 evaluator = SimpleEval()
+                evaluator.ATTR_INDEX_FALLBACK = False
                 evaluator.functions = self.IZIN_VERILEN_FONKSIYONLAR
 
                 temiz_context: dict[str, Any] = {}
@@ -152,9 +165,8 @@ class ForumulEvaluator:
                 gecti = evaluator.eval(kural)
                 if not gecti:
                     hatalar.append(hata_mesaji)
-            except (NameNotDefined, Exception):
-                # Değişken yoksa validasyonu atla
-                pass
+            except NameNotDefined:
+                pass  # değişken henüz mevcut değil, bu validasyonu atla
 
         return hatalar
 

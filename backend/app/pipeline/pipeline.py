@@ -1,4 +1,5 @@
 from decimal import Decimal
+from functools import lru_cache
 from typing import Any
 import yaml
 from pathlib import Path
@@ -7,6 +8,7 @@ from app.pipeline.kalem_hesaplayici import kalem_hesapla
 from app.katalog.cache import get_katalog
 
 
+@lru_cache(maxsize=1)
 def _parametreler_yukle() -> dict[str, Any]:
     """Tüm parametre YAML dosyalarını yükler."""
     parametreler_dir = Path(__file__).parent.parent.parent.parent / "parametreler"
@@ -141,7 +143,7 @@ def pipeline_calistir(
 
     # Adım 10: YİAKV paralel hesap
     if yiakv_orani and donem_yili >= 2025:
-        yiakv_matrahi = Decimal(str(ticari_kar_zarar)) + kkeg_dec
+        yiakv_matrahi = Decimal(str(ticari_kar_zarar)) + kkeg_dec + finansman_dec
         for ic_kod in istek_listesi:
             kalem = katalog.get(ic_kod)
             if kalem and kalem.yiakv_etkisi.value == "dusulur":

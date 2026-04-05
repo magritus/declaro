@@ -1,4 +1,5 @@
 import { create } from 'zustand'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 interface Faz0Data {
   ticari_kar_zarar: number
@@ -21,12 +22,20 @@ interface WizardStore {
   reset: () => void
 }
 
-export const useWizardStore = create<WizardStore>((set) => ({
-  faz0: null,
-  faz1: null,
-  faz2: null,
-  setFaz0: (data) => set({ faz0: data }),
-  setFaz1: (data) => set({ faz1: data }),
-  setFaz2: (data) => set({ faz2: data }),
-  reset: () => set({ faz0: null, faz1: null, faz2: null }),
-}))
+export const useWizardStore = create<WizardStore>()(
+  persist(
+    (set) => ({
+      faz0: null,
+      faz1: null,
+      faz2: null,
+      setFaz0: (data) => set({ faz0: data }),
+      setFaz1: (data) => set({ faz1: data }),
+      setFaz2: (data) => set({ faz2: data }),
+      reset: () => set({ faz0: null, faz1: null, faz2: null }),
+    }),
+    {
+      name: 'declaro-wizard',
+      storage: createJSONStorage(() => sessionStorage),
+    }
+  )
+)

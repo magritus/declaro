@@ -132,10 +132,14 @@ export default function DonemDetay() {
                       </tr>
                     </thead>
                     <tbody>
-                      {calismalar.map((c, idx) => (
+                      {calismalar.map((c, idx) => {
+                        const hedef = c.wizard_faz >= 3
+                          ? `/calisma/${c.id}/istek-listesi`
+                          : `/calisma/${c.id}/wizard/faz${c.wizard_faz}`
+                        return (
                         <tr
                           key={c.id}
-                          onClick={() => navigate(`/calisma/${c.id}/wizard/faz${c.wizard_faz}`)}
+                          onClick={() => navigate(hedef)}
                           className={`cursor-pointer hover:bg-surface-overlay transition-colors duration-100 ${idx < calismalar.length - 1 ? 'border-b border-border-subtle' : ''}`}
                         >
                           <td className="px-5 py-4 font-mono font-medium text-primary">
@@ -166,7 +170,8 @@ export default function DonemDetay() {
                             </svg>
                           </td>
                         </tr>
-                      ))}
+                        )
+                      })}
                     </tbody>
                   </table>
                 </div>
