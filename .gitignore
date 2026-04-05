@@ -50,3 +50,6 @@ Thumbs.db
 
 # Worktrees (project convention)
 worktrees/
+
+# Claude Code local config
+.claude/settings.json
