@@ -50,16 +50,16 @@ export default function BelgelerTab({
             <tbody className="divide-y divide-border-subtle">
               {items.map((belge, idx) => (
                 <tr
-                  key={belge.belge_no}
+                  key={String(belge.no)}
                   className={idx % 2 === 0 ? 'bg-surface-raised' : 'bg-surface-overlay'}
                 >
                   <td className="px-4 py-3 font-mono text-xs text-muted">
-                    {belge.belge_no}
+                    {String(belge.no)}
                   </td>
                   <td className="px-4 py-3 text-primary">
                     {belge.baslik}
-                    {belge.aciklama && (
-                      <p className="text-xs text-muted mt-0.5">{belge.aciklama}</p>
+                    {belge.detay && (
+                      <p className="text-xs text-muted mt-0.5">{belge.detay}</p>
                     )}
                   </td>
                   <td className="px-4 py-3">
@@ -76,8 +76,8 @@ export default function BelgelerTab({
                   <td className="px-4 py-3">
                     <select
                       className="px-2 py-1 border border-border-default rounded text-xs bg-surface-raised text-primary focus:outline-none focus:ring-1 focus:ring-accent"
-                      value={durum[belge.belge_no]?.durum ?? ''}
-                      onChange={(e) => onChange(belge.belge_no, 'durum', e.target.value)}
+                      value={durum[String(belge.no)]?.durum ?? ''}
+                      onChange={(e) => onChange(String(belge.no), 'durum', e.target.value)}
                     >
                       <option value="">Seçiniz</option>
                       <option value="uygun">Uygun</option>
@@ -89,8 +89,8 @@ export default function BelgelerTab({
                       type="text"
                       placeholder="Not ekle..."
                       className="w-full px-2 py-1 border border-border-default rounded text-xs bg-surface-raised text-primary placeholder-muted focus:outline-none focus:ring-1 focus:ring-accent"
-                      value={durum[belge.belge_no]?.not ?? ''}
-                      onChange={(e) => onChange(belge.belge_no, 'not', e.target.value)}
+                      value={durum[String(belge.no)]?.not ?? ''}
+                      onChange={(e) => onChange(String(belge.no), 'not', e.target.value)}
                     />
                   </td>
                 </tr>

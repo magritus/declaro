@@ -16,21 +16,22 @@ export interface VeriGirisiAlani {
   tip: 'para' | 'tarih' | 'secenek' | 'evet_hayir' | 'metin' | 'sayi'
   zorunlu: boolean
   secenekler?: string[]
-  aciklama?: string
+  yardim?: string    // backend field name (help text)
   varsayilan?: unknown
 }
 
 export interface KChecklistMaddesi {
   id: string
   soru: string
-  aciklama?: string
+  referans?: string  // backend field name
 }
 
 export interface BelgeMaddesi {
-  belge_no: string
+  no: number         // backend sends 'no' as integer
   baslik: string
   kategori: 'zorunlu' | 'destekleyici'
-  aciklama?: string
+  detay?: string
+  temin_yeri?: string
 }
 
 export interface HesaplamaSablonu {

@@ -34,8 +34,8 @@ export default function ChecklistTab({
                 <div className="flex items-start gap-3">
                   <div className="flex-1">
                     <p className="text-sm font-medium text-primary">{madde.soru}</p>
-                    {madde.aciklama && (
-                      <p className="text-xs text-muted mt-0.5">{madde.aciklama}</p>
+                    {madde.referans && (
+                      <p className="text-xs text-muted mt-0.5">{madde.referans}</p>
                     )}
                   </div>
                   {madDurum && (

@@ -45,8 +45,8 @@ export default function VeriGirisiForm({
               {alan.zorunlu && <span className="ml-1 text-red-500">*</span>}
             </label>
 
-            {alan.aciklama && (
-              <p className="text-xs text-muted">{alan.aciklama}</p>
+            {alan.yardim && (
+              <p className="text-xs text-muted">{alan.yardim}</p>
             )}
 
             {alan.tip === 'para' && (
