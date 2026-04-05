@@ -1,6 +1,15 @@
 import { useQuery, useMutation } from '@tanstack/react-query'
 import { apiClient } from './client'
 
+export interface KatalogKalem {
+  ic_kod: string
+  baslik: string
+  ana_kategori: string
+  beyanname_bolumu: string
+  yiakv_etkisi: string
+  durum: string
+}
+
 export interface VeriGirisiAlani {
   id: string
   etiket: string
@@ -55,6 +64,17 @@ export interface BelgeDurum {
     durum: 'uygun' | 'eksik'
     not: string
   }
+}
+
+export function useKatalogKalemler() {
+  return useQuery<KatalogKalem[]>({
+    queryKey: ['katalog', 'kalemler'],
+    queryFn: async () => {
+      const { data } = await apiClient.get<KatalogKalem[]>('/katalog/kalemler')
+      return data
+    },
+    staleTime: 1000 * 60 * 60, // 1 hour — catalog rarely changes
+  })
 }
 
 export function useKalemSchema(icKod: string | undefined) {

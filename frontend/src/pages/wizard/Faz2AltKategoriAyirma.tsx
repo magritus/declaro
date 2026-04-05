@@ -4,8 +4,13 @@ import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
 import ThemeToggle from '@/components/ThemeToggle'
 
+// TODO: KALEM_ESLEME maps ana_kategori IDs (from Faz1) to kalem ic_kod values and their
+// kapi_sorulari. This mapping is currently hardcoded and should eventually be derived from
+// the backend catalog (GET /katalog/kalemler/{ic_kod}) to avoid drift. Keys must match
+// the ana_kategori values in the YAML catalog — currently "egitim_saglik_istisnalari".
+// ic_kod values must match the ic_kod field in the YAML (e.g. "egitim_rehabilitasyon_5_1_i").
 const KALEM_ESLEME: Record<string, { ic_kod: string; kapi_sorulari: Array<{ id: string; soru: string; zorunlu_cevap: string; aciklama?: string }> }> = {
-  egitim_rehabilitasyon: {
+  egitim_saglik_istisnalari: {
     ic_kod: 'egitim_rehabilitasyon_5_1_i',
     kapi_sorulari: [
       { id: 'mev_5580_kapsami', soru: "MEB veya ASHB'den 5580 s.K. kapsamında kurum açma iznin var mı?", zorunlu_cevap: 'evet', aciklama: 'Dershaneler ve etüt merkezleri kapsam dışıdır.' },
@@ -82,7 +87,7 @@ export default function Faz2AltKategoriAyirma() {
         return (
           <div key={katId} className={`mb-6 p-4 border rounded-lg ${elinenMesaj ? 'border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950' : 'border-border-default bg-surface-raised'}`}>
             <h3 className="font-semibold text-primary mb-3">
-              {katId === 'egitim_rehabilitasyon' ? 'Eğitim, Öğretim ve Rehabilitasyon İstisnası (Kod 305)' : katId}
+              {katId === 'egitim_saglik_istisnalari' ? 'Eğitim, Öğretim ve Rehabilitasyon İstisnası (Kod 305)' : katId}
             </h3>
 
             {elinenMesaj && (

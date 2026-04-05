@@ -18,6 +18,17 @@ export function useDonemler(mukellefId: number | undefined) {
   })
 }
 
+export function useDonem(donemId: string | undefined) {
+  return useQuery<Donem>({
+    queryKey: ['donem', donemId],
+    queryFn: async () => {
+      const { data } = await apiClient.get<Donem>(`/donem/${donemId}`)
+      return data
+    },
+    enabled: !!donemId,
+  })
+}
+
 export function useCreateDonem(mukellefId: number | undefined) {
   const queryClient = useQueryClient()
   return useMutation<Donem, Error, CreateDonemInput>({

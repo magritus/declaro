@@ -1,5 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { useCalismalar, useCreateCalisma } from '@/api/calisma'
+import { useDonem } from '@/api/donem'
 import ThemeToggle from '@/components/ThemeToggle'
 
 function Spinner() {
@@ -23,6 +24,7 @@ export default function DonemDetay() {
   const navigate = useNavigate()
   const id = donemId ? parseInt(donemId, 10) : undefined
 
+  const { data: donem } = useDonem(donemId)
   const { data: calismalar, isLoading: calismalarLoading, error: calismalarError } = useCalismalar(id)
   const createCalisma = useCreateCalisma(id)
 
@@ -64,7 +66,7 @@ export default function DonemDetay() {
           </button>
           <span className="text-muted">/</span>
           <span className="text-primary text-sm font-medium">
-            Dönem #{id}
+            {donem ? `${donem.yil} — ${donem.ceyrek}` : `Dönem #${id}`}
           </span>
           <div className="ml-auto">
             <ThemeToggle />
@@ -82,7 +84,7 @@ export default function DonemDetay() {
             <div className="bg-surface-raised border border-border-default rounded-xl p-6">
               <div className="flex items-start justify-between gap-4">
                 <div className="space-y-1">
-                  <h1 className="text-2xl font-bold text-primary">Dönem #{id}</h1>
+                  <h1 className="text-2xl font-bold text-primary">{donem ? `${donem.yil} — ${donem.ceyrek}` : `Dönem #${id}`}</h1>
                   <p className="text-secondary text-sm">
                     Bu döneme ait tüm çalışma dosyaları aşağıda listelenmektedir.
                   </p>

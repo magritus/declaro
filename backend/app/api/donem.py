@@ -8,6 +8,16 @@ from app.schemas.donem import DonemCreate, DonemResponse
 
 router = APIRouter(prefix="/mukellef/{mukellef_id}/donem", tags=["donem"])
 
+donem_tekil_router = APIRouter(prefix="/donem", tags=["donem"])
+
+
+@donem_tekil_router.get("/{donem_id}", response_model=DonemResponse)
+async def donem_getir(donem_id: int, db: AsyncSession = Depends(get_db)):
+    donem = await db.get(Donem, donem_id)
+    if not donem:
+        raise HTTPException(status_code=404, detail="Dönem bulunamadı")
+    return donem
+
 
 @router.post("", response_model=DonemResponse, status_code=201)
 async def donem_olustur(mukellef_id: int, data: DonemCreate, db: AsyncSession = Depends(get_db)):

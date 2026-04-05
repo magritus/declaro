@@ -1,10 +1,13 @@
 import { useForm } from 'react-hook-form'
 import type { VeriGirisiAlani, HesapSonucu } from '@/api/kalem'
 
+type FormFieldValue = string | number | boolean | null
+type FormValues = Record<string, FormFieldValue>
+
 interface VeriGirisiFormProps {
   alanlar: VeriGirisiAlani[]
-  defaultValues?: Record<string, unknown>
-  onSubmit: (data: Record<string, unknown>) => void
+  defaultValues?: FormValues
+  onSubmit: (data: FormValues) => void
   isLoading?: boolean
   hesapSonucu?: HesapSonucu | null
 }
@@ -28,7 +31,7 @@ export default function VeriGirisiForm({
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<Record<string, unknown>>({
+  } = useForm<FormValues>({
     defaultValues: defaultValues ?? {},
   })
 

@@ -1,9 +1,12 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
+import { useKatalogKalemler } from '@/api/kalem'
 import ThemeToggle from '@/components/ThemeToggle'
 
+// Category IDs must match the ana_kategori values in the YAML catalog (single source of truth).
+// Display labels and sort order are kept here; active/inactive state comes from the catalog.
 const ANA_KATEGORILER = [
   { id: 'istirak_kazanci', soru: 'İştirak kazancın var mı?', grup: 'zarar_olsa_dahi',
     bilgi: 'KVK 5/1-a kapsamında tam mükellef kurumlardan elde edilen kâr payları.' },
@@ -11,8 +14,8 @@ const ANA_KATEGORILER = [
     bilgi: 'KVK 5/1-ç — Hisse senedi ihraç primlerinden elde edilen kazançlar.' },
   { id: 'yurtdisi_insaat', soru: 'Yurtdışı inşaat/teknik hizmet faaliyetin var mı?', grup: 'zarar_olsa_dahi',
     bilgi: 'KVK 5/1-h — Yurtdışında fiilen icra edilen inşaat işlerinden elde edilen kazançlar.' },
-  { id: 'egitim_rehabilitasyon', soru: 'Özel okul, kreş veya rehabilitasyon merkezi işletiyor musun?', grup: 'kazanc_varsa',
-    bilgi: 'KVK 5/1-ı — 5580 s.K. kapsamında faaliyete geçilen hesap döneminden itibaren 5 yıl istisna.', kalem_ic_kod: 'egitim_rehabilitasyon_5_1_i' },
+  { id: 'egitim_saglik_istisnalari', soru: 'Özel okul, kreş veya rehabilitasyon merkezi işletiyor musun?', grup: 'kazanc_varsa',
+    bilgi: 'KVK 5/1-ı — 5580 s.K. kapsamında faaliyete geçilen hesap döneminden itibaren 5 yıl istisna.' },
   { id: 'sponsorluk', soru: 'Sponsorluk harcaman var mı?', grup: 'kazanc_varsa',
     bilgi: 'KVK 10/1-b — Amatör spor dalları için %100, profesyonel için %50 indirim.' },
   { id: 'bagis_yardim', soru: 'Bağış ve yardım yaptın mı?', grup: 'kazanc_varsa',
@@ -29,10 +32,22 @@ export default function Faz1AnaKategoriTarama() {
   const [acikModal, setAcikModal] = useState<string | null>(null)
   const [yukleniyor, setYukleniyor] = useState(false)
 
+  const { data: katalogKalemler = [] } = useKatalogKalemler()
   const karDurumu = (faz0?.ticari_kar_zarar ?? 0) > 0
 
+  // Derive active categories from catalog — hide categories with no active kalemler
+  const aktifKatalogKategoriler = useMemo(() => {
+    return new Set(
+      katalogKalemler
+        .filter((k) => k.durum === 'aktif')
+        .map((k) => k.ana_kategori)
+    )
+  }, [katalogKalemler])
+
   const gorunurKategoriler = ANA_KATEGORILER.filter(
-    (k) => karDurumu || k.grup !== 'kazanc_varsa'
+    (k) =>
+      (karDurumu || k.grup !== 'kazanc_varsa') &&
+      (aktifKatalogKategoriler.size === 0 || aktifKatalogKategoriler.has(k.id))
   )
 
   const enAzBirEvet = Object.values(cevaplar).some(Boolean)
