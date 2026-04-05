@@ -107,11 +107,23 @@ export default function KalemSayfasi() {
       </div>
 
       {/* Header */}
-      <div className="mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">{kalem.baslik}</h1>
-        {kalem.kisa_aciklama && (
-          <p className="text-gray-500 mt-1 text-sm">{kalem.kisa_aciklama}</p>
-        )}
+      <div className="mb-6 flex items-start justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-bold text-gray-900">{kalem.baslik}</h1>
+          {kalem.kisa_aciklama && (
+            <p className="text-gray-500 mt-1 text-sm">{kalem.kisa_aciklama}</p>
+          )}
+        </div>
+        <button
+          onClick={() => window.open(`/api/calisma/${calismaId}/export/kalem/${icKod}`, '_blank')}
+          className="bg-green-600 text-white px-3 py-1.5 rounded text-sm hover:bg-green-700 flex items-center gap-1 flex-shrink-0"
+        >
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          Excel İndir
+        </button>
       </div>
 
       {/* Başarı mesajı */}
