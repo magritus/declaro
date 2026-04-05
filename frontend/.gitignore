@@ -1,4 +1,8 @@
 node_modules
 dist
+dist-user
 coverage
 e2e/reports
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
