@@ -1,0 +1,114 @@
+import { useQuery, useMutation } from '@tanstack/react-query'
+import { apiClient } from './client'
+
+export interface VeriGirisiAlani {
+  id: string
+  etiket: string
+  tip: 'para' | 'tarih' | 'secenek' | 'evet_hayir' | 'metin' | 'sayi'
+  zorunlu: boolean
+  secenekler?: string[]
+  aciklama?: string
+  varsayilan?: unknown
+}
+
+export interface KChecklistMaddesi {
+  id: string
+  soru: string
+  aciklama?: string
+}
+
+export interface BelgeMaddesi {
+  belge_no: string
+  baslik: string
+  kategori: 'zorunlu' | 'destekleyici'
+  aciklama?: string
+}
+
+export interface HesaplamaSablonu {
+  veri_girisi_alanlari: VeriGirisiAlani[]
+}
+
+export interface KalemSchema {
+  ic_kod: string
+  baslik: string
+  kisa_aciklama?: string
+  hesaplama_sablonu: HesaplamaSablonu
+  k_checklist: KChecklistMaddesi[]
+  belge_listesi: BelgeMaddesi[]
+}
+
+export interface HesapSonucu {
+  ic_kod: string
+  istisna_tutari: number
+  ara_sonuclar: Record<string, number>
+  hatalar: string[]
+  uyarilar: string[]
+  aciklama: string
+}
+
+export interface ChecklistDurum {
+  [maddeId: string]: 'uygun' | 'eksik' | 'risk'
+}
+
+export interface BelgeDurum {
+  [belgeNo: string]: {
+    durum: 'uygun' | 'eksik'
+    not: string
+  }
+}
+
+export function useKalemSchema(icKod: string | undefined) {
+  return useQuery<KalemSchema>({
+    queryKey: ['kalem-schema', icKod],
+    queryFn: async () => {
+      const { data } = await apiClient.get<KalemSchema>(`/katalog/kalemler/${icKod}`)
+      return data
+    },
+    enabled: !!icKod,
+  })
+}
+
+export function useHesapla(calismaId: string | undefined, icKod: string | undefined) {
+  return useMutation<HesapSonucu, Error, Record<string, unknown>>({
+    mutationFn: async (girdiVerileri) => {
+      const { data } = await apiClient.post<HesapSonucu>(
+        `/calisma/${calismaId}/kalem/${icKod}/hesapla`,
+        { girdi_verileri: girdiVerileri }
+      )
+      return data
+    },
+  })
+}
+
+export function useSaveVeri(calismaId: string | undefined, icKod: string | undefined) {
+  return useMutation<void, Error, Record<string, unknown>>({
+    mutationFn: async (girdiVerileri) => {
+      await apiClient.put(
+        `/calisma/${calismaId}/kalem/${icKod}/veri`,
+        { girdi_verileri: girdiVerileri }
+      )
+    },
+  })
+}
+
+export function useUpdateChecklist(calismaId: string | undefined, icKod: string | undefined) {
+  return useMutation<void, Error, ChecklistDurum>({
+    mutationFn: async (durum) => {
+      await apiClient.put(
+        `/calisma/${calismaId}/kalem/${icKod}/checklist`,
+        { durum }
+      )
+    },
+  })
+}
+
+export function useUpdateBelgeler(calismaId: string | undefined, icKod: string | undefined) {
+  return useMutation<void, Error, BelgeDurum>({
+    mutationFn: async (durum) => {
+      await apiClient.put(
+        `/calisma/${calismaId}/kalem/${icKod}/belgeler`,
+        { durum }
+      )
+    },
+  })
+}
