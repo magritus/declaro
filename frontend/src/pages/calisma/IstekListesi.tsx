@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useWizardStore } from '@/store/wizardStore'
-import { useCalisma } from '@/api/calisma'
+import { useCalisma, useYenidenAc } from '@/api/calisma'
 import { useKatalogKalemler, KalemSchema } from '@/api/kalem'
 import { apiClient } from '@/api/client'
 import ThemeToggle from '@/components/ThemeToggle'
@@ -19,8 +19,10 @@ export default function IstekListesi() {
   const [infoModal, setInfoModal] = useState<InfoState | null>(null)
   const [infoYukleniyor, setInfoYukleniyor] = useState<string | null>(null)
 
-  const { data: calisma, isLoading } = useCalisma(calismaId ? Number(calismaId) : undefined)
+  const calismaIdNum = calismaId ? Number(calismaId) : undefined
+  const { data: calisma, isLoading } = useCalisma(calismaIdNum)
   const { data: katalog = [] } = useKatalogKalemler()
+  const yenidenAc = useYenidenAc(calismaIdNum)
 
   const seciliKalemler = (calisma?.istek_listesi ?? faz2?.secilen_kalemler) ?? []
   const katalogMap = Object.fromEntries(katalog.map((k) => [k.ic_kod, k]))
@@ -98,10 +100,27 @@ export default function IstekListesi() {
         </div>
       )}
 
+      {/* Tamamlandı banner */}
+      {calisma?.tamamlandi && (
+        <div className="mt-8 flex items-center justify-between gap-3 p-4 bg-emerald-50 dark:bg-emerald-950 border border-emerald-200 dark:border-emerald-800 rounded-lg">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" />
+            <span className="text-sm font-semibold text-emerald-700 dark:text-emerald-300">Bu çalışma tamamlandı olarak işaretlendi</span>
+          </div>
+          <button
+            onClick={() => yenidenAc.mutate()}
+            disabled={yenidenAc.isPending}
+            className="text-xs font-medium text-emerald-700 dark:text-emerald-300 hover:text-amber-600 dark:hover:text-amber-400 border border-emerald-300 dark:border-emerald-700 hover:border-amber-400 px-3 py-1.5 rounded-md transition-colors flex-shrink-0"
+          >
+            {yenidenAc.isPending ? '…' : '✎ Düzenlemeye Aç'}
+          </button>
+        </div>
+      )}
+
       <button
         onClick={() => navigate(`/calisma/${calismaId}/kalem/${seciliKalemler[0]}`)}
         disabled={seciliKalemler.length === 0}
-        className="mt-8 w-full bg-accent text-white py-2 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium"
+        className="mt-4 w-full bg-accent text-white py-2 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium"
       >
         Çalışma Kâğıtlarını Aç →
       </button>
