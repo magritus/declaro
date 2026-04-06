@@ -54,17 +54,13 @@ def upgrade() -> None:
     result = bind.execute(sa.text("SELECT COUNT(*) FROM mukellef"))
     count = result.scalar()
     if count > 0:
-        import secrets
-        from passlib.context import CryptContext
-
-        pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-        hashed = pwd_context.hash(secrets.token_urlsafe(32))
+        # Use pgcrypto to hash a random password — no Python deps needed in migration
+        bind.execute(sa.text("CREATE EXTENSION IF NOT EXISTS pgcrypto"))
         bind.execute(
             sa.text(
                 "INSERT INTO \"user\" (email, hashed_password, is_active, created_at, updated_at) "
-                "VALUES ('admin@declaro.local', :hp, true, NOW(), NOW())"
-            ),
-            {"hp": hashed},
+                "VALUES ('admin@declaro.local', crypt(gen_random_uuid()::text, gen_salt('bf')), true, NOW(), NOW())"
+            )
         )
         user_id = bind.execute(
             sa.text("SELECT id FROM \"user\" WHERE email='admin@declaro.local'")
