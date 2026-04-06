@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useCalisma, useTamamla, useYenidenAc } from '@/api/calisma'
 import { usePipeline, type PipelineSonucu } from '@/api/pipeline'
 import { useKatalogKalemler } from '@/api/kalem'
@@ -79,9 +79,11 @@ function HesaplamaAdimlari({ adimlar }: HesaplamaAdimlariProps) {
 interface KalemIstisnalariProps {
   kalemler: PipelineSonucu['kalemler']
   baslikMap: Record<string, string>
+  calismaId: string
 }
 
-function KalemIstisnalari({ kalemler, baslikMap }: KalemIstisnalariProps) {
+function KalemIstisnalari({ kalemler, baslikMap, calismaId }: KalemIstisnalariProps) {
+  const navigate = useNavigate()
   const entries = Object.entries(kalemler)
   if (entries.length === 0) return null
 
@@ -96,11 +98,16 @@ function KalemIstisnalari({ kalemler, baslikMap }: KalemIstisnalariProps) {
             <th className="px-6 py-3">Kalem</th>
             <th className="px-6 py-3 text-right">İstisna Tutarı</th>
             <th className="px-6 py-3">Durum</th>
+            <th className="px-6 py-3 w-12"></th>
           </tr>
         </thead>
         <tbody className="divide-y divide-border-subtle">
           {entries.map(([ic_kod, kalem]) => (
-            <tr key={ic_kod} className="hover:bg-surface-overlay transition-colors">
+            <tr
+              key={ic_kod}
+              className="hover:bg-surface-overlay transition-colors cursor-pointer group"
+              onClick={() => navigate(`/calisma/${calismaId}/kalem/${ic_kod}`)}
+            >
               <td className="px-6 py-4">
                 <p className="font-medium text-primary">
                   {baslikMap[ic_kod] ?? ic_kod}
@@ -130,6 +137,9 @@ function KalemIstisnalari({ kalemler, baslikMap }: KalemIstisnalariProps) {
                     </span>
                   )}
                 </div>
+              </td>
+              <td className="px-4 py-4 text-right">
+                <span className="text-muted group-hover:text-accent transition-colors text-base">→</span>
               </td>
             </tr>
           ))}
@@ -305,7 +315,7 @@ export default function MaliKarOzeti() {
           )}
 
           {/* Kalem istisnaları */}
-          <KalemIstisnalari kalemler={sonuc.kalemler} baslikMap={baslikMap} />
+          <KalemIstisnalari kalemler={sonuc.kalemler} baslikMap={baslikMap} calismaId={calismaId!} />
         </div>
       )}
     </div>
