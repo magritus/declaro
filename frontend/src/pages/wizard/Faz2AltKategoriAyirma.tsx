@@ -4,6 +4,7 @@ import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
 import { useKatalogKalemler, KalemSchema } from '@/api/kalem'
 import ThemeToggle from '@/components/ThemeToggle'
+import KalemInfoModal from '@/components/KalemInfoModal'
 
 const KATEGORI_BASLIKLAR: Record<string, string> = {
   istirak_kazanc_istisnalari: 'İştirak Kazancı İstisnaları',
@@ -16,10 +17,9 @@ const KATEGORI_BASLIKLAR: Record<string, string> = {
   diger_istisnalar: 'Diğer İndirim ve İstisnalar',
 }
 
-interface InfoModal {
-  baslik: string
-  mevzuat: string[]
-  aciklama: string
+interface InfoState {
+  schema: KalemSchema
+  yiakv: string
 }
 
 export default function Faz2AltKategoriAyirma() {
@@ -28,7 +28,7 @@ export default function Faz2AltKategoriAyirma() {
   const { faz1, setFaz2 } = useWizardStore()
   const [seciliKalemler, setSeciliKalemler] = useState<Set<string>>(new Set())
   const [yukleniyor, setYukleniyor] = useState(false)
-  const [infoModal, setInfoModal] = useState<InfoModal | null>(null)
+  const [infoModal, setInfoModal] = useState<InfoState | null>(null)
   const [infoYukleniyor, setInfoYukleniyor] = useState<string | null>(null)
 
   const { data: katalogKalemler = [], isLoading } = useKatalogKalemler()
@@ -43,9 +43,7 @@ export default function Faz2AltKategoriAyirma() {
       const kalemler = katalogKalemler.filter(
         (k) => k.ana_kategori === kat && k.durum === 'aktif'
       )
-      if (kalemler.length > 0) {
-        result[kat] = kalemler
-      }
+      if (kalemler.length > 0) result[kat] = kalemler
     }
     return result
   }, [katalogKalemler, seciliKategoriler])
@@ -59,24 +57,19 @@ export default function Faz2AltKategoriAyirma() {
     })
   }
 
-  const acikInfo = async (icKod: string, e: React.MouseEvent) => {
+  const acikInfo = async (icKod: string, yiakv: string, e: React.MouseEvent) => {
     e.stopPropagation()
     e.preventDefault()
     setInfoYukleniyor(icKod)
     try {
       const { data } = await apiClient.get<KalemSchema>(`/katalog/kalemler/${icKod}`)
-      setInfoModal({
-        baslik: data.baslik,
-        mevzuat: data.mevzuat_dayanagi ?? [],
-        aciklama: data.wizard_agaci?.info_modal ?? '',
-      })
+      setInfoModal({ schema: data, yiakv })
     } finally {
       setInfoYukleniyor(null)
     }
   }
 
   const seciliArray = Array.from(seciliKalemler)
-  const enAzBirSecili = seciliArray.length > 0
 
   const devamEt = async () => {
     setYukleniyor(true)
@@ -93,9 +86,7 @@ export default function Faz2AltKategoriAyirma() {
   }
 
   if (isLoading) {
-    return (
-      <div className="max-w-2xl mx-auto p-8 text-center text-muted">Katalog yükleniyor...</div>
-    )
+    return <div className="max-w-2xl mx-auto p-8 text-center text-muted">Katalog yükleniyor...</div>
   }
 
   return (
@@ -122,6 +113,9 @@ export default function Faz2AltKategoriAyirma() {
           <div className="space-y-2">
             {kalemler.map((kalem) => {
               const secili = seciliKalemler.has(kalem.ic_kod)
+              const kodlar = kalem.beyanname_kodlari
+                ? [...new Set(kalem.beyanname_kodlari.map((b: { kod: number }) => b.kod))].join('/')
+                : ''
               return (
                 <label
                   key={kalem.ic_kod}
@@ -140,20 +134,11 @@ export default function Faz2AltKategoriAyirma() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className="text-sm font-medium text-primary">{kalem.baslik}</span>
-                      <span className="text-xs text-muted font-mono">
-                        {kalem.beyanname_kodlari && [...new Set(kalem.beyanname_kodlari.map((b: { kod: number }) => b.kod))].join('/')}
-                      </span>
-                      <button
-                        type="button"
-                        onClick={(e) => acikInfo(kalem.ic_kod, e)}
-                        disabled={infoYukleniyor === kalem.ic_kod}
-                        className="ml-auto text-muted hover:text-accent transition-colors flex-shrink-0 w-5 h-5 rounded-full border border-current flex items-center justify-center text-xs font-bold leading-none"
-                        title="Mevzuat ve açıklama"
-                      >
-                        {infoYukleniyor === kalem.ic_kod ? '…' : 'i'}
-                      </button>
+                      {kodlar && (
+                        <span className="text-xs text-muted font-mono">{kodlar}</span>
+                      )}
                     </div>
-                    <div className="flex gap-2 mt-1">
+                    <div className="flex items-center gap-2 mt-1.5">
                       <span className={`text-xs px-1.5 py-0.5 rounded font-medium ${
                         kalem.yiakv_etkisi === 'dusulur'
                           ? 'bg-green-100 dark:bg-green-950 text-green-700 dark:text-green-300'
@@ -163,6 +148,17 @@ export default function Faz2AltKategoriAyirma() {
                       }`}>
                         YİAKV: {kalem.yiakv_etkisi === 'dusulur' ? 'Düşülür' : kalem.yiakv_etkisi === 'dusulmez' ? 'Düşülemez' : 'Tartışmalı'}
                       </span>
+                      <button
+                        type="button"
+                        onClick={(e) => acikInfo(kalem.ic_kod, kalem.yiakv_etkisi, e)}
+                        disabled={infoYukleniyor === kalem.ic_kod}
+                        className="flex items-center gap-1 text-xs text-muted hover:text-accent transition-colors px-1.5 py-0.5 rounded border border-border-default hover:border-accent"
+                        title="Mevzuat ve uygulama rehberi"
+                      >
+                        {infoYukleniyor === kalem.ic_kod
+                          ? <span className="inline-block w-3 h-3 border border-current border-t-transparent rounded-full animate-spin" />
+                          : 'ℹ Detay'}
+                      </button>
                     </div>
                   </div>
                 </label>
@@ -178,7 +174,7 @@ export default function Faz2AltKategoriAyirma() {
         </div>
       )}
 
-      {enAzBirSecili && (
+      {seciliArray.length > 0 && (
         <div className="mb-4 p-3 bg-surface-overlay border border-border-default rounded-lg text-sm text-secondary">
           <strong className="text-primary">{seciliArray.length} kalem</strong> seçildi → istek listesine eklenecek
         </div>
@@ -186,56 +182,18 @@ export default function Faz2AltKategoriAyirma() {
 
       <button
         onClick={devamEt}
-        disabled={!enAzBirSecili || yukleniyor}
+        disabled={seciliArray.length === 0 || yukleniyor}
         className="w-full bg-accent text-white py-2.5 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium text-sm transition-colors"
       >
         {yukleniyor ? 'Kaydediliyor...' : `${seciliArray.length} Kalem ile Devam Et →`}
       </button>
 
-      {/* Info Modal */}
       {infoModal && (
-        <div
-          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
-          onClick={() => setInfoModal(null)}
-        >
-          <div
-            className="bg-surface-raised border border-border-default rounded-xl p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto shadow-xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-start justify-between gap-3 mb-4">
-              <h3 className="font-bold text-lg text-primary leading-snug">{infoModal.baslik}</h3>
-              <button
-                onClick={() => setInfoModal(null)}
-                className="text-muted hover:text-primary flex-shrink-0 text-xl leading-none"
-              >
-                ×
-              </button>
-            </div>
-
-            {infoModal.mevzuat.length > 0 && (
-              <div className="mb-4">
-                <h4 className="text-xs font-semibold text-muted uppercase tracking-wider mb-2">Mevzuat Dayanağı</h4>
-                <ul className="space-y-1">
-                  {infoModal.mevzuat.map((m, i) => (
-                    <li key={i} className="text-sm text-secondary flex gap-2">
-                      <span className="text-accent mt-0.5">·</span>
-                      <span>{m}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {infoModal.aciklama && (
-              <div>
-                <h4 className="text-xs font-semibold text-muted uppercase tracking-wider mb-2">Açıklama</h4>
-                <div className="text-sm text-secondary whitespace-pre-wrap leading-relaxed">
-                  {infoModal.aciklama}
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
+        <KalemInfoModal
+          kalem={infoModal.schema}
+          yiakv={infoModal.yiakv}
+          onClose={() => setInfoModal(null)}
+        />
       )}
     </div>
   )

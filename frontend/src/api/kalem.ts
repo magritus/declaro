@@ -43,6 +43,7 @@ export interface KalemSchema {
   ic_kod: string
   baslik: string
   kisa_aciklama?: string
+  beyanname_kodlari?: { donem: number; kod: number }[]
   mevzuat_dayanagi?: string[]
   wizard_agaci?: {
     tetikleyici_soru?: string
