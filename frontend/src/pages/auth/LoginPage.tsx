@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '@/hooks/useAuth'
+import logo from '@/assets/declero_logo.png'
 
 export default function LoginPage() {
   const navigate = useNavigate()
@@ -35,8 +36,8 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-surface-base px-4">
       <div className="w-full max-w-sm">
         <div className="bg-surface-raised border border-border-default rounded-2xl shadow-xl p-8 space-y-6">
-          <div className="text-center space-y-1">
-            <h1 className="text-2xl font-bold text-primary">Declaro</h1>
+          <div className="text-center space-y-3">
+            <img src={logo} alt="Declaro" className="h-12 mx-auto" />
             <p className="text-sm text-muted">Hesabınıza giriş yapın</p>
           </div>
 
