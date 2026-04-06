@@ -1,25 +1,11 @@
 import { useNavigate } from 'react-router-dom'
-import ThemeToggle from '@/components/ThemeToggle'
 import declaroLogo from '@/assets/declero_logo.png'
 
 export default function Home() {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen bg-surface text-primary flex flex-col">
-      {/* Header */}
-      <header className="border-b border-border-default px-8 py-5">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <img src={declaroLogo} alt="Declaro" className="h-8 w-auto" />
-          <div className="flex items-center gap-3">
-            <span className="text-xs font-medium text-muted uppercase tracking-widest">
-              Kurumlar Vergisi Yardımcısı
-            </span>
-            <ThemeToggle />
-          </div>
-        </div>
-      </header>
-
+    <div className="min-h-screen flex flex-col">
       {/* Hero */}
       <main className="flex-1 flex flex-col items-center justify-center px-8 py-24">
         <div className="max-w-2xl text-center space-y-8">

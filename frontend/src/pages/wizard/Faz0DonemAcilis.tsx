@@ -5,7 +5,6 @@ import { z } from 'zod'
 import { useNavigate, useParams } from 'react-router-dom'
 import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
-import ThemeToggle from '@/components/ThemeToggle'
 
 const faz0Schema = z.object({
   ticari_kar_zarar: z.number({ invalid_type_error: 'Sayı giriniz' }),
@@ -41,12 +40,9 @@ export default function Faz0DonemAcilis() {
 
   return (
     <div className="max-w-2xl mx-auto p-8">
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-primary">Dönem Açılışı</h1>
-          <p className="text-muted mt-1">Temel finansal bilgileri girin</p>
-        </div>
-        <ThemeToggle />
+      <div className="mb-8">
+        <h1 className="text-2xl font-bold text-primary">Dönem Açılışı</h1>
+        <p className="text-muted mt-1">Temel finansal bilgileri girin</p>
       </div>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">

@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import Layout from '@/components/Layout'
 import Faz0DonemAcilis from '@/pages/wizard/Faz0DonemAcilis'
 import Faz1AnaKategoriTarama from '@/pages/wizard/Faz1AnaKategoriTarama'
 import Faz2AltKategoriAyirma from '@/pages/wizard/Faz2AltKategoriAyirma'
@@ -12,7 +13,7 @@ import DonemDetay from '@/pages/donem/DonemDetay'
 
 function App() {
   return (
-    <div className="min-h-screen bg-surface text-primary transition-colors duration-150">
+    <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mukellef" element={<MukellefListesi />} />
@@ -25,7 +26,7 @@ function App() {
         <Route path="/calisma/:calismaId/ozet" element={<MaliKarOzeti />} />
         <Route path="/calisma/:calismaId/kalem/:icKod" element={<KalemSayfasi />} />
       </Routes>
-    </div>
+    </Layout>
   )
 }
 

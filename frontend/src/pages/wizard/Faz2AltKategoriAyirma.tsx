@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
 import { useKatalogKalemler, KalemSchema } from '@/api/kalem'
-import ThemeToggle from '@/components/ThemeToggle'
 import KalemInfoModal from '@/components/KalemInfoModal'
 
 const KATEGORI_BASLIKLAR: Record<string, string> = {
@@ -91,14 +90,11 @@ export default function Faz2AltKategoriAyirma() {
 
   return (
     <div className="max-w-3xl mx-auto p-8">
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-primary">Kalem Seçimi</h1>
-          <p className="text-muted mt-1 text-sm">
-            Uyguladığınız istisna kalemlerini seçin. Seçilen kalemler istek listenize eklenir.
-          </p>
-        </div>
-        <ThemeToggle />
+      <div className="mb-8">
+        <h1 className="text-2xl font-bold text-primary">Kalem Seçimi</h1>
+        <p className="text-muted mt-1 text-sm">
+          Uyguladığınız istisna kalemlerini seçin. Seçilen kalemler istek listenize eklenir.
+        </p>
       </div>
 
       {Object.entries(kalemlerByKategori).map(([katId, kalemler]) => (

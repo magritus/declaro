@@ -5,7 +5,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { useMukellefler, useCreateMukellef, useUpdateMukellef, useDeleteMukellef } from '@/api/mukellef'
 import type { Mukellef } from '@/types'
-import ThemeToggle from '@/components/ThemeToggle'
 
 const KV_ORANLARI = [
   { value: 0.25, label: '%25 — Standart KV oranı (KVK Md. 32)' },
@@ -40,27 +39,6 @@ function ErrorBox({ message }: { message: string }) {
   return (
     <div className="bg-red-950 border border-red-800 text-red-300 rounded-lg px-4 py-3 text-sm">
       {message}
-    </div>
-  )
-}
-
-function KvOraniSelect({ register, name, errors }: { register: ReturnType<typeof useForm>['register']; name: string; errors: Record<string, { message?: string } | undefined> }) {
-  return (
-    <div>
-      <label className="block text-sm font-medium text-secondary mb-1.5">
-        KV Oranı <span className="text-red-400">*</span>
-      </label>
-      <select
-        {...register(name, { valueAsNumber: true })}
-        className="w-full bg-surface-overlay border border-border-default focus:border-accent focus:ring-1 focus:ring-accent rounded-lg px-3.5 py-2.5 text-primary text-sm outline-none transition-colors"
-      >
-        {KV_ORANLARI.map((o) => (
-          <option key={o.value} value={o.value}>{o.label}</option>
-        ))}
-      </select>
-      {errors[name] && (
-        <p className="mt-1 text-xs text-red-400">{errors[name]?.message as string}</p>
-      )}
     </div>
   )
 }
@@ -117,25 +95,7 @@ export default function MukellefListesi() {
   }
 
   return (
-    <div className="min-h-screen bg-surface text-primary">
-      <header className="border-b border-border-default px-8 py-5">
-        <div className="max-w-5xl mx-auto flex items-center gap-3">
-          <button
-            onClick={() => navigate('/')}
-            className="text-muted hover:text-secondary transition-colors duration-150"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <span className="text-muted">/</span>
-          <span className="text-primary font-medium">Mükellefler</span>
-          <div className="ml-auto">
-            <ThemeToggle />
-          </div>
-        </div>
-      </header>
-
+    <div className="min-h-screen">
       <main className="max-w-5xl mx-auto px-8 py-10 space-y-6">
         <div className="flex items-center justify-between">
           <div>

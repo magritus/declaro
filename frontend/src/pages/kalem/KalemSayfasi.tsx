@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import VeriGirisiForm from '@/components/VeriGirisiForm'
-import ThemeToggle from '@/components/ThemeToggle'
 import ChecklistTab from '@/components/kalem/ChecklistTab'
 import BelgelerTab from '@/components/kalem/BelgelerTab'
 import {
@@ -72,7 +71,6 @@ function formatCurrency(value: number): string {
 
 export default function KalemSayfasi() {
   const { calismaId, icKod } = useParams<{ calismaId: string; icKod: string }>()
-  const navigate = useNavigate()
 
   const [activeTab, setActiveTab] = useState<Tab>('veri')
   const [hesapSonucu, setHesapSonucu] = useState<HesapSonucu | null>(null)
@@ -163,18 +161,6 @@ export default function KalemSayfasi() {
 
   return (
     <div className="max-w-4xl mx-auto p-8">
-      {/* Breadcrumb */}
-      <div className="flex items-center gap-2 text-sm text-muted mb-4">
-        <button
-          onClick={() => navigate(`/calisma/${calismaId}/istek-listesi`)}
-          className="hover:text-accent transition-colors"
-        >
-          İstek Listesi
-        </button>
-        <span>/</span>
-        <span className="text-secondary">{kalem.baslik}</span>
-      </div>
-
       {/* Header */}
       <div className="mb-6 flex items-start justify-between gap-4">
         <div>
@@ -184,7 +170,6 @@ export default function KalemSayfasi() {
           )}
         </div>
         <div className="flex items-center gap-2 flex-shrink-0">
-          <ThemeToggle />
           <button
             onClick={() => window.open(`/api/calisma/${calismaId}/export/kalem/${icKod}`, '_blank')}
             className="bg-green-600 text-white px-3 py-1.5 rounded text-sm hover:bg-green-700 flex items-center gap-1"

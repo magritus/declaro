@@ -6,7 +6,6 @@ import { z } from 'zod'
 import { useMukellef } from '@/api/mukellef'
 import { useDonemler, useCreateDonem } from '@/api/donem'
 import type { Donem } from '@/types'
-import ThemeToggle from '@/components/ThemeToggle'
 
 const CEYREK_OPTIONS: Donem['ceyrek'][] = ['Q1-GV', 'Q2-GV', 'Q3-GV', 'Q4-GV', 'YILLIK']
 const CEYREK_LABELS: Record<Donem['ceyrek'], string> = {
@@ -76,34 +75,7 @@ export default function MukellefDetay() {
   const isLoading = mukellefLoading || donemlerLoading
 
   return (
-    <div className="min-h-screen bg-surface text-primary">
-      {/* Header */}
-      <header className="border-b border-border-default px-8 py-5">
-        <div className="max-w-5xl mx-auto flex items-center gap-3">
-          <button
-            onClick={() => navigate('/mukellef')}
-            className="text-muted hover:text-secondary transition-colors duration-150"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            onClick={() => navigate('/mukellef')}
-            className="text-muted hover:text-secondary text-sm transition-colors"
-          >
-            Mükellefler
-          </button>
-          <span className="text-muted">/</span>
-          <span className="text-primary text-sm font-medium truncate max-w-xs">
-            {mukellef?.unvan ?? '...'}
-          </span>
-          <div className="ml-auto">
-            <ThemeToggle />
-          </div>
-        </div>
-      </header>
-
+    <div className="min-h-screen">
       <main className="max-w-5xl mx-auto px-8 py-10 space-y-8">
         {mukellefError && <ErrorBox message="Mükellef bilgileri yüklenirken hata oluştu." />}
         {donemlerError && <ErrorBox message="Dönemler yüklenirken hata oluştu." />}

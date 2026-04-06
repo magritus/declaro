@@ -4,7 +4,6 @@ import { useWizardStore } from '@/store/wizardStore'
 import { useCalisma, useYenidenAc } from '@/api/calisma'
 import { useKatalogKalemler, KalemSchema } from '@/api/kalem'
 import { apiClient } from '@/api/client'
-import ThemeToggle from '@/components/ThemeToggle'
 import KalemInfoModal from '@/components/KalemInfoModal'
 
 interface InfoState {
@@ -41,12 +40,9 @@ export default function IstekListesi() {
 
   return (
     <div className="max-w-2xl mx-auto p-8">
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-primary">İstek Listesi</h1>
-          <p className="text-muted mt-1">Bu dönemde çalışacağınız kalemler</p>
-        </div>
-        <ThemeToggle />
+      <div className="mb-8">
+        <h1 className="text-2xl font-bold text-primary">İstek Listesi</h1>
+        <p className="text-muted mt-1">Bu dönemde çalışacağınız kalemler</p>
       </div>
 
       {isLoading ? (

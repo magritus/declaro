@@ -3,7 +3,6 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
 import { useKatalogKalemler } from '@/api/kalem'
-import ThemeToggle from '@/components/ThemeToggle'
 import { renderMarkdown } from '@/lib/renderMarkdown'
 
 interface KategoriInfo {
@@ -356,16 +355,13 @@ export default function Faz1AnaKategoriTarama() {
 
   return (
     <div className="max-w-2xl mx-auto p-8">
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-primary">Kategori Tarama</h1>
-          {!karDurumu && (
-            <div className="mt-2 p-3 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-md text-amber-800 dark:text-amber-300 text-sm">
-              ⚠️ Zarar nedeniyle "kazanç varsa indirilecek" grup otomatik atlandı
-            </div>
-          )}
-        </div>
-        <ThemeToggle />
+      <div className="mb-8">
+        <h1 className="text-2xl font-bold text-primary">Kategori Tarama</h1>
+        {!karDurumu && (
+          <div className="mt-2 p-3 bg-amber-50 dark:bg-amber-950 border border-amber-200 dark:border-amber-800 rounded-md text-amber-800 dark:text-amber-300 text-sm">
+            ⚠️ Zarar nedeniyle "kazanç varsa indirilecek" grup otomatik atlandı
+          </div>
+        )}
       </div>
 
       <div className="space-y-4">

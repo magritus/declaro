@@ -1,8 +1,7 @@
-import { useNavigate, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useCalisma, useTamamla, useYenidenAc } from '@/api/calisma'
 import { usePipeline, type PipelineSonucu } from '@/api/pipeline'
 import { useKatalogKalemler } from '@/api/kalem'
-import ThemeToggle from '@/components/ThemeToggle'
 
 function formatTRY(value: number): string {
   return new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' }).format(value)
@@ -142,7 +141,6 @@ function KalemIstisnalari({ kalemler, baslikMap }: KalemIstisnalariProps) {
 
 export default function MaliKarOzeti() {
   const { calismaId } = useParams<{ calismaId: string }>()
-  const navigate = useNavigate()
   const calismaIdNum = calismaId ? Number(calismaId) : undefined
   const { data: calisma } = useCalisma(calismaIdNum)
   const pipeline = usePipeline(calismaId)
@@ -160,16 +158,6 @@ export default function MaliKarOzeti() {
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <div>
-          <nav className="flex items-center gap-2 text-sm text-muted mb-2">
-            <button
-              onClick={() => navigate('/')}
-              className="hover:text-accent transition-colors"
-            >
-              Çalışmalar
-            </button>
-            <span>›</span>
-            <span className="text-primary font-medium">Mali Kâr Özeti</span>
-          </nav>
           <h1 className="text-2xl font-bold text-primary">Mali Kâr Özeti</h1>
           {calisma && (
             <p className="text-muted mt-1 text-sm">
@@ -183,7 +171,6 @@ export default function MaliKarOzeti() {
           )}
         </div>
         <div className="flex items-center gap-3 flex-wrap">
-          <ThemeToggle />
           <button
             onClick={() => window.open(`/api/calisma/${calismaId}/export/ozet`, '_blank')}
             className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 font-medium transition-colors shadow-sm text-sm"

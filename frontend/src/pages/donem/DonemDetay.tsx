@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useCalismalar, useCreateCalisma, useDeleteCalisma } from '@/api/calisma'
 import { useDonem } from '@/api/donem'
-import ThemeToggle from '@/components/ThemeToggle'
 
 function Spinner() {
   return (
@@ -42,41 +41,7 @@ export default function DonemDetay() {
   const isLoading = calismalarLoading
 
   return (
-    <div className="min-h-screen bg-surface text-primary">
-      {/* Header */}
-      <header className="border-b border-border-default px-8 py-5">
-        <div className="max-w-5xl mx-auto flex items-center gap-3">
-          <button
-            onClick={() => navigate(-1)}
-            className="text-muted hover:text-secondary transition-colors duration-150"
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            onClick={() => navigate('/mukellef')}
-            className="text-muted hover:text-secondary text-sm transition-colors"
-          >
-            Mükellefler
-          </button>
-          <span className="text-muted">/</span>
-          <button
-            onClick={() => navigate(-1)}
-            className="text-muted hover:text-secondary text-sm transition-colors"
-          >
-            Mükellef
-          </button>
-          <span className="text-muted">/</span>
-          <span className="text-primary text-sm font-medium">
-            {donem ? `${donem.yil} — ${donem.ceyrek}` : `Dönem #${id}`}
-          </span>
-          <div className="ml-auto">
-            <ThemeToggle />
-          </div>
-        </div>
-      </header>
-
+    <div className="min-h-screen">
       <main className="max-w-5xl mx-auto px-8 py-10 space-y-8">
         {calismalarError && <ErrorBox message="Çalışmalar yüklenirken hata oluştu." />}
         {isLoading && <Spinner />}
