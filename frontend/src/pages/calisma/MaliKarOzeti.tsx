@@ -97,8 +97,8 @@ function KalemIstisnalari({ kalemler, baslikMap, calismaId }: KalemIstisnalariPr
           <tr className="bg-surface-overlay text-left text-xs font-semibold text-muted uppercase tracking-wide">
             <th className="px-6 py-3">Kalem</th>
             <th className="px-6 py-3 text-right">İstisna Tutarı</th>
+            <th className="px-6 py-3 w-16"></th>
             <th className="px-6 py-3">Durum</th>
-            <th className="px-6 py-3 w-12"></th>
           </tr>
         </thead>
         <tbody className="divide-y divide-border-subtle">
@@ -119,6 +119,13 @@ function KalemIstisnalari({ kalemler, baslikMap, calismaId }: KalemIstisnalariPr
               <td className="px-6 py-4 text-right font-medium text-primary">
                 {formatTRY(kalem.istisna_tutari)}
               </td>
+              <td className="px-4 py-4 text-center">
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-lg text-muted group-hover:text-accent group-hover:bg-accent/10 transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </span>
+              </td>
               <td className="px-6 py-4">
                 <div className="flex flex-wrap gap-1">
                   {kalem.hatalar.length > 0 && (
@@ -137,9 +144,6 @@ function KalemIstisnalari({ kalemler, baslikMap, calismaId }: KalemIstisnalariPr
                     </span>
                   )}
                 </div>
-              </td>
-              <td className="px-4 py-4 text-right">
-                <span className="text-muted group-hover:text-accent transition-colors text-base">→</span>
               </td>
             </tr>
           ))}
