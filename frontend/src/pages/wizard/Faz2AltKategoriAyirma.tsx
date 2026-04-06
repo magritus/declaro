@@ -141,7 +141,7 @@ export default function Faz2AltKategoriAyirma() {
                     <div className="flex items-center gap-2 flex-wrap">
                       <span className="text-sm font-medium text-primary">{kalem.baslik}</span>
                       <span className="text-xs text-muted font-mono">
-                        {kalem.beyanname_kodlari?.map((b: { kod: number }) => b.kod).join('/')}
+                        {kalem.beyanname_kodlari && [...new Set(kalem.beyanname_kodlari.map((b: { kod: number }) => b.kod))].join('/')}
                       </span>
                       <button
                         type="button"

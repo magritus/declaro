@@ -39,7 +39,9 @@ export default function IstekListesi() {
           {seciliKalemler.map((ic_kod, idx) => {
             const kalem = katalogMap[ic_kod]
             const baslik = kalem?.baslik ?? ic_kod
-            const kodlar = kalem?.beyanname_kodlari?.map((b) => b.kod).join('/') ?? ''
+            const kodlar = kalem?.beyanname_kodlari
+              ? [...new Set(kalem.beyanname_kodlari.map((b) => b.kod))].join('/')
+              : ''
             return (
               <div
                 key={ic_kod}
