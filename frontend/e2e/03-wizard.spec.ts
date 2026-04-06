@@ -120,12 +120,52 @@ test.describe('Wizard akışı', () => {
       expect(itemCount).toBeGreaterThanOrEqual(0) // relaxed: just verify page rendered
     }
 
-    // Both action buttons should be present
+    // Action buttons should be present
     await expect(
       page.getByRole('button', { name: /Çalışma Kâğıtlarını Aç/i }),
     ).toBeVisible({ timeout: 5000 })
     await expect(
       page.getByRole('button', { name: /Mali Kâr Özeti/i }),
     ).toBeVisible({ timeout: 5000 })
+  })
+
+  test('istek listesi: faz geri navigasyon butonları görünür', async ({ page }) => {
+    await page.goto(`/calisma/${CALISMA_ID}/istek-listesi`)
+
+    await expect(
+      page.getByRole('heading', { name: 'İstek Listesi' }),
+    ).toBeVisible({ timeout: 10000 })
+
+    // Faz 1 and Faz 2 back-navigation buttons should be present
+    await expect(
+      page.getByRole('button', { name: /← Faz 1/i }),
+    ).toBeVisible({ timeout: 5000 })
+    await expect(
+      page.getByRole('button', { name: /← Faz 2/i }),
+    ).toBeVisible({ timeout: 5000 })
+  })
+
+  test('istek listesi: faz 2 butonuna tıklayınca wizard faz2 açılır', async ({ page }) => {
+    await page.goto(`/calisma/${CALISMA_ID}/istek-listesi`)
+
+    await expect(
+      page.getByRole('heading', { name: 'İstek Listesi' }),
+    ).toBeVisible({ timeout: 10000 })
+
+    await page.getByRole('button', { name: /← Faz 2/i }).click()
+    await page.waitForURL(/\/wizard\/faz2/, { timeout: 10000 })
+    await expect(page).toHaveURL(new RegExp(`/calisma/${CALISMA_ID}/wizard/faz2`))
+  })
+
+  test('istek listesi: excel indir linki görünür', async ({ page }) => {
+    await page.goto(`/calisma/${CALISMA_ID}/istek-listesi`)
+
+    await expect(
+      page.getByRole('heading', { name: 'İstek Listesi' }),
+    ).toBeVisible({ timeout: 10000 })
+
+    // Excel download link
+    const excelLink = page.getByText(/İstek Listesi Excel İndir/i)
+    await expect(excelLink).toBeVisible({ timeout: 5000 })
   })
 })
