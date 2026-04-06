@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import VeriGirisiForm from '@/components/VeriGirisiForm'
 import ThemeToggle from '@/components/ThemeToggle'
@@ -82,6 +82,15 @@ export default function KalemSayfasi() {
 
   const { data: kalem, isLoading: schemaYukleniyor, error: schemaHata } = useKalemSchema(icKod)
   const { data: kalemVeri } = useKalemVeri(calismaId, icKod)
+
+  useEffect(() => {
+    if (kalemVeri?.k_checklist_durumu) {
+      setChecklistDurum(kalemVeri.k_checklist_durumu)
+    }
+    if (kalemVeri?.belge_durumu) {
+      setBelgeDurum(kalemVeri.belge_durumu)
+    }
+  }, [kalemVeri])
   const hesaplaMutation = useHesapla(calismaId, icKod)
   const saveVeriMutation = useSaveVeri(calismaId, icKod)
   const updateChecklistMutation = useUpdateChecklist(calismaId, icKod)

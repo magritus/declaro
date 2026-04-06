@@ -34,11 +34,13 @@ async def kalem_veri_getir(
     )
     kv = result.scalar_one_or_none()
     if not kv:
-        return {"girdi_verileri": None, "istisna_tutari": None, "ara_sonuclar": None}
+        return {"girdi_verileri": None, "istisna_tutari": None, "ara_sonuclar": None, "k_checklist_durumu": None, "belge_durumu": None}
     return {
         "girdi_verileri": kv.girdi_verileri,
         "istisna_tutari": float(kv.istisna_tutari) if kv.istisna_tutari is not None else None,
         "ara_sonuclar": {k: float(v) for k, v in (kv.hesap_sonucu or {}).items()},
+        "k_checklist_durumu": kv.k_checklist_durumu,
+        "belge_durumu": kv.belge_durumu,
     }
 
 

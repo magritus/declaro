@@ -42,7 +42,7 @@ export default function BelgelerTab({
                 <th className="text-left px-4 py-3 text-xs font-semibold text-muted uppercase tracking-wide">
                   Durum
                 </th>
-                <th className="text-left px-4 py-3 text-xs font-semibold text-muted uppercase tracking-wide">
+                <th className="text-left px-4 py-3 text-xs font-semibold text-muted uppercase tracking-wide w-64">
                   Not
                 </th>
               </tr>
@@ -85,10 +85,10 @@ export default function BelgelerTab({
                     </select>
                   </td>
                   <td className="px-4 py-3">
-                    <input
-                      type="text"
+                    <textarea
                       placeholder="Not ekle..."
-                      className="w-full px-2 py-1 border border-border-default rounded text-xs bg-surface-raised text-primary placeholder-muted focus:outline-none focus:ring-1 focus:ring-accent"
+                      rows={3}
+                      className="w-full px-2 py-1.5 border border-border-default rounded text-xs bg-surface-raised text-primary placeholder-muted focus:outline-none focus:ring-1 focus:ring-accent resize-y min-h-[60px]"
                       value={durum[String(belge.no)]?.not ?? ''}
                       onChange={(e) => onChange(String(belge.no), 'not', e.target.value)}
                     />

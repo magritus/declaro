@@ -89,6 +89,8 @@ export interface KalemVeriResponse {
   girdi_verileri: Record<string, unknown> | null
   istisna_tutari: number | null
   ara_sonuclar: Record<string, number> | null
+  k_checklist_durumu: ChecklistDurum | null
+  belge_durumu: BelgeDurum | null
 }
 
 export function useKalemVeri(calismaId: string | undefined, icKod: string | undefined) {

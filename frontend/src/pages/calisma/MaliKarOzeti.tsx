@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { useCalisma, useTamamla, useYenidenAc } from '@/api/calisma'
 import { usePipeline, type PipelineSonucu } from '@/api/pipeline'
+import { useKatalogKalemler } from '@/api/kalem'
 import ThemeToggle from '@/components/ThemeToggle'
 
 function formatTRY(value: number): string {
@@ -78,9 +79,10 @@ function HesaplamaAdimlari({ adimlar }: HesaplamaAdimlariProps) {
 
 interface KalemIstisnalariProps {
   kalemler: PipelineSonucu['kalemler']
+  baslikMap: Record<string, string>
 }
 
-function KalemIstisnalari({ kalemler }: KalemIstisnalariProps) {
+function KalemIstisnalari({ kalemler, baslikMap }: KalemIstisnalariProps) {
   const entries = Object.entries(kalemler)
   if (entries.length === 0) return null
 
@@ -92,8 +94,7 @@ function KalemIstisnalari({ kalemler }: KalemIstisnalariProps) {
       <table className="w-full text-sm">
         <thead>
           <tr className="bg-surface-overlay text-left text-xs font-semibold text-muted uppercase tracking-wide">
-            <th className="px-6 py-3">İç Kod</th>
-            <th className="px-6 py-3">Açıklama</th>
+            <th className="px-6 py-3">Kalem</th>
             <th className="px-6 py-3 text-right">İstisna Tutarı</th>
             <th className="px-6 py-3">Durum</th>
           </tr>
@@ -101,8 +102,14 @@ function KalemIstisnalari({ kalemler }: KalemIstisnalariProps) {
         <tbody className="divide-y divide-border-subtle">
           {entries.map(([ic_kod, kalem]) => (
             <tr key={ic_kod} className="hover:bg-surface-overlay transition-colors">
-              <td className="px-6 py-4 font-mono text-xs text-muted">{ic_kod}</td>
-              <td className="px-6 py-4 text-secondary">{kalem.aciklama || '—'}</td>
+              <td className="px-6 py-4">
+                <p className="font-medium text-primary">
+                  {baslikMap[ic_kod] ?? ic_kod}
+                </p>
+                {kalem.aciklama && (
+                  <p className="text-xs text-muted mt-0.5">{kalem.aciklama}</p>
+                )}
+              </td>
               <td className="px-6 py-4 text-right font-medium text-primary">
                 {formatTRY(kalem.istisna_tutari)}
               </td>
@@ -141,6 +148,10 @@ export default function MaliKarOzeti() {
   const pipeline = usePipeline(calismaId)
   const tamamla = useTamamla(calismaIdNum)
   const yenidenAc = useYenidenAc(calismaIdNum)
+  const { data: katalogKalemler } = useKatalogKalemler()
+  const baslikMap: Record<string, string> = Object.fromEntries(
+    (katalogKalemler ?? []).map((k) => [k.ic_kod, k.baslik])
+  )
 
   const sonuc = pipeline.data
 
@@ -307,7 +318,7 @@ export default function MaliKarOzeti() {
           )}
 
           {/* Kalem istisnaları */}
-          <KalemIstisnalari kalemler={sonuc.kalemler} />
+          <KalemIstisnalari kalemler={sonuc.kalemler} baslikMap={baslikMap} />
         </div>
       )}
     </div>
