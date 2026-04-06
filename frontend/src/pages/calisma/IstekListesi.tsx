@@ -1,20 +1,20 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { useWizardStore } from '@/store/wizardStore'
 import { useCalisma } from '@/api/calisma'
+import { useKatalogKalemler } from '@/api/kalem'
 import ThemeToggle from '@/components/ThemeToggle'
-
-const KALEM_ADLARI: Record<string, { baslik: string; kod: number }> = {
-  egitim_rehabilitasyon_5_1_i: { baslik: 'Eğitim, Öğretim ve Rehabilitasyon Kazanç İstisnası', kod: 305 },
-}
 
 export default function IstekListesi() {
   const { calismaId } = useParams<{ calismaId: string }>()
   const navigate = useNavigate()
   const faz2 = useWizardStore((s) => s.faz2)
 
-  // Önce backend'den oku (direkt URL erişiminde store boş olabilir)
   const { data: calisma, isLoading } = useCalisma(calismaId ? Number(calismaId) : undefined)
+  const { data: katalog = [] } = useKatalogKalemler()
+
   const seciliKalemler = (calisma?.istek_listesi ?? faz2?.secilen_kalemler) ?? []
+
+  const katalogMap = Object.fromEntries(katalog.map((k) => [k.ic_kod, k]))
 
   return (
     <div className="max-w-2xl mx-auto p-8">
@@ -37,18 +37,23 @@ export default function IstekListesi() {
       ) : (
         <div className="space-y-3">
           {seciliKalemler.map((ic_kod, idx) => {
-            const bilgi = KALEM_ADLARI[ic_kod] ?? { baslik: ic_kod, kod: 0 }
+            const kalem = katalogMap[ic_kod]
+            const baslik = kalem?.baslik ?? ic_kod
+            const kodlar = kalem?.beyanname_kodlari?.map((b) => b.kod).join('/') ?? ''
             return (
-              <div key={ic_kod} className="flex items-center gap-4 p-4 border border-border-default bg-surface-raised rounded-lg hover:border-accent cursor-pointer transition-colors"
-                onClick={() => navigate(`/calisma/${calismaId}/kalem/${ic_kod}`)}>
-                <div className="w-8 h-8 bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 rounded-full flex items-center justify-center text-sm font-bold">
+              <div
+                key={ic_kod}
+                className="flex items-center gap-4 p-4 border border-border-default bg-surface-raised rounded-lg hover:border-accent cursor-pointer transition-colors"
+                onClick={() => navigate(`/calisma/${calismaId}/kalem/${ic_kod}`)}
+              >
+                <div className="w-8 h-8 bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
                   {idx + 1}
                 </div>
-                <div className="flex-1">
-                  <p className="font-medium text-primary">{bilgi.baslik}</p>
-                  {bilgi.kod > 0 && <p className="text-xs text-muted">Kod {bilgi.kod}</p>}
+                <div className="flex-1 min-w-0">
+                  <p className="font-medium text-primary leading-snug">{baslik}</p>
+                  {kodlar && <p className="text-xs text-muted mt-0.5">Beyanname satırı: {kodlar}</p>}
                 </div>
-                <span className="text-muted">→</span>
+                <span className="text-muted flex-shrink-0">→</span>
               </div>
             )
           })}

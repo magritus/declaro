@@ -2,10 +2,9 @@ import { useState, useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { apiClient } from '@/api/client'
 import { useWizardStore } from '@/store/wizardStore'
-import { useKatalogKalemler } from '@/api/kalem'
+import { useKatalogKalemler, KalemSchema } from '@/api/kalem'
 import ThemeToggle from '@/components/ThemeToggle'
 
-// Category display labels
 const KATEGORI_BASLIKLAR: Record<string, string> = {
   istirak_kazanc_istisnalari: 'İştirak Kazancı İstisnaları',
   serbest_bolge_tgb_istisnalari: 'Serbest Bölge ve TGB İstisnaları',
@@ -17,12 +16,20 @@ const KATEGORI_BASLIKLAR: Record<string, string> = {
   diger_istisnalar: 'Diğer İndirim ve İstisnalar',
 }
 
+interface InfoModal {
+  baslik: string
+  mevzuat: string[]
+  aciklama: string
+}
+
 export default function Faz2AltKategoriAyirma() {
   const { calismaId } = useParams<{ calismaId: string }>()
   const navigate = useNavigate()
   const { faz1, setFaz2 } = useWizardStore()
   const [seciliKalemler, setSeciliKalemler] = useState<Set<string>>(new Set())
   const [yukleniyor, setYukleniyor] = useState(false)
+  const [infoModal, setInfoModal] = useState<InfoModal | null>(null)
+  const [infoYukleniyor, setInfoYukleniyor] = useState<string | null>(null)
 
   const { data: katalogKalemler = [], isLoading } = useKatalogKalemler()
 
@@ -30,7 +37,6 @@ export default function Faz2AltKategoriAyirma() {
     .filter(([, evet]) => evet)
     .map(([id]) => id)
 
-  // Group active kalemler by category, filtered to selected categories
   const kalemlerByKategori = useMemo(() => {
     const result: Record<string, typeof katalogKalemler> = {}
     for (const kat of seciliKategoriler) {
@@ -47,13 +53,26 @@ export default function Faz2AltKategoriAyirma() {
   const toggleKalem = (icKod: string) => {
     setSeciliKalemler((prev) => {
       const next = new Set(prev)
-      if (next.has(icKod)) {
-        next.delete(icKod)
-      } else {
-        next.add(icKod)
-      }
+      if (next.has(icKod)) next.delete(icKod)
+      else next.add(icKod)
       return next
     })
+  }
+
+  const acikInfo = async (icKod: string, e: React.MouseEvent) => {
+    e.stopPropagation()
+    e.preventDefault()
+    setInfoYukleniyor(icKod)
+    try {
+      const { data } = await apiClient.get<KalemSchema>(`/katalog/kalemler/${icKod}`)
+      setInfoModal({
+        baslik: data.baslik,
+        mevzuat: data.mevzuat_dayanagi ?? [],
+        aciklama: data.wizard_agaci?.info_modal ?? '',
+      })
+    } finally {
+      setInfoYukleniyor(null)
+    }
   }
 
   const seciliArray = Array.from(seciliKalemler)
@@ -124,6 +143,15 @@ export default function Faz2AltKategoriAyirma() {
                       <span className="text-xs text-muted font-mono">
                         {kalem.beyanname_kodlari?.map((b: { kod: number }) => b.kod).join('/')}
                       </span>
+                      <button
+                        type="button"
+                        onClick={(e) => acikInfo(kalem.ic_kod, e)}
+                        disabled={infoYukleniyor === kalem.ic_kod}
+                        className="ml-auto text-muted hover:text-accent transition-colors flex-shrink-0 w-5 h-5 rounded-full border border-current flex items-center justify-center text-xs font-bold leading-none"
+                        title="Mevzuat ve açıklama"
+                      >
+                        {infoYukleniyor === kalem.ic_kod ? '…' : 'i'}
+                      </button>
                     </div>
                     <div className="flex gap-2 mt-1">
                       <span className={`text-xs px-1.5 py-0.5 rounded font-medium ${
@@ -163,6 +191,52 @@ export default function Faz2AltKategoriAyirma() {
       >
         {yukleniyor ? 'Kaydediliyor...' : `${seciliArray.length} Kalem ile Devam Et →`}
       </button>
+
+      {/* Info Modal */}
+      {infoModal && (
+        <div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+          onClick={() => setInfoModal(null)}
+        >
+          <div
+            className="bg-surface-raised border border-border-default rounded-xl p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto shadow-xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-start justify-between gap-3 mb-4">
+              <h3 className="font-bold text-lg text-primary leading-snug">{infoModal.baslik}</h3>
+              <button
+                onClick={() => setInfoModal(null)}
+                className="text-muted hover:text-primary flex-shrink-0 text-xl leading-none"
+              >
+                ×
+              </button>
+            </div>
+
+            {infoModal.mevzuat.length > 0 && (
+              <div className="mb-4">
+                <h4 className="text-xs font-semibold text-muted uppercase tracking-wider mb-2">Mevzuat Dayanağı</h4>
+                <ul className="space-y-1">
+                  {infoModal.mevzuat.map((m, i) => (
+                    <li key={i} className="text-sm text-secondary flex gap-2">
+                      <span className="text-accent mt-0.5">·</span>
+                      <span>{m}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {infoModal.aciklama && (
+              <div>
+                <h4 className="text-xs font-semibold text-muted uppercase tracking-wider mb-2">Açıklama</h4>
+                <div className="text-sm text-secondary whitespace-pre-wrap leading-relaxed">
+                  {infoModal.aciklama}
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

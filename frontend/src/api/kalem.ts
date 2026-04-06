@@ -43,6 +43,11 @@ export interface KalemSchema {
   ic_kod: string
   baslik: string
   kisa_aciklama?: string
+  mevzuat_dayanagi?: string[]
+  wizard_agaci?: {
+    tetikleyici_soru?: string
+    info_modal?: string
+  }
   hesaplama_sablonu: HesaplamaSablonu
   k_checklist: KChecklistMaddesi[]
   belge_listesi: BelgeMaddesi[]
