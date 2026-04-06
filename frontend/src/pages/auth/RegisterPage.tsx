@@ -37,7 +37,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-sm">
         <div className="bg-surface-raised border border-border-default rounded-2xl shadow-xl p-8 space-y-6">
           <div className="text-center space-y-3">
-            <img src={logo} alt="Declaro" className="h-12 mx-auto" />
+            <img src={logo} alt="Declaro" className="h-24 mx-auto" />
             <p className="text-sm text-muted">Yeni hesap oluşturun</p>
           </div>
 
