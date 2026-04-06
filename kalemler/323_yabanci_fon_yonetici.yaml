@@ -23,16 +23,74 @@ ana_kategori: diger_istisnalar
 wizard_agaci:
   tetikleyici_soru: "SPK'dan portföy yönetim şirketi lisansına sahip misiniz ve yurt dışında kurulu yabancı fon(lar)ı Türkiye'den yönetiyor musunuz?"
   info_modal: |
-    KVK Madde 5/A Fıkra 3 kapsamında; Türkiye'de SPK'dan portföy yönetim şirketi lisansı
-    almış kurumların, yurt dışında kurulu yabancı kolektif yatırım kuruluşlarını (fonları)
-    Türkiye'den yönetmesi faaliyetinden elde ettikleri yönetim ve performans ücreti kazançlarının
-    tamamı kurumlar vergisinden istisnadır.
+    ## Genel Çerçeve
 
-    Mekanizma: SPK lisanslı portföy yönetim şirketi (Türkiye) → Yabancı fonu Türkiye'den yönetir
-    → Yönetim ücreti (management fee) + Performans ücreti (performance fee) kazanır → %100 istisna.
+    KVK Madde 5/A Fıkra 3 kapsamındaki istisna, **Türkiye'de SPK'dan portföy yönetim şirketi
+    lisansı almış kurumların** yurt dışında kurulu yabancı kolektif yatırım kuruluşlarını
+    (fonları) Türkiye'den yönetmesi faaliyetinden elde ettikleri kazançların **tamamını (%100)**
+    kurumlar vergisinden muaf tutar.
 
-    Bu istisna Türkiye'nin uluslararası finans merkezi olma hedefine hizmet etmektedir.
-    KVK 5/A ayrı bir madde olup 5/1 bentleri veya 5/B değildir.
+    Bu düzenleme, Türkiye'nin İstanbul Uluslararası Finans Merkezi (İFM) hedefine hizmet eden
+    özel politika araçlarından biridir. KVK'nın ayrı bir maddesi olan 5/A, 5/1 bentlerinden
+    (302, 304, 308 vb.) ve 5/B'den (patent box) bağımsız bir kategori oluşturur. İstisna
+    "Kazancın Bulunması Halinde İndirilecek" bölümünde (323. satır) gösterilir.
+
+    Mekanizma: SPK lisanslı portföy yönetim şirketi (Türkiye'de yerleşik) → Yabancı fonu
+    Türkiye'deki ekip ve altyapıyla yönetir → Yönetim ücreti + Performans ücreti kazanır → %100 istisna.
+
+    ## Temel Koşullar
+
+    **1. SPK Portföy Yönetim Şirketi Lisansı:** İstisna kullanan kurumun Sermaye Piyasası
+    Kurulu'ndan geçerli **Portföy Yönetim Şirketi lisansına** sahip olması zorunludur. Başka
+    tür yatırım kuruluşları (aracı kurum, banka varlık yönetim birimi vb.) bu istisnadan
+    yararlanamaz.
+
+    **2. Yabancı (Yurt Dışında Kurulu) Fon:** Yönetilen fonun yurt dışında kurulu ve faaliyette
+    olan bir **kolektif yatırım kuruluşu** olması gerekir. Fonun kayıtlı olduğu ülkenin
+    finansal otoritesinden lisans veya kayıt belgesi temin edilmelidir (Cayman, Lüksemburg
+    SICAV, İrlanda UCITS, BVI, Jersey gibi). **Türk yatırım fonu** yönetimi bu madde
+    kapsamında değildir.
+
+    **3. Türkiye'den Yönetim:** Fon yönetim hizmetinin Türkiye'deki şirket çalışanları ve
+    altyapısıyla Türkiye'den verilmesi şarttır. Salt aracı sıfatıyla hareket etmek veya
+    yönetimi yurt dışından yürütmek kapsam dışıdır. Portföy yönetim sözleşmesinde Türkiye'deki
+    şirketi taraf olarak göstermesi ve yönetim kararlarının Türkiye'de alındığının belgelenmesi
+    gerekmektedir.
+
+    **4. Kapsam İçi Gelir Ayrıştırması:** Yalnızca yabancı fon yönetiminden kaynaklanan gelirler
+    istisna kapsamındadır. Mevduat faizi, yerli fon gelirleri ve diğer faaliyetler kapsam
+    dışıdır; gelir ayrıştırması net biçimde yapılmalıdır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    **Kapsam İçi / Dışı Karışıklığı:** Portföy yönetim şirketleri çoğunlukla hem yerli hem
+    yabancı fonları yönetir; ayrıca mevduat ve diğer finansal gelirler elde eder. İstisna
+    yalnızca yabancı fon yönetim gelirlerine uygulanabilir. Gelir kırılımı yapılmadan toplu
+    istisna uygulaması tarhiyat riski doğurur.
+
+    **Gider Dağıtımı:** Yalnızca yabancı fon yönetimine doğrudan atfedilen giderler kazanç
+    hesabında düşülür. Genel yönetim giderleri (GYG) ise kapsam içi gelirin toplam gelire
+    oranıyla dağıtılmalı ve bu yöntem belgelenmelidir.
+
+    **Türkiye'den Yönetim Şartının Kanıtlanması:** Vergi incelemelerinde "Türkiye'den fiilen
+    yönetim" şartı sorgulanabilir. Yönetim kararlarının Türkiye'de alındığını gösteren yönetim
+    kurulu kararları, e-posta yazışmaları, seyahat kayıtları gibi belgeler saklanmalıdır.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/A Fıkra 3 istisnasının **YİAKV (KVK Madde 32/C) matrahına etkisi tartışmalıdır.**
+    323. satırdaki istisna tutarının YİAKV matrahından indirilip indirilemeyeceği konusunda
+    mevzuat netlik kazanmamıştır. Bu konuda GİB özelgesi alınması ve YİAKV etkisinin ayrıca
+    analiz edilmesi önerilir.
+
+    ## Pratik Notlar
+
+    - SPK Portföy Yönetim Şirketi lisans belgesi (geçerlilik tarihi kontrol edilmeli) dosyaya eklenmelidir.
+    - Yabancı fonun kayıtlı olduğu ülkenin otoritesinden alınan lisans/kayıt belgesi zorunludur.
+    - Portföy yönetim sözleşmesi, Türkiye'deki şirketi açıkça taraf olarak göstermelidir.
+    - Kapsam içi/dışı gelir ayrıştırma tablosu ve gider dağıtım yöntemi belgesi hazırlanmalıdır.
+    - AUM (Yönetilen Varlık Büyüklüğü) belgesi saklama kuruluşundan temin edilmelidir.
+    - 49 No.lu KV GT kapsamında YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: spk_lisansi
       soru: "SPK'dan Portföy Yönetim Şirketi lisansınız var mı?"

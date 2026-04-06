@@ -22,10 +22,81 @@ ana_kategori: ar_ge_istisna
 wizard_agaci:
   tetikleyici_soru: "Türkiye'de gerçekleştirilen Ar-Ge faaliyetleri sonucu elde edilen patent veya faydalı model belgeli buluşunuz var mı?"
   info_modal: |
-    KVK Madde 5/B kapsamında Türkiye'de yapılan Ar-Ge faaliyetleri sonucunda elde edilen
-    patent veya faydalı model belgeli buluşlardan elde edilen kazançların %50'si kurumlar
-    vergisinden istisnadır. İstisna NEXUS oranı ile ağırlıklandırılır.
-    NEXUS = min((NARGe × 1.3) / TARGe, 1) × %50
+    ## Genel Çerçeve
+
+    KVK Madde 5/B kapsamındaki Patent Box istisnası, Türkiye'de gerçekleştirilen Ar-Ge
+    faaliyetleri sonucunda elde edilen **patent veya faydalı model belgeli buluşlardan**
+    kazanılan gelirlerin belirli bir kısmını kurumlar vergisinden muaf tutar. İstisna oranı
+    **%50** olup bu özelliğiyle setimizin diğer istisnalarından (%100 tam istisna) köklü
+    biçimde ayrışır.
+
+    İstisna tutarı yalnızca kazancın %50'si üzerinden değil; aynı zamanda **NEXUS oranı** ile
+    ağırlıklandırılarak hesaplanır. NEXUS oranı, buluşun gerçek anlamda Türkiye'deki nitelikli
+    Ar-Ge faaliyetiyle ne ölçüde bağlantılı olduğunu ölçen bir filtredir.
+
+    Bu istisna "Kazancın Bulunması Halinde İndirilecek" bölümünde (324. satır) gösterilir.
+    KVK 5/B, KVK 5/1 bentlerinden ve 5/A'dan bağımsız üçüncü bir özel madde kategorisidir.
+
+    ## Temel Koşullar
+
+    **1. Patent veya Faydalı Model Belgesi:** Türk Patent ve Marka Kurumu (TPMK) veya yabancı
+    ülke patent ofisinden (EPO, USPTO vb.) alınmış geçerli bir **patent belgesi (20 yıl)** veya
+    **faydalı model belgesi (10 yıl)** zorunludur. Süresi dolan belgeler kapsam dışıdır. Tescilsiz
+    buluşlar, markalar ve tasarımlar bu madde kapsamında değildir.
+
+    **2. Türkiye'de Ar-Ge:** Buluşun Türkiye'de gerçekleştirilen Ar-Ge veya tasarım faaliyeti
+    sonucunda ortaya çıkmış olması gerekmektedir. Tamamen yurt dışından satın alınan buluşlarda
+    NEXUS oranı sıfır olabileceğinden istisna fiilen uygulanamaz.
+
+    **3. %50 İstisna Oranının Teyidi:** İstisna oranı %50'dir; %100 değildir. Bu hata en sık
+    karşılaşılan beyanname hatasıdır. Yanlışlıkla %100 uygulanması, tarhiyat ve vergi ziyaı
+    cezası riskini doğurur.
+
+    **4. NARGe ve TARGe Ayrıştırması:** NEXUS formülünün hesaplanabilmesi için **nitelikli Ar-Ge
+    harcaması (NARGe)** ve **toplam Ar-Ge harcaması (TARGe)** ayrı ayrı tespit edilmelidir.
+
+    ## NEXUS Formülü
+
+    İstisna tutarı şu formülle hesaplanır:
+
+    **İstisna Tutarı = Buluş Kazancı × min[(NARGe × 1.3) / TARGe, 1] × %50**
+
+    - **NARGe (Nitelikli Ar-Ge):** Kurumun kendi bünyesinde Türkiye'de yaptığı harcamalar +
+      ilişkisiz yurt içi taraflara (üniversiteler, bağımsız kurumlar) ödenenler + ilişkisiz
+      yurt dışı taraflara ödenenler. **İlişkili kuruluşlara ödenen Ar-Ge ve satın alınan buluş
+      bedeli NARGe'ye dahil edilmez.**
+    - **TARGe (Toplam Ar-Ge):** NARGe + İlişkili kuruluşlara ödenen Ar-Ge + Satın alınan buluş
+      bedeli. TARGe her zaman NARGe'ye eşit veya daha büyüktür.
+    - **1.3 Katsayısı:** Türkiye'deki Ar-Ge'yi teşvik eder; NEXUS oranı 1'i aşamaz.
+    - Kazanç türleri: Satış/Devir (C bölümü) + Lisans/Royalty (D bölümü) + İmalat Katkısı (E
+      bölümü) — her biri ayrı hesaplanır ve toplanır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    **%50 Oran Hatası:** Setimizin diğer istisnalarından farklı olarak bu istisna %50 ile
+    sınırlıdır. %100 beyanı durumunda matrah yetersiz hesaplanmış olur.
+
+    **NEXUS Oranının Düşüklüğü:** İlişkili taraflarla fazla Ar-Ge çalışması yapılan veya
+    yüksek bedelle buluş satın alınan durumlarda NARGe/TARGe oranı düşer ve istisna tutarı
+    azalır. Transfer fiyatlandırması belgesi gerekebilir.
+
+    **Çoklu Kazanç Türü Karmaşası:** Satış, lisans ve imalat katkısı kazançları ayrı ayrı
+    hesaplanmalı; aynı NEXUS oranı her birine uygulandıktan sonra toplanmalıdır.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/B istisnası **YİAKV (KVK Madde 32/C) matrahından DÜŞÜLEBİLİR.** GİB 2026
+    açıklamalarına göre 324. satırdaki istisna tutarı YİAKV matrahından indirilebilmektedir.
+    Bu, özellikle yüksek buluş kazancı olan Ar-Ge yoğun şirketler için YİAKV yükümlülüğünü
+    anlamlı ölçüde azaltabilir.
+
+    ## Pratik Notlar
+
+    - TPMK veya yabancı patent ofisi belgesi (belge no, tescil tarihi ve geçerlilik süresi görünmeli) dosyaya eklenmelidir.
+    - NARGe ve TARGe ayrıştırma tablosu ilişkili/ilişkisiz taraf ayrımıyla hazırlanmalıdır.
+    - Her kazanç türü (satış, lisans, imalat) ayrı hesaplanmalı ve NEXUS uygulandıktan sonra toplanmalıdır.
+    - Transfer fiyatlandırması belgesi ilişkili taraf Ar-Ge ödemeleri için zorunlu olabilir.
+    - 49 No.lu KV GT (30.12.2025): ≥500.000 TL veya ≥1.000.000 TL → YMM tasdik raporu zorunludur.
   kapi_sorulari:
     - id: patent_belgesi
       soru: "Türk Patent ve Marka Kurumu'ndan (veya yabancı ülke patent ofisinden) alınmış geçerli patent veya faydalı model belgeniz var mı?"
