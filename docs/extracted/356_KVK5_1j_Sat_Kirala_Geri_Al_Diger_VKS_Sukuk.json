@@ -1,0 +1,1962 @@
+{
+  "file": "356_KVK5_1j_Sat_Kirala_Geri_Al_Diger_VKS_Sukuk.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G90",
+      "rows": [
+        [
+          "356 – SAT-KİRALA-GERİ AL — DİĞER (VARLIK KİRALAMA ŞİRKETİ / VKŞ KANALI) | KVK Md.5/1-j | YMM TASDİK ÇALIŞMA KÂĞIDI | BEYANNAME SATIR 356",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 Tam İstisna | Taşınır veya Taşınmaz Varlıklar | Alıcı: 6362 s.K. Kapsamında SPK Lisanslı Varlık Kiralama Şirketi (VKŞ) | Kira Sertifikası (Sukuk) Mekanizması | 549 Fon → Kira Payına Amortize | Beyanname Satır 356 — Kazancın Bulunması Halinde",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354/355'TEN KRİTİK FARK — ALICI KURUM TÜRÜ: 354 (Taşınır) ve 355 (Taşınmaz): BDDK lisanslı FK şirketi / Katılım / Kalkınma-Yatırım Bankası. 356 (Diğer): SPK lisanslı Varlık Kiralama Şirketi (VKŞ) — 6362 sayılı Sermaye Piyasası K. kapsamında. VKŞ, kira sertifikası (sukuk) ihraç eder — sermaye piyasası aracı devreye girer. KAP bildirimleri ve izahname/sirküler zorunlu olabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "MEKANİZMA: Kurum varlığı VKŞ'ye satar → VKŞ bu varlık karşılığında Kira Sertifikası (Sukuk) ihraç eder → Kurum aynı varlığı VKŞ'den geri kiralar → Kira ödemeleri VKŞ tarafından sertifika sahiplerine aktarılır → Vade sonunda kurum satın alma hakkını kullanır → Satış kazancı → %100 İstisna (356) → 549 Fon → Kira süresinde amortize.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  ★ Alıcı kurum: 6362 sayılı Kanun kapsamında SPK lisanslı Varlık Kiralama Şirketi (VKŞ) mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK — 356'NIN ÖZGÜN ŞARTI: Alıcı kurum BDDK lisanslı FK/banka değil, SPK lisanslı VKŞ olmalıdır. VKŞ: 6362 sayılı Sermaye Piyasası Kanunu kapsamında kurulan, münhasıran kira sertifikası ihraç etmek amacıyla kurulan özel amaçlı şirket. SPK'nın VKŞ listesinden teyit zorunludur.",
+          null
+        ],
+        [
+          "A0.2  VKŞ'nin SPK Lisansı ve Kuruluş Belgesi Mevcut mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "SPK lisansı veya kuruluş izni belgesi tasdik dosyasına eklenmelidir. VKŞ: Çoğunlukla bankaların veya büyük şirketlerin iştiraki olarak kurulur.",
+          null
+        ],
+        [
+          "A0.3  Satılan Varlık Türü Nedir?",
+          null,
+          null,
+          null,
+          "Taşınmaz",
+          "VKŞ kanalı (356) hem taşınır hem taşınmaz için kullanılabilir. 354/355'ten fark: Alıcı kurum türü — bu sefer VKŞ.",
+          null
+        ],
+        [
+          "A0.4  ★ Kira Sertifikası (Sukuk) İhracı Gerçekleşiyor mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: 356'nın ayırt edici özelliği kira sertifikası (sukuk) mekanizmasıdır. VKŞ satın aldığı varlık karşılığında kira sertifikası ihraç eder. İzahname/İhraç belgesi SPK onaylı olmalıdır.",
+          null
+        ],
+        [
+          "A0.5  ★ Sat-kirala-geri al sözleşmeleri eş zamanlı/bağlı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Satış ve geri kiralama sözleşmeleri eş zamanlı veya birbirine bağlı olmalıdır. VKŞ ile satış + kiralama sözleşmeleri aynı işlem çerçevesinde imzalanmış olmalı.",
+          null
+        ],
+        [
+          "A0.6  ★ Vade sonunda varlığın geri alınması taahhüdü sözleşmede açıkça var mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Geri alım opsiyonu veya taahhüdü sözleşmede yazılı olmalı. Vade sonunda geri alım gerçekleşmezse istisna iptal riski.",
+          null
+        ],
+        [
+          "A0.7  ★ İstisna edilen kazanç 549 hesabına alınacak ve kira süresi boyunca amortize edilecek mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: 354/355 ile özdeş fon mekanizması. İstisna edilen kazanç 549'a alınır, her dönem kira payına orantılı azaltılır.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.1 (VKŞ/SPK), A0.4 (Sukuk), A0.6 (Geri alım) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satıcı/Kiracı Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Varlığı satan ve geri kiralayan — istisna uygulayan kurum",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "VKŞ'nin Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Alıcı — Varlık Kiralama Şirketi tam adı",
+          null
+        ],
+        [
+          "VKŞ'nin SPK Lisans/Kuruluş No",
+          null,
+          null,
+          null,
+          null,
+          "SPK onaylı VKŞ tanımlayıcısı",
+          null
+        ],
+        [
+          "Kira Sertifikası (Sukuk) ISIN/Kodu",
+          null,
+          null,
+          null,
+          null,
+          "Sermaye Piyasası aracı tanımlayıcısı",
+          null
+        ],
+        [
+          "Satış/Devir Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Varlığın VKŞ'ye devir tarihi",
+          null
+        ],
+        [
+          "Kira Sözleşmesi Başlangıç Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Geri kiralama başlangıcı",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. VARLIK KİRALAMA ŞİRKETİ (VKŞ) NİTELİK VE SPK LİSANS TEYİDİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "356'NIN ÖZGÜN FARKI: Alıcı kurum SPK lisanslı VKŞ'dir — BDDK lisanslı FK/banka değil. VKŞ: 6362 sayılı Sermaye Piyasası Kanunu ve SPK Tebliğleri çerçevesinde kurulan, münhasıran kira sertifikası ihraç etmek amacıyla faaliyet gösteren özel amaçlı şirket. SPK lisans belgesi veya izin yazısı tasdik dosyasına eklenmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Yasal Dayanak"
+        ],
+        [
+          "B.1  VKŞ'nin Türü / Yapısı",
+          null,
+          "Bağımsız VKŞ (Kurum Bünyesinde)",
+          "Çoğunlukla kurumun veya aracı kurumun yan kuruluşu olarak kurulur",
+          null,
+          "6362 s.K.",
+          null
+        ],
+        [
+          "B.2  VKŞ'nin SPK Lisansı/Kuruluş İzni Mevcut mu?",
+          null,
+          "EVET",
+          "SPK'nın VKŞ listesinden veya kuruluş izni belgesinden teyit edilmeli",
+          null,
+          "SPK — VKŞ Listesi",
+          null
+        ],
+        [
+          "B.3  VKŞ, Satılan Varlık Karşılığında Kira Sertifikası İhraç Etti mi?",
+          null,
+          "EVET",
+          "Kira sertifikası ihracı 356'nın kilit unsurudur. İzahname/İhraç belgesi SPK onaylı olmalı.",
+          null,
+          "SPK / 6362 s.K.",
+          null
+        ],
+        [
+          "B.4  Kira Sertifikası (Sukuk) İhraç Belgesi / İzahname Mevcut mu?",
+          null,
+          "EVET",
+          "SPK onaylı ihraç belgesi (izahname veya sirküler) tasdik dosyasına eklenmeli.",
+          null,
+          "SPK Mevzuatı",
+          null
+        ],
+        [
+          "B.5  VKŞ 6362 s.K. Kapsamında Münhasıran Kira Sertifikası İhraç Ediyor mu?",
+          null,
+          "EVET",
+          "VKŞ'nin münhasıran kira sertifikası ihraç etmek amacıyla kurulmuş olması şarttır. Farklı faaliyet alanları olan kurum VKŞ sayılmaz.",
+          null,
+          "6362 s.K.",
+          null
+        ],
+        [
+          "C. SATILAN VARLIK KİMLİĞİ VE DEVIR KOŞULLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "356 (VKŞ kanalı) hem taşınır hem taşınmaz hem de haklar/maddi olmayan varlıklar için kullanılabilir. Taşınmaz ise tapu devri; taşınır ise teslim tutanağı; hak ise devir sözleşmesi zorunludur. Satış bedeli piyasa değeriyle uyumlu olmalı — SPK bağlamında değerleme raporu önem taşır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Satılan Varlık Türü",
+          null,
+          "Taşınmaz",
+          "Taşınmaz → Tapu devri zorunlu. Taşınır → Teslim belgesi. Hak → Devir sözleşmesi.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  Varlığın Tanımı",
+          null,
+          null,
+          "Ada/Parsel (taşınmaz) veya Marka/Seri No (taşınır) veya Hak Tanımı",
+          null,
+          "Tekil tanımlama",
+          null
+        ],
+        [
+          "C.3  Net Defter Değeri (TL)",
+          null,
+          null,
+          "Amortisman düşülmüş net aktif değeri",
+          null,
+          "Muhasebe kartı ile uyumlu",
+          null
+        ],
+        [
+          "C.4  VKŞ'ye Devir Bedeli (TL)",
+          null,
+          null,
+          "Piyasa değeri — değerleme raporu ile desteklenmeli",
+          null,
+          "SPK bağlamında değerleme kritik",
+          null
+        ],
+        [
+          "C.5  Bağımsız Değerleme Raporu Bedeli (TL)",
+          null,
+          null,
+          "SPK gerekliliklerine uygun değerleme raporu",
+          null,
+          "İhraç belgesi için genellikle zorunludur",
+          null
+        ],
+        [
+          "C.6  Satış/Devir Giderleri (TL)",
+          null,
+          null,
+          "Tapu harcı (taşınmaz), komisyon, ihraç giderleri, noter vb.",
+          null,
+          "KDV dahil/hariç ayrımı",
+          null
+        ],
+        [
+          "C.7  Varlık VKŞ'ye Devredildi mi? Devir Belgesi Mevcut mu?",
+          null,
+          "EVET",
+          "Taşınmaz: Tapu senedi. Taşınır: Fatura+Teslim tutanağı. Hak: Devir sözleşmesi.",
+          null,
+          "Aktiften çıkış muhasebe kaydı yapıldı mı?",
+          null
+        ],
+        [
+          "D. KİRA SERTİFİKASI (SUKUK) VE GERİ KİRALAMA SÖZLEŞMESİ PARAMETRELERI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira sertifikası (sukuk) mekanizması 356'nın kalbi: VKŞ, satın aldığı varlık karşılığında yatırımcılara kira sertifikası ihraç eder. Kurum (satıcı/kiracı) kira ödemelerini VKŞ'ye yapar — VKŞ bunları sertifika sahiplerine aktarır. Vade sonunda satın alma hakkı kullanılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Kira Sertifikası (Sukuk) İhraç Tutarı (TL)",
+          null,
+          null,
+          "VKŞ tarafından ihraç edilen toplam sertifika tutarı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Kira Sertifikası Vadesi (Ay/Yıl)",
+          null,
+          null,
+          "Kira süresi ile örtüşür",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  Kira Sertifikası Tipi",
+          null,
+          "İcara (Finansal Kiralama Destekli)",
+          "İcara: Varlığa dayalı kiralama sertifikası — 356 için en yaygın tür",
+          null,
+          "6362 s.K. / SPK Tebliği",
+          null
+        ],
+        [
+          "D.4  Kira Sözleşmesi Başlangıç Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.5  Kira Sözleşmesi Bitiş Tarihi (Vade Sonu)",
+          null,
+          null,
+          "GG.AA.YYYY — Geri alım tarihi",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.6  Kira Süresi (Ay)",
+          null,
+          "0",
+          "Otomatik hesaplanır",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.7  Toplam Kira Ödemesi (TL — Tüm Dönem)",
+          null,
+          null,
+          "Fon amortizasyonunun paydası",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.8  ★ Vade Sonunda Geri Alım Taahhüdü/Opsiyonu Sözleşmede Var mı?",
+          null,
+          "EVET — Sözleşmede Taahhüt Var",
+          "Geri alım taahhüdü veya satın alma opsiyonu sözleşmede açıkça yer almalı",
+          null,
+          "★ Geri almadan istisna iptal riski",
+          null
+        ],
+        [
+          "D.9  KAP Bildirimi Yapıldı mı? (İhraç zorunlu bildirimi)",
+          null,
+          "EVET",
+          "SPK mevzuatına göre kira sertifikası ihracında KAP bildirimi zorunlu olabilir.",
+          null,
+          "KAP / SPK Mevzuatı",
+          null
+        ],
+        [
+          "E. SATIŞ KAZANCI VE %100 İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354/355 ile özdeş kazanç hesaplama formülü: Kazanç = C.4 (Devir Bedeli) − C.3 (Net Defter Değeri) − C.6 (Satış Giderleri). İstisna: %100 Tam İstisna → 549 hesabına → Kira ödemelerine orantılı amortize. Değerleme uyumu: C.5 ile C.4 arasındaki fark SPK açısından da önem taşır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  VKŞ'ye Devir Bedeli",
+          null,
+          "0",
+          "C.4'ten otomatik",
+          null,
+          "VKŞ'nin satın alma bedeli",
+          null
+        ],
+        [
+          "E.2  Varlığın Net Defter Değeri",
+          null,
+          "0",
+          "C.3'ten otomatik",
+          null,
+          "Muhasebe kartı ile uyumlu",
+          null
+        ],
+        [
+          "E.3  Satış/Devir Giderleri",
+          null,
+          "0",
+          "C.6'dan otomatik",
+          null,
+          "Tapu harcı, komisyon, ihraç giderleri vb.",
+          null
+        ],
+        [
+          "E.4  SATIŞ KAZANCI = E.1 − E.2 − E.3",
+          null,
+          "0",
+          "Pozitif = Kazanç | Negatif = Zarar",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.5  DURUM",
+          null,
+          "SIFIR",
+          "Otomatik değerlendirme",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.6  5/1-j İSTİSNA TUTARI (%100)",
+          null,
+          "0",
+          "%100 Tam İstisna → 549 Hesabına → Beyanname 356",
+          null,
+          "→ F bölümü fon hesabı",
+          null
+        ],
+        [
+          "E.7  Değerleme Uyumu: C.5 ile E.1 Farkı",
+          null,
+          "0",
+          "Satış bedeli - Değerleme farkı (0'a yakın beklenir)",
+          null,
+          "Büyük fark → KVK Md.13 + SPK riski",
+          null
+        ],
+        [
+          "F. 549 ÖZEL FON HESABI VE KİRA SÜRESİ BOYUNCA AMORTİZASYON",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354/355 ile özdeş mekanizma — VKŞ kanalına özgün fark yok. Devir yılında E.6 tutarı 549'a alınır. Her dönem kira ödemelerine orantılı fon azalır. Vade sonunda 549 sıfır. Kira ödemeleri KV matrahından gider olarak indirilebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Kalemi",
+          null,
+          "Tutar / Oran",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "F.1  Başlangıç Fon Tutarı (= E.6 — Devir Yılında 549'a Alınacak)",
+          null,
+          "0",
+          "İstisna kazancının tamamı",
+          null,
+          "Devir yılı — 549 hesabına",
+          null
+        ],
+        [
+          "F.2  Toplam Kira Ödemesi (= D.7'den)",
+          null,
+          "0",
+          "Tüm kira dönemi toplamı",
+          null,
+          "Amortizasyon paydası",
+          null
+        ],
+        [
+          "F.3  Cari Dönem Kira Ödemesi (TL — Bu Hesap Döneminde Ödenen)",
+          null,
+          null,
+          "Bu hesap döneminde yapılan toplam kira ödemesi",
+          null,
+          "Kira sözleşmesi + Banka dekontları",
+          null
+        ],
+        [
+          "F.4  Cari Dönem Amortizasyon Oranı (%)",
+          null,
+          "0",
+          "Otomatik — Cari kira / Toplam kira × 100",
+          null,
+          "Otomatik",
+          null
+        ],
+        [
+          "F.5  Cari Dönem Fon Azalışı (TL) = F.1 × F.4/100",
+          null,
+          "0",
+          "Bu dönem 549'dan düşülecek",
+          null,
+          "→ Muhasebe fon amortizasyon kaydı",
+          null
+        ],
+        [
+          "F.6  Dönem Sonu 549 Fon Bakiyesi (Tahmini)",
+          null,
+          "0",
+          "Kalan amortize edilecek fon",
+          null,
+          "Gelecek dönemler için bakiye",
+          null
+        ],
+        [
+          "G. VADE SONU GERİ ALMA VE İSTİSNA KORUMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354/355 ile özdeş geri alma mekanizması — VKŞ'de kira sertifikaları vadesi dolduğunda VKŞ kurum satın alma opsiyonunu kullanır ve varlık kuruma iade edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "G.1  Kira Sertifikası Vadesi Doldu mu / Devam mı Ediyor?",
+          null,
+          null,
+          "Henüz Devam Ediyor",
+          null,
+          "Geri alınmadıysa: İstisna iptali riski. 549 kalan bakiye vergiye tabi.",
+          null
+        ],
+        [
+          "G.2  Geri Alım Taahhüdü/Opsiyonu Sözleşmede Yazılı mı?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Sözleşmede açıkça yer almalı. Şifahi taahhüt geçersizdir.",
+          null
+        ],
+        [
+          "G.3  Vade Sonunda Geri Alım Gerçekleşti mi?",
+          null,
+          null,
+          "Henüz Gerçekleşmedi",
+          null,
+          "Taşınmaz: Tapu geri devri. Taşınır: Teslim tutanağı. Hak: Devir belgesi.",
+          null
+        ],
+        [
+          "H. BEYANNAME 356 — KVK 5/1-j VKŞ/SUKUK KANALI İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "H.1  TOPLAM İSTİSNA → Beyanname Satır 356 (Kazancın Bulunması Halinde İndirilecek — %100 — DEVİR YILI)",
+          null,
+          null,
+          null,
+          null,
+          "%100 Tam İstisna → 549 Hesabına → Beyanname 356",
+          "E.6 = Satış Kazancı × %100"
+        ],
+        [
+          "KRİTİK UYARILAR: (1) ALICI KURUM: SPK lisanslı VKŞ (6362 s.K.) olmalı — BDDK lisanslı FK/banka ise 354 veya 355 kullanın. (2) KİRA SERTİFİKASI: Sukuk/kira sertifikası ihracı 356'nın ayırt edici unsurudur — ihraç belgesi zorunlu. (3) GERİ ALIM TAAHHÜDÜ: Sözleşmede yazılı olmalı — geri almadan istisna iptal riski. (4) 356 YALNIZCA DEVİR YILINDA KULLANILIR — sonraki yıllarda yazılmaz. (5) 549 FON: Devir yılında tam tutar → Kira süresinde amortize (354/355 ile özdeş).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H69",
+      "rows": [
+        [
+          "356 – SAT-KİRALA-GERİ AL DİĞER (VKŞ/SUKUK) | HESAPLAMALAR VE DENETİM KONTROL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | VKŞ Kanalı (6362 s.K.) | Kira Sertifikası (Sukuk) | Beyanname 356 | Kazancın Bulunması Halinde | 549 Fon Amortizasyonu | 354/355'ten ALICI KURUM FARKI: SPK Lisanslı VKŞ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "VKŞ SPK Lisansı (A0.2)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira Sertifikası İhracı (A0.4)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "Geri Alım Taahhüdü (A0.6)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira Süresi (Ay) (D.6)",
+          null,
+          null,
+          "0",
+          "Fon amortizasyon süresi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Satış Kazancı (E.4)",
+          null,
+          null,
+          "Pozitif = Kazanç | Negatif = Zarar",
+          "Brüt kazanç",
+          null,
+          null,
+          null
+        ],
+        [
+          "356 İSTİSNA TUTARI %100 (E.6)",
+          null,
+          null,
+          "%100 Tam İstisna → 549 Hesabına → Beyanname 356",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Başlangıç Fon Tutarı (F.1)",
+          null,
+          null,
+          "İstisna kazancının tamamı",
+          "549 Hesabı başlangıcı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Değerleme Uyum Farkı (E.7)",
+          null,
+          null,
+          "Satış bedeli - Değerleme farkı (0'a yakın beklenir)",
+          "0'a yakın beklenir — SPK riski",
+          null,
+          null,
+          null
+        ],
+        [
+          "KAP Bildirimi (D.9)",
+          null,
+          null,
+          "EVET",
+          "SPK zorunluluğu",
+          null,
+          null,
+          null
+        ],
+        [
+          "B. VKŞ/SUKUK MEKANİZMASI — 4 TARAFLI İŞLEM AKIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354/355'ten fark: 2 taraf (Kurum + FK/Banka) yerine 4 taraf mevcuttur. VKŞ bir aracı araç (Special Purpose Vehicle) olarak kira sertifikası sahipleriyle köprü kurar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Taraf",
+          null,
+          "Rolü",
+          null,
+          "İşlem",
+          null,
+          null
+        ],
+        [
+          "Kurum (Satıcı/Kiracı)",
+          "Varlığını VKŞ'ye satar, geri kiralar, vade sonunda geri alır",
+          null,
+          "Satış → 356 İstisna | Kira öder → Gider | Geri alır → Yeni aktif",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "VKŞ (Varlık Kiralama Şirketi)",
+          "Varlığı satın alır, kira sertifikası ihraç eder, kuruma kiralar",
+          null,
+          "Alış → Kira sertifikası ihracı | Kirayı toplar → Sertifika sahiplerine dağıtır",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira Sertifikası Sahipleri",
+          "VKŞ'nin ihraç ettiği kira sertifikalarını satın alır",
+          null,
+          "Yatırım → Dönemsel kira geliri alır | Vade sonunda anapara iadesi",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SPK (Sermaye Piyasası Kurulu)",
+          "VKŞ ve kira sertifikası ihracını denetler, izin verir",
+          null,
+          "Lisans + İzahname onayı + KAP bildirimi takibi",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. 356 vs 354 vs 355 — TAM KARŞILAŞTIRMA (KVK 5/1-j)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "356 — VKŞ Kanalı",
+          null,
+          "354 — Taşınır",
+          null,
+          "355 — Taşınmaz"
+        ],
+        [
+          "Beyanname Kodu",
+          null,
+          "356",
+          "354",
+          "355",
+          null,
+          null,
+          null
+        ],
+        [
+          "Alıcı Kurum",
+          null,
+          "SPK Lisanslı VKŞ (6362 s.K.)",
+          "BDDK Lisanslı FK/Katılım/K-Y Bankası",
+          "BDDK Lisanslı FK/Katılım/K-Y Bankası",
+          null,
+          null,
+          null
+        ],
+        [
+          "Düzenleyici Otorite",
+          null,
+          "SPK",
+          "BDDK",
+          "BDDK",
+          null,
+          null,
+          null
+        ],
+        [
+          "Sermaye Piyasası Aracı",
+          null,
+          "Kira Sertifikası (Sukuk)",
+          "Finansal Kiralama Sözleşmesi",
+          "Finansal Kiralama Sözleşmesi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Varlık Türü",
+          null,
+          "Taşınır VEYA Taşınmaz",
+          "Yalnızca Taşınır",
+          "Yalnızca Taşınmaz",
+          null,
+          null,
+          null
+        ],
+        [
+          "Satış Belgesi",
+          null,
+          "Varlık türüne göre (Tapu/Teslim)",
+          "Fatura + Teslim Tutanağı",
+          "Tapu Senedi (Tescil)",
+          null,
+          null,
+          null
+        ],
+        [
+          "KAP Bildirimi",
+          null,
+          "EVET — SPK Zorunlu",
+          "Hayır",
+          "Hayır",
+          null,
+          null,
+          null
+        ],
+        [
+          "İzahname/İhraç Belgesi",
+          null,
+          "EVET — SPK Onaylı",
+          "Hayır",
+          "Hayır",
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100",
+          "%100",
+          "%100",
+          null,
+          null,
+          null
+        ],
+        [
+          "549 Fon Amortizasyonu",
+          null,
+          "Kira payına orantılı",
+          "Kira payına orantılı",
+          "Kira payına orantılı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Beyanname Bölümü",
+          null,
+          "Kazancın Bulunması Halinde",
+          "Kazancın Bulunması Halinde",
+          "Kazancın Bulunması Halinde",
+          null,
+          null,
+          null
+        ],
+        [
+          "Geri Alım Taahhüdü",
+          null,
+          "Zorunlu",
+          "Zorunlu",
+          "Zorunlu (Tapu geri devri)",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. FON AMORTİZASYON TABLOSU — KİRA SÜRESİ (VKŞ SUKUK VADESİ) BOYUNCA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem",
+          "Kira Öd.(TL)",
+          "Kira Oranı(%)",
+          "Fon Azalış(TL)",
+          "Kalan Fon(TL)",
+          "Sukuk/KAP",
+          null
+        ],
+        [
+          "Dönem-1",
+          null,
+          null,
+          null,
+          null,
+          "Kira ödemesi = VKŞ'ye | VKŞ → Sertifika sahiplerine",
+          null,
+          null
+        ],
+        [
+          "Dönem-2",
+          null,
+          null,
+          null,
+          null,
+          "Kira ödemesi = VKŞ'ye | VKŞ → Sertifika sahiplerine",
+          null,
+          null
+        ],
+        [
+          "Dönem-3",
+          null,
+          null,
+          null,
+          null,
+          "Kira ödemesi = VKŞ'ye | VKŞ → Sertifika sahiplerine",
+          null,
+          null
+        ],
+        [
+          "Dönem-4",
+          null,
+          null,
+          null,
+          null,
+          "Kira ödemesi = VKŞ'ye | VKŞ → Sertifika sahiplerine",
+          null,
+          null
+        ],
+        [
+          "Dönem-5",
+          null,
+          null,
+          null,
+          null,
+          "Kira ödemesi = VKŞ'ye | VKŞ → Sertifika sahiplerine",
+          null,
+          null
+        ],
+        [
+          "TOPLAM",
+          "0",
+          "%100",
+          "0",
+          "0",
+          "Sukuk vadesi doldu — İstisna korundu — Geri alım gerçekleşti",
+          null,
+          null
+        ],
+        [
+          "E. DENETİM KONTROL LİSTESİ (K1–K13)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          "K1",
+          "★ Alıcı kurum SPK lisanslı VKŞ mi? 6362 s.K. kapsamında mı?",
+          null,
+          "SPK lisansı teyit edilmeli. BDDK lisanslı FK/banka ise → 354 veya 355 kullan. VKŞ listesi SPK'dan doğrulanmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K2",
+          "VKŞ münhasıran kira sertifikası ihraç etmek amacıyla mı kurulmuş?",
+          null,
+          "Farklı faaliyet alanları olan şirket VKŞ sayılmaz. Kuruluş amacı teyit edilmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K3",
+          "★ Kira Sertifikası (Sukuk) İhraç Belgesi / İzahname SPK onaylı mı?",
+          null,
+          "SPK onaylı ihraç belgesi tasdik dosyasında zorunludur. İzahname olmadan 356 istisnasının VKŞ kanalı belgelenemiyor.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K4",
+          "KAP bildirimleri yapıldı mı? (SPK zorunluluğu)",
+          null,
+          "Halka açık kira sertifikası ihraçlarında KAP bildirimi zorunlu. D.9 EVET olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K5",
+          "★ Satış ve geri kiralama sözleşmeleri eş zamanlı/bağlı mı?",
+          null,
+          "Sat-kirala-geri al yapısı bütünlüklü olmalı. Ayrı/bağımsız işlemler tartışmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K6",
+          "★ Geri alım taahhüdü/opsiyonu sözleşmede yazılı mı?",
+          null,
+          "Yazılı taahhüt zorunlu. Geri alım olmadan → İstisna iptali + vergi + ceza.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K7",
+          "★ Satış kazancının tamamı 549 hesabına alındı mı? E.6 = F.1 uyumlu mu?",
+          null,
+          "Devir yılında tam tutar 549'a alınmalı. Fon kaydı olmadan istisna geçersiz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K8",
+          "Fon amortizasyonu kira payına orantılı mı?",
+          null,
+          "354/355 ile özdeş. Her dönem: Fon × (Dönem Kira / Toplam Kira). D tablosu uyumlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K9",
+          "Satış bedeli değerleme raporu ile uyumlu mu? SPK açısından da sorun var mı?",
+          null,
+          "SPK ihraç bağlamında değerleme raporu kritik. E.7 farkı analiz edilmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K10",
+          "356 yalnızca DEVİR YILINDA kullanıldı mı?",
+          null,
+          "356 sadece satış/devir yılı beyannamesinde. Sonraki yıllarda yazılmaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K11",
+          "356 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "'Zarar Olsa Dahi' bölümünde DEĞİL. Dönem zararında istisna uygulanamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K12",
+          "Vade sonu geri alım gerçekleşti mi? Takip var mı?",
+          null,
+          "G bölümü takibi zorunlu. Geri alım olmadan → İstisna iptali riski.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K13",
+          "YİAKV matrahında 356 istisnasının etkisi analiz edildi mi?",
+          null,
+          "Dönem mevzuatı ve GİB açıklamaları esas alınmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "F. BEYANNAME EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null,
+          null
+        ],
+        [
+          "356",
+          null,
+          "%100 Tam İstisna → 549 Hesabına → Beyanname 356",
+          "KVK 5/1-j — VKŞ/Sukuk Kanalı | %100 | Kazancın Bulunması Halinde | DEVİR YILI",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354",
+          null,
+          "Taşınır FK/Banka",
+          "BDDK lisanslı FK/katılım/kalkınma-yatırım bankasına taşınır sat-kirala-geri al → 354",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "355",
+          null,
+          "Taşınmaz FK/Banka",
+          "BDDK lisanslı FK/katılım/kalkınma-yatırım bankasına taşınmaz sat-kirala-geri al → 355",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "549 Fon",
+          null,
+          "İstisna kazancının tamamı",
+          "İstisna kazancın tamamı → 549 → Sukuk vadesi boyunca kira payına orantılı amortize.",
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G30",
+      "rows": [
+        [
+          "356 – SAT-KİRALA-GERİ AL DİĞER (VKŞ/SUKUK) | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | VKŞ Kanalı | 3 Aşama: Satış → Kiralama → Geri Alma",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. VKŞ yapısı ve sukuk muhasebesi güncel SPK tebliğlerine göre uyarlanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 1 — VKŞ'YE VARLIK SATIŞ KAYDI (Devir)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Devir Tarihi: [GG.AA.YYYY] | Satış Bedeli: [___] TL | Net Defter: [___] TL | Kazanç: [___] TL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Devir]",
+          "102 Bankalar / 120/121 Alacaklar",
+          "VKŞ'ye devir bedelinin tahsilatı (sukuk ihraç gelirleri VKŞ üzerinden)",
+          "[Satış Bed.]",
+          "—",
+          "İhraç belgesi + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Devir]",
+          "250/252/253/254 İlgili Aktif Hesabı",
+          "Varlığın net defter değeriyle aktiften çıkışı (taşınmaz: tapu, taşınır: teslim)",
+          "—",
+          "[Net Defter]",
+          "Aktif kartı + Devir belgesi"
+        ],
+        [
+          "Kr",
+          "[Devir]",
+          "679 Diğer Olağandışı Kâr / 645 Satış Kârı",
+          "Satış kazancı — KVK 5/1-j 356 istisna — VKŞ/Sukuk kanalı",
+          "—",
+          "[Kazanç]",
+          "KV 356"
+        ],
+        [
+          "★ 356 (VKŞ) vs 354/355 MUHASEBE FARKI:\n354/355: Para doğrudan FK şirketinden/bankadan kurum hesabına girer.\n356 (VKŞ/Sukuk): Sukuk ihraç gelirleri VKŞ üzerinden akar. VKŞ satış bedelini kira sertifikası yatırımcılarından topladığı fonlarla öder.\nKurumun gelir kaydı özünde aynı — ancak ödeme akışında VKŞ bir aracı köprüdür.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 2a — 549 ÖZEL FON HESABINA ALMA (Devir Yılında)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "KV Beyan",
+          "679/645 Satış Kârı Hesabı",
+          "İstisna edilen kazancın gelir hesabından çıkarılması",
+          "[E.6 Tamamı]",
+          "—",
+          "E.6 tutarı"
+        ],
+        [
+          "Kr",
+          "KV Beyan",
+          "549 Özel Fonlar",
+          "%100 İstisna — KVK 5/1-j 356 — VKŞ/Sukuk Kanalı | Sukuk vadesi boyunca amortize",
+          "—",
+          "[E.6 Tamamı]",
+          "Sukuk vade takibi"
+        ],
+        [
+          "AŞAMA 2b — KİRA ÖDEMELERİ — VKŞ'YE — SUKUk SAHİPLERİNE (Her Dönem)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira ödemeleri kurumdan VKŞ'ye akar. VKŞ bu tutarları kira sertifikası sahiplerine dağıtır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Kira]",
+          "760/780/630 Gider Hesabı",
+          "VKŞ'ye ödenen kira — KV matrahından indirilebilir gider",
+          "[Kira TL]",
+          "—",
+          "Kira sözleşmesi + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Kira]",
+          "102 Bankalar",
+          "VKŞ hesabına kira transferi",
+          "—",
+          "[Kira TL]",
+          null
+        ],
+        [
+          "Dr",
+          "[Kira]",
+          "549 Özel Fonlar",
+          "Cari dönem fon amortizasyonu = F.1 × (Dönem Kira / Toplam Kira)",
+          "[F.5 Tutarı]",
+          "—",
+          "F bölümü hesabı"
+        ],
+        [
+          "Kr",
+          "[Kira]",
+          "Nazım/Dipnot",
+          "Fon amortizasyonu karşılığı",
+          "—",
+          "[F.5 Tutarı]",
+          null
+        ],
+        [
+          "AŞAMA 3 — VADE SONU GERİ ALMA KAYDI (Sukuk Vadesi Dolduğunda)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Geri Alım]",
+          "250/252/253/254 İlgili Aktif Hesabı",
+          "Varlığın geri alım bedeliyle yeniden aktife kaydı (taşınmaz: tapu, taşınır: teslim)",
+          "[Geri Alım TL]",
+          "—",
+          "Geri alım belgesi (Tapu/Teslim tutanağı)"
+        ],
+        [
+          "Kr",
+          "[Geri Alım]",
+          "102 Bankalar",
+          "Geri alım bedelinin ödenmesi — VKŞ son defa sukuk sahiplerine anapara ödemesi yapar",
+          "—",
+          "[Geri Alım TL]",
+          "Banka dekontu"
+        ],
+        [
+          "VADE SONU SUKUK KAPANIŞI: Kurum geri alım bedelini VKŞ'ye öder. VKŞ bu tutarı kira sertifikası sahiplerine son ödeme (anapara iadesi) olarak aktarır. VKŞ'nin misyonu sona erer. Varlık kuruma iade edilir. 549 hesabı = 0.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D16",
+      "rows": [
+        [
+          "356 – SAT-KİRALA-GERİ AL DİĞER (VKŞ/SUKUK) | DENETÇİ NOTLARI | KVK Md.5/1-j",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | VKŞ/Sukuk Kanalı | SPK Düzenlemesi | Beyanname 356 | 354/355 Karşılaştırma | 549 Fon Amortizasyonu",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — VKŞ YAPILANMASI, SUKUK MEKANİZMASI VE 354/355 FARKI",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-j 356 Kodu — VKŞ Kanalı Yasal Çerçevesi",
+          "KVK Md.5/1-j'nin tam kapsamı:\nFinansal kiralama şirketleri (354/355) VEYA\n6362 sayılı Kanun kapsamındaki varlık kiralama şirketleri (356)\n\nVARLIK KİRALAMA ŞİRKETİ (VKŞ):\n• 6362 sayılı Sermaye Piyasası Kanunu kapsamında kurulan özel amaçlı şirket\n• Münhasıran kira sertifikası ihraç etmek amacıyla faaliyet gösterir\n• SPK tarafından lisanslanır ve denetlenir (BDDK değil)\n• Kira sertifikası (sukuk) sermaye piyasası aracıdır\n\nBEYANNAME: 356. Satır | 'Kazancın Bulunması Halinde' | %100 | Devir Yılında\n549 FON: Devir yılında tam tutarda → Sukuk vadesi boyunca kira payına amortize\nTAŞINIR: 354 (FK/Banka) veya 356 (VKŞ) — alıcıya göre ayrım\nTAŞINMAZ: 355 (FK/Banka) veya 356 (VKŞ) — alıcıya göre ayrım",
+          "KVK Md.5/1-j | 6362 s.K. | SPK Tebliğleri"
+        ],
+        [
+          "N2",
+          "★ 354/355'ten Fark: SPK Lisanslı VKŞ ve Kira Sertifikası (Sukuk)",
+          "ALICI KURUM FARKI:\n\n354 / 355 kanalı: BDDK lisanslı FK şirketi, Katılım Bankası, Kalkınma-Yatırım Bankası\n356 kanalı: SPK lisanslı VKŞ (Varlık Kiralama Şirketi)\n\nVKŞ'NİN YAPISI (4 Taraflı):\n① Kurum (Satıcı/Kiracı): Varlığı satar, geri kiralar, vade sonunda geri alır\n② VKŞ (Özel Amaçlı Araç): Varlığı satın alır, sukuk ihraç eder, kirayı dağıtır\n③ Sukuk/Kira Sertifikası Sahipleri: VKŞ'ye yatırım yapar, kira geliri alır\n④ SPK: Lisanslar, izahname onaylar, KAP bildirimleri takip eder\n\nSUKUK TÜRÜ:\nİcara (Sat-Kirala-Geri Al Destekli): Varlık kira gelirine dayalı — 356 için tipik\nMurabaha/Wakala: Farklı yapı — 356 kapsamında olup olmadığı özelge ile teyit\n\nYMM notu: SPK lisansı, izahname ve KAP bildirimleri 354/355'te olmayan ek kontrol noktalarıdır.",
+          "KVK Md.5/1-j | 6362 s.K. Md.61 vd. | SPK"
+        ],
+        [
+          "N3",
+          "Kira Sertifikası (Sukuk) ve İzahname — SPK Boyutu",
+          "KİRA SERTİFİKASI (SUKUK) TANIMLARI:\nKira sertifikası: Varlığa dayalı/varlık kiralı yapıda ihraç edilen sermaye piyasası aracı.\nVKŞ, satın aldığı varlık karşılığında kira sertifikası ihraç eder.\nKira sertifikası sahipleri periyodik kira geliri ve vade sonu anapara alır.\n\nİZAHNAME / İHRAÇ BELGESİ:\nHalka açık ihraçlarda SPK onaylı izahname zorunludur.\nNitelikli yatırımcıya ihraçlarda izahname gerekmeyebilir — ihraç belgesi yeterli.\nHer durumda ihraç belgesi SPK'ya onaylattırılmış olmalıdır.\n\nKAP BİLDİRİMLERİ:\nHalka açık kira sertifikalarında: KAP (Kamuyu Aydınlatma Platformu) bildirimi zorunlu.\nİhraç öncesi, sırasında ve dönemsel raporlamada KAP bildirimleri yapılır.\n\nYMM notu: İzahname/ihraç belgesi + KAP bildirimleri tasdik dosyasının SPK boyutunu oluşturur.",
+          "6362 s.K. | SPK Kira Sertifikası Tebliği | KAP"
+        ],
+        [
+          "N4",
+          "354/355/356 Kod Seçimi — Doğru Kodu Belirleme Rehberi",
+          "KARAR AĞACI:\n\nAdım 1: Alıcı kurum türü nedir?\n  → BDDK lisanslı FK şirketi / Katılım bankası / Kalkınma-Yatırım bankası:\n     Adım 2'ye git\n  → SPK lisanslı VKŞ:\n     → 356 kodu kullan\n\nAdım 2: Satılan varlık türü nedir? (BDDK kanallı)\n  → Taşınır (makine, araç, ekipman):\n     → 354 kodu kullan\n  → Taşınmaz (arsa, bina, fabrika):\n     → 355 kodu kullan\n\nÖZET:\nFK/Katılım/Kalkınma-Yatırım + Taşınır → 354\nFK/Katılım/Kalkınma-Yatırım + Taşınmaz → 355\nVKŞ (her tür varlık) → 356\n\nNOT: Karma yapıda (hem VKŞ hem FK ile) ayrı satırlar kullanılmalıdır.",
+          "KVK Md.5/1-j | 354 / 355 / 356"
+        ],
+        [
+          "BÖLÜM 2 — YMM TASDİK STANDARDI VE KRİTİK RİSKLER",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "Fon Amortizasyonu — 354/355 ile Birebir Aynı Mekanizma",
+          "356 (VKŞ kanalı) 354/355 ile AYNI amortizasyon mekanizmasını kullanır:\n\nDEVIR YILI:\n• E.6 tutarının tamamı beyanname 356 satırında istisna\n• Aynı tutar 549 Özel Fonlar hesabına alınır\n\nSUKUK VADESİ BOYUNCA (Her Dönem):\n• Kira ödemeleri VKŞ'ye yapılır → Gider olarak kaydedilir\n• 549 Fon: F = Başlangıç Fon × (Dönem Kira / Toplam Kira)\n• Beyannamede ayrıca gösterilmez\n\nSUKUK VADESİ SONUNDA:\n• 549 hesabı = 0 (tüm amortizasyon tamamlandı)\n• Geri alım ile varlık kuruma iade edilir\n\nYMM notu: 356'da 549 fon muhasebesi 351 gibi sabit değil —\nsukuk vadesine paralel kira payı amortizasyonu uygulanmalıdır.",
+          "KVK Md.5/1-j | 354 / 355 Karşılaştırma"
+        ],
+        [
+          "N6",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...söz konusu varlığın 6362 sayılı Kanun kapsamında SPK tarafından yetkilendirilmiş\n  [VKŞ adı] Varlık Kiralama Şirketi'ne sat-kirala-geri al işlemi çerçevesinde devredildiği\n  ve kira sertifikası ihracı yoluyla finansman sağlandığı tespit edilmiştir'\n'...vade sonunda geri alım taahhüdü sözleşmede yer almaktadır'\n'...istisna edilen kazanç 549 Özel Fonlar hesabına alınmış ve sukuk vadesine paralel\n  amortizasyon takibi yapılmaktadır'\n\nKULLANMAYIN:\n'...finansal kiralama şirketine yapılan...' (VKŞ = FK şirketi değil)\n'...549 hesabı 5 yıl tutulacaktır' (5 yıl kuralı 356'da yok)\n\nEN KRİTİK HATALAR:\n(1) VKŞ'ye satışı FK şirketiyle karıştırmak (354/355 yerine 356)\n(2) SPK lisansı/izahname olmadan 356 istisnası uygulamak\n(3) Fon amortizasyonunu kira payına orantılı değil sabit bırakmak\n(4) 356'yı devir yılı dışında da yazmak",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "GÜNCEL MEVZUAT VE GİB YAKLAŞIMI: KVK 5/1-j'nin VKŞ (356) kanalına ilişkin GİB özelgeleri ve açıklamaları 354/355 kadar kapsamlı değildir. VKŞ yapısının gerçek bir sat-kirala-geri al işlemi oluşturup oluşturmadığı, kira sertifikası tipi (İcara/Murabaha/Wakala) ve vade sonunda geri alımın nasıl belgeleneceği konularında özelge alınması şiddetle tavsiye edilir. SPK mevzuatındaki değişiklikler 6362 s.K. kapsamı üzerinde etkili olabilir — güncel SPK tebliğleri takip edilmelidir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F36",
+      "rows": [
+        [
+          "356 – SAT-KİRALA-GERİ AL DİĞER (VKŞ/SUKUK) | BELGE LİSTESİ | YMM TASDİK | KVK 5/1-j",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | VKŞ/Sukuk Kanalı | Beyanname 356 | SPK Lisanslı VKŞ | Kira Sertifikası (Sukuk) | 549 Fon Amortizasyonu | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: SPK ve KVK boyutundaki zorunlu belgeler. Kategori 2: Varlık türüne göre ek belgeler. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (SPK + KVK BOYUTU)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 356'ya özgün kritik belgeler: SPK Lisansı + İzahname/İhraç Belgesi + KAP Bildirimleri",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ VKŞ'nin SPK Lisansı / Kuruluş İzin Belgesi",
+          "VKŞ'nin 6362 sayılı Kanun kapsamında SPK tarafından yetkilendirildiğini gösteren belge.\nSPK'nın resmi VKŞ listesinden teyit edilmeli.\nYMM notu: SPK lisansı olmayan kurum VKŞ sayılmaz — 356 istisnası geçersiz.",
+          "SPK resmi web sitesi VKŞ listesi / Kuruluş izin belgesi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Kira Sertifikası İzahnamesi veya İhraç Belgesi (SPK Onaylı)",
+          "Kira sertifikası (sukuk) ihracına ait SPK onaylı izahname veya ihraç belgesi.\nİzahname: Halka açık ihraçlarda zorunlu.\nİhraç Belgesi: Nitelikli yatırımcı ihraçlarında yeterli (SPK onaylı).\nYMM notu: Bu belge olmadan VKŞ/sukuk yapısının varlığı kanıtlanamaz.",
+          "SPK onaylı izahname / İhraç belgesi (orijinal veya onaylı)",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Sat-Kirala-Geri Al Sözleşme Paketi (Satış + Kiralama + Geri Alım Taahhüdü)",
+          "Satış/Devir sözleşmesi: Varlığın VKŞ'ye devir koşulları.\nFinansal kiralama/kiralama sözleşmesi: VKŞ'den geri kiralama koşulları ve kira bedeli.\nGeri alım taahhüdü/opsiyonu: Vade sonunda satın alma hakkı.\nYMM notu: 3 sözleşme birbirine bağlı olmalı — bağımsız işlemler kapsam dışı.",
+          "Satış + Kiralama + Geri alım sözleşmeleri (imzalı orijinal)",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ 549 Özel Fon Hesabı Muhasebe Kaydı (Başlangıç — Devir Yılı)",
+          "E.6 tutarının 549 hesabına alındığını gösteren yevmiye kaydı.\nF.1 = E.6 tutarı — uyumlu olmalıdır.\nYMM notu: Fon kaydı yoksa istisna geçersizdir.",
+          "Yevmiye defteri + 549 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Satış Kazancı Hesaplama Tablosu (E Bölümü)",
+          "E.4 = Devir Bedeli − Net Defter − Satış Giderleri. E.6 = %100 İstisna.\nBeyanname 356 ile uyumlu.\nYMM notu: Net defter değeri muhasebe kartıyla uyumlu.",
+          "E bölümü hesaplama tablosu + Aktif muhasebe kartı",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 356. Satır (Devir Yılı)",
+          "356. satırındaki tutarın E.6 ile birebir uyumlu olduğu teyit.\n'Kazancın Bulunması Halinde İndirilecek' bölümünde doğru konumlandırma.\nSonraki yıllarda 356 satırına yazılmaz.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — SPK BOYUTU VE DEVAM TAKİP BELGELERİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KAP Bildirimleri (Halka Açık İhraç ise Zorunlu)",
+          "Kira sertifikası ihracına ilişkin KAP bildirimleri.\nİhraç öncesi prospektüs/duyuru, dönemsel raporlar, vade sonu bildirimi.\nD.9 (KAP Bildirimi) EVET ise bu belgeler dosyada bulunmalı.",
+          "KAP (kamuaydınlatma.gov.tr) — İlgili bildirimler",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Bağımsız Değerleme Raporu (SPK Bağlamında Önem Taşır)",
+          "SPK ihraç bağlamında varlık değerlemesi kritik.\nE.7 (Değerleme uyum farkı) analizi için kullanılır.\nVarlık türüne göre: Taşınmaz → SPK lisanslı değerleme; Taşınır → Ekspertiz.",
+          "SPK lisanslı değerleme kuruluşu / Bağımsız uzman raporu",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Varlık Devir Belgesi (Varlık Türüne Göre)",
+          "Taşınmaz: Tapu senedi (VKŞ adına tescil).\nTaşınır: E-Fatura + Teslim-tesellüm tutanağı.\nHak/Maddi Olmayan Varlık: Devir/Temlik sözleşmesi.\nAktiften çıkış muhasebe kaydıyla uyumlu.",
+          "Tapu / E-Fatura / Devir sözleşmesi (varlık türüne göre)",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Dönemsel Kira Ödeme Dekontları + Fon Amortizasyon Tablosu",
+          "Her kira dönemine ait VKŞ'ye yapılan ödeme dekontu.\nD tablosu fon amortizasyon izlemesi (5 dönem örnek).\nSukuk vadesi sonunda 549 = 0 kontrolü.",
+          "Banka ödeme dekontları + HESAPLAMALAR D tablosu",
+          null
+        ],
+        [
+          null,
+          "11",
+          "Vade Sonu Geri Alım Belgesi",
+          "Sukuk vadesi sonunda satın alma opsiyonunun kullanıldığına dair belge.\nTaşınmaz: Tapu geri devri senedi. Taşınır: Teslim tutanağı.\nYMM notu: Geri alım gerçekleşmemişse → İstisna iptal riski.",
+          "Geri alım belgesi (varlık türüne göre)",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (★ Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Alıcı kurum SPK lisanslı VKŞ mi? BDDK lisanslı FK/banka ise 354/355 kullanılmalı",
+          "SPK VKŞ listesinden teyit. Yanlış kod → Beyanname hatası. 354/355 ile 356 karıştırılmamalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ SPK onaylı izahname/ihraç belgesi mevcut mu?",
+          "İzahname olmadan VKŞ/sukuk yapısının belgelenmesi mümkün değil. Zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "KAP bildirimleri yapıldı mı? (Halka açık ihraçlarda)",
+          "D.9 EVET olmalı. KAP bildirimleri tasdik dosyasında.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ Sat-kirala-geri al sözleşmeleri (3'lü paket) eş zamanlı/bağlı mı?",
+          "Satış + Kiralama + Geri alım taahhüdü birbirine bağlı. Ayrı işlemler tartışmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "★ Geri alım taahhüdü sözleşmede yazılı mı?",
+          "Yazılı taahhüt zorunlu. Geri alım olmadan istisna iptal riski.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "★ E.6 tutarı 549 hesabına alındı mı? F.1 = E.6 uyumlu mu?",
+          "Devir yılında tam tutar 549'a. Fon kaydı olmadan istisna geçersiz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Fon amortizasyonu sukuk vadesine paralel kira payına orantılı mı?",
+          "354/355 ile özdeş mekanizma. 351 gibi sabit değil. D tablosu uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "356 yalnızca DEVİR YILINDA kullanıldı mı?",
+          "356 sadece devir/satış yılı beyannamesi. Sonraki yıllarda yazılmaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Satış bedeli değerleme raporu ile uyumlu mu? SPK bağlamında da sorun var mı?",
+          "E.7 farkı analiz edilmeli. SPK ihraç bağlamında değerleme kritik.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "356 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "'Zarar Olsa Dahi' değil. Dönem zararında istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 356'nın 354/355'ten TEK FARKI: Alıcı kurum SPK lisanslı VKŞ (6362 s.K.) — BDDK değil. SPK boyutu: İzahname + KAP bildirimleri — 354/355'te olmayan ek yükümlülükler. Fon amortizasyonu, geri alım taahhüdü, 549 muhasebesi 354/355 ile özdeş. Beyanname 356: 'Kazancın Bulunması Halinde' — yalnızca devir yılında. GİB özelgesi alınması şiddetle tavsiye edilir (sukuk yapısı iç mevzuatta az emsal). YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

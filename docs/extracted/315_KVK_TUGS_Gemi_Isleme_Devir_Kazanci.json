@@ -1,0 +1,1323 @@
+{
+  "file": "315_KVK_TUGS_Gemi_Isleme_Devir_Kazanci.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G70",
+      "rows": [
+        [
+          "315 – TÜRK ULUSLARARASI GEMİ SİCİLİNE KAYITLI GEMİLERİN İŞLETİLMESİNDEN VE DEVRİNDEN SAĞLANAN KAZANÇLAR | 4490 Sayılı TUGS Kanunu | BEYANNAME 315",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "4490 Sayılı Türk Uluslararası Gemi Sicili Kanunu | %100 Tam İstisna | SÜRESİZ | TUGS Kayıtlı Gemi İşletmesi + Devri | Sicil Aktifliği Şartı | Beyanname 315 — Kazancın Bulunması Halinde",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ İKİ AYAKLI KAPSAM: (1) GEMİ İŞLETME KAZANCI — navlun/kira/yük/kurtarma gelirleri. (2) GEMİ DEVİR KAZANCI — TUGS'a kayıtlı geminin satışı. TEMEL ŞART: Kazancın elde edildiği tarihte TUGS kaydı AKTİF olmak zorundadır. Askıya alınan/terkin edilen dönem kazancı kapsam dışıdır. SÜRESİZ: KVK geçici maddelerindeki gibi tarih sınırı yoktur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "311 (TGB Yönetici Şirket) ile karşılaştırma: Her ikisi de özel kanun istisnası, %100, süresiz. 315'in farkı: GEMİ DEVİR kazancı da istisna kapsamında (311'de devir istisnası yoktur). Kapsam dışı: Mevduat faizi, gemi işletimiyle bağlantısız finansal gelirler.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  ★ Gemi TUGS'a kayıtlı mı? Tescil şahadetnamesi aktif mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Temel şart. TUGS kaydı olmayan gemi (Ulusal Gemi Sicili vb.) kapsam dışıdır.",
+          null
+        ],
+        [
+          "A0.2  ★ Kazanç türü nedir?",
+          null,
+          null,
+          null,
+          "İşletme Kazancı",
+          "İşletme (D bölümü) ve devir (E bölümü) ayrı hesaplanır, 315'te toplanır.",
+          null
+        ],
+        [
+          "A0.3  ★ Sicil kaydı kazancın elde edildiği tarihte AKTİF miydi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Askıya alınan dönemdeki kazanç 315 dışındadır. Tüm dönem için sicil aktifliği belgelenmeli.",
+          null
+        ],
+        [
+          "A0.4  Kapsam dışı gelir (mevduat faizi vb.) var mı? Ayrıştırıldı mı?",
+          null,
+          null,
+          null,
+          "HAYIR",
+          "Mevduat faizi ve gemi işletimiyle bağlantısız gelirler C bölümünde ayrıştırılmalıdır.",
+          null
+        ],
+        [
+          "A0.5  ★ İstisnanın SÜRESİZ olduğu teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "4490 s.K. istisnası süresizdir — KVK geçici madde tarih sınırları uygulanmaz.",
+          null
+        ],
+        [
+          "A0.6  YMM Tasdik Raporu gereksinimi değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.",
+          null
+        ],
+        [
+          "A0.7  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.1 (TUGS sicil), A0.3 (sicil aktifliği) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Gemi işleten / devreden kurum",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Gemi Adı ve IMO Numarası",
+          null,
+          null,
+          null,
+          null,
+          "Her gemi — birden fazla varsa en önemlisi",
+          null
+        ],
+        [
+          "TUGS Tescil Şahadetnamesi No",
+          null,
+          null,
+          null,
+          null,
+          "Türk Uluslararası Gemi Sicili tescil belgesi numarası",
+          null
+        ],
+        [
+          "TUGS Kayıt Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "Gemi Türü",
+          null,
+          null,
+          null,
+          null,
+          "Tanker/Kuru Yük/Konteyner/Ro-Ro/Yolcu/Kimyasal vb.",
+          null
+        ],
+        [
+          "İstisna Türü",
+          null,
+          null,
+          null,
+          null,
+          "İşletme Kazancı / Devir Kazancı / Her İkisi",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. TUGS SİCİL TEYİDİ VE GEMİ KİMLİĞİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "TUGS tescil şahadetnamesi tasdik dosyasının birincil belgesidir. Sicil aktifliği tüm hesap dönemi için kontrol edilmelidir. Birden fazla gemi varsa her gemi için ayrı B bölümü veya tablo eklenmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Belge"
+        ],
+        [
+          "B.1  Gemi Adı",
+          null,
+          null,
+          "TUGS tescil belgesiyle birebir",
+          null,
+          "TUGS Tescil Şahadetnamesi",
+          null
+        ],
+        [
+          "B.2  IMO Numarası",
+          null,
+          null,
+          "7 haneli uluslararası gemi kimlik numarası",
+          null,
+          "IMO Sertifikası",
+          null
+        ],
+        [
+          "B.3  TUGS Tescil Şahadetnamesi No",
+          null,
+          null,
+          null,
+          null,
+          "Ulaştırma ve Altyapı Bakanlığı",
+          null
+        ],
+        [
+          "B.4  TUGS Kayıt Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "TUGS Tescil Şahadetnamesi",
+          null
+        ],
+        [
+          "B.5  Gemi Sicil Kaydı Hesap Döneminde AKTİF mi?",
+          null,
+          "EVET",
+          "Kısmen askıya alınmış dönem analizi yapılmalı",
+          null,
+          "TUGS Sicil Teyit Yazısı",
+          null
+        ],
+        [
+          "B.6  Gemi İşletme Türü",
+          null,
+          "Navlun/Kargo",
+          "İşletme türü kapsam içi gelir kategorisini belirler",
+          null,
+          "Sözleşmeler",
+          null
+        ],
+        [
+          "C. GEMİ İŞLETME — KAPSAM İÇİ / KAPSAM DIŞI GELİR ANALİZİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "TUGS istisnasının kapsam sınırı: Yalnızca GEMİ İŞLETMESİNDEN kaynaklanan gelirler. Mevduat faizi ve geme bağlantısız finansal gelirler kapsam dışıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Gelir Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Kapsam",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Navlun Gelirleri (Yük/Kargo Taşıma)",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "Temel gemi işletme geliri — kapsam içi",
+          null
+        ],
+        [
+          "C.2  Zaman Kiralama (Time Charter) Gelirleri",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "Kapsam içi",
+          null
+        ],
+        [
+          "C.3  Çıplak Tekne Kiralama (Bare Boat) Gelirleri",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "Kapsam içi",
+          null
+        ],
+        [
+          "C.4  Yolcu Taşıma Gelirleri",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "Kapsam içi",
+          null
+        ],
+        [
+          "C.5  Kurtarma/Yardım (Salvage) Gelirleri",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "4490 s.K. kapsamı içi",
+          null
+        ],
+        [
+          "C.6  Sürastarya (Demurrage) Gelirleri",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "Navlun sözleşmesine bağlı — kapsam içi",
+          null
+        ],
+        [
+          "C.7  TOPLAM KAPSAM İÇİ GELİR",
+          null,
+          null,
+          "0",
+          null,
+          "İstisna hesabının dayanağı",
+          null
+        ],
+        [
+          "C.8  Mevduat Faizi ve Finansal Gelirler",
+          null,
+          "KAPSAM DIŞI",
+          null,
+          null,
+          "★ KESİN KAPSAM DIŞI",
+          null
+        ],
+        [
+          "C.9  TUGS Dışı Gemi/Araç Gelirleri",
+          null,
+          "KAPSAM DIŞI",
+          null,
+          null,
+          "TUGS kaydı olmayan gemi kapsam dışı",
+          null
+        ],
+        [
+          "C.10  TOPLAM KAPSAM DIŞI GELİR",
+          null,
+          null,
+          "0",
+          null,
+          "Vergiye tabi kısım",
+          null
+        ],
+        [
+          "D. GEMİ İŞLETME KAZANCI HESABI (AŞAMA 1)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Kapsam İçi Toplam İşletme Geliri",
+          null,
+          null,
+          "0",
+          null,
+          "Gemi işletme gelirleri",
+          null
+        ],
+        [
+          "D.2  Doğrudan Gemi Giderleri (Yakıt/Liman/Mürettebat/Bakım/Sigorta)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  Genel Yönetim Gideri Payı (Dağıtım Anahtarıyla)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.4  GEMİ İŞLETME KAZANCI = D.1 − D.2 − D.3",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.5  DURUM",
+          null,
+          null,
+          "ZARAR/SIFIR",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.6  İŞLETME KAZANCI İSTİSNA TUTARI (%100)",
+          null,
+          null,
+          "0",
+          null,
+          "→ F bölümü toplamına",
+          null
+        ],
+        [
+          "E. GEMİ DEVİR KAZANCI HESABI (AŞAMA 2 — Varsa)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "TUGS'a kayıtlı geminin satışından doğan devir kazancı da 315 kapsamındadır. Devir tarihinde TUGS kaydı aktif olmalıdır. Devir yoksa E bölümü boş bırakılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  Gemi Satış Bedeli (TL)",
+          null,
+          null,
+          null,
+          null,
+          "Gemi alım-satım sözleşmesi + Sicil devir belgesi",
+          null
+        ],
+        [
+          "E.2  Geminin Net Defter Değeri (TL)",
+          null,
+          null,
+          null,
+          null,
+          "253 hesap kartı (amortisman düşülmüş)",
+          null
+        ],
+        [
+          "E.3  Satış Giderleri (TL)",
+          null,
+          null,
+          null,
+          null,
+          "Acente, noter, sicil harçları vb.",
+          null
+        ],
+        [
+          "E.4  GEMİ DEVİR KAZANCI = E.1 − E.2 − E.3",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.5  DEVİR KAZANCI İSTİSNA TUTARI (%100)",
+          null,
+          null,
+          "0",
+          null,
+          "→ F bölümü toplamına",
+          null
+        ],
+        [
+          "F. BEYANNAME 315 — TUGS GEMİ İŞLETME VE DEVİR KAZANCI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 315 (Kazancın Bulunması Halinde — %100 — SÜRESİZ)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "D.6 (İşletme) + E.5 (Devir)"
+        ],
+        [
+          "UYARILAR: (1) SÜRESİZ — tarih sınırı yoktur. (2) SİCİL AKTİFLİĞİ — askıya alınan dönem kapsam dışı. (3) KAPSAM — mevduat faizi ve gemi dışı finansal gelirler 315 dışıdır. (4) 315 = Kazancın Bulunması Halinde — gemi işletme zararında uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G41",
+      "rows": [
+        [
+          "315 – TUGS GEMİ İŞLETME VE DEVİR KAZANCI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "4490 Sayılı TUGS Kanunu | %100 İstisna | SÜRESİZ | İşletme + Devir | Beyanname 315 | Kazancın Bulunması Halinde | Sicil Aktifliği | 311 Karşılaştırma",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "TUGS Sicil Aktifliği (B.5)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Kapsam İçi Gelir (C.7)",
+          null,
+          null,
+          "0",
+          "Gemi işletme gelirleri",
+          null,
+          null
+        ],
+        [
+          "Kapsam Dışı Gelir (C.10)",
+          null,
+          null,
+          "0",
+          "Vergiye tabi kısım",
+          null,
+          null
+        ],
+        [
+          "İşletme Kazancı (D.4)",
+          null,
+          null,
+          "0",
+          "Net gemi işletme kazancı",
+          null,
+          null
+        ],
+        [
+          "Devir Kazancı (E.4)",
+          null,
+          null,
+          "0",
+          "Varsa gemi satış kazancı",
+          null,
+          null
+        ],
+        [
+          "315 TOPLAM İSTİSNA (F.1)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "SÜRESİZLİK TEYİDİ (A0.5)",
+          null,
+          null,
+          "EVET",
+          "EVET — tarih sınırı yok",
+          null,
+          null
+        ],
+        [
+          "B. 315 (TUGS GEMİ) vs 311 (TGB YÖNETİCİ ŞİRKET) KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her ikisi de özel kanun istisnası, %100, süresiz. Kapsam ve statü şartları farklı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "315 — TUGS Gemi",
+          null,
+          "311 — TGB Yönetici Şirket",
+          null
+        ],
+        [
+          "Yasal Dayanak",
+          null,
+          "4490 s.K. TUGS Kanunu",
+          null,
+          "4691 s.K. TGB Kanunu",
+          null,
+          null
+        ],
+        [
+          "Statü Şartı",
+          null,
+          "TUGS'a kayıtlı gemi — sicil belgesi",
+          null,
+          "Bakanlık onaylı yönetici şirket",
+          null,
+          null
+        ],
+        [
+          "İstisna Konusu",
+          null,
+          "Gemi işletme + devir kazancı",
+          null,
+          "TGB yönetim faaliyeti kazancı",
+          null,
+          null
+        ],
+        [
+          "Devir Kazancı",
+          null,
+          "EVET — TUGS gemisinin satışı",
+          null,
+          "HAYIR — yönetim faaliyeti için geçerli değil",
+          null,
+          null
+        ],
+        [
+          "Kapsam İçi Gelir",
+          null,
+          "Navlun/kira/kurtarma/taşıma",
+          null,
+          "Kira/yönetim ücreti/altyapı",
+          null,
+          null
+        ],
+        [
+          "Kapsam Dışı",
+          null,
+          "Mevduat faizi — gemi dışı gelirler",
+          null,
+          "Mevduat faizi — TGB dışı gelirler",
+          null,
+          null
+        ],
+        [
+          "Personel GV İstisnası",
+          null,
+          "TUGS çalışanlarına ayrı GV istisnası",
+          null,
+          "TGB personeline ayrı GV istisnası",
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100",
+          null,
+          "%100",
+          null,
+          null
+        ],
+        [
+          "Süre",
+          null,
+          "SÜRESİZ",
+          null,
+          "SÜRESİZ",
+          null,
+          null
+        ],
+        [
+          "Beyanname",
+          null,
+          "315",
+          null,
+          "311",
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          "YMM"
+        ],
+        [
+          "K1",
+          "★ Gemi TUGS'a kayıtlı mı? Tescil şahadetnamesi dosyada mı?",
+          null,
+          "TUGS tescil belgesi zorunludur. Ulusal sicildeki gemi kapsam dışıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Hesap döneminde TUGS sicil kaydı AKTİF mi?",
+          null,
+          "Tüm dönem sicil aktifliği belgesiyle kanıtlanmalı. Askıya alınan dönem ayrıştırılır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Kapsam içi/dışı gelir ayrıştırması C bölümünde yapıldı mı?",
+          null,
+          "Mevduat faizi kesin kapsam dışı. Muhasebe alt hesap ile uyumlu olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "Gider dağıtımı kapsam içi/dışı oranına göre yapıldı mı?",
+          null,
+          "D.3 dağıtım yöntemi belgelenmiş ve tutarlı olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ İstisnanın SÜRESİZ olduğu teyit edildi mi?",
+          null,
+          "4490 s.K. — tarih sınırı yoktur. KVK Geçici Md. sınırı uygulanmaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "Devir kazancı varsa devir tarihinde TUGS kaydı aktif miydi?",
+          null,
+          "Devir tarihi itibarıyla aktif sicil zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "Gemi devir belgesi (sicil devir tescili) mevcut mu?",
+          null,
+          "Geminin TUGS sicilinden alıcıya devir tescil belgesi.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "Çoklu gemi varsa her gemi için ayrı analiz yapıldı mı?",
+          null,
+          "Her TUGS gemisi için ayrı gelir-gider tablosu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "315 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "'Zarar Olsa Dahi' değil. Gemi işletme zararında uygulanamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "Beyanname 315 = D.6 + E.5 uyumlu mu?",
+          null,
+          "İşletme + Devir toplamı kontrol edilmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "TUGS çalışanları GV ücret istisnası ayrıca analiz edildi mi?",
+          null,
+          "KV tasdikinin dışında ayrıca incelenmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G17",
+      "rows": [
+        [
+          "315 – TUGS GEMİ İŞLETME VE DEVİR KAZANCI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "4490 s.K. | %100 İstisna | SÜRESİZ | İşletme + Devir | Beyanname 315",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Kapsam içi/dışı gelir ayrıştırması için muhasebe alt hesap sistemi kurulmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — GEMİ İŞLETME GELİRİ (Navlun/Charter — Kapsam İçi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Seyir]",
+          "120/121 Alacaklar (600.01 Kapsam İçi)",
+          "Navlun/charter alacağı",
+          "[Tutar]",
+          "—",
+          "Sözleşme"
+        ],
+        [
+          "Kr",
+          "[Seyir]",
+          "600 Hizmet Gelirleri (600.01 — GEMİ İŞL.)",
+          "315 istisna — Beyanname 315",
+          "—",
+          "[Tutar]",
+          "KV 315"
+        ],
+        [
+          "ALT HESAP: 600.01 — TUGS Gemi İşletme (Kapsam İçi) | 600.02 — Kapsam Dışı. Muhasebe ayrımı yapılmadan C bölümü belgelenemiyor.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — GEMİ DEVIR KAZANCI (TUGS Kayıtlı Geminin Satışı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Devir]",
+          "102 Bankalar",
+          "Satış bedeli tahsilatı",
+          "[Satış Bed.]",
+          "—",
+          "Alım-satım söz.+Sicil"
+        ],
+        [
+          "Kr",
+          "[Devir]",
+          "253 Taşıtlar",
+          "Net defter değeriyle aktiften çıkış",
+          "—",
+          "[Net Defter]",
+          "253 kartı"
+        ],
+        [
+          "Kr",
+          "[Devir]",
+          "257 Birikmiş Amortismanlar",
+          "Amortisman kapatma",
+          "—",
+          "[Amortisman]",
+          "257 kartı"
+        ],
+        [
+          "Kr",
+          "[Devir]",
+          "679 Diğer Olağandışı Kâr",
+          "Devir kazancı — 4490 s.K. 315 — TUGS aktif şart",
+          "—",
+          "[Kazanç]",
+          "KV 315"
+        ],
+        [
+          "315 (TUGS GEMİ) vs 311 (TGB): 311'de devir kazancı istisnası yoktur. 315'te hem işletme hem devir kazancı kapsam içindedir. Gemi devri Türk Gemi Sicili tesciliyle tamamlanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D8",
+      "rows": [
+        [
+          "315 – TUGS GEMİ İŞLETME VE DEVİR KAZANCI | DENETÇİ NOTLARI | 4490 S.K.",
+          null,
+          null,
+          null
+        ],
+        [
+          "4490 s.K. | %100 | SÜRESİZ | İşletme+Devir | Beyanname 315 | 311 Karş. | Sicil Aktifliği",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "4490 s.K. TUGS İstisnası — Yasal Çerçeve",
+          "4490 SAYILI TÜRK ULUSLARARASI GEMİ SİCİLİ KANUNU (1999):\n\nİSTİSNA KAPSAMI — İKİ AYAK:\n① GEMİ İŞLETME: TUGS kayıtlı geminin işletilmesinden elde edilen kazançlar KV'den müstesna.\n② GEMİ DEVİR: TUGS kayıtlı geminin devrinden sağlanan kazançlar da istisna kapsamında.\n\nSÜRESİZLİK: 4490 s.K. istisnası için tarih sınırı yoktur — süresizdir.\n\nSİCİL AKTİFLİĞİ: Kazancın elde edildiği tarihte TUGS kaydı aktif olmalıdır.\nAskıya alınmış veya terkin edilmiş gemi → Kapsam dışı.\n\nBEYANNAME: 315. Satır | 'Kazancın Bulunması Halinde' | %100",
+          "4490 s.K. | Ulaştırma ve Altyapı Bakanlığı"
+        ],
+        [
+          "N2",
+          "Kapsam İçi/Dışı ve YMM Tasdik Standardı",
+          "KAPSAM İÇİ: Navlun, time charter, bare boat, yolcu, salvage, demurrage.\nKAPSAM DIŞI: Mevduat faizi, TUGS dışı gemi gelirleri, finansal gelirler.\n\nYMM KULLANSIN:\n'...TUGS Tescil Şahadetnamesi No:[...] ile kayıtlı [gemi/IMO] işletmesinden\n  elde edilen kazanç 4490 s.K. kapsamında kurumlar vergisinden müstesnadır'\n'...sicil kaydı tüm hesap dönemi boyunca aktif olduğu teyit edilmiştir'\n\nKRİTİK HATALAR:\n(1) Mevduat faizini 315 kapsamında beyan etmek.\n(2) Sicil askıya alınmış dönem kazancına istisna uygulamak.\n(3) Gemi işletme zararını 'Zarar Olsa Dahi' bölümüne yazmak.\n(4) İstisna için tarih sınırı uygulamak (315 süresizdir).\n\nKDV NOTU: 315 KV istisnası KDV muafiyeti sağlamaz — uluslararası deniz taşımacılığı KDV'si KDVK kapsamında ayrıca incelenmelidir.",
+          "4490 s.K. | 49 No.lu Tebliğ | SM-SMMM-YMM K."
+        ],
+        [
+          "315 vs 311 ÖZET: Her ikisi özel kanun istisnası, %100, süresiz. 315'in 311'den farkı: GEMİ DEVİR kazancı da istisna kapsamında. 311'de devir kazancı istisnası yok. 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. YMM müteselsil sorumluluk: Md.12.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F30",
+      "rows": [
+        [
+          "315 – TUGS GEMİ İŞLETME VE DEVİR KAZANCI | BELGE LİSTESİ | YMM TASDİK | 4490 S.K.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "4490 s.K. | %100 | SÜRESİZ | İşletme+Devir | Beyanname 315 | TUGS Sicil | Kapsam Analizi",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "3 Kritik: TUGS Tescil Şahadetnamesi + Sicil Aktiflik Teyidi + Kapsam Ayrıştırma Tablosu",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ TUGS Tescil Şahadetnamesi (Her Gemi İçin)",
+          "TUGS'a kayıtlı gemi tescil belgesi — gemi adı, IMO No, tonaj, tescil tarihi.\nYMM notu: 315 tasdik dosyasının birincil belgesidir.",
+          "Ulaştırma Bakanlığı TUGS Sicil Müdürlüğü",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ TUGS Sicil Aktiflik Teyit Yazısı (Dönem İçin)",
+          "Hesap dönemi boyunca TUGS kaydının aktif olduğunu gösteren Bakanlık teyit yazısı.\nYMM notu: Askıya alınan dönem kazancı 315 dışındadır.",
+          "TUGS Sicil Müdürlüğü / Bakanlık yazısı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Navlun/Charter Sözleşmeleri",
+          "Gemi işletme gelirini belgeleyen charter party ve taşıma sözleşmeleri.\nC.1-C.6 kapsam içi gelirlerin dayanağıdır.",
+          "Charter party + Faturalar",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Kapsam İçi/Dışı Gelir Ayrıştırma Tablosu (C Bölümü)",
+          "Kapsam içi gemi işletme gelirleri ile kapsam dışı finansal gelirlerin ayrıştırıldığı tablo.\nMuhasebe alt hesap (600.01/600.02) ile uyumlu.",
+          "C bölümü + Muhasebe ekstresi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 315. Satır",
+          "315 = D.6 + E.5 uyumlu. 'Kazancın Bulunması Halinde' bölümünde.\nMevduat faizi vb. 315'e yazılmamış.",
+          "GİB e-Beyanname",
+          null
+        ],
+        [
+          "KATEGORİ 2 — DEVİR VE EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Gemi Alım-Satım Sözleşmesi + Sicil Devir Belgesi (Devir Varsa)",
+          "Geminin TUGS sicilinden alıcıya devir tescilini gösteren belge.\nDevir tarihi itibarıyla TUGS kaydının aktif olduğu teyit edilmeli.",
+          "TUGS Sicil Müdürlüğü devir tescil belgesi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Gemi 253 Hesap Kartı ve Amortisman Tablosu",
+          "E.2 net defter değerini belgeler. Amortisman tutarı 257 kartıyla uyumlu.",
+          "253 ve 257 hesap kartları",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Gider Dağıtım Anahtarı Belgesi",
+          "D.3 formülüne dayanan kapsam içi/dışı gider dağıtım tablosu.\nYöntem yazılı ve tutarlı olmalıdır.",
+          "Dağıtım tablosu + Gider ekstresi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Gemi TUGS kayıtlı mı? Tescil şahadetnamesi dosyada mı?",
+          "TUGS tescil belgesi zorunludur.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Hesap döneminde TUGS sicil kaydı AKTİF mi?",
+          "Tüm dönem sicil aktifliği belgelenmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Kapsam içi/dışı gelir ayrıştırması yapıldı mı?",
+          "Mevduat faizi kesin kapsam dışı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ İstisnanın SÜRESİZ olduğu teyit edildi mi?",
+          "4490 s.K. — tarih sınırı yoktur.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Devir kazancı varsa devir tarihinde TUGS kaydı aktif miydi?",
+          "E.5 devir kazancı dayanağı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "315 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "'Zarar Olsa Dahi' değil.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "315 = D.6 + E.5 uyumlu mu?",
+          "İşletme + Devir toplamı kontrol edilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "YMM Tasdik Raporu değerlendirildi mi?",
+          "49 No.lu Tebliğ >=500.000 TL.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 315'in 3 kritik özelliği: (1) SÜRESİZ — 4490 s.K. tarih sınırı yoktur. (2) İKİ AYAK — Gemi işletme + Devir kazancı her ikisi kapsam içinde. (3) SİCİL AKTİFLİĞİ — Askıya alınan dönem kapsam dışıdır. 311 (TGB) ile fark: 315'te devir kazancı da istisna; 311'de yoktur. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

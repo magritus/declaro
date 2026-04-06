@@ -22,21 +22,63 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "KVK Geçici Md.14/4 (Paragraf 4) kapsamında bir işlem gerçekleştirildi mi ve bu araçtan dönem sonu (31 Aralık) faiz/kâr payı tahakkuku yapıldı mı?"
   info_modal: |
-    KVK Geçici Madde 14/4 (Paragraf 4) kapsamındaki araçlardan 31 Aralık dönem sonu
-    itibarıyla VUK Md.280/281 kapsamında tahakkuk eden faiz ve kâr payı kurumlar vergisinden
-    istisnadır (Beyanname 383).
+    ## Genel Çerçeve
 
-    Paragraf 4, Paragraf 1 (370-374), Paragraf 2 (375-378) ve Paragraf 3 (379-382)
-    kapsamlarından farklı, belirli TL araç/enstrüman kategorisine özgü ayrı hükümdür.
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Paragraf 4 (383–385), önceki üç Paragrafın dışında kalan belirli TL araç/enstrüman
+    kategorilerini kapsar. Bu Paragraf'ın kapsamı, GİB KV Beyan Rehberi (No:606) ve ilgili
+    Cumhurbaşkanı Kararları çerçevesinde müşteriye özgü analiz gerektiren bir alandır.
 
-    Kapsam analizi zorunludur: Bu araç 372 (P1), 376 (P2) veya 380 (P3) kapsamına
-    girmemelidir. YMM paragraf analizini belgelemelidir.
+    ## Bu Satırın Kapsamı
 
-    GİB özelgesi: Paragraf 4 kapsamı belirsiz veya tartışmalıysa özelge alınması zorunludur.
+    Beyanname **383**, Paragraf 4 kapsamındaki araçlardan 31 Aralık dönem sonu itibarıyla
+    VUK Madde 280/281 kapsamında **tahakkuk ettirilen** faiz ve kâr payı istisnasıdır.
+    Muhasebe mekanizması 372 (Paragraf 1), 376 (Paragraf 2) ve 380 (Paragraf 3) ile
+    tamamen aynıdır (Dr 181 / Kr 642). Aralarındaki fark bağlantılı Paragraf'tır. 383'ü
+    diğer Paragraflardan ayıran kritik husus şudur: Bu araç 372/376/380 kapsamına
+    girmemelidir. YMM'nin "bu araç neden Paragraf 4 kapsamındadır" sorusunu yazılı olarak
+    yanıtlaması gerekmektedir. Paragraf 4'ün olası kapsam alanları: özel TL enstrümanlar
+    (tahvil, sertifika), belirli tarih aralıklarında açılan TL hesaplar ve kurumsal
+    yatırımcı hesapları.
 
-    Muhasebe: Borç 181 Gelir Tahakkukları / Alacak 642 Faiz Gelirleri
+    ## Temel Koşullar
 
-    YİAKV uyarısı: Bu istisna YİAKV matrahından DÜŞÜLEMEZ (YİAKV E.7 listesi).
+    - Araç Paragraf 4 kapsamına girdiği ve 372/376/380 kapsamına **girmediği** belgelenmiş
+      olmalıdır
+    - VUK Madde 280/281 kapsamında dönem sonu tahakkuk muhasebe kaydı (Dr 181 / Kr 642)
+      yapılmış olmalıdır
+    - 372/376/380 ile mükerrerlik analizi tamamlanmış; aynı araç için birden fazla Paragraf
+      kodu uygulanmadığı teyit edilmiş olmalıdır
+    - Paragraf 4 kapsamı belirsizse GİB özelgesi alınması zorunludur; özelgesiz 383
+      uygulaması tarhiyat riski taşır
+
+    ## Önemli Uyarılar
+
+    - **Kapsam belgesi zorunlu:** YMM'nin GİB KV Beyan Rehberi (No:606) ve ilgili CB
+      Kararları çerçevesinde hazırladığı Paragraf 4 kapsam analizi notu tasdik dosyasının
+      temel dayanağıdır; bu not olmadan istisna savunulamaz
+    - **Özelge önceliği:** Paragraf 4 diğer üç Paragrafla kıyaslandığında en az emsal oluşmuş
+      alandır. Tereddüt durumunda GİB özelgesi alınması tarhiyat riskini ortadan kaldırır
+    - **Tahakkuk kaydı zorunlu:** 181 Dr / 642 Kr muhasebe kaydı olmadan 383 istisnasının
+      muhasebe dayanağı bulunmaz; vergi incelemesinde bu eksiklik kritik sorun oluşturur
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca ≥ 500.000 TL ise YMM raporu
+      zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    KVK Geçici Madde 14 kapsamındaki tüm kodlar YİAKV matrahından düşülemez. 383-384-385
+    Paragraf 4 paketi de bu kuralın ayrılmaz parçasıdır.
+
+    ## Pratik Notlar
+
+    - **383-384 mükerrerlik kuralı:** Dönem sonunda 383 tahakkuku yapılan araç izleyen dönemde
+      vadeye girdiğinde 384 uygulanır: Net 384 = Vade Toplam − Önceki Yıl 383. Bu kural
+      372-373, 376-377 ve 380-381 kurallarının Paragraf 4 karşılığıdır
+    - **Sonraki dönem 181 kapatma:** 383 tahakkuku sonraki dönemde tahsil edildiğinde 181
+      kapatılır (102 Dr / 181 Kr); o dönemde yeniden 383 uygulanmaz
+    - **Paragraf 4 paketi:** 383 (dönem sonu tahakkuk) + 384 (genel kâr payı/faiz) + 385
+      (vade sonu diğer) Paragraf 4 paketini oluşturur; 383 bu paketin ilk kodudur
   kapi_sorulari:
     - id: paragraf4_kapsam
       soru: "KVK Geçici Md.14/4 kapsamında işlem gerçekleştirildi mi? (Yasal dayanak ve kapsam teyit edildi mi?)"

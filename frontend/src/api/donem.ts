@@ -4,7 +4,7 @@ import type { Donem } from '@/types'
 
 interface CreateDonemInput {
   yil: number
-  ceyrek: 'Q1-GV' | 'Q2-GV' | 'Q3-GV' | 'YILLIK'
+  ceyrek: 'Q1-GV' | 'Q2-GV' | 'Q3-GV' | 'Q4-GV' | 'YILLIK'
 }
 
 export function useDonemler(mukellefId: number | undefined) {

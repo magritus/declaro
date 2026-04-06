@@ -1,0 +1,1499 @@
+{
+  "file": "298_GSYF_GSYO_Istirak_Kazanclari_Istisnasi_6.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:E54",
+      "rows": [
+        [
+          "298 – GSYF & GSYO KAYNAKLI GELİRLERİN VERGİSEL DEĞERLENDİRİLMESİ | KVK Md. 5/1-a-3 | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Girişim Sermayesi Yatırım Fonu (GSYF) ve Ortaklığı (GSYO) — Gelir Türü Tespiti, Hukuki Nitelik Analizi ve İstisna Değerlendirmesi",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KULLANIM: Sarı zemin hücrelere veri giriniz. A0 kontrol bloğu eksiksiz doldurulmadan hesap bölümlerine geçilmemelidir.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. MÜKELLEF, YMM VE DÖNEM BİLGİLERİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Mükellef Ünvanı",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Vergi Kimlik Numarası",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Dönemi",
+          null,
+          "Tasdike konu hesap dönemi (örn. 2025)",
+          null
+        ],
+        [
+          null,
+          "Beyanname Türü",
+          null,
+          "Kurumlar Vergisi Beyannamesi — 298 Kodlu Satır",
+          null
+        ],
+        [
+          null,
+          "Çalışma Kâğıdı Hazırlayan",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hazırlama Tarihi",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. GELİR TÜRÜ VE HUKUKİ NİTELİK UYGUNLUK KONTROLÜ — Tasdik Öncesi Zorunlu Sınıflama Kontrolü",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "⚠️ YMM UYARISI: GSYF/GSYO kaynaklı tüm gelirler otomatik olarak KVK 5/1-a iştirak kazancı istisnasına konu edilemez. Fon/ortaklık düzeyindeki kurumlar vergisi istisnası ile yatırımcı kurum nezdindeki gelir vergilemesi birbirinden ayrı değerlendirilmelidir. Gelirin hukuki niteliği tevsik belgesiyle desteklenmeden istisna tasdik raporuna alınamaz.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tasdik Sınıflama Kontrol Soruları",
+          null,
+          "Kullanıcı Seçimi",
+          "Açıklama / Not",
+          null
+        ],
+        [
+          "A0.1 Yatırım aracı türü",
+          null,
+          "GSYF",
+          "GSYF/GSYO'nun tam mükellef, Türkiye'de kurulu olduğu SPK lisansı veya fon bilgi formu ile belgelenmeli; aracı kurum kaydı tek başına yeterli değildir.",
+          null
+        ],
+        [
+          "A0.2 Gelirin hukuki niteliği",
+          null,
+          "Kâr payı / dağıtım",
+          "Her gelir türü farklı vergi hükmüne tabidir:\n• Kâr payı/dağıtım → KVK 5/1-a kapsamı değerlendirilebilir\n• Fona iade kazancı → KVK 5/1-a (oran ve süre koşulu yok)\n• 3. kişiye satış → KVK 5/1-e (%75 istisna, 2 yıl aktif şartı)\n• Değer artışı → VUK 279 kapsamında ayrıca değerlendirmeli\nGelir türü belirsizse istisna uygulanmamalıdır.",
+          null
+        ],
+        [
+          "A0.3 Uygulanacak istisna maddesi netleşti mi?",
+          null,
+          "EVET – 5/1-a (kâr payı/itfa)",
+          "Fona iade: KVK 5/1-a. Üçüncü kişiye satış: KVK 5/1-e. Bu iki hüküm karıştırılmamalıdır; beyanname satırları farklıdır. Belirsizlik halinde YMM değerlendirme notu hazırlanmalıdır.",
+          null
+        ],
+        [
+          "A0.4 Fon/ortaklık – yatırımcı kurum ayrımı yapıldı mı?",
+          null,
+          "EVET",
+          "GSYF/GSYO'nun kendi vergi rejimi (fonun KV istisnası) ile yatırımcı kurumun elde ettiği gelirin vergisel niteliği aynı şey değildir. Fon düzeyi istisna → yatırımcı kurumda otomatik istisna anlamına gelmez. Bu ayrım tasdik raporunda açıkça gerekçelendirilmelidir.",
+          null
+        ],
+        [
+          "A0.5 YİAKV etkisi ayrıca test edildi mi?",
+          null,
+          "EVET",
+          "YİAKV etkisi gelirin hukuki niteliğine göre değişir; tek satır kesin hüküm verilemez. Klasik kâr payı (KVK 5/1-a) için genellikle düşülebilir; satış/itfa/değer artışı gelirleri için ayrı analiz gerekir. Dönem mevzuatı ayrıca kontrol edilmelidir.",
+          null
+        ],
+        [
+          "A0.6 Sınıflama Sonucu (Otomatik Kontrol)",
+          null,
+          "✅ OK – Sınıflama tamamlandı",
+          "Tüm A0 kontrolleri tamamlanmadan bu çalışma kâğıdı tasdik dosyasına eklenemez. Sınıflama belirsizse YMM değerlendirme notu hazırlanmalıdır.",
+          null
+        ],
+        [
+          "📌 KAPSAM NOTU: Bu çalışma kâğıdı, gelirin hukuki niteliğine göre sınıflama yapılmasını ve ardından vergisel sonucun değerlendirilmesini esas almaktadır. Gelir türü netleştirilmeden herhangi bir istisna veya vergi hükmü tasdik raporuna alınamaz. DENETÇİ NOTLARI sayfasındaki risk analizini inceleyiniz.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B. GİRİŞİM SERMAYESİ YATIRIM FONU (GSYF) KATILMA PAYI GELİRLERİ — KVK Md. 5/1-a Alt Bent 3",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Tutar (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "B.1",
+          "GSYF Katılma Payı Sayısı / Fon Adı (Bilgi)",
+          null,
+          "Portföyde kaç GSYF varsa ayrı satır ekleyin"
+        ],
+        [
+          null,
+          "B.2",
+          "GSYF-1: Katılma Payı Fona İade Kazancı (Brüt)",
+          "0",
+          "Fona iade bedelinden maliyet düşüldükten sonra kalan kazanç"
+        ],
+        [
+          null,
+          "B.3",
+          "GSYF-2: Katılma Payı Fona İade Kazancı (Brüt)",
+          "0",
+          "İkinci GSYF varsa doldurun"
+        ],
+        [
+          null,
+          "B.4",
+          "GSYF-3: Katılma Payı Fona İade Kazancı (Brüt)",
+          "0",
+          "Üçüncü GSYF varsa doldurun"
+        ],
+        [
+          null,
+          "B.5",
+          "GSYF-1: Dönem İçi Alınan Kar Payı Tutarı",
+          "0",
+          "Fon tarafından dağıtılan kar payı (SPK Tebliği Md.25)"
+        ],
+        [
+          null,
+          "B.6",
+          "GSYF-2: Dönem İçi Alınan Kar Payı Tutarı",
+          "0",
+          null
+        ],
+        [
+          null,
+          "B.7",
+          "GSYF-3: Dönem İçi Alınan Kar Payı Tutarı",
+          "0",
+          null
+        ],
+        [
+          null,
+          "B.8",
+          "GSYF Katılma Payları VUK 279 Dönem Sonu Değeri",
+          "0",
+          "Dönem sonu fon birim pay değeri × pay adedi"
+        ],
+        [
+          null,
+          "B.9",
+          "GSYF Katılma Payları Maliyet Bedeli (Aktif Kaydı)",
+          "0",
+          "24x/25x hesap bakiyesi — şirket hesap planına göre belirlenir; alış bedeli veya NAD esasına göre değerleme yöntemi fon portföy yapısına göre değişir"
+        ],
+        [
+          null,
+          "B.10",
+          "GSYF Değerleme Kazancı (VUK Md.279 – Değer Artışı)",
+          "0",
+          "B.8 – B.9 | İstisna kapsamındaki değer artışı"
+        ],
+        [
+          "C. GİRİŞİM SERMAYESİ YATIRIM ORTAKLIĞI (GSYO) HİSSE SENEDİ GELİRLERİ — KVK Md. 5/1-a Alt Bent 3",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Tutar (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "C.1",
+          "GSYO-1: Elde Tutulan Hisse Senedi Adedi",
+          "0",
+          "BİST'te işlem gören tam mükellef GSYO hissesi"
+        ],
+        [
+          null,
+          "C.2",
+          "GSYO-1: Dönem İçi Alınan Kar Payı (Brüt)",
+          "0",
+          "GSYO'nun dağıttığı temettü — stopaj rejimi yatırım aracının niteliği, iktisap tarihi ve elde tutma süresine göre değişebilir; GVK Geçici 67 kapsamı ayrıca kontrol edilmelidir"
+        ],
+        [
+          null,
+          "C.3",
+          "GSYO-2: Dönem İçi Alınan Kar Payı (Brüt)",
+          "0",
+          null
+        ],
+        [
+          null,
+          "C.4",
+          "GSYO-3: Dönem İçi Alınan Kar Payı (Brüt)",
+          "0",
+          null
+        ],
+        [
+          null,
+          "C.5",
+          "GSYO Hisse Maliyet Bedeli (Aktif Kaydı)",
+          "0",
+          "24x/25x hesap bakiyesi — şirket hesap planına göre"
+        ],
+        [
+          null,
+          "C.6",
+          "GSYO Hisse BİST Fiyatı × Adet (Piyasa Değeri)",
+          "0",
+          "Dönem sonu kapanış fiyatı × adet"
+        ],
+        [
+          "D. KV MATRAHI BİLEŞENLERİ — İstisna Hesabı ve Beyanname Matrahı (Referans Tablosu)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Tutar (TL)",
+          "Not",
+          null
+        ],
+        [
+          null,
+          "D.1",
+          "Ticari Bilanço Karı",
+          "0",
+          "Dönem net karı (vergi öncesi)"
+        ],
+        [
+          null,
+          "D.2",
+          "(+) KKEG",
+          "0",
+          "Kanunen Kabul Edilmeyen Giderler"
+        ],
+        [
+          null,
+          "D.3",
+          "(–) İstisnalar (Bu kalem hariç diğer istisnalar)",
+          "0",
+          "5/1-b, 5/1-e vb."
+        ],
+        [
+          null,
+          "D.4",
+          "(–) İndirimler",
+          "0",
+          "KVK Md.10 kapsamındaki indirimler"
+        ],
+        [
+          null,
+          "D.5",
+          "(–) Geçmiş Yıl Zararları",
+          "0",
+          null
+        ],
+        [
+          null,
+          "D.6",
+          "KV MATRAHI (D.1+D.2–D.3–D.4–D.5)",
+          "0",
+          null
+        ],
+        [
+          "NOT: Bu tablo referans amaçlıdır. HESAPLAMALAR & KONTROL sayfasında istisna uygulandıktan sonra beyan edilecek matrah ayrıca gösterilmektedir.",
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:F51",
+      "rows": [
+        [
+          "298 – GSYF & GSYO GELİRLERİ VERGİSEL DEĞERLENDİRME | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/1-a-3 | 1 Seri No.lu KV GT | KV Beyannamesi 298 Kodlu Satır — Tasdik Çalışma Kâğıdı",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "TASDİK SINIFLAMA KONTROLÜ — VERİ GİRİŞİ BAĞLANTISI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tasdik Sınıflama Uygunluğu",
+          null,
+          "✅ OK – Sınıflama tamamlandı",
+          "Bu hücre '✅ OK' olmadan çalışma kâğıdı tasdik dosyasına eklenemez. Hesap sonuçlarına dayanılamaz.",
+          null,
+          null
+        ],
+        [
+          "YİAKV (KVK Md. 32/C) Etki Analizi",
+          null,
+          "✅ TEST EDİLDİ",
+          "YİAKV etkisi gelirin hukuki niteliğine göre değişir; kesin hüküm verilemez. Klasik kâr payı (KVK 5/1-a) için genellikle YİAKV matrahından düşülebilir; satış/itfa/değer artışı gelirleri için ayrı analiz gerekir. Dönem mevzuatı ve gelir türü birlikte değerlendirilmelidir.",
+          null,
+          null
+        ],
+        [
+          "Gelirin Hukuki Niteliği Tevsik Edildi mi?",
+          null,
+          "EVET",
+          "Aracı kurum/portföy yönetim şirketi yazısı, fon dağıtım bildirimi veya itfa dekontu olmadan gelir niteliği tespiti yapılamaz.",
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — GSYF KATILMA PAYI GELİRLERİ İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kod",
+          "Açıklama",
+          "Tutar (TL)",
+          "Not",
+          null
+        ],
+        [
+          null,
+          "G1.1",
+          "GSYF-1 Fona İade Kazancı",
+          "0",
+          "Gelir türü tespit edilmişse KVK Md. 5/1-a/3 kapsamı değerlendirilebilir; fona iade kazancı için oran ve süre koşulu aranmamaktadır",
+          null
+        ],
+        [
+          null,
+          "G1.2",
+          "GSYF-2 Fona İade Kazancı",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G1.3",
+          "GSYF-3 Fona İade Kazancı",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G1.4",
+          "GSYF Toplam Fona İade Kazancı (A)",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G1.5",
+          "GSYF-1 Kar Payı",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G1.6",
+          "GSYF-2 Kar Payı",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G1.7",
+          "GSYF-3 Kar Payı",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G1.8",
+          "GSYF Toplam Kar Payı (B)",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G1.9",
+          "GSYF VUK 279 Değer Artış Kazancı (C)",
+          "0",
+          "Değerleme farkı – istisna kapsamı",
+          null
+        ],
+        [
+          null,
+          "G1.10",
+          "GSYF TOPLAM İSTİSNA (A+B+C)",
+          "0",
+          "Gelir niteliği doğrulandıysa KVK 5/1-a kapsamında istisna uygulanabilir",
+          null
+        ],
+        [
+          "BÖLÜM 2 — GSYO HİSSE SENEDİ GELİRLERİ İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kod",
+          "Açıklama",
+          "Tutar (TL)",
+          "Not",
+          null
+        ],
+        [
+          null,
+          "G2.1",
+          "GSYO-1 Kar Payı",
+          "0",
+          "Tam mükellef GSYO hisse senedi — BİST işlem görme zorunlu; tam mükellef olduğu KAP/aracı kurum verisiyle teyit edilmeli",
+          null
+        ],
+        [
+          null,
+          "G2.2",
+          "GSYO-2 Kar Payı",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G2.3",
+          "GSYO-3 Kar Payı",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "G2.4",
+          "GSYO TOPLAM İSTİSNA (A+B+C toplamı)",
+          "0",
+          "Gelir niteliği doğrulandıysa KVK 5/1-a kapsamında istisna uygulanabilir",
+          null
+        ],
+        [
+          "BÖLÜM 3 — GENEL İSTİSNA ÖZETİ VE BEYANNAME KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kod",
+          "Açıklama",
+          "Tutar (TL)",
+          "Not",
+          null
+        ],
+        [
+          null,
+          "Ö1",
+          "TOPLAM 298 KODU İSTİSNASI (GSYF + GSYO)",
+          "0",
+          "KV Beyannamesi 298 kodlu satır — 'Zarar Olsa Dahi İndirilecek İstisna ve İndirimler' bölümü",
+          null
+        ],
+        [
+          null,
+          "Ö2",
+          "KV Matrahı (VERİ GİRİŞİ D.6)",
+          "0",
+          null,
+          null
+        ],
+        [
+          null,
+          "Ö3",
+          "İstisna Sonrası Beyanname Matrahı (Ö2 – Ö1)",
+          "0",
+          "KV Beyannamesi matrah satırına girilecek tutar; beyanname öncesi YMM kontrolü zorunludur",
+          null
+        ],
+        [
+          "BÖLÜM 4 — YİAKV (ASGARİ KURUMLAR VERGİSİ — KVK Md. 32/C) ETKİ ANALİZİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "YİAKV etkisi gelirin hukuki niteliğine göre ayrıca değerlendirilmelidir. Klasik kâr payı niteliğindeki gelirler için KVK 5/1-a kapsamında YİAKV matrahından düşülebilir; ancak satış/itfa/değer artışı gelirleri için ayrı analiz gerekir. Dönem mevzuatı teyidi zorunludur. Bu tablo bilgi amaçlıdır.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kod",
+          "Açıklama",
+          "Tutar (TL)",
+          "Not",
+          null
+        ],
+        [
+          null,
+          "Y1",
+          "YİAKV Matrahı (Ticari Bilanço Karı + KKEG)",
+          "0",
+          "D.1 + D.2 referansları",
+          null
+        ],
+        [
+          null,
+          "Y2",
+          "(–) 298 İstisna Tutarı",
+          "0",
+          "Gelirin hukuki niteliğine göre ayrıca değerlendirilmelidir; klasik kâr payı için düşülebilir ancak diğer gelir türleri için ayrı analiz zorunludur",
+          null
+        ],
+        [
+          null,
+          "Y3",
+          "YİAKV Matrahı (298 Sonrası)",
+          "0",
+          "Diğer istisnalar/indirimler ayrıca düşülür",
+          null
+        ],
+        [
+          "BÖLÜM 5 — DENETİM VE TASDİK KONTROL LİSTESİ (K1–K10)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "K1",
+          "K1. Tam mükellef GSYF/GSYO statüsü SPK belgesiyle teyit edildi mi?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "SPK lisansı, fon bilgi formu veya KAP kaydı. Türkiye'de kurulu olma koşulu belgelenmeli; KVK 5/1-a son fıkra kapsamı teyit edilmelidir.",
+          null
+        ],
+        [
+          null,
+          "K2",
+          "K2. GYF/GYO varsa KVK 5/1-d istisnası ve kâr dağıtım şartı (01.01.2025+) kontrol edildi mi?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "7524 s.K. ile 01.01.2025 sonrası GYF/GYO'da kâr dağıtım şartı getirildi. Şartı sağlayan fondan alınan kâr payı 5/1-a'ya konu edilemez; ayrı değerlendirme zorunludur.",
+          null
+        ],
+        [
+          null,
+          "K3",
+          "K3. VUK Md. 279 değerleme yöntemi fon portföy yapısına göre doğrulandı mı?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "Portföy ≥%51 Türkiye'de kurulu HS: Alış bedeli. Portföy <%51: NAD/borsa rayici. Fon bilgi formu ile portföy yapısı teyit edilmelidir.",
+          null
+        ],
+        [
+          null,
+          "K4",
+          "K4. Fona iade kazancı doğru hesaplandı mı? (İade bedeli – Maliyet)",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "Maliyet hesabı: Ortalama maliyet veya FIFO yöntemi uygulanmalı; yöntem tutarlılığı belgelenmeli.",
+          null
+        ],
+        [
+          null,
+          "K5",
+          "K5. Tüm GSYO hisse senetlerinin tam mükellef olduğu teyit edildi mi?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "BİST işlem görme ve tam mükellef statüsü KAP/aracı kurum kaydıyla belgelenmeli. Dar mükellef kurumdan alınan kâr payı KVK 5/1-a kapsamına girmez.",
+          null
+        ],
+        [
+          null,
+          "K6",
+          "K6. YİAKV matrahında 298 istisnası gelir türüne göre doğru işlendi mi?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "Kâr payı niteliğindeki gelir için düşülebilir; satış/itfa/değer artışı için ayrı analiz. YİAKV hesabı dönem mevzuatıyla teyit edilmeli.",
+          null
+        ],
+        [
+          null,
+          "K7",
+          "K7. Muhasebe kayıtları ile KV beyannamesi 298 satırı mutabakatı yapıldı mı?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "64x hesabı (640/642/645 vb.) toplamı ile beyanname 298 kodu tutarı mutabık olmalıdır. Fark varsa gerekçesi belgelenmelidir.",
+          null
+        ],
+        [
+          null,
+          "K8",
+          "K8. GVK Geçici 67 stopaj durumu gelir türü/iktisap tarihi/süreye göre analiz edildi mi?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "Stopaj rejimi yatırım aracına, iktisap tarihine ve elde tutma süresine göre değişir. Aracı kurum stopaj bildirimi tasdik dosyasında yer almalıdır.",
+          null
+        ],
+        [
+          null,
+          "K9",
+          "K9. Grup içi GSYF yatırımlarında transfer fiyatlandırması riski (KVK Md. 13) değerlendirildi mi?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "Örtülü kazanç dağıtımı riski belgelenmeli; portföy yönetim şirketi bağımsızlığı teyit edilmelidir.",
+          null
+        ],
+        [
+          null,
+          "K10",
+          "K10. Fona iade (KVK 5/1-a) ile üçüncü kişiye satış (KVK 5/1-e) ayrımı yapıldı mı?",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "Fona iade → KVK 5/1-a (%100, süre koşulu yok). 3. kişiye satış → KVK 5/1-e (%75, 2 yıl aktif şartı). İki hüküm karıştırılmamalı; beyanname satırları farklıdır.",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G39",
+      "rows": [
+        [
+          "298 – KVK Md. 5/1-a-3 | MUHASEBE KAYITLARI ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GSYF ve GSYO İşlemlerine İlişkin Muhasebe Kayıtları Rehberi — Yatırımın Muhasebe Sınıflamasına, TDHP Esaslarına ve Gelir Türüne Göre Uyarlanır. Muhasebe sorumluluğu mükellefte, tasdik sorumluluğu YMM'dedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "UYARI: Bu kayıtlar örnek ve rehber niteliğindedir. Hesap numaraları TDHP çerçevesinde şirket hesap planına göre belirlenir. Gelir türü (kâr payı / fona iade / satış / değer artışı) belirlenmeden kayıt seçilmemelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "📋 SENARYO REHBERİ: Gelir türüne göre ilgili kayıt bloğunu seçiniz. Birden fazla senaryo söz konusuysa her biri ayrı kayıt gerektir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SENARYO 1 — Kâr Payı/Dağıtım: Kayıt 4-5 | SENARYO 2 — Fona İade/İtfa: Kayıt 3 | SENARYO 3 — Alım ve Dönem Sonu Değerleme: Kayıt 1-2",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — [SENARYO 3: Alım ve Aktife Alma] GSYF KATILMA PAYI ALIMI VE AKTİFE KAYDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "Alım Tarihi",
+          "24x/11x İlgili finansal yatırım hesabı (240 Bağlı MK / 242 İştirakler / 110 — şirket sınıflamasına göre)",
+          "← Maliyet bedeli",
+          null,
+          "Maliyet bedeli ile aktife alınır (VUK 279 → alış bedeli; TÜİK portföy ≥%51 HS)",
+          null
+        ],
+        [
+          null,
+          null,
+          "102 Bankalar",
+          null,
+          "← Maliyet bedeli",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "(Dipnot: 325/A kapsamında ise 10/1-g indirimine de dikkat)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — [SENARYO 3: Değerleme] DÖNEM SONU GSYF DEĞERLEME KAYDI (VUK Md. 279)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "Dönem sonu",
+          "24x/11x İlgili yatırım hesabı (şirket sınıflamasına göre)",
+          "← Değer artışı",
+          null,
+          "Dönem sonu fon NAD değeri – maliyet farkı",
+          null
+        ],
+        [
+          null,
+          null,
+          "64x İlgili kazanç/gelir hesabı (642/645/649 — TDHP sınıflamasına göre)",
+          null,
+          "← Değer artışı",
+          "Değer artışı gelir yazılır – KVK 5/1-a-3 istisnasına konu edilir",
+          null
+        ],
+        [
+          null,
+          null,
+          "(VUK 279: portföy <% 51 HS ise borsa rayici / NAD değeri esas)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — [SENARYO 2: Fona İade] GSYF KATILMA PAYI FONA İADE KAZANCI (KVK 5/1-a)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "İade Tarihi",
+          "102 Bankalar",
+          "← İade bedeli",
+          null,
+          "Fona iade bedeli",
+          null
+        ],
+        [
+          null,
+          null,
+          "24x/11x İlgili yatırım hesabı (şirket sınıflamasına göre) (Maliyet)",
+          null,
+          "← Maliyet",
+          "Maliyeti düşür",
+          null
+        ],
+        [
+          null,
+          null,
+          "64x İlgili kazanç hesabı (645/649 — hesap planına göre)",
+          null,
+          "← İade kazancı",
+          "Fona iade kazancı — KVK 5/1-a/3 kapsamında istisna; süre ve oran koşulu yok",
+          null
+        ],
+        [
+          "KAYIT 4 — [SENARYO 1: Kâr Payı] GSYF KATILMA PAYINDAN KÂR PAYI TAHSİLATI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "Kar Payı Tar.",
+          "102 Bankalar (veya 136 Diğer Çeşitli Alacaklar)",
+          "← Brüt kar payı",
+          null,
+          "Brüt kâr payı — stopaj rejimi iktisap tarihi ve türe göre değişir; aracı kurum bildirimi kontrol edilmelidir",
+          null
+        ],
+        [
+          null,
+          null,
+          "64x İlgili gelir hesabı (640/642/649 — hesap planına göre)",
+          null,
+          "← Brüt kar payı",
+          "KVK 5/1-a kapsamında istisna tutarı",
+          null
+        ],
+        [
+          "KAYIT 5 — [SENARYO 1: Temettü] GSYO HİSSE SENEDİNDEN KÂR PAYI (TEMETTÜ) TAHSİLATI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "Temettü Tar.",
+          "102 Bankalar",
+          "← Brüt temettü",
+          null,
+          "Brüt temettü — KVK 15/3 kapsamında GSYO bünyesinde kesinti uygulanabilir; stopaj durumu ayrıca teyit edilmeli",
+          null
+        ],
+        [
+          null,
+          null,
+          "640/64x İlgili temettü/yatırım geliri hesabı",
+          null,
+          "← Brüt temettü",
+          "KVK 5/1-a kapsamında istisna edilir",
+          null
+        ],
+        [
+          "KAYIT 6 — KV BEYANNAMESİ: İSTİSNA TUTARININ BEYANNAME ETKİSİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "Dönem sonu",
+          "689 Diğer Olağandışı Gider ve Zararlar (veya ilgili gelir hesabı)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "NOT: KV beyannamesinde istisna tutarı 'Zarar Olsa Dahi İndirilecek İstisna ve İndirimler' bölümünde 298 kodu ile gösterilir. Muhasebe kaydı yapılmaz; beyanname notu niteliğindedir.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "İndirimler' bölümünde 298 kodu ile gösterilir. Ayrıca muhasebe kaydı olmaz.",
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETÇİ NOTLARI",
+      "dimensions": "A1:D37",
+      "rows": [
+        [
+          "298 – KVK Md. 5/1-a-3 | GSYF & GSYO GELİRLERİ | YMM MESLEKİ DEĞERLENDİRME VE TASDİK NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "ANA DEĞERLENDİRME: GSYF/GSYO kaynaklı gelirlerin vergisel sonucu, gelirin hukuki niteliğine göre ayrıca değerlendirilmelidir. Fon/ortaklık düzeyindeki kurumlar vergisi istisnası ile yatırımcı kurum nezdindeki gelir vergilemesi aynı şey değildir. Bu ilke tasdik raporunun çekirdeğini oluşturur.",
+          null,
+          null,
+          null
+        ],
+        [
+          "I. HUKUK VE MEVZUAT DEĞERLENDİRMESİ (Ana Tasdik Tespiti)",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/1-a-3: Tam mükellef girişim sermayesi yatırım fonlarının katılma paylarından elde edilen kazançlar ile tam mükellef GSYO hisse senetlerinden elde edilen kazançlar kurumlar vergisinden istisnadır.\n\nKVK Md. 5/1-a-5: 3 ve 4 numaralı alt bentlerdeki istisna kazançlara kaynak oluşturan fon/ortaklıkların bu kazançları da istisna kapsamındadır.\n\nKVK Md. 5/1-a Son Fıkra: Diğer yatırım fonu ve ortaklık hisse senetlerinden elde edilen gelirler, kaynakları itibarıyla bu istisnadan yararlanamaz. GSYF/GSYO dışındaki yatırım araçlarında özel hüküm aranmalıdır.\n\nTasdik Tespiti: İstisnanın uygulanabilmesi için:\n  (i)  Gelirin hukuki niteliğinin tevsik belgesiyle kanıtlanması,\n  (ii) Fon/ortaklığın tam mükellef ve Türkiye'de kurulu GSYF/GSYO statüsünde olması,\n  (iii)Fon/ortaklık düzeyi ile yatırımcı düzey ayrımının doğru yapılması\nzorunludur.",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Madde 5/1-a Alt Bent 5:\n'(3) ve (4) numaralı alt bentlerde yer alan istisna kazançlarına kaynak oluşturan yatırım fonlarının katılma paylarının 213 sayılı VUK'un 279 uncu maddesi kapsamında değerlenmesinden kaynaklanan değer artış kazançları'\n→ Dönem sonu değerleme farkı (gerçekleşmemiş kazanç) da istisna kapsamındadır.",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Madde 5/1-a Son Fıkra:\n'Diğer yatırım fonu katılma payları ile yatırım ortaklıklarının hisse senetlerinden elde edilen kâr payları bu istisnadan yararlanamaz.'\n→ Sadece GSYF ve GSYO için özel istisna. Diğer MK/GYO ortaklıkları bu bentten yararlanamaz.",
+          null,
+          null,
+          null
+        ],
+        [
+          "II. YASAL DEĞIŞIKLIKLER VE GÜNCEL MEVZUAT",
+          null,
+          null,
+          null
+        ],
+        [
+          "7456 Sayılı Kanun (15.07.2023): TL bazlı diğer yatırım fonlarına tanınan 5/1-a-4 ve 5/1-a-5 istisnası 15.07.2023 sonrası iktisaplar için kaldırıldı. GSYF ve GSYO korundu.\nGeçiş Hükmü: 15.07.2023 öncesi iktisap → istisna devam eder; sonrası iktisap → yalnızca GSYF/GSYO için istisna geçerlidir. Mükellefin portföy iktisap tarihleri ayrıca incelenmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "7524 Sayılı Kanun (01.01.2025 Etkisi) — GYF/GYO ile İlişki:\n7524 s.K. ile 01.01.2025 sonrası GYF ve GYO'larda KVK 5/1-d istisnası kâr dağıtım şartına bağlandı (%80 dağıtım zorunluluğu). Şartı sağlamayan GYF/GYO'dan alınan kâr payı 5/1-a'ya konu edilemez; ayrı değerlendirme zorunludur.\n23 No.lu KVK GT (28.09.2024): GYF/GYO kâr paylarının 5/1-a uygulamasındaki çerçevesi detaylandırıldı. Portföyde GYF/GYO katılma payı varsa bu tebliğ ayrıca incelenmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "III. TASDİK RİSK ANALİZİ — KRİTİK RİSK VE GRİ ALANLAR",
+          null,
+          null,
+          null
+        ],
+        [
+          "7524 s.K. ile 01.01.2025'ten itibaren:\n- GYF ve GYO'larda KVK 5/1-d istisnası kar dağıtım şartına bağlandı (%80 dağıtım zorunlu).\n- Kar dağıtım şartını SAĞLAYAN GYF/GYO'dan alınan kar payları: 5/1-a kapsamına GİRMEZ (çünkü kendisi zaten istisnadan yararlanıyor).\n- Kar dağıtım şartını SAĞLAYAMAYAN GYF/GYO'dan alınan kar payları: 5/1-a kapsamına GİRER.\n- GSYF ve GSYO'ya ilişkin 5/1-a/3 istisnası: Bu değişiklikten ETKİLENMEDİ.",
+          null,
+          null,
+          null
+        ],
+        [
+          "23 No.lu KVK Genel Tebliği (28.09.2024 RG):\n- GYF/GYO'dan elde edilen kar paylarının 5/1-a uygulamasındaki yeni çerçevesini açıklar.\n- GSYF/GSYO için özel bir kısıtlama getirilmemiştir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "YİAKV ETKİSİ: YİAKV etkisi, gelirin hukuki niteliği ve uygulanacak vergi rejimine göre ayrıca test edilmelidir. Gelir türü belirsizken kesin hüküm verilemez; dönem mevzuatı ayrıca kontrol edilmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "🔴 KRİTİK RİSK — FON/ORTAKLIK DÜZEYİ İLE YATIRIMCI KURUM AYRIMI",
+          null,
+          null,
+          null
+        ],
+        [
+          "RİSK 1",
+          "Fon/ortaklık düzeyindeki kurumlar vergisi istisnası ile yatırımcı kurum nezdindeki gelir vergilemesi aynı şey değildir. GSYF/GSYO'nun kendi kazancının vergiden istisna olması, yatırımcı kurumun elde ettiği her türlü gelire otomatik olarak KVK 5/1-a uygulanacağı anlamına gelmez. Gelirin yatırımcı düzeyindeki niteliği (kâr payı, satış kazancı, itfa kazancı, değer artışı) ayrıca tespit edilmelidir.",
+          null,
+          null
+        ],
+        [
+          "RİSK 2",
+          "Yatırımcı kurumun elde ettiği gelirin niteliği netleştirilmeden beyannameye istisna olarak alınmamalıdır. Gelir türü belirsizliği durumunda:\n• Portföy yönetim şirketi/aracı kurum yazılı görüşü alınmalı,\n• YMM değerlendirme notu hazırlanmalı,\n• Gerekirse özelge başvurusu yapılmalıdır.",
+          null,
+          null
+        ],
+        [
+          "KONTROL",
+          "A0 sınıflama bloğu 'OK' olmadan hesap sonuçları kullanılamaz. Sınıflama belirsizse 'HAYIR – Belirsiz' seçilerek YMM değerlendirme süreci başlatılmalıdır. Bu çalışma kâğıdı sınıflama tamamlanmadan tasdik dosyasına eklenemez.",
+          null,
+          null
+        ],
+        [
+          "IV. DEĞERLEME (VUK Md. 279) UYGULAMASI VE RİSKLER",
+          null,
+          null,
+          null
+        ],
+        [
+          "Fon portföyü ≥%51 Türkiye'de kurulu şirket hisse senedinden oluşuyorsa:\n→ GSYF katılma payları ALİŞ BEDELİ ile değerlenir.\n→ Dönem sonu değerleme farkı oluşmaz; değer artışı geliri yazılmaz.\n→ Bu durumda HESAPLAMALAR B.10 (değerleme kazancı) satırı sıfır kalır.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Fon portföyü <%51 Türkiye'de kurulu şirket hisse senedinden oluşuyorsa:\n→ Borsa rayici veya fon tarafından ilan edilen NAD değeri esas alınır.\n→ Dönem sonu değer artışı gelir yazılarak KVK 5/1-a/5 kapsamında istisna edilir.\n→ Değerleme yöntemi fon bilgi formundan teyit edilmeli ve belgelenmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Özelge/İçtihat Riski:\nİdarenin çeşitli özelgelerinde fon değerleme yöntemi konusunda farklı görüşler bulunmaktadır. GİB özelge havuzu incelenerek emsal özelge araştırması yapılmalı; tartışmalı durumlarda ihtirazi kayıtla beyan veya özelge başvurusu değerlendirilmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "V. TARTIŞMALI KONULAR VE GÜNCEL RİSKLER",
+          null,
+          null,
+          null
+        ],
+        [
+          "Konu 1 — KVK 5/1-a ile 5/1-d Çakışması (01.01.2025+ GYF/GYO):\n7524 s.K. değişikliği ile GYF/GYO'da kâr dağıtım şartı koşula bağlandı. Portföyde hem GSYF hem GYF/GYO varsa her birinin rejimi ayrı değerlendirilmeli; 5/1-a ve 5/1-d çakışması tasdik raporunda gerekçelendirilmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Konu 2 — Katılma Payı Satışı (3. Kişi) vs. Fona İade Ayrımı:\nGSYF katılma payının üçüncü kişiye SATIŞI → KVK 5/1-e (%75 istisna, 2 yıl aktif şartı).\nFona İADE → KVK 5/1-a (%100, süre ve oran koşulu yok).\nBu ayrım beyanname satırlarını doğrudan etkiler; sözleşme ve dekont incelenmeli, tasdik raporunda açıkça belirtilmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Konu 3 — Grup İçi GSYF'de Örtülü Kazanç Dağıtımı Riski (KVK Md. 13):\nGrup şirketlerince kurulan/yönetilen GSYF'lerde portföy yönetim ücretleri, performans primleri ve ilgili taraf işlemleri transfer fiyatlandırması riski taşıyabilir. YMM bu riski değerlendirmeli ve raporda gerekçelendirmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Konu 4 — VUK 279 Değerleme Tutarsızlığı:\nDönem başında gelir yazılan değer artışının dönem içinde değer düşüklüğüne dönüşmesi durumunda gider/zarar kaydının yapılıp yapılmayacağı tartışmalıdır. Tutarlı muhasebe politikası seçilmeli ve belgelenmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "VI. STOPAJ VE GVK GEÇİCİ 67 NOTU",
+          null,
+          null,
+          null
+        ],
+        [
+          "GVK Geçici 67 kapsamındaki stopaj etkisi; yatırım aracının niteliği, iktisap tarihi, elde tutma süresi ve gelir türüne göre değişir. 2025 yılında stopaj rejiminde güncellemeler yapılmıştır; dönem mevzuatı ayrıca kontrol edilmelidir. Aracı kurum stopaj bildirimi tasdik dosyasında yer almalıdır.",
+          null,
+          null,
+          null
+        ],
+        [
+          "VII. MEVZUAT DAYANAKLARI VE KAYNAK LİSTESİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Birincil Mevzuat:\n• 5520 sayılı KVK Madde 5/1-a (alt bentler 3 ve 5)\n• 1 Seri No.lu KVK Genel Tebliği Bölüm 5.1\n• 23 Seri No.lu KVK Genel Tebliği (28.09.2024 tarihli RG)\n• 213 sayılı VUK Madde 279 (Menkul kıymet değerlemesi)\n• 7456 sayılı Kanun Madde 22 (15.07.2023 – Diğer fon istisna kaldırma)\n• 7524 sayılı Kanun (02.08.2024 – GYF/GYO kar dağıtım şartı, YİAKV)",
+          null,
+          null,
+          null
+        ],
+        [
+          "İkincil Mevzuat:\n• 2006/10731 sayılı BKK (GVK Geç. 67 – GSYF/GSYO stopaj %0)\n• SPK III-52.4 Tebliği – Girişim Sermayesi Yatırım Fonlarına İlişkin Esaslar\n• SPK III-48.3 Tebliği – Girişim Sermayesi Yatırım Ortaklıklarına İlişkin Esaslar",
+          null,
+          null,
+          null
+        ],
+        [
+          "Yayınlar / Kaynak Makaleler:\n• Erdoğan Sağlam, 'Girişim Sermayesi Yatırım Fon ve Ortaklıklarının Vergilendirilmesi', T24 (28.03.2021)\n• İsmail Onay (Eski Hesap Uzmanı), 'İştirak Kazançları İstisnası', Gürel YMM (2023)\n• PwC Türkiye, 'Kurumlar Vergisi Genel Tebliği Yayımlandı', Vergi Bülteni 2024/55\n• KPMG Vergi, 'Yurt İçi Asgari Kurumlar Vergisi Uygulaması' (2024)\n• Bilgener, 'GSYF Katılma Paylarına Yönelik Avantajlar ve Enflasyon Düzeltmesi' (2024)\n• BDO Türkiye, 'Yatırım Fon Payları Vergi İstisnasında Son Durum' (Ocak 2025)",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LİSTESİ",
+      "dimensions": "A1:F38",
+      "rows": [
+        [
+          "298 – KVK Md. 5/1-a-3 GSYF & GSYO GELİRLERİ | TASDİK BELGE LİSTESİ VE DENETİM KANITI ENVANTERİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 17 / 3568 s.K. Kapsamında YMM Tasdik Dosyası — Zorunlu, Kritik Destek ve Destekleyici Belgeler",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KULLANIM: Her belgeyi temin edin ve UYGUN / EKSİK / RİSK olarak işaretleyin. Zorunlu belgeler (Kategori 1) eksik olmadan tasdik dosyası tamamlanamaz. Bu dosyanın en kritik belgesi: gelirin hukuki niteliğini gösteren PYŞ/aracı kurum yazısı.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Denetim Kanıtı",
+          "İçerik ve YMM Tasdik Kontrol Notu",
+          "Temin Yeri",
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU TASDİK BELGELERİ (Eksiklik Tasdik Kapsamından Çıkarılma Gerekçesi Oluşturur)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "1",
+          "GSYF Fon Bilgi Formu / SPK İzin Belgesi",
+          "Fon bilgi formu (KID), SPK izin belgesi veya KAP kaydı. GSYF statüsü, tam mükellef niteliği ve Türkiye'de kurulu olduğu belgelenmeli. Portföy yapısı (≥%51 HS mi?) değerleme yöntemini belirler.",
+          "Portföy yönetim şirketi / SPK kamuyu aydınlatma platformu",
+          null
+        ],
+        [
+          null,
+          "2",
+          "GSYF Katılma Payı Maliyet Tablosu ve Hesap Dökümü (240/242)",
+          "Her GSYF için alış tarihi, alış bedeli ve adet dökümü. Fona iade kazancı = İade bedeli – Maliyet. Muhasebe 24x/25x hesap ekstresiyle mutabakat yapılmalıdır.",
+          "Muhasebe programı (240/242 hesap ekstreleri)",
+          null
+        ],
+        [
+          null,
+          "3",
+          "GSYF Dönem Sonu NAD (Net Aktif Değeri) Tablosu",
+          "VUK Md. 279 değerlemesi için fon tarafından ilan edilen birim pay (NAD) değeri. Değer artış kazancı hesabında zorunludur. Portföy yapısına göre değerleme yöntemi teyit edilmelidir.",
+          "Portföy yönetim şirketi / kamuya açık fon bilgi ekranı",
+          null
+        ],
+        [
+          null,
+          "4",
+          "GSYF Katılma Payı Fona İade Ekstresi / Banka Dekontu",
+          "Fona iade bedeli, tarihi ve aracı kurum/banka bilgisi. Kazancın gerçekleştiğini belgeler; fona iade (5/1-a) ile satış (5/1-e) ayrımını kanıtlar.",
+          "Aracı kurum / banka ekstresi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "GSYO Hisse Senedi Portföy Tablosu ve BİST Fiyat Belgesi",
+          "Tam mükellef GSYO statüsü ve BİST işlem görme belgesi. Dönem içi temettü ödemesi ve miktarı teyit edilmeli. KAP bildirimi veya aracı kurum yazısı.",
+          "Aracı kurum / BİST KAP",
+          null
+        ],
+        [
+          null,
+          "6",
+          "GSYO Temettü Ödeme Belgesi / Banka Ekstresi",
+          "Stopaj durumu: Rejim iktisap tarihi, elde tutma süresi ve gelir türüne göre değişir. Aracı kurum stopaj bildirimi veya GSYO'nun temettü bildirimi. Sabit %0 varsayımına dayanılamaz.",
+          "GSYO'nun temettü bildirimi (KAP) / banka ekstresi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Dönem Sonu Bilanço ve Gelir Tablosu (VUK)",
+          "Ticari bilanço karı, KKEG, diğer istisnalar ve KV matrahı. 298 istisnası beyanname üzerinde gösterilmeden önce matrah hesabının tamamlanmış olması gerekir.",
+          "Muhasebe programı",
+          null
+        ],
+        [
+          "KATEGORİ 2 — KRİTİK DESTEK BELGELERİ (Tasdik Güvenilirliğini Artırır)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "8",
+          "GSYF Yatırım Komitesi Kararı / Fon Bildirim Formu",
+          "Portföy yöneticisinin pay alım/satım kararları; tarih ve gerekçe. Transfer fiyatlandırması riski değerlendirmesi için zorunludur. Grup içi GSYF varsa özellikle temin edilmelidir.",
+          "Portföy yönetim şirketi",
+          null
+        ],
+        [
+          null,
+          "9",
+          "VUK 279 Değerleme Yöntemi İç Yazısı",
+          "Şirketin hangi değerleme yöntemini uyguladığını belgeleyen iç not veya özelge. VUK Md. 279 kapsamındaki yöntem tutarlılığı teyit edilmeli; tartışmalı durumlarda emsal özelge araştırması yapılmalıdır.",
+          "Muhasebe birimi / vergi müşaviri",
+          null
+        ],
+        [
+          null,
+          "10",
+          "KVK 5/1-d Durumu Analizi (GYF/GYO varsa)",
+          "Portföyde GYF/GYO katılma payı varsa: Kâr dağıtım şartı sağlandı mı? 5/1-a veya 5/1-d rejimi hangisi uygulandı? 23 No.lu KV GT kapsamında değerlendirme yapılmalıdır.",
+          "GYF/GYO'nun KAP bildirimi",
+          null
+        ],
+        [
+          null,
+          "11",
+          "YİAKV Hesaplama Notu",
+          "YİAKV matrahı ve 298 istisnasının etkisi. Gelir türüne göre ayrı analiz yapılmalı; dönem mevzuatı teyit edilerek YMM tarafından imzalanmalıdır.",
+          "Hesaplamalar sekmesi / vergi müşaviri",
+          null
+        ],
+        [
+          null,
+          "12",
+          "GVK Geçici 67 Stopaj Belgeleri",
+          "GVK Geçici 67 stopaj belgesi — iktisap tarihi, elde tutma süresi ve gelir türüne göre. Aracı kurum stopaj bildirimi tasdik dosyasında yer almalıdır. Sabit oran varsayımı hatalı sonuç üretir.",
+          "Aracı kurum stopaj bildirimi",
+          null
+        ],
+        [
+          null,
+          "13",
+          "Fon İçtüzüğü / İhraç Belgesi",
+          "Fonun içtüzüğü, ihraç belgesi veya yatırımcı bilgi dokümanı. Gelir dağıtım hükümleri ve portföy kısıtlamaları; yatırımcı nezdindeki gelir rejimini belirleyen birincil kaynak.",
+          "Portföy yönetim şirketi / SPK KAP",
+          null
+        ],
+        [
+          null,
+          "14",
+          "Katılma Payı Alım-Satım / İtfa Dekontları",
+          "İtfa veya satış kaynaklı kazancın fona iade mi (5/1-a) yoksa 3. kişiye satış mı (5/1-e) olduğunu belgeler. Bu dosyanın en kritik ayrım belgesidir; eksikliği ciddi risk doğurur.",
+          "Aracı kurum / banka",
+          null
+        ],
+        [
+          null,
+          "15",
+          "Dağıtım Bildirimi / Gelir Dağıtım Hesap Özeti",
+          "Fonun dönemlik gelir dağıtımı: Kâr payı mı, sermaye iadesi mi, fon kazancı mı? Gelirin niteliğini ispatlayan temel belgedir. PYŞ veya KAP bildirimi yeterlidir.",
+          "Portföy yönetim şirketi / KAP",
+          null
+        ],
+        [
+          null,
+          "16",
+          "Gelirin Hukuki Niteliğini Gösteren Aracı Kurum / PYŞ Yazısı",
+          "Bu dosyanın en kritik belgesi. Elde edilen gelirin vergisel niteliğini (kâr payı / itfa / satış / değer artışı) yazılı olarak teyit eder. Sınıflama belirsizse PYŞ yazılı görüşü olmadan istisna uygulanmamalıdır.",
+          "Portföy yönetim şirketi / aracı kurum",
+          null
+        ],
+        [
+          "KATEGORİ 3 — EK DENETİM SORULARI VE TASDİK KONTROL NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol / Denetim Sorusu",
+          "YMM Tasdik Notu",
+          null,
+          null
+        ],
+        [
+          null,
+          "S1",
+          "Mükellef, tam mükellef GSYF/GSYO'dan mı kazanç elde etti?",
+          "Fonun/ortaklığın Türkiye'de kurulu ve tam mükellef statüsünde olduğu SPK belgesiyle teyit edilmeli. Dar mükellef araçtan elde edilen kazanç KVK 5/1-a kapsamına girmez.",
+          null,
+          null
+        ],
+        [
+          null,
+          "S2",
+          "GSYF portföy yapısı (≥%51 HS) VUK 279 değerleme yöntemini nasıl etkiliyor?",
+          "≥%51 HS: Alış bedeli → değerleme farkı yok. <%51: NAD/borsa rayici → değer artışı geliri yazılır, istisna kapsamı değerlendirilir. Fon bilgi formundan portföy yapısı teyit edilmelidir.",
+          null,
+          null
+        ],
+        [
+          null,
+          "S3",
+          "Katılma payı fona mı iade edildi yoksa üçüncü kişiye mi satıldı?",
+          "Fona iade → KVK 5/1-a (%100, süre/oran koşulu yok). 3. kişi satışı → KVK 5/1-e (%75, 2 yıl aktif şartı). Bu ayrım tasdik raporunda açıkça gerekçelendirilmelidir.",
+          null,
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Portföyde GYF/GYO katılma payı var mı? Kâr dağıtım şartı (7524 s.K.) sağlandı mı?",
+          "01.01.2025 sonrası: Kâr dağıtım şartını sağlayan GYF/GYO'dan alınan kâr payı 5/1-a kapsamında değerlendirilemez. Sağlayamayanın kâr payı ise değerlendirilebilir. 23 No.lu KV GT incelenmelidir.",
+          null,
+          null
+        ],
+        [
+          null,
+          "S5",
+          "YİAKV matrahında 298 istisnası gelir türüne göre doğru işlendi mi?",
+          "Kâr payı niteliğindeki gelir için genellikle düşülebilir; satış/itfa/değer artışı için ayrı analiz. YİAKV hesabı dönem mevzuatıyla teyit edilmeli.",
+          null,
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Muhasebe 64x hesabı ile beyanname 298 kodu mutabakatı tamamlandı mı?",
+          "640/642/645 hesap dökümü toplamı ile beyanname 298 satırı karşılaştırılmalı. Fark varsa gerekçesi yazılı olarak belgelenmelidir.",
+          null,
+          null
+        ],
+        [
+          "TASDİK DOSYASI HAZIRLIK KONTROL ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "298 — KVK Md. 5/1-a-3 GSYF & GSYO Gelirleri — Tasdik Hazırlık Kontrol Listesi\n\n  □ A0 sınıflama bloğu tamamlandı ve 'OK' sonucu alındı\n  □ GSYF/GSYO tam mükellef statüsü SPK belgesiyle teyit edildi\n  □ Gelirin hukuki niteliği (kâr payı/itfa/satış/değer artışı) belirlendi\n  □ Fona iade (5/1-a) ile 3. kişi satışı (5/1-e) ayrımı yapıldı\n  □ VUK 279 değerleme yöntemi portföy yapısına göre doğrulandı\n  □ Stopaj durumu GVK Geçici 67 kapsamında analiz edildi\n  □ YİAKV etkisi gelir türüne göre hesaplandı\n  □ Muhasebe 64x hesabı ile beyanname 298 kodu mutabakatı yapıldı\n  □ Gelirin niteliğini gösteren PYŞ/aracı kurum yazısı temin edildi\n  □ DENETÇİ NOTLARI sayfası dolduruldu",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "⚠️ TASDİK KURALI — KVK Md. 17 / 3568 s.K.: GSYF/GSYO kaynaklı gelirin hukuki niteliği portföy yönetim şirketi veya aracı kurum yazılı teyidiyle desteklenmeden istisna tasdik raporuna alınamaz. Sınıflama belirsizliği durumunda YMM değerlendirme notu hazırlanmalı; gerekirse ihtirazi kayıtla beyan veya özelge başvurusu değerlendirilmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

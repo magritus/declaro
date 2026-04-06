@@ -1,0 +1,1431 @@
+{
+  "file": "373_KVK_Gecici_Md14_1b_Vade_Sonu_KarPayi_Faiz.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:H63",
+      "rows": [
+        [
+          "373 – KVK GEÇİCİ MADDE 14/1-b | VADE SONUNDA OLUŞAN KÂR PAYI VE FAİZ İSTİSNASI | KUR KORUMALI MEVDUAT (KKM) | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/1-b | KKM Hesabı Vadeye Ulaştığında Tahsil Edilen Kâr Payı ve Faiz | Beyanname 373 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14 — DÖRT İSTİSNA KODU:\n  370 (1-a) Dönüşüm kur farkı — tek seferlik | 371 (1-b) Bankadan kur farkı tazminatı — nakit/dönemsel\n  372 (1-b) Dönem sonu (31/12) faiz/kâr payı tahakkuku — accrual | hesap hâlâ açık\n  373 (1-b) Vade sonu faiz/kâr payı tahsilatı — nakit | hesap vadeye ulaştı → BU DOSYA\n  ★★ 372–373 MUTABAKAT: Yılı aşan vadeli hesaplarda mükerrerlik önlenmeli: Net 373 = Toplam Vade − Önceki Yıl 372",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 373 kapsamındaki vade sonu kâr payı/faiz YİAKV matrahından DÜŞÜLEMEZ. 370+371+372+373 tamamı E.7 DÜŞÜLEMEZ listesindedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Vadeye giren KKM hesabı KVK Geçici Md.14/1-a kapsamı dönüşümden mi açıldı?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "373, yalnızca 370 kapsamındaki dönüşümden açılan ve vadeye ulaşan KKM hesaplarına uygulanır.",
+          null
+        ],
+        [
+          "A0.2  ★ Dönem içinde vadeye ulaşan KKM hesabı var mı? Kâr payı/faiz tahsil edildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "373 = Vade bitiminde bankadan fiilen ALINAN kâr payı/faiz. Hesap hâlâ açıksa → 372 (tahakkuk).",
+          null
+        ],
+        [
+          "A0.3  ★ 372 ile MÜKERRERLİK kontrolü yapıldı mı? (C Sütun 6 dolduruldu mu?)",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Önceki yıl 372 olan hesaplarda: Net 373 = Vade Toplam − Önceki 372. Aksi hâlde mükerrer istisna tarhiyat riski.",
+          null
+        ],
+        [
+          "A0.4  Vade sonu muhasebe kaydı doğru yapıldı mı? (102 Dr / 181 Kr + 642 Kr)",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Vade: 102 Dr / Kr 181 (önceki yıl accrual kapatma) + Kr 642 (bu yılın yeni kısmı). Her iki alacak istisna kapsamında.",
+          null
+        ],
+        [
+          "A0.5  ★ 373 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "370+371+372+373 tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de dört satır da kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.6  Banka vade bildirimi/hesap özeti mevcut mu?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Vade sonunda bankadan alınan resmi bildiri: Vade tarihi, toplam kâr payı/faiz tutarı.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.3 (mükerrerlik) ve A0.5 (YİAKV düşülemez) en kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/373-01",
+          null
+        ],
+        [
+          "370/371/372 Referansı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Aynı KKM hesabı — dört dosya çapraz mutabakat",
+          null
+        ],
+        [
+          "B. VADELİ KKM HESAP BİLGİLERİ VE 372–373 MUTABAKAT AÇIKLAMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "372–373 MUTABAKAT KURALI (YILI AŞAN VADELİ HESAPLAR İÇİN):\n  Örnek: Hesap açılış Mart 2024, Vade Eylül 2025, Toplam faiz 30.000 TL\n  Aralık 2024 sonu (372): 14.500 TL tahakkuk → 2024 KV beyannamesi 372 satırı.\n  Eylül 2025 vade (373): 30.000 − 14.500 = 15.500 TL net → 2025 KV beyannamesi 373 satırı.\n  KURAL: Net 373 = Vade Toplam Kâr Payı/Faiz − Önceki Dönem(ler) 372 Tutarı. Mükerrerlik ÖNLENMELI.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  KKM Hesap Açılış Tarihi (370 ile aynı)",
+          null,
+          null,
+          "370 dönüşüm tarihi ile örtüşmeli.",
+          null,
+          null,
+          "Banka sözleşmesi",
+          null
+        ],
+        [
+          "B.2  KKM Hesap Vade Tarihi (Bu Dönemde Kalan)",
+          null,
+          null,
+          "Dönem içinde (01.01–31.12) vadeye ulaşan tarih.",
+          null,
+          null,
+          "Banka sözleşmesi",
+          null
+        ],
+        [
+          "B.3  Kâr Payı / Faiz Türü",
+          null,
+          "TL Mevduat Faizi",
+          "TL mevduat → Faiz (642). TL katılım → Kâr payı (644).",
+          null,
+          null,
+          "Banka sözleşmesi",
+          null
+        ],
+        [
+          "B.4  Vade Sonu Toplam Kâr Payı/Faiz Tahsilat (Banka Bildirimi)",
+          null,
+          null,
+          "Banka vade bildirimi / hesap özeti — tüm hesap süresi boyunca oluşan toplam.",
+          null,
+          null,
+          "Banka vade bildirimi",
+          null
+        ],
+        [
+          "B.5  ★ Önceki Dönem(ler) 372 Tahakkuk Tutarı (Varsa — Bu Hesap İçin)",
+          null,
+          "0",
+          "Bu hesap için önceki KV dönemlerinde 372 kapsamında istisna uygulanan toplam. Yoksa 0.",
+          null,
+          null,
+          "Önceki dönem KV 372 satırı",
+          null
+        ],
+        [
+          "B.6  Bu Dönem Net 373 Tutarı (B.4 − B.5)",
+          null,
+          null,
+          "Otomatik: C tablosunda hesaplanır. Burada sadece referans.",
+          null,
+          null,
+          "Formül (C Sütun 7)",
+          null
+        ],
+        [
+          "B.7  ★ KKM Hesabının 31/12/2021 Bilanço Kaynaklı Olduğu Teyit Edildi mi?",
+          null,
+          "EVET",
+          "373 yalnızca 370 kapsamındaki dönüşümden açılan hesaplara uygulanır.",
+          null,
+          null,
+          "KVK Geç.Md.14",
+          null
+        ],
+        [
+          "C. VADEYEGİREN KKM HESAP BAZINDA KÂR PAYI/FAİZ TABLOSU VE 372 MUTABAKAT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SÜTUN 5 (lacivert çerçeve): Vade sonu toplam tahsilat — ANA GİRİŞ. SÜTUN 6 (turuncu çerçeve): Önceki yıl 372 tutarı — mükerrerlik önleme. SÜTUN 7: Net 373 = Col5 − Col6. SÜTUN 8: İstisna (= Net 373).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KKM Hesap",
+          "Açılış Tarihi",
+          "Vade Tarihi",
+          "Vade (Ay)",
+          "Vade Sonu Toplam (TL)",
+          "Önceki Yıl 372 (TL)",
+          "Net 373 (TL)",
+          "İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Vadeye Giren Hesaplar → Beyanname 373",
+          null,
+          null,
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "SÜTUN 5 (lacivert): Vade sonu banka bildirimi toplam. SÜTUN 6 (turuncu): Önceki yıl 372 tutarı (mükerrerlik önleme — yok ise 0). SÜTUN 7 = Net 373 = Sütun 5 − Sütun 6 → Bu dönem beyanname 373 tutarı. SÜTUN 8 = İstisna = Sütun 7.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. VADE SONU İSTİSNA ÖZET — BEYANNAME 373",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Vade Sonu Toplam Tahsilat",
+          null,
+          null,
+          "0",
+          "C Sütun 5 toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Önceki Yıl 372 Mahsubu (Mükerrerlik Önleme)",
+          null,
+          null,
+          "0",
+          "C Sütun 6 toplamı — bu tutar 373'e YAZILMAZ",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  ★ NET 373 İSTİSNA TUTARI → BEYANNAME 373",
+          null,
+          null,
+          "0",
+          "→ Beyanname 373 | Kazancın Bulunması Halinde",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.4  Kapsam Dışı Vade Kâr Payı/Faiz (31/12/2021 Dışı)",
+          null,
+          null,
+          null,
+          "C Sütun 7'den kapsam dışı hesaplar — vergilendirilir",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. 370 – 371 – 372 – 373 TAM PAKET MUTABAKAT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "370",
+          "371",
+          "372",
+          "373",
+          "Beyanname",
+          "YİAKV"
+        ],
+        [
+          "Konu",
+          null,
+          "Kur farkı değerleme",
+          "Kur farkı tazminat",
+          "Dönem sonu tahakkuk",
+          "Vade sonu tahsilat",
+          "Dört kod",
+          "Dördü DÜŞÜLEMEZ"
+        ],
+        [
+          "Zaman",
+          null,
+          "Dönüşüm",
+          "Ödeme dönemleri",
+          "31 Aralık",
+          "Vade tarihi",
+          "Ayrı satırlar",
+          "E.7"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "646/679",
+          "102/648",
+          "181/642",
+          "102/(181+642)",
+          "Ticari kârda",
+          "Matrahta kalır"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 373 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — Net 373 (Toplam − Önceki 372) | KVK Geçici Md.14/1-b",
+          null,
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 370+371+372+373 tamamı asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) MÜKERRERLİK: Önceki yıl 372 tahakkuku ile bu yıl 373 vade tahsilatı çakışabilir. C Sütun 6'ya önceki yıl 372 tutarı girilmeli — net 373 = toplam − önceki 372. EN KRİTİK HESAP HATASI.\n(3) BEYANNAME: 'Kazancın Bulunması Halinde İndirilecek' — Zarar döneminde uygulanamaz.\n(4) MUHASEBE: Dr 102 / Kr 181 (önceki yıl accrual kapatma) + Kr 642 (bu yılın yeni kısmı).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H34",
+      "rows": [
+        [
+          "373 – KVK GEÇİCİ MD.14/1-b VADE SONU KÂR PAYI/FAİZ | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Vade Sonu Tahsilat | 372–373 Mükerrerlik Önleme | Beyanname 373 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "KKM Kaynaklı (B.7)",
+          null,
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Toplam Vade Tahsilat (D.1)",
+          null,
+          null,
+          null,
+          "0",
+          "Banka bildirimi",
+          null,
+          null
+        ],
+        [
+          "372 Mahsubu (D.2)",
+          null,
+          null,
+          null,
+          "0",
+          "Mükerrerlik önleme",
+          null,
+          null
+        ],
+        [
+          "373 NET İSTİSNA (D.3)",
+          null,
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          "370+371+372+373 — Dördü de E.7",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. 370–371–372–373 TAM KARŞILAŞTIRMA MATRİSİ — KVK GEÇİCİ MD.14",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          "370 (1-a)",
+          "371 (1-b)",
+          "372 (1-b)",
+          "373 (1-b)",
+          "Ortak",
+          null
+        ],
+        [
+          "Konu",
+          null,
+          "Kur farkı değerleme",
+          "Kur farkı tazminat",
+          "Faiz/kâr payı tahakkuk",
+          "Faiz/kâr payı vade tahsil",
+          "4 ayrı mekanizma",
+          null
+        ],
+        [
+          "Zaman",
+          null,
+          "Dönüşüm — tek",
+          "Ödeme dönemleri",
+          "31 Aralık",
+          "Vade tarihi",
+          "Her biri farklı dönem",
+          null
+        ],
+        [
+          "Muhasebe",
+          null,
+          "646/679",
+          "102/648",
+          "181/642",
+          "102/(181+642)",
+          "Ticari kâra dahil",
+          null
+        ],
+        [
+          "Beyanname",
+          null,
+          "370",
+          "371",
+          "372",
+          "373",
+          "Kazancın Bulunması Halinde",
+          null
+        ],
+        [
+          "YİAKV",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          "DÜŞÜLEMEZ (E.7)",
+          "DÜŞÜLEMEZ (E.7)",
+          "DÜŞÜLEMEZ (E.7)",
+          "Dördü birlikte E.7",
+          null
+        ],
+        [
+          "372–373 İlişki",
+          null,
+          "—",
+          "—",
+          "Dönem sonu accrual",
+          "Vade tahsilatı − 372",
+          "Net = Mükerrerlik yok",
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden mi açıldı?",
+          null,
+          "370 çalışma kâğıdıyla çapraz teyit. B.7 EVET olmalı.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Vade tarihi dönem içinde (01.01–31.12) mi?",
+          null,
+          "Sonraki dönemde vadeye girenler → Gelecek yıl 373.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ 372–373 MÜKERRERLİK kontrolü (C Sütun 6) yapıldı mı?",
+          null,
+          "Önceki yıl 372 tutarı mahsup edildi. Net 373 = Toplam − 372. EN KRİTİK.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "Vade tahsilat tutarları banka vade bildirimiyle mutabık mı?",
+          null,
+          "Her hesap satırı banka belgesinden doğrulanmalı.",
+          null,
+          "Eksik",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "Kontrol: 372 + 373 = Toplam kâr payı/faiz mi?",
+          null,
+          "Çapraz: İki kodun toplamı banka toplam bildirim tutarına eşit.",
+          null,
+          "Risk",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "Vade sonu muhasebe kaydı doğru mu? (102 Dr / 181 Kr + 642 Kr)",
+          null,
+          "181 kapatma (önceki yıl accrual) + 642 yeni kısım.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "370/371/372 çalışma kâğıtlarıyla çapraz mutabakat yapıldı mı?",
+          null,
+          "Dört dosya tutarlı — KKM hesap bilgileri örtüşüyor.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "★★ 373 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370+371+372+373 tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de dört satır.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "Beyanname 373 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "Dönem içinde birden fazla hesap vadeye girdi mi? Hepsi ayrı satırda mı?",
+          null,
+          "Her vadeye giren hesap C tablosunda ayrı satır ve ayrı 372 mahsubu.",
+          null,
+          "Eksik",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "Hesap yenileme (rollover) yapıldıysa yeni hesap ayrıca değerlendirildi mi?",
+          null,
+          "Yenilenen hesap için yeni 371+372+373 analizi.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:H22",
+      "rows": [
+        [
+          "373 – KVK GEÇİCİ MD.14/1-b VADE SONU KÂR PAYI/FAİZ | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Vade Tahsilatı | 372 Accrual Kapatma | 370–371–372–373 Muhasebe Tablosu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — VADE SONU (AYNI YILDA AÇILIP KAPANAN HESAP — ÖNCEKİ YIL 372 YOK)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Senaryo: KKM hesabı aynı dönemde açılıp vadeye giriyor (örn. Mart 2025 → Eylül 2025). Önceki yıl 372 yok.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Vade Tarihi]",
+          "102 Bankalar",
+          "Vade sonu toplam kâr payı/faiz tahsilatı — tamamı bu dönem → Beyanname 373",
+          "[Tutar]",
+          "—",
+          null,
+          "Banka bildirimi"
+        ],
+        [
+          "Kr",
+          "[Vade Tarihi]",
+          "642 Faiz Gelirleri / 644 Kâr Payları",
+          "Vade sonu kâr payı/faiz — KVK Geçici Md.14/1-b → Beyanname 373 (tamamı)",
+          "—",
+          "[Tutar]",
+          null,
+          "KV 373"
+        ],
+        [
+          "KAYIT 2 — VADE SONU (YILI AŞAN VADELİ HESAP — ÖNCEKİ YIL 372 VAR)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Senaryo: Mart 2024 açılış, Eylül 2025 vade. 2024 yılı sonunda 372 (181/642) tahakkuku yapılmıştı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Vade 2025]",
+          "102 Bankalar",
+          "Vade sonu toplam kâr payı/faiz tahsilatı (2024 + 2025 toplam)",
+          "[Toplam]",
+          "—",
+          null,
+          "Banka bildirimi"
+        ],
+        [
+          "Kr",
+          "[Vade 2025]",
+          "181 Gelir Tahakkukları",
+          "Önceki yıl 372 tahakkukunun kapatılması (2024 tahakkuk tutarı)",
+          "—",
+          "[2024 x 372]",
+          null,
+          "181 kapatma"
+        ],
+        [
+          "Kr",
+          "[Vade 2025]",
+          "642 Faiz Gelirleri / 644 Kâr Payları",
+          "Bu yılın (2025) kısmı → Beyanname 373 = Net tutar",
+          "—",
+          "[Net 373]",
+          null,
+          "KV 373"
+        ],
+        [
+          "2025 Beyannamesi 373 = 642'ye yazılan tutar (Net = Toplam − 2024 x 372). 181 kapatma → 2025'te yeni gelir değil (2024'te 372 alındı). YİAKV'de düşülemez.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — 370/371/372/373 TAM MUHASEBE TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "370",
+          "[Dönüşüm]",
+          "646/679",
+          "Kur farkı değerleme → Tek seferlik → Beyanname 370",
+          "—",
+          "[370]",
+          null,
+          "KV 370"
+        ],
+        [
+          "371",
+          "[Ödeme]",
+          "102/648",
+          "Bankadan kur farkı koruma ödemesi → Dönemsel nakit → Beyanname 371",
+          "—",
+          "[371]",
+          null,
+          "KV 371"
+        ],
+        [
+          "372",
+          "[31.12]",
+          "181/642",
+          "Dönem sonu faiz/kâr payı tahakkuku → 31 Aralık → Beyanname 372",
+          "—",
+          "[372]",
+          null,
+          "KV 372"
+        ],
+        [
+          "373",
+          "[Vade]",
+          "102/(181+642)",
+          "Vade sonu tahsilat (181 kapat + yeni 642) → Beyanname 373",
+          "—",
+          "[373]",
+          null,
+          "KV 373"
+        ],
+        [
+          "YİAKV: 646+648+642(372)+642(373) → Ticari kâra dahil. 370+371+372+373 YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7). Genel KV matrahından çıkarılır (her satır ayrı beyannamede). Toplamı: 370+371+372+373 = KVK Geçici Md.14 tam paketi.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:H9",
+      "rows": [
+        [
+          "373 – KVK GEÇİCİ MD.14/1-b VADE SONU KÂR PAYI/FAİZ | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | KVK Geçici Md.14 | 372–373 Mükerrerlik | ★★ YİAKV DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/1-b — 373 Vade Sonu Mekanizması",
+          "373 (VADE SONUNDA OLUŞAN KÂR PAYI VE FAİZ):\n\nKKM hesabı vadeye ulaştığında bankadan fiilen tahsil edilen kâr payı ve faiz geliri,\nKVK Geçici Madde 14/1-b kapsamında kurumlar vergisinden istisnadır.\n\n372 ile TEMEL FARK:\n• 372: Hesap açık, dönem sonu 31 Aralık tahakkuku — muhasebe: 181 Dr / 642 Kr.\n• 373: Hesap vadeye ulaştı, kâr payı/faiz tahsil edildi — muhasebe: 102 Dr / (181+642) Kr.\n\nÖNEMLI: Aynı KKM hesabından yılı aşan vadeli işlemlerde HER İKİSİ birlikte oluşabilir.\nÖnceki yılın 372 tahakkuku ile bu yılın 373 vade tahsilatı ÇAKIŞABİLİR → mükerrerlik önlenmeli.\n\nBEYANNAME: 373 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/1-b | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ 372–373 MÜKERRERLİK KURALI — EN KRİTİK YMM KONTROLÜ",
+          "ÖRNEK (Yılı Aşan Vadeli Hesap):\n\nHesap: Mart 2024 açılış | Eylül 2025 vade | Toplam kâr payı: 30.000 TL\n\n2024 KV dönemi (31.12.2024):\n→ Tahakkuk: 14.500 TL (10 ay) | Muhasebe: Dr 181 / Kr 642\n→ 2024 beyannamesi 372 satırı: 14.500 TL ✓\n\n2025 KV dönemi (Vade: Eylül 2025):\n→ Banka 30.000 TL öder\n→ Muhasebe: Dr 102 / Kr 181 (14.500 kapatma) + Kr 642 (15.500 yeni)\n→ 2025 beyannamesi 373 satırı: 15.500 TL (NET — önceki 372 mahsup edildi) ✓\n\nÇAPRAZ KONTROL: 372 (14.500) + 373 (15.500) = 30.000 TL (banka toplam bildirimi) ✓\n\nHATA: 373'e 30.000 TL yazılırsa → 14.500 TL mükerrer istisna → Tarhiyat + Vergi ziyaı cezası.",
+          "KVK Geçici Md.14/1-b | 1 Seri No.lu KVK GT",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370+371+372+373 Tamamı DÜŞÜLEMEZ",
+          "YİAKV (KVK Md.32/C) MATRAHINDA:\n\n• 370 → DÜŞÜLEMEZ | • 371 → DÜŞÜLEMEZ\n• 372 → DÜŞÜLEMEZ | • 373 → DÜŞÜLEMEZ\n\nYİAKV çalışma kâğıdı E.7 satırı:\n'KKM Kur Farkı Değerleme + Tazminat + Dönem Sonu + Vade Kâr Payı/Faiz İstisnası\n(KVK Geçici Md.14) → YİAKV'de DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373'\n\nYMM, dört kodun tamamının asgari vergi matrahında kaldığını teyit etmelidir.\nToplu olarak da, ayrı ayrı da YİAKV matrahından düşülemez.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Hesap Yenileme, Aynı Yılda Birden Fazla Vade, Erken Kapatma",
+          "HESAP YENİLEME (ROLLOVER):\nVadeye giren hesabın kâr payı/faizi → 373 istisnası.\nYenilenen yeni hesap için yeni 371/372/373 döngüsü başlar.\nYeni hesabın da 31/12/2021 kaynaklı olduğu teyit edilmeli.\n\nAYNI YILDA BİRDEN FAZLA VADE:\nHer vadeye giren hesap C tablosunda ayrı satır.\nHer hesap için önceki yıl 372 mahsubu ayrı ayrı hesaplanır.\n\nERKEN KAPATMA:\nVade öncesi kapatmada genellikle ceza faizi uygulanır.\nFiilen tahsil edilen kâr payı/faiz → 373 kapsamında değerlendirilebilir.\n\n372+373 ÇAPRAZ KONTROL:\nHer hesap için: 372 (tüm dönem) + 373 (net vade) = Banka toplam bildirimi.\nBu eşitlik sağlanamıyorsa muhasebe veya beyanname hatası var demektir.",
+          "KVK Geçici Md.14/1-b | VUK Md.280/281",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN (Önceki Yıl 372 Olan Hesap İçin):\n'...31/12/2021 tarihli bilançoda kayıtlı yabancı paranın TL kur korumalı mevduat hesabına dönüştürülmesi sonucunda açılan KKM hesabı [Vade Tarihi] tarihinde vadeye ulaşmış; vade süresince oluşan toplam [Brüt Tutar] TL kâr payı/faizin önceki dönemde 372 istisnasına konu edilen [372 Tutarı] TL düşülerek kalan [Net 373] TL KVK Geçici Madde 14/1-b kapsamında kurumlar vergisinden istisna edilmiş ve yurt içi asgari kurumlar vergisi matrahından indirilmemiştir.'\n\nKULLANIN (Önceki Yıl 372 Olmayan Hesap İçin):\n'...Vade süresinde oluşan toplam [Tutar] TL kâr payı/faizin tamamı 373 kapsamında istisnaya tabidir.'\n\nKULLANMAYINlar:\n'...Toplam vade kâr payının tamamı 373'e yazılmıştır.' (Önceki 372 mahsubu yapılmamış)\n'...373 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n\nKRİTİK RİSKLER:\n(1) 372 mahsubu yapılmadan 373'e toplam yazmak — MÜKERRERLIK.\n(2) 373'ü YİAKV matrahından düşmek.\n(3) Vade tarihinin dönem dışında olduğunu gözden kaçırmak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (373): KVK Geçici Md.14 paketi tamamlandı — 370/371/372/373 dört kod, dört ayrı mekanizma, dört ayrı beyanname satırı. 372–373 mükerrerlik YMM'nin en kritik kontrolüdür. Dördü de YİAKV matrahından DÜŞÜLEMEZ. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F31",
+      "rows": [
+        [
+          "373 – KVK GEÇİCİ MD.14/1-b VADE SONU KÂR PAYI/FAİZ | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | Banka Vade Bildirimi | 372 Mükerrerlik Önleme",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Banka Vade Bildirimi / Hesap Özeti — Toplam Kâr Payı/Faiz",
+          "Vade sonunda bankadan alınan resmi bildiri: Vade tarihi ve toplam kâr payı/faiz tutarı.\nC tablosu Sütun 5'in dayanağıdır. Her hesap için ayrı banka belgesi zorunludur.",
+          "Banka şubesi/internet bankacılığı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Önceki Dönem KV Beyannamesi 372 Satırı (Bu Hesap İçin)",
+          "Önceki yılda bu hesap için 372 kapsamında istisna uygulanan tutar.\nC tablosu Sütun 6 (mükerrerlik önleme) için zorunlu kaynak.\nYMM: 372 + 373 = Toplam kâr payı/faiz (banka bildirimi) eşitliği kontrol edilmeli.",
+          "Önceki dönem KV beyannamesi 372 satırı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ 370/371/372 Çalışma Kâğıtları — Çapraz Mutabakat",
+          "Dört dosyanın KKM hesap bilgileri tutarlı. B.7 (31/12/2021 kaynaklı) dört dosyada teyit.",
+          "370/371/372 çalışma kâğıtları",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Muhasebe Yevmiyesi — Vade Tahsilat Kaydı (102 Dr / 181 Kr + 642 Kr)",
+          "Vade muhasebe kaydı: 102 borç / 181 alacak (önceki yıl accrual kapatma) + 642 alacak (yeni kısım).\nC Sütun 7 (net 373) ile 642'ye yazılan tutar uyumlu olmalı.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 373. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "181 Hesap Ekstresi — Önceki Yıl Tahakkuk Kapanışı",
+          "181 kapatılan tutar = Sütun 6 tutarı (mükerrerlik kontrol belgesi).",
+          "181 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KKM Hesap Sözleşmesi",
+          "Kâr payı/faiz oranı ve vade koşulları — hesap doğrulaması için.",
+          "Banka sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Hesap Yenileme Belgesi (Varsa)",
+          "Rollover için yenileme sözleşmesi — yeni hesabın kapsam analizi.",
+          "Banka belgesi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden mi açıldı?",
+          "370 çapraz teyit. B.7 EVET.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Vade tarihi dönem içinde (01.01–31.12) mi?",
+          "Sonraki dönemde vadeye girenler → Gelecek yıl 373.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 372–373 MÜKERRERLİK (C Sütun 6) kontrolü yapıldı mı?",
+          "Önceki yıl 372 mahsup edildi. Net 373 doğru hesaplandı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Vade tahsilat tutarları banka bildirimiyle mutabık mı?",
+          "Her hesap satırı banka belgesinden doğrulanmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "372+373 = Banka toplam bildirimi eşitliği sağlandı mı?",
+          "Çapraz kontrol: İki kodun toplamı banka tutarına eşit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Vade muhasebe kaydı doğru? (102/181+642)",
+          "181 kapatma + 642 yeni kısım.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "370/371/372 dosyalarıyla çapraz mutabakat tamam mı?",
+          "Dört dosya tutarlı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★★ 373 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370+371+372+373 tamamı YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 373 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 373, 370+371+372 ile KVK Geçici Md.14 paketini tamamlar. 372–373 mükerrerlik (Sütun 6 mahsubu) en kritik YMM kontrol noktasıdır. Dördü de YİAKV matrahından DÜŞÜLEMEZ (E.7). YMM müteselsil: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

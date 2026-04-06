@@ -23,13 +23,37 @@ ana_kategori: serbest_bolge_tgb_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Türk Uluslararası Gemi Siciline (TUGS) kayıtlı gemi işletiyor veya devrediyor musunuz?"
   info_modal: |
-    4490 Sayılı Türk Uluslararası Gemi Sicili Kanunu kapsamında TUGS'a kayıtlı gemilerin
-    (1) işletilmesinden ve (2) devrinden elde edilen kazançlar süresiz olarak kurumlar
-    vergisinden istisnadır. İstisnanın temel koşulu kazancın elde edildiği tarihte TUGS
-    sicil kaydının aktif olmasıdır. Sicili askıya alınmış veya terkin edilmiş dönem
-    kazancı kapsam dışıdır.
-    NOT: 315 istisnası "Kazancın Bulunması Halinde" bölümündedir — gemi işletme zararında
-    uygulanamaz.
+    ## Genel Çerçeve
+
+    4490 Sayılı Türk Uluslararası Gemi Sicili Kanunu kapsamında TUGS'a kayıtlı gemilerin **(1) işletilmesinden** ve **(2) devrinden** elde edilen kazançlar **süresiz olarak** kurumlar vergisinden istisnadır. İstisna beyannamede **"Kazancın Bulunması Halinde İndirilecek"** bölümünde 315 numaralı satırda gösterilir; gemi işletme veya devir faaliyetinin zararda olması halinde istisna uygulanamaz. İstisna oranı %100'dür ve herhangi bir tarih sınırı bulunmamaktadır.
+
+    ## Temel Koşullar
+
+    - **TUGS'a kayıt zorunluluğu:** Gemi Türk Uluslararası Gemi Sicili'ne tescil edilmiş olmalıdır; Ulusal Gemi Sicili veya başka bir sicile kayıtlı gemi kapsam dışıdır. TUGS tescil şahadetnamesi tasdik dosyasının birincil belgesidir.
+    - **Hesap dönemi boyunca sicil aktifliği:** Kazancın elde edildiği tarihte TUGS kaydının aktif olması şarttır; askıya alınmış veya terkin edilmiş dönem kazancı kapsam dışıdır. Kısmen askıya alınan dönemler için orantılı ayrıştırma yapılmalıdır.
+    - **İki kazanç türü kapsamı:** Gemi işletme kazancı (navlun, zaman kiralama, çıplak tekne kiralama, yolcu taşıma, kurtarma, sürastarya) ve gemi devir kazancı (satış bedeli − net defter değeri − satış giderleri) ayrı hesaplanarak 315 satırında toplanır.
+    - **Kapsam dışı gelirlerin ayrıştırılması:** Mevduat faizi ve finansal gelirler kesin biçimde kapsam dışıdır; TUGS dışı gemi/araç gelirleri de kapsama girmez.
+    - **"Kazancın Bulunması Halinde" bölümü:** Gemi işletme ve devir kazancı toplamı sıfır veya negatif ise istisna uygulanamaz; bu durum "Zarar Olsa Dahi İndirilecek" (310, 322 gibi) bölümlerinden temel farkı oluşturur.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Mevduat faizinin 315 kapsamında beyan edilmesi** en sık yapılan ve cezalı tarhiyata yol açan hatadır.
+    - **Sicil askıya alınmış dönem kazancına istisna uygulamak** ciddi risk taşır; her dönem için sicil aktifliği teyit belgesi alınmalıdır.
+    - **Gemi işletme zararını "Zarar Olsa Dahi" bölümüne yazmak** hatalıdır; 315 "Kazancın Bulunması Halinde" bölümündedir.
+    - **Devir kazancında TUGS kaydının devir tarihinde aktif olması** zorunludur; sicil transferinden önce gerçekleşen kazanç kapsam dışında kalabilir.
+    - **Çoklu gemi durumunda** her gemi için ayrı gelir-gider analizi yapılmalıdır; toplu hesap yanıltıcı sonuç verebilir.
+
+    ## YİAKV İlişkisi
+
+    4490 sayılı Kanun TUGS gemi istisnası (315) YİAKV (KVK Madde 32/C) matrahından **indirilemeyen** istisnalar kapsamında değerlendirilmelidir; bu nedenle YİAKV çalışma kâğıdında 315 tutarının durumu güncel mevzuat çerçevesinde ayrıca analiz edilmelidir.
+
+    ## Pratik Notlar
+
+    - 3 kademe uyum: Muhasebe alt hesabı (600.01 TUGS Gemi İşletme) = çalışma kâğıdı C bölümü = KV beyannamesi 315 satırı. Muhasebede alt hesap ayrımı yapılmadan bu uyum sağlanamaz.
+    - Navlun/charter sözleşmeleri kapsam içi işletme gelirinin birincil dayanağıdır; her sözleşme dosyada bulunmalıdır.
+    - Gemi devri için TUGS Sicil Müdürlüğü devir tescil belgesi ve 253 hesap kartı (net defter değeri) zorunludur.
+    - TUGS çalışanlarının GV ücret istisnası KV tasdikinin dışında ayrıca analiz edilmelidir.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: tugs_kayitli
       soru: "Gemi Türk Uluslararası Gemi Sicili'ne (TUGS) kayıtlı mı? Tescil şahadetnamesi var mı?"

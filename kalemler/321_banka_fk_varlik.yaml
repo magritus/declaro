@@ -22,16 +22,78 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Banka, finansal kiralama şirketi, finansal şirket veya TMSF'ye olan borçların ödenmesi amacıyla varlık sattınız mı?"
   info_modal: |
-    KVK Madde 5/1-f kapsamında; banka, finansal kiralama şirketi, finansal şirket veya
-    TMSF'ye borçlu kurumların bu borçların ödenmesine yönelik yaptıkları varlık satışlarından
-    elde edilen kazançların tamamı kurumlar vergisinden istisnadır.
+    ## Genel Çerçeve
 
-    351/352/353 numaralı satırlardan temel farklar:
-    - 2 yıl aktifinde bulundurma şartı YOKTUR
-    - 549 Özel Fonlar hesabına alma zorunluluğu YOKTUR
-    - Taşınmaz ticareti yapan şirketler de yararlanabilir
-    - %100 tam istisna (kısmi oran yok)
-    - Taşınır varlıklar da kapsam içindedir
+    KVK Madde 5/1-f kapsamındaki istisna, **banka, finansal kiralama şirketi, finansal şirket
+    veya TMSF'ye borçlu** olan kurumların bu borçların ödenmesine yönelik gerçekleştirdikleri
+    varlık satışlarından elde ettikleri kazançların tamamını (%100) kurumlar vergisinden muaf
+    tutar. İstisnanın özü, finansal sıkıntı içindeki kurumları borç yükünden kurtarmak için
+    yapılan zoraki varlık satışlarını vergisel açıdan desteklemektir.
+
+    Bu istisna, çoğu zaman karıştırılan **KVK 5/1-e istisnasından (351/352/353 satırları)
+    köklü biçimde ayrışır:** 2 yıl aktifinde bulundurma şartı yoktur, 549 Özel Fonlar hesabına
+    alma zorunluluğu yoktur, taşınmaz ticareti yapan şirketler de yararlanabilir ve taşınır
+    varlıklar da kapsam dahilindedir.
+
+    ## Temel Koşullar
+
+    **1. Alacaklı Kurum Türü:** Satışın amacı aşağıdaki kurumlara olan borcu ödemek olmalıdır:
+    - **Banka:** 5411 sayılı Bankacılık Kanunu kapsamında faaliyet gösteren mevduat, katılım,
+      kalkınma veya yatırım bankası
+    - **Finansal Kiralama Şirketi:** 6361 sayılı Finansal Kiralama, Faktoring ve Finansman
+      Şirketleri Kanunu kapsamında BDDK lisansına sahip şirket
+    - **Finansal Şirket:** 6361 s.K. kapsamında faktoring, finansman veya varlık yönetim şirketi
+    - **TMSF:** Tasarruf Mevduatı Sigorta Fonu (5411 s.K. Ek Madde 1)
+
+    **2. Borç İlişkisinin Varlığı:** Satış tarihi itibarıyla kredi sözleşmesi, leasing sözleşmesi
+    veya faktoring sözleşmesiyle belgelenmiş gerçek bir borç ilişkisi zorunludur. Belgesiz
+    borç iddiası vergi incelemesinde reddedilir.
+
+    **3. Satışın Amacı:** Varlık satışının **doğrudan ve açıkça** bu borcun ödenmesine yönelik
+    yapılması şarttır. Satış hasılatının alacaklı kuruma aktarıldığına dair banka transfer
+    dekontu veya ödeme belgesi zorunludur.
+
+    **4. Satışın Tamamlanması:** Mülkiyetin/tasarruf hakkının alıcıya fiilen geçmiş olması
+    gerekir. Taşınmaz için tapu devri, hisse için tescil, taşınır için teslim belgesi esas alınır.
+    Satış vaadi veya ön sözleşme yeterli değildir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    **Emsal Bedel Zorunluluğu:** Alacaklı kuruma doğrudan satış (borç yerine ifa / dation in
+    payment) veya ilişkili kişiye satış halinde KVK Madde 13 kapsamında transfer fiyatlandırması
+    analizi zorunludur. Emsal fiyatı belirlenmeden yapılan satışlarda değer farkı üzerinden
+    tarhiyat yapılabilir; bağımsız değerleme raporu alınması önerilir.
+
+    **Satış Amacının Sınırlılığı:** Satış hasılatının tamamının (veya borcun karşılanan kısmının)
+    borç ödemesine tahsis edilmesi gerekir. Hasılatın bir bölümünün başka amaçlarla kullanılması,
+    istisnanın orantılı olarak uygulanıp uygulanamayacağını tartışmalı hale getirir.
+
+    **Alacaklı Kurum Kapsamı Dışı:** Leasing şirketi olmayan satıcı kurumlar, sermaye şirketleri
+    veya gerçek kişilere yapılan borç ödeme amaçlı satışlar 5/1-f kapsamı dışındadır; yalnızca
+    yukarıda sayılan düzenlenmiş finans kurumlarına olan borçlar için geçerlidir.
+
+    **351/352/353 ile Karıştırma Riski:** 2 yıl şartı ve 549 fon şartı KVK 5/1-f'de
+    UYGULANMAMALIDIR. Bu farkın beyannamede net biçimde yansıtılması gerekir.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-f istisnasının **YİAKV (KVK Madde 32/C) matrahına etkisi tartışmalıdır.** GİB'in
+    resmi açıklaması henüz netlik kazanmamış olmakla birlikte, 321. satırdaki istisna tutarının
+    YİAKV matrahından indirilip indirilemeyeceği dönem mevzuatı ve özelge gelişmeleri ışığında
+    ayrıca analiz edilmelidir.
+
+    Yüksek tutarlı işlemlerde YİAKV etkisinin finansal modele dahil edilmesi ve gerektiğinde
+    GİB'den özelge talep edilmesi önerilir.
+
+    ## Pratik Notlar
+
+    - Alacaklı kurumun BDDK/SPK/TMSF statüsünü gösteren resmi belge dosyaya eklenmelidir.
+    - Borç ilişkisini gösteren sözleşme ve temerrüt/icra belgesi (veya yeniden yapılandırma
+      anlaşması) zorunludur.
+    - Banka transfer dekontu veya ödeme belgesi ile hasılatın alacaklıya aktarıldığı kanıtlanmalıdır.
+    - Taşınmaz satışında tapu devir senedi, hisse satışında tescil belgesi, taşınır satışında
+      fatura ve teslim belgesi gereklidir.
+    - 49 No.lu KV GT kapsamında YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: alacakli_kurum_turu
       soru: "Alacaklı kurum türü nedir? (Banka, finansal kiralama şirketi, finansal şirket veya TMSF)"

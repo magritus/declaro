@@ -22,21 +22,60 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "KVK Geçici Md.14/3 kapsamında altın hesabı TL'ye dönüştürüldükten (379) sonra kurulan TL araçtan dönem sonu faiz/kâr payı tahakkuku yapıldı mı?"
   info_modal: |
-    KVK Geçici Madde 14/3 (Paragraf 3) kapsamında, altın hesabının TL'ye dönüştürülmesi
-    (Beyanname 379) sonrası kurulan TL mevduat veya katılım hesabından **31 Aralık dönem
-    sonu** itibarıyla VUK Md.280/281 kapsamında tahakkuk eden faiz ve kâr payı istisnadan
-    yararlanır.
+    ## Genel Çerçeve
 
-    380, 379 ile **zincirleme bağlantılıdır** — altın dönüşümü (379) gerçekleşmeden 380
-    tahakkuku oluşamaz.
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Paragraf 3 altın hesabı dönüşümü (379) zincirinin faiz/kâr payı ayağını üç ayrı kodda
+    düzenler: dönem sonu tahakkuk (380), vade sonu tahsilat (381) ve diğer kazançlar (382).
+    380 bu zincirin ikinci halkasını oluşturur.
 
-    **Muhasebe:** Borç 181 Gelir Tahakkukları / Alacak 642 Faiz Gelirleri
+    ## Bu Satırın Kapsamı
 
-    **372/376 ile fark:** Aynı mekanizma, farklı yasal dayanak. 372 (P1 aktif araçlar),
-    376 (P2 pasif araçlar), 380 (P3 altın dönüşümü sonrası araçlar). Aynı araç için
-    yalnızca biri uygulanabilir.
+    Beyanname **380**, 379 (altın hesabı dönüşüm kazancı) kapsamındaki dönüşüm sonrasında
+    kurulan TL mevduat veya katılım hesabından 31 Aralık dönem sonu itibarıyla VUK Madde
+    280/281 kapsamında **tahakkuk ettirilen** faiz ve kâr payı istisnasıdır. 372 (Paragraf 1)
+    ve 376 (Paragraf 2) ile tamamen aynı muhasebe mekanizmasına dayanır; aralarındaki tek fark
+    bağlantılı dönüşüm kodudur. 372: mevduat/altın → KKM (aktif taraf). 376: borç → TL
+    (pasif taraf). 380: altın hesabı → TL (Paragraf 3 altın zinciri). Aynı TL araç için
+    yalnızca biri uygulanabilir; üçü aynı anda kullanılamaz.
 
-    **YİAKV uyarısı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (YİAKV E.7 listesi).
+    ## Temel Koşullar
+
+    - 379 kapsamında altın hesabı dönüşümü gerçekleştirilmiş ve çalışma kâğıdı hazır olmalıdır
+      (380, 379 olmadan oluşamaz)
+    - Altın dönüşümü sonrası kurulan TL araç 31 Aralık dönem sonunda hâlâ açık olmalıdır
+    - VUK Madde 280/281 kapsamında dönem sonu tahakkuk muhasebe kaydı (Dr 181 / Kr 642)
+      yapılmış olmalıdır
+    - 372 (Paragraf 1) ve 376 (Paragraf 2) ile mükerrerlik analizi tamamlanmış olmalıdır
+
+    ## Önemli Uyarılar
+
+    - **Zincirleme bağımlılık:** 380, 379'a bağımlıdır. 379 çalışma kâğıdı referansı olmadan
+      380 istisnasını desteklemek mümkün değildir
+    - **372/376/380 ayrımı:** Üç kod aynı muhasebe mekanizmasını (181/642) paylaşır, ancak
+      farklı Paragraf'lara aittir. Hangi araç hangi Paragraf'a ait ise yalnızca o Paragraf'ın
+      kodu kullanılır
+    - **Mükerrerlik önleme:** Sonraki dönemde 181 tahakkuk kaydı tahsil edildiğinde yalnızca
+      181 kapatılır; o dönemde yeni 380 uygulanmaz. Vade sonu tahsilat 381 kapsamındadır
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca ≥ 500.000 TL ise YMM raporu
+      zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    Paragraf 3 kodlarının tamamı (379–382) E.7 listesinde yer almalıdır. YİAKV çalışma
+    kâğıdında Paragraf 3 satırlarının eksiksiz olduğu kontrol edilmelidir.
+
+    ## Pratik Notlar
+
+    - **Banka bildirimi önceliği:** Dönem sonu tahakkuk tutarının belirlenmesinde banka dönem
+      sonu bildirimi tercih edilir. Bildirim yoksa sözleşme oranı × bakiye × gün/365 ile
+      hesaplanır; her iki durumda da banka ekstresiyle çapraz kontrol yapılır
+    - **Hesap türü etkisi:** Altın dönüşümü sonrası açılan hesap TL mevduat ise 642 Faiz
+      Gelirleri, TL katılım hesabı ise 644 Temettü ve Kâr Payları kullanılır
+    - **380-381 zinciri:** Dönem sonunda açık hesap → 380 tahakkuku. İzleyen dönemde vadeye
+      ulaşma → Net 381 = Vade Toplam − Önceki 380. Bu mükerrerlik kuralı 372-373 kuralıyla
+      özdeştir ve aynı özenle uygulanmalıdır
   kapi_sorulari:
     - id: altin_donusum_379
       soru: "KVK Geçici Md.14/3 kapsamında altın hesabı dönüşümü (379) gerçekleştirildi mi?"

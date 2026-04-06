@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom'
-import { useCalisma } from '@/api/calisma'
+import { useCalisma, useTamamla, useYenidenAc } from '@/api/calisma'
 import { usePipeline, type PipelineSonucu } from '@/api/pipeline'
 import ThemeToggle from '@/components/ThemeToggle'
 
@@ -136,8 +136,11 @@ function KalemIstisnalari({ kalemler }: KalemIstisnalariProps) {
 export default function MaliKarOzeti() {
   const { calismaId } = useParams<{ calismaId: string }>()
   const navigate = useNavigate()
-  const { data: calisma } = useCalisma(calismaId ? Number(calismaId) : undefined)
+  const calismaIdNum = calismaId ? Number(calismaId) : undefined
+  const { data: calisma } = useCalisma(calismaIdNum)
   const pipeline = usePipeline(calismaId)
+  const tamamla = useTamamla(calismaIdNum)
+  const yenidenAc = useYenidenAc(calismaIdNum)
 
   const sonuc = pipeline.data
 
@@ -168,35 +171,41 @@ export default function MaliKarOzeti() {
             </p>
           )}
         </div>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 flex-wrap">
           <ThemeToggle />
           <button
             onClick={() => window.open(`/api/calisma/${calismaId}/export/ozet`, '_blank')}
-            className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 font-medium transition-colors shadow-sm"
+            className="flex items-center gap-2 bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 font-medium transition-colors shadow-sm text-sm"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-            </svg>
-            Özet Excel İndir
+            ↓ Özet Excel
           </button>
           <button
             onClick={() => pipeline.mutate()}
             disabled={pipeline.isPending}
-            className="flex items-center gap-2 bg-accent text-white px-5 py-2.5 rounded-lg hover:bg-accent-hover disabled:opacity-60 disabled:cursor-not-allowed font-medium transition-colors shadow-sm"
+            className="flex items-center gap-2 bg-accent text-white px-5 py-2 rounded-lg hover:bg-accent-hover disabled:opacity-60 disabled:cursor-not-allowed font-medium transition-colors shadow-sm text-sm"
           >
             {pipeline.isPending ? (
-              <>
-                <svg className="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
-                </svg>
-                Hesaplanıyor…
-              </>
-            ) : (
-              'Hesapla'
-            )}
+              <><span className="inline-block w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin" /> Hesaplanıyor…</>
+            ) : 'Hesapla'}
           </button>
+          {calisma?.tamamlandi ? (
+            <button
+              onClick={() => yenidenAc.mutate()}
+              disabled={yenidenAc.isPending}
+              className="flex items-center gap-2 bg-surface-raised border border-amber-500 text-amber-600 dark:text-amber-400 px-5 py-2 rounded-lg hover:bg-amber-50 dark:hover:bg-amber-950 disabled:opacity-60 font-medium transition-colors text-sm"
+            >
+              {yenidenAc.isPending ? '…' : '✎ Düzenlemeye Aç'}
+            </button>
+          ) : (
+            <button
+              onClick={() => tamamla.mutate()}
+              disabled={tamamla.isPending || !pipeline.data}
+              className="flex items-center gap-2 bg-emerald-600 text-white px-5 py-2 rounded-lg hover:bg-emerald-700 disabled:opacity-60 disabled:cursor-not-allowed font-medium transition-colors text-sm"
+              title={!pipeline.data ? 'Önce hesaplama yapın' : undefined}
+            >
+              {tamamla.isPending ? '…' : '✓ Çalışmayı Tamamla'}
+            </button>
+          )}
         </div>
       </div>
 

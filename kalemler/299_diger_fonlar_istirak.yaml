@@ -29,14 +29,36 @@ ana_kategori: istirak_kazanc_istisnalari
 wizard_agaci:
   tetikleyici_soru: "TL esaslı yatırım fonu katılma payınız var mı? (Para piyasası, tahvil-bono, karma, serbest vb. — GSYF/GSYO hariç)"
   info_modal: |
-    KVK 5/1-a-4 kapsamında diğer TL esaslı yatırım fonlarından elde edilen kâr payı,
-    fon iadesi ve VUK 279 değerleme farkı kazançları istisnadır.
-    ÖNEMLİ KISITLAMALAR:
-    (1) İktisap tarihi 15.07.2023'ten ÖNCE olmalıdır — sonrası vergiye tabidir.
-    (2) Portföyde döviz/altın/kıymetli maden OLMAMALIDIR (TL esaslı fon şartı).
-    (3) GSYF/GSYO için bu form DEĞİL — 298 kodu kullanılır.
-    (4) Portföy ≥%51 hisse senedi → Alış bedeli → VUK 279 değerleme farkı İSTİSNA DIŞIDIR.
-    Beyanname 299. Satır: "Zarar Olsa Dahi İndirilecek" bölümü.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-a alt bent 4 kapsamında, **TL esaslı diğer yatırım fonlarından** (para piyasası fonu, tahvil-bono fonu, karma fon, serbest fon vb.) elde edilen kâr payı, fon iadesi kazancı ve VUK 279 değerleme farkı kazançları kurumlar vergisinden istisnadır. Bu istisna 7394 sayılı Kanun ile hayata girmiş; ancak 7456 sayılı Kanun (15.07.2023) ile bent mülga edilmiştir. Yalnızca **15.07.2023 öncesi iktisap edilen** fon katılma payları için geçiş hükmü kapsamında istisna uygulanmaya devam etmektedir. Beyanname **"Zarar Olsa Dahi İndirilecek"** bölümünde 299 numaralı satırda gösterilir.
+
+    ## Temel Koşullar
+
+    - **İktisap tarihi 15.07.2023 öncesi olmalıdır:** En kritik ve mutlak koşuldur; her fon için ayrı ayrı banka alış dekontu veya MKK ekstresi ile belgelenmelidir.
+    - **TL esaslı fon olmalıdır:** Portföyünde döviz, altın veya kıymetli maden araçları bulunan fonlar kapsam dışıdır; fon bilgi formu veya izahnamesiyle teyit gerekir.
+    - **GSYF/GSYO ayrımı:** Girişim sermayesi yatırım fonu ve ortaklığı için 298 kodu kullanılır; bu formda gösterilmez.
+    - **VUK 279 değerleme yöntemi:** Portföy hisse senedi oranı **≥%51** ise alış bedeli uygulanır ve değerleme farkı oluşmaz; **<%51** ise borsa rayici esas alınır ve değerleme artışı istisna kapsamında gelir kaydedilir.
+    - **Karma tarihli alımlarda ayrıştırma:** Aynı fonda 15.07.2023 öncesi ve sonrası alım yapılmışsa pay adedi bazında FIFO veya ağırlıklı ortalama yöntemle ayrıştırma zorunludur.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - İktisap tarihi belgesinin eksikliği en büyük tarhiyat riskidir; belgelenemeyen alımlar istisna kapsamında değerlendirilemez.
+    - Portföy bileşiminin dönem içinde değişmesi halinde hem dönem başı hem dönem sonu fon bilgi formu kontrol edilmelidir.
+    - 298/299/300 kod karıştırılması sık yapılan hatadır: GSYF/GSYO → 298, TL esaslı fon kâr payı/iade → 299, VUK 279 değerleme farkı ayrı kalemi → 300.
+    - Değerleme düşüşünün KKEG olup olmadığı ayrıca analiz edilmelidir; istisna yalnızca artışlar için geçerlidir.
+    - 15.07.2023 sonrası iktisap edilen paylar için hiçbir geçiş hükmü uygulanamaz; bu paylardan elde edilen her türlü gelir vergiye tabidir.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-a alt bent 4 (299) kapsamındaki istisna **YİAKV matrahından düşülebilir**. Bu nokta 5/1-c (318) ve 5/1-e (361) istisnalarından temel bir farktır ve YİAKV çalışma kâğıdında 299 tutarı matrahtan doğru biçimde düşülmelidir.
+
+    ## Pratik Notlar
+
+    - Muhasebe hesapları: Kâr payı ve fon iadesi → 640/645; VUK 279 değerleme artışları → 649. Bu hesapların toplamı beyanname 299 satırıyla uyumlu olmalıdır.
+    - 3 kademe uyum kontrolü: Muhasebe kayıtları = çalışma kâğıdı E.3 = KV beyannamesi 299. satır; bu üçlü uyum YMM tasdik dosyasının temel kontrolüdür.
+    - Fon portföyünde 15.07.2023 sonrası alım da varsa o paylara isabet eden gelir kapsam dışı tutulmalı ve ayrıştırma belgesiyle desteklenmelidir.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: iktisap_tarihi_oncesi
       soru: "Fon(lar)ın iktisap tarihi 15.07.2023'ten ÖNCE mi?"

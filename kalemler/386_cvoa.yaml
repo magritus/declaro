@@ -25,18 +25,70 @@ ana_kategori: yurtdisi_istisnalar
 wizard_agaci:
   tetikleyici_soru: "Türkiye'nin taraf olduğu bir Çifte Vergilendirmeyi Önleme Anlaşması (ÇVÖA) kapsamında, yurt dışından elde ettiğin ve Türkiye'de vergiden istisna edilen bir kazanç/irat var mı?"
   info_modal: |
-    KVK Madde 5/3 + ilgili ÇVÖA uyarınca, Türkiye'nin taraf olduğu Çifte Vergilendirmeyi
-    Önleme Anlaşmaları kapsamında Türkiye'de kurumlar vergisinden istisna edilen kazanç
-    ve iratlar beyanname 386. satırında gösterilir.
+    ## Genel Çerçeve
 
-    Başlıca uygulama alanları:
-    ① Yurt dışı daimi işyeri (PE/şube) kazançları — ÇVÖA işyeri maddesi uyarınca yalnızca
-       kaynak ülkede vergilendirilen kazançlar Türkiye'de istisna.
-    ② Anlaşma kapsamında diğer gelirler — Temettü, faiz, gayrimaddi hak bedeli, sermaye
-       kazancı vb. ÇVÖA hükümleri gereğince Türkiye'de vergiden muaf tutulan tutarlar.
+    KVK Madde 5/3, Türkiye'nin taraf olduğu Çifte Vergilendirmeyi Önleme Anlaşmaları
+    (ÇVÖA) kapsamında anlaşma hükümleri gereği Türkiye'de kurumlar vergisinden istisna
+    edilen kazanç ve iratların beyannamede gösterilmesini düzenler. Türkiye 90'ı aşkın
+    ülkeyle ÇVÖA imzalamış olup her anlaşma farklı vergilendirme yetkisi kuralları içerir.
+    Bu çerçevede "muafiyet yöntemi" uygulanan durumlarda kazanç Türkiye'de istisna
+    tutulurken "mahsup yöntemi" uygulanan durumlarda kazanç Türkiye'de vergilendirilip
+    yurt dışında ödenen vergi mahsup edilir.
 
-    **Dikkat:** Muafiyet yöntemi → 386. Mahsup yöntemi → 386 DEĞİL, ayrı satır.
-    KVK 5/1-g (yurt dışı şube) veya 5/1-h ile çakışma analizi zorunludur.
+    ## Bu Satırın Kapsamı
+
+    Beyanname **386**, **muafiyet yöntemi** uygulanan ÇVÖA kapsamındaki kazançları kapsar.
+    En sık karşılaşılan iki senaryo: (1) Yurt dışı daimi işyeri (PE/şube) kazançları — ÇVÖA
+    işyeri maddesi gereğince yalnızca kaynak ülkede vergilendirilen kazançlar Türkiye'de
+    istisna tutulur; (2) Temettü, faiz, royalti veya sermaye kazancı — ilgili ÇVÖA maddesi
+    Türkiye'ye vergilendirme yetkisi tanımıyorsa bu gelirler 386'da istisna olarak gösterilir.
+    **Kritik ayrım:** Mahsup yöntemi uygulanan gelirler 386'ya yazılmaz; bu gelirler ticari
+    kâra dahil edilir ve KVK Madde 33 kapsamında yurt dışı vergi mahsubu yapılır.
+
+    ## Temel Koşullar
+
+    - Türkiye ile anlaşma ülkesi arasında Resmî Gazete'de yayımlanmış ve **yürürlükte** olan
+      bir ÇVÖA bulunmalıdır; imzalandı ancak henüz yürürlüğe girmemişse 386 uygulanamaz
+    - İlgili ÇVÖA maddesi Türkiye'ye vergilendirme yetkisi **tanımıyor** olmalıdır
+      (muafiyet yöntemi); mahsup yöntemi uygulanıyorsa 386 kullanılmaz
+    - Yurt dışı daimi işyeri (PE) varsa KVK Madde 22 koşullarının da sağlanması gerekir
+    - KVK Madde 5/1-g veya 5/1-h ile çakışma analizi yapılmalı; aynı tutar için mükerrer
+      istisna uygulanamaz
+    - Her ülke ve gelir türü için **ayrı satır** düzenlenir; tek satırda birden fazla ülke
+      veya gelir türü gösterilmez
+
+    ## Önemli Uyarılar
+
+    - **Mahsup yöntemi ile karıştırma:** En yaygın hata. ÇVÖA "muafiyet mi yoksa mahsup mu?"
+      sorusu anlaşmanın 23. (veya ilgili) maddesi incelenerek yanıtlanır. Mahsup yöntemi
+      uygulanan gelirler için 386 kullanılmaz
+    - **Anlaşma metni zorunlu:** Resmî Gazete numarası, yayım tarihi ve yürürlük tarihi ile
+      anlaşma metni tasdik dosyasının temel dayanağıdır; sadece "anlaşma var" demek yeterli değildir
+    - **YİAKV belirsizliği:** ÇVÖA kapsamı istisnalar YİAKV matrahını her zaman otomatik
+      olarak azaltmaz; her gelir türü ve anlaşma hükmü için ayrı analiz zorunludur. Bu
+      belirsizlik nedeniyle 386'nın yiakv_etkisi "tartismali" olarak işaretlenmiştir
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca tek satır ≥ 500.000 TL veya
+      toplam ≥ 1.000.000 TL ise YMM tasdik raporu zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisnanın YİAKV matrahına etkisi **tartışmalıdır** ve her gelir türü ile anlaşma
+    hükmü için ayrı analiz gerektirmektedir. GİB özelgesi ve OECD yorum dokümanları referans
+    alınmalıdır. Muafiyet yöntemi uygulanan PE gelirinin YİAKV matrahında nasıl ele alınacağı
+    hâlâ tartışma konusu olup denetçi dikkatini gerektirmektedir.
+
+    ## Pratik Notlar
+
+    - **Ülke ve gelir türü bazında kayıt:** Her anlaşma ülkesi ve her gelir türü için ayrı
+      çalışma kâğıdı ve ayrı beyanname satırı hazırlanmalıdır; örneğin Almanya PE kazancı
+      ile Hollanda temettüsü ayrı satırlarda gösterilir
+    - **Brüt gelir esası:** İstisna tutarı stopaj öncesi brüt tutar üzerinden hesaplanır;
+      yurt dışında ödenen vergi kesilebilir gider değildir
+    - **Kur dönüşümü:** Tahakkuk tarihindeki TCMB döviz alış kuru kullanılır; transfer tarihi
+      kuru değil
+    - **5/1-g/h çakışma analizi:** Yurt dışı PE kazancı hem 386 hem KVK 5/1-g kapsamına
+      girebilir. Mükerrerlik önleme için hangisinin uygulanacağı yazılı olarak belirlenmeli
+      ve dosyaya konulmalıdır
   kapi_sorulari:
     - id: cvoa_yururlukte_mi
       soru: "Türkiye ile anlaşma ülkesi arasında Resmî Gazete'de yayımlanmış ve yürürlükte bir ÇVÖA mevcut mu?"

@@ -1,0 +1,1887 @@
+{
+  "file": "354_KVK5_1j_Sat_Kirala_Geri_Al_Tasinir.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G84",
+      "rows": [
+        [
+          "354 – SAT-KİRALA-GERİ AL İŞLEMLERİNDEN DOĞAN KAZANÇLARDA İSTİSNA (TAŞINIRLAR) | KVK Md.5/1-j | YMM TASDİK ÇALIŞMA KÂĞIDI | BEYANNAME SATIR 354",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 Tam İstisna | Taşınır Varlıklar | Alıcı: Finansal Kiralama Şirketi / Katılım Bankası / Kalkınma-Yatırım Bankası | İstisna Kazanç Kira Süresi Boyunca Amortize Edilir | Beyanname Satır 354 — Kazancın Bulunması Halinde İndirilecek",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ DİĞER İSTİSNALARDAN FARKLAR: (1) Dairesel işlem: Sat → Kirala → Geri Al. (2) İstisna kazanç hemen değil, kira süresi boyunca kira ödemelerine oranla amortize edilir. (3) Alıcı zorunlu olarak lisanslı finansal kiralama / katılım / kalkınma-yatırım bankası. (4) Sözleşme sonunda varlık geri alınmalı — geri alınmazsa istisna iptali riski. (5) 355 kodu taşınmazlar için — bu dosya TAŞINIRLAR içindir (makine, araç, ekipman).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "MEKANİZMA: Kurum taşınır varlığı satıcı sıfatıyla finansal kiralama şirketine satar → Aynı varlığı kiracı sıfatıyla geri kiralar (finansal kiralama) → Kira süresi sonunda satın alma hakkını kullanarak varlığı geri alır. Satıştan doğan kazanç → İstisna → 549 hesabı → Her dönem kira payına orantılı olarak azaltılır (amortize).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Satılan varlık TAŞINIR mı? (Makine, araç, ekipman, teçhizat vb.)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-j — Taşınır: Makine, araç, ekipman, bilgisayar, üretim tesisi teçhizatı vb. TAŞINMAZ (arazi, bina, fabrika) için 355 kodu kullanılmalıdır. Bu dosya yalnızca taşınır varlıklar içindir.",
+          null
+        ],
+        [
+          "A0.2  ★ Alıcı kurum: Finansal kiralama şirketi, katılım bankası veya kalkınma/yatırım bankası mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: KVK 5/1-j yalnızca bu kurumlara yapılan satış-geri kiralama işlemleri için geçerlidir. Alıcı: 6361 s.K. kapsamında BDDK lisanslı finansal kiralama şirketi, 5411 s.K. kapsamında katılım bankası veya kalkınma ve yatırım bankası. Başka bir alıcıya satış → Kapsam dışı.",
+          null
+        ],
+        [
+          "A0.3  ★ Sat-kirala-geri al sözleşmesi imzalandı mı? (Satış + Geri Kiralama Aynı İşlem mi?)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Satış ve geri kiralama sözleşmeleri eş zamanlı veya birbirine bağlı olmalıdır. Önce satış yapılıp sonra ayrı bir işlemle kiralama → Kapsam tartışmalı. Her iki sözleşme de aynı varlık için ve aynı taraflar arasında olmalıdır.",
+          null
+        ],
+        [
+          "A0.4  ★ Kira süresi sonunda varlığın geri alınması taahhüt edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: 'Geri al' şartı istisnasının özüdür. Satın alma opsiyonu veya taahhüdü sözleşmede açıkça yer almalıdır. Geri alım gerçekleşmezse istisna iptal edilir — ceza + vergi.",
+          null
+        ],
+        [
+          "A0.5  ★ İstisna edilen kazanç 549 hesabına alınacak ve kira süresi boyunca amortize edilecek mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: İstisna edilen kazanç bir özel fon/karşılık hesabına alınır. Her hesap döneminde kira ödemelerine orantılı olarak azaltılır. Kira süresi sonunda fon hesabı sıfırlanmış olur. Fon hesabına alınmayan veya erken çekilen tutar vergiye tabi olur.",
+          null
+        ],
+        [
+          "A0.6  Satılan varlığın alıcıya teslimatı gerçekleşti mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Fiili satışın tamamlanması gerekir. Teslim tutanağı veya fatura ile belgelenmeli. Muhasebede aktiften çıkış kaydı yapılmalıdır.",
+          null
+        ],
+        [
+          "A0.7  YİAKV matrahında 354 istisnasının etkisi analiz edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-j (354) istisnasının YİAKV (KVK 32/C) matrahına etkisi dönem mevzuatı ve GİB açıklamalarıyla analiz edilmelidir.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (alıcı türü), A0.4 (geri al), A0.5 (amortizasyon) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satıcı/Kiracı Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "İstisna uygulayan — varlığı satan ve geri kiralayan kurum",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Alıcı/Kiraya Veren Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "FK şirketi / Katılım bankası / Kalkınma-yatırım bankası",
+          null
+        ],
+        [
+          "Alıcı Kurum Türü",
+          null,
+          null,
+          null,
+          null,
+          "Finansal Kiralama Şirketi / Katılım Bankası / Kalkınma-Yatırım Bankası",
+          null
+        ],
+        [
+          "Satış Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Taşınır varlığın satış (devir) tarihi",
+          null
+        ],
+        [
+          "Kira Sözleşmesi Başlangıç Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "Finansal kiralama başlangıç tarihi",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. ALICI KURUM NİTELİK VE LİSANS TEYİDİ — 5/1-j'nin Temel Şartı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 5/1-j yalnızca aşağıdaki kurum türlerine yapılan satış-geri kiralama için geçerlidir. BDDK lisans belgesi veya banka statü belgesi tasdik dosyasına eklenmelidir. Lisanssız veya tanımı dışında kalan kurumlara satış → İstisna geçersizdir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Yasal Dayanak"
+        ],
+        [
+          "B.1  Alıcı Kurum Türü",
+          null,
+          "Finansal Kiralama Şirketi",
+          "6361 s.K. kapsamında FK Şirketi | 5411 s.K. kapsamında Katılım/Kalkınma/Yatırım Bankası",
+          null,
+          "6361 s.K. / 5411 s.K.",
+          null
+        ],
+        [
+          "B.2  Alıcı Kurumun BDDK Lisans Belgesi Mevcut mu?",
+          null,
+          "EVET",
+          "BDDK resmi web sitesinden veya lisans belgesinin kopyasından teyit edilmeli.",
+          null,
+          "BDDK — Finansal Kuruluşlar Listesi",
+          null
+        ],
+        [
+          "B.3  Sözleşme FK/Banka ile mi Yapıldı? (Aracı ya da Özel Kişiyle Değil)",
+          null,
+          "EVET",
+          "Sözleşme doğrudan alıcı FK şirketi/bankasıyla imzalanmış olmalı. Aracı şirket üzerinden yapılan yapay işlemler kapsam dışındadır.",
+          null,
+          "KVK 5/1-j",
+          null
+        ],
+        [
+          "C. TAŞINIR VARLIK KİMLİĞİ VE SATIŞ KOŞULLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sat-kirala-geri al işleminin konusu olan taşınır varlığın tanımlanması. Satış bedeli: Piyasa (emsal) değerine uygun olmalı. Alıcıya teslim belgesi (fatura/teslim tutanağı) zorunlu. Varlık muhasebede aktiften çıkış kaydıyla düşülmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Taşınır Varlık Türü",
+          null,
+          "Makine/Ekipman",
+          "Taşınmaz (bina/arazi) → 355 dosyası kullanılmalı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  Varlığın Tanımı / Marka / Model / Seri No",
+          null,
+          null,
+          "Tekil tanımlama zorunludur — teknik özellikleriyle",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  Varlığın Muhasebedeki Defter Değeri (TL) — Net",
+          null,
+          null,
+          "Amortisman düşülmüş net değer — E tablosunda maliyet olarak kullanılır",
+          null,
+          "Muhasebe kartı ile uyumlu",
+          null
+        ],
+        [
+          "C.4  Satış Bedeli (TL)",
+          null,
+          null,
+          "Piyasa değeri / emsal fiyatı — FK şirketinin değerleme veya fiyat teklifi",
+          null,
+          "Değerleme raporu önerilir",
+          null
+        ],
+        [
+          "C.5  Satış Giderleri (TL)",
+          null,
+          null,
+          "Komisyon, noter, fatura düzenleme giderleri vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.6  Varlığın Alıcıya Teslimi Gerçekleşti mi?",
+          null,
+          "EVET",
+          "Fatura + Teslim-tesellüm tutanağı",
+          null,
+          "Aktiften çıkış muhasebe kaydı yapıldı mı?",
+          null
+        ],
+        [
+          "D. FİNANSAL KİRALAMA SÖZLEŞMESİ — Geri Kiralama Koşulları",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sat-kirala-geri al işleminin ikinci ayağı: Satıcı/kiracı aynı varlığı FK şirketi/bankasından geri kiralar. Kira süresi, kira bedeli ve geri alım koşulları sözleşmede açıkça yer almalıdır. İstisna edilen kazanç bu kira dönemi boyunca amortize edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Kira Sözleşmesi Başlangıç Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Kira Sözleşmesi Bitiş Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY — Geri alım tarihi",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  Kira Süresi (Ay)",
+          null,
+          "0",
+          "Otomatik hesaplanır",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.4  Toplam Kira Ödemesi (TL — Tüm Dönem)",
+          null,
+          null,
+          "Sözleşme tutarı ile uyumlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.5  Dönemsel Kira Tutarı (Aylık/Yıllık)",
+          null,
+          null,
+          "Sabit veya değişken olabilir",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.6  Sözleşme Sonunda Satın Alma Hakkı/Taahhüdü",
+          null,
+          "EVET — Sözleşmede Taahhüt Var",
+          "Geri alım taahhüdü veya opsiyonu sözleşmede açıkça yer almalı",
+          null,
+          "★ Geri alma şartı istisnasının özüdür",
+          null
+        ],
+        [
+          "D.7  Sözleşme Sonunda Geri Alım Bedeli (TL — Nominal)",
+          null,
+          null,
+          "1 TL nominal veya anlaşma fiyatı",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. SATIŞ KAZANCI VE %100 İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SATIŞ KAZANCI = C.4 (Satış Bedeli) − C.3 (Net Defter Değeri) − C.5 (Satış Giderleri). İSTİSNA: Kazancın %100'ü — kısmen değil, tamamen. İstisna edilen kazanç F bölümünde 549 hesabına alınır ve kira süresi boyunca her dönem kira payına orantılı amortize edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  Satış Bedeli",
+          null,
+          "0",
+          "C.4'ten otomatik",
+          null,
+          "FK şirketi/bankasına satış fiyatı",
+          null
+        ],
+        [
+          "E.2  Taşınırın Net Defter Değeri",
+          null,
+          "0",
+          "C.3'ten otomatik",
+          null,
+          "Amortismandan sonraki net aktif değeri",
+          null
+        ],
+        [
+          "E.3  Satış Giderleri",
+          null,
+          "0",
+          "C.5'ten otomatik",
+          null,
+          "Komisyon, noter vb.",
+          null
+        ],
+        [
+          "E.4  SATIŞ KAZANCI = E.1 − E.2 − E.3",
+          null,
+          "0",
+          "Pozitif = Kazanç | Negatif = Zarar (istisna yok)",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.5  DURUM",
+          null,
+          "SIFIR",
+          "Otomatik değerlendirme",
+          null,
+          "Zarar: 354 sıfır — varlık zararına kira devam eder",
+          null
+        ],
+        [
+          "E.6  5/1-j İSTİSNA TUTARI (%100)",
+          null,
+          "0",
+          "%100 Tam İstisna → 549 Hesabına Alınacak",
+          null,
+          "→ Beyanname 354 | → F bölümü Fon Hesabı",
+          null
+        ],
+        [
+          "E.7  Vergiye Tabi Kısım",
+          null,
+          "0",
+          "Kazanç durumunda sıfır — %100 istisna",
+          null,
+          "Kira ödemeleri vergi açısından kabul edilir",
+          null
+        ],
+        [
+          "F. 549 ÖZEL FON HESABI VE KİRA SÜRESİ BOYUNCA AMORTİZASYON",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 354'ÜN EN ÖZGÜN MEKANİZMASI: İstisna edilen kazanç (E.6) satışın yapıldığı yılda 549 hesabına alınır. Her hesap döneminde: O dönemdeki kira ödemesi / Toplam kira ödemesi oranında fon azaltılır. Kira süresi sonunda 549 hesabı sıfır olur. Kira ödemleri KV matrahından gider olarak indirilebilir — ama istisna ayrıca uygulanmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Kalemi",
+          null,
+          "Tutar / Oran",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "F.1  Başlangıç Fon Tutarı (= E.6 — Satış Yılında 549'a Alınacak)",
+          null,
+          "0",
+          "İstisna kazancının tamamı",
+          null,
+          "Satış yapıldığı yıl 549 hesabına",
+          null
+        ],
+        [
+          "F.2  Toplam Kira Ödemesi (= D.4'ten)",
+          null,
+          "0",
+          "Tüm kira dönemi toplamı",
+          null,
+          "Amortizasyon paydası",
+          null
+        ],
+        [
+          "F.3  Cari Dönem Kira Ödemesi (TL — Bu Hesap Döneminde Ödenen)",
+          null,
+          null,
+          "Bu hesap döneminde yapılan toplam kira ödemesi",
+          null,
+          "Kira sözleşmesi ve banka dekontları",
+          null
+        ],
+        [
+          "F.4  Cari Dönem Amortizasyon Oranı (%)",
+          null,
+          "0",
+          "=F.3 / F.2 * 100",
+          null,
+          "Otomatik",
+          null
+        ],
+        [
+          "F.5  Cari Dönem Fon Azalışı (TL) = F.1 × F.4/100",
+          null,
+          "0",
+          "Bu dönem 549 hesabından düşülecek tutar",
+          null,
+          "→ Beyanname 354 bu tutar kadar azalır",
+          null
+        ],
+        [
+          "F.6  Dönem Sonu 549 Fon Bakiyesi (Tahmini)",
+          null,
+          "0",
+          "Kalan amortize edilecek istisna",
+          null,
+          "Gelecek dönemler için kalan bakiye",
+          null
+        ],
+        [
+          "ÖNEMLİ — BEYANNAME 354 VE AMORTİZASYON: Satış yapılan yıl: E.6 tutarının tamamı 354 satırında istisna olarak gösterilir + 549 hesabına alınır. Sonraki yıllar: Her yıl kira payına orantılı F.5 tutarı fon hesabından düşülür — bu tutar her yıl ayrıca istisna olarak beyannamede gösterilmez (zaten satış yılında tanındı). Kira süresi boyunca kira ödemelerinin tamamı gider olarak indirilebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "G. KİRA SÜRESİ SONU — GERİ ALMA ŞARTI VE İSTİSNA KORUMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira süresi sonunda varlığın geri alınması 5/1-j istisnasının devamlılığı için zorunludur. Geri alım gerçekleşmezse: İstisna iptal edilebilir, vergi + ceza riski. Geri alım bedeli 549 hesabındaki kalan fon bakiyesiyle de ilişkilendirilebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "G.1  Kira Süresi Bitti mi / Bitecek mi?",
+          null,
+          null,
+          "Henüz Devam Ediyor",
+          null,
+          "Geri alınmadıysa: İstisna iptali riski ve vergi/ceza analizi zorunludur.",
+          null
+        ],
+        [
+          "G.2  Geri Alım Taahhüdü/Opsiyonu Sözleşmede Yer Alıyor mu?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Sözleşmede açıkça yazılı olmalı — şifahi taahhüt geçersizdir.",
+          null
+        ],
+        [
+          "G.3  Kira Süresi Sonunda Geri Alım Gerçekleşti mi?",
+          null,
+          null,
+          "Henüz Gerçekleşmedi",
+          null,
+          "Gerçekleştiyse: Fatura + devir belgesi tasdik dosyasına eklenecek.",
+          null
+        ],
+        [
+          "H. BEYANNAME 354 — KVK 5/1-j SAT-KİRALA-GERİ AL (TAŞINIR) İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "H.1  TOPLAM İSTİSNA → Beyanname Satır 354 (Kazancın Bulunması Halinde İndirilecek — %100 — SATIŞ YILI)",
+          null,
+          null,
+          null,
+          null,
+          "%100 Tam İstisna → 549 Hesabına Alınacak",
+          "E.6 = Satış Kazancı × %100"
+        ],
+        [
+          "KRİTİK UYARILAR: (1) 354 YALNIZCA SATIŞ YILINDA KULLANILIR — sonraki yıllarda 354 satırına yazılmaz. (2) 549 FON HESABI: Satış yılında tam tutar → Sonraki yıllarda kira payına orantılı azaltılır. (3) GERİ ALMA ŞARTI: Sözleşme bitiminde varlık geri alınmalı — aksi istisna iptali. (4) ALICI KURUM TÜRÜ: FK şirketi/katılım/kalkınma-yatırım bankası dışında kapsam yok. (5) 355 KODU: Bu dosya TAŞINIRLAR içindir — taşınmazlar için 355 kullanın.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G67",
+      "rows": [
+        [
+          "354 – SAT-KİRALA-GERİ AL (TAŞINIR) | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | Taşınır | Beyanname 354 | Kazancın Bulunması Halinde | FK/Katılım/Kalkınma-Yatırım Bankası | 549 Fon → Kira Süresinde Amortize | Geri Alma Şartı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Alıcı Kurum Türü (B.1)",
+          null,
+          null,
+          "Finansal Kiralama Şirketi",
+          "FK/Katılım/Kalkınma-Yatırım",
+          null,
+          null
+        ],
+        [
+          "Alıcı Lisans Durumu (B.2)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Geri Alma Taahhüdü (A0.4)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Kira Süresi (Ay) (D.3)",
+          null,
+          null,
+          "0",
+          "Fon amortizasyon süresi",
+          null,
+          null
+        ],
+        [
+          "Sözleşme Sonunda Satın Alma (D.6)",
+          null,
+          null,
+          "EVET — Sözleşmede Taahhüt Var",
+          "Taahhüt var mı?",
+          null,
+          null
+        ],
+        [
+          "Satış Kazancı (E.4)",
+          null,
+          null,
+          "0",
+          "Brüt satış kazancı",
+          null,
+          null
+        ],
+        [
+          "354 İSTİSNA TUTARI %100 (E.6)",
+          null,
+          null,
+          "%100 Tam İstisna → 549 Hesabına Alınacak",
+          null,
+          null,
+          null
+        ],
+        [
+          "Başlangıç Fon Tutarı (F.1)",
+          null,
+          null,
+          "İstisna kazancının tamamı",
+          "549 Hesabı başlangıcı",
+          null,
+          null
+        ],
+        [
+          "Cari Dönem Fon Azalışı (F.5)",
+          null,
+          null,
+          "Bu dönem 549 hesabından düşülecek tutar",
+          "Bu dönem amortize tutar",
+          null,
+          null
+        ],
+        [
+          "B. SAT-KİRALA-GERİ AL MEKANİZMASI — 3 AŞAMALI İŞLEM AKIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354 istisnasının mantığı 3 eş zamanlı sözleşmeye dayanır. Her aşamanın belgelenmesi zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Aşama",
+          null,
+          "İşlem",
+          null,
+          "Vergisel Etki",
+          null
+        ],
+        [
+          "AŞAMA 1 — SATIŞ",
+          "Kurum → Taşınırı FK/Bankaya Satar (Satış Faturası + Devir)",
+          null,
+          "Satış Kazancı → %100 İstisna (354) → 549 Fon Hesabına",
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 2 — GERİ KİRALAMA",
+          "FK/Banka → Aynı Taşınırı Kuruma Kiralar (Finansal Kiralama Sözleşmesi)",
+          null,
+          "Kira Ödemeleri → Gider Olarak İndirilebilir | 549 Fon → Kira Payına Orantılı Azalır",
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 3 — GERİ ALMA",
+          "Kira Süresi Sonunda Kurum → Satın Alma Hakkını Kullanır (Devir Belgesi)",
+          null,
+          "Geri Alım Bedeli → Yeni Aktif Değer | 549 Fon Sıfırlanır | İstisna Korundu",
+          null,
+          null,
+          null
+        ],
+        [
+          "C. FON AMORTİZASYON TABLOSU — KİRA SÜRESİ BOYUNCA İZLEME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her hesap döneminde (549 Fon × Dönem Kira / Toplam Kira) kadar fon azalır. Aşağıdaki tablo 5 dönem için örnek gösterir — gerçek dönem sayısına göre uzatın. Satış yılı 354 beyannamede gösterilir; sonraki dönemler gösterilmez.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem",
+          "Dönem Kira Öd. (TL)",
+          "Kira Oranı (%)",
+          "Fon Azalışı (TL)",
+          "Kalan Fon (TL)",
+          "Kontrol"
+        ],
+        [
+          "Dönem-1",
+          null,
+          null,
+          null,
+          null,
+          "Kira sözleşmesi + Banka dekontu ile teyit",
+          null
+        ],
+        [
+          "Dönem-2",
+          null,
+          null,
+          null,
+          null,
+          "Kira sözleşmesi + Banka dekontu ile teyit",
+          null
+        ],
+        [
+          "Dönem-3",
+          null,
+          null,
+          null,
+          null,
+          "Kira sözleşmesi + Banka dekontu ile teyit",
+          null
+        ],
+        [
+          "Dönem-4",
+          null,
+          null,
+          null,
+          null,
+          "Kira sözleşmesi + Banka dekontu ile teyit",
+          null
+        ],
+        [
+          "Dönem-5",
+          null,
+          null,
+          null,
+          null,
+          "Kira sözleşmesi + Banka dekontu ile teyit",
+          null
+        ],
+        [
+          "TOPLAM",
+          "D.4 ile uyumlu",
+          null,
+          "F.1 (Toplam)",
+          null,
+          "Kira süresi sonunda 549 sıfır — İstisna tam olarak korundu",
+          null
+        ],
+        [
+          "D. 354 (5/1-j TAŞINIR) vs 351 (5/1-e TAŞINMAZ SATIŞI) KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "354 — 5/1-j (Sat-Kirala-Geri Al)",
+          null,
+          "351 — 5/1-e (Taşınmaz Satışı)",
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100 Tam İstisna",
+          null,
+          "%50 İstisna (7456 s.K.)",
+          null,
+          null
+        ],
+        [
+          "Varlık Türü",
+          null,
+          "Taşınır: Makine/araç/ekipman",
+          null,
+          "Taşınmaz: Arazi/bina/fabrika",
+          null,
+          null
+        ],
+        [
+          "2 Yıl Aktif Şartı",
+          null,
+          "YOK — Süre şartı aranmaz",
+          null,
+          "VAR — 730 gün zorunlu",
+          null,
+          null
+        ],
+        [
+          "Taşınmaz Ticareti Yasağı",
+          null,
+          "YOK — (Taşınır kapsam)",
+          null,
+          "VAR — Ticaret yapan kapsam dışı",
+          null,
+          null
+        ],
+        [
+          "Alıcı Kısıtlaması",
+          null,
+          "ZORUNLU — FK/Katılım/Kalkınma-Yatırım Bankası",
+          null,
+          "Herhangi bir alıcı",
+          null,
+          null
+        ],
+        [
+          "Geri Alma Şartı",
+          null,
+          "ZORUNLU — Kira süresi sonunda",
+          null,
+          "YOK — Satış kesindir",
+          null,
+          null
+        ],
+        [
+          "549 Fon Hesabı",
+          null,
+          "VAR — Kira payına orantılı amortize edilir",
+          null,
+          "VAR — 5 yıl sabit tutulur",
+          null,
+          null
+        ],
+        [
+          "Fon Amortizasyon",
+          null,
+          "EVET — Kira ödemelerine orantılı",
+          null,
+          "HAYIR — 5 yıl sabit",
+          null,
+          null
+        ],
+        [
+          "Beyanname Bölümü",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          null
+        ],
+        [
+          "Kira Ödemeleri",
+          null,
+          "Gider olarak indirilebilir",
+          null,
+          "Kira yok (mülkiyet devredildi)",
+          null,
+          null
+        ],
+        [
+          "Avantaj",
+          null,
+          "%100 istisna + 2 yıl şartı yok",
+          null,
+          "Koşul daha az — alıcı serbest",
+          null,
+          null
+        ],
+        [
+          "E. DENETİM KONTROL LİSTESİ (K1–K13)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "Satılan varlık taşınır mı? (Makine, araç, ekipman) — 355 ile karıştırılmadı mı?",
+          null,
+          "Taşınmaz (bina/arazi) → 355 kodu. Bu dosya yalnızca taşınır varlıklar içindir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Alıcı kurum: FK şirketi, katılım bankası veya kalkınma/yatırım bankası mı?",
+          null,
+          "BDDK lisansı teyit edilmeli. Başka kurum → Kapsam dışı. Lisans belgesi dosyada olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Satış ve geri kiralama sözleşmeleri eş zamanlı/bağlı mı? Gerçek işlem mi?",
+          null,
+          "Önce satış, sonra ayrı kiralama → Tartışmalı. Her iki sözleşme birbirine bağlı olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ Kira süresi sonunda geri alım taahhüdü/opsiyonu sözleşmede açıkça var mı?",
+          null,
+          "Yazılı taahhüt veya satın alma opsiyonu zorunlu. Sözleşmede açıkça yer almalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ Satış kazancının tamamı 549 hesabına alındı mı? Zamanlama doğru mu?",
+          null,
+          "Satışın yapıldığı yılda 549 hesabına alınmalı. E.6 = F.1 tutarı uyumlu olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "Fon amortizasyonu kira payına orantılı mı hesaplanıyor?",
+          null,
+          "Her dönem: Fon × (Dönem Kira / Toplam Kira). C tablosu ile uyumlu olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "Satış bedeli piyasa değeriyle uyumlu mu? Değerleme belgesi var mı?",
+          null,
+          "Emsal fiyatından düşük satış → Örtülü kazanç dağıtımı riski. Değerleme raporu önerilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "Satılan varlık muhasebede aktiften düşüldü mü?",
+          null,
+          "Aktiften çıkış muhasebe kaydı + FK şirketine teslim faturası. Kayıt olmadan istisna riski.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "Kira ödemeleri gider olarak kaydedildi mi?",
+          null,
+          "Finansal kiralama kira ödemeleri KV matrahından indirilebilir gider. Çift istisna riski: Hem kira gideri hem fon amortizasyonu birlikte uygulanabilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "Geri alım gerçekleşti mi veya gerçekleşecek mi? Risk analizi?",
+          null,
+          "Geri alım gerçekleşmezse: İstisna iptali + vergi + ceza. G bölümü takibi zorunlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "354 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "'Zarar Olsa Dahi' bölümünde DEĞİL. Dönemde zarar varsa istisna uygulanamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K12",
+          "Beyanname 354 tutarı E.6 ile uyumlu mu?",
+          null,
+          "354 = E.6 = Satış Kazancı × %100. Fark varsa hesap hatası. Yalnızca satış yılında yazılır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K13",
+          "YİAKV matrahında 354 istisnasının etkisi analiz edildi mi?",
+          null,
+          "Dönem mevzuatı ve GİB açıklamaları esas alınmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "F. BEYANNAME EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "354",
+          null,
+          "0",
+          "KVK 5/1-j — Taşınır Sat-Kirala-Geri Al | %100 | Kazancın Bulunması Halinde | SATIŞ YILI",
+          null,
+          null,
+          null
+        ],
+        [
+          "355",
+          null,
+          "Taşınmaz",
+          "Taşınmaz (bina/arazi) sat-kirala-geri al → 355 kodu. 354 ile karıştırılmamalı.",
+          null,
+          null,
+          null
+        ],
+        [
+          "549 Fon",
+          null,
+          "0",
+          "İstisna kazancın tamamı → 549 hesabı → Kira payına orantılı amortize edilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G35",
+      "rows": [
+        [
+          "354 – SAT-KİRALA-GERİ AL (TAŞINIR) | MUHASEBE KAYITLARI — 3 AŞAMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | 549 Fon | Kira Amortizasyonu | 3 Aşama: Sat → Kirala → Geri Al",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. Finansal kiralama muhasebesi TFRS 16/TMS 17'ye uygun olarak uyarlanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 1 — SATIŞI KAYDI (Taşınır Varlığın FK Şirketine/Bankaya Satışı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satış Tarihi: [GG.AA.YYYY] | Satış Bedeli: [___] TL | Net Defter Değeri: [___] TL | Kazanç: [___] TL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Satış]",
+          "102 Bankalar / 120/121 Alacaklar",
+          "FK Şirketine/Bankaya satış bedelinin tahsilatı",
+          "[Satış Bed.]",
+          "—",
+          "Fatura + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Satış]",
+          "253/254 Taşınır Aktif Hesabı (Mak./Nak.Araç/vb.)",
+          "Taşınırın net defter değeriyle aktiften çıkışı",
+          "—",
+          "[Net Defter]",
+          "Aktif kartı"
+        ],
+        [
+          "Kr",
+          "[Satış]",
+          "257 Birikmiş Amortismanlar",
+          "Birikmiş amortisman kapatma",
+          "—",
+          "[Birik.Amor.]",
+          "257 kartı"
+        ],
+        [
+          "Kr",
+          "[Satış]",
+          "679 Diğer Olağandışı Kâr / 645 Satış Kârı",
+          "Satış kazancı — KVK 5/1-j istisna — Beyanname 354",
+          "—",
+          "[Kazanç]",
+          "KV 354"
+        ],
+        [
+          "★ KRİTİK FARK — 351 (TAŞINMAZ SATIŞI) İLE KARŞILAŞTIRMA:\n351: Satış kazancının %50'si → 549 Fon (5 yıl sabit) | %50 vergiye tabi | Beyanname 351\n354: Satış kazancının %100'ü → 549 Fon (kira süresinde amortize) | %0 vergiye tabi | Beyanname 354\n354'ün avantajı: %100 istisna + 2 yıl aktif şartı yok + taşınmaz ticareti yasağı yok",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 2a — 549 ÖZEL FON HESABINA ALMA (Satış Yılında — KV Beyan Tarihi Öncesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna edilen kazancın (E.6) tamamı satış yılında 549 hesabına alınır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "KV Beyan",
+          "679 / 645 Satış Kârı Hesabı",
+          "İstisna edilen satış kazancının gelir hesabından çıkarılması",
+          "[E.6 Tamamı]",
+          "—",
+          "E.6 tutarı"
+        ],
+        [
+          "Kr",
+          "KV Beyan",
+          "549 Özel Fonlar",
+          "%100 İstisna Tutarı — KVK 5/1-j — Sat-Kirala-Geri Al (Taşınır) | Kira süresinde amortize",
+          "—",
+          "[E.6 Tamamı]",
+          "Kira süresi takibi"
+        ],
+        [
+          "549 FONU KULLANIMI — 351 İLE FARK:\n351 (Taşınmaz): 549 hesabı 5 yıl boyunca değişmez — hiçbir amortizasyon yapılmaz.\n354 (Sat-Kirala-Geri Al): 549 hesabı her dönem kira payına orantılı AZALTILIR.\nBu amortizasyon beyannamede ayrıca gösterilmez — muhasebe takibi yeterlidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 2b — KİRA ÖDEMELERİ VE 549 FONU AMORTİZASYONU (Her Dönem Tekrarlı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her dönem kira ödemesi yapılır ve 549 fonu kira payına orantılı azaltılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Kira Dönemi]",
+          "760/780/630 Genel Yönetim/Üretim Giderleri",
+          "Dönem kira ödemesi — KV matrahından indirilebilir gider",
+          "[Kira TL]",
+          "—",
+          "Kira sözleşmesi + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Kira Dönemi]",
+          "102 Bankalar",
+          "Kira ödemesi",
+          "—",
+          "[Kira TL]",
+          null
+        ],
+        [
+          "Dr",
+          "[Kira Dönemi]",
+          "549 Özel Fonlar",
+          "Cari dönem fon amortizasyonu = F.1 × (Dönem Kira / Toplam Kira)",
+          "[F.5 Tutarı]",
+          "—",
+          "F bölümü hesabı"
+        ],
+        [
+          "Kr",
+          "[Kira Dönemi]",
+          "Nazım hesap veya Dipnot",
+          "Fon amortizasyonu karşılığı — (Serbest kalan fon tutarı)",
+          "—",
+          "[F.5 Tutarı]",
+          "Dipnot"
+        ],
+        [
+          "KALDIRAÇ AMORTİZASYON NOTU: 549 fon amortizasyonunun karşı hesabı muhasebe politikasına göre farklılaşabilir. Bazı uygulamalarda 549 azalışı doğrudan gelir hesabına aktarılır — GİB uygulamasına göre değerlendirin. Kira ödemeleri gider olarak indirilebilir — bu ile fon amortizasyonu çelişmez.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 3 — GERİ ALMA KAYDI (Kira Süresi Sonunda Satın Alma — Yeni Aktif)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira süresi sonunda satın alma opsiyonu kullanılarak varlık geri alınır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Geri Alım]",
+          "253/254 Taşınır Aktif Hesabı (İlgili)",
+          "Varlığın geri alım bedeliyle yeniden aktife kaydı (nominal bedel)",
+          "[Geri Alım TL]",
+          "—",
+          "Fatura + Devir belgesi"
+        ],
+        [
+          "Kr",
+          "[Geri Alım]",
+          "102 Bankalar",
+          "Geri alım bedelinin ödenmesi",
+          "—",
+          "[Geri Alım TL]",
+          "Banka dekontu"
+        ],
+        [
+          "GERİ ALMA SONRASI: 549 Özel Fon hesabı sıfırlanmış olur (tüm amortizasyon tamamlandı). Yeni aktif değer: Geri alım bedeli (genellikle nominal/sembolik). Yeni amortismanlar bu değer üzerinden başlar. Geri alım YAPILMAZSA: İstisna iptali + vergi + ceza + gecikme faizi riski — 549 hesabındaki kalan bakiye gelir sayılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D17",
+      "rows": [
+        [
+          "354 – SAT-KİRALA-GERİ AL (TAŞINIR) | DENETÇİ NOTLARI | KVK Md.5/1-j",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | Taşınır | Beyanname 354 | Alıcı Kısıtı: FK/Katılım/Kalkınma-Yatırım Bankası | 549 Fon Amortizasyonu | Geri Alma Şartı",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK, MEKANİZMA VE 351 FARKLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-j — Yasal Çerçeve ve 3 Aşamalı Mekanizma",
+          "KVK Md.5/1-j (özet):\n'Finansal kiralama şirketleri, katılım bankaları ile kalkınma ve yatırım bankalarına\nya da 6361 sayılı Kanun kapsamında faaliyette bulunan şirketlere yapılan sat-kirala-geri al\nişlemlerinden doğan kazançların %100'ü kurumlar vergisinden müstesnadır.'\n\n3 AŞAMALI MEKANİZMA:\nSat: Kurum taşınır varlığı FK şirketine/bankaya piyasa değerinden satar\nKirala: Aynı varlığı finansal kiralama sözleşmesiyle geri kiralar\nGeri Al: Kira süresi sonunda satın alma hakkını kullanarak varlığı geri alır\n\nBEYANNAME: 354. Satır | 'Kazancın Bulunması Halinde İndirilecek' | %100 Tam İstisna\n549 FON: Satış yılında tam tutarda alınır → Kira ödemelerine orantılı amortize edilir\nTAŞINMAZ (Bina/Arazi): 355 kodunu kullanın — bu dosya taşınır içindir",
+          "KVK Md.5/1-j | 6361 s.K. | 5411 s.K."
+        ],
+        [
+          "N2",
+          "★ Fon Amortizasyonu Mekanizması — 354'ün En Özgün Özelliği",
+          "354'ün diğer tüm istisnalardan AYRILAN en kritik özelliği:\n\nSATIŞ YILI:\n• Satış kazancının tamamı (E.6) beyanname 354 satırında istisna olarak gösterilir\n• Aynı tutar 549 Özel Fonlar hesabına alınır\n\nKİRA DÖNEMLERİ (Her Yıl):\n• Kira ödemesi yapılır → Gider olarak kaydedilir (KV'den indirilebilir)\n• 549 Fon hesabı azalır: F = Başlangıç Fon × (Dönem Kira / Toplam Kira)\n• Bu amortizasyon beyannamede ayrıca gösterilmez — muhasebe takibi yeterlidir\n\nKİRA SONU:\n• 549 hesabı tamamen sıfırlanmış olur\n• Geri alım faturası ile varlık yeniden aktife alınır\n\n351 (TAŞINMAZ) İLE FARK:\n351: 549 fon 5 yıl boyunca sabit tutulur, amortizasyon yok\n354: 549 fon her dönem kira payına orantılı azalır",
+          "KVK Md.5/1-j | 1 Seri No.lu KV GT"
+        ],
+        [
+          "N3",
+          "★ Alıcı Kurum Kısıtlaması — En Kritik Kapsam Şartı",
+          "KVK 5/1-j yalnızca BELİRLİ KURUMLARA yapılan satışlar için geçerlidir:\n\nKAPSAM İÇİ ALICI KURUMLAR:\n① Finansal Kiralama Şirketi (6361 s.K. kapsamında BDDK lisanslı)\n② Katılım Bankası (5411 s.K. kapsamında)\n③ Kalkınma Bankası (5411 s.K. kapsamında)\n④ Yatırım Bankası (5411 s.K. kapsamında)\n\nKAPSAM DIŞI:\n✗ Mevduat bankası (dikkat! Kalkınma/yatırım değil mevduat → kapsam dışı)\n✗ Şirket veya özel kişi\n✗ Lisanssız kurum\n✗ Yabancı ülke finansal kuruluşu (BDDK lisansı olmayan)\n\nYMM notu: Alıcı kurumun BDDK lisansını ve türünü belgeleyin.\nYanlış kurum türü = İstisna geçersiz.",
+          "KVK Md.5/1-j | 6361 s.K. | 5411 s.K."
+        ],
+        [
+          "N4",
+          "★ Geri Alma Şartı — İstisnanın Devamlılık Koşulu",
+          "SÖZLEŞMEDE GERİ ALIM TAAHHÜDÜ/OPSİYONU ZORUNLUDUR:\n\nKabul edilebilir formlar:\n• Kira süresi sonunda belirlenen fiyattan satın alma taahhüdü\n• Satın alma opsiyonu (hak)\n• Nominal bedelden geri alım taahhüdü (1 TL gibi)\n\nGERİ ALIM GERÇEKLEŞMEZSE:\n• İstisna iptal edilir\n• İstisna tutarı gerçekleşmemenin olduğu dönemde gelir sayılır\n• Vergi aslı + gecikme faizi + vergi ziyaı cezası\n• 549 Fon'daki kalan bakiye vergiye tabi hale gelir\n\nYMM notu: Geri alma taahhüdünün sözleşmede yazılı olduğu teyit edilmeli.\nKira süresi sonunda geri alımın gerçekleşip gerçekleşmediği takip edilmeli.",
+          "KVK Md.5/1-j | GİB Özelgeleri"
+        ],
+        [
+          "BÖLÜM 2 — VERGİSEL TEKNİK, ÇOKLU VARLIK VE YMM TASDİK STANDARDI",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "Kira Ödemelerinin Vergisel Muamelesi — Çift İstisna Riski Yok",
+          "KİRA ÖDEMELERİ VE İSTİSNA İLİŞKİSİ:\n\nFinansal kiralama kira ödemeleri KV matrahından gider olarak indirilebilir.\nBu, 354 istisnasıyla birlikte kullanılabilir — çift istisna değildir.\n\nMANTIK:\nSatış kazancı → 354 istisnası (satış yılı)\nKira ödemeleri → Gider (her kira dönemi)\nBu iki avantaj birbirini dışlamaz — KVK bu yapıya açıkça izin vermektedir.\n\nTFRS 16 / TMS 17 ETKİSİ:\nFinansal kiralama muhasebesi TFRS/TMS standartlarına göre tutuluyorsa\nkira ödemelerinin ana para ve faiz ayrımı yapılmalıdır.\nAna para → Borç azalışı. Faiz → Gider.\n\nYMM notu: Finansal kiralama muhasebesi ve KV uyumsuzlukları dikkatle incelenmeli.",
+          "KVK Md.5/1-j | TFRS 16 | TMS 17"
+        ],
+        [
+          "N6",
+          "354 vs 355 — Taşınır / Taşınmaz Ayrımı",
+          "354 (TAŞINIR) vs 355 (TAŞINMAZ):\n\n354: Makine, ekipman, araç, üretim tesisi teçhizatı, bilgisayar vb. taşınır varlıklar\n355: Arazi, arsa, bina, fabrika, depo vb. taşınmaz varlıklar\n\nHER İKİSİ İÇİN ORTAK:\n• %100 tam istisna\n• Alıcı: FK şirketi / Katılım / Kalkınma-Yatırım Bankası\n• 549 Fon → Kira payına orantılı amortize\n• Geri alım taahhüdü zorunlu\n• 'Kazancın Bulunması Halinde' bölümü\n\n355'TE EK ŞART: Taşınmazın tapuya tescilinin alıcıya devredilmesi\nve kira süresi sonunda geri devir.\n\nKARMA VARLIK (Taşınır+Taşınmaz): Ayrı sözleşmeler → 354 ve 355 ayrı kullanılır.",
+          "KVK Md.5/1-j | Beyanname 354/355"
+        ],
+        [
+          "N7",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...söz konusu taşınır varlığın [FK şirketi] ile akdedilen sat-kirala-geri al\n  sözleşmesi kapsamında satıldığı ve geri kiralandığı doğrulanmıştır'\n'...kira süresi sonunda geri alım taahhüdü sözleşmede yer almaktadır'\n'...istisna edilen kazanç 549 Özel Fonlar hesabına alınmış ve kira payına\n  orantılı amortizasyon takibi yapılmaktadır'\n\nKULLANMAYIN:\n'...sat-kirala-geri al işleminden istisna uygulanır' (belgesiz)\n'...alıcı şirket ile yapılan...' (alıcı kurum türü belirtilmeden)\n\nKRİTİK HATALAR:\n(1) Alıcı kurum türünün yanlış belirlenmesi\n(2) 354 (taşınır) yerine 355 (taşınmaz) veya tersi\n(3) Fon amortizasyonu yapmadan tüm fonu sabit bırakmak (351 gibi)\n(4) Geri alım taahhüdü olmadan işlem yapılması\n(5) Beyanname 354 sonraki yıllarda tekrar yazılması",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "TARTIŞMALI ALAN — SATIŞ VE KİRALAMA EŞ ZAMANLILIK ŞARTI: Satış ile geri kiralama sözleşmelerinin aynı anda mı yoksa belirli bir süre arayla mı imzalanması gerektiği tartışmalıdır. GİB uygulamasında iki sözleşmenin birbirine bağlı (sat-kirala-geri al) bir bütünü oluşturması aranmaktadır. Önce satış yapılıp ilerleyen bir tarihte ayrı bir kiralama yapılması kapsam dışı kalabilir. Bu konuda özelge alınması tavsiye edilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F36",
+      "rows": [
+        [
+          "354 – SAT-KİRALA-GERİ AL (TAŞINIR) | BELGE VE BİLGİ LİSTESİ | YMM TASDİK | KVK 5/1-j",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | Taşınır | Beyanname 354 | FK/Katılım/Kalkınma-Yatırım Bankası | Geri Alma Şartı | 549 Fon Amortizasyonu | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: 3 aşamanın zorunlu belgeleri. Kategori 2: Devam takip belgeleri. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (3 Aşamanın Her Biri İçin)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aşama 1 (Satış) + Aşama 2 (Kiralama) + Aşama 3 (Geri Alma) belgeleri eksiksiz olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Alıcı Kurumun BDDK Lisans Belgesi (FK Şirketi / Katılım / Kalkınma-Yatırım Bankası)",
+          "Alıcı kurumun 6361 s.K. veya 5411 s.K. kapsamında olduğunu gösteren lisans belgesi.\nBDDK resmi web sitesinden veya lisans belgesi kopyasından teyit.\nYMM notu: Yanlış kurum türü = İstisna geçersiz — birincil kontrol noktasıdır.",
+          "BDDK finansal kuruluşlar listesi / Lisans belgesi kopyası",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Satış Sözleşmesi (Taşınır Varlığın FK/Bankaya Satışı)",
+          "Satılan varlığın tanımı (marka/model/seri no), satış bedeli, satış tarihi.\nAlıcı ve satıcı bilgileri. 'Sat-kirala-geri al' çerçevesinde olduğu belirtilmeli.\nYMM notu: Sözleşme sat-kirala-geri al işleminin birinci ayağını kanıtlar.",
+          "Yazılı satış sözleşmesi + E-fatura/Fatura",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Finansal Kiralama Sözleşmesi (Geri Kiralama — Aşama 2)",
+          "Satılan varlığın kuruma geri kiralandığını gösteren finansal kiralama sözleşmesi.\nKira süresi, kira bedeli, ödeme planı ve geri alım taahhüdü/opsiyonu sözleşmede.\nYMM notu: Sözleşmede D.6 (geri alım taahhüdü) açıkça yer almalıdır.",
+          "Finansal kiralama sözleşmesi (imzalı orijinal veya onaylı kopya)",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ Satış Kazancı Hesaplama Tablosu (E Bölümü Özeti)",
+          "E.4 = Satış Bedeli − Net Defter Değeri − Satış Giderleri hesabı.\nE.6 = %100 İstisna tutarı — Beyanname 354 ile uyumlu.\nYMM notu: Net defter değeri (C.3) muhasebe kartıyla uyumlu olmalıdır.",
+          "E bölümü hesaplama tablosu + Aktif muhasebe kartı",
+          null
+        ],
+        [
+          null,
+          "5",
+          "★ 549 Özel Fon Hesabı Muhasebe Kaydı (Başlangıç — Satış Yılı)",
+          "Satış kazancının (E.6) 549 hesabına alındığını gösteren yevmiye kaydı.\nF.1 = E.6 tutarı — uyumlu olmalıdır.\nYMM notu: Fon kaydı yoksa istisna geçersizdir.",
+          "Yevmiye defteri + 549 hesap ekstresi (başlangıç)",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 354. Satır (Satış Yılı)",
+          "354. satırındaki tutarın E.6 ile birebir uyumlu olduğu kontrol edilmeli.\n'Kazancın Bulunması Halinde İndirilecek' bölümünde doğru konumlandırıldığı teyit.\nNOT: Sonraki yıllarda 354 satırına yazılmaz.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Varlığın Teslim Belgesi / Fatura (Aşama 1 Satış Teyidi)",
+          "Taşınır varlığın FK şirketine/bankaya teslim edildiğini gösteren belge.\nE-Fatura / Kâğıt fatura + Teslim-tesellüm tutanağı.\nYMM notu: Aktiften çıkış muhasebe kaydıyla uyumlu olmalıdır.",
+          "E-Fatura + Teslim tutanağı",
+          null
+        ],
+        [
+          "KATEGORİ 2 — DEVAM TAKİP BELGELERİ (Her Kira Dönemi İçin)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Dönemsel Kira Ödeme Dekontları (Her Kira Dönemi)",
+          "Her kira dönemine ait banka transferi/ödeme dekontu.\nF.3 (Cari Dönem Kira Ödemesi) tutarıyla uyumlu.\nYMM notu: Fon amortizasyonu hesabının (F.4, F.5) dayanağıdır.",
+          "Banka ödeme dekontları (tüm kira dönemi)",
+          null
+        ],
+        [
+          null,
+          "9",
+          "549 Fon Hesabı Dönemsel Amortizasyon Tablosu (C Tablosu)",
+          "Her dönem için: Kira oranı, fon azalışı ve kalan fon bakiyesi.\nKira süresi sonunda 549 = 0 olduğu görülmeli.\nYMM notu: Amortizasyon tablosu kira sözleşmesi ve ödeme dekontlarıyla uyumlu.",
+          "HESAPLAMALAR C tablosu + Kira planı",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Geri Alım Belgesi — Kira Süresi Sonu (Aşama 3)",
+          "Kira süresi sonunda satın alma opsiyonunun kullanıldığını gösteren belge.\nGeri alım faturası + Devir belgesi (taşınır için teslim tutanağı).\nYMM notu: Geri alım gerçekleşmeden 549 hesabı kapatılamaz.",
+          "Geri alım faturası + Teslim tutanağı (kira süresi sonunda)",
+          null
+        ],
+        [
+          null,
+          "11",
+          "YİAKV Matrah Hesaplama Tablosu (354 Etkisi)",
+          "KVK 5/1-j (354) istisnasının YİAKV matrahına etkisi güncel GİB açıklamalarıyla analiz edilmeli.",
+          "YİAKV çalışma kâğıdı / KVK 32/C",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (★ Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "Satılan varlık taşınır mı? 355 ile karıştırılmadı mı?",
+          "Makine/araç/ekipman → 354. Bina/arazi → 355. Varlık türü belgesiyle teyit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Alıcı kurum FK şirketi, katılım bankası veya kalkınma/yatırım bankası mı?",
+          "BDDK lisansı zorunlu. Mevduat bankası → Kapsam dışı. Lisans belgesi dosyada.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Satış ve geri kiralama sözleşmeleri eş zamanlı/bağlı mı?",
+          "Birbirine bağlı iki sözleşme olmalı. Ayrı/bağımsız işlemler tartışmalı — özelge.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ Kira süresi sonunda geri alım taahhüdü/opsiyonu sözleşmede açıkça var mı?",
+          "Yazılı taahhüt zorunlu. Geri alım yoksa istisna iptali riski.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "★ Satış kazancının tamamı 549 hesabına alındı mı? E.6 = F.1 uyumlu mu?",
+          "Satış yılında tam tutar 549'a alınmalı. Fon kaydı olmadan istisna geçersiz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Fon amortizasyonu kira payına orantılı hesaplanıyor mu?",
+          "Her dönem: F = Başlangıç × (Dönem Kira / Toplam Kira). C tablosu uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "354 yalnızca SATIŞ YILINDA kullanıldı mı? Sonraki yıllarda tekrar yazılmadı mı?",
+          "354 sadece satış yılı beyannamesi 354 satırında — sonraki yıllarda 0.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Kira ödemeleri gider olarak kaydedildi mi?",
+          "Finansal kiralama kira ödemeleri KV matrahından indirilebilir — 354 ile çelişmez.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Geri alım gerçekleşti mi veya gerçekleşecek mi? Risk var mı?",
+          "G bölümü takibi zorunlu. Geri alım olmazsa → İstisna iptali + vergi + ceza.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "354 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "'Zarar Olsa Dahi' bölümünde DEĞİL. Dönemde zarar varsa istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 354'ün setimiz içindeki özgün yanı: Dairesel işlem (sat-kirala-geri al) + fon amortizasyonu mekanizması. Alıcı kurum türü yanlışsa istisna tamamen geçersizdir. Geri alım taahhüdü sözleşmede yazılı olmalı — şifahi geçersiz. Beyanname 354 yalnızca satış yılında kullanılır. Taşınmaz için 355 kodu kullanılmalıdır. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

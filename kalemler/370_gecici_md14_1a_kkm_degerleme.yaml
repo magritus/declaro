@@ -26,12 +26,67 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "31/12/2021 bilançosunda yabancı para mevcudu var mıydı ve bu para TL KKM hesabına dönüştürüldü mü?"
   info_modal: |
-    KVK Geçici Md.14/1-a kapsamında, 31/12/2021 tarihli bilançoda yer alan yabancı para
-    (döviz tevdiat hesabı dahil) bakiyelerinin Kur Korumalı Mevduat (KKM) hesabına
-    dönüştürülmesi sırasında oluşan tek seferlik kur farkı değerleme kazancı istisnadır.
+    ## Genel Çerçeve
 
-    **KRİTİK — YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ.
-    YİAKV E.7 listesinde yer almaktadır.
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Kanunun temel amacı, kurum bilançolarındaki döviz ve altın varlıklarının Türk lirasına
+    dönüştürülmesini teşvik ederek dolarizasyonu azaltmak ve ekonomide TL kullanımını
+    artırmaktır. Bu çerçevede hem aktif (mevduat/altın) hem de pasif (borç) taraflı
+    dönüşümler için kapsamlı istisna hükümleri getirilmiştir.
+
+    ## Bu Satırın Kapsamı
+
+    Beyanname **370**, Geçici Madde 14/1-a altında düzenlenen **tek seferlik** kur farkı
+    değerleme kazancını kapsar. 31/12/2021 tarihli bilançoda kayıtlı yabancı para bakiyeleri
+    veya döviz tevdiat hesapları TL Kur Korumalı Mevduat hesabına dönüştürüldüğünde, bilanço
+    tarihi kuru ile dönüşüm günü kuru arasındaki olumlu fark 370 istisnasını oluşturur.
+    Bu satır; 371 (dönemsel bankadan alınan kur farkı tazminatları), 372 (dönem sonu faiz
+    tahakkuku) veya 373 (vade sonu faiz/kâr payı tahsilatı) ile karıştırılmamalıdır. Her biri
+    farklı bir olayı temsil eder ve beyannamede ayrı satırlarda gösterilmesi zorunludur.
+
+    ## Temel Koşullar
+
+    - 31/12/2021 tarihli bilançoda yabancı para veya döviz tevdiat hesabı bakiyesi bulunmalıdır
+    - Söz konusu bakiye, Cumhurbaşkanı kararlarıyla belirlenen **yasal süre içinde** TL KKM
+      hesabına dönüştürülmüş olmalıdır
+    - Dönüşüm günü TCMB kuru, 31/12/2021 bilanço kurunun **üzerinde** olmalıdır; negatif fark
+      halinde 370 tutarı sıfırdır
+    - KKM hesabı TL cinsinden açılmış, banka garantisi/koruması içeren hesap olmalıdır
+    - Sonradan edinilen dövizler ve farklı tarihli dönüşümler kapsam **dışıdır**
+    - Kazanç hesabında **TCMB resmi döviz alış kuru** kullanılır; başka kur kabul edilmez
+
+    ## Önemli Uyarılar
+
+    - **Kapsam sınırı:** Yalnızca 31/12/2021 bilanço tarihinde mevcut bakiyeler geçerlidir;
+      daha sonra edinilen dövizler için 370 istisnası uygulanamaz
+    - **Tek seferlik nitelik:** 370 dönüşüm anındaki bir defalık işlemi yansıtır. Devam eden
+      dönemlerde bankadan alınan kur farkı ödemeleri 371 kapsamındadır
+    - **Muhasebe dayanağı:** Kur farkı kazancının 646 Kambiyo Kârları hesabında kayıtlı olması
+      ve beyanname 370 tutarıyla mutabık olması gerekir
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca istisna tutarı ≥ 500.000 TL ise
+      YMM tasdik raporu zorunludur; tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez
+    - **Kur kaynağı tutarlılığı:** Her iki tarih için de TCMB resmi döviz alış kurları
+      kullanılmış olmalı; farklı kaynak kullanımı tarhiyat riski doğurur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    KVK Geçici Madde 14 kapsamındaki tüm istisnalar (370–382 arası kodlar) asgari vergi
+    matrahında kalır. 370 tutarını YİAKV matrahından çıkarmak, YİAKV tarhiyatı, vergi ziyaı
+    cezası ve gecikme faizi riskine yol açar. YİAKV çalışma kâğıdında E.7 satırı özellikle
+    kontrol edilmelidir.
+
+    ## Pratik Notlar
+
+    - **370 ile 371 zinciri:** Aynı KKM hesabından hem 370 hem 371 oluşabilir. İkisi birbirini
+      tamamlar; 370 dönüşüm anını, 371 devam eden dönemleri kapsar
+    - **Hesaplama formülü:** Kur Farkı Kazancı = (Dönüşüm Günü Kuru − 31/12/2021 Kuru) ×
+      Döviz Miktarı. Sonuç negatifse 370 = 0 uygulanır; istisna yalnızca kazanç üzerine tanınır
+    - **Banka belgesi kritik:** Dönüşüm tarihi, tutarı ve uygulanan kuru gösteren resmi banka
+      dekontu tasdik dosyasının temel belgesidir; eksikliği hem tasdik hem de olası vergi
+      incelemesinde ciddi sorun oluşturur
+    - **Çapraz mutabakat:** 370 çalışma kâğıdı ile KV beyanname tutarı, 646 hesap ekstresi ve
+      banka belgesi dördü birbiriyle mutabık olmalıdır
   kapi_sorulari:
     - id: bilanco_doviz_bakiyesi
       soru: "31/12/2021 tarihli bilançonuzda yabancı para mevduatı veya döviz tevdiat hesabı bakiyesi var mıydı?"

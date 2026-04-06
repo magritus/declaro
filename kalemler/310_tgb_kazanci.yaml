@@ -26,12 +26,35 @@ ana_kategori: serbest_bolge_tgb_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Teknoloji Geliştirme Bölgesi'nde (TGB/Teknokent) faaliyet gösteriyor musunuz?"
   info_modal: |
-    4691 Sayılı Kanun Geçici Md. 2 kapsamında Teknoloji Geliştirme Bölgelerinde münhasıran
-    yazılım, tasarım ve Ar-Ge faaliyetlerinden elde edilen kazançlar 31.12.2028 tarihine kadar
-    (dönem mevzuatı ayrıca kontrol edilmelidir) kurumlar vergisinden istisnadır.
-    Kapsam dışı gelirler (faiz, kur farkı, ATİK satışı) ayrıştırılmalıdır.
-    NOT: Bu istisna YİAKV (KVK Md. 32/C) matrahından indirilemeyen istisnalar kapsamındadır —
-    4691 istisnası uygulayan kurumlar için YİAKV yükü doğabilir.
+    ## Genel Çerçeve
+
+    4691 Sayılı Teknoloji Geliştirme Bölgeleri Kanunu Geçici Madde 2 kapsamında, Teknoloji Geliştirme Bölgelerinde (TGB/Teknokent) münhasıran **yazılım, tasarım ve Ar-Ge faaliyetlerinden** elde edilen kazançlar 31.12.2028 tarihine kadar (dönem mevzuatı ayrıca kontrol edilmelidir) kurumlar vergisinden istisnadır. İstisna %100 tam oran olup beyannamede **"Zarar Olsa Dahi İndirilecek"** bölümünde 310 numaralı satırda gösterilir. Girişim Sermayesi Fon yükümlülüğü ve YİAKV çarpan etkisi bu istisnanın dikkat gerektiren iki kritik boyutudur.
+
+    ## Temel Koşullar
+
+    - **TGB içinde faaliyet:** Faaliyetin münhasıran TGB sınırları içinde yürütülmesi zorunludur; TGB dışındaki faaliyetlere istisna uygulanmaz.
+    - **Faaliyet türü sınırlı:** Yalnızca yazılım, tasarım ve Ar-Ge faaliyetleri istisna kapsamındadır; ticari satış, destek hizmetleri ve Ar-Ge dışı danışmanlık kapsam dışıdır.
+    - **Kapsam dışı gelirlerin ayrıştırılması:** Faiz, repo, kur farkı ve ATİK satış kazancı istisna kapsamının dışındadır; bu gelirlerin 310 satırına yazılması vergi incelemesinde ciddi ceza riski doğurur.
+    - **Zarar ring-fence prensibi:** TGB kapsam içi faaliyetin zararda sonuçlanması halinde bu zarar diğer kazançlardan indirilemez.
+    - **Fon yükümlülüğü (Ek Madde 3):** Yıllık istisna tutarı **5.000.000 TL ve üzeri** ise bu tutarın **%3'ü** hesap döneminin sonuna kadar pasifte özel fon hesabına aktarılarak GSYF payı, GSYO sermayesi veya kuluçka merkezi girişimcisine sermaye olarak yönlendirilmelidir. Yapılmazsa istisnanın **%20'si iptal** edilir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **YİAKV çarpan etkisi:** 4691 sayılı Kanun istisnası YİAKV (KVK Madde 32/C) matrahından **indirilemeyen** istisnalar arasındadır. TGB istisnası uygulayan kurumlar için YİAKV yükü doğabilir; normal KV ve YİAKV hesapları ayrı çalışma kâğıtlarıyla test edilmelidir. Bu durum 3218 sayılı Kanun SB istisnasından (düşülebilen) kritik biçimde farklıdır.
+    - **GMH satışında patent ve NHO zorunluluğu:** Cumhurbaşkanlığı Kararı kapsamında gayri maddi hak satışı istisnasında patent belgesi zorunludur; NHO formülünde yurt dışı ilişkili kişi payının ≤%30 sınırına uyulmalıdır.
+    - **Bölge dışı faaliyet riski:** Faaliyetin bölge dışında yürütülen kısmı için istisna riski doğar; personel çalışma yerleri ve proje kayıtları ayrıca kontrol edilmelidir.
+    - **Fon yükümlülüğünün unutulması:** İstisna eşiği ≥5.000.000 TL iken fon yapılmazsa istisnanın %20'si cezasız vergi olarak geri alınır; hesap dönemi sonuna kadar yatırım zorunludur.
+
+    ## YİAKV İlişkisi
+
+    4691 sayılı Kanun kapsamındaki TGB istisnası KVK Madde 32/C gereğince **YİAKV matrahından indirilemeyen** istisnalar kapsamındadır. Bu nedenle 310 istisnası uygulayan kurumlarda YİAKV hesabı özel dikkat gerektirmekte olup beyan edilen 310 tutarı YİAKV matrahına geri eklenmelidir.
+
+    ## Pratik Notlar
+
+    - Proje bazlı hasılat ve gider takibi zorunludur; kapsam dışı gelirler (642 faiz, 646 kur farkı) ayrı hesaplarda izlenmelidir.
+    - Fon yükümlülüğü ≥5.000.000 TL ise hesap dönemi sonuna kadar GSYF payı alımı veya kuluçka merkezi sermayesi belgesiyle tamamlanmalı ve 549 Özel Fonlar hesabında izlenmelidir.
+    - GMH satışı varsa patent belgesi ve NHO hesaplama tablosu zorunlu belgedir.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: tgb_faaliyet
       soru: "Faaliyet TGB içinde yürütülüyor mu? (TGB dışı faaliyetler kapsam dışıdır)"

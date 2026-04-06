@@ -1,0 +1,1332 @@
+{
+  "file": "376_KVK_Gecici_Md14_2_Donem_Sonu_Degerleme_FaizKarPayi.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G65",
+      "rows": [
+        [
+          "376 – KVK GEÇİCİ MADDE 14/2 | DÖNEM SONU DEĞERLEMESİNDEN DOĞAN KÂR PAYI VE FAİZ İSTİSNASI | PARAGRAF 2 — BORÇ/PASİF TARAFI | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/2 (Paragraf 2) | Borç Dönüşümü Sonrası TL Araçlarda Dönem Sonu Tahakkuk | Beyanname 376 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ | GİB KV Beyan Rehberi Mart 2026 (No:606)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "372 – 376 PARAGRAF KARŞILAŞTIRMASI:\n  372 (Md.14/1-b): Paragraf 1 — Aktif tarafı (mevduat/altın → TL KKM). Dönem sonu değerlemesinden doğan kâr payı ve faiz → 181 Dr / 642 Kr.\n  376 (Md.14/2): Paragraf 2 — Pasif tarafı (yabancı para borç → TL dönüşümü). Dönüşüm sonrası TL araçtan dönem sonu değerlemesiyle tahakkuk eden kâr payı ve faiz → 181 Dr / 642 Kr → BU DOSYA.\n  Her ikisi de aynı tahakkuk mekanizması (VUK Md.280/281) ancak farklı yasal dayanak ve farklı kapsam.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 376 kapsamındaki dönem sonu kâr payı/faiz istisnası YİAKV matrahından DÜŞÜLEMEZ. 370–376 tamamı E.7 DÜŞÜLEMEZ listesindedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  KVK Geçici Md.14/2 kapsamında yabancı para borç dönüşümü (375) gerçekleştirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "376, 375 ile bağlantılıdır. 375 kapsamı borç dönüşümü yapılmadan 376 istisnası oluşamaz. 375 çalışma kâğıdıyla çapraz kontrol zorunludur.",
+          null
+        ],
+        [
+          "A0.2  ★ Borç dönüşümü sonrası TL araç üzerinde dönem sonu faiz/kâr payı tahakkuku yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "VUK Md.280/281 gereği dönem sonu (31 Aralık) itibariyle tahakkuk eden faiz/kâr payı kayıtlara alınmalıdır. Bu tahakkuk tutarı 376 kapsamında istisnadır.",
+          null
+        ],
+        [
+          "A0.3  Tahakkuk muhasebe kaydı yapıldı mı? (181 Gelir Tahakkukları / 642 Faiz Gelirleri)",
+          null,
+          null,
+          null,
+          "EVET",
+          "Dönem sonu: Dr 181 Gelir Tahakkukları / Kr 642 Faiz Gelirleri (veya 644). Kayıt olmadan 376 istisnasının muhasebe dayanağı bulunmaz.",
+          null
+        ],
+        [
+          "A0.4  ★ 376 (dönem sonu tahakkuk) ile 375 (kur farkı kazancı) doğru ayrıştırıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "375: Paragraf 2 kur farkı kazancı (dönüşüm anında). 376: Paragraf 2 dönem sonu faiz/kâr payı tahakkuku (ayrı beyanname satırı).",
+          null
+        ],
+        [
+          "A0.5  372 (Paragraf 1) ile 376 (Paragraf 2) mükerrerlik analizi yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Aynı hesap/araç için hem 372 hem 376 uygulanamaz. Paragraf 1 (mevduat/altın → KKM) → 372. Paragraf 2 (borç dönüşümü sonrası TL araç) → 376. Ayrı enstrümanlar.",
+          null
+        ],
+        [
+          "A0.6  ★ 376 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "370–376 tamamı YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7'de yedi satır da kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (tahakkuk), A0.5 (372/376 ayrımı), A0.6 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi / Değerleme Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "31.12.2025 — VUK dönem sonu değerleme tarihi",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/376-01",
+          null
+        ],
+        [
+          "375 Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          null,
+          null,
+          "Paragraf 2 borç dönüşümü — 375 ile bağlantılı",
+          null
+        ],
+        [
+          "B. PARAGRAF 2 KAPSAMINDA DÖNEM SONU DEĞERLEMESİ — ARAÇ BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "376 Mekanizması: KVK Geçici Md.14/2 kapsamında yabancı para borç dönüşümü sonrası kurulan TL araçtan (mevduat, katılım hesabı, tahvil vb.) dönem sonu itibariyle VUK Md.280/281 gereği tahakkuk ettirilen faiz ve kâr payı istisnasıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  375 (Kur Farkı Kazancı) Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          "376, 375 ile bağlantılı. 375 dönüşüm tutarı ve tarihi buradan alınır.",
+          null,
+          "375 çalışma kâğıdı",
+          null
+        ],
+        [
+          "B.2  Paragraf 2 Dönüşümü Sonrası Kurulan TL Araç Türü",
+          null,
+          "TL Mevduat",
+          "Borç dönüşümü sonrasında kurulan TL cinsinden finansal araç türü.",
+          null,
+          "Araç sözleşmesi",
+          null
+        ],
+        [
+          "B.3  Dönem Sonu Değerleme Tarihi",
+          null,
+          "31.12.2025",
+          "VUK dönem sonu tarihi — tahakkuk bu tarih itibarıyla yapılır.",
+          null,
+          "VUK Md.280",
+          null
+        ],
+        [
+          "B.4  Faiz/Kâr Payı Hesaplama Yöntemi",
+          null,
+          "Banka Bildirimi",
+          "Banka dönem sonu bildirimi veya sözleşme oranı esaslı tahakkuk.",
+          null,
+          "Banka belgesi / Sözleşme",
+          null
+        ],
+        [
+          "B.5  TL Araç Bakiyesi (Dönem Sonu)",
+          null,
+          null,
+          "Dönem sonu (31 Aralık) itibarıyla TL araç bakiyesi.",
+          null,
+          "Hesap ekstresi",
+          null
+        ],
+        [
+          "B.6  ★ Paragraf 2 Dönüşümünün 31/12/2021 Bakiyesiyle Sınırlı Olduğu Teyit Edildi mi?",
+          null,
+          "EVET",
+          "375 kapsamı dönüşüm 31/12/2021 bilanço borç bakiyesini aşamaz. 376 bu dönüşümden kaynaklanan araçla sınırlıdır.",
+          null,
+          "KVK Geç.Md.14/2",
+          null
+        ],
+        [
+          "C. PARAGRAF 2 — ARAÇ BAZINDA DÖNEM SONU FAİZ/KÂR PAYI TAHAKKUK TABLOSU (376)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SÜTUN 5 (lacivert çerçeve): ANA VERİ — Dönem sonu tahakkuk eden faiz/kâr payı (banka bildirimi veya hesaplama).\n  Tahakkuk muhasebe kaydı (181 Dr / 642 Kr) ile mutabık olmalıdır. İstisna oranı normalde 100 — kapsam dışı araç varsa 0 girin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Araç Adı/No",
+          "Açılış Tarihi",
+          "Araç Türü",
+          "Bakiye (TL)",
+          "Dönem Sonu Tahakkuk (TL)",
+          "İstisna Oranı (%)",
+          "376 İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam Dönem Sonu Faiz/Kâr Payı Tahakkuku → Beyanname 376",
+          null,
+          "0",
+          "0",
+          "—",
+          "0"
+        ],
+        [
+          "SÜTUN 5 (lacivert çerçeve): Banka dönem sonu bildirimi veya (Bakiye × Yıllık Oran × Gün/365). 181 Gelir Tahakkukları / 642 Faiz Gelirleri muhasebe kaydıyla mutabık olmalı. Sütun 6 (İstisna Oranı): Normalde 100 (%). Kapsam dışı araç → 0.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. DÖNEM SONU KÂR PAYI/FAİZ İSTİSNASI ÖZET — BEYANNAME 376",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam Dönem Sonu Faiz/Kâr Payı Tahakkuku",
+          null,
+          "0",
+          "C tablosu toplam",
+          null,
+          "181/642 muhasebe kaydıyla mutabık",
+          null
+        ],
+        [
+          "D.2  Kapsam Dışı Tahakkuk (Paragraf 2 dışı araçlar)",
+          null,
+          "0",
+          "İstisna oranı 0 girilenler",
+          null,
+          "Vergiye tabi kısım",
+          null
+        ],
+        [
+          "D.3  ★ NET 376 İSTİSNA TUTARI → BEYANNAME 376",
+          null,
+          "0",
+          "→ Beyanname 376 | Kazancın Bulunması Halinde",
+          null,
+          "KVK Geçici Md.14/2",
+          null
+        ],
+        [
+          "D.4  Vergiye Tabi Faiz/Kâr Payı (Kapsam Dışı)",
+          null,
+          "0",
+          "Bu kısım KV matrahında kalır",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. 372 (PARAGRAF 1) – 376 (PARAGRAF 2) KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          "372 (Md.14/1-b) — Paragraf 1",
+          null,
+          "376 (Md.14/2) — Paragraf 2",
+          null,
+          "Ortak"
+        ],
+        [
+          "Bilanço Tarafı",
+          null,
+          "AKTİF — Yab. para mevduat/altın → TL KKM",
+          null,
+          "PASİF — Yab. para borç → TL araç",
+          null,
+          "Her ikisi de tahakkuk"
+        ],
+        [
+          "Dayanak Enstrüman",
+          null,
+          "TL KKM (mevduat veya katılım hesabı)",
+          null,
+          "Borç dönüşümü sonrası TL mevduat/tahvil vb.",
+          null,
+          "181 Dr / 642 Kr"
+        ],
+        [
+          "Bağlantılı Kod",
+          null,
+          "375 değil — 370/371 ile bağlantılı",
+          null,
+          "375 (Md.14/2 kur farkı) ile bağlantılı",
+          null,
+          "Her ikisi Md.14"
+        ],
+        [
+          "Mükerrerlik Riski",
+          null,
+          "372 ve 376 ayrı enstrümanlar — mükerrer değil",
+          null,
+          "Aynı araçta hem 372 hem 376 → Mükerrerlik",
+          null,
+          "Dikkat!"
+        ],
+        [
+          "YİAKV",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          null,
+          "Birlikte E.7"
+        ],
+        [
+          "Tahsil Döneminde",
+          null,
+          "181 kapatma — 373 ile ilişkili",
+          null,
+          "181 kapatma — izleyen dönemde tekrar 376 yok",
+          null,
+          "Tahakkuk anında"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 376 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Geçici Md.14/2 | Paragraf 2 Dönem Sonu Tahakkuk",
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 370–376 tamamı asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) 375 BAĞLANTISI ZORUNLU: 376, yalnızca 375 kapsamı borç dönüşümü sonrası kurulan araçtan oluşur.\n(3) 372 İLE MÜKERRERLİK: Paragraf 1 araçları → 372. Paragraf 2 araçları → 376. Aynı araç için her ikisi yazılamaz.\n(4) TAHSİL DÖNEMİNDE TEKRAR YOK: 181 kapatıldığında yeni 376 uygulanamaz.\n(5) MUHASEBE DAYANAĞI: 181 Dr / 642 Kr tahakkuk kaydı olmadan 376 uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G35",
+      "rows": [
+        [
+          "376 – KVK GEÇİCİ MD.14/2 DÖNEM SONU FAİZ/KÂR PAYI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 2 Borç Dönüşümü Sonrası TL Araç | VUK 280/281 | Beyanname 376 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "375 Bağlantısı (A0.1)",
+          null,
+          null,
+          "EVET",
+          "EVET — Paragraf 2 dönüşüm mevcut",
+          null,
+          null
+        ],
+        [
+          "Tahakkuk Kaydı (A0.3)",
+          null,
+          null,
+          "EVET",
+          "181/642 kaydı zorunlu",
+          null,
+          null
+        ],
+        [
+          "372/376 Ayrımı (A0.5)",
+          null,
+          null,
+          "EVET",
+          "Mükerrerlik kontrolü",
+          null,
+          null
+        ],
+        [
+          "376 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "370–376 tamamı E.7",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. KVK GEÇİCİ MD.14 — 370'DEN 376'YA TAM KOD TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Paragraf",
+          "Kapsam",
+          "Muhasebe",
+          "Zaman",
+          "Karar",
+          "YİAKV"
+        ],
+        [
+          "370",
+          "1-a",
+          "AKTİF: Döviz/altın → TL KKM kur farkı",
+          "646/679",
+          "Dönüşüm anı",
+          "Tek seferlik",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "371",
+          "1-b",
+          "AKTİF: Bankadan kur farkı tazminatı",
+          "102/648",
+          "Ödeme dönemleri",
+          "Dönemsel nakit",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "372",
+          "1-b",
+          "AKTİF: Dönem sonu faiz/kâr payı tahakkuku",
+          "181/642",
+          "31 Aralık",
+          "Yıllık accrual",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "373",
+          "1-b",
+          "AKTİF: Vade sonu faiz/kâr payı tahsilatı",
+          "102/(181+642)",
+          "Vade tarihi",
+          "Nakit tahsilat",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "374",
+          "1-b",
+          "AKTİF: Vade sonu diğer kazançlar",
+          "646/648/679",
+          "Vade tarihi",
+          "Altın/prim/endeks",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "375",
+          "2",
+          "PASİF: Borç dönüşümü kur farkı kazancı",
+          "646/679",
+          "Dönüşüm anı",
+          "Tek seferlik",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "376",
+          "2",
+          "PASİF: Borç dönüşümü sonrası dönem sonu tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "Yıllık accrual",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ 375 kapsamı borç dönüşümü gerçekleşti mi? (375 ÇK var mı?)",
+          null,
+          "376, yalnızca 375 kapsamı dönüşüm sonrası araçlara uygulanır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Dönem sonu faiz/kâr payı tahakkuk muhasebe kaydı yapıldı mı? (181/642)",
+          null,
+          "Kayıt olmadan 376 istisnasının muhasebe dayanağı yoktur.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ C tablosundaki tahakkuk tutarları 181/642 muhasebe kayıtlarıyla mutabık mı?",
+          null,
+          "Her araç satırı muhasebe ekstresiyle doğrulanmış.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "Banka dönem sonu tahakkuk bildirimi mevcut mu?",
+          null,
+          "Faiz/kâr payı tahakkuk bildirimini gösteren resmi banka belgesi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ 372 (Paragraf 1) ile 376 (Paragraf 2) mükerrerlik kontrolü yapıldı mı?",
+          null,
+          "Paragraf 1 araçları → 372. Paragraf 2 araçları → 376. Aynı araç için ikisi birden yazılamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "375 ve 376 çalışma kâğıtları tutarlı mı?",
+          null,
+          "375 borç dönüşüm tutarı ile 376 araç bakiyesi uyumlu olmalı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Kapsam dışı araçlar (D.2) ayrıştırıldı mı?",
+          null,
+          "Paragraf 2 kapsamı dışındaki araçlar — vergilendirilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "★★ 376 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370–376 tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de yedi satır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "Beyanname 376 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "Tahsil döneminde 181 kapatma kaydı yapılıp 376 tekrar uygulanmadı mı?",
+          null,
+          "Yalnızca tahakkuk anında — tahsil döneminde tekrar yok.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "Birden fazla Paragraf 2 aracı varsa her biri ayrı satırda mı?",
+          null,
+          "Her araç C tablosunda ayrı satır ve ayrı değerlendirme.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G22",
+      "rows": [
+        [
+          "376 – KVK GEÇİCİ MD.14/2 DÖNEM SONU FAİZ/KÂR PAYI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tahakkuk Kaydı | Tahsil Kaydı | 370–376 Tam Muhasebe Tablosu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — DÖNEM SONU (31 ARALIK): PARAGRAF 2 ARACI FAİZ/KÂR PAYI TAHAKKUKU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[31.12.YYYY]",
+          "181 Gelir Tahakkukları",
+          "Paragraf 2 dönüşümü sonrası TL araçtan tahakkuk eden faiz/kâr payı (C tablosu toplam)",
+          "[Tutar]",
+          "—",
+          "Banka bildirimi"
+        ],
+        [
+          "Kr",
+          "[31.12.YYYY]",
+          "642 Faiz Gelirleri / 644 Kâr Payları",
+          "KVK Geçici Md.14/2 kapsamı → Beyanname 376 — 181 Dr ile birlikte dönem sonu tahakkuk",
+          "—",
+          "[Tutar]",
+          "KV 376"
+        ],
+        [
+          "372 ile AYNI muhasebe kaydı (181/642) — fark: yasal dayanak Paragraf 2 (Md.14/2), Paragraf 1 (Md.14/1-b) değil.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — TAHSİL (İZLEYEN DÖNEM): 181 KAPATMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Tahsil Tarihi]",
+          "102 Bankalar",
+          "Faiz/kâr payı tahsilatı",
+          "[Tutar]",
+          "—",
+          "Banka ekstresi"
+        ],
+        [
+          "Kr",
+          "[Tahsil Tarihi]",
+          "181 Gelir Tahakkukları",
+          "Önceki dönem 376 tahakkukunun kapatılması — izleyen dönemde 376 tekrar uygulanmaz",
+          "—",
+          "[Tutar]",
+          "181 kapatma"
+        ],
+        [
+          "KAYIT 3 — 370–376 TAM MUHASEBE TABLOSU (TÜM KODLAR)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "370",
+          "[Dönüşüm]",
+          "646/679",
+          "AKT: Döviz/altın KKM kur farkı değerleme → Tek seferlik → 370",
+          "—",
+          "[370]",
+          "KV 370"
+        ],
+        [
+          "371",
+          "[Ödeme]",
+          "102/648",
+          "AKT: Bankadan kur farkı tazminatı → Dönemsel nakit → 371",
+          "—",
+          "[371]",
+          "KV 371"
+        ],
+        [
+          "372",
+          "[31.12]",
+          "181/642",
+          "AKT: Dönem sonu faiz/kâr payı tahakkuku → 31 Aralık → 372",
+          "—",
+          "[372]",
+          "KV 372"
+        ],
+        [
+          "373",
+          "[Vade]",
+          "102/(181+642)",
+          "AKT: Vade sonu faiz/kâr payı tahsilatı → 373",
+          "—",
+          "[373]",
+          "KV 373"
+        ],
+        [
+          "374",
+          "[Vade]",
+          "646/648/679",
+          "AKT: Vade sonu diğer kazançlar → 374",
+          "—",
+          "[374]",
+          "KV 374"
+        ],
+        [
+          "375",
+          "[Dönüşüm]",
+          "646/679",
+          "PAS: Borç dönüşümü kur farkı kazancı → Tek seferlik → 375",
+          "—",
+          "[375]",
+          "KV 375"
+        ],
+        [
+          "376",
+          "[31.12]",
+          "181/642",
+          "PAS: Borç dönüşümü sonrası dönem sonu tahakkuku → 376",
+          "—",
+          "[376]",
+          "KV 376"
+        ],
+        [
+          "YİAKV: 370–376 YEDİ KODUN TAMAMININ ticari kâra dahil geliri YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7). KV matrahından çıkarılır (her satır beyannamede ayrı). 375–376 Paragraf 2 kodları için YİAKV E.7 satırı güncellenmiş olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "376 – KVK GEÇİCİ MD.14/2 DÖNEM SONU FAİZ/KÂR PAYI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | KVK Geçici Md.14/2 | 372 ile Karşılaştırma | ★★ YİAKV",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/2 — 376 Dönem Sonu Mekanizması ve 372 ile Bağlantısı",
+          "376 (PARAGRAF 2 — DÖNEM SONU FAİZ/KÂR PAYI) TANIMI:\n\nKVK Geçici Madde 14/2 kapsamında yabancı para borçlarını TL'ye dönüştüren kurumların,\nbu dönüşüm sonrasında sahip oldukları TL cinsinden finansal araçlardan (mevduat, tahvil,\nkatılım hesabı vb.) dönem sonu itibarıyla VUK Md.280/281 gereği tahakkuk ettirilen\nfaiz ve kâr payı geliri, KVK Geçici Madde 14/2 kapsamında kurumlar vergisinden istisnadır.\n\n372 ile TEMEL FARK:\n• 372 (Paragraf 1): Aktif taraf — yabancı para mevduat/altın → TL KKM dönüşümü sonrası\n• 376 (Paragraf 2): Pasif taraf — yabancı para borç → TL dönüşümü sonrası\n\nHer iki kod da aynı muhasebe mekanizmasını (181/642 tahakkuk) kullanır.\nFark yasal dayanak ve bağlantılı enstrüman türüdür.\n\nBEYANNAME: 376 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/2 | GİB KV Beyan Reh. 2026 (No:606) | VUK Md.280/281",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "375 ile Bağlantı ve Sıralama — Paragraf 2 Kodlarının İlişkisi",
+          "PARAGRAF 2 KOD SİLSİLESİ:\n\n375 (Md.14/2): Borç dönüşümü ANINDAKİ kur farkı kazancı → Tek seferlik\n→ Mirrors: 370 (Md.14/1-a) — aktif taraf dönüşüm kur farkı\n\n376 (Md.14/2): Borç dönüşümü SONRASI dönem sonu faiz/kâr payı tahakkuku → Yıllık\n→ Mirrors: 372 (Md.14/1-b) — aktif taraf dönem sonu faiz/kâr payı tahakkuku\n\nBAĞLANTI KURALI:\n376, 375 ile bağlantılıdır:\n① 375 yoksa (borç dönüşümü yapılmamışsa) 376 oluşamaz.\n② 376 tutarı 375 borç dönüşüm tutarıyla sınırlıdır.\n③ 375 çalışma kâğıdı B bölümündeki araç tutarı ile 376 C tablosu bakiyeleri mutabık olmalı.\n\nTAHSİL DÖNEMİNDE:\nDönem sonu 181/642 tahakkuku izleyen dönemde tahsil edildiğinde:\nDr 102 / Kr 181 → 376 tekrar uygulanmaz.",
+          "KVK Geçici Md.14/2 | 375 Çalışma Kâğıdı | VUK Md.280/281",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370–376 Tamamı DÜŞÜLEMEZ",
+          "KVK GEÇİCİ MD.14 — YEDİ KODUN TAMAMININ YİAKV MATRAHINDA DÜŞÜLEMEZLİĞİ:\n\n• 370 → DÜŞÜLEMEZ | • 371 → DÜŞÜLEMEZ | • 372 → DÜŞÜLEMEZ\n• 373 → DÜŞÜLEMEZ | • 374 → DÜŞÜLEMEZ | • 375 → DÜŞÜLEMEZ | • 376 → DÜŞÜLEMEZ\n\nYİAKV çalışma kâğıdı E.7 (Güncellenmeli):\n'KKM Aktif+Pasif Kur Farkı + Faiz/Kâr Payı + Vade Kazançları İstisnası\n(KVK Geçici Md.14 Tüm Paragraflar) → DÜŞÜLEMEZ ✗ | Beyanname 370–376'\n\nParagraf 2 kodları (375, 376) da tam anlamıyla E.7 kapsamındadır.\nYMM, YİAKV çalışma kâğıdında E.7 satırını 376'yı kapsayacak şekilde güncellemelidir.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "372 ve 376 — Mükerrerlik Önleme ve Araç Ayrımı",
+          "MÜKERRERLİK SENARYOsu:\nBir kurum hem Paragraf 1 (aktif/mevduat) hem Paragraf 2 (pasif/borç) dönüşümü yaptıysa:\n• Paragraf 1 dönüşümü → Mevduat/altın TL KKM → Dönem sonu tahakkuk → 372\n• Paragraf 2 dönüşümü → Borç TL araç → Dönem sonu tahakkuk → 376\n\nHER İKİSİ AYNI ANDA UYGULANABİLİR (mükerrerlik yok) — yeter ki ayrı enstrümanlar.\n\nMÜKERRERLİK HATASI:\nAynı TL aracın hem 372 hem 376 ile raporlanması → Her iki paragraf aynı araça uygulanamaz.\nYMM: C tablosundaki araçların 372 veya 376 kapsamında olduğunu, ikisine birden girmediğini teyit.",
+          "KVK Geçici Md.14/1-b (372) | KVK Geçici Md.14/2 (376)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...KVK Geçici Madde 14/2 kapsamında yabancı para borçlarının TL'ye dönüştürülmesi\nsonucunda kurulan [Araç Türü] hesabından [dönem] hesap döneminin bitiş tarihi itibarıyla\nVUK Md.280/281 gereği tahakkuk ettirilen [Tutar] TL faiz/kâr payı geliri, KVK Geçici\nMadde 14/2 kapsamında kurumlar vergisinden istisna edilmiş ve yurt içi asgari kurumlar\nvergisi matrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...376 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...Aynı araç hem 372 hem 376 kapsamında istisnaya tabidir.' (Mükerrerlik)\n'...375 yapılmadan 376 uygulanmıştır.' (Hatalı — bağlantı kopuk)\n\nKRİTİK RİSKLER:\n(1) 376'yı YİAKV matrahından düşmek.\n(2) Aynı araç için hem 372 hem 376 yazmak.\n(3) 375 olmadan 376 uygulamak.\n(4) Tahsil döneminde tekrar 376 uygulamak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14/2 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (376): 376, 372'nin Paragraf 2 karşılığıdır. Aktif (372) ile pasif (376) aynı mekanizma (181/642 tahakkuk), farklı yasal dayanak. 375 olmadan 376 oluşamaz. 370–376 yedi kodun tamamı YİAKV matrahından DÜŞÜLEMEZ. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F30",
+      "rows": [
+        [
+          "376 – KVK GEÇİCİ MD.14/2 DÖNEM SONU FAİZ/KÂR PAYI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | VUK Md.280/281 | 181/642 | 375 Çapraz Mutabakat",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ 375 Çalışma Kâğıdı — Paragraf 2 Dönüşüm Dayanağı",
+          "376, 375 olmadan oluşamaz. 375 çalışma kâğıdı B bölümündeki araç bilgileri ile\n376 C tablosu bakiyeleri mutabık olmalı. En temel bağlantı belgesidir.",
+          "375 çalışma kâğıdı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Muhasebe Yevmiyesi — 181 Dr / 642 Kr Tahakkuk Kaydı",
+          "Dönem sonu (31 Aralık) tahakkuk yevmiye kaydı. C tablosu toplamıyla birebir uyumlu.\nKayıt olmadan 376 istisnasının muhasebe dayanağı yoktur.",
+          "Yevmiye defteri / Muhasebe ekstresi",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Banka Dönem Sonu Bildirimi / Tahakkuk Ekstresi",
+          "Dönem sonu tahakkuk eden faiz/kâr payı tutarını gösteren resmi banka belgesi.\nBanka bildirimi yoksa sözleşme oranı × bakiye × gün hesabını belgeleyin.",
+          "Banka şubesi / internet bankacılığı",
+          null
+        ],
+        [
+          null,
+          "4",
+          "TL Araç Sözleşmesi (Borç Dönüşümü Sonrası Kurulan Araç)",
+          "Paragraf 2 dönüşümü sonrası kurulan TL mevduat/katılım/tahvil sözleşmesi.\nAraç türü, faiz/kâr payı oranı ve vade bilgisi için kaynak.",
+          "Banka TL araç sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 376. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "181 Hesap Kapatma Kaydı (İzleyen Dönem Tahsilat)",
+          "Önceki dönem 376 tahakkuklarının tahsil edildiğinde 181 hesabının kapatıldığını gösteren yevmiye.\nTahsil döneminde yeni 376 uygulanmamış olmalı.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Faiz/Kâr Payı Hesap Ekstresi (642/644)",
+          "372 (Paragraf 1) ile 376 (Paragraf 2) tutarlarının ayrı ayrı kayıtlandığını gösteren ekstreler.\nMükerrerlik kontrolü için zorunludur.",
+          "642/644 hesap ekstresi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ 375 kapsamı borç dönüşümü var mı? (375 ÇK hazır mı?)",
+          "376 bağlantısı zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Tahakkuk muhasebe kaydı (181/642) yapıldı mı?",
+          "Kayıt olmadan istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Tahakkuk tutarları banka bildirimi ile mutabık mı?",
+          "Her araç satırı belgeden doğrulanmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ 372 ile mükerrerlik analizi yapıldı mı? (Ayrı enstrümanlar)",
+          "Aynı araç için hem 372 hem 376 yazılamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "375 çalışma kâğıdıyla çapraz mutabakat tamam mı?",
+          "Borç dönüşüm tutarı ile araç bakiyeleri uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Kapsam dışı araçlar (D.2) ayrıştırıldı mı?",
+          "Paragraf 2 dışı araçlar → vergilendirilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ 376 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370–376 tamamı YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Beyanname 376 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Tahsil döneminde 181 kapatıldı, 376 tekrar uygulanmadı mı?",
+          "Yalnızca tahakkuk anında.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 376 = 372'nin Paragraf 2 (Md.14/2) karşılığı. Aktif (372) ile pasif (376) aynı muhasebe mekanizması, farklı yasal dayanak ve bağlantılı enstrüman. 375 olmadan 376 oluşamaz. 370–376 yedi kodun tamamı YİAKV matrahından DÜŞÜLEMEZ (E.7). YMM müteselsil: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

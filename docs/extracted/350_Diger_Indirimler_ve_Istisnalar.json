@@ -1,0 +1,1357 @@
+{
+  "file": "350_Diger_Indirimler_ve_Istisnalar.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:H46",
+      "rows": [
+        [
+          "350 – DİĞER İNDİRİMLER VE İSTİSNALAR | KV BEYANNAMESİ 302–349 DIŞI TÜM İSTİSNA VE İNDİRİMLER | YMM TASDİK | BEYANNAME 350",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "350 Satırı = 302–349 ÖZEL SATIRLARINA girmeyen tüm istisna ve indirimlerin toplamı | Her kalem AYRI yasal dayanak ile belgelenmeli | YMM açısından setten en riskli satır | Kazancın Bulunması Halinde (ve bazı kalemler Zarar Olsa Dahi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 350'NİN TEMEL KURALI: Her kalem için ayrı yasal dayanak + ayrı belge paketi zorunludur. 'Diğer İstisna' gerekçesiyle toplu tutar yazımı kabul edilemez. Önce 302–349 özel satırlarını kontrol edin — özel satır varsa 350'yi kullanmayın. Setimizde: TGB Yönetici Şirket → 311 | TUGS Gemi → 315 | Ürün Senedi → 349 (350 değil).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "EN SIK KULLANILAN 350 KALEMLERİ: (1) Serbest Bölge Kazancı (3218 s.K.) | (2) Teknokent Girişimci/Yazılım (4691 s.K. GVM Md.2) | (3) Ar-Ge ve Tasarım İndirimi (5746 s.K.) | (4) Girişim Sermayesi Fonu (KVK Md.10/1-g) | (5) Bağış ve Sponsorluk (KVK Md.10/1-b,c) | (6) Özel Okul/Hastane (KVK 5/1-ı) | (7) Diğer Özel Kanun İstisnaları",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM TEYİDİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Önce kontrol: Beyan edilmek istenen istisna/indirim için 302–349 arasında özel bir satır var mı?",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "A0.1  ★ Her kalem için 302–349 özel satırlarında daha uygun satır olmadığı teyit edildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Özel satır varsa 350 değil, o satır kullanılır.",
+          null
+        ],
+        [
+          "A0.2  ★ Her kalem için AYRI yasal dayanak ve belge mevcut mu?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Toplu tutar kabul edilemez — her kalem bağımsız belgelenmeli.",
+          null
+        ],
+        [
+          "A0.3  Her kalemin beyanname bölümü (KB Halinde / Zarar Olsa Dahi) doğru mu?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "C tablosunda her kalem için bölüm seçilmeli.",
+          null
+        ],
+        [
+          "A0.4  YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.5  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "Her kalem ayrı yasal dayanak + belge zorunlu.",
+          null
+        ],
+        [
+          "B. BEYANNAME 350'DE SIK KULLANILAN İSTİSNA VE İNDİRİMLER REFERANS TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her kategori için C bölümündeki detay tablosunda ilgili satır doldurulur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kategori",
+          "Yasal Dayanak",
+          "İstisna/İndirim Özeti",
+          "Bölüm",
+          "İstisna?",
+          "İndirim?",
+          "Özelge?"
+        ],
+        [
+          null,
+          "Serbest Bölge Kazancı İstisnası",
+          "3218 s.K. Geçici Md.3",
+          "Üretim lisansı olanlar + İhracat faaliyeti. AB üyelik tarihine kadar (güncel kontrol şart).",
+          "Kazancın Bulunması Halinde",
+          "EVET",
+          "-",
+          "Önerilir"
+        ],
+        [
+          null,
+          "Teknokent Girişimci — Ar-Ge/Yazılım/Tasarım",
+          "4691 s.K. GVM Md.2",
+          "TGB içinde yazılım/Ar-Ge/tasarım yapan kiracı firma kazancı. Yönetici şirket (311) DEĞİL.",
+          "Kazancın Bulunması Halinde",
+          "EVET",
+          "-",
+          "Önerilir"
+        ],
+        [
+          null,
+          "Ar-Ge ve Tasarım İndirimi",
+          "5746 s.K. Md.3",
+          "Ar-Ge Merkezi belgeli harcamalar. %100 indirim. Zarar Olsa Dahi — Devreden takip.",
+          "Zarar Olsa Dahi — İndirim",
+          "-",
+          "EVET",
+          "Tavsiye"
+        ],
+        [
+          null,
+          "Girişim Sermayesi Fonu İndirimi",
+          "KVK Md.10/1-g",
+          "Girişim sermayesi fonu/ortaklığına katılım. Sınır: %10 ve %20.",
+          "Kazancın Bulunması Halinde",
+          "-",
+          "EVET",
+          "Tavsiye"
+        ],
+        [
+          null,
+          "Yatırım Ortaklığı Kazanç İstisnası",
+          "KVK Md.5/1-d",
+          "SPK kapsamlı Türkiye'de kurulu yatırım fonu ve ortaklıkları.",
+          "Kazancın Bulunması Halinde",
+          "EVET",
+          "-",
+          "Önerilir"
+        ],
+        [
+          null,
+          "Özel Okul/Hastane/Rehab Merkezi İstisnası",
+          "KVK Md.5/1-ı",
+          "Özel eğitim, rehabilitasyon ve sağlık kurumu kazancı. İlk faaliyet tarihinden 5 yıl.",
+          "Kazancın Bulunması Halinde",
+          "EVET",
+          "-",
+          "Önerilir"
+        ],
+        [
+          null,
+          "Sponsorluk Harcamaları İndirimi",
+          "KVK Md.10/1-b",
+          "Amatör spor %100, profesyonel spor %50.",
+          "Kazancın Bulunması Halinde",
+          "-",
+          "EVET",
+          "Değerlendirin"
+        ],
+        [
+          null,
+          "Bağış ve Yardımlar İndirimi",
+          "KVK Md.10/1-c,d,e,f",
+          "Vakıf, okul, yurt, üniversite, hastane. Sınır: Kazancın %5 veya %10 (kuruma göre).",
+          "Kazancın Bulunması Halinde",
+          "-",
+          "EVET",
+          "Değerlendirin"
+        ],
+        [
+          null,
+          "Diğer Özel Kanun İstisnaları",
+          "Çeşitli Özel Kanunlar",
+          "Yukarıdaki kategorilere girmeyen özel kanun istisnaları. Her biri ayrı yasal dayanak.",
+          "Kazanç/Zarar Durumuna Göre",
+          "?",
+          "?",
+          "Zorunlu"
+        ],
+        [
+          "C. DÖNEM 350 KALEMLERİ — KALEM BAZINDA VERİ GİRİŞİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her satır bir ayrı istisna/indirim kalemine karşılık gelir. YMM tasdik dosyasının temel envanteri olarak kullanılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "İstisna/İndirim Kalemi",
+          "Yasal Dayanak",
+          "Tutar (TL)",
+          "Beyanname Bölümü",
+          "Belge Türü",
+          "YMM Durumu"
+        ],
+        [
+          "K1",
+          "Serbest Bölge Kazancı İstisnası",
+          "3218 s.K. Geçici Md.3",
+          null,
+          "Kazancın Bulunması Halinde",
+          "Üretim Lisansı + Faaliyet Belgesi",
+          "Tamamlandı",
+          null
+        ],
+        [
+          "K2",
+          "Teknokent Girişimci Ar-Ge/Yazılım Kazancı",
+          "4691 s.K. GVM Md.2",
+          null,
+          "Kazancın Bulunması Halinde",
+          "TGB Kiracı Belgesi + Kazanç Tablosu",
+          "Tamamlandı",
+          null
+        ],
+        [
+          "K3",
+          "Ar-Ge ve Tasarım İndirimi",
+          "5746 s.K. Md.3",
+          null,
+          "Zarar Olsa Dahi — İndirim",
+          "Ar-Ge Merkezi Belgesi + Harcama Listesi",
+          "Tamamlandı",
+          null
+        ],
+        [
+          "K4",
+          "Girişim Sermayesi Fonu İndirimi",
+          "KVK Md.10/1-g",
+          null,
+          "Kazancın Bulunması Halinde",
+          "Fon/Ortaklık Belgesi + Sınır Hesabı",
+          "Tamamlandı",
+          null
+        ],
+        [
+          "K5",
+          "Bağış ve Sponsorluk İndirimi",
+          "KVK Md.10/1-b,c,d",
+          null,
+          "Kazancın Bulunması Halinde",
+          "Sözleşme + Makbuz/Banka Dekontu",
+          "Tamamlandı",
+          null
+        ],
+        [
+          "K6",
+          "[Diğer — Yasal Dayanak Giriniz]",
+          "[Kanun Md. Fıkra]",
+          null,
+          null,
+          "[Belge türü]",
+          "Eksik Belge",
+          null
+        ],
+        [
+          "K7",
+          "[Diğer — Yasal Dayanak Giriniz]",
+          "[Kanun Md. Fıkra]",
+          null,
+          null,
+          "[Belge türü]",
+          "Eksik Belge",
+          null
+        ],
+        [
+          "K8",
+          "[Diğer — Yasal Dayanak Giriniz]",
+          "[Kanun Md. Fıkra]",
+          null,
+          null,
+          "[Belge türü]",
+          "Eksik Belge",
+          null
+        ],
+        [
+          "TOPLAM",
+          "DÖNEM 350 TOPLAMI — Beyanname 350 Satırı",
+          null,
+          "0",
+          "K1+K2+...+K8 Toplamı → Beyanname 350",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. YMM AÇISINDAN KRİTİK UYARILAR",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "U1",
+          "Özel satır varsa 350 KULLANMA",
+          null,
+          "302–349 uygun özel satır varsa 350'ye yazmak hatalıdır. GİB her kalemi tek tek açıklatabilir.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "U2",
+          "Her kalem ayrı yasal dayanak — toplu tutar yetmez",
+          null,
+          "Kalem kalem belgeleme zorunludur. Toplu tutar yazımı tarhiyat riski taşır.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "U3",
+          "Beyanname bölümü doğru seçilmeli (KB Halinde / Zarar Olsa Dahi)",
+          null,
+          "Ar-Ge indirimi zarar döneminde de uygulanır. Her kalemin kanununu kontrol edin.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "U4",
+          "Tartışmalı kalemler için özelge alın",
+          null,
+          "Serbest bölge ve teknokent özel durumlarında GİB özelgesi risk yönetiminin temelidir.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "U5",
+          "İstisna ve indirim sıralamasına dikkat",
+          null,
+          "Matrah hesabında: Önce KVK 5 istisnaları, sonra KVK 10 indirimleri.",
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H46",
+      "rows": [
+        [
+          "350 – DİĞER İNDİRİMLER VE İSTİSNALAR | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Beyanname 350 = 302–349 Dışındaki Tüm İstisna ve İndirimler | Kalem Bazında Şeffaf Belgeleme | Serbest Bölge | Teknokent | Ar-Ge | Girişim Sermayesi | Bağış",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "K1 — Serbest Bölge (TL)",
+          null,
+          null,
+          "0",
+          "Varsa tutar",
+          null,
+          null,
+          null
+        ],
+        [
+          "K2 — Teknokent Girişimci (TL)",
+          null,
+          null,
+          "0",
+          "Varsa tutar",
+          null,
+          null,
+          null
+        ],
+        [
+          "K3 — Ar-Ge İndirimi (TL)",
+          null,
+          null,
+          "0",
+          "Varsa tutar",
+          null,
+          null,
+          null
+        ],
+        [
+          "K4 — Girişim Sermayesi (TL)",
+          null,
+          null,
+          "0",
+          "Varsa tutar",
+          null,
+          null,
+          null
+        ],
+        [
+          "K5 — Sponsorluk/Bağış (TL)",
+          null,
+          null,
+          "0",
+          "Varsa tutar",
+          null,
+          null,
+          null
+        ],
+        [
+          "K6-K8 — Diğer (TL)",
+          null,
+          null,
+          "0",
+          "Özel kalemler",
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME 350 TOPLAMI (TL)",
+          null,
+          null,
+          "0",
+          "= D39 Toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "B. K1 — SERBEST BÖLGE KAZANCI DETAY (3218 s.K.)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Geçici Md.3: Üretim lisansı koşulu. Finansal gelirler kapsam dışı. Güncel yürürlük kontrolü zorunlu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Seçim",
+          null,
+          "Açıklama",
+          null,
+          "Belge"
+        ],
+        [
+          "SB.1  Faaliyet Lisansı Geçerli mi?",
+          null,
+          "EVET",
+          "Tarım Bakanlığı lisansı değil — SB faaliyet lisansı",
+          null,
+          null,
+          "SB Bölge Müdürlüğü",
+          null
+        ],
+        [
+          "SB.2  Faaliyet Türü",
+          null,
+          "Üretim",
+          "İstisna türe göre değişir",
+          null,
+          null,
+          "Lisans belgesi",
+          null
+        ],
+        [
+          "SB.3  İstisna Kapsamındaki Kazanç (TL)",
+          null,
+          "0",
+          "Mali tablolar",
+          null,
+          null,
+          "Kazanç hesabı",
+          null
+        ],
+        [
+          "SB.4  Kapsam Dışı Gelir — Faiz vb. (TL)",
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. K3 — AR-GE VE TASARIM İNDİRİMİ DETAY (5746 s.K.)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ar-Ge Merkezi belgesi zorunlu. %100 indirim. 'Zarar Olsa Dahi' — Devreden tutar sonraki yıllara taşınır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "Belge"
+        ],
+        [
+          "ARG.1  Ar-Ge Merkezi Belgesi Geçerli mi?",
+          null,
+          "EVET",
+          "Sanayi Bakanlığı onaylı Ar-Ge Merkezi belgesi",
+          null,
+          null,
+          "Ar-Ge Merkezi Belgesi",
+          null
+        ],
+        [
+          "ARG.2  Dönem Ar-Ge Harcamaları (TL)",
+          null,
+          "0",
+          "Ar-Ge raporu",
+          null,
+          null,
+          "Hesap kartı",
+          null
+        ],
+        [
+          "ARG.3  Ar-Ge İndirimi (%100) (TL)",
+          null,
+          "0",
+          "Hesap tablosu",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ARG.4  Önceki Dönemden Devreden (TL)",
+          null,
+          "0",
+          "Beyanname eki",
+          null,
+          null,
+          "Önceki dönem KV",
+          null
+        ],
+        [
+          "ARG.5  Bu Dönem Uygulanabilecek (TL)",
+          null,
+          "0",
+          "Beyanname kontrolü",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. ANA DENETİM KONTROL LİSTESİ (K1–K14)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ Her kalem için 302–349 özel satırlarında uygun satır olmadığı teyit edildi mi?",
+          null,
+          "Özel satır varsa 350 kullanılmaz.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Her kalem için ayrı yasal dayanak belgesi mevcut mu?",
+          null,
+          "Toplu tutar / 'diğer' gerekçesi kabul edilemez.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Her kalemin beyanname bölümü (KB Halinde / Zarar Olsa Dahi) doğru mu?",
+          null,
+          "C tablosu sütun 5 kontrolü.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "Serbest bölge kazancında finansal gelirler ayrıştırıldı mı?",
+          null,
+          "Faiz, kur farkı → Kapsam dışı.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "Teknokent girişimci ile 311 Yönetici Şirket karıştırılmadı mı?",
+          null,
+          "Kiracı → K2/350. Yönetici → 311.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "Ar-Ge merkezi belgesi geçerli mi? Devreden takibi yapıldı mı?",
+          null,
+          "ARG.4 önceki dönem beyanname ekiyle uyumlu.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Girişim sermayesi fonu sınırı (%10 ve %20) aşılmadı mı?",
+          null,
+          "KVK Md.10/1-g sınır kontrol.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "Bağış/sponsorluk oran sınırı (%5 veya %10) aşılmadı mı?",
+          null,
+          "KVK Md.10 oran sınır kontrol.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "KVK Md.10 indirimleri sırası doğru mu?",
+          null,
+          "İstisna sonrası matrahtan indirim sırası.",
+          null,
+          "Kontrol",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "350 toplamı C tablosu D39 ile uyumlu mu?",
+          null,
+          "Beyanname 350 = D39.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "Tartışmalı kalemler için özelge alındı mı?",
+          null,
+          "Az emsal, yeni veya tartışmalı özel kanun kalemleri.",
+          null,
+          "Kontrol",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "350 zararla beyan döneminde doğru uygulandı mı?",
+          null,
+          "KB Halinde kalemler → Kazanç yoksa uygulanamaz.",
+          null,
+          "Kontrol",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K13",
+          "Önceki dönem 350 ile karşılaştırma yapıldı mı?",
+          null,
+          "Büyük fark → Açıklama notu hazırlanmalı.",
+          null,
+          "Kontrol",
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K14",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun",
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:H18",
+      "rows": [
+        [
+          "350 – DİĞER İNDİRİMLER VE İSTİSNALAR | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her 350 kalemi kendi kanun hükmüne göre muhasebeleştirilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "K1 — SERBEST BÖLGE KAZANCI (3218 s.K.)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref",
+          null
+        ],
+        [
+          "Kr",
+          "[Dönem]",
+          "645/679 Serbest Bölge Kazancı",
+          "3218 s.K. Geçici Md.3 istisna — Beyanname 350 K1",
+          "-",
+          "[Tutar]",
+          "350 K1 — SB belgesi",
+          null
+        ],
+        [
+          "Kapsam dışı finansal gelirler (faiz, kur farkı) ayrı hesapta — 350 K1'e dahil edilmez.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "K2 — TEKNOKENTGİRİŞİMCİ (4691 s.K. GVM Md.2)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref",
+          null
+        ],
+        [
+          "Kr",
+          "[Dönem]",
+          "645/679 TGB Yazılım/Ar-Ge Kazancı",
+          "4691 GVM Md.2 — Beyanname 350 K2 (Yönetici Şirket DEĞİL → 311)",
+          "-",
+          "[Tutar]",
+          "350 K2 — TGB kiracı belgesi",
+          null
+        ],
+        [
+          "TGB Yönetici Şirket → 311 satırı (350 değil). TGB kiracısı (girişimci firma) → 350 K2.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "K3 — AR-GE VE TASARIM İNDİRİMİ (5746 s.K. Md.3)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref",
+          null
+        ],
+        [
+          "Dr",
+          "[Beyan]",
+          "770 Ar-Ge Gideri (Matrahtan İndirilecek)",
+          "5746 s.K. Md.3 — %100 indirim — Zarar Olsa Dahi — Beyanname 350 K3",
+          "-",
+          "[Tutar]",
+          "350 K3 — Ar-Ge Merkezi belgesi",
+          null
+        ],
+        [
+          "Devreden kısım: Matrahı aşan Ar-Ge indirimi sonraki yıla devreder — yıllık takip zorunlu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "K4 — GİRİŞİM SERMAYESİ FONU İNDİRİMİ (KVK Md.10/1-g)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref",
+          null
+        ],
+        [
+          "Dr",
+          "[Beyan]",
+          "549 Girişim Sermayesi Fonu",
+          "KVK Md.10/1-g — %10 ve %20 sınırı — Beyanname 350 K4",
+          "-",
+          "[Tutar]",
+          "350 K4 — Fon belgesi",
+          null
+        ],
+        [
+          "Fon 5 yıl içinde kullanılmalı. Amaç dışı kullanım → Vergi + gecikme zammı riski.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:H7",
+      "rows": [
+        [
+          "350 – DİĞER İNDİRİMLER VE İSTİSNALAR | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "302–349 Dışı Tüm İstisna/İndirimler | Kalem Bazında | SB | Teknokent | Ar-Ge | GS Fonu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "350 Satırının Yapısı ve Ana Kurallar",
+          "KV BEYANNAMESİ 350 'DİĞER' KAVRAMI:\n\n302–349: Belirli istisnalara özgü satırlar.\n350: Bu satırlara girmeyen TÜM istisna ve indirimlerin toplandığı catch-all satır.\n\nANA KURAL — KALEM BAZINDA ŞEFFAFLIK:\n350'ye yazılan her TL kanun/madde/fıkra bazında ayrıştırılmalıdır.\nGİB incelemesinde 350 kalemi tek tek açıklanmak zorunda kalınabilir.\n\nEN SIK YAPILAN HATALAR:\n① Özel satırı olan istisnayı 350'ye yazmak (TGB Yönetici Şirket → 311, 350 değil)\n② 350'ye toplu tutar yazıp kalem detayını belgede bırakmamak\n③ 'Zarar Olsa Dahi' (Ar-Ge) ile 'Kazancın Bulunması Halinde' ayrımını karıştırmak\n④ İstisna ve indirim sıralamasını yanlış yapmak\n\nBEYANNAME 350: = C tablosu K1+K2+...+K8 Toplamı (D39)\nHer dönem önceki dönemle karşılaştır — büyük fark → Not ekle.",
+          "KVK Md.5,10 | 5746 s.K. | 3218 s.K. | 4691 s.K.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "K1 Serbest Bölge + K2 Teknokent — Kritik Ayrımlar",
+          "SERBEST BÖLGE (3218 s.K. Geçici Md.3):\nYalnızca üretim lisansı olanlar → Üretim kazancı istisna.\nAlım-satım faaliyeti → Kapsam tartışmalı.\nFinansal gelirler (faiz, kur farkı) → Kesin kapsam dışı.\nGüncel yürürlük durumu kontrol edilmeli.\n\nTEKNOKENTGİRİŞİMCİ (4691 s.K. GVM Md.2):\nTGB içinde Ar-Ge, yazılım, tasarım yapan KİRACI firma → K2/350.\nTGB YÖNETİCİ ŞİRKET → 311 satırı (350 DEĞİL) — KARIŞTIRILMAMALI.\nİstisna belirli tarihe kadar — güncel kontrol zorunlu.\n\nYMM KULLANSIN:\nK1: '...3218 sayılı Kanun kapsamında [SB adı]'ndaki üretim faaliyetinden...'\nK2: '...4691 sayılı Kanun Geçici Madde 2 kapsamında TGB kiracısı sıfatıyla...'",
+          "3218 s.K. | 4691 s.K. | GİB Tebliğleri",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "K3 Ar-Ge İndirimi + K4 Girişim Sermayesi + Sıralama",
+          "AR-GE VE TASARIM İNDİRİMİ (5746 s.K.):\nAr-Ge Merkezi belgesi — Sanayi Bakanlığı onaylı — zorunlu.\n'Zarar Olsa Dahi' — Matrahı aşan kısım sonraki yıllara devrede.\nDevreden tutar yıllık takip listesi — beyanname ekinde gösterilmeli.\n\nGİRİŞİM SERMAYESİ FONU:\nSınır: Beyan edilen kazancın %10'u VE %20'yi aşamaz (ikisi birlikte).\n549 fon hesabı — 5 yıl içinde kullanılmalı — amaç dışı kullanım → Vergi + ZZ riski.\n\nMATRAH HESABINDA DOĞRU SIRALAMA:\nTicari Bilanço Kârı\n− KVK Md.5 İstisnaları (K1 SB, K2 TGB, K5 Okul/Hastane vb.)\n− KVK Md.10 İndirimleri (K3 Ar-Ge, K4 GS Fonu, K5 Bağış/Sponsorluk)\n= KV Matrahı (Kurumlar Vergisi Matrahı)\n\nYMM: '...beyan edilen kazancın %100'ü 5746 sayılı Kanun Md.3 kapsamında\nAr-Ge indirimi olarak, toplam [XX] TL'si devreden indirim olarak beyan edilmiştir'",
+          "5746 s.K. | KVK Md.10 | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "350 SATIRI KAPANIŞ: YMM 350'yi tasdik ederken temel sorumluluk: (1) Her kalemin bağımsız yasal dayanağı var mı? (2) 302–349 özel satırlarında daha uygun satır yoktu mu? (3) KB Halinde/Zarar Olsa Dahi bölüm seçimi doğru mu? (4) Özelge gerektiren kalemler için özelge alındı mı? Şeffaflık = En iyi 350 tasdik savunması. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F33",
+      "rows": [
+        [
+          "350 – DİĞER İNDİRİMLER VE İSTİSNALAR | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her 350 Kalemi İçin Ayrı Belge Paketi | Serbest Bölge / Teknokent / Ar-Ge / GS Fonu / Bağış | Kalem Bazında Şeffaflık | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — TEMEL ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her kalem için (1) Yasal Dayanak Belgesi + (2) Kazanç/Harcama Hesabı + (3) Destekleyici Belge",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ C Tablosu — Dönem 350 Kalem Envanteri",
+          "VERİ GİRİŞİ C tablosu: Tüm kalemler yasal dayanak, tutar, bölüm ve YMM durumu ile eksiksiz doldurulmuş.\nYMM tasdik dosyasının 350 bölümü omurgası.",
+          "VERİ GİRİŞİ C bölümü çıktısı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "K1 Serbest Bölge — Faaliyet Lisansı + Kazanç Ayrıştırma",
+          "3218 s.K. kapsamında SB faaliyet lisansı.\nKapsam içi (üretim) ve kapsam dışı (finansal gelir) kazanç ayrıştırma tablosu.",
+          "SB Bölge Müdürlüğü + Bakanlık",
+          null
+        ],
+        [
+          null,
+          "3",
+          "K2 Teknokent Girişimci — TGB Kiracı Belgesi",
+          "4691 s.K. kapsamında TGB kiracısı olduğunu gösteren kira sözleşmesi/yerleşim belgesi.\nTGB'deki yazılım/Ar-Ge kazancı ayrıştırma tablosu.",
+          "TGB Yönetici Şirketi belgesi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "K3 Ar-Ge İndirimi — Ar-Ge Merkezi Belgesi + Devreden Takibi",
+          "Sanayi Bakanlığı onaylı Ar-Ge Merkezi belgesi.\nDönem Ar-Ge harcamaları listesi + Devreden Ar-Ge indirimi yıllık takip tablosu.",
+          "Ar-Ge Merkezi Belgesi + Muhasebe ekstresi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "K4 Girişim Sermayesi Fonu — Fon Belgesi + Sınır Hesabı",
+          "Girişim sermayesi yatırım fonu/ortaklık belgesi (SPK kayıtlı).\nSınır hesabı: %10 ve %20 kontrol. 549 fon hesabı açılışı.",
+          "SPK kaydı + 549 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "6",
+          "K5 Bağış/Sponsorluk — Sözleşme + Makbuz + Oran Sınırı",
+          "Sözleşme/Makbuz/Banka dekontu.\nKVK Md.10 oran sınırı hesabı (%5 veya %10).",
+          "Sözleşme + Makbuz",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KV Beyannamesi Taslağı — 350. Satır",
+          "350 = C tablosu D39 ile uyumlu.\nDoğru bölüm seçimi kontrolü.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "8",
+          "GİB Özelgesi (Tartışmalı Kalemler İçin)",
+          "Az emsal, yeni veya tartışmalı özel kanun kalemleri için GİB özelgesi.\nÖzellikle serbest bölge, yeni teknokent ve özel haller.",
+          "GİB özelge başvuru sistemi",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Önceki Dönem Beyanname ve Devreden İndirimler",
+          "Ar-Ge devreden tutarı önceki dönem beyanname ekinden gelmeli.\nÖnceki dönem 350 tutarı karşılaştırma referansı.",
+          "Önceki dönem KV Beyannamesi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ 302–349 özel satırlarında daha uygun satır olmadığı teyit edildi mi?",
+          "Özel satır varsa 350 kullanılmaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Her kalem için ayrı yasal dayanak belgesi mevcut mu?",
+          "Toplu tutar kabul edilemez.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Her kalemin beyanname bölümü doğru mu?",
+          "KB Halinde / Zarar Olsa Dahi ayrımı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Serbest bölge finansal gelirler ayrıştırıldı mı?",
+          "Faiz, kur farkı → Kapsam dışı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Teknokent girişimci ile 311 Yönetici Şirket karıştırılmadı mı?",
+          "Kiracı → K2/350. Yönetici → 311.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Ar-Ge indirimi Ar-Ge Merkezi belgesiyle desteklendi mi?",
+          "Devreden yıllık takip belgesi.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "GS Fonu sınırı (%10 ve %20) aşılmadı mı?",
+          "KVK Md.10/1-g sınır kontrolü.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "350 toplamı C tablosu D39 ile uyumlu mu?",
+          "D39 = Beyanname 350.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Matrah sıralaması (istisna → indirim) doğru mu?",
+          "KVK 5 sonrası KVK 10.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 350'nin setin diğer dosyalarından özgün yeri: Catch-all satır — tek bir istisnayı değil, 302–349 dışındaki TÜM istisna ve indirimlerin havuzunu kapsar. YMM sorumluluğu: Her kalem kendi yasal dayanağıyla, bağımsız belgelenmiş, doğru bölümde, özelge gerektirenlerde özelge alınmış olmalıdır. Şeffaflık = En iyi 350 tasdik savunması. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

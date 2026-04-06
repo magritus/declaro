@@ -1,0 +1,1840 @@
+{
+  "file": "353_KVK5_1e_Kurucu_Intifa_Ruchan_GSYF_Katilma_Payi_GIB2026.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G104",
+      "rows": [
+        [
+          "353 – KURUCU SENETLERİ, İNTİFA SENETLERİ, RÜÇHAN HAKLARI VE GİRİŞİM SERMAYESİ YATIRIM FONU KATILMA PAYI SATIŞ KAZANCI | KVK Md.5/1-e | GİB REHBERİ MART 2026 (YAYIN NO:601) | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-e | %75 → %50 (9160 s.CB Kararı, 27/11/2024) | 2 Yıl (730 Gün) Aktifinde | 4 Araç: Kurucu Senedi · İntifa Senedi · Rüçhan Hakkı · GSYF Katılma Payı | 549 Fon (5 Yıl) | Beyanname 353",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB REHBERİ MART 2026 — 9160 SAYILI CB KARARI İLE İSTİSNA ORAN DEĞİŞİMİ (TÜM 5/1-e ARAÇLARI İÇİN GEÇERLİ)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "%75",
+          "27/11/2024 TARİHİNDEN ÖNCE gerçekleştirilen satışlarda uygulanır (Kurucu Senedi · İntifa Senedi · Rüçhan Hakkı · GSYF Katılma Payı)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "%50",
+          "9160 SAYILI CB KARARI ile 27/11/2024 TARİHİNDEN İTİBAREN (bu tarih dahil) gerçekleştirilen satışlarda uygulanır",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ RÜÇHAN HAKKI — KRİTİK UYARI: TTK'ya göre rüçhan hakkı kullanım süresi en fazla 15 gündür. Bu nedenle 730 günlük (2 tam yıl) aktifinde bulundurma şartı PRATİKTE HİÇBİR ZAMAN sağlanamaz → İstisna uygulanamaz.\n  ★ GSYF KATILMA PAYI: GİB Rehberi Bölüm B-I.5: 'KVK 5/1-a bendi kapsamında istisna kazançlarına kaynak oluşturan yatırım fonları'  = Girişim Sermayesi Yatırım Fonları (GSYF). SPK'dan izinli GSYF. Diğer fonlar → 298/299 kapsamı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ — GİB Rehberi Mart 2026 Bölüm B-I",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Satılan varlığın türü nedir?",
+          null,
+          null,
+          null,
+          "Kurucu Senedi",
+          "Her araç türünün aktife giriş tarihi farklıdır. Rüçhan hakkı → 2 yıl şartı pratikte imkânsız.",
+          null
+        ],
+        [
+          "A0.2  Satış tarihi 27/11/2024 öncesi mi sonrası mı? (Oran belirleyici)",
+          null,
+          null,
+          null,
+          "27/11/2024 SONRASI → %50",
+          "9160 s. CB Kararı: 27/11/2024 tarihinden itibaren tüm 5/1-e araçları için oran %50 (GİB Rehberi Bölüm B-I.1).",
+          null
+        ],
+        [
+          "A0.3  ★ 2 Tam Yıl (730 Gün) Aktifinde Bulundurma şartı sağlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Rüçhan hakkı için şart pratikte karşılanamaz (TTK max 15 gün kullanım). Diğerleri → muhasebe aktif tarihi esas.",
+          null
+        ],
+        [
+          "A0.4  ★ Rüçhan Hakkı ise: İstisna UYGULANAMAYACAĞINI teyit ettiniz mi?",
+          null,
+          null,
+          null,
+          "Uygulanmıyor",
+          "Rüçhan hakkı → 730 gün dolmadan satılmak zorunda. Satış kazancı vergiye tabi kurum kazancıdır.",
+          null
+        ],
+        [
+          "A0.5  GSYF Katılma Payı ise: SPK'dan izinli Girişim Sermayesi Yatırım Fonu mu?",
+          null,
+          null,
+          null,
+          "Uygulanmıyor",
+          "GİB Md.5: 'Girişim Sermayesi Yatırım Fonları' için istisna. Diğer fonlar → önce 298/299 analizi yapın.",
+          null
+        ],
+        [
+          "A0.6  ★ İstisna edilen kazanç süresi içinde 549 Özel Fonlar hesabına alınacak mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Satışı izleyen hesap döneminin başından KV beyan süresine kadar 549'a alınmalı. 5 yıl tutulacak.",
+          null
+        ],
+        [
+          "A0.7  Satış kazancı mı zarar mı? (Zarar → %75/%50 oranında KKEG — KVK 5/3)",
+          null,
+          null,
+          null,
+          "Kazanç",
+          "Zarar durumunda 352 ile aynı kural: Zarar × İstisna Oranı = KKEG. Kalan kısım indirilebilir.",
+          null
+        ],
+        [
+          "A0.8  YİAKV matrahında 353 istisnasının etkisi analiz edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-e (353) istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ — matrahta kalır.",
+          null
+        ],
+        [
+          "A0.9  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik. Tam tasdik → Ayrıca rapor yok.",
+          null
+        ],
+        [
+          "A0.10  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.3 (2 yıl), A0.4 (Rüçhan), A0.6 (549 fon) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Satılan Varlığın Türü",
+          null,
+          null,
+          null,
+          null,
+          "A0.1 ile uyumlu — Kurucu / İntifa / GSYF",
+          null
+        ],
+        [
+          "İhraç Eden Kuruluş",
+          null,
+          null,
+          null,
+          null,
+          "Kurucu/İntifa senedini veya GSYF'yi ihraç eden şirket/fon",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/353-01",
+          null
+        ],
+        [
+          "B. ARAÇ TÜRÜ NİTELİK ANALİZİ — 4 TÜRÜN ÖZGÜN KOŞULLARI (GİB Rehberi Bölüm B-I.1-5)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B.1  KURUCU SENEDİ — AŞ Kurucularına Tanınan Kâra İştirak Hakkı Belgesi (TTK Md.348)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Seçim",
+          null,
+          "Açıklama",
+          "GİB / TTK"
+        ],
+        [
+          "B.1.1  Kurucu senedinin aktife giriş tarihi (TTK tescil veya devir tarihi)",
+          null,
+          null,
+          "GG.AA.YYYY — Kuruluşta TTK tescil tarihi veya devir tarihinde devir belgesi",
+          null,
+          "GİB Rehberi Md.1",
+          null
+        ],
+        [
+          "B.1.2  Kurucu senedinin izlendiği hesap",
+          null,
+          null,
+          "248 Diğer Mali Duran Varlıklar önerilir",
+          null,
+          "110 veya 248 hesabı",
+          null
+        ],
+        [
+          "B.1.3  Kurucu senedi satış tarihi",
+          null,
+          null,
+          "GG.AA.YYYY — Devir tarihi",
+          null,
+          "TTK Md.348",
+          null
+        ],
+        [
+          "B.1.4  Satış bedeli (TL)",
+          null,
+          null,
+          "Yazılı devir sözleşmesindeki tutar",
+          null,
+          "Sözleşme",
+          null
+        ],
+        [
+          "B.1.5  Maliyet / Defter Değeri (TL)",
+          null,
+          null,
+          "Muhasebe kartındaki kayıtlı değer",
+          null,
+          "248/110 hesap kartı",
+          null
+        ],
+        [
+          "B.2  İNTİFA SENEDİ — Kâra ve/veya Tasfiye Payına İştirak Hakkı Belgesi (TTK Md.502)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Seçim",
+          null,
+          "Açıklama",
+          "TTK"
+        ],
+        [
+          "B.2.1  İntifa senedinin aktife giriş tarihi (düzenleme veya devir tarihi)",
+          null,
+          null,
+          "GG.AA.YYYY — Düzenlendiği veya devir alındığı tarih",
+          null,
+          "TTK Md.502",
+          null
+        ],
+        [
+          "B.2.2  İntifa senedinin niteliği",
+          null,
+          null,
+          "Kâra iştirak / Tasfiyeye iştirak / Her ikisi",
+          null,
+          "TTK Md.502",
+          null
+        ],
+        [
+          "B.2.3  İntifa senedinin izlendiği hesap",
+          null,
+          null,
+          "248 Diğer Mali Duran Varlıklar veya 110 Hisse Senetleri",
+          null,
+          "248 veya 110 hesabı",
+          null
+        ],
+        [
+          "B.2.4  Satış tarihi / Satış bedeli (TL)",
+          null,
+          null,
+          "GG.AA.YYYY — Devir sözleşmesindeki tutar",
+          null,
+          "Devir sözleşmesi",
+          null
+        ],
+        [
+          "B.2.5  Maliyet / Defter Değeri (TL)",
+          null,
+          null,
+          "Muhasebe kartındaki kayıtlı değer",
+          null,
+          "248/110 hesap kartı",
+          null
+        ],
+        [
+          "B.3  RÜÇHAN HAKKI — ★ 2 TAM YIL ŞARTI PRATİKTE HİÇBİR ZAMAN KARŞILANAMAZ — KRİTİK UYARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "RÜÇHAN HAKKI NEDİR (GİB Rehberi Md.3):\nAnonim şirketlerin sermaye artırımında, hisse senetlerini aktifinde bulunduran kurumların öncelikli yeni pay alma hakkıdır.\nBu haklar kullanılarak yeni hisse alınabileceği gibi satılabilmektedir. Satış kazancının %75'i (27/11/2024+: %50'si) istisna kapsamındadır.\nANCAK: TTK'ya göre kullanım süresi en fazla 15 gündür → 730 günlük aktifinde bulundurma şartı PRATİKTE HİÇBİR ZAMAN sağlanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Rüçhan Hakkı Parametresi",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Sonuç"
+        ],
+        [
+          "B.3.1  Sermaye artırım kararı tarihi (Rüçhan hakkı elde etme tarihi)",
+          null,
+          null,
+          "GG.AA.YYYY — Pay sahibi sıfatıyla hakkın doğduğu tarih",
+          null,
+          "HAYIR → İstisna Yok",
+          null
+        ],
+        [
+          "B.3.2  Rüçhan hakkı satış tarihi",
+          null,
+          null,
+          "GG.AA.YYYY — Kullanılmayan hakkın piyasada satışı",
+          null,
+          "HAYIR → İstisna Yok",
+          null
+        ],
+        [
+          "B.3.3  Elde Tutma Süresi (Gün) — 730 gün şartı",
+          null,
+          null,
+          "Otomatik: B.3.2 − B.3.1 (neredeyse hiç 730'a ulaşmaz)",
+          null,
+          "HAYIR → İstisna Yok",
+          null
+        ],
+        [
+          "B.4  GİRİŞİM SERMAYESİ YATIRIM FONU (GSYF) KATILMA PAYI — KVK 5/1-a Kapsamı Kazançlara Kaynak Oluşturan Fonlar (GİB Rehberi Md.5)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Md.5 TANIMI: 'Sermaye piyasası mevzuatına göre girişim sermayesi yatırım fonları, nitelikli yatırımcılardan katılma payı karşılığında toplanan para ya da iştirak paylarıyla, pay sahipleri hesabına, inançlı mülkiyet esaslarına göre, girişim sermayesi yatırımlarından oluşan portföyü işletmek amacıyla kurulan ve tüzel kişiliği bulunmayan mal varlığı'\n  ★ Kapsam: Yalnızca SPK'dan izin alarak faaliyette bulunan GİRİŞİM SERMAYESİ fonları. Para piyasası/tahvil-bono/karma fonlar → 298/299 analizi yapın.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "GSYF Parametresi",
+          null,
+          "Değer / Seçim",
+          null,
+          "Açıklama",
+          "GİB / SPK"
+        ],
+        [
+          "B.4.1  Fon türü: SPK'dan izinli GSYF mi?",
+          null,
+          "EVET-GSYF",
+          "Evet → 353 kapsamı. Hayır → Önce 298 (GSYO/GSYF) veya 299 (TL esaslı) analizi.",
+          null,
+          "GİB Rehberi Md.5",
+          null
+        ],
+        [
+          "B.4.2  GSYF katılma payının aktife giriş tarihi",
+          null,
+          null,
+          "GG.AA.YYYY — 118/248 hesabına ilk kayıt tarihi. 2 yıl bu tarihten sayılır.",
+          null,
+          "GİB Rehberi Md.10",
+          null
+        ],
+        [
+          "B.4.3  GSYF katılma payının izlendiği hesap",
+          null,
+          "118 Diğer MK",
+          "Elde tutma süresine göre. Uzun vadeli → 248 daha uygun.",
+          null,
+          "SPK/TFRS",
+          null
+        ],
+        [
+          "B.4.4  Satış tarihi ve satış bedeli (TL)",
+          null,
+          null,
+          "GG.AA.YYYY — Aracı kurum dekontu veya satış kaydı",
+          null,
+          "MKK/Aracı kurum",
+          null
+        ],
+        [
+          "B.4.5  GSYF katılma payı maliyet değeri (TL)",
+          null,
+          null,
+          "FIFO veya ağırlıklı ortalama maliyet — 118/248 kartı",
+          null,
+          "118/248 hesap kartı",
+          null
+        ],
+        [
+          "C. 2 TAM YIL (730 GÜN) AKTİFİNDE BULUNDURMA — SÜRE HESABI (GİB Rehberi Md.10)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SÜRE BAŞLANGICI: Araç türüne göre B bölümündeki ilgili aktife giriş tarihini kullanın. Rüçhan hakkı için C.4 daima HAYIR çıkacaktır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "GİB Rehberi"
+        ],
+        [
+          "C.1  Aktife Alınma Tarihi (Araç türüne göre B bölümündeki tarihi girin)",
+          null,
+          null,
+          "Kurucu: B.1.1 | İntifa: B.2.1 | GSYF: B.4.2 | Rüçhan: B.3.1 (daima yetersiz)",
+          null,
+          "GİB Md.10",
+          null
+        ],
+        [
+          "C.2  Satış / Elden Çıkarma Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY — Devir tescil veya fon satış tarihi",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  Elde Tutma Süresi (Gün)",
+          null,
+          "0",
+          "Otomatik: C.2 − C.1",
+          null,
+          "730 gün eşiği",
+          null
+        ],
+        [
+          "C.4  ★ 2 Tam Yıl (730 Gün) Şartı",
+          null,
+          "HAYIR — Süre Yetersiz / Rüçhan: İstisna Yok",
+          "Otomatik — Rüçhan için HAYIR beklenen sonuç",
+          null,
+          "730 gün",
+          null
+        ],
+        [
+          "D. İSTİSNA ORANI BELİRLEME — 27/11/2024 TARİH SINIRI (GİB Rehberi Bölüm B-I.1)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem / Durum",
+          "Satış Tarihi",
+          "İstisna Oranı",
+          null,
+          "Yasal Dayanak",
+          null
+        ],
+        [
+          "27/11/2024 ÖNCESİ satış",
+          null,
+          "27/11/2024 Öncesi",
+          "%75",
+          "KVK 5/1-e — Eski",
+          null,
+          null
+        ],
+        [
+          "27/11/2024 TARİHİNDEN İTİBAREN satış (bu tarih dahil)",
+          null,
+          "27/11/2024 ve Sonrası",
+          "%50",
+          "9160 s. CB Kararı — GÜNCEL",
+          null,
+          null
+        ],
+        [
+          "D.1  Bu satış için geçerli olan istisna oranı:",
+          null,
+          "27/11/2024 SONRASI → %50",
+          "C.2 Satış Tarihi'ne göre yukarıdaki tablodan seçin → E bölümündeki hesapta kullanılacak",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. SATIŞ KAZANCI / ZARARI VE İSTİSNA HESABI (GİB Rehberi Md.10)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAZANÇ: İstisna Tutarı = Kazanç × Oran → 549 Fon → Beyanname 353 (Kazancın Bulunması Halinde)\n  ZARAR: Zarar × Oran = KKEG + Giderler × Oran = KKEG (KVK 5/3 — 352 ile özdeş kural)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  Satış Bedeli",
+          null,
+          null,
+          "Sözleşme, borsa değeri veya aracı kurum dekontu",
+          null,
+          "Fiili satış bedeli (GİB Md.29)",
+          null
+        ],
+        [
+          "E.2  Maliyet / Defter Değeri",
+          null,
+          null,
+          "FIFO veya ağırlıklı ortalama maliyet",
+          null,
+          "118/248/110 hesap kartı",
+          null
+        ],
+        [
+          "E.3  Satış Giderleri",
+          null,
+          null,
+          "Aracılık komisyonu, noter, hukuki danışmanlık vb.",
+          null,
+          "KVK 5/3: Zarar varsa giderin orana denk payı KKEG",
+          null
+        ],
+        [
+          "E.4  SATIŞ KAZANCI / (ZARARI) [E.1 − E.2 − E.3]",
+          null,
+          "0",
+          "Pozitif = Kazanç | Negatif = Zarar",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.5  Seçilen İstisna Oranı (D.1'den)",
+          null,
+          null,
+          "D.1 seçiminden manuel girin (0.75 veya 0.50)",
+          null,
+          "27/11/2024 öncesi → 0.75 | Sonrası → 0.50",
+          null
+        ],
+        [
+          "E.6  ★ İSTİSNA TUTARI (Kazanç × Oran — Yalnızca Kazanç Varsa)",
+          null,
+          "0",
+          "→ 549 Fon → Beyanname 353",
+          null,
+          "Kazancın Bulunması Halinde",
+          null
+        ],
+        [
+          "E.7  Vergiye Tabi Kısım (E.4 − E.6 — Kazanç Varsa)",
+          null,
+          "0",
+          "KV matrahına dahil",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.8  ZARAR KKEG (Zarar × Oran — Yalnızca Zarar Varsa)",
+          null,
+          "0",
+          "Beyanname KKEG Tablosuna Eklenir — KVK 5/3",
+          null,
+          "Zarar × İstisna Oranı = KKEG",
+          null
+        ],
+        [
+          "E.9  Satış Giderleri KKEG (Gider × Oran — Yalnızca Zarar Varsa)",
+          null,
+          "0",
+          "Gider × İstisna Oranı = KKEG — KVK 5/3",
+          null,
+          "Giderlerin de orana denk payı KKEG",
+          null
+        ],
+        [
+          "E.10  549 FONA ALINACAK TUTAR (= E.6)",
+          null,
+          "0",
+          "İstisna edilen kazanç = Fon tutarı",
+          null,
+          "549 Özel Fonlar — 5 yıl",
+          null
+        ],
+        [
+          "F. 549 ÖZEL FONLAR HESABI TAKİBİ — 5 YIL ZORUNLU SÜRE (GİB Rehberi Md.19-22)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Kalemi",
+          null,
+          "Tutar / Tarih",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "F.1  Fona Alınacak Tutar (= E.10)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "İstisna tutarı = Fon tutarı",
+          null
+        ],
+        [
+          "F.2  Fona Alınma Son Tarihi",
+          null,
+          null,
+          "Satışı izleyen hesap döneminin başından KV beyan süresine kadar",
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "F.3  Fon Hesabına Alındı mı?",
+          null,
+          "EVET",
+          "EVET,HAYIR-İstisna Geçersiz",
+          null,
+          "Fon kaydı yoksa istisna tamamen geçersiz",
+          null
+        ],
+        [
+          "F.4  5 Yıl Tutma Süresi Sonu",
+          null,
+          null,
+          "Satış yılından itibaren 5. yıl sonu",
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "F.5  Fon Hesabından Erken Çekim Riski",
+          null,
+          "Yok",
+          "Yok,Var-Risk,Tasfiye-Risk",
+          null,
+          "Tasfiye = Otomatik çekim → Vergi ziyaı",
+          null
+        ],
+        [
+          "F.6  Satış Bedeli Tahsil Durumu (2. Takvim Yılı Sonu — GİB Md.25)",
+          null,
+          null,
+          "Satışı izleyen 2. takvim yılı sonuna kadar tahsil",
+          null,
+          "GG.AA.YYYY — Tahsil edilmezse vergi ziyaı",
+          null
+        ],
+        [
+          "F.7  Tahsil Aracı Türü (GİB Md.25)",
+          null,
+          "Nakit",
+          "Nakit,Altın (2 Yıl İçinde Nakde),Devlet Tahvili (2 Yıl İçinde Nakde),Hazine Bonosu (2 Yıl İçinde Nakde),BİST Hisse Senedi (2 Yıl İçinde Nakde)",
+          null,
+          "Nakit veya belirtilen araçlar — 2 yıl içinde nakde",
+          null
+        ],
+        [
+          "G. BEYANNAME SATIR 353 — SATIŞ KAZANCI İSTİSNASI SONUCU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "G.1  TOPLAM İSTİSNA → Beyanname Satır 353 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "E.6 — Kazanç × %75 veya %50",
+          null
+        ],
+        [
+          "G.2  ZARAR KKEG → Beyanname KKEG Tablosu (E.8 + E.9) — KVK 5/3",
+          null,
+          null,
+          null,
+          "0",
+          "Zarar × Oran + Gider × Oran = KKEG — Beyanname KKEG tablosuna",
+          null
+        ],
+        [
+          "KRİTİK UYARILAR:\n(1) RÜÇHAN HAKKI: 2 yıl şartı pratikte karşılanamaz → Satış kazancı vergiye tabi — 353 satırında istisna gösterilemez.\n(2) GSYF KATILMA PAYI: Yalnızca SPK'dan izinli Girişim Sermayesi Yatırım Fonları kapsam dahilindedir.\n(3) İSTİSNA ORANI: 27/11/2024 öncesi → %75 | 27/11/2024 ve sonrası → %50 (9160 s. CB Kararı).\n(4) 353 → 'Kazancın Bulunması Halinde' — zarar durumunda 353 satırı değil, KKEG tablosu kullanılır.\n(5) YİAKV (KVK 32/C) matrahından bu istisna DÜŞÜLEMEZ — matrahta kalır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G48",
+      "rows": [
+        [
+          "353 – KURUCU / İNTİFA / RÜÇHAN / GSYF KATILMA PAYI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | %75→%50 (27/11/2024) | 4 Araç Türü | Rüçhan: İstisna Yok | GSYF | Zarar KKEG | 549 Fon | Beyanname 353",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluk",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Araç Türü (A0.1)",
+          null,
+          null,
+          "Kurucu Senedi",
+          "Kurucu/İntifa/GSYF/Rüçhan",
+          null,
+          null
+        ],
+        [
+          "2 Yıl Şartı (C.4)",
+          null,
+          null,
+          "HAYIR — Süre Yetersiz / Rüçhan: İstisna Yok",
+          "EVET zorunlu — Rüçhan: HAYIR normal",
+          null,
+          null
+        ],
+        [
+          "Elde Tutma (Gün)",
+          null,
+          null,
+          "0",
+          "730 gün eşiği",
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı (D.1)",
+          null,
+          null,
+          "27/11/2024 SONRASI → %50",
+          "Seçilen oran",
+          null,
+          null
+        ],
+        [
+          "Satış Kazancı/Zarari (E.4)",
+          null,
+          null,
+          "0",
+          "Kazanç veya Zarar",
+          null,
+          null
+        ],
+        [
+          "353 İSTİSNA (E.6)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "ZARAR KKEG (E.8+E.9)",
+          null,
+          null,
+          "0",
+          "Zarar durumunda",
+          null,
+          null
+        ],
+        [
+          "549 Fon (F.1)",
+          null,
+          null,
+          "0",
+          "5 yıl tutulacak",
+          null,
+          null
+        ],
+        [
+          "B. 4 ARAÇ TÜRÜ — PRATİK UYGULAMA VE KARŞILAŞTIRMA (GİB Rehberi Mart 2026)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Araç Türü",
+          "Aktife Giriş Tarihi",
+          "2 Yıl Şartı",
+          "İstisna Oranı",
+          "Pratikte Durum",
+          "Beyanname"
+        ],
+        [
+          "Kurucu Senedi",
+          "TTK tescil tarihi veya devir tarihi",
+          "Mümkün — belge şart",
+          "27/11/2024- %75 | Sonrası %50",
+          "Nadir — belgesi zorunlu",
+          "353",
+          null
+        ],
+        [
+          "İntifa Senedi",
+          "Düzenlendiği/devir alındığı tarih",
+          "Mümkün — belge şart",
+          "27/11/2024- %75 | Sonrası %50",
+          "Nadir — belgesi zorunlu",
+          "353",
+          null
+        ],
+        [
+          "Rüçhan Hakkı",
+          "Sermaye artırım kararı tarihi",
+          "PRATİKTE İMKÂNSIZ (maks. 15 gün)",
+          "Teorik: %75/%50",
+          "İSTİSNA HİÇBİR ZAMAN UYGULANAMAZ",
+          "Yok — Vergiye Tabi",
+          null
+        ],
+        [
+          "GSYF Katılma Payı",
+          "118/248 muhasebe aktif kayıt tarihi",
+          "Mümkün — 2 yıl tutulmalı",
+          "27/11/2024- %75 | Sonrası %50",
+          "SPK izinli GSYF şart",
+          "353",
+          null
+        ],
+        [
+          "C. GSYF KATILMA PAYI — 5/1-a-3 (298) / 5/1-a-4 (299) vs 5/1-e (353) KARAR TABLOSU (GİB Rehberi Md.5)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "YF katılma payı satışında kapsam kodu kritik. 353 seçilmeden önce bu analizi tamamlayın.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "298 (KVK 5/1-a-3)",
+          null,
+          "299 (KVK 5/1-a-4)",
+          "353 (KVK 5/1-e)"
+        ],
+        [
+          "Kapsam",
+          null,
+          "GSYF / GSYO hisseleri",
+          "TL esaslı diğer fonlar (15.07.2023 öncesi iktisap)",
+          "SPK izinli GSYF katılma payları (GİB Md.5)",
+          null,
+          null
+        ],
+        [
+          "2 Yıl Şartı",
+          null,
+          "YOK (Süre şartı aranmaz)",
+          "YOK (Süre şartı aranmaz)",
+          "VAR — 730 gün zorunlu",
+          null,
+          null
+        ],
+        [
+          "Beyanname Bölümü",
+          null,
+          "Zarar Olsa Dahi İndirilecek",
+          "Zarar Olsa Dahi İndirilecek",
+          "Kazancın Bulunması Halinde",
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100 Tam İstisna",
+          "%100 Tam İstisna",
+          "27/11/2024- %75 | Sonrası %50",
+          null,
+          null
+        ],
+        [
+          "İktisap Tarihi Kısıtı",
+          null,
+          "Yok",
+          "15.07.2023 öncesi iktisap zorunlu",
+          "Yok",
+          null,
+          null
+        ],
+        [
+          "YİAKV Matrahı",
+          null,
+          "Düşülebilir (5/1-a kapsamı)",
+          "Düşülebilir (5/1-a kapsamı)",
+          "DÜŞÜLEMEZ (5/1-e)",
+          null,
+          null
+        ],
+        [
+          "Öncelik Sırası",
+          null,
+          "1. Tercih (GSYF/GSYO için)",
+          "2. Tercih (15.07.2023 öncesi TL fon)",
+          "3. Tercih (Kalan durumlar)",
+          null,
+          null
+        ],
+        [
+          "D. DENETİM KONTROL LİSTESİ (K1–K14) — GİB REHBERİ MART 2026",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama / GİB Rehberi",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ İstisna oranı doğru mu? 27/11/2024 öncesi/sonrası ayrımı yapıldı mı?",
+          null,
+          "9160 s. CB Kararı: 27/11/2024+ → %50. Öncesi → %75. Tüm 4 araç için geçerli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ RÜÇHAN HAKKI: 2 yıl şartı karşılanamadığı teyit edildi — İstisna uygulanmadı mı?",
+          null,
+          "TTK max 15 gün kullanım süresi → 730 gün imkânsız. Rüçhan satış kazancı vergiye tabi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "GSYF Katılma Payı: Önce 298/299 kapsam analizi yapıldı mı?",
+          null,
+          "298 (GSYF/GSYO) veya 299 (15.07.2023 öncesi TL fon) → Daha avantajlı. 353 son tercih.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ 2 Tam Yıl (730 Gün) Şartı — C.4 EVET veriyor mu?",
+          null,
+          "730 günden 1 gün eksik → İstisna yok. Muhasebe aktif kayıt tarihi esas.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "Araç türüne göre aktife giriş tarihi doğru belirlendi mi?",
+          null,
+          "Kurucu/İntifa: TTK tescil/devir tarihi. GSYF: Muhasebe aktif kayıt tarihi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "Araç türüne göre doğru muhasebe hesabı kullanılıyor mu?",
+          null,
+          "Kurucu/İntifa → 110 veya 248. GSYF → 118 veya 248. Tutarlı uygulanmalı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "★ Satış kazancı mı zarar mı? E.4 doğru belirlendi mi?",
+          null,
+          "Kazanç → E.6 = İstisna → Beyanname 353. Zarar → E.8+E.9 = KKEG → KKEG tablosu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "Zarar varsa E.8 + E.9 KKEG tablosuna eklendi mi?",
+          null,
+          "KVK 5/3: Zarar × Oran ve Giderler × Oran KKEG. Beyanname KKEG tablosunda görünmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "Satış bedeli fiili satış bedeli mi? Transfer fiyatlandırması?",
+          null,
+          "GİB Md.29: Fiili bedel esas. KVK Md.13: İlişkili kişi satışında emsal bedel.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "★ Satış bedeli 2. takvim yılı sonuna kadar tahsil edilecek mi?",
+          null,
+          "Nakit veya Altın/DT/HB/BİST hisseleri (2 yıl içinde nakde). Tahsil edilmezse → Vergi ziyaı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "★ İstisna tutarı (E.6) süresi içinde 549 hesabına alındı mı?",
+          null,
+          "Satışı izleyen dönem KV beyan süresi içinde. Fon kaydı yoksa istisna tamamen geçersiz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "5 Yıl Fon Tutma — Tasfiye / erken çekim riski?",
+          null,
+          "Tasfiye = Otomatik çekim → Vergi ziyaı. İflas erteleme = İstisna yok. Sermayeye ilave mümkün.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K13",
+          "Beyanname 353 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "353 → 'Kazancın Bulunması Halinde'. Zarar varsa 353 kullanılmaz — KKEG tablosu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K14",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G27",
+      "rows": [
+        [
+          "353 – KURUCU / İNTİFA / RÜÇHAN / GSYF KATILMA PAYI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 | %75/%50 Oran | 4 Araç Türü | Rüçhan: İstisna Yok | Zarar KKEG | 549 Fon",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Aşağıdaki kayıtlar örnek niteliğindedir. Araç türüne göre hesap adları değişmektedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — GSYF KATILMA PAYI SATIŞI / KURUCU-İNTİFA SENEDİ SATIŞI (KAZANÇLA)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "102 Bankalar / 120 Alıcılar",
+          "Satış bedeli tahsilatı",
+          "[Satış Bedeli]",
+          "—",
+          "Banka/Sözleşme"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "118 / 248 / 110 (Araç Türüne Göre)",
+          "GSYF: 118/248 | Kurucu/İntifa: 110/248 — defter değeriyle aktiften çıkış",
+          "—",
+          "[Defter Değeri]",
+          "Hesap kartı"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "645 MK Satış Kârı / 679 Diğer Olağandışı Kâr",
+          "Satış kazancı (E.4) — KVK 5/1-e | %75 (27/11/2024 öncesi) / %50 (sonrası) → Beyanname 353",
+          "—",
+          "[E.4 TL]",
+          "KV 353"
+        ],
+        [
+          "ORAN NOTU: 27/11/2024 ÖNCESİ → %75. 27/11/2024 SONRASI → %50 (9160 s. CB Kararı). Hem GSYF katılma payı hem kurucu/intifa senedi için geçerli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — 549 ÖZEL FONLAR HESABINA ALMA (Satışı İzleyen Dönem KV Beyan Süresine Kadar)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[KV Beyan]",
+          "645/679 Satış Kârı / Diğer Kâr",
+          "İstisna edilen satış kazancının gelir hesabından çıkarılması",
+          "[İstisna E.6]",
+          "—",
+          "E.6 tutarı"
+        ],
+        [
+          "Kr",
+          "[KV Beyan]",
+          "549 Özel Fonlar",
+          "KVK 5/1-e İstisna | %75/%50 | 5 yıl tutulacak (353 — Diğer MK Satış Kazancı İstisnası)",
+          "—",
+          "[İstisna E.6]",
+          "5 Yıl"
+        ],
+        [
+          "5 YIL KURALI: 5 yıl içinde işletmeden çekilemez. Sermayeye ilave mümkün. Tasfiye = Otomatik çekim → Vergi ziyaı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — RÜÇHAN HAKKI SATIŞI (İSTİSNA UYGULANAMAZ — VERGİYE TABİ)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "RÜÇHAN HAKKI: 2 yıl (730 gün) aktifinde bulundurma şartı TTK'dan kaynaklı 15 günlük kullanım süresi nedeniyle karşılanamaz. Satış kazancı vergiye tabi kurum kazancıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "102 Bankalar",
+          "Rüçhan hakkı satış bedeli — 2 yıl şartı karşılanamadı → İSTİSNA YOK",
+          "[Satış Bed.]",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "679 Diğer Olağandışı Kâr ve Gelirler",
+          "Rüçhan hakkı satış kazancı — KVK 5/1-e istisnası UYGULANAMAZ — VERGIYE TABİ",
+          "—",
+          "[Kazanç]",
+          "VERGİYE TABİ"
+        ],
+        [
+          "Beyanname 353 satırına istisna tutarı YAZILMAZ. Tüm kazanç KV matrahına dahil edilir. YMM notu dosyada bu husus açıkça belirtilmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 4 — ZARAR DURUMU VE KKEG (KVK 5/3 — TÜM ARAÇLAR İÇİN)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "102 Bankalar",
+          "Satış bedeli",
+          "[Satış Bedeli]",
+          "—",
+          "Banka/Sözleşme"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "689 Diğer Olağandışı Giderler",
+          "Satış zararının KKEG olan kısmı (E.8 = Zarar × %75/%50)",
+          "[E.8 KKEG]",
+          "—",
+          "KVK 5/3"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "689 Diğer Olağandışı Giderler",
+          "Satış giderlerinin KKEG olan kısmı (E.9 = Gider × %75/%50)",
+          "[E.9 KKEG]",
+          "—",
+          "KVK 5/3"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "118/248/110",
+          "Defter değeriyle aktiften çıkış",
+          "—",
+          "[Defter Değeri]",
+          "Hesap kartı"
+        ],
+        [
+          "ZARAR KKEG: Zarar × İstisna Oranı (0.75 veya 0.50) = KKEG + Giderler × İstisna Oranı = KKEG. Kalan kısım gider olarak indirilebilir. 352 ile özdeş kural (KVK 5/3).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "353 – KURUCU / İNTİFA / RÜÇHAN / GSYF KATILMA PAYI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | 9160 s. CB Kararı (27/11/2024) | TTK Rüçhan | GSYF Kapsam | Zarar KKEG | YMM Standardı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / GİB Rehberi Mart 2026",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK 5/1-e — 353 Kapsamındaki Araçlar ve Güncel Oran (GİB Rehberi Bölüm B-I.1-5)",
+          "KVK 5/1-e KAPSAMINDAKI ARAÇLAR (353):\n\n① KURUCU SENETLERİ (TTK Md.348): AŞ kurucularına tanınan kâra iştirak hakkı veren senetler. Hisse senedi değil.\n② İNTİFA SENETLERİ (TTK Md.502): Kâra ve/veya tasfiye payına iştirak hakkı veren senetler. Oy hakkı yok.\n③ RÜÇHAN HAKLARI (TTK Md.461): Sermaye artırımında öncelikli yeni pay alma hakkı.\n④ GİRİŞİM SERMAYESİ YATIRIM FONU (GSYF) KATILMA PAYLARI (GİB Md.5):\n   KVK 5/1-a kapsamında istisna kazançlarına kaynak oluşturan yatırım fonları.\n   SPK'dan izin alarak faaliyette bulunan girişim sermayesi fonlarının katılma payları.\n\nİSTİSNA ORAN DEĞİŞİMİ (GİB Rehberi Bölüm B-I.1):\n  → 27/11/2024 ÖNCESİ: %75 istisna (KVK 5/1-e).\n  → 27/11/2024 SONRASI: %50 istisna (9160 sayılı CB Kararı).\n  Bu değişiklik kurucu senetleri, intifa senetleri, rüçhan hakları ve\n  GSYF katılma paylarının tamamı için geçerlidir.\n\nBEYANNAME: 353 | Kazancın Bulunması Halinde | YİAKV matrahından DÜŞÜLEMEZ.",
+          "KVK 5/1-e | 9160 s. CB Kararı | TTK Md.348,461,502 | GİB Rehberi Mart 2026",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ Rüçhan Hakkı — 2 Yıl Şartı Pratikte Hiçbir Zaman Karşılanamaz",
+          "RÜÇHAN HAKKI (GİB Rehberi Md.3):\n'Anonim şirketler ile eshamlı komandit şirketlerin sermaye artırımına gitmeleri durumunda,\nbu şirketlerin hisse senetlerini aktifinde bulunduran kurumlar; yeni hisse senedi rüçhan\nhakkı kuponlarını başkalarına da satabilmektedirler. Söz konusu rüçhan haklarının satışından\nelde edilen kazançların %75'i (9160 s. CB Kararı gereğince 27/11/2024'ten itibaren %50'si)\nistisnadan yararlanabilir.'\n\nANCAK — 2 YIL ŞARTI (GİB Rehberi Md.10):\n'İstisna uygulamasına konu olacak ... rüçhan haklarının da en az iki tam yıl (730 gün)\nsüreyle kurumun aktifinde yer alması... gerekmektedir.'\n\nTTK SORUNU: Rüçhan hakkının kullanım süresi azami 15 gündür (TTK Md.461).\n→ 730 günlük aktifinde bulundurma şartı pratikte HİÇBİR ZAMAN sağlanamaz.\n→ Rüçhan hakkı satış kazancı vergiye tabi kurum kazancıdır.\n→ Beyanname 353 satırına istisna tutarı yazılamaz.\n\nYMM: Bu husus tasdik dosyasında açıkça belirtilmelidir. Rüçhan hakkı satışına\nistisna uygulamak en sık yapılan 353 hatasıdır.",
+          "GİB Rehberi Md.3, 10 | TTK Md.461 | KVK 5/1-e",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "GSYF Katılma Payı — Kapsam Analizi: 298/299 vs 353 (GİB Rehberi Md.5)",
+          "GİB Rehberi Md.5 — GSYF KATILMA PAYI TANIMI:\n'Sermaye piyasası mevzuatına göre girişim sermayesi yatırım fonları, nitelikli\nyatırımcılardan katılma payı karşılığında toplanan para ya da iştirak paylarıyla,\npay sahipleri hesabına, inançlı mülkiyet esaslarına göre, girişim sermayesi\nyatırımlarından oluşan portföyü işletmek amacıyla kurulan mal varlığı'\n\nKAPSAM ÖNCELİK SIRASI:\n1. GSYF/GSYO → 298 (KVK 5/1-a-3): Zarar olsa dahi / 2 yıl şartı yok\n2. TL esaslı diğer fonlar (15.07.2023 öncesi iktisap) → 299 (KVK 5/1-a-4): Daha avantajlı\n3. Geriye kalan durumlar → 353 (KVK 5/1-e): 2 yıl şartı var, %75/%50\n\n353 KULLANIM DURUMU: 15.07.2023 sonrası iktisap edilen veya 299 kapsamına girmeyen\nSPK izinli GSYF katılma payları için uygulanabilir.\n\nYMM: GSYF katılma payı satışında 298/299 analizi yapıldığı ve neden 353 seçildiği\ntasdik dosyasında mutlaka belgelenmelidir.",
+          "GİB Rehberi Md.5 | KVK 5/1-a-3 (298) | KVK 5/1-a-4 (299) | KVK 5/1-e (353)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Kurucu ve İntifa Senetleri — Pratik Uygulama (GİB Rehberi Md.1)",
+          "KURUCU SENETLERİ (TTK Md.348):\nGünümüzde son derece nadir. TTK'ya göre AŞ'lerde çıkarılabilir.\nHisse senedi değil — kâra iştirak belgesi. Oy hakkı vermez.\nAktife giriş tarihi: TTK tescil tarihi veya devir tarihinde devir belgesi.\nMuhasebe: 110 Hisse Senetleri veya 248 Diğer Mali Duran Varlıklar.\n\nİNTİFA SENETLERİ (TTK Md.502):\nHisse senedi değil — kâra ve/veya tasfiye payına iştirak hakkı tanır.\nSermaye payı temsil etmez. Oy hakkı yoktur.\nGenellikle bedelsiz devredilen paylar karşılığında verilir.\nAktife giriş tarihi: Düzenlendiği veya devir alındığı tarih.\nMuhasebe: 248 veya 110 hesabında izlenebilir.\n\nYMM: Her iki araç için aktife giriş tarihi belgesi zorunludur.\n2 yıl şartı sağlanabilir ancak belge eksikliği riski yüksektir.\nBelge eksikliğinde istisna reddedilir.",
+          "TTK Md.348, 502 | KVK 5/1-e | GİB Rehberi Md.1",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı (GİB Rehberi Bölüm C)",
+          "49 No.lu Tebliğ: >=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN — GSYF/Kurucu/İntifa (27/11/2024 SONRASI — %50):\n'...en az iki tam yıl süreyle kurum aktifinde yer alan [Araç Türü] satışından doğan\n  kazancın 9160 sayılı Cumhurbaşkanı Kararı kapsamında %50'si olan [tutar] TL\n  kurumlar vergisinden istisna edilmiş, söz konusu kazanç [tarih] tarihine kadar\n  549 Özel Fonlar hesabına alınmıştır.'\n\nKULLANMAYIN:\n'...rüçhan hakkı satışından istisna uygulanmıştır' → YANLIŞ! (2 yıl şartı karşılanamaz)\n'...%75 istisna uygulanmıştır' (27/11/2024 sonrası satış → %50)\n'...YF katılma payında 298/299 analizi yapılmaksızın 353 seçilmiştir' → Risk\n\nKRİTİK RİSK ALANLARI:\n(1) Rüçhan hakkı satışına 353 istisnası uygulamak — en sık hata.\n(2) 27/11/2024 sonrası satışta %75 oran kullanmak — yanlış oran.\n(3) GSYF katılma payında 298/299 kapsamını atlamak.\n(4) Fon kaydı yapmadan istisna uygulamak.\n(5) Zarar durumunda KKEG beyan etmemek.",
+          "49 No.lu Tebliğ | GİB Rehberi Mart 2026 Bölüm C | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB REHBERİ MART 2026 KAPANIŞ (353): 9160 s. CB Kararı ile 27/11/2024'ten itibaren oran %50. Rüçhan hakkında 2 yıl şartı pratikte karşılanamaz — en sık yapılan hata. GSYF katılma payında önce 298/299 analizi zorunlu. Zarar durumunda KKEG kuralı geçerli (KVK 5/3). YMM müteselsil sorumluluk: SM-SMMM-YMM K. Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F35",
+      "rows": [
+        [
+          "353 – KURUCU / İNTİFA / RÜÇHAN / GSYF KATILMA PAYI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | %75→%50 (27/11/2024) | 4 Araç | Rüçhan: İstisna Yok | 549 Fon | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (Tüm Araç Türleri İçin)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ İstisna Oranını Belgeleyen Tarih Analizi (27/11/2024 Sınırı)",
+          "Satış tarihi → 27/11/2024 öncesi = %75 | Sonrası = %50 (9160 s. CB Kararı).\nBu çalışma kâğıdı D bölümü + satış sözleşmesi tarihi ile birlikte dosyada yer almalı.",
+          "Bu çalışma kâğıdı D bölümü",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Araç Türünü Kanıtlayan Belge",
+          "Kurucu Senedi: TTK tescil belgesi + kurucu senet metni.\nİntifa Senedi: TTK Md.502 kapsamında intifa senedi belgesi.\nGSYF: SPK'dan izinli fon belgesi veya MKK hesap ekstresi.",
+          "Şirket sicil belgesi / Fon belgesi / MKK portal",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Aktifinde Bulundurma Süresini İspat Eden Belge (2 Yıl)",
+          "118/248/110 hesabında 730 gün kayıtlı olduğunu gösteren muhasebe ekstresi.\nAktife giriş tarihi: Araç türüne göre B bölümündeki ilgili satır.",
+          "Muhasebe hesap ekstresi (ilk kayıt tarihinden itibaren)",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Satış Sözleşmesi / Devir Belgesi / Aracı Kurum Dekontu",
+          "Satış bedeli, satış tarihi, alıcı bilgileri açık.\nGSYF: MKK dekontu veya aracı kurum satış belgesi.",
+          "Devir sözleşmesi / Aracı kurum dekontu / Borsa kaydı",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Satış Kazancı / Zarar Hesaplama Tablosu (E.4)",
+          "E.4 = Satış Bedeli − Maliyet − Satış Giderleri.\nKazanç → E.6 =%75/%50. Zarar → E.8+E.9 = KKEG.",
+          "Bu çalışma kâğıdı E bölümü",
+          null
+        ],
+        [
+          null,
+          "6",
+          "★ 549 Fon Hesabına Alınma Belgesi (Muhasebe Kaydı)",
+          "İstisna tutarının (E.6) 549 hesabına kaydedildiğini gösteren yevmiye. Zamanlama kritik.",
+          "Yevmiye defteri / 549 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KV Beyannamesi Taslağı — 353. Satır",
+          "353 tutarının E.6 ile uyumlu. 'Kazancın Bulunması Halinde' bölümünde.\nZarar varsa 353 değil KKEG tablosu.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — ARAÇ TÜRÜNE ÖZGÜ EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "GSYF Katılma Payı: 298/299 Kapsam Analiz Belgesi",
+          "298/299 analizi yapıldığı ve neden 353 seçildiği belgelenmelidir.\n15.07.2023 sonrası iktisap veya 299 kapsamı dışı kalan fon → 353 seçim gerekçesi.",
+          "Fon bilgi formu / İzahname / KAP fon portföy bilgisi",
+          null
+        ],
+        [
+          null,
+          "9",
+          "★ Rüçhan Hakkı: Sermaye Artırım Kararı + İstisna UYGULANMADIĞI Notu",
+          "Rüçhan hakkı → 2 yıl şartı karşılanamaz → İstisna yok → Satış kazancı vergiye tabi.\nTasdik dosyasında bu husus açıkça belirtilmeli.",
+          "Genel kurul kararı + Sermaye artırım tescil belgesi",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Kurucu/İntifa Senedi: TTK Tescil ve Devir Belgesi",
+          "Kurucu: AŞ kuruluş sözleşmesi + TTK tescil + Senet metni.\nİntifa: TTK Md.502 kapsamında GK kararı + düzenleme belgesi + devir tarihi.",
+          "Ticaret sicil belgesi + Senet metni + Devir sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "11",
+          "Zarar Durumu: KKEG Hesaplama Tablosu (E.8 + E.9)",
+          "Zarar × İstisna Oranı = KKEG + Giderler × İstisna Oranı = KKEG.\nBeyanname KKEG tablosuna eklenen tutarlar ile uyum.",
+          "Bu çalışma kâğıdı E.8+E.9 + Beyanname KKEG ekstresi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ İstisna oranı doğru mu? 27/11/2024 öncesi/sonrası ayrımı?",
+          "9160 s. CB Kararı: 27/11/2024+ → %50. Öncesi → %75. Tüm 4 araç için.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ RÜÇHAN HAKKI: İstisna uygulanmadığı ve kazancın vergiye tabi olduğu teyit edildi mi?",
+          "2 yıl şartı karşılanamaz. Beyanname 353 doldurulmaz. Tasdik dosyasında not düşülmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "GSYF Katılma Payı: Önce 298/299 analizi yapıldı mı? Neden 353 seçildiği belgelendi mi?",
+          "298 (GSYF/GSYO) veya 299 (TL esaslı, 15.07.2023 öncesi) → Daha avantajlı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ 2 Tam Yıl (730 gün) şartı — C.4 EVET veriyor mu?",
+          "730 gün. 1 gün eksik → İstisna yok. Muhasebe aktif kayıt tarihi esas.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Araç türüne göre aktife giriş tarihi doğru belgesi ile ispat edildi mi?",
+          "Kurucu/İntifa → TTK tescil/devir. GSYF → Muhasebe aktif tarihi.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "★ Satış kazancı mı zarar mı? Doğru kategoride işlem yapıldı mı?",
+          "Kazanç → E.6 = İstisna → 353. Zarar → E.8+E.9 = KKEG tablosu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Zarar varsa E.8 + E.9 KKEG tablosuna eklendi mi?",
+          "KVK 5/3: Zarar × Oran + Gider × Oran = KKEG.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★ Satış bedeli 2. takvim yılı sonuna kadar tahsil edilecek mi?",
+          "Nakit veya Altın/DT/HB/BİST (2 yıl içinde nakde). Tahsil edilmezse → Vergi ziyaı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "★ İstisna tutarı süresi içinde 549 hesabına alındı mı?",
+          "Satışı izleyen dönem KV beyan süresi içinde. Fon kaydı yoksa istisna geçersiz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "Beyanname 353 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar varsa 353 kullanılmaz — KKEG tablosu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S11",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB Rehberi Mart 2026 (Yayın No:601). Kritik güncellemeler: (1) 9160 s. CB Kararı: 27/11/2024+ → %50 oran (tüm 4 araç için). (2) Rüçhan hakkında 2 yıl şartı pratikte karşılanamaz — istisna uygulanamaz. (3) GSYF katılma payında önce 298/299 analizi zorunlu. (4) Zarar durumunda KVK 5/3 KKEG kuralı geçerli. (5) Fon kaydı yoksa istisna tamamen geçersiz. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

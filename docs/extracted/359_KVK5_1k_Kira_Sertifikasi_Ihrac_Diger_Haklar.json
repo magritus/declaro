@@ -1,0 +1,2006 @@
+{
+  "file": "359_KVK5_1k_Kira_Sertifikasi_Ihrac_Diger_Haklar.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G81",
+      "rows": [
+        [
+          "359 – KİRA SERTİFİKASI İHRACININ AMACIYLA VARLIK VE HAKLARIN SATIŞINDAN DOĞAN KAZANÇLARDA İSTİSNA (DİĞER — HAKLAR / MADDİ OLMAYAN VARLIKLAR) | KVK Md.5/1-k | BEYANNAME SATIR 359 | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-k | %100 Tam İstisna | HAKLAR / MADDİ OLMAYAN VARLIKLAR | Kurucu → SPK Lisanslı VKŞ | Kira Sertifikası İhraç Amacı | Geri Alım Zorunlu Değil | Beyanname Satır 359 — Kazancın Bulunması Halinde | GİB Emsal En Düşük — Özelge Zorunluluğu En Yüksek",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 359'UN SETDEKI YERİ — KVK 5/1-k 'Her Türlü Varlık ve HAK':\n  357 = Taşınır Varlıklar (Makine/Araç/Ekipman) | 358 = Taşınmaz Varlıklar (Bina/Arsa) | 359 = HAKLAR (Patent/Marka/Telif/Yazılım/İmtiyaz/Know-how — tüm maddi olmayan değerler)\n  HAKLAR kapsamı: (1) Tescilli: Patent, faydalı model, marka, tasarım → TPMK belgesi zorunlu. (2) Tescilsiz: Telif hakkı, know-how → Devir sözleşmesi + Tespit belgesi. (3) Kamu kaynaklı: İmtiyaz/ruhsat → Özel izin gerekebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "MEKANİZMA: Kurucu hakları VKŞ'ye devreder → VKŞ bu haklar karşılığında kira sertifikası ihraç eder → Yatırımcılar sukuk satın alır → VKŞ hasılatı kurucuya iletir → Sukuk vadesi boyunca kira/royalty geliri yatırımcılara ödenir → Devir kazancı → %100 İstisna (359) → 549 Fon → Sukuk vadesinde amortize. Tapu yok — TPMK veya devir sözleşmesi ile hak devri tamamlanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Devredilen varlık HAK mı? (359 = Maddi Olmayan Varlık — Taşınır için 357, Taşınmaz için 358)",
+          null,
+          null,
+          null,
+          "EVET — Hak (Maddi Olmayan)",
+          "359: Patent, faydalı model, marka, telif hakkı, yazılım lisansı, imtiyaz hakkı, know-how, ticari sır vb. Maddi olmayan, tapu siciline kayıtlı olmayan değerler. Fiziki taşınır (makine/araç) → 357. Taşınmaz (bina/arsa) → 358.",
+          null
+        ],
+        [
+          "A0.2  ★ Alıcı kurum: SPK lisanslı Varlık Kiralama Şirketi (VKŞ) mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: 5/1-k yalnızca SPK lisanslı VKŞ'ye yapılan devirler için. BDDK lisanslı FK/banka → 5/1-j (354/355/356) kapsamına girer — 5/1-k değil. SPK VKŞ listesinden teyit zorunludur.",
+          null
+        ],
+        [
+          "A0.3  ★ Devrin AMACI münhasıran kira sertifikası ihracını mümkün kılmak mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK — 5/1-k'nın ÖZGÜN KOŞULU: Devir yalnızca kira sertifikası ihracı amacıyla yapılmış olmalıdır. İhraç amacı SPK onaylı izahname/ihraç belgesiyle belgelenmeli.",
+          null
+        ],
+        [
+          "A0.4  Devredilen Hakkın Türü Belirlendi mi? Kapsam Teyidi Yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Hak türü: Tescilli mi (Patent/Marka/Tasarım → TPMK), Tescilsiz mi (Telif/Know-how), Kamu kaynaklı mı (İmtiyaz/Ruhsat → Özel izin gerekebilir). Her hak türünün farklı devir belgesi ve kapsam analizi gerekir.",
+          null
+        ],
+        [
+          "A0.5  SPK onaylı kira sertifikası izahnamesi/ihraç belgesi mevcut mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Haklara dayalı kira sertifikası için SPK onaylı izahname/ihraç belgesi zorunludur. İhraç amacı bu belgeyle kanıtlanır.",
+          null
+        ],
+        [
+          "A0.6  ★ İstisna edilen kazanç 549 hesabına alınacak ve sukuk vadesinde amortize edilecek mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "354/355/356/357/358 ile özdeş fon mekanizması. Devir kazancı 549'a alınır, sukuk vadesine paralel amortize edilir.",
+          null
+        ],
+        [
+          "A0.7  ★ GİB Özelgesi Alındı mı veya Alınması Planlanıyor mu?",
+          null,
+          null,
+          null,
+          "Planlanıyor",
+          "ŞİDDETLE TAVSİYE: 359 setimizin GİB emsal yoğunluğu en düşük dosyasıdır. Haklara dayalı sukuk yapıları yurt içinde çok az uygulanmıştır. Hak türüne ve sukuk yapısına göre özelge alınması YMM müteselsil sorumluluğu açısından zorunludur.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL veya >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (VKŞ), A0.3 (ihraç amacı), A0.7 (Özelge!) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurucu (Hak Devredici) Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Hakkı devreden — 5/1-k istisnası uygulayan kurum",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "VKŞ'nin Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Alıcı — SPK lisanslı Varlık Kiralama Şirketi",
+          null
+        ],
+        [
+          "VKŞ'nin SPK Lisans/Kuruluş No",
+          null,
+          null,
+          null,
+          null,
+          "SPK onaylı VKŞ tanımlayıcısı",
+          null
+        ],
+        [
+          "Kira Sertifikası ISIN / İhraç Kodu",
+          null,
+          null,
+          null,
+          null,
+          "Sermaye piyasası aracı tanımlayıcısı",
+          null
+        ],
+        [
+          "Hak Devir Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Hakkın VKŞ'ye devir tarihi (sözleşme veya tescil)",
+          null
+        ],
+        [
+          "Sukuk İhraç Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "Sukuk Vade Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Hak geri devir senaryosunun başlayacağı tarih",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. DEVREDILEN HAK KİMLİĞİ — 359'UN ÖZGÜN KAPSAMI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "359 SETDEKI KAPSAM SINIRI: KVK 5/1-k 'her türlü varlık ve hakları' → 357 = Fiziki Taşınır, 358 = Taşınmaz, 359 = HAKLAR (maddi olmayan tüm değerler). Hak türüne göre farklı devir belgesi: Tescilli (TPMK) / Tescilsiz (sözleşme) / Kamu (özel izin). Muhasebe: 260/263/267/268 hesapları.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "B.1  Devredilen Hak Türü",
+          null,
+          "Patent/Faydalı Model",
+          "Her hak türü farklı devir belgesi ve kapsam analizi gerektirir",
+          null,
+          "B bölümü detay — hak türüne göre",
+          null
+        ],
+        [
+          "B.2  Hakkın Tanımı ve Tescil/Belge No",
+          null,
+          null,
+          "Tescilli: TPMK sicil/belge no. Tescilsiz: Açıklamalı tanım + Tespit belgesi.",
+          null,
+          "Tekil tanımlama — hakkın sınırları net olmalı",
+          null
+        ],
+        [
+          "B.3  Hakkın Muhasebedeki Net Defter Değeri (TL)",
+          null,
+          null,
+          "260 Haklar / 263 Ar-Ge / 267 Diğer Maddi Olmayan Varlık — 268 İtfa Payı düşüldükten sonra.",
+          null,
+          "260/263/267 hesap kartı ile uyumlu",
+          null
+        ],
+        [
+          "B.4  VKŞ'ye Devir Bedeli (TL)",
+          null,
+          null,
+          "Piyasa değerine uygun — maddi olmayan varlık değerlemesi özelleşmiş metodoloji gerektirir.",
+          null,
+          "Uzman değerleme raporu zorunlu",
+          null
+        ],
+        [
+          "B.5  Bağımsız Değerleme Raporu Bedeli (TL)",
+          null,
+          null,
+          "Akredite değerleme kuruluşu — maddi olmayan varlık değerleme metodolojisi (Piyasa/Maliyet/Gelir yaklaşımı). SPK bağlamında kritik.",
+          null,
+          "Değerleme raporu 359'da zorunlu sayılmalı",
+          null
+        ],
+        [
+          "B.6  Devir Giderleri (TL)",
+          null,
+          null,
+          "TPMK devir harcı, noter, hukuki danışmanlık, SPK harçları vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "B.7  Hak Devir Belgesi Düzenlendi mi? (Türüne Göre: TPMK/Sözleşme/İzin)",
+          null,
+          "EVET",
+          "Tescilli (Patent/Marka): TPMK'ya devir tescili + devir sözleşmesi. Tescilsiz (Telif/Know-how): Devir/temlik sözleşmesi + tespit belgesi. Kamu kaynaklı (İmtiyaz): İlgili kamu kurumu izni + devir onayı.",
+          null,
+          "Aktiften çıkış muhasebe kaydı ile uyumlu",
+          null
+        ],
+        [
+          "B.8  Hak Tescili/Devri Tamamlandı mı? Etkinlik Tarihi?",
+          null,
+          null,
+          "Tescilli: TPMK devir tescil onay tarihi. Tescilsiz: Devir sözleşmesi imza tarihi veya VKŞ'ye fiili teslim tarihi.",
+          null,
+          "İstisnanın başladığı tarih = Devir tarihi",
+          null
+        ],
+        [
+          "C. VKŞ NİTELİK TEYİDİ VE HAKLARA DAYALI KİRA SERTİFİKASI YAPISI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "357/358 ile özdeş VKŞ kontrolü. Haklara dayalı kira sertifikası setimizin en az emsal gören yapısıdır. İcara (kiralama) dışında Murabaha/Wakala yapısı haklar için daha uygun olabilir. SPK'nın haklara dayalı sukuk için ek gereklilikleri olabilir — güncel tebliğ takibi şart.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Yasal Dayanak"
+        ],
+        [
+          "C.1  VKŞ SPK Lisansı Mevcut mu?",
+          null,
+          "EVET",
+          "SPK'nın resmi VKŞ listesinden teyit. 6362 s.K. kapsamında.",
+          null,
+          "6362 s.K.",
+          null
+        ],
+        [
+          "C.2  Sukuk Türü — Haklara Dayalı En Uygun Yapı",
+          null,
+          "Wakala (Vekâlet Bazlı)",
+          "Haklar için Wakala genellikle daha uygun (haktan elde edilen getiri VKŞ'ye yönlendirilir). İcara: Hakkın kullanım hakkının kiralanması (lisans benzeri). Özelge alın.",
+          null,
+          "SPK Sukuk Tebliği",
+          null
+        ],
+        [
+          "C.3  SPK Onaylı İzahname / İhraç Belgesi Mevcut mu?",
+          null,
+          "EVET",
+          "Haklara dayalı sukuk için SPK onaylı ihraç belgesi — özellikle hazırlanmış olabilir.",
+          null,
+          "SPK / 6362 s.K.",
+          null
+        ],
+        [
+          "C.4  Kira Sertifikası İhraç Tutarı (TL)",
+          null,
+          null,
+          "Genellikle devir bedeline eşit (B.4)",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.5  Sukuk Vade Süresi (Ay/Yıl)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C.6  Sukuk Vade Süresi (Ay — Otomatik)",
+          null,
+          "0",
+          "Fon amortizasyon süresi",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.7  KAP Bildirimleri Yapıldı mı?",
+          null,
+          "EVET",
+          "Halka açık ihraçlarda KAP bildirimi zorunludur.",
+          null,
+          "KAP / SPK",
+          null
+        ],
+        [
+          "D. HAK GERİ DEVRİ OPSİYONELLİĞİ VE VADE SONU MEKANİZMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "357/358 ile özdeş: Geri alım ZORUNLU DEĞİL — ihraç amacı yeterli. Haklar için geri devir daha da karmaşıktır: Tescilli hak → TPMK'ya geri devir tescili. Tescilsiz hak → Sözleşmeyle geri devir. Kamu kaynaklı hak → İlgili kurum onayı gerekebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D.1  Sukuk Yapısında Hak Geri Devri Planlanıyor mu?",
+          null,
+          null,
+          "Opsiyonel — Kararlaştırılmadı",
+          null,
+          "5/1-k'da geri devir zorunlu değil. 357/358 ile aynı. Geri devir taahhütlü ise 5/1-j özelliği taşıyabilir — özelge alın.",
+          null
+        ],
+        [
+          "D.2  Geri Devir Planlanıyorsa: Hak Türüne Göre Yöntemi",
+          null,
+          null,
+          "Uygulanmıyor",
+          null,
+          "Tescilli: TPMK geri devir tescili. Tescilsiz: Yeni devir sözleşmesi. Kamu kaynaklı: İlgili bakanlık/kurum onayı gerekebilir.",
+          null
+        ],
+        [
+          "D.3  5/1-k (359) mı 5/1-j mi Doğru Bent? Seçim Gerekçesi?",
+          null,
+          null,
+          "5/1-k (359) — İhraç Amacı, Geri Devir Opsiyonel",
+          null,
+          "Geri devir taahhütlü → 5/1-j özelliği. İhraç amacı + Opsiyonel → 5/1-k. Haklar için bu ayrım özellikle hassastır — özelge şiddetle tavsiye edilir.",
+          null
+        ],
+        [
+          "E. HAK DEVİR KAZANCI VE %100 İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "357/358 ile özdeş formül — fark: Defter değeri 260/263/267 hesapları. Maddi olmayan varlık değerlemesi (B.5) özelleşmiş metodoloji gerektirir. E.7 değerleme uyum farkı: SPK bağlamı ve KVK Md.13 emsal bedel riski birlikte değerlendirilmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  VKŞ'ye Hak Devir Bedeli",
+          null,
+          "0",
+          "B.4'ten otomatik",
+          null,
+          "VKŞ'nin satın alma bedeli",
+          null
+        ],
+        [
+          "E.2  Hakkın Net Defter Değeri (260/263/267 − 268)",
+          null,
+          "0",
+          "B.3'ten otomatik",
+          null,
+          "İtfa sonrası net kayıtlı değer",
+          null
+        ],
+        [
+          "E.3  Devir Giderleri (TPMK/Nobel/SPK Harçları)",
+          null,
+          "0",
+          "B.6'dan otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.4  DEVİR KAZANCI = E.1 − E.2 − E.3",
+          null,
+          "0",
+          "Pozitif = Kazanç | Negatif = Zarar",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.5  DURUM",
+          null,
+          "SIFIR",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.6  5/1-k İSTİSNA TUTARI (%100)",
+          null,
+          "0",
+          "%100 Tam İstisna → 549 Hesabına → Beyanname 359",
+          null,
+          "→ F bölümü fon hesabı",
+          null
+        ],
+        [
+          "E.7  Değerleme Uyum Farkı (E.1 − B.5)",
+          null,
+          "0",
+          "Devir bedeli - Değerleme farkı (0'a yakın beklenir)",
+          null,
+          "359'da bu fark kritik: Maddi olmayan değerleme subjektif",
+          null
+        ],
+        [
+          "F. 549 ÖZEL FON HESABI VE SUKUK VADESİNDE AMORTİZASYON",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354/355/356/357/358 ile özdeş mekanizma. Devir yılında E.6 tutarı 549'a alınır. Her dönem sukuk vadesine paralel hak getirisi/royalty ödemelerine orantılı fon azalır. Sukuk vadesi sonunda 549 sıfır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Kalemi",
+          null,
+          "Tutar / Oran",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "F.1  Başlangıç Fon Tutarı (= E.6 — Devir Yılında 549'a Alınacak)",
+          null,
+          "0",
+          "İstisna kazancının tamamı",
+          null,
+          "Devir yılı — 549 hesabına",
+          null
+        ],
+        [
+          "F.2  Toplam Sukuk Getiri/Royalty Ödemesi (TL — Tüm Vade)",
+          null,
+          null,
+          "Sukuk vadesindeki toplam hak getirisi/royalty ödemeleri",
+          null,
+          "Amortizasyon paydası",
+          null
+        ],
+        [
+          "F.3  Cari Dönem Ödeme (TL — Bu Hesap Döneminde)",
+          null,
+          null,
+          "Bu dönemde VKŞ'ye yapılan hak getirisi/royalty ödemesi",
+          null,
+          "Dekont ve sözleşmeyle uyumlu",
+          null
+        ],
+        [
+          "F.4  Cari Dönem Amortizasyon Oranı (%)",
+          null,
+          "0",
+          "#NAME?",
+          null,
+          "Otomatik",
+          null
+        ],
+        [
+          "F.5  Cari Dönem Fon Azalışı = F.1 × F.4/100",
+          null,
+          "0",
+          "Bu dönem 549'dan düşülecek",
+          null,
+          "→ Muhasebe fon amortizasyon kaydı",
+          null
+        ],
+        [
+          "F.6  Dönem Sonu 549 Fon Bakiyesi (Tahmini)",
+          null,
+          "0",
+          "Kalan amortize edilecek fon",
+          null,
+          "Gelecek dönemler bakiyesi",
+          null
+        ],
+        [
+          "G. BEYANNAME 359 — KVK 5/1-k KİRA SERTİFİKASI İHRACI (HAKLAR) İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "G.1  TOPLAM İSTİSNA → Beyanname Satır 359 (Kazancın Bulunması Halinde — %100 — DEVİR YILI)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "E.6 = Hak Devir Kazancı × %100"
+        ],
+        [
+          "KRİTİK UYARILAR: (1) HAK TÜRÜ: Her hak türünün farklı devir belgesi var — TPMK (tescilli) / Devir sözleşmesi (tescilsiz) / Kamu izni (imtiyaz). (2) DEĞERLEME: Maddi olmayan varlık değerlemesi subjektif — uzman raporu zorunlu sayılmalı. (3) ÖZELGE: 359 GİB emsal yoğunluğu en düşük dosya — özelge alınması ŞİDDETLE tavsiye edilir. (4) 359 yalnızca devir yılında — sonraki yıllarda yazılmaz. (5) Tescilsiz haklar (know-how/ticari sır) için devir etkinliğinin kanıtlanması güçtür.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H76",
+      "rows": [
+        [
+          "359 – KİRA SERTİFİKASI İHRACI (HAKLAR/MADDİ OLMAYAN) | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-k | %100 İstisna | Haklar / Maddi Olmayan Varlıklar | Beyanname 359 | SPK Lisanslı VKŞ | İhraç Amacı Esaslı | Geri Devir Opsiyonel | 357 (Taşınır) ve 358 (Taşınmaz)'ın HAK Karşılığı | GİB Emsal En Az",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "Hak Türü (B.1)",
+          null,
+          null,
+          "Patent/Faydalı Model",
+          "Patent/Marka/Telif/vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "VKŞ SPK Lisansı (A0.2)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "İhraç Amacı Teyidi (A0.3)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "Hak Devir Belgesi (B.7)",
+          null,
+          null,
+          "EVET",
+          "TPMK/Sözleşme/İzin",
+          null,
+          null,
+          null
+        ],
+        [
+          "Sukuk Türü (C.2)",
+          null,
+          null,
+          "Wakala (Vekâlet Bazlı)",
+          "Wakala/İcara/vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Devir Kazancı (E.4)",
+          null,
+          null,
+          "0",
+          "Brüt kazanç",
+          null,
+          null,
+          null
+        ],
+        [
+          "359 İSTİSNA TUTARI %100 (E.6)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Başlangıç Fon (F.1)",
+          null,
+          null,
+          "0",
+          "549 Hesabı başlangıcı",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Özelgesi Durumu (A0.7)",
+          null,
+          null,
+          "Planlanıyor",
+          "Planlanıyor/Alındı",
+          null,
+          null,
+          null
+        ],
+        [
+          "B. HAK TÜRLERİ VE 359 KAPSAMINDA DEĞERLENDİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her hak türü farklı devir belgesi, değerleme metodolojisi ve SPK riski taşır. 5/1-k kapsamı ve özelge gerekliliği hak türüne göre değişmektedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hak Türü",
+          null,
+          "Tescil Durumu",
+          "5/1-k Kapsamı?",
+          "Devir Belgesi",
+          "Özelge?",
+          null
+        ],
+        [
+          "Patent / Faydalı Model / Tasarım",
+          null,
+          "Tescilli (TPMK)",
+          "EVET ✓",
+          "TPMK devir tescili + Devir sözleşmesi",
+          "Tavsiye",
+          null,
+          null
+        ],
+        [
+          "Marka / Coğrafi İşaret",
+          null,
+          "Tescilli (TPMK)",
+          "EVET ✓",
+          "TPMK marka devir tescili + Devir sözleşmesi",
+          "Tavsiye",
+          null,
+          null
+        ],
+        [
+          "Telif Hakkı (Yazarlık/Bestecillik)",
+          null,
+          "Tescilsiz",
+          "EVET ✓",
+          "Devir/Temlik sözleşmesi + Eser ispat belgesi",
+          "Tavsiye",
+          null,
+          null
+        ],
+        [
+          "Yazılım Lisansı / Kaynak Kodu",
+          null,
+          "Tescilsiz",
+          "EVET ✓",
+          "Lisans devir sözleşmesi + Kaynak kodu teslim tutanağı",
+          "Tavsiye",
+          null,
+          null
+        ],
+        [
+          "Know-how / Ticari Sır",
+          null,
+          "Tescilsiz",
+          "KOŞULLU ⚠",
+          "Gizlilik sözleşmesi + Tespit belgesi + Değerleme",
+          "ZORUNLU",
+          null,
+          null
+        ],
+        [
+          "İmtiyaz / Ruhsat / İşletme Hakkı",
+          null,
+          "Kamu Kaynaklı",
+          "KOŞULLU ⚠",
+          "Kamu kurumu devir izni + Onay belgesi + İmtiyaz sözleşmesi",
+          "ZORUNLU",
+          null,
+          null
+        ],
+        [
+          "İştirak Hissesi / Ortaklık Payı",
+          null,
+          "MKK/TSPB",
+          "TARTIŞMALI ✗",
+          "Hisse senetleri 5/1-k kapsamı dışında — 5/1-e (351/352) değerlendirilmeli",
+          "ZORUNLU",
+          null,
+          null
+        ],
+        [
+          "Yazılım (SaaS/Dijital Ürün Hakları)",
+          null,
+          "Tescilsiz",
+          "KOŞULLU ⚠",
+          "Platform hakları devir sözleşmesi — 'hak' kapsamı tartışmalı",
+          "ZORUNLU",
+          null,
+          null
+        ],
+        [
+          "Gelir Hakları (Royalty/Lisans Gelirleri)",
+          null,
+          "Sözleşmeye Bağlı",
+          "TARTIŞMALI ✗",
+          "Gelecekteki gelir hakları — varlık devri değil gelir devri — kapsam farklı",
+          "ZORUNLU",
+          null,
+          null
+        ],
+        [
+          "C. 357 / 358 / 359 — KVK 5/1-k TAM KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "359 — Haklar",
+          null,
+          "357 — Taşınır",
+          null,
+          "358 — Taşınmaz"
+        ],
+        [
+          "Beyanname Kodu",
+          null,
+          "359",
+          "357",
+          "358",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kapsam",
+          null,
+          "Haklar (Maddi Olmayan)",
+          "Taşınır Fiziki Varlık",
+          "Taşınmaz Varlık",
+          null,
+          null,
+          null
+        ],
+        [
+          "Devir Belgesi",
+          null,
+          "TPMK/Sözleşme/Kamu İzni",
+          "Fatura + Teslim Tutanağı",
+          "TAPU SENEDİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Tapu Zorunluluğu",
+          null,
+          "HAYIR — Tapu Yok",
+          "HAYIR — Tapu Yok",
+          "EVET — Tapu Şart",
+          null,
+          null,
+          null
+        ],
+        [
+          "KDV 17/4-r Analizi",
+          null,
+          "HAYIR — Farklı KDV Kuralı",
+          "HAYIR",
+          "EVET — Taşınmaz",
+          null,
+          null,
+          null
+        ],
+        [
+          "Tapu Harcı",
+          null,
+          "HAYIR",
+          "HAYIR",
+          "EVET (2x)",
+          null,
+          null,
+          null
+        ],
+        [
+          "Değerleme Zorluğu",
+          null,
+          "ÇOK YÜKSEK — Soyut Değer",
+          "Orta — Piyasa Değeri",
+          "Yüksek — SPK Zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Emsal",
+          null,
+          "EN AZ — Özelge Zorunlu",
+          "Az",
+          "Az",
+          null,
+          null,
+          null
+        ],
+        [
+          "Tescil Zorunluluğu",
+          null,
+          "Türe Göre (TPMK/Kamu/Yok)",
+          "Yok",
+          "Tapu Sicili",
+          null,
+          null,
+          null
+        ],
+        [
+          "Alıcı",
+          null,
+          "SPK Lisanslı VKŞ",
+          "SPK Lisanslı VKŞ",
+          "SPK Lisanslı VKŞ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Geri Alım",
+          null,
+          "Opsiyonel",
+          "Opsiyonel",
+          "Opsiyonel",
+          null,
+          null,
+          null
+        ],
+        [
+          "549 Fon",
+          null,
+          "Sukuk vadesi amortize",
+          "Sukuk vadesi amortize",
+          "Sukuk vadesi amortize",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. FON AMORTİZASYON TABLOSU — HAK GETİRİSİ/ROYALTY BOYUNCA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem",
+          "Royalty/Getiri(TL)",
+          "Ödeme Oranı(%)",
+          "Fon Azalış(TL)",
+          "Kalan Fon(TL)",
+          "Hak Durumu",
+          null
+        ],
+        [
+          "Dönem-1",
+          null,
+          null,
+          null,
+          null,
+          "Hak VKŞ adına tescilli/kayıtlı — Geri devir opsiyonel",
+          null,
+          null
+        ],
+        [
+          "Dönem-2",
+          null,
+          null,
+          null,
+          null,
+          "Hak VKŞ adına tescilli/kayıtlı — Geri devir opsiyonel",
+          null,
+          null
+        ],
+        [
+          "Dönem-3",
+          null,
+          null,
+          null,
+          null,
+          "Hak VKŞ adına tescilli/kayıtlı — Geri devir opsiyonel",
+          null,
+          null
+        ],
+        [
+          "Dönem-4",
+          null,
+          null,
+          null,
+          null,
+          "Hak VKŞ adına tescilli/kayıtlı — Geri devir opsiyonel",
+          null,
+          null
+        ],
+        [
+          "Dönem-5",
+          null,
+          null,
+          null,
+          null,
+          "Hak VKŞ adına tescilli/kayıtlı — Geri devir opsiyonel",
+          null,
+          null
+        ],
+        [
+          "TOPLAM",
+          "0",
+          "%100",
+          "0",
+          "0",
+          "Sukuk vadesi doldu — 549 sıfır — Hak geri devri opsiyonel (5/1-k)",
+          null,
+          null
+        ],
+        [
+          "E. DENETİM KONTROL LİSTESİ (K1–K14)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          "K1",
+          "Devredilen varlık hak (maddi olmayan) mı? 357/358 ile karıştırılmadı mı?",
+          null,
+          "Fiziki taşınır (makine) → 357. Taşınmaz (bina) → 358. Hak (patent/marka/telif) → 359.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K2",
+          "★ Alıcı SPK lisanslı VKŞ mi? BDDK lisanslı FK/banka ise 354/355/356 kullanıldı mı?",
+          null,
+          "SPK VKŞ listesinden teyit. Yanlış alıcı kurum = Yanlış bent = Tarhiyat riski.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K3",
+          "★ Devrin amacı münhasıran kira sertifikası ihracı mı? İzahname var mı?",
+          null,
+          "İhraç amacı = 5/1-k'nın özgün şartı. SPK onaylı izahname/ihraç belgesi zorunlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K4",
+          "★ Hak türüne uygun devir belgesi mevcut mu? (TPMK/Sözleşme/Kamu İzni)",
+          null,
+          "Tescilli → TPMK devir tescili. Tescilsiz → Devir sözleşmesi. Kamu → Kurum izni.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K5",
+          "★ GİB Özelgesi alındı mı / alınması planlanıyor mu?",
+          null,
+          "359 setimizin en az emsal gören dosyası. Hak türü ve sukuk yapısına göre özelge ZORUNLUDUR.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K6",
+          "Hakkın kapsam teyidi yapıldı mı? B tablosunda EVET mu?",
+          null,
+          "Know-how/İmtiyaz/Yazılım SaaS için özelge zorunlu. İştirak hissesi → 359 değil.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K7",
+          "Maddi olmayan varlık değerlemesi (B.5) uzman raporu ile yapıldı mı?",
+          null,
+          "Soyut değerleme subjektif. E.7 farkı analizi. SPK bağlamında değerleme kritik.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K8",
+          "Sukuk türü haklar için uygun mu? (Wakala genellikle daha uygun)",
+          null,
+          "C.2 sukuk türü ile hak yapısı uyumlu. C tablosu değerlendirmesi.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K9",
+          "★ E.6 tutarı 549 hesabına alındı mı? F.1 = E.6 uyumlu mu?",
+          null,
+          "Devir yılında tam tutar 549'a. Fon kaydı olmadan istisna geçersizdir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K10",
+          "Fon amortizasyonu sukuk vadesine paralel yapılıyor mu?",
+          null,
+          "357/358 ile özdeş mekanizma. Sabit değil — royalty/kira payına orantılı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K11",
+          "5/1-k (359) mı 5/1-j (356) mı? Geri devir taahhütlü ise kod değişebilir!",
+          null,
+          "Geri devir taahhütlü + haklar → 5/1-j kanalında değerlendirilebilir — özelge.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K12",
+          "359 yalnızca DEVİR YILINDA kullanıldı mı?",
+          null,
+          "359 sadece devir yılı beyannamesinde. Sonraki yıllarda yazılmaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K13",
+          "359 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "'Zarar Olsa Dahi' bölümünde DEĞİL. Dönem zararında istisna uygulanamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K14",
+          "YİAKV matrahında 359 istisnasının etkisi analiz edildi mi?",
+          null,
+          "Dönem mevzuatı ve GİB açıklamaları esas alınmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "F. BEYANNAME EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null,
+          null
+        ],
+        [
+          "359",
+          null,
+          "0",
+          "KVK 5/1-k — Kira Sertifikası İhracı (Haklar/Maddi Olmayan) | %100 | Kazancın Bulunması Halinde | DEVİR YILI",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "357",
+          null,
+          "Taşınır",
+          "Fiziki taşınır (makine/araç/ekipman) kira sertifikası ihracı → 357",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "358",
+          null,
+          "Taşınmaz",
+          "Taşınmaz (bina/arsa/fabrika) kira sertifikası ihracı → 358",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "356",
+          null,
+          "5/1-j VKŞ",
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "549 Fon",
+          null,
+          "0",
+          "İstisna kazancın tamamı → 549 → Sukuk vadesine orantılı amortize.",
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G34",
+      "rows": [
+        [
+          "359 – KİRA SERTİFİKASI İHRACI (HAKLAR) | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-k | %100 İstisna | Beyanname 359 | Haklar (Maddi Olmayan) | 260/263/267/268 Hesapları | TPMK veya Devir Sözleşmesi | 549 Fon",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. Hak türüne ve sukuk yapısına göre uyarlanmalıdır. Özelge alınmadan uygulamayın.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1a — TESCİLLİ HAK DEVİR KAYDI (Patent/Marka/Tasarım — TPMK Devir Tescilli)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "TPMK devir tescil tarihi esastır — sözleşme tarihi değil (tescil tamamlanana kadar devir geçerli değil)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[TPMK Tesc.]",
+          "102 Bankalar",
+          "VKŞ'nin sukuk hasılatından kurucuya hak devri karşılığı ödeme",
+          "[Devir Bed.]",
+          "—",
+          "İhraç belgesi + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[TPMK Tesc.]",
+          "260 Haklar (Patent/Marka/Tasarım)",
+          "Hakkın net kayıtlı değeriyle aktiften çıkışı — TPMK devir tescil tarihi esastır",
+          "—",
+          "[Net Defter]",
+          "260 hesap kartı + TPMK devir belgesi"
+        ],
+        [
+          "Kr",
+          "[TPMK Tesc.]",
+          "268 Birikmiş İtfa Payları",
+          "Birikmiş itfa paylarının kapatılması",
+          "—",
+          "[İtfa]",
+          "268 kartı"
+        ],
+        [
+          "Kr",
+          "[TPMK Tesc.]",
+          "679 Diğer Olağandışı Kâr",
+          "Hak devir kazancı — KVK 5/1-k 359 istisna — Kira Sertifikası İhraç Amacı",
+          "—",
+          "[Kazanç]",
+          "KV 359"
+        ],
+        [
+          "★ 359 (HAK) vs 357 (TAŞINIR) KAYIT FARKI:\n357 (Taşınır): Aktiften çıkış tarihi = Teslim/fatura tarihi | 253/254 hesap\n359 (Tescilli Hak): Aktiften çıkış tarihi = TPMK devir tescil onay tarihi | 260 hesap\n359 (Tescilsiz Hak): Aktiften çıkış tarihi = Devir sözleşmesi imza tarihi | 263 hesap\nKDV: Hakların devrinde KDV uygulaması varlık/hizmet ayrımına göre farklılaşır — analiz şart.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1b — TESCİLSİZ HAK DEVİR KAYDI (Telif/Know-how/Yazılım — Devir Sözleşmesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Telif hakkı, know-how, yazılım lisansı — TPMK tescili zorunlu değil, devir sözleşmesi esastır",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Dev. Söz.]",
+          "102 Bankalar",
+          "VKŞ'ye tescilsiz hak devri bedeli ödemesi",
+          "[Devir Bed.]",
+          "—",
+          "Devir sözleşmesi + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Dev. Söz.]",
+          "263 Ar-Ge Giderleri / 267 Diğer Maddi Olmayan Varlık",
+          "Tescilsiz hakkın net kayıtlı değeriyle aktiften çıkışı",
+          "—",
+          "[Net Defter]",
+          "263/267 hesap kartı + Devir sözleşmesi"
+        ],
+        [
+          "Kr",
+          "[Dev. Söz.]",
+          "268 Birikmiş İtfa Payları",
+          "Birikmiş itfa payları kapatma",
+          "—",
+          "[İtfa]",
+          "268 kartı"
+        ],
+        [
+          "Kr",
+          "[Dev. Söz.]",
+          "679 Diğer Olağandışı Kâr",
+          "Tescilsiz hak devir kazancı — KVK 5/1-k 359 istisna",
+          "—",
+          "[Kazanç]",
+          "KV 359"
+        ],
+        [
+          "TESCİLSİZ HAK DEVRİNDE ÖZEL GÜÇLÜKLER:\nTespit: Hakkın varlığı (telif: eser yaratımı; know-how: gizlilik belgesi) kanıtlanmalı.\nDeğerleme: Piyasa referansı yokluğunda gelir/maliyet yaklaşımı kullanılır.\nEtkinlik: Devrin fiilen gerçekleştiğini (yazılım: kaynak kodu teslimi) belgelemek zorunlu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — 549 ÖZEL FON HESABINA ALMA (Devir Yılında)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "KV Beyan",
+          "679/645 Kazanç Hesabı",
+          "İstisna edilen hak devir kazancının gelir hesabından çıkarılması",
+          "[E.6 Tamamı]",
+          "—",
+          "E.6 tutarı"
+        ],
+        [
+          "Kr",
+          "KV Beyan",
+          "549 Özel Fonlar",
+          "%100 İstisna — KVK 5/1-k 359 — Kira Sertifikası İhraç Amacı (Haklar) | Sukuk vadesinde amortize",
+          "—",
+          "[E.6 Tamamı]",
+          "Sukuk vade takibi"
+        ],
+        [
+          "KAYIT 3 — SUKUK DÖNEMİ ROYALTY/GETİRİ ÖDEMELERİ VE FON AMORTİZASYONU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Haktan elde edilen royalty/kullanım geliri VKŞ üzerinden sukuk sahiplerine aktarılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Dönem]",
+          "760/780/630 Gider / 673 Verilen Royalti",
+          "VKŞ'ye ödenen royalty/kullanım bedeli (Wakala yapısında getiri ödemesi)",
+          "[Royalty TL]",
+          "—",
+          "Sözleşme + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Dönem]",
+          "102 Bankalar",
+          "VKŞ hesabına ödeme",
+          "—",
+          "[Royalty TL]",
+          null
+        ],
+        [
+          "Dr",
+          "[Dönem]",
+          "549 Özel Fonlar",
+          "Cari dönem fon amortizasyonu = F.1 × (Dönem Ödeme / Toplam Ödeme)",
+          "[F.5 Tutarı]",
+          "—",
+          "F bölümü hesabı"
+        ],
+        [
+          "Kr",
+          "[Dönem]",
+          "Nazım/Dipnot",
+          "Fon amortizasyonu karşılığı",
+          "—",
+          "[F.5 Tutarı]",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D15",
+      "rows": [
+        [
+          "359 – KİRA SERTİFİKASI İHRACI (HAKLAR/MADDİ OLMAYAN) | DENETÇİ NOTLARI | KVK Md.5/1-k",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-k | %100 İstisna | Haklar | Beyanname 359 | 357/358/356 Karşılaştırma | TPMK / Telif / Know-how | Değerleme Zorluğu | Özelge Zorunluluğu En Yüksek",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL ÇERÇEVE, KAPSAM VE HAK TÜRLERİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-k 359 — Haklar Kapsamı ve Setdeki Yeri",
+          "KVK 5/1-k metninin 'her türlü varlık ve hakları' ifadesi:\n\nSETDEKI KODLAMA:\n357: 5/1-k TAŞINIR varlıklar (makine, araç, ekipman)\n358: 5/1-k TAŞINMAZ varlıklar (arsa, bina, fabrika)\n359: 5/1-k HAKLAR — tüm maddi olmayan değerler\n\n359 KAPSAMI:\n✓ Patent, faydalı model, tasarım tescil hakları\n✓ Marka, coğrafi işaret, geleneksel ürün adı\n✓ Telif hakkı ve bağlantılı haklar\n✓ Yazılım lisansları ve kaynak kodu hakları\n⚠ Know-how/Ticari sır: Değerleme güçlüğü — özelge\n⚠ İmtiyaz/Ruhsat: Kamu izni gerekebilir — özelge\n✗ İştirak hissesi: 5/1-k değil, 5/1-e (351/352) kapsamında\n\nBEYANNAME: 359. Satır | 'Kazancın Bulunması Halinde' | %100 | Devir Yılında",
+          "KVK Md.5/1-k | SMK | PatKHK | FSHuK | 6362 s.K."
+        ],
+        [
+          "N2",
+          "★ Hak Devri — Tescilli, Tescilsiz ve Kamu Kaynaklı",
+          "TESCİLLİ HAKLAR (TPMK):\nPatent, faydalı model, tasarım, marka → TPMK sicilinde devir tescili zorunlu.\nAktiften çıkış tarihi: TPMK devir tescil onay tarihi (sözleşme tarihi değil).\nDevir bedeli TPMK'ya bildirilen değerle uyumlu olmalı.\n\nTESCİLSİZ HAKLAR:\nTelif hakkı: Devir/temlik sözleşmesi (FSHuK Md.48-52). Tescil zorunlu değil.\nKnow-how: Gizlilik sözleşmesi + Nesnel tespit belgesi + Değerleme raporu.\nYazılım: Kaynak kodu teslim tutanağı + Devir sözleşmesi.\nAktiften çıkış tarihi: Sözleşme imza veya fiili teslim tarihi.\n\nKAMU KAYNAKLI HAKLAR:\nİmtiyaz/Ruhsat/İşletme hakkı: İlgili kamu kurumu devir izni ÖNCE alınmalı.\nİzin olmadan devir geçersiz → İstisna uygulanamaz.\n\nYMM notu: Her hak türünün devir belgesi 260/263/267 hesap kartıyla uyumlu olmalı.",
+          "SMK | PatKHK | FSHuK | Türk Borçlar K. | Kamu İmtiyaz Mevzuatı"
+        ],
+        [
+          "N3",
+          "Maddi Olmayan Varlık Değerlemesi — 359'un En Kritik Zorluğu",
+          "DEĞERLEMENİN NEDEN HAYAT-İ ÖNEMİ VAR:\n359'da E.7 (Değerleme uyum farkı) diğer dosyalara göre çok daha büyük olabilir.\nMaddi olmayan varlıklarda piyasa referansı genellikle yoktur.\n\nDEĞERLEME YÖNTEMLERİ:\nPiyasa Yaklaşımı: Benzer hakların satış/lisans fiyatları (varsa)\nMaliyet Yaklaşımı: Hakkı yeniden oluşturmanın maliyeti\nGelir Yaklaşımı: Gelecekteki royalty/lisans gelirlerinin bugünkü değeri\n\nSPK BAĞLAMINDA:\nHaklara dayalı sukuk ihracında değerleme raporu izahname eki olabilir.\nSPK, hakların değerlemesinde akredite değerleme kuruluşu raporu isteyebilir.\n\nKVK Md.13 RİSKİ:\nDevir bedeli değerleme raporundan önemli ölçüde farklıysa emsal bedel tarhiyat riski.\n\nYMM notu: Uzman değerleme raporu 359 tasdik dosyasında zorunlu sayılmalıdır.",
+          "KVK Md.13 | SPK Değerleme Tebliği | UDES"
+        ],
+        [
+          "N4",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...[hak tanımı] kira sertifikası ihraç etmek amacıyla SPK lisanslı [VKŞ adı]'na\n  KVK Md.5/1-k kapsamında [TPMK devir tescili / devir sözleşmesi] ile devredilmiştir'\n'...devrin kira sertifikası ihraç amacına özgülendiği SPK onaylı ihraç belgesi ile\n  doğrulanmıştır'\n'...hakkın değeri uzman değerleme raporu ile belirlenmiş olup B.5 ile uyumludur'\n\nKULLANMAYIN:\n'...sat-kirala-geri al kapsamında 5/1-j...' (5/1-k ayrı bent)\n'...taşınır devredilmiştir' (haklar taşınır kategorisinde değil)\n\nEN KRİTİK HATALAR:\n(1) Know-how/ticari sırrın VKŞ'ye gerçekten devredilebileceğini kanıtlayamamak\n(2) Değerleme raporu olmadan büyük bir hak devrini beyan etmek\n(3) TPMK devir tescili beklemeden aktiften çıkış yapmak\n(4) İştirak hissesini 359 kapsamında saymak (5/1-e değerlendirmeli)\n(5) GİB özelgesi almadan uygulamak",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "BÖLÜM 2 — ÖZELGE ZORUNLULUĞU VE GİB EMSALSİZLİĞİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "359 — Setimizin Emsal En Az Dosyası: Özelge Neden Zorunlu?",
+          "359'UN GİB EMSALSİZLİĞİ:\n\n354 (Taşınır Sat-Kirala-Geri Al): Görece emsal var\n355 (Taşınmaz Sat-Kirala-Geri Al): Sınırlı emsal var\n356/357/358 (VKŞ kanalı, 5/1-k): Çok az emsal\n359 (5/1-k Haklar): Neredeyse hiç emsal yok\n\nÖZELGE ZORUNLULUĞU GEREKTİREN SORULAR:\n\n① Know-how/ticari sır VKŞ'ye 'devir' edilebilir mi?\n   Ticari sır tanımı ve devrin 5/1-k'yı tetikleyip tetiklemediği belirsiz.\n\n② Tescilsiz hakların sukuk ile ilişkilendirilmesi SPK açısından mümkün mü?\n   SPK'nın haklara dayalı sukuk için özel düzenlemesi var mı?\n\n③ Royalty/lisans geliri gelecekte elde edilecekse kazanç ne zaman doğar?\n   Hakkın devredildiği anda mı, yoksa royalty tahsil edildikçe mi?\n\n④ Kamu imtiyazının VKŞ'ye devri — kamu kurumu izni yeterliliği?\n\n⑤ İstisnanın 5/1-j mi 5/1-k mı uygulanacağı — karma yapılarda?\n\nYMM müteselsil sorumluluğu: GİB özelgesi almadan 359 beyan etmek YMM'yi ciddi müteselsil sorumluluk riskine sokar.",
+          "KVK Md.5/1-k | GİB Özelge Mevzuatı | SM-SMMM-YMM K."
+        ],
+        [
+          "SETE ÖZEL KAPANIŞ NOTU: 359 dosyası KVK 5/1-k istisna setinin (357/358/359) tamamlayıcı ve en özgün dosyasıdır. KVK 5/1-k 'her türlü varlık ve hakları' ifadesinin hak boyutunu kapsar. Maddi olmayan varlıklar için sukuk yapısı Türkiye'de henüz çok az uygulanmıştır. Bu nedenle GİB özelgesi alınmadan 359 istisnasının uygulanması YMM tasdik standartları açısından kabul edilebilir değildir. Hak türü, sukuk yapısı ve geri devir mekanizması için ayrı ayrı özelge başvurusu tavsiye edilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F38",
+      "rows": [
+        [
+          "359 – KİRA SERTİFİKASI İHRACI (HAKLAR/MADDİ OLMAYAN) | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-k | %100 İstisna | Haklar | Beyanname 359 | SPK Lisanslı VKŞ | TPMK/Sözleşme/Kamu İzni | Uzman Değerleme Zorunlu | 549 Fon | Özelge Zorunlu | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Setimizin son dosyası. En az GİB emsal, en yüksek özelge zorunluluğu. Kategori 1: Hak türüne göre değişen zorunlu belgeler. Kategori 2: SPK ve değerleme belgeleri. Kategori 3: YMM kontrol soruları.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (HAK TÜRÜNE GÖRE)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her hak türü FARKLI devir belgesi gerektiriyor — aşağıdaki tablo tüm türleri kapsar",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ VKŞ SPK Lisansı / Kuruluş İzin Belgesi",
+          "VKŞ'nin 6362 sayılı Kanun kapsamında SPK tarafından yetkilendirildiğini belgeleyen resmi izin.\nSPK'nın resmi VKŞ listesinden teyit. BDDK lisanslı FK/banka ise → 354/355/356.\nYMM notu: Lisanssız kurum VKŞ sayılmaz — 359 istisnası geçersiz.",
+          "SPK web sitesi VKŞ listesi / Kuruluş izin belgesi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ SPK Onaylı İzahname veya İhraç Belgesi (İhraç Amacı Kanıtı)",
+          "Kira sertifikası ihracına ait SPK onaylı izahname (halka açık) veya ihraç belgesi (nitelikli).\n5/1-k özgün şartı: Devir münhasıran kira sertifikası ihraç amacıyla yapılmış olmalı.\nYMM notu: İzahname olmadan ihraç amacı kanıtlanamaz — istisna uygulanamaz.",
+          "SPK onaylı izahname / İhraç belgesi",
+          null
+        ],
+        [
+          null,
+          "3a",
+          "TPMK Devir Tescil Belgesi (Patent/Marka/Tasarım/Faydalı Model için)",
+          "Türk Patent ve Marka Kurumu'nda yapılan devir tescilini gösteren belge.\nAktiften çıkış tarihi = TPMK devir tescil onay tarihi (sözleşme tarihi değil).\nYMM notu: TPMK tescili olmadan patent/marka devri hukuken geçersizdir.",
+          "TPMK — Devir tescil belgesi aslı veya onaylı sureti",
+          null
+        ],
+        [
+          null,
+          "3b",
+          "Devir / Temlik Sözleşmesi (Telif / Know-how / Yazılım için)",
+          "Tescilsiz haklar için: Devir sözleşmesi + Hakkın fiilen teslim edildiğini gösteren belge.\nYazılım: Kaynak kodu teslim tutanağı. Know-how: Gizlilik belgesi + Tespit raporu.\nYMM notu: Tescilsiz hakların devri için devir sözleşmesi zorunlu birincil belgedir.",
+          "Devir/Temlik sözleşmesi (noter onaylı önerilir) + Teslim tutanağı",
+          null
+        ],
+        [
+          null,
+          "3c",
+          "Kamu Kurumu İzni (İmtiyaz/Ruhsat için)",
+          "Kamu kaynaklı hakların devri için: İlgili bakanlık/kurum devir onayı.\nİzin olmadan VKŞ'ye devir geçersizdir.\nYMM notu: Kamu izni sürecinin izahname hazırlanmadan önce tamamlanmış olması gerekir.",
+          "İlgili Bakanlık / Kamu Kurumu devir izin belgesi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ Uzman (Akredite) Maddi Olmayan Varlık Değerleme Raporu",
+          "Hakların piyasa değerini gösteren uzman/akredite değerleme kuruluşu raporu.\nMetodoloji: Piyasa/Maliyet/Gelir yaklaşımı.\nYMM notu: E.7 farkı büyükse KVK Md.13 riski. 359'da zorunlu sayılmalıdır.",
+          "UDES akredite değerleme kuruluşu / Bağımsız uzman",
+          null
+        ],
+        [
+          null,
+          "5",
+          "549 Fon Hesabı Başlangıç Kaydı — Devir Yılı",
+          "E.6 tutarının 549 Özel Fonlar hesabına alındığını gösteren yevmiye kaydı.\nF.1 = E.6 tutarı uyumlu olmalıdır.\nYMM notu: Fon kaydı olmadan 5/1-k istisnası geçersizdir.",
+          "Yevmiye defteri + 549 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "6",
+          "★ GİB Özelgesi (359 için ZORUNLU SAYILMALIDIR)",
+          "5/1-k Haklar (359) için GİB özelgesi alınmadan uygulama YMM'yi müteselsil sorumluluğa sokar.\nÖzelge konuları: Hak türünün 5/1-k kapsamı, sukuk yapısı, geri devir opsiyonelliği,\nkazancın doğduğu an, tescilsiz hak devrinin etkinliği.\nYMM notu: Özelge dosyanın tamamlayıcı belgesidir.",
+          "GİB — Özelge başvuru sistemi (ivd.gib.gov.tr)",
+          null
+        ],
+        [
+          "KATEGORİ 2 — SPK, SUKUK VE DEVAM TAKİP BELGELERİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KAP Bildirimleri (Halka Açık İhraçlarda Zorunlu)",
+          "Kira sertifikası ihracına ilişkin KAP bildirimleri.\nİhraç öncesi duyuru, dönemsel raporlar, vade sonu bildirimi.\nA0.7 ile uyumlu.",
+          "KAP (kamuaydınlatma.gov.tr) — İlgili bildirimler",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Sukuk Türüne Özgün Sözleşme Paketi (Haklar İçin)",
+          "Wakala yapısı: Vekâlet sözleşmesi + Yatırım politikası beyanı.\nİcara yapısı: Hak kullanım sözleşmesi (royalty/lisans benzeri).\nHer yapının kendi SPK tebliği uygulaması.",
+          "Sukuk türüne göre sözleşme paketi",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Hak Kayıt/Sicil Belgesi (Devir Öncesi ve Sonrası)",
+          "Devir öncesi: Kurucunun hak sahibi olduğunu gösteren sicil/kayıt belgesi.\nDevir sonrası: VKŞ adına tescili/deviri gösteren güncel sicil belgesi.\nKarşılaştırmalı kontrol: Devir öncesi ≠ Devir sonrası belge.",
+          "TPMK sicil belgesi (devir öncesi ve sonrası) / Devir sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Dönemsel Royalty/Getiri Ödeme Dekontları + Fon Amortizasyon Tablosu",
+          "Her dönem VKŞ'ye yapılan royalty/getiri ödeme dekontu.\nF tablosu amortizasyon izleme. Sukuk vadesi sonunda 549 = 0 kontrolü.",
+          "Banka ödeme dekontları + HESAPLAMALAR D tablosu",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (★ Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "Devredilen varlık hak (maddi olmayan) mı? 357/358 ile karıştırılmadı mı?",
+          "Fiziki taşınır → 357. Taşınmaz → 358. Hak (patent/marka/telif/yazılım) → 359.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Alıcı SPK lisanslı VKŞ mi? BDDK lisanslı FK/banka ise 354/355/356 kullanıldı mı?",
+          "SPK VKŞ listesinden teyit. Yanlış alıcı = Yanlış bent = Tarhiyat riski.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Devrin amacı münhasıran kira sertifikası ihracı mı? İzahname var mı?",
+          "İhraç amacı = 5/1-k özgün şart. SPK onaylı izahname/ihraç belgesi zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ Hak türüne uygun devir belgesi mevcut mu? B tablosunda kontrol edildi mi?",
+          "Tescilli → TPMK. Tescilsiz → Sözleşme + Teslim. Kamu → Kurum izni. Hepsi dosyada.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "★ Uzman maddi olmayan varlık değerleme raporu mevcut mu?",
+          "Değerleme raporu olmadan büyük hak devri beyanı YMM risk alanıdır. Zorunlu sayılmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "★ GİB Özelgesi alındı mı? (359 için ZORUNLU)",
+          "Özelge olmadan 359 uygulaması YMM'yi müteselsil sorumluluğa sokar.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Hakkın kapsam teyidi yapıldı mı? İştirak hissesi/gelir hakkı 359'a alınmadı mı?",
+          "İştirak hissesi → 5/1-e (351/352). Gelir hakları kapsam farklı — özelge.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★ E.6 tutarı 549 hesabına alındı mı?",
+          "Devir yılında tam tutar 549'a. Fon kaydı olmadan istisna geçersizdir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Fon amortizasyonu sukuk vadesine paralel royalty/getiri payına orantılı mı?",
+          "354/355/356/357/358 ile özdeş mekanizma. Sabit bırakılamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "359 yalnızca DEVİR YILINDA kullanıldı mı?",
+          "359 sadece devir yılı beyannamesinde. Sonraki yıllarda yazılmaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S11",
+          "359 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "'Zarar Olsa Dahi' bölümünde DEĞİL. Dönem zararında istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SETİMİZİN KAPANIŞ NOTU — KVK İSTİSNA/İNDİRİM EXCEL SETİ TAMAMLANDI:\nBu dosya (359) setin son ve en özgün dosyasıdır. KVK 5/1-k 'Haklar' boyutunu temsil eder.\nSET KAPSAMI (Bu Oturum): 322, 304, 354, 355, 356, 357, 358, 359.\nHER DOSYA: 5 Sayfa (VERİ GİRİŞİ · HESAPLAMALAR · MUHASEBE · DENETÇİ NOTLARI · BELGE LİSTESİ).\nBIG4_MASTER standardında · YMM tasdik odaklı · 49 No.lu Tebliğ uyumlu.\n359 ÖZETI: GİB emsal en düşük · Özelge zorunluluğu en yüksek · Maddi olmayan varlık değerlemesi kritik · TPMK/Sözleşme/Kamu izni hak türüne göre. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

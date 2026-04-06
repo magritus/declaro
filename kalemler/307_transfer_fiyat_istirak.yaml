@@ -26,20 +26,35 @@ ana_kategori: istirak_kazanc_istisnalari
 wizard_agaci:
   tetikleyici_soru: "İlgili hesap döneminde ilişkili bir kurumun (dağıtan kurumun) sizinle emsallere aykırı fiyatla işlem yaptığı tespit edildi mi ve bu kurumda örtülü kazanç KKEG olarak beyan edildi mi?"
   info_modal: |
-    KVK Madde 13 kapsamında ilişkili kişilerle yapılan işlemlerde emsallere aykırı fiyat
-    nedeniyle oluşan örtülü kazanç, hesap döneminin son günü (31.12) itibarıyla KÂR PAYI
-    sayılır (KVK 13/6).
+    ## Genel Çerçeve
 
-    Bu kâr payı, kazancı ALAN tam mükellef kurumda KVK Madde 5/1-a kapsamında İŞTİRAK
-    KAZANCI İSTİSNASI olarak beyanname 307 satırına yazılır. Zarar olsa dahi indirilir.
+    KVK Madde 13 kapsamında ilişkili kişilerle emsallere aykırı fiyatla yapılan işlemlerden doğan örtülü kazanç, hesap döneminin son günü (31.12) itibarıyla **kâr payı sayılır** (KVK 13/6). Bu kâr payı, kazancı alan tam mükellef kurumda KVK Madde 5/1-a kapsamında iştirak kazancı istisnası olarak beyanname **307** satırına yazılır ve "Zarar Olsa Dahi İndirilecek" bölümündedir. İstisna oranı %100'dür.
 
-    ⚠️ EN KRİTİK ŞART — ÖDEME ŞARTI (KVK 13/6):
-    Dağıtan kurumda tarh edilen vergi kesinleşip ödenmedikçe alan kurum 307 istisnasını
-    KULLANAMAZ. Ödeme olmadan 307 kullanımı tarhiyat ve ceza riskidir.
+    ## Temel Koşullar
 
-    ⚠️ YURT İÇİ İŞLEMLER İÇİN HAZİNE ZARARI ŞARTI (KVK 13/7):
-    Yurt içi tam mükellef kurumlar arası işlemde Hazine zararı oluşmuyorsa KVK 13
-    uygulanmaz. Yurt dışı işlemlerde bu şart aranmaz.
+    - **İlişkili kişi işlemi:** KVK Madde 13/2 kapsamında ilişkili kişiyle yapılan işlem olmalıdır; ortaklar, yönetimde nüfuz sahipleri ve bunların akrabaları bu kapsama girer.
+    - **Emsallere aykırı fiyat tespiti:** KVK 13/3-5 yöntemlerinden biriyle emsal bedel belirlenmeli ve örtülü kazanç tutarı tespit edilmelidir; yıllık transfer fiyatlandırması raporu zorunludur.
+    - **Ödeme şartı (en kritik koşul — KVK 13/6):** Dağıtan kurumda tarh edilen verginin kesinleşmesi ve ödenmesi üçlü sürecin tamamlanması şarttır. **Ödeme olmadan 307 istisnası kullanılamaz**; vergi makbuzu zorunlu belgedir.
+    - **Yurt içi işlemlerde Hazine zararı kontrolü (KVK 13/7):** Yurt içi tam mükellef kurumlar arası işlemde iki taraftaki toplam vergi tahakkuku azalmıyorsa KVK 13 uygulanamaz. Yurt dışı işlemlerde bu şart aranmaz.
+    - **Kâr payı sayılma tarihi:** Her zaman hesap döneminin son günü (31.12); dönem içi işlem tarihine göre değişmez.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **306 ile karıştırılma riski:** 306 = KVK 12 örtülü sermaye (faiz); 307 = KVK 13 transfer fiyatlandırması (emsali aşan fark). Her iki işlem için kaynak nitelik farklıdır; yanlış kod kullanılmamalıdır.
+    - **Beyanname Ek:2 zorunluluğu:** 307 satırı kullanıldığında KV beyannamesine eklenmesi gereken Transfer Fiyatlandırması formu (Ek:2) doldurulup imzalanmalıdır (GİB Sirküler 2024/39).
+    - **Tutarlılık zorunluluğu:** Dağıtan kurumda KKEG tutarı ile alan kurumda 307 istisnası tutarı uyumlu olmalıdır; tutarsızlık yazılı olarak gerekçelendirilmelidir.
+    - **Ödeme belgesi tasdik dosyasında bulunmadan 307 uygulanamaz:** Bu en sık yapılan ve en yüksek riskli hatadır.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-a kapsamındaki iştirak kazancı istisnası (307) **YİAKV matrahından düşülebilir**; YİAKV çalışma kâğıdında 307 tutarı matrahtan doğru biçimde düşülmelidir.
+
+    ## Pratik Notlar
+
+    - Transfer fiyatlandırması raporu KV beyanname verme süresine kadar hazırlanmış olmalıdır.
+    - Dağıtan kurumun vergi ödemesini belgeleyen makbuz temin edilmeden 307 satırı doldurulmamalıdır.
+    - Yurt içi işlemlerde Hazine zararı analizi her iki tarafın KV beyannamesine dayalı olarak yapılmalı ve sonuç belgelenmelidir.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: iliskili_kisi_islem
       soru: "İşlem KVK Md.13/2 kapsamında ilişkili kişiyle mi yapıldı?"

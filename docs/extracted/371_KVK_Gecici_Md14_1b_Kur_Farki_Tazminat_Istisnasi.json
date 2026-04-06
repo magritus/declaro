@@ -1,0 +1,1233 @@
+{
+  "file": "371_KVK_Gecici_Md14_1b_Kur_Farki_Tazminat_Istisnasi.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G64",
+      "rows": [
+        [
+          "371 – KVK GEÇİCİ MADDE 14/1-b | KUR FARKI KAZANCI İSTİSNASI | BANKADAN ALINAN KUR FARKI KORUMA ÖDEMELERİ | KKM | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/1-b | KKM Hesabı Boyunca Bankadan Alınan Kur Farkı Tazminat Ödemeleri | Dönemsel İstisna | Beyanname 371 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "370 ile FARK: 370 (Md.14/1-a) = 31/12/2021 yabancı parasını KKM'ye çevirirken oluşan TEK SEFERLİK değerleme kazancı. 371 (Md.14/1-b) = KKM hesabı tutulduğu dönem boyunca BANKADAN ALINAN kur farkı koruma/tazminat ödemeleri (dönemsel, süregelen). Her ikisi de YİAKV matrahından DÜŞÜLEMEZ. Ayrı beyanname satırları ve ayrı çalışma kâğıtları.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 371 kapsamındaki kur farkı tazminat ödemeleri YİAKV matrahından DÜŞÜLEMEZ — asgari vergide matrahta kalır. (YİAKV Reh. No:607 | E.7)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Kurumun KVK Geçici Md.14/1-a kapsamında açılmış aktif KKM hesabı var mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "371, mevcut bir KKM hesabından elde edilen kur farkı tazminat ödemeleridir. 370 ile birlikte uygulanır, ayrı beyanname satırı.",
+          null
+        ],
+        [
+          "A0.2  ★ KKM hesabının 31/12/2021 bilanço bakiyesinden dönüşüm yoluyla açıldığı teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "371 yalnızca 370 kapsamındaki dönüşümden doğan KKM hesapları için geçerlidir. Sonradan edinilen dövizlerden açılan KKM hesapları 371 kapsamında değildir.",
+          null
+        ],
+        [
+          "A0.3  Dönem içinde bankadan kur farkı tazminat ödemesi/kredisi alındı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "TL zayıfladığında banka kur farkı ödemesi yapar. TL güçlüyse ödeme olmaz — 371 sıfırdır. Banka ekstresiyle teyit zorunludur.",
+          null
+        ],
+        [
+          "A0.4  370 (değerleme kazancı) ile 371 (kur farkı tazminat) doğru ayrıştırıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "370: Dönüşüm anındaki tek seferlik kur farkı. 371: Hesap ömrü boyunca bankadan alınan dönemsel ödemeler. Ayrı çalışma kâğıtları.",
+          null
+        ],
+        [
+          "A0.5  ★ 371 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14 kazançları (370+371) YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7'de her iki satır DÜŞÜLEMEZ listesinde.",
+          null
+        ],
+        [
+          "A0.6  Banka hesap ekstresi ayrıştırılarak kur farkı ödeme satırları belirlendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Banka ekstresi zorunludur. Kur farkı satırları faiz ve diğer banka gelirlerinden ayrı gösterilmiş olmalıdır.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik gönderim.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (31/12/2021 dönüşümü), A0.5 (YİAKV düşülemez) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/371-01",
+          null
+        ],
+        [
+          "370 Çalışma Kâğıdı Ref.",
+          null,
+          null,
+          null,
+          null,
+          "Çapraz kontrol için 370 dosyası",
+          null
+        ],
+        [
+          "B. KKM HESAP BİLGİLERİ VE MEKANİZMA (KVK Geçici Md.14/1-b)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "371 mekanizması: KKM hesap bakiyesine, dönem sonu piyasa kuru ile hesap açılış referans kuru arasındaki fark kadar banka tarafından kur farkı tazminat ödemesi yapılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  KKM Hesap Açılış Tarihi",
+          null,
+          null,
+          "370 ile aynı tarih olmalı. Banka hesap sözleşmesiyle teyit.",
+          null,
+          "Banka sözleşmesi",
+          null
+        ],
+        [
+          "B.2  KKM Hesap Referans Kuru (Açılış Günü TCMB Kuru)",
+          null,
+          null,
+          "Hesap açılış günü TCMB döviz alış kuru. Koruma bu kur üzerinden hesaplanır.",
+          null,
+          "Banka belgesi/TCMB",
+          null
+        ],
+        [
+          "B.3  KKM Hesap Vade Tarihi",
+          null,
+          null,
+          "KKM hesabının vade tarihi. Süre sonunda kapanır veya yenilenir.",
+          null,
+          "Banka sözleşmesi",
+          null
+        ],
+        [
+          "B.4  Kur Farkı Ödeme Sıklığı",
+          null,
+          "Vadede",
+          "Banka kur farkı ödemesini ne zaman yapıyor? C tablosundaki ödemeler bu dönemlere göre.",
+          null,
+          "Banka sözleşmesi",
+          null
+        ],
+        [
+          "B.5  ★ KKM Hesabının 31/12/2021 Bilanço Kaynaklı Olduğu Teyit Edildi mi?",
+          null,
+          "EVET",
+          "Yalnızca 370 dönüşüm kapsamındaki KKM hesapları 371'den yararlanabilir.",
+          null,
+          "KVK Geç.Md.14",
+          null
+        ],
+        [
+          "C. KKM HESAP BAZINDA KUR FARKI KORUMA ÖDEMELERİ (BEYANNAME 371)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her KKM hesabı için ayrı satır. Kur farkı ödemeleri banka hesap ekstresinden alınır. Tüm kapsam içi tutarlar 371 kapsamında istisnadır. Col 5 (koyu çerçeveli): ANA VERİ GİRİŞİ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KKM Hesap Adı/No",
+          "Açılış Tarihi",
+          "Ref. Kur",
+          "TL Bakiye (Dönem Başı)",
+          "Dönem Kur Farkı Ödemesi (TL)",
+          "İstisna Oranı (%)",
+          "371 İstisna Tutarı (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam Kur Farkı Ödemeleri → Beyanname 371",
+          null,
+          null,
+          "0",
+          "—",
+          "0"
+        ],
+        [
+          "★ SÜTUN 5 (koyu turuncu çerçeve): Bankadan alınan kur farkı ödemesi — hesap ekstresindeki 'KKM Kur Farkı'/'Döviz Farkı Tazminatı' satırlarından. TL güçlü dönemlerde ödeme olmaz → 0 bırakın. Sütun 6 (İstisna Oranı): Normalde 100 (%). Kapsam dışı hesap → 0.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. KUR FARKI KAZANCI İSTİSNASI ÖZET — BEYANNAME 371",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Dönem İçinde Bankadan Alınan Toplam Kur Farkı Ödemesi",
+          null,
+          "0",
+          "C tablosu toplam — banka ekstresiyle mutabık",
+          null,
+          "Banka hesap ekstresi",
+          null
+        ],
+        [
+          "D.2  Kapsam Dışı Kur Farkı Ödemesi (İstisna oranı 0 girilmiş hesaplar)",
+          null,
+          "0",
+          "C tablosunda istisna oranı 0 olan hesaplar — vergiye tabi",
+          null,
+          "Kapsam dışı tutarlar",
+          null
+        ],
+        [
+          "D.3  ★ NET 371 İSTİSNA TUTARI → BEYANNAME 371",
+          null,
+          "0",
+          "→ Beyanname 371 | Kazancın Bulunması Halinde",
+          null,
+          "KVK Geçici Md.14/1-b",
+          null
+        ],
+        [
+          "D.4  Vergiye Tabi Kur Farkı (Kapsam Dışı — D.2)",
+          null,
+          "0",
+          "Bu kısım KV matrahında kalır",
+          null,
+          "Vergilendirilir",
+          null
+        ],
+        [
+          "E. 370 – 371 ÇAPRAZ MUTABAKAT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "370 ve 371 aynı KKM hesabıyla ilgilidir. Her iki istisna ayrı satırlarda — her ikisi de YİAKV matrahından DÜŞÜLEMEZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "370 Dosyasından",
+          null,
+          "371 Bu Dosyadan",
+          "Kontrol"
+        ],
+        [
+          "KKM Hesap Açılış Tarihi",
+          null,
+          "370:",
+          "← 370 dosyasından giriniz",
+          "371:",
+          "0",
+          "İki dosyada aynı olmalı"
+        ],
+        [
+          "KKM Hesap Referans Kuru",
+          null,
+          "370:",
+          "← 370 dosyasından giriniz",
+          "371:",
+          "0",
+          "370 dönüşüm kuru ile uyumlu"
+        ],
+        [
+          "370 İstisna Tutarı (Değerleme)",
+          null,
+          "370:",
+          "← 370 dosyasından giriniz",
+          "371:",
+          "—",
+          "370 dosyasından manuel giriniz"
+        ],
+        [
+          "371 İstisna Tutarı (Bu Dosya)",
+          null,
+          "370:",
+          "← 370 dosyasından giriniz",
+          "371:",
+          "0",
+          "Bu dosya D.3"
+        ],
+        [
+          "Her ikisi YİAKV'de DÜŞÜLEMEZ?",
+          null,
+          "370:",
+          "← 370 dosyasından giriniz",
+          "371:",
+          "EVET",
+          "YİAKV E.7 — her iki satır"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 371 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Geçici Md.14/1-b",
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 371 asgari KV matrahından çıkarılmaz — YİAKV E.7'de hem 370 hem 371 DÜŞÜLEMEZ.\n(2) BEYANNAME: 'Kazancın Bulunması Halinde İndirilecek'. Zarar döneminde uygulanamaz.\n(3) KAYNAK: Yalnızca 31/12/2021 bilanço bakiyesinden dönüştürülen KKM hesapları kapsamda.\n(4) FAİZ/KÂR PAYI: Faiz ve kâr payı gelirleri 371 kapsamında DEĞİLDİR — ayrı değerlendirilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G34",
+      "rows": [
+        [
+          "371 – KVK GEÇİCİ MD.14/1-b KUR FARKI KAZANCI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bankadan Alınan Kur Farkı Koruma Ödemeleri | Beyanname 371 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "31/12/2021 Kaynaklı (B.5)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Toplam Kur Farkı Ödemesi (D.1)",
+          null,
+          null,
+          "0",
+          "Banka ekstresiyle mutabık",
+          null,
+          null
+        ],
+        [
+          "Kapsam Dışı (D.2)",
+          null,
+          null,
+          "0",
+          "Varsa vergilendirilir",
+          null,
+          null
+        ],
+        [
+          "371 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "Evet — E.7 hem 370 hem 371",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. 370 – 371 KARŞILAŞTIRMA MATRİSİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          null,
+          "370 (Md.14/1-a) — Değerleme Kazancı",
+          null,
+          "371 (Md.14/1-b) — Kur Farkı Tazminat",
+          "Ortak"
+        ],
+        [
+          "Zaman",
+          null,
+          "Tek seferlik — dönüşüm anında",
+          null,
+          "Dönemsel — hesap yaşadığı sürece",
+          "Ayrı beyanname satırı",
+          null
+        ],
+        [
+          "Kaynak",
+          null,
+          "Bilanço kuru → Dönüşüm kuru farkı",
+          null,
+          "Bankadan alınan kur farkı tazminat ödemesi",
+          "Banka belgesiyle teyit",
+          null
+        ],
+        [
+          "Hesaplama",
+          null,
+          "(Dönüşüm Kuru − Bilanço Kuru) × Miktar",
+          null,
+          "Banka ekstresindeki kur farkı ödeme tutarı",
+          "Ekstreden doğrulama",
+          null
+        ],
+        [
+          "Muhasebe",
+          null,
+          "646 Kambiyo Kârları / 679",
+          null,
+          "642 Faiz Gelirleri / 648 / 679",
+          "Ticari kâra dahil",
+          null
+        ],
+        [
+          "Beyanname",
+          null,
+          "370 | Kazancın Bulunması Halinde",
+          null,
+          "371 | Kazancın Bulunması Halinde",
+          "Ayrı satır",
+          null
+        ],
+        [
+          "YİAKV",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          "Her ikisi E.7'de",
+          null
+        ],
+        [
+          "Sonraki Dönemler",
+          null,
+          "Genellikle sıfır (tek seferlik)",
+          null,
+          "Her dönem güncel ekstreye göre",
+          "371 hesap süresince devam",
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K11)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden mi açıldı?",
+          null,
+          "Yalnızca 370 kapsamındaki dönüşümden açılan KKM hesapları 371'den yararlanabilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Kur farkı ödemeleri banka ekstresiyle teyit edildi mi?",
+          null,
+          "Her hesap için banka ekstresi — kur farkı satırları faiz ve diğer gelirlerden ayrı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ C tablosundaki ödemeler banka ekstresiyle mutabık mı?",
+          null,
+          "Her KKM hesabı satırı ekstreden doğrulanmış. Yuvarlama farkları not edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "Kapsam dışı KKM hesapları (D.2) ayrıştırıldı mı?",
+          null,
+          "C tablosunda istisna oranı 0 girilen hesaplar D.2'ye aktarılır — vergiye tabi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ 370 çalışma kâğıdıyla çapraz mutabakat (E bölümü) yapıldı mı?",
+          null,
+          "KKM hesap tarihleri ve referans kurları her iki dosyada tutarlı olmalı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "Kur farkı ödemeleri faiz/kâr payı gelirinden ayrıştırıldı mı?",
+          null,
+          "Kur farkı tazminatı → 371. Faiz/kâr payı → ayrı gelir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "★★ 371 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "YİAKV E.7'de hem 370 hem 371 DÜŞÜLEMEZ. EN KRİTİK KONTROL.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "Beyanname 371 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "KKM hesabı vadeye kadar sürdü mü? Erken kapatma var mı?",
+          null,
+          "Erken kapatmada o tarihe kadar alınan kur farkı ödemeleri 371 kapsamındadır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "Hesap yenileme (rollover) durumunda yeni kapsam analizi yapıldı mı?",
+          null,
+          "Yenilenen hesap için 371 kapsamı ayrıca değerlendirilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G13",
+      "rows": [
+        [
+          "371 – KVK GEÇİCİ MD.14/1-b KUR FARKI KAZANCI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bankadan Alınan Kur Farkı Tazminat Ödemesi | 370 ile Karşılaştırma | YİAKV Uyarısı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — DÖNEM İÇİNDE BANKADAN ALINAN KUR FARKI KORUMA ÖDEMESİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Ödeme Tarihi]",
+          "102 Bankalar",
+          "KKM hesabına bankadan alacak kaydedilen kur farkı tazminat ödemesi",
+          "[Tutar]",
+          "—",
+          "Banka ekstresi"
+        ],
+        [
+          "Kr",
+          "[Ödeme Tarihi]",
+          "648 Diğer Olağan Gelirler / 642 Faiz Gelirleri",
+          "KKM kur farkı tazminat geliri — KVK Geçici Md.14/1-b kapsamı → Beyanname 371",
+          "—",
+          "[Tutar]",
+          "KV 371"
+        ],
+        [
+          "NOT: 648 veya 642 hesap seçimi banka uygulaması ve muhasebe politikasına göre değişebilir. Vade sonu ödeme → 102 Dr / 648 Kr. Dönem içi tahakkuk → 181 Dr / 642 Kr.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — 370 (TEK SEFERLİK) vs 371 (DÖNEMSel) YAN YANA KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "370",
+          "[Dönüşüm]",
+          "646/679 — Tek Seferlik",
+          "31/12/2021 bilanço kuru farkı — dönüşüm anında — Beyanname 370",
+          "—",
+          "[370 Tutarı]",
+          "KV 370"
+        ],
+        [
+          "371",
+          "[Her Ödeme]",
+          "648/642 — Dönemsel",
+          "Bankadan alınan kur farkı tazminatı — her ödeme döneminde — Beyanname 371",
+          "—",
+          "[371 Tutarı]",
+          "KV 371"
+        ],
+        [
+          "BEYANNAME AKIŞI — 370 + 371 BİRLİKTE:\n1. 646/679 ve 648/642 hesaplarındaki kazançlar ticari kârda yer alır.\n2. KV Beyannamesi: 370. satır (değerleme) + 371. satır (kur farkı tazminat) → 'Kazancın Bulunması Halinde'.\n3. ★★ YİAKV MATRAHI: HER İKİ TUTAR DA çıkarılmaz — asgari vergi matrahında kalır (E.7 → DÜŞÜLEMEZ).\n4. FAİZ/KÂR PAYI: KKM hesabından ayrıca faiz/kâr payı geliri olabilir — 371 kapsamında DEĞİLDİR.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "371 – KVK GEÇİCİ MD.14/1-b KUR FARKI KAZANCI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | KVK Geçici Md.14/1-b | ★★ YİAKV MATRAHINDA DÜŞÜLEMEZ | 370 ile Birlikte",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/1-b — Kur Farkı Tazminat Mekanizması",
+          "KKM KUR FARKI KORUMA MEKANİZMASI (371):\n\nKKM hesabı açılışında referans kur belirlenir (hesap açılış günü TCMB kuru).\nDönem boyunca piyasa TCMB kuru referans kurun ÜSTÜNE çıkarsa:\n→ Banka, hesap sahibine kur farkını tazmin eder.\n→ Bu tazminat ödemesi KVK Geçici Md.14/1-b kapsamında kurumlar vergisinden istisnadır.\n\n370 (Md.14/1-a) ile FARK:\n• 370: Dönüşüm anındaki TEK SEFERLİK kur farkı değerleme kazancı.\n• 371: Hesap süresince bankadan DÖNEMSEL kur farkı koruma ödemeleri.\n\nBEYANNAME: 371 | Kazancın Bulunması Halinde İndirilecek\nGİB KV Beyan Rehberi 2026 (No:606) Bölüm 2.2.15 kapsamındadır.",
+          "KVK Geçici Md.14/1-b | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "370 ile 371 Karşılaştırması ve Faiz/Kâr Payı Ayrımı",
+          "AYNI KKM HESABINDAN HER İKİSİ OLUŞABILIR:\n• 2022 dönüşüm → 370 (tek seferlik değerleme kazancı) → Yalnızca dönüşüm yılında\n• 2022-2025 arası → 371 (dönemsel banka kur farkı ödemeleri) → Her KV döneminde\n\nFAİZ/KÂR PAYI AYRIMI:\nKKM hesabı aynı zamanda faiz/kâr payı da üretebilir.\n• Kur farkı tazminat ödemesi → 371 kapsamında istisna\n• Faiz ve kâr payı geliri → 371 kapsamında DEĞİL — ayrı muhasebe ve vergi değerlendirmesi\n\nTL GÜÇLENDİĞİNDE: Piyasa kuru < Referans kur → Banka ödeme yapmaz → 371 sıfır.",
+          "KVK Geçici Md.14/1-a (370) | KVK Geçici Md.14/1-b (371)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370 ve 371 Her İkisi DÜŞÜLEMEZ",
+          "YİAKV MATRAHINDA DÜŞÜLEMEZ:\n\n• 370 (değerleme kazancı istisnası) → DÜŞÜLEMEZ\n• 371 (kur farkı tazminat istisnası) → DÜŞÜLEMEZ\nHer ikisi YİAKV çalışma kâğıdı E.7'de birlikte yer alır.\n\nEN SIK YAPILAN HATA: 371 tutarını YİAKV matrahından düşmek.\nBazı YMM'ler 371'i 370'ten ayrı değerlendirerek YİAKV hesabını hatalı yapabilmektedir.\nHER İKİSİ BİRLİKTE DÜŞÜLEMEZ — ayrı ayrı da düşülemez.\n\nYİAKV çalışma kâğıdı E.7:\n'KKM Değerleme + Kur Farkı Tazminatı (KVK Geçici Md.14) → DÜŞÜLEMEZ ✗ | Beyanname 370/371'",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Hesap Yenileme, Erken Kapatma ve Özel Durumlar",
+          "HESAP YENİLEME (ROLLOVER):\nYenilenen hesap için yeni referans kur (yenileme günü TCMB kuru) oluşur.\nKapsam analizi: Orijinal 31/12/2021 kaynaklı bakiyenin devamı mı? → 371 devam edebilir.\n\nERKEN KAPANMA:\nKapanma tarihine kadar alınan kur farkı ödemeleri 371 kapsamındadır.\n\nKUR FAİZ/KÂR PAYI AYRIŞTIRMASI:\nBanka ekstresinde kur farkı tazminatı ile faiz/kâr payı farklı satırlarda görünmeli.\nBanka bu ayrımı yapmazsa yazılı teyit veya sözleşme incelemesi gerekir.",
+          "KVK Geçici Md.14/1-b | Banka Sözleşmesi",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...31/12/2021 tarihli bilançoda kayıtlı yabancı paranın TL kur korumalı mevduat hesabına dönüştürülmesi sonucunda açılan KKM hesabından [dönem] döneminde KVK Geçici Madde 14/1-b kapsamında bankadan [Tutar] TL kur farkı tazminat ödemesi alınmış, söz konusu tutar kurumlar vergisinden istisna edilmiş ve yurt içi asgari kurumlar vergisi matrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...371 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...Faiz geliri 371 istisnası kapsamındadır.' (Yanlış)\n\nKRİTİK RİSKLER:\n(1) 371 tutarını YİAKV matrahından düşmek.\n(2) Faiz/kâr payı gelirini 371 ile karıştırmak.\n(3) 31/12/2021 dışı kaynaklı KKM hesaplarını kapsama almak.\n(4) 370 ile çapraz mutabakat yapmamak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (371): 370 + 371 birlikte KVK Geçici Md.14 paketini oluşturur. Her ikisi ayrı beyanname satırı. Her ikisi YİAKV matrahından DÜŞÜLEMEZ. Faiz/kâr payı 371 kapsamında değildir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F30",
+      "rows": [
+        [
+          "371 – KVK GEÇİCİ MD.14/1-b KUR FARKI KAZANCI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | Banka Ekstresi | 370 Çapraz Mutabakat",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama / YMM Kontrol",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Banka Hesap Ekstresi — Kur Farkı Tazminat Ödemeleri Ayrıştırılmış",
+          "Dönem içinde her KKM hesabına yapılan kur farkı tazminat ödemelerini gösteren banka ekstresi.\nKur farkı satırları faiz gelirinden AYRI gösterilmiş olmalı. C tablosunun her satırı ekstreden doğrulanmalı.",
+          "Banka şubesi / internet bankacılığı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ KKM Hesap Sözleşmesi — Referans Kur ve Vade Bilgisi",
+          "KKM hesap açılış belgesi: Açılış tarihi, referans kur, vade, kur farkı ödeme şartları.\nB.2 referans kur kaynağıdır. 370 dönüşüm tarihi ile uyumlu olmalı.",
+          "Banka KKM sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ 370 Çalışma Kâğıdı — Çapraz Mutabakat",
+          "370 dosyası E bölümü ile çapraz kontrol — hesap tarihleri ve referans kurlar tutarlı olmalı.",
+          "370 çalışma kâğıdı E bölümü",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Kur Farkı Hesaplama Tablosu (Bu Dosya — C ve D Bölümleri)",
+          "Her KKM hesabı için dönem ödemeleri — D.3 net istisna tutarı beyanname 371 ile uyumlu.",
+          "Bu çalışma kâğıdı",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 371. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış olmalı.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama / YMM Kontrol",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "TCMB Döviz Kur Tablosu",
+          "Banka kur farkı hesabını doğrulamak için dönem TCMB kurları.",
+          "tcmb.gov.tr",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Muhasebe Yevmiye Kayıtları — 648/642",
+          "Kur farkı ödeme yevmiye kayıtları — C tablosu toplamıyla mutabık.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Hesap Yenileme Belgesi (Varsa)",
+          "Rollover için yenileme sözleşmesi — yeni referans kur bilgisi.",
+          "Banka belgesi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden mi açıldı?",
+          "370 çapraz teyit. B.5 EVET.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Kur farkı ödemeleri banka ekstresiyle mutabık mı?",
+          "Her hesap satırı ekstreden doğrulanmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 370 ile çapraz mutabakat (E bölümü) tamamlandı mı?",
+          "Hesap tarihleri ve referans kurlar örtüşmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Kur farkı tazminatı faiz/kâr payından ayrıştırıldı mı?",
+          "Kur farkı → 371. Faiz → ayrı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Kapsam dışı hesaplar (D.2) ayrıştırıldı mı?",
+          "Kapsam dışı tutarlar vergilendirilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "★★ 371 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "YİAKV E.7'de her ikisi DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Beyanname 371 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Hesap yenileme varsa yeni kapsam analizi yapıldı mı?",
+          "Rollover hesabın 371 kapsamı ayrıca.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 371, 370 ile birlikte KVK Geçici Md.14 paketini oluşturur. Her ikisi ayrı beyanname satırı. EN KRİTİK: Her iki istisna da YİAKV matrahından DÜŞÜLEMEZ (E.7). Faiz/kâr payı 371 kapsamında değildir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

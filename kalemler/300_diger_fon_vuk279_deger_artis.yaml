@@ -28,15 +28,36 @@ ana_kategori: istirak_kazanc_istisnalari
 wizard_agaci:
   tetikleyici_soru: "15.07.2023 öncesi iktisap edilmiş TL esaslı yatırım fonu katılma payı için dönem sonu VUK 279 değerleme artışı var mı?"
   info_modal: |
-    KVK 5/1-a-5 kapsamında 3. ve 4. alt bentlere kaynak teşkil eden yatırım fonlarının
-    VUK 279 değerlemesinden kaynaklanan değer artış kazançları istisnadır.
-    KRİTİK UYARILAR:
-    (1) İktisap tarihi 15.07.2023'ten ÖNCE olmalıdır — sonrası vergiye tabidir.
-    (2) GSYF değerleme farkı bu forma DAHİL EDİLMEZ — 298/386 satırı kullanılır.
-    (3) Portföy ≥%51 hisse senedi → Alış bedeli → Değerleme farkı İSTİSNA DIŞIDIR.
-    (4) İstisna yalnızca değer ARTIŞLARI içindir — düşüşler ayrıca analiz edilmeli.
-    Beyanname 300. Satır: "Zarar Olsa Dahi İndirilecek" bölümü.
-    MUHASEBE AKIŞI: 649 hesabına gelir kaydı → KKEG tablosuna eklenir → Beyanname 300'de istisna düşülür.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-a alt bent 5 kapsamında, 3. ve 4. alt bentlerdeki istisna kazançlara kaynak oluşturan yatırım fonlarının **VUK Madde 279 değerlemesinden kaynaklanan değer artış kazançları** kurumlar vergisinden istisnadır. Bu bent de 7456 sayılı Kanun (15.07.2023) ile mülga edilmiş olup yalnızca **15.07.2023 öncesi iktisap edilen** fon katılma paylarının dönem sonu değerleme artışları için geçiş hükmü kapsamında uygulanmaya devam etmektedir. Beyanname **"Zarar Olsa Dahi İndirilecek"** bölümünde 300 numaralı satırda gösterilir.
+
+    ## Temel Koşullar
+
+    - **İktisap tarihi 15.07.2023 öncesi olmalıdır:** Kesin ve belgelenmesi zorunlu koşuldur; her fon için banka alış dekontu veya MKK ekstresi dosyada yer almalıdır.
+    - **GSYF değerleme farkı bu forma dahil edilmez:** GSYF (KVK 5/1-a alt bent 3) değerleme farkı 298 veya 386 satırına alınır; bu ayrım kritiktir.
+    - **VUK 279 değerleme yöntemi seçimi:** Portföy hisse senedi oranı **≥%51** ise alış bedeli uygulanır ve değerleme farkı oluşmaz; **<%51** ise borsa rayici ya da ilan edilen fiyat esas alınır ve oluşan fark istisna geliri olarak kaydedilir.
+    - **Yalnızca değer artışları:** İstisna değer artışları için geçerlidir; değer düşüşü oluşması halinde 659 gider kaydı yapılır ve KKEG olup olmadığı ayrıca analiz edilir.
+    - **Muhasebe akışı:** Değerleme artışı 649 hesabına gelir kaydedilir → KKEG tablosuna eklenir → Beyanname 300 satırında istisna olarak düşülür.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - İktisap tarihi belgesi eksikliği en büyük tarhiyat riskidir; belgelenemeyen alımlara istisna uygulanamaz.
+    - GSYF değerleme farkının bu forma yanlışlıkla dahil edilmesi ciddi kod hatası yaratır.
+    - Değerleme düşüşü varsa bunun KKEG sayılıp sayılmadığı güncel özelge/mukteza ile desteklenmelidir.
+    - Karma tarihli alımda her alım partisi için ayrı değerleme farkı hesabı zorunludur.
+    - 298/299/300 kod karıştırılması sistematik bir risktir; her fon türü kendi koduna yerleştirilmelidir.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-a alt bent 5 (300) istisnasının YİAKV matrahına etkisi **tartışmalı** olup dönem mevzuatı ve GİB açıklamaları çerçevesinde ayrıca analiz edilmeli ve YİAKV çalışma kâğıdına yansıtılmalıdır. Otomatik düşüm varsayımına dayanılmamalıdır.
+
+    ## Pratik Notlar
+
+    - 3 kademe uyum kontrolü zorunludur: Muhasebe 649 hesabı toplamı = veri girişi = KV beyannamesi 300 satırı; bu üçlü uyum YMM tasdik dosyasının temel doğrulama adımıdır.
+    - Dönem başı değer ile dönem sonu VUK 279 değeri arasındaki farkın net hesaplanabilmesi için 31.12 tarihli fon yöneticisi ilanı veya KAP/borsa verisi dosyaya eklenmelidir.
+    - Önceki dönem beyannameleri ile karşılaştırma yapılarak uygulama sürekliliği kontrol edilmelidir.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: iktisap_tarihi_oncesi
       soru: "İstisna uygulanacak fon(lar)ın iktisap tarihi 15.07.2023'ten ÖNCE mi?"

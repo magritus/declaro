@@ -32,12 +32,37 @@ ana_kategori: istirak_kazanc_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Girişim Sermayesi Yatırım Fonu (GSYF) veya Girişim Sermayesi Yatırım Ortaklığı (GSYO) yatırımınız var mı?"
   info_modal: |
-    KVK 5/1-a alt bent 3 kapsamında tam mükellef GSYF katılma paylarından ve
-    tam mükellef GSYO hisse senetlerinden elde edilen kazançlar kurumlar vergisinden
-    istisnadır. Bu istisna "Zarar Olsa Dahi İndirilecek" bölümündedir.
-    ÖNEMLİ: Gelirin hukuki niteliği (kâr payı, fona iade, satış, değer artışı) ayrıca
-    tespit edilmeden istisna uygulanamaz. Fon/ortaklık düzeyindeki istisna ile
-    yatırımcı kurumdaki gelir vergilemesi birbirinden bağımsız değerlendirilmelidir.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-a alt bent 3 kapsamında tam mükellef **Girişim Sermayesi Yatırım Fonu (GSYF)** katılma paylarından ve tam mükellef **Girişim Sermayesi Yatırım Ortaklığı (GSYO)** hisse senetlerinden elde edilen kazançlar kurumlar vergisinden istisnadır. Bu istisna beyannamede **"Zarar Olsa Dahi İndirilecek"** bölümünde 298 numaralı satırda gösterilir ve kurumun dönem zararında dahi uygulanabilir. İstisna oranı %100 olup SPK tarafından lisanslı GSYF/GSYO yapıları için özel olarak düzenlenmiş bir ayrıcalıktır.
+
+    ## Temel Koşullar
+
+    - **Tam mükellef statüsü:** GSYF veya GSYO'nun Türkiye'de kurulu ve tam mükellef olması zorunludur; dar mükellef veya yabancı fon bu kapsama girmez.
+    - **SPK lisansı:** Fon veya ortaklığın SPK'dan geçerli lisans almış olması gerekir; fon bilgi formu veya SPK lisans belgesi zorunlu belgeler arasındadır.
+    - **Gelirin hukuki niteliğinin tespiti:** İstisna uygulanabilecek gelir türleri sıkı şekilde ayrıştırılmalıdır: (1) Kâr payı/dağıtım → KVK 5/1-a, (2) Fona iade kazancı → KVK 5/1-a (süre ve oran koşulu yoktur), (3) VUK 279 dönem sonu değerleme farkı → portföy yapısına bağlı olarak belirlenir.
+    - **Fon/ortaklık düzeyi ile yatırımcı kurumun ayrıştırılması:** GSYF veya GSYO'nun kendi kazancının KV'den istisna olması, yatırımcı kurumun elde ettiği her gelire otomatik istisna uygulanacağı anlamına gelmez.
+    - **Üçüncü kişiye satış ayrımı:** GSYF katılma payının üçüncü kişiye satışından doğan kazanç KVK 5/1-a değil, KVK 5/1-e (%75, 2 yıl aktif şartı) kapsamındadır ve farklı beyanname satırına yazılır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **VUK 279 değerleme yöntemi:** Portföy hisse oranı **≥%51** ise alış bedeli esası uygulanır ve değerleme farkı oluşmaz; **<%51** ise borsa rayici/NAD değeri esas alınır ve değerleme farkı istisna kapsamına girer. Her dönem fon bilgi formuyla teyit zorunludur.
+    - **7524 sayılı Kanun (01.01.2025) GYF/GYO kâr dağıtım şartı:** GYF ve GYO için kâr dağıtım şartı getirilmiş olup bu şartı sağlamayan GYF/GYO'dan alınan kâr payı artık KVK 5/1-a kapsamında değerlendirilemez.
+    - **Grup içi GSYF transfer fiyatlandırması riski:** Grup şirketleri arasındaki GSYF yatırımlarında KVK Madde 13 kapsamında transfer fiyatlandırması riski doğabilir.
+    - **GVK Geçici Madde 67 stopaj:** İktisap tarihi, araç niteliği ve elde tutma süresine göre stopaj rejimi değişebilir; her vakada ayrıca analiz edilmelidir.
+    - **Fona iade ile 3. kişiye satış karıştırılma riski:** Bu iki işlem farklı beyanname satırlarına yazılır; aynı 298 koduna alınması tarhiyat riski doğurur.
+    - **Gelir niteliği belgesiz uygulanamaz:** Portföy yönetim şirketi veya aracı kurum yazılı görüşü olmadan gelirin hukuki niteliği belirlenemez.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-a kapsamındaki kâr payı niteliğindeki gelirler için 298 istisnası **YİAKV matrahından düşülebilir**; ancak satış, itfa veya değer artışı niteliğindeki gelirler için ayrı analiz yapılmalıdır. Dönem mevzuatı ve güncel GİB açıklamaları teyit edilmeden YİAKV matrahından otomatik düşüm yapılmamalıdır.
+
+    ## Pratik Notlar
+
+    - Her GSYF/GSYO yatırımı için ayrı maliyet ve gelir takibi yapılmalı; muhasebe hesapları ile çalışma kâğıdı ve beyanname 298 satırı birebir uyumlu olmalıdır.
+    - Fona iade kazancı hesabında FIFO veya ağırlıklı ortalama maliyet yöntemi tutarlı biçimde uygulanmalı ve seçilen yöntem yazılı olarak belgelenmelidir.
+    - VUK 279 portföy bileşimi analizi yıl içinde fon portföyü değişebileceğinden hem dönem başı hem dönem sonu için teyit edilmelidir.
+    - 49 No.lu KV Genel Tebliği (30.12.2025) kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu zorunluluğu kontrol edilmelidir.
   kapi_sorulari:
     - id: gsyf_gsyo_tam_mukellef
       soru: "GSYF/GSYO tam mükellef ve Türkiye'de kurulu mu?"

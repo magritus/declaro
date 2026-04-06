@@ -1,0 +1,1250 @@
+{
+  "file": "370_KVK_Gecici_Md14_1a_Degerleme_Kazanci_Istisnasi.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G59",
+      "rows": [
+        [
+          "370 – KVK GEÇİCİ MADDE 14/1-a | DEĞERLEMEDen DOĞAN KUR FARKI KAZANCI İSTİSNASI | KUR KORUMALI MEVDUAT (KKM) | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/1-a | 31/12/2021 Bilanço Yabancı Para → TL KKM Dönüşümü | Dönüşüm Anındaki Kur Farkı Kazancı İstisnası | Beyanname 370 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ | GİB KV Beyan Rehberi Mart 2026 (No:606)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 370 kapsamındaki değerleme kazancı istisnası YİAKV matrahından DÜŞÜLEMEZ — asgari vergide matrahta kalır. (KV Beyan Rehberi 2026 No:606 | YİAKV Reh. No:607 Bölüm 3.3 | E.7 DÜŞÜLEMEZ listesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Kurumun 31/12/2021 tarihli bilançosunda yabancı para (döviz tevdiat hesabı dahil) bakiyesi var mıydı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14 kapsamı YALNIZCA 31/12/2021 bilanço yabancı para bakiyelerini kapsar. Sonradan edinilen yabancı paralar kapsam dışı.",
+          null
+        ],
+        [
+          "A0.2  ★ Bu yabancı paralar yasal süre içinde TL mevduat/katılım hesabına (KKM) dönüştürüldü mü?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Orijinal süre: 17/2/2022 – 31/3/2022. Cumhurbaşkanı kararlarıyla uzatıldı. Güncel dönüşüm son tarihi kontrol edilmeli. B bölümünde tarih doğrulaması zorunlu.",
+          null
+        ],
+        [
+          "A0.3  Dönüşüm esnasında kur farkı (değerleme) kazancı oluştu mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Bilanço tarihindeki kur ile dönüşüm günü kuru arasında pozitif fark varsa kazanç oluşur. Negatif fark olursa (TL değer kaybı döneminde) 370 tutarı sıfır olabilir.",
+          null
+        ],
+        [
+          "A0.4  KKM hesabının TL cinsinden açıldığı ve korumalı (garantili) olduğu teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Sadece TL mevduat veya TL katılım hesabı (KKM) kapsamda. Döviz korumalı hesap farklıdır — Geçici Md.14 koşullarına uygunluk bankadan teyit alınmalıdır.",
+          null
+        ],
+        [
+          "A0.5  370 (değerleme kazancı) ile 371 (faiz/kâr payı) doğru ayrıştırıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "370: Dönüşüm anındaki tek seferlik kur farkı kazancı (değerleme). 371: KKM hesabından elde edilen faiz ve kâr payı geliri. Her ikisi de ayrı beyanname satırı — karıştırılmamalı. 371 için ayrı çalışma kâğıdı düzenleyin.",
+          null
+        ],
+        [
+          "A0.6  ★ 370 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14 kapsamı kazançlar YİAKV matrahından DÜŞÜLEMEZ (E.7). Hatalı uygulama → YİAKV tarhiyatı + vergi ziyaı cezası + gecikme faizi. YİAKV çalışma kâğıdında da çift kontrol yapılmalıdır.",
+          null
+        ],
+        [
+          "A0.7  Dönüşüm tarihi ve tutarı banka belgesiyle teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Döviz dönüşüm dekontu + KKM hesap açılış belgesi zorunludur. Banka tarafından düzenlenen resmi belge olmadan istisna savunulamaz.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (dönüşüm tarihi), A0.6 (YİAKV düşülemez) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı — beyannamedeki ile aynı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30 | YİD/KÖİ: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/370-01",
+          null
+        ],
+        [
+          "Bankacıyla İletişim Kişisi",
+          null,
+          null,
+          null,
+          null,
+          "KKM koşulları için banka yetkilisi adı/iletişim",
+          null
+        ],
+        [
+          "B. DÖNÜŞÜM KOŞULLARI VE YASAL DAYANAĞA UYGUNLUK KONTROLÜ (KVK Geçici Md.14/1-a)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Dönüşüm tarihinin Cumhurbaşkanı kararlarıyla belirlenen yasal süre içinde olduğu teyit edilmelidir. 31/12/2021 bilanço bakiyesini aşan dönüşümler kapsam dışıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Yasal Dayanak"
+        ],
+        [
+          "B.1  31/12/2021 Bilançosundaki Toplam Yabancı Para Bakiyesi (TL karşılığı)",
+          null,
+          null,
+          "31/12/2021 TCMB kapanış kuru × Döviz miktarı. Bilanço ile mutabık olmalı.",
+          null,
+          "Bilanço",
+          null
+        ],
+        [
+          "B.2  Dönüşüme Konu Edilen Yabancı Para Miktarı (Döviz cinsinden, toplam)",
+          null,
+          null,
+          "31/12/2021 bakiyesini aşamaz. Aşan kısım kapsam dışı.",
+          null,
+          "Banka dekontu",
+          null
+        ],
+        [
+          "B.3  ★ Dönüşüm Tarihi (TL KKM hesabına geçiş tarihi)",
+          null,
+          null,
+          "Yasal süre içinde olduğu banka belgesiyle kanıtlanmalıdır.",
+          null,
+          "Banka dekontu",
+          null
+        ],
+        [
+          "B.4  Dönüşüm Günü TCMB Döviz Alış Kuru (C. tablosunda her döviz için ayrı girilecek)",
+          null,
+          null,
+          "TCMB resmi kuru — dönüşüm günü itibarıyla (tcmb.gov.tr)",
+          null,
+          "TCMB kur tablosu",
+          null
+        ],
+        [
+          "B.5  KKM Hesap Türü",
+          null,
+          "TL Mevduat (KKM)",
+          "Yalnızca TL KKM (mevduat veya katılım) kapsamda. Döviz hesabı kapsamda değil.",
+          null,
+          "Banka belgesi",
+          null
+        ],
+        [
+          "B.6  KKM Hesap Vade Tarihi",
+          null,
+          null,
+          "Hesap vadesi — 371 faiz hesabı için de referans",
+          null,
+          "Banka hesap cüzdanı",
+          null
+        ],
+        [
+          "B.7  Dönüşüm 31/12/2021 Bilançosu Bakiyesi İle Sınırlı mı?",
+          null,
+          "EVET",
+          "Dönüşüm tutarı 31/12/2021 bakiyesini aşamaz. B.2 ≤ Bilanço bakiyesi.",
+          null,
+          "KVK Geç.Md.14/1",
+          null
+        ],
+        [
+          "C. PARA BİRİMİ BAZINDA DÖNÜŞÜM VE DEĞERLEME KAZANCI HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her yabancı para birimi için ayrı satır doldurun. Değerleme Kazancı = (Dönüşüm Günü Kuru × Döviz Miktarı) − (31/12/2021 Kuru × Döviz Miktarı).\n  Bilanço kuru: 31/12/2021 TCMB döviz alış kuru. Negatif fark → o döviz için 370 kazancı yok (0).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Döviz",
+          "31/12/2021 Bakiye (Döviz)",
+          "31/12/2021 TCMB Kuru",
+          "Bilanço TL Değeri",
+          "Dönüşüm Günü Kuru",
+          "Dönüşüm TL Tutarı",
+          "Değerleme Kazancı (TL)"
+        ],
+        [
+          "USD",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "EUR",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "GBP",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "CHF",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Diğer Döviz",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam Değerleme Kazancı (Tüm Dövizler)",
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "NOT: Dönüşüm günü kuru 31/12/2021 kurundan DÜŞÜK ise (TL değer kazandığı dönem) ilgili döviz için değerleme kazancı SIFIR kabul edilir (negatif = zarar, formül MAX(...,0) ile sıfırlanır). Bu durumda 370 istisnası oluşmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. DEĞERLEMEden DOĞAN KUR FARKI KAZANCI — İSTİSNA HESABI (KVK Geçici Md.14/1-a)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Değerleme kazancının tamamı istisna kapsamındadır (oransal indirim yok). Beyanname 370: Kazancın Bulunması Halinde İndirilecek bölümü. ★ YİAKV matrahından DÜŞÜLEMEZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam Dönüşüm TL Tutarı (C tablosu — tüm dövizler)",
+          null,
+          "0",
+          "C tablosu toplam dönüşüm TL",
+          null,
+          "Dönüşüm anındaki toplam değer",
+          null
+        ],
+        [
+          "D.2  31/12/2021 Bilanço TL Değeri (C tablosu — tüm dövizler)",
+          null,
+          "0",
+          "C tablosu bilanço TL",
+          null,
+          "Muhasebe kayıtlarıyla mutabık olmalı",
+          null
+        ],
+        [
+          "D.3  BRÜT DEĞERLEMEden DOĞAN KAZANÇ (D.1 − D.2)",
+          null,
+          "0",
+          "Pozitifse kazanç | Negatifse 0 (kapsam dışı)",
+          null,
+          "Negatif → 370 oluşmaz",
+          null
+        ],
+        [
+          "D.4  Kapsam Dışı Kazanç Ayrıştırması (31/12/2021 bakiyesini aşan dönüşümler)",
+          null,
+          null,
+          "31/12/2021 bakiyesi aşıldıysa orantılı ayrıştırma zorunlu",
+          null,
+          "B.2 ≤ Bilanço bakiyesi sağlanıyorsa 0",
+          null
+        ],
+        [
+          "D.5  ★ NET İSTİSNA TUTARI (D.3 − D.4) → BEYANNAME 370",
+          null,
+          "0",
+          "→ Beyanname 370 satırı",
+          null,
+          "Kazancın Bulunması Halinde İndirilecek",
+          null
+        ],
+        [
+          "D.6  Vergiye Tabi Kalan Kur Farkı Kazancı (Varsa — Kapsam Dışı Kısım)",
+          null,
+          "0",
+          "Bu kısım KV matrahında kalır",
+          null,
+          "D.4 > 0 ise vergilendirilir",
+          null
+        ],
+        [
+          "E. BEYANNAME 370 — DEĞERLEMEden DOĞAN KUR FARKI KAZANCI İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  TOPLAM İSTİSNA → Beyanname Satır 370 (Kazancın Bulunması Halinde İndirilecek)",
+          null,
+          null,
+          null,
+          "0",
+          "D.5 — KVK Geçici Md.14/1-a | Tüm dövizler toplamı",
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 370 istisnası asgari kurumlar vergisi matrahından ÇIKARILMAZ — YİAKV çalışma kâğıdı E.7 satırında bu tutar DÜŞÜLEMEZ olarak raporlanmalıdır.\n(2) BEYANNAME BÖLÜMÜ: 'Kazancın Bulunması Halinde İndirilecek' — Dönemde zarar varsa istisna uygulanamaz.\n(3) 370 TEK SEFERLİK: Değerleme kazancı genellikle dönüşüm yılında oluşur. İzleyen dönemlerde 370 tutarı sıfır olabilir — 371 (faiz/kâr payı) devam eder.\n(4) 371 İLE KARIŞTIRILMAMALI: Faiz ve kâr payı geliri ayrı beyanname satırı (371) ve ayrı çalışma kâğıdı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G35",
+      "rows": [
+        [
+          "370 – KVK GEÇİCİ MD.14/1-a DEĞERLEMEden DOĞAN KAZANÇ | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/1-a | KKM Dönüşüm Kur Farkı Kazancı | Beyanname 370 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "KKM Hesap Türü (B.5)",
+          null,
+          null,
+          "TL Mevduat (KKM)",
+          "TL Mevduat/Katılım",
+          null,
+          null
+        ],
+        [
+          "Dönüşüm Süresi Uygunluğu (B.7)",
+          null,
+          null,
+          "EVET",
+          "EVET = Uygun",
+          null,
+          null
+        ],
+        [
+          "Toplam Brüt Kazanç (D.3)",
+          null,
+          null,
+          "0",
+          "Değerleme kazancı toplamı",
+          null,
+          null
+        ],
+        [
+          "Kapsam Dışı Ayrıştırma (D.4)",
+          null,
+          null,
+          "0",
+          "Varsa orantılı ayrıştırma",
+          null,
+          null
+        ],
+        [
+          "370 İSTİSNA TUTARI (D.5)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "Evet — E.7 kapsamında",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. PARA BİRİMİ BAZINDA DEĞERLEME KAZANCI ÖZET (VERİ GİRİŞİ C Tablosundan)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Döviz",
+          "31/12/2021 Bakiye (Döviz)",
+          "31/12/2021 Kuru (TL)",
+          "Bilanço TL",
+          "Dönüşüm Kuru (TL)",
+          "Dönüşüm TL",
+          "Değerleme Kazancı (TL)"
+        ],
+        [
+          "USD",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "EUR",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "GBP",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "CHF",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Diğer",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam Değerleme Kazancı → Beyanname 370",
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12) — KVK GEÇİCİ MD.14/1-a",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama / Yasal Dayanak",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ Dönüşüme konu yabancı para 31/12/2021 bilançosunda mevcut muydu?",
+          null,
+          "Bilanço yabancı para hesabı (döviz tevdiat dahil) teyit edilmeli. Sonradan edinilen döviz kapsam dışı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Dönüşüm tarihi yasal süre içinde mi? (CB Kararlarıyla uzatılan son tarih kontrol edildi mi?)",
+          null,
+          "Orijinal: 17/2/2022 – 31/3/2022. Cumhurbaşkanı kararlarıyla uzatıldı. Güncel son tarih banka belgesiyle teyit.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "Dönüşüm tutarı 31/12/2021 bilançosu bakiyesini aşmıyor mu?",
+          null,
+          "Aşan kısım kapsam dışı — kapsam içi kısım orantılı hesaplanır. B.2 ≤ B.1 kontrol.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ 31/12/2021 TCMB döviz kurları resmi kaynaktan alındı mı?",
+          null,
+          "TCMB resmi kapanış kuru (alış kuru). Bilanço değerlemesiyle uyumlu olmalı. tcmb.gov.tr.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "Dönüşüm günü TCMB döviz kurları resmi kaynaktan alındı mı?",
+          null,
+          "Dönüşüm tarihi TCMB resmi kuru. Banka dekontu ile çapraz kontrol edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "Değerleme kazancı (D.3) muhasebe kayıtlarıyla mutabık mı?",
+          null,
+          "680/679 hesabındaki kur farkı geliri ile C tablosu toplamı uyumlu olmalı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "★ 370 ve 371 (faiz/kâr payı) doğru ayrıştırıldı mı?",
+          null,
+          "370: Dönüşüm anındaki tek seferlik kur farkı. 371: KKM hesabından süregelen faiz/kâr payı. Her ikisi ayrı satır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "★★ 370 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "KVK Geçici Md.14 kazançları YİAKV matrahından DÜŞÜLEMEZ (E.7). YİAKV çalışma kâğıdında E.7 satırında bu tutar DÜŞÜLEMEZ listesinde yer almalıdır. EN KRİTİK KONTROL.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "Beyanname 370 tutarı D.5 ile uyumlu mu? 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "370 → Kazancın Bulunması Halinde İndirilecek. Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "KKM hesap belgesi (banka dekontu + hesap açılış belgesi) dosyada mevcut mu?",
+          null,
+          "Döviz dönüşüm dekontu + KKM hesap açılışı — her ikisi zorunlu. Banka teyidi gerekebilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "Kapsam dışı kazanç (D.4) varsa orantılı ayrıştırma yapıldı mı?",
+          null,
+          "31/12/2021 bakiyesini aşan dönüşüm tutarı kapsam dışı ve vergiye tabidir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik gönderim.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G17",
+      "rows": [
+        [
+          "370 – KVK GEÇİCİ MD.14/1-a DEĞERLEMEden DOĞAN KAZANÇ | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KKM Dönüşüm Günü | Kur Farkı Değerleme Kaydı | İstisna Kaydı | YİAKV Uyarısı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Aşağıdaki kayıtlar örnek niteliğindedir. Muhasebe politikasına ve kurlara göre uyarlanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — DÖNÜŞÜM GÜNÜ: YABANCI PARA ÇIKIŞI VE TL KKM AÇILIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Dönüşüm Tarihi]",
+          "108 Diğer Hazır Değerler / KKM Hesabı",
+          "TL KKM hesabına dönüştürülen tutar (Dönüşüm günü kuru × Döviz miktarı)",
+          "[Dönüşüm TL]",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Dönüşüm Tarihi]",
+          "100/102 Kasa veya 121 Döviz Hesabı",
+          "Yabancı para çıkışı (bilanço değeri üzerinden)",
+          "—",
+          "[Bilanço TL]",
+          "Döviz hesap kartı"
+        ],
+        [
+          "Kr",
+          "[Dönüşüm Tarihi]",
+          "646 Kambiyo Kârları / 679 Diğer Olağandışı Kâr",
+          "Dönüşüm anındaki kur farkı kazancı — KVK Geçici Md.14/1-a kapsamı → Beyanname 370",
+          "—",
+          "[Kur Farkı]",
+          "KV 370"
+        ],
+        [
+          "KUR FARKI = (Dönüşüm Günü Kuru − 31/12/2021 Kuru) × Döviz Miktarı. Bu fark 646/679 hesabına kaydedilir. Dönüşüm günü kuruna göre değerleme yapılmaktadır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — BEYANNAME DÖNEMİ: KUR FARKI KAZANCININ İSTİSNA OLARAK GÖSTERİLMESİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Muhasebe kaydı yapılmaz. KV Beyannamesinde 370 satırına istisna tutarı yazılır. Kaydı açıklayan not aşağıdadır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME AKIŞI — KVK GEÇİCİ MD.14/1-a:\n1. Dönüşüm günü 646/679 hesabına kaydedilen kur farkı kazancı → Ticari kârda yer alır.\n2. KV Beyannamesi 370. Satır: 'Kazancın Bulunması Halinde İndirilecek' bölümü → İstisna tutarı (D.5) buraya yazılır.\n3. Genel KV matrahı: Ticari kâr + KKEG − (370 dahil izin verilen istisnalar).\n4. ★★ YİAKV MATRAHI: 370 tutarı buradan ÇIKARILMAZ — asgari vergi matrahında kalır.\n   YİAKV çalışma kâğıdı E.7 satırında: 'KKM Değerleme Kazancı (KVK Geçici Md.14) → DÜŞÜLEMEZ ✗'",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — 370 DEĞERLEME KAZANCI vs 371 FAİZ/KÂR PAYI AYRIMI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "370",
+          "[Dönüşüm Tarihi]",
+          "646/679 — KUR FARKI KAZANCI",
+          "Dönüşüm anında bir kez oluşan kur farkı → Beyanname 370 (Geçici Md.14/1-a)",
+          "—",
+          "[Tutar]",
+          "KV 370"
+        ],
+        [
+          "371",
+          "[Faiz Tarihi]",
+          "642 Faiz Gelirleri / 644 Temettü ve Kâr Payları",
+          "KKM hesabından dönem içinde tahakkuk eden faiz/kâr payı → Beyanname 371 (Geçici Md.14/1-b)",
+          "—",
+          "[Tutar]",
+          "KV 371"
+        ],
+        [
+          "370 genellikle TEK SEFERLİK dönüşüm yılında oluşur. 371 KKM hesabı yaşadığı sürece her dönem devam eder. Her ikisi de YİAKV matrahından DÜŞÜLEMEZ. Ayrı çalışma kâğıtları düzenlenmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "370 – KVK GEÇİCİ MD.14/1-a DEĞERLEMEden DOĞAN KAZANÇ | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) | KVK Geçici Md.14 | 7352 s.K. | ★★ YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/1-a — Yasal Çerçeve ve Güncel Durum (GİB No:606 Bölüm 2.2.15)",
+          "KVK GEÇİCİ MADDE 14/1-a TANIMI:\n\nKurumların 31/12/2021 tarihli bilançolarında yer alan yabancı paralarını, Cumhurbaşkanı Kararıyla belirlenen süre içinde TL mevduat veya TL katılım hesabına (Kur Korumalı Mevduat — KKM) dönüştürmeleri halinde, bu dönüşüm esnasında oluşan kur farkı kazancı (değerleme farkı) kurumlar vergisinden istisna edilmiştir.\n\nTEMEL KOŞULLAR:\n① 31/12/2021 bilanço bakiyesi şartı: Yalnızca bu tarihteki yabancı para bakiyesi kapsam dahili.\n② TL KKM hesabı: Yalnızca TL mevduat veya TL katılım hesabına dönüşüm.\n③ Dönüşüm süresi: Cumhurbaşkanı Kararıyla belirlenen son tarih içinde.\n④ Değerleme kazancı: Bilanço kuru ile dönüşüm günü kuru arasındaki pozitif fark.\n\nBEYANNAME: 370 | Kazancın Bulunması Halinde İndirilecek\nGİB KV Beyan Rehberi 2026 (Yayın No:606), Bölüm 2.2.15 kapsamında yer almaktadır.",
+          "KVK Geçici Md.14/1-a | 7352 s.K. Md.8 | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ Değerleme Kazancı Hesaplama Yöntemi ve Teknik Detaylar",
+          "DEĞERLEME KAZANCI HESABI:\n\nHer yabancı para birimi için ayrı ayrı hesaplanır:\nDeğerleme Kazancı = (Dönüşüm Günü TCMB Kuru × Döviz Miktarı) − (31/12/2021 TCMB Kuru × Döviz Miktarı)\n\nTCMB KURU: Her iki tarih için de TCMB resmi döviz alış kuru esas alınır.\n\nKAPSAM SINIRI:\nDönüşüm tutarı 31/12/2021 bilanço bakiyesini aşamaz. Aşan kısım kapsam dışıdır ve\nvergi matrahında kalır. Bu durumda orantılı hesaplama yapılır:\nİstisna Oranı = 31/12/2021 Bakiyesi / Toplam Dönüşüm Tutarı\n\nPOZİTİF FAZ KOŞULU: Dönüşüm günü kuru 31/12/2021 kurundan düşükse (TL değer kazanmış dönem),\ndeğerleme kazancı negatif olabilir. Bu durumda 370 tutarı sıfırdır — istisna oluşmaz.\n\nMUHASEBE: 646 Kambiyo Kârları veya 679 hesabında izlenir. Ticari kâra dahildir.\nBeyannamede 370 satırıyla istisna olarak indirilir.",
+          "KVK Geçici Md.14/1-a | TCMB Kur Tablosu | VUK Md.280",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — EN KRİTİK YMM KONTROL NOKTASI",
+          "KVK GEÇİCİ MD.14 KAZANÇLARI YİAKV MATRAHINDA DÜŞÜLEMEZ:\n\nKVK Md.32/C (YİAKV) kapsamında asgari kurumlar vergisi hesaplamasında,\nKVK Geçici Md.14 kapsamındaki değerleme kazancı istisnası MATRAHTAN DÜŞÜLEMEZ.\n\nBEYANNAME AKIŞI:\n① Ticari bilanço kârı + KKEG = YİAKV kazanç tabanı\n② 370 tutarı bu tabanı AZALTMAZ — matrahta kalır\n③ YİAKV × %10 = Ham asgari vergi\n④ Genel KV ve YİAKV karşılaştırılır — büyük olan ödenir\n\nYİAKV ÇALIŞMA KÂĞIDI KONTROLÜ:\nE.7 satırı: 'KKM Değerleme + Faiz/Kâr Payı İstisnası (KVK Geçici Md.14) → YİAKV'de DÜŞÜLEMEZ ✗ | Beyanname 370/371'\n\nSIKLIKLA YAPILAN HATA: 370 tutarını YİAKV matrahından düşmek → Asgari vergi eksik hesaplanır\n→ Tarhiyat + vergi ziyaı cezası + gecikme faizi riski. YMM müteselsil sorumluluğu kapsamındadır.",
+          "KVK Md.32/C | YİAKV Rehberi (No:607) Bölüm 3.3 | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "370 (Değerleme Kazancı) ile 371 (Faiz/Kâr Payı) Ayrımı ve Birlikte Kullanım",
+          "KVK GEÇİCİ MD.14 İKİ AYRI İSTİSNA:\n\n370 — DEĞERLEMEden DOĞAN KAZANCbeyanname (Geçici Md.14/1-a):\n• OLUŞMA ZAMANI: Yalnızca dönüşüm anında, tek seferlik.\n• TUTAR: Bilanço kuru ile dönüşüm günü kuru arasındaki pozitif fark.\n• SONRAKI DÖNEMLER: 370 tutarı artık sıfırdır (hesap değerleme kürü değişmez).\n• MUHASEBE HESABI: 646 Kambiyo Kârları / 679 Diğer Olağandışı Kâr.\n\n371 — FAİZ VE KÂR PAYI İSTİSNASI (Geçici Md.14/1-b):\n• OLUŞMA ZAMANI: KKM hesabı yaşadığı sürece her dönem süregelen gelir.\n• TUTAR: KKM hesabından tahakkuk eden faiz ve kâr payı.\n• SONRAKI DÖNEMLER: Hesap aktif olduğu sürece devam eder.\n• MUHASEBE HESABI: 642 Faiz Gelirleri / 644 Temettü ve Kâr Payları.\n\nHER İKİSİ DE YİAKV MATRAHINDA DÜŞÜLEMEZ. Ayrı çalışma kâğıtları (370 ve 371).",
+          "KVK Geçici Md.14/1-a (Beyanname 370) | KVK Geçici Md.14/1-b (Beyanname 371)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ: >=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik.\n\nKULLANIN:\n'...31/12/2021 tarihli bilançoda kayıtlı [Döviz Miktarı] ABD Doları'nın [Tarih] tarihinde TL kur korumalı mevduat hesabına dönüştürülmesi sonucunda KVK Geçici Madde 14/1-a kapsamında oluşan [Tutar] TL tutarındaki değerleme kazancı kurumlar vergisinden istisna edilmiştir. Söz konusu tutar beyanname 370. satırında gösterilmiş olup yurt içi asgari kurumlar vergisi matrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...370 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ — YİAKV matrahında kalır)\n'...31/12/2021 sonrası edinilen dövizler de 370 kapsamında istisnaya tabidir.' (Kapsam dışı)\n'...dönüşüm tutarı bilanço bakiyesini aştığından tamamına istisna uygulanmıştır.' (Hatalı)\n\nKRİTİK RİSK ALANLARI:\n(1) 370 tutarını YİAKV matrahından düşmek → EN SIK YAPILAN HATA.\n(2) 31/12/2021 sonrası edinilen dövizlerin dönüşümünü kapsama dahil etmek.\n(3) 370 ve 371'i aynı satıra yazmak veya karıştırmak.\n(4) Dönüşüm tarihinin yasal süre dışında olmasını gözden kaçırmak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (YAYIN NO:606) — BÖLÜM 2.2.15 KAPANIŞ: KVK Geçici Md.14 kapsamındaki istisnalar 2025 KV beyannamesi için günceldir. En kritik kontrol: 370 ve 371 tutarlarının YİAKV matrahından düşülmemesi. Bu hata vergi ziyaı cezası ve gecikme faiziyle sonuçlanır. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F31",
+      "rows": [
+        [
+          "370 – KVK GEÇİCİ MD.14/1-a DEĞERLEMEden DOĞAN KAZANÇ | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | KKM Dönüşüm | TCMB Kur | Banka Belgesi | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (Tamamı Olmadan Tasdik Tamamlanmaz)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ 31/12/2021 Bilançosu (Kesinleşmiş) — Yabancı Para Bakiyeleri",
+          "31/12/2021 tarihli bilanço — yabancı para hesapları (döviz tevdiat + kasa) açık bakiyeleri.\nYMM: Dönüşüm tutarı bu bakiyeleri aşmamalı. Aşma varsa orantılı ayrıştırma zorunlu.",
+          "Kesinleşmiş Bilanço / Mizan",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Döviz Dönüşüm Dekontu — Dönüşüm Günü Banka Belgesi",
+          "KKM hesabına dönüşümün gerçekleştiğini gösteren resmi banka dekontu.\nDönüşüm tarihi, döviz miktarı, TL karşılığı ve uygulanan kur açıkça görünmeli.\nYMM: Dönüşüm tarihinin yasal süre içinde olduğu bu belgeden teyit edilir.",
+          "Banka dekontu / Online bankacılık çıktısı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ KKM Hesap Açılış Belgesi (TL Mevduat / Katılım Hesabı Sözleşmesi)",
+          "TL kur korumalı mevduat veya katılım hesabı sözleşmesi.\nHesap türü, vade, başlangıç tutarı, kur garantisi koşulları görünmeli.\nYMM: Hesabın TL KKM niteliğinde olduğu bu belgeden teyit edilir.",
+          "Banka sözleşmesi / KKM belgesi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ TCMB Resmi Döviz Kurları (31/12/2021 ve Dönüşüm Günü)",
+          "Her iki tarih için TCMB resmi döviz alış kurları.\ntcmb.gov.tr → Döviz Kurları → İlgili tarihlerin kur tablosu.\nYMM: C tablosundaki kurların TCMB resmi kurlarıyla uyumlu olduğu teyit edilmeli.",
+          "TCMB web sitesi (tcmb.gov.tr)",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Dönüşüm Kazancı Hesaplama Tablosu (Bu Çalışma Kâğıdı C Bölümü)",
+          "Her döviz bazında değerleme kazancı hesabı (bilanço kuru vs dönüşüm günü kuru).\nYMM: D.5 istisna tutarı ile beyanname 370 tutarının uyumlu olduğu teyit edilmeli.",
+          "Bu çalışma kâğıdı — C ve D bölümleri",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 370. Satır",
+          "'Kazancın Bulunması Halinde İndirilecek' bölümünde.\n370 tutarı D.5 ile birebir uyumlu olmalı.\n★★ YİAKV: Beyannamedeki 370 tutarı YİAKV matrahından çıkarılmamış olmalı.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Dönüşüm Tarihinin Yasal Süre İçinde Olduğunu Gösteren CB Kararı",
+          "İlgili Cumhurbaşkanı Kararı — orijinal veya uzatma kararı.\nDönüşüm tarihinin kararla belirlenen son tarih içinde olduğu kontrol edilmeli.",
+          "Resmî Gazete / mevzuat.gov.tr",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Muhasebe Yevmiye Kaydı — Kur Farkı Kazancı (646/679)",
+          "Dönüşüm günü yevmiye kaydı: Döviz çıkışı + KKM açılışı + 646/679 kur farkı kaydı.\nC tablosu hesabıyla mutabık olmalı.",
+          "Yevmiye defteri / Muhasebe ekstresi",
+          null
+        ],
+        [
+          null,
+          "9",
+          "370 ve 371 Karşılaştırma Notu (İki İstisna Ayrıştırması)",
+          "370 (değerleme kazancı) ve 371 (faiz/kâr payı) tutarlarının ayrı ayrı belgelendiğini\ngösteren çapraz referans. Her iki istisnada da YİAKV düşülemez notu bulunmalı.",
+          "Bu çalışma kâğıdı + 371 çalışma kâğıdı",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Yabancı para 31/12/2021 bilançosunda mevcut muydu?",
+          "Bilanço teyidi zorunlu. Sonraki edinimler kapsam dışı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Dönüşüm tarihi yasal süre (CB Kararı) içinde mi?",
+          "Dönüşüm dekontu tarihi ≤ Yasal son tarih.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "Dönüşüm tutarı bilanço bakiyesini aşmıyor mu?",
+          "Aşma → Orantılı ayrıştırma zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ TCMB kurları resmi kaynaktan alındı mı? (Her iki tarih)",
+          "tcmb.gov.tr — bilanço ve dönüşüm günü kurları.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Değerleme kazancı (D.3) muhasebe ile mutabık mı?",
+          "646/679 kur farkı tutarı ile uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "★ 370 ve 371 doğru ayrıştırıldı mı?",
+          "370: Dönüşüm kazancı. 371: Faiz/kâr payı. Ayrı satırlar.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ 370 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "YİAKV MATRAHINDA KALMALI — en kritik kontrol.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Beyanname 370 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) Bölüm 2.2.15 esas alınarak hazırlanmıştır. EN KRİTİK KONTROL: 370 tutarının YİAKV matrahından düşülmemesi — asgari kurumlar vergisi matrahında kalması zorunludur. 370 (değerleme kazancı) ve 371 (faiz/kâr payı) ayrı satırlar ve ayrı çalışma kâğıtları gerektirir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

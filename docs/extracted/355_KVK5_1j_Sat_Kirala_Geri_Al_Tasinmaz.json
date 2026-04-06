@@ -1,0 +1,2131 @@
+{
+  "file": "355_KVK5_1j_Sat_Kirala_Geri_Al_Tasinmaz.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G95",
+      "rows": [
+        [
+          "355 – SAT-KİRALA-GERİ AL İŞLEMLERİNDEN DOĞAN KAZANÇLARDA İSTİSNA (TAŞINMAZLAR) | KVK Md.5/1-j | YMM TASDİK ÇALIŞMA KÂĞIDI | BEYANNAME SATIR 355",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 Tam İstisna | Taşınmaz Varlıklar (Bina/Arsa/Arazi/Fabrika) | Alıcı: FK Şirketi / Katılım Bankası / Kalkınma-Yatırım Bankası | Tapu Devri + Kira Süresi Sonunda Geri Devir | 549 Fon → Kira Payına Amortize | Beyanname Satır 355 — Kazancın Bulunması Halinde",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354 (TAŞINIR) İLE KARŞILAŞTIRMA — 355'İN ÖZGÜN ZORLUKLAR: ① TAPU DEVRİ zorunlu (354'te teslim tutanağı yeterli). ② Kira süresi sonunda TAPU GERİ DEVRİ taahhüdü sözleşmede yazılı olmalı. ③ SPK lisanslı değerleme raporu güçlü belge olarak önerilir. ④ KDV Md.17/4-r (taşınmaz) muafiyeti ile 5/1-j etkileşimi analiz edilmeli. ⑤ Tapu harcı ve tapu sicili şerhi işlemleri.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "MEKANİZMA (354 ile özdeş temel yapı): Kurum taşınmazı satar → Tapu alıcıya devredilir → Aynı taşınmazı finansal kiralama sözleşmesiyle geri kiralar → Kira süresi sonunda satın alma hakkını kullanır → Tapu geri devredilir. Satış kazancı → %100 İstisna (355) → 549 Fon → Kira payına orantılı amortize edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Satılan varlık TAŞINMAZ mı? (Arsa/Arazi/Bina/Fabrika/Depo vb.)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-j — Taşınmaz: Arsa, arazi, bina, fabrika, depo, ticari gayrimenkul. TAŞINIR (makine/araç/ekipman) için 354 kodu kullanılmalıdır. Bu dosya yalnızca taşınmaz varlıklar içindir.",
+          null
+        ],
+        [
+          "A0.2  ★ Alıcı kurum: Finansal kiralama şirketi, katılım bankası veya kalkınma/yatırım bankası mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: KVK 5/1-j yalnızca bu kurumlara yapılan satış-geri kiralama işlemleri için geçerlidir. Mevduat bankası kapsam dışıdır. 6361 s.K. lisanslı FK şirketi veya 5411 s.K. katılım/kalkınma/yatırım bankası olmalıdır. BDDK lisansı belgesi zorunludur.",
+          null
+        ],
+        [
+          "A0.3  ★ TAPU DEVRİ gerçekleşti mi? Satış tapuya tescil edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK — 355'E ÖZGÜN ŞART: Taşınmazın satışı tapuya tescille tamamlanır. Fatura veya sözleşme tek başına yeterli değildir. Tapu senedi (alıcı adına tescil) zorunlu belgedir. Tapu tescili olmaksızın satış hukuken tamamlanmış sayılmaz.",
+          null
+        ],
+        [
+          "A0.4  ★ Kira süresi sonunda tapunun GERİ DEVRİ taahhüdü sözleşmede yazılı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Geri devir taahhüdü veya satın alma opsiyonu finansal kiralama sözleşmesinde açıkça yer almalıdır. Geri devir gerçekleşmezse istisna iptal edilir. Tapu üzerinde şerh konulabilir — kira süresince alıcı üçüncü kişiye devredilemez.",
+          null
+        ],
+        [
+          "A0.5  Sat-kirala-geri al sözleşmeleri eş zamanlı/bağlı mı? (Satış + Geri Kiralama)",
+          null,
+          null,
+          null,
+          "EVET",
+          "Satış ve geri kiralama sözleşmeleri eş zamanlı veya birbirine bağlı olmalıdır. Ayrı/bağımsız işlemler kapsam tartışmalı — özelge alınması tavsiye edilir.",
+          null
+        ],
+        [
+          "A0.6  ★ İstisna edilen kazanç 549 hesabına alınacak ve kira süresi boyunca amortize edilecek mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: 354 ile özdeş fon mekanizması. İstisna edilen kazanç 549 hesabına alınır, her dönem kira payına orantılı azaltılır. Fon hesabına alınmayan veya erken çekilen tutar vergiye tabi olur.",
+          null
+        ],
+        [
+          "A0.7  KDV Md.17/4-r Muafiyeti ile 5/1-j Etkileşimi analiz edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Taşınmaz satışında KDVK Md.17/4-r kapsamında KDV muafiyeti değerlendirilmeli. Sat-kirala-geri al işleminde KDV'nin hangi aşamada nasıl uygulanacağı GİB özelgeleri ve güncel tebliğler çerçevesinde analiz edilmelidir.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (alıcı türü), A0.3 (tapu devri), A0.4 (geri devir taahhüdü) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satıcı/Kiracı Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "İstisna uygulayan — taşınmazı satan ve geri kiralayan kurum",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Alıcı/Kiraya Veren Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "FK şirketi / Katılım bankası / Kalkınma-yatırım bankası",
+          null
+        ],
+        [
+          "Alıcı Kurum Türü",
+          null,
+          null,
+          null,
+          null,
+          "Finansal Kiralama Şirketi / Katılım Bankası / Kalkınma-Yatırım Bankası",
+          null
+        ],
+        [
+          "Tapu Devir Tarihi (Satış Tarihi)",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Tapuya tescil tarihi",
+          null
+        ],
+        [
+          "Finansal Kiralama Sözleşmesi Başlangıcı",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Geri kiralama başlangıcı",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. ALICI KURUM NİTELİK VE LİSANS TEYİDİ — 5/1-j'nin Temel Şartı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354 ile özdeş kural: Yalnızca 6361 s.K. kapsamında BDDK lisanslı finansal kiralama şirketi, 5411 s.K. kapsamında katılım bankası veya kalkınma ve yatırım bankasına yapılan satış-geri kiralama 5/1-j istisnasına tabidir. BDDK lisans belgesi veya banka statü belgesi dosyaya eklenmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Yasal Dayanak"
+        ],
+        [
+          "B.1  Alıcı Kurum Türü",
+          null,
+          "Finansal Kiralama Şirketi",
+          "6361 s.K.: FK Şirketi | 5411 s.K.: Katılım/Kalkınma/Yatırım Bankası",
+          null,
+          "6361 s.K. / 5411 s.K.",
+          null
+        ],
+        [
+          "B.2  Alıcı Kurumun BDDK Lisans Belgesi Mevcut mu?",
+          null,
+          "EVET",
+          "BDDK resmi web sitesinden veya lisans belgesi kopyasından teyit edilmeli.",
+          null,
+          "BDDK — Finansal Kuruluşlar Listesi",
+          null
+        ],
+        [
+          "B.3  Sözleşme FK/Banka ile mi Yapıldı? (Aracı Yok)",
+          null,
+          "EVET",
+          "Sözleşme doğrudan lisanslı FK şirketi/bankası ile imzalanmış olmalı.",
+          null,
+          "KVK 5/1-j",
+          null
+        ],
+        [
+          "C. TAŞINMAZ KİMLİĞİ VE TAPU DEVRİ — 355'e ÖZGÜN KRİTİK ŞART",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 354 (TAŞINIR)'DAN EN KRİTİK FARK: Taşınmaz satışı tapuya tescil olmadan hukuken tamamlanmış sayılmaz. Tapu senedinde alıcı FK/banka adına tescil görünmeli. Tapu devri = İstisnanın ön koşulu. Değerleme raporu (SPK lisanslı) güçlü belge.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Taşınmaz Türü",
+          null,
+          "Bina/İşyeri",
+          "355 yalnızca taşınmaz varlıkları kapsar — taşınır için 354",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  Taşınmazın Ada/Parsel/İl/İlçe Bilgileri",
+          null,
+          null,
+          "Tapu sicili ile birebir uyumlu olmalı",
+          null,
+          "Tapu senedi referansı",
+          null
+        ],
+        [
+          "C.3  Taşınmazın Muhasebedeki Net Defter Değeri (TL)",
+          null,
+          null,
+          "Amortisman düşülmüş net aktif değeri (250/252/258 hesap kartı)",
+          null,
+          "Muhasebe kartı ile uyumlu",
+          null
+        ],
+        [
+          "C.4  Taşınmazın Tapu Devir (Satış) Bedeli (TL)",
+          null,
+          null,
+          "Tapuda belirtilen bedel (gerçek satış bedeli ile uyumlu olmalı)",
+          null,
+          "Emsal değere uygunluk — değerleme raporu",
+          null
+        ],
+        [
+          "C.5  Bağımsız Değerleme / Ekspertiz Raporu Bedeli (TL)",
+          null,
+          null,
+          "SPK lisanslı değerleme kuruluşunun belirlediği piyasa değeri",
+          null,
+          "Satış bedeliyle uyumlu olması beklenir",
+          null
+        ],
+        [
+          "C.6  Satış Giderleri (TL — Tapu Harcı Satıcı Payı, Komisyon vb.)",
+          null,
+          null,
+          "Tapu harcı satıcı payı (%2) + Döner sermaye + Ekspertiz + Komisyon",
+          null,
+          "KDV dahil/hariç ayrımı yap",
+          null
+        ],
+        [
+          "C.7  Tapu Devri (Satış) Gerçekleşti mi? Tapu Senedi Mevcut mu?",
+          null,
+          "EVET",
+          "Alıcı FK/banka adına tapuya tescil — tapu senedi tasdik dosyasında",
+          null,
+          "★ Tapu senedi = İstisnasının belgesel temeli",
+          null
+        ],
+        [
+          "C.8  Tapu Üzerinde Kiralama Şerhi Konuldu mu?",
+          null,
+          "Uygulanmıyor",
+          "Bazı uygulamalarda kiralama şerhi konularak üçüncü kişiye devir engellenir",
+          null,
+          "Şerh: Kiracının korunması — geri devir güvencesi",
+          null
+        ],
+        [
+          "D. FİNANSAL KİRALAMA SÖZLEŞMESİ VE GERİ DEVİR ŞARTI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Geri kiralama ve geri devir — 355'in mekanizma özü. Kira süresi sonunda tapu geri alıcı adına (satıcı/kiracı kuruma) devredilmeli. Geri devir taahhüdü sözleşmede açıkça yazılı olmalıdır. İstisna edilen kazanç F bölümünde 549 hesabına alınır ve kira ödemelerine orantılı amortize edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Kira Sözleşmesi Başlangıç Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Kira Sözleşmesi Bitiş Tarihi (Tapu Geri Devir Tarihi)",
+          null,
+          null,
+          "GG.AA.YYYY — Tapu geri devrinin gerçekleşeceği tarih",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  Kira Süresi (Ay)",
+          null,
+          "0",
+          "Otomatik hesaplanır",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.4  Toplam Kira Ödemesi (TL — Tüm Dönem)",
+          null,
+          null,
+          "Sözleşme tutarıyla uyumlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.5  Dönemsel Kira Tutarı (Aylık/Yıllık TL)",
+          null,
+          null,
+          "Aylık veya yıllık kira bedeli",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.6  ★ Sözleşmede Tapu Geri Devir Taahhüdü/Opsiyonu Var mı?",
+          null,
+          "EVET — Sözleşmede Taahhüt Var",
+          "Tapu geri devri taahhüdü sözleşmede açıkça yer almalı — 355'in özgün şartı",
+          null,
+          "★ Tapuyu geri almadan istisna iptal riski",
+          null
+        ],
+        [
+          "D.7  Kira Süresi Sonunda Geri Alım Bedeli (TL — Nominal)",
+          null,
+          null,
+          "Nominal veya anlaşma fiyatı",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. KDV ANALİZİ — 355 TAŞINMAZ SAT-KİRALA-GERİ AL VE KDVK Md.17/4-r",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Taşınmaz satışında KDV muafiyeti (KDVK Md.17/4-r) veya KDV uygulaması söz konusu olabilir. 5/1-j işlemi kapsamındaki sat-kirala-geri al için özel KDV düzenlemeleri mevcuttur. GİB güncel özelgeleri ve tebliğler çerçevesinde analiz zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "KDV Kalemi",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Dayanak"
+        ],
+        [
+          "E.1  Satış İşlemi KDV'ye Tabi mi? (KDVK Md.17/4-r Analizi)",
+          null,
+          "KDVK 17/4-r — KDV'den Müstesna",
+          "Sat-kirala-geri al taşınmaz satışında KDV muafiyeti: GİB güncel tutumu esas alınmalı.",
+          null,
+          "KDVK Md.17/4-r",
+          null
+        ],
+        [
+          "E.2  Kiralama Dönemi — FK Kira Ödemeleri KDV'ye Tabi mi?",
+          null,
+          "EVET — Finansal Kiralamada KDV",
+          "Finansal kiralama kira ödemelerinde KDV genel kural olarak uygulanır.",
+          null,
+          "KDVK Md.1",
+          null
+        ],
+        [
+          "E.3  Geri Devir İşlemi KDV'ye Tabi mi?",
+          null,
+          "GİB Özelgesi Alınacak",
+          "Kira süresi sonunda tapu geri devri — KDV muafiyeti tartışmalı. Özelge alınması önerilir.",
+          null,
+          "KDVK / GİB",
+          null
+        ],
+        [
+          "E.4  Tapu Harcı — Satış ve Geri Devir Aşamalarında",
+          null,
+          "Her İki Aşamada Uygulanır",
+          "Sat-kirala-geri al tapu harcı: Her iki devir (satış + geri devir) için ayrı ayrı harç doğabilir.",
+          null,
+          "Harçlar K.",
+          null
+        ],
+        [
+          "F. SATIŞ KAZANCI VE %100 İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SATIŞ KAZANCI = C.4 (Tapu Devir Bedeli) − C.3 (Net Defter Değeri) − C.6 (Satış Giderleri). İSTİSNA: Kazancın %100'ü — tam istisna. İstisna tutarı G bölümünde 549 hesabına alınır ve kira ödemelerine orantılı amortize edilir. Değerleme raporu (C.5) ile satış bedeli (C.4) uyumunu kontrol edin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "F.1  Tapu Devir (Satış) Bedeli",
+          null,
+          "0",
+          "C.4'ten otomatik",
+          null,
+          "Tapudaki satış bedeli",
+          null
+        ],
+        [
+          "F.2  Taşınmazın Net Defter Değeri",
+          null,
+          "0",
+          "C.3'ten otomatik",
+          null,
+          "250/252/258 hesap kartı ile uyumlu",
+          null
+        ],
+        [
+          "F.3  Satış Giderleri (Tapu Harcı, Komisyon, Ekspertiz)",
+          null,
+          "0",
+          "C.6'dan otomatik",
+          null,
+          "Belgelenmiş satış giderleri",
+          null
+        ],
+        [
+          "F.4  SATIŞ KAZANCI = F.1 − F.2 − F.3",
+          null,
+          "0",
+          "Pozitif = Kazanç | Negatif = Zarar",
+          null,
+          null,
+          null
+        ],
+        [
+          "F.5  DURUM",
+          null,
+          "SIFIR",
+          "Otomatik değerlendirme",
+          null,
+          "Zarar: 355 sıfır",
+          null
+        ],
+        [
+          "F.6  5/1-j İSTİSNA TUTARI (%100)",
+          null,
+          "0",
+          "%100 Tam İstisna → 549 Hesabına → Beyanname 355",
+          null,
+          "→ G bölümü fon hesabı",
+          null
+        ],
+        [
+          "F.7  Değerleme Uyumu: C.5 ile F.1 Farkı",
+          null,
+          "0",
+          "Satış bedeli - Değerleme farkı (0'a yakın olması beklenir)",
+          null,
+          "Büyük fark → Emsal bedel riski",
+          null
+        ],
+        [
+          "G. 549 ÖZEL FON HESABI VE KİRA SÜRESİ BOYUNCA AMORTİZASYON",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354 ile özdeş mekanizma — 355'te tapuya bağlı fark: Satışın gerçekleştiği yıl (tapu devir tarihi) F.6 tutarı 549 hesabına alınır. Her dönem kira ödemelerine orantılı fon azalır. Kira süresi sonunda 549 sıfır. Tapu geri devrinde yeni aktif değer = Geri alım bedeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Kalemi",
+          null,
+          "Tutar / Oran",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "G.1  Başlangıç Fon Tutarı (= F.6 — Tapu Devir Yılında 549'a Alınacak)",
+          null,
+          "0",
+          "İstisna kazancının tamamı",
+          null,
+          "Tapu devir yılı — 549 hesabına",
+          null
+        ],
+        [
+          "G.2  Toplam Kira Ödemesi (= D.4'ten)",
+          null,
+          "0",
+          "Tüm kira dönemi toplamı",
+          null,
+          "Amortizasyon paydası",
+          null
+        ],
+        [
+          "G.3  Cari Dönem Kira Ödemesi (TL — Bu Hesap Döneminde Ödenen)",
+          null,
+          null,
+          "Bu hesap döneminde yapılan toplam kira ödemesi",
+          null,
+          "Kira sözleşmesi + Banka dekontları",
+          null
+        ],
+        [
+          "G.4  Cari Dönem Amortizasyon Oranı (%)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "Otomatik",
+          null
+        ],
+        [
+          "G.5  Cari Dönem Fon Azalışı (TL) = G.1 × G.4/100",
+          null,
+          "0",
+          "Bu dönem 549'dan düşülecek",
+          null,
+          "→ Muhasebe fon amortizasyon kaydı",
+          null
+        ],
+        [
+          "G.6  Dönem Sonu 549 Fon Bakiyesi (Tahmini)",
+          null,
+          "0",
+          "Kalan amortize edilecek fon",
+          null,
+          "Gelecek dönemler için bakiye",
+          null
+        ],
+        [
+          "NOT — BEYANNAME 355 VE AMORTİZASYON: Tapu devir yılı (satış yılı): F.6 tutarının tamamı 355 satırında istisna + 549'a alınır. Sonraki yıllar: Her yıl kira payına orantılı G.5 tutarı fon hesabından düşülür — bu tutar ayrıca beyannamede gösterilmez. Kira ödemeleri KV matrahından gider olarak indirilebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "H. TAPU GERİ DEVİR ŞARTI TAKİBİ — 355'e ÖZGÜN KRİTİK KONTROL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira süresi sonunda tapu geri devri 355 istisnasının devamlılığı için zorunludur. Geri devir gerçekleşmezse: İstisna iptal edilebilir, vergi + ceza riski. 354'ten fark: Tapu sicilinde geri devir tescili zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "H.1  Kira Süresi Bitti mi / Devam mı Ediyor?",
+          null,
+          null,
+          "Henüz Devam Ediyor",
+          null,
+          "Tapu geri devri olmadan istisna sürdürülemez — G.6 kalan fon vergiye tabi.",
+          null
+        ],
+        [
+          "H.2  Sözleşmede Tapu Geri Devir Taahhüdü Yazılı mı?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Finansal kiralama sözleşmesinde açıkça yer almalı — şifahi geçersizdir.",
+          null
+        ],
+        [
+          "H.3  Tapu Geri Devri Gerçekleşti mi? Tarih ve Tapu Senedi Mevcut mu?",
+          null,
+          null,
+          "Henüz Gerçekleşmedi",
+          null,
+          "Gerçekleştiyse: Tapu senedinde satıcı/kiracı adına tescil + tarih.",
+          null
+        ],
+        [
+          "I. BEYANNAME 355 — KVK 5/1-j SAT-KİRALA-GERİ AL (TAŞINMAZ) İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "I.1  TOPLAM İSTİSNA → Beyanname Satır 355 (Kazancın Bulunması Halinde İndirilecek — %100 — TAPU DEVİR YILI)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "F.6 = Satış Kazancı × %100"
+        ],
+        [
+          "KRİTİK UYARILAR: (1) TAPU DEVRİ: Taşınmaz satışı tapuya tescil olmadan hukuken tamamlanmış sayılmaz — tapu senedi olmadan istisna geçersizdir. (2) GERİ DEVİR TAAHHÜDÜ: Sözleşmede yazılı geri devir taahhüdü şart — tapuyu geri almadan istisna iptal riski. (3) 355 YALNIZCA TAPU DEVİR YILINDA KULLANILIR — sonraki yıllarda 355 satırına yazılmaz. (4) KDV Md.17/4-r ve tapu harcı analizi zorunludur — E bölümü. (5) 354 KODU: Taşınır (makine/araç) için — bu dosya yalnızca taşınmazlar içindir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G86",
+      "rows": [
+        [
+          "355 – SAT-KİRALA-GERİ AL (TAŞINMAZ) | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | Taşınmaz | Beyanname 355 | Kazancın Bulunması Halinde | FK/Katılım/Kalkınma-Yatırım Bankası | Tapu Devri + Geri Devir | 549 Fon → Kira Payına Amortize | KDV Analizi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Alıcı Kurum Türü (B.1)",
+          null,
+          null,
+          "Finansal Kiralama Şirketi",
+          "FK/Katılım/Kalkınma-Yatırım",
+          null,
+          null
+        ],
+        [
+          "Alıcı Lisans Durumu (B.2)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Tapu Devri (A0.3)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu — tapu senedi",
+          null,
+          null
+        ],
+        [
+          "Geri Devir Taahhüdü (A0.4)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Kira Süresi (Ay) (D.3)",
+          null,
+          null,
+          "0",
+          "Fon amortizasyon süresi",
+          null,
+          null
+        ],
+        [
+          "Satış Kazancı (F.4)",
+          null,
+          null,
+          "0",
+          "Brüt satış kazancı",
+          null,
+          null
+        ],
+        [
+          "355 İSTİSNA TUTARI %100 (F.6)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "Başlangıç Fon Tutarı (G.1)",
+          null,
+          null,
+          "0",
+          "549 Hesabı başlangıcı",
+          null,
+          null
+        ],
+        [
+          "Değerleme Uyum Farkı (F.7)",
+          null,
+          null,
+          "0",
+          "0'a yakın olması beklenir",
+          null,
+          null
+        ],
+        [
+          "B. SAT-KİRALA-GERİ AL (TAŞINMAZ) — 3 AŞAMALI İŞLEM VE 355/354 FARKLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "355 (Taşınmaz) ile 354 (Taşınır) arasındaki temel fark: Tapu devri ve geri devir tescili + KDV/Tapu Harcı boyutu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Aşama",
+          null,
+          "355 (Taşınmaz) Özgün",
+          null,
+          "354 (Taşınır) İle Karşılaştırma",
+          null
+        ],
+        [
+          "AŞAMA 1 — TAPU DEVRİ",
+          "Taşınmaz tapusu FK/Bankaya devredilir (Tescil zorunlu)",
+          null,
+          "Taşınırda: Fatura + Teslim tutanağı yeterli (tapu yok)",
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 2 — GERİ KİRALAMA",
+          "FK/Banka aynı taşınmazı finansal kiralamaya verir | Kira ödemeleri gider | Fon amortizasyonu",
+          null,
+          "354 ile özdeş — aynı kira/amortizasyon mekanizması",
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 3 — TAPU GERİ DEVRİ",
+          "Kira süresi sonunda tapu satıcı/kiracı kuruma tescil edilir (Tapu Sicili zorunlu)",
+          null,
+          "Taşınırda: Teslim tutanağı yeterli (tapu geri devri yok)",
+          null,
+          null,
+          null
+        ],
+        [
+          "C. 355 (TAŞINMAZ) vs 354 (TAŞINIR) — TAM KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "355 — Taşınmaz",
+          null,
+          "354 — Taşınır",
+          null
+        ],
+        [
+          "Varlık Türü",
+          null,
+          "Arsa/Arazi/Bina/Fabrika/Depo",
+          null,
+          "Makine/Araç/Ekipman/Teçhizat",
+          null,
+          null
+        ],
+        [
+          "Satış Belgesi",
+          null,
+          "TAPU SENEDİ zorunlu — Tapuya tescil",
+          null,
+          "Fatura + Teslim tutanağı yeterli",
+          null,
+          null
+        ],
+        [
+          "Geri Alma Belgesi",
+          null,
+          "TAPU GERİ DEVRİ — Tapu siciline tescil",
+          null,
+          "Fatura + Teslim tutanağı",
+          null,
+          null
+        ],
+        [
+          "KDV Analizi",
+          null,
+          "KDVK 17/4-r muafiyeti analizi zorunlu",
+          null,
+          "KDV genel kural — ayrı analiz",
+          null,
+          null
+        ],
+        [
+          "Tapu Harcı",
+          null,
+          "Satış + Geri devir harçları ayrı ayrı",
+          null,
+          "Tapu harcı yok",
+          null,
+          null
+        ],
+        [
+          "Değerleme Raporu",
+          null,
+          "SPK lisanslı gayrimenkul değerleme güçlü belge",
+          null,
+          "Değerleme raporu önerilir",
+          null,
+          null
+        ],
+        [
+          "Tapu Şerhi",
+          null,
+          "Kiralama şerhi konulabilir (kiracı güvencesi)",
+          null,
+          "Şerh/Rehin yok",
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100 Tam İstisna",
+          null,
+          "%100 Tam İstisna",
+          null,
+          null
+        ],
+        [
+          "Alıcı Kısıtlaması",
+          null,
+          "FK/Katılım/Kalkınma-Yatırım Bankası",
+          null,
+          "FK/Katılım/Kalkınma-Yatırım Bankası",
+          null,
+          null
+        ],
+        [
+          "549 Fon Mekanizması",
+          null,
+          "Kira payına orantılı amortize — AYNI",
+          null,
+          "Kira payına orantılı amortize — AYNI",
+          null,
+          null
+        ],
+        [
+          "Beyanname Bölümü",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          null
+        ],
+        [
+          "2 Yıl Aktif Şartı",
+          null,
+          "YOK (351'den fark)",
+          null,
+          "YOK",
+          null,
+          null
+        ],
+        [
+          "Taşınmaz Ticareti Yasağı",
+          null,
+          "YOK (351'den fark)",
+          null,
+          "Geçersiz kavram",
+          null,
+          null
+        ],
+        [
+          "D. FON AMORTİZASYON TABLOSU — KİRA SÜRESİ BOYUNCA İZLEME (355 TAŞINMAZ)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "354 ile özdeş amortizasyon formülü. Her dönem: 549 Fon × (Dönem Kira / Toplam Kira) kadar fon azalır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem",
+          "Dönem Kira Öd. (TL)",
+          "Kira Oranı (%)",
+          "Fon Azalışı (TL)",
+          "Kalan Fon (TL)",
+          "Tapu Durum"
+        ],
+        [
+          "Dönem-1",
+          null,
+          null,
+          null,
+          null,
+          "Tapu Kiralayan Adında — Geri Devir Takibi",
+          null
+        ],
+        [
+          "Dönem-2",
+          null,
+          null,
+          null,
+          null,
+          "Tapu Kiralayan Adında — Geri Devir Takibi",
+          null
+        ],
+        [
+          "Dönem-3",
+          null,
+          null,
+          null,
+          null,
+          "Tapu Kiralayan Adında — Geri Devir Takibi",
+          null
+        ],
+        [
+          "Dönem-4",
+          null,
+          null,
+          null,
+          null,
+          "Tapu Kiralayan Adında — Geri Devir Takibi",
+          null
+        ],
+        [
+          "Dönem-5",
+          null,
+          null,
+          null,
+          null,
+          "Tapu Kiralayan Adında — Geri Devir Takibi",
+          null
+        ],
+        [
+          "TOPLAM",
+          "D.4 ile uyumlu",
+          null,
+          "G.1 (Toplam)",
+          null,
+          "Kira sonu: Tapu geri devredilmiş olmalı — 549 sıfır",
+          null
+        ],
+        [
+          "E. 355 (5/1-j TAŞINMAZ) vs 351 (5/1-e TAŞINMAZ SATIŞI) KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her ikisi de taşınmaz satışını kapsar — ancak işlem yapısı tamamen farklıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "355 — 5/1-j (Sat-Kirala-Geri Al)",
+          null,
+          "351 — 5/1-e (Kesin Satış)",
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100 Tam İstisna",
+          null,
+          "%50 İstisna (7456 s.K.)",
+          null,
+          null
+        ],
+        [
+          "Satış Yapısı",
+          null,
+          "Dairesel: Sat → Kirala → Geri Al",
+          null,
+          "Kesin Satış (geri alım yok)",
+          null,
+          null
+        ],
+        [
+          "2 Yıl Aktif Şartı",
+          null,
+          "YOK",
+          null,
+          "VAR — 730 gün zorunlu",
+          null,
+          null
+        ],
+        [
+          "Taşınmaz Ticareti Yasağı",
+          null,
+          "YOK",
+          null,
+          "VAR — Kapsam dışı",
+          null,
+          null
+        ],
+        [
+          "Alıcı Kısıtlaması",
+          null,
+          "FK/Katılım/Kalkınma-Yatırım Bankası",
+          null,
+          "Herhangi bir alıcı",
+          null,
+          null
+        ],
+        [
+          "Geri Alma/Devir",
+          null,
+          "ZORUNLU — Tapu geri devri",
+          null,
+          "YOK — Mülkiyet kalıcı devredildi",
+          null,
+          null
+        ],
+        [
+          "549 Fon",
+          null,
+          "Kira payına orantılı amortize edilir",
+          null,
+          "5 yıl sabit tutulur",
+          null,
+          null
+        ],
+        [
+          "KDV Analizi",
+          null,
+          "17/4-r muafiyet analizi zorunlu",
+          null,
+          "17/4-r muafiyet analizi",
+          null,
+          null
+        ],
+        [
+          "Tapu Harcı",
+          null,
+          "Satış + Geri devir (2 kez)",
+          null,
+          "Yalnızca satışta (1 kez)",
+          null,
+          null
+        ],
+        [
+          "Beyanname Bölümü",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          null
+        ],
+        [
+          "Avantaj",
+          null,
+          "%100 istisna + 2 yıl şartı yok + ticaret yasağı yok",
+          null,
+          "Alıcı serbest + daha az koşul",
+          null,
+          null
+        ],
+        [
+          "F. DENETİM KONTROL LİSTESİ (K1–K14)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "Satılan varlık taşınmaz mı? (Arsa/Bina/Fabrika vb.) — 354 ile karıştırılmadı mı?",
+          null,
+          "Taşınır (makine/araç) → 354 kodu. Bu dosya yalnızca taşınmaz varlıklar içindir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Alıcı kurum: FK şirketi, katılım bankası veya kalkınma/yatırım bankası mı?",
+          null,
+          "BDDK lisansı teyit edilmeli. Mevduat bankası kapsam dışı. Lisans belgesi dosyada.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ TAPU DEVRİ gerçekleşti mi? Alıcı adına tapuya tescil mevcut mu?",
+          null,
+          "Tapu senedinde alıcı FK/banka adına tescil zorunlu. Tapu olmadan istisna geçersiz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ Sözleşmede TAPU GERİ DEVİR taahhüdü/opsiyonu açıkça var mı?",
+          null,
+          "Yazılı taahhüt zorunlu — şifahi geçersiz. Tapuyu geri almadan istisna iptal riski.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "Satış ve geri kiralama sözleşmeleri eş zamanlı/bağlı mı?",
+          null,
+          "Birbirine bağlı iki sözleşme. Ayrı/bağımsız işlemler tartışmalı — özelge.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "★ Satış kazancının tamamı 549 hesabına alındı mı? F.6 = G.1 uyumlu mu?",
+          null,
+          "Tapu devir yılında tam tutar 549'a alınmalı. Fon kaydı olmadan istisna geçersiz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "Fon amortizasyonu kira payına orantılı mı hesaplanıyor?",
+          null,
+          "Her dönem: Fon × (Dönem Kira / Toplam Kira). D tablosu ile uyumlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "KDV Md.17/4-r analizi yapıldı mı? Tapu harcı hesabı doğru mu?",
+          null,
+          "E bölümü KDV analizi tamamlanmış olmalı. Tapu harcı hem satışta hem geri devirde oluşabilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "Satış bedeli değerleme raporu ile uyumlu mu? (F.7 farkı küçük mü?)",
+          null,
+          "SPK lisanslı değerleme raporu önerilir. Emsal fiyattan uzak satış → KVK Md.13 riski.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "Tapu üzerinde kiralama şerhi konuldu mu? (Takip edildi mi?)",
+          null,
+          "Şerh: Kiracı kurumun geri devir güvencesi. C.8 ile uyumlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "Tapu geri devri gerçekleşti mi veya planlandı mı? Risk analizi?",
+          null,
+          "H bölümü takibi zorunlu. Geri devir olmazsa → İstisna iptali + vergi + ceza.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K12",
+          "355 yalnızca TAPU DEVİR YILINDA kullanıldı mı? Sonraki yıllarda 0 mı?",
+          null,
+          "355 yalnızca satış/tapu devir yılı beyannamesinde. Sonraki yıllarda yazılmaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K13",
+          "355 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "'Zarar Olsa Dahi' bölümünde DEĞİL. Dönemde zarar varsa istisna uygulanamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K14",
+          "YİAKV matrahında 355 istisnasının etkisi analiz edildi mi?",
+          null,
+          "Dönem mevzuatı ve GİB açıklamaları esas alınmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "G. BEYANNAME EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "355",
+          null,
+          "0",
+          "KVK 5/1-j — Taşınmaz Sat-Kirala-Geri Al | %100 | Kazancın Bulunması Halinde | TAPU DEVİR YILI",
+          null,
+          null,
+          null
+        ],
+        [
+          "354",
+          null,
+          "Taşınır",
+          "Taşınır (makine/araç) sat-kirala-geri al → 354 kodu. 355 ile karıştırılmamalı.",
+          null,
+          null,
+          null
+        ],
+        [
+          "351",
+          null,
+          "Taşınmaz Kesin Satış",
+          "Kesin taşınmaz satışı (geri alım yok) → 351 kodu. %50 istisna.",
+          null,
+          null,
+          null
+        ],
+        [
+          "549 Fon",
+          null,
+          "0",
+          "İstisna kazancın tamamı → 549 hesabı → Kira payına orantılı amortize.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G34",
+      "rows": [
+        [
+          "355 – SAT-KİRALA-GERİ AL (TAŞINMAZ) | MUHASEBE KAYITLARI — TAPU DEVRİ ODAKLI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | Beyanname 355 | 3 Aşama: Tapu Devri → Kiralama → Tapu Geri Devri",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. KDV muafiyeti ve tapu harcı muhasebesi güncel mevzuata göre uyarlanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 1 — TAPU DEVRİ KAYDI (Taşınmazın FK Şirketine/Bankaya Tapu Tesciliyle Satışı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tapu Devir Tarihi: [GG.AA.YYYY] | Satış Bedeli: [___] TL | Net Defter Değeri: [___] TL | Kazanç: [___] TL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Tapu]",
+          "102 Bankalar / 120/121 Alacaklar",
+          "FK Şirketine/Bankaya tapu devir bedelinin tahsilatı",
+          "[Satış Bed.]",
+          "—",
+          "Tapu senedi + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Tapu]",
+          "250 Arazi/258 Birikim.Amor. / 252 Binalar vb.",
+          "Taşınmazın net defter değeriyle aktiften çıkışı — TAPU TESCİLİ TARİHİ ESASTIR",
+          "—",
+          "[Net Defter]",
+          "Aktif kartı + Tapu senedi"
+        ],
+        [
+          "Kr",
+          "[Tapu]",
+          "258 Birikmiş Amortismanlar",
+          "Birikmiş amortisman kapatma",
+          "—",
+          "[Birik.Amor.]",
+          "258 kartı"
+        ],
+        [
+          "Kr",
+          "[Tapu]",
+          "679 Diğer Olağandışı Kâr / 645 Satış Kârı",
+          "Satış kazancı — KVK 5/1-j istisna — Beyanname 355",
+          "—",
+          "[Kazanç]",
+          "KV 355"
+        ],
+        [
+          "★ 355 (TAŞINMAZ) vs 354 (TAŞINIR) KAYIT FARKI:\n355: Aktiften çıkış tarihi = TAPU TESCİL TARİHİ (fatura tarihi değil). 354: Aktiften çıkış tarihi = Teslim/fatura tarihi.\nKDV: Tapu tescilinde KDVK 17/4-r muafiyeti uygulanabilir — E bölümü analizi zorunlu.\nTapu Harcı: Satıcı payı (C.6'ya dahil) muhasebe kaydında ayrıca izlenmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 2a — 549 ÖZEL FON HESABINA ALMA (Tapu Devir Yılında — KV Beyan Tarihi Öncesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna edilen kazancın (F.6) tamamı tapu devir yılında 549 hesabına alınır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "KV Beyan",
+          "679 / 645 Satış Kârı Hesabı",
+          "İstisna edilen satış kazancının gelir hesabından çıkarılması",
+          "[F.6 Tamamı]",
+          "—",
+          "F.6 tutarı"
+        ],
+        [
+          "Kr",
+          "KV Beyan",
+          "549 Özel Fonlar",
+          "%100 İstisna — KVK 5/1-j — Sat-Kirala-Geri Al (Taşınmaz) | Kira süresinde amortize",
+          "—",
+          "[F.6 Tamamı]",
+          "Kira süresi takibi"
+        ],
+        [
+          "355'TE 549 FON FARKI — 351 (KESİN SATIŞ) İLE KARŞILAŞTIRMA:\n351: 549 hesabı 5 yıl boyunca SABİT tutulur — hiçbir amortizasyon yapılmaz.\n355 (Sat-Kirala-Geri Al): 549 hesabı her dönem kira payına orantılı AZALTILIR.\n354 (Taşınır Sat-Kirala-Geri Al): 354 ile aynı amortizasyon mekanizması.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AŞAMA 2b — KİRA ÖDEMELERİ VE FON AMORTİZASYONU (Her Dönem Tekrarlı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her dönem kira ödemesi yapılır ve 549 fonu kira payına orantılı azaltılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Kira Dön.]",
+          "760/780/630 Genel Yönetim/Üretim Giderleri",
+          "Dönem kira ödemesi — KV matrahından indirilebilir gider",
+          "[Kira TL]",
+          "—",
+          "Kira sözleşmesi + Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Kira Dön.]",
+          "102 Bankalar",
+          "Kira ödemesi",
+          "—",
+          "[Kira TL]",
+          null
+        ],
+        [
+          "Dr",
+          "[Kira Dön.]",
+          "549 Özel Fonlar",
+          "Cari dönem fon amortizasyonu = G.1 × (Dönem Kira / Toplam Kira)",
+          "[G.5 Tutarı]",
+          "—",
+          "G bölümü hesabı"
+        ],
+        [
+          "Kr",
+          "[Kira Dön.]",
+          "Nazım hesap veya Dipnot",
+          "Fon amortizasyonu karşılığı",
+          "—",
+          "[G.5 Tutarı]",
+          "Dipnot"
+        ],
+        [
+          "AŞAMA 3 — TAPU GERİ DEVRİ KAYDI (Kira Süresi Sonunda — Yeni Aktife Alış)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kira süresi sonunda satın alma opsiyonu kullanılarak tapu geri devredilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Tapu Geri]",
+          "250 Arazi / 252 Binalar (İlgili)",
+          "Taşınmazın geri alım bedeliyle yeniden aktife kaydı — TAPU TESCİL TARİHİ",
+          "[Geri Alım TL]",
+          "—",
+          "Tapu senedi (satıcı/kiracı adına yeni tescil)"
+        ],
+        [
+          "Kr",
+          "[Tapu Geri]",
+          "102 Bankalar",
+          "Geri alım bedelinin ödenmesi",
+          "—",
+          "[Geri Alım TL]",
+          "Banka dekontu"
+        ],
+        [
+          "355 TAPU GERİ DEVRİ — 354'TEN FARK:\n355: Tapu sicilinde satıcı/kiracı kuruma geri tescil zorunludur — tapu senedi dosyaya eklenir.\n354 (Taşınır): Teslim-tesellüm tutanağı yeterlidir — tapu yok.\n\nGeri devir sonrası: 549 hesabı = 0 (tüm amortizasyon tamamlandı). Yeni aktif değer: Geri alım bedeli (genellikle nominal). Yeni amortismanlar: Bu değer üzerinden başlar. Tapu Harcı: Geri devir sırasında da harç doğabilir — E.4 analizi.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D16",
+      "rows": [
+        [
+          "355 – SAT-KİRALA-GERİ AL (TAŞINMAZ) | DENETÇİ NOTLARI | KVK Md.5/1-j",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | Taşınmaz | Beyanname 355 | Tapu Devri + Geri Devri | KDV/Tapu Harcı | 549 Fon Amortizasyonu | 354 Karşılaştırma",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK, TAPU BOYUTU VE 354/351 FARKLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-j — 355 Taşınmaz Sat-Kirala-Geri Al Yasal Çerçevesi",
+          "KVK Md.5/1-j kapsamında taşınmaz için 355 kodu:\n\nKAPSAM: Arsa, arazi, bina, fabrika, depo ve diğer taşınmazların\nfinansal kiralama şirketleri, katılım bankaları veya kalkınma/yatırım bankalarına\nsat-kirala-geri al işlemi kapsamında satışından doğan kazançların %100'ü.\n\n3 TEMEL ŞART:\n① Tapu devri: Satış tapuya tescil yoluyla tamamlanmalıdır\n② Geri kiralama: Aynı taşınmaz finansal kiralama ile geri kiralanmalıdır\n③ Geri devir: Kira süresi sonunda tapu geri devredilmelidir\n\nBEYANNAME: 355. Satır | 'Kazancın Bulunması Halinde' | %100 | Tapu Devir Yılında\n549 FON: Satış kazancının tamamı → Kira payına orantılı amortize edilir\nTAŞINIR için 354 kodu kullanılır — bu dosya yalnızca taşınmazlar içindir",
+          "KVK Md.5/1-j | 6361 s.K. | 5411 s.K. | TMK"
+        ],
+        [
+          "N2",
+          "★ Tapu Devri ve Geri Devri — 355'e Özgün Boyut",
+          "TAPU DEVRİ (AŞAMA 1 — SATIŞ):\nTaşınmaz satışı TMK uyarınca tapuya tescil ile tamamlanır.\nNoterde satış vaadi + Tapu Kadastro Müdürlüğü'nde tescil zorunludur.\nTapu senedinde alıcı FK/banka adına 'Mülkiyet' tescili görünmeli.\n\nTAPU ŞERHİ (İSTEĞE BAĞLI):\nKiralama süresi boyunca tapu üzerine 'Finansal Kiralama Şerhi' konulabilir.\nŞerh: Alıcı FK/bankanın taşınmazı 3. kişiye devretmesini engeller.\nKiracı kurumun geri devir güvencesi olarak önerilir.\n\nTAPU GERİ DEVRİ (AŞAMA 3 — GERİ ALMA):\nKira süresi sonunda satın alma opsiyonu kullanılarak tapu tescili yapılır.\nYeni tapu senedinde 'kiracı/satıcı' kurum adına tescil görünmeli.\nTapu harcı: Geri devir sırasında da harç doğabilir (E.4).\n\nYMM notu: Her iki tapu senedi (satış + geri devir) tasdik dosyasında zorunludur.",
+          "KVK Md.5/1-j | TMK Md.1012 | Tapu Sicil Tüzüğü"
+        ],
+        [
+          "N3",
+          "KDV ve Tapu Harcı — 355'e Özgün Vergisel Boyut",
+          "KDV ANALİZİ (KDVK Md.17/4-r):\nKurumların aktifinde kayıtlı taşınmazların satışı KDVK 17/4-r kapsamında KDV'den istisna.\nAncak sat-kirala-geri al işleminde KDV muafiyetinin uygulanıp uygulanmayacağı\nve şartları (kurumun aktifinde ne kadar süredir bulunduğu vb.) GİB özelgeleri ile teyit edilmeli.\n\nFİNANSAL KİRALAMA KİRASI — KDV:\nFinansal kiralama kira ödemeleri genel kural olarak KDV'ye tabi.\nKDV oranı: %20 (genel) veya özel oran — kira sözleşmesinde belirtilmeli.\n\nTAPU HARCI:\nSatış aşaması: Tapu harcı alıcı %4, satıcı %4 oranında (veya güncel oran).\nGeri devir aşaması: Tapu harcı yeniden doğar — E.4 analizine dahil edilmeli.\nHarçlar Kanunu kapsamında muafiyet uygulanıp uygulanamayacağı araştırılmalıdır.\n\nYMM notu: KDV ve tapu harcı boyutunda GİB özelgesi alınması tavsiye edilir.",
+          "KDVK Md.17/4-r | Harçlar K. | GİB Özelgeleri"
+        ],
+        [
+          "N4",
+          "355 vs 354 vs 351 — Doğru Kodu Seçme Rehberi",
+          "NE ZAMAN 355 (TAŞINMAZ SAT-KİRALA-GERİ AL):\n• Arsa/arazi/bina/fabrika/depo FK şirketine/bankaya satılıp geri kiralanıyorsa\n• Tapu devri yapılıyor ve kira süresi sonunda geri devir taahhüdü varsa\n• Alıcı: 6361/5411 s.K. lisanslı FK şirketi veya katılım/kalkınma/yatırım bankası\n\nNE ZAMAN 354 (TAŞINIR SAT-KİRALA-GERİ AL):\n• Makine/araç/ekipman FK şirketine/bankaya satılıp geri kiralanıyorsa\n• Tapu işlemi yok — teslim tutanağı yeterli\n\nNE ZAMAN 351 (TAŞINMAZ KESİN SATIŞ):\n• Taşınmaz kesin olarak satılıyorsa — geri alım taahhüdü yok\n• Herhangi bir alıcıya satış — FK/banka kısıtı yok\n• %50 istisna (355'ten düşük) | 549 fon 5 yıl sabit\n\nYMM notu: Yanlış kod kullanımı tarhiyat riski taşır.",
+          "KVK Md.5/1-j (354,355) | KVK Md.5/1-e (351)"
+        ],
+        [
+          "BÖLÜM 2 — YMM TASDİK STANDARDI VE KRİTİK RİSKLER",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "Fon Amortizasyonu — 351 ve 354 ile Karşılaştırma",
+          "549 FON AMORTİZASYON TABLOSU — 3 İSTİSNA KARŞILAŞTIRMASI:\n\n351 (Kesin Taşınmaz Satışı):\n• 549 hesabı 5 yıl boyunca SABİT tutulur — hiç değişmez\n• 5. yılın sonunda serbest bırakılabilir (5 yılı doldurmuşsa)\n\n354 (Taşınır Sat-Kirala-Geri Al):\n• 549 hesabı her dönem kira payına orantılı AZALTILIR\n• Kira süresi sonunda sıfırlanır\n\n355 (Taşınmaz Sat-Kirala-Geri Al):\n• 354 ile AYNI amortizasyon mekanizması\n• Her dönem: Fon × (Dönem Kira / Toplam Kira)\n• Kira süresi sonunda sıfırlanır + Tapu geri devredilir\n\nYMM notu: 355 uygulayan kurumların muhasebelerinde 549 hesabı 351'deki gibi sabit bırakılmamalı — dönemsel amortizasyon zorunludur.",
+          "KVK Md.5/1-j | 5/1-e (351) | GİB Özelgeleri"
+        ],
+        [
+          "N6",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...söz konusu taşınmazın [FK şirketi] ile akdedilen sat-kirala-geri al sözleşmesi\n  kapsamında tapuyla devredildiği tapu sicil belgesi ile doğrulanmıştır'\n'...kira süresi sonunda tapu geri devri taahhüdü sözleşmede yer almaktadır'\n'...istisna edilen kazanç 549 Özel Fonlar hesabına alınmış ve kira ödemelerine\n  orantılı amortizasyon takibi yapılmaktadır'\n\nKULLANMAYIN:\n'...taşınmaz sat-kirala-geri al işleminden 355 istisnası uygulanır' (belgesiz)\n'...fon hesabı 5 yıl tutulacaktır' (355'te 5 yıl kuralı yok — kira süresine bağlı)\n\nEN KRİTİK HATALAR:\n(1) Tapu tescili olmadan satış işlemi tamamlanmış saymak\n(2) Alıcı mevduat bankası → Kapsam dışı\n(3) Fon amortizasyonunu 351 gibi sabit bırakmak\n(4) Geri devir taahhüdü olmadan işlem yapmak\n(5) Beyanname 355'i sonraki yıllarda tekrar yazmak\n(6) KDV/Tapu Harcı boyutunu analiz etmemek",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "TARTIŞMALI ALAN — GERİ DEVİR GERÇEKLEŞMEDEN İSTİSNA İPTALİ: Kira süresi sonunda tapu geri devri gerçekleşmezse istisna iptal edilerek 549 hesabındaki kalan tutarın tamamı veya bir kısmı vergilendirilir. GİB'in bu konudaki tutumu tam olarak netleşmemiş olup 549 fon bakiyesinin hangi dönemde gelir sayılacağı tartışmalıdır. Özelge alınması ve geri devir sözleşme taahhüdünün sağlam belgelenmesi şarttır. Tapu üzerine kiralama şerhi konulması geri devir güvencesi açısından önerilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F38",
+      "rows": [
+        [
+          "355 – SAT-KİRALA-GERİ AL (TAŞINMAZ) | BELGE VE BİLGİ LİSTESİ | YMM TASDİK | KVK 5/1-j",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-j | %100 İstisna | Taşınmaz | Beyanname 355 | FK/Katılım/Kalkınma-Yatırım Bankası | Tapu Devri + Geri Devir | KDV/Tapu Harcı | 549 Fon Amortizasyonu | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: 3 aşamanın zorunlu belgeleri (TAPU ODAKLI). Kategori 2: KDV/Tapu Harcı ve Takip Belgeleri. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (TAPU MERKEZLİ — 3 AŞAMA)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 355'te en kritik belge: Satış tapu senedi + Finansal Kiralama Sözleşmesi + Geri Devir Tapu Senedi",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Satış Tapu Senedi (Alıcı FK/Banka Adına Tescil — Aşama 1)",
+          "Tapu Kadastro Müdürlüğü'nden alınan resmi tapu senedi.\nTapu senedinde alıcı FK şirketi/bankası 'Mülkiyet Sahibi' olarak görünmeli.\nTescil tarihi = Satış tarihi = Tapu devir tarihi.\nYMM notu: Tapu tescili olmadan satış hukuken tamamlanmamış — istisna uygulanamaz.",
+          "Tapu Kadastro Müdürlüğü — Resmi tapu senedi aslı veya onaylı sureti",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Finansal Kiralama Sözleşmesi — Taşınmaz Geri Kiralama (Aşama 2)",
+          "FK sözleşmesinde: Kiralanan taşınmazın tapu bilgileri, kira süresi, kira bedeli.\n★ Sözleşmede kira süresi sonunda tapu geri devri taahhüdü/opsiyonu açıkça yazılı olmalı.\nYMM notu: Geri devir taahhüdü olmayan sözleşmede 355 istisnası tehlikededir.",
+          "Finansal kiralama sözleşmesi (imzalı orijinal veya onaylı kopya) + Kira planı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Alıcı Kurumun BDDK Lisans Belgesi",
+          "FK şirketi: 6361 s.K. kapsamında BDDK lisansı.\nKatılım/Kalkınma/Yatırım Bankası: 5411 s.K. kapsamında banka statüsü belgesi.\nYMM notu: Yanlış kurum türü → İstisna geçersiz — birincil kontrol noktası.",
+          "BDDK finansal kuruluşlar listesi / Lisans belgesi kopyası",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ 549 Özel Fon Hesabı Muhasebe Kaydı (Başlangıç — Tapu Devir Yılı)",
+          "Satış kazancının (F.6) 549 hesabına alındığını gösteren yevmiye kaydı.\nG.1 = F.6 tutarı — uyumlu olmalıdır.\nYMM notu: Fon kaydı yoksa istisna geçersizdir.",
+          "Yevmiye defteri + 549 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Satış Kazancı Hesaplama Tablosu (F Bölümü Özeti)",
+          "F.4 = Tapu Bedeli − Net Defter Değeri − Satış Giderleri.\nF.6 = %100 İstisna tutarı — Beyanname 355 ile uyumlu.\nYMM notu: Net defter değeri (C.3) muhasebe kartıyla uyumlu olmalıdır.",
+          "F bölümü hesaplama tablosu + Aktif muhasebe kartı (250/252/258)",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 355. Satır (Tapu Devir Yılı)",
+          "355. satırındaki tutarın F.6 ile birebir uyumlu olduğu kontrol edilmeli.\n'Kazancın Bulunması Halinde İndirilecek' bölümünde doğru konumlandırıldığı teyit.\nNOT: Sonraki yıllarda 355 satırına yazılmaz.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — KDV, TAPU HARCI VE DEVAM TAKİP BELGELERİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "SPK Lisanslı Gayrimenkul Değerleme Raporu",
+          "Taşınmazın piyasa değerini gösteren SPK lisanslı değerleme kuruluşu raporu.\nSatış bedeli (C.4) ile değerleme bedeli (C.5) arasındaki fark analiz edilmeli (F.7).\nYMM notu: Büyük fark → KVK Md.13 emsal bedel riski.",
+          "SPK lisanslı gayrimenkul değerleme kuruluşu raporu (satış tarihi civarında)",
+          null
+        ],
+        [
+          null,
+          "8",
+          "KDV Analizi Notu — KDVK 17/4-r ve Finansal Kiralama KDV",
+          "Satış aşamasında KDVK 17/4-r muafiyetinin uygulanıp uygulanmayacağı analizi.\nFinansal kiralama kira ödemelerinde KDV tutarları ve beyanları.\nGeri devir aşamasında KDV durumu.",
+          "YMM KDV analiz notu + KDV beyannameleri + GİB özelgeleri",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Tapu Harcı Ödeme Belgeleri (Satış + Geri Devir)",
+          "Satış aşaması tapu harcı ödeme makbuzu.\nGeri devir aşaması tapu harcı ödeme makbuzu (varsa).\nC.6 (satış giderleri) ile uyumlu olmalıdır.",
+          "Tapu İdaresi harç makbuzu / Banka ödeme dekontu",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Dönemsel Kira Ödeme Dekontları ve Fon Amortizasyon Tablosu",
+          "Her kira dönemine ait banka ödeme dekontu (G.3 tutarı ile uyumlu).\nD tablosu fon amortizasyon izleme tablosu (5 dönem).\nKira süresi sonunda 549 hesabı = 0 kontrolü.",
+          "Banka ödeme dekontları + HESAPLAMALAR D tablosu",
+          null
+        ],
+        [
+          null,
+          "11",
+          "★ Geri Devir Tapu Senedi (Kira Süresi Sonu — Aşama 3)",
+          "Kira süresi sonunda satıcı/kiracı kurum adına tapuya tescil.\nYeni tapu senedinde kurumun adı 'Mülkiyet Sahibi' olarak görünmeli.\nYMM notu: Tapu geri devri gerçekleşmemişse bu belgede eksik → İstisna iptal riski.",
+          "Tapu Kadastro Müdürlüğü — Geri devir tapu senedi aslı veya onaylı sureti",
+          null
+        ],
+        [
+          null,
+          "12",
+          "Tapu Kiralama Şerhi Belgesi (Uygulanıyorsa)",
+          "Tapu üzerine konulan finansal kiralama şerhini gösteren Tapu sicil belgesi.\nŞerh: Kiracı kurumun geri devir güvencesi.\nC.8 ile uyumlu olmalıdır.",
+          "Tapu sicil müdürlüğü — Şerh belgesi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (★ Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "Satılan varlık taşınmaz mı? 354 ile karıştırılmadı mı?",
+          "Arsa/bina/fabrika → 355. Makine/araç → 354. Varlık türü tapu sicili ile teyit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Alıcı kurum FK şirketi, katılım bankası veya kalkınma/yatırım bankası mı?",
+          "BDDK lisansı zorunlu. Mevduat bankası → Kapsam dışı. Lisans belgesi dosyada.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ TAPU DEVRİ gerçekleşti mi? Satış tapu senedi mevcut mu?",
+          "Tapu senedinde alıcı FK/banka adına tescil zorunlu. Tapu olmadan satış tamamlanmamış.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ Sözleşmede TAPU GERİ DEVRİ taahhüdü açıkça var mı?",
+          "Yazılı taahhüt zorunlu. Geri devir olmadan istisna iptal riski. Şerh önerilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "★ Satış kazancının tamamı 549 hesabına alındı mı? F.6 = G.1 uyumlu mu?",
+          "Tapu devir yılında tam tutar 549'a alınmalı. Fon kaydı olmadan istisna geçersiz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Fon amortizasyonu kira payına orantılı hesaplanıyor mu? (351 gibi sabit değil)",
+          "Her dönem: Fon × (Dönem Kira / Toplam Kira). D tablosu uyumlu. 351'den farklı!",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "KDV Md.17/4-r analizi yapıldı mı? Tapu harcı her iki devir için de analiz edildi mi?",
+          "E bölümü KDV analizi tamamlanmış. Tapu harcı satış + geri devir aşamaları için ayrı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Satış bedeli değerleme raporu ile uyumlu mu? (F.7 küçük mü?)",
+          "SPK lisanslı değerleme raporu önerilir. Büyük fark → KVK Md.13 riski.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Tapu geri devri gerçekleşti mi veya planlandı mı? Risk analizi?",
+          "H bölümü takibi. Geri devir olmadan → İstisna iptali + vergi + ceza.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "355 'Kazancın Bulunması Halinde' bölümünde mi? 'Zarar Olsa Dahi' değil mi?",
+          "355 → Kazancın Bulunması Halinde. Dönem zararında istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S11",
+          "355 yalnızca TAPU DEVİR YILINDA kullanıldı mı?",
+          "355 sadece satış/tapu devir yılı beyannamesi. Sonraki yıllarda yazılmaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 355'in 354'ten farkı: TAPU DEVRİ + TAPU GERİ DEVRİ zorunlu + KDV/Tapu Harcı boyutu. 355'in 351'den farkı: %100 istisna (351'de %50) + 2 yıl şartı yok + fon amortizasyonu (351'de sabit) + geri alım taahhüdü zorunlu. Beyanname 355: 'Kazancın Bulunması Halinde' — yalnızca tapu devir yılında. Fon amortizasyonu 351 gibi sabit değil — kira payına orantılı. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

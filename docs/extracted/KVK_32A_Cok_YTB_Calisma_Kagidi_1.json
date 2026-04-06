@@ -1,0 +1,4805 @@
+{
+  "file": "KVK_32A_Cok_YTB_Calisma_Kagidi_1.xlsx",
+  "sheets": [
+    {
+      "name": "ANA KONTROL",
+      "dimensions": "A1:H42",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | YMM TASDİK ÇALIŞMA KÂĞIDI\nÇok YTB Belge Bazlı Takip | Yatırım + İşletme Dönemi | Tevsi Götürü/Gerçek | Çok Yıllı Kümülatif İzleme",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.32/A | YKT = Yatırım × YKT% | İndirimli KV = Normal KV × (1-İndirim%) | Her YTB Ayrı İzlenir | Tamamlama Sonrası Kalan YKT: YDO | 49 No.lu Tebliğ: Tutar Sınırı Olmaksızın YMM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KRİTİK İLKE: Her YTB ayrı izlenir. Kullanılan YKT belge bazında takip edilir. İndirimli KV otomatik olarak tüm kurum kazancına uygulanamaz — kazancın ilgili belge kapsamındaki yatırımdan elde edildiği teyit edilmelidir. Çapraz kullanım riski her dönem ayrıca değerlendirilmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. MÜKELLEF VE DÖNEM BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mükellef Unvanı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Hazırlayan YMM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B. YTB MASTER TAKİP TABLOSU — Belge Bazlı Özet (Her YTB Sayfasından Otomatik)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bu tablo, birden fazla YTB'nin tek ekranda izlendiği master görünümdür. Kümülatif kullanılan ve kalan YKT her belgede ayrı ayrı izlenmektedir. Çapraz kullanım riski: Bir YTB'nin YKT'si başka bir YTB'ye mahsup edilemez.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          "YTB-1",
+          "YTB-2",
+          "YTB-3",
+          "YTB-4",
+          "YTB-5",
+          "TOPLAM/NOT"
+        ],
+        [
+          "YTB Numarası",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          null
+        ],
+        [
+          "YTB Tarihi",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          null
+        ],
+        [
+          "Yatırım Türü",
+          null,
+          "Komple Yeni",
+          "Komple Yeni",
+          "Komple Yeni",
+          "Komple Yeni",
+          "Komple Yeni",
+          null
+        ],
+        [
+          "Bölge",
+          null,
+          "3",
+          "3",
+          "3",
+          "3",
+          "3",
+          null
+        ],
+        [
+          "YKT Oranı %",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          null
+        ],
+        [
+          "İndirim Oranı %",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          null
+        ],
+        [
+          "İndirimli KV Oranı %",
+          null,
+          "25",
+          "25",
+          "25",
+          "25",
+          "25",
+          null
+        ],
+        [
+          "Toplam Yatırım Tutarı (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Hesaplanan Toplam YKT (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Önceki Dönemler Kullanılan YKT (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Dönem Başı Kalan YKT (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Cari Dönem Yatırım Dön. Kullanım (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Cari Dönem İşletme Dön. Kullanım (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Cari Dönem Toplam YKT Kullanımı (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Dönem Sonu Kalan YKT / Devir (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Cari Dönem KV Tasarrufu (TL)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "YKT Durum Göstergesi",
+          null,
+          "YKT Giriş Eksik",
+          "YKT Giriş Eksik",
+          "YKT Giriş Eksik",
+          "YKT Giriş Eksik",
+          "YKT Giriş Eksik",
+          null
+        ],
+        [
+          "Dönem Durumu (Yatırım/İşletme)",
+          null,
+          "Yatırım Döneminde",
+          "Yatırım Döneminde",
+          "Yatırım Döneminde",
+          "Yatırım Döneminde",
+          "Yatırım Döneminde",
+          null
+        ],
+        [
+          "C. DÖNEM KV TASARRUFU VE BEYANNAME MUTABAKATI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aşağıdaki değerler KONSOLİDASYON sayfasından otomatik aktarılır. GİB e-Beyanname EKler / İndirimli KV Tablosu ile mutabık olmalıdır. Her YTB için GİB sistemine ayrı satır açılmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Beyanname Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          null,
+          null,
+          "Not"
+        ],
+        [
+          "Toplam 32/A İndirimli KV Matrahı",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam Normal KV (Hesaplanan)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam İndirimli KV (Alınmayan)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam KV Tasarrufu = Kullanılan YKT",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam Kalan YKT (Sonraki Yıla Devir)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÇAPRAZ KULLANIM UYARISI: Yukarıdaki toplam KV tasarrufu belge bazında ayrıştırılmış değerlerin toplamıdır. Hiçbir YTB'nin YKT'si başka bir YTB hesabına mahsup edilemez. Bu ilke GİB beyanname sistemi ve tasdik dosyasında belge bazında izlenmektedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "YTB-1",
+      "dimensions": "A1:G90",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | YTB-1 BELGE BAZLI ÇALIŞMA KÂĞIDI | Yatırım Dönemi + İşletme Dönemi + YKT Kümülatif Takip",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BELGE BAZLI ÇALIŞMA İLKESİ: Bu sayfa yalnızca bu YTB'ye ait verileri içerir. Başka YTB'lerle çapraz kullanım yapılamaz. İndirimli KV; kazancın ilgili yatırımdan elde edildiği teyit edildikten sonra uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "YTB-1 — Sarı hücreler manuel giriş. Yeşil hücreler otomatik hesaplama. Tevsi yatırımda kazanç yöntemi (Götürü/Gerçek) C bölümünden seçilir. F bölümü çok yıllı kümülatif takibi sağlar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. YTB-1 — KAPSAM, NİTELİK VE KAZANÇ UYGUNLUK KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Bu YTB geçerli mi? Dönemde aktif ve revize/iptal olmamış mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "YTB geçerliliği T.C. Sanayi ve Teknoloji Bakanlığı sisteminden sorgulanmalıdır. Revize YTB'de değişen koşullar dönem hesabını etkiler.",
+          null
+        ],
+        [
+          "A0.2  Bu YTB kapsamındaki yatırım KVK 32/A'dan yararlanabilecek sektörde mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Finans/sigortacılık, iş ortaklıkları, taahhüt, YİD/Yİ, rödovans kapsamları hariçtir. Bu sektörlerde 32/A uygulanamaz.",
+          null
+        ],
+        [
+          "A0.3  ★ İndirimli KV uygulanacak kazanç, bu YTB kapsamındaki yatırımdan elde edilen kazanç mı? (KRİTİK)",
+          null,
+          null,
+          null,
+          "EVET",
+          "EN KRİTİK KONTROL: 32/A'da en sık hata budur. YTB var → tüm kurum kazancına indirimli vergi YANLIŞTIR. İşletme döneminde: Sadece bu yatırımdan elde edilen kazanç. Yatırım döneminde: Diğer faaliyet kazancına bölge oranı limiti dahilinde.",
+          null
+        ],
+        [
+          "A0.4  Yatırım dönemi / işletme dönemi ayrımı doğru belirlendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Tamamlama vizesi öncesi: Yatırım dönemi (B bölümü). Tamamlama vizesi sonrası: İşletme dönemi (D bölümü). Karma dönem: Her ikisi de (B + D birlikte).",
+          null
+        ],
+        [
+          "A0.5  Önceki dönemlerde kullanılan YKT tutarları doğru devredildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "F.2 satırı (Önceki Dönemler Kümülatif YKT): GİB beyanname sisteminden alınmalıdır. Hatalı devir tutarı tüm hesabı bozar.",
+          null
+        ],
+        [
+          "A0.6  ★ Bu YTB'nin YKT'si başka bir YTB hesabına mahsup edilmiyor mu? (ÇAPRAZ KULLANIM)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Her YTB'nin YKT'si o belgeye özgüdür. Çapraz mahsup yasaktır. 5 YTB varsa 5 ayrı YKT hesabı ve takibi zorunludur. Bu sayfadaki hesaplar yalnızca bu YTB'ye aittir.",
+          null
+        ],
+        [
+          "A0.7  YİAKV ve diğer matrah düzeltmeleri değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 32/C YİAKV hesabında 32/A'nın alınmayan vergi etkisi analiz edilmelidir. 32/A matrahının YİAKV hesabıyla ilişkisi dönem tebliğleriyle doğrulanmalıdır.",
+          null
+        ],
+        [
+          "A0.8  YMM Raporu zorunluluğu değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): KVK 32/A için TUTAR SINIRI OLMAKSIZIN YMM tasdik raporu zorunlu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu (A0.1-A0.8 tümü kontrol edildi)",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "Özellikle A0.3 (kazanç uygunluğu) ve A0.6 (çapraz kullanım) kritik.",
+          null
+        ],
+        [
+          "A. YTB-1 KİMLİK BİLGİLERİ VE TEŞVİK PARAMETRELERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          "Değer/Giriş",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "A.1  YTB Numarası",
+          null,
+          null,
+          "Örn. 2023-C3-12345",
+          null,
+          "Bakanlık sisteminden doğrulanmalı.",
+          null
+        ],
+        [
+          "A.2  YTB Düzenleme Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Belge tarihine göre dönem oranları belirlenir.",
+          null
+        ],
+        [
+          "A.3  Yatırım Bölgesi (1-6)",
+          null,
+          "3",
+          "1,2,3,4,5,6 — Listeden seçin",
+          null,
+          "Bölge; YKT oranı ve limit oranını belirler.",
+          null
+        ],
+        [
+          "A.4  Yatırım Türü",
+          null,
+          "Komple Yeni",
+          "Komple Yeni,Tevsi,Modernizasyon,Ürün Çeşitlendirme,Entegrasyon",
+          null,
+          "Tevsi: C bölümü ek hesabı gerektirir.",
+          null
+        ],
+        [
+          "A.5  YTB Kapsamı Toplam Yatırım Tutarı (TL)",
+          null,
+          null,
+          "YTB'de onaylanan tutar",
+          null,
+          "Revize edilmişse güncel tutarı kullanın.",
+          null
+        ],
+        [
+          "A.6  YKT Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 30",
+          null,
+          "İmalat + 2017-2022: +15 puan ek uygulanabilir.",
+          null
+        ],
+        [
+          "A.7  Hesaplanan Toplam YKT (= A.5 × A.6/100)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "Toplam devlet desteği = Kullanılabilecek azami YKT tutarı.",
+          null
+        ],
+        [
+          "A.8  Vergi İndirim Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 70",
+          null,
+          "Normal KV üzerinden indirim yapılacak oran.",
+          null
+        ],
+        [
+          "A.9  Normal KV Oranı % (Dönem)",
+          null,
+          "25",
+          "2025: %25",
+          null,
+          "Gerekirse güncelleyin.",
+          null
+        ],
+        [
+          "A.10 İndirimli KV Oranı % (= A.9 × (1 - A.8/100))",
+          null,
+          "25",
+          "Otomatik",
+          null,
+          "A.8=%100 ise indirimli KV=%0.",
+          null
+        ],
+        [
+          "A.11 YTB Dönem Durumu",
+          null,
+          "Yatırım Döneminde",
+          "Yatırım Döneminde,İşletme Döneminde,Her İkisi (Karma)",
+          null,
+          "Tamamlama vizesi alınmadıysa Yatırım. Alındıysa İşletme.",
+          null
+        ],
+        [
+          "A.12 Tamamlama Vizesi Tarihi (Varsa)",
+          null,
+          null,
+          "GG.AA.YYYY veya boş",
+          null,
+          "Vize tarihi = işletme döneminin başlangıcı.",
+          null
+        ],
+        [
+          "B. YATIRIM DÖNEMİ — Diğer Faaliyetlerden İndirimli KV (Tamamlama Öncesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yatırım döneminde DİĞER FAALİYET kazancına indirimli KV uygulanabilir. Azami limit: MIN(YKT × Bölge Oranı, Gerçekleşen Harcama). Bölge oranları: 2.Bölge=%10 | 3.=%20 | 4.=%30 | 5.=%50 | 6.=%80. 1.Bölge genellikle diğer faaliyet için mümkün değildir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "B.1  Dönem Başı Kümülatif Fiili Harcama",
+          null,
+          null,
+          null,
+          "Önceki KV beyannamesi EKler / İndirimli KV Tablosundan",
+          null,
+          "Arazi/arsa/royalti hariç."
+        ],
+        [
+          "B.2  Bu Dönem Fiili Yatırım Harcaması",
+          null,
+          null,
+          null,
+          "Dönem içinde YTB kapsamı yapılan harcama",
+          null,
+          "Fatura bazlı, muhasebe ile uyumlu olmalı."
+        ],
+        [
+          "B.3  Kümülatif Harcama (B.1 + B.2)",
+          null,
+          "0",
+          null,
+          "Azami matrah hesabında kullanılır",
+          null,
+          "Negatif olamaz."
+        ],
+        [
+          "B.4  Bölge Limit Oranı % (Yatırım Döneminde)",
+          null,
+          null,
+          null,
+          "2=%10 | 3=%20 | 4=%30 | 5=%50 | 6=%80 | 1=%0",
+          null,
+          "YTB bölgesiyle uyumlu olmalı."
+        ],
+        [
+          "B.5  YKT × Bölge Oranı Limiti (A.7 × B.4 / 100)",
+          null,
+          "0",
+          null,
+          "Yatırım döneminde kullanılabilecek azami YKT",
+          null,
+          "Bu limiti aşan kısım işletme döneminde."
+        ],
+        [
+          "B.6  Azami Yatırım Dön. YKT Limiti = MIN(B.5, B.3)",
+          null,
+          "0",
+          null,
+          "İki sınırdan küçük olan",
+          null,
+          "Gerçekleşen harcama da limittir."
+        ],
+        [
+          "B.7  Önceki Dönemler Yatırım Dön. Kullanılan YKT (Kümülatif)",
+          null,
+          null,
+          null,
+          "GİB EKler / İndirimli KV Tablosundan",
+          null,
+          "Her dönem güncellenmeli."
+        ],
+        [
+          "B.8  Bu Dönem Azami Yatırım Dön. YKT (B.6 - B.7)",
+          null,
+          "0",
+          null,
+          "Kalan yatırım dönem kapasitesi",
+          null,
+          "Bu tutardan fazla kullanım mümkün değil."
+        ],
+        [
+          "B.9  Bu Dönem Diğer Faaliyet KV Matrahı",
+          null,
+          null,
+          null,
+          "KKEG eklenmiş, önceki yıl zararları düşülmüş KV matrahı",
+          null,
+          "Beyanname ara hesabıyla doğrulanmalı."
+        ],
+        [
+          "B.10 Yatırım Dönemi İndirimli KV Matrahı",
+          null,
+          "0",
+          null,
+          "MIN(Dönem Kazancı, B.8 / İndirim Oranı)",
+          null,
+          "İndirimli KV uygulanacak fiili matrah."
+        ],
+        [
+          "B.11 Normal KV (B.10 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.12 İndirimli KV (B.10 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.13 Bu Dönem Yatırım Dön. KV Tasarrufu = Kullanılan YKT (B.11 - B.12)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi = Bu dönem kullanılan YKT",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "C. TEVSİ YATIRIM — İŞLETME DÖNEMİ KAZANÇ TESPİTİ (Sadece Tevsi Yatırımlarda Doldurulur)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "(1) GERÇEK USUL: Kazanç ayrı hesaplarda izleniyorsa bu kazanç direkt kullanılır. (2) GÖTÜRÜ USUL: Ayrı hesap yoksa → İndirimli KV Matrahı = Dönem Kazancı × (YTB Kapsamı ATİK / Toplam ATİK). ATİK yeniden değerlenmiş değerle.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C.0  Kazanç Tespit Yöntemi Seçimi",
+          null,
+          "Götürü Usul (Oransal)",
+          "Tevsi değilse boş bırakın. Gerçek usulde C.4'ü kullanın.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.1  YTB Kapsamı ATİK (Dönem Sonu, Yeniden Değerlenmiş)",
+          null,
+          null,
+          "Götürü usul payı. Devam edenler dahil.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  Toplam ATİK (Dönem Sonu, Yeniden Değerlenmiş, Devam Eden Dahil)",
+          null,
+          null,
+          "Götürü usul paydası. Tüm aktif sabit kıymetler.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  Götürü Usul Oranı (C.1 / C.2)",
+          null,
+          "0",
+          "Dönem kazancına uygulanacak oran",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4  Dönem KV Matrahı (Tüm Faaliyetler)",
+          null,
+          null,
+          "Götürü usul için bu matrah × C.3 oranı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.5  Gerçek Usul Kazanç (Gerçek Usul Seçilmişse)",
+          null,
+          null,
+          "Ayrı hesaplarda belirlenen tevsi yatırım kazancı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.6  İndirimli KV Uygulanacak Tevsi Matrahı",
+          null,
+          "0",
+          "Otomatik: Seçilen yönteme göre D.1'e aktarılır",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. İŞLETME DÖNEMİ — Bu Yatırımdan Elde Edilen Kazanç",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tamamlama vizesi sonrası: SADECE bu YTB'ye bağlı yatırımdan elde edilen kazanca uygulanır. Komple yeni/modernizasyon: D.1 elle girin. Tevsi: C.6 otomatik aktarılır. YKT tükendiğinde uygulama sona erer.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "D.1  İşletme Dönemi İndirimli KV Matrahı",
+          null,
+          null,
+          null,
+          "Yeni yatırım: Elle girin. Tevsi: C.6 otomatik.",
+          null,
+          "Kazancın bu YTB yatırımına ait olduğu teyit edilmeli."
+        ],
+        [
+          "D.2  Normal KV (D.1 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran",
+          null,
+          null
+        ],
+        [
+          "D.3  İndirimli KV (D.1 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran",
+          null,
+          null
+        ],
+        [
+          "D.4  Bu Dönem İşletme Dön. KV Tasarrufu = Kullanılan YKT (D.2 - D.3)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "E. KALAN YKT YDO ENDEKSLEMESİ (Tamamlama Sonrası Devreden YKT)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 32/A: Tamamlama vizesini izleyen yıllarda kullanılamayan kalan YKT, yeniden değerleme oranı (YDO) ile artırılarak dikkate alınır. 2024: %63,93 | 2025/1.Geçici: %3,30. GİB sirküleriyle teyit edin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  Dönem Başı YKT Bakiyesi (F.5'ten, Endeks Öncesi)",
+          null,
+          "0",
+          "F.5 devir. İlk dönem: A.7 (Toplam YKT)",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.2  YDO Oranı % (VUK Tebliği/GİB Sirküler)",
+          null,
+          null,
+          "2024: 63,93 | 2025/1: 3,30",
+          null,
+          null,
+          "Her dönem teyit edin."
+        ],
+        [
+          "E.3  YDO Artışı (E.1 × E.2 / 100)",
+          null,
+          "0",
+          "Endeksleme tutarı",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.4  Güncellenmiş Dönem Başı YKT (E.1 + E.3)",
+          null,
+          "0",
+          "Bu dönem kullanılabilecek azami YKT",
+          null,
+          null,
+          "Konsolidasyon ve ANA KONTROL bu değeri alır."
+        ],
+        [
+          "F. YKT KÜMÜLATİF TAKİP — Belge Bazlı Çok Yıllı İzleme (Bu Sayfa Yalnızca Bu YTB'ye Aittir)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÇOK YILLI BAKIŞ: Bu bölüm yalnızca tek dönem değil, belgenin tüm ömrü boyunca izlenmesi için kurgulanmıştır. F.2 her dönem başında bir önceki döneme ait beyanname değeriyle güncellenir. F.9 'KV Tasarrufu = Kullanılan YKT' ilişkisi: Her dönem sağlanmayan vergi = tüketilen YKT tutarıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM / Çok Yıllı Not"
+        ],
+        [
+          "F.1  Hesaplanan Toplam YKT (A.7)",
+          null,
+          "0",
+          null,
+          "YTB başlangıç değeri. Sabit.",
+          null,
+          "Belgede yazılı tutarla eşit olmalı."
+        ],
+        [
+          "F.2  Önceki Dönemler Kümülatif Kullanılan YKT (Manuel)",
+          null,
+          null,
+          null,
+          "GİB beyanname EKler / İndirimli KV Tablosundan alınır.",
+          null,
+          "İlk dönem: 0. Her dönem güncellenerek devredilir."
+        ],
+        [
+          "F.3  Dönem Başı Kalan YKT (F.1 - F.2)",
+          null,
+          "0",
+          null,
+          "Bu dönem kullanılabilecek azami kapasite.",
+          null,
+          "Negatif olamaz. 0 ise YKT tükenmiştir."
+        ],
+        [
+          "F.4  Bu Dönem Toplam İndirimli KV Matrahı (B.10 + D.1)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönemi birleşik matrah",
+          null,
+          "Beyanname 32/A matrahı bu satırdan kontrol edilir."
+        ],
+        [
+          "F.5  Bu Dönem Toplam Normal KV (B.11 + D.2)",
+          null,
+          "0",
+          null,
+          "Normal oran üzerinden hesaplanan KV",
+          null,
+          null
+        ],
+        [
+          "F.6  Bu Dönem Toplam İndirimli KV (B.12 + D.3)",
+          null,
+          "0",
+          null,
+          "İndirimli oran üzerinden KV",
+          null,
+          null
+        ],
+        [
+          "F.7  Bu Dönem KV Tasarrufu = Bu Dönem Kullanılan YKT (F.5 - F.6)",
+          null,
+          "0",
+          null,
+          "★ Sağlanan vergi avantajı = Katkıdan tüketilen tutar",
+          null,
+          "Bu ilişki net kurulmalı: Tasarruf = Tüketim."
+        ],
+        [
+          "F.8  Bu Dönem Toplam Kullanılan YKT (B.13 + D.4)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönem toplamı",
+          null,
+          "F.7 ile eşit olmalı. Fark hata gösterir."
+        ],
+        [
+          "F.9  KV Tasarrufu ↔ YKT Tüketimi Kontrol (F.7 - F.8)",
+          null,
+          "0",
+          null,
+          "★ SIFIR OLMALI: Tasarruf = Tüketim ilişkisi kontrolü",
+          null,
+          "Sıfır değilse hesap hatası var. İncelenmeli."
+        ],
+        [
+          "F.10 Dönem Sonu Kalan YKT / Sonraki Yıla Devir (F.3 - F.8)",
+          null,
+          "0",
+          null,
+          "Bir sonraki döneme devredecek YKT (endeksleme öncesi)",
+          null,
+          "E.1 (YDO endekslemesi) bu değeri kullanır."
+        ],
+        [
+          "F.11 YKT Kullanım Oranı % (Kümülatif: (F.2+F.8) / F.1 × 100)",
+          null,
+          "0",
+          null,
+          "Toplam YKT'nin ne kadarı kullanılmış",
+          null,
+          "Beyanname dönemiyle karşılaştırın."
+        ],
+        [
+          "F.12 YKT Durum Göstergesi",
+          null,
+          "YKT Giriş Eksik",
+          null,
+          "Otomatik durum",
+          null,
+          "YKT tükendiyse 32/A uygulaması biter."
+        ],
+        [
+          "YTB-1 DÖNEM ÖZETİ: Beyanname 32/A Matrahı (F.4) + KV Tasarrufu (F.7) → KONSOLİDASYON'a aktarılır. GİB EKler/İndirimli KV Tablosu mutabakatı: F.4=Matrah | F.7=Tasarruf | F.10=Kalan YKT. F.9 (Tasarruf-Tüketim kontrolü) SIFIR olmadıkça tasdik dosyası tamamlanmış sayılmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "YTB-2",
+      "dimensions": "A1:G90",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | YTB-2 BELGE BAZLI ÇALIŞMA KÂĞIDI | Yatırım Dönemi + İşletme Dönemi + YKT Kümülatif Takip",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BELGE BAZLI ÇALIŞMA İLKESİ: Bu sayfa yalnızca bu YTB'ye ait verileri içerir. Başka YTB'lerle çapraz kullanım yapılamaz. İndirimli KV; kazancın ilgili yatırımdan elde edildiği teyit edildikten sonra uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "YTB-2 — Sarı hücreler manuel giriş. Yeşil hücreler otomatik hesaplama. Tevsi yatırımda kazanç yöntemi (Götürü/Gerçek) C bölümünden seçilir. F bölümü çok yıllı kümülatif takibi sağlar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. YTB-2 — KAPSAM, NİTELİK VE KAZANÇ UYGUNLUK KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Bu YTB geçerli mi? Dönemde aktif ve revize/iptal olmamış mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "YTB geçerliliği T.C. Sanayi ve Teknoloji Bakanlığı sisteminden sorgulanmalıdır. Revize YTB'de değişen koşullar dönem hesabını etkiler.",
+          null
+        ],
+        [
+          "A0.2  Bu YTB kapsamındaki yatırım KVK 32/A'dan yararlanabilecek sektörde mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Finans/sigortacılık, iş ortaklıkları, taahhüt, YİD/Yİ, rödovans kapsamları hariçtir. Bu sektörlerde 32/A uygulanamaz.",
+          null
+        ],
+        [
+          "A0.3  ★ İndirimli KV uygulanacak kazanç, bu YTB kapsamındaki yatırımdan elde edilen kazanç mı? (KRİTİK)",
+          null,
+          null,
+          null,
+          "EVET",
+          "EN KRİTİK KONTROL: 32/A'da en sık hata budur. YTB var → tüm kurum kazancına indirimli vergi YANLIŞTIR. İşletme döneminde: Sadece bu yatırımdan elde edilen kazanç. Yatırım döneminde: Diğer faaliyet kazancına bölge oranı limiti dahilinde.",
+          null
+        ],
+        [
+          "A0.4  Yatırım dönemi / işletme dönemi ayrımı doğru belirlendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Tamamlama vizesi öncesi: Yatırım dönemi (B bölümü). Tamamlama vizesi sonrası: İşletme dönemi (D bölümü). Karma dönem: Her ikisi de (B + D birlikte).",
+          null
+        ],
+        [
+          "A0.5  Önceki dönemlerde kullanılan YKT tutarları doğru devredildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "F.2 satırı (Önceki Dönemler Kümülatif YKT): GİB beyanname sisteminden alınmalıdır. Hatalı devir tutarı tüm hesabı bozar.",
+          null
+        ],
+        [
+          "A0.6  ★ Bu YTB'nin YKT'si başka bir YTB hesabına mahsup edilmiyor mu? (ÇAPRAZ KULLANIM)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Her YTB'nin YKT'si o belgeye özgüdür. Çapraz mahsup yasaktır. 5 YTB varsa 5 ayrı YKT hesabı ve takibi zorunludur. Bu sayfadaki hesaplar yalnızca bu YTB'ye aittir.",
+          null
+        ],
+        [
+          "A0.7  YİAKV ve diğer matrah düzeltmeleri değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 32/C YİAKV hesabında 32/A'nın alınmayan vergi etkisi analiz edilmelidir. 32/A matrahının YİAKV hesabıyla ilişkisi dönem tebliğleriyle doğrulanmalıdır.",
+          null
+        ],
+        [
+          "A0.8  YMM Raporu zorunluluğu değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): KVK 32/A için TUTAR SINIRI OLMAKSIZIN YMM tasdik raporu zorunlu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu (A0.1-A0.8 tümü kontrol edildi)",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "Özellikle A0.3 (kazanç uygunluğu) ve A0.6 (çapraz kullanım) kritik.",
+          null
+        ],
+        [
+          "A. YTB-2 KİMLİK BİLGİLERİ VE TEŞVİK PARAMETRELERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          "Değer/Giriş",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "A.1  YTB Numarası",
+          null,
+          null,
+          "Örn. 2023-C3-12345",
+          null,
+          "Bakanlık sisteminden doğrulanmalı.",
+          null
+        ],
+        [
+          "A.2  YTB Düzenleme Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Belge tarihine göre dönem oranları belirlenir.",
+          null
+        ],
+        [
+          "A.3  Yatırım Bölgesi (1-6)",
+          null,
+          "3",
+          "1,2,3,4,5,6 — Listeden seçin",
+          null,
+          "Bölge; YKT oranı ve limit oranını belirler.",
+          null
+        ],
+        [
+          "A.4  Yatırım Türü",
+          null,
+          "Komple Yeni",
+          "Komple Yeni,Tevsi,Modernizasyon,Ürün Çeşitlendirme,Entegrasyon",
+          null,
+          "Tevsi: C bölümü ek hesabı gerektirir.",
+          null
+        ],
+        [
+          "A.5  YTB Kapsamı Toplam Yatırım Tutarı (TL)",
+          null,
+          null,
+          "YTB'de onaylanan tutar",
+          null,
+          "Revize edilmişse güncel tutarı kullanın.",
+          null
+        ],
+        [
+          "A.6  YKT Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 30",
+          null,
+          "İmalat + 2017-2022: +15 puan ek uygulanabilir.",
+          null
+        ],
+        [
+          "A.7  Hesaplanan Toplam YKT (= A.5 × A.6/100)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "Toplam devlet desteği = Kullanılabilecek azami YKT tutarı.",
+          null
+        ],
+        [
+          "A.8  Vergi İndirim Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 70",
+          null,
+          "Normal KV üzerinden indirim yapılacak oran.",
+          null
+        ],
+        [
+          "A.9  Normal KV Oranı % (Dönem)",
+          null,
+          "25",
+          "2025: %25",
+          null,
+          "Gerekirse güncelleyin.",
+          null
+        ],
+        [
+          "A.10 İndirimli KV Oranı % (= A.9 × (1 - A.8/100))",
+          null,
+          "25",
+          "Otomatik",
+          null,
+          "A.8=%100 ise indirimli KV=%0.",
+          null
+        ],
+        [
+          "A.11 YTB Dönem Durumu",
+          null,
+          "Yatırım Döneminde",
+          "Yatırım Döneminde,İşletme Döneminde,Her İkisi (Karma)",
+          null,
+          "Tamamlama vizesi alınmadıysa Yatırım. Alındıysa İşletme.",
+          null
+        ],
+        [
+          "A.12 Tamamlama Vizesi Tarihi (Varsa)",
+          null,
+          null,
+          "GG.AA.YYYY veya boş",
+          null,
+          "Vize tarihi = işletme döneminin başlangıcı.",
+          null
+        ],
+        [
+          "B. YATIRIM DÖNEMİ — Diğer Faaliyetlerden İndirimli KV (Tamamlama Öncesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yatırım döneminde DİĞER FAALİYET kazancına indirimli KV uygulanabilir. Azami limit: MIN(YKT × Bölge Oranı, Gerçekleşen Harcama). Bölge oranları: 2.Bölge=%10 | 3.=%20 | 4.=%30 | 5.=%50 | 6.=%80. 1.Bölge genellikle diğer faaliyet için mümkün değildir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "B.1  Dönem Başı Kümülatif Fiili Harcama",
+          null,
+          null,
+          null,
+          "Önceki KV beyannamesi EKler / İndirimli KV Tablosundan",
+          null,
+          "Arazi/arsa/royalti hariç."
+        ],
+        [
+          "B.2  Bu Dönem Fiili Yatırım Harcaması",
+          null,
+          null,
+          null,
+          "Dönem içinde YTB kapsamı yapılan harcama",
+          null,
+          "Fatura bazlı, muhasebe ile uyumlu olmalı."
+        ],
+        [
+          "B.3  Kümülatif Harcama (B.1 + B.2)",
+          null,
+          "0",
+          null,
+          "Azami matrah hesabında kullanılır",
+          null,
+          "Negatif olamaz."
+        ],
+        [
+          "B.4  Bölge Limit Oranı % (Yatırım Döneminde)",
+          null,
+          null,
+          null,
+          "2=%10 | 3=%20 | 4=%30 | 5=%50 | 6=%80 | 1=%0",
+          null,
+          "YTB bölgesiyle uyumlu olmalı."
+        ],
+        [
+          "B.5  YKT × Bölge Oranı Limiti (A.7 × B.4 / 100)",
+          null,
+          "0",
+          null,
+          "Yatırım döneminde kullanılabilecek azami YKT",
+          null,
+          "Bu limiti aşan kısım işletme döneminde."
+        ],
+        [
+          "B.6  Azami Yatırım Dön. YKT Limiti = MIN(B.5, B.3)",
+          null,
+          "0",
+          null,
+          "İki sınırdan küçük olan",
+          null,
+          "Gerçekleşen harcama da limittir."
+        ],
+        [
+          "B.7  Önceki Dönemler Yatırım Dön. Kullanılan YKT (Kümülatif)",
+          null,
+          null,
+          null,
+          "GİB EKler / İndirimli KV Tablosundan",
+          null,
+          "Her dönem güncellenmeli."
+        ],
+        [
+          "B.8  Bu Dönem Azami Yatırım Dön. YKT (B.6 - B.7)",
+          null,
+          "0",
+          null,
+          "Kalan yatırım dönem kapasitesi",
+          null,
+          "Bu tutardan fazla kullanım mümkün değil."
+        ],
+        [
+          "B.9  Bu Dönem Diğer Faaliyet KV Matrahı",
+          null,
+          null,
+          null,
+          "KKEG eklenmiş, önceki yıl zararları düşülmüş KV matrahı",
+          null,
+          "Beyanname ara hesabıyla doğrulanmalı."
+        ],
+        [
+          "B.10 Yatırım Dönemi İndirimli KV Matrahı",
+          null,
+          "0",
+          null,
+          "MIN(Dönem Kazancı, B.8 / İndirim Oranı)",
+          null,
+          "İndirimli KV uygulanacak fiili matrah."
+        ],
+        [
+          "B.11 Normal KV (B.10 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.12 İndirimli KV (B.10 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.13 Bu Dönem Yatırım Dön. KV Tasarrufu = Kullanılan YKT (B.11 - B.12)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi = Bu dönem kullanılan YKT",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "C. TEVSİ YATIRIM — İŞLETME DÖNEMİ KAZANÇ TESPİTİ (Sadece Tevsi Yatırımlarda Doldurulur)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "(1) GERÇEK USUL: Kazanç ayrı hesaplarda izleniyorsa bu kazanç direkt kullanılır. (2) GÖTÜRÜ USUL: Ayrı hesap yoksa → İndirimli KV Matrahı = Dönem Kazancı × (YTB Kapsamı ATİK / Toplam ATİK). ATİK yeniden değerlenmiş değerle.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C.0  Kazanç Tespit Yöntemi Seçimi",
+          null,
+          "Götürü Usul (Oransal)",
+          "Tevsi değilse boş bırakın. Gerçek usulde C.4'ü kullanın.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.1  YTB Kapsamı ATİK (Dönem Sonu, Yeniden Değerlenmiş)",
+          null,
+          null,
+          "Götürü usul payı. Devam edenler dahil.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  Toplam ATİK (Dönem Sonu, Yeniden Değerlenmiş, Devam Eden Dahil)",
+          null,
+          null,
+          "Götürü usul paydası. Tüm aktif sabit kıymetler.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  Götürü Usul Oranı (C.1 / C.2)",
+          null,
+          "0",
+          "Dönem kazancına uygulanacak oran",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4  Dönem KV Matrahı (Tüm Faaliyetler)",
+          null,
+          null,
+          "Götürü usul için bu matrah × C.3 oranı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.5  Gerçek Usul Kazanç (Gerçek Usul Seçilmişse)",
+          null,
+          null,
+          "Ayrı hesaplarda belirlenen tevsi yatırım kazancı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.6  İndirimli KV Uygulanacak Tevsi Matrahı",
+          null,
+          "0",
+          "Otomatik: Seçilen yönteme göre D.1'e aktarılır",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. İŞLETME DÖNEMİ — Bu Yatırımdan Elde Edilen Kazanç",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tamamlama vizesi sonrası: SADECE bu YTB'ye bağlı yatırımdan elde edilen kazanca uygulanır. Komple yeni/modernizasyon: D.1 elle girin. Tevsi: C.6 otomatik aktarılır. YKT tükendiğinde uygulama sona erer.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "D.1  İşletme Dönemi İndirimli KV Matrahı",
+          null,
+          null,
+          null,
+          "Yeni yatırım: Elle girin. Tevsi: C.6 otomatik.",
+          null,
+          "Kazancın bu YTB yatırımına ait olduğu teyit edilmeli."
+        ],
+        [
+          "D.2  Normal KV (D.1 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran",
+          null,
+          null
+        ],
+        [
+          "D.3  İndirimli KV (D.1 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran",
+          null,
+          null
+        ],
+        [
+          "D.4  Bu Dönem İşletme Dön. KV Tasarrufu = Kullanılan YKT (D.2 - D.3)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "E. KALAN YKT YDO ENDEKSLEMESİ (Tamamlama Sonrası Devreden YKT)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 32/A: Tamamlama vizesini izleyen yıllarda kullanılamayan kalan YKT, yeniden değerleme oranı (YDO) ile artırılarak dikkate alınır. 2024: %63,93 | 2025/1.Geçici: %3,30. GİB sirküleriyle teyit edin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  Dönem Başı YKT Bakiyesi (F.5'ten, Endeks Öncesi)",
+          null,
+          "0",
+          "F.5 devir. İlk dönem: A.7 (Toplam YKT)",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.2  YDO Oranı % (VUK Tebliği/GİB Sirküler)",
+          null,
+          null,
+          "2024: 63,93 | 2025/1: 3,30",
+          null,
+          null,
+          "Her dönem teyit edin."
+        ],
+        [
+          "E.3  YDO Artışı (E.1 × E.2 / 100)",
+          null,
+          "0",
+          "Endeksleme tutarı",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.4  Güncellenmiş Dönem Başı YKT (E.1 + E.3)",
+          null,
+          "0",
+          "Bu dönem kullanılabilecek azami YKT",
+          null,
+          null,
+          "Konsolidasyon ve ANA KONTROL bu değeri alır."
+        ],
+        [
+          "F. YKT KÜMÜLATİF TAKİP — Belge Bazlı Çok Yıllı İzleme (Bu Sayfa Yalnızca Bu YTB'ye Aittir)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÇOK YILLI BAKIŞ: Bu bölüm yalnızca tek dönem değil, belgenin tüm ömrü boyunca izlenmesi için kurgulanmıştır. F.2 her dönem başında bir önceki döneme ait beyanname değeriyle güncellenir. F.9 'KV Tasarrufu = Kullanılan YKT' ilişkisi: Her dönem sağlanmayan vergi = tüketilen YKT tutarıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM / Çok Yıllı Not"
+        ],
+        [
+          "F.1  Hesaplanan Toplam YKT (A.7)",
+          null,
+          "0",
+          null,
+          "YTB başlangıç değeri. Sabit.",
+          null,
+          "Belgede yazılı tutarla eşit olmalı."
+        ],
+        [
+          "F.2  Önceki Dönemler Kümülatif Kullanılan YKT (Manuel)",
+          null,
+          null,
+          null,
+          "GİB beyanname EKler / İndirimli KV Tablosundan alınır.",
+          null,
+          "İlk dönem: 0. Her dönem güncellenerek devredilir."
+        ],
+        [
+          "F.3  Dönem Başı Kalan YKT (F.1 - F.2)",
+          null,
+          "0",
+          null,
+          "Bu dönem kullanılabilecek azami kapasite.",
+          null,
+          "Negatif olamaz. 0 ise YKT tükenmiştir."
+        ],
+        [
+          "F.4  Bu Dönem Toplam İndirimli KV Matrahı (B.10 + D.1)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönemi birleşik matrah",
+          null,
+          "Beyanname 32/A matrahı bu satırdan kontrol edilir."
+        ],
+        [
+          "F.5  Bu Dönem Toplam Normal KV (B.11 + D.2)",
+          null,
+          "0",
+          null,
+          "Normal oran üzerinden hesaplanan KV",
+          null,
+          null
+        ],
+        [
+          "F.6  Bu Dönem Toplam İndirimli KV (B.12 + D.3)",
+          null,
+          "0",
+          null,
+          "İndirimli oran üzerinden KV",
+          null,
+          null
+        ],
+        [
+          "F.7  Bu Dönem KV Tasarrufu = Bu Dönem Kullanılan YKT (F.5 - F.6)",
+          null,
+          "0",
+          null,
+          "★ Sağlanan vergi avantajı = Katkıdan tüketilen tutar",
+          null,
+          "Bu ilişki net kurulmalı: Tasarruf = Tüketim."
+        ],
+        [
+          "F.8  Bu Dönem Toplam Kullanılan YKT (B.13 + D.4)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönem toplamı",
+          null,
+          "F.7 ile eşit olmalı. Fark hata gösterir."
+        ],
+        [
+          "F.9  KV Tasarrufu ↔ YKT Tüketimi Kontrol (F.7 - F.8)",
+          null,
+          "0",
+          null,
+          "★ SIFIR OLMALI: Tasarruf = Tüketim ilişkisi kontrolü",
+          null,
+          "Sıfır değilse hesap hatası var. İncelenmeli."
+        ],
+        [
+          "F.10 Dönem Sonu Kalan YKT / Sonraki Yıla Devir (F.3 - F.8)",
+          null,
+          "0",
+          null,
+          "Bir sonraki döneme devredecek YKT (endeksleme öncesi)",
+          null,
+          "E.1 (YDO endekslemesi) bu değeri kullanır."
+        ],
+        [
+          "F.11 YKT Kullanım Oranı % (Kümülatif: (F.2+F.8) / F.1 × 100)",
+          null,
+          "0",
+          null,
+          "Toplam YKT'nin ne kadarı kullanılmış",
+          null,
+          "Beyanname dönemiyle karşılaştırın."
+        ],
+        [
+          "F.12 YKT Durum Göstergesi",
+          null,
+          "YKT Giriş Eksik",
+          null,
+          "Otomatik durum",
+          null,
+          "YKT tükendiyse 32/A uygulaması biter."
+        ],
+        [
+          "YTB-2 DÖNEM ÖZETİ: Beyanname 32/A Matrahı (F.4) + KV Tasarrufu (F.7) → KONSOLİDASYON'a aktarılır. GİB EKler/İndirimli KV Tablosu mutabakatı: F.4=Matrah | F.7=Tasarruf | F.10=Kalan YKT. F.9 (Tasarruf-Tüketim kontrolü) SIFIR olmadıkça tasdik dosyası tamamlanmış sayılmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "YTB-3",
+      "dimensions": "A1:G90",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | YTB-3 BELGE BAZLI ÇALIŞMA KÂĞIDI | Yatırım Dönemi + İşletme Dönemi + YKT Kümülatif Takip",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BELGE BAZLI ÇALIŞMA İLKESİ: Bu sayfa yalnızca bu YTB'ye ait verileri içerir. Başka YTB'lerle çapraz kullanım yapılamaz. İndirimli KV; kazancın ilgili yatırımdan elde edildiği teyit edildikten sonra uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "YTB-3 — Sarı hücreler manuel giriş. Yeşil hücreler otomatik hesaplama. Tevsi yatırımda kazanç yöntemi (Götürü/Gerçek) C bölümünden seçilir. F bölümü çok yıllı kümülatif takibi sağlar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. YTB-3 — KAPSAM, NİTELİK VE KAZANÇ UYGUNLUK KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Bu YTB geçerli mi? Dönemde aktif ve revize/iptal olmamış mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "YTB geçerliliği T.C. Sanayi ve Teknoloji Bakanlığı sisteminden sorgulanmalıdır. Revize YTB'de değişen koşullar dönem hesabını etkiler.",
+          null
+        ],
+        [
+          "A0.2  Bu YTB kapsamındaki yatırım KVK 32/A'dan yararlanabilecek sektörde mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Finans/sigortacılık, iş ortaklıkları, taahhüt, YİD/Yİ, rödovans kapsamları hariçtir. Bu sektörlerde 32/A uygulanamaz.",
+          null
+        ],
+        [
+          "A0.3  ★ İndirimli KV uygulanacak kazanç, bu YTB kapsamındaki yatırımdan elde edilen kazanç mı? (KRİTİK)",
+          null,
+          null,
+          null,
+          "EVET",
+          "EN KRİTİK KONTROL: 32/A'da en sık hata budur. YTB var → tüm kurum kazancına indirimli vergi YANLIŞTIR. İşletme döneminde: Sadece bu yatırımdan elde edilen kazanç. Yatırım döneminde: Diğer faaliyet kazancına bölge oranı limiti dahilinde.",
+          null
+        ],
+        [
+          "A0.4  Yatırım dönemi / işletme dönemi ayrımı doğru belirlendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Tamamlama vizesi öncesi: Yatırım dönemi (B bölümü). Tamamlama vizesi sonrası: İşletme dönemi (D bölümü). Karma dönem: Her ikisi de (B + D birlikte).",
+          null
+        ],
+        [
+          "A0.5  Önceki dönemlerde kullanılan YKT tutarları doğru devredildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "F.2 satırı (Önceki Dönemler Kümülatif YKT): GİB beyanname sisteminden alınmalıdır. Hatalı devir tutarı tüm hesabı bozar.",
+          null
+        ],
+        [
+          "A0.6  ★ Bu YTB'nin YKT'si başka bir YTB hesabına mahsup edilmiyor mu? (ÇAPRAZ KULLANIM)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Her YTB'nin YKT'si o belgeye özgüdür. Çapraz mahsup yasaktır. 5 YTB varsa 5 ayrı YKT hesabı ve takibi zorunludur. Bu sayfadaki hesaplar yalnızca bu YTB'ye aittir.",
+          null
+        ],
+        [
+          "A0.7  YİAKV ve diğer matrah düzeltmeleri değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 32/C YİAKV hesabında 32/A'nın alınmayan vergi etkisi analiz edilmelidir. 32/A matrahının YİAKV hesabıyla ilişkisi dönem tebliğleriyle doğrulanmalıdır.",
+          null
+        ],
+        [
+          "A0.8  YMM Raporu zorunluluğu değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): KVK 32/A için TUTAR SINIRI OLMAKSIZIN YMM tasdik raporu zorunlu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu (A0.1-A0.8 tümü kontrol edildi)",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "Özellikle A0.3 (kazanç uygunluğu) ve A0.6 (çapraz kullanım) kritik.",
+          null
+        ],
+        [
+          "A. YTB-3 KİMLİK BİLGİLERİ VE TEŞVİK PARAMETRELERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          "Değer/Giriş",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "A.1  YTB Numarası",
+          null,
+          null,
+          "Örn. 2023-C3-12345",
+          null,
+          "Bakanlık sisteminden doğrulanmalı.",
+          null
+        ],
+        [
+          "A.2  YTB Düzenleme Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Belge tarihine göre dönem oranları belirlenir.",
+          null
+        ],
+        [
+          "A.3  Yatırım Bölgesi (1-6)",
+          null,
+          "3",
+          "1,2,3,4,5,6 — Listeden seçin",
+          null,
+          "Bölge; YKT oranı ve limit oranını belirler.",
+          null
+        ],
+        [
+          "A.4  Yatırım Türü",
+          null,
+          "Komple Yeni",
+          "Komple Yeni,Tevsi,Modernizasyon,Ürün Çeşitlendirme,Entegrasyon",
+          null,
+          "Tevsi: C bölümü ek hesabı gerektirir.",
+          null
+        ],
+        [
+          "A.5  YTB Kapsamı Toplam Yatırım Tutarı (TL)",
+          null,
+          null,
+          "YTB'de onaylanan tutar",
+          null,
+          "Revize edilmişse güncel tutarı kullanın.",
+          null
+        ],
+        [
+          "A.6  YKT Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 30",
+          null,
+          "İmalat + 2017-2022: +15 puan ek uygulanabilir.",
+          null
+        ],
+        [
+          "A.7  Hesaplanan Toplam YKT (= A.5 × A.6/100)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "Toplam devlet desteği = Kullanılabilecek azami YKT tutarı.",
+          null
+        ],
+        [
+          "A.8  Vergi İndirim Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 70",
+          null,
+          "Normal KV üzerinden indirim yapılacak oran.",
+          null
+        ],
+        [
+          "A.9  Normal KV Oranı % (Dönem)",
+          null,
+          "25",
+          "2025: %25",
+          null,
+          "Gerekirse güncelleyin.",
+          null
+        ],
+        [
+          "A.10 İndirimli KV Oranı % (= A.9 × (1 - A.8/100))",
+          null,
+          "25",
+          "Otomatik",
+          null,
+          "A.8=%100 ise indirimli KV=%0.",
+          null
+        ],
+        [
+          "A.11 YTB Dönem Durumu",
+          null,
+          "Yatırım Döneminde",
+          "Yatırım Döneminde,İşletme Döneminde,Her İkisi (Karma)",
+          null,
+          "Tamamlama vizesi alınmadıysa Yatırım. Alındıysa İşletme.",
+          null
+        ],
+        [
+          "A.12 Tamamlama Vizesi Tarihi (Varsa)",
+          null,
+          null,
+          "GG.AA.YYYY veya boş",
+          null,
+          "Vize tarihi = işletme döneminin başlangıcı.",
+          null
+        ],
+        [
+          "B. YATIRIM DÖNEMİ — Diğer Faaliyetlerden İndirimli KV (Tamamlama Öncesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yatırım döneminde DİĞER FAALİYET kazancına indirimli KV uygulanabilir. Azami limit: MIN(YKT × Bölge Oranı, Gerçekleşen Harcama). Bölge oranları: 2.Bölge=%10 | 3.=%20 | 4.=%30 | 5.=%50 | 6.=%80. 1.Bölge genellikle diğer faaliyet için mümkün değildir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "B.1  Dönem Başı Kümülatif Fiili Harcama",
+          null,
+          null,
+          null,
+          "Önceki KV beyannamesi EKler / İndirimli KV Tablosundan",
+          null,
+          "Arazi/arsa/royalti hariç."
+        ],
+        [
+          "B.2  Bu Dönem Fiili Yatırım Harcaması",
+          null,
+          null,
+          null,
+          "Dönem içinde YTB kapsamı yapılan harcama",
+          null,
+          "Fatura bazlı, muhasebe ile uyumlu olmalı."
+        ],
+        [
+          "B.3  Kümülatif Harcama (B.1 + B.2)",
+          null,
+          "0",
+          null,
+          "Azami matrah hesabında kullanılır",
+          null,
+          "Negatif olamaz."
+        ],
+        [
+          "B.4  Bölge Limit Oranı % (Yatırım Döneminde)",
+          null,
+          null,
+          null,
+          "2=%10 | 3=%20 | 4=%30 | 5=%50 | 6=%80 | 1=%0",
+          null,
+          "YTB bölgesiyle uyumlu olmalı."
+        ],
+        [
+          "B.5  YKT × Bölge Oranı Limiti (A.7 × B.4 / 100)",
+          null,
+          "0",
+          null,
+          "Yatırım döneminde kullanılabilecek azami YKT",
+          null,
+          "Bu limiti aşan kısım işletme döneminde."
+        ],
+        [
+          "B.6  Azami Yatırım Dön. YKT Limiti = MIN(B.5, B.3)",
+          null,
+          "0",
+          null,
+          "İki sınırdan küçük olan",
+          null,
+          "Gerçekleşen harcama da limittir."
+        ],
+        [
+          "B.7  Önceki Dönemler Yatırım Dön. Kullanılan YKT (Kümülatif)",
+          null,
+          null,
+          null,
+          "GİB EKler / İndirimli KV Tablosundan",
+          null,
+          "Her dönem güncellenmeli."
+        ],
+        [
+          "B.8  Bu Dönem Azami Yatırım Dön. YKT (B.6 - B.7)",
+          null,
+          "0",
+          null,
+          "Kalan yatırım dönem kapasitesi",
+          null,
+          "Bu tutardan fazla kullanım mümkün değil."
+        ],
+        [
+          "B.9  Bu Dönem Diğer Faaliyet KV Matrahı",
+          null,
+          null,
+          null,
+          "KKEG eklenmiş, önceki yıl zararları düşülmüş KV matrahı",
+          null,
+          "Beyanname ara hesabıyla doğrulanmalı."
+        ],
+        [
+          "B.10 Yatırım Dönemi İndirimli KV Matrahı",
+          null,
+          "0",
+          null,
+          "MIN(Dönem Kazancı, B.8 / İndirim Oranı)",
+          null,
+          "İndirimli KV uygulanacak fiili matrah."
+        ],
+        [
+          "B.11 Normal KV (B.10 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.12 İndirimli KV (B.10 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.13 Bu Dönem Yatırım Dön. KV Tasarrufu = Kullanılan YKT (B.11 - B.12)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi = Bu dönem kullanılan YKT",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "C. TEVSİ YATIRIM — İŞLETME DÖNEMİ KAZANÇ TESPİTİ (Sadece Tevsi Yatırımlarda Doldurulur)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "(1) GERÇEK USUL: Kazanç ayrı hesaplarda izleniyorsa bu kazanç direkt kullanılır. (2) GÖTÜRÜ USUL: Ayrı hesap yoksa → İndirimli KV Matrahı = Dönem Kazancı × (YTB Kapsamı ATİK / Toplam ATİK). ATİK yeniden değerlenmiş değerle.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C.0  Kazanç Tespit Yöntemi Seçimi",
+          null,
+          "Götürü Usul (Oransal)",
+          "Tevsi değilse boş bırakın. Gerçek usulde C.4'ü kullanın.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.1  YTB Kapsamı ATİK (Dönem Sonu, Yeniden Değerlenmiş)",
+          null,
+          null,
+          "Götürü usul payı. Devam edenler dahil.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  Toplam ATİK (Dönem Sonu, Yeniden Değerlenmiş, Devam Eden Dahil)",
+          null,
+          null,
+          "Götürü usul paydası. Tüm aktif sabit kıymetler.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  Götürü Usul Oranı (C.1 / C.2)",
+          null,
+          "0",
+          "Dönem kazancına uygulanacak oran",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4  Dönem KV Matrahı (Tüm Faaliyetler)",
+          null,
+          null,
+          "Götürü usul için bu matrah × C.3 oranı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.5  Gerçek Usul Kazanç (Gerçek Usul Seçilmişse)",
+          null,
+          null,
+          "Ayrı hesaplarda belirlenen tevsi yatırım kazancı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.6  İndirimli KV Uygulanacak Tevsi Matrahı",
+          null,
+          "0",
+          "Otomatik: Seçilen yönteme göre D.1'e aktarılır",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. İŞLETME DÖNEMİ — Bu Yatırımdan Elde Edilen Kazanç",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tamamlama vizesi sonrası: SADECE bu YTB'ye bağlı yatırımdan elde edilen kazanca uygulanır. Komple yeni/modernizasyon: D.1 elle girin. Tevsi: C.6 otomatik aktarılır. YKT tükendiğinde uygulama sona erer.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "D.1  İşletme Dönemi İndirimli KV Matrahı",
+          null,
+          null,
+          null,
+          "Yeni yatırım: Elle girin. Tevsi: C.6 otomatik.",
+          null,
+          "Kazancın bu YTB yatırımına ait olduğu teyit edilmeli."
+        ],
+        [
+          "D.2  Normal KV (D.1 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran",
+          null,
+          null
+        ],
+        [
+          "D.3  İndirimli KV (D.1 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran",
+          null,
+          null
+        ],
+        [
+          "D.4  Bu Dönem İşletme Dön. KV Tasarrufu = Kullanılan YKT (D.2 - D.3)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "E. KALAN YKT YDO ENDEKSLEMESİ (Tamamlama Sonrası Devreden YKT)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 32/A: Tamamlama vizesini izleyen yıllarda kullanılamayan kalan YKT, yeniden değerleme oranı (YDO) ile artırılarak dikkate alınır. 2024: %63,93 | 2025/1.Geçici: %3,30. GİB sirküleriyle teyit edin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  Dönem Başı YKT Bakiyesi (F.5'ten, Endeks Öncesi)",
+          null,
+          "0",
+          "F.5 devir. İlk dönem: A.7 (Toplam YKT)",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.2  YDO Oranı % (VUK Tebliği/GİB Sirküler)",
+          null,
+          null,
+          "2024: 63,93 | 2025/1: 3,30",
+          null,
+          null,
+          "Her dönem teyit edin."
+        ],
+        [
+          "E.3  YDO Artışı (E.1 × E.2 / 100)",
+          null,
+          "0",
+          "Endeksleme tutarı",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.4  Güncellenmiş Dönem Başı YKT (E.1 + E.3)",
+          null,
+          "0",
+          "Bu dönem kullanılabilecek azami YKT",
+          null,
+          null,
+          "Konsolidasyon ve ANA KONTROL bu değeri alır."
+        ],
+        [
+          "F. YKT KÜMÜLATİF TAKİP — Belge Bazlı Çok Yıllı İzleme (Bu Sayfa Yalnızca Bu YTB'ye Aittir)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÇOK YILLI BAKIŞ: Bu bölüm yalnızca tek dönem değil, belgenin tüm ömrü boyunca izlenmesi için kurgulanmıştır. F.2 her dönem başında bir önceki döneme ait beyanname değeriyle güncellenir. F.9 'KV Tasarrufu = Kullanılan YKT' ilişkisi: Her dönem sağlanmayan vergi = tüketilen YKT tutarıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM / Çok Yıllı Not"
+        ],
+        [
+          "F.1  Hesaplanan Toplam YKT (A.7)",
+          null,
+          "0",
+          null,
+          "YTB başlangıç değeri. Sabit.",
+          null,
+          "Belgede yazılı tutarla eşit olmalı."
+        ],
+        [
+          "F.2  Önceki Dönemler Kümülatif Kullanılan YKT (Manuel)",
+          null,
+          null,
+          null,
+          "GİB beyanname EKler / İndirimli KV Tablosundan alınır.",
+          null,
+          "İlk dönem: 0. Her dönem güncellenerek devredilir."
+        ],
+        [
+          "F.3  Dönem Başı Kalan YKT (F.1 - F.2)",
+          null,
+          "0",
+          null,
+          "Bu dönem kullanılabilecek azami kapasite.",
+          null,
+          "Negatif olamaz. 0 ise YKT tükenmiştir."
+        ],
+        [
+          "F.4  Bu Dönem Toplam İndirimli KV Matrahı (B.10 + D.1)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönemi birleşik matrah",
+          null,
+          "Beyanname 32/A matrahı bu satırdan kontrol edilir."
+        ],
+        [
+          "F.5  Bu Dönem Toplam Normal KV (B.11 + D.2)",
+          null,
+          "0",
+          null,
+          "Normal oran üzerinden hesaplanan KV",
+          null,
+          null
+        ],
+        [
+          "F.6  Bu Dönem Toplam İndirimli KV (B.12 + D.3)",
+          null,
+          "0",
+          null,
+          "İndirimli oran üzerinden KV",
+          null,
+          null
+        ],
+        [
+          "F.7  Bu Dönem KV Tasarrufu = Bu Dönem Kullanılan YKT (F.5 - F.6)",
+          null,
+          "0",
+          null,
+          "★ Sağlanan vergi avantajı = Katkıdan tüketilen tutar",
+          null,
+          "Bu ilişki net kurulmalı: Tasarruf = Tüketim."
+        ],
+        [
+          "F.8  Bu Dönem Toplam Kullanılan YKT (B.13 + D.4)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönem toplamı",
+          null,
+          "F.7 ile eşit olmalı. Fark hata gösterir."
+        ],
+        [
+          "F.9  KV Tasarrufu ↔ YKT Tüketimi Kontrol (F.7 - F.8)",
+          null,
+          "0",
+          null,
+          "★ SIFIR OLMALI: Tasarruf = Tüketim ilişkisi kontrolü",
+          null,
+          "Sıfır değilse hesap hatası var. İncelenmeli."
+        ],
+        [
+          "F.10 Dönem Sonu Kalan YKT / Sonraki Yıla Devir (F.3 - F.8)",
+          null,
+          "0",
+          null,
+          "Bir sonraki döneme devredecek YKT (endeksleme öncesi)",
+          null,
+          "E.1 (YDO endekslemesi) bu değeri kullanır."
+        ],
+        [
+          "F.11 YKT Kullanım Oranı % (Kümülatif: (F.2+F.8) / F.1 × 100)",
+          null,
+          "0",
+          null,
+          "Toplam YKT'nin ne kadarı kullanılmış",
+          null,
+          "Beyanname dönemiyle karşılaştırın."
+        ],
+        [
+          "F.12 YKT Durum Göstergesi",
+          null,
+          "YKT Giriş Eksik",
+          null,
+          "Otomatik durum",
+          null,
+          "YKT tükendiyse 32/A uygulaması biter."
+        ],
+        [
+          "YTB-3 DÖNEM ÖZETİ: Beyanname 32/A Matrahı (F.4) + KV Tasarrufu (F.7) → KONSOLİDASYON'a aktarılır. GİB EKler/İndirimli KV Tablosu mutabakatı: F.4=Matrah | F.7=Tasarruf | F.10=Kalan YKT. F.9 (Tasarruf-Tüketim kontrolü) SIFIR olmadıkça tasdik dosyası tamamlanmış sayılmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "YTB-4",
+      "dimensions": "A1:G90",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | YTB-4 BELGE BAZLI ÇALIŞMA KÂĞIDI | Yatırım Dönemi + İşletme Dönemi + YKT Kümülatif Takip",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BELGE BAZLI ÇALIŞMA İLKESİ: Bu sayfa yalnızca bu YTB'ye ait verileri içerir. Başka YTB'lerle çapraz kullanım yapılamaz. İndirimli KV; kazancın ilgili yatırımdan elde edildiği teyit edildikten sonra uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "YTB-4 — Sarı hücreler manuel giriş. Yeşil hücreler otomatik hesaplama. Tevsi yatırımda kazanç yöntemi (Götürü/Gerçek) C bölümünden seçilir. F bölümü çok yıllı kümülatif takibi sağlar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. YTB-4 — KAPSAM, NİTELİK VE KAZANÇ UYGUNLUK KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Bu YTB geçerli mi? Dönemde aktif ve revize/iptal olmamış mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "YTB geçerliliği T.C. Sanayi ve Teknoloji Bakanlığı sisteminden sorgulanmalıdır. Revize YTB'de değişen koşullar dönem hesabını etkiler.",
+          null
+        ],
+        [
+          "A0.2  Bu YTB kapsamındaki yatırım KVK 32/A'dan yararlanabilecek sektörde mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Finans/sigortacılık, iş ortaklıkları, taahhüt, YİD/Yİ, rödovans kapsamları hariçtir. Bu sektörlerde 32/A uygulanamaz.",
+          null
+        ],
+        [
+          "A0.3  ★ İndirimli KV uygulanacak kazanç, bu YTB kapsamındaki yatırımdan elde edilen kazanç mı? (KRİTİK)",
+          null,
+          null,
+          null,
+          "EVET",
+          "EN KRİTİK KONTROL: 32/A'da en sık hata budur. YTB var → tüm kurum kazancına indirimli vergi YANLIŞTIR. İşletme döneminde: Sadece bu yatırımdan elde edilen kazanç. Yatırım döneminde: Diğer faaliyet kazancına bölge oranı limiti dahilinde.",
+          null
+        ],
+        [
+          "A0.4  Yatırım dönemi / işletme dönemi ayrımı doğru belirlendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Tamamlama vizesi öncesi: Yatırım dönemi (B bölümü). Tamamlama vizesi sonrası: İşletme dönemi (D bölümü). Karma dönem: Her ikisi de (B + D birlikte).",
+          null
+        ],
+        [
+          "A0.5  Önceki dönemlerde kullanılan YKT tutarları doğru devredildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "F.2 satırı (Önceki Dönemler Kümülatif YKT): GİB beyanname sisteminden alınmalıdır. Hatalı devir tutarı tüm hesabı bozar.",
+          null
+        ],
+        [
+          "A0.6  ★ Bu YTB'nin YKT'si başka bir YTB hesabına mahsup edilmiyor mu? (ÇAPRAZ KULLANIM)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Her YTB'nin YKT'si o belgeye özgüdür. Çapraz mahsup yasaktır. 5 YTB varsa 5 ayrı YKT hesabı ve takibi zorunludur. Bu sayfadaki hesaplar yalnızca bu YTB'ye aittir.",
+          null
+        ],
+        [
+          "A0.7  YİAKV ve diğer matrah düzeltmeleri değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 32/C YİAKV hesabında 32/A'nın alınmayan vergi etkisi analiz edilmelidir. 32/A matrahının YİAKV hesabıyla ilişkisi dönem tebliğleriyle doğrulanmalıdır.",
+          null
+        ],
+        [
+          "A0.8  YMM Raporu zorunluluğu değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): KVK 32/A için TUTAR SINIRI OLMAKSIZIN YMM tasdik raporu zorunlu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu (A0.1-A0.8 tümü kontrol edildi)",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "Özellikle A0.3 (kazanç uygunluğu) ve A0.6 (çapraz kullanım) kritik.",
+          null
+        ],
+        [
+          "A. YTB-4 KİMLİK BİLGİLERİ VE TEŞVİK PARAMETRELERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          "Değer/Giriş",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "A.1  YTB Numarası",
+          null,
+          null,
+          "Örn. 2023-C3-12345",
+          null,
+          "Bakanlık sisteminden doğrulanmalı.",
+          null
+        ],
+        [
+          "A.2  YTB Düzenleme Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Belge tarihine göre dönem oranları belirlenir.",
+          null
+        ],
+        [
+          "A.3  Yatırım Bölgesi (1-6)",
+          null,
+          "3",
+          "1,2,3,4,5,6 — Listeden seçin",
+          null,
+          "Bölge; YKT oranı ve limit oranını belirler.",
+          null
+        ],
+        [
+          "A.4  Yatırım Türü",
+          null,
+          "Komple Yeni",
+          "Komple Yeni,Tevsi,Modernizasyon,Ürün Çeşitlendirme,Entegrasyon",
+          null,
+          "Tevsi: C bölümü ek hesabı gerektirir.",
+          null
+        ],
+        [
+          "A.5  YTB Kapsamı Toplam Yatırım Tutarı (TL)",
+          null,
+          null,
+          "YTB'de onaylanan tutar",
+          null,
+          "Revize edilmişse güncel tutarı kullanın.",
+          null
+        ],
+        [
+          "A.6  YKT Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 30",
+          null,
+          "İmalat + 2017-2022: +15 puan ek uygulanabilir.",
+          null
+        ],
+        [
+          "A.7  Hesaplanan Toplam YKT (= A.5 × A.6/100)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "Toplam devlet desteği = Kullanılabilecek azami YKT tutarı.",
+          null
+        ],
+        [
+          "A.8  Vergi İndirim Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 70",
+          null,
+          "Normal KV üzerinden indirim yapılacak oran.",
+          null
+        ],
+        [
+          "A.9  Normal KV Oranı % (Dönem)",
+          null,
+          "25",
+          "2025: %25",
+          null,
+          "Gerekirse güncelleyin.",
+          null
+        ],
+        [
+          "A.10 İndirimli KV Oranı % (= A.9 × (1 - A.8/100))",
+          null,
+          "25",
+          "Otomatik",
+          null,
+          "A.8=%100 ise indirimli KV=%0.",
+          null
+        ],
+        [
+          "A.11 YTB Dönem Durumu",
+          null,
+          "Yatırım Döneminde",
+          "Yatırım Döneminde,İşletme Döneminde,Her İkisi (Karma)",
+          null,
+          "Tamamlama vizesi alınmadıysa Yatırım. Alındıysa İşletme.",
+          null
+        ],
+        [
+          "A.12 Tamamlama Vizesi Tarihi (Varsa)",
+          null,
+          null,
+          "GG.AA.YYYY veya boş",
+          null,
+          "Vize tarihi = işletme döneminin başlangıcı.",
+          null
+        ],
+        [
+          "B. YATIRIM DÖNEMİ — Diğer Faaliyetlerden İndirimli KV (Tamamlama Öncesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yatırım döneminde DİĞER FAALİYET kazancına indirimli KV uygulanabilir. Azami limit: MIN(YKT × Bölge Oranı, Gerçekleşen Harcama). Bölge oranları: 2.Bölge=%10 | 3.=%20 | 4.=%30 | 5.=%50 | 6.=%80. 1.Bölge genellikle diğer faaliyet için mümkün değildir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "B.1  Dönem Başı Kümülatif Fiili Harcama",
+          null,
+          null,
+          null,
+          "Önceki KV beyannamesi EKler / İndirimli KV Tablosundan",
+          null,
+          "Arazi/arsa/royalti hariç."
+        ],
+        [
+          "B.2  Bu Dönem Fiili Yatırım Harcaması",
+          null,
+          null,
+          null,
+          "Dönem içinde YTB kapsamı yapılan harcama",
+          null,
+          "Fatura bazlı, muhasebe ile uyumlu olmalı."
+        ],
+        [
+          "B.3  Kümülatif Harcama (B.1 + B.2)",
+          null,
+          "0",
+          null,
+          "Azami matrah hesabında kullanılır",
+          null,
+          "Negatif olamaz."
+        ],
+        [
+          "B.4  Bölge Limit Oranı % (Yatırım Döneminde)",
+          null,
+          null,
+          null,
+          "2=%10 | 3=%20 | 4=%30 | 5=%50 | 6=%80 | 1=%0",
+          null,
+          "YTB bölgesiyle uyumlu olmalı."
+        ],
+        [
+          "B.5  YKT × Bölge Oranı Limiti (A.7 × B.4 / 100)",
+          null,
+          "0",
+          null,
+          "Yatırım döneminde kullanılabilecek azami YKT",
+          null,
+          "Bu limiti aşan kısım işletme döneminde."
+        ],
+        [
+          "B.6  Azami Yatırım Dön. YKT Limiti = MIN(B.5, B.3)",
+          null,
+          "0",
+          null,
+          "İki sınırdan küçük olan",
+          null,
+          "Gerçekleşen harcama da limittir."
+        ],
+        [
+          "B.7  Önceki Dönemler Yatırım Dön. Kullanılan YKT (Kümülatif)",
+          null,
+          null,
+          null,
+          "GİB EKler / İndirimli KV Tablosundan",
+          null,
+          "Her dönem güncellenmeli."
+        ],
+        [
+          "B.8  Bu Dönem Azami Yatırım Dön. YKT (B.6 - B.7)",
+          null,
+          "0",
+          null,
+          "Kalan yatırım dönem kapasitesi",
+          null,
+          "Bu tutardan fazla kullanım mümkün değil."
+        ],
+        [
+          "B.9  Bu Dönem Diğer Faaliyet KV Matrahı",
+          null,
+          null,
+          null,
+          "KKEG eklenmiş, önceki yıl zararları düşülmüş KV matrahı",
+          null,
+          "Beyanname ara hesabıyla doğrulanmalı."
+        ],
+        [
+          "B.10 Yatırım Dönemi İndirimli KV Matrahı",
+          null,
+          "0",
+          null,
+          "MIN(Dönem Kazancı, B.8 / İndirim Oranı)",
+          null,
+          "İndirimli KV uygulanacak fiili matrah."
+        ],
+        [
+          "B.11 Normal KV (B.10 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.12 İndirimli KV (B.10 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.13 Bu Dönem Yatırım Dön. KV Tasarrufu = Kullanılan YKT (B.11 - B.12)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi = Bu dönem kullanılan YKT",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "C. TEVSİ YATIRIM — İŞLETME DÖNEMİ KAZANÇ TESPİTİ (Sadece Tevsi Yatırımlarda Doldurulur)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "(1) GERÇEK USUL: Kazanç ayrı hesaplarda izleniyorsa bu kazanç direkt kullanılır. (2) GÖTÜRÜ USUL: Ayrı hesap yoksa → İndirimli KV Matrahı = Dönem Kazancı × (YTB Kapsamı ATİK / Toplam ATİK). ATİK yeniden değerlenmiş değerle.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C.0  Kazanç Tespit Yöntemi Seçimi",
+          null,
+          "Götürü Usul (Oransal)",
+          "Tevsi değilse boş bırakın. Gerçek usulde C.4'ü kullanın.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.1  YTB Kapsamı ATİK (Dönem Sonu, Yeniden Değerlenmiş)",
+          null,
+          null,
+          "Götürü usul payı. Devam edenler dahil.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  Toplam ATİK (Dönem Sonu, Yeniden Değerlenmiş, Devam Eden Dahil)",
+          null,
+          null,
+          "Götürü usul paydası. Tüm aktif sabit kıymetler.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  Götürü Usul Oranı (C.1 / C.2)",
+          null,
+          "0",
+          "Dönem kazancına uygulanacak oran",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4  Dönem KV Matrahı (Tüm Faaliyetler)",
+          null,
+          null,
+          "Götürü usul için bu matrah × C.3 oranı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.5  Gerçek Usul Kazanç (Gerçek Usul Seçilmişse)",
+          null,
+          null,
+          "Ayrı hesaplarda belirlenen tevsi yatırım kazancı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.6  İndirimli KV Uygulanacak Tevsi Matrahı",
+          null,
+          "0",
+          "Otomatik: Seçilen yönteme göre D.1'e aktarılır",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. İŞLETME DÖNEMİ — Bu Yatırımdan Elde Edilen Kazanç",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tamamlama vizesi sonrası: SADECE bu YTB'ye bağlı yatırımdan elde edilen kazanca uygulanır. Komple yeni/modernizasyon: D.1 elle girin. Tevsi: C.6 otomatik aktarılır. YKT tükendiğinde uygulama sona erer.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "D.1  İşletme Dönemi İndirimli KV Matrahı",
+          null,
+          null,
+          null,
+          "Yeni yatırım: Elle girin. Tevsi: C.6 otomatik.",
+          null,
+          "Kazancın bu YTB yatırımına ait olduğu teyit edilmeli."
+        ],
+        [
+          "D.2  Normal KV (D.1 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran",
+          null,
+          null
+        ],
+        [
+          "D.3  İndirimli KV (D.1 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran",
+          null,
+          null
+        ],
+        [
+          "D.4  Bu Dönem İşletme Dön. KV Tasarrufu = Kullanılan YKT (D.2 - D.3)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "E. KALAN YKT YDO ENDEKSLEMESİ (Tamamlama Sonrası Devreden YKT)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 32/A: Tamamlama vizesini izleyen yıllarda kullanılamayan kalan YKT, yeniden değerleme oranı (YDO) ile artırılarak dikkate alınır. 2024: %63,93 | 2025/1.Geçici: %3,30. GİB sirküleriyle teyit edin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  Dönem Başı YKT Bakiyesi (F.5'ten, Endeks Öncesi)",
+          null,
+          "0",
+          "F.5 devir. İlk dönem: A.7 (Toplam YKT)",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.2  YDO Oranı % (VUK Tebliği/GİB Sirküler)",
+          null,
+          null,
+          "2024: 63,93 | 2025/1: 3,30",
+          null,
+          null,
+          "Her dönem teyit edin."
+        ],
+        [
+          "E.3  YDO Artışı (E.1 × E.2 / 100)",
+          null,
+          "0",
+          "Endeksleme tutarı",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.4  Güncellenmiş Dönem Başı YKT (E.1 + E.3)",
+          null,
+          "0",
+          "Bu dönem kullanılabilecek azami YKT",
+          null,
+          null,
+          "Konsolidasyon ve ANA KONTROL bu değeri alır."
+        ],
+        [
+          "F. YKT KÜMÜLATİF TAKİP — Belge Bazlı Çok Yıllı İzleme (Bu Sayfa Yalnızca Bu YTB'ye Aittir)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÇOK YILLI BAKIŞ: Bu bölüm yalnızca tek dönem değil, belgenin tüm ömrü boyunca izlenmesi için kurgulanmıştır. F.2 her dönem başında bir önceki döneme ait beyanname değeriyle güncellenir. F.9 'KV Tasarrufu = Kullanılan YKT' ilişkisi: Her dönem sağlanmayan vergi = tüketilen YKT tutarıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM / Çok Yıllı Not"
+        ],
+        [
+          "F.1  Hesaplanan Toplam YKT (A.7)",
+          null,
+          "0",
+          null,
+          "YTB başlangıç değeri. Sabit.",
+          null,
+          "Belgede yazılı tutarla eşit olmalı."
+        ],
+        [
+          "F.2  Önceki Dönemler Kümülatif Kullanılan YKT (Manuel)",
+          null,
+          null,
+          null,
+          "GİB beyanname EKler / İndirimli KV Tablosundan alınır.",
+          null,
+          "İlk dönem: 0. Her dönem güncellenerek devredilir."
+        ],
+        [
+          "F.3  Dönem Başı Kalan YKT (F.1 - F.2)",
+          null,
+          "0",
+          null,
+          "Bu dönem kullanılabilecek azami kapasite.",
+          null,
+          "Negatif olamaz. 0 ise YKT tükenmiştir."
+        ],
+        [
+          "F.4  Bu Dönem Toplam İndirimli KV Matrahı (B.10 + D.1)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönemi birleşik matrah",
+          null,
+          "Beyanname 32/A matrahı bu satırdan kontrol edilir."
+        ],
+        [
+          "F.5  Bu Dönem Toplam Normal KV (B.11 + D.2)",
+          null,
+          "0",
+          null,
+          "Normal oran üzerinden hesaplanan KV",
+          null,
+          null
+        ],
+        [
+          "F.6  Bu Dönem Toplam İndirimli KV (B.12 + D.3)",
+          null,
+          "0",
+          null,
+          "İndirimli oran üzerinden KV",
+          null,
+          null
+        ],
+        [
+          "F.7  Bu Dönem KV Tasarrufu = Bu Dönem Kullanılan YKT (F.5 - F.6)",
+          null,
+          "0",
+          null,
+          "★ Sağlanan vergi avantajı = Katkıdan tüketilen tutar",
+          null,
+          "Bu ilişki net kurulmalı: Tasarruf = Tüketim."
+        ],
+        [
+          "F.8  Bu Dönem Toplam Kullanılan YKT (B.13 + D.4)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönem toplamı",
+          null,
+          "F.7 ile eşit olmalı. Fark hata gösterir."
+        ],
+        [
+          "F.9  KV Tasarrufu ↔ YKT Tüketimi Kontrol (F.7 - F.8)",
+          null,
+          "0",
+          null,
+          "★ SIFIR OLMALI: Tasarruf = Tüketim ilişkisi kontrolü",
+          null,
+          "Sıfır değilse hesap hatası var. İncelenmeli."
+        ],
+        [
+          "F.10 Dönem Sonu Kalan YKT / Sonraki Yıla Devir (F.3 - F.8)",
+          null,
+          "0",
+          null,
+          "Bir sonraki döneme devredecek YKT (endeksleme öncesi)",
+          null,
+          "E.1 (YDO endekslemesi) bu değeri kullanır."
+        ],
+        [
+          "F.11 YKT Kullanım Oranı % (Kümülatif: (F.2+F.8) / F.1 × 100)",
+          null,
+          "0",
+          null,
+          "Toplam YKT'nin ne kadarı kullanılmış",
+          null,
+          "Beyanname dönemiyle karşılaştırın."
+        ],
+        [
+          "F.12 YKT Durum Göstergesi",
+          null,
+          "YKT Giriş Eksik",
+          null,
+          "Otomatik durum",
+          null,
+          "YKT tükendiyse 32/A uygulaması biter."
+        ],
+        [
+          "YTB-4 DÖNEM ÖZETİ: Beyanname 32/A Matrahı (F.4) + KV Tasarrufu (F.7) → KONSOLİDASYON'a aktarılır. GİB EKler/İndirimli KV Tablosu mutabakatı: F.4=Matrah | F.7=Tasarruf | F.10=Kalan YKT. F.9 (Tasarruf-Tüketim kontrolü) SIFIR olmadıkça tasdik dosyası tamamlanmış sayılmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "YTB-5",
+      "dimensions": "A1:G90",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | YTB-5 BELGE BAZLI ÇALIŞMA KÂĞIDI | Yatırım Dönemi + İşletme Dönemi + YKT Kümülatif Takip",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BELGE BAZLI ÇALIŞMA İLKESİ: Bu sayfa yalnızca bu YTB'ye ait verileri içerir. Başka YTB'lerle çapraz kullanım yapılamaz. İndirimli KV; kazancın ilgili yatırımdan elde edildiği teyit edildikten sonra uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "YTB-5 — Sarı hücreler manuel giriş. Yeşil hücreler otomatik hesaplama. Tevsi yatırımda kazanç yöntemi (Götürü/Gerçek) C bölümünden seçilir. F bölümü çok yıllı kümülatif takibi sağlar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. YTB-5 — KAPSAM, NİTELİK VE KAZANÇ UYGUNLUK KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Bu YTB geçerli mi? Dönemde aktif ve revize/iptal olmamış mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "YTB geçerliliği T.C. Sanayi ve Teknoloji Bakanlığı sisteminden sorgulanmalıdır. Revize YTB'de değişen koşullar dönem hesabını etkiler.",
+          null
+        ],
+        [
+          "A0.2  Bu YTB kapsamındaki yatırım KVK 32/A'dan yararlanabilecek sektörde mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Finans/sigortacılık, iş ortaklıkları, taahhüt, YİD/Yİ, rödovans kapsamları hariçtir. Bu sektörlerde 32/A uygulanamaz.",
+          null
+        ],
+        [
+          "A0.3  ★ İndirimli KV uygulanacak kazanç, bu YTB kapsamındaki yatırımdan elde edilen kazanç mı? (KRİTİK)",
+          null,
+          null,
+          null,
+          "EVET",
+          "EN KRİTİK KONTROL: 32/A'da en sık hata budur. YTB var → tüm kurum kazancına indirimli vergi YANLIŞTIR. İşletme döneminde: Sadece bu yatırımdan elde edilen kazanç. Yatırım döneminde: Diğer faaliyet kazancına bölge oranı limiti dahilinde.",
+          null
+        ],
+        [
+          "A0.4  Yatırım dönemi / işletme dönemi ayrımı doğru belirlendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Tamamlama vizesi öncesi: Yatırım dönemi (B bölümü). Tamamlama vizesi sonrası: İşletme dönemi (D bölümü). Karma dönem: Her ikisi de (B + D birlikte).",
+          null
+        ],
+        [
+          "A0.5  Önceki dönemlerde kullanılan YKT tutarları doğru devredildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "F.2 satırı (Önceki Dönemler Kümülatif YKT): GİB beyanname sisteminden alınmalıdır. Hatalı devir tutarı tüm hesabı bozar.",
+          null
+        ],
+        [
+          "A0.6  ★ Bu YTB'nin YKT'si başka bir YTB hesabına mahsup edilmiyor mu? (ÇAPRAZ KULLANIM)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Her YTB'nin YKT'si o belgeye özgüdür. Çapraz mahsup yasaktır. 5 YTB varsa 5 ayrı YKT hesabı ve takibi zorunludur. Bu sayfadaki hesaplar yalnızca bu YTB'ye aittir.",
+          null
+        ],
+        [
+          "A0.7  YİAKV ve diğer matrah düzeltmeleri değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 32/C YİAKV hesabında 32/A'nın alınmayan vergi etkisi analiz edilmelidir. 32/A matrahının YİAKV hesabıyla ilişkisi dönem tebliğleriyle doğrulanmalıdır.",
+          null
+        ],
+        [
+          "A0.8  YMM Raporu zorunluluğu değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): KVK 32/A için TUTAR SINIRI OLMAKSIZIN YMM tasdik raporu zorunlu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu (A0.1-A0.8 tümü kontrol edildi)",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "Özellikle A0.3 (kazanç uygunluğu) ve A0.6 (çapraz kullanım) kritik.",
+          null
+        ],
+        [
+          "A. YTB-5 KİMLİK BİLGİLERİ VE TEŞVİK PARAMETRELERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          "Değer/Giriş",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "A.1  YTB Numarası",
+          null,
+          null,
+          "Örn. 2023-C3-12345",
+          null,
+          "Bakanlık sisteminden doğrulanmalı.",
+          null
+        ],
+        [
+          "A.2  YTB Düzenleme Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Belge tarihine göre dönem oranları belirlenir.",
+          null
+        ],
+        [
+          "A.3  Yatırım Bölgesi (1-6)",
+          null,
+          "3",
+          "1,2,3,4,5,6 — Listeden seçin",
+          null,
+          "Bölge; YKT oranı ve limit oranını belirler.",
+          null
+        ],
+        [
+          "A.4  Yatırım Türü",
+          null,
+          "Komple Yeni",
+          "Komple Yeni,Tevsi,Modernizasyon,Ürün Çeşitlendirme,Entegrasyon",
+          null,
+          "Tevsi: C bölümü ek hesabı gerektirir.",
+          null
+        ],
+        [
+          "A.5  YTB Kapsamı Toplam Yatırım Tutarı (TL)",
+          null,
+          null,
+          "YTB'de onaylanan tutar",
+          null,
+          "Revize edilmişse güncel tutarı kullanın.",
+          null
+        ],
+        [
+          "A.6  YKT Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 30",
+          null,
+          "İmalat + 2017-2022: +15 puan ek uygulanabilir.",
+          null
+        ],
+        [
+          "A.7  Hesaplanan Toplam YKT (= A.5 × A.6/100)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "Toplam devlet desteği = Kullanılabilecek azami YKT tutarı.",
+          null
+        ],
+        [
+          "A.8  Vergi İndirim Oranı % (Teşvik Belgesindeki)",
+          null,
+          null,
+          "% örn. 70",
+          null,
+          "Normal KV üzerinden indirim yapılacak oran.",
+          null
+        ],
+        [
+          "A.9  Normal KV Oranı % (Dönem)",
+          null,
+          "25",
+          "2025: %25",
+          null,
+          "Gerekirse güncelleyin.",
+          null
+        ],
+        [
+          "A.10 İndirimli KV Oranı % (= A.9 × (1 - A.8/100))",
+          null,
+          "25",
+          "Otomatik",
+          null,
+          "A.8=%100 ise indirimli KV=%0.",
+          null
+        ],
+        [
+          "A.11 YTB Dönem Durumu",
+          null,
+          "Yatırım Döneminde",
+          "Yatırım Döneminde,İşletme Döneminde,Her İkisi (Karma)",
+          null,
+          "Tamamlama vizesi alınmadıysa Yatırım. Alındıysa İşletme.",
+          null
+        ],
+        [
+          "A.12 Tamamlama Vizesi Tarihi (Varsa)",
+          null,
+          null,
+          "GG.AA.YYYY veya boş",
+          null,
+          "Vize tarihi = işletme döneminin başlangıcı.",
+          null
+        ],
+        [
+          "B. YATIRIM DÖNEMİ — Diğer Faaliyetlerden İndirimli KV (Tamamlama Öncesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yatırım döneminde DİĞER FAALİYET kazancına indirimli KV uygulanabilir. Azami limit: MIN(YKT × Bölge Oranı, Gerçekleşen Harcama). Bölge oranları: 2.Bölge=%10 | 3.=%20 | 4.=%30 | 5.=%50 | 6.=%80. 1.Bölge genellikle diğer faaliyet için mümkün değildir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "B.1  Dönem Başı Kümülatif Fiili Harcama",
+          null,
+          null,
+          null,
+          "Önceki KV beyannamesi EKler / İndirimli KV Tablosundan",
+          null,
+          "Arazi/arsa/royalti hariç."
+        ],
+        [
+          "B.2  Bu Dönem Fiili Yatırım Harcaması",
+          null,
+          null,
+          null,
+          "Dönem içinde YTB kapsamı yapılan harcama",
+          null,
+          "Fatura bazlı, muhasebe ile uyumlu olmalı."
+        ],
+        [
+          "B.3  Kümülatif Harcama (B.1 + B.2)",
+          null,
+          "0",
+          null,
+          "Azami matrah hesabında kullanılır",
+          null,
+          "Negatif olamaz."
+        ],
+        [
+          "B.4  Bölge Limit Oranı % (Yatırım Döneminde)",
+          null,
+          null,
+          null,
+          "2=%10 | 3=%20 | 4=%30 | 5=%50 | 6=%80 | 1=%0",
+          null,
+          "YTB bölgesiyle uyumlu olmalı."
+        ],
+        [
+          "B.5  YKT × Bölge Oranı Limiti (A.7 × B.4 / 100)",
+          null,
+          "0",
+          null,
+          "Yatırım döneminde kullanılabilecek azami YKT",
+          null,
+          "Bu limiti aşan kısım işletme döneminde."
+        ],
+        [
+          "B.6  Azami Yatırım Dön. YKT Limiti = MIN(B.5, B.3)",
+          null,
+          "0",
+          null,
+          "İki sınırdan küçük olan",
+          null,
+          "Gerçekleşen harcama da limittir."
+        ],
+        [
+          "B.7  Önceki Dönemler Yatırım Dön. Kullanılan YKT (Kümülatif)",
+          null,
+          null,
+          null,
+          "GİB EKler / İndirimli KV Tablosundan",
+          null,
+          "Her dönem güncellenmeli."
+        ],
+        [
+          "B.8  Bu Dönem Azami Yatırım Dön. YKT (B.6 - B.7)",
+          null,
+          "0",
+          null,
+          "Kalan yatırım dönem kapasitesi",
+          null,
+          "Bu tutardan fazla kullanım mümkün değil."
+        ],
+        [
+          "B.9  Bu Dönem Diğer Faaliyet KV Matrahı",
+          null,
+          null,
+          null,
+          "KKEG eklenmiş, önceki yıl zararları düşülmüş KV matrahı",
+          null,
+          "Beyanname ara hesabıyla doğrulanmalı."
+        ],
+        [
+          "B.10 Yatırım Dönemi İndirimli KV Matrahı",
+          null,
+          "0",
+          null,
+          "MIN(Dönem Kazancı, B.8 / İndirim Oranı)",
+          null,
+          "İndirimli KV uygulanacak fiili matrah."
+        ],
+        [
+          "B.11 Normal KV (B.10 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.12 İndirimli KV (B.10 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran hesabı",
+          null,
+          null
+        ],
+        [
+          "B.13 Bu Dönem Yatırım Dön. KV Tasarrufu = Kullanılan YKT (B.11 - B.12)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi = Bu dönem kullanılan YKT",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "C. TEVSİ YATIRIM — İŞLETME DÖNEMİ KAZANÇ TESPİTİ (Sadece Tevsi Yatırımlarda Doldurulur)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "(1) GERÇEK USUL: Kazanç ayrı hesaplarda izleniyorsa bu kazanç direkt kullanılır. (2) GÖTÜRÜ USUL: Ayrı hesap yoksa → İndirimli KV Matrahı = Dönem Kazancı × (YTB Kapsamı ATİK / Toplam ATİK). ATİK yeniden değerlenmiş değerle.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C.0  Kazanç Tespit Yöntemi Seçimi",
+          null,
+          "Götürü Usul (Oransal)",
+          "Tevsi değilse boş bırakın. Gerçek usulde C.4'ü kullanın.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.1  YTB Kapsamı ATİK (Dönem Sonu, Yeniden Değerlenmiş)",
+          null,
+          null,
+          "Götürü usul payı. Devam edenler dahil.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  Toplam ATİK (Dönem Sonu, Yeniden Değerlenmiş, Devam Eden Dahil)",
+          null,
+          null,
+          "Götürü usul paydası. Tüm aktif sabit kıymetler.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  Götürü Usul Oranı (C.1 / C.2)",
+          null,
+          "0",
+          "Dönem kazancına uygulanacak oran",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4  Dönem KV Matrahı (Tüm Faaliyetler)",
+          null,
+          null,
+          "Götürü usul için bu matrah × C.3 oranı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.5  Gerçek Usul Kazanç (Gerçek Usul Seçilmişse)",
+          null,
+          null,
+          "Ayrı hesaplarda belirlenen tevsi yatırım kazancı",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.6  İndirimli KV Uygulanacak Tevsi Matrahı",
+          null,
+          "0",
+          "Otomatik: Seçilen yönteme göre D.1'e aktarılır",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. İŞLETME DÖNEMİ — Bu Yatırımdan Elde Edilen Kazanç",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tamamlama vizesi sonrası: SADECE bu YTB'ye bağlı yatırımdan elde edilen kazanca uygulanır. Komple yeni/modernizasyon: D.1 elle girin. Tevsi: C.6 otomatik aktarılır. YKT tükendiğinde uygulama sona erer.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "D.1  İşletme Dönemi İndirimli KV Matrahı",
+          null,
+          null,
+          null,
+          "Yeni yatırım: Elle girin. Tevsi: C.6 otomatik.",
+          null,
+          "Kazancın bu YTB yatırımına ait olduğu teyit edilmeli."
+        ],
+        [
+          "D.2  Normal KV (D.1 × A.9 / 100)",
+          null,
+          "0",
+          null,
+          "Normal oran",
+          null,
+          null
+        ],
+        [
+          "D.3  İndirimli KV (D.1 × A.10 / 100)",
+          null,
+          "0",
+          null,
+          "İndirimli oran",
+          null,
+          null
+        ],
+        [
+          "D.4  Bu Dönem İşletme Dön. KV Tasarrufu = Kullanılan YKT (D.2 - D.3)",
+          null,
+          "0",
+          null,
+          "Devlet tarafından vazgeçilen vergi",
+          null,
+          "F bölümüne taşınır."
+        ],
+        [
+          "E. KALAN YKT YDO ENDEKSLEMESİ (Tamamlama Sonrası Devreden YKT)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 32/A: Tamamlama vizesini izleyen yıllarda kullanılamayan kalan YKT, yeniden değerleme oranı (YDO) ile artırılarak dikkate alınır. 2024: %63,93 | 2025/1.Geçici: %3,30. GİB sirküleriyle teyit edin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  Dönem Başı YKT Bakiyesi (F.5'ten, Endeks Öncesi)",
+          null,
+          "0",
+          "F.5 devir. İlk dönem: A.7 (Toplam YKT)",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.2  YDO Oranı % (VUK Tebliği/GİB Sirküler)",
+          null,
+          null,
+          "2024: 63,93 | 2025/1: 3,30",
+          null,
+          null,
+          "Her dönem teyit edin."
+        ],
+        [
+          "E.3  YDO Artışı (E.1 × E.2 / 100)",
+          null,
+          "0",
+          "Endeksleme tutarı",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.4  Güncellenmiş Dönem Başı YKT (E.1 + E.3)",
+          null,
+          "0",
+          "Bu dönem kullanılabilecek azami YKT",
+          null,
+          null,
+          "Konsolidasyon ve ANA KONTROL bu değeri alır."
+        ],
+        [
+          "F. YKT KÜMÜLATİF TAKİP — Belge Bazlı Çok Yıllı İzleme (Bu Sayfa Yalnızca Bu YTB'ye Aittir)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÇOK YILLI BAKIŞ: Bu bölüm yalnızca tek dönem değil, belgenin tüm ömrü boyunca izlenmesi için kurgulanmıştır. F.2 her dönem başında bir önceki döneme ait beyanname değeriyle güncellenir. F.9 'KV Tasarrufu = Kullanılan YKT' ilişkisi: Her dönem sağlanmayan vergi = tüketilen YKT tutarıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Değer (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM / Çok Yıllı Not"
+        ],
+        [
+          "F.1  Hesaplanan Toplam YKT (A.7)",
+          null,
+          "0",
+          null,
+          "YTB başlangıç değeri. Sabit.",
+          null,
+          "Belgede yazılı tutarla eşit olmalı."
+        ],
+        [
+          "F.2  Önceki Dönemler Kümülatif Kullanılan YKT (Manuel)",
+          null,
+          null,
+          null,
+          "GİB beyanname EKler / İndirimli KV Tablosundan alınır.",
+          null,
+          "İlk dönem: 0. Her dönem güncellenerek devredilir."
+        ],
+        [
+          "F.3  Dönem Başı Kalan YKT (F.1 - F.2)",
+          null,
+          "0",
+          null,
+          "Bu dönem kullanılabilecek azami kapasite.",
+          null,
+          "Negatif olamaz. 0 ise YKT tükenmiştir."
+        ],
+        [
+          "F.4  Bu Dönem Toplam İndirimli KV Matrahı (B.10 + D.1)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönemi birleşik matrah",
+          null,
+          "Beyanname 32/A matrahı bu satırdan kontrol edilir."
+        ],
+        [
+          "F.5  Bu Dönem Toplam Normal KV (B.11 + D.2)",
+          null,
+          "0",
+          null,
+          "Normal oran üzerinden hesaplanan KV",
+          null,
+          null
+        ],
+        [
+          "F.6  Bu Dönem Toplam İndirimli KV (B.12 + D.3)",
+          null,
+          "0",
+          null,
+          "İndirimli oran üzerinden KV",
+          null,
+          null
+        ],
+        [
+          "F.7  Bu Dönem KV Tasarrufu = Bu Dönem Kullanılan YKT (F.5 - F.6)",
+          null,
+          "0",
+          null,
+          "★ Sağlanan vergi avantajı = Katkıdan tüketilen tutar",
+          null,
+          "Bu ilişki net kurulmalı: Tasarruf = Tüketim."
+        ],
+        [
+          "F.8  Bu Dönem Toplam Kullanılan YKT (B.13 + D.4)",
+          null,
+          "0",
+          null,
+          "Yatırım + işletme dönem toplamı",
+          null,
+          "F.7 ile eşit olmalı. Fark hata gösterir."
+        ],
+        [
+          "F.9  KV Tasarrufu ↔ YKT Tüketimi Kontrol (F.7 - F.8)",
+          null,
+          "0",
+          null,
+          "★ SIFIR OLMALI: Tasarruf = Tüketim ilişkisi kontrolü",
+          null,
+          "Sıfır değilse hesap hatası var. İncelenmeli."
+        ],
+        [
+          "F.10 Dönem Sonu Kalan YKT / Sonraki Yıla Devir (F.3 - F.8)",
+          null,
+          "0",
+          null,
+          "Bir sonraki döneme devredecek YKT (endeksleme öncesi)",
+          null,
+          "E.1 (YDO endekslemesi) bu değeri kullanır."
+        ],
+        [
+          "F.11 YKT Kullanım Oranı % (Kümülatif: (F.2+F.8) / F.1 × 100)",
+          null,
+          "0",
+          null,
+          "Toplam YKT'nin ne kadarı kullanılmış",
+          null,
+          "Beyanname dönemiyle karşılaştırın."
+        ],
+        [
+          "F.12 YKT Durum Göstergesi",
+          null,
+          "YKT Giriş Eksik",
+          null,
+          "Otomatik durum",
+          null,
+          "YKT tükendiyse 32/A uygulaması biter."
+        ],
+        [
+          "YTB-5 DÖNEM ÖZETİ: Beyanname 32/A Matrahı (F.4) + KV Tasarrufu (F.7) → KONSOLİDASYON'a aktarılır. GİB EKler/İndirimli KV Tablosu mutabakatı: F.4=Matrah | F.7=Tasarruf | F.10=Kalan YKT. F.9 (Tasarruf-Tüketim kontrolü) SIFIR olmadıkça tasdik dosyası tamamlanmış sayılmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "KONSOLİDASYON",
+      "dimensions": "A1:H34",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | KONSOLİDASYON | 5 YTB Birleşik Hesap | Vergi Avantajı ↔ YKT Tüketimi | KV Beyanname Mutabakatı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her YTB'nin yatırım + işletme dönemi hesapları ayrı ayrı gösterilir. Toplam KV tasarrufu = Toplam kullanılan YKT ilişkisi bu sayfada kontrol edilir. Çapraz kullanım: Hiçbir YTB'nin değeri başka bir YTB sütununa aktarılmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. YTB BAZINDA DÖNEM HESAP MATRİSİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "YTB-1",
+          "YTB-2",
+          "YTB-3",
+          "YTB-4",
+          "YTB-5",
+          "5 YTB TOPLAM"
+        ],
+        [
+          "Toplam YKT (A.7)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Önceki Kümülatif Kullanılan YKT (F.2)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Dönem Başı Kalan YKT (F.3)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "— Yatırım Dön. Matrahı (B.10)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "— Yatırım Dön. Normal KV (B.11)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "— Yatırım Dön. İndirimli KV (B.12)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "— Yatırım Dön. KV Tasarrufu/YKT (B.13)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "— İşletme Dön. Matrahı (D.1)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0"
+        ],
+        [
+          "— İşletme Dön. Normal KV (D.2)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "— İşletme Dön. İndirimli KV (D.3)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "— İşletme Dön. KV Tasarrufu/YKT (D.4)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "★ Toplam 32/A Matrahı (F.4)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "★ Toplam Normal KV (F.5)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "★ Toplam İndirimli KV (F.6)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "★ KV Tasarrufu = Kullanılan YKT (F.7)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "YKT Tüketimi Kontrol (F.9 — SIFIR OLMALI)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Dönem Sonu Kalan YKT / Devir (F.10)",
+          null,
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "YKT Durum",
+          null,
+          "YKT Giriş Eksik",
+          "YKT Giriş Eksik",
+          "YKT Giriş Eksik",
+          "YKT Giriş Eksik",
+          "YKT Giriş Eksik",
+          null
+        ],
+        [
+          "B. KV BEYANNAME 32/A — MUTABAKAT TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB e-Beyanname EKler / İndirimli KV Tablosu: Her YTB için ayrı satır açılmalıdır. Bu tablo GİB sistemiyle birebir uyumlu olmalıdır. ★ KRITIK: KV Tasarrufu (Alınmayan Vergi) = Kullanılan YKT → Bu denklem sağlanmadan tasdik tamamlanmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Beyanname Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          null,
+          null,
+          "Kaynak/Not"
+        ],
+        [
+          "Toplam İndirimli KV Matrahı (5 YTB)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam Normal KV (Hesaplanan)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam İndirimli KV (Alınmayan Vergi)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ Toplam KV Tasarrufu = Kullanılan YKT",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kalan YKT (Tüm YTB — Sonraki Yıla Devir)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÇAPRAZ KULLANIM KONTROLÜ: Yukarıdaki toplamlar belge bazlı ayrıştırılmış değerlerdir. Hiçbir YTB'nin YKT'si başka bir YTB hesabına mahsup edilmemiştir. YKT Tüketimi Kontrol satırlarının (F.9) tümü sıfır olduğunda matematiksel tutarlılık sağlanmıştır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D20",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | DENETÇİ NOTLARI | YMM MESLEKİ DEĞERLENDİRME",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.32/A | Belge Bazlı Takip | Yatırım+İşletme Dönemi | Tevsi Kazanç | Çok Yıllı YKT İzleme",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — TEMEL İLKELER VE KRİTİK UYARILAR (Her YTB İçin Geçerli)",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "Her YTB Ayrı İzlenmelidir",
+          "Bu dosyanın temel ilkesi: Her yatırım teşvik belgesi bağımsız olarak izlenir. Tek toplam ekranı yeterli değildir. Belge no, YKT oranı, indirim oranı, toplam YKT, kullanılan YKT, kalan YKT her belgede ayrı ayrı takip edilmelidir.\nÇAPRAZ KULLANIM YASAĞI: Bir YTB'nin YKT'si başka bir YTB hesabına mahsup edilemez. Bu hata vergi incelemesinde en büyük risklerden biridir.",
+          "KVK Md.32/A | 1 No.lu KV GT"
+        ],
+        [
+          "N2",
+          "★ İndirimli KV Kazanç Uygunluğu (En Kritik Kural)",
+          "EN SIK YAPILAN HATA: 'YTB var → tüm kurum kazancına indirimli KV uygula.'\nBu her zaman doğru değildir:\nİşletme Döneminde: Sadece o YTB kapsamındaki yatırımdan elde edilen kazanca uygulanır.\nYatırım Döneminde: Diğer faaliyet kazancına bölge oranı limiti (maks %10-%80) dahilinde ve gerçekleşen harcama tutarını aşmamak kaydıyla uygulanır.\nYMM tasdikinde: Kazancın ilgili yatırımdan elde edildiği ayrıca teyit edilmeli ve belgelenmelidir.",
+          "KVK Md.32/A/1-2 | 1 No.lu KV GT 32.2"
+        ],
+        [
+          "N3",
+          "Yatırım Dönemi / İşletme Dönemi Ayrımı Zorunludur",
+          "Yatırım Dönemi (Tamamlama Vizesi Öncesi):\n• Diğer faaliyet kazancına belirli oranlarla indirimli KV uygulanabilir\n• Azami limit: MIN(YKT × Bölge Oranı, Kümülatif Gerçekleşen Harcama)\nİşletme Dönemi (Tamamlama Vizesi Sonrası):\n• Sadece ilgili yatırımdan elde edilen kazanca uygulanır\n• Diğer faaliyet kazancına uygulanamaz\nKarma Dönem: Tamamlamanın dönem ortasında gerçekleştiği durumda her iki hesap ayrı yapılmalıdır.",
+          "KVK Md.32/A/1 | 1 No.lu KV GT"
+        ],
+        [
+          "N4",
+          "Tevsi Yatırımda Kazanç Ayrıştırması Zorunludur",
+          "Tevsi yatırımlarda kazanç tespit yöntemi seçilmesi ve tutarlı uygulanması zorunludur:\nGERÇEK USUL: Kazanç ayrı hesaplarda (maliyet merkezi/proje) izleniyorsa bu kazanç kullanılır. İzleme yapılmıyorsa bu yöntem seçilemez.\nGÖTÜRÜ USUL: Ayrı izleme yoksa → İndirimli KV Matrahı = Dönem Kazancı × (YTB ATİK / Toplam ATİK). ATİK yeniden değerlenmiş değerle dikkate alınır. Devam eden yatırımlar dahildir.\nYMM notu: Seçilen yöntem dönem içinde değiştirilemez. Değişim açıklanmalıdır.",
+          "KVK Md.32/A | 1 No.lu KV GT 32.3.3"
+        ],
+        [
+          "N5",
+          "Kümülatif YKT Takibi ve Çok Yıllı Perspektif",
+          "32/A dosyası tek dönem değil, belgenin tüm ömrü boyunca kullanılacak çok yıllı izleme aracıdır.\nHer dönem: F.2 (önceki dönemler kümülatif) bir önceki dönem GİB beyanname tablosundan alınır.\nSonraki yıla devir: F.10 (kalan YKT) + YDO endekslemesi (E bölümü)\nGİB sistemi: EKler / İndirimli KV Tablosu ve Ek Bilgiler — her YTB için ayrı satır.\nYMM notu: Beyanname tablosu ile bu çalışma kâğıdının tam mutabakatı zorunludur.",
+          "KVK Md.32/A/4 | 1 No.lu KV GT"
+        ],
+        [
+          "BÖLÜM 2 — YMM TASDİK STANDARDI VE UYARILAR",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N6",
+          "★ KV Tasarrufu = YKT Tüketimi Denkliği",
+          "Bu denklem her dönem sağlanmadıkça tasdik dosyası eksik sayılır:\nSağlanan Vergi Avantajı (KV Tasarrufu) = Katkıdan Tüketilen Tutar (Kullanılan YKT)\nMatematiksel ifade: Normal KV − İndirimli KV = Kullanılan YKT\nF.9 kontrolü (= F.7 − F.8) sıfır vermelidir. Vermiyorsa:\n• Vergi oranları hatalı girilmiş olabilir\n• YKT hesabında mantık hatası olabilir\n• Matrah tutarları yanlış aktarılmış olabilir",
+          "KVK Md.32/A | 1 No.lu KV GT"
+        ],
+        [
+          "N7",
+          "49 No.lu Tebliğ — Tasdik Raporu Zorunluluğu",
+          "30.12.2025 tarihli 49 No.lu SMMM ve YMM Kanunu Genel Tebliği:\nKVK 32/A için TUTAR SINIRI OLMAKSIZIN YMM tasdik raporu zorunludur.\nTam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.\nRaporun içeriği: Belge bazlı YKT hesabı, dönem ayrımı, kazanç uygunluğu teyidi, beyanname mutabakatı.\nYMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          "49 No.lu Tebliğ (30.12.2025) | YMM Kanunu Md.12"
+        ],
+        [
+          "N8",
+          "YDO Endekslemesi — Kalan YKT",
+          "Tamamlama vizesini izleyen yıllarda kalan YKT, VUK hükümlerine göre YDO ile artırılır.\n2024 için: YDO = %63,93 (VUK 574 No.lu Tebliğ)\n2025/1 Geçici Vergi: YDO = %3,30 (GİB 68 No.lu Sirküler)\nYanlış endeks oranı = Hatalı YKT bakiyesi = Tasdik hatası.\nHer dönem GİB sirküleri ile teyit edilmelidir.",
+          "KVK Md.32/A/4 | VUK Tebliğleri | GİB Sirkülerleri"
+        ],
+        [
+          "N9",
+          "YİAKV ve Diğer Matrah Düzeltmeleri",
+          "KVK 32/C kapsamındaki yurt içi asgari KV hesabında 32/A'nın 'alınmayan vergi' etkisi analiz edilmelidir.\nİndirimli KV uygulamasının YİAKV matrahıyla ilişkisi dönem tebliğleriyle doğrulanmalıdır.\nYMM notu: Her YTB için ayrıca YİAKV etkisi hesaplanmalı ve konsolidasyona yansıtılmalıdır.",
+          "KVK Md.32/C | YİAKV Tebliğleri"
+        ],
+        [
+          "BÖLÜM 3 — YMM TASDİK DİL STANDARDI",
+          null,
+          null,
+          null
+        ],
+        [
+          "KULLANIN:\n'...ilgili yatırımdan elde edilen kazanca indirimli KV uygulanabilecektir'\n'...belge bazında teyit edilmesi ve izlenmesi gerekmektedir'\n'...dönem itibarıyla değerlendirilmelidir' | '...analiz edilmelidir'\n\nKULLANMAYIN:\n'...indirimli vergi uygulanır' | '...tüm kazanca uygulanabilir' | '...sorunsuz geçti'\n\nKRİTİK RİSK ALANLARI:\n(1) Kazancın YTB kapsamında olduğunun teyidi | (2) Çapraz kullanım önleme | (3) Dönem ayrımı | (4) Tevsi yöntemi tutarlılığı | (5) Kümülatif YKT mutabakatı",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F36",
+      "rows": [
+        [
+          "KVK Md.32/A İNDİRİMLİ KURUMLAR VERGİSİ | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.32/A | Belge Bazlı | Yatırım+İşletme Dönemi | Tevsi | YKT Kümülatif | 49 No.lu Tebliğ: Tutar Sınırı Yok",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Her YTB için zorunlu belgeler. Kategori 2: Yatırım türüne göre ek belgeler. Kategori 3: YMM tasdik kontrol soruları.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER  (Her YTB İçin Ayrı Ayrı Temin Edilmeli)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "Yatırım Teşvik Belgesi (YTB) — Güncel ve Onaylı Suret (Her YTB İçin Ayrı)",
+          "YTB numarası, tarihi, bölgesi, yatırım türü ve tutarı, YKT oranı, indirim oranı açık olmalıdır. Revize/tadil YTB varsa güncel suret esas alınır. T.C. Sanayi ve Teknoloji Bakanlığı sisteminden (SAYEZ) doğrulanmalıdır.\nYMM notu: Belgedeki YKT oranı ile çalışma kâğıdı A.6 mutabık olmalı.",
+          "T.C. Sanayi ve Teknoloji Bakanlığı (SAYEZ) / YTB sahibi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Önceki Dönemler YKT Kullanım Özeti — Belge Bazında Devir Tablosu",
+          "Her YTB için belge bazında: Toplam YKT, önceki tüm dönemlerde kullanılan kümülatif YKT, dönem başı kalan YKT. Bu tablo F.2 satırının dayanağıdır.\nYMM notu: Bu tablo olmadan çok yıllı takip metodolojik olarak zayıftır. Her dönem güncellenerek imzalanmalı ve denetim dosyasına eklenmeli.",
+          "Önceki dönem çalışma kâğıtları / YMM tasdik dosyaları",
+          null
+        ],
+        [
+          null,
+          "3",
+          "GİB Beyanname EKler / İndirimli KV Tablosu (Tüm Geçmiş Dönemler)",
+          "Her YTB için GİB e-Beyanname sistemi 'İndirimli KV Tablosu' satırları. Kümülatif kullanılan YKT ve kalan YKT bu tablodan doğrulanır.\nYMM notu: Bu çalışma kâğıdı F.2 ile GİB tablosu tam mutabık olmalı.",
+          "GİB Dijital Vergi Dairesi / KV Beyannamesi Ekler",
+          null
+        ],
+        [
+          null,
+          "4",
+          "YTB Kapsamındaki Yatırım Harcama Dökümleri (Fatura + Ödeme)",
+          "Makine-teçhizat, inşaat, yazılım ve diğer YTB kapsamı harcamalar. Arazi, arsa, royalti ve amortismana tabi olmayan harcamalar YTB matrahına dahil edilmez.\nHarcama → fatura → ödeme → muhasebe uyum zinciri kurulmalıdır.",
+          "Tedarikçi faturaları / Banka ödeme dekontları / Muhasebe",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Tamamlama Vizesi (Tamamlanmış Yatırımlar İçin)",
+          "İşletme dönemine geçişin resmî teyidi. Vize tarihi işletme dönemi başlangıcını belirler. Vizesiz yatırım için işletme dönemi indirimli KV uygulanamaz.\nYMM notu: Vize tarihini beyanname dönemleriyle eşleştirin.",
+          "T.C. Sanayi ve Teknoloji Bakanlığı",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Sabit Kıymet Tablosu / ATİK Listesi (Götürü Usul Tevsi İçin)",
+          "Dönem sonu YTB kapsamındaki ATİK tutarı ve toplam ATİK tutarı (devam eden dahil). Sabit kıymetler yeniden değerlenmiş değerle alınır. Götürü usul oranı = YTB ATİK / Toplam ATİK.\nYMM notu: Bu oran doğrudan indirimli KV matrahını etkiler.",
+          "Muhasebe programı — sabit kıymet modülü",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Dönem KV Beyannamesi (Taslak veya Nihai) + EKler/İndirimli KV Tablosu",
+          "Beyanname 'Alınmayan Vergi' satırı ile F.7 (KV Tasarrufu) mutabık olmalı. GİB 'Ek Bilgiler' kulakçığı: Kalan YKT tutarı (F.10) bu bölüme girilmeli.\nYMM notu: Beyanname = çalışma kâğıdı = GİB tablosu üçlü mutabakatı zorunludur.",
+          "GİB e-Beyanname sistemi / Mali müşavir çalışma dosyası",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Mizan / Vergi Hesap Mutabakat Tablosu",
+          "Dönem kurumlar vergisi matrahı, indirimli KV uygulaması ve 'alınmayan vergi' tutarının mizan kayıtlarıyla uyumu. 371 (Dönem KV Karşılığı) ve ilgili hesap dökümleri.\nYMM notu: Mizan ile beyanname ve bu çalışma kâğıdının tam uyumu zorunludur.",
+          "Muhasebe programı — mizanlar / vergi hesapları",
+          null
+        ],
+        [
+          "KATEGORİ 2 — DESTEKLEYİCİ BELGELER  (Yatırım Türüne ve Duruma Göre)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Yatırım Döneminde Diğer Faaliyet Harcama/Limit Hesap Tablosu",
+          "Yatırım döneminde diğer faaliyet limiti hesabı: MIN(YKT × Bölge Oranı, Kümülatif Harcama). B.3, B.4, B.6 satırlarının dayanağı. Bölge oranı YTB'den alınmalı.",
+          "Muhasebe programı / Proje yönetim sistemi",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Tevsi — Gerçek Usul Kazanç Tespit Belgeleri (Gerçek Usul Seçilmişse)",
+          "Yatırımdan elde edilen kazancın ayrı hesaplarda izlendiğini gösteren muhasebe dökümleri. Maliyet/proje merkezleri, ayrı hasılat ve maliyet takibi zorunludur. Ayrı izleme yoksa gerçek usul seçilemez.",
+          "Muhasebe — maliyet merkezi / proje hesapları",
+          null
+        ],
+        [
+          null,
+          "11",
+          "Revize / Tadil YTB ve Ek Oran Belgesi (+15 Puan)",
+          "İmalat sanayii kapsamında (+15 puan) veya revize YTB söz konusuysa güncelleme belgesi. US-97 kodu (15-37) teyidi: TÜİK sektör sınıflandırması ile uyumlu olmalıdır.",
+          "T.C. Sanayi ve Teknoloji Bakanlığı / TÜİK",
+          null
+        ],
+        [
+          null,
+          "12",
+          "YDO Teyit Belgesi (GİB Sirküleri / VUK Tebliği)",
+          "Tamamlama sonrası dönemlerde kalan YKT'ye uygulanacak YDO oranını gösteren resmi kaynak. 2024: %63,93 (VUK 574) | 2025/1: %3,30 (68 No.lu KV Sirküleri).",
+          "GİB Sirküleri / VUK Tebliği / Nexia, KPMG vb. özet",
+          null
+        ],
+        [
+          null,
+          "13",
+          "Belge Bazında Çapraz Kullanım Kontrol Tablosu",
+          "Birden fazla YTB varsa: Her YTB'nin YKT'sinin başka bir YTB ile çakışmadığını gösteren tablo. Her YTB sütun bazında bağımsız izlenmeli. Bu tablo olmadan çok YTB dosyası metodolojik olarak savunulamaz.",
+          "YMM çalışma kâğıdı / Bu dosya ANA KONTROL sayfası",
+          null
+        ],
+        [
+          null,
+          "14",
+          "YİAKV Matrah Hesaplama Tablosu (KVK 32/C Etkisi)",
+          "32/A 'alınmayan vergi' tutarının YİAKV matrahına etkisi. KVK 32/C kapsamında analiz zorunludur.",
+          "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri",
+          null
+        ],
+        [
+          null,
+          "15",
+          "Ertelenmiş Vergi Analizi (TMS 12)",
+          "İndirimli KV uygulamasının yarattığı ertelenmiş vergi alacağı/yükümlülüğü. TMS 12 çerçevesinde muhasebeleştirilmiş ve notlarda açıklanmış olmalıdır.",
+          "Bağımsız denetim çalışma kâğıtları / Muhasebe",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI  (Her YTB İçin Ayrı Uygulayın)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ İndirimli KV uygulanacak kazanç, bu YTB kapsamındaki yatırımdan mı elde edildi?",
+          "İşletme döneminde: Sadece ilgili yatırımdan elde edilen kazanç. Yatırım döneminde: Diğer faaliyet kazancı + bölge oranı limiti dahilinde. Bu teyit yapılmadan tasdik tamamlanmaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Çapraz kullanım var mı? Bu YTB'nin YKT'si başka bir YTB hesabına mahsup edildi mi?",
+          "HAYIR cevabı beklenir. Her YTB ayrı izlenmelidir. Çapraz kullanım durumunda tüm YKT hesabı geçersiz sayılabilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "Önceki dönemler kümülatif YKT (F.2) GİB tablosuyla mutabık mı?",
+          "F.2 satırı = GİB beyanname EKler / İndirimli KV Tablosu kümülatif tutarı. Fark varsa kaynak belgelere inilmeli ve açıklanmalıdır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "YKT Tasarruf ↔ Tüketim denkliği kontrol edildi mi? (F.9 = SIFIR mu?)",
+          "F.9 = F.7 − F.8 = SIFIR olmalıdır. Aksi halde hesap hatası var. Bu kontrol olmadan tasdik dosyası eksik sayılır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Dönem ayrımı (Yatırım/İşletme) doğru uygulandı mı? Tamamlama vizesi doğrulandı mı?",
+          "Tamamlama vizesi tarihi → işletme dönemi başlangıcı. Karma dönem varsa her ikisi de ayrı hesaplanmalıdır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Tevsi yatırımda kazanç tespit yöntemi tutarlı uygulandı mı?",
+          "Gerçek usul: Ayrı hesap izlemesi belgelenmeli. Götürü usul: ATİK oranı yeniden değerlenmiş değerle doğru hesaplanmalı. Yöntem değişikliği açıklanmalıdır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "YDO endekslemesi doğru dönem oranıyla yapıldı mı?",
+          "E.2 YDO oranı = GİB sirküleri ile doğrulanmış olmalı. Yanlış oran = Hatalı YKT bakiyesi = Tasdik hatası.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "GİB sistemi: Kalan YKT Ek Bilgiler bölümüne girildi mi? İndirimli KV Tablosu eksiksiz mi?",
+          "Her YTB için ayrı GİB İndirimli KV Tablosu satırı açılmalı. Kalan YKT Ek Bilgiler bölümünden girilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT (YMM TASDİK): 49 No.lu Tebliğ (30.12.2025): KVK 32/A için TUTAR SINIRI OLMAKSIZIN YMM tasdik raporu zorunludur. Her YTB için GİB İndirimli KV Tablosu ayrı doldurulmalı. KV Tasarrufu = Kullanılan YKT denkliği sağlanmadan tasdik tamamlanmış sayılmaz. Çapraz kullanım riski her dönem kontrol edilmeli. Bu dosya çok yıllı izleme aracıdır — tek dönem bakışı metodolojik hata oluşturur.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

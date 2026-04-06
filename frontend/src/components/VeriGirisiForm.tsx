@@ -1,6 +1,48 @@
 import { useForm } from 'react-hook-form'
 import type { VeriGirisiAlani, HesapSonucu } from '@/api/kalem'
 
+// Human-readable labels for snake_case option values
+const SECENEK_ETIKETLERI: Record<string, string> = {
+  // Gelir türü (298 GSYF/GSYO)
+  kar_payi_dagitim: 'Kâr Payı / Temettü Dağıtımı',
+  fona_iade_kazanci: 'Fona İade Kazancı (Katılma Payı)',
+  ucuncu_kisi_satis: 'Üçüncü Kişiye Hisse Satışı',
+  vuk279_deger_artisi: 'VUK Madde 279 Değer Artışı',
+  // Kurum türü (321 Banka/FK)
+  banka_5411: 'Banka (5411 sayılı Bankacılık Kanunu)',
+  finansal_kiralama_6361: 'Finansal Kiralama Şirketi (6361 s.K.)',
+  finansal_sirket_6361: 'Finansman / Faktoring Şirketi (6361 s.K.)',
+  tmsf: 'TMSF (Tasarruf Mevduatı Sigorta Fonu)',
+  // Varlık türü (321 satış kalemi)
+  tasinmaz: 'Taşınmaz (Gayrimenkul)',
+  istirak_hissesi: 'İştirak Hissesi / Pay Senedi',
+  tasinir_varlik: 'Taşınır Varlık (Makine, Teçhizat vb.)',
+  kurucu_intifa_senedi: 'Kurucu / İntifa Senedi',
+  ruchan_hakki: 'Rüçhan Hakkı',
+  // Serbest bölge rejimi
+  rejim_1_2004_oncesi: 'Rejim 1 — 06.02.2004 öncesi ruhsat (tam istisna)',
+  rejim_2_2004_sonrasi: 'Rejim 2 — 06.02.2004 sonrası ruhsat (imalat + yurt dışı)',
+  // Eğitim kurumu türü
+  okul: 'Özel Okul (Okul öncesi, İlk/Orta/Lise)',
+  kres_gunduz_bakim: 'Kreş / Gündüz Bakımevi',
+  rehabilitasyon: 'Özel Rehabilitasyon Merkezi',
+  // Ortulu sermaye karşı taraf durumu
+  kar_ve_vergi_odedi: 'Kâr etti ve vergi ödedi — istisna güvenli',
+  zarar_etti_vergi_odemedi: 'Zarar etti / vergi ödemedi — yüksek risk',
+  donem_icinde_kkeg_yapildi: 'Dönem içinde KKEG yapıldı — istisna uygulanabilir',
+  // Transfer fiyatlandırması taraf
+  yurt_ici: 'Yurt içi ilişkili taraf',
+  yurt_disi: 'Yurt dışı ilişkili taraf',
+  // Transfer fiyatlandırması düzeltme
+  kesinlesti_ve_odendi: 'Düzeltme kesinleşti ve ödendi',
+  odenmedi_beklemede: 'Ödenmedi / beklemede — istisna uygulanamaz',
+  hayir_odenmedi: 'Hayır, ödenmedi — istisna uygulanamaz',
+}
+
+function secenekEtiketi(value: string): string {
+  return SECENEK_ETIKETLERI[value] ?? value
+}
+
 type FormFieldValue = string | number | boolean | null
 type FormValues = Record<string, FormFieldValue>
 
@@ -117,7 +159,7 @@ export default function VeriGirisiForm({
                 <option value="">Seçiniz...</option>
                 {(alan.secenekler ?? []).map((sec) => (
                   <option key={sec} value={sec}>
-                    {sec}
+                    {secenekEtiketi(sec)}
                   </option>
                 ))}
               </select>

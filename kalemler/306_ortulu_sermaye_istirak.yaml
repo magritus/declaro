@@ -24,18 +24,34 @@ ana_kategori: istirak_kazanc_istisnalari
 wizard_agaci:
   tetikleyici_soru: "İlgili hesap döneminde ilişkili bir kuruluşa (ortak veya ortakla ilişkili) borç verdинiz mi ve bu kurumda örtülü sermaye nitelendirmesi yapıldı mı?"
   info_modal: |
-    KVK Madde 12 kapsamında; ilişkili kişinin özsermayesinin 3 katını aşan ilişkili borçlanmaları
-    örtülü sermaye sayılır. Borç alan kurumda örtülü sermayeye isabet eden faiz, kur farkı ve
-    benzer giderler KKEG (kanunen kabul edilmeyen gider) olarak nitelendirilir ve hesap döneminin
-    son günü itibarıyla KÂR PAYI sayılır (KVK 12/7).
+    ## Genel Çerçeve
 
-    Bu kâr payı, borç veren tam mükellef kurumda KVK Madde 5/1-a kapsamında İŞTİRAK KAZANCI
-    İSTİSNASI olarak beyanname 306 satırına yazılır. Zarar olsa dahi indirilir.
+    KVK Madde 12 kapsamında, ilişkili kişiden alınan borçların dönem başı özsermayenin 3 katını aşan kısmı **örtülü sermaye** sayılır. Bu örtülü sermayeye isabet eden faiz, kur farkı ve benzer giderler borç alan kurumda KKEG (kanunen kabul edilmeyen gider) olarak nitelendirilir ve hesap döneminin son günü (31.12) itibarıyla **kâr payı sayılır** (KVK 12/7). Söz konusu kâr payı, borç veren tam mükellef kurumda KVK Madde 5/1-a kapsamında iştirak kazancı istisnası olarak beyanname **306** satırına yazılır; "Zarar Olsa Dahi İndirilecek" bölümündedir.
 
-    ⚠️ KRİTİK GÜNCEL DURUM (Şubat 2025): Danıştay VDDK 05.02.2025 kararıyla; borç alan kurumun
-    zarar etmesi veya matrah oluşmaması durumunda borç veren kurumda düzeltme YAPILAMAZ ve
-    iştirak kazancı istisnası KULLANILAMAZ (yeni içtihat). Bu karar İçtihadı Birleştirme Kararı
-    değildir, hukuken bağlayıcı değil ancak pratikte belirleyicidir.
+    ## Temel Koşullar
+
+    - **İlişki şartı:** KVK Madde 12/1 anlamında ilişki, en az %10 ortaklık, oy veya kâr payı hakkını kapsar; borç veren ile alan arasında bu ilişkinin belgeli biçimde mevcut olması gerekir.
+    - **Örtülü sermaye eşiği:** Ortaktan veya ortakla ilişkili kişiden alınan borçların dönem başı özsermayenin 3 katını aşan kısmı örtülü sermayedir. İlişkili banka/finans kurumu borçlarının %50'si kıyaslamaya dahil edilir (KVK 12/2).
+    - **KKEG tutarının tespiti:** Borç alan kurumda örtülü sermayeye isabet eden faiz tutarı hesaplanarak KKEG listesine alınmalı; bu tutar borç veren kurumda 306 istisnasının dayanağını oluşturur.
+    - **Kâr payı sayılma tarihi:** Her zaman hesap döneminin son günüdür (31.12); dönem içi tarihe göre değişmez.
+    - **306 ile 307 ayrımı:** 306 = KVK 12 örtülü sermaye / faiz gideri → kâr payı sayılma; 307 = KVK 13 transfer fiyatlandırması örtülü kazanç → kâr payı sayılma. İki kalem kesinlikle ayrıştırılmalıdır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Danıştay VDDK 05.02.2025 kararı (kritik güncel içtihat):** Borç alan kurumun ilgili dönemde zarar etmesi veya matrah oluşmaması durumunda borç veren kurumda düzeltme yapılamaz ve 306 istisnası kullanılamaz. Bu karar içtihadı birleştirme kararı niteliği taşımamakla birlikte pratikte belirleyici niteliktedir; zarar eden borç alan senaryosunda ihtirazi kayıtla beyan ve YMM/hukuk görüşü alınması önerilir.
+    - **Kur farkı düzeltmesi 306 değildir:** Örtülü sermayeye isabet eden kur farkı geliri ve gideri vergiye tabi kazancın tespitinde dikkate alınmaz (KVK 12/7); bu düzeltme 306 satırına yazılmaz, ayrı bir kalemdir.
+    - **Zamanlama kritiktir:** Dönem içinde KKEG yapılmışsa ödeme şartı aranmadan aynı dönemde 306 uygulanabilir; dönem kapandıktan sonra borç alan kârlıysa geriye dönük düzeltme mümkündür; borç alan zararlıysa VDDK kararı riski devreye girer.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-a kapsamındaki bu iştirak kazancı istisnası (306) **YİAKV matrahından düşülebilir**; YİAKV çalışma kâğıdında 306 tutarı matrahtan doğru biçimde düşülmelidir.
+
+    ## Pratik Notlar
+
+    - Borç alan kurumun dönem başı bilançosu, özsermaye hesabı ve ilişkili kişi borç listesi zorunlu belgelerdir; bunlar olmadan örtülü sermaye tutarı doğrulanamaz.
+    - Borç alan kurumun KV beyannamesindeki KKEG tutarıyla çalışma kâğıdındaki tutar birebir uyumlu olmalıdır; tutarsızlık açıklanmalıdır.
+    - Zarar riski senaryosunda sadece 306 kullanmak yerine ihtirazi kayıt ve profesyonel görüş dosyaya eklenmelidir.
+    - 49 No.lu KV Genel Tebliği kapsamında tasdik eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: iliskili_borca_veren
       soru: "Borç veren (istisna kullanan) kurum ile borç alan kurum arasında KVK Md.12 anlamında ilişki var mı? (En az %10 ortaklık/oy/kâr payı hakkı)"

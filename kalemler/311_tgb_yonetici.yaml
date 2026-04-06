@@ -24,11 +24,36 @@ ana_kategori: serbest_bolge_tgb_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Kurum Sanayi ve Teknoloji Bakanlığı onaylı bir TGB Yönetici Şirketi midir?"
   info_modal: |
-    4691 Sayılı Kanun Madde 3 kapsamında, Sanayi ve Teknoloji Bakanlığı tarafından onaylanmış
-    Yönetici Şirketin TGB'yi yönetmekten elde ettiği kazançlar süresiz olarak kurumlar
-    vergisinden istisnadır. Bu istisna girişimci firmaların Ar-Ge/yazılım istisnasından
-    (Geçici Md.2 — tarih sınırlı) farklıdır ve tarih sınırı yoktur.
-    UYARI: Bu istisna YİAKV matrahından indirilemeyen istisnalar kapsamında değerlendirilmelidir.
+    ## Genel Çerçeve
+
+    4691 Sayılı Teknoloji Geliştirme Bölgeleri Kanunu Madde 3 kapsamında, Sanayi ve Teknoloji Bakanlığı tarafından onaylanmış **TGB Yönetici Şirketinin** TGB'yi yönetmek faaliyetinden elde ettiği kazançlar **süresiz olarak** kurumlar vergisinden istisnadır. Bu istisna girişimci firmaların Ar-Ge/yazılım istisnasından (Geçici Madde 2 — 31.12.2028 tarih sınırlı) temelden farklıdır; 311 istisnasında herhangi bir tarih sınırı yoktur. İstisna beyannamede **"Kazancın Bulunması Halinde İndirilecek"** bölümünde 311 numaralı satırda gösterilir.
+
+    ## Temel Koşullar
+
+    - **Bakanlık onaylı Yönetici Şirket statüsü:** Sanayi ve Teknoloji Bakanlığı'nın resmi onay belgesi zorunludur; bu belge olmadan 311 istisnası uygulanamaz.
+    - **TGB'nin fiilen işletilmesi:** TGB'de aktif girişimci firma bulunmalı ve bölge fiilen işletiyor olmalıdır.
+    - **Kapsam içi faaliyet kazancı:** İstisna yalnızca TGB yönetim faaliyetinden elde edilen kazanca uygulanır; mevduat faizi, repo, TGB dışı taşınmaz kira geliri ve TGB dışı ticari faaliyetler kapsam dışıdır.
+    - **Kapsam içi/dışı gelir ayrıştırması:** Girişimci firmalardan alınan kira, yönetim/işletme ücreti, altyapı, güvenlik, temizlik hizmet bedelleri kapsam içidir; mevduat faizi ve temettü kesin biçimde kapsam dışıdır.
+    - **"Kazancın Bulunması Halinde" bölümü:** 310 (girişimci firması) "Zarar Olsa Dahi" bölümündeyken 311 (yönetici şirket) "Kazancın Bulunması Halinde" bölümündedir; yönetim faaliyeti zararında istisna uygulanamaz.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Kapsam içi/dışı ayrımını yapmadan 311 uygulamak** en sık hatadır; mevduat faizinin 311 kapsamında beyan edilmesi tarhiyat riski doğurur.
+    - **Yönetici şirket istisnasının tarih sınırına bağlanması** ciddi hata kaynağıdır; yönetici şirket için 2028 tarihi geçerli değildir.
+    - **Gider paylaştırmasının yapılmaması:** Kapsam dışı gelire düşen gider payı 311 istisna hesabından çıkarılmalı; tüm giderlerin kapsam içine alınması hatalıdır.
+    - **KDV boyutu:** 311 kurumlar vergisi istisnası KDV muafiyeti sağlamaz; kira ve yönetim hizmetleri ayrıca KDV değerlendirmesine tabi olabilir.
+    - **Koşullu gelirler (özelge gerektirir):** Konferans salonu/eğitim alanı kiralama ve kuluçka firmaların başarı payı gibi gelirler için özelge alınması tavsiye edilir.
+
+    ## YİAKV İlişkisi
+
+    4691 sayılı Kanun yönetici şirket istisnası (311) YİAKV (KVK Madde 32/C) matrahından **indirilemeyen** istisnalar kapsamında değerlendirilmelidir; güncel mevzuat ve GİB açıklamaları çerçevesinde ayrıca analiz edilmeli ve YİAKV çalışma kâğıdında bu durum yansıtılmalıdır.
+
+    ## Pratik Notlar
+
+    - 3 kademe uyum kontrolü: Muhasebe alt hesabı (640.01 kapsam içi) = çalışma kâğıdı C.5 = KV beyannamesi 311 satırı. Bu üçlü uyum YMM tasdik dosyasının temel doğrulama adımıdır.
+    - Bakanlığa sunulan yıllık faaliyet raporu istisna hakkının devamı açısından önemlidir; raporun sunulmaması risk yaratabilir.
+    - TGB Kuruluş Kararının Resmi Gazete'deki yayım tarihi ve sayısı ile Bakanlık onay belgesi tasdik dosyasında yer almalıdır.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: bakanlık_onay
       soru: "Kurum Sanayi ve Teknoloji Bakanlığı tarafından onaylanmış Yönetici Şirket statüsünde midir?"

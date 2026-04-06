@@ -25,11 +25,36 @@ ana_kategori: serbest_bolge_tgb_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Serbest bölgede faaliyet gösteriyor musunuz?"
   info_modal: |
-    3218 Sayılı Kanun Geçici Md. 3 kapsamında serbest bölgede yürütülen faaliyetlerden
-    elde edilen kazançlar kurumlar vergisinden istisnadır. Ruhsat tarihine göre iki farklı
-    rejim mevcuttur (06.02.2004 kırılımı). 01.01.2025 itibarıyla 7524 s.K. değişikliğiyle
-    Rejim 2 kapsamında yalnızca münhasıran yurt dışına yapılan satışlardan elde edilen
-    kazançlar istisna kapsamındadır.
+    ## Genel Çerçeve
+
+    3218 Sayılı Serbest Bölgeler Kanunu Geçici Madde 3 kapsamında serbest bölgede yürütülen uygun faaliyetlerden elde edilen kazançlar kurumlar vergisinden istisnadır. **Ruhsat tarihine göre iki farklı rejim** mevcuttur: 06.02.2004 öncesi ruhsat sahipleri Rejim 1 (ruhsat süresi boyunca tüm kapsam içi faaliyetler), 06.02.2004 sonrası ruhsat sahipleri ise Rejim 2 (imalat faaliyetleri) kapsamındadır. **01.01.2025 itibarıyla 7524 sayılı Kanun değişikliğiyle** Rejim 2 kapsamında yalnızca münhasıran yurt dışına yapılan satışlardan elde edilen kazançlar istisna kapsamındadır. İstisna beyannamede **"Zarar Olsa Dahi İndirilecek"** bölümünde 308 numaralı satırda gösterilir.
+
+    ## Temel Koşullar
+
+    - **Geçerli faaliyet ruhsatı:** 3218 sayılı Kanun kapsamında serbest bölge faaliyet ruhsatının geçerli olması zorunludur; süresi dolmuş, iptal edilmiş veya devir sonrası yenilenmemiş ruhsat istisna hakkını ortadan kaldırır.
+    - **Rejim tespiti:** Ruhsat tarihi 06.02.2004 öncesiyse Rejim 1 (ruhsatta belirtilen süre boyunca kapsam içi tüm faaliyetler); sonrasıysa Rejim 2 (sadece imalat + münhasıran yurt dışı satış).
+    - **İmalat şartı (Rejim 2):** Ticaret, alım-satım veya hizmet faaliyeti Rejim 2 kapsamı dışındadır.
+    - **Münhasıran yurt dışı satış (01.01.2025 sonrası Rejim 2):** Yurt içine satış ve SB içi firmaya ihraç kaydı olmaksızın yapılan satış artık istisna kapsamı dışındadır. İhraç kayıtlı teslimde 3 aylık ihracat gerçekleşme şartı takip edilmelidir.
+    - **Ayrı muhasebe zorunluluğu (VUK):** SB ve SB dışı kazançlar ayrı hesaplarda izlenmek zorundadır; ayrı muhasebe yoksa istisna vergi incelemesinde reddedilebilir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Kapsam dışı gelirler:** Faiz, repo, mevduat, vade farkı ve kira gelirleri kapsam dışıdır. Kur farkı gelirleri için ayrı değerlendirme notu hazırlanmalıdır.
+    - **Beyanname 308 satırına brüt hasılat değil net kazanç yazılır:** Maliyet ve giderler düşüldükten sonraki net istisna kazanç tutarı beyannamede gösterilmelidir.
+    - **İhraç kayıtlı teslim kuralı:** Alıcının SB'de bulunması ve teslim tarihinden itibaren 3 ay içinde fiilen ihracat gerçekleşmesi şarttır; gerçekleşmezse istisna uygulanamaz.
+    - **SB istisnası kâr payı stopajını kaldırmaz:** Kâr dağıtımında %15 stopaj uygulanmaya devam eder.
+    - **Ortak gider dağıtımı:** Makul ve belgelenebilir bir anahtara (hasılat oranı, personel, m²) dayanmalıdır.
+    - **FOB %85 ücret stopaj terkini** ayrı bir avantaj olup beyanname 308 satırından bağımsız değerlendirilmelidir.
+
+    ## YİAKV İlişkisi
+
+    3218 sayılı Kanun Geçici Madde 3 kapsamındaki serbest bölge kazanç istisnası KVK Madde 32/C (g) bendi gereğince **YİAKV matrahından düşülebilir**. Bu durum 4691 sayılı Kanun TGB istisnasından (düşülemeyen) kritik biçimde farklıdır; YİAKV çalışma kâğıdında bu fark açıkça gösterilmelidir.
+
+    ## Pratik Notlar
+
+    - İhracat belgeleri (gümrük çıkış beyannamesi + fatura), ruhsat belgesi ve satış hasılatı özeti (yurt içi/yurt dışı/SB içi ayrımı) tasdik dosyasının temel belgeleridir.
+    - Özel hesap dönemli mükelleflerde 01.01.2025 değişikliği için dönem içi kazanç ayrıştırması yapılmalıdır.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: sb_ruhsat
       soru: "Geçerli 3218 s.K. kapsamında serbest bölge faaliyet ruhsatınız var mı?"

@@ -1,0 +1,1268 @@
+{
+  "file": "375_KVK_Gecici_Md14_2_Borc_Tarafi_Kur_Farki_Kazanci.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G64",
+      "rows": [
+        [
+          "375 – KVK GEÇİCİ MADDE 14/2 | KUR FARKI KAZANCI İSTİSNASI | YABANCI PARA BORÇLAR VE YÜKÜMLÜLÜKLER — TL'YE DÖNÜŞÜM | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/2 (Paragraf 2) | Yabancı Para Yükümlülük/Borç Tarafı Kur Farkı Kazancı | 370–374 (Paragraf 1) Dışında | Beyanname 375 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14 — PARAGRAF AYRIMI:\n  PARAGRAF 1 (Md.14/1-a ve 1-b): 31/12/2021 bilanço AKTİF tarafı — Yabancı para mevduat ve altın hesabı → TL KKM.\n  Beyanname kodları: 370 (kur farkı değerleme) | 371 (kur farkı tazminat) | 372 (dönem sonu tahakkuk) | 373 (vade faiz/kâr payı) | 374 (vade diğer kazançlar).\n  PARAGRAF 2 (Md.14/2): 31/12/2021 bilanço PASİF/BORÇ tarafı — Yabancı para yükümlülükler ve borçların TL'ye dönüşümünden doğan KUR FARKI KAZANCI istisnası. → BU DOSYA (Beyanname 375).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 375 kapsamındaki kur farkı kazancı istisnası YİAKV matrahından DÜŞÜLEMEZ. (YİAKV Reh. No:607 | E.7 DÜŞÜLEMEZ listesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ — KVK GEÇİCİ MD.14/2 ÖZEL KOŞULLAR",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Kurumun 31/12/2021 tarihli bilançosunda yabancı para borç/yükümlülük bakiyesi var mıydı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14/2 kapsamı yalnızca 31/12/2021 bilançosunda yer alan yabancı para borçlar ve yükümlülükleri kapsıyor. Sonraki dönemde doğan yükümlülükler kapsam dışıdır.",
+          null
+        ],
+        [
+          "A0.2  ★ Bu yabancı para yükümlülükler yasal süre içinde TL'ye dönüştürüldü mü?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Dönüşüm tarihi Cumhurbaşkanı Kararıyla belirlenen yasal süre içinde olmalıdır. Banka belgesi veya kredi sözleşmesi kapatma belgesiyle teyit zorunludur.",
+          null
+        ],
+        [
+          "A0.3  Dönüşüm esnasında kur farkı kazancı oluştu mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Yükümlülüğün bilanço kuru ile dönüşüm/kapanış günü kuru arasındaki OLUMLU fark kur farkı kazancıdır. Olumsuz fark (kur farkı zararı) durumunda 375 tutarı sıfırdır.",
+          null
+        ],
+        [
+          "A0.4  ★ Bu kazanç 370–374 (Md.14/1-a ve 1-b) kapsamına girmiyor mu? (Paragraf 2 niteliği teyit edildi mi?)",
+          null,
+          null,
+          null,
+          "EVET",
+          "375 yalnızca BORÇ/YÜKÜMLÜLÜKLERden (pasif taraf) doğan kur farkı kazancını kapsar. Yabancı para mevduat/altın hesabı → TL KKM dönüşümü → Paragraf 1 (370 vb.).",
+          null
+        ],
+        [
+          "A0.5  Borç dönüşümü tam ve eksiksiz tamamlandı mı? Kısmi dönüşüm kontrolü yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "31/12/2021 bilançosundaki yabancı para borç bakiyesini aşan dönüşüm kısımları kapsam dışıdır. Kısmi dönüşümde orantılı hesaplama zorunludur.",
+          null
+        ],
+        [
+          "A0.6  ★ 375 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14/2 kapsamı kazançlar YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7'de bu satır kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (yasal süre), A0.4 (paragraf 2 niteliği), A0.6 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/375-01",
+          null
+        ],
+        [
+          "370–374 Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          null,
+          null,
+          "Paragraf 1 dosyaları — ayrı kapsam, karşılaştırma için",
+          null
+        ],
+        [
+          "B. KVK GEÇİCİ MD.14/2 — KAPSAM KOŞULLARI VE BORÇ DÖNÜŞÜM BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "375 Kapsamı: 31/12/2021 bilançosunda yer alan YABANCI PARA YÜKÜMLÜLÜKLERİNİN (borçlar, krediler, leasing vb.) yasal süre içinde TL'ye dönüştürülmesinden doğan kur farkı kazancı istisnası. Paragraf 1 (mevduat/altın aktifleri) dışında kalan borç tarafı dönüşümü.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  31/12/2021 Bilançosundaki Yabancı Para Borç Türü",
+          null,
+          "Banka Kredisi",
+          "Dönüştürülen yabancı para yükümlülüğün türü. Her tür için ayrı satır.",
+          null,
+          "Bilanço / Sözleşme",
+          null
+        ],
+        [
+          "B.2  31/12/2021 Bilanço Tarihindeki Döviz Cinsi",
+          null,
+          "USD",
+          "Dönüştürülen yabancı para birimi.",
+          null,
+          "Bilanço",
+          null
+        ],
+        [
+          "B.3  31/12/2021 Borç Bakiyesi (Döviz Cinsinden)",
+          null,
+          null,
+          "31/12/2021 tarihi itibarıyla bilanço borcunun döviz tutarı.",
+          null,
+          "Kesinleşmiş Bilanço",
+          null
+        ],
+        [
+          "B.4  31/12/2021 TCMB Döviz Alış Kuru",
+          null,
+          null,
+          "31/12/2021 tarihi TCMB resmi döviz alış kuru. tcmb.gov.tr",
+          null,
+          "TCMB kur tablosu",
+          null
+        ],
+        [
+          "B.5  31/12/2021 TL Bilanço Değeri (B.3 × B.4)",
+          null,
+          null,
+          "Formül: Döviz Miktarı × TCMB Kuru = Bilanço TL değeri.",
+          null,
+          "Hesaplama",
+          null
+        ],
+        [
+          "B.6  ★ Dönüşüm Tarihi (TL'ye Geçiş Tarihi)",
+          null,
+          null,
+          "Yasal süre içinde olduğu banka belgesi/sözleşme kapatma belgesiyle teyit edilmeli.",
+          null,
+          "Banka/Kredi belgesi",
+          null
+        ],
+        [
+          "B.7  Dönüşüm Günü TCMB Döviz Alış Kuru",
+          null,
+          null,
+          "Dönüşüm tarihindeki TCMB resmi döviz alış kuru. tcmb.gov.tr",
+          null,
+          "TCMB kur tablosu",
+          null
+        ],
+        [
+          "B.8  Dönüşüm TL Tutarı (B.3 × B.7)",
+          null,
+          null,
+          "Formül: Döviz Miktarı × Dönüşüm Günü Kuru = Kapanış TL tutarı.",
+          null,
+          "Hesaplama",
+          null
+        ],
+        [
+          "B.9  Borç Dönüşümü 31/12/2021 Bilanço Bakiyesi İle Sınırlı mı?",
+          null,
+          "EVET",
+          "Dönüşüm tutarı 31/12/2021 bakiyesini aşamaz. Aşan kısım kapsam dışı.",
+          null,
+          "KVK Geç.Md.14/2",
+          null
+        ],
+        [
+          "C. DÖVİZ CİNSİ BAZINDA KUR FARKI KAZANCI HESABI — BORÇ DÖNÜŞÜMÜ (BEYANNAME 375)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her yabancı para borç için ayrı satır. Kur Farkı Kazancı = MAX(Bilanço TL − Dönüşüm TL, 0).\n  Borç tarafı: Bilanço kuru YÜKSEK, dönüşüm kuru DÜŞÜK ise kazanç oluşur (TL değer kazanmış).\n  Col 4 (lacivert çerçeve) ve Col 6 (kırmızı çerçeve): ANA VERİ GİRİŞLERİ. Col 7 = Otomatik kazanç hesabı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Döviz Cinsi",
+          "31/12/2021 Bakiye (Döviz)",
+          "31/12/2021 Kuru (TL)",
+          "Bilanço TL Değeri",
+          "Dönüşüm Günü Kuru (TL)",
+          "Dönüşüm TL Tutarı",
+          "Kur Farkı Kazancı (TL)"
+        ],
+        [
+          "USD",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "EUR",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "GBP",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "CHF",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Diğer Döviz",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam Kur Farkı Kazancı → Beyanname 375",
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "BORÇ TARAFI KUR FARKI KAZANCI MANTIĞI:\n  Bilanço Kuru (31/12/2021) YÜKSEK — Dönüşüm Kuru (Dönüşüm Tarihi) DÜŞÜK → KAZANÇ oluşur (TL değer kazanmıştı).\n  Neden: Yükümlülük 31/12/2021'de daha yüksek kurdan kayıtlı. Dönüşüm günü daha düşük kurdan kapatılıyor → Fark = Kur farkı kazancı. Formül: MAX(Bilanço TL − Dönüşüm TL, 0). Negatif → Zarar, 375 tutarı sıfır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. KUR FARKI KAZANCI İSTİSNASI ÖZET — BEYANNAME 375 (KVK Geçici Md.14/2)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam Brüt Kur Farkı Kazancı (C Tablosu — Tüm Dövizler)",
+          null,
+          "0",
+          "C tablosu toplam — tüm döviz borç türleri",
+          null,
+          "TCMB kurlarıyla doğrulanmış",
+          null
+        ],
+        [
+          "D.2  Kapsam Dışı Kur Farkı (31/12/2021 bakiyesini aşan dönüşüm kısmı)",
+          null,
+          null,
+          "Bilanço bakiyesini aşan dönüşüm orantılı ayrıştırmaya tabi",
+          null,
+          "Kapsam dışı kısım vergilendirilir",
+          null
+        ],
+        [
+          "D.3  ★ NET 375 İSTİSNA TUTARI (D.1 − D.2) → BEYANNAME 375",
+          null,
+          "0",
+          "→ Beyanname 375 | Kazancın Bulunması Halinde İndirilecek",
+          null,
+          "KVK Geçici Md.14/2",
+          null
+        ],
+        [
+          "D.4  Vergiye Tabi Kalan Kur Farkı Kazancı (Kapsam Dışı)",
+          null,
+          "0",
+          "Bu kısım KV matrahında kalır",
+          null,
+          "Vergilendirilir",
+          null
+        ],
+        [
+          "E. PARAGRAF 1 (370–374) – PARAGRAF 2 (375) KARŞILAŞTIRMA VE ÇAPRAZ KONTROL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          "Paragraf 1 (370–374)",
+          null,
+          "Paragraf 2 (375)",
+          null,
+          "YİAKV"
+        ],
+        [
+          "Bilanço Tarafı",
+          null,
+          "AKTİF taraf — Yab. para mevduat + altın hesabı",
+          null,
+          "PASİF taraf — Yabancı para borçlar ve yükümlülükler",
+          null,
+          "Her ikisi DÜŞÜLEMEZ"
+        ],
+        [
+          "Dönüşüm Hedefi",
+          null,
+          "TL KKM hesabı (mevduat veya katılım)",
+          null,
+          "TL borç / TL kredi (borcun TL'ye çevrilmesi)",
+          null,
+          "Ayrı mekanizmalar"
+        ],
+        [
+          "Kur Farkı Yönü",
+          null,
+          "Aktif kur farkı: Düşük kur → Yüksek kur = Kazanç",
+          null,
+          "Pasif kur farkı: Yüksek kur → Düşük kur = Kazanç",
+          null,
+          "Ters mantık"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "646/679 (aktif kur farkı kazancı)",
+          null,
+          "646/679 (pasif kur farkı kazancı)",
+          null,
+          "Her ikisi ticari kârda"
+        ],
+        [
+          "YİAKV",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          null,
+          "Birlikte E.7"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 375 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Geçici Md.14/2 | Borç/Yükümlülük Tarafı Kur Farkı",
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 375 asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) PARAGRAF 2 NİTELİĞİ: Borç/yükümlülük tarafı dönüşümü (pasif). Aktif (mevduat/altın) → Paragraf 1 (370–374).\n(3) BEYANNAME: 'Kazancın Bulunması Halinde İndirilecek' — Zarar döneminde uygulanamaz.\n(4) YASAL SÜRE: Dönüşüm tarihi Cumhurbaşkanı Kararıyla belirlenen yasal süre içinde olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G34",
+      "rows": [
+        [
+          "375 – KVK GEÇİCİ MD.14/2 BORÇ TARAFI KUR FARKI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yabancı Para Borç/Yükümlülük Dönüşümü | Paragraf 2 | Beyanname 375 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Paragraf 2 Niteliği (A0.4)",
+          null,
+          null,
+          "EVET",
+          "EVET — Borç/Pasif tarafı",
+          null,
+          null
+        ],
+        [
+          "Toplam Brüt Kazanç (D.1)",
+          null,
+          null,
+          "0",
+          "TCMB kurlarıyla hesaplanmış",
+          null,
+          null
+        ],
+        [
+          "Kapsam Dışı (D.2)",
+          null,
+          null,
+          "0",
+          "Bakiye aşımı varsa ayrıştır",
+          null,
+          null
+        ],
+        [
+          "375 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "370–375 tamamı E.7",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. DÖVİZ BAZINDA KUR FARKI KAZANCI ÖZET (VERİ GİRİŞİ C TABLOSUNDAN)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Döviz",
+          "31/12/2021 Bakiye",
+          "31/12/2021 Kuru",
+          "Bilanço TL",
+          "Dönüşüm Kuru",
+          "Dönüşüm TL",
+          "Kur Farkı Kazancı (TL)"
+        ],
+        [
+          "USD",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "EUR",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "GBP",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "CHF",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Diğer",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam → Beyanname 375",
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ Kurumun 31/12/2021 bilançosunda yabancı para borç bakiyesi var mıydı?",
+          null,
+          "Bilanço yabancı para borç hesaplarından teyit. Sonradan doğan borçlar kapsam dışı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Dönüşüm tarihi yasal süre (CB Kararı) içinde mi?",
+          null,
+          "Kredi kapatma/dönüşüm belgesi tarihi ≤ Yasal son tarih. B.6 kontrolü.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "Dönüşüm tutarı 31/12/2021 bilanço bakiyesini aşmıyor mu?",
+          null,
+          "Aşan kısım kapsam dışı — orantılı ayrıştırma zorunlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ 31/12/2021 ve Dönüşüm Günü TCMB kurları resmi kaynaktan alındı mı?",
+          null,
+          "tcmb.gov.tr — her iki tarih için resmi döviz alış kuru.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "Kur farkı kazancı (D.3) muhasebe kayıtlarıyla mutabık mı?",
+          null,
+          "646/679 hesabındaki pasif kur farkı kazancı ile C tablosu toplamı uyumlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "★ Bu kazanç Paragraf 1 (370–374) kapsamına girmediği teyit edildi mi?",
+          null,
+          "Aktif (mevduat/altın) → Paragraf 1. Pasif (borç/yükümlülük) → Paragraf 2 (375).",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Kur farkı yönü doğru mu? (Borç tarafı kazanç mantığı)",
+          null,
+          "Bilanço kuru > Dönüşüm kuru → Kazanç (TL değer kazanmış). Aksi → Zarar, 375 sıfır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "★★ 375 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370–375 tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de altı satır da kontrol edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "Beyanname 375 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "Borç türü analizi yapıldı mı? (Kredi / Tahvil / Leasing / Ticari Borç)",
+          null,
+          "Her borç türü için ayrı belge ve yasal dayanak değerlendirmesi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "Kısmi dönüşüm varsa orantılı hesaplama (D.2) yapıldı mı?",
+          null,
+          "31/12/2021 bakiyesinin tamamı dönüştürülmediyse kapsam içi kısım orantılandı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G16",
+      "rows": [
+        [
+          "375 – KVK GEÇİCİ MD.14/2 BORÇ TARAFI KUR FARKI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yabancı Para Borç Kapatma | Kur Farkı Kazancı | Paragraf 1 vs 2 Muhasebe Karşılaştırması",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — BORÇ KAPAMA / DÖNÜŞÜM GÜNÜ: YABANCI PARA BORÇ KAPATMA VE TL BORÇ AÇILIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "375 (Md.14/2) Senaryo: Yabancı para kredi borcu Bilanço kuru = 14,00 | Kapanış kuru = 12,50 TL/USD.\n  TL değer kazandığı için borç daha ucuza kapatıldı → Kur farkı KAZANCI oluştu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Dönüşüm Tarihi]",
+          "300/320 Banka Kredileri / Finansal Borçlar",
+          "Yabancı para borcun 31/12/2021 bilanço TL değeri (Bilanço Kuru × Döviz Miktarı)",
+          "[Bilanço TL]",
+          "—",
+          "Muhasebe kaydı"
+        ],
+        [
+          "Kr",
+          "[Dönüşüm Tarihi]",
+          "100/102 Kasa / Bankalar",
+          "Borcun kapanmasında ödenen TL (Dönüşüm Günü Kuru × Döviz Miktarı)",
+          "—",
+          "[Dönüşüm TL]",
+          "Banka belgesi"
+        ],
+        [
+          "Kr",
+          "[Dönüşüm Tarihi]",
+          "646 Kambiyo Kârları / 679 Diğer Olağandışı Kâr",
+          "Borç tarafı kur farkı kazancı (Bilanço TL − Dönüşüm TL) → KVK Geçici Md.14/2 → Beyanname 375",
+          "—",
+          "[Kur Farkı Kazancı]",
+          "KV 375"
+        ],
+        [
+          "KUR FARKI KAZANCI = Bilanço TL − Dönüşüm TL. Borç tarafı: Kazanç = TL değer kazandığında (Yüksek bilanço kuru − Düşük dönüşüm kuru).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — PARAGRAF 1 (AKTIF) ve PARAGRAF 2 (PASİF) MUHASEBE KARŞILAŞTIRMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aynı kur farkı mantığı — ama zıt yönde. Aktif taraf (Paragraf 1/370): Düşük kurdan alınan → Yüksek kurdan satılan.\n  Pasif taraf (Paragraf 2/375): Yüksek kurdan kayıtlı borç → Düşük kurdan kapatılan.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Md.14/1 (370)",
+          "[Dönüşüm]",
+          "102 Bankalar Dr / 121 Döviz Tevdiat Kr / 646 Kur Farkı Kr",
+          "AKTİF Kur Farkı: Döviz mevduatı → TL KKM. Düşük bilanço kuru, yüksek dönüşüm kuru → Kazanç",
+          "—",
+          "[370 Kazancı]",
+          "KV 370"
+        ],
+        [
+          "Md.14/2 (375)",
+          "[Dönüşüm]",
+          "300/320 Borçlar Dr / 100/102 Kasa/Bankalar Kr / 646 Kur Farkı Kr",
+          "PASİF Kur Farkı: Yabancı para borç kapatma. Yüksek bilanço kuru, düşük kapanış kuru → Kazanç",
+          "—",
+          "[375 Kazancı]",
+          "KV 375"
+        ],
+        [
+          "BEYANNAME: 375 → 'Kazancın Bulunması Halinde İndirilecek' bölümünde. ★★ YİAKV MATRAHINDA DÜŞÜLEMEZ — pasif taraf kur farkı kazancı da YİAKV E.7 kapsamındadır. Muhasebe hesabı 646 veya 679 — KV matrahı hesabında her ikisi de ticari kâra dahildir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "375 – KVK GEÇİCİ MD.14/2 BORÇ TARAFI KUR FARKI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | KVK Geçici Md.14/2 | Paragraf 2 | ★★ YİAKV DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/2 — Paragraf 2 Kapsamı ve 370–374 ile Farkı",
+          "KVK GEÇİCİ MD.14/2 — PARAGRAF 2 TANIMI:\n\nKurumların 31/12/2021 tarihli bilançolarında kayıtlı YABANCI PARA BORÇLARINI VE YÜKÜMLÜLÜKLERİNİ yasal süre içinde TL'ye dönüştürmeleri halinde bu dönüşüm esnasında oluşan KUR FARKI KAZANCI kurumlar vergisinden istisnadır.\n\nPARAGRAF 1 (370–374) ile TEMEL FARK:\n\n• Paragraf 1: Yabancı para AKTİFLER (mevduat + altın) → TL KKM hesabı\n  Kur farkı kazancı: Düşük bilanço kuru → Yüksek dönüşüm kuru\n\n• Paragraf 2 (375): Yabancı para PASİFLER (borçlar, krediler) → TL\n  Kur farkı kazancı: Yüksek bilanço kuru → Düşük dönüşüm kuru\n\nKAPSAM DAHİLİ BORÇ TÜRLERİ:\n① Banka kredileri (yabancı para) | ② Tahvil ve bonolar (dövizle ihraç)\n③ Finansal kiralama yükümlülükleri | ④ Ticari borçlar (dövizle)\n⑤ Diğer yabancı para yükümlülükler\n\nBEYANNAME: 375 | Kazancın Bulunması Halinde İndirilecek\nGİB KV Beyan Rehberi 2026 (Yayın No:606), Bölüm 2.2.15 kapsamında yer almaktadır.",
+          "KVK Geçici Md.14/2 | 7352 s.K. | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "Kur Farkı Kazancı Hesaplama Yöntemi — Borç Tarafı Mekanizması",
+          "BORÇ TARAFI KUR FARKI KAZANCI HESABI:\n\nFORMÜL: Kur Farkı Kazancı = MAX(Bilanço TL − Dönüşüm TL, 0)\n= MAX([31/12/2021 Kuru × Döviz Miktarı] − [Dönüşüm Günü Kuru × Döviz Miktarı], 0)\n\nKAZANÇ OLUŞMA KOŞULU: TL'nin döviz karşısında DEĞER KAZANMASI\nÖrnek: 31/12/2021 kuru = 14,00 TL/USD | Dönüşüm kuru = 12,50 TL/USD\n1.000.000 USD borç:\n• Bilanço TL: 1.000.000 × 14,00 = 14.000.000 TL\n• Dönüşüm TL: 1.000.000 × 12,50 = 12.500.000 TL\n• Kur farkı kazancı: 14.000.000 − 12.500.000 = 1.500.000 TL → Beyanname 375\n\nZARAR DURUMU: Bilanço kuru < Dönüşüm kuru (TL zayıflamış) → Kur farkı ZARARI\nBu durumda 375 tutarı SIFIRDIR (MAX fonksiyonu ile sıfırlanır).\n\nTCMB KURLAR: Her iki tarih için de TCMB resmi döviz ALIŞI kuru kullanılır.",
+          "KVK Geçici Md.14/2 | TCMB Kur Tablosu | VUK Md.280",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370–375 Tamamı DÜŞÜLEMEZ",
+          "KVK GEÇİCİ MD.14 KAPSAMININ TAMAMININ YİAKV MATRAHINDA DÜŞÜLEMEZLİĞİ:\n\n• 370 (Md.14/1-a) → DÜŞÜLEMEZ | • 371 (Md.14/1-b) → DÜŞÜLEMEZ\n• 372 (Md.14/1-b) → DÜŞÜLEMEZ | • 373 (Md.14/1-b) → DÜŞÜLEMEZ\n• 374 (Md.14/1-b) → DÜŞÜLEMEZ | • 375 (Md.14/2) → DÜŞÜLEMEZ\n\nYİAKV çalışma kâğıdı E.7 satırı (GÜNCELLENMESİ GEREKİR):\n'KKM Aktif + Pasif Kur Farkı + Faiz/Kâr Payı + Vade Kazançları İstisnası\n(KVK Geçici Md.14) → YİAKV'de DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373/374/375'\n\nYMM, altı kodun tamamının asgari vergi matrahında kaldığını teyit etmelidir.\n375'in 'pasif taraf' kur farkı niteliği YİAKV muamelesini değiştirmez.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Borç Türü Analizi ve Kısmi Dönüşüm",
+          "KAPSAM DAHİLİ BORÇ TÜRLERİ — DETAY:\n\nBANKA KREDİSİ (En Yaygın): Yabancı para kredi sözleşmesi → TL dönüşüm\nKapsam koşulu: 31/12/2021 bilanço kaydı + Yasal süre içinde dönüşüm\n\nTAHVİL/BONO: Dövizle ihraç edilmiş tahvil → TL'ye dönüştürülmesi\nAnapara + tahakkuk faiz toplamının dönüşümü değerlendirilmeli\n\nFİNANSAL KİRALAMA: Dövizli leasing sözleşmesi borçları\nVUK değerlemesi ile beyan değeri arasındaki tutarsızlıklar kontrol edilmeli\n\nTİCARİ BORÇ: Dövizli tedarikçi borçları — 31/12/2021 bilanço kaydı zorunlu\n\nKISMİ DÖNÜŞÜM:\n31/12/2021 bilanço bakiyesinin tamamı dönüştürülmemişse:\nİstisna Oranı = Dönüştürülen Miktar / 31/12/2021 Bilanço Bakiyesi\nKısmi istisna = Toplam Kur Farkı Kazancı × İstisna Oranı\nD.2 satırına kapsam dışı kısım yazılır.",
+          "KVK Geçici Md.14/2 | VUK Md.280 | 1 Seri No.lu KVK GT",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...31/12/2021 tarihli bilançoda kayıtlı [Döviz Cinsi] cinsinden [Borç Türü] borcunun\n[Dönüşüm Tarihi] tarihinde Türk lirasına dönüştürülmesi sonucunda oluşan [Tutar] TL\nkur farkı kazancı, KVK Geçici Madde 14/2 kapsamında kurumlar vergisinden istisna\nedilmiş ve yurt içi asgari kurumlar vergisi matrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...375 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...Paragraf 1 (370–374) kapsamındaki kazanç Md.14/2 olarak beyan edilmiştir.' (Yanlış paragraf)\n'...31/12/2021 sonrası edinilen yabancı para borçlar da 375 kapsamındadır.' (Kapsam dışı)\n\nKRİTİK RİSKLER:\n(1) Paragraf 1 (aktif/mevduat) ile Paragraf 2 (pasif/borç) karıştırmak.\n(2) 375 tutarını YİAKV matrahından düşmek.\n(3) Dönüşüm tarihinin yasal süre dışında olduğunu gözden kaçırmak.\n(4) 31/12/2021 sonrası doğan yabancı para borçları kapsama almak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14/2 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (375): KVK Geçici Md.14/2, Paragraf 1 (370–374)'in yabancı para AKTİFLER dönüşümünü tamamlayan PASİF/BORÇ tarafı kur farkı kazancı istisnasıdır. 370–375 altı kod birlikte KVK Geçici Md.14 tam kapsamını oluşturur. Tamamı YİAKV matrahından DÜŞÜLEMEZ. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F31",
+      "rows": [
+        [
+          "375 – KVK GEÇİCİ MD.14/2 BORÇ TARAFI KUR FARKI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | Borç Dönüşüm Belgesi | TCMB Kur | Bilanço",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ 31/12/2021 Kesinleşmiş Bilançosu — Yabancı Para Borç Bakiyeleri",
+          "31/12/2021 tarihi itibarıyla yabancı para borç hesapları (300/302/320/322 vb.) açık bakiyeleri.\nYMM: Dönüşüm tutarı bu bakiyeleri aşmamalı. B.3 (Döviz miktarı) kaynağıdır.",
+          "Kesinleşmiş Bilanço / Mizan",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Borç Dönüşüm/Kapatma Belgesi (Kredi İptal Belgesi / Dönüşüm Sözleşmesi)",
+          "Yabancı para borcun TL'ye dönüştürüldüğünü kanıtlayan resmi belge.\nDönüşüm tarihi, döviz miktarı, uygulanan kur, TL karşılığı açıkça görünmeli.\nYMM: Dönüşüm tarihinin yasal süre içinde olduğu bu belgeden teyit edilir.",
+          "Banka / Alacaklı kurumdan",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ TCMB Resmi Döviz Kurları (31/12/2021 ve Dönüşüm Günü)",
+          "Her iki tarih için TCMB resmi döviz alış kuru.\ntcmb.gov.tr → Döviz Kurları → İlgili tarihlerin kur tablosu.\nYMM: C tablosundaki kurların TCMB resmi kurlarıyla uyumlu olduğu teyit edilmeli.",
+          "TCMB web sitesi (tcmb.gov.tr)",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Kur Farkı Kazancı Hesaplama Tablosu (Bu Çalışma Kâğıdı C Bölümü)",
+          "Her döviz bazında kur farkı kazancı hesabı. D.3 net 375 tutarı beyanname ile uyumlu.",
+          "Bu çalışma kâğıdı",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 375. Satır",
+          "'Kazancın Bulunması Halinde İndirilecek' bölümü. ★★ YİAKV matrahından çıkarılmamış.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Dönüşüm Tarihinin Yasal Süre İçinde Olduğunu Gösteren CB Kararı",
+          "İlgili Cumhurbaşkanı Kararı — dönüşüm tarihinin kararla belirlenen son tarih içinde olduğu kontrol.",
+          "Resmî Gazete / mevzuat.gov.tr",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Muhasebe Yevmiye Kaydı — Borç Kapanış + Kur Farkı Kaydı",
+          "Dönüşüm günü yevmiye: Borç hesabı Dr / Kasa-Banka Kr / 646-679 Kur Farkı Kazancı Kr.\nC tablosu kur farkı kazancıyla mutabık olmalı.",
+          "Yevmiye defteri / Muhasebe ekstresi",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Kredi Sözleşmesi / Borç Dökümü",
+          "31/12/2021 bilanço borç bakiyesini belgelemek için orijinal borç sözleşmesi veya hesap dökümü.",
+          "Kredi sözleşmesi / Tedarikçi hesap dökümü",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ 31/12/2021 bilançosunda yabancı para borç bakiyesi var mıydı?",
+          "Bilanço teyidi zorunlu. Sonraki dönem borçlar kapsam dışı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Dönüşüm tarihi yasal süre (CB Kararı) içinde mi?",
+          "Dönüşüm belgesi tarihi ≤ Yasal son tarih.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "Dönüşüm tutarı bilanço bakiyesini aşmıyor mu?",
+          "Aşma → Orantılı ayrıştırma (D.2).",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ TCMB kurları resmi kaynaktan alındı mı? (Her iki tarih)",
+          "tcmb.gov.tr — bilanço ve dönüşüm günü.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Kur farkı kazancı (D.3) muhasebe ile mutabık mı?",
+          "646/679 tutarı ile C tablosu uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "★ Bu kazancın Paragraf 2 (borç tarafı) niteliği teyit edildi mi?",
+          "Aktif taraf (mevduat/altın) → Paragraf 1 (370). Pasif (borç) → Paragraf 2 (375).",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Kur farkı yönü doğru mu? (Bilanço kuru > Dönüşüm kuru)",
+          "Aksi durumda kazanç değil zarar → 375 sıfır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★★ 375 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370–375 tamamı YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 375 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 375 = KVK Geçici Md.14/2 (Paragraf 2) kapsamında pasif/borç tarafı kur farkı kazancı istisnası. Paragraf 1 (370–374) aktif tarafını, Paragraf 2 (375) pasif tarafını tamamlar. 370–375 altı kod birlikte KVK Geçici Md.14 tam kapsamı oluşturur. Tamamı YİAKV matrahından DÜŞÜLEMEZ (E.7). YMM müteselsil: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

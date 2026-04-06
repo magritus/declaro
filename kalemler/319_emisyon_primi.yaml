@@ -23,11 +23,78 @@ ana_kategori: yurtdisi_istisnalar
 wizard_agaci:
   tetikleyici_soru: "Bu dönem kendi hisselerini itibari değerin üzerinde (primli) ihraç ettin mi?"
   info_modal: |
-    KVK 5/1-ç kapsamında anonim şirketlerin kuruluş veya sermaye artırımı sırasında primli
-    pay ihracından elde ettikleri emisyon primi %100 istisnadır.
-    KRİTİK BEYANNAME TEKNİĞİ: Emisyon primi 520 hesabına gider — gelir tablosuna GİRMEZ.
-    Bu nedenle ÖNCE KKEG ilavesi (519 satırı), SONRA 319 istisnası birlikte uygulanmalıdır.
-    Bu istisna YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-ç kapsamındaki emisyon primi istisnası, anonim şirketlerin kuruluşta veya
+    sermaye artırımında **kendi paylarını itibari değerin üzerinde (primli)** ihraç etmesinden
+    doğan prim tutarının tamamını kurumlar vergisinden muaf tutar. İstisna oranı **%100** olup
+    herhangi bir fon hesabı (549) veya elde tutma şartı aranmaz.
+
+    Dikkat edilmesi gereken temel özellik, emisyon priminin muhasebede **gelir tablosuna
+    yansıtılmaması**, doğrudan 520 Hisse Senedi İhraç Primleri hesabına alınmasıdır. Bu nedenle
+    beyanname tekniğinde çift hamleli bir düzeltme işlemi gerekir: önce 519. satırda **KKEG
+    ilavesi**, ardından 319. satırda **istisna uygulaması**. Bu mekanizma anlaşılmadan yapılan
+    beyanlar hataya yol açabilir.
+
+    ## Temel Koşullar
+
+    **1. Kurum Türü:** İstisna yalnızca **anonim şirketlere** uygulanır. KVK 5/1-ç'de "anonim
+    şirketlerin" ifadesi açıkça yer almaktadır. Limited şirketlerin benzer işlemleri için bu
+    madde tartışmalıdır; özelge alınması önerilir.
+
+    **2. Kendi Paylarının Primli İhracı:** Şirketin **kendi paylarını** itibari değerin üzerinde
+    ihraç etmesi gerekmektedir. Başkasına ait hisselerin satışı — örneğin mevcut ortakların
+    hisselerini satması — 5/1-ç kapsamına girmez; bu durumda KVK 5/1-c veya 5/1-e istisnası
+    araştırılmalıdır.
+
+    **3. Kuruluş veya Sermaye Artırımı Kapsamı:** Pay ihracının kuruluş sırasında ya da sermaye
+    artırımı kararı çerçevesinde gerçekleşmesi zorunludur. Mevcut hisselerin devri bu şartı
+    karşılamaz.
+
+    **4. İtibari Değerin Üzerinde İhraç:** Satış bedelinin itibari değeri aşması ve aradaki farkın
+    (prim tutarının) TTK Madde 519/2 uyarınca **kanuni yedek akçe** olarak 520 hesabına aktarılması
+    gerekmektedir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    **Beyanname Tekniği Hatası:** Emisyon primi, muhasebede gelir tablosuna girmediğinden vergi
+    matrahına da zaten dahil değildir. Şayet kurum yanlışlıkla geliri hesaba almışsa (istisnai
+    muhasebe hataları), önce 519. satırdan KKEG ilavesi yapılarak matraha eklenmeli; ardından
+    319. satırdan istisna olarak düşülmelidir. Bu çift hamleli teknik göz ardı edilirse ya
+    istisna yersiz uygulanmış ya da matrah hatalı hesaplanmış olur.
+
+    **SPE / Özel Amaçlı Yapılar:** Yalnızca vergi avantajı sağlamak amacıyla oluşturulan primli
+    pay ihraçlarında, işlemin gerçek ticari amacı vergi incelemesinde sorgulanabilir.
+
+    **TTK 519 Yükümlülüğü:** Prim tutarı **kanuni yedek akçe** olarak ayrılmak zorundadır.
+    TTK 519 hükmüne aykırılık, hem şirket yönetimi açısından idari yaptırım hem de vergi idaresi
+    açısından istisna koşullarını karşılamama riski doğurabilir.
+
+    **Sermaye Azaltımında Geri Ödeme:** Emisyon priminin daha sonra ortaklara iade edilmesi
+    durumunda kâr dağıtımı hükümleri ve stopaj uygulaması söz konusu olabilir; GİB görüşleri
+    ve mevcut özelgeler takip edilmelidir.
+
+    ## YİAKV İlişkisi
+
+    Emisyon primi istisnası **YİAKV (KVK Madde 32/C) matrahından DÜŞÜLEBİLİR.** 319. satırdaki
+    istisna tutarı, YİAKV matrahı hesaplanırken KVK 32/C kapsamında indirim olarak dikkate
+    alınabilmektedir. Bu durum, özellikle yüksek tutarlı sermaye artırımı yapan kurumlarda YİAKV
+    yükümlülüğünü anlamlı ölçüde azaltabilir.
+
+    Bununla birlikte, emisyon priminin muhasebede zaten gelir tablosuna yansımaması nedeniyle
+    "istisna" olarak kabul edilip edilmeyeceği ve YİAKV matrahından düşülebilirliği konusunda
+    GİB'in güncel açıklamaları takip edilmelidir.
+
+    ## Pratik Notlar
+
+    - Esas sözleşme ve genel kurul kararının bir kopyası ile Ticaret Sicili tescil belgesi dosyaya eklenmelidir.
+    - 520 Hisse Senedi İhraç Primleri hesabının borç ve alacak hareketleri beyanname dönemine ait
+      dönem sonu bakiyesiyle mutabık olmalıdır.
+    - Primli pay ihracının değerleme raporu (SPK lisanslı değerleme) veya TTK 343 denetçi raporu
+      ile desteklenmesi önerilir.
+    - 519 (KKEG) + 319 (istisna) çift satır uygulaması yapılırken tutarların birebir eşit olduğu
+      teyit edilmelidir; fark olması durumunda matrah hatalı hesaplanır.
+    - 49 No.lu KV GT kapsamında YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: as_mi
       soru: "İstisna kullanan kurum ANONİM ŞİRKET mi?"

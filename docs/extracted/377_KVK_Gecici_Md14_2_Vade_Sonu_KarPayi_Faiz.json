@@ -1,0 +1,1471 @@
+{
+  "file": "377_KVK_Gecici_Md14_2_Vade_Sonu_KarPayi_Faiz.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:H63",
+      "rows": [
+        [
+          "377 – KVK GEÇİCİ MADDE 14/2 | VADE SONUNDA OLUŞAN KÂR PAYI VE FAİZ İSTİSNASI | PARAGRAF 2 — BORÇ/PASİF TARAFI | 376–377 MÜKERRERLİK ÖNLEMELİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/2 (Paragraf 2) | Borç Dönüşümü Sonrası TL Araç Vade Kâr Payı/Faiz | Beyanname 377 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "373 – 377 PARAGRAF KARŞILAŞTIRMASI:\n  373 (Md.14/1-b): Paragraf 1 AKTİF — TL KKM (mevduat/altın) vade sonu kâr payı/faiz tahsilatı.\n  377 (Md.14/2): Paragraf 2 PASİF — Borç dönüşümü sonrası TL araç vade kâr payı/faiz tahsilatı → BU DOSYA.\n  ★★ 376–377 MÜKERRERLİK: Yılı aşan vadeli araçlarda önceki yıl 376 tahakkuku ile bu yıl 377 vade tahsilatı çakışabilir.\n  KURAL: Net 377 = Vade Toplam − Önceki Yıl 376 Tahakkuku. (Aynı 372-373 kuralının Paragraf 2 karşılığı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 377 kapsamındaki vade sonu kâr payı/faiz istisnası YİAKV matrahından DÜŞÜLEMEZ. 370–377 tamamı E.7 DÜŞÜLEMEZ listesindedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  KVK Geçici Md.14/2 kapsamında borç dönüşümü (375) gerçekleştirildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "377, 375 (borç dönüşümü kur farkı) ve 376 (dönem sonu tahakkuk) ile bağlantılıdır. 375 olmadan 376/377 oluşamaz.",
+          null
+        ],
+        [
+          "A0.2  ★ Dönem içinde Paragraf 2 kapsamı TL aracı vadeye ulaştı mı? Kâr payı/faiz tahsil edildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "377 = Vade bitiminde fiilen tahsil edilen kâr payı/faiz. Araç hâlâ açıksa → 376 (tahakkuk).",
+          null
+        ],
+        [
+          "A0.3  ★ 376–377 MÜKERRERLİK kontrolü yapıldı mı? (C Sütun 6 dolduruldu mu?)",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Önceki yıl 376 olan araçlarda: Net 377 = Vade Toplam − Önceki 376. Aksi hâlde mükerrer istisna → Tarhiyat riski. 372-373 kuralının birebir Paragraf 2 karşılığı.",
+          null
+        ],
+        [
+          "A0.4  Vade sonu muhasebe kaydı doğru yapıldı mı? (102 Dr / 181 Kr + 642 Kr)",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Vade: 102 Dr / Kr 181 (önceki yıl 376 accrual kapatma) + Kr 642 (bu yılın yeni kısmı).",
+          null
+        ],
+        [
+          "A0.5  373 (Paragraf 1) ile 377 (Paragraf 2) mükerrerlik analizi yapıldı mı?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Paragraf 1 araçları (KKM) → 373. Paragraf 2 araçları (borç dönüşümü) → 377. Aynı araç için ikisi birden yazılamaz.",
+          null
+        ],
+        [
+          "A0.6  ★ 377 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "370–377 tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de sekiz satır da kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.3 (376-377 mükerrerlik) ve A0.6 (YİAKV) en kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/377-01",
+          null
+        ],
+        [
+          "375/376 Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Paragraf 2 zinciri — 375 (borç kur farkı) + 376 (dönem sonu tahakkuk)",
+          null
+        ],
+        [
+          "B. VADELİ PARAGRAF 2 ARACI BİLGİLERİ VE 376–377 MUTABAKAT AÇIKLAMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "376–377 MUTABAKAT KURALI (YILI AŞAN VADELİ PARAGRAF 2 ARAÇLARI):\n  Örnek: Paragraf 2 TL araç açılış: Mart 2024 | Vade: Eylül 2025 | Toplam faiz: 30.000 TL\n  Aralık 2024 sonu (376): 14.500 TL tahakkuk → 2024 KV beyannamesi 376 satırı.\n  Eylül 2025 vade (377): 30.000 − 14.500 = 15.500 TL net → 2025 KV beyannamesi 377 satırı.\n  KURAL: Net 377 = Vade Toplam − Önceki Yıl 376 Tahakkuku. (372-373 kuralının Paragraf 2 eşdeğeri)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  Paragraf 2 TL Araç Açılış Tarihi (375 borç dönüşümü tarihi)",
+          null,
+          null,
+          "375 dönüşüm tarihi ile örtüşmeli. Çapraz kontrol zorunlu.",
+          null,
+          null,
+          "375 çalışma kâğıdı",
+          null
+        ],
+        [
+          "B.2  Paragraf 2 TL Araç Vade Tarihi (Bu Dönemde Vadeye Giren)",
+          null,
+          null,
+          "Dönem içinde (01.01–31.12) vadeye ulaşan tarih.",
+          null,
+          null,
+          "Araç sözleşmesi",
+          null
+        ],
+        [
+          "B.3  TL Araç Türü",
+          null,
+          "TL Mevduat",
+          "Borç dönüşümü sonrası kurulan araç türü.",
+          null,
+          null,
+          "Sözleşme",
+          null
+        ],
+        [
+          "B.4  Vade Sonu Toplam Kâr Payı/Faiz (Banka/Araç Bildirimi)",
+          null,
+          null,
+          "Tüm araç süresi boyunca oluşan toplam. Banka/araç vade bildiriminden.",
+          null,
+          null,
+          "Vade bildirimi",
+          null
+        ],
+        [
+          "B.5  ★ Önceki Dönem(ler) 376 Tahakkuk Tutarı (Bu Araç İçin)",
+          null,
+          null,
+          "Bu araç için önceki KV dönemlerinde 376 kapsamında istisna uygulanan toplam. Yoksa 0.",
+          null,
+          null,
+          "Önceki dönem KV 376 satırı",
+          null
+        ],
+        [
+          "B.6  Net 377 Tutarı (B.4 − B.5)",
+          null,
+          null,
+          "C tablosunda otomatik hesaplanır. Burası referans.",
+          null,
+          null,
+          "Formül (C Sütun 7)",
+          null
+        ],
+        [
+          "B.7  ★ Paragraf 2 Dönüşümünün 31/12/2021 Bakiyesiyle Sınırlı Olduğu Teyit Edildi mi?",
+          null,
+          "EVET",
+          "375 kapsamı — borç bakiyesini aşan kısım kapsam dışı.",
+          null,
+          null,
+          "KVK Geç.Md.14/2",
+          null
+        ],
+        [
+          "C. VADEYEGİREN PARAGRAF 2 ARACI BAZINDA KÂR PAYI/FAİZ VE 376 MUTABAKAT TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SÜTUN 5 (lacivert): Vade sonu toplam tahsilat — ANA VERİ. SÜTUN 6 (turuncu): Önceki yıl 376 tutarı — mükerrerlik önleme (yoksa 0). SÜTUN 7 = Net 377 = Max(Col5−Col6, 0). SÜTUN 8 = İstisna (= Net 377).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Araç Adı/No",
+          "Açılış Tarihi",
+          "Vade Tarihi",
+          "Vade (Ay)",
+          "Vade Sonu Toplam (TL)",
+          "Önceki Yıl 376 (TL)",
+          "Net 377 (TL)",
+          "İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Vadeye Giren Paragraf 2 Araçları → Beyanname 377",
+          null,
+          null,
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "SÜTUN 5 (lacivert): Vade sonu banka/araç bildirimi toplam. SÜTUN 6 (turuncu): Önceki yıl 376 tutarı (yoksa 0). SÜTUN 7 = Net 377 = Sütun5 − Sütun6. SÜTUN 8 = İstisna = Sütun7.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. VADE SONU İSTİSNA ÖZET — BEYANNAME 377",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Vade Sonu Toplam Tahsilat",
+          null,
+          null,
+          "0",
+          "C Sütun 5 toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Önceki Yıl 376 Mahsubu (Mükerrerlik Önleme)",
+          null,
+          null,
+          "0",
+          "C Sütun 6 — bu tutar 377'ye YAZILMAZ",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  ★ NET 377 İSTİSNA TUTARI → BEYANNAME 377",
+          null,
+          null,
+          "0",
+          "→ Beyanname 377 | Kazancın Bulunması Halinde",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.4  Kapsam Dışı Vade Kâr Payı/Faiz",
+          null,
+          null,
+          null,
+          "Paragraf 2 dışı araçlar — vergilendirilir",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. 375–376–377 PARAGRAF 2 ZİNCİR MUTABAKAT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "375 (Borç Kur Farkı)",
+          "376 (Dönem Sonu)",
+          "377 (Vade)",
+          "Beyanname",
+          "Çapraz Kontrol",
+          "YİAKV"
+        ],
+        [
+          "Zaman",
+          null,
+          "Dönüşüm anı",
+          "31 Aralık",
+          "Vade tarihi",
+          "Üç ayrı satır",
+          "375+376+377 ayrı",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "646/679",
+          "181/642",
+          "102/(181+642)",
+          "Hepsi ticari kârda",
+          "Ayrı hesaplar",
+          "E.7"
+        ],
+        [
+          "376-377 İlişki",
+          null,
+          "—",
+          "Dönem sonu accrual",
+          "Vade − 376 net",
+          "376 + 377 = Toplam",
+          "Eşitlik kontrolü",
+          "Her ikisi de"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 377 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — Net 377 (Toplam − Önceki 376) | KVK Geçici Md.14/2",
+          null,
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 370–377 tamamı asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) 376–377 MÜKERRERLİK: C Sütun 6'ya önceki yıl 376 tutarı girilmeli. Net 377 = Toplam − 376. Aksi mükerrer istisna — tarhiyat riski.\n(3) ÇAPRAZ KONTROL: 376 (tahakkuk) + 377 (vade net) = Toplam araç kâr payı/faizi.\n(4) 373 İLE KARIŞTIRMA: Paragraf 1 araçları → 373. Paragraf 2 araçları → 377. Ayrı satırlar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H36",
+      "rows": [
+        [
+          "377 – KVK GEÇİCİ MD.14/2 VADE SONU KÂR PAYI/FAİZ | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 2 Vade Tahsilatı | 376–377 Mükerrerlik Önleme | Beyanname 377 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "375/376 Bağlantısı (A0.1)",
+          null,
+          null,
+          null,
+          "EVET",
+          "EVET — Paragraf 2 zinciri mevcut",
+          null,
+          null
+        ],
+        [
+          "Toplam Vade Tahsilat (D.1)",
+          null,
+          null,
+          null,
+          "0",
+          "Araç/banka bildirimi",
+          null,
+          null
+        ],
+        [
+          "376 Mahsubu (D.2)",
+          null,
+          null,
+          null,
+          "0",
+          "Mükerrerlik önleme",
+          null,
+          null
+        ],
+        [
+          "377 NET İSTİSNA (D.3)",
+          null,
+          null,
+          null,
+          "0",
+          "E7 − E8 = E9 eşitlik kontrolü",
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          "370–377 tamamı E.7",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. KVK GEÇİCİ MD.14 — 370'DEN 377'YE TAM KOD TABLOSU (SEKİZ KOD)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Paragraf",
+          "Bilanço",
+          "Kapsam",
+          "Muhasebe",
+          "Zaman",
+          "Beyanname",
+          "YİAKV"
+        ],
+        [
+          "370",
+          "1-a",
+          "Aktif",
+          "Kur farkı değerleme",
+          "646/679",
+          "Dönüşüm anı",
+          "370",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "371",
+          "1-b",
+          "Aktif",
+          "Kur farkı tazminat",
+          "102/648",
+          "Ödeme dönemleri",
+          "371",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "372",
+          "1-b",
+          "Aktif",
+          "Dönem sonu tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "372",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "373",
+          "1-b",
+          "Aktif",
+          "Vade kâr payı/faiz",
+          "102/(181+642)",
+          "Vade tarihi",
+          "373",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "374",
+          "1-b",
+          "Aktif",
+          "Vade diğer kazançlar",
+          "646/648/679",
+          "Vade tarihi",
+          "374",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "375",
+          "2",
+          "Pasif",
+          "Borç kur farkı",
+          "646/679",
+          "Dönüşüm anı",
+          "375",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "376",
+          "2",
+          "Pasif",
+          "Dönem sonu tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "376",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "377",
+          "2",
+          "Pasif",
+          "Vade kâr payı/faiz",
+          "102/(181+642)",
+          "Vade tarihi",
+          "377",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ 375 kapsamı borç dönüşümü ve 376 bağlantısı var mı?",
+          null,
+          "377, Paragraf 2 zincirinin son halkasıdır. 375 + 376 olmadan 377 oluşamaz.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K2",
+          "★ Vade tarihi dönem içinde (01.01–31.12) mi?",
+          null,
+          "Sonraki dönemde vadeye girenler → Gelecek yıl 377.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K3",
+          "★ 376–377 MÜKERRERLİK kontrolü (C Sütun 6) yapıldı mı?",
+          null,
+          "Önceki yıl 376 mahsup edildi. Net 377 doğru hesaplandı. EN KRİTİK.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K4",
+          "Vade tahsilat tutarları araç/banka bildirimiyle mutabık mı?",
+          null,
+          "Her araç satırı belgeyle doğrulanmalı.",
+          null,
+          null,
+          "Eksik",
+          null
+        ],
+        [
+          "K5",
+          "ÇAPRAZ KONTROL: 376 + 377 = Toplam kâr payı/faiz mi?",
+          null,
+          "İki kodun toplamı araç/banka toplam bildirimine eşit olmalı.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K6",
+          "Vade sonu muhasebe kaydı doğru? (102 / 181 Kr + 642 Kr)",
+          null,
+          "181 kapatma (önceki yıl 376 accrual) + 642 yeni kısım.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K7",
+          "375/376 çalışma kâğıtlarıyla çapraz mutabakat tamam mı?",
+          null,
+          "Paragraf 2 zinciri tutarlı — araç bilgileri örtüşüyor.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K8",
+          "373 (Paragraf 1) ile 377 (Paragraf 2) doğru ayrıştırıldı mı?",
+          null,
+          "KKM araçları → 373. Borç dönüşümü araçları → 377. Ayrı satırlar.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K9",
+          "★★ 377 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370–377 tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de sekiz satır.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K10",
+          "Beyanname 377 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K11",
+          "Dönem içinde birden fazla araç vadeye girdi mi? Hepsi ayrı satırda mı?",
+          null,
+          "Her vadeye giren araç C tablosunda ayrı satır ve ayrı 376 mahsubu.",
+          null,
+          null,
+          "Eksik",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          null,
+          "Uygun",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:H24",
+      "rows": [
+        [
+          "377 – KVK GEÇİCİ MD.14/2 VADE SONU KÂR PAYI/FAİZ | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Vade Tahsilatı | 376 Accrual Kapatma | 375–376–377 Paragraf 2 Tam Muhasebe Tablosu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — VADE SONU (AYNI YILDA AÇILIP KAPANAN PARAGRAF 2 ARACI — ÖNCEKİ YIL 376 YOK)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Senaryo: Paragraf 2 araç aynı dönemde açılıp vadeye giriyor. Önceki yıl 376 yok.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Vade Tarihi]",
+          "102 Bankalar/Kasa",
+          "Vade sonu toplam kâr payı/faiz — tamamı bu dönem → Beyanname 377",
+          "[Tutar]",
+          "—",
+          null,
+          "Araç/banka bildirimi"
+        ],
+        [
+          "Kr",
+          "[Vade Tarihi]",
+          "642 Faiz Gelirleri / 644 Kâr Payları",
+          "Vade kâr payı/faiz — KVK Geçici Md.14/2 → Beyanname 377 (tamamı)",
+          "—",
+          "[Tutar]",
+          null,
+          "KV 377"
+        ],
+        [
+          "KAYIT 2 — VADE SONU (YILI AŞAN VADELİ PARAGRAF 2 ARACI — ÖNCEKİ YIL 376 VAR)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Senaryo: Mart 2024 açılış, Eylül 2025 vade. 2024 yılı sonunda 376 (181/642) tahakkuku yapılmıştı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Vade 2025]",
+          "102 Bankalar",
+          "Vade sonu toplam kâr payı/faiz tahsilatı (2024 + 2025 toplam)",
+          "[Toplam]",
+          "—",
+          null,
+          "Araç/banka bildirimi"
+        ],
+        [
+          "Kr",
+          "[Vade 2025]",
+          "181 Gelir Tahakkukları",
+          "Önceki yıl 376 tahakkukunun kapatılması",
+          "—",
+          "[2024 x 376]",
+          null,
+          "181 kapatma"
+        ],
+        [
+          "Kr",
+          "[Vade 2025]",
+          "642 Faiz Gelirleri",
+          "Bu yılın yeni kısmı → Beyanname 377",
+          "—",
+          "[Net 377]",
+          null,
+          "KV 377"
+        ],
+        [
+          "2025 Beyannamesi 377 = 642'ye yazılan tutar. ÇAPRAZ: 376 (2024) + 377 (2025 net) = Toplam araç kâr payı/faizi.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — 375–376–377 PARAGRAF 2 TAM MUHASEBE + 370–374 PARAGRAF 1 YAN YANA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "370",
+          "[Dönüşüm]",
+          "646/679",
+          "P1 AKT: Döviz/altın KKM kur farkı → 370",
+          "—",
+          "[370]",
+          null,
+          "KV 370"
+        ],
+        [
+          "372",
+          "[31.12]",
+          "181/642",
+          "P1 AKT: Dönem sonu faiz/kâr payı tahakkuku → 372",
+          "—",
+          "[372]",
+          null,
+          "KV 372"
+        ],
+        [
+          "373",
+          "[Vade]",
+          "102/(181+642)",
+          "P1 AKT: Vade sonu faiz/kâr payı tahsilatı → 373",
+          "—",
+          "[373]",
+          null,
+          "KV 373"
+        ],
+        [
+          "375",
+          "[Dönüşüm]",
+          "646/679",
+          "P2 PAS: Borç dönüşümü kur farkı → 375",
+          "—",
+          "[375]",
+          null,
+          "KV 375"
+        ],
+        [
+          "376",
+          "[31.12]",
+          "181/642",
+          "P2 PAS: Dönem sonu faiz/kâr payı tahakkuku → 376",
+          "—",
+          "[376]",
+          null,
+          "KV 376"
+        ],
+        [
+          "377",
+          "[Vade]",
+          "102/(181+642)",
+          "P2 PAS: Vade sonu faiz/kâr payı tahsilatı → 377 (BU)",
+          "—",
+          "[377]",
+          null,
+          "KV 377"
+        ],
+        [
+          "YİAKV: 370–377 SEKİZ KODUN TAMAMININ geliri matrahta kalır (E.7 DÜŞÜLEMEZ). 372+373 (P1) ve 376+377 (P2) çapraz kontrol: Her çiftin toplamı ilgili araç toplam kâr payı/faizine eşit olmalı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:H9",
+      "rows": [
+        [
+          "377 – KVK GEÇİCİ MD.14/2 VADE SONU KÂR PAYI/FAİZ | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | 373 Karşılaştırması | 376-377 Mükerrerlik | ★★ YİAKV",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/2 — 377 Vade Sonu Mekanizması ve 373 ile Karşılaştırması",
+          "377 (PARAGRAF 2 — VADE SONU KÂR PAYI VE FAİZ) TANIMI:\n\nKVK Geçici Madde 14/2 kapsamında yabancı para borçlarını TL'ye dönüştüren kurumların,\ndönüşüm sonrası sahip oldukları TL araçları vadeye ulaştığında bankadan/araçtan fiilen\ntahsil ettikleri kâr payı ve faiz geliri, KVK Geçici Madde 14/2 kapsamında istisnadır.\n\n373 ile TEMEL FARK:\n• 373 (Paragraf 1): Aktif taraf — TL KKM (mevduat/altın dönüşümü) vade tahsilatı\n• 377 (Paragraf 2): Pasif taraf — Borç dönüşümü sonrası TL araç vade tahsilatı\n\n376 İLE ZAMAN FARKI:\n• 376: Araç hâlâ açık, 31 Aralık'ta accrual → tahakkuk esaslı\n• 377: Araç vadeye ulaştı, kâr payı/faiz tahsil edildi → nakit/vade esaslı\n\nBEYANNAME: 377 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/2 | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ 376–377 MÜKERRERLİK KURALI — Paragraf 2'nin Kritik Hesap Dengesi",
+          "376–377 MÜKERRERLİK SENARYOsu (372-373 kuralının Paragraf 2 eşdeğeri):\n\nParagraf 2 TL Araç: Mart 2024 → Vade Eylül 2025 | Toplam kâr payı: 30.000 TL\n\n2024 KV dönemi (31.12.2024):\n→ Tahakkuk: 14.500 TL | Muhasebe: Dr 181 / Kr 642\n→ 2024 beyannamesi 376 satırı: 14.500 TL ✓\n\n2025 KV dönemi (Eylül 2025 vade):\n→ Tahsilat: 30.000 TL\n→ Muhasebe: Dr 102 / Kr 181 (14.500 kapatma) + Kr 642 (15.500 yeni)\n→ 2025 beyannamesi 377 satırı: 15.500 TL (NET) ✓\n\nÇAPRAZ KONTROL: 376 (14.500) + 377 (15.500) = 30.000 TL (araç toplam kâr payı) ✓\n\nHATA: 377'ye 30.000 TL yazılırsa → 14.500 TL mükerrer istisna → Tarhiyat.",
+          "KVK Geçici Md.14/2 | 376 Çalışma Kâğıdı",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370–377 Sekiz Kodun Tamamı DÜŞÜLEMEZ",
+          "YİAKV (KVK Md.32/C) MATRAHINDA SEKIZ KODUN TAMAMININ DÜŞÜLEMEZLİĞİ:\n\nParagraf 1: 370 | 371 | 372 | 373 | 374 → Beşi de DÜŞÜLEMEZ\nParagraf 2: 375 | 376 | 377 → Üçü de DÜŞÜLEMEZ\n\nYİAKV çalışma kâğıdı E.7 (Güncellenmeli — 377 eklenmeli):\n'KKM Aktif+Pasif Kur Farkı + Faiz/Kâr Payı + Vade Kazançları (Tüm Paragraflar)\n(KVK Geçici Md.14) → DÜŞÜLEMEZ ✗ | Beyanname 370–377'\n\nYMM, YİAKV çalışma kâğıdında E.7 satırını 377'yi de kapsayacak şekilde güncellemeli.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Paragraf 1 (373) ile Paragraf 2 (377) Birlikte Uygulandığında",
+          "BİR KURUMUN HEM PARAGRAF 1 HEM PARAGRAF 2 DÖNÜŞÜMÜ YAPMIŞ OLMASI:\n\nBu durumda kurumun aynı KV döneminde hem 373 hem 377 tutarı oluşabilir:\n• Paragraf 1 (mevduat/altın → TL KKM) vadeye geldi → 373\n• Paragraf 2 (borç → TL araç) vadeye geldi → 377\n\nBu MÜKERRERLİK DEĞİLDİR — iki ayrı enstrüman, iki ayrı paragraf, iki ayrı beyanname satırı.\n\nMÜKERRER OLMAYAN DURUM:\nParagraf 1 araçları → 373 | Paragraf 2 araçları → 377 | Her ikisi aynı dönemde\n\nMÜKERRER OLAN DURUM (HATA):\nAynı TL araç hem 373 hem 377 kapsamında raporlanırsa → Mükerrerlik.",
+          "KVK Geçici Md.14/1-b (373) | KVK Geçici Md.14/2 (377)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN (Önceki Yıl 376 Olan Araç İçin):\n'...KVK Geçici Madde 14/2 kapsamında yabancı para borçlarının TL'ye dönüştürülmesi\nsonucunda kurulan [Araç Türü] hesabı [Vade Tarihi] tarihinde vadeye ulaşmış; vade\nsüresince oluşan toplam [Brüt Tutar] TL kâr payı/faizin önceki dönemde 376 istisnasına\nkonu edilen [376 Tutarı] TL düşülerek kalan [Net 377] TL, KVK Geçici Madde 14/2\nkapsamında kurumlar vergisinden istisna edilmiş ve yurt içi asgari kurumlar vergisi\nmatrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...377 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...Toplam vade kâr payının tamamı 377'ye yazılmıştır.' (376 mahsubu yapılmamış)\n'...Paragraf 1 araçları 377 kapsamındadır.' (Yanlış paragraf)\n\nKRİTİK RİSKLER:\n(1) 376 mahsubu yapılmadan 377'ye toplam yazmak — MÜKERRERLİK.\n(2) 377'yi YİAKV matrahından düşmek.\n(3) Paragraf 1 ve 2 araçlarını karıştırmak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14/2 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (377): 377 = 373'ün Paragraf 2 karşılığı. 376+377 birlikte Paragraf 2 faiz/kâr payı paketini oluşturur. 376-377 mükerrerlik (Sütun 6 mahsubu) kritik. 370–377 sekiz kodun tamamı YİAKV matrahından DÜŞÜLEMEZ. YMM müteselsil: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F31",
+      "rows": [
+        [
+          "377 – KVK GEÇİCİ MD.14/2 VADE SONU KÂR PAYI/FAİZ | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | Araç Vade Bildirimi | 376 Mükerrerlik | 375/376 Çapraz",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Araç/Banka Vade Bildirimi — Toplam Kâr Payı/Faiz",
+          "Vade sonunda araçtan/bankadan alınan resmi bildiri: Vade tarihi ve toplam kâr payı/faiz.\nC tablosu Sütun 5'in dayanağıdır. Her araç için ayrı belge.",
+          "Banka/araç şubesi veya internet bankacılığı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Önceki Dönem KV Beyannamesi 376 Satırı (Bu Araç İçin)",
+          "Önceki yılda bu araç için 376 kapsamında istisna uygulanan tutar.\nC tablosu Sütun 6 (mükerrerlik önleme) için zorunlu kaynak. YMM: 376 + 377 = Toplam kâr payı/faiz eşitliği kontrol edilmeli.",
+          "Önceki dönem KV beyannamesi 376 satırı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ 375/376 Çalışma Kâğıtları — Paragraf 2 Zinciri Çapraz Mutabakat",
+          "375 (borç kur farkı) + 376 (dönem sonu tahakkuk) + 377 (vade) üçü birlikte Paragraf 2 paketini oluşturur.\nAraç bilgileri üç dosyada tutarlı olmalı.",
+          "375 ve 376 çalışma kâğıtları",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Muhasebe Yevmiyesi — Vade Tahsilat Kaydı (102 Dr / 181 Kr + 642 Kr)",
+          "Vade muhasebe kaydı: 102 borç / 181 alacak (önceki yıl 376 kapatma) + 642 alacak (yeni kısım).\nC Sütun 7 (net 377) ile 642'ye yazılan tutar uyumlu.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 377. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış.",
+          "GİB e-Beyanname",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "181 Hesap Ekstresi — 376 Accrual Kapatma",
+          "181 kapatılan tutar = Sütun 6 tutarı — mükerrerlik kontrol belgesi.",
+          "181 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "TL Araç Sözleşmesi",
+          "Faiz/kâr payı oranı ve vade koşulları — hesap doğrulama için.",
+          "Araç sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Araç Yenileme Belgesi (Rollover Varsa)",
+          "Yenileme sözleşmesi — yeni araç kapsam analizi.",
+          "Araç yenileme belgesi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ 375/376 Paragraf 2 zinciri mevcut mu?",
+          "377 bağlantısı zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Vade tarihi dönem içinde (01.01–31.12) mi?",
+          "Sonraki dönemde vadeye girenler → Gelecek yıl 377.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 376–377 MÜKERRERLİK (C Sütun 6) kontrolü yapıldı mı?",
+          "Önceki yıl 376 mahsup edildi. Net 377 doğru.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Vade tahsilat tutarları araç/banka bildirimiyle mutabık mı?",
+          "Her satır belgeyle doğrulanmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "376 + 377 = Toplam kâr payı/faiz eşitliği sağlandı mı?",
+          "Çapraz kontrol — araç toplam bildirimine eşit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Vade muhasebe kaydı doğru? (102 / 181 Kr + 642 Kr)",
+          "181 kapatma + 642 yeni kısım.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "373 (Paragraf 1) ile 377 (Paragraf 2) doğru ayrıştırıldı mı?",
+          "KKM araçları → 373. Borç dönüşümü araçları → 377.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★★ 377 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370–377 tamamı YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 377 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 377 = 373'ün Paragraf 2 karşılığı. 375+376+377 birlikte Paragraf 2 paketini tamamlar. 376-377 mükerrerlik (Sütun 6 mahsubu) kritik. 370–377 sekiz kodun tamamı YİAKV E.7'de DÜŞÜLEMEZ. YMM müteselsil: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

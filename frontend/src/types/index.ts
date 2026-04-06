@@ -10,7 +10,7 @@ export interface Donem {
   id: number
   mukellef_id: number
   yil: number
-  ceyrek: 'Q1-GV' | 'Q2-GV' | 'Q3-GV' | 'YILLIK'
+  ceyrek: 'Q1-GV' | 'Q2-GV' | 'Q3-GV' | 'Q4-GV' | 'YILLIK'
   created_at: string
 }
 

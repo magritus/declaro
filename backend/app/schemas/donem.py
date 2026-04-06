@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import Literal
 from pydantic import BaseModel
 
-CeyrekTip = Literal["Q1-GV", "Q2-GV", "Q3-GV", "YILLIK"]
+CeyrekTip = Literal["Q1-GV", "Q2-GV", "Q3-GV", "Q4-GV", "YILLIK"]
 
 
 class DonemCreate(BaseModel):

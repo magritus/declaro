@@ -105,6 +105,13 @@ export default function IstekListesi() {
       >
         Çalışma Kâğıtlarını Aç →
       </button>
+      <a
+        href={`/api/calisma/${calismaId}/istek-listesi/excel`}
+        download
+        className="mt-3 w-full flex items-center justify-center gap-2 bg-surface-raised border border-border-default text-secondary py-2 px-4 rounded-md hover:border-accent hover:text-accent font-medium transition-colors"
+      >
+        ↓ İstek Listesi Excel İndir
+      </a>
       <button
         onClick={() => navigate(`/calisma/${calismaId}/ozet`)}
         className="mt-3 w-full bg-surface-raised border border-accent text-accent py-2 px-4 rounded-md hover:bg-surface-overlay font-medium"

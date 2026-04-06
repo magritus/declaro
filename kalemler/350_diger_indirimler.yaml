@@ -26,18 +26,71 @@ ana_kategori: diger_istisnalar
 wizard_agaci:
   tetikleyici_soru: "302–349 arasındaki özel satırlara girmeyen bir istisna veya indirim kalemin var mı?"
   info_modal: |
-    Beyanname 350. satırı, KV beyannamesindeki 302–349 arasındaki özel satırlara
-    dahil edilemeyen tüm istisna ve indirimlerin toplamını içerir.
-    **Her kalem için AYRI yasal dayanak ve AYRI belge paketi zorunludur.**
-    Toplu tutar yazımı GİB tarafından kabul edilmez — tarhiyat riski taşır.
+    ## Genel Çerçeve
 
-    Sık kullanılan 350 kalemleri:
-    - Serbest Bölge Kazancı İstisnası (3218 s.K.)
-    - Teknokent Girişimci/Yazılım Kazancı (4691 s.K.)
-    - Ar-Ge ve Tasarım İndirimi (5746 s.K.)
-    - Girişim Sermayesi Fonu İndirimi (KVK Md.10/1-g)
-    - Bağış ve Sponsorluk İndirimleri (KVK Md.10/1-b,c,d)
-    - Diğer Özel Kanun İstisnaları
+    KV beyannamesinin **350. satırı**, beyannamenin 302–349 numaralı özel satırlarına dahil
+    edilemeyen tüm istisna ve indirimlerin toplandığı **kümülatif bir toplamlama satırıdır.**
+    Her kalem kendi kanun maddesi, tebliğ veya özelge referansına dayanmak zorundadır. Matrah
+    sıralamasında KVK Madde 5 kapsamındaki istisnaların (302–349 ve bu satır), KVK Madde 10
+    kapsamındaki indirimlerden önce uygulanması gerektiği unutulmamalıdır.
+
+    ## Temel Koşullar
+
+    - **Özel satır önceliği:** 302–349 arasında ilgili kalem için özel bir satır bulunuyorsa 350
+      kullanılamaz; doğrudan o satır kullanılmalıdır (Örn: TGB Yönetici Şirketi → 311, TUGS
+      Gemi → 315, Ürün Senedi → 349).
+    - **Her kalem için ayrı yasal dayanak:** Toplu tutar girişi GİB tarafından kabul edilmez;
+      her bir istisna veya indirim kendi kanun/tebliğ referansıyla belgelenmelidir.
+    - **Her kalem için ayrı belge paketi:** Serbest bölge faaliyet belgesi, TGB kiracılık belgesi,
+      Ar-Ge merkezi onay belgesi, bağış/sponsorluk makbuzu gibi belgeler kalem bazında ayrı
+      tutulmalıdır.
+    - **Beyanname bölümü doğruluğu:** Bazı kalemler "Zarar Olsa Dahi" bölümünde uygulanırken
+      (örn: 5746 s.K. Ar-Ge indirimi), diğer kalemlerin büyük çoğunluğu "Kazancın Bulunması
+      Halinde" bölümüne aittir; bu ayrım her kalem için teyit edilmelidir.
+    - **YMM tasdik eşiği:** 49 No.lu Tebliğ kapsamında tek satırda ≥500.000 TL veya toplamda
+      ≥1.000.000 TL olması halinde YMM tasdik raporu zorunludur; 350 seti içindeki en riskli
+      satırdır çünkü çok sayıda kalem kümülatif olarak bu eşiği aşabilir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Toplu tutar en büyük risktir:** GİB incelemesinde her kalem tek tek açıklatılabilir;
+      belgelenmemiş kalem cezalı tarhiyata yol açar.
+    - **Matrah sıralama hatası:** KVK 5 istisnaları uygulandıktan sonra kalan matrahtan KVK 10
+      indirimleri yapılmalıdır; sıralama hatası dönem matrahını etkileyebilir.
+    - **Ar-Ge indirimi devir takibi:** 5746 s.K. kapsamındaki Ar-Ge ve Tasarım indirimi zarar
+      döneminde de uygulanır ve geriye kalan tutar sonraki dönemlere devredebilir; devredenler
+      her dönem ayrıca izlenmelidir.
+    - **Serbest bölge güncelliği:** 3218 s.K. Geçici Md.3 kapsamındaki üretim lisansı ve AB
+      üyelik tarihi koşulları dönemsel değişime açıktır; güncel mevzuat kontrolü zorunludur.
+    - **Bağış/sponsorluk sınır aşımı:** KVK Md.10 kapsamındaki bağış ve sponsorluk giderlerinde
+      kazancın %5 veya %10 şeklinde belirlenen sınırlar aşılırsa fazla kısım KKEG sayılır.
+
+    ## YİAKV İlişkisi
+
+    **350. satırdaki kalemlerin YİAKV (KVK 32/C) matrahına etkisi kalem bazında farklılık
+    gösterir** ve her kalem için ayrı analiz zorunludur. Yurt dışı kaynaklı kalemler YİAKV
+    matrahını etkilemeyebilirken yurt içi kaynaklı kalemler etkileyebilir; bu nedenle 350
+    kapsamındaki her kaleme ait YİAKV etkisi ayrıca değerlendirilmelidir.
+
+    ## Pratik Notlar
+
+    - Muhasebe departmanı ile vergi departmanının 350. satırı doldurmadan önce **kalem bazlı
+      kontrol tablosu** oluşturması tavsiye edilir; tabloda her kalemin adı, yasal dayanağı,
+      tutarı, beyanname bölümü (KB Halinde / Zarar Olsa Dahi) ve belge durumu yer almalıdır.
+    - **Serbest bölge kazancı (3218 s.K.):** Üretim lisansı tarihi ve AB üyelik ilişkisi
+      güncelliği her dönem kontrol edilmeli; üretim/hizmet ayrımı ve yurt içi/yurt dışı satış
+      oranı hesabı belgelenmelidir.
+    - **Teknokent girişimci kazancı (4691 s.K.):** TGB içi faaliyet belgesi ve TGB içi / TGB
+      dışı kazanç ayrımı tablosu zorunludur; yönetici şirketler için 311 satırı kullanılır, 350
+      değil.
+    - **Ar-Ge indirimi (5746 s.K.):** Bakanlık onaylı Ar-Ge/Tasarım Merkezi belgesi ve nitelikli
+      harcama listesi her dönem güncel tutulmalıdır; hangi harcamaların "nitelikli" olduğu
+      değerlendirmesi dikkatli yapılmalıdır.
+    - **Girişim sermayesi fonu (KVK Md.10/1-g):** Kazancın %10'u (veya 2025+ için %20) ile
+      sınırlı indirim; fon hesabının bağımsız olarak izlenmesi ve 549 hesabının yanlışlıkla
+      kullanılmaması gerekir.
+    - Tartışmalı kalemler için **GİB özelgesi alınması** hem tarhiyat riskini azaltır hem de
+      YMM müteselsil sorumluluğu açısından koruma sağlar.
   kapi_sorulari:
     - id: ozel_satir_kontrolu
       soru: "Beyan etmek istediğin istisna/indirim için 302–349 arasında özel bir satır olmadığı teyit edildi mi?"

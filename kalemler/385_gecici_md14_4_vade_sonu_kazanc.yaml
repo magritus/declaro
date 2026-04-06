@@ -22,23 +22,61 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "KVK Geçici Md.14/4 (Paragraf 4) kapsamında vade sonu kazancı oluştu mu ve bu kazanç 383 (dönem sonu tahakkuk) ile 384 (kâr payı/faiz) kapsamına girmiyor mu?"
   info_modal: |
-    KVK Geçici Madde 14/4 (Paragraf 4) kapsamındaki araçların vade sonunda oluşan,
-    **383 ve 384 kapsamına girmeyen** diğer kazançlar kurumlar vergisinden istisnadır
-    (Beyanname 385).
+    ## Genel Çerçeve
 
-    385, Paragraf 4 paketinin son kodudur (383-384-385 tam paket).
-    Paralel zincir: P1(372-373-374) | P2(376-377-378) | P3(380-381-382) | P4(383-384-385)
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    385, Paragraf 4 paketinin (383–385) son kodudur. Dört Paragrafın her birinde paralel
+    bir "diğer kazançlar" kodu mevcuttur: 374 (P1), 378 (P2), 382 (P3) ve 385 (P4). Bu
+    kodların tamamı benzer mantıkla işler: ilgili Paragraf'ın faiz/kâr payı kodları dışında
+    kalan vade sonu kazançları istisna kapsamına alınır.
 
-    **Başlıca 385 kalemleri:**
-    - Değer artışı kazancı (nominal değer üzerinde oluşan kazanç)
-    - Sermaye kazancı (kâr payı/faiz niteliği taşımayan)
-    - Prim / teşvik ödemesi (384'teki kâr payı/faiz niteliği taşımayan kısım)
-    - Enflasyon farkı kazancı
-    - Diğer: 383/384 kapsamına girmeyen her türlü P4 vade sonu kazancı
+    ## Bu Satırın Kapsamı
 
-    **GİB özelgesi:** Paragraf 4 vade kazancı yeni ve tartışmalı olabilir.
+    Beyanname **385**, Paragraf 4 kapsamındaki araçlardan vade sonunda elde edilen kazançların
+    383 (dönem sonu tahakkuk) ve 384 (kâr payı/faiz) dışında kalan kısmını kapsar. Başlıca
+    385 kalemleri: nominal değer üzerinde oluşan değer artış kazancı, faiz niteliği taşımayan
+    sermaye kazancı, 384'teki kâr payı/faiz sınıfına girmeyen prim veya teşvik ödemesi ve
+    enflasyon farkı kazancı. 385'in diğer "diğer" kodlarından (374, 378, 382) tek farkı
+    Paragraf 4 araçlarına uygulanmasıdır. Tüm dört paralel zincirim karşılaştırması:
+    P1: 372-373-374 | P2: 376-377-378 | P3: 380-381-382 | P4: 383-384-385.
 
-    **YİAKV uyarısı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (YİAKV E.7 listesi).
+    ## Temel Koşullar
+
+    - Araç Paragraf 4 kapsamında olmalı ve kazanç türü 383/384 kapsamına girmemelidir
+    - Vade tarihi dönem içinde (01.01–31.12) gerçekleşmiş olmalıdır
+    - 374 (Paragraf 1), 378 (Paragraf 2) ve 382 (Paragraf 3) ile paragraf ayrımı yapılmış
+      olmalıdır
+    - Her 385 kalemi için ayrı belge ve GİB'e açıklanabilir yasal dayanak zorunludur
+
+    ## Önemli Uyarılar
+
+    - **383/384 ile mükerrerlik:** 385 tutarının 383 ve 384'teki tutarlarla çakışmadığı
+      belgelenmelidir; aynı gelir birden fazla koda yazılmamalıdır
+    - **Özelge önceliği:** Paragraf 4 vade sonu "diğer" kazançları en tartışmalı alandır.
+      Değer artışı kazancının nasıl hesaplanacağı veya prim/bonus nitelendirmesi belirsizse
+      GİB özelgesi alınması tavsiye edilir
+    - **374/378/382 ile paragraf ayrımı:** Her araç yalnızca kendi Paragraf'ının "diğer"
+      koduna yazılır. Karıştırılırsa yanlış yasal dayanağa dayanan istisna oluşur
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca ≥ 500.000 TL ise YMM raporu
+      zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    KVK Geçici Madde 14 kapsamındaki tüm kodlar YİAKV matrahından düşülemez. Paragraf 4
+    paketi (383-384-385) tamamlandığında YİAKV E.7'de üç satır da listelenmiş olmalıdır.
+
+    ## Pratik Notlar
+
+    - **Paragraf 4 paketi tamamlandı:** 383 (dönem sonu tahakkuk) + 384 (kâr payı/faiz) +
+      385 (diğer vade kazancı). 385 bu paketin kapanış kodudur; Paragraf 4 tüm halkaları
+      tamamlanmıştır
+    - **Muhasebe kodu:** 385 kapsamındaki kazançlar 646 Kambiyo Kârları, 648 Diğer Olağan
+      Gelirler veya 679 Diğer Olağandışı Kâr hesabına alınır; 642 Faiz Gelirleri hesabıyla
+      karıştırılmamalıdır
+    - **Genel değerlendirme:** 374 (P1), 378 (P2), 382 (P3) ve 385 (P4) dört kod aynı
+      mantıkla işler. Herhangi birinde yerleşik uygulama oluşmuşsa diğerleri için de benzer
+      yorum geçerlidir; ancak her Paragraf'ın farklı araç tabanı nedeniyle ayrı analiz yapılmalıdır
   kapi_sorulari:
     - id: paragraf4_kapsam
       soru: "KVK Geçici Md.14/4 kapsamında işlem gerçekleştirildi mi?"

@@ -23,18 +23,61 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "370 kapsamındaki KKM hesabınız vadeye ulaştığında faiz/kâr payı DIŞINDA başka kazanç elde ettiniz mi? (Altın KKM getirisi, prim/bonus, endeksli getiri vb.)"
   info_modal: |
-    KVK Geçici Madde 14/1-b kapsamında: KKM hesaplarından vade sonu elde edilen kazançların
-    371 (kur farkı tazminat) + 372 (dönem sonu tahakkuk) + 373 (faiz/kâr payı) **dışında kalan**
-    kısmı kurumlar vergisinden **istisna** edilmiştir.
+    ## Genel Çerçeve
 
-    **374 Kapsamındaki Başlıca Kalemler:**
-    - Altın KKM vade kazancı: Altın hesabının TL KKM'ye dönüşümü sonrasında vade sonu altın fiyat farkından kaynaklanan getiri (faiz/kâr payı dışındaki kısım)
-    - Prim/Bonus ödemeleri: Banka tarafından KKM hesabı için ödenen teşvik prim veya bonusu
-    - Endeksli KKM kazancı: Belirli bir endekse (TÜFE, altın vb.) bağlı getirinin faiz dışı kısmı
-    - Diğer özel KKM getirileri: 371/372/373 kapsamına girmeyen her türlü KKM kaynaklı vade sonu kazancı
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    KKM çerçevesi yalnızca kur farkı ve faiz/kâr payını değil, hesaplardan vade sonunda elde
+    edilen her türlü kazancı istisna kapsamına almıştır. Beyanname 374, 371+372+373 dışında kalan
+    bu "diğer" kazançları kapsar ve KKM istisnasının en karmaşık alanını oluşturur.
 
-    **Önce kontrol edin:** Bu kazanç 371/372/373 kapsamına giriyor mu? Giriyorsa 374 uygulanmaz.
-    **Kritik Uyarı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (E.7 — Beşi birlikte).
+    ## Bu Satırın Kapsamı
+
+    Beyanname **374**, KKM hesaplarından vade sonunda elde edilen kazançların 371 (kur farkı
+    tazminat ödemesi), 372 (dönem sonu faiz tahakkuku) ve 373 (vade sonu faiz/kâr payı)
+    dışında kalan kısmını kapsar. En yaygın 374 kalemleri şunlardır: Altın KKM hesabından
+    vade sonunda oluşan altın fiyat farkı getirisi (faiz/kâr payı dışındaki kısım), bankadan
+    alınan prim/bonus ödemeleri (faiz niteliğinde olmayan teşvik ödemeleri) ve TÜFE veya altın
+    gibi bir endekse bağlı KKM ürünlerinden elde edilen faiz dışı getiri. Bu kapsamın
+    belirsizliği nedeniyle 374 en fazla özelge başvurusuna konu olan KKM kodudur.
+
+    ## Temel Koşullar
+
+    - KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden (370 kapsamı) açılmış olmalıdır
+    - Kazanç türü 371, 372 veya 373 kapsamına **girmemelidir**; önce her üç kodun kapsamı
+      test edilmeli, sonra 374 uygulanmalıdır
+    - Vade tarihi dönem içinde (01.01–31.12) gerçekleşmiş olmalıdır
+    - 371/372/373 ile mükerrerlik analizi yapılmış ve 374 tutarının bu üç koddaki tutarlarla
+      çakışmadığı belgelenmiş olmalıdır
+
+    ## Önemli Uyarılar
+
+    - **Altın KKM ayrıştırması:** Altın KKM vade kazancının faiz/kâr payı kısmı (373) ve altın
+      fiyat farkı kısmı (374) ayrı hesaplanmalı; tamamını tek koda yazmak hata oluşturur
+    - **Prim/bonus belgeleme:** Banka tarafından ödenen teşvik prim veya bonusunun faiz niteliği
+      taşımadığı resmi banka yazısıyla teyit edilmelidir; aksi hâlde vergi idaresi faiz kabul
+      ederek 374 istisnasını reddedebilir
+    - **Özelge stratejisi:** 374 "diğer" niteliği tartışmaya açıktır; altın KKM hesaplama
+      yöntemi, endeksli ürün getiri türü veya prim/bonus nitelendirmesi belirsizse GİB özelgesi
+      alınması tavsiye edilir
+    - **Mükerrerlik önleme:** 370+371+372+373+374 tamamı toplanarak beş kodun birbiriyle
+      çakışmadığından emin olunması gerekir
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    374'ün "diğer" niteliği YİAKV muamelesini değiştirmez. 370+371+372+373+374 beş kodun
+    tamamı asgari vergi matrahından düşülemez. YMM, tüm beş kodun YİAKV çalışma kâğıdının E.7
+    satırında yer aldığını doğrulamalıdır.
+
+    ## Pratik Notlar
+
+    - **Altın KKM hesaplama örneği:** Toplam 50.000 TL vade getirisi içinde 20.000 TL faiz/kâr
+      payı 373'e, 30.000 TL altın fiyat farkı getirisi 374'e yazılır. Her iki tutarın toplamı
+      banka vade bildirimindeki toplam getiriyle eşleşmelidir
+    - **Muhasebe kodu:** 374 kapsamındaki kazançlar genellikle 646 Kambiyo Kârları veya 679
+      Diğer Olağandışı Kâr hesabına alınır; 642 Faiz Gelirleri hesabıyla karıştırılmamalıdır
+    - **İlk uygulama dönemi riski:** 374 en az emsal oluşmuş KKM kodudur. Tartışmalı kalemlerde
+      özelge almak veya muhafazakâr davranmak, tarhiyat riskini azaltır
   kapi_sorulari:
     - id: kkm_kaynakli_mi
       soru: "KKM hesabı KVK Geçici Md.14/1-a kapsamı dönüşümden mi açıldı?"

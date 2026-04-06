@@ -24,16 +24,67 @@ ana_kategori: yurtdisi_istisnalar
 wizard_agaci:
   tetikleyici_soru: "Yurt dışındaki bir iştirakten kâr payı (temettü) elde ettin mi ve 317 tam istisna şartlarını tam olarak karşılayamıyor musun?"
   info_modal: |
-    KVK Md.5/1-b kapsamında, 7491 s.K. ile 01.01.2023 tarihinden itibaren yürürlüğe giren
-    **%50 kısmi istisna**: Yalnızca 2 şart gereklidir:
-    ① Kazancın elde edildiği tarihte ödenmiş sermayenin ≥**%50**'sine sahip olmak
-    ② Kazancın **TAMAMININ** KV beyanname süresine kadar Türkiye'ye transfer edilmesi
+    ## Genel Çerçeve
 
-    **ÖNCE 317'Yİ DEĞERLENDİR!** 317 (4 şart + %100 tam istisna) şartları sağlanıyorsa
-    387 (%50) yerine 317 tercih edilmelidir. 387'ye ancak 317 şartlarından biri sağlanamadığında geçilir.
+    KVK Madde 5/1-b, yurt dışı iştirak kâr payı istisnasını düzenler. 7491 Sayılı Kanun ile
+    01.01.2023 tarihinden itibaren tam istisna (317) şartlarını sağlayamayan kurumlar için
+    kısmi istisna (%50) getirilmiştir. Bu düzenleme, daha önce Türkiye'ye aktarılmayan yurt
+    dışı kâr paylarının Türkiye ekonomisine kazandırılmasını teşvik etmek amacıyla yapılmıştır.
+    387, 2023 yılından itibaren mevzuata eklenen görece yeni bir istisna kodudir.
 
-    **KRİTİK:** Kısmi transfer durumunda bile istisna **TAMAMEN** kaybolur.
-    **YİAKV:** Bu istisna YİAKV (KVK Md.32/C) matrahından DÜŞÜLEMEZ.
+    ## Bu Satırın Kapsamı
+
+    Beyanname **387**, KVK Madde 5/1-b kapsamındaki **%50 kısmi yurt dışı iştirak kâr payı
+    istisnasını** kapsar. Yalnızca iki şart gereklidir: (1) Kazancın elde edildiği tarihte
+    yurt dışı iştirak ödenmiş sermayesinin **en az %50'sine** sahip olmak ve (2) kazancın
+    **tamamının** KV beyanname süresine kadar Türkiye'ye transfer edilmiş olması. 317 (tam
+    istisna, %100) ile karşılaştırması kritiktir: 317 için dört şart (≥%10 pay, 1 yıl elde
+    tutma, ≥%15 vergi yükü, tam transfer) aranırken 387 için yalnızca iki şart aranır; ancak
+    istisna oranı %100 yerine %50'dir. **387'ye ancak 317 şartlarından biri sağlanamadığında
+    başvurulur; 317 şartları sağlanıyorsa %100 tam istisna daha avantajlıdır.**
+
+    ## Temel Koşullar
+
+    - Yurt dışı iştirak AŞ veya Ltd niteliğinde olmalı; **kanuni ve iş merkezinin her ikisi
+      de** Türkiye dışında bulunmalıdır (apostilli tescil belgesiyle belgelenecek)
+    - Kazancın **elde edildiği tarihte** ödenmiş sermayenin **≥%50**'sine sahip olunmalıdır;
+      %49,9 bile yetersizdir ve dönem içinde %50'nin altına düşüldüyse şart sağlanmamış sayılır
+    - Kazancın **tamamının** KV beyanname süresine (30 Nisan) kadar Türkiye'ye transferi
+      zorunludur; kısmi transfer istisna hakkını **tamamen** ortadan kaldırır
+    - 317 tam istisna şartları önce değerlendirilmeli; sağlanıyorsa 387 yerine 317 tercih edilir
+    - İstisna BRÜT kâr payı (stopaj öncesi) üzerinden hesaplanır; net transfer tutarı değil
+
+    ## Önemli Uyarılar
+
+    - **Tam transfer zorunluluğu mutlak:** Kazancın tek kuruşu bile eksik transferde istisna
+      hakkı tamamen ortadan kalkar; kısmi transfer halinde istisna kısmen bile uygulanamaz
+    - **%50 eşiği kesin:** %49,9 hisse oranı 387 için yeterli değildir. Dönem içinde pay oranı
+      değişmişse kazancın elde edildiği tarihteki oran esas alınır
+    - **Brüt tutar esası:** İstisna = Brüt Kâr Payı (TL) × %50. Hesaplamada elde etme
+      tarihindeki TCMB döviz alış kuru kullanılır; transfer tarihi kuru değil
+    - **KVK Md.33 mahsup:** Vergiye tabi kalan %50 kısım için yurt dışında ödenen stopaj
+      (withholding tax) KVK Madde 33 kapsamında mahsup edilebilir. İstisna edilen %50 kısma
+      isabet eden yurt dışı vergi mahsup **edilemez**
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca tek satır ≥ 500.000 TL veya
+      toplam ≥ 1.000.000 TL ise YMM tasdik raporu zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    Yurt dışı kaynaklı gelir olmasına karşın 387 YİAKV hesabında dikkate alınmaz; asgari
+    vergi matrahında kalır. YİAKV çalışma kâğıdında 387 tutarı matrahtan çıkarılmamalıdır.
+
+    ## Pratik Notlar
+
+    - **317 önce, 387 sonra:** Uygulama sırası kritiktir. 317 şartları değerlendirilmeden
+      doğrudan 387 yazmak, daha avantajlı olan tam istisnadan feragat anlamına gelir; bu
+      tercih çalışma kâğıdında gerekçelendirilerek belgelenmelidir
+    - **Transfer belgesi banka dekontuyla:** SWIFT belgesi veya transfer dekontu beyanname
+      süresine kadar transferin gerçekleştiğini kanıtlamalıdır; aksi hâlde istisna tamamen
+      reddedilebilir
+    - **Apostilli tescil:** Yurt dışı iştirak için kanuni ve iş merkezi yurt dışı koşulunu
+      kanıtlamak amacıyla apostilli ticaret sicil belgesi veya konsolosluk tasdikli tescil
+      belgesi zorunludur; bu belge olmadan 387 uygulaması savunulamaz
   kapi_sorulari:
     - id: once_317_degerlendirildi_mi
       soru: "317 tam istisna şartları (≥%10 pay + 1 yıl elde tutma + ≥%15 vergi yükü + tam transfer) değerlendirildi ve sağlanamadığı tespit edildi mi?"

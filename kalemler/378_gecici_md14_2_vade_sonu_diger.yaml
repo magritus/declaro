@@ -23,25 +23,63 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "KVK Geçici Md.14/2 (Paragraf 2) kapsamında borç dönüşümü sonrası, 375/376/377 dışında kalan vade sonu başka bir kazanç oluştu mu?"
   info_modal: |
-    KVK Geçici Madde 14/2 — Paragraf 2 (Vade Sonu Diğer Kazançlar):
+    ## Genel Çerçeve
 
-    Yabancı para borçlarını TL'ye dönüştüren kurumların (375), dönüşüm sonrası
-    TL araçlarından vade sonunda elde ettiği; kur farkı (375), dönem sonu
-    tahakkuk (376) ve vade kâr payı/faiz (377) dışında kalan DİĞER kazançlar
-    KVK Geçici Madde 14/2 kapsamında istisnadır.
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    378, KVK Geçici Madde 14 Paragraf 2 paketinin (375–378) son kodudur ve pasif taraf
+    zincirinin tamamlayıcısıdır. Yabancı para borçlarını TL'ye dönüştüren kurumların dönüşüm
+    sonrası TL araçlarından elde ettiği her türlü gelir istisna kapsamındadır.
 
-    378 = 374'ün Paragraf 2 karşılığı:
-    - 374 (Paragraf 1): Aktif — TL KKM (mevduat/altın) diğer kazançları (altın, prim, endeks)
-    - 378 (Paragraf 2): Pasif — Borç dönüşümü TL araç diğer kazançları
+    ## Bu Satırın Kapsamı
 
-    Başlıca 378 kalemleri:
-    ① Borç dönüşümü TL finansman avantajı
-    ② Özel TL araç sermaye/değer artış kazancı
-    ③ Prim/teşvik ödemeleri (banka/alacaklıdan)
-    ④ 375+376+377 kapsamına girmeyen diğer Paragraf 2 vade sonu kazançları
+    Beyanname **378**, yabancı para borç dönüşümü (375) sonrası TL araçlardan vade sonunda
+    elde edilen kazançların 375 (kur farkı), 376 (dönem sonu tahakkuk) ve 377 (vade sonu
+    kâr payı/faiz) dışında kalan kısmını kapsar. 378, Paragraf 1'deki 374'ün Paragraf 2
+    karşılığıdır: 374 aktif/mevduat-altın araçlarının "diğer" kazançlarını, 378 ise
+    pasif/borç araçlarının "diğer" kazançlarını kapsar. Her ikisi de aynı dönemde uygulanabilir,
+    ancak bunların farklı araçlara ait olduğu belgede ayrıca teyit edilmelidir. Başlıca 378
+    kalemleri: borç dönüşümü TL finansman avantajı, özel TL araç değer artış kazancı,
+    banka/alacaklıdan alınan prim/teşvik ödemeleri.
 
-    ★ KVK Geçici Md.14 paketi tamamlanmıştır: 370–378 dokuz kod (Paragraf 1: 370–374 | Paragraf 2: 375–378).
-    ★★ YİAKV: Bu istisna YİAKV matrahından DÜŞÜLEMEZ (E.7).
+    ## Temel Koşullar
+
+    - 375 kapsamında borç dönüşümü gerçekleştirilmiş olmalıdır (378, Paragraf 2 zincirinin
+      son halkasıdır; 375/376/377 olmadan 378 oluşamaz)
+    - Kazanç türü 375, 376 veya 377 kapsamına **girmemelidir**; önce her üç kodun kapsamı
+      test edilmeli, sonra 378 uygulanmalıdır
+    - 374 (Paragraf 1) ile mükerrerlik analizi yapılmış; Paragraf 1 araçları 374'e,
+      Paragraf 2 araçları 378'e yazılmış olmalıdır
+
+    ## Önemli Uyarılar
+
+    - **374 ile paragraf ayrımı:** Aynı dönemde hem 374 hem 378 uygulanıyorsa araç bazlı
+      ayrıştırma mutlaka belgelenmelidir; aksi hâlde hangi aracın hangi Paragraf'a ait olduğu
+      tartışmaya açılabilir
+    - **Özelge önceliği:** 378'in "diğer" niteliği, borç avantajının nasıl hesaplanacağı
+      konusunda 374'e göre daha belirsiz bir alandır. İlk uygulama döneminde GİB özelgesi
+      alınması tavsiye edilir
+    - **YİAKV E.7 güncellemesi:** 378 en geç eklenen kod olduğundan YİAKV E.7 listesinde
+      zaman zaman eksik kaldığı görülmektedir; çalışma kâğıdının güncellendiği teyit edilmeli
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca ≥ 500.000 TL ise YMM raporu
+      zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    KVK Geçici Madde 14 paketinin tüm dokuz kodu (370–378) E.7 DÜŞÜLEMEZ listesinde yer
+    almalıdır. YİAKV çalışma kâğıdının güncel bir versiyonu kullanılıyorsa 378'in listeye
+    dahil edildiği kontrol edilmeli; eski şablon kullanılıyorsa manuel olarak eklenmelidir.
+
+    ## Pratik Notlar
+
+    - **Dokuz kod tamamlandı:** Paragraf 1 (370–374) + Paragraf 2 (375–378) = KVK Geçici
+      Md.14 kapsamındaki dokuz kod tamamlanmıştır. 378 bu paketin kapanış kodudur
+    - **Muhasebe kodu:** 378 kapsamındaki kazançlar genellikle 646 Kambiyo Kârları, 648 Diğer
+      Olağan Gelirler veya 679 Diğer Olağandışı Kâr hesabına alınır; 642 Faiz Gelirleri
+      hesabıyla karıştırılmamalıdır
+    - **Borç avantajı hesabı:** Borç dönüşümü TL finansman avantajının hesaplanması için
+      orijinal döviz borç maliyeti ile TL karşılığı arasındaki fark esas alınır; bu hesabın
+      metodolojisi belgelenmelidir
   kapi_sorulari:
     - id: kkm_borc_taraf
       soru: "KVK Geçici Md.14/2 kapsamında borç dönüşümü (375) gerçekleştirildi mi?"

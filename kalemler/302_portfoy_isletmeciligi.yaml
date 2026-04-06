@@ -28,12 +28,35 @@ ana_kategori: istirak_kazanc_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Kurum KVK Md.5/1-d kapsamında bir yatırım fonu veya yatırım ortaklığı mı? (MKYO, GYO, GSYO, BYF, EYF, GYF, GSYF, Altyapı YO/YF, Konut/Varlık Finansmanı Fonu, Serbest Fon)"
   info_modal: |
-    KVK 5/1-d kapsamında Türkiye'de kanunların öngördüğü şekilde kurulan yatırım
-    fon ve ortaklıklarının PORTFÖY İŞLETMECİLİĞİNDEN doğan kazançları kurumlar
-    vergisinden istisnadır. %100 tam istisna — "Zarar Olsa Dahi İndirilecek" bölümü.
-    TEMEL İLKE — PORTFÖY İÇİ / DIŞI AYRIMI: İstisna YALNIZCA portföy işletmeciliğinden
-    doğan kazançlara uygulanır. Portföy dışı gelirler (yönetim ücreti, danışmanlık,
-    portföyde olmayan taşınmaz kira geliri vb.) VERGİYE TABİDİR.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-d kapsamında Türkiye'de kanunların öngördüğü şekilde kurulan yatırım fon ve ortaklıklarının **portföy işletmeciliğinden doğan kazançları** kurumlar vergisinden %100 tam istisna olarak muaftır. Kapsama giren kurumlar: MKYO, GYO, GSYO, Altyapı YO, BYF, EYF, GYF, GSYF, Altyapı YF, Konut Finansmanı Fonu, Varlık Finansmanı Fonu ve Serbest Yatırım Fonu'dur. Beyanname **"Zarar Olsa Dahi İndirilecek"** bölümünde 302 numaralı satırda gösterilir.
+
+    ## Temel Koşullar
+
+    - **SPK/BKK/BDDK lisansı:** Kurumun ilgili otorite tarafından lisanslanmış ve KVK 5/1-d kapsamında sayılan kurum türlerinden biri olması gerekir; güncel lisans belgesi zorunludur.
+    - **Portföy içi/dışı ayrımı:** İstisna **yalnızca** portföy kapsamındaki varlıklardan elde edilen faiz, temettü, kira, satış kazancı ve değerleme artışlarına uygulanır. Yönetim ücreti, performans/başarı primi, danışmanlık komisyonu ve portföyde kayıtlı olmayan varlıklardan elde edilen gelirler vergiye tabidir.
+    - **Portföy kapsamı mevzuata uygun tanımlanmalıdır:** Her kurum türünün portföy sınırları farklıdır; GYO → gayrimenkul + menkul kıymet, GSYO → girişim şirketleri + menkul kıymet, MKYO → menkul kıymetler.
+    - **Muhasebede ayrı hesap:** Portföy içi ve portföy dışı gelirlerin muhasebede ayrı hesap veya dağıtım anahtarıyla izlenmesi zorunludur; bu yapı olmadan 302 istisnasının güvenilir biçimde hesaplanması mümkün değildir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **GYO inşaat/geliştirme gelirleri:** Portföy kapsamında değerlendirilip değerlendirilemeyeceği en tartışmalı alandır; güncel GİB görüşü veya özelge alınması şiddetle tavsiye edilir.
+    - **GSYO/GSYF yönetim ücreti:** Yönetim ücreti, danışmanlık komisyonu ve başarı/performans primi portföy işletmeciliği kazancı değildir; 302 satırına yazılmamalıdır.
+    - **EYF emeklilik sözleşme yönetim ücreti:** Emeklilik sözleşmesine ilişkin yönetim ücreti ve sigorta komisyonu portföy dışı sayılır.
+    - **Portföy satış kazancında maliyet yöntemi tutarsızlığı** sık karşılaşılan hatadır; FIFO veya ağırlıklı ortalama yönteminin tutarlı uygulanması ve belgelenmesi gerekir.
+    - **7524 sayılı Kanun GYF/GYO kâr dağıtım şartı (01.01.2025):** GYF ve GYO katılımcılarının kâr payı istisnasını 5/1-a kapsamında kullanabilmesi için kâr dağıtım şartının sağlanıp sağlanmadığı kontrol edilmelidir.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-d (302) portföy işletmeciliği kazancının YİAKV (KVK Madde 32/C) matrahına etkisi dönem mevzuatı ve GİB açıklamalarıyla analiz edilmelidir; tartışmalı kabul edilmektedir ve otomatik düşüm varsayımına dayanılmamalıdır.
+
+    ## Pratik Notlar
+
+    - 3 kademe uyum kontrolü: Muhasebe portföy hesapları = veri girişi = KV beyannamesi 302 satırı. Portföy içi/dışı ayrımı doğru kurulmadan bu uyum sağlanamaz.
+    - Portföy işletme giderleri için karma gider dağıtımı gerekiyorsa dağıtım anahtarı yazılı ve tutarlı biçimde belgelenmelidir.
+    - GYO'da portföyde kayıtlı olan ve olmayan taşınmazların ayrımı tapu senetleri ve portföy kayıt belgeleriyle desteklenmelidir.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: kvk_5_1d_kapsami
       soru: "Kurum KVK 5/1-d kapsamında mı? (SPK/BKK/BDDK lisansı var mı?)"

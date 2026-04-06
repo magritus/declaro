@@ -1,0 +1,1624 @@
+{
+  "file": "352_KVK5_1e_Istirak_Hissesi_Satis_Kazanci_Istisnasi_GIB2026.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G88",
+      "rows": [
+        [
+          "352 – İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNASI | KVK Md.5/1-e | GİB REHBERİ MART 2026 (YAYIN NO:601) | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-e | %75 → %50 (9160 s.CB Kararı, 27/11/2024) | 2 Yıl Aktifinde | FIFO | Menkul Kıymet Ticareti Yasağı | 549 Fon (5 Yıl) | Rüçhan/Kurucu/İntifa/GS Fonu | KDVK 17/4-r | Beyanname 352",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB REHBERİ MART 2026 — İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNA ORAN DEĞİŞİMİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "%75",
+          "27/11/2024 TARİHİNDEN ÖNCE gerçekleştirilen iştirak hissesi satışları",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "%50",
+          "9160 SAYILI CB KARARI ile 27/11/2024 TARİHİNDEN İTİBAREN (bu tarih dahil) satışlar",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAPSAM: İştirak hisseleri (A.Ş. payları, Ltd. payları, Koop. payları, İş Ort. payları) + Kurucu senetleri + İntifa senetleri + Rüçhan hakları + KVK 5/1-a kapsamı GS Yatırım Fonu katılma payları",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ — GİB Rehberi Mart 2026 Bölüm B",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Satılan varlık türü nedir?",
+          null,
+          null,
+          null,
+          "İştirak Hissesi (Ortaklık Payı)",
+          "Beyanname 352. SPK fonlarının katılma belgeleri iştirak hissesi sayılmaz (GİB Rehberi Md.2).",
+          null
+        ],
+        [
+          "A0.2  ★ Satış tarihi 27/11/2024 öncesi mi sonrası mı?",
+          null,
+          null,
+          null,
+          "27/11/2024 SONRASI → %50",
+          "9160 s. CB Kararı: 27/11/2024 tarihinden itibaren istisna oranı %50 olarak belirlenmiştir.",
+          null
+        ],
+        [
+          "A0.3  ★ 2 Tam Yıl (730 Gün) Aktifinde Bulundurma şartı sağlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "2 yıl (730 gün) aktifinde bulundurma zorunlu. Aynı kuruma farklı tarihlerde alınan hisseler → FIFO uygulanır.",
+          null
+        ],
+        [
+          "A0.4  ★ Menkul kıymet ticareti ile uğraşılmıyor mu? İştirak amaçlı elde tutuluyor mu?",
+          null,
+          null,
+          null,
+          "EVET — İştirak Amaçlı",
+          "Menkul kıymet ticareti yapan mükelleflerde ticari amaçlı hisseler kapsam dışı. Holding: 24-Mali Duran Varlıklar'dakiler istisna kapsamında.",
+          null
+        ],
+        [
+          "A0.5  İstisna edilen kazanç süresi içinde 549 Özel Fonlar hesabına alınacak mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Satışı izleyen hesap döneminin başından KV beyan süresine kadar 549'a alınmalı. 5 yıl tutulacak.",
+          null
+        ],
+        [
+          "A0.6  KDV istisnası (KDVK 17/4-r) değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "İştirak hissesi satışında KDV istisnası 15/7/2023 tarihinden ETKİLENMEZ — süresiz devam eder.",
+          null
+        ],
+        [
+          "A0.7  YİAKV matrahında 352 istisnasının etkisi analiz edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-e iştirak hissesi istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ — matrahta kalır.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik. Tam tasdik → Ayrıca rapor yok.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.3 (2 yıl), A0.4 (MK ticareti yasağı), A0.5 (549 fon) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/İŞT-01",
+          null
+        ],
+        [
+          "B. SATIŞA KONU İŞTİRAK HİSSESİ / DEĞER — KİMLİK VE NİTELİK KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 Bölüm B: İştirak hisseleri, rüçhan hakları, kurucu senetleri, intifa senetleri, GS fonu katılma payları.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Seçim",
+          null,
+          "Açıklama",
+          "GİB Rehberi"
+        ],
+        [
+          "B.1  Satılan Varlığın Türü",
+          null,
+          "İştirak Hissesi (A.Ş. Ortaklık Payı)",
+          "Her türün FIFO ve süre hesabı farklı olabilir",
+          null,
+          "GİB Rehberi Bölüm B-I.1-5",
+          null
+        ],
+        [
+          "B.2  İştirak Edilen Şirket Unvanı",
+          null,
+          null,
+          "Hissenin ait olduğu şirket",
+          null,
+          "Hisse devir sözleşmesi",
+          null
+        ],
+        [
+          "B.3  Aktife Giriş Türü / İktisap Şekli",
+          null,
+          "Satın Alma",
+          "İktisap şekli süre başlangıcını etkiler",
+          null,
+          "GİB Rehberi Bölüm B-I.3-4",
+          null
+        ],
+        [
+          "B.4  Hissenin İzlendiği Muhasebe Hesabı",
+          null,
+          "24 — Mali Duran Varlıklar",
+          "HOLDİNG: 24-Mali Duran Varlıklar → İstisna kapsamı. 11-Menkul Kıymetler → İstisna dışı.",
+          null,
+          "GİB Rehberi Md.8",
+          null
+        ],
+        [
+          "B.5  Birim Hisse Sayısı (Satılan)",
+          null,
+          null,
+          "Satılan adet — FIFO hesabı için",
+          null,
+          "242/245 kartı",
+          null
+        ],
+        [
+          "B.6  Satış Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY — 27/11/2024 öncesi/sonrası oranı etkiler",
+          null,
+          null,
+          null
+        ],
+        [
+          "B.7  Satış Bedeli (TL)",
+          null,
+          null,
+          "Fiili satış bedeli — yabancı para ise TCMB kuru × Miktar",
+          null,
+          "GİB Rehberi Md.29",
+          null
+        ],
+        [
+          "B.8  ★ İlk İktisap (Aktife Giriş) Tarihi — FIFO için en eski tarih",
+          null,
+          null,
+          "Aynı kuruma ait farklı tarihlerde alınan hisseler → FIFO uygulanır (GİB Md.6)",
+          null,
+          "GİB Rehberi Md.6",
+          null
+        ],
+        [
+          "B.9  Hissenin Defter Değeri / Birim Maliyet (TL)",
+          null,
+          null,
+          "FIFO bazında satılan hissenin birim maliyeti",
+          null,
+          "242/245 hesap kartı",
+          null
+        ],
+        [
+          "B.10  Satış Giderleri (Broker, Komisyon, Damga vb., TL)",
+          null,
+          null,
+          "KVK 5/3: Giderlerin vergiye tabi kısma isabet eden payı gider yazılabilir",
+          null,
+          "KVK 5/3",
+          null
+        ],
+        [
+          "C. FIFO YÖNTEMİ VE AKTİFTE BULUNDURMA SÜRESİ HESABI (GİB Rehberi Md.6)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "FIFO: Aynı kuruma ait farklı tarihlerde iktisap edilen hisselerin bir kısmının satışında 'ilk giren ilk çıkar' uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "GİB Rehberi"
+        ],
+        [
+          "C.1  FIFO Kapsamında: En Eski İktisap Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY — Satılan birimler bu tarihten başlanarak çıkış yapılır",
+          null,
+          "GİB Md.6",
+          null
+        ],
+        [
+          "C.2  Satış / Elden Çıkarma Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY — 27/11/2024 öncesi/sonrası oran belirler",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  FIFO Bazında Elde Tutma Süresi (Gün)",
+          null,
+          "0",
+          "Otomatik: C.2 − C.1",
+          null,
+          "730 gün eşiği",
+          null
+        ],
+        [
+          "C.4  ★ 2 Tam Yıl (730 Gün) Şartı",
+          null,
+          "HAYIR — Süre Yetersiz",
+          "Otomatik değerlendirme",
+          null,
+          "730 gün",
+          null
+        ],
+        [
+          "FIFO VE ÖZEL İKTİSAP TARİHİ KURALLARI (GİB Rehberi Md.3-6):\n① Rüçhan hakkı kullanımı (nominal bedelle): Eski hissenin iktisap tarihi esas alınır.\n② Bedelsiz hisse (sermaye yedeklerinden): Eski hissenin iktisap tarihi esas — bedel değişmez.\n③ Bedelsiz hisse (kâr yedeklerinden): Nominal bedelle iştirak hesaplarında izlenir — fiili aktife giriş tarihi esas.\n④ Rüçhan hakkı (nominal dışı bedelle): Fiilen kurumun aktifine girdiği tarih esas.\n⑤ Devir/bölünme: Devralınan kurumun iktisap tarihi esas alınır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. İSTİSNA ORANI BELİRLEME (GİB Rehberi Bölüm B-I.1)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem / Durum",
+          "Satış Tarihi",
+          "İstisna Oranı",
+          null,
+          "Yasal Dayanak",
+          null
+        ],
+        [
+          "27/11/2024 ÖNCESİ satış",
+          null,
+          "27/11/2024 Öncesi",
+          "%75",
+          "KVK 5/1-e — Eski",
+          null,
+          null
+        ],
+        [
+          "27/11/2024 TARİHİNDEN İTİBAREN satış (bu tarih dahil)",
+          null,
+          "27/11/2024 ve Sonrası",
+          "%50",
+          "9160 s. CB Kararı — GÜNCEL",
+          null,
+          null
+        ],
+        [
+          "D.1  Bu satış için geçerli olan istisna oranı:",
+          null,
+          "27/11/2024 SONRASI → %50",
+          "B.6 Satış Tarihi'ne göre yukarıdaki tablodan seçin → E bölümündeki hesapta kullanılacak",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. SATIŞ KAZANCI VE İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAZANÇ = Satış Bedeli − FIFO Bazında Birim Maliyet × Satılan Adet − Satış Giderleri | KVK 5/3: Zarar durumunda zararın %75 veya %50'si KKEG.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  Satış Bedeli",
+          null,
+          "0",
+          "B.7'den otomatik",
+          null,
+          "Fiili satış bedeli (GİB Md.29)",
+          null
+        ],
+        [
+          "E.2  FIFO Bazında Birim Maliyet × Satılan Adet",
+          null,
+          "0",
+          "B.9 × B.5",
+          null,
+          "FIFO yöntemi — en eski iktisap maliyeti esas",
+          null
+        ],
+        [
+          "E.3  Satış Giderleri",
+          null,
+          "0",
+          "B.10'dan otomatik",
+          null,
+          "Broker, komisyon, damga vb.",
+          null
+        ],
+        [
+          "E.4  SATIŞ KAZANCI (E.1 − E.2 − E.3)",
+          null,
+          "0",
+          "Pozitif veya negatif olabilir",
+          null,
+          "Negatif ise zarar — zararın istisna oranına denk payı KKEG",
+          null
+        ],
+        [
+          "E.5  Seçilen İstisna Oranı (D.1'den)",
+          null,
+          null,
+          "D.1 seçiminden manuel girin (0.75 veya 0.50)",
+          null,
+          "GİB Rehberi D bölümü",
+          null
+        ],
+        [
+          "E.6  ★ İSTİSNA TUTARI (E.4 × Oran — Kazanç varsa)",
+          null,
+          "0",
+          "→ Beyanname 352",
+          null,
+          "Kazanç varsa istisna hesaplanır",
+          null
+        ],
+        [
+          "E.7  Vergiye Tabi Kısım (E.4 − E.6 — Kazanç varsa)",
+          null,
+          "0",
+          "KV matrahına dahil",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.8  ZARAR Durumu — İstisna Oranına Denk Pay KKEG",
+          null,
+          "0",
+          "Zarar varsa bu kısım KKEG sayılır",
+          null,
+          "Zararlı satışta zararın %75/%50'si KKEG",
+          null
+        ],
+        [
+          "E.9  549 FONA ALINACAK TUTAR (= E.6)",
+          null,
+          "0",
+          "İstisna edilen kazanç = Fon tutarı",
+          null,
+          "549 Özel Fonlar — 5 yıl",
+          null
+        ],
+        [
+          "F. 549 ÖZEL FONLAR HESABI TAKİBİ — 5 YIL ZORUNLU SÜRE (GİB Rehberi Md.19-22)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Kalemi",
+          null,
+          "Tutar / Tarih",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "F.1  Fona Alınacak Tutar (= E.9)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "İstisna tutarı = Fon tutarı",
+          null
+        ],
+        [
+          "F.2  Fona Alınma Son Tarihi",
+          null,
+          null,
+          "Satışı izleyen hesap döneminin başından KV beyan süresine kadar",
+          null,
+          "GG.AA.YYYY — genellikle 30 Nisan",
+          null
+        ],
+        [
+          "F.3  Fon Hesabına Alındı mı?",
+          null,
+          "EVET",
+          "EVET,HAYIR-İstisna Geçersiz",
+          null,
+          "549 hesabına kayıt yoksa istisna tamamen geçersiz",
+          null
+        ],
+        [
+          "F.4  5 Yıl Tutma Süresi Sonu",
+          null,
+          null,
+          "Satış yılından itibaren 5. yıl sonu",
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "F.5  Fon Hesabından Erken Çekim Riski",
+          null,
+          "Yok",
+          "Yok,Var-Risk,Tasfiye-Risk",
+          null,
+          "Tasfiye = Otomatik çekim → Vergi ziyaı. İflas erteleme = İstisna yok.",
+          null
+        ],
+        [
+          "F.6  Satış Bedeli Tahsil Durumu (2. Takvim Yılı Sonu)",
+          null,
+          null,
+          "Satışı izleyen ikinci takvim yılı sonuna kadar tahsil",
+          null,
+          "GG.AA.YYYY — Tahsil edilmezse vergi ziyaı",
+          null
+        ],
+        [
+          "F.7  Tahsil Aracı Türü (GİB Md.25)",
+          null,
+          "Nakit",
+          "Nakit,Altın (2 Yıl İçinde Nakde),Devlet Tahvili (2 Yıl İçinde Nakde),Hazine Bonosu (2 Yıl İçinde Nakde),BİST Hisse Senedi (2 Yıl İçinde Nakde)",
+          null,
+          "Nakit veya belirtilen araçlar — 2 yıl içinde nakde çevrilmeli",
+          null
+        ],
+        [
+          "G. KDV BOYUTU — KDVK Md.17/4-r (İŞTİRAK HİSSESİNDE 15/7/2023 SINIRI YOK)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "İştirak hissesi satışında KDVK 17/4-r KDV istisnası 15/7/2023 tarihinden ETKİLENMEZ — süresiz devam eder (taşınmaz istisnasından farklı).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "KDV Kontrol",
+          null,
+          "Değerlendirme",
+          null,
+          "Açıklama",
+          "KDVK"
+        ],
+        [
+          "G.1  Satıcı KDV Mükellefi mi?",
+          null,
+          "EVET",
+          "KDV mükellefiyeti yoksa bu bölüm uygulanmaz.",
+          null,
+          "KDVK",
+          null
+        ],
+        [
+          "G.2  Satılan varlık iştirak hissesi kapsamında mı?",
+          null,
+          "EVET",
+          "SPK fonları katılma belgeleri iştirak hissesi sayılmaz.",
+          null,
+          "KDVK 17/4-r",
+          null
+        ],
+        [
+          "G.3  KDV İstisnası Uygulanacak mı?",
+          null,
+          "EVET",
+          "G.1=EVET ve G.2=EVET ise KDV istisnası uygulanır. İştirak hissesinde 15/7/2023 sınırı yoktur.",
+          null,
+          "KDVK 17/4-r",
+          null
+        ],
+        [
+          "H. BEYANNAME SATIR 352 — İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "H.1  TOPLAM İSTİSNA → Beyanname Satır 352 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "E.6 — %75 veya %50 × Satış Kazancı",
+          null
+        ],
+        [
+          "KRİTİK UYARILAR:\n(1) 352 — 'KAZANCIN BULUNMASI HALİNDE İNDİRİLECEK' — dönemde zarar varsa istisna uygulanamaz.\n(2) ZARAR durumunda: Zararın istisna oranına (%75/%50) denk gelen kısmı KKEG sayılır (E.8).\n(3) Menkul kıymet ticareti yapan mükelleflerde ticari amaçlı hisseler kapsam dışı (GİB Md.7).\n(4) Holding şirketler: 11-Menkul Kıymetler hesabındaki hisseler kapsam dışı, 24-Mali Duran Varlıklar kapsamında (GİB Md.8).\n(5) Grup şirketleri arası satışta nakit girişi zorunlu — ayni sermaye devri istisna kapsamı dışı.\n(6) YİAKV (KVK 32/C) matrahından bu istisna DÜŞÜLEMEZ — matrahta kalır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G43",
+      "rows": [
+        [
+          "352 – İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNASI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | %75→%50 (27/11/2024 CB Kararı) | FIFO | Menkul Kıymet Ticareti Yasağı | Holding | 549 Fon | KDVK 17/4-r | Beyanname 352",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluk",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "2 Yıl FIFO Şartı (C.4)",
+          null,
+          null,
+          "HAYIR — Süre Yetersiz",
+          "730 gün EVET",
+          null,
+          null
+        ],
+        [
+          "Elde Tutma (Gün)",
+          null,
+          null,
+          "0",
+          "730 eşiği",
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı (D.1)",
+          null,
+          null,
+          "27/11/2024 SONRASI → %50",
+          "Seçilen oran",
+          null,
+          null
+        ],
+        [
+          "Satış Kazancı (E.4)",
+          null,
+          null,
+          "0",
+          "Kazanç veya Zarar",
+          null,
+          null
+        ],
+        [
+          "352 İSTİSNA (E.6)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "ZARAR KKEG (E.8)",
+          null,
+          null,
+          "0",
+          "Zarar durumunda",
+          null,
+          null
+        ],
+        [
+          "549 Fon (F.1)",
+          null,
+          null,
+          "0",
+          "5 yıl tutulacak",
+          null,
+          null
+        ],
+        [
+          "KDV İstisnası (G.3)",
+          null,
+          null,
+          "EVET",
+          "Süresiz devam",
+          null,
+          null
+        ],
+        [
+          "B. İŞTİRAK HİSSESİ — ÖZEL KONULAR MATRİSİ (GİB Rehberi Mart 2026 Bölüm B)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Konu",
+          null,
+          "Kural / GİB Rehberi",
+          null,
+          "Risk",
+          null
+        ],
+        [
+          "FIFO Yöntemi",
+          null,
+          "Aynı kuruma ait farklı tarihlerde alınan hisselerin bir kısmı satılırsa: İlk giren ilk çıkar (FIFO). En eski iktisap tarihi esas.",
+          null,
+          null,
+          "OK",
+          "GİB Md.6"
+        ],
+        [
+          "Rüçhan Hakkı — Nominal Bedel",
+          null,
+          "Rüçhan hakkı kullanımıyla nominal bedelle yeni hisse → Eski hissenin iktisap tarihi esas.",
+          null,
+          null,
+          "OK",
+          "GİB Md.3-4"
+        ],
+        [
+          "Rüçhan Hakkı — Nominal Dışı Bedel",
+          null,
+          "Nominal dışı bedelle rüçhan hakkı → Fiili aktife giriş tarihi esas.",
+          null,
+          null,
+          "OK",
+          "GİB Md.4"
+        ],
+        [
+          "Bedelsiz Hisse (Sermaye Yedeklerinden)",
+          null,
+          "Bedelsiz hisse aktif ve pasifi artırmaz — eski tarih esas. Bedelde değişme olmaz.",
+          null,
+          null,
+          "OK",
+          "GİB Md.9"
+        ],
+        [
+          "Bedelsiz Hisse (Kâr Yedeklerinden)",
+          null,
+          "Nominal bedelle iştirak hesabına. Fiili aktife giriş tarihi esas. İştirak kazancı istisnası nedeniyle KV'ye tabi olmaz.",
+          null,
+          null,
+          "Dikkat",
+          "GİB Md.9"
+        ],
+        [
+          "Menkul Kıymet Ticareti Yasağı",
+          null,
+          "MK ticareti yapanlar: Ticari amaçlı hisseler kapsam dışı. İştirak amaçlı (yönetim/politika belirleme) hisseler kapsamda.",
+          null,
+          null,
+          "Risk",
+          "GİB Md.7"
+        ],
+        [
+          "Holding Şirketler",
+          null,
+          "24-Mali Duran Varlıklar → İstisna kapsamı. 11-Menkul Kıymetler → İstisna dışı. Esas faaliyet iştirak olan holding için özel kural.",
+          null,
+          null,
+          "Risk",
+          "GİB Md.8"
+        ],
+        [
+          "Zarar Durumunda KKEG",
+          null,
+          "İştirak hissesi zararlı satılırsa: Zararın istisna oranına (%75/%50) denk gelen kısmı KKEG sayılır.",
+          null,
+          null,
+          "Risk",
+          "GİB Md.7"
+        ],
+        [
+          "GS Yatırım Fonu Katılma Payı",
+          null,
+          "SPK'dan izinli girişim sermayesi fonları. Katılma payları satış kazancına %75/%50 istisna. SPK fonları katılma belgeleri hariç.",
+          null,
+          null,
+          "OK",
+          "GİB Md.5"
+        ],
+        [
+          "KDV İstisnası — 15/7/2023 Sınırı YOK",
+          null,
+          "İştirak hissesi KDV istisnası taşınmazdan farklı: 15/7/2023 sınırından ETKİLENMEZ. Süresiz devam.",
+          null,
+          null,
+          "OK",
+          "KDVK 17/4-r"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K14) — İŞTİRAK HİSSESİ SATIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama / GİB Rehberi",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ İstisna oranı doğru mu? 27/11/2024 öncesi/sonrası ayrımı yapıldı mı?",
+          null,
+          "9160 s. CB Kararı: 27/11/2024+ → %50. Öncesi → %75. Satış tarihi kritik.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ 2 Tam Yıl (730 gün) FIFO bazında şartı sağlandı mı?",
+          null,
+          "FIFO: En eski iktisap tarihinden itibaren sayılır. Birden fazla alım varsa her birini ayrı kontrol et.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Menkul kıymet ticareti yasağı kontrol edildi mi?",
+          null,
+          "GİB Md.7: Ticari amaçlı hisseler kapsam dışı. İştirak amaçlı (yönetim/politika belirleme) kapsam içi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "Holding şirket ise hisse hangi hesapta izleniyor?",
+          null,
+          "GİB Md.8: 24-Mali Duran Varlıklar → Kapsamda. 11-Menkul Kıymetler → Kapsam dışı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "FIFO uygulaması doğru mu? Birden fazla farklı tarihlerde alım varsa?",
+          null,
+          "GİB Md.6: Aynı kuruma farklı tarihlerde alınan hisseler → FIFO. En eski önce çıkar.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "Rüçhan hakkı kullanımında iktisap tarihi doğru belirlendi mi?",
+          null,
+          "GİB Md.3-4: Nominal bedelle → Eski hissenin tarihi. Nominal dışı bedelle → Fiili aktife giriş tarihi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Bedelsiz hisselerin iktisap tarihi ve maliyeti doğru mu?",
+          null,
+          "GİB Md.9: Sermaye yedeklerinden → Eski tarih, bedel değişmez. Kâr yedeklerinden → Aktife giriş tarihi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "Satış bedelinin fiili satış bedeli olduğu teyit edildi mi?",
+          null,
+          "GİB Md.29: Fiili bedel esas. KVK Md.13: İlişkili kişi satışında emsal bedel.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "Grup şirketleri satışında nakit girişi sağlandı mı?",
+          null,
+          "Nakit girişi olmayan satış veya ayni sermaye devri → İstisna uygulanmaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "★ Satış bedeli 2. takvim yılı sonuna kadar tahsil edilecek mi?",
+          null,
+          "Nakit veya Altın/DT/HB/BİST hisseleri (2 yıl içinde nakde). Tahsil edilmezse → Vergi ziyaı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "★ İstisna tutarı (E.6) süresi içinde 549 hesabına alındı mı?",
+          null,
+          "Satışı izleyen dönem KV beyan süresi içinde. Fon kaydı yoksa istisna tamamen geçersiz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "Zarar durumunda KKEG hesabı yapıldı mı? (E.8)",
+          null,
+          "Zararlı satışta zararın %75/%50'si (istisna oranı) KKEG. Kalan kısım indirilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K13",
+          "KDV 17/4-r istisnası uygulandı mı? (İştirak hissesinde 15/7/2023 sınırı yok)",
+          null,
+          "İştirak hissesi KDV istisnası taşınmaz gibi 15/7/2023'den etkilenmez — süresiz devam.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K14",
+          "Beyanname 352 'Kazancın Bulunması Halinde' bölümünde mi? YMM raporu?",
+          null,
+          "352 → 'Kazancın Bulunması Halinde'. Zarar varsa istisna uygulanamaz. >=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G21",
+      "rows": [
+        [
+          "352 – İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNASI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 | %75/%50 Oran | FIFO | 549 Fon | KDVK 17/4-r Süresiz | Zarar Durumu KKEG",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Aşağıdaki kayıtlar örnek niteliğindedir. Şirkete özgü muhasebe politikasına göre uyarlanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — İŞTİRAK HİSSESİ SATIŞ KAYDI (KAZANÇ DURUMU — GİB Rehberi Md.29)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "102 Bankalar / 120 Alıcılar",
+          "İştirak hissesi satış bedelinin tahsilatı",
+          "[Satış Bedeli]",
+          "—",
+          "Sözleşme+Banka"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "242 İştirakler / 245 Bağlı Ortaklıklar",
+          "İştirak hissesinin FIFO bazında defter değeriyle aktiften çıkışı",
+          "—",
+          "[Defter Değeri FIFO]",
+          "242/245 kartı"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "679 Diğer Olağandışı Kâr ve Gelirler",
+          "Satış kazancı (E.4) — KVK 5/1-e | %75/%50 → Beyanname 352",
+          "—",
+          "[E.4 TL]",
+          "KV 352"
+        ],
+        [
+          "★ ORAN NOTU: 27/11/2024 ÖNCESİ satış → %75 istisna. 27/11/2024 SONRASI satış → %50 istisna (9160 s. CB Kararı).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ KDV NOTU: İştirak hissesi satışında KDVK 17/4-r istisnası 15/7/2023 tarihinden ETKİLENMEZ — KDV istisnası süresiz devam eder.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — 549 ÖZEL FONLAR HESABINA ALMA (Satışı İzleyen Dönem KV Beyan Süresine Kadar)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[KV Beyan]",
+          "679 Diğer Olağandışı Kâr ve Gelirler",
+          "İstisna edilen satış kazancının gelir hesabından çıkarılması",
+          "[İstisna E.6]",
+          "—",
+          "E.6 tutarı"
+        ],
+        [
+          "Kr",
+          "[KV Beyan]",
+          "549 Özel Fonlar",
+          "KVK 5/1-e İstisna | %75/%50 | 5 yıl tutulacak (İştirak Hissesi Satış Kazancı İstisnası)",
+          "—",
+          "[İstisna E.6]",
+          "5 Yıl"
+        ],
+        [
+          "5 YIL KURALI: 5 yıl içinde işletmeden çekilemez. Sermayeye ilave mümkün. Tasfiye = Otomatik çekim → Vergi ziyaı. İflas erteleme = İstisna yok.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — ZARAR DURUMU VE KKEG KAYDI (GİB Rehberi Md.7 — İştirak Zararı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "102 Bankalar / 120 Alıcılar",
+          "İştirak hissesi satış bedeli",
+          "[Satış Bedeli]",
+          "—",
+          "Sözleşme+Banka"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "689 Diğer Olağandışı Giderler",
+          "Satış zararının KKEG olan kısmı (E.8 = Zarar × Oran)",
+          "[E.8 KKEG]",
+          "—",
+          "KVK 5/3"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "242 İştirakler / 245 Bağlı Ortaklıklar",
+          "Defter değeriyle aktiften çıkış",
+          "—",
+          "[Defter Değeri]",
+          "242/245 kartı"
+        ],
+        [
+          "ZARAR KKEG KURALI: İştirak hissesi zararlı satılırsa zararın istisna oranına (%75/%50) denk gelen kısmı KKEG sayılır. Kalan kısım (vergiye tabi kısma isabet eden) gider olarak indirilebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "352 – İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNASI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | 9160 s. CB Kararı (27/11/2024) | FIFO | Menkul Kıymet Ticareti | Holding | YMM Tasdik Standardı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / GİB Rehberi Mart 2026",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK 5/1-e İştirak Hissesi — İstisna Oranı Değişimi ve Kapsam (GİB Rehberi Bölüm B)",
+          "KVK 5/1-e İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNASI:\n\nİSTİSNA ORAN DEĞİŞİMİ:\n  → 27/11/2024 ÖNCESİ: %75 istisna (KVK 5/1-e).\n  → 27/11/2024 SONRASI: %50 istisna (9160 sayılı CB Kararı).\n\nKAPSAM (GİB Rehberi Md.1-5):\n  ① İştirak hisseleri: A.Ş. payları, Ltd. payları, Koop. payları, İş Ort. payları.\n  ② Kurucu senetleri, İntifa senetleri.\n  ③ Rüçhan hakları.\n  ④ KVK 5/1-a kapsamında istisna kazançlarına kaynak oluşturan yatırım fonları katılma payları.\n  KAPSAM DIŞI: SPK fonlarının katılma belgeleri iştirak hissesi sayılmaz.\n\nTAŞINMAZDAN FARK:\n  → İştirak hissesi istisnasında 15/7/2023 tarih sınırı ETKİSİ YOK — tüm tarihlerde geçerli.\n  → KDV istisnası (KDVK 17/4-r) süresiz devam eder — 15/7/2023 sınırından etkilenmez.\n  → Beyanname: 352 satırı (Taşınmaz → 351).",
+          "KVK 5/1-e | 9160 s. CB Kararı | KDVK 17/4-r | GİB Rehberi Mart 2026 Bölüm B",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ FIFO Yöntemi, Rüçhan Hakkı ve Bedelsiz Hisse (GİB Rehberi Md.3-9)",
+          "FIFO YÖNTEMİ (GİB Md.6):\nAynı kuruma ait farklı tarihlerde iktisap edilen hisselerin bir kısmı satılırsa FIFO uygulanır.\nÖrnek: 100 hisse (50'si 2022, 50'si 2023 alımı) — 60'ı satılırsa 50 adet 2022'den çıkar.\n\nRÜÇHAN HAKKI (GİB Md.3-4):\n  ① Nominal bedelle yeni hisse → Eski hissenin iktisap tarihi esas.\n  ② Nominal dışı bedelle hisse → Fiili aktife giriş tarihi esas.\n\nBEDELSİZ HİSSE (GİB Md.9):\n  ① Sermaye yedeklerinden → Aktif-pasif artmaz, bedel değişmez, eski tarih esas.\n  ② Kâr yedeklerinden → Nominal bedelle iştirak hesabına. Fiilen aktife giriş tarihi esas.\n     İştirak kazançları istisnası nedeniyle KV'ye tabi tutulmaz.\n\nDEVIR/BÖLÜNME (GİB Md.10): Devralınan kurumun iktisap tarihi esas alınır.",
+          "GİB Rehberi Md.3-9 | KVK 5/1-e",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "Menkul Kıymet Ticareti Yasağı ve Holding Şirketler (GİB Rehberi Md.7-8)",
+          "MENKUL KİYMET TİCARETİ YASAĞI (GİB Md.7):\nMenkul kıymet ticareti yapan mükelleflerin ticari amaçlı hisseleri kapsam dışı.\nAncak: Doğrudan veya dolaylı olarak diğer şirketlerin yönetimine ve ortaklık politikalarının\nbelirlenmesine katılmak üzere edinilen paylar istisna kapsamında.\n\nHOLDİNG ŞİRKETLER (GİB Md.8):\nEsas faaliyeti iştirakten ibaret holding şirketlerde:\n  → 24-Mali Duran Varlıklar hesabında izlenen hisseler → İstisna kapsamında.\n  → 11-Menkul Kıymetler hesabında izlenen hisseler → İstisna kapsamı DIŞI.\n\nZARAR DURUMU (GİB Md.7):\nİştirak hissesi zararlı satılırsa: Zararın istisna oranına (%75 veya %50) denk gelen\nkısmı KKEG sayılır. Kalan kısım gider olarak indirilebilir.",
+          "GİB Rehberi Md.7-8 | KVK 5/1-e",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Fon Hesabı, Tahsil ve Grup Şirketleri (GİB Rehberi Md.19-28)",
+          "FON HESABI (GİB Md.19-22):\n  • Satışı izleyen hesap döneminin başından KV beyan süresine kadar 549'a alınmalı.\n  • 5 yıl tutma zorunlu. Sermayeye ilave mümkün. Fon çekilirse o dönem gelir sayılır.\n  • Tasfiye → Otomatik çekim = Vergi ziyaı. İflas erteleme → İstisna yok.\n\nSATIŞ BEDELİ TAHSİLİ (GİB Md.25):\n  • Satışı izleyen 2. takvim yılı sonuna kadar tahsil zorunlu.\n  • Nakit + Altın, DT, HB, BİST hisse (2 yıl içinde nakde çevrilmeli).\n\nGRUP ŞİRKETLERİ (GİB Md.27-28):\n  • Nakit girişi olmaksızın satış → İstisna uygulanmaz.\n  • Ayni sermaye olarak bağlı ortaklığa iştirak hissesi devri → İstisna yok.",
+          "GİB Rehberi Md.19-28 | KVK 5/1-e",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı (GİB Rehberi Bölüm C)",
+          "49 No.lu Tebliğ: >=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN (27/11/2024 SONRASI — %50):\n'...en az iki tam yıl süreyle kurum aktifinde yer alan [şirket adı] iştirak\n  hissesinin [tarih] tarihinde satışından doğan kazancın 9160 sayılı\n  Cumhurbaşkanı Kararı kapsamında %50'si olan [tutar] TL kurumlar\n  vergisinden istisna edilmiş, söz konusu kazanç [tarih] tarihine kadar\n  549 Özel Fonlar hesabına alınmıştır.'\n\nKULLANMAYIN:\n'...%75 istisna uygulanmıştır' (27/11/2024 sonrası → %50)\n'...taşınmaz satışında olduğu gibi 15/7/2023 sınırı...' (İştirak hissesinde bu sınır yok)\n\nKRİTİK RİSK ALANLARI:\n(1) 27/11/2024 sonrası satışta %75 oran kullanmak — yanlış oran.\n(2) FIFO uygulamasını atlamak — aynı şirkete farklı tarihlerde alınan hisseler.\n(3) Holding'de 11-MK hesabındaki hisseler için istisna uygulamak.\n(4) Zararlı satışta KKEG hesaplamamak.\n(5) KDV istisnasında 15/7/2023 sınırı olduğunu düşünmek (iştirak hissesinde sınır yok).",
+          "49 No.lu Tebliğ | GİB Rehberi Mart 2026 Bölüm C | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB REHBERİ MART 2026 KAPANIŞ (İŞTİRAK HİSSESİ): 9160 s. CB Kararı ile 27/11/2024'ten itibaren oran %50. FIFO, holding 24/11 ayrımı, menkul kıymet ticareti yasağı ve zarar KKEG kuralları kritik. İştirak hissesinde KDV istisnası süresiz devam eder — 15/7/2023 sınırı uygulanmaz. YMM müteselsil sorumluluk: SM-SMMM-YMM K. Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F35",
+      "rows": [
+        [
+          "352 – İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNASI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | %75→%50 (27/11/2024) | FIFO | Holding | 549 Fon | KDVK 17/4-r | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Hisse Devir Sözleşmesi ve Pay Defteri Kaydı",
+          "Satılan hissenin devir sözleşmesi ve pay defterindeki kayıt.\nYMM: Devir tarihi, bedel ve devreden/devralan bilgileri açık olmalı.",
+          "Pay defteri + Devir sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Aktife Giriş Tarihi İspat Belgesi — FIFO için (GİB Md.6)",
+          "Aynı kuruma ait tüm iktisap belgelerinin kronolojik listesi.\nFIFO: En eski iktisap tarihindeki hisseler önce çıkar. Her alım için ayrı belge.",
+          "242/245 hesap kartı + İktisap belgeleri",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ İstisna Oranı Belirleme Belgesi (Satış Tarihi — 27/11/2024 Öncesi/Sonrası)",
+          "Satış tarihi → 27/11/2024 öncesi = %75 | Sonrası = %50 (9160 s. CB Kararı).",
+          "Bu çalışma kâğıdı D bölümü",
+          null
+        ],
+        [
+          null,
+          "4",
+          "İştirak Hissesinin Muhasebe Hesabı Belgesi (Holding İçin — GİB Md.8)",
+          "24-Mali Duran Varlıklar → İstisna kapsamı. 11-Menkul Kıymetler → Kapsam dışı.",
+          "242 veya 245 hesap kartı",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Satış Kazancı Hesaplama Tablosu (E.4 — FIFO Bazında)",
+          "E.4 = Satış Bedeli − FIFO Maliyet × Adet − Satış Giderleri. FIFO hesabı dahil.",
+          "Muhasebe programı — FIFO hesap tablosu",
+          null
+        ],
+        [
+          null,
+          "6",
+          "★ 549 Fon Hesabına Alınma Belgesi (Muhasebe Kaydı — GİB Md.19)",
+          "İstisna tutarının (E.6) 549 hesabına kaydedildiğini gösteren yevmiye. Zamanlama kritik.",
+          "Yevmiye defteri / 549 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KV Beyannamesi Taslağı — 352. Satır",
+          "352 tutarının E.6 ile uyumlu. 'Kazancın Bulunması Halinde' bölümünde.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Rüçhan Hakkı: Kullanım Belgesi + Eski Hisse İktisap Tarihi (GİB Md.3-4)",
+          "Nominal bedelle kullanım → Eski hissenin tarihi esas. Nominal dışı → Yeni aktife giriş tarihi.",
+          "Hak kullanım belgesi + Banka dekontu",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Bedelsiz Hisse: Sermaye Artırım Belgesi + Tip Tespiti (GİB Md.9)",
+          "Sermaye yedeklerinden → Bedel değişmez, eski tarih. Kâr yedeklerinden → Yeni aktife giriş.",
+          "Sermaye artırım kararı + İştirak hesap kartı",
+          null
+        ],
+        [
+          null,
+          "10",
+          "GS Yatırım Fonu: SPK Kaydı + Katılma Payı Belgesi (GİB Md.5)",
+          "SPK'dan izinli girişim sermayesi fonu olduğunu gösteren belge. Katılma payı belgesi.",
+          "SPK kaydı / Fon belgesi",
+          null
+        ],
+        [
+          null,
+          "11",
+          "Zarar Durumu: KKEG Hesabı (E.8) ve Muhasebe Kaydı",
+          "Zararlı satışta zararın %75/%50'si KKEG. Hesaplama tablosu ve muhasebe kaydı.",
+          "Bu çalışma kâğıdı E.8 + Muhasebe kaydı",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ İstisna oranı doğru mu? 27/11/2024 öncesi/sonrası ayrımı?",
+          "9160 s. CB Kararı: 27/11/2024+ → %50. Öncesi → %75.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ 2 Tam Yıl FIFO bazında sağlandı mı?",
+          "FIFO: En eski iktisap tarihinden sayılır. Ayrı alımlar ayrı kontrol.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Menkul kıymet ticareti yasağı kontrol edildi mi?",
+          "GİB Md.7: Ticari amaçlı → Kapsam dışı. İştirak amaçlı → Kapsamda.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Holding ise hisse 24-Mali Duran Varlıklar'da mı izleniyor?",
+          "GİB Md.8: 24-MDV → Kapsamda. 11-MK → Kapsam dışı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "FIFO uygulaması doğru mu? Birden fazla alım varsa?",
+          "GİB Md.6: En eski önce çıkar. Her alımın belgesi dosyada.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Rüçhan hakkı / bedelsiz hisse iktisap tarihi doğru mu?",
+          "GİB Md.3-4,9: Nominal bedelle → Eski tarih. Nominal dışı/kâr yedeklerinden → Yeni tarih.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★ Satış bedeli 2. takvim yılı sonuna kadar tahsil edilecek mi?",
+          "Nakit veya Altın/DT/HB/BİST hisseleri (2 yıl içinde nakde).",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★ İstisna tutarı süresi içinde 549 hesabına alındı mı?",
+          "Satışı izleyen dönem KV beyan süresi içinde.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Zarar durumunda KKEG hesabı yapıldı mı? (E.8)",
+          "Zararlı satışta zararın %75/%50'si KKEG sayılır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "KDV istisnası doğru uygulandı mı? (İştirak → 15/7/2023 sınırı yok)",
+          "İştirak hissesinde KDVK 17/4-r süresiz devam eder.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S11",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB Rehberi Mart 2026 (Yayın No:601). Kritik güncellemeler: (1) 9160 s. CB Kararı: 27/11/2024+ → %50. (2) FIFO yöntemi: Aynı şirkete farklı tarihlerde alınan hisseler. (3) Holding: 24-MDV kapsamda / 11-MK kapsam dışı. (4) Zarar KKEG kuralı. (5) KDV istisnası: İştirak hissesinde 15/7/2023 sınırı YOKTUR — taşınmazdan farklı. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

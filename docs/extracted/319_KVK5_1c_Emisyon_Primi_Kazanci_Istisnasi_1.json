@@ -1,0 +1,1415 @@
+{
+  "file": "319_KVK5_1c_Emisyon_Primi_Kazanci_Istisnasi_1.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G64",
+      "rows": [
+        [
+          "319 – EMİSYON PRİMİ KAZANCI İSTİSNASI | KVK Md.5/1-ç | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-ç | YALNIZCA Anonim Şirket | Kendi Paylarının Primli İhracı | %100 Tam İstisna | Zarar Olsa Dahi İndirilecek — Beyanname Satır 319 | YİAKV'den DÜŞÜLEBİLİR",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ KRİTİK BEYANNAME TEKNİĞİ: Emisyon primi 520 hesabına gider — gelir tablosuna GİRMEZ — ticari karda YOKTUR. Bu nedenle: (1) Önce KKEG olarak matrah artar, (2) Ardından 319 ile düşülür → Net vergi etkisi SIFIR. Bu iki işlem ZORUNLU ve EŞZAMANLI olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAPSAM DIŞI: AŞ'nin başkasına ait hisseleri elden çıkarmasından sağlanan kazanç (5/1-e/c). Sermaye azaltımı sırasında iptal edilen payların bedeli. Kâr dağıtımından kaynaklanan işlemler.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  ★ İstisna kullanan kurum ANONİM ŞİRKET mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-ç'de 'anonim şirketlerin' ifadesi açık hükümdür. Ltd.Şti. için bu madde kapsamında açık bir istisna hükmü yoktur; tartışmalıdır. Ticaret sicil belgesi zorunludur.",
+          null
+        ],
+        [
+          "A0.2  ★ İstisna şirketin KENDİ paylarının primli ihracından mı? (Başkasına ait hisse satışı değil)",
+          null,
+          null,
+          null,
+          "EVET",
+          "TEMEL KAPSAM SINIRI: AŞ'nin kendi hisselerini primli ihraç etmesi. Başkasına ait hisseleri satmak → 5/1-c veya 5/1-e. Pay senedi + sermaye artırım tescili ile belgelenmeli.",
+          null
+        ],
+        [
+          "A0.3  Pay ihracı kuruluş veya sermaye artırımı kapsamında mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-ç: 'Kuruluşlarında VEYA sermayelerini artırdıkları sırada' ifadesi zorunludur. Sonradan çıkarılan primli paylar (sermaye artırımı olmaksızın) kapsam dışı tartışmalıdır.",
+          null
+        ],
+        [
+          "A0.4  Satış bedeli itibari değerin ÜSTÜNDE mi? (Gerçek primli ihraç)",
+          null,
+          null,
+          null,
+          "EVET",
+          "Emisyon primi = Satış Bedeli − İtibari Değer > 0 olmalıdır. İtibari değere eşit veya altında ihraç → 319 istisnası uygulanmaz. C bölümündeki C.5 formülü ile kontrol edin.",
+          null
+        ],
+        [
+          "A0.5  ★ 520 hesabı kullanıldı mı? Emisyon primi gelir tablosuna GİRMEDİ mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK MUHASEBE: Emisyon primi 520 (Hisse Senedi İhraç Primleri) hesabına kaydedilmelidir. Gelir tablosuna GİRMEMELİDİR. 520 yerine 649 veya 679'a kaydedilmişse muhasebe hatası var.",
+          null
+        ],
+        [
+          "A0.6  ★ KKEG ilavesi yapıldı mı? (519 satırı — 319 ile birlikte ZORUNLU)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK BEYANNAME TEKNİĞİ: 520'ye giden tutar gelir tablosuna girmediğinden önce KKEG olarak matrah artırılmalı (519 satırı), ardından 319 ile düşülmelidir. KKEG yapılmadan sadece 319 yazılırsa beyanname HATALIDIR.",
+          null
+        ],
+        [
+          "A0.7  NSA (KVK 10/1-ı) hesabında emisyon primi tescil edilmeyen kısma DÂHİL EDİLMEDİ mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Emisyon primleri nakdi sermaye artışı indirim (NSA) hesabında dikkate ALINMAZ. Sadece tescil edilen sermaye artışı NSA'ya girer. NSA hesaplama tablosunda kontrol edilmelidir.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu (A0.1-A0.8 tümü)",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (kendi payı), A0.5 (520 hesabı), A0.6 (KKEG zorunlu) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna Kullanan Kurum (Anonim Şirket)",
+          null,
+          null,
+          null,
+          null,
+          "Anonim şirket olmalı — tam unvan",
+          null
+        ],
+        [
+          "Vergi Kimlik Numarası",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "İşlemin Türü",
+          null,
+          null,
+          null,
+          null,
+          "Kuruluş / Sermaye Artırımı",
+          null
+        ],
+        [
+          "Primli Pay İhraç Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "Genel KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Finans sektörü: %30",
+          null
+        ],
+        [
+          "B. MÜKELLEF VE KAPSAM KONTROLÜ — Üç Temel Şart",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/1-ç istisnası üç temel şartın KÜMÜLATİF sağlanmasını gerektirir: (1) Anonim şirket, (2) Kendi paylarının ihracı, (3) Kuruluş veya sermaye artırımı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Şart",
+          null,
+          "Durum",
+          null,
+          "Açıklama / YMM Notu",
+          null
+        ],
+        [
+          "B.1  ★ Anonim Şirket Statüsü",
+          null,
+          null,
+          "EVET",
+          null,
+          "KVK 5/1-ç: 'Anonim şirketlerin' — açık hüküm. Ltd.Şti. için bu kapsamda açık hüküm yoktur. Ticaret sicil belgesi zorunludur.",
+          null
+        ],
+        [
+          "B.2  ★ Şirketin KENDİ Paylarının Primli İhracı",
+          null,
+          null,
+          "EVET",
+          null,
+          "AŞ'nin başkasına ait hisseleri satması → Bu istisna KULLANILAMAZ. Pay senedi / ilmühaber + sermaye artırım tescil belgesi ile belgelenmelidir.",
+          null
+        ],
+        [
+          "B.3  Kuruluş veya Sermaye Artırımı Kapsamında İhraç",
+          null,
+          null,
+          "EVET",
+          null,
+          "Genel kurul / yönetim kurulu (kayıtlı sermaye) kararıyla gerçekleşen primli ihraç. Ticaret siciline tescil zorunludur.",
+          null
+        ],
+        [
+          "C. EMİSYON PRİMİ HESABI — İstisna Tutarı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "EMİSYON PRİMİ = (Pay Başına Satış Bedeli − Pay Başına İtibari Değer) × İhraç Edilen Pay Adedi. Satış bedeli itibari değerin ÜSTÜNDE olmalıdır. Prim tutarı 520 (Hisse Senedi İhraç Primleri) hesabına kaydedilir — gelir tablosuna GİRMEZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Değer / Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  İhraç Edilen Pay Adedi",
+          null,
+          null,
+          "Primli olarak satılan toplam pay adedi",
+          null,
+          "GK/YK kararındaki pay adediyle uyumlu olmalı",
+          null
+        ],
+        [
+          "C.2  Pay Başına İtibari Değer (TL)",
+          null,
+          null,
+          "Hisse senedinin üzerinde yazılı nominal değer (örn: 1 TL)",
+          null,
+          "Ticaret sicili tescilindeki nominal değer esas alınır",
+          null
+        ],
+        [
+          "C.3  Pay Başına Satış Bedeli / İhraç Fiyatı (TL)",
+          null,
+          null,
+          "Primli ihraç fiyatı — itibari değerin ÜSTÜNDE olmali",
+          null,
+          "GK/YK kararında belirlenen ihraç fiyatı",
+          null
+        ],
+        [
+          "C.4  Pay Başına Emisyon Primi (C.3 − C.2)",
+          null,
+          "0",
+          "Birimin prim tutarı (pozitif olmalı)",
+          null,
+          "Negatif ise istisna uygulanamaz",
+          null
+        ],
+        [
+          "C.5  Toplam Nominal Bedel (C.1 × C.2)",
+          null,
+          "0",
+          "Sermaye artırımının tescile esas kısmı",
+          null,
+          "501 Ödenmemiş Sermaye ve 500 Sermaye ile uyumlu",
+          null
+        ],
+        [
+          "C.6  Toplam Tahsil Edilen Bedel (C.1 × C.3)",
+          null,
+          "0",
+          "Nakden tahsil edilen toplam tutar",
+          null,
+          "102 Banka tahsilatı ile uyumlu olmalı",
+          null
+        ],
+        [
+          "C.7  EMİSYON PRİMİ = 319 İSTİSNA TUTARI (C.6 − C.5)",
+          null,
+          "0",
+          null,
+          null,
+          "Bu tutar KKEG ilavesi ve 319 satırıyla eşit olmalıdır",
+          null
+        ],
+        [
+          "C.8  TTK 519 Kanuni Yedek Akçe (Emisyon Priminden Ayrılacak Min. Tutar)",
+          null,
+          "0",
+          "TTK Md.519/2: Emisyon priminin tamamı kanuni yedek akçeye eklenmeli",
+          null,
+          "Giderler düşüldükten sonra kalan kısım yedek akçeye aktarılır",
+          null
+        ],
+        [
+          "D. İHRAÇ GİDERLERİ VE KVK 5/3 KKEG ANALİZİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 5/3: İstisna kazançlara ilişkin giderler istisna dışı kazançtan düşülemez. İhraç giderlerinin emisyon primine isabet eden kısmı KKEG'dir. Nominal bedele isabet eden kısım ise gider olarak indirilebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Gider Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam İhraç Giderleri (TL)",
+          null,
+          null,
+          "Aracılık komisyonu, tescil harcı, noter, gazete ilanı, danışmanlık vb.",
+          null,
+          "Tüm ihraçla ilgili giderler — fatura bazında belgelenmelidir",
+          null
+        ],
+        [
+          "D.2  Emisyon Primine İsabet Eden Gider Oranı (%)",
+          null,
+          "0",
+          "Emisyon Primi / Toplam Tahsilat × 100 — Bu oran KKEG hesabında kullanılır",
+          null,
+          "Bu oran KKEG hesabında kullanılır",
+          null
+        ],
+        [
+          "D.3  Emisyon Primine İsabet Eden Giderler — KKEG",
+          null,
+          "0",
+          "Toplam Gider × Oran — Bu kısım istisna dışı kazançtan düşülemez",
+          null,
+          "KVK 5/3 + Danıştay emsal kararları: Bu tutarın KKEG olduğu açıktır",
+          null
+        ],
+        [
+          "D.4  İndirilebilir Gider (Nominal Bedele İsabet)",
+          null,
+          "0",
+          null,
+          null,
+          "KDV notu: Emisyon primine isabet eden KDV'nin indirimi de tartışmalıdır — KDVK 30/d",
+          null
+        ],
+        [
+          "E. ★ KRİTİK BEYANNAME TEKNİĞİ — KKEG İLAVESİ + 319 İSTİSNASI BİRLİKTE ZORUNLU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NEDEN BİRLİKTE OLMALI? Emisyon primi → 520 hesabı (öz kaynaklar) → Gelir tablosuna GİRMEZ → Ticari karda YOKTUR. Bu nedenle beyanname düzeltme mekanizması zorunludur: ÖNCE KKEG olarak matrah artırılır, SONRA 319 ile düşülür. İkisi EŞZAMANLI ve AYNI TUTAR olmak zorundadır. Sadece 319 yazılır, KKEG yapılmazsa → BEYANNAME HATALIDIR.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Beyanname Adımı",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "Beyanname Yeri"
+        ],
+        [
+          "E.1  ADIM 1 — Ticari Kâr (Bilanço Kârı)",
+          null,
+          null,
+          "Emisyon primi burada YOK — 520 hesabına gitti, gelir tablosuna GİRMEDİ",
+          null,
+          "Bilanço — Ticari K/Z",
+          null
+        ],
+        [
+          "E.2  ADIM 2 — KKEG İLAVESİ: Emisyon Primi (= C.7)",
+          null,
+          "0",
+          "520'ye giden, gelir tablosuna girmeyen emisyon primi → KKEG olarak matrah artar",
+          null,
+          "KV Beyannamesi — KKEG Tablosu (519 Satırı)",
+          null
+        ],
+        [
+          "E.3  ADIM 3 — Mali Kâr (E.1 + E.2)",
+          null,
+          "0",
+          "Emisyon primi artık mali kara dahil edilmiş durumdadır",
+          null,
+          "KV Beyannamesi — Mali Kâr",
+          null
+        ],
+        [
+          "E.4  ADIM 4 — 319 İSTİSNA DÜŞÜMÜ (= C.7 — KKEG ile AYNI TUTAR)",
+          null,
+          "0",
+          "'Zarar Olsa Dahi İndirilecek' bölümü — Emisyon priminin TAMAMI istisna",
+          null,
+          "KV Beyannamesi — 319 Satırı",
+          null
+        ],
+        [
+          "E.5  ADIM 5 — NET VERGİ ETKİSİ (E.2 − E.4)",
+          null,
+          "0",
+          "SIFIR OLMALI: KKEG ile İstisna karşılıklı sıfırlar → Emisyon priminde KV ÖDENMEDİ",
+          null,
+          "Kontrol: SIFIR görülüyorsa doğru",
+          null
+        ],
+        [
+          "F. BEYANNAME 319 — İSTİSNA TUTARI SONUCU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 319 (Zarar Olsa Dahi İndirilecek — C.7 ile Aynı)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "C.7 = E.4 = KKEG tutarı = 319 Satırı"
+        ],
+        [
+          "YİAKV ve NSA NOTLARI: (1) YİAKV (KVK 32/C): Emisyon primi istisnası YİAKV matrahından DÜŞÜLEBİLİR (5/1-ç kapsamı). (2) NSA (KVK 10/1-ı): Emisyon primleri nakdi sermaye artışı indirim hesabına DAHİL EDİLMEZ — yalnızca tescil edilen sermaye artışı NSA'ya girer. (3) TTK 519: Emisyon priminin tamamı kanuni yedek akçeye eklenmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G40",
+      "rows": [
+        [
+          "319 – EMİSYON PRİMİ KAZANCI | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-ç | Anonim Şirket | Kendi Paylarının Primli İhracı | %100 İstisna | KKEG + 319 Zorunlu | YİAKV'den Düşülebilir",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "A0.9 OK ise devam",
+          null,
+          null
+        ],
+        [
+          "AŞ Şartı (B.1)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "İhraç Edilen Pay Adedi",
+          null,
+          null,
+          "0",
+          "C.1 değeri",
+          null,
+          null
+        ],
+        [
+          "Pay Başına Emisyon Primi (C.4)",
+          null,
+          null,
+          "0",
+          "Pozitif olmali",
+          null,
+          null
+        ],
+        [
+          "Toplam Nominal Bedel (C.5)",
+          null,
+          null,
+          "0",
+          "Sermaye tescil tutarı",
+          null,
+          null
+        ],
+        [
+          "Toplam Tahsilat (C.6)",
+          null,
+          null,
+          "0",
+          "Banka ile uyumlu",
+          null,
+          null
+        ],
+        [
+          "EMİSYON PRİMİ = 319 İSTİSNA (C.7)",
+          null,
+          null,
+          "0",
+          "C.7 = E.2 KKEG = E.4 319",
+          null,
+          null
+        ],
+        [
+          "İhraç Giderleri KKEG Kısmı (D.3)",
+          null,
+          null,
+          "0",
+          "KVK 5/3 — matrahtan düşülemez",
+          null,
+          null
+        ],
+        [
+          "E.5 Net Vergi Etkisi (SIFIR OLMALI)",
+          null,
+          null,
+          "0",
+          "SIFIR ise KKEG+319 doğru",
+          null,
+          null
+        ],
+        [
+          "B. BEYANNAME TEKNİĞİ DOĞRULAMA — KKEG + 319 ÇİFT KAYIT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KKEG tutarı (E.2) ile 319 tutarı (E.4) HER ZAMAN EŞİT OLMALIDIR. İkisi aynı emisyon primini temsil eder. E.5 (Net Etki) SIFIR vermezse beyanname hatalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "Tutar (TL)",
+          null,
+          "Beyanname Yeri",
+          null
+        ],
+        [
+          "KKEG İlavesi (519 Satırı)",
+          null,
+          null,
+          "0",
+          "KV Beyannamesi — KKEG Tablosu",
+          null,
+          null
+        ],
+        [
+          "319 İstisnası",
+          null,
+          null,
+          "0",
+          "KV Beyannamesi — 319 Satırı",
+          null,
+          null
+        ],
+        [
+          "Net Etki (SIFIR OLMALI)",
+          null,
+          null,
+          "0",
+          "KKEG − 319 = 0 ✓",
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K11)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama ve Kanıt",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "★ Kurum Anonim Şirket mi? (KVK 5/1-ç açık hükmü)",
+          null,
+          "Ticaret sicil gazetesi — AŞ ibaresi zorunlu. Ltd için açık hüküm yoktur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ İstisna şirketin KENDİ paylarının primli ihracından mı?",
+          null,
+          "Pay senedi + sermaye artırım tescil belgesi. Başkasına ait hisse satışı → 5/1-e/c.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "Satış bedeli itibari değerin üstünde mi? (Gerçek prim var mı?)",
+          null,
+          "C.4 = C.3 − C.2 > 0 olmalıdır. Negatif veya sıfır ise istisna uygulanamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ 520 hesabı kullanıldı mı? Emisyon primi gelir tablosuna GİRMEDİ mi?",
+          null,
+          "Muhasebe: 102 Banka Borç / 501 Sermaye Alacak + 520 Alacak. 520 yerine 649/679'a kaydedilmişse hata.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ KKEG ilavesi yapıldı mı? (519 satırı — 319 ile aynı tutar)",
+          null,
+          "Beyanname KKEG tablosu (519 satırı): C.7 tutarında emisyon primi. Bu yapılmadan sadece 319 yazılırsa beyanname hatalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "★ 319 tutarı KKEG tutarıyla EŞİT mi? E.5 = 0 mi?",
+          null,
+          "HESAPLAMALAR B bölümündeki E.5 kontrol satırı SIFIR vermelidir. Fark varsa hesap hatası var.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "İhraç giderleri KVK 5/3 kapsamında doğru ayrıştırıldı mı?",
+          null,
+          "D.3 = Toplam Gider × (Emisyon Primi / Toplam Tahsilat). Bu kısım KKEG olarak beyannamede ayrıca eklenir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "TTK 519 kanuni yedek akçe ayrımı yapıldı mı?",
+          null,
+          "Emisyon priminin (giderler düşüldükten sonra) tamamı kanuni yedek akçeye eklenmeli. Genel kurul kararı zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "NSA (KVK 10/1-ı) hesabında emisyon primi tescil edilmeyen kısma dahil edilmedi mi?",
+          null,
+          "Emisyon primleri NSA hesabına girmez. NSA hesaplama tablosunda bu kontrol zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "YİAKV matrahından 319 istisnası DÜŞÜLDܒ mü?",
+          null,
+          "Emisyon primi istisnası (319) YİAKV matrahından DÜŞÜLEBİLİR. YİAKV çalışma kâğıdında teyit edilmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "Birleşme/devir/bölünmede emisyon primleri doğru aktarıldı mı?",
+          null,
+          "KVK 18,19,20 kapsamında devir/bölünmede emisyon primlerinin devralan şirkete aynen aktarılması vergi avantajını korur. Devir sözleşmesi + bilanço kontrolü zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "D. BEYANNAME SATIR EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "319",
+          null,
+          "0",
+          "KVK 5/1-ç — Emisyon Primi | %100 İstisna | Zarar Olsa Dahi İndirilecek",
+          null,
+          null,
+          null
+        ],
+        [
+          "KKEG",
+          null,
+          "0",
+          "Aynı tutar KKEG tablosuna da girilmeli (519 satırı) — ZORUNLU EŞLİK",
+          null,
+          null,
+          null
+        ],
+        [
+          "NSA",
+          null,
+          "Dahil Edilmez",
+          "KVK 10/1-ı NSA hesabına emisyon primleri girmez — sadece tescil edilen sermaye artar",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G27",
+      "rows": [
+        [
+          "319 – EMİSYON PRİMİ KAZANCI | MUHASEBE KAYITLARI ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-ç | %100 Tam İstisna | 520 Hesabı | KKEG + 319 Zorunlu | TTK 519 Yedek Akçe",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. Şirkete özgü hesap planına göre uyarlanmalıdır. Emisyon primi gelir tablosuna GİRMEZ — 520 (Öz Kaynaklar) hesabına kaydedilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — PRİMLİ PAY İHRACI (KENDİ PAYLARI — SERMAYE ARTIRIMI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Örnek: Nominal 1.500.000 TL sermaye artırımı, 500.000 TL emisyon primi → Toplam tahsilat 2.000.000 TL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "İhraç tarihi",
+          "102 Bankalar",
+          "Toplam tahsilatın bankaya girişi (nominal + prim)",
+          "2.000.000",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "İhraç tarihi",
+          "501 Ödenmemiş Sermaye",
+          "Taahhüt edilen sermaye artırımının kaydı",
+          "—",
+          "1.500.000",
+          "GK/YK kararı"
+        ],
+        [
+          "Kr",
+          "İhraç tarihi",
+          "520 Hisse Senedi İhraç Primleri",
+          "EMİSYON PRİMİ — Öz Kaynaklar altında (GELİR TABLOSUNA GİRMEZ!)",
+          "—",
+          "500.000",
+          "KVK 5/1-ç"
+        ],
+        [
+          "KRİTİK MUHASEBE NOTU: 520 hesabına kaydedilen emisyon primi GELİR TABLOSUNA GİRMEZ. Bu nedenle ticari karda görünmez. Tescil sonrası: 501 → 500 Sermaye aktarılır (Dr 501 / Kr 500).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — İHRAÇ GİDERLERİ (KVK 5/3 KKEG AYIRIMI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Örnek: Toplam gider 100.000 TL, emisyon primi oranı %25 → KKEG: 25.000 TL, İndirilebilir: 75.000 TL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "Gider tarihi",
+          "689 / 770 Genel Yönetim Giderleri",
+          "Aracılık, tescil harcı, noter, gazete ilanı, hukuki vb.",
+          "100.000",
+          "—",
+          "Fatura"
+        ],
+        [
+          "Kr",
+          "Gider tarihi",
+          "102 Bankalar",
+          "Ödeme",
+          "—",
+          "100.000",
+          "Banka dekontu"
+        ],
+        [
+          "Beyanname",
+          "—",
+          "KKEG: İstisna kısmına isabet eden gider (25.000 TL)",
+          "KVK 5/3: Bu kısım KKEG — beyanname KKEG tablosuna eklenir. KDV'si de indirim konusu yapılamaz (KDVK 30/d).",
+          "25.000",
+          "—",
+          "KVK 5/3"
+        ],
+        [
+          "★ KAYIT 3 — KRİTİK BEYANNAME TEKNİĞİ (KKEG + 319 ZORUNLU EŞLİK)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME MEKANİZMASI — Emisyon priminin KV dışı tutulma yolu:\n\nADIM 1: Ticari Kâr hesaplanır. Emisyon primi 520'ye gittiğinden ticari karda YOKTUR.\n\nADIM 2: KKEG İLAVESİ (519 satırı): Emisyon primi tutarı beyannamede KKEG olarak matrahı artırır.\n         → Bu adım olmadan sadece 319 yazılamaz!\n\nADIM 3: 319 İSTİSNA DÜŞÜMÜ: 'Zarar Olsa Dahi İndirilecek' bölümünde aynı tutar düşülür.\n         → KKEG ile 319 HER ZAMAN EŞİT OLMALIDIR.\n\nSONUÇ: KKEG ilavesi − 319 düşümü = SIFIR → Emisyon priminde KV ödenmez. ✓",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 4 — TTK 519 KANUNİ YEDEK AKÇE AYRIMI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "Dönem sonu",
+          "520 Hisse Senedi İhraç Primleri",
+          "Emisyon priminin kanuni yedek akçeye aktarılması (giderler düşüldükten sonra)",
+          "[Net Prim]",
+          "—",
+          "TTK Md.519/2"
+        ],
+        [
+          "Kr",
+          "Dönem sonu",
+          "541 Yasal Yedekler (Kanuni Yedek Akçe)",
+          "TTK 519: Emisyon priminin tamamı kanuni yedek akçeye eklenmeli",
+          "—",
+          "[Net Prim]",
+          "GK kararı"
+        ],
+        [
+          "TTK Md.519/2: Emisyon primlerinin tamamı (giderler düşüldükten sonra) kanuni yedek akçeye eklenmeli. Bu aktarım için genel kurul kararı gerekebilir. Aktarım yapılmadan 520 bakiyesinde bırakmak TTK 519 ihlali riski taşır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D19",
+      "rows": [
+        [
+          "319 – EMİSYON PRİMİ KAZANCI | DENETÇİ NOTLARI VE MESLEKİ DEĞERLENDİRME",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-ç | Anonim Şirket | Kendi Paylarının Primli İhracı | %100 İstisna | KKEG+319 Zorunlu | YİAKV Düşülebilir | TTK 519 | NSA Dışında",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK VE TEMEL KAVRAMLAR",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-ç — Kanun Metni ve Kapsam",
+          "KVK Md.5/1-ç (Tam metin): 'Anonim şirketlerin kuruluşlarında veya sermayelerini artırdıkları sırada çıkardıkları payların bedelinin itibarî değeri aşan kısmı.'\n\nEMİSYON PRİMİ = (Satış Bedeli − İtibari Değer) × Pay Adedi\n\nİstisna: %100 Tam İstisna — Zarar olsa dahi indirilecek.\nMuhasebe: 520 (Hisse Senedi İhraç Primleri) hesabına kaydedilir.\nYMM notu: Beyanname 319. satırına yazılır.",
+          "KVK Md.5/1-ç"
+        ],
+        [
+          "N2",
+          "Kapsam Sınırları — Neyin İstisna OLMAYACAĞI",
+          "KAPSAM DIŞI:\n✗ AŞ'nin başkasına ait hisseleri satmasından sağlanan prim → 5/1-c veya 5/1-e kapsamı\n✗ Sermaye azaltımı sırasında iptal edilen payların tutarı\n✗ Kâr dağıtımından kaynaklanan işlemler\n✗ İkincil piyasada hisse senedi alım-satımı (AŞ'nin kendi paylarını geri alıp satması tartışmalı)\n✗ Borçlanma araçları ihraçlarındaki prim (tahvil primi — ayrı bir hüküm yoktur)\n\nYMM notu: 'Kendi paylarının primli ihracı' ifadesi belge ile doğrulanmalıdır.",
+          "KVK Md.5/1-ç | Danıştay içtihatları"
+        ],
+        [
+          "N3",
+          "★ Beyanname Tekniği — KKEG + 319 Birlikte Zorunlu",
+          "EMİSYON PRİMİNİN KV SİSTEMİNDEKİ YERİ:\n1. Emisyon primi → 520 hesabına gider → Gelir tablosuna GİRMEZ\n2. Ticari karda görünmez → Beyanname düzeltme mekanizması zorunlu\n\nDOĞRU BEYANNAME AKIŞI:\na) KKEG ilavesi (519 satırı): 520'ye giden tutar KKEG olarak matrahı artırır\nb) 319 istisnası: 'Zarar Olsa Dahi İndirilecek' bölümünde AYNI TUTAR düşülür\nc) Net etki: SIFIR → Emisyon priminde KV ödenmez\n\nHATA SENARYOSU: Sadece 319 yazılır, KKEG yapılmaz → Matrah yanlış → Tarhiyat riski!",
+          "KVK Md.5/1-ç | GİB Özelgeleri | Danıştay"
+        ],
+        [
+          "N4",
+          "KVK 5/3 — İhraç Giderleri KKEG Analizi",
+          "KVK 5/3: İstisna kazançlara ilişkin giderler KKEG'dir.\nİhraç giderlerinin emisyon primine isabet eden kısmı KKEG.\nOran = Emisyon Primi / Toplam Tahsilat.\n\nDanıştay emsal kararı: İhraç giderlerinin KKEG sayılacağı teyit edilmiştir.\nKDV: İstisna işleme ait giderlerin KDV'si KDVK 30/d kapsamında indirim konusu yapılamaz.\n\nYMM notu: Gider ayrıştırma tablosu (D bölümü) tasdik dosyasına eklenmelidir.",
+          "KVK Md.5/3 | KDVK Md.30/d | Danıştay"
+        ],
+        [
+          "BÖLÜM 2 — YMM TASDİK DEĞERLENDİRMESİ VE DİĞER ETKİLEŞİMLER",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "TTK 519 Kanuni Yedek Akçe Zorunluluğu",
+          "TTK Md.519/2: Emisyon primlerinin giderler düşüldükten sonra kalan kısmının TAMAMI kanuni yedek akçeye eklenmeli.\nGenel kurul kararı gerekebilir.\n520 bakiyesini yedek akçeye aktarmadan tutmak TTK 519 ihlali riski taşır.\nYMM notu: TTK uyumu KVK 5/1-ç istisnasının koşulu olmasa da tasdik dosyasında TTK 519 uyumu teyit edilmelidir.",
+          "TTK Md.519/2"
+        ],
+        [
+          "N6",
+          "YİAKV'den DÜŞÜLEBİLİR (5/1-ç Kapsamı)",
+          "KVK 32/C kapsamındaki YİAKV hesabında emisyon primi istisnası (319) MATRAHTAN DÜŞÜLEBİLİR.\nBu, bazı diğer istisnalardan (5/1-c = 318 gibi) farklı bir durumdur.\nYİAKV çalışma kâğıdında 319 tutarı matrahtan doğru biçimde düşülmelidir.\nYMM notu: KPMG/7524 s.K. değerlendirmesi ve güncel GİB açıklamalarıyla teyit.",
+          "KVK Md.32/C | YİAKV Tebliğleri"
+        ],
+        [
+          "N7",
+          "NSA (KVK 10/1-ı) — Emisyon Primleri Dahil Edilmez",
+          "Nakdi Sermaye Artışı İndirimi (NSA) hesabında EMİSYON PRİMLERİ dikkate ALINMAZ.\nNSA'ya giren tutar: Ticaret siciline tescil edilen sermaye artışının nakdi kısmı.\nEmisyon primleri tescil edilen sermayeye değil, 520 hesabına gider.\nYMM notu: NSA hesaplama tablosunda emisyon priminin dahil edilmediği teyit edilmeli.",
+          "KVK Md.10/1-ı | NSA Tebliğleri"
+        ],
+        [
+          "N8",
+          "Birleşme/Devir/Bölünmede Emisyon Primleri",
+          "KVK 18, 19, 20 kapsamında birleşme/devir/bölünmede:\nEmisyon primlerinin devralan şirkete aynen aktarılması vergi avantajının devam etmesini sağlar.\nAksi halde devir bilançosunda emisyon priminin farklı işlenmesi vergi riski doğurabilir.\nYMM notu: Devir/bölünme sözleşmesi + bilanço kontrolü zorunludur.",
+          "KVK Md.18, 19, 20 | Danıştay"
+        ],
+        [
+          "N9",
+          "49 No.lu Tebliğ — Tasdik Raporu + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...KVK 5/1-ç şartları sağlandığı ölçüde emisyon primi istisnası uygulanabilecektir'\n'...KKEG ilavesi ve 319 istisna düşümünün birlikte uygulandığı doğrulanmalıdır'\n\nKULLANMAYIN:\n'...otomatik olarak istisna uygulanır' | '...sorunsuz' | '...tüm primler kapsam içindedir'\n\nKRİTİK RİSK: KKEG yapılmadan sadece 319 → Tarhiyat.",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "ÖZELGE/DANIŞTAY: İzmir VDB (2011): Emisyon priminin KKEG + 319 tekniğiyle beyan edilmesi onaylanmıştır. Danıştay: İhraç giderlerinin KKEG sayıldığı teyit edilmiştir. Ltd şirketler için emisyon primi istisnasının uygulanabilirliği tartışmalıdır — özelge alınması tavsiye edilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F34",
+      "rows": [
+        [
+          "319 – EMİSYON PRİMİ KAZANCI | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-ç | Anonim Şirket | Kendi Paylarının Primli İhracı | %100 İstisna | 520 Hesabı | KKEG+319 Zorunlu | TTK 519 | YİAKV Düşülebilir | NSA Dışında",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Zorunlu belgeler. Kategori 2: Destekleyici. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER  (Tamamı Mevcut Olmadan Tasdik Tamamlanmaz)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "Anonim Şirket Statüsünü İspat Eden Belge",
+          "KVK 5/1-ç açık hükmü: 'Anonim şirketlerin...' — AŞ statüsü zorunludur.\nTicaret sicil gazetesi veya güncel ticaret sicil tasdiknamesi.\nYMM notu: Ltd şirketler için bu kapsamda açık hüküm yoktur. Tartışmalı durumlarda özelge alınması tavsiye edilir.",
+          "Ticaret sicil gazetesi / MERSİS / Ticaret sicil tasdiknamesi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Primli Pay İhraç Kararı (GK veya YK Kararı)",
+          "Genel kurul veya yönetim kurulu (kayıtlı sermaye sisteminde) kararı.\nPrimli ihraç fiyatı, itibari değer ve pay adedini açıkça göstermeli.\nYMM notu: İhraç fiyatının itibari değeri aştığı GK/YK kararında görünmeli. Karar olmadan primli ihraç belgelenemez.",
+          "GK/YK karar metni / Yönetim kurulu toplantı tutanağı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Sermaye Artırım Tescil Belgesi (Ticaret Sicili)",
+          "Tescil edilen nominal sermaye artışı tutarı görünmeli.\nEmisyon priminin tescil edilmediği (yalnızca nominal kısmın tescil edildiği) teyit edilmeli.\nYMM notu: NSA hesabında tescil edilen tutar esas alınır — emisyon primi tescil edilmez.",
+          "Türkiye Ticaret Sicili Gazetesi / MERSİS tescil çıktısı",
+          null
+        ],
+        [
+          null,
+          "4",
+          "520 Hesap Hareketi — Yevmiye ve Mizan",
+          "102 Bankalar Borç / 501 Ödenmemiş Sermaye + 520 Alacak kaydı.\n520 hesabına kaydedildiği ve gelir tablosuna GİRMEDİĞİ teyit edilmeli.\nYMM notu: 520 yerine 649/679'a kaydedilmişse muhasebe hatası — düzeltme zorunlu.",
+          "Yevmiye defteri + Mizan / 520 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi KKEG Tablosu (519 Satırı — Emisyon Primi)",
+          "Emisyon priminin KKEG olarak beyanname matrahına eklendiği teyit edilmeli.\nKKEG tutarı = C.7 (Emisyon Primi) ile eşit olmalıdır.\nYMM notu: KKEG ilavesi yapılmadan sadece 319 yazılırsa beyanname HATALIDIR. Bu iki kaydın birlikte bulunması zorunludur.",
+          "Onaylı KV beyannamesi — KKEG tablosu",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi 319. Satır",
+          "'Zarar Olsa Dahi İndirilecek' bölümünde 319 satırında gösterilmeli.\nKKEG tutarıyla HER ZAMAN EŞİT olmali.\nYMM notu: HESAPLAMALAR B bölümü E.5 (Net Etki) SIFIR vermelidir. Sıfır vermiyorsa hata var.",
+          "Onaylı KV beyannamesi — 319. satır",
+          null
+        ],
+        [
+          "KATEGORİ 2 — DESTEKLEYİCİ BELGELER  (Duruma Göre Gereklidir)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "İhraç Giderleri Listesi ve KVK 5/3 KKEG Analizi",
+          "Aracılık komisyonu, tescil harcı, noter, gazete ilanı, danışmanlık vb. gider listesi.\nD.3 hesabı: Emisyon primine isabet eden kısım KKEG.\nKDV: İstisna kısma isabet eden KDV'nin indirimi tartışmalıdır (KDVK 30/d).\nYMM notu: KKEG gider analizi yazılı olarak tasdik dosyasına eklenmelidir.",
+          "Fatura + Oran hesaplama tablosu (D bölümü)",
+          null
+        ],
+        [
+          null,
+          "8",
+          "TTK 519 Kanuni Yedek Akçe Ayrım Belgesi",
+          "Emisyon priminin giderler düşüldükten sonra kanuni yedek akçeye aktarıldığını gösterir.\nGenel kurul kararı ve muhasebe aktarım kaydı.\nYMM notu: TTK 519 uyumu KVK istisnasının koşulu olmasa da tasdik dosyasında yer almalıdır.",
+          "GK kararı + 520→541 muhasebe kaydı",
+          null
+        ],
+        [
+          null,
+          "9",
+          "NSA (KVK 10/1-ı) Hesaplama Tablosu",
+          "Emisyon priminin NSA hesabına DAHİL EDİLMEDİĞİNİN teyidi.\nNSA'ya giren tutar: Tescil edilen nominal sermaye artışı (nakdi kısım).\nYMM notu: NSA tablosunda emisyon priminin ayrı tutulduğu gösterilmelidir.",
+          "NSA hesaplama tablosu / KVK 10/1-ı çalışma kâğıdı",
+          null
+        ],
+        [
+          null,
+          "10",
+          "YİAKV Matrah Hesaplama Tablosu (319 Düşümü)",
+          "Emisyon primi istisnası (319) YİAKV matrahından DÜŞÜLEBİLİR.\nYİAKV çalışma kâğıdında 319 tutarının matrahtan doğru biçimde düşüldüğü teyit edilmeli.",
+          "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri",
+          null
+        ],
+        [
+          null,
+          "11",
+          "Birleşme/Devir/Bölünme Belgeleri (Emisyon Primlerinin Aktarımı)",
+          "Birleşme, devir veya bölünme varsa: Emisyon primlerinin devralan şirkete aynen aktarıldığını gösteren devir bilanço ve sözleşmesi.\nYMM notu: Aktarım yapılmazsa vergi avantajı sona erebilir.",
+          "Devir/bölünme sözleşmesi + Devre esas bilanço",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI  (★ İşaretli Sorular Kritiktir)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Kurum gerçekten Anonim Şirket mi? (Ltd için açık hüküm yok)",
+          "Ticaret sicil belgesi kontrol edilmeli. AŞ değilse tartışmalı — özelge alınması gerekebilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ İstisna şirketin KENDİ paylarının ihracından mı? (Başkasına ait hisse satışı değil)",
+          "Pay senedi + sermaye artırım tescil belgesi. Başkasına ait hisse satışı → 5/1-e/c.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 520 hesabı kullanıldı mı? Emisyon primi gelir tablosuna GİRMEDİ mi?",
+          "Yevmiye + mizan: 520 hesabında görünmeli. 649/679'a kaydedilmişse muhasebe hatası.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ KKEG ilavesi yapıldı mı? (519 satırı — 319 ile aynı tutar)",
+          "KV beyannamesi KKEG tablosu: Emisyon primi tutarı 519 satırında görünmeli. KKEG yapılmadan sadece 319 → Tarhiyat riski.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "★ KKEG tutarı = 319 tutarı mı? E.5 (Net Etki) SIFIR mu?",
+          "HESAPLAMALAR B bölümü: E.2 = E.4 ve E.5 = 0 olmalıdır. Fark varsa hesap hatası.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "İhraç giderleri KVK 5/3 kapsamında doğru ayrıştırıldı mı?",
+          "D.3: Emisyon primine isabet eden kısım KKEG. İlgili KDV için KDVK 30/d analizi yapılmış mı?",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "TTK 519 kanuni yedek akçe aktarımı yapıldı mı?",
+          "520 → 541 aktarım kaydı ve GK kararı mevcut olmalı. TTK 519 uyumu kontrol edilmelidir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "NSA hesabında emisyon primi tescil edilmeyen kısma dahil edilmedi mi?",
+          "NSA tablosu: Yalnızca tescil edilen sermaye artışı girer. Emisyon primleri girmez.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "YİAKV matrahından 319 istisnası DÜŞÜLDܒ mü?",
+          "Emisyon primi istisnası YİAKV matrahından düşülebilir. YİAKV çalışma kâğıdında teyit edilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT (YMM TASDİK): 49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. En kritik hata: KKEG yapmadan sadece 319 yazmak → Tarhiyat riski. KKEG tutarı ile 319 tutarı HER ZAMAN EŞİT olmalıdır. YİAKV'den DÜŞÜLEBİLİR. NSA'ya dahil edilmez. TTK 519 uyumu kontrol edilmeli. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

@@ -22,10 +22,79 @@ ana_kategori: yurtdisi_istisnalar
 wizard_agaci:
   tetikleyici_soru: "Yurt dışındaki bir iştirakın hisselerini sattın mı?"
   info_modal: |
-    KVK 5/1-c kapsamında yurt dışı iştirak hissesi satış kazancı istisnası YALNIZCA tam mükellef
-    anonim şirketlere uygulanır. Satış kazancının tamamı (%100) istisna kapsamındadır.
-    5/1-e (361 kodu, %50) ile karıştırılmamalıdır. Fon hesabı (549) GEREKMEMEKTEDİR.
-    ÖNEMLİ: Bu istisna YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-c kapsamındaki yurt dışı iştirak hissesi satış kazancı istisnası, Türk kurumlar
+    vergisi sisteminin en seçici istisnalarından biridir. **Yalnızca tam mükellef anonim şirketler**
+    tarafından kullanılabilir; limited şirketler, kooperatifler ve diğer kurum türleri bu istisnadan
+    yararlanamaz. Satış kazancının tamamı (%100) kurumlar vergisinden istisnadır ve 5/1-e'nin
+    aksine herhangi bir fon hesabına (549 Özel Fonlar) alınma zorunluluğu **bulunmamaktadır**.
+
+    İstisna "Kazancın Bulunması Halinde İndirilecek" bölümünde (318. satır) gösterilir. Bu
+    düzenleme, Türk anonim şirketlerinin uluslararası operasyonlarını verimli biçimde yönetmesini
+    ve grup yeniden yapılandırmalarını kolaylaştırmayı amaçlamaktadır.
+
+    ## Temel Koşullar
+
+    KVK 5/1-c istisnasının uygulanabilmesi için **dört şartın tamamının eş zamanlı sağlanması**
+    zorunludur:
+
+    **1. Satıcı Kurum Şartı:** İstisna kullanan Türk kurum tam mükellef anonim şirket olmalıdır.
+    Limited şirketler veya yabancı ortaklı yapılar bu istisnadan yararlanamaz; o kurumlar için
+    KVK 5/1-e (beyanname 361 kodu, %50 oran) değerlendirilmelidir.
+
+    **2. İştirak Niteliği:** Satılan yurt dışı iştirak, Türkiye'de tam mükellef olmayan ve yurt
+    dışında kanuni ile iş merkezi bulunan bir anonim şirket ya da limited şirket niteliğinde
+    olmalıdır. Partnership, trust, vakıf gibi hibrit yapılar kapsam dışındadır.
+
+    **3. Holding Aktif Oranı (≥%75):** Satışın yapıldığı tarihten geriye doğru **1 yıl boyunca
+    kesintisiz olarak** Türk şirketin nakit dışı aktifinin en az %75'inin yurt dışı iştirak
+    hisselerinden oluşması gerekir. Her bir iştirak için **en az %10 sermaye payı** eşiği aranır.
+    Tek bir çeyrekte bile bu oran %75'in altına düşerse şart bozulur.
+
+    **4. Elde Tutma Süresi (730 Gün):** Satılan hisseler iktisap tarihinden itibaren aralıksız
+    **en az 730 gün (2 tam yıl)** elde tutulmuş olmalıdır. 729 gün dahi bu şartı sağlamaz.
+    Bölünme veya devir yoluyla elde edilen hisselerde kaynak kurumun elde tutma süresi esas
+    alınabilir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    **5/1-e ile Karşılaştırma:** KVK 5/1-c yalnızca AŞ'lere ve yurt dışı iştirak hisselerine
+    özgüdür; %100 tam istisna sağlar ve fon hesabı gerektirmez. KVK 5/1-e ise hem AŞ hem Ltd
+    kapsar, %50 istisna verir ve 549 fon zorunluluğu içerir.
+
+    **Holding Aktif Oranı İhlali:** Satış tarihinden geriye 1 yıllık döneme bakılır; şirketin
+    nakit dışı aktiflerinin ağırlıklı ortalaması değil, **her tarihteki anlık durumu** kontrol
+    edilir. Dönem içinde yapılan nakde dönüşümler bu oranı bozabilir.
+
+    **KVK 13 Transfer Fiyatlandırması:** Yurt dışı iştirak hisselerinin ilişkili kişilere (diğer
+    grup şirketlerine) satışında emsal bedel analizi zorunludur. Gerçeği yansıtmayan satış bedeli
+    tarhiyat riski yaratır.
+
+    **KVK 33 Mahsup Yapılamaz:** KVK 5/1-c istisnasında yurt dışında ödenen vergiler mahsup
+    edilemez; istisna tam ve nihai olduğundan bu mekanizma uygulanamaz.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-c istisnası **YİAKV (KVK Madde 32/C) matrahından DÜŞÜLEMEZ.** KVK 32/C'nin (b)
+    bendi kapsamında "indirim ve istisnalar" listesine dahil olmakla birlikte, yurt dışı iştirak
+    hissesi satış kazancı özelinde GİB'in yorumuna göre YİAKV matrahından indirim yapılması
+    mümkün değildir. Bu durum özellikle yüksek tutarlı grup yeniden yapılandırmalarında ciddi
+    vergi etkisi doğurabilir.
+
+    YİAKV hesaplaması yapılırken 318. satırdaki istisna tutarı KV matrahına **geri eklenmez**
+    ancak YİAKV matrahı hesaplanırken ayrı bir kısıtlama mekanizması devreye girer. Döneminize
+    ait GİB açıklamalarını ve özelgelerini mutlaka takip ediniz.
+
+    ## Pratik Notlar
+
+    - Satış sözleşmesi + tapu/tescil belgesi + yurt dışı ülke tescil belgesi dosyaya eklenmelidir.
+    - 730 gün hesabında **takvim günü** esas alınır; iktisap ve satış tarihleri dahil sayılmaz.
+    - Holding aktif oranı için dönem başı ve sonu bilançosu ile ara dönem bilançolarından yararlanılabilir.
+    - Satış bedelinin tamamının aynı dönemde tahsil edilmesine gerek yoktur; ancak kazancın doğduğu
+      dönem esas alınır.
+    - 49 No.lu KV GT (30.12.2025) kapsamında ≥500.000 TL veya ≥1.000.000 TL istisna tutarında
+      YMM tasdik raporu zorunluluğu kontrol edilmelidir.
   kapi_sorulari:
     - id: satici_as_mi
       soru: "İstisna kullanan kurum YALNIZCA tam mükellef ANONİM ŞİRKET mi? (KRİTİK)"

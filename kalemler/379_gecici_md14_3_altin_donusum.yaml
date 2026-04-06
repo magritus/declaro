@@ -22,18 +22,64 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "31/12/2021 bilançosunda altın hesabı (gram altın, altın mevduatı vb.) bakiyesi var mıydı ve bu altın hesabı TL'ye dönüştürüldü mü?"
   info_modal: |
-    KVK Geçici Madde 14/3 (Paragraf 3) kapsamında, 31/12/2021 tarihli bilançoda yer alan
-    altın hesaplarının (gram altın, altın mevduatı, fiziki altın hesabı vb.) Cumhurbaşkanı
-    Kararıyla belirlenen yasal süre içinde TL'ye dönüştürülmesinden doğan **altın fiyat
-    farkı kazancı** kurumlar vergisinden istisnadır.
+    ## Genel Çerçeve
 
-    Kazanç = MAX(Dönüşüm TL − Bilanço TL, 0). Altın fiyatı düşmüşse 379 tutarı sıfırdır.
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Paragraf 3 (379–382), kurumların bilançolarındaki altın hesaplarının TL'ye dönüştürülmesini
+    özel olarak düzenler. Bu düzenleme altın ekonomisinin kayıt altına alınmasını ve TL
+    kullanımının teşvik edilmesini amaçlar. Beyanname 379, söz konusu altın hesabı dönüşümünden
+    doğan fiyat farkı kazancını kapsar.
 
-    **370 ile fark:** Beyanname 370 (Paragraf 1) hem yabancı para hem de altın hesabı
-    dönüşümlerini kapsar; 379 (Paragraf 3) yalnızca altın hesaplarına özgüdür. Aynı altın
-    hesabı için her iki koda aynı anda yazılması mükerrerlik oluşturur.
+    ## Bu Satırın Kapsamı
 
-    **YİAKV uyarısı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (YİAKV E.7 listesi).
+    Beyanname **379**, 31/12/2021 tarihli bilançoda yer alan altın hesaplarının (gram altın,
+    altın mevduatı, fiziki altın hesabı) yasal süre içinde TL'ye dönüştürülmesinden doğan
+    altın **fiyat farkı kazancını** kapsar. Kazanç formülü: MAX(Dönüşüm TL − Bilanço TL, 0).
+    370 ile önemli bir ilişkisi vardır: Paragraf 1 (370) hem yabancı para hem de altın hesabı
+    dönüşümlerini kapsamaktadır. Aynı altın hesabı için hem 370 hem 379 uygulamak mükerrerlik
+    oluşturur. Bu nedenle altın hesabı dönüşümünde 370 mu yoksa 379 mu uygulanacağı paragraf
+    analizi ile belirlenmeli; tercihin gerekçesi belgelenmelidir.
+
+    ## Temel Koşullar
+
+    - 31/12/2021 tarihli bilançoda altın hesabı bakiyesi bulunmalıdır; sonradan edinilen altın
+      kapsam **dışıdır**
+    - Altın hesabı Cumhurbaşkanı kararıyla belirlenen **yasal süre içinde** TL'ye dönüştürülmüş
+      olmalıdır
+    - Dönüşüm günü altın fiyatı, 31/12/2021 bilanço altın fiyatının **üzerinde** olmalıdır;
+      aksi hâlde kazanç oluşmaz ve 379 = 0 olur
+    - Altın birim fiyatı için TCMB veya İstanbul Altın Borsası (İAB) resmi fiyatı kullanılmalı;
+      **her iki tarih için aynı kaynak** kullanılması zorunludur
+    - Dönüşüm tutarı 31/12/2021 bilanço bakiyesini aşamaz; aşan kısım kapsam dışıdır
+
+    ## Önemli Uyarılar
+
+    - **370 ile mükerrerlik riski:** Aynı altın hesabı hem 370 hem 379'a yazılamaz. İkisi
+      arasında paragraf tercihinin gerekçesi çalışma kâğıdında belgelenmelidir; belirsiz
+      durumlarda GİB özelgesi alınması tavsiye edilir
+    - **Altın türü ayrımı:** Gram altın, altın mevduatı ve fiziki altın hesabı ayrı araçlardır;
+      her biri için ayrı birim fiyatı ve ayrı kazanç hesabı yapılmalıdır
+    - **Kısmi dönüşüm:** 31/12/2021 bilanço bakiyesinin tamamı dönüştürülmemişse orantılı
+      ayrıştırma yapılmalı; yalnızca dönüştürülen kısma isabet eden kazanç istisna kapsamındadır
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca ≥ 500.000 TL ise YMM raporu
+      zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    379'u izleyen 380, 381 ve 382 kodlarının tamamı da E.7 listesinde yer alır. YİAKV E.7'de
+    Paragraf 3 kodlarının (379–382) eksiksiz listeli olduğu teyit edilmelidir.
+
+    ## Pratik Notlar
+
+    - **Paragraf 3 zinciri:** 379 dönüşüm gerçekleştikten sonra 380 (dönem sonu tahakkuk),
+      381 (vade sonu kâr payı/faiz) ve 382 (diğer kazançlar) kodları aktif hale gelebilir.
+      379 bu zincirin başlangıcıdır; 379 olmadan Paragraf 3 zincirine girilmez
+    - **Muhasebe kaydı:** Dönüşüm günü altın hesabı kapatılır (105 Altın Hesapları Kr),
+      TL tutarı kasaya/bankaya alınır (102 Dr), fark 646 Kambiyo Kârları veya 679 Diğer
+      Olağandışı Kâr hesabına alacak yazılır
+    - **Hesaplama örneği:** 100 gram altın, 31/12/2021 bilanço fiyatı 1.500 TL/gr = 150.000
+      TL. Dönüşüm günü 2.200 TL/gr → 220.000 TL. Kazanç = 70.000 TL → Beyanname 379
   kapi_sorulari:
     - id: altin_hesap
       soru: "31/12/2021 bilançosunda altın hesabı (gram altın, altın mevduatı vb.) bakiyesi var mıydı?"

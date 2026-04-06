@@ -22,18 +22,61 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "KVK Geçici Md.14/4 (Paragraf 4) kapsamında bir araçtan kâr payı veya faiz tahsil edildi mi ve bu 383 (dönem sonu tahakkuk) kapsamında değil mi?"
   info_modal: |
-    KVK Geçici Madde 14/4 (Paragraf 4) kapsamındaki araçlardan elde edilen genel kâr
-    payı ve faiz (vade sonu, dönemsel tahsilat, doğrudan ödeme) kurumlar vergisinden
-    istisnadır (Beyanname 384).
+    ## Genel Çerçeve
 
-    383 ile fark:
-    - 383 = 31 Aralık dönem sonu tahakkuk (181/642 muhasebe kaydı)
-    - 384 = Genel kâr payı/faiz — dönem sonu sınırı yok (vade sonu, dönemsel, doğrudan)
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Paragraf 4 paketi üç koddan oluşur: 383 (dönem sonu tahakkuk), 384 (genel kâr payı/faiz)
+    ve 385 (vade sonu diğer kazançlar). Beyanname 384, dönem sonu tahakkukunu aşan — vade
+    sonu, dönemsel veya doğrudan tahsilatlara ilişkin faiz ve kâr payı istisnasıdır.
 
-    383-384 Mükerrerlik Kuralı (KRİTİK): Net 384 = Toplam − Önceki Yıl 383 Tahakkuku.
-    Çapraz kontrol: 383 + 384 = Toplam kâr payı/faiz (banka bildirimi).
+    ## Bu Satırın Kapsamı
 
-    YİAKV uyarısı: Bu istisna YİAKV matrahından DÜŞÜLEMEZ (YİAKV E.7 listesi).
+    Beyanname **384**, Paragraf 4 kapsamındaki araçlardan elde edilen genel faiz ve kâr payı
+    istisnasıdır. 383 ile farkı önemlidir: 383 yalnızca 31 Aralık dönem sonu tahakkukunu
+    (VUK Md.280/281 esaslı, henüz tahsil edilmemiş gelir) kapsar; 384 ise dönem sonu
+    sınırı olmaksızın **vade sonunda, dönemsel veya doğrudan fiilen tahsil edilen** faiz ve
+    kâr payını kapsar. Diğer Paragraflarla kıyaslama: 373 (P1 KKM vade sonu kâr payı), 377
+    (P2 borç araçları vade sonu), 381 (P3 altın araçları vade sonu) — bunların tümünün
+    Paragraf 4 eşdeğeri 384'tür. **383-384 mükerrerlik kuralı** (372-373, 376-377 ve 380-381
+    kurallarının karşılığı): Net 384 = Toplam − Önceki Yıl 383 Tahakkuku.
+
+    ## Temel Koşullar
+
+    - Araç Paragraf 4 kapsamında olmalı ve 383 (dönem sonu tahakkuk) dışında kâr payı/faiz
+      tahsil edilmiş olmalıdır
+    - Önceki yılda 383 tahakkuku yapılmışsa Net 384 = Vade Toplam − Önceki 383 formülü
+      zorunlu olarak uygulanır
+    - 373 (Paragraf 1), 377 (Paragraf 2) ve 381 (Paragraf 3) ile mükerrerlik analizi
+      tamamlanmış olmalıdır
+    - 383 Paragraf 4 kapsam analizi notu hazırlanmışsa 384 için ayrı nota gerek yoktur;
+      aynı Paragraf 4 analizi 384'ü de kapsar
+
+    ## Önemli Uyarılar
+
+    - **383-384 mükerrerlik kritik:** Yılı aşan vadeli araçlarda 383 tahakkuku yapılan araç
+      vadeye girdiğinde Net 384 hesabı yapılmazsa çifte istisna oluşur. Çapraz kontrol:
+      383 + Net 384 = Toplam kâr payı/faiz (banka bildirimi)
+    - **Tahsilat türü ayrımı:** 383 = tahakkuk (nakit gelmemiş); 384 = fiilen tahsil edilen.
+      Aynı tutarın her iki koda da yazılması mükerrerlik oluşturur
+    - **Paragraf 4 belgeleme:** 384 uygulaması 383 ile aynı Paragraf 4 kapsamına dayandığından
+      Paragraf 4 kapsam analizi notu her iki kod için de geçerlidir
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca ≥ 500.000 TL ise YMM raporu
+      zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    KVK Geçici Madde 14 kapsamındaki tüm kodlar YİAKV matrahından düşülemez. 384'ün
+    "genel kâr payı/faiz" niteliği bu kuralı değiştirmez.
+
+    ## Pratik Notlar
+
+    - **Muhasebe kaydı:** Önceki yıl 383 tahakkuku varsa 102 Dr / 181 Kr (kapatma) + 642 Kr
+      (yeni kısım); 383 yoksa 102 Dr / 642 Kr şeklinde kaydedilir
+    - **Çapraz kontrol:** 383 + 384 = Toplam kâr payı/faiz. Bu eşitlik sağlanmıyorsa
+      hesaplamada hata vardır; banka bildirimiyle mutabakat yapılmalıdır
+    - **Paragraf 4 tamamlanma:** 383 (dönem sonu tahakkuk) + 384 (kâr payı/faiz) + 385 (diğer)
+      üçü birlikte Paragraf 4 paketini tamamlar. 384 bu paketin ikinci kodudur
   kapi_sorulari:
     - id: paragraf4_kapsam
       soru: "KVK Geçici Md.14/4 kapsamında işlem gerçekleştirildi mi?"

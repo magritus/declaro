@@ -24,13 +24,63 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Taşınır varlıklarınızı (makine, araç, ekipman) veya haklarınızı (patent, marka, telif, yazılım lisansı) münhasıran kira sertifikası ihracını mümkün kılmak amacıyla SPK lisanslı Varlık Kiralama Şirketine (VKŞ) devrettiniz mi?"
   info_modal: |
-    KVK 5/1-k kapsamında, kurumların taşınır varlıklarını veya haklarını kira sertifikası
-    ihracını mümkün kılmak amacıyla SPK lisanslı VKŞ'ye devretmelerinden doğan kazançlar
-    %100 istisnadır. 5/1-j'den kritik farklar:
-    (1) Geri alım zorunlu değil — ihraç amacı yeterli koşuldur
-    (2) HAKLAR da kapsam içindedir (patent, lisans, marka, telif vb.)
-    (3) VKŞ kira sertifikası ihraç eder ve hasılatı kurucuya iletir
-    (4) Sukuk türleri: İcara, Murabaha, Wakala, Muşaraka
+    ## Genel Çerçeve
+
+    **KVK Madde 5/1-k** kapsamında, kurumların **taşınır varlıklarını** (makine, araç, ekipman)
+    **veya haklarını** (patent, marka, telif hakkı, yazılım lisansı, know-how) kira sertifikası
+    ihracını mümkün kılmak amacıyla **SPK lisanslı Varlık Kiralama Şirketine (VKŞ)** devretmelerinden
+    doğan kazançlar **%100 istisnadır.** 5/1-j'den (354/355/356) temel fark: **geri alım
+    zorunlu değildir;** ihraç amacının varlığı yeterlidir. Ayrıca 5/1-k **maddi olmayan hakları**
+    da kapsamakta olup bu yönüyle 5/1-j'den geniştir.
+
+    ## Temel Koşullar
+
+    - Devredilen varlık **taşınır** (makine/araç/ekipman) **veya hak** (patent, marka, telif,
+      yazılım lisansı, know-how) olmalıdır; taşınmaz varlıklar için 358 kodu kullanılmalıdır.
+    - Alıcı kurum **6362 s.K. kapsamında SPK lisanslı VKŞ** olmalıdır; BDDK lisanslı FK/banka
+      ise 5/1-j kapsamındaki 354/355/356 satırları kullanılmalıdır.
+    - Devrin amacı **münhasıran kira sertifikası ihracını mümkün kılmak** olmalıdır; bu amaç
+      SPK onaylı izahname/ihraç belgesiyle belgelenmelidir.
+    - **Geri alım opsiyoneldir:** 5/1-j'nin aksine geri alım taahhüdü zorunlu değildir; ancak
+      geri alım taahhüdü varsa 5/1-j kapsamına girebilir ve beyanname kodu değişebilir.
+    - Devir kazancının tamamı **devir yılında 549 Özel Fonlar hesabına** alınmalıdır; sukuk
+      vadesine paralel kira/getiri payına orantılı amortizasyon yapılır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **5/1-j mi 5/1-k mi?** Geri alım taahhüdü varsa 5/1-j (356) kapsamına girilmesi
+      gerekebilir; bent seçiminin gerekçesi yazılı biçimde belgelenmelidir ve şüpheli durumlarda
+      GİB özelgesi alınmalıdır.
+    - **Hak devirlerinde tescil zorunluluğu:** Tescilli haklar (patent, marka, tasarım) için
+      TPMK devir tescili zorunlu belgedir; tescilsiz haklar (telif, know-how) için devir sözleşmesi
+      ve tespit belgesi yeterlidir.
+    - **İmtiyaz/ruhsat hakları:** Kamu kurumu tarafından verilen imtiyaz veya ruhsatların
+      devrinde ilgili kurumun onayı gerekebilir; bu konu için GİB özelgesi alınması zorunludur.
+    - **Hak değerlemesi:** Maddi olmayan varlıkların değerlemesi subjektif olduğundan akredite
+      değerleme kuruluşu raporu olmadan gerçekleştirilen devirlerde KVK Md.13 riski yüksektir.
+    - **VKŞ münhasırlığı:** VKŞ'nin 6362 s.K. kapsamında münhasıran kira sertifikası ihraç
+      amacıyla kurulmuş olması şarttır; SPK'nın resmi VKŞ listesinden dönemsel teyit yapılmalıdır.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-k (357) istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır.** Hem
+    taşınır hem hak devirlerini kapsayan bu satır için dönem mevzuatı ve GİB açıklamaları
+    ayrıca değerlendirilmelidir; kesin pozisyon alınmadan önce güncel rehber incelenmelidir.
+
+    ## Pratik Notlar
+
+    - **Sukuk türü seçimi:** İcara, Murabaha, Wakala ve Muşaraka sukuk türlerinden her birinin
+      farklı sözleşme yapısı ve belge gereklilikleri mevcuttur; hak devirlerinde Wakala yapısı
+      genellikle daha uygun olmakla birlikte her işlem için hukuki danışman görüşü alınmalıdır.
+    - **357 yalnızca devir yılında kullanılır:** Sonraki yıllarda bu satıra tekrar yazılmaz;
+      549 fon amortizasyonu farklı dönemlerde beyanname kalemi olarak yansıtılmaz.
+    - **KAP bildirimleri:** Halka açık sukuk ihraçlarında KAP bildirimleri zorunludur; bu
+      bildirimlerin yapıldığını gösteren belgeler dosyaya eklenmelidir.
+    - **GİB özelgesi tavsiyesi:** 5/1-k, 5/1-j'ye kıyasla GİB emsal sayısı daha düşük olan
+      bir istisnadır; özellikle hak devri içeren yapılarda özelge alınması YMM müteselsil
+      sorumluluğu açısından koruyucu bir adımdır.
+    - **YMM tasdik raporu:** 49 No.lu Tebliğ kapsamında tek satırda ≥500.000 TL veya toplamda
+      ≥1.000.000 TL olması halinde YMM tasdik raporu zorunludur.
   kapi_sorulari:
     - id: varlik_tasinir_veya_hak_mi
       soru: "Devredilen varlık taşınır mı veya hak mı? (Taşınmaz/bina/arazi için 358 kodu kullanılmalıdır)"

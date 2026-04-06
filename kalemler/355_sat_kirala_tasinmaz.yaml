@@ -24,11 +24,63 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Bir taşınmazı (arsa, bina, fabrika, depo) finansal kiralama şirketine veya katılım bankasına tapuyla devredip geri kiralayarak kullanıyorsunuz?"
   info_modal: |
-    KVK 5/1-j kapsamında, kurumların taşınmazlarını sat-kirala-geri al işlemi çerçevesinde
-    finansal kiralama şirketi, katılım bankası veya kalkınma/yatırım bankasına tapu devriyle
-    satmaları ve finansal kiralama sözleşmesiyle geri kiralamaları durumunda doğan satış kazancı
-    %100 istisnadır. 354 (taşınır) ile aynı mekanizma ancak tapu boyutu özgün koşul ekler.
-    Kira süresi sonunda tapu geri devri zorunludur.
+    ## Genel Çerçeve
+
+    **KVK Madde 5/1-j** kapsamında, kurumların taşınmazlarını (arsa, bina, fabrika, depo)
+    **sat-kirala-geri al** işlemi çerçevesinde **6361 Sayılı Kanun kapsamında BDDK lisanslı
+    finansal kiralama şirketine** ya da **katılım bankasına / kalkınma-yatırım bankasına tapu
+    devriyle** satmaları ve finansal kiralama sözleşmesiyle geri kiralamaları durumunda doğan
+    satış kazancı **%100 istisnadır.** 354 (taşınır) ile temel mekanizma aynı olmakla birlikte
+    **tapu devri ve tapu geri devri** bu koda özgün ek koşullar getirmektedir.
+
+    ## Temel Koşullar
+
+    - Satılan varlık **taşınmaz** olmalıdır (arsa, arazi, bina, fabrika, depo); taşınır varlıklar
+      için 354 kodu kullanılmalıdır.
+    - Alıcı kurum; **6361 s.K. kapsamında BDDK lisanslı finansal kiralama şirketi**, katılım
+      bankası veya kalkınma/yatırım bankası olmalıdır; **mevduat bankası kapsam dışıdır.**
+    - **Tapunun alıcı adına tescil edilmesi** zorunludur; taşınmaz satışı tapuya tescil
+      olmaksızın hukuken tamamlanmış sayılmaz ve tapu senedi zorunlu belgedir.
+    - **Kira süresi sonunda tapu geri devir taahhüdü/opsiyonu** finansal kiralama sözleşmesinde
+      açıkça yazılı olmalıdır; şifahi taahhüt geçersizdir.
+    - Satış kazancının tamamı **tapu devir yılında 549 Özel Fonlar hesabına** alınmalıdır; her
+      dönem kira payına orantılı amortizasyon yapılır, kira süresi sonunda 549 sıfırlanır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Tapu geri devri gerçekleşmezse istisna iptal riski:** Kira süresi sonunda tapu kuruma
+      geri devredilmezse 549 hesabındaki kalan bakiye vergiye tabi hale gelir; geri devir planı
+      sözleşmede hukuki güvenceye alınmalıdır.
+    - **Tapu harcı iki aşamada doğabilir:** Satış aşamasında alıcı adına tescil ve olası geri
+      devir aşamasında kurum adına tescil olmak üzere tapu harcı iki kez gündeme gelebilir; bu
+      maliyet baştan hesaba katılmalıdır.
+    - **KDV Madde 17/4-r ile etkileşim:** Taşınmaz satışında KDV muafiyeti ile 5/1-j istisnasının
+      etkileşimi ayrıca analiz edilmelidir; KDV beyannamesiyle uyum kontrol edilmelidir.
+    - **Piyasa değerinden uzak tapu devri:** SPK lisanslı gayrimenkul değerleme raporu olmadan
+      gerçekleştirilen tapu devirlerinde emsal bedel farkı KVK Md.13 riskini tetikler.
+    - **Alıcı kurum türü karışıklığı:** SPK lisanslı VKŞ'ye yapılan taşınmaz devri bu satıra
+      (355) değil **356 veya 358 satırına** girilmesi gerekebilir; alıcı kurumun statüsü (BDDK
+      lisanslı mı yoksa SPK lisanslı mı) beyanname kodu seçimini belirler.
+    - **2 yıl aktifinde bulundurma şartı aranmaz:** 351 (KVK 5/1-e) ile karıştırılmamalıdır;
+      bu istisna için süre şartı yoktur.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-j (355) istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır.** Dönem
+    mevzuatı ve GİB açıklamaları düzenli takip edilerek her dönem ayrıca analiz edilmelidir;
+    kesin pozisyon alınmadan önce güncel rehber ve özelgeler incelenmelidir.
+
+    ## Pratik Notlar
+
+    - **354 ile temel fark:** 354'te teslim tutanağı yeterliyken 355'te tapuya tescil zorunludur;
+      tapu senedi olmadan 355 istisnası savunulamaz.
+    - **Tapu üzerinde kiralama şerhi:** Kiracı kurumun geri devir güvencesi açısından tapu
+      üzerine kiralama şerhi konulması değerlendirilmelidir; şerh kaldırılamaz güvence sağlar.
+    - **Sözleşme paketi bir bütün olarak değerlendirilmelidir:** Satış sözleşmesi ile finansal
+      kiralama sözleşmesi eş zamanlı veya birbirine bağlı biçimde düzenlenmeli; ayrı bağımsız
+      işlemler olarak sunulan yapılar tartışmalı kabul edilir.
+    - **YMM tasdik raporu:** 49 No.lu Tebliğ kapsamında tek satırda ≥500.000 TL veya toplamda
+      ≥1.000.000 TL olması halinde YMM tasdik raporu zorunludur.
   kapi_sorulari:
     - id: varlik_tasinmaz_mi
       soru: "Satılan varlık taşınmaz mı? (Arsa, arazi, bina, fabrika, depo — taşınır/makine değil)"

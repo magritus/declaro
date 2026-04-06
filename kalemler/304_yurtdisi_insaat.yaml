@@ -23,19 +23,35 @@ ana_kategori: yurtdisi_istisnalar
 wizard_agaci:
   tetikleyici_soru: "Yurt dışında fiilen gerçekleştirilen inşaat, onarma, montaj veya teknik hizmet faaliyetinden elde ettiğin kazanç var mı?"
   info_modal: |
-    KVK Madde 5/1-h kapsamında yurt dışında fiilen icra edilen inşaat, onarma, montaj
-    ve teknik hizmet faaliyetlerinden elde edilen kazançlar **%100 tam istisna** olarak
-    uygulanır. Beyannamede **"Zarar Olsa Dahi İndirilecek"** bölümünde 304. satırda gösterilir.
+    ## Genel Çerçeve
 
-    **322 (5/1-g) ile farkı:**
-    - Türkiye'ye **transfer zorunlu DEĞİL** — yalnızca Türkiye gelir tablosuna yansıması yeterli
-    - **%15 vergi yükü şartı YOK**
-    - Faaliyet türü sınırlı: İnşaat / Onarma / Montaj / Teknik Hizmet (genel şube faaliyeti dışında)
+    KVK Madde 5/1-h kapsamında yurt dışında **fiilen icra edilen inşaat, onarma, montaj ve teknik hizmet faaliyetlerinden** elde edilerek Türkiye'de genel sonuç hesaplarına intikal ettirilen kazançlar %100 tam istisna olarak uygulanır. Beyannamede **"Zarar Olsa Dahi İndirilecek"** bölümünde 304 numaralı satırda gösterilir. Bu istisna yurt dışı şube/daimi temsilci istisnasından (322 — KVK 5/1-g) farklı olarak Türkiye'ye transfer zorunluluğu taşımaz ve %15 vergi yükü şartı içermez.
 
-    **Kritik şartlar:**
-    ① Faaliyet yurt dışında **FİİLEN** icra edilmeli (Türkiye'den uzaktan hizmet tartışmalıdır)
-    ② Kazanç Türkiye'de **genel sonuç hesaplarına (gelir tablosuna) intikal** ettirilmeli
-    ③ Sözleşme niteliği inşaat/onarma/montaj/teknik hizmet olmalı
+    ## Temel Koşullar
+
+    - **Faaliyet yurt dışında fiilen icra edilmelidir:** Personelin yurt dışında fiziken bulunması şarttır; pasaport, vize, çalışma izni ve şantiye belgeleriyle ispatlanmalıdır.
+    - **Sözleşme niteliği uygun olmalıdır:** İnşaat (bina, köprü, yol, baraj), onarma/tadilat, montaj/kurulum veya teknik hizmet olmalıdır; ticaret, komisyon, aracılık ve yazılım ürünü satışı kapsam dışıdır.
+    - **Kazanç Türkiye gelir tablosuna intikal ettirilmelidir:** Türkiye'deki 600/601/649 hesaplarına yansıtılması zorunludur; yurt dışında bırakılan kazanç istisna kapsamına girmez.
+    - **KVK Madde 33 alternatif değerlendirmesi:** KVK 5/1-h seçildiğinde yurt dışında ödenen vergi Madde 33 kapsamında mahsup edilemez; yüksek yurt dışı vergi oranı durumunda iki alternatifin karşılaştırılması gerekir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Uzaktan (remote) teknik hizmet tartışmalıdır:** Türkiye'den uzaktan verilen teknik danışmanlık hizmetleri için özelge alınması şiddetle tavsiye edilir.
+    - **Karma faaliyet:** Aynı projenin hem hizmet hem mal satışı içermesi durumunda yalnızca hizmet kısmı istisna kapsamındadır; mal satışı ayrıştırılmalıdır.
+    - **Gider dağıtımı:** Her proje için ayrı gelir-gider takibi veya yazılı ve tutarlı dağıtım anahtarı zorunludur; merkez genel gider payı belgelenmelidir.
+    - **Döviz kuru:** Proje gelirleri TCMB alış kuru ile TL'ye çevrilmeli ve kur tutarlılığı belgelenmelidir.
+    - **ÇVÖA şantiye işyeri analizi:** İşin yapıldığı ülkeyle Türkiye arasında ÇVÖA varsa şantiye işyeri maddesine göre vergilendirme yetkisi analiz edilmelidir.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-h (304) istisnasının YİAKV (KVK Madde 32/C) matrahına etkisi **tartışmalı** kabul edilmektedir; dönem mevzuatı ve GİB açıklamaları esas alınarak ayrıca analiz edilmelidir.
+
+    ## Pratik Notlar
+
+    - Her proje ayrı bir gelir-gider tablosunda izlenmeli; projeye isabet eden doğrudan giderler belgelenmiş faturalarla desteklenmelidir.
+    - 322 (KVK 5/1-g) ile 304 (KVK 5/1-h) arasındaki en önemli fark: 322'de Türkiye'ye transfer zorunludur ve %15 vergi yükü şartı aranır; 304'te her ikisi de aranmaz.
+    - Beyanname 304 satırına yazılacak tutar hasılat değil; proje gelirinden doğrudan giderler ve merkez genel gider payı düşüldükten sonraki net istisna kazancıdır.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: faaliyet_turu_uygun_mu
       soru: "Faaliyet türü inşaat, onarma, montaj veya teknik hizmet mi? (Sözleşme niteliğiyle teyit edildi mi?)"

@@ -8,17 +8,18 @@ import { useDonemler, useCreateDonem } from '@/api/donem'
 import type { Donem } from '@/types'
 import ThemeToggle from '@/components/ThemeToggle'
 
-const CEYREK_OPTIONS: Donem['ceyrek'][] = ['Q1-GV', 'Q2-GV', 'Q3-GV', 'YILLIK']
+const CEYREK_OPTIONS: Donem['ceyrek'][] = ['Q1-GV', 'Q2-GV', 'Q3-GV', 'Q4-GV', 'YILLIK']
 const CEYREK_LABELS: Record<Donem['ceyrek'], string> = {
-  'Q1-GV': '1. Geçici Vergi (Q1)',
-  'Q2-GV': '2. Geçici Vergi (Q2)',
-  'Q3-GV': '3. Geçici Vergi (Q3)',
-  'YILLIK': 'Yıllık Beyanname',
+  'Q1-GV': '1. Geçici Vergi (Q1 — Oca-Mar)',
+  'Q2-GV': '2. Geçici Vergi (Q2 — Oca-Haz)',
+  'Q3-GV': '3. Geçici Vergi (Q3 — Oca-Eyl)',
+  'Q4-GV': '4. Geçici Vergi (Q4 — Oca-Ara)',
+  'YILLIK': 'Yıllık Kurumlar Vergisi Beyannamesi',
 }
 
 const donemSchema = z.object({
   yil: z.number().int().min(2000).max(2100),
-  ceyrek: z.enum(['Q1-GV', 'Q2-GV', 'Q3-GV', 'YILLIK']),
+  ceyrek: z.enum(['Q1-GV', 'Q2-GV', 'Q3-GV', 'Q4-GV', 'YILLIK']),
 })
 
 type DonemFormData = z.infer<typeof donemSchema>

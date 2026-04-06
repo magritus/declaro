@@ -25,11 +25,68 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Patent, marka, telif hakkı, yazılım lisansı, imtiyaz veya benzeri maddi olmayan haklarınızı münhasıran kira sertifikası ihracını mümkün kılmak amacıyla SPK lisanslı Varlık Kiralama Şirketine (VKŞ) devrettiniz mi?"
   info_modal: |
-    KVK 5/1-k kapsamında, kurumların maddi olmayan haklarını (patent, marka, telif hakkı,
-    yazılım lisansı, imtiyaz vb.) kira sertifikası ihracını mümkün kılmak amacıyla SPK lisanslı
-    VKŞ'ye devretmelerinden doğan kazançlar %100 istisnadır.
-    359, setimizin GİB emsal yoğunluğu en düşük dosyasıdır. Haklara dayalı sukuk yapıları
-    yurt içinde çok az uygulanmış olduğundan özelge alınması şiddetle tavsiye edilir.
+    ## Genel Çerçeve
+
+    **KVK Madde 5/1-k** kapsamında, kurumların **maddi olmayan haklarını** (patent, faydalı
+    model, marka, tasarım, telif hakkı, yazılım lisansı, know-how, imtiyaz vb.) kira
+    sertifikası ihracını mümkün kılmak amacıyla **SPK lisanslı Varlık Kiralama Şirketine (VKŞ)**
+    devretmelerinden doğan kazançlar **%100 istisnadır.** 359, 357-359 serisinin **münhasıran
+    haklara ve maddi olmayan varlıklara ayrılmış** kodudur; 357 taşınır fiziki varlıkları,
+    358 taşınmaz varlıkları, 359 ise tüm maddi olmayan hakları kapsamaktadır. **Bu set içindeki
+    GİB emsal yoğunluğu en düşük dosyadır** ve hukuki belirsizlik en yüksek seviyededir.
+
+    ## Temel Koşullar
+
+    - Devredilen varlık **hak veya maddi olmayan varlık** (patent, faydalı model, marka, tasarım,
+      telif hakkı, yazılım lisansı, know-how, imtiyaz hakkı vb.) olmalıdır; fiziki taşınır için
+      357, taşınmaz için 358 kodu kullanılmalıdır.
+    - Alıcı kurum **6362 s.K. kapsamında SPK lisanslı VKŞ** olmalıdır; BDDK lisanslı FK/banka
+      ise 5/1-j kapsamındaki satırlar kullanılmalıdır.
+    - Devrin amacı **münhasıran kira sertifikası ihracını mümkün kılmak** olmalıdır; bu amaç
+      SPK onaylı izahname/ihraç belgesiyle belgelenmelidir.
+    - **GİB özelgesi**, hak türü ve sukuk yapısına özgü olarak alınmalıdır; 359 kapsamında
+      yurt içinde emsal çok azdır ve özelge YMM müteselsil sorumluluğu açısından zorunlu
+      sayılmalıdır.
+    - Devir kazancının tamamı **devir yılında 549 Özel Fonlar hesabına** alınmalıdır; sukuk
+      vadesine paralel royalty/hak getirisi payına orantılı amortizasyon yapılır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **GİB emsal azlığı en büyük risk:** Haklara dayalı sukuk yapıları Türkiye'de çok az
+      uygulanmıştır; GİB vergi incelemesinde kapsam tartışması çıkma ihtimali yüksektir; özelge
+      olmadan bu istisnanın uygulanması ciddi tarhiyat riski taşır.
+    - **Hak türü sınıflandırması:** Tescilli haklar (patent, marka, tasarım) → TPMK devir tescili
+      zorunlu. Tescilsiz haklar (telif, know-how) → devir sözleşmesi ve tespit belgesi gerekli.
+      İmtiyaz/ruhsat hakları → kamu kurumu onayı gerekebilir, özelge zorunludur.
+    - **Maddi olmayan varlık değerlemesi:** Subjektif değerlendirmeye açık varlıklar için akredite
+      değerleme kuruluşu raporu olmadan gerçekleştirilen devirlerde KVK Md.13 örtülü kazanç
+      dağıtımı riski ve SPK riski çok yüksektir.
+    - **5/1-j ile sınır:** Geri alım taahhüdü varsa işlem 5/1-j (356) kapsamına girebilir;
+      bent seçim gerekçesi belgelenmeli, şüpheli durumlarda özelge alınmalıdır.
+    - **İştirak hissesi karışıklığı:** İştirak hissesi 359 kapsamında değildir; 5/1-e (351/352)
+      kapsamında değerlendirilmesi gerekir; hak ile ortaklık payı arasındaki ayrım net olmalıdır.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-k (359) istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır.** GİB
+    emsal yokluğu ve hukuki belirsizlik nedeniyle dönem mevzuatı ve GİB açıklamaları özellikle
+    dikkatli takip edilmelidir; özelge içeriğinde YİAKV etkisinin de sorulması tavsiye edilir.
+
+    ## Pratik Notlar
+
+    - **Wakala yapısı öne çıkar:** Haklara dayalı sukuk için Wakala (vekâlet bazlı) yapısı
+      pratikte daha uygun görünmektedir çünkü varlık fiziki teslimat yerine hak kullanım
+      yetkisine dayanır; ancak her durumda hukuki danışman görüşü alınmalıdır.
+    - **TPMK devir tescil tarihi kritiktir:** Tescilli haklarda devir tarihi TPMK devir tescil
+      tarihidir, sözleşme imza tarihi değildir; bu ayrım vergisel dönem tespiti için önemlidir.
+    - **Hak değerleme metodolojisi:** Piyasa yaklaşımı, maliyet yaklaşımı veya gelir yaklaşımından
+      hangisinin kullanıldığı raporlanmalıdır; SPK ihraç bağlamında değerleme metodolojisi ihraç
+      belgesinde de yer alabilir.
+    - **Çok yönlü belge paketi:** Devir belgesi (TPMK tescili veya sözleşme) + SPK izahnamesi +
+      GİB özelgesi + değerleme raporu birlikte dosyada bulunduğunda savunma en güçlü hale gelir.
+    - **YMM tasdik raporu:** 49 No.lu Tebliğ kapsamında tek satırda ≥500.000 TL veya toplamda
+      ≥1.000.000 TL olması halinde YMM tasdik raporu zorunludur; 359 için tasdik riski
+      değerlendirmesi özellikle dikkatli yapılmalıdır.
   kapi_sorulari:
     - id: varlik_hak_mi
       soru: "Devredilen varlık hak (maddi olmayan varlık) mı? (Fiziki taşınır için 357, taşınmaz için 358 kullanılmalıdır)"

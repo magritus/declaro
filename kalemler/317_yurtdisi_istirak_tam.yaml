@@ -23,10 +23,37 @@ ana_kategori: yurtdisi_istisnalar
 wizard_agaci:
   tetikleyici_soru: "Yurt dışındaki bir iştirakten kâr payı (temettü) elde ettin mi?"
   info_modal: |
-    KVK 5/1-b kapsamında yurt dışı iştirakten elde edilen kâr payları, 4 şartın tamamının
-    sağlanması halinde %100 tam istisna olarak uygulanır ve beyannamede 317. satırda
-    "Zarar Olsa Dahi İndirilecek" bölümünde gösterilir.
-    ÖNEMLİ: Bu istisna YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-b kapsamında yurt dışında kurulu iştirakten elde edilen kâr payları, **dört şartın tamamının kümülatif olarak sağlanması** halinde %100 tam istisna olarak uygulanır. Beyannamede **"Zarar Olsa Dahi İndirilecek"** bölümünde 317 numaralı satırda gösterilir. Bu istisna hem yurt dışı iştirak kâr paylarını hem de 387 kodu ile mukayese edilerek değerlendirilen kısmi istisna alternatifini içeren kapsamlı bir rejimdir.
+
+    ## Temel Koşullar
+
+    - **İştirak niteliği:** Yurt dışı iştirakin anonim veya limited şirket niteliğinde olması ve hem kanuni hem iş merkezinin Türkiye dışında bulunması zorunludur. Apostilli tescil belgesi veya konsolosluk tasdikli belge gerekir.
+    - **≥%10 kesintisiz sermaye payı:** Kazancın elde edildiği tarih itibarıyla en az %10 sermaye payına sahip olunması ve bu payın kesintisiz biçimde devam etmesi şarttır; %9,9 yeterli değildir.
+    - **1 yıl kesintisiz elde tutma:** Kazancın elde edildiği tarihten geriye doğru en az 1 yıl (365 gün) kesintisiz elde tutma zorunludur; tek günlük kesinti bile şartı bozar.
+    - **≥%15 vergi yükü:** Yurt dışı iştirakin faaliyet ülkesinde gerçek vergi yükünün en az %15 olması gerekir. Finans, sigortacılık ve menkul kıymet yatırım ortaklığı faaliyetlerinde eşik **%25**'e yükselmektedir.
+    - **Kazancın tamamının Türkiye'ye transferi:** KV beyanname süresine kadar (normal dönem için 30 Nisan) kazancın tamamının Türkiye'ye transfer edilmesi zorunludur. Kısmi transfer halinde istisna hakkı **tamamen** kaybedilir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Kısmi transfer halinde istisna tamamen kaybedilir:** Bu en kritik risk faktörüdür; transfer belgesi (banka SWIFT) tasdik dosyasında bulunmadan istisna uygulanamaz.
+    - **İstisna brüt tutar üzerinden hesaplanır:** Stopaj sonrası net transfer tutarı değil, kâr payının elde edildiği tarihteki TCMB alış kuruyla hesaplanan brüt tutar esas alınır.
+    - **KVK Madde 33 mahsup yapılamaz:** Tüm kazanç istisna kapsamında olduğundan yurt dışında ödenen stopaj/withholding tax mahsubu mümkün değildir.
+    - **Vergi yükü hesabı:** İştirakin mali tablosu ve vergi beyannamesiyle desteklenmeli; finans/sigortacılık faaliyeti varsa %25 eşiği uygulanmalıdır.
+    - **317 şartları sağlanamıyorsa 387 alternatifleri:** Sermaye payı ≥%50 ise kısmi istisna (387 kodu) değerlendirilebilir; 317'nin dört şartını karşılamayan durumlar için bu alternatif analiz edilmelidir.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-b (317) istisnası **YİAKV matrahından düşülemez**. Yurt dışı kaynaklı gelir olması nedeniyle YİAKV hesabından çıkarılamaz; YİAKV çalışma kâğıdında 317 tutarı matrahtan kesinlikle düşülmemelidir.
+
+    ## Pratik Notlar
+
+    - Transfer belgesi (banka SWIFT + dekont) ile kâr payı dağıtım kararı ve TCMB kur arşivine dayalı döviz çevrim tablosu temel belgelerdir.
+    - Elde tutma süresinin 1 yılı doldurduğu gün gün hesaplanmalı; devir/bölünme yoluyla elde edilen hisselerde kaynak kurumun iktisap tarihi dikkate alınabilir.
+    - TF Formu (Beyanname Ek:2) yurt dışı iştirak bölümünün doldurulduğu kontrol edilmelidir.
+    - OECD Pillar Two düzenlemeleri bazı ülkelerde efektif vergi oranını etkileyebilir; kendi ülke düzenlemeleri ayrıca izlenmelidir.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: istirak_as_ltd_mi
       soru: "Yurt dışı iştirak AŞ veya Ltd niteliğinde mi? (Kanuni ve iş merkezi yurt dışında mı?)"

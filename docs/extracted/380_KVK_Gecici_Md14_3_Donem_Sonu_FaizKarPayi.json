@@ -1,0 +1,1314 @@
+{
+  "file": "380_KVK_Gecici_Md14_3_Donem_Sonu_FaizKarPayi.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G63",
+      "rows": [
+        [
+          "380 – KVK GEÇİCİ MADDE 14/3 | DÖNEM SONU DEĞERLEMESİNDEN DOĞAN KÂR PAYI VE FAİZ İSTİSNASI | PARAGRAF 3 — ALTIN HESABI DÖNÜŞÜMÜ SONRASI | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/3 (Paragraf 3) | Altın Hesabı Dönüşümü Sonrası TL Araçtan Dönem Sonu Tahakkuk | Beyanname 380 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "372 / 376 / 380 PARAGRAF KARŞILAŞTIRMASI — Her üçü de DÖNEM SONU DEĞERLEMESİNDEN DOĞAN KÂR PAYI VE FAİZ:\n  372 (Md.14/1-b): Paragraf 1 AKTİF — Yabancı para/altın → TL KKM dönüşümü sonrası araç.\n  376 (Md.14/2): Paragraf 2 PASİF — Yabancı para borç → TL dönüşümü sonrası araç.\n  380 (Md.14/3): Paragraf 3 ALTIN — Altın hesabı → TL dönüşümü (379) sonrası TL araç → BU DOSYA.\n  Her üçü de VUK Md.280/281 dönem sonu tahakkuku (181 Dr / 642 Kr). Fark: yasal dayanak ve bağlantılı dönüşüm.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 380 kapsamındaki dönem sonu kâr payı/faiz istisnası YİAKV matrahından DÜŞÜLEMEZ. 370–380 tamamı E.7 DÜŞÜLEMEZ listesindedir (11 kod).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  KVK Geçici Md.14/3 kapsamında altın hesabı dönüşümü (379) gerçekleştirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "380, 379 ile bağlantılıdır. Altın hesabı TL'ye dönüştürülmeden (379) dönüşüm sonrası TL araçtan 380 tahakkuku oluşamaz.",
+          null
+        ],
+        [
+          "A0.2  ★ Altın hesabı dönüşümü sonrası kurulan TL araçtan dönem sonu faiz/kâr payı tahakkuku yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "VUK Md.280/281 gereği dönem sonu (31 Aralık) itibariyle TL araçtan tahakkuk eden faiz/kâr payı kayıtlara alınmalıdır. Bu tahakkuk 380 kapsamında istisnadır.",
+          null
+        ],
+        [
+          "A0.3  Tahakkuk muhasebe kaydı yapıldı mı? (181 Gelir Tahakkukları / 642 Faiz Gelirleri)",
+          null,
+          null,
+          null,
+          "EVET",
+          "Dönem sonu: Dr 181 / Kr 642 (veya 644). Kayıt olmadan 380 istisnasının muhasebe dayanağı yoktur.",
+          null
+        ],
+        [
+          "A0.4  ★ 372 (Paragraf 1) ve 376 (Paragraf 2) ile mükerrerlik analizi yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "372: Paragraf 1 araçları (mevduat/altın → KKM). 376: Paragraf 2 araçları (borç → TL). 380: Paragraf 3 araçları (altın → TL). Aynı araç için yalnızca biri uygulanabilir.",
+          null
+        ],
+        [
+          "A0.5  ★ 380 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "370–380 tamamı YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7'de 380 de kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.6  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.7  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (tahakkuk yapıldı), A0.4 (mükerrerlik), A0.5 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi / Değerleme Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "31.12.2025 — VUK dönem sonu değerleme tarihi",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/380-01",
+          null
+        ],
+        [
+          "379 Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          null,
+          null,
+          "Paragraf 3 altın dönüşümü — 379 ile bağlantılı zorunlu",
+          null
+        ],
+        [
+          "B. PARAGRAF 3 (ALTIN DÖNÜŞÜMÜ) SONRASI TL ARAÇ BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "380 Mekanizması: KVK Geçici Md.14/3 kapsamında altın hesabının TL'ye dönüştürülmesi (379) sonrası kurulan TL mevduat veya katılım hesabından dönem sonu VUK değerlemesiyle tahakkuk eden faiz ve kâr payı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  379 (Altın Dönüşüm Kazancı) Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          "380, 379 bağlantısı zorunlu. 379 dönüşüm tutarı ve tarihi buradan alınır.",
+          null,
+          "379 çalışma kâğıdı",
+          null
+        ],
+        [
+          "B.2  Paragraf 3 Dönüşümü Sonrası TL Araç Türü",
+          null,
+          "TL Mevduat",
+          "Altın hesabı TL'ye dönüşümü sonrasında kurulan TL araç türü.",
+          null,
+          "Araç sözleşmesi",
+          null
+        ],
+        [
+          "B.3  Dönem Sonu Değerleme Tarihi",
+          null,
+          "31.12.2025",
+          "VUK dönem sonu tarihi — tahakkuk bu tarih itibarıyla yapılır.",
+          null,
+          "VUK Md.280",
+          null
+        ],
+        [
+          "B.4  Faiz/Kâr Payı Hesaplama Yöntemi",
+          null,
+          "Banka Bildirimi",
+          "Banka dönem sonu bildirimi veya sözleşme oranı esaslı tahakkuk.",
+          null,
+          "Banka belgesi",
+          null
+        ],
+        [
+          "B.5  TL Araç Bakiyesi (Dönem Sonu)",
+          null,
+          null,
+          "31 Aralık itibarıyla TL araç bakiyesi.",
+          null,
+          "Hesap ekstresi",
+          null
+        ],
+        [
+          "B.6  ★ 379 Kapsamı Altın Dönüşümünden Kaynaklandığı Teyit Edildi mi?",
+          null,
+          "EVET",
+          "380, yalnızca 379 kapsamı altın hesabı dönüşümünden kurulan TL araçlara uygulanır.",
+          null,
+          "KVK Geç.Md.14/3",
+          null
+        ],
+        [
+          "C. PARAGRAF 3 TL ARAÇ BAZINDA DÖNEM SONU FAİZ/KÂR PAYI TAHAKKUK TABLOSU (380)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SÜTUN 5 (teal çerçeve): ANA VERİ — Dönem sonu tahakkuk eden faiz/kâr payı (banka bildirimi veya hesaplama).\n  181 Dr / 642 Kr muhasebe kaydıyla mutabık olmalıdır. Sütun 6 (İstisna Oranı): Normalde 100.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Araç Adı/No",
+          "Açılış Tarihi",
+          "Araç Türü",
+          "Bakiye (TL)",
+          "Dönem Sonu Tahakkuk (TL)",
+          "İstisna Oranı (%)",
+          "380 İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam Dönem Sonu Faiz/Kâr Payı Tahakkuku → Beyanname 380",
+          null,
+          null,
+          "0",
+          "—",
+          "0"
+        ],
+        [
+          "SÜTUN 5 (teal çerçeve): Banka dönem sonu bildirimi veya (Bakiye × Yıllık Oran × Gün/365). 181 Dr / 642 Kr muhasebe kaydıyla mutabık. Sütun 6 (İstisna Oranı): Normalde 100 (%). Kapsam dışı araç → 0.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. DÖNEM SONU KÂR PAYI/FAİZ İSTİSNASI ÖZET — BEYANNAME 380",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam Dönem Sonu Faiz/Kâr Payı Tahakkuku",
+          null,
+          "0",
+          "C tablosu toplam",
+          null,
+          "181/642 muhasebe kaydıyla mutabık",
+          null
+        ],
+        [
+          "D.2  Kapsam Dışı Tahakkuk (Paragraf 3 dışı araçlar)",
+          null,
+          "0",
+          "İstisna oranı 0 girilenler",
+          null,
+          "Vergiye tabi kısım",
+          null
+        ],
+        [
+          "D.3  ★ NET 380 İSTİSNA TUTARI → BEYANNAME 380",
+          null,
+          "0",
+          "→ Beyanname 380 | Kazancın Bulunması Halinde",
+          null,
+          "KVK Geçici Md.14/3",
+          null
+        ],
+        [
+          "D.4  Vergiye Tabi Faiz/Kâr Payı (Kapsam Dışı)",
+          null,
+          "0",
+          "Bu kısım KV matrahında kalır",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. 372 – 376 – 380 DÖNEM SONU TAHAKKUK KARŞILAŞTIRMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          "372 (Md.14/1-b) P1",
+          "376 (Md.14/2) P2",
+          "380 (Md.14/3) P3",
+          "Ortak",
+          "YİAKV"
+        ],
+        [
+          "Dayanak",
+          null,
+          "Paragraf 1 (Yab. para/altın → KKM)",
+          "Paragraf 2 (Borç → TL araç)",
+          "Paragraf 3 (Altın → TL araç)",
+          "Aynı mekanizma",
+          "Üçü DÜŞÜLEMEZ"
+        ],
+        [
+          "Araç",
+          null,
+          "TL KKM (mevduat/katılım)",
+          "TL mevduat/tahvil vb.",
+          "TL mevduat/katılım vb.",
+          "Vadeye göre değişir",
+          "E.7'de üçü"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "181 Dr / 642 Kr",
+          "181 Dr / 642 Kr",
+          "181 Dr / 642 Kr",
+          "Aynı muhasebe",
+          "Tahakkuk esaslı"
+        ],
+        [
+          "Zaman",
+          null,
+          "31 Aralık",
+          "31 Aralık",
+          "31 Aralık",
+          "Dönem sonu",
+          "Her yıl yeniden"
+        ],
+        [
+          "Bağlantılı Kod",
+          null,
+          "370/371 (P1 dönüşümü)",
+          "375 (P2 dönüşümü)",
+          "379 (P3 altın dönüşümü)",
+          "Ayrı zincirler",
+          "Bağlantı zorunlu"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 380 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Geçici Md.14/3 | Paragraf 3 Dönem Sonu Tahakkuk",
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 370–380 (11 kod) tamamı asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) 379 BAĞLANTISI ZORUNLU: 380, yalnızca 379 kapsamı altın dönüşümü sonrası TL araçlara uygulanır.\n(3) 372/376 İLE MÜKERRERLİK: Aynı TL araç için hem 372 hem 380 ya da hem 376 hem 380 yazılamaz.\n(4) TAHSİL DÖNEMİNDE TEKRAR YOK: 181 kapatıldığında yeni 380 uygulanmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G39",
+      "rows": [
+        [
+          "380 – KVK GEÇİCİ MD.14/3 DÖNEM SONU FAİZ/KÂR PAYI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 3 Altın Dönüşümü Sonrası TL Araç | VUK 280/281 | Beyanname 380 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "379 Bağlantısı (A0.1)",
+          null,
+          null,
+          "EVET",
+          "EVET — Altın dönüşümü (379) mevcut",
+          null,
+          null
+        ],
+        [
+          "Tahakkuk Kaydı (A0.3)",
+          null,
+          null,
+          "EVET",
+          "181/642 kaydı zorunlu",
+          null,
+          null
+        ],
+        [
+          "372/376 Mükerrerlik (A0.4)",
+          null,
+          null,
+          "EVET",
+          "Ayrı araçlar teyit",
+          null,
+          null
+        ],
+        [
+          "380 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "370–380 tamamı E.7 (11 kod)",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. KVK GEÇİCİ MD.14 — 370'DEN 380'E ON BİR KOD TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Paragraf",
+          "Kapsam",
+          "Muhasebe",
+          "Zaman",
+          "Beyanname",
+          "YİAKV"
+        ],
+        [
+          "370",
+          "1-a",
+          "AKT: Döviz/altın → TL KKM kur farkı",
+          "646/679",
+          "Dönüşüm",
+          "370",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "371",
+          "1-b",
+          "AKT: Bankadan kur farkı tazminat",
+          "102/648",
+          "Ödeme",
+          "371",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "372",
+          "1-b",
+          "AKT: Dönem sonu faiz/kâr payı tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "372",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "373",
+          "1-b",
+          "AKT: Vade sonu faiz/kâr payı tahsilat",
+          "102/(181+642)",
+          "Vade",
+          "373",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "374",
+          "1-b",
+          "AKT: Vade sonu diğer kazançlar",
+          "646/648/679",
+          "Vade",
+          "374",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "375",
+          "2",
+          "PAS: Borç kur farkı kazancı",
+          "646/679",
+          "Dönüşüm",
+          "375",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "376",
+          "2",
+          "PAS: Dönem sonu faiz/kâr payı tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "376",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "377",
+          "2",
+          "PAS: Vade sonu faiz/kâr payı tahsilat",
+          "102/(181+642)",
+          "Vade",
+          "377",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "378",
+          "2",
+          "PAS: Vade sonu diğer kazançlar",
+          "646/648/679",
+          "Vade",
+          "378",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "379",
+          "3",
+          "ALTIN: Altın hesabı dönüşüm kazancı",
+          "646/679",
+          "Dönüşüm",
+          "379",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "380",
+          "3",
+          "ALTIN: Dönem sonu faiz/kâr payı tahakkuk (BU)",
+          "181/642",
+          "31 Aralık",
+          "380",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ 379 kapsamı altın dönüşümü var mı? (379 ÇK hazır mı?)",
+          null,
+          "380, yalnızca 379 kapsamı altın hesabı dönüşümü sonrası araçlara uygulanır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Dönem sonu faiz/kâr payı tahakkuk muhasebe kaydı yapıldı mı? (181/642)",
+          null,
+          "Kayıt olmadan 380 istisnasının muhasebe dayanağı yoktur.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ C tablosundaki tahakkuk tutarları 181/642 muhasebe kayıtlarıyla mutabık mı?",
+          null,
+          "Her araç satırı muhasebe ekstresiyle doğrulanmış.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "Banka dönem sonu tahakkuk bildirimi mevcut mu?",
+          null,
+          "Resmi banka dönem sonu bildirimi zorunludur.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ 372 (Paragraf 1) ve 376 (Paragraf 2) ile mükerrerlik kontrolü yapıldı mı?",
+          null,
+          "Aynı TL araç için 372 veya 376 veya 380 — yalnızca biri uygulanabilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "379 çalışma kâğıdıyla çapraz mutabakat yapıldı mı?",
+          null,
+          "Altın dönüşüm tutarı ile TL araç bakiyeleri uyumlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Kapsam dışı araçlar (D.2) ayrıştırıldı mı?",
+          null,
+          "Paragraf 3 dışındaki araçlar — vergilendirilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "★★ 380 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370–380 (11 kod) tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de 380 de kontrol edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "YİAKV E.7 satırı 380'i de kapsayacak şekilde güncellendi mi?",
+          null,
+          "11 kodun tamamı E.7'de listede.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "Beyanname 380 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "Tahsil döneminde 181 kapatma kaydı yapılıp 380 tekrar uygulanmadı mı?",
+          null,
+          "Yalnızca tahakkuk anında — tahsil döneminde tekrar yok.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G18",
+      "rows": [
+        [
+          "380 – KVK GEÇİCİ MD.14/3 DÖNEM SONU FAİZ/KÂR PAYI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tahakkuk Kaydı | Tahsil Kaydı | 372 / 376 / 380 Karşılaştırma | 370–380 Tam Tablo",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — DÖNEM SONU (31 ARALIK): PARAGRAF 3 TL ARACI FAİZ/KÂR PAYI TAHAKKUKU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[31.12.YYYY]",
+          "181 Gelir Tahakkukları",
+          "Paragraf 3 altın dönüşümü sonrası TL araçtan tahakkuk eden faiz/kâr payı",
+          "[Tutar]",
+          "—",
+          "Banka bildirimi"
+        ],
+        [
+          "Kr",
+          "[31.12.YYYY]",
+          "642 Faiz Gelirleri / 644 Kâr Payları",
+          "KVK Geçici Md.14/3 kapsamı → Beyanname 380",
+          "—",
+          "[Tutar]",
+          "KV 380"
+        ],
+        [
+          "372/376 ile AYNI muhasebe mekanizması (181/642). Fark: yasal dayanak Paragraf 3 ve 379 bağlantısı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — TAHSİL (İZLEYEN DÖNEM): 181 KAPATMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Tahsil]",
+          "102 Bankalar",
+          "Faiz/kâr payı tahsilatı",
+          "[Tutar]",
+          "—",
+          "Banka ekstresi"
+        ],
+        [
+          "Kr",
+          "[Tahsil]",
+          "181 Gelir Tahakkukları",
+          "Önceki dönem 380 tahakkuku kapatma — tekrar 380 uygulanmaz",
+          "—",
+          "[Tutar]",
+          "181 kapatma"
+        ],
+        [
+          "KAYIT 3 — 372 / 376 / 380 YAN YANA + PARAGRAF 1/2/3 KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "372",
+          "31.12",
+          "181/642",
+          "P1 AKT: Yab.para/altın → TL KKM araç → Dönem sonu tahakkuk → 372",
+          "—",
+          "[372]",
+          "KV 372"
+        ],
+        [
+          "376",
+          "31.12",
+          "181/642",
+          "P2 PAS: Borç → TL araç → Dönem sonu tahakkuk → 376",
+          "—",
+          "[376]",
+          "KV 376"
+        ],
+        [
+          "380",
+          "31.12",
+          "181/642",
+          "P3 ALTIN: Altın → TL araç (379 sonrası) → Dönem sonu tahakkuk → 380 (BU)",
+          "—",
+          "[380]",
+          "KV 380"
+        ],
+        [
+          "YİAKV: 372+376+380 üçünün de geliri (181/642 tahakkuk) YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7). Aynı TL araç için yalnızca biri uygulanabilir — hangi paragraf kapsamında olduğu belirlenmelidir. 370–380 (11 kod) E.7'de eksiksiz listelenmeli. YİAKV E.7 güncellemesi zorunlu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "380 – KVK GEÇİCİ MD.14/3 DÖNEM SONU FAİZ/KÂR PAYI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | 372/376 Karşılaştırması | 379 Bağlantısı | ★★ YİAKV",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/3 — 380 Dönem Sonu Mekanizması",
+          "380 (PARAGRAF 3 — ALTIN DÖNÜŞÜMÜ SONRASI DÖNEM SONU KÂR PAYI VE FAİZ) TANIMI:\n\nKVK Geçici Madde 14/3 kapsamında altın hesaplarını TL'ye dönüştüren kurumların,\ndönüşüm sonrası sahip oldukları TL araçlardan dönem sonu itibarıyla\nVUK Md.280/281 gereği tahakkuk ettirilen faiz ve kâr payı geliri istisnadır.\n\n372/376/380 KARŞILAŞTIRMASI:\n• 372 (Paragraf 1): Aktif — Yabancı para/altın → TL KKM dönüşümü sonrası araç\n• 376 (Paragraf 2): Pasif — Yabancı para borç → TL araç dönüşümü sonrası\n• 380 (Paragraf 3): Altın — Altın hesabı → TL araç dönüşümü (379) sonrası\n\nHer üçü de aynı muhasebe mekanizması (181/642). Fark: yasal dayanak.\n\n379 BAĞLANTISI ZORUNLU:\n380, 379 (altın hesabı dönüşüm kazancı) olmadan oluşamaz.\n379 çalışma kâğıdı dayanağı olmadan 380 uygulanamaz.\n\nBEYANNAME: 380 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/3 | GİB KV Beyan Reh. 2026 (No:606) | VUK Md.280/281",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "372/376/380 Mükerrerlik Analizi — Aynı TL Araç İçin Yalnızca Biri",
+          "MÜKERRERLİK KURAL:\n\nBir TL araç için yalnızca bir paragraf kapsamı tahakkuk kodu uygulanabilir:\n• Araç Paragraf 1 kapsamı mı? → 372\n• Araç Paragraf 2 kapsamı mı? → 376\n• Araç Paragraf 3 (altın dönüşümü) kapsamı mı? → 380\n\nANCAK — 372/376/380 BİRLİKTE UYGULANABİLİR (farklı araçlar için):\nKurum hem Paragraf 1 hem Paragraf 2 hem Paragraf 3 dönüşümü yaptıysa:\n• Paragraf 1 TL araç → 372 | Paragraf 2 TL araç → 376 | Paragraf 3 TL araç → 380\nBu MÜKERRERLİK DEĞİL — her biri farklı araç.\n\nHATA: Aynı TL aracı hem 372 hem 380'e yazmak → Mükerrerlik → Tarhiyat.",
+          "KVK Geçici Md.14/1-b (372) | Md.14/2 (376) | Md.14/3 (380)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370–380 On Bir Kodun Tamamı DÜŞÜLEMEZ + E.7 Güncellemesi",
+          "YİAKV (KVK Md.32/C) MATRAHINDA ON BİR KODUN DÜŞÜLEMEZLİĞİ:\n\nParagraf 1: 370|371|372|373|374 → BEŞİ DE DÜŞÜLEMEZ\nParagraf 2: 375|376|377|378 → DÖRDÜ DE DÜŞÜLEMEZ\nParagraf 3: 379|380 → İKİSİ DE DÜŞÜLEMEZ\n\nYİAKV E.7 (Güncellenmeli — 380 eklenmeli):\n'KVK Geçici Md.14 (Tüm Paragraflar 1-3, Tüm Kodlar 370-380)\n→ DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373/374/375/376/377/378/379/380'\n\nYMM, 380'in eklenmesiyle E.7'yi güncellemelidir.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Altın Hesabı Dönüşümü Zinciri: 379 → 380 → (381?)",
+          "PARAGRAF 3 ZİNCİRİ:\n\n379 (Md.14/3): Altın hesabı → TL dönüşüm kazancı (tek seferlik)\n380 (Md.14/3): Dönüşüm sonrası TL araçtan dönem sonu tahakkuk (yıllık)\n\nZincir analizi:\n• 379 = Altın dönüşüm anında tek seferlik kazanç\n• 380 = Dönüşüm sonrası TL araç dönem sonu faiz/kâr payı (yıllık 31 Aralık)\n\nParagraf 3'te başka kodlar olabilir (vade sonu için 381?).\nMevcut beyanname yapısında 380'den sonraki kodlar varsa aynı zincir mantığı geçerli.\n\nTAHSİL DÖNEMINDE:\nDönem sonu 181/642 tahakkuku izleyen dönemde tahsil edildiğinde:\nDr 102 / Kr 181 → 380 tekrar uygulanmaz.",
+          "KVK Geçici Md.14/3 | VUK Md.280/281",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...KVK Geçici Madde 14/3 kapsamında altın hesabının TL'ye dönüştürülmesi sonucunda\nkurulan [Araç Türü] hesabından [dönem] hesap döneminin bitiş tarihi itibarıyla\nVUK Md.280/281 gereği tahakkuk ettirilen [Tutar] TL faiz/kâr payı geliri,\nKVK Geçici Madde 14/3 kapsamında kurumlar vergisinden istisna edilmiş ve yurt içi\nasgari kurumlar vergisi matrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...380 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...Aynı araç hem 372 hem 380 kapsamındadır.' (Mükerrerlik)\n'...379 olmadan 380 uygulanmıştır.' (Bağlantı kopuk)\n\nKRİTİK RİSKLER:\n(1) 380'i YİAKV matrahından düşmek.\n(2) 379 olmadan 380 uygulamak.\n(3) 372 veya 376 ile aynı araç için mükerrer 380 uygulamak.\n(4) Tahsil döneminde tekrar 380 uygulamak.\n(5) YİAKV E.7'yi 380'i kapsayacak şekilde güncellememek.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14/3 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (380): 380 = 372 ve 376'nın Paragraf 3 (altın) karşılığı. 379 (altın dönüşümü) olmadan oluşamaz. 372/376/380 aynı mekanizma — farklı paragraf. 370–380 (11 kod) YİAKV E.7'de eksiksiz listeli. YMM müteselsil: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F30",
+      "rows": [
+        [
+          "380 – KVK GEÇİCİ MD.14/3 DÖNEM SONU FAİZ/KÂR PAYI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | VUK Md.280/281 | 379 Bağlantısı | 372/376 Karşılaştırma",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ 379 Çalışma Kâğıdı — Paragraf 3 Altın Dönüşümü Dayanağı",
+          "380, 379 olmadan oluşamaz. 379 dönüşüm tutarı ile 380 TL araç bakiyeleri mutabık olmalı.\nEn temel bağlantı belgesidir.",
+          "379 çalışma kâğıdı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Muhasebe Yevmiyesi — 181 Dr / 642 Kr Tahakkuk Kaydı",
+          "Dönem sonu (31 Aralık) tahakkuk yevmiye kaydı. C tablosu toplamıyla birebir uyumlu.\nKayıt olmadan 380 istisnasının muhasebe dayanağı yoktur.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Banka Dönem Sonu Tahakkuk Bildirimi",
+          "Dönem sonu tahakkuk eden faiz/kâr payı tutarını gösteren resmi banka belgesi.",
+          "Banka şubesi/internet bankacılığı",
+          null
+        ],
+        [
+          null,
+          "4",
+          "TL Araç Sözleşmesi (Altın Dönüşümü Sonrası Kurulan)",
+          "Paragraf 3 dönüşümü sonrası kurulan TL araç sözleşmesi — faiz oranı ve vade bilgisi.",
+          "Banka TL araç sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 380. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV E.7 güncellenmiş (380 dahil 11 kod).",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "181 Hesap Kapatma Kaydı (İzleyen Dönem Tahsilat)",
+          "Önceki dönem 380 tahakkuklarının tahsil edildiğinde 181 kapatıldığını gösteren yevmiye.\nTahsil döneminde yeni 380 uygulanmamış olmalı.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "372 ve 376 Çalışma Kâğıtları (Mükerrerlik Kontrolü)",
+          "Aynı TL araç için 372 veya 376 uygulanmadığının teyidi.\nParagraf analizi: Araç hangi dönüşümden kaynaklanıyor?",
+          "372/376 çalışma kâğıtları",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ 379 kapsamı altın dönüşümü var mı? (379 ÇK hazır mı?)",
+          "380 bağlantısı zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Dönem sonu tahakkuk muhasebe kaydı (181/642) yapıldı mı?",
+          "Kayıt olmadan istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Tahakkuk tutarları banka bildirimi ile mutabık mı?",
+          "Her araç satırı belgeyle doğrulanmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ 372/376 ile mükerrerlik analizi yapıldı mı?",
+          "Aynı araç için yalnızca biri (372, 376 veya 380).",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "379 çalışma kâğıdıyla çapraz mutabakat tamam mı?",
+          "Altın dönüşüm tutarı ile araç bakiyeleri uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Kapsam dışı araçlar (D.2) ayrıştırıldı mı?",
+          "Paragraf 3 dışı araçlar → vergilendirilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ 380 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370–380 tamamı YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★ YİAKV E.7 satırı 380'i de kapsayacak şekilde güncellendi mi?",
+          "11 kodun tamamı E.7'de listede.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 380 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 380 = 372 ve 376'nın Paragraf 3 (altın) karşılığı. 379 (altın dönüşüm kazancı) olmadan oluşamaz. Aynı TL araç için 372/376/380 yalnızca biri uygulanabilir. 370–380 on bir kodun tamamı YİAKV E.7'de DÜŞÜLEMEZ. E.7 güncellenmelidir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

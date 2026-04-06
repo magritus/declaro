@@ -1,0 +1,1250 @@
+{
+  "file": "386_CVOA_Kapsaminda_Istisna.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G68",
+      "rows": [
+        [
+          "386 – ÇİFTE VERGİLENDİRMEYİ ÖNLEME ANLAŞMASI (ÇVÖA) KAPSAMINDA İSTİSNA | Yurt Dışı Daimi İşyeri / ÇVÖA Kaynaklı Gelir İstisnası | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/3 + İlgili ÇVÖA | Türkiye — [Anlaşma Ülkesi] Çifte Vergilendirmeyi Önleme Anlaşması | Beyanname 386 | GİB KV Beyan Rehberi Mart 2026 (No:606)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "386 ÇVÖA İSTİSNASI KAPSAMI:\n  Türkiye'nin taraf olduğu ÇVÖ Anlaşmaları kapsamında, anlaşma hükümleri gereğince Türkiye'de kurumlar vergisinden istisna edilen kazanç ve iratlar.\n  BAŞLICA UYGULAMA ALANLARI:\n  ① Yurt dışı daimi işyeri (şube/PE) kazançları: ÇVÖA'nın işyeri maddesi uyarınca yalnızca kaynak ülkede vergilendirilen PE kazancı → Türkiye'de istisna.\n  ② Anlaşma kapsamında diğer gelirler: Temettü, faiz, gayrimaddi hak bedeli, sermaye kazancı vb. ÇVÖA hükümleri gereğince Türkiye'de vergiden istisna edilen tutarlar.\n  ★ KVK Md.5/1-h (yurt dışı iştirak kazancı), KVK Md.5/1-g (yurt dışı şube) ile ilişki analizi yapılmalı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ YİAKV (KVK Md.32/C) NOT: ÇVÖA kapsamı istisnalar, anlaşmanın niteliğine ve gelir türüne bağlı olarak YİAKV matrahını etkileyebilir veya etkilemeyebilir. YMM'nin ayrıca analiz etmesi zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Türkiye ile anlaşma ülkesi arasında yürürlükte bir ÇVÖA mevcut mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Resmi Gazete'de yayımlanan ve yürürlükteki anlaşma metni esas alınmalı. Anlaşma imzalandı ancak yürürlüğe girmedi → İstisna uygulanamaz.",
+          null
+        ],
+        [
+          "A0.2  ★ İstisna uygulanacak gelir türü ÇVÖA'nın hangi maddesi kapsamında?",
+          null,
+          null,
+          null,
+          "Daimi İşyeri (PE) Kazancı",
+          "ÇVÖA madde referansı çalışma kâğıdına açıkça yazılmalı.",
+          null
+        ],
+        [
+          "A0.3  İlgili ÇVÖA maddesi Türkiye'ye vergilendirme yetkisi tanımıyor mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Türkiye yalnızca muafiyet (exemption) yöntemi uyguluyorsa → 386. Mahsup (credit) yöntemi → 386 DEĞİL. Anlaşma metni incelenmeli.",
+          null
+        ],
+        [
+          "A0.4  ★ Bu gelir KVK Md.5/1-g (yurt dışı şube) veya Md.5/1-h (yurt dışı iştirak) kapsamına giriyor mu?",
+          null,
+          null,
+          null,
+          "HAYIR-Yalnızca ÇVÖA",
+          "KVK Md.5/1-g ile ÇVÖA'nın birlikte uygulanması veya çakışması analiz edilmeli. Aynı tutar için mükerrer istisna uygulanamaz.",
+          null
+        ],
+        [
+          "A0.5  Yurt dışı daimi işyeri kazancı ise KVK Md.22 koşulları sağlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Md.22: PE kazancının beyana eklenmesi ve belgelenmesi şartları.",
+          null
+        ],
+        [
+          "A0.6  ★ YİAKV (KVK Md.32/C) etkisi analiz edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "ÇVÖA istisnaları türe ve anlaşmaya göre YİAKV'yi farklı etkiler. YMM'nin her gelir kalemi için ayrı analiz yapması zorunludur.",
+          null
+        ],
+        [
+          "A0.7  Yurt dışında ödenen vergi (mahsup) hesaplandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Muafiyet yönteminde mahsup gündeme gelmez. Mahsup yönteminde ise 386 değil ayrı satır uygulanır.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu (49 No.lu Tebliğ).",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (ÇVÖA maddesi), A0.4 (KVK çakışma), A0.6 (YİAKV analizi) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/386-01",
+          null
+        ],
+        [
+          "Anlaşma Ülkesi",
+          null,
+          null,
+          null,
+          null,
+          "Resmî Gazete No ve Tarih ile birlikte",
+          null
+        ],
+        [
+          "B. ÇVÖA ANLAŞMA BİLGİLERİ VE UYGULANACAK MADDE",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  Anlaşma Ülkesi",
+          null,
+          "Almanya",
+          "ÇVÖA'nın diğer tarafı olan ülke.",
+          null,
+          "Resmî Gazete / GİB",
+          null
+        ],
+        [
+          "B.2  Anlaşmanın Resmî Gazete Tarihi ve Numarası",
+          null,
+          null,
+          "Yürürlük tarihini ve Resmî Gazete bilgisini yazın.",
+          null,
+          "Resmî Gazete",
+          null
+        ],
+        [
+          "B.3  Uygulanan ÇVÖA Maddesi (Numarası ve Başlığı)",
+          null,
+          null,
+          "Örn: 'Madde 7 — Ticari Kazançlar' veya 'Madde 23 — Çifte Vergilendirmenin Önlenmesi'",
+          null,
+          "ÇVÖA metni",
+          null
+        ],
+        [
+          "B.4  Gelir Türü",
+          null,
+          "Yurt Dışı Daimi İşyeri (Şube) Kazancı",
+          "İstisnanın uygulandığı gelir türü. Her tür için ayrı analiz.",
+          null,
+          "ÇVÖA / KVK",
+          null
+        ],
+        [
+          "B.5  Vergilendirme Yöntemi (Anlaşma Gereği)",
+          null,
+          "Muafiyet Yöntemi",
+          "Muafiyet yöntemi → 386. Mahsup yöntemi → Ayrı satır (mahsup). Dikkat: İkisi farklı.",
+          null,
+          "ÇVÖA Md.23 vb.",
+          null
+        ],
+        [
+          "B.6  Yurt Dışı Ülkedeki Daimi İşyeri / Faaliyet Varlığı Teyidi",
+          null,
+          "EVET",
+          "PE varlığı sözleşme + kayıt belgesiyle kanıtlanmalı.",
+          null,
+          "Yurt dışı kayıt belgesi",
+          null
+        ],
+        [
+          "B.7  ★ KVK Md.5/1-g veya Md.5/1-h Kapsamında Ayrı İstisna Uygulandı mı?",
+          null,
+          "HAYIR",
+          "Mükerrer istisna önleme: Aynı tutar hem ÇVÖA 386 hem KVK 5/1-g/h kapsamında yazılamaz.",
+          null,
+          "KVK Md.5",
+          null
+        ],
+        [
+          "C. ÇVÖA KAPSAMINDA İSTİSNA GELİR/KAZANÇ TABLOSU (BEYANNAME 386)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her ÇVÖA ülkesi ve gelir türü için AYRI SATIR. SÜTUN 5 (mor çerçeve): ANA VERİ — istisna tutarı. SÜTUN 6 (İstisna Oranı): Normalde 100 (tam muafiyet). Kısmi muafiyet varsa orantılı girin. SÜTUN 7: Net 386 İstisna (Formül).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Anlaşma Ülkesi",
+          "Gelir Türü",
+          "ÇVÖA Maddesi",
+          "Hesap Dönemi Brüt Gelir (TL)",
+          "Brüt İstisna Tutarı (TL)",
+          "İstisna Oranı (%)",
+          "Net 386 İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "ÇVÖA Kapsamı Toplam İstisna → Beyanname 386",
+          null,
+          null,
+          "0",
+          "—",
+          "0"
+        ],
+        [
+          "SÜTUN 4: Hesap dönemi brüt gelir (çapraz kontrol için). SÜTUN 5 (mor çerçeve): İstisna tutarı — genellikle PE geliri veya ÇVÖA kapsamı gelir. SÜTUN 6: Normalde 100 (tam muafiyet). Anlaşmada kısmi muafiyet varsa oranı girin. Her ülke/gelir türü için AYRI SATIR.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. ÇVÖA İSTİSNA ÖZET VE YİAKV ANALİZİ — BEYANNAME 386",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam ÇVÖA Brüt İstisna",
+          null,
+          "0",
+          "C Sütun 5 toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Kısmi Muafiyet Düzeltmeleri",
+          null,
+          "0",
+          "Kısmi muafiyet durumunda ayrıştırılan kısım",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  ★ NET 386 İSTİSNA TUTARI → BEYANNAME 386",
+          null,
+          "0",
+          "→ Beyanname 386",
+          null,
+          "KVK Md.5/3 + ÇVÖA",
+          null
+        ],
+        [
+          "D.4  YİAKV Etkisi — Analize Göre",
+          null,
+          null,
+          "YMM tarafından ayrıca belirlenmeli",
+          null,
+          "★ YİAKV ayrı analiz",
+          null
+        ],
+        [
+          "D.5  Yurt Dışında Ödenen Vergi (Mahsup İçin — Uygulanıyorsa)",
+          null,
+          null,
+          "Muafiyet yönteminde uygulanmaz",
+          null,
+          "KVK Md.33",
+          null
+        ],
+        [
+          "E. YİAKV (KVK Md.32/C) ETKİSİ ANALİZİ — ÇVÖA İSTİSNALARI ÖZEL DURUM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÇVÖA kapsamında istisnalar, YİAKV matrahını her zaman otomatik olarak azaltmaz. Her gelir türü ve anlaşma hükmü için ayrı analiz zorunludur. Aşağıdaki tabloyu doldurun.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ülke",
+          "Gelir Türü",
+          "ÇVÖA Maddesi",
+          "Muafiyet Yöntemi",
+          "YİAKV Etkisi",
+          "Gerekçe",
+          "YMM Onay"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "Analiz Sürecinde",
+          null,
+          "Onay Bekleniyor"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "Analiz Sürecinde",
+          null,
+          "Onay Bekleniyor"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "Analiz Sürecinde",
+          null,
+          "Onay Bekleniyor"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "Analiz Sürecinde",
+          null,
+          "Onay Bekleniyor"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "Analiz Sürecinde",
+          null,
+          "Onay Bekleniyor"
+        ],
+        [
+          "YİAKV ÖZEL DURUM — ÇVÖA: KVK Md.32/C'nin ÇVÖA istisnaları ile etkileşimi anlaşmaya özgüdür. GİB özelgesi ve OECD yorumları referans alınmalıdır. Muafiyet yöntemi uygulanan ülkelerdeki PE geliri YİAKV matrahında nasıl ele alınacağı açıklama gerektirmektedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "F.1  TOPLAM ÇVÖA İSTİSNASI → Beyanname Satır 386",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Md.5/3 + İlgili ÇVÖA | GİB Beyan Reh. 2026 No:606",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G30",
+      "rows": [
+        [
+          "386 – ÇVÖA KAPSAMINDA İSTİSNA | HESAPLAMALAR, DENETİM VE YİAKV ANALİZİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Çifte Vergilendirmeyi Önleme Anlaşması | KVK Md.5/3 | Beyanname 386 | GİB KV Beyan Reh. No:606",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Anlaşma Ülkesi",
+          null,
+          null,
+          "Almanya",
+          "ÇVÖA taraf ülke",
+          null,
+          null
+        ],
+        [
+          "Gelir Türü (B.4)",
+          null,
+          null,
+          "Yurt Dışı Daimi İşyeri (Şube) Kazancı",
+          "PE/Temettü/Faiz/Royalty vb.",
+          null,
+          null
+        ],
+        [
+          "Vergilendirme Yöntemi (B.5)",
+          null,
+          null,
+          "Muafiyet Yöntemi",
+          "Muafiyet = 386 | Mahsup = farklı satır",
+          null,
+          null
+        ],
+        [
+          "386 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "YİAKV Etkisi (E Tablosu)",
+          null,
+          null,
+          "YMM tarafından doldurulacak",
+          "★ Analiz zorunlu — otomatik değil",
+          null,
+          null
+        ],
+        [
+          "B. MUAFİYET YÖNTEMİ vs MAHSUP YÖNTEMİ — ÇVÖA UYGULAMA AYRIMI (KRİTİK)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME 386 YALNIZCA MUAFİYET (EXEMPTION) YÖNTEMİ İÇİNDİR:\n\n  MUAFİYET YÖNTEMİ (Exemption Method) → BEYANNAME 386:\n  • Türkiye, ÇVÖA uyarınca belirli geliri tamamen vergiden istisna eder.\n  • Kazanç Türkiye'de beyan edilmez veya beyan edilip istisna uygulanır.\n  • Örnek: Almanya'da PE var → PE kazancı yalnızca Almanya'da vergilenir → Türkiye muaf → 386.\n  • Muafiyet + İlerleme çekincesi (progression clause) olan anlaşmalarda dikkat: Gelir oranı belirlemede kullanılabilir ama vergilendirilmez.\n\n  MAHSUP YÖNTEMİ (Tax Credit Method) → BEYANNAME 386 DEĞİL (KVK Md.33):\n  • Yurt dışı gelir Türkiye'de beyan edilir, yurt dışında ödenen vergi mahsup edilir.\n  • 386 istisna satırına yazılmaz; Md.33 mahsup satırına yazılır.\n  • Yanlış uygulama: Mahsup yöntemi varken 386'ya yazmak → Tarhiyat riski.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K14)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ ÇVÖA yürürlükte mi? (Resmî Gazete tarihi ve numarası teyit edildi mi?)",
+          null,
+          "İmzalandı ancak yürürlüğe girmedi → 386 uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Uygulanan ÇVÖA maddesi doğru belirlendi mi?",
+          null,
+          "Her gelir türü için farklı madde (MD.7 PE, MD.10 Temettü, MD.11 Faiz vb.)",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Yöntem MUAFİYET mi yoksa MAHSUP mu?",
+          null,
+          "Muafiyet → 386. Mahsup → KVK Md.33. Yöntem karıştırılmamalı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ KVK Md.5/1-g veya Md.5/1-h ile mükerrerlik analizi yapıldı mı?",
+          null,
+          "Aynı tutar hem 386 hem 5/1-g/h'ye yazılamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "PE varlığı (daimi işyeri) belgelendi mi?",
+          null,
+          "Kayıt belgesi, sözleşme, fiili faaliyet kanıtı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "PE kazancı yerel muhasebe kayıtlarıyla destekleniyor mu?",
+          null,
+          "Yurt dışı mali tablolar ve muhasebe kayıtları.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Anlaşma kaynakları incelendi mi? (OECD Model yorumları dahil)",
+          null,
+          "OECD Model Vergi Anlaşması Yorumu + GİB özelgeleri.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "★ YİAKV etkisi analiz edildi mi? (E tablosu dolduruldu mu?)",
+          null,
+          "ÇVÖA istisnaları YİAKV'yi otomatik azaltmaz — analiz zorunlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "Her ülke ve gelir türü için ayrı C tablosu satırı var mı?",
+          null,
+          "Almanya PE + Hollanda Temettü = İki ayrı satır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "Kısmi muafiyet varsa doğru oranlandı mı?",
+          null,
+          "Sütun 6 (İstisna Oranı) %100 olmayan durumlar.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "Yurt dışı gelir TL dönüşüm hesabı doğru mu?",
+          null,
+          "Dönüşüm tarihi kuru ve MB kur referansı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "Beyanname 386 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K13",
+          "GİB özelgesi alındı mı? (Tartışmalı durumlarda zorunlu)",
+          null,
+          "ÇVÖA yorumu tartışmalıysa özelge şart.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K14",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G15",
+      "rows": [
+        [
+          "386 – ÇVÖA KAPSAMINDA İSTİSNA | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yurt Dışı PE Kazancı | Temettü | Faiz | Royalty | Muafiyet vs Mahsup",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — YURT DIŞI DAİMİ İŞYERİ (PE) KAZANCI — MUAFİYET YÖNTEMİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yurt dışı PE kazancı brüt konsolide edilir, ardından ÇVÖA 386 istisnası beyannamede uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Dönem]",
+          "198 Diğer Çeşitli Alacaklar (veya 100 Kasa)",
+          "Yurt dışı PE kazancı Türkiye'ye aktarımı (veya tahakkuku)",
+          "[Tutar]",
+          "—",
+          "PE Muhasebesi"
+        ],
+        [
+          "Kr",
+          "[Dönem]",
+          "601 Yurt Dışı Satışlar / 679 Diğer Kâr",
+          "PE kazancı gelir kaydı → Brüt ticari kârda",
+          "—",
+          "[Tutar]",
+          "Mali Tablolar"
+        ],
+        [
+          "BEYANNAME: Brüt kâr → Matrah hesabı → 386 istisnası (ÇVÖA muafiyet) → Net KV matrahı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — YURT DIŞI TEMETTÜ — ÇVÖA MUAFİYET YÖNTEMİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Tahsilat]",
+          "102 Bankalar",
+          "Yurt dışı iştirakten temettü tahsilatı",
+          "[Tutar]",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Tahsilat]",
+          "640 İştiraklerden Temettü Gelirleri",
+          "ÇVÖA uyarınca → Beyanname 386 istisnası",
+          "—",
+          "[Tutar]",
+          "ÇVÖA/KVK"
+        ],
+        [
+          "KAYIT 3 — ÇVÖA MUAFİYET vs MAHSUP YÖNTEMİ KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "MUAFİYET YÖNTEMİ (→ Beyanname 386):\n  • Yurt dışı gelir ticari kârda yer alır.\n  • Beyanname hazırlanırken 386 satırında istisna uygulanır.\n  • Muhasebede ayrı bir 'vergi gideri' kaydı yoktur (Türkiye'de vergi ödenmiyor).\n\n  MAHSUP YÖNTEMİ (→ Beyanname 386 DEĞİL, KVK Md.33):\n  • Yurt dışı gelir Türkiye'de tam olarak beyan edilir.\n  • Yurt dışında ödenen vergi KV hesabından mahsup edilir (KVK Md.33).\n  • 386 istisnası UYGULANMAZ — mahsup ve istisna birlikte kullanılamaz.\n  ★ YMM: Hangi yöntemin uygulandığı ÇVÖA'nın 'çifte vergilendirmenin önlenmesi' maddesinden belirlenir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "386 – ÇVÖA KAPSAMINDA İSTİSNA | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | KVK Md.5/3 | OECD Model | YİAKV Özel Durum | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "ÇVÖA 386 İstisnasının Hukuki Dayanağı ve Kapsam",
+          "386 ÇVÖA İSTİSNASI YASAL DAYANAĞI:\n\nKVK Md.5/3: 'İştirak kazançları istisnasının uygulanmasında Türkiye'nin akdettiği çifte vergilendirmeyi önleme anlaşmalarındaki hükümler saklıdır.'\n\nÇVÖA KAPSAMINDA BAŞLICA 386 UYGULAMALARI:\n① Yurt dışı daimi işyeri (PE) kazançları:\n  ÇVÖA'nın işyeri maddesi (genellikle Md.7) + çifte vergilendirme önleme maddesi (Md.23)\n  PE bulunduğu ülkede vergilenir, Türkiye muafiyet uygular → 386\n\n② Temettü (Md.10): Anlaşma Türkiye'nin vergilendirme yetkisini sınırladıysa → Kısmi/tam 386\n③ Faiz (Md.11): Anlaşma hükmü gereğince muafiyet → 386\n④ Gayrimaddi Hak Bedeli (Md.12): Muafiyet öngörülmüşse → 386\n⑤ Sermaye Değer Artışı (Md.13): Muafiyet hükmü varsa → 386\n\nBEYANNAME: 386 | 'Diğer İndirim ve İstisnalar' bölümü",
+          "KVK Md.5/3 | İlgili ÇVÖA | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ Muafiyet vs Mahsup Yöntemi — 386'nın Sınırı",
+          "ÇVÖA UYGULAMA YÖNTEMLERİ VE 386 SINIRI:\n\nMUAFİYET YÖNTEMİ (Exemption Method):\nÇVÖA'nın 'çifte vergilendirmenin önlenmesi' maddesi (genellikle Md.23A) '...diğer Akit Devlette vergilendirilebilir gelir, Türkiye vergisinden muaf tutulur.' ifadesini içeriyorsa → Muafiyet yöntemi → Beyanname 386.\n\nMAHSUP YÖNTEMİ (Tax Credit Method):\nÇVÖA'nın Md.23B 'Türkiye, yurt dışında ödenen vergiyi mahsup eder.' ifadesini içeriyorsa → Mahsup yöntemi → KVK Md.33 → Beyanname 386 DEĞİL.\n\nKARMA (Muafiyet + İlerleme Çekincesi):\nBazı ÇVÖA'larda muafiyet uygulanır ancak vergi oranı belirlemesinde gelir dikkate alınır. Bu durumda 386 uygulanır fakat oran hesabı dikkat gerektirir.\n\n★ Yanlış yöntem seçimi → Hatalı beyan → Tarhiyat riski.",
+          "ÇVÖA Md.23A/23B | OECD Model Commentary | KVK Md.33",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV (KVK Md.32/C) — ÇVÖA İstisnalarının Özel Durumu",
+          "YİAKV VE ÇVÖA İSTİSNASI — KARMAŞIK ETKİLEŞİM:\n\nKVK Md.32/C'nin ÇVÖA ile etkileşimi henüz tam olarak netleşmemiştir.\n\nDAKİK SORULAR:\n① Muafiyet yöntemiyle istisna edilen PE kazancı YİAKV matrahını azaltır mı?\n② Anlaşma kapsamında muaf tutulan gelirler YİAKV için 'vergiye tabi gelir' sayılır mı?\n③ OECD Pillar Two (GlobalAMT) ve ÇVÖA birlikte uygulandığında Türkiye'nin tutumu ne?\n\nYMM YAKLAŞIMI:\n① GİB KV Beyan Rehberi Mart 2026 (No:606) ilgili kısmını incele.\n② GİB özelgesi ara — ÇVÖA + YİAKV kesişimi için.\n③ Her ÇVÖA ülkesi ve gelir türü için ayrı analiz yap.\n④ E Tablosunu doldur ve YMM onayını al.\n\nTUTUMUN BELGELENMESİ: YMM'nin YİAKV tutumunu yazılı olarak çalışma kâğıdına eklemesi zorunludur.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606) | GİB Özelge",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "KVK Md.5/1-g (Yurt Dışı Şube) ve Md.5/1-h (İştirak) ile Çakışma",
+          "ÇVÖA (386) ile KVK Md.5/1-g/h EŞZAMANLI UYGULAMASI:\n\nKVK Md.5/1-g (Yurt Dışı Şube Kazancı İstisnası):\nKoşullar: En az %15 efektif vergi, 6 ay süre, beyan zorunluluğu.\nKVK koşulları sağlandıysa → Md.5/1-g uygulanır (386'ya gerek olmayabilir).\n\nÇVÖA Md.7/23 Muafiyet (386):\nKVK Md.5/1-g koşulları sağlanmasa bile → ÇVÖA muafiyet uygulayabilir → 386.\n\nMÜKERRERLİK:\nAynı PE kazancı hem KVK Md.5/1-g hem 386 kapsamında yazılamaz.\nHangisinin uygulanacağı analiz edilip belgelenmeli.\n\nGENEL KURAL: ÇVÖA, iç hukuktan daha avantajlıysa ÇVÖA önceliklidir (ÇVÖA/Anayasa).",
+          "KVK Md.5/1-g | KVK Md.5/1-h | İlgili ÇVÖA | Anayasa Md.90",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...Türkiye Cumhuriyeti ile [Ülke Adı] arasında akdedilen Çifte Vergilendirmeyi Önleme\nAnlaşmasının [Madde No] maddesi hükümleri kapsamında, [Ülke Adı]'nda elde edilen ve\nyalnızca söz konusu ülkede vergilendirilen [gelir türü] niteliğindeki [Tutar] TL gelir,\nkurumlar vergisinden istisna edilmiştir. Yurt içi asgari kurumlar vergisi (YİAKV)\nmatrahı üzerindeki etkisi [etki türü] olarak değerlendirilmiştir.'\n\nKULLANMAYIN:\n'...Mahsup yöntemi uygulanmasına rağmen 386 istisnası da uygulanmıştır.' (ÇELİŞKİ)\n'...ÇVÖA incelenmeksizin muafiyet varsayılmıştır.' (Analiz eksik)\n'...Aynı gelir hem 386 hem Md.5/1-g'ye yazılmıştır.' (Mükerrerlik)\n\nKRİTİK RİSKLER:\n(1) Muafiyet yerine mahsup yöntemi geçerliyken 386 uygulamak.\n(2) ÇVÖA yürürlükte değilken 386 uygulamak.\n(3) KVK Md.5/1-g/h ile mükerrer istisna uygulamak.\n(4) YİAKV analizini yapmadan beyan etmek.",
+          "49 No.lu Tebliğ | KVK Md.5/3 | İlgili ÇVÖA | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (386 ÇVÖA): 386, Türkiye'nin ÇVÖA muafiyet yöntemi uyguladığı gelir/kazançlar için kullanılır. Muafiyet ↔ Mahsup yöntem ayrımı kritik. KVK Md.5/1-g/h ile çakışma analizi zorunlu. YİAKV etkisi her anlaşma/gelir türü için ayrıca değerlendirilmeli. GİB özelgesi: Tartışmalı durumlarda zorunlu. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F31",
+      "rows": [
+        [
+          "386 – ÇVÖA KAPSAMINDA İSTİSNA | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi 2026 No:606 | ÇVÖA Metni | PE Belgesi | Yurt Dışı Mali Tablolar | KVK Md.5/3",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (PE Kazancı İçin)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ ÇVÖA Anlaşma Metni (Resmî Gazete Onaylı)",
+          "Türkiye ile anlaşma ülkesi arasındaki ÇVÖA'nın tam metni. Uygulanacak madde (PE/Temettü/Faiz/Royalty) ve çifte vergilendirme önleme maddesi.\nYürürlük tarihi teyit edilmeli — imzalandı ama yürürlüğe girmedi → 386 uygulanamaz.",
+          "Resmî Gazete / GİB web sitesi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Yurt Dışı Daimi İşyeri Varlığını Kanıtlayan Belgeler (PE İçin)",
+          "PE kaydı: Yurt dışı ticaret sicil / vergi dairesi kayıt belgesi.\nOfis/şube sözleşmesi: Kira sözleşmesi veya mülkiyet belgesi.\nFaaliyet kanıtı: Personel listesi, iş akitleri, yerel vergi ödeme belgeleri.",
+          "Yurt dışı kayıt makamı / Noter",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Yurt Dışı Mali Tablolar (Yerel Standartlarda)",
+          "PE veya iştirak mali tabloları (yurt dışı yerel standartlara göre hazırlanmış).\nBağımsız denetimden geçmişse tercih edilir. TL dönüşüm hesabı yapılmalı.",
+          "Yurt dışı muhasebe/denetim firması",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ Yurt Dışında Ödenen Vergilere İlişkin Belgeler",
+          "Yurt dışı vergi beyannamesi veya vergi dairesi tasdik belgesi.\nMahsup yöntemi uygulanıyorsa ödeme dekontu zorunlu.",
+          "Yurt dışı vergi idaresi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "YMM Kapsam Analizi Notu (ÇVÖA Madde Yorumu)",
+          "Hangi ÇVÖA maddesinin uygulandığı ve muafiyet yönteminin yorumu.\nMuafiyet / Mahsup ayrımının gerekçesi. KVK Md.5/1-g/h çakışma analizi.",
+          "YMM tarafından hazırlanır",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "GİB Özelgesi (ÇVÖA Yorumu Tartışmalıysa)",
+          "ÇVÖA hükmünün yorumu, muafiyet/mahsup yöntemi belirsizliği veya YİAKV etkisi için özelge.",
+          "GİB özelge sistemi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Transfer Fiyatlandırması Analizi (PE ile Türkiye Merkez Arasında)",
+          "PE ile Türkiye merkezi arasındaki işlemler için transfer fiyatlandırması dokümantasyonu (KVK Md.13).",
+          "Bağımsız transfer fiyatlandırması analizi",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Konsolide Hesap Mutabakatı (PE Geliri ile Türkiye Kayıtları)",
+          "PE gelirinin Türkiye muhasebe kayıtlarıyla mutabakatı. Döviz dönüşüm kurları.",
+          "Mali müşavir/muhasebe",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ ÇVÖA yürürlükte mi? (Resmî Gazete tarih ve numarası teyit)",
+          "Yürürlükte değil → 386 yok.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Uygulanacak ÇVÖA maddesi doğru belirlendi mi?",
+          "Her gelir türü için farklı madde.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Yöntem MUAFİYET mi (386) yoksa MAHSUP mu (Md.33)?",
+          "Muafiyet = 386. Mahsup = 386 yok.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ KVK Md.5/1-g veya Md.5/1-h ile mükerrerlik analizi yapıldı mı?",
+          "Aynı tutar için tek istisna.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "PE varlığı belgelendi mi?",
+          "Kayıt belgesi, sözleşme, faaliyet kanıtı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Yurt dışı mali tablolar TL'ye dönüştürüldü mü?",
+          "Dönüşüm kuru ve tarihi belgelenmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ YİAKV etkisi analiz edildi mi? (E tablosu)",
+          "ÇVÖA istisnaları YİAKV'yi otomatik azaltmaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "KVK Md.22 yurt dışı şube koşulları sağlandı mı? (PE için)",
+          "Efektif vergi oranı + 6 ay + beyan.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Transfer fiyatlandırması dokümantasyonu hazır mı?",
+          "PE-Merkez işlemler için KVK Md.13.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "386 ÇVÖA İSTİSNASI SON NOT:\n  GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır.\n  386, Türkiye'nin muafiyet yöntemi uyguladığı ÇVÖA kapsamı gelirler için kullanılır.\n  Muafiyet ↔ Mahsup yöntem ayrımı birincil KRİTİK NOKTA.\n  KVK Md.5/1-g/h çakışma analizi ve YİAKV etkisi YMM tarafından yazılı olarak belgelenmeli.\n  YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

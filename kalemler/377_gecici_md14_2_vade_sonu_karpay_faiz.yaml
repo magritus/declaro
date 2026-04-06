@@ -24,17 +24,58 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "375/376 kapsamındaki TL araç dönem içinde vadeye ulaşarak kâr payı/faiz tahsil edildi mi?"
   info_modal: |
-    KVK Geçici Md.14/2 (Paragraf 2) kapsamında, yabancı para borç dönüşümü (375) sonrası
-    kurulan TL araç vadeye ulaştığında bankadan fiilen alınan kâr payı ve faiz istisnadır.
+    ## Genel Çerçeve
 
-    **373 vs 377 Fark:**
-    373 (Paragraf 1): TL KKM (mevduat/altın dönüşümü) vade sonu tahsilatı
-    377 (Paragraf 2): Borç dönüşümü sonrası TL araç vade sonu tahsilatı
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Paragraf 2 (375–378), yabancı para borçların TL'ye dönüştürülmesinden sonra kurulan TL
+    araçlardan elde edilen gelirlerin de istisna kapsamına alınmasını sağlar. Beyanname 377,
+    bu TL araçlardan vade sonunda fiilen tahsil edilen kâr payı ve faizi kapsar.
 
-    **KRİTİK — 376-377 Mükerrerlik:**
-    Net 377 = Vade Toplam − Önceki Yıl 376 Tahakkuku
+    ## Bu Satırın Kapsamı
 
-    **YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ (E.7).
+    Beyanname **377**, 375 (borç kur farkı) kapsamındaki borç dönüşümü sonrasında kurulan TL
+    aracın vadeye ulaşmasıyla birlikte bankadan fiilen tahsil edilen kâr payı ve faiz
+    istisnasıdır. Paragraf 1'deki 373 ile aynı olayı (vade sonu tahsilat) kapsamakla birlikte
+    yasal dayanak farklıdır: 373 aktif taraf araçlarını (KKM), 377 ise pasif taraf araçlarını
+    (borç dönüşümü sonrası TL araç) kapsar. **376-377 mükerrerlik kuralı** 372-373 kuralıyla
+    özdeştir: Yılı aşan vadeli araçlarda Net 377 = Vade Toplam − Önceki Yıl 376 Tahakkuku.
+    Bu kural uygulanmazsa çifte istisna tarhiyat riski doğar.
+
+    ## Temel Koşullar
+
+    - 375 kapsamında borç dönüşümü gerçekleştirilmiş ve TL araç dönem içinde vadeye
+      ulaşmış olmalıdır
+    - Önceki yılda 376 tahakkuku yapılmışsa Net 377 = Vade Toplam − Önceki 376 formülü
+      zorunlu olarak uygulanır
+    - 373 (Paragraf 1) ile mükerrerlik analizi yapılmış; aynı araç için her iki kodun da
+      uygulanmadığı teyit edilmiş olmalıdır
+    - Banka vade bildirimi toplam tahsilat tutarını belgelemelidir
+
+    ## Önemli Uyarılar
+
+    - **376-377 mükerrerlik:** Yılı aşan vadeli araçlarda 376 tahakkuku dönemi ve 377 vade
+      sonu dönemi için Net 377 hesabı yapılmazsa çifte istisna oluşur. Çapraz kontrol formülü:
+      376 + Net 377 = Toplam kâr payı/faiz (banka bildirimi)
+    - **373 ile paragraf ayrımı:** Paragraf 1 araçları (KKM) → 373. Paragraf 2 araçları
+      (borç dönüşümü TL araç) → 377. Bu ayrım karıştırıldığında yanlış koda istisna yazılır
+    - **375/376 zincir bütünlüğü:** 377 çalışma kâğıdında 375 ve 376 referansları eksiksiz
+      olmalıdır; zincir kopukluğu tasdik dosyasını zayıflatır
+    - **YMM tasdik eşiği:** Net 377 tutarı ≥ 500.000 TL ise YMM tasdik raporu zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    370–377 arası tüm kodlar E.7 DÜŞÜLEMEZ listesindedir. YİAKV çalışma kâğıdında Paragraf 2
+    kodlarının (375, 376, 377) ayrıca teyit edilmesi önerilir.
+
+    ## Pratik Notlar
+
+    - **Muhasebe kaydı:** Önceki yıl 376 varsa 102 Dr / 181 Kr (kapatma) + 642 Kr (yeni kısım);
+      376 yoksa 102 Dr / 642 Kr şeklinde kaydedilir
+    - **Paragraf 2 tamamlanma:** 375 → 376 → 377 → 378 zincirinin tüm halkaları mevcut
+      olduğunda Paragraf 2 paketi tamamlanır. 377 bu zincirin üçüncü halkasını oluşturur
+    - **Çapraz kontrol:** 376 + 377 = Toplam TL araç kâr payı/faiz (banka toplam bildirimi)
+      eşitliği sağlanmıyorsa hesaplamada hata var demektir
   kapi_sorulari:
     - id: borcdonusum_yapildi
       soru: "KVK Geçici Md.14/2 kapsamında borç dönüşümü (375) gerçekleştirildi mi?"

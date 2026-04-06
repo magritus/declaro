@@ -1,0 +1,1322 @@
+{
+  "file": "349_GVK_Gecici_Md76_Urun_Senedi_Istisnasi.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G57",
+      "rows": [
+        [
+          "349 – 5300 SAYILI TARIM ÜRÜNLERİ LİSANSLI DEPOCULUK KANUNU KAPSAMINDA DÜZENLENEN ÜRÜN SENETLERİNİN ELDEN ÇIKARILMASINDAN DOĞAN KAZANÇ İSTİSNASI | 193 S. GVK GEÇİCİ MADDE 76 | BEYANNAME SATIR 349 | YMM TASDİK KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GVK Geçici Madde 76 / 5300 Sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu | %100 Tam İstisna | Elektronik Ürün Senedi (ELÜS) veya Kağıt Ürün Senedi | Tarım Bakanlığı Lisanslı Depo Şartı | Beyanname Satır 349 — Kazancın Bulunması Halinde",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 349'UN SETTEKİ ÖZGÜN KONUMU: Yasal dayanak GVK (193 s.K.) — KVK veya özel kanun değil. Tarım sektörüne özgü: Lisanslı depodaki tarım ürününü temsil eden ürün senedinin elden çıkarılması. MEKANİZMA: Lisanslı Depo → ELÜS/Kağıt Senet düzenler → Kurum senedi BİAŞ Emtia veya teslim yoluyla elden çıkarır → Kazanç → %100 İstisna (349). Beyanname 'Kazancın Bulunması Halinde' bölümü — Geçici Madde statüsü (yürürlük kontrolü zorunlu).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ELÜS: MKK/BİAŞ Emtia sistemi üzerinden elektronik kaydi ürün senedi. Kağıt Ürün Senedi: Lisanslı depo tarafından fiziken düzenlenen kıymetli evrak — ciro ile devredilebilir. ★ EN KRİTİK NOKTA: C.2 MALİYET BELGESİ. Belgesiz maliyet → GİB tarafından reddedilebilir → Tüm satış bedeli kazanç sayılabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  ★ Ürün senedi 5300 s.K. kapsamında LİSANSLI depo işletmecisi tarafından düzenlendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Temel şart. Tarım Bakanlığı lisanssız depo → Kapsam dışı. Lisanslı depo belgesi zorunlu.",
+          null
+        ],
+        [
+          "A0.2  Ürün senedi ELÜS (elektronik) mi yoksa kağıt ürün senedi mi?",
+          null,
+          null,
+          null,
+          "ELÜS (Elektronik)",
+          "Her iki tür de 5300 s.K. kapsamında. ELÜS: MKK/BİAŞ. Kağıt: Fiziki — ciro ile devir.",
+          null
+        ],
+        [
+          "A0.3  ★ Kazanç ürün senedinin ELDEN ÇIKARILMASINDAN (satış/devir/temlik) mı kaynaklanıyor?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Satış/devir/temlik → Kapsam içi. Depolama hizmet geliri → Kapsam dışı.",
+          null
+        ],
+        [
+          "A0.4  GVK Geçici Md.76 güncel yürürlük tarihi kontrol edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Geçici Madde statüsü — güncel mevzuat ve GİB açıklamaları esas alınmalıdır.",
+          null
+        ],
+        [
+          "A0.5  ★ Maliyet bedeli (C.2) belgelendi mi? Fatura/BİAŞ alış kaydı mevcut mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Belgesiz maliyet → GİB tüm satış bedelini kazanç sayabilir. En yüksek risk kalemi.",
+          null
+        ],
+        [
+          "A0.6  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.",
+          null
+        ],
+        [
+          "A0.7  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.1 (Lisanslı depo), A0.3 (Elden çıkarma), A0.5 (Maliyet) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Ürün senedini elinden çıkaran kurum",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Ürün Senedinin Türü",
+          null,
+          null,
+          null,
+          null,
+          "ELÜS veya Kağıt",
+          null
+        ],
+        [
+          "Tarım Ürününün Türü",
+          null,
+          null,
+          null,
+          null,
+          "Buğday/Arpa/Mısır/Pamuk/Zeytinyağı/Fındık vb.",
+          null
+        ],
+        [
+          "Lisanslı Deponun Adı",
+          null,
+          null,
+          null,
+          null,
+          "5300 s.K. kapsamında Bakanlık lisanslı depo",
+          null
+        ],
+        [
+          "Lisanslı Depo Lisans No",
+          null,
+          null,
+          null,
+          null,
+          "Tarım ve Orman Bakanlığı lisans numarası",
+          null
+        ],
+        [
+          "ELÜS Kodu / Senet Seri No",
+          null,
+          null,
+          null,
+          null,
+          "MKK ELÜS ID veya kağıt senet seri numarası",
+          null
+        ],
+        [
+          "Ürün Senedi Edinim Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "Elden Çıkarma Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — BİAŞ işlem tarihi veya teslim tarihi",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. LİSANSLI DEPO VE ÜRÜN SENEDİ NİTELİK TEYİDİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5300 s.K. lisanslı depo: Tarım ve Orman Bakanlığı lisanslı, ürün depolama ve ürün senedi düzenleme yetkisine sahip tüzel kişilik. ELÜS: BİAŞ Emtia Piyasası + MKK altyapısı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Belge"
+        ],
+        [
+          "B.1  Lisanslı Depo Bakanlık Lisansı Mevcut mu?",
+          null,
+          "EVET",
+          "Tarım Bakanlığı lisanslı depoculuk belgesi zorunlu",
+          null,
+          "Bakanlık Lisansı",
+          null
+        ],
+        [
+          "B.2  Elden Çıkarma Yöntemi",
+          null,
+          "BİAŞ Emtia",
+          "BİAŞ: Borsa kayıtları. Teslim: Fiziki devir belgesi.",
+          null,
+          "BİAŞ Özeti / Sözleşme",
+          null
+        ],
+        [
+          "B.3  Ürün Senedi Asıl Tarım Ürününü Temsil Ediyor mu?",
+          null,
+          "EVET",
+          "Depodaki gerçek ürünü temsil etmeli — spekülatif yapılar için özelge",
+          null,
+          "Depo stoğu teyidi",
+          null
+        ],
+        [
+          "C. ÜRÜN SENEDİ MALİYET VE ELDEN ÇIKARMA KAZANCI HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazanç = Satış Bedeli − Ediniş/Maliyet Bedeli − Giderler. ★ EN KRİTİK: C.2 MALİYET belgesi (BİAŞ alış kaydı / Fatura / Müstahsil makbuzu) zorunlu. Belgesiz → GİB tüm satış bedelini kazanç sayabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Ürün Senedinin Toplam Satış/Devir Bedeli",
+          null,
+          null,
+          "BİAŞ işlem kaydı veya satış sözleşmesi",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.2  ★ Ürün Senedinin Toplam Ediniş/Maliyet Bedeli",
+          null,
+          null,
+          "★ Belgesiz maliyet → Tüm satış kazanç sayılır — En yüksek risk",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.3  Elden Çıkarma Giderleri (Borsa Komisyonu, Harç, Taşıma)",
+          null,
+          null,
+          "BİAŞ komisyonu, takas ücreti vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4  ELDEN ÇIKARMA KAZANCI = C.1 − C.2 − C.3",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.5  DURUM",
+          null,
+          "ZARAR/SIFIR",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.6  GVK GEÇİCİ MD.76 İSTİSNA TUTARI (%100)",
+          null,
+          "0",
+          "%100 Tam İstisna → Beyanname 349",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. ÇOKLU ÜRÜN SENEDİ İŞLEM TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Hesap döneminde birden fazla ürün senedi elden çıkarıldıysa her işlem ayrı satıra girin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Ürün/Miktar",
+          "Satış Bedeli",
+          "Maliyet",
+          "Gider",
+          "Kazanç"
+        ],
+        [
+          "İşlem-1",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0"
+        ],
+        [
+          "İşlem-2",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0"
+        ],
+        [
+          "İşlem-3",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0"
+        ],
+        [
+          "İşlem-4",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0"
+        ],
+        [
+          "İşlem-5",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0"
+        ],
+        [
+          "TOPLAM",
+          null,
+          null,
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "E. BEYANNAME 349 — GVK GEÇİCİ MD.76 ÜRÜN SENEDİ ELDEN ÇIKARMA İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  TOPLAM İSTİSNA → Beyanname Satır 349 (Kazancın Bulunması Halinde — %100)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "C.6 — Kazanç × %100"
+        ],
+        [
+          "UYARILAR: (1) 5300 s.K. KAPSAMI — Lisanslı depo şartı. (2) ELDEN ÇIKARMA — Hizmet geliri değil, satış/devir kazancı. (3) MALİYET BELGESİ — C.2 zorunlu (belgesiz → tüm satış vergiye tabi riski). (4) GVK GEÇİCİ MD.76 YÜRÜRLÜKTEYİ — Güncel mevzuat kontrol edilmeli. (5) 349 = Kazancın Bulunması Halinde — dönem zararında uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G44",
+      "rows": [
+        [
+          "349 – GVK GEÇİCİ MD.76 ÜRÜN SENEDİ İSTİSNASI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5300 s.K. / GVK Geçici Md.76 | %100 İstisna | ELÜS / Kağıt Ürün Senedi | BİAŞ Emtia / Teslim | Lisanslı Depo | Maliyet Belgesi Zorunlu | Beyanname 349 | Kazancın Bulunması Halinde",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Lisanslı Depo (B.1)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Senet Türü (A0.2)",
+          null,
+          null,
+          "ELÜS (Elektronik)",
+          "ELÜS / Kağıt",
+          null,
+          null
+        ],
+        [
+          "Satış Bedeli (C.1)",
+          null,
+          null,
+          "0",
+          "Toplam satış hasılatı",
+          null,
+          null
+        ],
+        [
+          "Maliyet Bedeli (C.2)",
+          null,
+          null,
+          "0",
+          "★ Belgelenmeli",
+          null,
+          null
+        ],
+        [
+          "Elden Çıkarma Kazancı (C.4)",
+          null,
+          null,
+          "0",
+          "Net kazanç",
+          null,
+          null
+        ],
+        [
+          "349 İSTİSNA TUTARI (C.6)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "GVK Geçici Md.76 Yürürlük (A0.4)",
+          null,
+          null,
+          "EVET",
+          "EVET — kontrol şart",
+          null,
+          null
+        ],
+        [
+          "B. 5300 S.K. LİSANSLI DEPOCULUK VE ELÜS MEKANİZMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ürün senedinin yaşam döngüsü — 349 istisnasının uygulandığı işlem noktası.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Aşama",
+          null,
+          "Eylem",
+          null,
+          "349 Açısından",
+          null
+        ],
+        [
+          "1 — DEPO",
+          "Tarım ürünü lisanslı depoya teslim",
+          null,
+          "Lisanslı depo lisansı → İstisna ön koşulu",
+          null,
+          null,
+          null
+        ],
+        [
+          "2 — ELÜS",
+          "Lisanslı depo ELÜS/kağıt senet düzenler",
+          null,
+          "MKK/BİAŞ kaydı veya kağıt belge",
+          null,
+          null,
+          null
+        ],
+        [
+          "3 — EDİNİM",
+          "Kurum senedi satın alır",
+          null,
+          "C.2 Maliyet = Edinim bedeli — belgelenmeli",
+          null,
+          null,
+          null
+        ],
+        [
+          "4 — ELDEN ÇIKARMA",
+          "Kurum BİAŞ/teslim ile satar",
+          null,
+          "C.4 Kazanç → C.6 %100 İstisna → Beyanname 349",
+          null,
+          null,
+          null
+        ],
+        [
+          "C. KAPSAM İÇİ / KAPSAM DIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "İşlem / Gelir Türü",
+          null,
+          "Kapsam?",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "ELÜS elden çıkarma (BİAŞ satışı)",
+          null,
+          "KAPSAM İÇİ ✓",
+          "5300 s.K. ELÜS → BİAŞ Emtia → Kazanç → 349",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kağıt ürün senedi teslimle satışı",
+          null,
+          "KAPSAM İÇİ ✓",
+          "5300 s.K. kağıt senet → Ciro+Teslim → 349",
+          null,
+          null,
+          null
+        ],
+        [
+          "Senet bozulup mal teslim alınıp satışı",
+          null,
+          "KOŞULLU ⚠",
+          "Senet elden çıkarma değil, mal satışı → Özelge",
+          null,
+          null,
+          null
+        ],
+        [
+          "Depolama/muhafaza hizmet geliri",
+          null,
+          "KAPSAM DIŞI ✗",
+          "Hizmet geliri → 349 kapsamı dışı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Lisanssız depo senetleri",
+          null,
+          "KAPSAM DIŞI ✗",
+          "5300 s.K. kapsamı dışı → İstisna yok",
+          null,
+          null,
+          null
+        ],
+        [
+          "Mevduat faizi ve finansal gelirler",
+          null,
+          "KAPSAM DIŞI ✗",
+          "Finansal gelir → 349 kapsamı dışı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ Ürün senedi 5300 s.K. lisanslı depo tarafından düzenlendi mi?",
+          null,
+          "Lisanslı depo Bakanlık lisansı dosyada.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Elden çıkarma kazancı mı? Depolama hizmeti değil mi?",
+          null,
+          "Satış/devir kazancı. Hizmet geliri kapsam dışı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Maliyet bedeli (C.2) belgelendi mi? En yüksek risk!",
+          null,
+          "BİAŞ alış kaydı / Fatura / Müstahsil makbuzu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "GVK Geçici Md.76 güncel yürürlük teyidi yapıldı mı?",
+          null,
+          "Geçici madde — her dönem kontrol şart.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "ELÜS ise BİAŞ alış + satış işlem kaydı dosyada mı?",
+          null,
+          "Her iki taraf BİAŞ clearing belgesi.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "Kağıt senet ise ciro zinciri ve teslim belgesi mevcut mu?",
+          null,
+          "Kağıt senette kıymetli evrak devir prosedürü.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Senet bozulup mal satışı ayrıştırıldı mı?",
+          null,
+          "Senet elden çıkarma ≠ Malın satışı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "Çoklu işlem varsa D tablosu C.6 ile mutabık mı?",
+          null,
+          "D.7 toplam = C.4 ile uyumlu olmalı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "349 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "'Zarar Olsa Dahi' değil.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "349 = C.6 uyumlu mu?",
+          null,
+          "Beyanname satırı ile C.6 eşit olmalı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "KDV boyutu analiz edildi mi?",
+          null,
+          "Ürün senedi devri KDVK 17/4-g muafiyeti — özelge önerilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G19",
+      "rows": [
+        [
+          "349 – GVK GEÇİCİ MD.76 ÜRÜN SENEDİ | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5300 s.K. / GVK Geçici Md.76 | %100 | ELÜS/Kağıt | Beyanname 349",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — ÜRÜN SENEDİ EDİNİMİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Alış]",
+          "110/111 Menkul Kıymet veya 150/153 Stok",
+          "ELÜS: Yatırım veya ticari stok — kurum politikasına göre. Kağıt: Emtia stok.",
+          "[Maliyet TL]",
+          "—",
+          "Fatura / BİAŞ alış kaydı"
+        ],
+        [
+          "Kr",
+          "[Alış]",
+          "102 Bankalar",
+          "Ödeme",
+          "—",
+          "[Maliyet TL]",
+          "Banka dekontu"
+        ],
+        [
+          "★ MALİYET KAYDI EN KRİTİK: Edinim bedeli birebir belgeyle örtüşmeli (BİAŞ kaydı / Fatura / Müstahsil makbuzu). Belgesiz maliyet GİB tarafından reddedilebilir — tüm satış hasılatı kazanç sayılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — ELÜS BİAŞ EMTİA SATIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Satış]",
+          "102 Bankalar / BİAŞ Hesabı",
+          "BİAŞ hesabına aktarılan satış hasılatı",
+          "[C.1 TL]",
+          "—",
+          "BİAŞ işlem onayı"
+        ],
+        [
+          "Kr",
+          "[Satış]",
+          "110/111/150 Ürün Senedi",
+          "Maliyet değeriyle aktiften çıkış",
+          "—",
+          "[C.2 TL]",
+          null
+        ],
+        [
+          "Kr",
+          "[Satış]",
+          "679 Diğer Olağandışı Kâr",
+          "Kazanç — GVK Geçici Md.76 / 5300 s.K. — 349 İstisna",
+          "—",
+          "[C.4 TL]",
+          "KV 349"
+        ],
+        [
+          "BİAŞ işlem onayı (clearing belgesi) hem alış hem satış için tasdik dosyasında zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — KAĞIT ÜRÜN SENEDİ TESLİM İLE SATIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Teslim]",
+          "102 Bankalar",
+          "Alıcıdan tahsilat",
+          "[C.1 TL]",
+          "—",
+          "Satış sözleşmesi+Teslim"
+        ],
+        [
+          "Kr",
+          "[Teslim]",
+          "150/153 Stok / 110 Yatırım",
+          "Maliyet değeriyle aktiften çıkış",
+          "—",
+          "[C.2 TL]",
+          null
+        ],
+        [
+          "Kr",
+          "[Teslim]",
+          "679 Diğer Olağandışı Kâr",
+          "Kazanç — GVK Geçici Md.76 — 349 İstisna",
+          "—",
+          "[C.4 TL]",
+          "KV 349"
+        ],
+        [
+          "Kağıt ürün senedi kıymetli evrak niteliğinde — ciro zinciri ve fiziki teslim belgesi zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G6",
+      "rows": [
+        [
+          "349 – GVK GEÇİCİ MD.76 ÜRÜN SENEDİ | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5300 s.K. / GVK Geçici Md.76 | %100 | ELÜS/Kağıt | BİAŞ/Teslim | Maliyet Belgesi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "GVK Geçici Md.76 ve 5300 s.K. — Yasal Çerçeve",
+          "GVK GEÇİCİ MADDE 76:\n5300 sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu kapsamında\ndüzenlenen ürün senetlerinin elden çıkarılmasından elde edilen kazançlar\ngelir/kurumlar vergisinden istisnadır.\n\nMEKANİZMA:\nLisanslı Depo → ELÜS veya Kağıt Senet → Kurum satın alır →\nBİAŞ Emtia veya teslim yoluyla satar → Kazanç → %100 İstisna → 349.\n\nELÜS: MKK/BİAŞ Emtia sistemi — elektronik kaydi araç.\nKAĞIT SENET: Lisanslı depo tarafından düzenlenen kıymetli evrak.\n\nBEYANNAME: 349 | Kazancın Bulunması Halinde | %100\nGEÇİCİ MADDE: Yürürlük tarihi her dönem kontrol edilmeli.",
+          "GVK Geçici Md.76 | 5300 s.K. | BİAŞ Emtia Mevzuatı",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "Maliyet Belgesi — En Kritik Risk Kalemi",
+          "MALİYET (C.2) BELGESİNİN HAYATI ÖNEMİ:\nBelgesiz maliyet → GİB tüm satış bedelini kazanç sayabilir.\n\nKABUL EDİLEN BELGELER:\nELÜS: BİAŞ alış işlem onayı + hesap ekstresi\nKağıt senet: Alış faturası veya sözleşmesi + banka dekontu\nDoğrudan üreticiden alındıysa: Müstahsil makbuzu\n\nYMM KULLANSIN:\n'...5300 sayılı Kanun kapsamında [lisanslı depo] tarafından düzenlenen\n[ELÜS kodu/senet no] numaralı ürün senedinin elden çıkarılmasından elde edilen kazanç,\nGVK Geçici Madde 76 kapsamında kurumlar vergisinden müstesnadır'\n\nKRİTİK HATALAR:\n(1) Maliyet belgesi olmadan 349 uygulamak\n(2) Lisanssız depo senetlerini 349 kapsamında beyan etmek\n(3) GVK Geçici Md.76 yürürlük tarihini kontrol etmemek\n(4) Senet bozulup mal satışından doğan kazancı 349'a dahil etmek",
+          "GVK Geçici Md.76 | 49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "KDV VE TARIMIN ÖZGÜNLÜĞܒ: Ürün senedi devrinde KDVK 17/4-g (tarımsal ürünler) kapsamında muafiyet söz konusu olabilir. GİB özelgesi alınması tavsiye edilir. 5300 s.K. lisanslı depoculuk sisteminin amacı: Üreticilerin ürünü daha iyi koşullarda satması, ürün senedini teminat göstererek kredi kullanması ve fiyat riskini yönetmesidir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:G31",
+      "rows": [
+        [
+          "349 – GVK GEÇİCİ MD.76 ÜRÜN SENEDİ | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5300 s.K. / GVK Geçici Md.76 | %100 | ELÜS/Kağıt | Lisanslı Depo | Maliyet Belgesi Zorunlu | Beyanname 349",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (LİSANSLI DEPO + ÜRÜN SENEDİ + MALİYET)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 3 Kritik: Lisanslı Depo Lisansı + Ürün Senedi/ELÜS + Maliyet Belgesi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin",
+          null,
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Lisanslı Depo Bakanlık Lisans Belgesi",
+          "Tarım ve Orman Bakanlığı tarafından verilen lisanslı depoculuk belgesi.\n5300 s.K. kapsamında olduğunu gösteren — istisnanın temel koşulu.",
+          "Tarım Bakanlığı Lisansı",
+          null,
+          null
+        ],
+        [
+          null,
+          "2",
+          "ELÜS Belgesi veya Kağıt Ürün Senedi",
+          "ELÜS: MKK sistem kaydı ve ELÜS kodunu gösteren belge.\nKağıt: Lisanslı depo düzenlemeli — ciro zinciri eksiksiz.",
+          "MKK kayıt çıktısı / Kağıt senet aslı",
+          null,
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Maliyet/Ediniş Belgesi (C.2 — En Kritik Belge)",
+          "ELÜS: BİAŞ alış işlem onayı + hesap ekstresi.\nKağıt senet: Alış faturası + banka dekontu veya müstahsil makbuzu.\nYMM notu: Bu belge olmadan 349 tasdiki tamamlanamaz.",
+          "BİAŞ işlem kaydı / Fatura / Müstahsil makbuzu",
+          null,
+          null
+        ],
+        [
+          null,
+          "4",
+          "BİAŞ Emtia Satış İşlem Onayı (Clearing Belgesi)",
+          "ELÜS satışında BİAŞ'tan alınan satış işlem onayı.\nSatış bedeli (C.1) ile tutarlı olmalı.",
+          "BİAŞ hesap ekstresi + İşlem onayı",
+          null,
+          null
+        ],
+        [
+          null,
+          "5",
+          "Kağıt Senet Satış Sözleşmesi ve Teslim Belgesi",
+          "Kağıt ürün senedi teslim ile satışında imzalı sözleşme ve teslim tutanağı.\nCiro zinciri tamamlanmış olmalı.",
+          "Satış sözleşmesi + Teslim tutanağı",
+          null,
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 349. Satır",
+          "349 = C.6 ile uyumlu. 'Kazancın Bulunması Halinde' bölümünde.",
+          "GİB e-Beyanname sistemi",
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 2 — GEÇERLİLİK VE EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin",
+          null,
+          null
+        ],
+        [
+          null,
+          "7",
+          "GVK Geçici Md.76 Yürürlük Teyidi",
+          "Hesap dönemi itibarıyla GVK Geçici Md.76'nın yürürlükte olduğuna dair mevzuat kaydı.\nResmi Gazete veya GİB mevzuat sisteminden kontrol.",
+          "Resmi Gazete / GİB mevzuat sistemi",
+          null,
+          null
+        ],
+        [
+          null,
+          "8",
+          "GİB Özelgesi (Tartışmalı Konular İçin)",
+          "Senet bozulup mal satışı ayrımı, KDV muafiyeti (KDVK 17/4-g), vadeli işlemler gibi tartışmalı konular.",
+          "GİB özelge başvuru sistemi",
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null,
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Ürün senedi 5300 s.K. lisanslı depo tarafından düzenlendi mi?",
+          "Bakanlık lisansı dosyada.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Elden çıkarma kazancı mı? Depolama hizmeti değil mi?",
+          "Satış/devir kazancı. Hizmet dışı.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Maliyet belgesi (C.2) mevcut mu? En kritik belge!",
+          "BİAŞ alış kaydı / Fatura / Makbuz.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          null,
+          "S4",
+          "GVK Geçici Md.76 güncel yürürlük kontrol edildi mi?",
+          "Her dönem kontrol — geçici madde.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          null,
+          "S5",
+          "ELÜS ise alış + satış BİAŞ işlem onayı var mı?",
+          "Her iki taraf BİAŞ clearing belgesi.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Kağıt senet ise ciro + teslim belgesi var mı?",
+          "Kıymetli evrak devir prosedürü.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Senet bozulup mal satışı ayrıştırıldı mı?",
+          "Senet elden çıkarma ≠ Mal satışı.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          null,
+          "S8",
+          "349 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "'Zarar Olsa Dahi' değil.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          null,
+          "S9",
+          "YMM Tasdik Raporu değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null,
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 349'un setin diğer dosyalarından özgün yeri: (1) GVK Geçici Md.76 kaynaklı (193 s.K.) — KVK veya özel kanun değil. (2) Tarım sektörüne özgü — ELÜS/BİAŞ Emtia/Lisanslı Depoculuk. (3) En kritik belge: Maliyet belgesi — belgesiz bırakılırsa tüm satış vergiye tabi riski. (4) GVK Geçici Madde statüsü — her dönem yürürlük kontrolü. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

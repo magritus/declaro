@@ -1,0 +1,1367 @@
+{
+  "file": "308_Serbest_Bolge_Kazanc_Istisnasi_1.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G81",
+      "rows": [
+        [
+          "308 – SERBEST BÖLGE KAZANÇ İSTİSNASI | 3218 s.K. Geçici Md. 3 | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "İmalat + Münhasıran Yurt Dışı Satış (01.01.2025+) | Ruhsat Tarihine Göre İkili Rejim | KV Beyannamesi Satır 308 | Zarar Olsa Dahi İndirilir | YİAKV Matrahından Düşülebilir",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "⚠️ 01.01.2025 KİRİLIM NOKTASI (7524 s.K. Md. 24):\n  2024 VE ÖNCESİ: Serbest bölgede imal edilen ürünlerin yurt içi VEYA yurt dışı satışından elde edilen kazançlar istisna kapsamındaydı.\n  01.01.2025 VE SONRASI: Yalnızca imalat faaliyetinden elde edilen kazançların MÜNHASIRAN YURT DIŞINA satışı kapsamdadır. Yurt içi satış, SB içi satış ve ticaret faaliyeti istisna kapsamı dışına çıkmıştır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "REJİM 1 — 06.02.2004 ÖNCESİ ruhsat: Ruhsatta belirtilen süre boyunca TÜM faaliyetlerden elde edilen kazançlar istisna\n  REJİM 2 — 06.02.2004 SONRASI ruhsat: YALNIZCA imalat faaliyetinden, YALNIZCA YURT DIŞI satıştan elde edilen kazançlar (01.01.2025+)\n  ✅ YİAKV'den DÜŞÜLEBİLİR (3218 s.K. Geçici Md.3 → KPMG/Sistem Global açık listesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "RENK KODLARI: 🔵 Mavi = Kullanıcı girişi (sarı zemin)  ⚫ Formül  🟢 Yeşil = Sonuç  🌲 Koyu Yeşil = Bu kodun teması",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK KONTROLÜ — Tasdik Öncesi Zorunlu Ön Kontrol",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "⚠️ YMM UYARISI: Bu çalışma kâğıdı 3218 sayılı Kanun Geçici Md. 3 kapsamında serbest bölgede faaliyet gösteren mükellefler için hazırlanmıştır. 01.01.2025 itibarıyla yalnızca YURT DIŞI SATIŞI kapsayan değişiklik (7524 s.K.) gözetilmeden istisna uygulanamaz. Ruhsat tarihine göre (06.02.2004 kırılımı) iki farklı rejim mevcuttur; hangi rejimin geçerli olduğu tasdik öncesi kesinleştirilmelidir. A0 kontrolü tamamlanmadan tasdik dosyasına eklenemez.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tasdik Uygunluk Kontrol Soruları",
+          null,
+          "Yanıt",
+          "Açıklama / Tasdik Notu",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.1  Mükellef 3218 s.K. kapsamında geçerli serbest bölge faaliyet ruhsatına sahip mi?",
+          null,
+          "EVET",
+          "Ruhsat süresi dolmuş, iptal edilmiş veya devir nedeniyle geçersiz kılınmışsa istisna uygulanamaz. Birleşme/devir sonrası Ticaret Bakanlığı'ndan ruhsat yenilemesi zorunludur.",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.2  Faaliyet türü imalat mı? (Rejim 2 için zorunlu — ticaret/hizmet kapsam dışı)",
+          null,
+          "EVET",
+          "01.01.2025+ Rejim 2 istisnası yalnızca imalat (üretim) ruhsatı sahiplerine uygulanır. Ticaret, alım-satım veya hizmet faaliyeti Rejim 2 kapsamı dışındadır.",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.3  Satış MÜNHASIRAN yurt dışına mı? (01.01.2025+ kapsam koşulu)",
+          null,
+          "EVET",
+          "7524 s.K. değişikliği: Yurt içi satış, SB içi firmaya ihraç kaydı olmaksızın satış ve ticaret faaliyeti 01.01.2025 itibarıyla istisna kapsamı dışına çıkmıştır. Ocak 2026 özelgesi: SB içi alıcının sonradan ihraç etmesi üreticiyi kurtarmaz.",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.3b  İstisna iddia edilen kazanç, doğrudan ruhsat kapsamındaki SB faaliyetinden mi doğuyor?",
+          null,
+          "EVET",
+          "KRİTİK: 'Şirket SB'de faaliyet gösteriyor' demek tüm kazancın istisna kapsamında olduğu anlamına gelmez. Yalnızca ruhsatta belirtilen faaliyet konusundan ve SB sınırlarında yürütülen işlemlerden doğan kazanç istisna kapsamındadır. Finansal gelirler, tali gelirler ve SB dışı faaliyetler kapsam dışındadır.",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.5b  Kapsam dışı gelirler (faiz, kur farkı, vade farkı, repo, kira, diğer) ayrıştırıldı mı?",
+          null,
+          "EVET",
+          "Serbest bölge istisnasında en sık yapılan hata: SB'ye ait her geliri kör şekilde istisnaya almak. Faiz, kur farkı, vade farkı, repo/mevduat, kira gelirleri kapsam dışıdır. C bölümünde her gelir türü ayrıca sınıflandırılmalı; kur farkı için YMM değerlendirme notu şarttır.",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.4  Ruhsat tarihi netleştirildi mi? (06.02.2004 kırılımı — Rejim 1 mi, Rejim 2 mi?)",
+          null,
+          "EVET",
+          "06.02.2004 ve öncesi ruhsat → Rejim 1 (tüm faaliyetler, ruhsat süresi boyunca). 06.02.2004 sonrası ruhsat → Rejim 2 (yalnızca imalat + yurt dışı satış). Bu tarih yanlış belirlenmesi tüm tasdik kapsamını etkiler.",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.5  SB kazancı ile SB dışı kazanç ayrı muhasebe kayıtlarında izleniyor mu? (VUK zorunluluğu)",
+          null,
+          "EVET",
+          "VUK kapsamında SB faaliyeti ile SB dışı faaliyet kazançları ayrı ayrı tespit edilebilecek şekilde kaydedilmek zorundadır. Ayrı kayıt yoksa istisna tutarı reddedilebilir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.6  YİAKV (KVK Md. 32/C) etkisi: Bu istisna düşülebilir — ayrıca analiz edildi mi?",
+          null,
+          "EVET",
+          "KVK 32/C kapsamında 3218 s.K. istisnası YİAKV matrahından DÜŞÜLEBİLEN istisnalar arasındadır (KVK 32/C (g) bendi). Bu durum 4691/TGB istisnasından farklıdır — tasdik raporunda ayrıca gerekçelendirilmelidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "A0.7  Tasdik Uygunluk Sonucu (8 Ön Kontrol)",
+          null,
+          "✅ OK – Hesaplanabilir",
+          "Tüm A0 kontrolleri 'EVET' olmadan tasdik dosyasına eklenemez.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Tasdik Engelleyici Uyarı",
+          null,
+          null,
+          "Hata giderildiğinde uyarı otomatik kalkar.",
+          null,
+          null,
+          null
+        ],
+        [
+          "TASDİK MODÜLÜ KİMLİĞİ VE VERSİYON",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Modül Kodu",
+          null,
+          "308 — KVK / 3218 s.K. Geçici Md. 3 Serbest Bölge Kazanç İstisnası",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Çalışma Kâğıdı Versiyonu",
+          null,
+          "v1.0 — 7524 s.K. (01.01.2025) değişikliği dahil",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. MÜKELLEF, YMM, SERBEST BÖLGE VE DÖNEM BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Mükellef Adı",
+          null,
+          null,
+          null,
+          "Faaliyet ruhsatı olan tam veya dar mükellef gerçek/tüzel kişi",
+          null
+        ],
+        [
+          null,
+          "Serbest Bölge Adı",
+          null,
+          null,
+          null,
+          "Türkiye'de 19 aktif serbest bölge mevcut (ADÜSB, ABOSB vb.)",
+          null
+        ],
+        [
+          null,
+          "Faaliyet Ruhsatı Tarihi (GG.AA.YYYY)",
+          null,
+          null,
+          null,
+          "KRİTİK: 06.02.2004 öncesi/sonrası rejim belirler",
+          null
+        ],
+        [
+          null,
+          "Ruhsatta Belirtilen Süre / Bitiş Tarihi",
+          null,
+          null,
+          null,
+          "Süre dolmadan önce vergi tasarrufunu kullanabilirsiniz",
+          null
+        ],
+        [
+          null,
+          "Faaliyet Türü",
+          null,
+          null,
+          null,
+          "Üretim / Ticaret / Hizmet / Karma — İstisna yalnızca imalat için",
+          null
+        ],
+        [
+          null,
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. RUHSAT TARİHİNE GÖRE REJİM TESPİTİ — Tasdik Açısından En Kritik Ön Değerlendirme",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "06.02.2004 TARİHİ BİR DÖNÜM NOKTASIDIR — İki farklı hukuki rejim!\n  REJİM 1 (Öncesi): 3218 s.K. Geçici Md.3/1 → Ruhsatta yazan süre ile sınırlı, TÜM faaliyetlerden kazanç istisna\n  REJİM 2 (Sonrası): 3218 s.K. Geçici Md.3/2-a → AB üyeliğine kadar, SADECE imalat + SADECE yurt dışı satış (01.01.2025+)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Rejim",
+          "Ruhsat Tarihi",
+          "Kapsam",
+          "İstisna Türü",
+          null,
+          null
+        ],
+        [
+          null,
+          "REJİM 1",
+          "06.02.2004 VE ÖNCESİ",
+          "Ruhsatta belirtilen süre ile sınırlı, TÜM faaliyetlerden kazanç",
+          null,
+          "%100 — imalat+ticaret+hizmet (taşınmaz geliri hariç)",
+          null
+        ],
+        [
+          null,
+          "REJİM 2",
+          "06.02.2004 SONRASI",
+          "AB üyeliğine kadar, YALNIZCA imalat faaliyeti ve YALNIZCA yurt dışı satış (01.01.2025+)",
+          null,
+          "%100 — ancak yalnızca imalat + ihracat kazancı",
+          null
+        ],
+        [
+          null,
+          "→ BU DOSYADA GEÇERLİ REJİM (C10'a dayalı)",
+          null,
+          null,
+          null,
+          "Rejim 1 veya Rejim 2 yazın — C10 tarihine bakarak manuel belirleyin",
+          null
+        ],
+        [
+          "C. GELİR AYRIŞTIRMA VE İSTİSNA KAZANÇ TESPİT TABLOSU — Her Gelir Türü Ayrı Sınıflandırılmalıdır",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "⚠️ KRİTİK: 'SB'de faaliyet var' demek tüm kazancın istisna kapsamında olduğu anlamına GELMEZ. Her gelir türü aşağıda ayrı ayrı sınıflandırılmalıdır. Kapsam içi ve kapsam dışı gelirler muhasebe kayıtlarında ayrı hesaplarda izlenmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Gelir/Kazanç Kalemi",
+          "Tutar (TL)",
+          "Birim",
+          "İstisna Durumu ve YMM Notu",
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — KAPSAM İÇİ GELİRLER (İstisna Kapsamında — Rejim ve Tarih Koşulları Sağlanıyorsa)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C.1",
+          "SB'de İmal Edilen Ürünlerin Yurt Dışı Satış Kazancı (Doğrudan İhracat)",
+          null,
+          "TL",
+          "✅ İSTİSNA — Gümrük Çıkış Beyannamesi + FOB bedeli zorunlu. Kazanç = FOB hasılat – ÜMG – Yüklenen gider payı.",
+          null,
+          null
+        ],
+        [
+          "C.2",
+          "SB'de İmal Edilen Ürünlerin İhraç Kayıtlı Teslim Kazancı (SB İhracatçısına)",
+          null,
+          "TL",
+          "✅ İSTİSNA — 3 aylık ihraç şartı: Teslimi takip eden ay başından 3 ay içinde fiilen ihraç gerekli.",
+          null,
+          null
+        ],
+        [
+          "C.3",
+          "Rejim 1 — Tüm Faaliyetlerden Kazanç (Yalnızca 06.02.2004 Öncesi Ruhsat Sahipleri)",
+          null,
+          "TL",
+          "✅ İSTİSNA (yalnızca Rejim 1) — Ruhsat süresi bitiş tarihi teyit edilmeli. Taşınmaz geliri hariç imalat+ticaret+hizmet dahil.",
+          null,
+          null
+        ],
+        [
+          "(A)",
+          "TOPLAM KAPSAM İÇİ KAZANÇ (C.1+C.2+C.3)",
+          "0",
+          "TL",
+          "D bölümünde maliyet/gider düşülerek net istisna kazanç hesaplanır",
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 2 — KAPSAM DIŞI GELİRLER (Vergiye Tabi — İstisnaya Dahil Edilmez)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4",
+          "Yurt İçi Satış Kazancı (01.01.2025 ve Sonrası — Rejim 2)",
+          null,
+          "TL",
+          "⛔ İSTİSNA YOK — 7524 s.K. değişikliği. Vergilendirilir. Hasılat ve maliyetin ayrı izlenmesi zorunlu.",
+          null,
+          null
+        ],
+        [
+          "C.5",
+          "SB İçi Firmaya İhraç Kaydı Olmaksızın Satış",
+          null,
+          "TL",
+          "⛔ İSTİSNA YOK — Ocak 2026 özelgesi: Alıcının ihraç etmesi üreticiyi kurtarmaz.",
+          null,
+          null
+        ],
+        [
+          "C.6",
+          "Ticaret / Alım-Satım / Hizmet Faaliyeti Kazancı (İmalat Dışı)",
+          null,
+          "TL",
+          "⛔ İSTİSNA YOK — Rejim 2 yalnızca imalat faaliyetini kapsar.",
+          null,
+          null
+        ],
+        [
+          "C.7",
+          "Faiz Gelirleri (Mevduat, Hazine Bonosu, Repo vb.)",
+          null,
+          "TL",
+          "⛔ İSTİSNA YOK — Finansal gelir; SB imalat faaliyetiyle doğrudan ilişkili sayılmaz. Ayrı hesapta izle.",
+          null,
+          null
+        ],
+        [
+          "C.8",
+          "Kur Farkı Gelirleri (Alacak / Borç Kur Farkı)",
+          null,
+          "TL",
+          "⚠️ AYRICA DEĞERLENDİRME — Ticari alacaktan doğan kur farkı bazı özelgelerde kapsam içi; finansal işlemden doğan kapsam dışı. YMM yazılı değerlendirme notu hazırlamalı.",
+          null,
+          null
+        ],
+        [
+          "C.9",
+          "Vade Farkı Gelirleri",
+          null,
+          "TL",
+          "⛔ İSTİSNA YOK — Finansman geliri; SB istisnası kapsamı dışında.",
+          null,
+          null
+        ],
+        [
+          "C.10",
+          "Kira / Taşınmaz Gelirleri",
+          null,
+          "TL",
+          "⛔ İSTİSNA YOK — Hem Rejim 1 hem Rejim 2 için kapsam dışıdır.",
+          null,
+          null
+        ],
+        [
+          "C.11",
+          "Diğer Olağandışı Gelirler ve Tali Gelirler",
+          null,
+          "TL",
+          "⚠️ AYRICA DEĞERLENDİRME — Niteliğine göre kapsam içi veya dışı. YMM her kalem için ayrı not hazırlamalı.",
+          null,
+          null
+        ],
+        [
+          "(B)",
+          "TOPLAM KAPSAM DIŞI GELİR (C.4–C.11) — Vergiye Tabi / Bilgi Amaçlı",
+          "0",
+          null,
+          "Beyanname matrahında bu gelirler vergiye tabi tutulur",
+          null,
+          null
+        ],
+        [
+          "D. NET İSTİSNA KAZANÇ AKIŞ HESABI — KV BEYANNAMESİ SATIR 308 TUTARININ TÜRETİLMESİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "📌 308 KODU NOTU: 4691/TGB (310) ve 3218/SB (308) 'Zarar Olsa Dahi İndirilecek' bölümündedir. 305 (Eğitim) gibi genel dönem kârı koşulu aranmaz. Kapsam içi faaliyet kazancı pozitif olduğu sürece uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Kazanç Akış Kalemi",
+          "Tutar (TL)",
+          "Birim",
+          "YMM Tasdik Notu",
+          null,
+          null
+        ],
+        [
+          "D.1",
+          "(+) Toplam Kapsam İçi Hasılat (C bölümü A toplamı, satır 46)",
+          "0",
+          "TL",
+          "Brüt kapsam içi hasılat; gider/maliyet henüz düşülmedi",
+          null,
+          null
+        ],
+        [
+          "D.2",
+          "(–) Kapsam İçi Üretim Maliyeti (Direkt İlkmadde + İşçilik + GÜG)",
+          null,
+          "TL",
+          "SB'de üretilen ürünün maliyeti — tam maliyet muhasebesinden ayrıştırılmalı",
+          null,
+          null
+        ],
+        [
+          "D.3",
+          "(–) Kapsam İçi Faaliyet Giderleri (SB'ye Düşen Ortak Gider Payı)",
+          null,
+          "TL",
+          "Dağıtım anahtarı (hasılat/personel/m²) belgelenmelidir — keyfi dağıtım reddedilir",
+          null,
+          null
+        ],
+        [
+          "D.4",
+          "(–) Kapsam İçi Amortisman Payı",
+          null,
+          "TL",
+          "SB varlıklarına ait veya ortak amortismanın SB'ye düşen payı",
+          null,
+          null
+        ],
+        [
+          "D.5",
+          "(=) KAPSAM İÇİ FAALİYET KAZANCI (D.1 – D.2 – D.3 – D.4)",
+          "0",
+          "TL",
+          "Negatif ise istisna uygulanmaz ve zarar diğer faaliyetlere yüklenemez",
+          null,
+          null
+        ],
+        [
+          "D.6",
+          "(–) Kapsam Dışı Finansal/Tali Gelirler Not Bilgi (C.7-C.11)",
+          "0",
+          "TL",
+          "Beyanname matrahına eklenecek kapsam dışı gelirler — D.5'ten düşülmez, ayrı bilgi satırı",
+          null,
+          null
+        ],
+        [
+          "D.7",
+          "(=) NET İSTİSNA KAZANÇ → KV BEYANNAMESİ SATIR 308",
+          "0",
+          "TL",
+          "'Zarar Olsa Dahi İndirilecek' bölümü. D.5 pozitif ise bu tutar yazılır.",
+          null,
+          null
+        ],
+        [
+          "D.8",
+          "YİAKV (KVK Md. 32/C g bendi) Matrahından Düşüm — Bilgi",
+          "0",
+          "TL",
+          "Bu istisna YİAKV matrahından DÜŞÜLEBİLİR — 4691/TGB'den farklı. Ayrı YİAKV tablosu hazırla.",
+          null,
+          null
+        ],
+        [
+          "E – PERSONEL ÜCRET İSTİSNASI (FOB %85 GELİR VERGİSİ TERKİNİ)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "3218 s.K. Geçici Md.3/2-b: Üretilen ürünlerin FOB bedelinin ≥%85'ini yurt dışına ihraç eden SB mükelleflerinin\n  çalışanlarına ödenen ücretler üzerinden hesaplanan GELİR VERGİSİ → Muhtasar beyanname üzerinden TERKİN edilir.\n  Bu stopaj istisnası Kurumlar Vergisi beyannamesi 308 satırından BAĞIMSIZDIR — GV muhtasar beyanname konusu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Tutar / Oran",
+          "Açıklama",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Toplam İhracat Hasılatı (FOB Bedeliyle)",
+          "0",
+          "Dönem toplam FOB ihracat geliri",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Toplam Satış Hasılatı (SB faaliyeti)",
+          "0",
+          "Hem yurt içi hem yurt dışı toplam",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "FOB İhracat Oranı (%)",
+          "0",
+          "≥%85 olması halinde ücret istisnası geçerlidir",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "FOB %85 Şartı Sağlandı mı?",
+          "HAYIR — ŞART SAĞLANMADI",
+          "Yıllık bazda kontrol edilir — ay bazında değil",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem Ücret Stopaj Tutarı (Terkine Tabi)",
+          "0",
+          "GV stopajı — muhtasar beyanname ile terkin edilir",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:E35",
+      "rows": [
+        [
+          "308 – SERBEST BÖLGE KAZANÇ İSTİSNASI | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "3218 s.K. Geçici Md. 3 | 7524 s.K. (01.01.2025) Değişikliği | KV Beyannamesi Satır 308 — Tasdik Çalışma Kâğıdı",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A — 308 vs 305 METODOLOJİK FARK VE 01.01.2025 KIRILIM TABLOSU",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ÖNEMLİ METODOLOJİK NOT:\n  308 (Serbest Bölge) = 'Zarar Olsa Dahi İndirilecek' — kapsam içi faaliyet kazancı pozitif ise uygulanır.\n  305 (Eğitim) = 'Kazancın Bulunması Halinde' — genel dönem kârı olmadan kullanılamaz.\n\n  01.01.2025 KIRILIM: Rejim 2'de yurt içi satış artık kapsam dışı. Gelir ayrıştırması (C bölümü) yapılmadan hesap izlenemez.\n  REJİM 1 (06.02.2004 öncesi): Değişiklikten etkilenmez.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B — VERGİ HESAP ÖZETİ VE NET İSTİSNA KAZANÇ İZLEYİCİSİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tasdik Uygunluk Kontrolü",
+          "✅ OK – Hesaplanabilir",
+          "VERİ GİRİŞİ A0.7 — OK ise hesap kullanılabilir",
+          null
+        ],
+        [
+          null,
+          "Toplam Kapsam İçi Kazanç (Brüt — C bölümü A)",
+          "0",
+          "VERİ GİRİŞİ C bölümü (A) toplamı — Satır 46",
+          null
+        ],
+        [
+          null,
+          "Toplam Kapsam Dışı Gelir (Bilgi — C bölümü B)",
+          "0",
+          "Vergiye tabi kapsam dışı gelirler — Satır 57",
+          null
+        ],
+        [
+          null,
+          "Net İstisna Kazanç — Beyanname 308",
+          "0",
+          "D.7 satırından türetilir — maliyet/gider düşüldükten sonraki tutar",
+          null
+        ],
+        [
+          null,
+          "FOB İhracat Oranı (%)",
+          "0",
+          "≥%85 → Ücret GV stopaj terkini geçerli",
+          null
+        ],
+        [
+          null,
+          "BEYANNAME 308 TOPLAM TASDİK TUTARI (TL)",
+          "0",
+          "'Zarar Olsa Dahi İndirilecek'. YİAKV matrahından DÜŞÜLEBİLİR (KVK 32/C g bendi).",
+          null
+        ],
+        [
+          null,
+          "YİAKV'den Düşülür mü?",
+          "✅ DÜŞÜLEBİLİR — KVK 32/C (g)",
+          "4691/TGB'den (düşülemeyen) farklı — ayrı YİAKV tablosu hazırlanmalıdır",
+          null
+        ],
+        [
+          null,
+          "FOB İhracat Oranı (%)",
+          "0",
+          "≥%85 → Ücret GV stopajı terkini geçerli — yıl sonunda kontrol edilmeli",
+          null
+        ],
+        [
+          "C — DENETİM VE TASDİK KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Maddesi",
+          "Yasal Dayanak / Açıklama",
+          "YMM Tasdik Notu / Denetim Kanıtı",
+          null
+        ],
+        [
+          null,
+          "K1. Faaliyet ruhsatı geçerli, yürürlükte ve süre içinde mi?",
+          "3218 s.K. Geçici Md. 3 | Ticaret Bakanlığı ruhsat mevzuatı",
+          "Ruhsat süresi dolmuş, iptal edilmiş veya devir nedeniyle geçersiz kılınmışsa istisna uygulanamaz. Birleşme/devir sonrası Ticaret Bakanlığı ruhsat yenilemesi zorunludur; yalnızca satın alma/devir istisna hakkını aktarmaz. Ruhsat ve süre takvimi tasdik dosyasında yer almalıdır.",
+          null
+        ],
+        [
+          null,
+          "K2. Rejim doğru belirlendi mi? (06.02.2004 kırılımı — en kritik kontrol)",
+          "3218 s.K. Geçici Md. 3/1 ve 3/2 | Ruhsat tarihi",
+          "06.02.2004 VE ÖNCESİ ruhsat → Rejim 1: Tüm faaliyetler, ruhsat süresi boyunca. 06.02.2004 SONRASI ruhsat → Rejim 2: Yalnızca imalat + yurt dışı satış (01.01.2025+). Bu kırılım yanlış belirlenmesi tüm tasdik kapsamını etkiler.",
+          null
+        ],
+        [
+          null,
+          "K3. Faaliyet gerçekten imalat mı? (Rejim 2 için zorunlu koşul)",
+          "3218 s.K. Geçici Md. 3/2 | 1 Seri No.lu KV GT",
+          "Yalnızca imalat (üretim) ruhsatı sahipleri Rejim 2 istisnasından yararlanabilir. Ticaret, alım-satım veya hizmet faaliyeti kapsam dışıdır. Ruhsattaki faaliyet konusu ve üretim kayıtları birlikte incelenmeli.",
+          null
+        ],
+        [
+          null,
+          "K4. Satış münhasıran yurt dışına mı? (01.01.2025+ kapsam koşulu)",
+          "7524 s.K. Md. 24 | GİB Özelge (Ocak 2026)",
+          "Yurt içine satış → İstisna yok (7524 s.K. değişikliği). SB içi firmaya ihraç kaydı olmaksızın satış → İstisna yok (Ocak 2026 özelgesi: Alıcının ihraç etmesi üreticiyi kurtarmaz). İhracat beyannamesi + gümrük belgesi + teslim koşulları incelenmeli.",
+          null
+        ],
+        [
+          null,
+          "K5. İhraç kayıtlı teslimde 3 aylık ihraç süresi takip edildi mi?",
+          "3218 s.K. GT | 23 Seri No.lu KV GT (Ekim 2024)",
+          "Aynı/başka SB'deki ihracatçıya ihraç kayıtlı teslim tarihini takip eden ay başından itibaren 3 ay içinde ihracat gerçekleşmeli. Gerçekleşmezse istisna uygulanamaz; aşım halinde düzeltme beyannamesi gerekir. İhraç kayıtlı fatura + fiili ihracat tarihi izlenmeli.",
+          null
+        ],
+        [
+          null,
+          "K6. SB faaliyeti ile SB dışı faaliyet kazançları ayrı muhasebe kayıtlarında izleniyor mu?",
+          "VUK Md. 175 | 3218 s.K. zorunluluğu",
+          "VUK uyarınca SB ve SB dışı kazançlar ayrı ayrı tespit edilebilecek şekilde kaydedilmek zorundadır. Ayrı muhasebe kaydı yoksa istisna tutarı reddedilebilir. Muhasebe hesap planı ayrımı ve dönem mizan kontrolü yapılmalıdır.",
+          null
+        ],
+        [
+          null,
+          "K7. Ortak genel giderler ve amortismanlar SB/SB dışına doğru dağıtıldı mı?",
+          "3218 s.K. GT | Genel gider dağıtım ilkesi",
+          "Ortak giderler ve amortisman SB ve SB dışı faaliyetlere orantılı dağıtılmalıdır. Dağıtım anahtarı (hasılat oranı, m², personel sayısı) belgelenmelidir. Yanlış dağıtım istisna tutarını hatalı gösterir; vergi ziyaı riski doğurur.",
+          null
+        ],
+        [
+          null,
+          "K8. FOB ≥%85 şartı yıl sonunda sağlandı mı? (Ücret GV stopaj terkini için)",
+          "3218 s.K. Geçici Md. 3/2-b | 1 Seri No.lu 3218 s.K. GT",
+          "Yıllık bazda (ay bazında değil) değerlendirilen şart. FOB ihracat / Toplam satış ≥%85 sağlanmazsa ücret GV stopaj terkini geçersizdir. Yıllık ihracat + satış özeti ve muhtasar beyanname kontrol edilmeli.",
+          null
+        ],
+        [
+          null,
+          "K9. Birleşme/devir/bölünme halinde ruhsat Ticaret Bakanlığı'nca yenilendi mi?",
+          "3218 s.K. Ruhsat mevzuatı | Ticaret Bakanlığı",
+          "Faaliyet ruhsatının yalnızca satın alınması veya devralınması istisna hakkını aktarmaz. KVK Md. 18-19-20 kapsamında vergisiz devir/birleşme sonrasında Ticaret Bakanlığı'ndan ruhsat yenilenmesi zorunludur.",
+          null
+        ],
+        [
+          null,
+          "K10. Kâr payı dağıtımında stopaj uygulandı mı? (İstisna stopajı kaldırmaz)",
+          "GVK Md. 94/6-b | KVK Md. 15/30",
+          "SB kazanç istisnası kâr payı stopajını kaldırmaz. Kâr payı dağıtımında GVK Md. 94/6-b ve KVK Md. 15/30 uyarınca %15 stopaj uygulanır. Kâr dağıtım kararı ve stopaj beyannamesi kontrol edilmeli.",
+          null
+        ],
+        [
+          null,
+          "K11. YİAKV matrahında 308 istisnası düşüldü mü? (Düşülebilir — KVK 32/C (g) bendi)",
+          "KVK Md. 32/C (g) | GİB KV Rehberi 2025",
+          "3218 s.K. Geçici Md. 3 istisnası KVK 32/C kapsamında YİAKV matrahından DÜŞÜLEBİLEN istisnalar arasındadır. 4691 s.K. istisnasından (düşülemeyen) farklıdır. YİAKV hesap tablosu ayrıca hazırlanmalı ve tasdik raporunda gerekçelendirilmeli.",
+          null
+        ],
+        [
+          null,
+          "K12. Özel hesap dönemli mükellefde 01.01.2025 değişikliği kazanç ayrıştırması yapıldı mı?",
+          "7524 s.K. Md. 24 geçiş hükmü",
+          "Hesap dönemi 1 Ocak'ta başlamayan mükelleflerde 01.01.2025 kırılım tarihine göre dönem içi kazanç ayrıştırması zorunludur. 2024 dönemine ait kazanç eski kurallara, 2025 sonrasına ait kazanç yeni kurallara tabidir.",
+          null
+        ],
+        [
+          "D — KV BEYANNAMESİ SATIR EŞLEŞTİRME VE MUTABAKAT",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır No",
+          "Tutar (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "308",
+          "0",
+          "3218 s.K. Geçici Md. 3 — Serbest Bölge Kazanç İstisnası. 'Zarar Olsa Dahi İndirilecek' bölümü. YİAKV matrahından DÜŞÜLEBİLİR (KVK 32/C (g) bendi). Tasdik raporunda mevzuat dayanağı belirtilmeli.",
+          null
+        ],
+        [
+          null,
+          "GV Muhtasar",
+          "0",
+          "Personel ücret GV stopaj terkini — muhtasar beyanname ile terkin edilir. 308 satırıyla bağlantısız, ayrı beyanname. FOB ≥%85 şartı yıl sonunda sağlanmalıdır.",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G21",
+      "rows": [
+        [
+          "308 – 3218 s.K. Geçici Md. 3 SERBEST BÖLGE İSTİSNASI | MUHASEBE KAYITLARI ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Muhasebe Kayıtları Rehberi — TDHP Esaslarına ve Şirket Hesap Planına Göre Uyarlanır. VUK zorunluluğu: SB faaliyeti ile SB dışı faaliyet kazançları AYRI AYRI izlenmeli. Muhasebe sorumluluğu mükellefte, tasdik sorumluluğu YMM'dedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KRİTİK: SB faaliyeti ile SB dışı faaliyet kazançları ayrı ayrı tespit edilebilecek şekilde muhasebe kayıtlarında izlenmek zorundadır. Ayrı muhasebe kaydı yoksa istisna tutarı vergi incelemesinde reddedilebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — YURT DIŞI SATIŞ GELİRİ VE MALİYET KAYDEDME (01.01.2025+ İstisna Kapsamı — Rejim 2)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap / Açıklama",
+          "Not",
+          "Borç (TL)",
+          "Alacak (TL)",
+          null
+        ],
+        [
+          null,
+          "İhracat tarihi",
+          "121 Alacak Senetleri / 102 Bankalar",
+          "İhracat bedelinin tahsili (FOB — döviz kuru TCMB alış)",
+          "İhracat Bedeli",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "601 Yurt Dışı Satışlar (SB Bağımsız Hesap)",
+          "SB kaydında yurt dışı satış ayrı hesapta izlenmeli",
+          null,
+          "İhracat Bedeli",
+          null
+        ],
+        [
+          null,
+          null,
+          "620 Satılan Mamulün Maliyeti (SB)",
+          "SB'de üretilen ürünün maliyeti",
+          "Maliyet",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "152 Mamuller / 151 Yarı Mamuller (SB)",
+          "SB stok çıkışı",
+          null,
+          "Maliyet",
+          null
+        ],
+        [
+          "KAYIT 2 — İHRAÇ KAYITLI TESLİM (AYNI/BAŞKA SB İHRACATÇISINA) VE 3 AYLIK İHRAÇ TAKİBİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aynı/başka SB'deki ihracatçıya ihraç kayıtlı teslim → Yurt dışı satış sayılır; istisna kapsamındadır. 3 aylık ihraç şartı: Teslim tarihini takip eden ay başından itibaren 3 ay içinde fiilen ihracat gerçekleşmeli. Gerçekleşmezse istisna uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap / Açıklama",
+          "Not",
+          "Borç (TL)",
+          "Alacak (TL)",
+          null
+        ],
+        [
+          null,
+          "Teslim tarihi",
+          "121 Alacak Senetleri / 102",
+          "İhraç kayıtlı teslim bedeli",
+          "Teslim Bedeli",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "601 YD Satışlar (İhraç Kayıtlı — SB)",
+          "İhraç kayıtlı satış — SB ayrı hesap",
+          null,
+          "Teslim Bedeli",
+          null
+        ],
+        [
+          null,
+          "3 ay sonra",
+          "620 Satılan Mamul Maliyeti (SB)",
+          "İhracat gerçekleşti → İstisna kesinleşti",
+          "Maliyet",
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — PERSONEL ÜCRET İSTİSNASI: FOB ≥%85 GV STOPAJ TERKİNİ (Muhtasar Beyanname)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aylık: GV stopajı muhtasar beyannamede normal tahakkuk ettirilir, terkin olarak düşülür. Yıl sonu: FOB ihracat / Toplam satış oranı hesaplanır. ≥%85 ise terkin kesinleşir. <%85 ise tecil edilen vergi ödenir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap / Açıklama",
+          "Not",
+          "Borç (TL)",
+          "Alacak (TL)",
+          null
+        ],
+        [
+          null,
+          "Aylık",
+          "360 Ödenecek Vergi ve Fonlar (GV Stopaj)",
+          "Ücret üzerinden hesaplanan GV stopajı",
+          "Ücret Stopajı",
+          null,
+          null
+        ],
+        [
+          null,
+          "Terkin",
+          "360 Ödenecek Vergi",
+          "Muhtasar beyanname üzerinden terkin edildi",
+          null,
+          "Terkin Tutarı",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETÇİ NOTLARI",
+      "dimensions": "A1:D23",
+      "rows": [
+        [
+          "308 – 3218 s.K. Geçici Md. 3 | SERBEST BÖLGE KAZANÇ İSTİSNASI | YMM MESLEKİ DEĞERLENDİRME VE TASDİK NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "3218 s.K. Geçici Md. 3 | 7524 s.K. 01.01.2025 Değişikliği | 23 Seri No.lu KV GT | Aracı İhracatçı | FOB %85 | YİAKV DÜŞÜLEBİLİR | Yasal Dayanak • Tasdik Kapsamı • Risk Analizi • İnceleme Notları",
+          null,
+          null,
+          null
+        ],
+        [
+          "I. HUKUK VE MEVZUAT DEĞERLENDİRMESİ (Ana Tasdik Tespiti)",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "3218 s.K. Geçici Md. 3/1 (06.02.2004 ÖNCESİ RUHSAT — REJİM 1):\nBu bölgelerde faaliyette bulunmak üzere ruhsat almış mükelleflerin, ruhsatlarında belirtilen süre ve faaliyet konularına uygun faaliyetlerinden elde ettikleri kazançlar kurumlar vergisinden istisnadır.\n\n3218 s.K. Geçici Md. 3/2 (06.02.2004 SONRASI RUHSAT — REJİM 2):\nSerbest bölgelerde imalat faaliyetinde bulunan mükelleflerin bu bölgelerde imal ettikleri ürünlerin satışından elde ettikleri kazançlar Avrupa Birliği'ne tam üyeliğin gerçekleştiği yılın vergilendirme döneminin sonuna kadar kurumlar vergisinden istisnadır.\n\n7524 s.K. Md. 24 Değişikliği (01.01.2025 yürürlük):\nRejim 2 kapsamında istisna, 01.01.2025 tarihinden itibaren yalnızca MÜNHASIRAN YURT DIŞINA yapılan satışlardan elde edilen kazançlara uygulanır.\n\nTasdik Tespiti: İstisnanın uygulanabilmesi için:\n  (i)   Geçerli 3218 s.K. faaliyet ruhsatının bulunması,\n  (ii)  Faaliyet türünün imalat olması (Rejim 2),\n  (iii) Satışın münhasıran yurt dışına yapılması (01.01.2025+),\n  (iv)  SB ve SB dışı kazancın ayrı muhasebe kayıtlarında izlenmesi,\n  (v)   Zorunlu belgelerin tasdik dosyasında yer alması\nkoşullarının tamamı sağlanmış olmalıdır.",
+          null,
+          null
+        ],
+        [
+          "II. 01.01.2025 DEĞİŞİKLİĞİ — KIRILIM TABLOSU VE UYGULAMASI",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "SATIŞ TÜRÜ                                    | 2024 VE ÖNCESİ      | 01.01.2025 SONRASI\n─────────────────────────────────────────────────────────────────────────────────────────\nYurt dışı ihracat (Rejim 2 / imalat)          | ✅ İstisna            | ✅ İstisna (devam)\nİhraç kayıtlı teslim (SB ihracatçısına)       | ✅ İstisna            | ✅ İstisna (3 ay şartı)\nYurt içine satış (Rejim 2 / imalat)            | ✅ İstisna            | ⛔ İstisna YOK\nSB içi satış (ihraç kaydı olmaksızın)          | ✅ İstisna            | ⛔ İstisna YOK\nTicaret/alım-satım faaliyeti (Rejim 2)         | ⛔ İstisna YOK       | ⛔ İstisna YOK\nRejim 1 — Tüm faaliyetler (ruhsat süresi)      | ✅ İstisna            | ✅ İstisna (devam)\n\nÖzelge (Ocak 2026): SB içi alıcının sonradan ihraç etmesi üreticiyi kurtarmaz. İstisna uygulanabilmesi için üreticinin bizzat ihraç etmesi veya ihraç kayıtlı satması gerekir.",
+          null,
+          null
+        ],
+        [
+          "III. ARACI İHRACATÇI KURALI VE 3 AYLIK ŞART",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "23 Seri No.lu KV GT (Ekim 2024) ve 3218 s.K. GT açıklamalarına göre:\n\nİHRAÇ KAYITLI TESLİM (İstisna Kapsamında):\n  • Aynı serbest bölgedeki başka ihracatçıya ihraç kayıtlı teslim → İstisna uygulanır\n  • Başka serbest bölgedeki ihracatçıya ihraç kayıtlı teslim → İstisna uygulanır\n  • 3 aylık şart: Teslim tarihini takip eden ay başından itibaren 3 ay içinde fiilen ihracat gerçekleşmeli\n  • Gerçekleşmezse: İstisna uygulanamaz; vergi ve ceza riski\n\nİSTİSNA KAPSAMINDA OLMAYAN:\n  • Türkiye içindeki firmaya (SB dışı) ihraç kayıtlı satış → İstisna YOK (GİB 02.05.2012 tarih, 480 sayılı özelge)\n  • SB içi firmaya ihraç kaydı olmaksızın satış → İstisna YOK (Ocak 2026 özelgesi)\n  • Alıcının ihraç etmesi üreticiyi kurtarmaz\n\nYMM Tasdik Notu: İhraç kayıtlı teslim söz konusuysa, ilgili fatura ve 3 aylık ihraç takip tablosu tasdik dosyasında yer almalıdır.",
+          null,
+          null
+        ],
+        [
+          "IV. YİAKV, STOPAJ VE MUHASEBE KURALLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "YİAKV (KVK Md. 32/C):\n  ✅ 3218 s.K. Geçici Md. 3 kapsamındaki serbest bölge kazanç istisnası YİAKV matrahından DÜŞÜLEBİLİR (KVK 32/C (g) bendi).\n  Bu durum 4691 s.K. istisnasından (TGB, düşülemeyen) kritik şekilde farklıdır. YİAKV matrahı ayrı tabloda hesaplanmalı ve tasdik raporunda gerekçelendirilmelidir.\n\nSTOPAJ (KVK Md. 15 / GVK Md. 94):\n  SB kazanç istisnası kâr payı stopajını (GVK Md. 94/6-b, KVK Md. 15/30) KALDIRMAZ.\n  Kâr payı dağıtımında %15 stopaj uygulanır. Bu husus sıkça karıştırılır.\n\nMUHASEBE ZORUNLULUĞU (VUK):\n  SB ve SB dışı kazançlar ayrı ayrı tespit edilebilecek şekilde kaydedilmek zorundadır.\n  Ayrı muhasebe kaydı olmaksızın istisna tutarı vergi incelemesinde reddedilebilir.\n  Ortak genel giderler ve amortisman orantılı dağıtılmalı; dağıtım anahtarı belgelenmelidir.",
+          null,
+          null
+        ],
+        [
+          "V. MEVZUAT DAYANAKLARI VE GÜNCEL KAYNAKLAR",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Birincil Mevzuat:\n  • 3218 sayılı Serbest Bölgeler Kanunu — Geçici Madde 3 (Rejim 1: /1 fıkrası, Rejim 2: /2 fıkrası)\n  • 7524 sayılı Kanun Md. 24: 01.01.2025 itibarıyla yurt dışı satış şartı\n  • 23 Seri No.lu KV GT (Ekim 2024): Aracı ihracatçı ve ihraç kayıtlı teslim esasları\n  • KVK Md. 32/C (g) bendi: Serbest bölge istisnasının YİAKV'den düşülebilir niteliği\n\nGüncel Özelgeler:\n  • GİB, 02.05.2012 tarih, 480 sayılı: Türkiye'de firmaya ihraç kayıtlı satış → İstisna yok\n  • GİB, Ocak 2026: SB içi alıcının ihraç etmesi üreticiyi kurtarmaz\n  • GİB KV Rehberleri (güncel versiyon — her dönem teyit edilmeli)\n  • Ticaret Bakanlığı ruhsat mevzuatı ve genelgeleri",
+          null,
+          null
+        ],
+        [
+          "VI. VERGİ İNCELEMESİ VE TASDİK HAZIRLIK NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "1. ÖNCELİKLİ BELGE: Faaliyet ruhsatı — tarih ve faaliyet konusu. 06.02.2004 kırılım tarihi ile rejim belirlenir; incelemede ilk talep edilen belgedir.\n\n2. 01.01.2025 GEÇİŞ DÖNEMİ: Hesap dönemi 1 Ocak'ta başlamayan mükelleflerde dönem içi kazanç ayrıştırması zorunludur. İki döneme ait kazancın net ayrıştırılması ve belgelenmesi tasdik raporunda yer almalıdır.\n\n3. MUHASEBE AYIRIMI: SB/SB dışı hesap dökümü ve dönem mizan kontrolü tasdik dosyasına eklenmelidir. Ayrı muhasebe yoksa istisna tutarı savunulamaz.\n\n4. YİAKV: 308 istisnası düşüldükten sonraki YİAKV matrahı ayrı tabloda gösterilmeli; KVK 32/C (g) bendi dayanak olarak belirtilmelidir.\n\n5. YMM SORUMLULUK NOTU: Bu çalışma kâğıdındaki veriler mükellef beyanına dayanmaktadır. İhracat beyannameleri, gümrük belgeleri ve ruhsatın doğruluğu YMM tarafından 3568 sayılı Kanun çerçevesinde bağımsız olarak test edilmiştir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "VII. SERBEST BÖLGE İSTİSNASINDA KRİTİK METODOLOJİK UYARILAR",
+          null,
+          null,
+          null
+        ],
+        [
+          "UYARI 1 — İSTİSNA OTOMATİK TÜM KAZANCA UYGULANMAZ:\n'Şirket serbest bölgede faaliyet gösteriyor' demek tüm kazancın istisna kapsamında olduğu anlamına GELMEZ. Yalnızca ruhsatta belirtilen faaliyet konusundan, SB sınırları içinde yürütülen işlemlerden ve 01.01.2025+ için münhasıran yurt dışı satıştan doğan kazanç kapsam içidir. Bu ayrım yapılmadan hazırlanan tasdik raporu metodolojik açıdan savunulamaz.\n\nUYARI 2 — FİNANSAL GELİRLER / TALİ GELİRLER AYRICA DEĞERLENDİRİLMELİDİR:\nFaiz, repo, mevduat gelirleri SB istisnası kapsamı dışındadır. Vade farkı ve kira gelirleri de kapsam dışıdır. Kur farkı gelirleri ticari alacaktan doğuyorsa bazı özelgelerde kapsam içi sayılmış olmakla birlikte her durum için kesin hüküm verilemez — YMM yazılı değerlendirme notu hazırlamalıdır.\n\nUYARI 3 — ORTAK GİDER DAĞITIMI MAKUL VE BELGELENEBİLİR OLMALIDIR:\nGenel giderler, amortisman ve diğer ortak maliyetlerin SB / SB dışı ayrımı makul ve tutarlı bir dağıtım anahtarına dayanmalıdır. Belgesiz veya keyfi dağıtım vergi incelemesinde reddedilir.\n\nUYARI 4 — 308 KODU 305'TEN METODOLOJİK OLARAK FARKLIDIR:\n308 kodu 'Zarar Olsa Dahi İndirilecek' bölümündedir — kapsam içi faaliyet kazancı pozitif olduğu sürece genel dönem zararından bağımsız olarak uygulanır. 305 (Eğitim) için 'Kazancın Bulunması Halinde' geçerliyken, bu iki kod karıştırılmamalıdır.\n\nUYARI 5 — BEYANNAMEYİ AKTARIMDan ÖNCE KONTROL EDİLMELİ:\nMuhasebe mizan, gelir kırılım tablosu (C bölümü) ve belge seti tutarlı olmalıdır. 308 satırına yazılan tutar brüt kapsam içi hasılattan değil, D.7 (maliyet ve gider düşüldükten sonraki net istisna kazanç) satırından alınmalıdır.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LİSTESİ",
+      "dimensions": "A1:F30",
+      "rows": [
+        [
+          "308 – 3218 s.K. Geçici Md. 3 SERBEST BÖLGE KAZANÇ İSTİSNASI | TASDİK BELGE LİSTESİ VE DENETİM KANITI ENVANTERİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 17 / 3568 s.K. Kapsamında YMM Tasdik Dosyası | Zorunlu, Kritik Destek ve Destekleyici Belgeler",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Denetim Kanıtı",
+          "İçerik ve YMM Tasdik Kontrol Notu",
+          "Temin Yeri",
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU TASDİK BELGELERİ (Eksiklik Tasdik Kapsamından Çıkarılma Gerekçesi Oluşturur)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "1",
+          "Faaliyet Ruhsatı ve Süre Belgesi",
+          "Ruhsat tarihi (06.02.2004 kırılımı ile Rejim 1/2 belirlenir), ruhsat süresi bitiş tarihi ve faaliyet konusu. YMM bu belgeyi bağımsız olarak incelemelidir. Süresi dolmuş veya devir sonrası yenilenmemiş ruhsat tasdik kapsamını ortadan kaldırır.",
+          "Ticaret Bakanlığı SB ruhsatı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "İhracat Belgeleri (Gümrük Çıkış Beyannamesi + Fatura)",
+          "Gümrük Çıkış Beyannamesi + ihracat faturası — 01.01.2025+ için temel istisna kanıtı. FOB bedeli, ülke ve ürün belgelenmeli; yurt dışı satışın gerçekten münhasıran yurt dışına yapıldığı doğrulanmalıdır.",
+          "GÇB + ihracat faturası",
+          null
+        ],
+        [
+          null,
+          "3",
+          "İhraç Kayıtlı Fatura (Aracı İhracatçıya Teslimde)",
+          "İhraç kayıtlı fatura + ihracatçının fiili ihracat teyidi. 3 aylık ihraç şartı takip tablosu ayrıca hazırlanmalıdır. Türkiye içindeki firmaya ihraç kayıtlı satış istisna kapsamı dışıdır — alıcının SB'de olması zorunludur.",
+          "İhraç kayıtlı fatura + ihracat teyidi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Satış Hasılatı Özeti (Yurt İçi / Yurt Dışı / Bölge İçi Ayrımı)",
+          "01.01.2025+ için: İhracat hasılatı (istisna) ile yurt içi + SB içi hasılat (vergiye tabi) net ayrıştırılmış olmalıdır. Her kalem muhasebe hesap kodu ile desteklenmeli; beyanname tutarı bu tablodan türetilmelidir.",
+          "Dönem satış tablosu + muhasebe",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Kazanç Tespiti ve Maliyet Dağıtım Tablosu",
+          "SB imalat kazancı = Satış hasılatı – ÜMG – SB'ye yüklenen genel gider payı – Amortisman. Ortak gider dağıtım anahtarı belgelenmelidir. Yanlış dağıtım istisna tutarını hatalı gösterir.",
+          "Maliyet muhasebesi + dağıtım tablosu",
+          null
+        ],
+        [
+          null,
+          "6",
+          "SB ve SB Dışı Ayrımı İçin Muhasebe Düzeni (Hesap Planı)",
+          "VUK zorunluluğu: SB kazancı ile SB dışı kazanç ayrı hesaplarda izlenmeli. Dönem mizan kontrolü yapılmalı; hesap planı ayrımı tasdik dosyasına eklenmelidir. Ayrı muhasebe yoksa istisna tutarı reddedilebilir.",
+          "Muhasebe hesap planı + dönem mizan",
+          null
+        ],
+        [
+          "KATEGORİ 2 — KRİTİK DESTEK BELGELERİ (Tasdik Güvenilirliğini Artırır)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "7",
+          "FOB %85 İhracat Oranı Hesabı (Ücret İstisnası İçin)",
+          "Yıllık toplam FOB ihracat / Toplam satış ≥%85 şartı. Muhtasar beyanname terkin miktarı. Şart sağlanamazsa terkin geçersiz — düzeltme beyannamesi gerekebilir.",
+          "Yıllık ihracat + satış özeti",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Ruhsat Süre Takip Tablosu",
+          "Rejim 1 mükellefler için kritik: Ruhsat bitiş tarihi ve kalan süre. Süre dolmadan önce istisna hakkından en etkin şekilde yararlanmak için YMM planlaması yapılmalıdır.",
+          "Ruhsat + takvim",
+          null
+        ],
+        [
+          null,
+          "9",
+          "YİAKV Hesap Tablosu",
+          "308 istisnasının YİAKV matrahından düşüldüğünün teyidi. KVK 32/C (g) bendi dayanak gösterilerek YMM tarafından hazırlanmalıdır. 4691/TGB istisnasından farklı olduğu tasdik raporunda belirtilmelidir.",
+          "YİAKV hesap tablosu",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Kâr Payı Dağıtım ve Stopaj Belgesi",
+          "SB istisnası kâr payı stopajını kaldırmaz. Kâr dağıtım kararı + muhtasar beyanname (stopaj uygulandığı) tasdik dosyasında yer almalıdır.",
+          "GK kararı + muhtasar beyanname",
+          null
+        ],
+        [
+          null,
+          "➕ 11",
+          "Üretim ve İmalat Kayıtları (Kapsam İçi Faaliyetin Kanıtı)",
+          "Üretim emirleri, BOM (malzeme listesi), üretim raporları, süreç kayıtları. Ruhsat kapsamındaki faaliyetin gerçekten imalat niteliğinde olduğunu belgeler; kapsam içi kazancın imalat faaliyetinden doğduğunu kanıtlamak için zorunludur.",
+          "Üretim birimi / ERP",
+          null
+        ],
+        [
+          null,
+          "➕ 12",
+          "Kapsam İçi / Kapsam Dışı Gelir Mutabakat Tablosu",
+          "C bölümündeki her gelir kalemine karşılık gelen muhasebe hesabı ve tutarı. Dönem mizan ile C bölümü mutabık olmalı; beyanname 308 satırı bu tablodan türetilmelidir. En kritik tasdik destek belgesidir.",
+          "Muhasebe / mizan",
+          null
+        ],
+        [
+          null,
+          "➕ 13",
+          "Kur Farkı Geliri Sınıflandırma Notu (Ticari vs. Finansal)",
+          "Ticari alacaktan doğan kur farkı ile finansal işlemlerden doğan kur farkının ayrımı. YMM her kalem için yazılı değerlendirme yapmalı; emsalsiz hüküm verilemez — özelge taraması tavsiye edilir.",
+          "YMM değerlendirme notu",
+          null
+        ],
+        [
+          null,
+          "➕ 14",
+          "Ortak Gider ve Amortisman Dağıtım Çalışması",
+          "SB / SB dışı faaliyete yüklenen ortak gider payı ve dağıtım anahtarı. Hasılat oranı, personel sayısı veya m² gibi tutarlı bir anahtar kullanılmalı ve belgelenmelidir. Keyfi dağıtım vergi incelemesinde reddedilir.",
+          "Muhasebe / maliyet sistemi",
+          null
+        ],
+        [
+          null,
+          "➕ 15",
+          "Yurt İçi Satış Ayrıştırma Tablosu (01.01.2025+ için Zorunlu)",
+          "Dönem içi yurt içi satışların müşteri, fatura ve tutar listesi. Bu satışların C.4 olarak sınıflandırıldığı ve istisna hesabına dahil edilmediği belgelenmelidir.",
+          "Satış muhasebesi / ERP",
+          null
+        ],
+        [
+          null,
+          "➕ 16",
+          "Transfer Fiyatlandırması / İlişkili Taraf Etki Analizi (Varsa)",
+          "İlişkili taraflarla SB alım/satım işlemlerinde KVK Md. 13 riski değerlendirilmeli. Emsallere uygunluk analizi veya riskin neden oluşmadığına dair YMM görüş notu hazırlanmalıdır.",
+          "YMM değerlendirme notu",
+          null
+        ],
+        [
+          null,
+          "➕ 17",
+          "SB Genel Mizan ve Hesap Planı Ayrımı (Dönem Sonu)",
+          "VUK zorunluluğu: SB ve SB dışı için ayrı hesap planı ve dönem mizan. Net istisna kazancı bu mizandan türetilebilir nitelikte olmalıdır.",
+          "Muhasebe programı",
+          null
+        ],
+        [
+          null,
+          "➕ 18",
+          "KV Beyannamesi Satır 308 — D.7 Mutabakat Notu",
+          "Beyanname 308 satırındaki tutar ile D.7 (net istisna kazanç) hücresi mutabık olmalıdır. Fark varsa yazılı gerekçe hazırlanmalı ve tasdik raporuna eklenmelidir.",
+          "YMM çalışma notu",
+          null
+        ],
+        [
+          "TASDİK DOSYASI HAZIRLIK KONTROL ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "308 — 3218 s.K. Geçici Md. 3 Serbest Bölge Kazanç İstisnası — Tasdik Hazırlık Kontrol Listesi\n\n  □ A0 kontrol bloğu (8 soru) tamamlandı ve 'OK' sonucu alındı\n  □ Ruhsat tarihi doğrulandı ve Rejim 1/2 netleştirildi\n  □ İstisna iddia edilen kazancın ruhsat kapsamından doğduğu belgelendi\n  □ Her gelir türü C bölümünde kapsam içi/dışı ayrıştırıldı\n  □ Faiz, kur farkı, vade farkı her biri ayrıca sınıflandırıldı\n  □ Net istisna kazanç D.7 akış hesabından türetildi\n  □ Ortak gider dağıtım anahtarı belgelendi\n  □ Üretim kayıtları ve imalat kanıtları temin edildi\n  □ İhracat beyannameleri (GÇB) temin edildi\n  □ İhraç kayıtlı teslim varsa 3 aylık ihraç şartı takibi yapıldı\n  □ Kur farkı geliri sınıflandırma notu hazırlandı\n  □ FOB ≥%85 şartı hesaplandı\n  □ YİAKV matrahında 308 düşüldü ve KVK 32/C (g) gerekçelendirildi\n  □ Beyanname 308 = D.7 mutabakatı tamamlandı\n  □ DENETÇİ NOTLARI (I-VII) dolduruldu",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

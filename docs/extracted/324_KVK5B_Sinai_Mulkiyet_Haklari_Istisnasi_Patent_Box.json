@@ -1,0 +1,1660 @@
+{
+  "file": "324_KVK5B_Sinai_Mulkiyet_Haklari_Istisnasi_Patent_Box.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G83",
+      "rows": [
+        [
+          "324 – SINAİ MÜLKİYET HAKLARINDA İSTİSNA (K.V.K. Mad. 5/B) | PATENT BOX / IP BOX | %50 İSTİSNA (NEXUS ORANLI) | YMM TASDİK ÇALIŞMA KÂĞIDI | BEYANNAME SATIR 324",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/B | %50 İstisna (NEXUS Oranıyla Ağırlıklandırılmış) | Patent / Faydalı Model Belgesi | Türkiye'de Ar-Ge Şartı | NEXUS = (TR Ar-Ge Harcaması × 1.3) / Toplam Ar-Ge Harcaması (max 1) | Beyanname Satır 324 — Kazancın Bulunması Halinde",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 324'ÜN SETTEKİ ÖZGÜN KONUMU — 3 TEMEL FARK:\n  (1) %50 İSTİSNA: Setimizin geri kalanı %100 tam istisna; 324'te istisna %50 ile sınırlıdır.\n  (2) NEXUS ORANI: İstisna tutarı Türkiye'deki nitelikli Ar-Ge harcaması / Toplam Ar-Ge harcaması\n  oranına göre ağırlıklandırılır — setimizin tek formüllü istisna hesabı.\n  (3) ÇOKLU KAZANÇ TÜRÜ: Satış/Devir + Lisans/Kira + İmalat Katkısı — her biri ayrı hesaplanır.\n  KVK 5/B: 5/1 bentleri değil, 5/A değil — üçüncü özel madde kategorisi.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NEXUS FORMÜLÜ: İstisna Tutarı = Buluş Kazancı × min[(NARGe × 1.3) / TARGe, 1] × %50\n  NARGe = Nitelikli Ar-Ge Harcaması (Türkiye'de, ilişkili kuruluş dışı)\n  TARGe = Toplam Ar-Ge Harcaması (Türkiye + Yurt Dışı tümü)\n  Oran 1'i aşamaz — NEXUS %100 ise istisna doğrudan buluş kazancının %50'sidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  ★ Buluş için PATENT veya FAYDALI MODEL belgesi alındı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: 5/B istisnası yalnızca patent veya faydalı model belgesi alınmış buluşlara uygulanır. Tescilsiz buluş, marka, tasarım → Kapsam dışı. TPMK (Türkiye) veya yabancı ülke patent ofisi tarafından verilmiş belge kabul edilir.",
+          null
+        ],
+        [
+          "A0.2  ★ Buluş Türkiye'de gerçekleştirilen Ar-Ge/tasarım faaliyeti sonucunda mı ortaya çıktı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: NEXUS yaklaşımı gereği buluşun Türkiye'de Ar-Ge faaliyetiyle bağlantısı olmalı. Tamamen yurt dışından satın alınan buluş → NEXUS oranı sıfır olabilir.",
+          null
+        ],
+        [
+          "A0.3  ★ İstisnanın %50 oranında uygulandığı teyit edildi mi? (%100 değil!)",
+          null,
+          null,
+          null,
+          "EVET — %50 İstisna",
+          "KRİTİK: KVK 5/B istisnası %50 oranındadır — setimizin diğer dosyaları gibi %100 değildir. Yanlışlıkla %100 uygulanması tarhiyat riski doğurur.",
+          null
+        ],
+        [
+          "A0.4  NEXUS oranı hesaplandı mı? Nitelikli / Toplam Ar-Ge harcaması ayrıştırıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "NEXUS = min[(NARGe × 1.3) / TARGe, 1]. Nitelikli Ar-Ge: Türkiye'de yapılan, ilişkili kuruluşlara ödenen harcamalar hariç. C bölümünde NEXUS hesabı zorunludur.",
+          null
+        ],
+        [
+          "A0.5  Buluştan elde edilen kazanç türü belirlendi mi? (Satış/Devir / Lisans / İmalat)",
+          null,
+          null,
+          null,
+          "Satış/Devir",
+          "Her kazanç türü için ayrı hesaplama yapılır. İmalat katkısında marj analizi gerekir.",
+          null
+        ],
+        [
+          "A0.6  Patent/faydalı model belgesi hâlâ GEÇERLİ mi? Süre ve temdit kontrolü yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Belge geçerlilik süresi: Patent 20 yıl, Faydalı model 10 yıl. Süresi dolan veya terkin edilen belge kapsamındaki gelir istisna dışıdır.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL veya >=1.000.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.1 (Patent), A0.3 (%50 oranı), A0.4 (NEXUS) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER VE PATENT/FAYDALI MODEL BELGE BİLGİSİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Patent/faydalı model sahibi kurum",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Buluşun Adı/Konusu",
+          null,
+          null,
+          null,
+          null,
+          "Patent belgesi veya başvuruya konu buluşun açıklayıcı adı",
+          null
+        ],
+        [
+          "Patent/Faydalı Model Belge No",
+          null,
+          null,
+          null,
+          null,
+          "TPMK veya yabancı ülke patent ofisi belge numarası",
+          null
+        ],
+        [
+          "Belgeyi Veren Otorite",
+          null,
+          null,
+          null,
+          null,
+          "TPMK / EPO / USPTO / Diğer Ülke Patent Ofisi",
+          null
+        ],
+        [
+          "Belge Türü",
+          null,
+          null,
+          null,
+          null,
+          "Patent veya Faydalı Model (hak süresi farklı)",
+          null
+        ],
+        [
+          "Belge Geçerlilik Süresi Başlangıcı",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Belge tescil/verilme tarihi",
+          null
+        ],
+        [
+          "Belge Geçerlilik Süresi Bitişi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Patent: 20 yıl | Faydalı model: 10 yıl",
+          null
+        ],
+        [
+          "Ar-Ge Faaliyetinin Yürütüldüğü Yer",
+          null,
+          null,
+          null,
+          null,
+          "Ar-Ge Merkezi / TGB / Üniversite Laboratuvarı / Diğer",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. NEXUS ORANI HESABI — 5/B'NİN KALBİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NEXUS FORMÜLÜ: Oran = min[(NARGe × 1.3) / TARGe, 1]\n  NARGe = Nitelikli Ar-Ge Harcaması: Türkiye'de kurum tarafından yapılan + ilişkili kuruluş DIŞI taraflara ödenen harcamalar.\n  TARGe = Toplam Ar-Ge Harcaması: Nitelikli + İlişkili kuruluşlara ödenen + Satın alınan buluş bedeli.\n  ×1.3 katsayısı: Türkiye'deki Ar-Ge'yi teşvik amacıyla uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Harcama Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "B.1  Kurum Tarafından Türkiye'de Yapılan Ar-Ge/Tasarım Harcaması",
+          null,
+          null,
+          "Kendi bünyesinde gerçekleştirilen — personel, malzeme, amortisman",
+          null,
+          "NARGe bileşeni 1",
+          null
+        ],
+        [
+          "B.2  İlişkili OLMAYAN Yurt İçi Taraflara Ödenen Ar-Ge Harcaması",
+          null,
+          null,
+          "Üniversite, bağımsız araştırma kurumları — ilişkisiz kuruluşlar",
+          null,
+          "NARGe bileşeni 2",
+          null
+        ],
+        [
+          "B.3  İlişkili OLMAYAN Yurt Dışı Taraflara Ödenen Ar-Ge Harcaması",
+          null,
+          null,
+          "Yabancı bağımsız araştırma kuruluşları — ilişkisiz",
+          null,
+          "NARGe bileşeni 3",
+          null
+        ],
+        [
+          "B.4  NARGe — NİTELİKLİ AR-GE HARCAMASI (B.1 + B.2 + B.3)",
+          null,
+          "0",
+          "Nitelikli Ar-Ge: Türkiye + ilişkisiz yurt dışı",
+          null,
+          "NARGe = Nexus payı",
+          null
+        ],
+        [
+          "B.5  NARGe × 1.3 (Teşvik Katsayısı)",
+          null,
+          "0",
+          "Teşvik katsayısı — TARGe'yi aşamaz",
+          null,
+          "Formülde kullanılır",
+          null
+        ],
+        [
+          "B.6  İlişkili Kuruluşlara Ödenen Ar-Ge Harcaması (Sayılmaz Ama TARGe'ye Girer)",
+          null,
+          null,
+          "Grup şirketlerine ödenen — NARGe'ye dahil EDİLMEZ",
+          null,
+          "TARGe bileşeni",
+          null
+        ],
+        [
+          "B.7  Satın Alınan Buluş / IP Bedeli (Sayılmaz Ama TARGe'ye Girer)",
+          null,
+          null,
+          "Hazır patent/faydalı model alımı — NARGe'ye dahil EDİLMEZ",
+          null,
+          "TARGe bileşeni",
+          null
+        ],
+        [
+          "B.8  TARGe — TOPLAM AR-GE HARCAMASI (B.4 + B.6 + B.7)",
+          null,
+          "0",
+          "Tüm Ar-Ge harcamaları toplamı — NEXUS paydası",
+          null,
+          "TARGe = Nexus paydası",
+          null
+        ],
+        [
+          "B.9  NEXUS ORANI = min(B.5 / B.8, 1)",
+          null,
+          "1",
+          "0 ile 1 arasında — maksimum %100",
+          null,
+          "★ İstisna hesabında kullanılan oran",
+          null
+        ],
+        [
+          "B.10  NEXUS ORANI (%)",
+          null,
+          "100",
+          "Yüzde cinsinden — anlaşılırlık için",
+          null,
+          "B.9'un %'si",
+          null
+        ],
+        [
+          "C. KAZANÇ TÜRÜ 1 — SATIŞ / DEVİR / TEMLİK KAZANCI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Patent veya faydalı modelin üçüncü bir kişiye satışı, devri veya temliki. İstisna = Satış Kazancı × NEXUS Oranı × %50.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "Yöntem"
+        ],
+        [
+          "C.1  Patent/Faydalı Model Satış Bedeli",
+          null,
+          null,
+          "Alıcıya devir bedeli",
+          null,
+          "Sözleşme bedeli",
+          null
+        ],
+        [
+          "C.2  Belgeli Hakkın Net Kayıtlı Değeri (260 hesabı − 268 birikmiş itfa)",
+          null,
+          null,
+          "Aktiften çıkarılan net değer",
+          null,
+          "260/268 hesap kartı",
+          null
+        ],
+        [
+          "C.3  Satış Giderleri",
+          null,
+          null,
+          "Devir noter, harç, acente giderleri",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4  SATIŞ KAZANCI = C.1 − C.2 − C.3",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.5  NEXUS Oranı",
+          null,
+          "1",
+          "B.9'dan otomatik",
+          null,
+          "Ağırlıklandırma",
+          null
+        ],
+        [
+          "C.6  İstisna Matrahı = C.4 × C.5",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.7  SATIŞ/DEVİR İSTİSNA TUTARI (%50)",
+          null,
+          "0",
+          "%50 İstisna — Beyanname 324'e dahil",
+          null,
+          "→ F bölümü toplamına",
+          null
+        ],
+        [
+          "D. KAZANÇ TÜRÜ 2 — LİSANS / KİRA / ROYALTY GELİRİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Patent veya faydalı modelin kiralanması veya lisans verilmesinden elde edilen royalty. İstisna = Royalty Geliri × NEXUS Oranı × %50. Lisans sözleşmesi Bakanlıkça onaylanmış veya serbest piyasa koşullarında olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "D.1  Dönem Royalty / Lisans Gelirleri (Brüt)",
+          null,
+          null,
+          "Lisans sözleşmesindeki dönem geliri",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Lisansa İlişkin Doğrudan Giderler (Koruma/Tescil/Hukuki)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  LİSANS NET GELİRİ = D.1 − D.2",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.4  NEXUS Oranı",
+          null,
+          "1",
+          "B.9'dan otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.5  İstisna Matrahı = D.3 × D.4",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.6  LİSANS/ROYALTY İSTİSNA TUTARI (%50)",
+          null,
+          "0",
+          "%50 İstisna",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. KAZANÇ TÜRÜ 3 — İMALAT KATKI PAYI (Buluşun Üretimde Kullanılması)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Buluşun üretime dahil edilmesiyle elde edilen kazanç payı — en karmaşık hesaplama. Buluş katkısı = İlgili ürünün toplam satış kazancı × Buluşun katkı oranı. Katkı oranı: Karşılaştırılabilir ürün analizi veya maliyet tabanlı marj hesabı ile belirlenir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "E.1  Buluşu İçeren Ürün(ler)in Dönem Satış Hasılatı",
+          null,
+          null,
+          "Sadece buluşu kapsayan ürünler",
+          null,
+          "Satış kayıtları",
+          null
+        ],
+        [
+          "E.2  İlgili Ürün(ler)in Toplam Maliyeti",
+          null,
+          null,
+          "Üretim + Satış maliyeti",
+          null,
+          "Maliyet kartı",
+          null
+        ],
+        [
+          "E.3  İlgili Ürün(ler)in Brüt Kazancı = E.1 − E.2",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.4  Buluşun Kazanca Katkı Oranı (%)",
+          null,
+          null,
+          "Emsal analizi veya maliyet tabanlı hesap — belgelenmeli",
+          null,
+          "GİB özelgesi önerilir",
+          null
+        ],
+        [
+          "E.5  İMALAT KATKI KAZANCI = E.3 × E.4/100",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.6  NEXUS Oranı",
+          null,
+          "1",
+          "B.9'dan otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.7  İstisna Matrahı = E.5 × E.6",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.8  İMALAT KATKI İSTİSNA TUTARI (%50)",
+          null,
+          "0",
+          "%50 İstisna",
+          null,
+          "→ F bölümü",
+          null
+        ],
+        [
+          "F. BEYANNAME 324 — KVK 5/B SINAİ MÜLKİYET HAKLARI İSTİSNASI TOPLAMI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Beyanname 324 = C.7 (Satış/Devir İstisnası) + D.6 (Lisans/Royalty İstisnası) + E.8 (İmalat Katkı İstisnası). Yalnızca ilgili kazanç türleri dahil edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "İstisna Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "F.1  Satış/Devir İstisna Tutarı",
+          null,
+          "0",
+          "C.7'den",
+          null,
+          null,
+          null
+        ],
+        [
+          "F.2  Lisans/Royalty İstisna Tutarı",
+          null,
+          "0",
+          "D.6'dan",
+          null,
+          null,
+          null
+        ],
+        [
+          "F.3  İmalat Katkı İstisna Tutarı",
+          null,
+          "0",
+          "E.8'den",
+          null,
+          null,
+          null
+        ],
+        [
+          "F.4  TOPLAM 324 İSTİSNASI = F.1 + F.2 + F.3",
+          null,
+          "0",
+          "%50 × NEXUS × Toplam Buluş Kazancı",
+          null,
+          null,
+          null
+        ],
+        [
+          "★ %50 ORANI UYARISI: Beyanname 324 satırına yazılan tutar zaten %50 uygulanmış tutardır. Buluş kazancının tamamı değil, NEXUS oranıyla ağırlıklandırılmış %50'si 324 satırına yazılır. Kalan %50 + NEXUS dışı kısım normal kurumlar vergisine tabi kalır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H50",
+      "rows": [
+        [
+          "324 – KVK 5/B SINAİ MÜLKİYET HAKLARI İSTİSNASI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/B | %50 İstisna (NEXUS Oranlı) | Patent / Faydalı Model | Beyanname 324 | Kazancın Bulunması Halinde | NEXUS = (NARGe × 1.3) / TARGe max 1 | Satış + Lisans + İmalat | KVK 5/A (323) ve KVK 5/1 ile Karşılaştırma",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "Patent/FMB Durumu (A0.1)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı (A0.3)",
+          null,
+          null,
+          "EVET — %50 İstisna",
+          "EVET — %50 İstisna",
+          null,
+          null,
+          null
+        ],
+        [
+          "NARGe (B.4)",
+          null,
+          null,
+          "0",
+          "Nitelikli Ar-Ge harcaması",
+          null,
+          null,
+          null
+        ],
+        [
+          "TARGe (B.8)",
+          null,
+          null,
+          "0",
+          "Toplam Ar-Ge harcaması",
+          null,
+          null,
+          null
+        ],
+        [
+          "NEXUS Oranı % (B.10)",
+          null,
+          null,
+          "100",
+          "0-100 arası — ağırlıklandırma",
+          null,
+          null,
+          null
+        ],
+        [
+          "Satış/Devir İstisnası (C.7)",
+          null,
+          null,
+          "0",
+          "Varsa hesaplı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Lisans/Royalty İstisnası (D.6)",
+          null,
+          null,
+          "0",
+          "Varsa hesaplı",
+          null,
+          null,
+          null
+        ],
+        [
+          "İmalat Katkı İstisnası (E.8)",
+          null,
+          null,
+          "0",
+          "Varsa hesaplı",
+          null,
+          null,
+          null
+        ],
+        [
+          "324 TOPLAM İSTİSNA (F.4)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B. NEXUS ORANI VİZÜEL GÖSTERGESİ VE SENARYO ANALİZİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NEXUS oranı istisna büyüklüğünü doğrudan belirler. Türkiye'deki Ar-Ge ne kadar yüksekse NEXUS o kadar büyük, istisna o kadar avantajlı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Senaryo",
+          null,
+          "NEXUS Oranı",
+          null,
+          "İstisna Tutarı (Buluş Kaz.×NEXUS×%50)",
+          null,
+          null
+        ],
+        [
+          "Tam Türkiye Ar-Ge (Optimum)",
+          null,
+          "1",
+          null,
+          null,
+          null,
+          "İdeal senaryo",
+          null
+        ],
+        [
+          "Karma (%80 TR Ar-Ge)",
+          null,
+          "0.8",
+          null,
+          null,
+          null,
+          "Karma senaryo",
+          null
+        ],
+        [
+          "Düşük TR Ar-Ge (%30)",
+          null,
+          "0.3",
+          null,
+          null,
+          null,
+          "Düşük TR bağlantısı",
+          null
+        ],
+        [
+          "Sıfır TR Ar-Ge (Sadece Satın Alınan IP)",
+          null,
+          "0",
+          null,
+          null,
+          null,
+          "★ Satın alınan IP istisnasız",
+          null
+        ],
+        [
+          "GERÇEK NEXUS (Veri Girişinden)",
+          null,
+          "1",
+          "0",
+          null,
+          null,
+          "Fiili hesap",
+          null
+        ],
+        [
+          "C. KVK 5/B (324) vs KVK 5/A (323) vs KVK 5/1 — MADDE YAPISI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "324 — KVK 5/B",
+          null,
+          "323 — KVK 5/A-3",
+          null,
+          "Tipik KVK 5/1"
+        ],
+        [
+          "KVK Maddesi",
+          null,
+          "5/B (Ayrı Madde)",
+          "5/A (Ayrı Madde)",
+          "5/1 (Alt bentler)",
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "★ %50 (NEXUS Oranıyla)",
+          "★ %100",
+          "50%–100% (bende göre)",
+          null,
+          null,
+          null
+        ],
+        [
+          "Formül Gereksinimi",
+          null,
+          "★ NEXUS Hesabı Zorunlu",
+          "Hayır",
+          "Hayır",
+          null,
+          null,
+          null
+        ],
+        [
+          "Temel Şart",
+          null,
+          "Patent/FMB + TR Ar-Ge",
+          "SPK Lisansı + Yabancı Fon",
+          "Bent bazında",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kapsam",
+          null,
+          "Buluş Satış+Lisans+İmalat",
+          "Yabancı Fon Yönetimi",
+          "Çeşitli",
+          null,
+          null,
+          null
+        ],
+        [
+          "Beyanname",
+          null,
+          "324",
+          "323",
+          "301-322/325+",
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna Mekanizması",
+          null,
+          "NEXUS × %50 × Kazanç",
+          "Doğrudan %100",
+          "Doğrudan",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. DENETİM KONTROL LİSTESİ (K1–K14)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ Patent veya faydalı model belgesi var mı? Geçerlilik süresi kontrolü yapıldı mı?",
+          null,
+          "Belge numarası, veren otorite, geçerlilik süresi teyit edilmeli. Süresi dolan belge → Kapsam dışı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K2",
+          "★ İstisna oranı %50 mi uygulandı? (%100 değil!)",
+          null,
+          "Setimizin geri kalanından farklı — 5/B %50 tam istisna değil, %50 istisna.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K3",
+          "★ NEXUS oranı doğru hesaplandı mı? NARGe ve TARGe ayrıştırıldı mı?",
+          null,
+          "B bölümü NEXUS formülü: (NARGe × 1.3) / TARGe max 1. İlişkili kuruluş ayrımı kritik.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K4",
+          "★ Buluş Türkiye'de gerçekleştirilen Ar-Ge faaliyetiyle bağlantılı mı?",
+          null,
+          "NEXUS oranının sıfır veya düşük çıkması istisna avantajını sınırlar.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K5",
+          "Kazanç türleri (Satış/Lisans/İmalat) doğru ayrıştırıldı mı? Her biri ayrı hesaplandı mı?",
+          null,
+          "C, D, E bölümleri — her kazanç türü için ayrı NEXUS × %50 hesabı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K6",
+          "İmalat katkı oranı (E.4) belgelendi mi? Emsal analizi yapıldı mı?",
+          null,
+          "E.4 en tartışmalı kalem — GİB özelgesi alınması tavsiye edilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K7",
+          "Transfer fiyatlandırması analizi yapıldı mı? (Lisans ücreti emsal uygunluğu)",
+          null,
+          "Lisans ücreti emsale uygun olmalı — KVK Md.13. D bölümü royalty için gerekli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K8",
+          "İlişkili kuruluşlara ödenen Ar-Ge harcamaları NARGe'ye dahil edilmedi mi?",
+          null,
+          "B.4 = B.1 + B.2 + B.3 — B.6 (ilişkili kuruluş) ve B.7 (satın alınan IP) dışarıda.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K9",
+          "Patent belgesinin kapsadığı buluşla 324 kazancının bağlantısı belgelendi mi?",
+          null,
+          "Kazanç, patent belgesindeki buluştan kaynaklanmalı — sözleşme ve teknik belgelerle.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K10",
+          "Birden fazla patent varsa her biri için ayrı NEXUS ve kazanç hesabı yapıldı mı?",
+          null,
+          "Her buluş için ayrı B, C, D, E bölümü veya yardımcı tablo.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K11",
+          "324 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "'Zarar Olsa Dahi' değil — dönem zararında uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K12",
+          "Beyanname 324 = F.4 uyumlu mu?",
+          null,
+          "C.7 + D.6 + E.8 toplamı F.4'e eşit olmalı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K13",
+          "Ar-Ge harcamaları muhasebe belgesiyle kanıtlanıyor mu?",
+          null,
+          "Ar-Ge merkezi/TGB/üniversite fatura ve kayıtları — NARGe'nin dayanağı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K14",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G27",
+      "rows": [
+        [
+          "324 – KVK 5/B SINAİ MÜLKİYET HAKLARI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/B | %50 İstisna | Patent/FMB | Satış+Lisans+İmalat | Beyanname 324",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — PATENT/FAYDALI MODEL SATIŞI / DEVRİ (Kazanç Türü 1)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Devir]",
+          "102 Bankalar",
+          "Patent/FMB satış bedeli tahsilatı",
+          "[C.1 TL]",
+          "—",
+          "Devir sözleşmesi+TPMK"
+        ],
+        [
+          "Kr",
+          "[Devir]",
+          "260 Haklar (Patent/FMB)",
+          "Belgeli hakkın net kayıtlı değeriyle aktiften çıkış",
+          "—",
+          "[C.2 TL]",
+          "260 kartı+268"
+        ],
+        [
+          "Kr",
+          "[Devir]",
+          "268 Birikmiş İtfa Payları",
+          "Birikmiş itfa kapatma",
+          "—",
+          "[İtfa]",
+          "268 kartı"
+        ],
+        [
+          "Kr",
+          "[Devir]",
+          "679 Diğer Olağandışı Kâr",
+          "Patent satış kazancı — C.4 tutarı",
+          "—",
+          "[C.4]",
+          "KV 324 (C.7 istisna)"
+        ],
+        [
+          "★ MUHASEBE NOT: Patent bedeli 260 hesabında kayıtlıysa aktiften çıkış 260'tan yapılır. Ar-Ge aşamasında 263'e kaydedilmiş ve 267'ye aktarılmışsa 267 hesabı kullanılır. İtfa payı yıllık %20'yi (patent ömrüne göre) aşamaz — 268 bakiyesi teyit edilmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — LİSANS / ROYALTY GELİRİ TAHAKKUKU (Kazanç Türü 2)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Dönem]",
+          "120 Alacaklar — Royalty",
+          "Lisans sözleşmesi dönemsel royalty tahakkuku",
+          "[D.1 TL]",
+          "—",
+          "Lisans sözleşmesi"
+        ],
+        [
+          "Kr",
+          "[Dönem]",
+          "640 Faaliyet Gelirleri / 600 Hizmet Geliri (ROYALTY — 5/B İSTİSNA)",
+          "Royalty geliri — KVK 5/B 324 istisna kapsamında",
+          "—",
+          "[D.1]",
+          "KV 324 (D.6 istisna)"
+        ],
+        [
+          "ROYALTY TAHAKKUKU — YÜZEYSELLİK ENGELİ: Lisans sözleşmesi emsal oranına göre hazırlanmalıdır (KVK Md.13 riski). Aynı gruptaki lisans alana uygulanan oran piyasa oranıyla karşılaştırılmalı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — İMALAT KATKI PAYI HESAPLAMA VE MUHASEBE NOTU (Kazanç Türü 3)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "İmalat katkısı için ayrı bir muhasebe kaydı yapılmaz — kazanç yıl sonu KV hesabında belirlenir. E.5 İmalat Katkı Kazancı = E.3 Brüt Kazanç × E.4 Katkı Oranı. Katkı oranı (E.4) emsal analizi veya maliyet tabanlı yöntemle belirlenir ve YMM dosyasında belgelenir. Bu kalem için GİB özelgesi alınması YMM müteselsil sorumluluğu açısından şiddetle önerilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 4 — AR-GE HARCAMALARININ MUHASEBE KAYDI (NEXUS Dayanağı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Dönem]",
+          "630 Araştırma-Geliştirme Giderleri / 750 Ar-Ge Giderleri",
+          "NARGe — Türkiye'deki kendi bünyesinde Ar-Ge harcaması",
+          "[B.1 TL]",
+          "—",
+          "Ar-Ge merkezi kayıtları"
+        ],
+        [
+          "Dr",
+          "[Dönem]",
+          "630/750 Ar-Ge Giderleri — Dış Ar-Ge (İlişkisiz)",
+          "NARGe — İlişkisiz kuruluşlara ödenen Ar-Ge harcaması",
+          "[B.2+B.3]",
+          "—",
+          "Fatura+Sözleşme"
+        ],
+        [
+          "Dr",
+          "[Dönem]",
+          "630/750 Ar-Ge Giderleri — Dış Ar-Ge (İlişkili)",
+          "TARGe — İlişkili kuruluşlara ödenen — NARGe'ye dahil edilmez",
+          "[B.6]",
+          "—",
+          "Grup şirket faturası"
+        ],
+        [
+          "Kr",
+          "[Dönem]",
+          "102 Bankalar / 320 Borçlar",
+          "Ar-Ge harcaması ödemeleri",
+          "—",
+          "[Toplam]",
+          null
+        ],
+        [
+          "NEXUS DAYANAKLARININÖNEMİ: B.1 (kendi bünyesinde) + B.2 (dış/ilişkisiz yurt içi) + B.3 (dış/ilişkisiz yurt dışı) = NARGe. Bu kalemlerin muhasebe kayıtları ve faturalarla belgelenmesi NEXUS oranının geçerliliği için zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D9",
+      "rows": [
+        [
+          "324 – KVK 5/B SINAİ MÜLKİYET HAKLARI İSTİSNASI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/B | %50 İstisna (NEXUS Oranıyla) | Patent / Faydalı Model | NEXUS Formülü | 3 Kazanç Türü | Transfer Fiyatlandırması | KVK 5/A-323 Karşılaştırma",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/B — Yasal Çerçeve, %50 Oranı ve NEXUS Yaklaşımı",
+          "KVK MADDE 5/B — SINAİ MÜLKİYET HAKLARINDA İSTİSNA:\n\nKAPSAM: Türkiye'de gerçekleştirilen Ar-Ge/tasarım faaliyetleri sonucu ortaya çıkan ve\npatent veya faydalı model belgesiyle tescil edilmiş buluşlardan elde edilen kazançlar.\n\nİSTİSNA ORANI: %50 (setimizin geri kalanından farklı — diğerleri %100)\n\nNEXUS YAKLAŞIMI:\nİstisna Tutarı = Buluş Kazancı × min[(NARGe × 1.3) / TARGe, 1] × %50\nNARGe: Türkiye'de kendi + ilişkisiz taraflara ödenen Ar-Ge harcaması\nTARGe: Toplam Ar-Ge (NARGe + ilişkili kuruluş ödemeleri + satın alınan IP)\n×1.3: Türkiye Ar-Ge'sini teşvik eden katsayı\n\nKAZANÇ TÜRLERİ:\n① Satış/Devir/Temlik kazancı (C bölümü)\n② Lisans/Kira/Royalty geliri (D bölümü)\n③ Buluşun üretimde kullanılmasından imalat katkı payı (E bölümü)\n\nBEYANNAME: 324. Satır | 'Kazancın Bulunması Halinde' | %50",
+          "KVK Md. 5/B | 2 Seri No.lu KVK GT | SMK"
+        ],
+        [
+          "N2",
+          "NEXUS — İlişkili Kuruluş Ayrımı ve Kritik Hatalar",
+          "NEXUS HESABINDA EN KRİTİK NOKTA — İLİŞKİLİ/İLİŞKİSİZ AYRIMI:\n\nNARGe'YE DAHİL:\n✓ Kurumun kendi bünyesinde Türkiye'de yaptığı Ar-Ge (B.1)\n✓ İlişkili OLMAYAN Türkiye'deki araştırma kurumlarına ödenen (B.2)\n✓ İlişkili OLMAYAN yabancı araştırma kurumlarına ödenen (B.3)\n\nNARGe'YE DAHİL DEĞİL (TARGe'ye girer):\n✗ İlişkili kuruluşlara (grup şirketi) ödenen Ar-Ge (B.6)\n✗ Satın alınan patent/buluş bedeli (B.7)\n\nTIPIK HATALAR:\n(1) Grup şirketine ödenen Ar-Ge'yi NARGe'ye dahil etmek\n(2) ×1.3 katsayısını uygulamadan NEXUS hesaplamak\n(3) NEXUS oranı >1 çıktığında 1 ile sınırlandırmamak\n(4) Satın alınan IP için NEXUS =0 olduğunu gözden kaçırmak",
+          "KVK Md. 5/B | OECD Aksiyon 5 (NEXUS)"
+        ],
+        [
+          "N3",
+          "İmalat Katkı Oranı ve Transfer Fiyatlandırması",
+          "İMALAT KATKI ORANI (E.4) — EN TARTIŞMALI KALEM:\nBuluşun kazanca katkı oranı iki yöntemden biriyle belirlenir:\n① Maliyet tabanlı: Buluşa özgü ek maliyet / Toplam ürün maliyeti\n② Emsal tabanlı: Buluşsuz emsal ürün marjı ile karşılaştırma\nGİB özelgesi alınması YMM müteselsil sorumluluğu açısından zorunludur.\n\nTRANSFER FİYATLANDIRMASI:\nLisans royalty oranı emsale uygun olmalı (KVK Md.13).\nOECD TP kılavuzunda IP transferi — maliyet katkı payı yöntemi veya TNMM.\nİlişkili kişiye lisans → TP formu ve belge zorunlu.\n\n49 No.lu Tebliğ + YMM KULLANSIN:\n'...TPMK tarafından verilen [belge no] sayılı patent/faydalı model belgesi\n  kapsamındaki buluştan elde edilen [satış/lisans/imalat katkı] kazancının\n  %50'si KVK Md.5/B kapsamında NEXUS oranı uygulanarak istisnaya tabi tutulmuştur'\n'NEXUS oranı: NARGe × 1.3 / TARGe = [değer]'",
+          "KVK Md.5/B | Md.13 | OECD TP | SMK"
+        ],
+        [
+          "KDV, DAMGA VERGİSİ VE AR-GE DESTEKLERI: Patent satışı/lisansında KDV (mal devri mi, hizmet mi?) boyutu ayrıca incelenmeli. TUBITAK, KOSGEB, Kalkınma Ajansı Ar-Ge destekleri — hibe/destek — TARGe hesabında destek almış harcamaların dikkate alınıp alınmayacağı tartışmalı. Ar-Ge Kanunu (5746 s.K.) desteğiyle 5/B istisnasının birlikte kullanımı için GİB özelgesi alınması önerilir. YMM müteselsil sorumluluk: SM-SMMM-YMM K. Md.12.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F33",
+      "rows": [
+        [
+          "324 – KVK 5/B SINAİ MÜLKİYET HAKLARI İSTİSNASI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/B | %50 İstisna | NEXUS Oranı | Patent / Faydalı Model | Beyanname 324 | Ar-Ge Harcama Kayıtları | Transfer Fiyatlandırması | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (PATENT + NEXUS + KAZANÇ TÜRÜ)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "3 Kritik: Patent/FMB Belgesi + NEXUS Harcama Kanıtları + Kazanç Türü Sözleşmesi",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Patent veya Faydalı Model Belgesi (TPMK veya Yabancı Ülke)",
+          "Belge numarası, kapsam, geçerlilik tarihi içermelidir.\nSüresi dolan belge kapsam dışı.",
+          "TPMK veya ilgili ülke patent ofisi — belge aslı/onaylı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ NEXUS Ar-Ge Harcama Ayrıştırma Tablosu (NARGe / TARGe)",
+          "B.1 (kendi), B.2 (ilişkisiz yurt içi), B.3 (ilişkisiz yurt dışı), B.6 (ilişkili), B.7 (satın alınan).\nHer kalem fatura ve sözleşmeyle belgelenmeli.",
+          "Muhasebe kayıtları + Ar-Ge merkezi raporları",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Ar-Ge Faaliyeti Kanıt Belgesi (Proje Raporu / Ar-Ge Merkezi Belgesi)",
+          "Buluşun Türkiye'de Ar-Ge faaliyetiyle bağlantısını gösteren proje raporu.\nAr-Ge merkezi, TGB, üniversite belgesi varsa eklenmeli.",
+          "Ar-Ge merkezi kayıtları / TGB tescil belgesi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Kazanç Türü Sözleşmesi",
+          "Satış/Devir: Devir sözleşmesi + TPMK devir tescil belgesi.\nLisans/Royalty: Lisans sözleşmesi + sözleşme bedeli teyidi.\nİmalat: Ürün maliyet kartı + katkı oranı analizi.",
+          "İlgili sözleşme türü",
+          null
+        ],
+        [
+          null,
+          "5",
+          "NEXUS Hesaplama Raporu (B Bölümü)",
+          "NEXUS = min[(NARGe × 1.3) / TARGe, 1] formülünü ve bileşenlerini gösteren ayrıntılı tablo.\nYMM tasdik dosyasının teknik özüdür.",
+          "B bölümü + Muhasebe ekstresi",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 324. Satır",
+          "F.4 = C.7 + D.6 + E.8 ile uyumlu. 'Kazancın Bulunması Halinde' bölümünde.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — TRANSFER FİYATLANDIRMASI, İMALAT KATKI VE EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Transfer Fiyatlandırması Dokümantasyonu (Lisans İşlemi İçin)",
+          "Lisans royalty oranının emsale uygunluk analizi.\nKVK Md.13 kapsamında TP formu ve karşılaştırılabilir analiz.",
+          "TP Analiz Raporu",
+          null
+        ],
+        [
+          null,
+          "8",
+          "İmalat Katkı Oranı Analizi (E.4 İçin)",
+          "Buluşun ürün kazancına katkı oranını belirleyen emsal veya maliyet analizi.\nGİB özelgesi alınması tavsiye edilir.",
+          "Bağımsız uzman raporu veya GİB özelgesi",
+          null
+        ],
+        [
+          null,
+          "9",
+          "GİB Özelgesi (İmalat Katkısı ve Tartışmalı Konular İçin)",
+          "İmalat katkı oranı, 5746 ile 5/B etkileşimi, hibe/destek etkisi gibi tartışmalı konularda.",
+          "GİB özelge sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Patent/FMB belgesi mevcut ve geçerli mi?",
+          "Belge no, geçerlilik tarihi teyit edilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ İstisna oranı %50 mi uygulandı? (%100 değil!)",
+          "Setimizin en kritik %50 uyarısı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ NEXUS oranı (NARGe × 1.3 / TARGe) doğru hesaplandı mı?",
+          "İlişkili/ilişkisiz ayrımı. Max 1 sınırı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ İlişkili kuruluşlara ödenen Ar-Ge NARGe'den çıkarıldı mı?",
+          "B.6 TARGe'ye dahil ama NARGe'ye değil.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Kazanç türleri (C/D/E) ayrı hesaplandı mı?",
+          "Satış, lisans, imalat — her biri ayrı NEXUS × %50.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "İmalat katkı oranı (E.4) belgelendi mi?",
+          "Emsal veya maliyet tabanlı analiz — GİB özelgesi.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Transfer fiyatlandırması analizi yapıldı mı?",
+          "Lisans royalty emsal uygunluğu — KVK Md.13.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "324 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "'Zarar Olsa Dahi' değil.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "324 = F.4 uyumlu mu?",
+          "C.7 + D.6 + E.8 toplamı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 324'ün setin EN KARMAŞIK DOSYASI olmasının 3 nedeni: (1) %50 İSTİSNA — diğerleri %100. (2) NEXUS ORANI FORMÜLÜ — setimizin tek formüllü istisna hesabı. (3) 3 AYRI KAZANÇ TÜRÜ — Satış+Lisans+İmalat, her biri ayrı hesap ve belge. KVK 5/B, 5/A (323) ve 5/1'den farklı üçüncü özel madde kategorisidir. İmalat katkısı için GİB özelgesi, lisans için TP analizi zorunludur. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

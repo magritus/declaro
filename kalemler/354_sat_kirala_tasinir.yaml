@@ -24,12 +24,62 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Bir taşınır varlığı (makine, araç, ekipman) finansal kiralama şirketine veya katılım bankasına satıp geri kiralayarak kullanıyorsunuz?"
   info_modal: |
-    KVK 5/1-j kapsamında, kurumların taşınır varlıklarını sat-kirala-geri al işlemi çerçevesinde
-    finansal kiralama şirketine veya katılım/kalkınma/yatırım bankasına satmaları ve geri
-    kiralamaları durumunda doğan satış kazancı %100 istisnadır.
-    İstisna edilen kazanç 549 özel fon hesabına alınır ve kira süresi boyunca kira
-    ödemelerine orantılı olarak amortize edilir. Kira süresi sonunda varlığın geri alınması
-    istisnasının sürdürülmesi için zorunludur.
+    ## Genel Çerçeve
+
+    **KVK Madde 5/1-j** kapsamında, kurumların taşınır varlıklarını (makine, araç, ekipman,
+    teçhizat) **sat-kirala-geri al (sale and leaseback)** işlemi çerçevesinde **6361 Sayılı
+    Kanun kapsamında BDDK lisanslı finansal kiralama şirketine** ya da **katılım bankasına /
+    kalkınma-yatırım bankasına** satmaları ve finansal kiralama sözleşmesiyle geri kiralamaları
+    durumunda doğan satış kazancı **%100 istisnadır.** İstisna tutarı 549 Özel Fonlar hesabına
+    alınır ve kira süresi boyunca kira ödemelerine orantılı olarak amortize edilir.
+
+    ## Temel Koşullar
+
+    - Satılan varlık **taşınır** olmalıdır (makine, araç, ekipman, teçhizat); taşınmaz (bina,
+      arazi, fabrika) için 355 kodu kullanılmalıdır.
+    - Alıcı kurum; **6361 s.K. kapsamında BDDK lisanslı finansal kiralama şirketi**, katılım
+      bankası veya kalkınma/yatırım bankası olmalıdır; mevduat bankası kapsam dışıdır.
+    - **Satış ve geri kiralama sözleşmeleri** eş zamanlı ya da birbirine bağlı olarak düzenlenmiş
+      olmalıdır; bağımsız ayrı işlemler tartışmalı kabul edilir.
+    - **Kira süresi sonunda geri alma taahhüdü/opsiyonu** finansal kiralama sözleşmesinde yazılı
+      olarak bulunmalıdır; şifahi taahhüt geçersizdir.
+    - Satış kazancının tamamı **satış yılında 549 Özel Fonlar hesabına** alınmalıdır; her
+      dönem kira payına orantılı olarak fon amortize edilir ve kira süresi sonunda 549 sıfırlanır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Geri alım gerçekleşmezse istisna iptal edilir:** Kira süresi sonunda geri alım yapılmadığı
+      takdirde istisna geçersiz sayılarak cezalı tarhiyat riski doğar; geri alım planının sözleşme
+      aşamasında hukuki güvence altına alınması kritiktir.
+    - **549 fon amortizasyonu hatalı hesaplanırsa:** Her dönem azaltılacak fon tutarı = Başlangıç
+      Fonu × (Dönem Kira / Toplam Kira); yanlış hesaplama beyanname hatasına yol açar.
+    - **Piyasa değerinden uzak satış:** Satış bedelinin emsal piyasa değerinden önemli ölçüde
+      sapması **KVK Madde 13 kapsamında örtülü kazanç dağıtımı riskini** tetikler; bağımsız
+      değerleme/ekspertiz raporu bu riski azaltır.
+    - **Alıcı kurum türü:** SPK lisanslı VKŞ'ye yapılan sat-kirala işlemleri bu satıra (354)
+      değil **356 satırına** girilmelidir; yanlış kod kullanımı beyanname hatasıdır.
+    - **İstisna yalnızca satış yılında kullanılır:** Sonraki yıllarda 354 satırına tekrar
+      yazılmaz; 549 fon amortizasyonu beyanname kalemlerine yansıtılmaz.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-j (354) istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır.** Dönem
+    mevzuatı ve GİB açıklamaları takip edilerek her dönem ayrıca analiz edilmelidir; kesin bir
+    "düşülür" veya "düşülmez" pozisyon alınmadan önce güncel rehber ve özelgeler incelenmelidir.
+
+    ## Pratik Notlar
+
+    - **3 aşamalı döngüsel yapı** izlenmelidir: (1) Satış — varlık FK/bankaya devredilir ve
+      satış kazancı %100 istisna kapsamında 549'a alınır; (2) Geri kiralama — FK/banka varlığı
+      finansal kiralama sözleşmesiyle kuruma kiralar, kira ödemeleri gider olarak indirilir ve
+      fon kira payına orantılı azaltılır; (3) Geri alım — kira süresi sonunda satın alma hakkı
+      kullanılır, geri alım bedeli yeni aktif değer olur ve 549 sıfırlanır.
+    - **BDDK lisans teyidi:** Alıcı kurumun BDDK lisanslı FK şirketi ya da ilgili banka türünde
+      olduğu BDDK resmi web sitesinden dönem başında teyit edilmelidir.
+    - **Satış faturası ve teslim-tesellüm tutanağı:** Taşınırın fiziken FK şirketine teslim
+      edildiğini belgeler; muhasebede aktiften çıkış kaydıyla uyumlu olmalıdır.
+    - **YMM tasdik raporu:** 49 No.lu Tebliğ kapsamında tek satırda ≥500.000 TL veya toplamda
+      ≥1.000.000 TL olması halinde YMM tasdik raporu zorunludur.
   kapi_sorulari:
     - id: varlik_tasinir_mi
       soru: "Satılan varlık taşınır mı? (Makine, araç, ekipman, teçhizat — taşınmaz/bina/arazi değil)"

@@ -1,0 +1,1393 @@
+{
+  "file": "384_KVK_Gecici_Md14_4_KarPayi_Faiz.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:H63",
+      "rows": [
+        [
+          "384 – KVK GEÇİCİ MADDE 14/4 | KÂR PAYI VE FAİZ İSTİSNASI | PARAGRAF 4 — GENEL / VADESİZ / DÖNEMSELİ KAPSAR | 383–384 MÜKERRERLİK | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/4 (Paragraf 4) | Genel Kâr Payı/Faiz İstisnası (Dönem Sonu Kısıtı Yok) | Beyanname 384 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ | 383–384 Mükerrerlik Önlenmeli",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "383 – 384 AYRIMI (PARAGRAF 4 İÇİNDE):\n  383 (Md.14/4): 'Dönem Sonu DEĞERLEMESİNDEN DOĞAN kâr payı ve faiz' → 31 Aralık tahakkuk esaslı | 181/642.\n  384 (Md.14/4): 'Kâr payı ve faiz istisnası' → Dönem sonu sınırı YOK — doğrudan ödeme, vade sonu, dönemsel tahsilat kapsar | 102/642.\n  ★★ 383–384 MÜKERRERLİK: 383 tahakkuku yapılan araç için vade/tahsilat döneminde → 383'ün önceki yıl kısmı 384'ten çıkarılır. (372-373, 376-377, 380-381 kuralının Paragraf 4 eşdeğeri)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 384 kapsamındaki kâr payı/faiz istisnası YİAKV matrahından DÜŞÜLEMEZ. KVK Geçici Md.14 tüm kodları E.7 DÜŞÜLEMEZ listesindedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  KVK Geçici Md.14/4 kapsamında işlem gerçekleştirildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "384, KVK Geçici Md.14/4 kapsamı araçlardan elde edilen kâr payı ve faize uygulanır. Paragraf 4 kapsam analizi zorunludur.",
+          null
+        ],
+        [
+          "A0.2  ★ Bu kâr payı/faiz 383 (dönem sonu tahakkuk) kapsamında DEĞİL mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "383: 31 Aralık tahakkuk (dönem sonu değerleme). 384: Doğrudan ödeme/vade/dönemsel kâr payı/faiz. Aynı tutarın hem 383 hem 384'e yazılması mükerrerlik oluşturur.",
+          null
+        ],
+        [
+          "A0.3  Tahsilat/Ödeme Türü belirlendi mi?",
+          null,
+          null,
+          null,
+          null,
+          "Vade Sonu Tahsilatı",
+          "384'ün kapsamı: Vade sonu + Dönemsel tahsilat + Doğrudan ödeme — 383'ten farklı tüm tahsilatlar.",
+          null
+        ],
+        [
+          "A0.4  ★ 383–384 MÜKERRERLİK kontrolü yapıldı mı?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Önceki yılda 383 tahakkuku yapılmış araç vadeye giriyorsa: Net 384 = Toplam − Önceki Yıl 383 Tahakkuku. (372-373, 376-377, 380-381 kuralının P4 eşdeğeri)",
+          null
+        ],
+        [
+          "A0.5  Paragraf 1/2/3 ile mükerrerlik analizi yapıldı mı?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "Paragraf 4 araçlarının 373/377/381 kapsamına girmediği teyit edilmeli.",
+          null
+        ],
+        [
+          "A0.6  ★ 384 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14 tüm kodları YİAKV matrahından DÜŞÜLEMEZ. E.7'de 384 de kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (383 ayrımı), A0.4 (383-384 mükerrerlik), A0.6 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/384-01",
+          null
+        ],
+        [
+          "383 Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Dönem sonu tahakkuk (383) ile mükerrerlik önleme zorunlu",
+          null
+        ],
+        [
+          "B. 383–384 MUTABAKAT AÇIKLAMASI VE ARAÇ BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "383–384 MUTABAKAT KURALI (YILI AŞAN VADELİ PARAGRAF 4 ARAÇLARI):\n  Örnek: P4 araç açılış Mart 2024 | Vade Eylül 2025 | Toplam kâr payı: 30.000 TL\n  Aralık 2024 sonu (383): 14.500 TL tahakkuk → 2024 KV beyannamesi 383 satırı.\n  Eylül 2025 vade (384): 30.000 − 14.500 = 15.500 TL net → 2025 KV beyannamesi 384 satırı.\n  KURAL: Net 384 = Toplam − Önceki Yıl 383 Tahakkuku. Çapraz: 383 + 384 = Toplam kâr payı/faiz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  Paragraf 4 TL Araç Türü",
+          null,
+          "TL Mevduat",
+          "KVK Geçici Md.14/4 kapsamı TL araç türü.",
+          null,
+          null,
+          "Araç sözleşmesi",
+          null
+        ],
+        [
+          "B.2  384 Tahsilat Türü",
+          null,
+          "Vade Sonu Tahsilatı",
+          "384'ün 383'ten farklı kapsamı: Vade/dönemsel/doğrudan tahsilat.",
+          null,
+          null,
+          "Ödeme belgesi",
+          null
+        ],
+        [
+          "B.3  Tahsilat/Ödeme Tarihi (veya Dönem)",
+          null,
+          null,
+          "Kâr payı/faizin tahsil edildiği tarih veya dönem.",
+          null,
+          null,
+          "Banka belgesi",
+          null
+        ],
+        [
+          "B.4  Toplam Kâr Payı/Faiz (Bu Araç İçin Banka Bildirimi)",
+          null,
+          null,
+          "Tüm araç süresi boyunca oluşan toplam kâr payı/faiz.",
+          null,
+          null,
+          "Banka bildirimi",
+          null
+        ],
+        [
+          "B.5  ★ Önceki Dönem(ler) 383 Tahakkuk Tutarı (Bu Araç İçin)",
+          null,
+          null,
+          "Bu araç için önceki KV dönemlerinde 383 kapsamında istisna uygulanan toplam. Yoksa 0.",
+          null,
+          null,
+          "Önceki dönem KV 383 satırı",
+          null
+        ],
+        [
+          "B.6  Net 384 Tutarı (B.4 − B.5)",
+          null,
+          "0",
+          "C tablosunda otomatik hesaplanır. Çapraz: 383+384 = B.4.",
+          null,
+          null,
+          "Formül (C Sütun 7)",
+          null
+        ],
+        [
+          "B.7  ★ Paragraf 4 Kapsamı Teyit Edildi mi?",
+          null,
+          "EVET",
+          "Paragraf 4 kapsam analizi belgesi hazırlandı.",
+          null,
+          null,
+          "Paragraf 4 analizi",
+          null
+        ],
+        [
+          "C. PARAGRAF 4 ARACI BAZINDA KÂR PAYI/FAİZ VE 383 MUTABAKAT TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SÜTUN 5 (yeşil çerçeve): Toplam kâr payı/faiz — ANA VERİ. SÜTUN 6 (turuncu çerçeve): Önceki yıl 383 tutarı — mükerrerlik önleme. SÜTUN 7 = Net 384. SÜTUN 8 = İstisna.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Araç Adı/No",
+          "Açılış/Dönem",
+          "Tahsilat Türü",
+          "Tahsilat Tarihi",
+          "Toplam Kâr Payı/Faiz (TL)",
+          "Önceki Yıl 383 (TL)",
+          "Net 384 (TL)",
+          "İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Paragraf 4 Kâr Payı/Faiz → Beyanname 384",
+          null,
+          null,
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "SÜTUN 5 (yeşil çerçeve): Banka bildirimi toplam kâr payı/faiz — ANA VERİ. SÜTUN 6 (turuncu): Önceki yıl 383 tutarı (yoksa 0). SÜTUN 7 = Net 384 = Sütun5 − Sütun6. ÇAPRAZ: 383 (tahakkuk) + 384 (net) = Toplam kâr payı/faiz (banka bildirimi).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. KÂR PAYI VE FAİZ İSTİSNASI ÖZET — BEYANNAME 384",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam Kâr Payı/Faiz (C Sütun 5)",
+          null,
+          null,
+          "0",
+          "Banka bildirimi toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Önceki Yıl 383 Mahsubu",
+          null,
+          null,
+          "0",
+          "C Sütun 6 — bu tutar 384'e YAZILMAZ",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  ★ NET 384 İSTİSNA TUTARI → BEYANNAME 384",
+          null,
+          null,
+          "0",
+          "→ Beyanname 384 | Kazancın Bulunması Halinde",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.4  Kapsam Dışı Kâr Payı/Faiz",
+          null,
+          null,
+          null,
+          "Paragraf 4 dışı araçlar — vergilendirilir",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. 383–384 PARAGRAF 4 ZİNCİR MUTABAKAT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "383 (Dönem Sonu Tahakkuk)",
+          "384 (Kâr Payı/Faiz)",
+          "Toplam",
+          "Çapraz Kontrol",
+          "Beyanname",
+          "YİAKV"
+        ],
+        [
+          "Zaman",
+          null,
+          "31 Aralık tahakkuk",
+          "Tahsilat/vade/dönemsel",
+          "383+384=Toplam",
+          "Eşitlik zorunlu",
+          "Ayrı satırlar",
+          "İkisi DÜŞÜLEMEZ"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "181 Dr / 642 Kr",
+          "102 Dr / (181+642 veya 642) Kr",
+          "Ayrı muhasebe",
+          "Çapraz teyit",
+          "Ayrı beyanname",
+          "E.7"
+        ],
+        [
+          "Kapsam",
+          null,
+          "Dönem sonu accrual",
+          "Genel kâr payı/faiz",
+          "P4 tam paketi",
+          "383+384 dengesi",
+          "383/384",
+          "Her ikisi de"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 384 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — Net 384 (Toplam − Önceki 383) | KVK Geçici Md.14/4",
+          null,
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 384 asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) 383–384 MÜKERRERLİK: Önceki yıl 383 mahsubu zorunlu (C Sütun 6). Çapraz: 383 + 384 = Toplam kâr payı/faiz (banka bildirimi). EN KRİTİK HESAP HATASI.\n(3) 383 vs 384 AYRIMI: 383 = 31 Aralık tahakkuk. 384 = Genel kâr payı/faiz (tahsilat/vade/dönemsel).\n(4) PARAGRAF 4 NİTELİĞİ: 373/377/381 kapsamına girmeyen araçlar. Paragraf analizi zorunlu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H32",
+      "rows": [
+        [
+          "384 – KVK GEÇİCİ MD.14/4 KÂR PAYI VE FAİZ | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 4 Genel Kâr Payı/Faiz | 383-384 Mükerrerlik | Beyanname 384 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Tahsilat Türü (A0.3)",
+          null,
+          null,
+          null,
+          "Vade Sonu Tahsilatı",
+          "Vade/Dönemsel/Doğrudan",
+          null,
+          null
+        ],
+        [
+          "Toplam Kâr Payı/Faiz (D.1)",
+          null,
+          null,
+          null,
+          "0",
+          "Banka bildirimi",
+          null,
+          null
+        ],
+        [
+          "383 Mahsubu (D.2)",
+          null,
+          null,
+          null,
+          "0",
+          "Mükerrerlik önleme",
+          null,
+          null
+        ],
+        [
+          "384 NET İSTİSNA (D.3)",
+          null,
+          null,
+          null,
+          "0",
+          "Kazancın bulunması halinde",
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          "Tüm KVK Geçici Md.14 kodları E.7",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. 373 / 377 / 381 / 384 — VADE VE GENEL KÂR PAYI/FAİZ DÖRT PARAGRAF KARŞILAŞTIRMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          "373 (Md.14/1-b) P1",
+          "377 (Md.14/2) P2",
+          "381 (Md.14/3) P3",
+          "384 (Md.14/4) P4",
+          "Ortak",
+          "YİAKV"
+        ],
+        [
+          "Dayanak",
+          null,
+          "P1: Aktif yab.para/altın → TL KKM",
+          "P2: Borç → TL araç",
+          "P3: Altın → TL araç",
+          "P4: Özel kapsam araç",
+          "Vade/genel kâr payı",
+          "Dördü DÜŞÜLEMEZ"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "102/(181+642)",
+          "102/(181+642)",
+          "102/(181+642)",
+          "102/(181+642) veya 102/642",
+          "Benzer mekanizma",
+          "E.7"
+        ],
+        [
+          "Mükerrerlik",
+          null,
+          "372-373",
+          "376-377",
+          "380-381",
+          "383-384 (YENİ)",
+          "Önceki tahakkuk mahsubu",
+          "Her çift"
+        ],
+        [
+          "Önceki Tahakkuk",
+          null,
+          "372 mahsubu",
+          "376 mahsubu",
+          "380 mahsubu",
+          "383 mahsubu",
+          "Net = Toplam − Önceki",
+          "Çapraz eşitlik"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ Paragraf 4 kapsamı analizi yapıldı ve belgelendi mi?",
+          null,
+          "GİB Beyan Reh. No:606 + CB Kararları referans alındı.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K2",
+          "★ Bu kâr payı/faiz 383 (dönem sonu tahakkuk) kapsamında değil mi?",
+          null,
+          "383 = 31 Aralık accrual. 384 = Genel kâr payı/faiz. Ayrım açık olmalı.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K3",
+          "★ 383–384 MÜKERRERLİK kontrolü (C Sütun 6) yapıldı mı?",
+          null,
+          "Önceki yıl 383 mahsup edildi. Net 384 doğru hesaplandı. EN KRİTİK.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K4",
+          "Kâr payı/faiz tutarları banka bildirimiyle mutabık mı?",
+          null,
+          "Her araç satırı banka belgesinden doğrulanmış.",
+          null,
+          null,
+          "Eksik",
+          null
+        ],
+        [
+          "K5",
+          "ÇAPRAZ: 383 + 384 = Toplam kâr payı/faiz mi?",
+          null,
+          "İki kodun toplamı banka toplam bildirimine eşit olmalı.",
+          null,
+          null,
+          "Eksik",
+          null
+        ],
+        [
+          "K6",
+          "Vade sonu muhasebe kaydı doğru mu? (102 / 181 Kr + 642 Kr)",
+          null,
+          "Önceki 383 181 kapatma + 642 yeni kısım.",
+          null,
+          null,
+          "Eksik",
+          null
+        ],
+        [
+          "K7",
+          "373/377/381 (Paragraf 1/2/3) ile mükerrerlik analizi yapıldı mı?",
+          null,
+          "Paragraf 4 araçları → 384. Diğer paragraflara karıştırma yok.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K8",
+          "★★ 384 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "KVK Geçici Md.14 tüm kodları YİAKV E.7'de DÜŞÜLEMEZ.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K9",
+          "Beyanname 384 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          null,
+          "Eksik",
+          null
+        ],
+        [
+          "K10",
+          "Tahsilat türü doğru belirlendi mi? (Vade/Dönemsel/Doğrudan)",
+          null,
+          "B.2 tahsilat türü seçimi yapıldı.",
+          null,
+          null,
+          "Uygun",
+          null
+        ],
+        [
+          "K11",
+          "Birden fazla Paragraf 4 aracı varsa her biri ayrı satırda mı?",
+          null,
+          "Her araç C tablosunda ayrı satır ve ayrı 383 mahsubu.",
+          null,
+          null,
+          "Eksik",
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          null,
+          "Uygun",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:H21",
+      "rows": [
+        [
+          "384 – KVK GEÇİCİ MD.14/4 KÂR PAYI VE FAİZ | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Vade Tahsilatı | 383 Accrual Kapatma | 373/377/381/384 Karşılaştırma",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — VADE SONU (AYNI YILDA AÇILIP KAPANAN P4 ARACI — ÖNCEKİ YIL 383 YOK)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Tahsilat Tarihi]",
+          "102 Bankalar",
+          "Kâr payı/faiz tahsilatı — tamamı bu dönem → Beyanname 384",
+          "[Tutar]",
+          "—",
+          null,
+          "Banka belgesi"
+        ],
+        [
+          "Kr",
+          "[Tahsilat Tarihi]",
+          "642 Faiz Gelirleri / 644 Kâr Payları",
+          "KVK Geçici Md.14/4 → Beyanname 384 (tamamı)",
+          "—",
+          "[Tutar]",
+          null,
+          "KV 384"
+        ],
+        [
+          "KAYIT 2 — VADE SONU (YILI AŞAN VADELİ P4 ARACI — ÖNCEKİ YIL 383 VAR)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "383 (dönem sonu tahakkuk) yapılmış araç vadeye giriyorsa: 181 kapatma + yeni 642 kısmı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Tahsilat Tarihi]",
+          "102 Bankalar",
+          "Toplam kâr payı/faiz tahsilatı (önceki 383 + bu yıl yeni)",
+          "[Toplam]",
+          "—",
+          null,
+          "Banka belgesi"
+        ],
+        [
+          "Kr",
+          "[Tahsilat Tarihi]",
+          "181 Gelir Tahakkukları",
+          "Önceki yıl 383 tahakkukunun kapatılması",
+          "—",
+          "[383 Tutar]",
+          null,
+          "181 kapatma"
+        ],
+        [
+          "Kr",
+          "[Tahsilat Tarihi]",
+          "642 Faiz Gelirleri",
+          "Bu yılın yeni kısmı → Beyanname 384 (Net)",
+          "—",
+          "[Net 384]",
+          null,
+          "KV 384"
+        ],
+        [
+          "ÇAPRAZ: 383 (2024) + 384 (2025 Net) = Toplam kâr payı/faiz. C tablosu Sütun 6 mükerrerlik önler.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — 373 / 377 / 381 / 384 DÖRT PARAGRAF YAN YANA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          null,
+          "Ref"
+        ],
+        [
+          "373",
+          "[Vade]",
+          "102/(181+642)",
+          "P1 AKT: KKM vade kâr payı/faiz → 373",
+          "—",
+          "[373]",
+          null,
+          "KV 373"
+        ],
+        [
+          "377",
+          "[Vade]",
+          "102/(181+642)",
+          "P2 PAS: Borç araç vade kâr payı/faiz → 377",
+          "—",
+          "[377]",
+          null,
+          "KV 377"
+        ],
+        [
+          "381",
+          "[Vade]",
+          "102/(181+642)",
+          "P3 ALT: Altın araç vade kâr payı/faiz → 381",
+          "—",
+          "[381]",
+          null,
+          "KV 381"
+        ],
+        [
+          "384",
+          "[Vade/Dönem]",
+          "102/(181+642)",
+          "P4: Genel kâr payı/faiz → 384 (BU)",
+          "—",
+          "[384]",
+          null,
+          "KV 384"
+        ],
+        [
+          "YİAKV: 373+377+381+384 dördünün de geliri YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7). Aynı araç için yalnızca biri uygulanabilir. 383-384 çapraz kontrol: 383 (tahakkuk) + 384 (net) = Toplam kâr payı/faiz banka bildirimi.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:H9",
+      "rows": [
+        [
+          "384 – KVK GEÇİCİ MD.14/4 KÂR PAYI VE FAİZ | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | 373/377/381 Karşılaştırması | 383-384 Mükerrerlik | ★★ YİAKV",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/4 — 383 vs 384 Ayrımı ve Genel Kâr Payı/Faiz Mekanizması",
+          "384 (PARAGRAF 4 — KÂR PAYI VE FAİZ İSTİSNASI) TANIMI:\n\n383'ten FARK:\n• 383 'Dönem sonu DEĞERLEMESİNDEN DOĞAN kâr payı ve faiz' → 31 Aralık tahakkuk, 181/642\n• 384 'Kâr payı ve faiz istisnası' → Genel, zamana sınırsız, doğrudan ödeme/vade/dönemsel\n\n384 KAPSAMINA GIREN TAHSİLAT TÜRLERİ:\n① Vade sonu kâr payı/faiz tahsilatı (araç vadeye ulaştığında)\n② Dönemsel kâr payı/faiz ödemeleri (aylık, üç aylık, yıllık)\n③ Doğrudan tahsilat (belirli bir tarih ön koşulu olmaksızın)\n④ 383 (dönem sonu tahakkuku) dışında kalan her türlü P4 kâr payı/faizi\n\n383–384 MÜKERRERLİK KURALI:\nÖnceki yıl 383 tahakkuku yapılmışsa: Net 384 = Toplam − 383 Tahakkuku\nÇapraz: 383 + 384 = Toplam kâr payı/faiz (banka bildirimi toplamı)\n\nBEYANNAME: 384 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/4 | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ 383–384 MÜKERRERLİK KURALI — Paragraf 4'ün Kritik Hesap Dengesi",
+          "383-384 MÜKERRERLİK SENARYOsu (372-373, 376-377, 380-381 kuralının P4 eşdeğeri):\n\nP4 Araç: Mart 2024 açılış | Eylül 2025 vade | Toplam kâr payı: 30.000 TL\n\n2024 KV (31.12.2024):\n→ Dönem sonu tahakkuk (383): 14.500 TL | Dr 181 / Kr 642\n→ 2024 beyannamesi 383: 14.500 TL ✓\n\n2025 KV (Eylül 2025 vade):\n→ Tahsilat: 30.000 TL\n→ Dr 102 / Kr 181 (14.500 kapatma) + Kr 642 (15.500 yeni)\n→ 2025 beyannamesi 384: 15.500 TL (NET) ✓\n\nÇAPRAZ: 383 (14.500) + 384 (15.500) = 30.000 TL (banka bildirimi) ✓\n\nHATA: 384'e 30.000 TL yazılırsa → 14.500 TL mükerrer istisna → Tarhiyat.",
+          "KVK Geçici Md.14/4 | 383 Çalışma Kâğıdı",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — KVK Geçici Md.14 Tüm Kodları DÜŞÜLEMEZ",
+          "KVK GEÇİCİ MD.14 KAPSAMININ TAMAMININ YİAKV MATRAHINDA DÜŞÜLEMEZLİĞİ:\n\nParagraf 1: 370|371|372|373|374 → BEŞİ DE DÜŞÜLEMEZ\nParagraf 2: 375|376|377|378 → DÖRDÜ DE DÜŞÜLEMEZ\nParagraf 3: 379|380|381|382 → DÖRDÜ DE DÜŞÜLEMEZ\nParagraf 4: 383|384|... → HEPSI DÜŞÜLEMEZ\n\nYİAKV E.7 (Güncellenmeli — 384 eklenmeli):\n'KVK Geçici Md.14 (Tüm Paragraflar 1-4, Kodlar 370-384+)\n→ DÜŞÜLEMEZ ✗ | Beyanname 370/.../383/384'\n\nYMM, 384'ün eklenmesiyle E.7'yi güncellemelidir.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Paragraf 4 Kâr Payı/Faiz Zinciri: 383 → 384",
+          "PARAGRAF 4 ZİNCİRİ (383-384):\n\n383 (Md.14/4): Paragraf 4 dönem sonu faiz/kâr payı tahakkuku (31 Aralık accrual)\n384 (Md.14/4): Paragraf 4 genel kâr payı/faiz (vade, dönemsel, doğrudan)\n\nParalel zincirler:\n  P1: 372 (dönem sonu) → 373 (vade)\n  P2: 376 (dönem sonu) → 377 (vade)\n  P3: 380 (dönem sonu) → 381 (vade)\n  P4: 383 (dönem sonu) → 384 (vade/genel) ← BU\n\n384 = 373, 377, 381'in Paragraf 4 karşılığı (ama adı daha genel).\n\nÖZELGE: Paragraf 4 kapsamı tartışmalıysa GİB özelgesi alınmalıdır.",
+          "KVK Geçici Md.14/4 | VUK Md.280/281",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN (Önceki Yıl 383 Olan Araç İçin):\n'...KVK Geçici Madde 14/4 kapsamındaki [Araç Türü] hesabından elde edilen toplam\n[Brüt Tutar] TL kâr payı/faizin önceki dönemde 383 istisnasına konu edilen\n[383 Tutarı] TL düşülerek kalan [Net 384] TL, KVK Geçici Madde 14/4 kapsamında\nkurumlar vergisinden istisna edilmiş ve yurt içi asgari kurumlar vergisi\nmatrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...384 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...Toplam kâr payının tamamı 384'e yazılmıştır.' (383 mahsubu yapılmamış)\n'...383 ve 384 aynı araç için birlikte uygulanabilir.' (Mükerrerlik açıklaması eksik)\n\nKRİTİK RİSKLER:\n(1) 383 mahsubu yapılmadan 384'e toplam yazmak — MÜKERRERLİK.\n(2) 384'ü YİAKV matrahından düşmek.\n(3) Paragraf 4 kapsam analizi yapmadan 384 uygulamak.\n(4) 373/377/381 araçlarını 384'e yazmak (paragraf karışıklığı).",
+          "49 No.lu Tebliğ | KVK Geçici Md.14/4 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (384): 384 = 373, 377, 381'in Paragraf 4 karşılığı (daha genel adlandırma). 383 (dönem sonu tahakkuk) + 384 (genel kâr payı/faiz) = Paragraf 4 tam kâr payı/faiz paketi. 383-384 mükerrerlik (Sütun 6 mahsubu) kritik. KVK Geçici Md.14 tüm kodları YİAKV E.7'de DÜŞÜLEMEZ. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F30",
+      "rows": [
+        [
+          "384 – KVK GEÇİCİ MD.14/4 KÂR PAYI VE FAİZ | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | Araç/Banka Bildirimi | 383 Mükerrerlik | Paragraf 4",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Banka/Araç Kâr Payı/Faiz Bildirimi (Toplam Tutar)",
+          "Tahsilat/ödeme dönemine ait kâr payı/faiz bildirimi. C tablosu Sütun 5'in dayanağıdır.",
+          "Banka/araç belgesi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Önceki Dönem KV Beyannamesi 383 Satırı (Bu Araç İçin)",
+          "Önceki yılda bu araç için 383 kapsamında istisna uygulanan tutar.\nC Sütun 6 (mükerrerlik önleme) için zorunlu. 383+384=Toplam kâr payı/faiz eşitliği kontrol edilmeli.",
+          "Önceki dönem KV beyannamesi 383 satırı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Paragraf 4 Kapsam Analizi Belgesi",
+          "KVK Geçici Md.14/4 kapsamını gösteren YMM tarafından hazırlanan kapsam analizi notu.",
+          "YMM tarafından hazırlanır",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Muhasebe Yevmiyesi — Tahsilat Kaydı (102 Dr / 181 Kr + 642 Kr)",
+          "Tahsilat kaydı: 102 borç / 181 alacak (önceki 383 kapatma) + 642 alacak (yeni kısım).",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 384. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış.",
+          "GİB e-Beyanname",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "GİB Özelgesi (Paragraf 4 Kapsam Belirsizliğinde)",
+          "Paragraf 4 kapsamı tartışmalıysa GİB özelgesi alınmalıdır.",
+          "GİB özelge sistemi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "181 Hesap Ekstresi — 383 Accrual Kapatma",
+          "181 kapatılan tutar = Sütun 6 — mükerrerlik kontrol belgesi.",
+          "181 hesap ekstresi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Paragraf 4 kapsam analizi yapıldı ve belgelendi mi?",
+          "GİB Beyan Reh. + CB Kararları referans.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Bu kâr payı/faiz 383 (dönem sonu tahakkuk) kapsamında değil mi?",
+          "383 vs 384 ayrımı açık.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 383-384 MÜKERRERLİK (C Sütun 6) kontrolü yapıldı mı?",
+          "Önceki yıl 383 mahsup edildi.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Tahsilat tutarları banka bildirimiyle mutabık mı?",
+          "Her satır belgeyle doğrulanmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "383 + 384 = Toplam kâr payı/faiz eşitliği sağlandı mı?",
+          "Çapraz kontrol — banka bildirimi toplamına eşit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Vade muhasebe kaydı doğru? (102 / 181 Kr + 642 Kr)",
+          "181 kapatma + 642 yeni kısım.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "373/377/381 ile doğru ayrıştırıldı mı?",
+          "P4 araçları → 384. Diğer paragraflara karıştırma yok.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★★ 384 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "Tüm KVK Geçici Md.14 kodları YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 384 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 384 = 373, 377, 381'in Paragraf 4 karşılığı (genel kâr payı/faiz formülasyonu). 383 (dönem sonu tahakkuk) + 384 (genel kâr payı/faiz) = Paragraf 4 tam paketi. 383-384 mükerrerlik (C Sütun 6 mahsubu) en kritik kontrol. KVK Geçici Md.14 tüm kodları YİAKV E.7'de DÜŞÜLEMEZ. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

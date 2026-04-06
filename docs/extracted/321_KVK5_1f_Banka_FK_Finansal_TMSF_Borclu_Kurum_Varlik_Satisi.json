@@ -1,0 +1,1725 @@
+{
+  "file": "321_KVK5_1f_Banka_FK_Finansal_TMSF_Borclu_Kurum_Varlik_Satisi.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G76",
+      "rows": [
+        [
+          "321 – BANKA / FİNANSAL KİRALAMA / FİNANSAL ŞİRKET / TMSF'YE BORÇLU KURUMLARIN VARLIK SATIŞ KAZANCI İSTİSNASI | KVK Md.5/1-f | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-f | %100 Tam İstisna | 2 Yıl Aktifinde Bulundurma Şartı YOK | Fon Hesabı (549) Zorunluluğu YOK | Taşınmaz Ticareti Yasağı YOK | Beyanname Satır 321 — Kazancın Bulunması Halinde İndirilecek",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 351/352/353 İLE KRİTİK FARKLAR: ① 2 yıl aktifinde bulundurma şartı YOKTUR. ② 549 Özel Fonlar hesabına alma zorunluluğu YOKTUR. ③ Taşınmaz ticareti yapan şirketler de yararlanabilir. ④ %100 tam istisna — kısmi oran yok. ⑤ Satılan varlık türü geniş: Taşınmaz, taşınır, iştirak hissesi, kurucu/intifa senedi, rüçhan hakkı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ EN KRİTİK ŞART: Kurumun banka, finansal kiralama şirketi, finansal şirket veya TMSF'ye gerçek anlamda BORÇLU olması ve satışın bu borcun ödenmesine yönelik yapılması. Borç ilişkisinin belgelenmesi (kredi sözleşmesi, temerrüt yazısı vb.) zorunludur. Alacaklı kurum türü (Banka / FK Şirketi / Finansal Şirket / TMSF) doğrulanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Kurum banka, finansal kiralama şirketi, finansal şirket veya TMSF'ye borçlu mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK — ANA ŞART: KVK 5/1-f yalnızca bu alacaklı kurumlara borçlu olan kurumlar için geçerlidir. Banka: 5411 sayılı Kanun kapsamındaki mevduat/katılım/kalkınma/yatırım bankaları. Finansal kiralama: 6361 s.K. kapsamında lisanslı FK şirketleri. Finansal şirket: 6361 s.K. kapsamında faktoring, finansman, varlık yönetim şirketleri. TMSF: Tasarruf Mevduatı Sigorta Fonu.",
+          null
+        ],
+        [
+          "A0.2  Alacaklı kurumun türü nedir? (B bölümünde ayrıca belgelenecek)",
+          null,
+          null,
+          null,
+          "Banka",
+          "Alacaklı kurumun BDDK/SPK lisansı veya TMSF statüsü belgelenmelidir. Alacaklı kurum türü yanlış belirlenmişse istisna geçersizdir.",
+          null
+        ],
+        [
+          "A0.3  ★ Borç ilişkisi yazılı sözleşme/belgeyle kanıtlanıyor mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Kredi sözleşmesi, leasing sözleşmesi veya faktoring sözleşmesi + temerrüt yazısı, icra takibi belgesi veya yeniden yapılandırma anlaşması. Belgesiz istisna uygulaması vergi incelemesinde kesinlikle reddedilir.",
+          null
+        ],
+        [
+          "A0.4  ★ Satışın amacı borcu ödemek mi? (Borç ödeme amacı belgelendi mi?)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Satıştan elde edilen hasılat borç ödemesine tahsis edilmelidir. Hasılatın alacaklı kuruma aktarıldığı banka dekontu / ödeme belgesi zorunludur. Satış hasılatının borç dışında kullanılması istisnanın sorgulanmasına yol açar.",
+          null
+        ],
+        [
+          "A0.5  Satılan varlık türü nedir? (C bölümünde ayrıntılı analiz)",
+          null,
+          null,
+          null,
+          "Taşınmaz",
+          "KVK 5/1-f: Taşınmaz ve iştirak hissesi yanı sıra taşınır varlıklar da kapsam içindedir. (351/352/353'ten farklı olarak taşınır mal satışları da bu istisna kapsamında olabilir.) Kurucu senedi, intifa senedi ve rüçhan hakkı da kapsam dahilindedir.",
+          null
+        ],
+        [
+          "A0.6  Satış gerçekten yapıldı mı? Mülkiyet/tapu/tescil devri tamamlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Satışın fiilen tamamlanması zorunludur. Taşınmaz: Tapu devri. İştirak Hissesi: Devir sözleşmesi + tescil. Taşınır: Teslim belgesi / fatura. Satış vaadi yeterli değildir.",
+          null
+        ],
+        [
+          "A0.7  YİAKV matrahında 321 istisnasının etkisi analiz edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-f istisnasının YİAKV (KVK 32/C) matrahına etkisi dönem mevzuatı ve GİB açıklamalarıyla analiz edilmelidir.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.1 (borçluluk), A0.3 (belge), A0.4 (satış amacı) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Borçlu Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "İstisna uygulayan borçlu kurumun tam adı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Alacaklı Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Banka / FK Şirketi / Finansal Şirket / TMSF adı",
+          null
+        ],
+        [
+          "Borcun Türü",
+          null,
+          null,
+          null,
+          null,
+          "Kredi, leasing, faktoring, TMSF devri vb.",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25",
+          null
+        ],
+        [
+          "B. BORÇ İLİŞKİSİ ANALİZİ — Alacaklı Kurum ve Borç Belgesi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 5/1-f'nin TEK özgün şartı bu bölümdedir. 2 yıl aktif şartı, taşınmaz ticareti yasağı ve 549 fon şartı UYGULANMAZ. Ancak borç ilişkisinin belgelenmesi ve satışın borç ödemesine yönelik olduğunun kanıtlanması zorunludur. Belge eksikliği = İstisna iptali riski.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Bilgi",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "B.1  Alacaklı Kurum Türü",
+          null,
+          "Banka",
+          "Banka: 5411 s.K. Finansal kiralama/faktoring/finansman: 6361 s.K. TMSF: 5411 s.K. Ek Md.1",
+          null,
+          "Alacaklı kurumun BDDK lisansı veya kuruluş belgesi dosyaya eklenmelidir.",
+          null
+        ],
+        [
+          "B.2  Borç Türü / Kaynak Sözleşme",
+          null,
+          "Kredi",
+          "Borcu doğuran sözleşme türü — Kredi sözleşmesi no, tarih ve tutar",
+          null,
+          "Sözleşme kopyası tasdik dosyasında zorunludur.",
+          null
+        ],
+        [
+          "B.3  Toplam Borç Tutarı (TL)",
+          null,
+          null,
+          "Satış tarihi itibariyle alacaklıya olan anaparasal + faiz + diğer borç toplamı",
+          null,
+          "Alacaklı kurumun borç bakiye yazısı veya ekstre ile teyit edilmeli.",
+          null
+        ],
+        [
+          "B.4  Borcun Temerrüde/Takibe Düşme Durumu",
+          null,
+          "Temerrütte",
+          "Temerrüt veya icra durumu istisna için zorunlu koşul değildir; ancak borcun mevcudiyeti ve satış amacıyla ilişkisi belgelenmelidir.",
+          null,
+          "Temerrüt yazısı, icra dosyası veya yeniden yapılandırma anlaşması",
+          null
+        ],
+        [
+          "B.5  Satıştan Elde Edilecek Hasılatın Borç Ödemesine Kullanılacağı Teyit Edildi mi?",
+          null,
+          "EVET",
+          "Hasılatın alacaklı kuruma transfer edileceğine dair yazılı taahhüt veya fiilen gerçekleşmiş ise ödeme dekontu dosyaya eklenmelidir.",
+          null,
+          "★ Satış amacı = Borç ödeme. Başka amaçla kullanım istisna riskini artırır.",
+          null
+        ],
+        [
+          "B.6  Satış Hasılatının Alacaklıya Aktarıldığına Dair Dekont/Belge",
+          null,
+          "Mevcut",
+          "Fiili satış sonrası: Banka transferi / Virman dekontu alacaklı kuruma.",
+          null,
+          "Belge yoksa istisna geçerliliği risk altında. YMM tasdik dosyasına ekle.",
+          null
+        ],
+        [
+          "C. SATILAN VARLIK ANALİZİ — Tür, Nitelik ve Satış Koşulları",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 5/1-f'de satılan varlık için 2 yıl şartı ARANMAZ. Taşınmaz ticareti yapan şirket de bu istisnadan yararlanabilir. Satışın gerçekten yapılmış ve mülkiyet devrinin tamamlanmış olması zorunludur. Satış bedeli KVK Md.13 kapsamında emsal bedele uygun olmalıdır (alacaklıya satış dahil).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Satılan Varlık Türü",
+          null,
+          "Taşınmaz",
+          "5/1-f'de taşınmaz ve hisse dışında taşınır varlıklar da kapsam içindedir.",
+          null,
+          "Varlık türüne göre satış belgesi farklılaşır (tapu / devir belgesi / fatura).",
+          null
+        ],
+        [
+          "C.2  Varlığın Tanımı / Adresi / Kodu",
+          null,
+          null,
+          "Taşınmaz: Ada/Parsel. Hisse: Şirket adı ve pay oranı. Taşınır: Marka/Model/Seri no.",
+          null,
+          "Tekil tanımlama zorunludur.",
+          null
+        ],
+        [
+          "C.3  Varlığın Muhasebe Defter Değeri (TL)",
+          null,
+          null,
+          "Aktif kayıtlı maliyet veya net değer (amortismandan sonra).",
+          null,
+          "Maliyet belgesi + amortis. tablosu dosyaya eklenecek.",
+          null
+        ],
+        [
+          "C.4  Satış Bedeli (TL)",
+          null,
+          null,
+          "Sözleşmedeki satış fiyatı. Alacaklıya satışta emsal bedel zorunludur (KVK Md.13).",
+          null,
+          "Bağımsız değerleme raporu: Alacaklıya veya ilişkili kişiye satışta zorunlu.",
+          null
+        ],
+        [
+          "C.5  Satış Giderleri (TL)",
+          null,
+          null,
+          "Tapu harcı (satıcı payı), komisyon, noter, ekspertiz bedeli vb.",
+          null,
+          "Belgelenmiş satış giderleri E tablosuna dahil edilecek.",
+          null
+        ],
+        [
+          "C.6  Satışın Tamamlanma Tarihi",
+          null,
+          null,
+          "Taşınmaz: Tapu devir tarihi. Hisse: Tescil/devir tarihi. Taşınır: Teslim/fatura tarihi.",
+          null,
+          "Satış tamamlama belgesi (tapu senedi / fatura / devir belgesi).",
+          null
+        ],
+        [
+          "C.7  Alıcının Kimliği — Alacaklı Kurumun Kendisi mi, Üçüncü Kişi mi?",
+          null,
+          "Üçüncü Kişi",
+          "Alacaklıya satış: KVK Md.13 emsal bedel zorunluluğu. Üçüncü kişiye satış: Normal piyasa değeri beklenir.",
+          null,
+          "İlişkili kişi satışında bağımsız değerleme veya emsal analizi şarttır.",
+          null
+        ],
+        [
+          "D. EMSAL BEDEL VE İLİŞKİLİ KİŞİ SATIŞI — KVK Md.13 Analizi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satış bedelinin piyasa değeriyle uyumlu olması gerekir. Alacaklı banka/kuruluş ile ilişkili kişilere satışta KVK Md.13 emsal bedel analizi zorunludur. Borcun alacaklıya devri (dation in payment / borç yerine ifa) da satış sayılır ve emsal bedel uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D.1  Satış Fiyatı ile Bağımsız Değerleme/Ekspertiz Raporu Uyumlu mu?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Piyasa değeri ile satış fiyatı arasındaki fark örtülü kazanç dağıtımı riski yaratabilir.",
+          null
+        ],
+        [
+          "D.2  Bağımsız Değerleme Raporu Mevcut mu? (Özellikle Taşınmaz Satışında)",
+          null,
+          null,
+          "EVET",
+          null,
+          "Taşınmaz satışında: SPK lisanslı değerleme kuruluşu raporu önerilir. Hisse satışında: Mali analiz veya piyasa karşılaştırması.",
+          null
+        ],
+        [
+          "D.3  Alacaklıya Doğrudan Satış Var mı? (Dation in Payment / Borç Yerine İfa)",
+          null,
+          null,
+          "HAYIR",
+          null,
+          "Alacaklıya borcun ödenmesi amacıyla varlık teslimi → Satış sayılır → Emsal bedel zorunlu. KVK Md.13 + Özelge uygulaması: Emsal bedel ile muhasebe değeri arasındaki fark kurum kazancı.",
+          null
+        ],
+        [
+          "E. SATIŞ KAZANCI VE %100 İSTİSNA HESABI — KVK 5/1-f",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "%100 TAM İSTİSNA: KVK 5/1-f uyarınca satış kazancının TAMAMI istisna kapsamındadır. 351/352/353'teki gibi %50/%75 kısmi istisna uygulanmaz. Zarar durumunda: KKEG kuralı uygulanır mı tartışmalıdır — ihtiyatlı yaklaşım için D/N bölümüne bakın. Fon hesabı (549) zorunluluğu YOKTUR.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  Satış Bedeli",
+          null,
+          "0",
+          "C.4'ten otomatik",
+          null,
+          "Tapu/Sözleşme değeri",
+          null
+        ],
+        [
+          "E.3  Satış Giderleri",
+          null,
+          "0",
+          "C.5'ten otomatik",
+          null,
+          "Tapu, komisyon, noter vb.",
+          null
+        ],
+        [
+          "E.2  Maliyet / Defter Değeri (C.3)",
+          null,
+          "0",
+          "C.3'ten otomatik",
+          null,
+          "Aktif kayıtlı maliyet/net değer",
+          null
+        ],
+        [
+          "E.4  SATIŞ KAZANCI = E.1 − E.2 − E.3",
+          null,
+          "0",
+          "Pozitif = Kazanç, Negatif = Zarar",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.5  DURUM",
+          null,
+          "SIFIR",
+          "Otomatik değerlendirme",
+          null,
+          "Zarar: N5 Denetçi Notunu okuyun",
+          null
+        ],
+        [
+          "E.6  KVK 5/1-f İSTİSNA TUTARI (%100)",
+          null,
+          "0",
+          "%100 Tam İstisna — 5/1-e gibi kısmi değil",
+          null,
+          "→ Beyanname 321 Satırı",
+          null
+        ],
+        [
+          "E.7  Vergiye Tabi Kısım",
+          null,
+          "0",
+          "Kazanç durumunda sıfır — %100 istisna uygulanır",
+          null,
+          "Zarar varsa E.5 notuna bak",
+          null
+        ],
+        [
+          "F. 5/1-f İSTİSNASINDA UYGULANMAYAN / UYGULANAN KURALLAR",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 5/1-f'de 351/352/353'ten farklı olarak aşağıdaki yükümlülükler UYGULANMAZ. Bu, istisnanın idari yükünü önemli ölçüde azaltır. Ancak borç ilişkisi belgeleme yükümlülüğü çok daha ağırdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "F.1",
+          "549 Özel Fonlar Hesabına Alma Zorunluluğu",
+          null,
+          "UYGULANMAZ — 5/1-f'de fon hesabı şartı yoktur",
+          null,
+          "351/352/353'te zorunlu olan 549 fon kaydı 5/1-f'de aranmaz.",
+          null
+        ],
+        [
+          "F.2",
+          "2 Yıl Aktifinde Bulundurma Şartı",
+          null,
+          "UYGULANMAZ — 5/1-f'de süre şartı yoktur",
+          null,
+          "Varlığı dün satın alıp bugün satsanız dahi istisna uygulanabilir.",
+          null
+        ],
+        [
+          "F.3",
+          "Taşınmaz Ticareti Yasağı",
+          null,
+          "UYGULANMAZ — Ticaret yapan şirket de yararlanabilir",
+          null,
+          "351'den en kritik fark. Taşınmaz ticareti faaliyeti olan şirket de 5/1-f'den yararlanır.",
+          null
+        ],
+        [
+          "F.4",
+          "%100 Tam İstisna (Kısmi Değil)",
+          null,
+          "UYGULANIR — %100 tam istisna (351'de %50, 352/353'te %75)",
+          null,
+          "İstisna oranı en yüksek olan istisna budur.",
+          null
+        ],
+        [
+          "F.5",
+          "Borç İlişkisini Belgeleme Zorunluluğu",
+          null,
+          "ZORUNLU — Sözleşme + Borç bakiye yazısı + Ödeme belgesi",
+          null,
+          "Bu belgelerin yokluğu istisna başvurusunu tamamen geçersiz kılar.",
+          null
+        ],
+        [
+          "F.6",
+          "Satış Amacının Borç Ödemesi Olduğunu Kanıtlama",
+          null,
+          "ZORUNLU — Hasılatın alacaklıya aktarıldığının belgelenmesi",
+          null,
+          "★ En kritik yükümlülük. Belge yoksa vergi incelemesinde istisna reddedilir.",
+          null
+        ],
+        [
+          "F.7",
+          "KVK Md.13 Emsal Bedel (İlişkili Kişi/Alacaklıya Satışta)",
+          null,
+          "UYGULANIR — İlişkili kişiye veya alacaklıya satışta emsal bedel şartı",
+          null,
+          "Bağımsız değerleme raporu alacaklıya veya ilişkili kişiye satışta zorunlu önerilir.",
+          null
+        ],
+        [
+          "G. BEYANNAME 321 — 5/1-f VARLIK SATIŞ KAZANCI İSTİSNASI SONUCU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "G.1  TOPLAM İSTİSNA → Beyanname Satır 321 (Kazancın Bulunması Halinde İndirilecek — %100 Tam İstisna)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "E.6 — Satış Kazancı × %100"
+        ],
+        [
+          "KRİTİK UYARILAR: (1) En kritik şart: Borç ilişkisinin yazılı belgeyle ispat edilmesi. (2) Satışın borç ödemeye yönelik olduğunun kanıtlanması (hasılat transferi dekontu). (3) Alacaklı kurumun 5411/6361 s.K. kapsamında olması veya TMSF statüsü teyit edilmeli. (4) İlişkili kişi/alacaklıya satışta emsal bedel zorunluluğu (KVK Md.13). (5) 5/1-f ve 5/1-e aynı varlık için birlikte uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G61",
+      "rows": [
+        [
+          "321 – BANKA/FK/FİNANSAL ŞİRKET/TMSF BORÇLU | HESAPLAMALAR VE DENETİM KONTROL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-f | %100 Tam İstisna | 2 Yıl Şartı YOK | Fon Hesabı YOK | Taşınmaz Ticareti Yasağı YOK | Borçluluk İlişkisi Belgeleme ZORUNLU | Beyanname 321 — Kazancın Bulunması Halinde",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Alacaklı Kurum Türü (A0.2)",
+          null,
+          null,
+          "Banka",
+          "Banka/FK/Fin.Şirket/TMSF",
+          null,
+          null
+        ],
+        [
+          "Borç Belgesi Durumu (A0.3)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Satış Amacı (A0.4)",
+          null,
+          null,
+          "EVET",
+          "Borç ödeme amaçlı olmalı",
+          null,
+          null
+        ],
+        [
+          "Satılan Varlık Türü (A0.5)",
+          null,
+          null,
+          "Taşınmaz",
+          "Taşınmaz/Hisse/Taşınır vb.",
+          null,
+          null
+        ],
+        [
+          "Satış Bedeli (C.4)",
+          null,
+          null,
+          "0",
+          "Sözleşme değeri",
+          null,
+          null
+        ],
+        [
+          "Maliyet / Defter Değeri (C.3)",
+          null,
+          null,
+          "0",
+          "Aktif değeri",
+          null,
+          null
+        ],
+        [
+          "Satış Kazancı (E.4)",
+          null,
+          null,
+          "0",
+          "Brüt kazanç",
+          null,
+          null
+        ],
+        [
+          "321 İSTİSNA TUTARI %100 (E.6)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "Değerleme Uyumu (D.1)",
+          null,
+          null,
+          "EVET",
+          "Emsal bedel kontrolü",
+          null,
+          null
+        ],
+        [
+          "B. 5/1-f (321) vs 5/1-e (351/352/353) — KVK 5/1 KAPSAMINDA TAM KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "321 — 5/1-f (Borçlu Kurum)",
+          null,
+          "351/352/353 — 5/1-e",
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100 TAM İSTİSNA",
+          null,
+          "351: %50 | 352/353: %75",
+          null,
+          null
+        ],
+        [
+          "2 Yıl Aktif Şartı",
+          null,
+          "YOK — Süre şartı aranmaz",
+          null,
+          "VAR — 730 gün zorunlu",
+          null,
+          null
+        ],
+        [
+          "549 Fon Hesabı",
+          null,
+          "YOK — Fon kaydı gerekmez",
+          null,
+          "VAR — 5 yıl tutma zorunlu",
+          null,
+          null
+        ],
+        [
+          "Taşınmaz Ticareti Yasağı",
+          null,
+          "YOK — Ticaret yapan da yararlanır",
+          null,
+          "VAR — 351'de kapsam dışı",
+          null,
+          null
+        ],
+        [
+          "Satılan Varlık Kapsamı",
+          null,
+          "Taşınmaz + Hisse + Taşınır + Diğer",
+          null,
+          "351: Taşınmaz | 352: Hisse | 353: Diğer",
+          null,
+          null
+        ],
+        [
+          "Ön Koşul",
+          null,
+          "Banka/FK/Fin.Şir./TMSF'ye Borçlu Olmak",
+          null,
+          "Herhangi bir kurum için geçerli",
+          null,
+          null
+        ],
+        [
+          "Beyanname Bölümü",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          null
+        ],
+        [
+          "Zarar Durumu",
+          null,
+          "Tartışmalı — İhtiyatlı yaklaşım benimsenmeli",
+          null,
+          "Zarar × %50/%75 = KKEG",
+          null,
+          null
+        ],
+        [
+          "Emsal Bedel",
+          null,
+          "Alacaklıya/ilişkili kişiye satışta zorunlu",
+          null,
+          "İlişkili kişiye satışta zorunlu",
+          null,
+          null
+        ],
+        [
+          "Belgeleme Yükü",
+          null,
+          "AĞIR — Borç belgesi + Hasılat transferi",
+          null,
+          "Nispeten daha az belge",
+          null,
+          null
+        ],
+        [
+          "Tercih Sırası",
+          null,
+          "Borçlu kurumlar için %100 istisna avantajı",
+          null,
+          "Genel kural — herkes için",
+          null,
+          null
+        ],
+        [
+          "C. ALACAKLI KURUM TÜRLERİ REHBERİ — 5411/6361 s.K. ve TMSF",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Alacaklı Kurum Türü",
+          null,
+          "Yasal Dayanak",
+          null,
+          "Örnek / Kapsam",
+          null
+        ],
+        [
+          "Mevduat Bankası",
+          "5411 s.K. Md.3",
+          null,
+          "Akbank, İş Bankası, Garanti, Yapı Kredi, QNB Finansbank vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Katılım Bankası",
+          "5411 s.K. Md.3",
+          null,
+          "Ziraat Katılım, Vakıf Katılım, Kuveyt Türk, Albaraka, Türkiye Finans",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kalkınma ve Yatırım Bankası",
+          "5411 s.K. Md.3",
+          null,
+          "Türkiye Kalkınma ve Yatırım Bankası, İller Bankası, TSKB, Türk Eximbank",
+          null,
+          null,
+          null
+        ],
+        [
+          "Finansal Kiralama Şirketi",
+          "6361 s.K. Md.3",
+          null,
+          "BDDK lisanslı tüm finansal kiralama şirketleri — ALD Otomotive vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Faktoring Şirketi",
+          "6361 s.K. Md.3",
+          null,
+          "BDDK lisanslı faktoring şirketleri",
+          null,
+          null,
+          null
+        ],
+        [
+          "Finansman Şirketi",
+          "6361 s.K. Md.3",
+          null,
+          "BDDK lisanslı finansman şirketleri — Toyota Finansman vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Varlık Yönetim Şirketi (VYŞ)",
+          "6362 s.K. / 5411 s.K.",
+          null,
+          "BDDK lisanslı VYŞ — Bankalara ait takipli alacakları devralan şirketler",
+          null,
+          null,
+          null
+        ],
+        [
+          "TMSF",
+          "5411 s.K. Ek Md.1",
+          null,
+          "Tasarruf Mevduatı Sigorta Fonu — El koyulan şirket/banka alacakları",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. DENETİM KONTROL LİSTESİ (K1–K13)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "★ Borçlu olunan kurum banka, FK, finansal şirket veya TMSF mi? Lisans/statü belgesi var mı?",
+          null,
+          "5411 s.K. (Banka), 6361 s.K. (FK/Faktoring/Finansman), 5411 Ek Md.1 (TMSF). BDDK lisansı veya TMSF statüsü yazısı tasdik dosyasına eklenmelidir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Borç ilişkisi yazılı belgeyle kanıtlandı mı? Kredi/Leasing/Faktoring sözleşmesi mevcut mu?",
+          null,
+          "Sözleşme + Temerrüt/takip belgesi veya yeniden yapılandırma anlaşması. Belgesiz istisna uygulaması vergi incelemesinde kesinlikle reddedilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Satış hasılatı alacaklı kuruma aktarıldı mı? Transfer dekontu/belgesi var mı?",
+          null,
+          "Banka transfer dekontu veya virman belgesi zorunludur. Hasılatın borç dışında kullanılması istisnanın sorgulanmasına yol açar.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "Satılan varlık KVK 5/1-f kapsamında mı? (Taşınmaz/Taşınır/Hisse/Senet/Rüçhan)",
+          null,
+          "5/1-f geniş kapsam — taşınır varlık satışları da dahildir (351/352/353'ten farklı). Satış belgesi (tapu, fatura, devir belgesi) türe göre belirlenir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "2 Yıl aktifinde bulundurma şartı uygulanmadı mı? (DOĞRU UYGULAMA: Şart aranmaz)",
+          null,
+          "5/1-f'de süre şartı YOKTUR. 351/352/353 ile karıştırılmamalıdır. Şart aranmaması 5/1-f'nin en güçlü özelliğidir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "549 Fon hesabına alma yapılmadı mı? (DOĞRU UYGULAMA: Fon şartı aranmaz)",
+          null,
+          "5/1-f'de fon hesabı YOKTUR. 351/352/353 ile karıştırılmamalıdır. Muhasebe yükü bu açıdan daha düşüktür.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "Satış gerçekten tamamlandı mı? Mülkiyet devri (tapu/tescil/fatura) gerçekleşti mi?",
+          null,
+          "Fiili satış tamamlanmadan istisna uygulanamaz. Satış vaadi sözleşmesi yeterli değildir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "Satış bedeli piyasa değeriyle uyumlu mu? Bağımsız değerleme raporu alındı mı?",
+          null,
+          "Alacaklıya veya ilişkili kişiye satışta bağımsız değerleme önerilir. KVK Md.13 emsal bedel — örtülü kazanç dağıtımı riski.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "Alacaklıya doğrudan varlık teslimi (dation in payment) satış mı sayıldı?",
+          null,
+          "Borca karşılık varlık teslimi satış sayılır → Emsal bedel uygulanır. Emsal bedel ile muhasebe değeri arasındaki fark kurum kazancına eklenir, ardından 5/1-f istisnası uygulanabilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "5/1-f ve 5/1-e istisnası aynı varlık için birlikte uygulanmadı mı?",
+          null,
+          "Aynı varlık satışı için tek istisna uygulanabilir. 5/1-f koşulları sağlanıyorsa 5/1-f seçilmeli (daha avantajlı: %100).",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "321 'Kazancın Bulunması Halinde' bölümünde doğru konumlandı mı?",
+          null,
+          "'Zarar Olsa Dahi İndirilecek' bölümünde DEĞİLDİR. Dönemde zarar varsa istisna uygulanamaz. Zarar durumunda ayrı analiz yapılmalıdır (N5 Denetçi Notu).",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K12",
+          "Beyanname 321 tutarı E.6 ile uyumlu mu?",
+          null,
+          "321 = E.6 = %100 × Satış Kazancı. Fark varsa hesap veya kapsam hatası.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K13",
+          "YİAKV matrahında 321 istisnasının etkisi analiz edildi mi?",
+          null,
+          "Dönem mevzuatı ve GİB açıklamaları esas alınmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "E. BEYANNAME EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "321",
+          null,
+          "SIFIR",
+          "KVK 5/1-f — Borçlu Kurum | %100 Tam İstisna | Kazancın Bulunması Halinde İndirilecek",
+          null,
+          null,
+          null
+        ],
+        [
+          "351/352/353",
+          null,
+          "5/1-e ile Karıştırma",
+          "Aynı varlık satışı için 5/1-f veya 5/1-e'den birisi seçilmeli — ikisi birlikte uygulanamaz.",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.13",
+          null,
+          "Emsal Bedel",
+          "İlişkili kişiye/alacaklıya satışta KVK Md.13 analizi ve beyanname örtülü kazanç satırı.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G30",
+      "rows": [
+        [
+          "321 – BANKA/FK/FİNANSAL ŞİRKET/TMSF BORÇLU | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-f | %100 Tam İstisna | Borçlu Kurum | 2 Yıl Şartı YOK | Fon Hesabı YOK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. Satılan varlık türüne göre hesap adları değişmektedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — TAŞINMAZ SATIŞ KAYDI (KVK 5/1-f Borçlu Kurum — Örnek)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satış Bedeli: [___] TL | Defter Değeri: [___] TL | Borçlu Kurum → 5/1-f | 2 Yıl Şartı YOK | Fon Kaydı YOK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Satış]",
+          "102 Bankalar / 120 Alıcılar",
+          "Satış bedelinin tahsilatı (Doğrudan veya alacaklıya virman)",
+          "[Satış Bed.]",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Satış]",
+          "252/253 Binalar/Arazi veya İlgili Aktif Hesabı",
+          "Satılan taşınmazın defter değerinin çıkışı",
+          "—",
+          "[Defter Değeri]",
+          "Aktif kartı"
+        ],
+        [
+          "Kr",
+          "[Satış]",
+          "257 Birikmiş Amortismanlar",
+          "Birikmiş amortisman kapatma (bina ise)",
+          "—",
+          "[Amortisman]",
+          "257 kartı"
+        ],
+        [
+          "Kr",
+          "[Satış]",
+          "679 Diğer Olağandışı Kâr / 645 MK Satış Kârı",
+          "Satış kazancı — 5/1-f — %100 istisna (321 satırı) — FON HESABI YOK",
+          "—",
+          "[Kazanç]",
+          "KV 321"
+        ],
+        [
+          "KRİTİK FARK — 351 (5/1-e) İLE KARŞILAŞTIRMA:\n351: Kazancın %50'si → 549 Fon hesabına. %50'si Vergiye tabi.\n321: Kazancın %100'ü → Direkt beyannamede 321 satırında istisna. FON HESABI YOK!\n\nMuhasebe kaydının ardından KV beyannamesinde 321 satırına kazancın tamamı (E.6) yazılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — HASILAN ALACAKLIYA AKTARIM KAYDI (Zorunlu Belgeleme)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satış hasılatının alacaklı banka/kuruluşa transferi — 5/1-f'nin belgeleme yükümlülüğü",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Transfer]",
+          "300/320/321 Banka Kredileri veya İlgili Borç Hesabı",
+          "Alacaklıya aktarılan tutarın borç hesabından düşümü",
+          "[Ödenen Tutar]",
+          "—",
+          "Kredi/Borç kartı"
+        ],
+        [
+          "Kr",
+          "[Transfer]",
+          "102 Bankalar",
+          "Alacaklıya yapılan banka transferi",
+          "—",
+          "[Ödenen Tutar]",
+          "Virman dekontu"
+        ],
+        [
+          "Bu kayıt satış hasılatının alacaklıya aktarıldığını belgeler. Virman dekontu ve alacaklı kurumun aldı yazısı/makbuzu tasdik dosyasına eklenmelidir. Bu belge olmadan vergi incelemesinde 5/1-f istisnası reddedilebilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — DATION IN PAYMENT (BORCA KARŞILIK VARLIK TESLİMİ — Emsal Bedel Farkı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Alacaklıya doğrudan varlık tesliminde: Emsal bedel ile defter değeri arasındaki fark kazanç sayılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Teslim]",
+          "300/320/321 Banka Kredisi / Borç",
+          "Borcun emsal bedel üzerinden kapatılması (alacaklıya varlık verildi)",
+          "[Emsal Bedel]",
+          "—",
+          "Borç kapatma belgesi"
+        ],
+        [
+          "Kr",
+          "[Teslim]",
+          "252/253 veya İlgili Aktif Hesabı",
+          "Varlığın defter değeriyle çıkışı",
+          "—",
+          "[Defter Değeri]",
+          "Aktif kartı"
+        ],
+        [
+          "Kr",
+          "[Teslim]",
+          "679 Diğer Olağandışı Kâr",
+          "Emsal Bedel − Defter Değeri = 5/1-f kapsamı kazanç",
+          "—",
+          "[Fark = Kazanç]",
+          "KV 321"
+        ],
+        [
+          "DATION IN PAYMENT: Borç yerine varlık teslimi satış sayılır. Emsal bedel: Bağımsız değerleme raporu veya piyasa fiyatı. Defter değeri: Aktif kayıtlı değer. Fark = Kazanç → 5/1-f %100 istisna. Emsal belirlenmeksizin yapılan teslimde KVK Md.13 riski vardır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 4 — BEYANNAME 321 MUTABAKAT NOTU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME AKIŞI — KVK 5/1-f:\n\n1. Satış kazancı 679/645 hesabına → Ticari kâra dahil olur.\n2. KV Beyannamesi 321. Satır: 'Kazancın Bulunması Halinde İndirilecek' → E.6 (%100 kazanç)\n3. 549 Fon kaydı YOKTUR — tek adım.\n\n351/352/353 İLE TEMEL FARK:\n351: 679 → Muhasebe | %50 → 549 Fon | %50 → Vergiye tabi | Beyanname 351\n321: 679 → Muhasebe | %100 → Direkt Beyanname 321 (Fon YOK)\n\nÖNEMLİ KURAL: 321 Satırı 'Kazancın Bulunması Halinde' bölümündedir. Dönemde zarar varsa istisna uygulanamaz. Zarar durumunda KKEG uygulanıp uygulanmayacağı tartışmalıdır — N5 Denetçi Notuna bakın.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D17",
+      "rows": [
+        [
+          "321 – BANKA/FK/FİNANSAL ŞİRKET/TMSF BORÇLU KURUM | DENETÇİ NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-f | %100 Tam İstisna | 2 Yıl Şartı YOK | Fon Hesabı YOK | Borçluluk Belgesi ZORUNLU | Beyanname 321",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK, KAPSAM VE 5/1-e İLE TEMEL FARKLAR",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-f — Yasal Çerçeve ve Temel Koşullar",
+          "KVK Md.5/1-f:\n'Kurumların, en az iki tam yıl süreyle aktiflerinde yer alan taşınmazlar ve iştirak hisseleri ile aynı süreyle sahip oldukları kurucu senetleri, intifa senetleri ve rüçhan haklarının satışından doğan kazançların %75'lik kısmı...' → Bu 5/1-e'dir.\n\n5/1-f AYRI BİR BENT: Bankalar, finansal kiralama şirketleri, finansal şirketler veya TMSF'ye borçlu durumda olan kurumların bu borçlarını ödemeye yönelik olarak yaptıkları söz konusu varlık satışlarından doğan kazançların TAMAMI vergiden istisnadır.\n\nBEYANNAME: 321. Satır | 'Kazancın Bulunması Halinde İndirilecek' bölümü | %100 Tam İstisna\nFON HESABI: YOK | 2 YIL ŞARTI: YOK | TAŞINMAZ TİCARETİ YASAĞI: YOK",
+          "KVK Md.5/1-f | 5411 s.K. | 6361 s.K."
+        ],
+        [
+          "N2",
+          "★ Borçluluk İlişkisinin Belgelenmesi — En Kritik Şart",
+          "5/1-f istisnasının TEK özgün koşulu borçluluk ilişkisidir.\n\nGEREKLİ BELGELER (Tamamı Zorunlu):\n① Kredi/Leasing/Faktoring sözleşmesi (borcu doğuran sözleşme)\n② Borç bakiye yazısı veya hesap ekstresi (satış tarihi itibarıyla)\n③ Temerrüt yazısı veya icra takibi belgesi (temerrüt söz konusuysa)\n④ Satıştan elde edilen hasılatın alacaklıya aktarıldığını gösteren banka transfer dekontu\n⑤ Alacaklı kurumun makbuzu veya aldı yazısı (mümkünse)\n\nKRİTİK SORUN: Satış hasılatını alacaklıya aktarmadan veya başka amaçla kullanarak\n5/1-f istisnasından yararlanmaya çalışmak → Vergi incelemesinde istisna kesinlikle reddedilir.\n\nYMM notu: Bu belgeler tasdik dosyasının çekirdeğini oluşturur.\nBelgesiz tasdik → Müteselsil sorumluluk riski.",
+          "KVK Md.5/1-f | GİB Özelgeleri | Danıştay"
+        ],
+        [
+          "N3",
+          "★ Dation In Payment (Borç Yerine İfa) — Satış Sayılır",
+          "TANIM: Borcun nakit yerine varlık teslimi ile ödenmesi (datio in solutum).\n\nVERGİSEL MUAMELE:\n• Alacaklıya borcun ödenmesi amacıyla taşınmaz/hisse teslimi → SATIŞ sayılır\n• Emsal bedel (piyasa değeri) üzerinden satış kazancı hesaplanır\n• Emsal bedel ile defter değeri arasındaki fark kurum kazancına eklenir\n• Ardından KVK 5/1-f %100 istisnası uygulanır\n\nEMSAL BELİRLEME:\nTaşınmaz: SPK lisanslı değerleme kuruluşu raporu (güçlü belge)\nHisse: Mali analiz veya karşılaştırılabilir işlem değeri\n\nYMM notu: Dation in payment işlemlerinde değerleme raporu olmaksızın\nemsal belirlenmeden yapılan teslimde KVK Md.13 örtülü kazanç dağıtımı riski yüksektir.",
+          "KVK Md.5/1-f | KVK Md.13 | GİB Özelgeleri"
+        ],
+        [
+          "N4",
+          "5/1-f ile 5/1-e Aynı Varlık İçin Kullanılamaz — Örtüşme Analizi",
+          "TEMEL KURAL: Bir varlık satışı için tek istisna uygulanır.\n\nÖRTÜŞME SENARYOLARI:\n\nSenaryo A — 2 yıl şartı sağlanmış, borçlu kurum:\nHem 5/1-e (351/352) hem 5/1-f koşulları sağlanıyor olabilir.\n→ 5/1-f tercih edilmeli: %100 istisna, fon şartı yok\n\nSenaryo B — 2 yıl şartı sağlanmamış, borçlu kurum:\n5/1-e uygulanamaz (2 yıl şartı). 5/1-f uygulanabilir (2 yıl şartı yok)\n→ 5/1-f zorunlu tercih\n\nSenaryo C — 2 yıl şartı sağlanmış, borçlu değil:\n5/1-e uygulanabilir. 5/1-f uygulanamaz.\n→ 5/1-e (351/352 vs).\n\nYMM notu: Her iki istisnayı birlikte uygulamak beyanname hatasıdır.",
+          "KVK Md.5/1-e ve 5/1-f | GİB Özelgeleri"
+        ],
+        [
+          "BÖLÜM 2 — ZARAR DURUMU, 49 No.lu TEBLİĞ VE TASDIK STANDARDI",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "★ Zarar Durumunda KKEG Uygulaması — Tartışmalı Alan",
+          "KVK 5/1-f'de ZARAR durumunda KKEG uygulanıp uygulanmayacağı tartışmalıdır.\n\n5/1-e (351/352/353) için açık hüküm (KVK 5/3): Satışın zararla sonuçlanması halinde\nzararın belirli oranı KKEG kabul edilir.\n\n5/1-f İÇİN DURUM:\nKVK metninde 5/1-f zararları için açık KKEG hükmü yer almamaktadır.\nBu nedenle iki yorum öne çıkmaktadır:\n\nYorum A (İhtiyatlı): 5/1-f kapsamındaki zarar tümüyle KKEG → Beyannamede eklenir.\nYorum B (Liberal): Zarar indirilebilir gider olarak kalır, KKEG eklenmez.\n\nYMM notu: Zarar durumunda özelge alınması şiddetle tavsiye edilir. GİB'in güncel tutumunu teyit etmeden ihtiyatlı yaklaşım (Yorum A) benimsenmeli.\nBu not mevzuat güncellendiğinde revize edilmelidir.",
+          "KVK Md.5/1-f | KVK Md.5/3 | GİB Özelgeleri"
+        ],
+        [
+          "N6",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...kurumun [Banka adı]'na olan borcu nedeniyle söz konusu varlığın satışa konu edildiği,\nsatış hasılatının alacaklı kuruma aktarıldığı banka dekontu ile teyit edilmiştir'\n'...borç ilişkisi [sözleşme adı / tarih] ile belgelenmiştir'\n'...KVK Md.5/1-f kapsamında istisna şartlarının sağlandığı tespit edilmiştir'\n\nKULLANMAYIN:\n'...borçlu olduğundan istisna uygulanır' (belge olmadan)\n'...satış hasılatı başka amaçla kullanılmıştır ancak istisna geçerlidir'\n\nKRİTİK RİSKLER:\n(1) Hasılat transferi belgesi eksikliği (2) Alacaklı kurum türünün yanlış belirlenmesi\n(3) Dation in payment işleminde emsal değer belirlenmemesi\n(4) 5/1-f ile 5/1-e'nin birlikte uygulanması",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "N7",
+          "TMSF Kapsamı — Özel Durum",
+          "TMSF'YE BORÇLU OLMAK:\nTMSF'ye olan borçlar genellikle şu şekillerde oluşur:\n① TMSF'ye devredilen bankalara olan borçlar (el koyulan bankalar)\n② TMSF'nin el koyduğu şirketlerin alacakları\n③ TMSF tarafından yönetilen portföydeki alacaklar\n\nTMSF İLE BANKA FARKI:\nTMSF, bir banka değil kamu kuruluşudur. Ancak KVK 5/1-f metninde\nTMSF ayrıca sayılmıştır. TMSF'ye olan borç için de borçluluk belgesi\nve hasılat transferi belgesi aynı şekilde zorunludur.\n\nYMM notu: TMSF ile ilgili satışlarda TMSF'nin kabulü/ibrası yazısı\ntasdik dosyasında birincil belge olarak yer almalıdır.",
+          "KVK Md.5/1-f | 5411 s.K. Ek Md.1"
+        ],
+        [
+          "TARTIŞMALI ALAN — BORÇ ÖDEME AMACININ KANITLANMASI: Satış hasılatının tamamının alacaklıya aktarılması zorunlu mudur? Yoksa kısmen aktarım yeterli midir? GİB özelgelerinde 'borcu ödemeye yönelik' ifadesinin kapsamı tartışmalıdır. Hasılatın tamamının alacaklıya aktarılması en güvenli yaklaşımdır. Kısmi aktarımda yalnızca aktarılan paya isabet eden kazancın istisna tutulması riski vardır.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F36",
+      "rows": [
+        [
+          "321 – BANKA/FK/FİNANSAL ŞİRKET/TMSF BORÇLU KURUM | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-f | %100 Tam İstisna | 2 Yıl Şartı YOK | Fon Hesabı YOK | Borçluluk Belgesi ZORUNLU | Hasılat Transferi ZORUNLU | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Zorunlu belgeler (borçluluk kanıtları). Kategori 2: Varlık türüne göre ek belgeler. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — BORÇLULUK KANITİ VE ZORUNLU BELGELER (5/1-f'nin Özü)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ Bu kategorideki belgeler 5/1-f'nin VAROLUŞSAL koşuludur. Eksikliği istisnayı geçersiz kılar.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Alacaklı Kurumun Türünü Kanıtlayan Belge (Banka/FK/Finansal Şirket/TMSF)",
+          "Banka: BDDK lisansı veya BDDK'nın banka listesi.\nFinansal kiralama/faktoring/finansman: 6361 s.K. kapsamında BDDK lisansı.\nTMSF: TMSF'nin resmi yazısı veya T.C. Resmi Gazete ilanı.\nYMM notu: Alacaklı kurumun 5411/6361 s.K. kapsamında olduğu teyit edilmeden istisna uygulanamaz.",
+          "BDDK banka/şirket listesi / Resmi Gazete / TMSF resmi yazısı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Borcu Doğuran Sözleşme (Kredi / Leasing / Faktoring / Finansman)",
+          "Kredi: Kredi sözleşmesi (tarih, taraflar, tutar, vade).\nLeasing: Finansal kiralama sözleşmesi.\nFaktoring: Faktoring sözleşmesi + Devir edilen alacaklar listesi.\nYMM notu: Sözleşme kopya + alacaklı tarafından onaylı olmalıdır.",
+          "Alacaklı kurumdan temin edilen sözleşme kopyası",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Satış Tarihi İtibariyle Borç Bakiye Yazısı / Hesap Ekstresi",
+          "Alacaklı kurumun satış tarihindeki toplam borç bakiyesini gösteren yazı veya ekstre.\nAnapora + faiz + BSMV + diğer masraflar ayrı ayrı gösterilmeli.\nYMM notu: Bu belge istisna uygulamasının 'borçlu olma' şartını doğrudan kanıtlar.",
+          "Banka/FK/Finansal şirket borç bakiye yazısı (imzalı/mühürlü)",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ Satış Hasılatının Alacaklıya Aktarıldığını Gösteren Banka Dekontu",
+          "Virman dekontu: Satış hasılatının borçlu kurumun hesabından alacaklı kuruma transferi.\nVeya: Satış bedelinin doğrudan alacaklı kuruma ödenmesi (alıcı alacaklıya öder).\nYMM notu: ★ Bu belge yoksa 5/1-f istisnasının amacı kanıtlanamaz. Vergi incelemesinde reddedilir.",
+          "Banka EFT/havale dekontu (tarih, tutar, alıcı bilgisi)",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Temerrüt/Takip Belgesi veya Yeniden Yapılandırma Anlaşması",
+          "Temerrüt varsa: Alacaklının temerrüt bildirimi yazısı veya icra takip belgesi.\nYeniden yapılandırma varsa: Restrüktürizasyon anlaşması.\nNot: Temerrüt zorunlu değildir — ancak mevcutsa dosyaya eklenmelidir.",
+          "Alacaklı kurum yazışmaları / İcra dosyası / Yeniden yapılandırma protokolü",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Satış Tamamlama Belgesi (Tapu/Devir/Fatura — Varlık Türüne Göre)",
+          "Taşınmaz: Tapu devir belgesi (satış tarihi görünmeli).\nİştirak Hissesi: Pay devir sözleşmesi + ticaret sicil tescili.\nTaşınır: Fatura + teslim-tesellüm tutanağı.\nYMM notu: Satışın fiilen tamamlandığının kanıtıdır.",
+          "Tapu Sicil Müdürlüğü / Ticaret Sicil / Muhasebe kayıtları",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KV Beyannamesi Taslağı — 321. Satır",
+          "321. satırındaki tutarın E.6 ile birebir uyumlu olduğu kontrol edilmeli.\n'Kazancın Bulunması Halinde İndirilecek' bölümünde doğru konumlandırıldığı teyit.\n549 Fon kaydı yapılmadığı (gerekmiyor) kontrol edilmeli.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — VARLIK TÜRÜNE GÖRE EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Bağımsız Değerleme Raporu (Taşınmaz veya Alacaklıya Satış)",
+          "Alacaklıya veya ilişkili kişiye satışta SPK lisanslı değerleme raporu önerilir.\nDation in payment işleminde (varlık teslimi ile borç ödeme): Değerleme zorunludur.\nYMM notu: Değerleme olmaksızın emsal bedel kanıtlanamaz → KVK Md.13 riski.",
+          "SPK lisanslı gayrimenkul değerleme kuruluşu raporu",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Taşınır Varlık Satışı: Fatura + Teslim Tutanağı",
+          "5/1-f kapsamında taşınır (makine, ekipman, araç) satışı da mümkündür.\nFatura: KDV dahil/hariç belirtilmiş satış faturası.\nTeslim tutanağı: Varlığın alıcıya teslim edildiğini gösteren belge.",
+          "E-Fatura / Kâğıt fatura + İrsaliye / Teslim tutanağı",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Dation In Payment: Borç Kapatma Belgesi + Değerleme Raporu",
+          "Alacaklıya varlık teslimi ile borç ödemesinde:\n① Borç kapatma protokolü (alacaklı ile imzalı)\n② Alacaklının borç ibrası yazısı\n③ Varlığın değerleme raporu (emsal bedel tespiti için)\n④ KVK Md.13 analizi — emsal bedel ile defter değeri fark hesabı",
+          "Taraflar arası protokol + Değerleme raporu + Alacaklı ibra yazısı",
+          null
+        ],
+        [
+          null,
+          "11",
+          "YİAKV Matrah Hesaplama Tablosu (321 Etkisi)",
+          "KVK 5/1-f istisnasının YİAKV matrahına etkisi güncel GİB açıklamalarıyla analiz edilmeli.",
+          "YİAKV çalışma kâğıdı / KVK 32/C",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (★ Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Alacaklı kurum banka, FK şirketi, finansal şirket veya TMSF mi? Belgesi var mı?",
+          "BDDK lisansı veya TMSF statüsü belgesi zorunlu. Alacaklı kurum türü yanlış → İstisna geçersiz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Borç ilişkisi yazılı sözleşmeyle kanıtlandı mı?",
+          "Kredi/leasing/faktoring sözleşmesi dosyada olmalı. Sözleşmesiz borç iddiası kabul edilmez.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Satış hasılatı alacaklıya aktarıldı mı? Banka dekontu var mı?",
+          "Virman dekontu veya doğrudan ödeme belgesi zorunlu. Belge yok = İstisna reddedilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ Borç bakiye yazısı satış tarihi itibarıyla temin edildi mi?",
+          "Alacaklı kurumun imzalı/mühürlü borç bakiye yazısı. Tutar ile satış kazancının karşılaştırılması yapılmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "2 yıl ve fon şartı yanlışlıkla uygulanmadı mı? (5/1-e ile karıştırma)",
+          "5/1-f'de 2 yıl şartı ve 549 fon şartı YOKTUR. Bu şartları uygulamak hatalıdır — 5/1-e ile karıştırmayın.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Dation in payment varsa emsal bedel belirlendi mi?",
+          "Değerleme raporu veya piyasa karşılaştırması. KVK Md.13 emsal bedel zorunlu. Fark → Kurum kazancı + 5/1-f istisnası.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Satış gerçekten tamamlandı mı? Mülkiyet devri belgelendi mi?",
+          "Tapu/devir belgesi/fatura. Satış vaadi yeterli değil.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "321 'Kazancın Bulunması Halinde' bölümünde mi? 'Zarar Olsa Dahi' değil mi?",
+          "321 → Kazancın Bulunması Halinde. Zarar varsa istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "5/1-f ve 5/1-e aynı varlık için birlikte uygulanmadı mı?",
+          "Tek istisna seçilmeli. 5/1-f daha avantajlıdır (%100 istisna, şart daha az).",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "Beyanname 321 tutarı E.6 ile uyumlu mu?",
+          "321 = E.6 = %100 × Satış Kazancı. Fark varsa hesap hatası.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 5/1-f EN GÜÇLÜ İSTİSNA: %100 tam istisna, 2 yıl şartı yok, fon şartı yok, taşınmaz ticareti yasağı yok, taşınır varlık da kapsam içinde. AĞIR BELGELEME YÜKÜ: Borç sözleşmesi + bakiye yazısı + hasılat transferi dekontu = Üçü birden olmadan istisna geçersizdir. Zarar durumunda KKEG uygulaması tartışmalı — özelge alınmalıdır. Dation in payment: Emsal bedel + KVK Md.13 analizi zorunludur. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

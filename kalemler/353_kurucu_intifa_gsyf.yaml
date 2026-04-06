@@ -27,19 +27,63 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Kurucu senedi, intifa senedi veya GSYF katılma payı sattınız mı?"
   info_modal: |
-    KVK Madde 5/1-e kapsamında kurucu senetleri, intifa senetleri ve Girişim Sermayesi Yatırım
-    Fonu (GSYF) katılma paylarının satışından doğan kazançların bir kısmı kurumlar vergisinden
-    istisnadır. İstisna oranı: 27/11/2024 öncesi satışlarda %75, 27/11/2024 ve sonrasında %50
-    (9160 s. CB Kararı). 2 tam yıl (730 gün) aktifinde bulundurma şartı aranır.
+    ## Genel Çerçeve
 
-    ÖNEMLİ UYARILAR:
-    • Rüçhan hakkı: TTK'ya göre kullanım süresi en fazla 15 gündür. Bu nedenle 730 günlük
-      aktifinde bulundurma şartı pratikte ASLA sağlanamaz → Rüçhan hakkı satışında istisna
-      UYGULANAMAZtır. Kazancın tamamı vergilendirilir.
-    • GSYF: Yalnızca SPK'dan izinli Girişim Sermayesi Yatırım Fonları kapsam dahilindedir.
-      Diğer yatırım fonlarının katılma belgeleri bu satıra girmez (298/299 analizi gerekebilir).
-    • Zararlı satışlarda zararın istisna oranına isabet eden kısmı KKEG sayılır (KVK 5/3).
-    • Bu istisna YİAKV matrahından düşülemez — matrahta kalır.
+    **KVK Madde 5/1-e** kapsamında, kurucu senetleri (TTK Md.348), intifa senetleri (TTK Md.502)
+    ve **SPK lisanslı Girişim Sermayesi Yatırım Fonu (GSYF) katılma paylarının** satışından doğan
+    kazançların belirli bir kısmı kurumlar vergisinden istisnadır. **9160 Sayılı Cumhurbaşkanı
+    Kararı (27/11/2024)** ile 353 kapsamındaki tüm araçlar için istisna oranı %75'ten **%50'ye**
+    indirilmiştir. 2 tam yıl (730 gün) aktifinde bulundurma şartı zorunludur.
+
+    ## Temel Koşullar
+
+    - Satılan varlığın **kurucu senedi, intifa senedi veya SPK'dan izinli GSYF katılma payı**
+      olması zorunludur; iştirak hissesi (A.Ş./Ltd. payı) satışları 352. satıra aittir.
+    - **Rüçhan hakkı bu satıra GİRMEZ:** TTK uyarınca rüçhan hakkı kullanım süresi en fazla
+      15 gündür; dolayısıyla 730 günlük aktifinde bulundurma şartı pratikte hiçbir zaman
+      sağlanamaz ve rüçhan hakkı satış kazancı vergiye tabi kurum kazancı olarak beyan edilir.
+    - **GSYF'de münhasırlık şartı:** Yalnızca SPK'dan izinli Girişim Sermayesi Yatırım Fonları
+      kapsam dahilindedir; para piyasası fonu, karma fon, BYF gibi diğer yatırım fonu türlerinin
+      katılma belgeleri bu satıra girmez.
+    - Varlık satış tarihi itibarıyla **en az 2 tam yıl (730 gün)** aktifinde bulundurulmuş
+      olmalıdır; aktife giriş tarihi kurucu senedinde TTK tescil tarihi, intifa senedinde
+      düzenleme/devir tarihi, GSYF'de alım tarihidir.
+    - İstisna kazancının **KV beyan süresine kadar 549 Özel Fonlar hesabına alınması** zorunludur
+      ve 5 yıl boyunca tutulmalıdır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Zarar durumunda KKEG (KVK 5/3):** Satış zararla sonuçlanırsa zararın **istisna oranına
+      (%75 veya %50) isabet eden kısmı KKEG** sayılır; kalan kısım gider olarak indirilebilir.
+      Örnek (%50 oranında): 100.000 TL zarar → 50.000 TL KKEG + 50.000 TL indirilebilir zarar.
+    - **GSYF yanlış sınıflandırma riski:** Diğer yatırım fonu türlerini GSYF olarak yanlış
+      sınıflandırmak tarhiyat riskine yol açar; SPK izin belgesi ve fon tüzüğü dosyada zorunludur.
+    - **549 fon zorunluluğu ve 5 yıl tutma:** Fona alınmayan veya erken çekilen tutar çekildiği
+      dönemde matraha eklenerek cezalı tarhiyata yol açar.
+    - **Rüçhan hakkı karışıklığı:** Rüçhan hakları kısa sürede kullanılma zorunluluğu nedeniyle
+      2 yıl şartını sağlayamaz; yanlış sınıflandırma durumunda tüm satış kazancı vergilendirilir.
+    - **YMM tasdik raporu:** İstisna tutarı ≥500.000 TL ise 49 No.lu KV GT kapsamında zorunludur.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-e (353) istisnası YİAKV (KVK 32/C) matrahından düşülemez;** istisna tutarı YİAKV
+    matrahında kalır. GİB KV Beyan Rehberi Mart 2026 (No:601) A0.8 kontrolü bu pozisyonu teyit
+    etmektedir. 353 kapsamındaki herhangi bir araç türü için YİAKV indirimi söz konusu değildir.
+
+    ## Pratik Notlar
+
+    - **Araç türünün tespiti** ilk adımdır: Kurucu senedi mi, intifa senedi mi yoksa GSYF katılma
+      payı mı olduğu hukuki nitelendirme ile kesinleştirilmeli; her türün aktife giriş tarihi
+      farklı belgeye dayanmaktadır.
+    - **Kurucu senedi izleme hesabı:** 248 Diğer Mali Duran Varlıklar hesabında izlenmesi önerilir;
+      muhasebe hesabının yanlış seçilmesi aktife giriş tarihinin tespitini güçleştirebilir.
+    - **GSYF için SPK izin belgesi ve fon tüzüğü** her dönem güncel olarak dosyada bulundurulmalı;
+      fon türü değişimi (dönüşüm kararı) takip edilmelidir.
+    - **Satış tarihi oran tespiti:** 27/11/2024 öncesi mi sonrası mı olduğu net biçimde
+      belgelenmeli; noter tarihi veya tescil tarihi esas alınarak %75 veya %50 oranı seçilmelidir.
+    - **İştirak hissesi ile sınır kontrolü:** Varlığın iştirak hissesi mi (352) yoksa bu satır
+      (353) kapsamında mı olduğu hukuki belge incelenerek netleştirilmeli; karışıklık beyanname
+      hatasına ve tarhiyata yol açar.
   kapi_sorulari:
     - id: varlik_turu_uygun
       soru: "Satılan varlık kurucu senedi, intifa senedi veya SPK izinli GSYF katılma payı mı?"

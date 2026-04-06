@@ -22,17 +22,58 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "KVK Geçici Md.14/3 kapsamında altın hesabı dönüşümü (379) sonrası kurulan TL araç dönem içinde vadeye ulaşıp kâr payı/faiz tahsil edildi mi?"
   info_modal: |
-    KVK Geçici Madde 14/3 (Paragraf 3) kapsamında altın hesabı TL'ye dönüştürüldükten
-    (379) sonra kurulan TL araçtan vade bitiminde fiilen tahsil edilen kâr payı ve
-    faiz kurumlar vergisinden istisnadır (Beyanname 381).
+    ## Genel Çerçeve
 
-    381, Paragraf 3 zincirinin son halkasıdır: 379 (altın dönüşümü) → 380 (dönem sonu
-    tahakkuk) → 381 (vade sonu tahsilat).
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Paragraf 3 (379–382), altın hesabı dönüşümü zincirini oluşturur. Bu zincirde 379 dönüşüm
+    kazancını, 380 dönem sonu tahakkuku, 381 vade sonu tahsilatını kapsar. Beyanname 381,
+    altın zincirinin tahsilat aşamasında yer alır.
 
-    **380-381 Mükerrerlik Kuralı (KRİTİK):** Net 381 = Vade Toplam − Önceki Yıl 380.
-    Çapraz kontrol: 380 + 381 = Toplam kâr payı/faiz.
+    ## Bu Satırın Kapsamı
 
-    **YİAKV uyarısı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (YİAKV E.7 listesi).
+    Beyanname **381**, 379 (altın dönüşüm kazancı) kapsamındaki dönüşüm sonrasında kurulan TL
+    araçtan vade bitiminde bankadan **fiilen tahsil edilen** kâr payı ve faiz istisnasıdır.
+    Paragraf 3 zincirinin son halkasıdır: 379 (dönüşüm) → 380 (dönem sonu tahakkuk) → 381
+    (vade sonu tahsilat). Paragraf 1'deki 373 ve Paragraf 2'deki 377 ile aynı olay tipini
+    (vade sonu tahsilat) kapsamakla birlikte yasal dayanak Paragraf 3'tür ve yalnızca altın
+    hesabı dönüşümü sonrası araçlara uygulanır. **380-381 mükerrerlik kuralı** en kritik
+    kontrol noktasıdır: Yılı aşan vadeli araçlarda Net 381 = Vade Toplam − Önceki Yıl 380.
+    Çapraz kontrol formülü: 380 + Net 381 = Toplam kâr payı/faiz (banka bildirimi).
+
+    ## Temel Koşullar
+
+    - 379 ve 380 çalışma kâğıtları hazır olmalıdır; 381 bu zincirin son halkasıdır
+    - TL araç dönem içinde vadeye ulaşmış ve kâr payı/faiz tahsil edilmiş olmalıdır
+    - Önceki yılda 380 tahakkuku yapılmışsa Net 381 = Vade Toplam − Önceki 380 formülü
+      zorunlu olarak uygulanır
+    - 373 (Paragraf 1) ve 377 (Paragraf 2) ile mükerrerlik analizi tamamlanmış olmalıdır
+
+    ## Önemli Uyarılar
+
+    - **380-381 mükerrerlik:** En yaygın ve yüksek tarhiyat riski taşıyan hatadır.
+      Önceki yıl 380 tahakkuku yapılan araç vadeye girdiğinde Net 381 hesabı yapılmazsa
+      aynı gelir için çifte istisna oluşur
+    - **Çapraz kontrol zorunlu:** 380 + 381 = Toplam kâr payı/faiz (banka bildirimi). Bu
+      eşitlik sağlanmıyorsa ya 380 fazla ya 381 fazla beyan edilmiştir
+    - **379/380 zincir referansı:** 381 çalışma kâğıdında 379 ve 380 referansları eksiksiz
+      olmalıdır; üç dosyanın araç bilgileri tutarlı olmalıdır
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca ≥ 500.000 TL ise YMM raporu
+      zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    Paragraf 3 kodlarının tamamı (379–382) E.7 listesinde yer almalıdır. YİAKV çalışma
+    kâğıdında 12 kod (370–381) bulunuyorsa tamamlanmış demektir; yalnızca 382 kalmıştır.
+
+    ## Pratik Notlar
+
+    - **Muhasebe kaydı:** Önceki yıl 380 varsa 102 Dr / 181 Kr (önceki tahakkuk kapatma) +
+      642 Kr (bu yılın kısmı) şeklinde; 380 yoksa 102 Dr / 642 Kr şeklinde kaydedilir
+    - **Paragraf ayrımı:** KKM araçları → 373. Borç dönüşümü araçları → 377. Altın dönüşümü
+      araçları → 381. Üç kod aynı muhasebe mekanizmasını paylaşır; fark Paragraf'tır
+    - **Vade tarihi sınırı:** Vade tarihi dönem sonunu (31 Aralık) aşıyorsa 381 o dönemde
+      uygulanamaz; vade tarihinin düştüğü hesap döneminde beyan edilir
   kapi_sorulari:
     - id: paragraf3_zinciri
       soru: "KVK Geçici Md.14/3 kapsamında altın hesabı dönüşümü (379) ve dönem sonu tahakkuku (380) mevcut mu?"

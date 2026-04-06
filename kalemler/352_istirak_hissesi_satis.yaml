@@ -25,12 +25,62 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "2 yıldan fazla aktifinde tuttuğunuz iştirak hisselerini (ortaklık paylarını) sattınız mı?"
   info_modal: |
-    KVK Madde 5/1-e kapsamında kurumların en az 2 tam yıl aktifinde tuttuğu iştirak hisselerinin
-    satışından doğan kazançların bir kısmı kurumlar vergisinden istisnadır.
-    İstisna oranı: 27/11/2024 öncesi satışlarda %75, 27/11/2024 ve sonrasında %50 (9160 s. CB Kararı).
-    Aynı kuruma ait farklı tarihlerde alınan hisseler için FIFO yöntemi uygulanır.
-    Zararlı satışlarda zararın istisna oranına isabet eden kısmı KKEG sayılır (KVK 5/3).
-    Bu istisna YİAKV matrahından düşülemez — matrahta kalır.
+    ## Genel Çerçeve
+
+    **KVK Madde 5/1-e** kapsamında, kurumların en az **2 tam yıl (730 gün)** aktiflerinde
+    tuttukları iştirak hisselerinin (A.Ş. payı, Ltd. payı, kooperatif payı, iş ortaklığı payı)
+    satışından doğan kazançların belirli bir kısmı kurumlar vergisinden istisnadır. **9160 Sayılı
+    Cumhurbaşkanı Kararı (27/11/2024)** ile istisna oranı %75'ten **%50'ye** indirilmiştir;
+    27/11/2024 öncesi satışlarda eski oran (%75) geçerliliğini korumaktadır.
+
+    ## Temel Koşullar
+
+    - İştirak hissesinin satış tarihi itibarıyla **en az 2 tam yıl (730 gün)** aktifinde
+      bulundurulmuş olması zorunludur; aynı kuruma farklı tarihlerde alınan hisselerde **FIFO
+      (ilk giren ilk çıkar)** yöntemi esas alınır ve en eski iktisap tarihi başlangıç kabul edilir.
+    - Hisseler **iştirak amaçlı** tutulmalıdır; 24-Mali Duran Varlıklar hesap grubunda (Md.242
+      İştirakler veya 245 Bağlı Ortaklıklar) izlenmelidir; 11-Menkul Kıymetler hesabında ticari
+      amaçlı izlenen hisseler kapsam dışıdır.
+    - **Menkul kıymet ticareti** yapan kurumlar bu istisnadan yararlanamaz; kurumun ana faaliyeti
+      ve fiili uğraşı birlikte değerlendirilmelidir.
+    - İstisna kazancının **satışı izleyen hesap dönemi başından KV beyan süresine kadar 549 Özel
+      Fonlar hesabına alınması** zorunludur; bu koşulun yerine getirilmemesi istisnayı geçersiz kılar.
+    - **Satış tarihi kritik:** 27/11/2024 öncesi satışlarda %75, 27/11/2024 ve sonraki satışlarda
+      %50 oran uygulanır; satış tarihi olarak hisse devir sözleşmesinin noter/tescil tarihi esas alınır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Zarar durumunda KKEG riski (KVK 5/3):** İştirak hissesi satışı zararla sonuçlanırsa,
+      zararın **istisna oranına isabet eden kısmı KKEG** sayılır; kalan kısım gider olarak
+      indirilebilir. Örnek (%50 oranında): 200.000 TL zarar → 100.000 TL KKEG + 100.000 TL
+      indirilebilir zarar. Bu KKEG tutarı beyannamede ayrıca gösterilmelidir.
+    - **549 fon hesabı zorunluluğu ve 5 yıl tutma:** Fona alınmayan veya 5 yıl dolmadan çekilen
+      tutar çekildiği dönemde matraha eklenerek vergilendirilir.
+    - **Varlık türü karışıklığı riski:** Kurucu senetleri, intifa senetleri, rüçhan hakları ve
+      GSYF katılma payları bu satıra (352) değil, **353. satıra** girilmelidir.
+    - **KDV istisnası (KDVK Md.17/4-r):** İştirak hissesi satışındaki KDV istisnası 15/7/2023
+      değişikliğinden etkilenmez; süresiz geçerliliğini korur.
+    - **YMM tasdik raporu:** İstisna tutarı ≥500.000 TL ise 49 No.lu KV GT kapsamında YMM
+      tasdik raporu zorunludur.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-e iştirak hissesi satış kazancı istisnası YİAKV (KVK 32/C) matrahından düşülemez;**
+    istisna tutarı YİAKV matrahında kalır. GİB KV Beyan Rehberi Mart 2026 (No:601) A0.7 kontrolü
+    bu pozisyonu açıkça desteklemektedir. YİAKV hesabında bu istisna herhangi bir indirim sağlamaz.
+
+    ## Pratik Notlar
+
+    - **FIFO hesaplama tablosu:** Aynı kuruma ait birden fazla tarihlerde alınan hisseler varsa
+      her parti için iktisap tarihi ve maliyet ayrı ayrı tabloya işlenmelidir; hangi partinin
+      satıldığı FIFO ile belirlenir ve 2 yıl şartı bu belirlemeye göre test edilir.
+    - **Oran tespitinde satış tarihi:** Devir sözleşmesi tarihi mi yoksa MKK/noter tescil tarihi
+      mi esas alınacağı hisse türüne göre belirlenmeli; şüpheli durumlarda özelge tavsiye edilir.
+    - **Satış giderlerinin dağıtımı (KVK 5/3):** Komisyon, damga vergisi gibi satış giderleri
+      vergiye tabi kısma isabet eden payı oranında gider yazılabilir; istisna kısmına isabet eden
+      giderler ise KKEG sayılır.
+    - **549 hesabı izleme:** 5 yıllık fon tutma süresi her yıl kontrol edilmeli; sermayeye ilave
+      kararı verildiğinde muhasebe kaydı ve ilerleyen dönem vergi riski birlikte değerlendirilmelidir.
   kapi_sorulari:
     - id: iki_yil_aktif
       soru: "İştirak hisseleri satış tarihi itibarıyla en az 2 tam yıl (730 gün) aktifinde bulunuyor mu?"

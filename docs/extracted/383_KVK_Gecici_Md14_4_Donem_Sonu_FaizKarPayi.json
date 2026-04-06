@@ -1,0 +1,1261 @@
+{
+  "file": "383_KVK_Gecici_Md14_4_Donem_Sonu_FaizKarPayi.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G59",
+      "rows": [
+        [
+          "383 – KVK GEÇİCİ MADDE 14/4 | DÖNEM SONU DEĞERLEMESİNDEN DOĞAN KÂR PAYI VE FAİZ İSTİSNASI | PARAGRAF 4 — YENİ PARAGRAF | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/4 (Paragraf 4) | Dönem Sonu (31 Aralık) Kâr Payı/Faiz Tahakkuk İstisnası | Beyanname 383 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ | GİB KV Beyan Rehberi Mart 2026 (No:606)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "372 / 376 / 380 / 383 PARAGRAF KARŞILAŞTIRMASI — Her dördü de DÖNEM SONU KÂR PAYI VE FAİZ:\n  372 (Md.14/1-b): Paragraf 1 — Yab. para/altın → TL KKM dönüşümü sonrası araç.\n  376 (Md.14/2): Paragraf 2 — Yab. para borç → TL dönüşümü sonrası araç.\n  380 (Md.14/3): Paragraf 3 — Altın hesabı → TL dönüşümü sonrası araç.\n  383 (Md.14/4): Paragraf 4 — KVK Geçici Md.14/4 kapsamındaki araçlar → BU DOSYA.\n  Paragraf 4, 1-3 paragrafların kapsamadığı belirli TL araç/enstrüman kategorisine özgü ayrı hükümdür.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 383 kapsamındaki dönem sonu kâr payı/faiz istisnası YİAKV matrahından DÜŞÜLEMEZ. (YİAKV Reh. No:607 | E.7 DÜŞÜLEMEZ listesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ — KVK GEÇİCİ MD.14/4 ÖZEL KOŞULLAR",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  KVK Geçici Md.14/4 kapsamında işlem gerçekleştirildi mi? (Yasal dayanak ve kapsam teyit edildi mi?)",
+          null,
+          null,
+          null,
+          "EVET",
+          "383, KVK Geçici Md.14/4 kapsamı enstrümanlara özgüdür. Paragraf 4'ün kapsamı GİB KV Beyan Rehberi Mart 2026 (No:606) ve ilgili tebliğler çerçevesinde belirlenmeli.",
+          null
+        ],
+        [
+          "A0.2  ★ Bu işlem/enstrüman Paragraf 1 (370–374), Paragraf 2 (375–378) veya Paragraf 3 (379–382) kapsamına girmiyor mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "383, yalnızca 372/376/380 kapsamına girmeyen Paragraf 4'e özgü araçlara uygulanır. Paragraf analizi YMM tarafından yapılmalı ve belgelenmeli.",
+          null
+        ],
+        [
+          "A0.3  ★ Dönem sonu faiz/kâr payı tahakkuku yapıldı mı? (181 Dr / 642 Kr)",
+          null,
+          null,
+          null,
+          "EVET",
+          "VUK Md.280/281 gereği dönem sonu (31 Aralık) itibariyle tahakkuk zorunludur. Muhasebe kaydı olmadan 383 istisnasının dayanağı yoktur.",
+          null
+        ],
+        [
+          "A0.4  Paragraf 4 kapsamını belirleyen yasal mevzuat (Tebliğ / CB Kararı) incelendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14/4 kapsamı belirleyen yasal düzenlemeler incelenmeli. GİB KV Beyan Rehberi (No:606), ilgili tebliğler ve CB Kararları referans alınmalı.",
+          null
+        ],
+        [
+          "A0.5  372/376/380 (Paragraf 1/2/3) ile mükerrerlik analizi yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Aynı araç için yalnızca bir paragraf kodu uygulanabilir. Paragraf 4 araçlarının 1-3 paragraflarından ayrıştırılması zorunludur.",
+          null
+        ],
+        [
+          "A0.6  ★ 383 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14 kapsamındaki tüm istisnalar YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7'de 383 de kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.7  GİB Özelgesi alındı mı? (Paragraf 4 kapsamı için tavsiye edilir)",
+          null,
+          null,
+          null,
+          "EVET",
+          "Paragraf 4 kapsamı yeni ve tartışmalı olabilir. GİB özelgesi risk yönetimi için kritiktir.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (Paragraf 4 niteliği), A0.3 (tahakkuk), A0.6 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi / Değerleme Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "31.12.2025 — VUK dönem sonu değerleme tarihi",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/383-01",
+          null
+        ],
+        [
+          "Paragraf 4 Yasal Dayanak Referansı",
+          null,
+          null,
+          null,
+          null,
+          "KVK Geçici Md.14/4 | GİB KV Beyan Reh. 2026 (No:606) | İlgili CB Kararı",
+          null
+        ],
+        [
+          "B. KVK GEÇİCİ MD.14/4 — KAPSAM TANIMI VE ARAÇ BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ Paragraf 4 Kapsam Analizi: KVK Geçici Md.14/4 kapsamındaki araç/enstrüman türü ve yasal dayanağı YMM tarafından belirlenmeli. Paragraf 1-3 ile örtüşme olmamalı. Her araç için ayrı paragraf analizi zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14/4 KAPSAM AÇIKLAMASI:\n  KVK Geçici Madde 14'e sonradan eklenen Paragraf 4, Paragraf 1 (FX/altın → TL KKM), Paragraf 2 (FX borç → TL) ve Paragraf 3 (altın hesabı → TL) kapsamlarından farklı bir işlem veya enstrüman kategorisini kapsar.\n  OLASI KAPSAM ALANLARI: Özel TL araçlar (tahvil, sertifika vb.) | Belirli tarih aralıklarında açılan TL hesaplar | Kurumsal yatırımcı hesapları | Genişletilmiş KKM penceresi araçları | Diğer Paragraf 1-3 dışı TL dönüşüm enstrümanları.\n  ★ YMM: GİB KV Beyan Rehberi Mart 2026 (No:606) ve ilgili CB Kararları çerçevesinde müşterinin durumuna özgü Paragraf 4 kapsamı analizi yapılmalı ve belgelenmeli. Kapsam tartışmalıysa GİB özelgesi alınmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  Paragraf 4 Kapsamındaki Araç/Enstrüman Türü",
+          null,
+          "TL Mevduat/KKM Araç",
+          "KVK Geçici Md.14/4 kapsamındaki TL araç türü.",
+          null,
+          "Araç sözleşmesi / GİB Beyan Reh.",
+          null
+        ],
+        [
+          "B.2  Dönem Sonu Değerleme Tarihi",
+          null,
+          "31.12.2025",
+          "VUK dönem sonu tarihi.",
+          null,
+          "VUK Md.280",
+          null
+        ],
+        [
+          "B.3  Faiz/Kâr Payı Hesaplama Yöntemi",
+          null,
+          "Banka Bildirimi",
+          "Banka dönem sonu bildirimi veya sözleşme oranı esaslı tahakkuk.",
+          null,
+          "Banka belgesi",
+          null
+        ],
+        [
+          "B.4  TL Araç Bakiyesi (Dönem Sonu)",
+          null,
+          null,
+          "31 Aralık itibarıyla Paragraf 4 araç bakiyesi.",
+          null,
+          "Hesap ekstresi",
+          null
+        ],
+        [
+          "B.5  ★ Paragraf 4 Kapsamı Yasal Dayanağı (Tebliğ / CB Kararı / GİB Rehber)",
+          null,
+          null,
+          "KVK Geçici Md.14/4 kapsamını belirleyen yasal düzenleme referansı. Belgelenmeli.",
+          null,
+          "GİB / CB Kararı",
+          null
+        ],
+        [
+          "B.6  ★ Paragraf 1/2/3 ile Örtüşmeme Analizi Belgelendi mi?",
+          null,
+          "EVET",
+          "Bu araç için Paragraf 1/2/3 kodlarının hiçbirinin uygulanmadığı teyit edilmeli.",
+          null,
+          "Paragraf analizi",
+          null
+        ],
+        [
+          "C. PARAGRAF 4 TL ARAÇ BAZINDA DÖNEM SONU FAİZ/KÂR PAYI TAHAKKUK TABLOSU (383)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "SÜTUN 5 (koyu yeşil çerçeve): ANA VERİ — Dönem sonu tahakkuk eden faiz/kâr payı (banka bildirimi).\n  181 Dr / 642 Kr muhasebe kaydıyla mutabık olmalıdır. Sütun 6 (İstisna Oranı): Normalde 100.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Araç Adı/No",
+          "Açılış Tarihi",
+          "Araç Türü",
+          "Bakiye (TL)",
+          "Dönem Sonu Tahakkuk (TL)",
+          "İstisna Oranı (%)",
+          "383 İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "100",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam Dönem Sonu Faiz/Kâr Payı Tahakkuku → Beyanname 383",
+          null,
+          null,
+          "0",
+          "—",
+          "0"
+        ],
+        [
+          "SÜTUN 5 (koyu yeşil çerçeve): Banka dönem sonu bildirimi veya (Bakiye × Yıllık Oran × Gün/365). 181 Dr / 642 Kr muhasebe kaydıyla mutabık. Sütun 6: Normalde 100 (%). Kapsam dışı araç → 0. Paragraf 4 kapsamı YMM tarafından analiz edilmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. DÖNEM SONU KÂR PAYI/FAİZ İSTİSNASI ÖZET — BEYANNAME 383",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam Dönem Sonu Faiz/Kâr Payı Tahakkuku",
+          null,
+          "0",
+          "C tablosu toplam",
+          null,
+          "181/642 muhasebe kaydıyla mutabık",
+          null
+        ],
+        [
+          "D.2  Kapsam Dışı Tahakkuk (Paragraf 4 dışı araçlar)",
+          null,
+          "0",
+          "Kapsam dışı — vergilendirilir",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  ★ NET 383 İSTİSNA TUTARI → BEYANNAME 383",
+          null,
+          "0",
+          "→ Beyanname 383 | Kazancın Bulunması Halinde",
+          null,
+          "KVK Geçici Md.14/4",
+          null
+        ],
+        [
+          "D.4  Vergiye Tabi Kalan (Kapsam Dışı)",
+          null,
+          "0",
+          "Bu kısım KV matrahında kalır",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  TOPLAM İSTİSNA → Beyanname Satır 383 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Geçici Md.14/4 | Paragraf 4 Dönem Sonu Tahakkuk",
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 383 asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) PARAGRAF 4 NİTELİĞİ: 372/376/380 kapsamına girmeyen araçlar. Paragraf analizi YMM tarafından belgelenmeli.\n(3) ÖZELGE: Paragraf 4 kapsamı belirsiz veya tartışmalıysa GİB özelgesi alınması zorunludur.\n(4) MUHASEBE DAYANAĞI: 181 Dr / 642 Kr tahakkuk kaydı olmadan 383 uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H32",
+      "rows": [
+        [
+          "383 – KVK GEÇİCİ MD.14/4 DÖNEM SONU FAİZ/KÂR PAYI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 4 | VUK 280/281 Dönem Sonu Tahakkuk | Beyanname 383 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "Araç Türü (B.1)",
+          null,
+          null,
+          "TL Mevduat/KKM Araç",
+          "Paragraf 4 kapsamı araç",
+          null,
+          null,
+          null
+        ],
+        [
+          "Tahakkuk Kaydı (A0.3)",
+          null,
+          null,
+          "EVET",
+          "181/642 kaydı zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 4 Analizi (A0.4)",
+          null,
+          null,
+          "EVET",
+          "Mevzuat incelendi",
+          null,
+          null,
+          null
+        ],
+        [
+          "383 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "KVK Geçici Md.14 tüm kodlar E.7",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null,
+          null
+        ],
+        [
+          "B. 372 / 376 / 380 / 383 — DÖNEM SONU TAHAKKUK DÖRT PARAGRAF KARŞILAŞTIRMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          "372 (Md.14/1-b) P1",
+          "376 (Md.14/2) P2",
+          "380 (Md.14/3) P3",
+          "383 (Md.14/4) P4",
+          "Ortak",
+          "YİAKV"
+        ],
+        [
+          "Dayanak",
+          null,
+          "Paragraf 1 — Yab. para/altın → TL KKM",
+          "Paragraf 2 — Borç → TL araç",
+          "Paragraf 3 — Altın → TL araç",
+          "Paragraf 4 — Özel kapsam",
+          "Aynı mekanizma",
+          "Dördü DÜŞÜLEMEZ"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "181 Dr / 642 Kr",
+          "181 Dr / 642 Kr",
+          "181 Dr / 642 Kr",
+          "181 Dr / 642 Kr",
+          "Dönem sonu tahakkuk",
+          "E.7"
+        ],
+        [
+          "Zaman",
+          null,
+          "31 Aralık",
+          "31 Aralık",
+          "31 Aralık",
+          "31 Aralık",
+          "Her yıl",
+          "Yıllık accrual"
+        ],
+        [
+          "Bağlantılı",
+          null,
+          "370/371 (P1 dönüşümü)",
+          "375 (P2 dönüşümü)",
+          "379 (P3 altın dönüşümü)",
+          "Paragraf 4 kapsamı",
+          "Ayrı zincirler",
+          "Bağlantı analizi"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ Paragraf 4 kapsamı yasal dayanağı analiz edildi mi?",
+          null,
+          "GİB KV Beyan Reh. No:606, ilgili tebliğler ve CB Kararları incelenmeli. B.5 doldurulmuş.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K2",
+          "★ Bu araç gerçekten 372/376/380 (Paragraf 1/2/3) kapsamına girmiyor mu?",
+          null,
+          "Paragraf 4 niteliği, diğer üç paragrafın kapsamı karşılaştırılarak teyit edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K3",
+          "★ Dönem sonu faiz/kâr payı tahakkuk muhasebe kaydı yapıldı mı? (181/642)",
+          null,
+          "Kayıt olmadan 383 istisnasının muhasebe dayanağı yoktur.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K4",
+          "C tablosundaki tahakkuk tutarları 181/642 muhasebe kayıtlarıyla mutabık mı?",
+          null,
+          "Her araç satırı muhasebe ekstresiyle doğrulanmış.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K5",
+          "Banka dönem sonu tahakkuk bildirimi mevcut mu?",
+          null,
+          "Resmi banka dönem sonu bildirimi zorunludur.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K6",
+          "Kapsam dışı araçlar (D.2) ayrıştırıldı mı?",
+          null,
+          "Paragraf 4 dışındaki araçlar → vergilendirilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K7",
+          "★ Tartışmalı kapsam durumlarında GİB özelgesi alındı mı?",
+          null,
+          "Paragraf 4 kapsamı belirsizse özelge zorunludur.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K8",
+          "★★ 383 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "KVK Geçici Md.14 kapsamındaki tüm kodlar YİAKV matrahından DÜŞÜLEMEZ. E.7'de 383 de kontrol edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K9",
+          "Beyanname 383 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K10",
+          "Tahsil döneminde 181 kapatma kaydı yapılıp 383 tekrar uygulanmadı mı?",
+          null,
+          "Yalnızca tahakkuk anında — tahsil döneminde tekrar yok.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K11",
+          "Birden fazla Paragraf 4 aracı varsa her biri ayrı satırda mı?",
+          null,
+          "Her araç C tablosunda ayrı satır ve ayrı değerlendirme.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G19",
+      "rows": [
+        [
+          "383 – KVK GEÇİCİ MD.14/4 DÖNEM SONU FAİZ/KÂR PAYI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tahakkuk Kaydı | Tahsil Kaydı | 372/376/380/383 Dört Paragraf Karşılaştırması",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — DÖNEM SONU (31 ARALIK): PARAGRAF 4 ARACI FAİZ/KÂR PAYI TAHAKKUKU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[31.12.YYYY]",
+          "181 Gelir Tahakkukları",
+          "Paragraf 4 kapsamı TL araçtan tahakkuk eden faiz/kâr payı (C tablosu toplam)",
+          "[Tutar]",
+          "—",
+          "Banka bildirimi"
+        ],
+        [
+          "Kr",
+          "[31.12.YYYY]",
+          "642 Faiz Gelirleri / 644 Kâr Payları",
+          "KVK Geçici Md.14/4 kapsamı → Beyanname 383",
+          "—",
+          "[Tutar]",
+          "KV 383"
+        ],
+        [
+          "372/376/380 ile AYNI muhasebe mekanizması (181/642). Fark: yasal dayanak Paragraf 4 (Md.14/4).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — TAHSİL (İZLEYEN DÖNEM): 181 KAPATMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Tahsil]",
+          "102 Bankalar",
+          "Faiz/kâr payı tahsilatı",
+          "[Tutar]",
+          "—",
+          "Banka ekstresi"
+        ],
+        [
+          "Kr",
+          "[Tahsil]",
+          "181 Gelir Tahakkukları",
+          "Önceki dönem 383 tahakkuku kapatma",
+          "—",
+          "[Tutar]",
+          "181 kapatma"
+        ],
+        [
+          "KAYIT 3 — 372 / 376 / 380 / 383 DÖRT PARAGRAF YAN YANA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "372",
+          "31.12",
+          "181/642",
+          "P1 AKT: Yab.para/altın → KKM araç → Dönem sonu tahakkuk → 372",
+          "—",
+          "[372]",
+          "KV 372"
+        ],
+        [
+          "376",
+          "31.12",
+          "181/642",
+          "P2 PAS: Borç → TL araç → Dönem sonu tahakkuk → 376",
+          "—",
+          "[376]",
+          "KV 376"
+        ],
+        [
+          "380",
+          "31.12",
+          "181/642",
+          "P3 ALT: Altın → TL araç → Dönem sonu tahakkuk → 380",
+          "—",
+          "[380]",
+          "KV 380"
+        ],
+        [
+          "383",
+          "31.12",
+          "181/642",
+          "P4: Paragraf 4 araç → Dönem sonu tahakkuk → 383 (BU)",
+          "—",
+          "[383]",
+          "KV 383"
+        ],
+        [
+          "YİAKV: 372+376+380+383 dördünün de geliri (181/642 tahakkuk) YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7). Aynı TL araç için yalnızca biri uygulanabilir — hangi paragraf kapsamında olduğu belirlenmelidir. Paragraf 4 kapsamı YMM tarafından analiz edilip belgelenmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "383 – KVK GEÇİCİ MD.14/4 DÖNEM SONU FAİZ/KÂR PAYI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | 372/376/380 Karşılaştırması | Paragraf 4 Analizi | ★★ YİAKV",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/4 — Paragraf 4 Kapsamı ve Dönem Sonu Mekanizması",
+          "383 (PARAGRAF 4 — DÖNEM SONU KÂR PAYI VE FAİZ) TANIMI:\n\nKVK Geçici Madde 14/4 kapsamında değerlendirilen TL araçlardan dönem sonu itibarıyla\nVUK Md.280/281 gereği tahakkuk ettirilen faiz ve kâr payı geliri, istisnadır.\n\nPARAGRAF 4 KAPSAMININ ÖNEMİ:\nKVK Geçici Md.14'e sonradan eklenen Paragraf 4, 1-3 paragraflarının kapsamadığı\nbelirli araç veya işlem kategorilerini kapsar. YMM'nin Paragraf 4'ün kapsamını\nilgili mevzuat (tebliğler, CB kararları, GİB rehberi) çerçevesinde belirlemesi zorunludur.\n\n372/376/380/383 KARŞILAŞTIRMASI:\nHer dördü de 181 Dr / 642 Kr dönem sonu tahakkuk mekanizmasını kullanır.\nFark: Hangi paragraf kapsamındaki TL aracın söz konusu olduğu.\n\nBEYANNAME: 383 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/4 | GİB KV Beyan Reh. 2026 (No:606) | VUK Md.280/281",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ Paragraf 4 Kapsam Analizi — YMM'nin Temel Görevi",
+          "PARAGRAF 4 KAPSAM ANALİZİ — ZORUNLU ADIMLAR:\n\n1. GİB KV Beyan Rehberi Mart 2026 (No:606) inceleme:\n   Beyanname satırı 383'ün hangi işlem/araç için öngörüldüğü belirlenmeli.\n\n2. İlgili CB Kararları inceleme:\n   KKM programını genişleten veya değiştiren CB Kararlarının Paragraf 4 üzerindeki etkisi.\n\n3. Paragraf 1-3 ile karşılaştırma:\n   Söz konusu işlem/araç Paragraf 1 (FX/altın → TL KKM) kapsamında mı?\n   Paragraf 2 (FX borç → TL) kapsamında mı?\n   Paragraf 3 (altın hesabı → TL) kapsamında mı?\n   Hayırsa → Paragraf 4 (383) uygulanabilir.\n\n4. GİB Özelgesi (Gerektiğinde):\n   Paragraf 4 kapsamı belirsiz veya tartışmalıysa özelge zorunludur.",
+          "KVK Geçici Md.14/4 | GİB KV Beyan Reh. 2026 (No:606) | CB Kararları",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — KVK Geçici Md.14 Tüm Kodlar DÜŞÜLEMEZ",
+          "KVK GEÇİCİ MD.14 KAPSAMININ TAMAMININ YİAKV MATRAHINDA DÜŞÜLEMEZLİĞİ:\n\nParagraf 1: 370|371|372|373|374 → BEŞİ DE DÜŞÜLEMEZ\nParagraf 2: 375|376|377|378 → DÖRDÜ DE DÜŞÜLEMEZ\nParagraf 3: 379|380|381|382 → DÖRDÜ DE DÜŞÜLEMEZ\nParagraf 4: 383 → DÜŞÜLEMEZ (ve devam eden kodlar varsa hepsi)\n\nYİAKV E.7 (Güncellenmeli):\n'KVK Geçici Md.14 (Tüm Paragraflar 1-4, Tüm Kodlar 370-383+)\n→ DÜŞÜLEMEZ ✗ | Beyanname 370/371/.../382/383'\n\nDönem sonu tahakkuk kodları (372/376/380/383) özelinde:\nHer dördünün de 181/642 tahakkuku YİAKV matrahında kalır.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Dönem Sonu Tahakkuk Zinciri — Paragraf 4 İçin",
+          "PARAGRAF 4 ZİNCİRİ ANALIZI:\n\nParagraf 1: 370 (kur farkı) → 372 (dönem sonu) → 373 (vade)\nParagraf 2: 375 (borç kur farkı) → 376 (dönem sonu) → 377 (vade)\nParagraf 3: 379 (altın dönüşüm) → 380 (dönem sonu) → 381 (vade)\nParagraf 4: [P4 dönüşüm kodu?] → 383 (dönem sonu) → [P4 vade kodu?]\n\n383 = Paragraf 4 zincirinin dönem sonu halkası.\nEğer Paragraf 4'te bir 'dönüşüm anı' kodu varsa (örn. 383 öncesi bir kod),\n383 o kodun 372 veya 376 veya 380 gibi dönem sonu tahakkuk karşılığıdır.\n\nTAHSİL DÖNEMİNDE:\n181/642 tahakkuku izleyen dönemde tahsil edildiğinde:\nDr 102 / Kr 181 → 383 tekrar uygulanmaz.\nVade sonu için ayrı bir beyanname kodu uygulanabilir.",
+          "KVK Geçici Md.14/4 | VUK Md.280/281",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...KVK Geçici Madde 14/4 kapsamındaki [Araç Türü] hesabından [dönem] hesap döneminin\nbitiş tarihi itibarıyla VUK Md.280/281 gereği tahakkuk ettirilen [Tutar] TL faiz/kâr payı\ngeliri, KVK Geçici Madde 14/4 kapsamında kurumlar vergisinden istisna edilmiş ve yurt içi\nasgari kurumlar vergisi matrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...383 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...Paragraf 4 kapsamı analiz edilmeksizin 383 uygulanmıştır.' (Eksik analiz)\n'...Aynı araç hem 372 hem 383 kapsamındadır.' (Mükerrerlik)\n\nKRİTİK RİSKLER:\n(1) 383'ü YİAKV matrahından düşmek.\n(2) Paragraf 4 kapsam analizi yapmadan 383 uygulamak.\n(3) Tartışmalı kapsam için GİB özelgesi almamak.\n(4) 372/376/380 ile aynı araç için mükerrer 383 uygulamak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14/4 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (383): 383 = 372, 376 ve 380'in Paragraf 4 karşılığı. Aynı 181/642 mekanizması, farklı yasal dayanak. Paragraf 4 kapsamı YMM tarafından belirlenmeli ve belgelenmeli. Tartışmalı kapsam için GİB özelgesi zorunludur. KVK Geçici Md.14 tüm kodları YİAKV matrahından DÜŞÜLEMEZ. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F31",
+      "rows": [
+        [
+          "383 – KVK GEÇİCİ MD.14/4 DÖNEM SONU FAİZ/KÂR PAYI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | Paragraf 4 Kapsam | VUK Md.280/281 | 181/642",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Paragraf 4 Kapsam Analizi Notu (YMM Tarafından Hazırlanan)",
+          "KVK Geçici Md.14/4 kapsamı belirleme notu. GİB KV Beyan Rehberi (No:606), ilgili tebliğler\nve CB Kararları referans alınarak hazırlanmalı. Bu, 383'ün en temel dayanağıdır.",
+          "YMM tarafından hazırlanır",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Muhasebe Yevmiyesi — 181 Dr / 642 Kr Tahakkuk Kaydı",
+          "Dönem sonu (31 Aralık) tahakkuk yevmiye kaydı. C tablosu toplamıyla birebir uyumlu.\nKayıt olmadan 383 istisnasının muhasebe dayanağı yoktur.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Banka Dönem Sonu Tahakkuk Bildirimi",
+          "Dönem sonu tahakkuk eden faiz/kâr payı tutarını gösteren resmi banka belgesi.\nHer araç için ayrı banka bildirimi.",
+          "Banka şubesi/internet bankacılığı",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ GİB Özelgesi (Paragraf 4 Kapsam Belirsizliğinde — Tavsiye/Zorunlu)",
+          "Paragraf 4 kapsamı tartışmalı veya belirsizse GİB özelgesi alınmalıdır.\nÖzelge olmadan 383 uygulaması tarhiyat riski taşıyabilir.",
+          "GİB özelge başvuru sistemi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 383. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Araç Sözleşmesi (Paragraf 4 Kapsamı Araç)",
+          "Faiz/kâr payı oranı ve vade bilgisi için araç sözleşmesi.",
+          "Banka araç sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "372/376/380 ile Paragraf Ayrıştırma Belgesi",
+          "Aynı araç için 372/376/380 uygulanmadığının teyidi — paragraf analizi notu.",
+          "YMM kapsam analizi notu",
+          null
+        ],
+        [
+          null,
+          "8",
+          "181 Hesap Kapatma Kaydı (İzleyen Dönem Tahsilat)",
+          "Önceki dönem 383 tahakkuklarının tahsil edildiğinde 181 kapatıldığını gösteren yevmiye.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Paragraf 4 kapsamı yasal dayanağı analiz edildi mi? (Mevzuat incelendi)",
+          "GİB Beyan Reh. + CB Kararları + ilgili tebliğler.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Bu araç 372/376/380 (Paragraf 1/2/3) kapsamına girmiyor mu?",
+          "Paragraf 4 niteliği teyit edilmiş.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Dönem sonu tahakkuk muhasebe kaydı (181/642) yapıldı mı?",
+          "Kayıt olmadan istisna uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ Tahakkuk tutarları banka bildirimi ile mutabık mı?",
+          "Her araç satırı belgeyle doğrulanmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "★ Tartışmalı kapsam için GİB özelgesi alındı mı?",
+          "Kapsam belirsizliği → Özelge zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "372/376/380 ile mükerrerlik analizi yapıldı mı?",
+          "Aynı araç için yalnızca biri (372/376/380/383).",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ 383 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "KVK Geçici Md.14 tüm kodları YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Beyanname 383 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Tahsil döneminde 181 kapatıldı, 383 tekrar uygulanmadı mı?",
+          "Yalnızca tahakkuk anında.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 383 = KVK Geçici Md.14/4 (Paragraf 4) dönem sonu kâr payı/faiz tahakkuku. 372 (P1) + 376 (P2) + 380 (P3) + 383 (P4) — dört paragrafın dönem sonu hattı, aynı mekanizma (181/642). ★ Paragraf 4 kapsam analizi YMM'nin birincil görevidir. GİB özelgesi tavsiye edilir. KVK Geçici Md.14 tüm kodları YİAKV matrahından DÜŞÜLEMEZ. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

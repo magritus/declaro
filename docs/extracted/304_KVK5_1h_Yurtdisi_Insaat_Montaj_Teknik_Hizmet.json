@@ -1,0 +1,1749 @@
+{
+  "file": "304_KVK5_1h_Yurtdisi_Insaat_Montaj_Teknik_Hizmet.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G69",
+      "rows": [
+        [
+          "304 – YURT DIŞI İNŞAAT, ONARMA, MONTAJ VE TEKNİK HİZMETLERDEN SAĞLANAN KAZANÇLAR | KVK Md.5/1-h | YMM TASDİK ÇALIŞMA KÂĞIDI | BEYANNAME SATIR 304",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-h | %100 Tam İstisna | Yurt Dışında Fiilen İcra Edilen İnşaat/Onarma/Montaj/Teknik Hizmet | Türkiye'de Genel Sonuç Hesaplarına İntikal | Transfer Zorunluluğu YOK | Vergi Yükü Şartı YOK | Beyanname Satır 304 — Zarar Olsa Dahi İndirilecek",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "322 (5/1-g) İLE KARŞILAŞTIRMA — 304 (5/1-h) DAHA ESNEK: ① Türkiye'ye transfer zorunlu DEĞİL. ② %15 vergi yükü şartı YOK. ③ Faaliyet türü sınırlı: İnşaat / Onarma / Montaj / Teknik Hizmet (genel şube faaliyeti kapsam dışı). ④ Her ikisi de %100 istisna ve 'Zarar Olsa Dahi İndirilecek' bölümündedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ EN KRİTİK ŞARTLAR: (1) Faaliyet yurt dışında FİİLEN icra edilmiş olmalı — Türkiye'den uzaktan verilen hizmet kapsam tartışmalı. (2) Kazanç Türkiye'de genel sonuç hesaplarına (gelir tablosuna) intikal ettirilmeli. (3) Faaliyet türü sözleşmeyle ispat edilmeli: İnşaat, onarma, montaj veya teknik hizmet. Ticaret, komisyon, aracılık → Kapsam dışı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Faaliyet türü KVK 5/1-h kapsamında mı? (İnşaat/Onarma/Montaj/Teknik Hizmet)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KAPSAM İÇİ: İnşaat (bina/köprü/yol/baraj), onarma/tadilat, montaj/kurulum, teknik hizmet. KAPSAM DIŞI: Ticaret, komisyon, aracılık, yazılım ürünü satışı, yatırım danışmanlığı. Sözleşme niteliği faaliyet türünü belirler.",
+          null
+        ],
+        [
+          "A0.2  ★ Faaliyet YURT DIŞINDA FİİLEN icra edildi mi? (Türkiye'den uzak değil)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Personelin/şantiyenin yurt dışında fiziken bulunması gerekir. Pasaport, vize, çalışma izni, şantiye belgesi ile ispat. Türkiye'den uzaktan (remote) verilen teknik danışmanlık: Tartışmalı — özelge önerilir.",
+          null
+        ],
+        [
+          "A0.3  ★ Kazanç Türkiye'de genel sonuç hesaplarına intikal etti mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: KVK 5/1-h — '...Türkiye'de genel sonuç hesaplarına intikal ettirilen kazançlar...' Yurt dışında bırakılan, Türkiye gelir tablosuna yansıtılmayan kazanç istisna dışıdır. 322 (5/1-g) ile ortak şart — ANCAK transfer zorunluluğu yoktur.",
+          null
+        ],
+        [
+          "A0.4  Birden fazla proje varsa her biri için ayrı sözleşme ve muhasebe var mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Her yurt dışı proje için ayrı gelir-gider takibi veya belgelenmiş dağıtım anahtarı. Karma muhasebede tüm geliri istisnaya almak hatalıdır.",
+          null
+        ],
+        [
+          "A0.5  Yurt dışı işin yapıldığı ülkeyle Türkiye arasında ÇVÖA var mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "ÇVÖA varsa şantiye işyeri maddesine göre vergilendirme yetkisi analiz edilmeli. Yurt dışında ödenen vergi: 5/1-h istisnası seçilirse mahsup yapılamaz; alternatif olarak KVK Md.33 mahsup değerlendirilebilir.",
+          null
+        ],
+        [
+          "A0.6  5/1-h ile KVK Md.33 mahsup alternatifleri karşılaştırıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "5/1-h istisnası: Yurt dışı kazanç tamamen istisna, mahsup yapılamaz. KVK Md.33 mahsup: Yurt dışı kazanç vergiye tabi, ödenen yurt dışı vergi KV'den mahsup. Yüksek yurt dışı vergi oranında mahsup tercih edilebilir.",
+          null
+        ],
+        [
+          "A0.7  YİAKV matrahında 304 istisnasının etkisi analiz edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-h (304) istisnasının YİAKV (KVK 32/C) matrahına etkisi dönem mevzuatı ve GİB açıklamalarıyla analiz edilmelidir.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (yurt dışı icra) ve A0.3 (genel sonuç hesapları) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "İstisna kullanan kurumun tam adı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Proje / İşin Tanımı (Genel)",
+          null,
+          null,
+          null,
+          null,
+          "Tüm projeleri kapsayan özet",
+          null
+        ],
+        [
+          "Faaliyet Gösterilen Ülkeler",
+          null,
+          null,
+          null,
+          null,
+          "Ülke(ler) listesi — birden fazla ülke var ise",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Finans: %30",
+          null
+        ],
+        [
+          "B. YURT DIŞI PROJE / İŞ TANIMI — Her Proje İçin Bir Satır",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Birden fazla proje varsa her satır ayrı bir proje/sözleşmeyi temsil eder. İş türü: İnşaat / Onarma / Montaj / Teknik Hizmet — sözleşme niteliği belirleyicidir. Para birimi: İş bedelinin cinsinden — TCMB alış kuru ile TL'ye çevrim gerekir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Proje / İş Tanımı",
+          "Ülke",
+          "İş Türü",
+          "Para Birimi",
+          "Sözleşme Tutarı (Döviz)",
+          "Yurt Dışı İcra Teyidi"
+        ],
+        [
+          null,
+          "Proje-1",
+          null,
+          null,
+          null,
+          null,
+          "Pasaport/Vize/Şantiye belgesi"
+        ],
+        [
+          null,
+          "Proje-2",
+          null,
+          null,
+          null,
+          null,
+          "Pasaport/Vize/Şantiye belgesi"
+        ],
+        [
+          null,
+          "Proje-3",
+          null,
+          null,
+          null,
+          null,
+          "Pasaport/Vize/Şantiye belgesi"
+        ],
+        [
+          null,
+          "Proje-4",
+          null,
+          null,
+          null,
+          null,
+          "Pasaport/Vize/Şantiye belgesi"
+        ],
+        [
+          null,
+          "Proje-5",
+          null,
+          null,
+          null,
+          null,
+          "Pasaport/Vize/Şantiye belgesi"
+        ],
+        [
+          "C. FAAlİYET TÜRÜ KAPSAM KONTROLÜ — 5/1-h Sınırları",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/1-h kapsamı belirli faaliyet türleriyle sınırlıdır. Sözleşme niteliğine göre kapsam içi/dışı ayrımı yapılır. Karma faaliyette yalnızca kapsam içi kısım istisna tutulur. Uzaktan teknik hizmet tartışmalı — özelge alınması tavsiye edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Değerlendirme",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "C.1  Sözleşme türü inşaat, onarma, montaj veya teknik hizmet mi?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Ticaret, komisyon, aracılık → Kapsam dışı. Hizmet sözleşmesi niteliği teyit edilmeli.",
+          null
+        ],
+        [
+          "C.2  Faaliyet yurt dışında FİZİKEN icra ediliyor/edildi mi?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Türkiye'den uzaktan hizmet tartışmalı. Personel/şantiye yurt dışında fiziken olmalı.",
+          null
+        ],
+        [
+          "C.3  Karma faaliyette (hizmet+mal satışı) gelir ayrımı yapıldı mı?",
+          null,
+          null,
+          "Uygulanmıyor",
+          null,
+          "Karma sözleşmede: Yalnızca hizmet kısmı istisna. Mal satışı kısmı ayrıştırılmalı.",
+          null
+        ],
+        [
+          "C.4  Uzaktan Teknik Hizmet varsa: Özelge analizi yapıldı mı?",
+          null,
+          null,
+          "Uygulanmıyor",
+          null,
+          "Uzaktan hizmet için özelge alınması şiddetle tavsiye edilir. GİB tutumu dönemden döneme değişebilir.",
+          null
+        ],
+        [
+          "C.5  KAPSAM GENEL SONUCU",
+          null,
+          null,
+          "HAYIR — Kapsam Analizi Gerekli",
+          null,
+          "C.1 ve C.2 EVET ise kapsam içi",
+          null
+        ],
+        [
+          "D. YURT DIŞI PROJE GELİR VE GİDERLERİ — İstisna Kazanç Tespiti",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tüm yurt dışı proje gelirleri Türkiye gelir tablosuna intikal ettirilir (şart). Doğrudan proje giderleri eksiksiz düşülür. Türkiye merkez genel giderlerinden projeye isabet eden pay dağıtım anahtarıyla belirlenir. Döviz: TCMB alış kuru — tahakkuk veya transfer tarihi itibariyle.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Yurt Dışı Hâkediş / Hizmet Gelirleri — Tüm Projeler Toplamı (TL)",
+          null,
+          null,
+          "Tahakkuk eden veya tahsil edilen gelir — TCMB alış kuru ile TL",
+          null,
+          "640/641/649 veya ilgili hesap ekstreleri",
+          null
+        ],
+        [
+          "D.2  Yurt Dışı Projeyle Doğrudan İlgili Giderler (TL)",
+          null,
+          null,
+          "İşçilik (yurt dışı personel), malzeme, ekipman, alt yüklenici, ulaşım, konaklama",
+          null,
+          "Fatura + ödeme belgesiyle belgelenmiş",
+          null
+        ],
+        [
+          "D.3  Türkiye Merkezi Genel Gider Payı — Projeye İsabet Eden (TL)",
+          null,
+          null,
+          "Dağıtım anahtarı: Proje cirosu / Toplam ciro vb. Yöntem yazılı belgelenmeli.",
+          null,
+          "Dağıtım anahtarı belgesi dosyaya eklenecek",
+          null
+        ],
+        [
+          "D.4  Yurt Dışında Ödenen Vergi / Stopaj (TL)",
+          null,
+          null,
+          "TCMB alış kuru ile TL — vergi makbuzu dayanağıyla",
+          null,
+          "5/1-h seçilirse mahsup yapılamaz — KVK Md.33 analizi için",
+          null
+        ],
+        [
+          "D.5  NET YURT DIŞI PROJE KAZANCI = D.1 − D.2 − D.3",
+          null,
+          "0",
+          "Pozitif = Kazanç | Negatif = Zarar | Vergi hariç",
+          null,
+          "Otomatik hesap",
+          null
+        ],
+        [
+          "D.6  DURUM",
+          null,
+          "SIFIR",
+          "Otomatik değerlendirme",
+          null,
+          "Zarar: 304 satırına 0 — E.3 notuna bak",
+          null
+        ],
+        [
+          "D.7  5/1-h İSTİSNA TUTARI (%100)",
+          null,
+          "0",
+          "Kapsam EVET ise kazancın tamamı — kapsam HAYIR ise sıfır",
+          null,
+          "→ Beyanname 304",
+          null
+        ],
+        [
+          "E. GENEL SONUÇ HESAPLARINA İNTİKAL KONTROLÜ — 5/1-h'ın Temel Şartı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 5/1-h: '...Türkiye'de genel sonuç hesaplarına intikal ettirilen kazançlar...' Bu şart 322 (5/1-g) ile aynıdır — ANCAK 322'deki transfer zorunluluğu YOKTUR. Kazanç yurt dışında kalabilir; Türkiye gelir tablosuna yansıması yeterlidir. Transfer olmasa bile kazancın Türkiye'de beyan edilmesi ve vergiye tabi tutulacak tutarla birlikte ticari kâra dahil edilmesi zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  Yurt Dışı Proje Gelirleri Türkiye Gelir Tablosuna (600/640/649) Yansıdı mı?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Gelir hesabı ekstresi ile teyit. D.1 = ilgili gelir hesabı toplamı uyumlu olmalı.",
+          null
+        ],
+        [
+          "E.2  Türkiye KV Beyannamesi Başlangıç Ticari Kârı Bu Geliri Kapsıyor mu?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Muhasebe gelir tablosu = Beyanname başlangıç ticari kârı = Yurt dışı gelir dahil.",
+          null
+        ],
+        [
+          "E.3  Yurt Dışında Kalan Kazanç Türkiye Gelir Tablosuna Yine de Dahil mi?",
+          null,
+          null,
+          "EVET",
+          null,
+          "5/1-h'da transfer zorunlu DEĞİL — ancak kazancın Türkiye gelir tablosuna intikal ettirilmesi zorunludur. Yurt dışında tutulan ama gelir tablosuna yansıtılan kazanç istisna kapsamındadır.",
+          null
+        ],
+        [
+          "E.4  Döviz Kuru Dönüşümü TCMB Alış Kuru ile Yapıldı mı?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Tahakkuk veya transfer tarihindeki TCMB döviz alış kuru esas. Tutarlılık zorunlu.",
+          null
+        ],
+        [
+          "F. 5/1-h İSTİSNASI vs KVK Md.33 MAHSUP — KARAR ANALİZİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/1-h istisnası veya KVK Md.33 yurt dışı vergi mahsubu — ikisi aynı anda kullanılamaz. 5/1-h: Yurt dışı kazanç tamamen istisna — yurt dışında ödenen vergi mahsup edilemez. Mahsup: Yurt dışı kazanç Türkiye'de vergiye tabi — ödenen vergi KV'den mahsup edilir. Yüksek yurt dışı vergi oranında mahsup, düşük oranında istisna avantajlı olabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "F.1  5/1-h İstisnası mı, KVK Md.33 Mahsup mu?",
+          null,
+          null,
+          "5/1-h İstisnası",
+          null,
+          "5/1-h: Yurt dışı vergi oranı düşükse avantajlı. Mahsup: Yüksek yurt dışı vergi oranında avantajlı.",
+          null
+        ],
+        [
+          "F.2  5/1-h Seçildi mi? (Mahsup tercih edilmediyse EVET)",
+          null,
+          null,
+          "EVET",
+          null,
+          "5/1-h seçilirse: Yurt dışında ödenen vergi (D.4) mahsup YAPILAMAZ.",
+          null
+        ],
+        [
+          "G. BEYANNAME 304 — KVK 5/1-h YURT DIŞI İNŞAAT/TEKNİK HİZMET İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "G.1  TOPLAM İSTİSNA → Beyanname Satır 304 (ZARAR OLSA DAHİ İNDİRİLECEK — %100 Tam İstisna)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "D.7 — Net Yurt Dışı Kazanç × %100"
+        ],
+        [
+          "KRİTİK UYARILAR: (1) 'ZARAR OLSA DAHİ': 304 beyannamede Zarar Olsa Dahi İndirilecek bölümündedir — 351/352 gibi 'Kazancın Bulunması Halinde' değil. (2) TRANSFER ZORUNLU DEĞİL: 322 (5/1-g)'den farklı — Türkiye'ye transfer gerekmez, sadece Türkiye gelir tablosuna yansıması yeterlidir. (3) VERGİ YÜKÜ ŞARTI YOK: %15 eşiği aranmaz. (4) FAAlİYET TÜRÜ: Sözleşme niteliği inşaat/onarma/montaj/teknik hizmet olmalı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G76",
+      "rows": [
+        [
+          "304 – YURT DIŞI İNŞAAT/ONARMA/MONTAJ/TEKNİK HİZMET | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-h | %100 Tam İstisna | Beyanname 304 | Zarar Olsa Dahi | Transfer Zorunlu DEĞİL | %15 Vergi Yükü Şartı YOK | Fon Hesabı YOK | Faaliyet: İnşaat/Onarma/Montaj/Teknik Hizmet",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Kapsam Sonucu (C.5)",
+          null,
+          null,
+          "HAYIR — Kapsam Analizi Gerekli",
+          "EVET: Kapsam içi",
+          null,
+          null
+        ],
+        [
+          "Yurt Dışı Proje Gelirleri (D.1)",
+          null,
+          null,
+          "Tahakkuk eden veya tahsil edilen gelir — TCMB alış kuru ile TL",
+          "Tüm projeler toplamı",
+          null,
+          null
+        ],
+        [
+          "Proje Giderleri (D.2)",
+          null,
+          null,
+          "İşçilik (yurt dışı personel), malzeme, ekipman, alt yüklenici, ulaşım, konaklama",
+          "Doğrudan giderler",
+          null,
+          null
+        ],
+        [
+          "Merkez Gider Payı (D.3)",
+          null,
+          null,
+          "Dağıtım anahtarı: Proje cirosu / Toplam ciro vb. Yöntem yazılı belgelenmeli.",
+          "Dağıtım anahtarı ile",
+          null,
+          null
+        ],
+        [
+          "Net Yurt Dışı Kazanç (D.5)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "Durum (D.6)",
+          null,
+          null,
+          "SIFIR",
+          "Kazanç/Zarar/Sıfır",
+          null,
+          null
+        ],
+        [
+          "304 İSTİSNA TUTARI %100 (D.7)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna/Mahsup Tercihi (F.1)",
+          null,
+          null,
+          "5/1-h İstisnası",
+          "5/1-h veya Md.33",
+          null,
+          null
+        ],
+        [
+          "İntikal Durumu (E.1)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "B. 304 (5/1-h) vs 322 (5/1-g) — TAM KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bu iki istisna sık karıştırılır. 304 faaliyet türü sınırlı ama şartları daha az. 322 her türlü şube faaliyetini kapsar ama transfer ve %15 vergi yükü şartı ekler.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "304 — 5/1-h (YD İnşaat/Teknik)",
+          null,
+          "322 — 5/1-g (YD Şube)",
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100 Tam İstisna",
+          null,
+          "%100 Tam İstisna",
+          null,
+          null
+        ],
+        [
+          "Beyanname Satırı",
+          null,
+          "304",
+          null,
+          "322",
+          null,
+          null
+        ],
+        [
+          "Beyanname Bölümü",
+          null,
+          "Zarar Olsa Dahi İndirilecek",
+          null,
+          "Zarar Olsa Dahi İndirilecek",
+          null,
+          null
+        ],
+        [
+          "Faaliyet Türü",
+          null,
+          "Yalnızca: İnşaat/Onarma/Montaj/Teknik Hizmet",
+          null,
+          "Her türlü işyeri/temsilci faaliyeti",
+          null,
+          null
+        ],
+        [
+          "Türkiye'ye Transfer",
+          null,
+          "ZORUNLU DEĞİL — Transfer olmasa da istisna uygulanabilir",
+          null,
+          "ZORUNLU — KV beyan tarihine kadar",
+          null,
+          null
+        ],
+        [
+          "%15 Vergi Yükü Şartı",
+          null,
+          "YOK — Vergi yükü şartı aranmaz",
+          null,
+          "VAR — C bölümünde hesaplanır",
+          null,
+          null
+        ],
+        [
+          "Genel Sonuç Hesaplarına İntikal",
+          null,
+          "EVET — Zorunlu",
+          null,
+          "EVET — Zorunlu",
+          null,
+          null
+        ],
+        [
+          "Uzaktan Hizmet (Remote)",
+          null,
+          "Tartışmalı — Özelge tavsiye edilir",
+          null,
+          "Türkiye'den uzak: Kapsam dışı",
+          null,
+          null
+        ],
+        [
+          "Karma Faaliyet (İnşaat+Ticaret)",
+          null,
+          "Ayrıştırma zorunlu — Yalnızca hizmet kısmı",
+          null,
+          "Ayrıştırma zorunlu",
+          null,
+          null
+        ],
+        [
+          "Fon Hesabı (549)",
+          null,
+          "YOK",
+          null,
+          "YOK",
+          null,
+          null
+        ],
+        [
+          "2 Yıl Aktif Şartı",
+          null,
+          "YOK",
+          null,
+          "YOK",
+          null,
+          null
+        ],
+        [
+          "KVK Md.33 Mahsup Alternatifi",
+          null,
+          "Alternatifleri karşılaştır",
+          null,
+          "Alternatifleri karşılaştır",
+          null,
+          null
+        ],
+        [
+          "Avantaj",
+          null,
+          "Transfer ve vergi yükü şartı yok",
+          null,
+          "Her türlü şube faaliyeti kapsam içi",
+          null,
+          null
+        ],
+        [
+          "C. KVK 5/1-h KAPSAM SINIRI — FAAlİYET TÜRÜ VE YURT DIŞI İCRA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/1-h faaliyet türü kapsamı: EVET (Yeşil) / HAYIR (Kırmızı) / TARTIŞMALI (Sarı).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Faaliyet / Durum",
+          null,
+          "5/1-h Kapsamı?",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "Yurt Dışı İnşaat (Şantiye + Personel Yurt Dışında)",
+          null,
+          null,
+          "EVET ✓",
+          "Temel kapsam — fiili yurt dışı inşaat",
+          null,
+          null
+        ],
+        [
+          "Yurt Dışı Onarma/Bakım (Fiilen Yurt Dışında)",
+          null,
+          null,
+          "EVET ✓",
+          "Makine, altyapı, bina — kapsam içi",
+          null,
+          null
+        ],
+        [
+          "Yurt Dışı Montaj (Fabrika, Makine, Tesisat)",
+          null,
+          null,
+          "EVET ✓",
+          "Montaj yurt dışında yapıldıysa kapsam içi",
+          null,
+          null
+        ],
+        [
+          "Yurt Dışı Teknik Hizmet (Personel Yurt Dışında)",
+          null,
+          null,
+          "EVET ✓",
+          "Uzman/mühendis yurt dışında çalışıyorsa",
+          null,
+          null
+        ],
+        [
+          "Türkiye'den Uzaktan Teknik Danışmanlık",
+          null,
+          null,
+          "TARTIŞMALI ⚠",
+          "Yurt dışında icra şartı — özelge alın",
+          null,
+          null
+        ],
+        [
+          "Türkiye'de Üretilen Ürünün İhracatı",
+          null,
+          null,
+          "HAYIR ✗",
+          "Mal ihracatı — 5/1-h kapsamında değil",
+          null,
+          null
+        ],
+        [
+          "İnşaat + Malzeme Satışı (Karma)",
+          null,
+          null,
+          "KISMI ⚠",
+          "Yalnızca hizmet kısmı istisna — ayrıştır",
+          null,
+          null
+        ],
+        [
+          "Yurt Dışı İştirak Aracılığıyla Yapılan İnşaat",
+          null,
+          null,
+          "HAYIR ✗",
+          "İştirak ayrı tüzel kişilik — 5/1-b/c",
+          null,
+          null
+        ],
+        [
+          "Yurt Dışı Genel Ticaret Faaliyeti",
+          null,
+          null,
+          "HAYIR ✗",
+          "5/1-g (322) kapsamında değerlendir",
+          null,
+          null
+        ],
+        [
+          "Yazılım/Dijital Hizmet (Yurt Dışı Müşteri)",
+          null,
+          null,
+          "TARTIŞMALI ⚠",
+          "'Teknik hizmet' kapsamı tartışmalı — özelge",
+          null,
+          null
+        ],
+        [
+          "D. 304 (5/1-h) vs 322 (5/1-g) — DOĞRU KODU SEÇME REHBERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aynı şirket hem inşaat (5/1-h) hem de genel şube (5/1-g) faaliyeti yürütüyorsa her biri için doğru istisna kodu seçilmelidir. Her ikisi de 'Zarar Olsa Dahi' bölümündedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Senaryo",
+          null,
+          "Doğru Kod",
+          null,
+          "Gerekçe",
+          null
+        ],
+        [
+          "İnşaat şirketinin yurt dışında şantiyesi var, inşaat yapıyor",
+          null,
+          null,
+          "304 (5/1-h)",
+          "Faaliyet türü inşaat/montaj — yurt dışında fiilen icra",
+          null,
+          null
+        ],
+        [
+          "İnşaat şirketi yurt dışında şube açmış, genel iş yapıyor (satış, koordinasyon)",
+          null,
+          null,
+          "322 (5/1-g)",
+          "Genel şube faaliyeti — inşaat kapsam dışı",
+          null,
+          null
+        ],
+        [
+          "Aynı şirket: Şantiye (inşaat) + Bölge Ofisi (koordinasyon)",
+          null,
+          null,
+          "304 ve 322",
+          "İnşaat → 304, Koordinasyon ofisi → 322 — Ayrı analiz",
+          null,
+          null
+        ],
+        [
+          "Teknik mühendislik hizmeti — personel yurt dışında",
+          null,
+          null,
+          "304 (5/1-h)",
+          "Teknik hizmet kapsamı + yurt dışı icra",
+          null,
+          null
+        ],
+        [
+          "Teknik danışmanlık — Türkiye'den uzaktan verilen",
+          null,
+          null,
+          "Tartışmalı — Özelge",
+          "'Yurt dışında yapılma' şartı — uzaktan tartışmalı",
+          null,
+          null
+        ],
+        [
+          "Yazılım şirketi, yurt dışına SaaS hizmeti",
+          null,
+          null,
+          "Büyük olasılıkla değil",
+          "Teknik hizmet kapsamı dışı — mal/hizmet türü analizi",
+          null,
+          null
+        ],
+        [
+          "E. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "Faaliyet türü 5/1-h kapsamında mı? Sözleşme niteliği teyit edildi mi?",
+          null,
+          "İnşaat/Onarma/Montaj/Teknik Hizmet sözleşmesi. Ticaret/komisyon → Kapsam dışı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Faaliyet yurt dışında FİİLEN icra edildi mi?",
+          null,
+          "Pasaport, vize, şantiye belgesi, çalışma izni. Türkiye'den uzaktan hizmet tartışmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Yurt dışı proje gelirleri Türkiye gelir tablosuna intikal etti mi?",
+          null,
+          "600/640/649 hesap ekstresi ile teyit. Yurt dışında bırakılan kazanç istisna dışı. NOT: Transfer zorunlu DEĞİL — sadece gelir tablosuna yansıması yeterli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "Gider ayrıştırması doğru yapıldı mı? Merkez gider payı belgelendi mi?",
+          null,
+          "Dağıtım anahtarı tutarlı ve yazılı. D.3 tutarı belgelenmiş anahtar ile uyumlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "Karma faaliyet (hizmet+mal) varsa gelir ayrımı yapıldı mı?",
+          null,
+          "Yalnızca hizmet/inşaat kısmı istisna. Mal satışı kısmı ayrıştırılmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "5/1-h ile 322 (5/1-g) karıştırılmadı mı?",
+          null,
+          "İnşaat/teknik hizmet → 304. Genel şube → 322. Karma faaliyette her biri ayrı kod.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "5/1-h ve KVK Md.33 mahsup birlikte uygulanmadı mı?",
+          null,
+          "F bölümünde tercih yapılmış olmalı. İkisi aynı anda kullanılamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "Döviz kuru dönüşümü TCMB alış kuru ile yapıldı mı?",
+          null,
+          "Tahakkuk veya transfer tarihindeki TCMB alış kuru. Tutarlılık zorunlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "ÇVÖA analizi yapıldı mı? Şantiye işyeri oluşumu değerlendirildi mi?",
+          null,
+          "Şantiye işyeri oluştu + Yurt dışında vergilendirildi: 5/1-h değerlendirilebilir. İşyeri oluşmadı: Kazanç Türkiye'de vergilendirilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "304 'Zarar Olsa Dahi İndirilecek' bölümünde mi?",
+          null,
+          "304 → 'Zarar Olsa Dahi'. 351/352 gibi 'Kazancın Bulunması Halinde' DEĞİL.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "Beyanname 304 tutarı D.7 ile uyumlu mu?",
+          null,
+          "304 = D.7 = D.5 × %100 (kapsam EVET ise). Fark varsa kapsam analizi hatası.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K12",
+          "YİAKV matrahında 304 istisnasının etkisi analiz edildi mi?",
+          null,
+          "Dönem mevzuatı ve GİB açıklamaları esas alınmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "F. BEYANNAME EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "304",
+          null,
+          "0",
+          "KVK 5/1-h — YD İnşaat/Onarma/Montaj/Teknik Hizmet | %100 | Zarar Olsa Dahi İndirilecek",
+          null,
+          null,
+          null
+        ],
+        [
+          "322",
+          null,
+          "YD Şube (5/1-g)",
+          "Genel şube/temsilci faaliyeti → 322 (5/1-g). Transfer + %15 vergi yükü şartı var.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Md.33",
+          null,
+          "Mahsup Alternatifi",
+          "5/1-h yerine mahsup tercih edilmişse — ikisi aynı anda uygulanamaz.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G25",
+      "rows": [
+        [
+          "304 – YURT DIŞI İNŞAAT/ONARMA/MONTAJ/TEKNİK HİZMET | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-h | %100 İstisna | Beyanname 304 | Transfer Zorunlu Değil | Fon Hesabı YOK | Zarar Olsa Dahi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. TCMB kuru ve proje bazlı muhasebe politikasına göre uyarlanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — YURT DIŞI HAKEDİŞ / HİZMET BEDELİ TAHAKKUKU (Türkiye Gelir Tablosuna İntikal)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Proje hâkediş bedeli tahakkuku — TCMB alış kuru ile TL | Türkiye gelir tablosuna yansıması zorunlu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Tahakkuk]",
+          "121 Alacaklar / 127 Diğer Alacaklar",
+          "Yurt dışı inşaat/hizmet hâkediş alacağı — TCMB alış kuru ile TL",
+          "[Tutar TL]",
+          "—",
+          "Hâkediş belgesi + TCMB kur"
+        ],
+        [
+          "Kr",
+          "[Tahakkuk]",
+          "600 YD/Yurt İçi Satışlar / 640 veya 649 İlgili Gelir",
+          "Yurt dışı inşaat/teknik hizmet geliri — KVK 5/1-h (Beyanname 304)",
+          "—",
+          "[Tutar TL]",
+          "KV 304"
+        ],
+        [
+          "KRİTİK FARK — 304 (5/1-h) vs 322 (5/1-g) MUHASEBE:\n304: Bu tahakkuk kaydı 'genel sonuç hesaplarına intikal' şartını karşılar. Türkiye'ye transfer GEREKMİYOR — sadece gelir tablosuna yansıması yeterli. KV beyannamesinde 304. Satır 'Zarar Olsa Dahi İndirilecek' bölümünde gösterilir.\n322: Ek olarak KV beyan tarihine kadar Türkiye'ye TRANSFER zorunlu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — YURT DIŞI PROJE GİDERLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Gider]",
+          "730/780/689 İlgili Gider Hesabı",
+          "Yurt dışı işçilik, malzeme, ekipman, alt yüklenici — doğrudan proje giderleri",
+          "[Gider TL]",
+          "—",
+          "Fatura + ödeme belgesi"
+        ],
+        [
+          "Kr",
+          "[Gider]",
+          "102 Bankalar / 320 Borçlar",
+          "Gider ödemesi",
+          "—",
+          "[Gider TL]",
+          "Banka dekontu"
+        ],
+        [
+          "GİDER DAĞITIMI: Türkiye merkez genel giderleri (kira, yönetim, IT vb.) projeye isabet eden pay oranında dağıtılır (D.3). Dağıtım anahtarı (örn: Proje cirosu / Toplam ciro) yazılı olarak belgelenmelidir. 322 (5/1-g) ile aynı dağıtım kuralları uygulanır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — YURT DIŞINDA ÖDENEN VERGİ / STOPAJ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Ödeme]",
+          "193 Peşin Ödenen Vergiler / 689 Diğer Gider",
+          "Yurt dışında kesilen stopaj — TCMB alış kuru ile TL",
+          "[Vergi TL]",
+          "—",
+          "Vergi makbuzu"
+        ],
+        [
+          "Kr",
+          "[Ödeme]",
+          "121 Alacaklar / 102 Bankalar",
+          "Hâkediş alacağından kesilen stopaj karşılığı",
+          "—",
+          "[Vergi TL]",
+          null
+        ],
+        [
+          "5/1-h İSTİSNASI SEÇİLİRSE: Yurt dışı vergi 689 Gider → KKEG → Beyannamede iptali.\nKVK Md.33 MAHSUP SEÇİLİRSE: Yurt dışı vergi 193 hesabında → Hesaplanan KV'den mahsup.\nİKİSİ BİRLİKTE KULLANILAMAZ — F bölümünde yapılan tercih geçerlidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 4 — BEYANNAME 304 MUTABAKAT NOTU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME AKIŞI — KVK 5/1-h (Beyanname 304):\n\n1. Hâkediş geliri 600/640/649 hesabına → Türkiye ticari kârına dahil olur\n2. KV Beyannamesi 304. Satır: 'ZARAR OLSA DAHİ İNDİRİLECEK' → D.7 (%100 kazanç)\n   NOT: Transfer Türkiye'ye yapılmamış olsa bile istisna uygulanabilir\n\n304 vs 322 KARŞILAŞTIRMA:\n304 (5/1-h): Transfer zorunlu DEĞİL | %15 vergi yükü şartı YOK | Faaliyet: İnşaat/Teknik\n322 (5/1-g): Transfer ZORUNLU | %15 vergi yükü şartı VAR | Faaliyet: Her türlü şube\n\nHER İKİSİ DE: 'Zarar Olsa Dahi İndirilecek' | %100 İstisna | Fon Hesabı YOK\n\n3 KADEME UYUM: Hâkediş muhasebesi (D.5) = VERİ GİRİŞİ D.5 = Beyanname 304",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D18",
+      "rows": [
+        [
+          "304 – YURT DIŞI İNŞAAT/ONARMA/MONTAJ/TEKNİK HİZMET | DENETÇİ NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-h | %100 İstisna | Beyanname 304 | Transfer Zorunlu DEĞİL | %15 Vergi Yükü Şartı YOK | Zarar Olsa Dahi | 322 Karşılaştırma",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK, ŞARTLAR VE 304 (5/1-h) — 322 (5/1-g) FARKLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-h — Yasal Metin, Beyanname 304 ve Temel Şartlar",
+          "KVK Md.5/1-h (özet):\n'Yurt dışında yapılan inşaat, onarım, montaj işleri ile teknik hizmetlerden sağlanan ve\nTürkiye'de genel sonuç hesaplarına intikal ettirilen kazançlar'\n\nTEMEL ŞARTLAR:\n① Faaliyet türü: İnşaat / Onarma / Montaj / Teknik Hizmet — sözleşme ile ispat\n② Yurt dışında fiilen icra: Personel/şantiye yurt dışında fiziken\n③ Türkiye'de genel sonuç hesaplarına intikal: Gelir tablosuna yansıma\n\nBEYANNAME: 304. Satır | 'ZARAR OLSA DAHİ İNDİRİLECEK' | %100 Tam İstisna\nFON HESABI: YOK | 2 YIL ŞARTI: YOK | TRANSFER: ZORUNLU DEĞİL | VERGİ YÜKÜ: YOK",
+          "KVK Md.5/1-h | 1 Seri No.lu KV GT"
+        ],
+        [
+          "N2",
+          "★ Transfer Zorunlu Değil — 322 (5/1-g)'den Kritik Fark",
+          "5/1-h (304) İLE 5/1-g (322) ARASINDAKİ EN KRİTİK FARK:\n\n5/1-g (322): Kazancın Türkiye'ye TRANSFER edilmesi zorunlu (KV beyan tarihine kadar).\n5/1-h (304): Transfer zorunlu DEĞİL. Yurt dışında kalan kazanç için istisna uygulanabilir.\n\n5/1-h'DA YETERLİ OLAN:\nYurt dışı proje gelirinin Türkiye'deki gelir tablosuna (600/640 vb.) yansıtılması.\nFiziksel para transferi olmasa da muhasebe kaydı 'intikal' şartını karşılar.\n\n5/1-h'DA %15 VERGİ YÜKÜ ŞARTI YOK:\nİşin yapıldığı ülkenin vergi oranından bağımsız olarak istisna uygulanabilir.\nVergi cenneti ülkede yapılan inşaat da 5/1-h kapsamındadır.\n\nYMM notu: Muhasebe tahakkuk kaydı intikal şartını belgeler.\nVergi incelemesinde 'transfer dekontu' aranmaz — ancak muhasebe belgesi şarttır.",
+          "KVK Md.5/1-h | GİB Özelgeleri | 1 Seri No.lu KV GT"
+        ],
+        [
+          "N3",
+          "★ 'Yurt Dışında Yapılma' Şartı — Faaliyet İcra Kriterleri",
+          "YURT DIŞINDA FİİLEN İCRA:\n\nKAPSAM İÇİ:\n✓ Personel yurt dışında şantiyede çalışıyor\n✓ Yurt dışındaki tesise makine monte eden ekip\n✓ Yurt dışındaki müşteri yerinde teknik hizmet veren uzman\n✓ Yurt dışı alt yüklenici koordinasyonu (koordinatör yurt dışında)\n\nTARTIŞMALI:\n⚠ Türkiye'den uzaktan (remote) teknik danışmanlık — özelge alınmalı\n⚠ Tasarım/mühendislik çalışması Türkiye'de, uygulama yurt dışında (karma)\n⚠ Yazılım/dijital hizmetlerin uzaktan teslimi\n\nKAPSAM DIŞI:\n✗ Yurt içinde üretilen malın ihracatı\n✗ Türkiye'den yönetilen yurt dışı iştirak faaliyeti (5/1-b/c)\n✗ Komisyon/aracılık/ticaret faaliyeti\n\nYMM notu: Pasaport, vize, çalışma izni, konaklama faturaları tasdik dosyasında.",
+          "KVK Md.5/1-h | GİB Özelgeleri | Danıştay"
+        ],
+        [
+          "N4",
+          "Faaliyet Türü Sınırı ve 304–322 Doğru Kod Seçimi",
+          "5/1-h (304) FAAlİYET TÜRÜ SINIRI:\nYalnızca: İnşaat, Onarma/Tamir, Montaj/Kurulum, Teknik Hizmet\nDiğer faaliyetler: 5/1-g (322) veya başka bent kapsamında değerlendirilmeli\n\nDOGRU KOD SEÇİMİ — ÖNEMLI SENARYOLAR:\n\n① İnşaat şirketi, yurt dışı şantiyede inşaat yapıyor → 304 (5/1-h)\n② İnşaat şirketi, yurt dışı koordinasyon ofisi açtı → 322 (5/1-g)\n③ Aynı şube: İnşaat + Genel koordinasyon → 304 ve 322 ayrı ayrı\n④ Teknik mühendislik hizmet personeli yurt dışında → 304 (5/1-h)\n⑤ Teknik danışmanlık — Türkiye'den uzaktan → Tartışmalı — Özelge\n\nYMM notu: Tek projenin tüm gelirini yanlış koda beyan etmek tarhiyat riski taşır.",
+          "KVK Md.5/1-h | 5/1-g | 1 Seri No.lu KV GT"
+        ],
+        [
+          "BÖLÜM 2 — GİDER DAĞITIMI, ÇVÖA VE YMM TASDİK STANDARDI",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "Gider Dağıtımı ve Muhasebe Ayrımı (322 ile Aynı Kural)",
+          "HER PROJE İÇİN AYRI GELİR-GİDER TAKİBİ:\n\nZorunlu: Her proje için ayrı hesap veya dağıtım anahtarı\n\nDAĞITIM ANAHTARI:\n• Proje cirosu / Toplam şirket cirosu (en yaygın)\n• Projede çalışan personel sayısı / Toplam personel\n• Proje harcamaları / Toplam harcamalar\n\nKABUL EDİLEBİLİR: Tutarlı ve yazılı olarak belgelenmiş yöntem\nKABUL EDİLEMEZ: Dönemden döneme değiştirilen veya belgelenemeyen anahtarlar\n\nYMM notu: Dağıtım anahtarı belgesi tasdik dosyasına eklenmelidir.\nKarma giderlerin tamamının yurt dışı istisna gelirine yüklenmesi hatalıdır.",
+          "KVK Md.5/1-h | VUK Md.175"
+        ],
+        [
+          "N6",
+          "ÇVÖA Etkisi ve 5/1-h — Şantiye İşyeri Analizi",
+          "5/1-h VE ÇVÖA İLİŞKİSİ:\n\nİşyeri oluşumu: Şantiyenin ÇVÖA'ya göre işyeri oluşturup oluşturmadığı teyit edilmeli.\nGenellikle 6-12 ay kuralı: Şantiye belirli süreyi geçerse işyeri oluşur.\n\nSONUÇLAR:\n• İşyeri oluştu + Yurt dışında vergilendirildi:\n  → 5/1-h istisnası uygulanabilir (vergi yükü şartı aranmaz)\n  → Alternatif: KVK Md.33 mahsup (yüksek yurt dışı vergi oranında)\n\n• İşyeri oluşmadı:\n  → Yurt dışında vergilendirme hakkı yok — Türkiye'de vergilendirme\n  → 5/1-h şartları sağlanıyorsa istisna yine de uygulanabilir\n\nYMM notu: ÇVÖA metninin inşaat maddesi incelenmeli.\nHazine.gov.tr ÇVÖA listesinden teyit edilmeli.",
+          "KVK Md.5/1-h | ÇVÖA İnşaat Maddesi"
+        ],
+        [
+          "N7",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...faaliyetin yurt dışında fiilen icra edildiği belge ve kayıtlarla doğrulanmıştır'\n'...kazanç Türkiye'de genel sonuç hesaplarına intikal ettirilmiştir'\n'...sözleşme KVK 5/1-h kapsamında [inşaat/onarma/montaj/teknik hizmet] niteliğindedir'\n\nKULLANMAYIN:\n'...yurt dışı hizmet geliri istisna kapsamındadır' (belgesiz)\n'...transfer edilmiştir' (transfer aranmaz, gereksiz)\n\nKRİTİK HATALAR:\n(1) 5/1-h yerine 5/1-g kodu kullanmak (304 yerine 322)\n(2) 'Transfer edilmediği için istisna yok' demek — 5/1-h'da transfer şartı yok\n(3) Uzaktan hizmeti kapsam içi saymak — özelge alınmadan riski var\n(4) 5/1-h ve Md.33 mahsubun birlikte uygulanması",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "N8",
+          "304 — Beyanname 'Zarar Olsa Dahi İndirilecek' Bölümü",
+          "'ZARAR OLSA DAHİ İNDİRİLECEK' ANLAMI:\n\nTürkiye kurumunun o dönem zararda olması 5/1-h istisnasını engellemez.\nYurt dışı proje kazancı pozitifse: İstisna uygulanır, Türkiye zararı derinleşir.\nYurt dışı proje zararda ise: İstisna tutarı = 0 (negatif kazancın istisnası olmaz).\n\n351/352 İLE KIYASLAMA:\n351/352 → 'Kazancın Bulunması Halinde': Türkiye zararlıysa istisna uygulanamaz.\n304/322 → 'Zarar Olsa Dahi': Türkiye zararlı olsa bile istisna uygulanır.\n\nKKEG KURALI:\n5/1-h için KVK'da 5/3 gibi açık KKEG hükmü yoktur.\nProje zararının KKEG olup olmayacağı tartışmalıdır — ihtiyatlı yaklaşım için özelge alın.",
+          "KVK Md.5/1-h | Beyanname Yapısı"
+        ],
+        [
+          "GÜNCEL DURUM — YAZILIM/DİJİTAL HİZMETLER: Yurt dışındaki müşteriye internet üzerinden sunulan yazılım/danışmanlık hizmetlerinin KVK 5/1-h kapsamında 'teknik hizmet' sayılıp sayılmayacağı tartışmalıdır. GİB bazı özelgelerde uzaktan teknik danışmanlığı kapsam içinde değerlendirmiş, bazılarında hizmetin yurt dışında fiilen yapılması gerektiğini vurgulamıştır. Bu konuda özelge alınması şiddetle tavsiye edilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F36",
+      "rows": [
+        [
+          "304 – YURT DIŞI İNŞAAT/ONARMA/MONTAJ/TEKNİK HİZMET | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-h | %100 İstisna | Beyanname 304 | Zarar Olsa Dahi | Transfer Zorunlu DEĞİL | %15 Vergi Yükü Şartı YOK | ÇVÖA | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Zorunlu belgeler. Kategori 2: ÇVÖA ve özel durum belgeleri. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (3 Temel Şartın Belgesi)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "3 şart: ① Sözleşme (faaliyet türü) ② Yurt dışı icra belgesi ③ Gelir tablosu (intikal). Transfer belgesi aranmaz — 322'den (5/1-g) farklı.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "Yurt Dışı İş / Hizmet Sözleşmesi (Faaliyet Türü Kanıtı)",
+          "İşin türünü kanıtlayan sözleşme: İnşaat, onarma, montaj veya teknik hizmet.\nSözleşmede: Yurt dışı iş yeri adresi, iş kapsamı, bedeli ve süresi görünmeli.\nYMM notu: Sözleşme niteliği 5/1-h kapsamının birincil belgesidir.",
+          "Yazılı sözleşme (Türkçe tercüme ile)",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Yurt Dışında Fiilen İcra Belgesi (Personel/Şantiye Varlığı)",
+          "Personelin yurt dışında bulunduğunu kanıtlayan: Pasaport giriş-çıkış damgaları, vize, yurt dışı çalışma izni.\nŞantiye/iş yeri kira sözleşmesi, yurt dışı ofis/şantiye adresi belgesi.\nYMM notu: 'Yurt dışında yapılma' şartının zorunlu kanıtı.",
+          "Pasaport fotokopileri + Vize/çalışma izni + Şantiye belgesi",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Hâkediş Belgeleri / İş Tamamlama / Kabul Tutanağı",
+          "Dönem içinde tahakkuk eden hizmet bedeli tutarını gösteren hâkediş belgesi.\nİş tamamlama veya kabul tutanağı (Completion Certificate, Acceptance Protocol).\nYMM notu: D.1 (gelir) tutarı hâkediş belgeleriyle mutabık olmalıdır.",
+          "Hâkediş/İlerleme raporu + İş tamamlama belgesi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Yurt Dışı Proje Gelir-Gider Tablosu / Muhasebe Ayrımı Belgesi",
+          "Her proje için ayrı gelir-gider takibi veya dağıtım anahtarı uygulandığını gösteren belge.\nTürkiye merkezi giderlerinden projeye isabet eden pay (D.3) hesabı.\nYMM notu: Dağıtım anahtarı tutarlı ve yazılı olmalıdır.",
+          "Muhasebe ekstresi + Dağıtım anahtarı tablosu",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Türkiye Gelir Tablosu — Yurt Dışı Proje Gelirlerinin İntikal Teyidi",
+          "Yurt dışı proje gelirlerinin Türkiye'deki 600/640/649 hesaplarına yansıdığını gösteren ekstreler.\nNOT: Transfer belgesi değil — muhasebe tahakkuk kaydı yeterlidir.\nYMM notu: 'Genel sonuç hesaplarına intikal' şartının belgesidir.",
+          "Muhasebe programı — Gelir hesabı ekstresi",
+          null
+        ],
+        [
+          null,
+          "6",
+          "TCMB Kur Belgesi (Döviz → TL Dönüşüm Tarihleri)",
+          "Her hâkediş/tahsilat için uygulanacak TCMB döviz alış kuru ve tarihi.\nKur farkları 646/656 hesabına ayrıca kaydedilmeli.\nYMM notu: Kur tarihi (tahakkuk mu, tahsilat mı?) tutarlı ve yazılı olmalıdır.",
+          "TCMB.gov.tr kur arşivi / Banka dekontları",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KV Beyannamesi Taslağı — 304. Satır",
+          "304. satırındaki tutarın D.7 ile birebir uyumlu olduğu kontrol edilmeli.\n'ZARAR OLSA DAHİ İNDİRİLECEK' bölümünde doğru konumlandırıldığı teyit edilmeli.\n('Kazancın Bulunması Halinde' bölümünde DEĞİL.)",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — ÇVÖA VE EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "ÇVÖA Analiz Notu — Şantiye İşyeri Maddesi",
+          "Faaliyet gösterilen ülkeyle Türkiye arasındaki ÇVÖA'nın inşaat/şantiye işyeri maddesi.\nŞantiye işyeri oluşup oluşmadığı, vergilendirme yetkisi ve ÇVÖA etkisi.\nYMM notu: İşyeri oluştu + yurt dışında vergilendirildi → 5/1-h veya Md.33 analizi.",
+          "ÇVÖA metni (inşaat maddesi) + YMM analiz notu",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Alt Yüklenici Sözleşmeleri ve Ödemeleri",
+          "Yurt dışı alt yüklenicilerle yapılan sözleşmeler ve ödemeler.\nAlt yüklenicinin yurt dışında çalıştığının teyidi.\nYurt dışı alt yüklenici giderleri D.2'ye dahil edilmeli.",
+          "Alt yüklenici sözleşmeleri + Ödeme dekontları",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Yurt Dışı Vergi Makbuzu (Mahsup Analizi için)",
+          "5/1-h istisnası seçilmişse: Yurt dışı vergi 689 Gider → KKEG → Beyannamede iptal.\nKVK Md.33 mahsup seçilmişse: Vergi makbuzu mahsup satırıyla uyumlu olmalı.\nYMM notu: F bölümünde yapılan tercih (5/1-h veya mahsup) muhasebede uygulanmalı.",
+          "Yurt dışı vergi makbuzu + Ödeme belgesi",
+          null
+        ],
+        [
+          null,
+          "11",
+          "YİAKV Matrah Hesaplama Tablosu (304 Etkisi)",
+          "KVK 5/1-h (304) istisnasının YİAKV matrahına etkisi güncel GİB açıklamalarıyla analiz edilmeli.",
+          "YİAKV çalışma kâğıdı / KVK 32/C",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (★ Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "Faaliyet türü 5/1-h kapsamında mı? Sözleşme niteliği teyit edildi mi?",
+          "Sözleşme metni incelenmeli: İnşaat/Onarma/Montaj/Teknik Hizmet. Ticaret/komisyon/aracılık → Kapsam dışı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Faaliyet yurt dışında FİİLEN icra edildi mi?",
+          "Pasaport, vize, şantiye belgesi, çalışma izni zorunlu. Uzaktan hizmet tartışmalı — özelge alın.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Yurt dışı proje gelirleri Türkiye gelir tablosuna intikal etti mi?",
+          "600/640/649 hesap ekstresi. NOT: Transfer belgesi ARANMAZ — sadece muhasebe intikal kaydı yeterli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Gider ayrıştırması doğru yapıldı mı? Merkez gider payı belgelendi mi?",
+          "Dağıtım anahtarı yazılı ve tutarlı. D.3 tutarı belgesiyle uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "304 (5/1-h) ve 322 (5/1-g) faaliyetleri karıştırıldı mı?",
+          "İnşaat/teknik hizmet → 304. Genel şube faaliyeti → 322. Karma faaliyette her faaliyet doğru koda ayrılmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "5/1-h ve KVK Md.33 mahsup birlikte uygulanmadı mı?",
+          "F bölümünde tercih yapılmış olmalı. İkisi aynı anda kullanılamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "304 'Zarar Olsa Dahi İndirilecek' bölümünde mi?",
+          "'Kazancın Bulunması Halinde' bölümünde DEĞİL. Türkiye kurumu zararlı olsa bile 304 istisnası uygulanır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Transfer belgesi aranmadı mı? (DOĞRU UYGULAMA: 304'te transfer şartı yok)",
+          "5/1-h'da transfer şartı yoktur. Muhasebe intikal kaydı yeterlidir. 'Transfer edilmediği için istisna yok' demek hatalıdır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 304 tutarı D.7 ile uyumlu mu?",
+          "304 = D.7 = D.5 × %100 (kapsam EVET ise). Fark varsa kapsam analizi hatası.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "ÇVÖA analizi yapıldı mı? Şantiye işyeri oluştu mu?",
+          "İşyeri oluştu + Vergilendirildi: 5/1-h veya Md.33. İşyeri oluşmadı: Türkiye'de vergilendirme — 5/1-h şartları yine değerlendirilebilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 304 (5/1-h) vs 322 (5/1-g) TEMEL FARK: Transfer zorunlu değil + %15 vergi yükü şartı yok. Zorunlu belgeler: ① Sözleşme (faaliyet türü) ② Yurt dışı icra belgesi (pasaport/şantiye) ③ Türkiye gelir tablosu ekstresi (transfer belgesi aranmaz!). Uzaktan teknik hizmet tartışmalı — özelge alınması tavsiye edilir. Beyanname: 304. Satır — 'Zarar Olsa Dahi İndirilecek'. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

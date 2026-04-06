@@ -26,18 +26,61 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "370 kapsamındaki KKM hesabı dönem sonunda (31/12) hâlâ açık mıydı ve faiz/kâr payı tahakkuku yapıldı mı?"
   info_modal: |
-    KVK Geçici Md.14/1-b kapsamında, 370 kapsamındaki KKM hesabı dönem sonunda
-    hâlâ açıkken VUK Md.280/281 gereği tahakkuk ettirilen faiz ve kâr payı istisnadır.
+    ## Genel Çerçeve
 
-    **371 ile Fark:**
-    371 = Bankadan fiilen ALINAN nakit kur farkı tazminat ödemeleri.
-    372 = Dönem sonunda TAHAKKUK ettirilen faiz/kâr payı (hesap hâlâ açık).
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    KKM hesapları hem kur farkı koruması hem de faiz/kâr payı geliri üretir. Bu gelirler farklı
+    muhasebe ve vergi muamelesi gerektiren ayrı kalemlerdir. Beyanname 372, dönem sonunda hesap
+    hâlâ açıkken VUK değerleme hükümleri gereği tahakkuk ettirilen faiz ve kâr payını kapsar.
 
-    **Muhasebe Kaydı Zorunlu:** Dr 181 Gelir Tahakkukları / Kr 642 Faiz Gelirleri
-    Kayıt olmadan 372 istisnasının muhasebe dayanağı bulunmaz.
+    ## Bu Satırın Kapsamı
 
-    **KRİTİK — YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ (E.7).
-    370+371+372 tamamı E.7 DÜŞÜLEMEZ listesindedir.
+    Beyanname **372**, 370 kapsamındaki KKM hesabı 31 Aralık dönem sonunda hâlâ açık olduğunda
+    VUK Madde 280/281 gereği yapılan faiz ve kâr payı **tahakkuku** istisnasıdır. 371 ile farkı
+    kritiktir: 371 bankadan **fiilen tahsil edilen** nakit ödemeleri kapsar; 372 ise hesap
+    henüz vadesi dolmadan dönem sonunda **tahakkuk ettirilen** (accrual) gelirdir ve nakit henüz
+    tahsil edilmemiştir. Hesap vadeye ulaştığında fiilen tahsil edilen faiz/kâr payı ise
+    373 kapsamına girer. Aynı KKM hesabından üç farklı kodda (371, 372, 373) istisna oluşabilir.
+
+    ## Temel Koşullar
+
+    - KKM hesabı 31 Aralık dönem sonunda **hâlâ açık** olmalıdır; vadeye ulaşmışsa 373 uygulanır
+    - VUK Madde 280/281 kapsamında dönem sonu faiz/kâr payı **tahakkuk muhasebe kaydı**
+      (Dr 181 Gelir Tahakkukları / Kr 642 Faiz Gelirleri) yapılmış olmalıdır
+    - Tahakkuk kaydı olmadan 372 istisnasının muhasebe dayanağı bulunmaz; kayıt **zorunludur**
+    - Hesap 31/12/2021 bilanço kaynaklı dönüşümden açılmış olmalıdır
+    - Kapsam dışı hesapların tahakkukları (31/12/2021 kaynaklı olmayan) ayrıştırılmalıdır
+
+    ## Önemli Uyarılar
+
+    - **Mükerrerlik riski:** Sonraki dönemde 181 tahakkuk kaydı tahsil edildiğinde yalnızca
+      181 hesabı kapatılır; o dönemde yeni bir 372 uygulaması yapılmaz. Mükerrerlik en yaygın
+      hata kaynaklarından biridir
+    - **TL mevduat vs. katılım farkı:** TL KKM mevduat hesabı için 642 Faiz Gelirleri, TL KKM
+      katılım hesabı için 644 Temettü ve Kâr Payları kullanılır
+    - **Banka dönem sonu bildirimi:** Tahakkuk tutarının hesaplanmasında banka dönem sonu
+      bildirimi tercih edilir; yoksa sözleşme oranı × bakiye × gün / 365 yöntemi kullanılır
+    - **370-371-372 çapraz mutabakatı:** Üç dosyanın KKM hesap açılış tarihi, referans kur ve
+      kaynak bakiye bilgileri birbirleriyle tutarlı olmalıdır
+    - **YMM tasdik eşiği:** Net 372 tutarı ≥ 500.000 TL ise YMM tasdik raporu zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    370+371+372 tamamı E.7 DÜŞÜLEMEZ listesindedir. YİAKV çalışma kâğıdında üç satır da
+    ayrıca kontrol edilmelidir. Hatalı uygulama YİAKV tarhiyatı, vergi ziyaı cezası ve
+    gecikme faizi riskine yol açar.
+
+    ## Pratik Notlar
+
+    - **Tahakkuk vs. nakit ayrımı:** 372 tahakkuk esasına (accrual) dayanır. Kasaya/bankaya
+      nakit girmemiş olsa da dönem sonunda gelir tahakkuk ettirilmesi ve 372 istisnasının
+      aynı dönemde uygulanması zorunludur
+    - **Hesaplama yöntemi:** Banka dönem sonu bildiriminde tahakkuk tutarı varsa bu doğrudan
+      kullanılır. Bildirim yoksa: Hesap Bakiyesi × Yıllık Oran × Geçen Gün / 365 formülüyle
+      hesaplanır ve banka ekstresiyle çapraz kontrol yapılır
+    - **Birden fazla KKM hesabı:** Her hesap ayrı satırda çalışma kâğıdına alınır; toplam
+      tahakkuk tutarı üzerinden 372 istisnası uygulanır
   kapi_sorulari:
     - id: kkm_acik_donem_sonu
       soru: "KKM hesabı dönem sonu (31 Aralık) itibariyle hâlâ açık mı?"

@@ -23,9 +23,36 @@ ana_kategori: egitim_saglik_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Özel okul, kreş/gündüz bakımevi veya rehabilitasyon merkezi işletiyor musun?"
   info_modal: |
-    KVK 5/1-ı kapsamında özel okul (okul öncesi, ilköğretim, özel eğitim, ortaöğretim),
-    özel kreş ve gündüz bakımevleri ile rehabilitasyon merkezlerinin işletilmesinden elde
-    edilen kazançlar, faaliyete geçilen hesap döneminden itibaren **5 yıl** süreyle istisnadır.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-ı kapsamında **özel okul** (okul öncesi, ilköğretim, özel eğitim, ortaöğretim), **özel kreş ve gündüz bakımevleri** ile **rehabilitasyon merkezlerinin** işletilmesinden elde edilen kazançlar, faaliyete geçilen hesap döneminden itibaren **5 yıl** süreyle kurumlar vergisinden istisnadır. İstisna "Kazancın Bulunması Halinde İndirilecek" bölümünde yer alır; kurumun ilgili dönemde kâr elde etmesi zorunludur. Yasal dayanak 5580 Sayılı Kanun ve KVK 5/1-ı hükmüdür.
+
+    ## Temel Koşullar
+
+    - **MEB veya ASHB kurum açma izni:** 5580 sayılı Kanun kapsamında kurum açma izninin varlığı temel koşuldur; dershaneler ve etüt merkezleri kapsam dışıdır.
+    - **5 yıllık süre sınırı:** İstisna faaliyete geçilen hesap döneminin başından itibaren 5 yıl uygulanır; kaçıncı yılda olunduğunun takibi ve belgelenmesi zorunludur.
+    - **Kapsam içi faaliyet kârı:** Bu istisna yalnızca kapsam içi faaliyetten (eğitim/bakım/terapi) kâr elde edildiğinde uygulanabilir; zarar söz konusu olduğunda kullanılamaz.
+    - **Kapsam içi/dışı hasılat ayrıştırması:** Kantin, büfe, ayrı servis ücreti ve kiralama geliri kapsam dışıdır ve muhasebede ayrı hesaplarda izlenmelidir.
+    - **Kreş/gündüz bakımevi için başlangıç tarihi:** 6745 sayılı Kanun ile kreş ve gündüz bakımevleri 01.01.2017 tarihinden itibaren kapsama alınmıştır; bu tarihten önce başlayan kreş faaliyetleri ek koşullara tabi olabilir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Yükseköğretim kurumları ve dershaneler kapsam dışıdır:** Üniversite, kolej ve etüt/dershane faaliyetleri bu istisnadan yararlanamaz.
+    - **Rehabilitasyon merkezleri için ek koşul:** Cumhurbaşkanı vergi muafiyeti kararı ayrıca gereklidir; yalnızca MEB/ASHB izninin varlığı yeterli değildir.
+    - **Devir durumunda süre:** Devir halinde devralan kurum kalan istisna süresinden yararlanır; yeni 5 yıllık süre başlamaz.
+    - **Kapsam dışı gelirler:** Kantin, büfe, kiralama gibi ek hizmet gelirleri hatalı biçimde istisna hesabına dahil edilirse tarhiyat riski doğar.
+    - **İstisna tutarı ticari kârı aşamaz:** Kapsam içi faaliyet kazancından fazla istisna uygulanamaz.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-ı (305) istisnasının YİAKV (KVK Madde 32/C) matrahına etkisi **tartışmalı** olup dönem mevzuatı ve GİB açıklamalarıyla ayrıca analiz edilmelidir. Bu nedenle YİAKV çalışma kâğıdı hazırlanırken konuya ilişkin güncel mevzuat teyidi zorunludur.
+
+    ## Pratik Notlar
+
+    - Faaliyete geçiş yılından itibaren geçen yıl sayısının takibi için önceki dönem beyannameleri dosyada bulundurulmalıdır.
+    - Muhasebede kapsam içi ve kapsam dışı hasılat ayrı hesaplarda (örn. 600.01 kapsam içi / 600.02 kapsam dışı) izlenmelidir.
+    - Kapsam içi faaliyet giderleri, kapsam dışı gelirle paylaşılan ortak giderlerden dağıtım anahtarıyla ayrıştırılmalıdır.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: mev_5580_kapsami
       soru: "MEB veya ASHB'den 5580 sayılı Kanun kapsamında kurum açma iznin var mı?"

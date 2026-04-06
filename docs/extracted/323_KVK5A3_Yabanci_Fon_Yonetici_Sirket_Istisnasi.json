@@ -1,0 +1,1484 @@
+{
+  "file": "323_KVK5A3_Yabanci_Fon_Yonetici_Sirket_Istisnasi.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G63",
+      "rows": [
+        [
+          "323 – YABANCI FON KAZANÇLARININ VERGİLENDİRİLMESİNE YÖNELİK YÖNETİCİ ŞİRKETLERE İLİŞKİN İSTİSNA (K.V.K. Mad. 5/A-3) | BEYANNAME SATIR 323 | YMM TASDİK KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/A — Fıkra 3 | %100 Tam İstisna | SPK Lisanslı Portföy Yönetim Şirketi | Yabancı Fon Yönetimi | Türkiye'den Yönetim Hizmeti | Beyanname Satır 323 — Kazancın Bulunması Halinde İndirilecek",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ 323'ÜN SETTEKİ KONUMU — KVK 5/A AYRI MADDE (5/1 bentleri değil):\n  KVK Md.5/1 (302/304/311/315/354-359 vb.): KVK'nın 5. maddesinin 1. fıkrası.\n  323 → KVK Md. 5/A, Fıkra 3: Türkiye'yi uluslararası finans merkezi yapma politikasına yönelik ayrı madde.\n  KAPSAM: SPK lisanslı portföy yönetim şirketinin yabancı kolektif yatırım kuruluşlarını\n  Türkiye'den yönetmesi faaliyetinden elde ettiği kazanç — yönetim/performans ücreti.\n  311 (TGB) / 315 (TUGS) ile FARK: Bunlar özel kanun, 323 KVK içindedir; ama 5/1 değil 5/A.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "MEKANİZMA: Türkiye'de SPK'dan portföy yönetim lisansı alan şirket → Yurt dışında kurulu yabancı fonu (kolektif yatırım kuruluşunu) Türkiye'den yönetir → Yönetim ücreti (management fee) + Performans ücreti (performance fee) kazanır → %100 istisna (323) — Türkiye'nin global fon merkezi olma hedefine hizmet eder.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  ★ Kurum SPK'dan Portföy Yönetim Şirketi lisansına sahip mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: 5/A-3 istisnası yalnızca SPK'dan portföy yönetim şirketi lisansı almış kurumlara uygulanır. SPK Portföy Yönetim Şirketi lisansı tasdik dosyasında zorunludur.",
+          null
+        ],
+        [
+          "A0.2  ★ Yönetilen fon yabancı (yurt dışında kurulu) kolektif yatırım kuruluşu mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: İstisna yalnızca YABANCI fon yönetimi için geçerlidir. Türkiye'de kurulu fon → Başka mevzuat uygulanır; 5/A-3 kapsamında değildir.",
+          null
+        ],
+        [
+          "A0.3  ★ Yönetim hizmeti TÜRKIYE'DEN mi veriliyor?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Fon yönetimi Türkiye'den verilmeli — Türkiye'deki şirket/personel tarafından. Salt aracı sıfatıyla veya Türkiye dışından yönetim 5/A-3 kapsamı dışındadır.",
+          null
+        ],
+        [
+          "A0.4  KVK Md.5/A kapsamında belirlenen koşullar (Cumhurbaşkanı kararı/Tebliğ) sağlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/A kapsamındaki koşullar (fon büyüklüğü, sözleşme türü, yatırımcı yapısı vb.) ilgili tebliğ ve Cumhurbaşkanı kararları çerçevesinde değerlendirilmeli.",
+          null
+        ],
+        [
+          "A0.5  İstisna uygulanacak kazanç fon yönetim faaliyetinden mi kaynaklanıyor?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Yönetim ücreti (management fee), performans ücreti (performance fee), danışmanlık ücreti — yabancı fon yönetimiyle doğrudan bağlantılı olmalı. Diğer gelirler (mevduat faizi vb.) kapsam dışı.",
+          null
+        ],
+        [
+          "A0.6  Kapsam dışı gelirler (mevduat faizi vb.) ayrıştırıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Fon yönetimiyle bağlantısız finansal gelirler, yerli fon yönetim gelirleri kapsam dışıdır. C bölümünde kapsam içi/dışı ayrıştırma yapılmalıdır.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL veya >=1.000.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.1 (SPK Lisansı), A0.2 (Yabancı Fon), A0.3 (TR'den Yönetim) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Portföy Yönetim Şirketinin Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "SPK lisanslı portföy yönetim şirketi",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "SPK Portföy Yönetim Lisans No",
+          null,
+          null,
+          null,
+          null,
+          "SPK tarafından verilen portföy yönetim şirketi lisansı",
+          null
+        ],
+        [
+          "Yönetilen Yabancı Fonun Adı / Tanımlaması",
+          null,
+          null,
+          null,
+          null,
+          "Yurt dışında kurulu kolektif yatırım kuruluşunun adı",
+          null
+        ],
+        [
+          "Fonun Kurulu Olduğu Ülke",
+          null,
+          null,
+          null,
+          null,
+          "Yabancı fonun tescil/kuruluş ülkesi",
+          null
+        ],
+        [
+          "Fon Büyüklüğü (USD/EUR/TL)",
+          null,
+          null,
+          null,
+          null,
+          "Hesap dönemi sonu yönetilen toplam varlık büyüklüğü (AUM)",
+          null
+        ],
+        [
+          "Yönetim Sözleşmesi Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Portföy yönetim sözleşmesi imzalanma tarihi",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "B. SPK LİSANSI VE YABANCI FON NİTELİK TEYİDİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/A-3 istisnasının iki temel koşulu: (1) SPK Portföy Yönetim Şirketi lisansı — kurumun lisans sahibi olduğunu belgeleyen SPK yazısı zorunlu. (2) Fonun yabancı (yurt dışında kurulu) kolektif yatırım kuruluşu olması — fon kurulu olduğu ülkenin otoritesinden lisanslı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "Belge"
+        ],
+        [
+          "B.1  SPK Portföy Yönetim Şirketi Lisansı Var mı?",
+          null,
+          "EVET",
+          "SPK'dan alınan portföy yönetim şirketi lisansı",
+          null,
+          "SPK Lisans Belgesi",
+          null
+        ],
+        [
+          "B.2  SPK Lisans Tarihi ve Numarası",
+          null,
+          null,
+          null,
+          null,
+          "SPK Lisans Belgesi",
+          null
+        ],
+        [
+          "B.3  Yabancı Fon Türü",
+          null,
+          "Hedge Fon",
+          "Yabancı fonun yapısı — offshore/onshore, fon türü",
+          null,
+          "Fon kuruluş belgesi",
+          null
+        ],
+        [
+          "B.4  Fonun Kurulu Olduğu Ülke/Yetki Alanı",
+          null,
+          null,
+          "Cayman Islands, Lüksemburg (SICAV), İrlanda, BVI, Jersey vb.",
+          null,
+          "Fon kayıt belgesi",
+          null
+        ],
+        [
+          "B.5  Fonun İlgili Ülke Otoritesinden Lisanslı/Kayıtlı Olduğu Belgelendi mi?",
+          null,
+          "EVET",
+          "Yabancı fonun kendi ülkesinde hukuki varlığının belgesi",
+          null,
+          "Fon lisans/kayıt belgesi",
+          null
+        ],
+        [
+          "B.6  Türkiye'den Verilen Yönetim Hizmeti Niteliği",
+          null,
+          "Tam Portföy Yönetimi (Tam Yetki)",
+          "İstisna için TÜM yönetim faaliyetinin Türkiye'den verilmesi en güçlü pozisyon",
+          null,
+          "Yönetim sözleşmesi",
+          null
+        ],
+        [
+          "B.7  Yönetim Sözleşmesi Türkiye'deki Şirket ile Yabancı Fon Arasında mı İmzalandı?",
+          null,
+          "EVET",
+          "Sözleşme Türkiye'deki portföy yönetim şirketini taraf olarak göstermeli",
+          null,
+          "Yönetim sözleşmesi",
+          null
+        ],
+        [
+          "C. KAPSAM İÇİ / KAPSAM DIŞI GELİR ANALİZİ — 5/A-3 İSTİSNASININ SINIRI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/A-3 istisnası yalnızca YABANCI FON YÖNETİMİNDEN kaynaklanan kazançları kapsar. Mevduat faizi, yerli fon yönetimi, TGB dışı ticari gelirler kapsam dışıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Gelir Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Kapsam",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Yönetim Ücreti (Management Fee — Yabancı Fon)",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "AUM'un belirli yüzdesi — 5/A-3'ün ana kapsam içi geliri",
+          null
+        ],
+        [
+          "C.2  Performans Ücreti (Performance/Incentive Fee)",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "Fon performansına bağlı ücret — kapsam içi",
+          null
+        ],
+        [
+          "C.3  Danışmanlık Ücreti (Advisory Fee — Yabancı Fon İçin)",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "Yabancı fona yönelik araştırma/danışmanlık hizmeti — kapsam içi",
+          null
+        ],
+        [
+          "C.4  Risk Yönetimi / İzleme Ücreti (Yabancı Fon)",
+          null,
+          "KAPSAM İÇİ",
+          null,
+          null,
+          "Yabancı fona verilen risk yönetim hizmeti — kapsam içi",
+          null
+        ],
+        [
+          "C.5  TOPLAM KAPSAM İÇİ GELİR",
+          null,
+          null,
+          "0",
+          null,
+          "İstisna hesabının dayanağı",
+          null
+        ],
+        [
+          "C.6  Mevduat Faizi ve Finansal Gelirler",
+          null,
+          "KAPSAM DIŞI",
+          null,
+          null,
+          "★ KESİN KAPSAM DIŞI",
+          null
+        ],
+        [
+          "C.7  Yerli Fon Yönetim Ücretleri (Türk Fonu)",
+          null,
+          "KAPSAM DIŞI",
+          null,
+          null,
+          "Yerli fon → 5/A-3 kapsamı dışı",
+          null
+        ],
+        [
+          "C.8  TGB/TUGS/Diğer Faaliyet Gelirleri",
+          null,
+          "KAPSAM DIŞI",
+          null,
+          null,
+          "İlgili başka istisna kapsamında olabilir",
+          null
+        ],
+        [
+          "C.9  TOPLAM KAPSAM DIŞI GELİR",
+          null,
+          null,
+          "0",
+          null,
+          "Vergiye tabi kısım",
+          null
+        ],
+        [
+          "D. YÖNETİM KAZANCI VE %100 İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Yönetim kazancı = Kapsam içi gelirler − Kapsam içi giderler (personel, yazılım, araştırma, GYG payı). Gider dağıtımı: Kapsam içi/dışı gelir oranıyla GYG paylaştırılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Kapsam İçi Toplam Yönetim Geliri",
+          null,
+          "0",
+          "C.5'ten otomatik",
+          null,
+          "Yabancı fon yönetim gelirleri",
+          null
+        ],
+        [
+          "D.2  Doğrudan Fon Yönetim Giderleri (Personel/Araştırma/Yazılım/Seyahat)",
+          null,
+          null,
+          "Yabancı fon yönetimine doğrudan atfedilen giderler",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  Genel Yönetim Gideri Payı (Kapsam içi oran × GYG)",
+          null,
+          null,
+          "Kapsam içi gelir / Toplam gelir × Toplam GYG",
+          null,
+          "Dağıtım yöntemi belgelenmeli",
+          null
+        ],
+        [
+          "D.4  YÖNETİM KAZANCI = D.1 − D.2 − D.3",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.5  DURUM",
+          null,
+          "ZARAR/SIFIR",
+          "Otomatik",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.6  5/A-3 İSTİSNA TUTARI (%100)",
+          null,
+          "0",
+          "%100 Tam İstisna",
+          null,
+          "→ Beyanname 323",
+          null
+        ],
+        [
+          "E. BEYANNAME 323 — KVK 5/A-3 YÖNETİCİ ŞİRKET İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  TOPLAM İSTİSNA → Beyanname Satır 323 (Kazancın Bulunması Halinde — %100)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "D.6 — Yönetim Kazancı × %100"
+        ],
+        [
+          "KRİTİK UYARILAR: (1) SPK LİSANSI: Portföy yönetim şirketi lisansı olmadan 5/A-3 istisnası uygulanamaz. (2) YABANCI FON: Yurt dışında kurulu fon olmalı — Türk fonu kapsam dışı. (3) TÜRKİYE'DEN YÖNETİM: Fiili yönetim Türkiye'deki şirket tarafından verilmeli. (4) KAPSAM: Yalnızca yabancı fon yönetim gelirleri — mevduat faizi vb. kapsam dışı. (5) 323 = Kazancın Bulunması Halinde — dönem zararında uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H54",
+      "rows": [
+        [
+          "323 – KVK 5/A-3 YABANCI FON YÖNETİCİ ŞİRKET | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/A Fıkra 3 | %100 İstisna | SPK Lisanslı Portföy Yönetim Şirketi | Yabancı Fon Yönetimi | Türkiye'den Yönetim | Beyanname 323 | 311/315 ile Yapısal Karşılaştırma | KVK 5/1 vs 5/A Farkı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "SPK Portföy Yönetim Lisansı (B.1)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "Yabancı Fon Teyidi (A0.2)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "Türkiye'den Yönetim (A0.3)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null,
+          null
+        ],
+        [
+          "Yönetim Hizmeti Niteliği (B.6)",
+          null,
+          null,
+          "Tam Portföy Yönetimi (Tam Yetki)",
+          "Tam/Danışmanlık/Karma",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kapsam İçi Gelir (C.5)",
+          null,
+          null,
+          "0",
+          "Yabancı fon yönetim gelirleri",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kapsam Dışı Gelir (C.9)",
+          null,
+          null,
+          "0",
+          "Vergiye tabi kısım",
+          null,
+          null,
+          null
+        ],
+        [
+          "Yönetim Kazancı (D.4)",
+          null,
+          null,
+          "0",
+          "Net kazanç",
+          null,
+          null,
+          null
+        ],
+        [
+          "323 İSTİSNA TUTARI (D.6)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B. KVK 5/1 İSTİSNALARI vs KVK 5/A (323) — MADDE YAPISI FARKI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "323, KVK'nın 5/1 bentlerinden değil, 5/A maddesinden kaynaklanmaktadır. Bu fark beyanname satır seçimi ve istisna koşullarını etkiler.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "323 — KVK 5/A-3",
+          null,
+          "KVK 5/1 İstisnaları (304/322/354 vb.)",
+          null,
+          null
+        ],
+        [
+          "Madde",
+          null,
+          "KVK Md. 5/A (Ayrı Madde)",
+          null,
+          "KVK Md. 5/1 (Alt Bentler: a,b,c...j,k)",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kapsam Alanı",
+          null,
+          "Uluslararası finans/fon yönetimi",
+          null,
+          "Çeşitli (İştirak/Sat-Kirala/YD Kazanç vb.)",
+          null,
+          null,
+          null
+        ],
+        [
+          "Beyanname",
+          null,
+          "323",
+          null,
+          "301/302/304/311/354 vb.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Amaç",
+          null,
+          "Türkiye'yi fon merkezi yapma",
+          null,
+          "Sektörel/faaliyetle bağlantılı teşvik",
+          null,
+          null,
+          null
+        ],
+        [
+          "Temel Şart",
+          null,
+          "SPK lisansı + Yabancı fon + TR'den yönetim",
+          null,
+          "Bent bazında farklı koşullar",
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100",
+          null,
+          "%50 – %100 (bende göre)",
+          null,
+          null,
+          null
+        ],
+        [
+          "Bölüm",
+          null,
+          "Kazancın Bulunması Halinde",
+          null,
+          "Zarar Olsa Dahi veya Kazancın Bulunması Halinde",
+          null,
+          null,
+          null
+        ],
+        [
+          "Özel Kanun Bağlantısı",
+          null,
+          "KVK içinde ama ayrı madde",
+          null,
+          "KVK içinde 5. madde 1. fıkra",
+          null,
+          null,
+          null
+        ],
+        [
+          "C. 323 vs 311 vs 315 — ÖZEL İSTİSNA PAKETİ KARŞILAŞTIRMASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Setin üç 'özel statü' istisnası: 311 (TGB/4691), 315 (TUGS/4490), 323 (KVK 5/A). Ortak özellik: %100 istisna ve süresizlik eğilimi. Farklılık: Statü, kapsam, yasa.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "323 KVK 5/A-3",
+          null,
+          "311 TGB 4691",
+          null,
+          "315 TUGS 4490"
+        ],
+        [
+          "Yasal Dayanak",
+          null,
+          "KVK Md. 5/A-3",
+          "4691 s.K. Md.3",
+          "4490 s.K.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Statü Şartı",
+          null,
+          "SPK Portföy Yönetim Lisansı",
+          "Bakanlık Onaylı Yönetici Şirket",
+          "TUGS Sicil Kaydı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Hedef Sektör",
+          null,
+          "Uluslararası Fon Yönetimi",
+          "Teknoloji Geliştirme",
+          "Denizcilik/Gemi",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kapsam İçi Gelir",
+          null,
+          "Yönetim/Performans Ücreti (Yabancı Fon)",
+          "Kira/Yönetim Ücreti",
+          "Navlun/Charter/Devir",
+          null,
+          null,
+          null
+        ],
+        [
+          "Devir Kazancı",
+          null,
+          "Hayır (fon yönetimi)",
+          "Hayır",
+          "EVET — Gemi satışı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Finansal Gelir",
+          null,
+          "Kapsam Dışı",
+          "Kapsam Dışı",
+          "Kapsam Dışı",
+          null,
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100",
+          "%100",
+          "%100",
+          null,
+          null,
+          null
+        ],
+        [
+          "Beyanname",
+          null,
+          "323",
+          "311",
+          "315",
+          null,
+          null,
+          null
+        ],
+        [
+          "Süre",
+          null,
+          "Koşullar sağlandığı sürece",
+          "Yönetici şirket statüsü süresince",
+          "TUGS kaydı aktif süresince",
+          null,
+          null,
+          null
+        ],
+        [
+          "D. DENETİM KONTROL LİSTESİ (K1–K13)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ Kurum SPK Portföy Yönetim Şirketi lisansına sahip mi?",
+          null,
+          "SPK lisans belgesi zorunludur. Lisanssız kurum 5/A-3 istisnasından yararlanamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K2",
+          "★ Yönetilen fon yabancı (yurt dışında kurulu) fon mu?",
+          null,
+          "Türk fonu → 5/A-3 kapsamı dışı. Fonun yabancı olduğunu ispatlayan belge gerekir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K3",
+          "★ Yönetim hizmeti Türkiye'den mi veriliyor? Fiili yönetim teyit edildi mi?",
+          null,
+          "Personel, karar alma, yönetim altyapısı Türkiye'de olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K4",
+          "KVK Md.5/A kapsamındaki tüm koşullar sağlandı mı?",
+          null,
+          "İlgili tebliğ ve CB kararları çerçevesindeki eşik/koşul analizi.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K5",
+          "★ Kapsam içi/dışı gelir ayrıştırması C bölümünde yapıldı mı?",
+          null,
+          "Mevduat faizi, yerli fon gelirleri kapsam dışı. Alt hesap ayrımı zorunlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K6",
+          "Gider dağıtımı kapsam içi/dışı oranına göre yapıldı mı?",
+          null,
+          "D.3 — Yönetim hizmetine doğrudan/dolaylı giderlerin ayrıştırılması.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K7",
+          "Yönetim sözleşmesi (management agreement) Türkiye'deki şirket ile imzalı mı?",
+          null,
+          "B.7 — Sözleşme tarafları ve kapsam net olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K8",
+          "Fon yönetimine ilişkin performans raporları ve AUM kayıtları mevcut mu?",
+          null,
+          "C.1 yönetim ücreti ve C.2 performans ücreti hesaplamasının dayanağı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K9",
+          "Transfer fiyatlandırması boyutu analiz edildi mi?",
+          null,
+          "Yabancı fon ile Türkiye'deki şirket arasındaki ilişkili taraf işlemleri — KVK Md.13.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K10",
+          "323 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "'Zarar Olsa Dahi' değil — dönem zararında uygulanamaz.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K11",
+          "Beyanname 323 = D.6 uyumlu mu?",
+          null,
+          "D.6 ile 323 satırı tutarlı olmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K12",
+          "Çoklu fon varsa her fon için ayrı analiz yapıldı mı?",
+          null,
+          "Her yabancı fon için ayrı yönetim sözleşmesi + gelir-gider analizi.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ],
+        [
+          "K13",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.",
+          null,
+          "Uygun / Eksik / Risk",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G21",
+      "rows": [
+        [
+          "323 – KVK 5/A-3 YABANCI FON YÖNETİCİ ŞİRKET | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/A-3 | %100 İstisna | Beyanname 323 | Yönetim+Performans Ücreti | Alt Hesap Ayrımı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — YÖNETİM ÜCRETİ TAHAKKUKU (Management Fee — Yabancı Fon — Kapsam İçi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Dönem]",
+          "120 Alacaklar — Yönetim Ücreti (600.01 KAPSAMİÇİ)",
+          "Yabancı fondan management fee alacağı",
+          "[Tutar TL/USD]",
+          "—",
+          "Yönetim sözleşmesi"
+        ],
+        [
+          "Kr",
+          "[Dönem]",
+          "600 Yurt Dışı Satışlar / 640 Hizmet Gel. (600.01 — YABANCI FON YÖNETİMİ)",
+          "Yönetim ücreti — KVK 5/A-3 323 istisna — Beyanname 323",
+          "—",
+          "[Tutar]",
+          "KV 323"
+        ],
+        [
+          "ALT HESAP ZORUNLU: 600.01 — Yabancı Fon Yönetim Gelirleri (Kapsam İçi) | 600.02 — Kapsam Dışı (Yerli Fon/Finansal). Dövizli işlemler: TCMB kuru ile TL'ye çevrilmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — PERFORMANS ÜCRETİ (Performance/Incentive Fee — Yabancı Fon)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Perf.]",
+          "120 Alacaklar — Performans Ücreti",
+          "Yüksek su işareti/hurdle hesabına göre tahakkuk",
+          "[Tutar]",
+          "—",
+          "Sözleşme"
+        ],
+        [
+          "Kr",
+          "[Perf.]",
+          "600 (600.01 — YABANCI FON PERFORMANS)",
+          "Performans ücreti — 5/A-3 istisna",
+          "—",
+          "[Tutar]",
+          "KV 323"
+        ],
+        [
+          "PERFORMANS ÜCRETİ — TAHHAKKUKTAKİ NİHATET PRENSİBİ: High water mark veya hurdle rate aşılmadan performans ücreti tahakkuk ettirilmemeli. Yönetim sözleşmesindeki performans hesaplama metodolojisiyle uyumlu kayıt yapılmalı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — KUR FARKI KAYD (Dövizli Yönetim Ücreti Tahsilatında)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Tahsilat]",
+          "102 Bankalar (Döviz Hesabı)",
+          "USD/EUR tahsilatı",
+          "[Tutar TL]",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Tahsilat]",
+          "120 Alacaklar",
+          "Alacak kapatma",
+          "—",
+          "[Tutar TL]",
+          null
+        ],
+        [
+          "Dr/Kr",
+          "[Tahsilat]",
+          "646/656 Kambiyo Kâr/Zararı",
+          "Kur farkı",
+          "[Kur Farkı]",
+          "—",
+          "TCMB Kuru"
+        ],
+        [
+          "ÖNEMLI NOT — KUR FARKI İSTİSNA: Yönetim ücretinin tahakkuku ve tahsilatı arasındaki kur farkı 5/A-3 kapsamındaki kâr mı yoksa kapsam dışı kur farkı mı sayılacağı tartışmalıdır. GİB özelgesi alınması tavsiye edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D9",
+      "rows": [
+        [
+          "323 – KVK 5/A-3 YABANCI FON YÖNETİCİ ŞİRKET | DENETÇİ NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/A-3 | %100 | SPK Lisanslı PYŞ | Yabancı Fon | TR'den Yönetim | 311/315 Karşılaştırma | Transfer Fiyatlandırması | KV 5/A vs 5/1",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/A-3 — Yasal Çerçeve ve Politika Amacı",
+          "KVK Madde 5/A — YABANCI FON KAZANÇLARININ VERGİLENDİRİLMESİ:\n\nTürkiye'yi uluslararası bir fon merkezi haline getirme hedefine yönelik çekim politikası istisnası.\n5/A-3 FIKRASI — YÖNETİCİ ŞİRKET İSTİSNASI:\nSPK'dan portföy yönetim şirketi lisansı almış Türkiye'deki kurumların,\nyurt dışında kurulu kolektif yatırım kuruluşlarını Türkiye'den yönetmesinden\nelde ettikleri kazançların kurumlar vergisinden istisna tutulması.\n\nÜÇ TEMEL KOŞUL:\n① SPK Portföy Yönetim Şirketi lisansı\n② Yabancı (yurt dışında kurulu) fon yönetimi\n③ Yönetim hizmetinin Türkiye'den verilmesi\n\nBEYANNAME: 323. Satır | 'Kazancın Bulunması Halinde İndirilecek' | %100\nKVK YAPISI: 5/1 bentleri (a,b,c...j,k) değil → 5/A ayrı madde",
+          "KVK Md. 5/A | SPK Mevzuatı"
+        ],
+        [
+          "N2",
+          "Transfer Fiyatlandırması ve İlişkili Taraf Boyutu",
+          "5/A-3 UYGULAMASINDA TRANSFER FİYATLANDIRMASI KRİTİK ÖNEM TAŞIR:\n\nYabancı fon ile Türkiye'deki portföy yönetim şirketi çoğunlukla aynı gruba dahildir.\nBu durumda yönetim ücreti, performans ücreti ve danışmanlık ücretlerinin\nemsale uygun (arm's length) şekilde belirlenmesi zorunludur.\n\nKVK Md.13 Analizi:\n• Emsale uygun yönetim ücreti: ILSF/AUM yüzdesi (piyasa oranı ile karşılaştırma)\n• Performans ücreti hesaplama yöntemi: High water mark, hurdle rate (standart)\n• Danışmanlık ücreti: Transfer pricing documentation gerekli\n\nÖZELGE ÖNERİSİ:\nTürkiye'den yönetimin neyi kapsadığı, kur farkı istisnası ve TP boyutu için\nGİB özelgesi alınması tavsiye edilir — 5/A-3 GİB emsali sınırlıdır.",
+          "KVK Md.13 | OECD Transfer Fiyatlandırması Rehberi"
+        ],
+        [
+          "N3",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...SPK Portföy Yönetim Şirketi lisansına sahip [kurum], yurt dışında kurulu\n  [fon adı] adlı kolektif yatırım kuruluşunu Türkiye'den yönetmekte olup\n  bu faaliyetten elde ettiği yönetim ve performans ücretleri KVK Md.5/A-3\n  kapsamında kurumlar vergisinden müstesnadır'\n\nKULLANMAYIN:\n'...KVK Md.5/1-... kapsamında...' (5/A-3 ayrı bir madde)\n'...yurt içinde kurulu fon yönetiminden...' (Yerli fon → 5/A-3 dışı)\n\nKRİTİK HATALAR:\n(1) Yerli fon yönetim ücretini 323'e dahil etmek\n(2) Mevduat faizini 5/A-3 kapsamında beyan etmek\n(3) SPK lisansını teyit etmeden 323 uygulamak\n(4) Transfer fiyatlandırması boyutunu göz ardı etmek\n(5) 'Türkiye'den yönetim' kriterini yeterince belgelememek",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "KDV VE ÇIFTE VERGİLENDİRME BOYUTU: Yabancı fona verilen yönetim hizmetleri KDV açısından hizmetin yurt dışına verilmesi nedeniyle 0 oranlı/muaf olabilir (KDVK hükümleri). Bunun yanı sıra yabancı fonun kurulu olduğu ülkeyle Türkiye arasında çifte vergilendirmeyi önleme anlaşması (ÇVÖA) var ise anlaşma hükümleri de değerlendirilmelidir. Her iki boyut KV tasdikinin dışında olup ayrıca incelenmelidir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F33",
+      "rows": [
+        [
+          "323 – KVK 5/A-3 YABANCI FON YÖNETİCİ ŞİRKET | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/A-3 | %100 | SPK Lisanslı PYŞ | Yabancı Fon | TR'den Yönetim | Beyanname 323 | Transfer Fiyatlandırması | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (SPK LİSANSI + YABANCI FON + YÖNETİM SÖZLEŞMESİ)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "3 Kritik: SPK Portföy Yönetim Lisansı + Yabancı Fon Kayıt Belgesi + Yönetim Sözleşmesi",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ SPK Portföy Yönetim Şirketi Lisansı",
+          "SPK'dan alınan portföy yönetim şirketi lisansı — 5/A-3'ün temel koşulu.\nLisanssız kurum istisnadan yararlanamaz.",
+          "SPK Lisans Belgesi (orijinal veya onaylı)",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Yabancı Fon Kayıt/Kuruluş Belgesi",
+          "Yabancı fonun kendi ülkesinde kurulu olduğunu gösteren kuruluş belgesi veya regülatör teyidi.\nYabancı fon olduğunun belgesidir.",
+          "Fonun kurulu olduğu ülkenin otoritesinden belge",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ Portföy Yönetim Sözleşmesi (Management Agreement)",
+          "Türkiye'deki portföy yönetim şirketi ile yabancı fon arasındaki yönetim sözleşmesi.\nYönetim ücreti oranı, hizmet kapsamı, Türkiye'den yönetim koşulu net olmalı.",
+          "Yönetim sözleşmesi (imzalı, TR veya İngilizce)",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Kapsam İçi/Dışı Gelir Ayrıştırma Tablosu + Muhasebe Ekstresi",
+          "Yabancı fon yönetim gelirleri (kapsam içi) ile diğer gelirlerin (kapsam dışı) ayrıştırılması.\nMuhasebe alt hesap (600.01/600.02) ile uyumlu.",
+          "C bölümü + muhasebe ekstresi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Yönetim Ücreti ve Performans Ücreti Hesaplama Raporu (AUM Kanıtı)",
+          "Dönem içinde yönetilen fon büyüklüğü (AUM) ve buna dayalı yönetim/performans ücreti hesabı.\nC.1 ve C.2 tutarlarının dayanağıdır.",
+          "Şirket fon yönetim raporları + Fon NAV kayıtları",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 323. Satır",
+          "323 satırının D.6 ile uyumlu. 'Kazancın Bulunması Halinde' bölümünde.",
+          "GİB e-Beyanname",
+          null
+        ],
+        [
+          "KATEGORİ 2 — TRANSFER FİYATLANDIRMASI VE EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Detay",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Transfer Fiyatlandırması Dokümantasyonu (İlişkili Taraf İşlemi Varsa)",
+          "Yönetim/performans ücretinin emsale uygunluk analizi (comparable analysis).\nKVK Md.13 kapsamında transfer fiyatlandırması formu ve belgesi.",
+          "TP Analiz Raporu + KVK Md.13 formu",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Döviz İşlem Kayıtları ve Kur Çevrimi Belgesi",
+          "Yönetim ücretinin dövizli tahsilatında TCMB kuruna göre TL çevrimi kayıtları.\nKur farkı muhasebesi.",
+          "Banka dekontları + TCMB kur tablosu",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Türkiye'den Yönetim Kanıtı (Personel/Karar/Altyapı)",
+          "Fiili yönetimin Türkiye'den verildiğine dair belgeler: Personel sözleşmeleri, ofis kayıtları, iletişim kayıtları, yönetim kurulu/komite kararları.",
+          "Personel sözleşmeleri + İşgücü kayıtları",
+          null
+        ],
+        [
+          null,
+          "10",
+          "GİB Özelgesi (5/A-3 Kapsamı Tartışmalı Konular İçin)",
+          "Türkiye'den yönetim kriteri, kur farkı istisnası, yönetim hizmetinin sınırı gibi tartışmalı konularda GİB özelgesi alınması tavsiye edilir.",
+          "GİB özelge başvuru sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ SPK Portföy Yönetim Şirketi lisansı belgede mevcut mu?",
+          "Lisans olmadan 5/A-3 uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Yönetilen fon yabancı (yurt dışında kurulu) mu?",
+          "Yabancı fon kayıt/kuruluş belgesi dosyada.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Yönetim hizmeti Türkiye'den mi veriliyor? Kanıtlandı mı?",
+          "Personel, ofis, karar altyapısı Türkiye'de.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Kapsam içi/dışı gelir ayrıştırması C bölümünde yapıldı mı?",
+          "Mevduat faizi, yerli fon gelirleri kapsam dışı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Transfer fiyatlandırması analizi yapıldı mı?",
+          "İlişkili taraf işlemi varsa KVK Md.13 analizi zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Yönetim ücreti AUM hesabıyla belgelendi mi?",
+          "C.1 yönetim ücreti fon büyüklüğüyle uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "323 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "'Zarar Olsa Dahi' değil.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "323 = D.6 uyumlu mu?",
+          "Tasdik edilen istisna tutarıyla beyanname uyumu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 323'ün setin diğer dosyalarından FARK: KVK 5/1 değil, KVK 5/A-3 (ayrı madde). 3 temel koşul: SPK lisansı + Yabancı fon + Türkiye'den yönetim. Transfer fiyatlandırması boyutu kritik önem taşır. Kur farkı ve KDV boyutları ayrıca incelenmelidir. GİB emsal sınırlı — tartışmalı konularda özelge alınması tavsiye edilir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

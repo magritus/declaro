@@ -26,11 +26,70 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "2 yıldan fazla aktifinde tuttuğunuz bir taşınmazı sattınız mı?"
   info_modal: |
-    KVK Madde 5/1-e kapsamında kurumların en az 2 tam yıl aktifinde tuttuğu
-    taşınmazların satışından doğan kazançların bir kısmı kurumlar vergisinden istisnadır.
-    İstisna oranı; aktife giriş ve satış tarihine göre %75, %50 veya %25'tir.
-    15/7/2023 sonrası aktife giren taşınmazlar için istisna tamamen kaldırılmıştır (7456 s.K.).
-    Bu istisna YİAKV matrahından düşülemez — matrahta kalır.
+    ## Genel Çerçeve
+
+    **KVK Madde 5/1-e** kapsamında, kurumların en az **2 tam yıl (730 gün)** aktiflerinde
+    tuttukları taşınmazların satışından doğan kazançların belirli bir kısmı kurumlar vergisinden
+    istisnadır. İstisna oranı; taşınmazın aktife giriş tarihi ile satış tarihinin birleşimine
+    göre **%75, %50 veya %25** şeklinde değişmektedir. **7456 Sayılı Kanun** ile 15/7/2023
+    sonrasında aktife giren taşınmazlar için istisna tamamen ortadan kaldırılmıştır; yalnızca
+    bu tarih öncesi aktife giriş yapan taşınmazlar istisna kapsamındadır.
+
+    ## Temel Koşullar
+
+    - Taşınmazın satış tarihi itibarıyla **en az 2 tam yıl (730 gün)** kurumun aktifinde kayıtlı
+      olması gerekir; süre, tapuya tescil veya cins tashih tarihinden başlar, aktife muhasebe
+      kaydı tarihinden değil.
+    - Taşınmazın **aktife giriş tarihi 15/7/2023 öncesi** olmalıdır; bu tarih sonrası aktife
+      girenler için istisna hiçbir oranda uygulanamaz.
+    - Kurumun ana faaliyet konusu veya fiili uğraşı **taşınmaz ticareti ya da kiralaması**
+      olmamalıdır; bu kapsamdaki kurumlar istisnadan yararlanamaz.
+    - İstisna kazancının **satışı izleyen hesap dönemi başından KV beyan süresine kadar 549
+      Özel Fonlar hesabına alınması** zorunludur; bu koşulun yerine getirilmemesi istisnayı
+      geçersiz kılar.
+    - **İstisna oranı dilimleri** (GİB Beyan Rehberi Mart 2026 No:601): %75 → satış tarihi
+      5/12/2017 öncesi; %50 → aktife giriş 15/7/2023 öncesi ve satış tarihi 5/12/2017–15/7/2023;
+      %25 → aktife giriş 15/7/2023 öncesi ve satış tarihi 15/7/2023 sonrası (KVK Geçici Md.16).
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **549 fon hesabı zorunluluğu:** İstisna tutarının beyan süresine kadar 549 hesabına
+      alınmadığı durumda istisna geçersiz sayılır ve tüm kazanç vergilendirilebilir; bu koşul
+      uygulamada en sık gözden kaçırılan risktir.
+    - **5 yıl fon tutma süresi:** 549 hesabındaki istisna tutarı 5 yıl boyunca tutulmalıdır;
+      erken çekilen tutar çekildiği tarihte matraha eklenerek cezalı tarhiyata yol açar; sermayeye
+      ilave mümkündür fakat sonrasında sermaye azaltılırsa yeniden vergilendirme gündeme gelebilir.
+    - **2 yıl süresinin hesabı:** Tapu satış vaadi, ön anlaşma veya peşinat ödeme tarihleri
+      sürenin başlangıcı sayılmaz; tapuya tescil / cins tashih tarihi esastır.
+    - **Satış bedelinin tahsili:** Satış bedeli, satışı izleyen 2. takvim yılı sonuna kadar
+      tahsil edilmelidir; aksi halde istisna uygulamasının sürdürülebilirliği riske girer.
+    - **Taşınmaz ticareti yasağı:** Taşınmaz kiralama veya ticareti faaliyet konusu olan
+      kurumlarda kurumun tüm taşınmazları kapsam dışıdır; ana sözleşme ve fiili faaliyet birlikte
+      değerlendirilmelidir.
+    - **KDV istisnası:** 15/7/2023 öncesi aktife giren taşınmazlar için KDV istisnası (KDVK
+      Geçici Md.43) devam eder; KDV boyutu ayrıca incelenmelidir.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-e taşınmaz satış kazancı istisnası, YİAKV (KVK 32/C) matrahından düşülemez;**
+    istisna tutarı YİAKV matrahında kalır. GİB KV Beyan Rehberi Mart 2026 (No:601) A0.7 kontrolü
+    bu kuralı açıkça ortaya koymaktadır. YİAKV hesabında bu istisna herhangi bir indirim sağlamaz.
+
+    ## Pratik Notlar
+
+    - **Tarih dilimi tespiti** ilk adımdır: Aktife giriş tarihi (tapu tescil/cins tashih) ve
+      satış tarihi (satış tapusunun tescil tarihi) birlikte değerlendirilerek oran dilimi (%75,
+      %50 ya da %25) doğru biçimde seçilmelidir.
+    - **Devir/bölünme durumu:** Devir veya bölünme yoluyla edinilen taşınmazlarda önceki
+      kurumun aktifinde geçen süreler 2 yıl hesabına dahil edilebilir; bu durumda devir öncesi
+      döneme ait belgeler de dosyaya eklenmelidir.
+    - **GYO/GKO portföy taşınmazları:** 7524 Sayılı Kanun Madde 32 (1/1/2025 itibarıyla) ile
+      portföy taşınmazları için KVK 5/1-d kapsamında dağıtım şartı analizi ayrıca gereklidir.
+    - **YMM tasdik raporu:** İstisna tutarı ≥500.000 TL ise 49 No.lu KV GT kapsamında YMM
+      tasdik raporu zorunludur; tam tasdik kapsamındaki mükellefler ayrıca rapor düzenlemez.
+    - **Zararlı satış:** Satış zararla sonuçlandıysa KVK 5/3 çerçevesinde zararın istisna oranına
+      isabet eden kısmının KKEG sayılıp sayılmayacağı özelge alınarak netleştirilmelidir; bu konu
+      uygulamada tartışmalıdır.
   kapi_sorulari:
     - id: iki_yil_aktif
       soru: "Taşınmaz satış tarihi itibarıyla en az 2 tam yıl (730 gün) aktifinde bulunuyor mu?"

@@ -1,0 +1,1364 @@
+{
+  "file": "382_KVK_Gecici_Md14_3_Vade_Sonu_Diger_Kazanclar.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G51",
+      "rows": [
+        [
+          "382 – KVK GEÇİCİ MADDE 14/3 | VADE SONUNDA DOĞAN DİĞER KAZANÇ İSTİSNASI | PARAGRAF 3 — ALTIN HESABI | KVK GEÇİCİ MD.14 SON KOD (370–382) | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/3 (Paragraf 3) | Altın Dönüşümü Sonrası 379/380/381 Dışında Kalan Vade Sonu Kazançlar | Beyanname 382 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ | KVK GEÇİCİ MD.14 PAKETI TAMAMLANDI (370–382 ON ÜÇ KOD)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "374 / 378 / 382 PARAGRAF KARŞILAŞTIRMASI — Her üçü de VADE SONU DİĞER KAZANÇLAR:\n  374 (Md.14/1-b): Paragraf 1 AKTİF — TL KKM (mevduat/altın) vade sonu DİĞER kazançları (371/372/373 dışı).\n  378 (Md.14/2): Paragraf 2 PASİF — Borç dönüşümü TL araç vade sonu DİĞER kazançları (375/376/377 dışı).\n  382 (Md.14/3): Paragraf 3 ALTIN — Altın hesabı TL araç vade sonu DİĞER kazançları (379/380/381 dışı) → BU DOSYA.\n  ★ KVK GEÇİCİ MD.14 PAKETİ TAMAMLANDI: 370→382 on üç kod (P1: 370–374 | P2: 375–378 | P3: 379–382).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 382 kapsamındaki vade sonu diğer kazançlar YİAKV matrahından DÜŞÜLEMEZ. 370–382 tamamı E.7 DÜŞÜLEMEZ listesindedir (13 kod).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  KVK Geçici Md.14/3 kapsamında altın hesabı dönüşümü (379) gerçekleştirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "382, 379 bağlantısı gerektirir. Altın dönüşümü (379) + dönem sonu tahakkuk (380) + vade (381) zinciri mevcut olmalı. 382 bu zincirin 'diğer' tamamlayıcısıdır.",
+          null
+        ],
+        [
+          "A0.2  ★ Bu kazanç 379/380/381 kapsamına girmiyor mu? ('Diğer' niteliği teyit edildi mi?)",
+          null,
+          null,
+          null,
+          "EVET",
+          "382 = 379 (altın dönüşüm kazancı) + 380 (dönem sonu tahakkuk) + 381 (vade kâr payı/faiz) DIŞINDA kalan kazançlar. Üç kodun kapsamını önce kontrol edin.",
+          null
+        ],
+        [
+          "A0.3  Kazanç türü belirlendi mi? (Altın fiyat farkı ek kazancı / Prim / Özel getiri / Diğer)",
+          null,
+          null,
+          null,
+          "Altın Fiyat Farkı Ek Kazancı",
+          "Her tür için ayrı yasal dayanak ve belge zorunludur.",
+          null
+        ],
+        [
+          "A0.4  Vade tarihi dönem içinde (01.01–31.12) mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "382, vade sonu kazancıdır. Vade tarihi dönem içinde olmalı.",
+          null
+        ],
+        [
+          "A0.5  379/380/381 ile mükerrerlik analizi yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "382 kapsamındaki kazancın 379/380/381'den farklı kalem olduğu teyit edilmeli. 374 ve 378 ile de ayrıştırma: Paragraf 3 araçları → 382.",
+          null
+        ],
+        [
+          "A0.6  ★ 382 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "370–382 (13 kod) tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de 382 de kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (diğer niteliği), A0.5 (mükerrerlik), A0.6 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/382-01",
+          null
+        ],
+        [
+          "379/380/381 Referansı",
+          null,
+          null,
+          null,
+          null,
+          "Paragraf 3 zinciri — üç dosya çapraz mutabakat",
+          null
+        ],
+        [
+          "B. KAZANÇ TÜRÜ ANALİZİ — 382 KAPSAMININ KATEGORİLERİ (Paragraf 3 — Altın)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "382 = Paragraf 3 kapsamında 379/380/381 DIŞINDA kalan her altın hesabı dönüşümü kaynaklı vade sonu kazancı. Her kalem için GİB'e açıklanabilir 'diğer' niteliği teyit edilmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BAŞLICA 382 KALEMLERİ:\n  ① ALTIN FİYAT FARKI EK KAZANCI: 379 (dönüşüm anı kazancı) dışında kalan, vade sonunda altın fiyat değişiminden doğan ek kazanç. (379 tek seferlik dönüşüm anındaki farkı kapsar; vade süresindeki ek altın fiyat hareketinden doğan kazanç 382 kapsamında olabilir.)\n  ② PRİM / TEŞVİK ÖDEMESİ: Paragraf 3 kapsamı altın hesabı için banka tarafından ödenen prim veya teşvik (faiz/kâr payı niteliğinde değil).\n  ③ ÖZEL TL ARAÇ GETİRİSİ: Altın dönüşümü sonrası kurulan TL araçtan faiz/kâr payı dışındaki ek getiri.\n  ④ DİĞER: 379/380/381 kapsamına girmediği açık olan her türlü Paragraf 3 vade sonu kazancı.\n  NOT: 374 (Par.1) ve 378 (Par.2) ile kapsam ayrımı: Altın hesabı araçları → 382. Diğer paragraflara karıştırma.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. VADE SONU DİĞER KAZANÇ TABLOSU (382) — KALEMİ VE TUTARI GİRİN",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her 382 kalemi için ayrı satır. SÜTUN 3 (kazanç türü) ve SÜTUN 5 (tutar) ANA GİRİŞ. 379/380/381 ile mükerrerlik var mı? kontrolü SÜTUN 6'da yapılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazanç Türü",
+          "Açıklama / Hesap",
+          "379/380 Araç",
+          "Vade Tarihi",
+          "382 Brüt Tutar (TL)",
+          "379-381 Mükerrerlik?",
+          "Net 382 İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "382 Kapsamı Vade Sonu Diğer Kazançlar → Beyanname 382",
+          null,
+          null,
+          "0",
+          "—",
+          "0"
+        ],
+        [
+          "SÜTUN 5 (teal çerçeve): 382 kapsamındaki vade sonu diğer kazanç — ANA GİRİŞ. SÜTUN 6: Mükerrerlik analizi — 379/380/381'de zaten gösterildiyse 'Var' seçin, net 382 = 0. 374 (Par.1) ve 378 (Par.2) ile ayrıştırma: Altın araçları → 382.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. VADE SONU DİĞER KAZANÇ İSTİSNASI ÖZET — BEYANNAME 382",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam 382 Brüt Kazanç (C Tablosu Sütun 5)",
+          null,
+          "0",
+          "C Sütun 5 toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Mükerrer Kalemler (379/380/381 ile çakışan)",
+          null,
+          "0",
+          "Mükerrer tutarlar — 382'ye yazılmaz",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  ★ NET 382 İSTİSNA TUTARI → BEYANNAME 382",
+          null,
+          "0",
+          "→ Beyanname 382 | Kazancın Bulunması Halinde",
+          null,
+          "KVK Geçici Md.14/3",
+          null
+        ],
+        [
+          "D.4  Kapsam Dışı (Paragraf 3 dışı araçlar)",
+          null,
+          null,
+          "Vergilendirilir",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  TOPLAM İSTİSNA → Beyanname Satır 382 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Geçici Md.14/3 | Paragraf 3 Vade Sonu Diğer Kazançlar",
+          null
+        ],
+        [
+          "★★ KVK GEÇİCİ MD.14 PAKETİ TAMAMLANDI — 370'DEN 382'YE ON ÜÇ KOD:\n  PARAGRAF 1 (5 kod): 370 Kur farkı değerleme | 371 Kur farkı tazminat | 372 Dönem sonu tahakkuk | 373 Vade kâr payı/faiz | 374 Vade diğer kazançlar.\n  PARAGRAF 2 (4 kod): 375 Borç kur farkı | 376 Dönem sonu tahakkuk | 377 Vade kâr payı/faiz | 378 Vade diğer kazançlar.\n  PARAGRAF 3 (4 kod): 379 Altın dönüşüm kazancı | 380 Dönem sonu tahakkuk | 381 Vade kâr payı/faiz | 382 Vade diğer kazançlar.\n  ★★ TÜMÜ YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7 — 13 KOD EKSİKSİZ LİSTEDE).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H43",
+      "rows": [
+        [
+          "382 – KVK GEÇİCİ MD.14/3 VADE SONU DİĞER KAZANÇLAR | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 3 Diğer Kazançlar | 370–382 KVK GEÇİCİ MD.14 PAKET TAMAMLANDI | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazanç Türü (A0.3)",
+          null,
+          null,
+          "Altın Fiyat Farkı Ek Kazancı",
+          "Altın farkı/Prim/Özel/Diğer",
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam Brüt (D.1)",
+          null,
+          null,
+          "0",
+          "C Sütun 5 toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Mükerrer Kalemler (D.2)",
+          null,
+          null,
+          "0",
+          "379-381 çakışan — hariç tutuldu",
+          null,
+          null,
+          null
+        ],
+        [
+          "382 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "370–382 tamamı E.7 (13 kod)",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null,
+          null
+        ],
+        [
+          "B. KVK GEÇİCİ MD.14 TAM PAKET — 370'DEN 382'YE ON ÜÇ KOD (TAMAMLANDI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ PAKET TAMAMLANDI: 370–382 on üç kod, üç paragraf. Tümü YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7 on üç kodu eksiksiz kapsamalı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Par.",
+          "Taraf",
+          "Kapsam",
+          "Muhasebe",
+          "Zaman",
+          "Beyanname",
+          "YİAKV"
+        ],
+        [
+          "370",
+          "1-a",
+          "AKT",
+          "Kur farkı değerleme",
+          "646/679",
+          "Dönüşüm",
+          "370",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "371",
+          "1-b",
+          "AKT",
+          "Kur farkı tazminat",
+          "102/648",
+          "Ödeme",
+          "371",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "372",
+          "1-b",
+          "AKT",
+          "Dönem sonu tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "372",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "373",
+          "1-b",
+          "AKT",
+          "Vade kâr payı/faiz",
+          "102/(181+642)",
+          "Vade",
+          "373",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "374",
+          "1-b",
+          "AKT",
+          "Vade diğer kazançlar",
+          "646/648/679",
+          "Vade",
+          "374",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "375",
+          "2",
+          "PAS",
+          "Borç kur farkı",
+          "646/679",
+          "Dönüşüm",
+          "375",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "376",
+          "2",
+          "PAS",
+          "Dönem sonu tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "376",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "377",
+          "2",
+          "PAS",
+          "Vade kâr payı/faiz",
+          "102/(181+642)",
+          "Vade",
+          "377",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "378",
+          "2",
+          "PAS",
+          "Vade diğer kazançlar",
+          "646/648/679",
+          "Vade",
+          "378",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "379",
+          "3",
+          "ALT",
+          "Altın dönüşüm kazancı",
+          "646/679",
+          "Dönüşüm",
+          "379",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "380",
+          "3",
+          "ALT",
+          "Dönem sonu tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "380",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "381",
+          "3",
+          "ALT",
+          "Vade kâr payı/faiz",
+          "102/(181+642)",
+          "Vade",
+          "381",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "382",
+          "3",
+          "ALT",
+          "Vade diğer kazançlar (BU)",
+          "646/648/679",
+          "Vade",
+          "382",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "★★ YİAKV E.7 SON GÜNCELLEMESİ (13 KOD — TAM PAKET):\n  E.7 satırı: 'KVK Geçici Md.14 (Tüm Paragraflar 1-3, Tüm Kodlar 370-382) → YİAKV'de DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373/374/375/376/377/378/379/380/381/382'\n  YMM, on üç kodun tamamının YİAKV çalışma kâğıdında E.7'de eksiksiz listelendiğini teyit etmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ 379/380/381 Paragraf 3 zinciri mevcut mu?",
+          null,
+          "382, Paragraf 3 zincirinin son kodu. 379+380+381 olmadan oluşamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K2",
+          "★ Bu kazanç türü gerçekten 379/380/381 kapsamına girmiyor mu?",
+          null,
+          "382 = 'Diğer' = 379+380+381 dışı. Her üçünün kapsamı kontrol edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K3",
+          "Kazanç türü belgelendi mi? (Sözleşme/banka yazısı vb.)",
+          null,
+          "Her 382 kalemi için ayrı belge ve savunulabilir yasal dayanak.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K4",
+          "★ 379/380/381 ile mükerrerlik analizi (C Sütun 6) yapıldı mı?",
+          null,
+          "'Yok' olanlar 382'ye yazıldı. 'Var' olanlar dışlandı (D.2).",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K5",
+          "374 (Par.1) ve 378 (Par.2) ile doğru ayrıştırıldı mı?",
+          null,
+          "Altın araçları → 382. Diğer paragraflara karıştırma yok.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K6",
+          "379/380/381 çalışma kâğıtlarıyla çapraz mutabakat yapıldı mı?",
+          null,
+          "Paragraf 3 zinciri tutarlı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K7",
+          "Tartışmalı 382 kalemleri için özelge alındı mı?",
+          null,
+          "'Diğer' niteliği tartışmalı olabilir — GİB özelgesi risk yönetiminin temelidir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K8",
+          "★★ 382 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370–382 (13 kod) tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de 382 de kontrol edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K9",
+          "YİAKV E.7 satırı 382 dahil tüm 13 kodu kapsıyor mu?",
+          null,
+          "13 kodun tamamı E.7'de listeli — SON GÜNCELLEME.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K10",
+          "Beyanname 382 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K11",
+          "Vade tarihi dönem içinde (01.01–31.12) mi?",
+          null,
+          "Sonraki dönemde vadeye girenler → Gelecek yıl.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G28",
+      "rows": [
+        [
+          "382 – KVK GEÇİCİ MD.14/3 VADE SONU DİĞER KAZANÇLAR | MUHASEBE KAYITLARI | PAKET KAPANIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 3 Diğer Kazanç | 374/378/382 Karşılaştırma | 370–382 Tam Tablo (13 Kod)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — VADE SONU: PARAGRAF 3 DİĞER KAZANÇ (ALTINLI KKM BAĞLANTILI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Vade Tarihi]",
+          "102 Bankalar / Çeşitli Hesap",
+          "Paragraf 3 vade sonu diğer kazanç tahsilatı",
+          "[Tutar]",
+          "—",
+          "Belge/Hesaplama"
+        ],
+        [
+          "Kr",
+          "[Vade Tarihi]",
+          "646 Kambiyo Kârları / 679 Diğer Kâr / 648 Diğer Gelir",
+          "Paragraf 3 vade sonu diğer kazanç — KVK Geçici Md.14/3 → Beyanname 382",
+          "—",
+          "[Tutar]",
+          "KV 382"
+        ],
+        [
+          "KAYIT 2 — 374 / 378 / 382 YAN YANA (ÜÇÜNÜN KARŞILAŞTIRMASI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "374",
+          "[Vade]",
+          "646/648/679",
+          "P1 AKT: TL KKM/altın araç vade diğer kazançlar → 374",
+          "—",
+          "[374]",
+          "KV 374"
+        ],
+        [
+          "378",
+          "[Vade]",
+          "646/648/679",
+          "P2 PAS: Borç TL araç vade diğer kazançlar → 378",
+          "—",
+          "[378]",
+          "KV 378"
+        ],
+        [
+          "382",
+          "[Vade]",
+          "646/648/679",
+          "P3 ALT: Altın TL araç vade diğer kazançlar → 382 (BU)",
+          "—",
+          "[382]",
+          "KV 382"
+        ],
+        [
+          "KAYIT 3 — KVK GEÇİCİ MD.14 TAM PAKET (370–382 ON ÜÇ KOD)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "370",
+          "P1",
+          "646/679",
+          "AKT: Kur farkı değerleme → 370",
+          "—",
+          "[370]",
+          "KV 370"
+        ],
+        [
+          "371",
+          "P1",
+          "102/648",
+          "AKT: Kur farkı tazminat → 371",
+          "—",
+          "[371]",
+          "KV 371"
+        ],
+        [
+          "372",
+          "P1",
+          "181/642",
+          "AKT: Dönem sonu tahakkuk → 372",
+          "—",
+          "[372]",
+          "KV 372"
+        ],
+        [
+          "373",
+          "P1",
+          "102/(181+642)",
+          "AKT: Vade kâr payı/faiz → 373",
+          "—",
+          "[373]",
+          "KV 373"
+        ],
+        [
+          "374",
+          "P1",
+          "646/648/679",
+          "AKT: Vade diğer kazançlar → 374",
+          "—",
+          "[374]",
+          "KV 374"
+        ],
+        [
+          "375",
+          "P2",
+          "646/679",
+          "PAS: Borç kur farkı → 375",
+          "—",
+          "[375]",
+          "KV 375"
+        ],
+        [
+          "376",
+          "P2",
+          "181/642",
+          "PAS: Dönem sonu tahakkuk → 376",
+          "—",
+          "[376]",
+          "KV 376"
+        ],
+        [
+          "377",
+          "P2",
+          "102/(181+642)",
+          "PAS: Vade kâr payı/faiz → 377",
+          "—",
+          "[377]",
+          "KV 377"
+        ],
+        [
+          "378",
+          "P2",
+          "646/648/679",
+          "PAS: Vade diğer → 378",
+          "—",
+          "[378]",
+          "KV 378"
+        ],
+        [
+          "379",
+          "P3",
+          "646/679",
+          "ALT: Altın dönüşüm kazancı → 379",
+          "—",
+          "[379]",
+          "KV 379"
+        ],
+        [
+          "380",
+          "P3",
+          "181/642",
+          "ALT: Dönem sonu tahakkuk → 380",
+          "—",
+          "[380]",
+          "KV 380"
+        ],
+        [
+          "381",
+          "P3",
+          "102/(181+642)",
+          "ALT: Vade kâr payı/faiz → 381",
+          "—",
+          "[381]",
+          "KV 381"
+        ],
+        [
+          "382",
+          "P3",
+          "646/648/679",
+          "ALT: Vade diğer → 382 (BU)",
+          "—",
+          "[382]",
+          "KV 382"
+        ],
+        [
+          "KVK GEÇİCİ MD.14 PAKETI TAMAMLANDI (370–382 ON ÜÇ KOD):\n  Paragraf 1 (5 kod: 370–374): Aktif taraf — Yab. para/altın → TL KKM\n  Paragraf 2 (4 kod: 375–378): Pasif taraf — Yab. para borç → TL\n  Paragraf 3 (4 kod: 379–382): Altın hesabı → TL\n  ★★ ON ÜÇ KODUN TAMAMININ GELİRİ YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7 — 13 KOD EKSİKSİZ).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "382 – KVK GEÇİCİ MD.14/3 VADE SONU DİĞER KAZANÇLAR | DENETÇİ NOTLARI | PAKET KAPANIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | 374/378 Karşılaştırma | 370–382 On Üç Kod | YİAKV E.7 Finali",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/3 — 382 Kapsamı ve 374/378 ile Karşılaştırması",
+          "382 (PARAGRAF 3 — ALTIN HESABI VADE SONU DİĞER KAZANÇLAR) TANIMI:\n\nKVK Geçici Madde 14/3 kapsamında altın hesaplarını TL'ye dönüştüren kurumların,\ndönüşüm sonrası TL araçlarından vade sonunda elde ettiği 379+380+381 DIŞINDA\nkalan diğer kazançlar, KVK Geçici Madde 14/3 kapsamında istisnadır.\n\n374 / 378 / 382 KARŞILAŞTIRMASI:\n• 374 (Paragraf 1): Aktif — TL KKM (mevduat/altın dönüşümü) diğer kazançları\n• 378 (Paragraf 2): Pasif — Borç dönüşümü TL araç diğer kazançları\n• 382 (Paragraf 3): Altın — Altın dönüşümü TL araç diğer kazançları\n\nHer üçü de '379/380/381 veya 371/372/373 veya 375/376/377 dışı' mantığı ile çalışır.\n\nBEYANNAME: 382 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/3 | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "374/378/382 — Birlikte Uygulanabilir mi? (Mükerrerlik Analizi)",
+          "374, 378 ve 382 BİRLİKTE UYGULANABİLİR (farklı araçlar için):\n\nKurum hem P1 hem P2 hem P3 dönüşümü yaptıysa:\n• P1 TL KKM araç diğer kazancı → 374\n• P2 TL araç diğer kazancı → 378\n• P3 altın TL araç diğer kazancı → 382\nBu MÜKERRERLİK DEĞİL — her biri farklı araç, farklı paragraf.\n\nMÜKERRERLİK HATALARI:\n• Aynı TL araç hem 374 hem 382 kapsamında → Mükerrerlik\n• Aynı kazanç hem 381 (kâr payı/faiz) hem 382 (diğer) → Mükerrerlik\n• Aynı altın araç için hem 374 hem 382 → Paragraf karışıklığı\n\nÖZELGE TAVSİYESİ: 382 'diğer' niteliği en tartışmalı kategoridir.\nAltın fiyat farkı ek kazancının nasıl hesaplanacağı konusunda GİB özelgesi alınmalıdır.",
+          "KVK Geçici Md.14/1-b (374) | Md.14/2 (378) | Md.14/3 (382)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV E.7 — 370–382 On Üç Kodun Tamamı DÜŞÜLEMEZ | SON GÜNCELLEME",
+          "KVK GEÇİCİ MD.14 — ON ÜÇ KODUN TAMAMININ YİAKV MATRAHINDA DÜŞÜLEMEZLİĞİ:\n\nParagraf 1: 370|371|372|373|374 → BEŞİ DE DÜŞÜLEMEZ\nParagraf 2: 375|376|377|378 → DÖRDÜ DE DÜŞÜLEMEZ\nParagraf 3: 379|380|381|382 → DÖRDÜ DE DÜŞÜLEMEZ\nTOPLAM ON ÜÇ KOD: TAMAMINA YİAKV MATRAHINDA DÜŞÜLEMEZ\n\nYİAKV E.7 SON METİN (Önerilen):\n'KVK Geçici Md.14 (Paragraf 1-3, Tüm Kodlar 370-382) Kur Farkı +\nFaiz/Kâr Payı + Vade Kazançları İstisnası\n→ YİAKV'de DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373/374/375/376/377/378/379/380/381/382'\n\n★ BU SON GÜNCELLEME: 382 eklenmesiyle KVK Geçici Md.14 E.7 satırı tamamlanmıştır.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "KVK Geçici Md.14 370–382 Paket Özeti — YMM Tasdik Perspektifi",
+          "370–382 PAKETİNDE YMM'NİN ANA KONTROL ODAKLARI:\n\nPARAGRAF 1 (370–374) — AKTİF TARAF:\n• 372-373 çapraz: Her KKM hesabı için 372 + 373 = Toplam kâr payı/faiz ✓\n• 374 'diğer' niteliği teyidi (özellikle altın KKM prim/endeks)\n\nPARAGRAF 2 (375–378) — PASİF TARAF:\n• 375 bağlantısı: 376/377/378 için 375 dönüşüm belgesi zorunlu\n• 376-377 çapraz: Her araç için 376 + 377 = Toplam kâr payı/faiz ✓\n\nPARAGRAF 3 (379–382) — ALTIN TARAFI:\n• 379 bağlantısı: 380/381/382 için 379 altın dönüşüm belgesi zorunlu\n• 380-381 çapraz: Her araç için 380 + 381 = Toplam kâr payı/faiz ✓\n• 382 'diğer' niteliği teyidi — GİB özelgesi tavsiye\n\nHER ÜÇ PARAGRAF İÇİN ORTAK:\n• YİAKV E.7: 13 kodun tamamı DÜŞÜLEMEZ listesinde\n• Beyanname: 'Kazancın Bulunması Halinde' (zarar döneminde uygulanamaz)\n• 49 No.lu Tebliğ: >=500.000 TL → YMM raporu",
+          "KVK Geçici Md.14 | GİB KV Beyan Reh. 2026 (No:606) | 49 No.lu Tebliğ",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı + Paket Kapanış",
+          "KULLANIN:\n'...KVK Geçici Madde 14/3 kapsamında altın hesabının TL'ye dönüştürülmesi sonucunda\nkurulan [Araç Türü] hesabından vade sonunda elde edilen, faiz/kâr payı ve kur farkı\nistisnası dışında kalan [Tutar] TL [Kazanç Türü], KVK Geçici Madde 14/3 kapsamında\nkurumlar vergisinden istisna edilmiş ve yurt içi asgari kurumlar vergisi matrahından\nindirilmemiştir.'\n\nKULLANMAYIN:\n'...382 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...381 ve 382 aynı kazanç için uygulanmıştır.' (Mükerrerlik)\n'...YİAKV E.7'de 382 yoktur.' (E.7 güncellenmeli)\n\nKRİTİK RİSKLER:\n(1) 382'yi YİAKV matrahından düşmek.\n(2) E.7'yi 382'yi kapsayacak şekilde güncellemeyip eski metinle bırakmak.\n(3) 381 (kâr payı/faiz) ile 382 (diğer) ayrımını yapmamak.\n(4) Paragraf 1 ve 2 araçlarını (374/378) Paragraf 3 (382) ile karıştırmak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14 PAKETİ TAMAMLANDI — 370'DEN 382'YE ON ÜÇ KOD:\n  Paragraf 1 (5 kod 370–374): Aktif taraf yab. para/altın → TL KKM.\n  Paragraf 2 (4 kod 375–378): Pasif taraf yab. para borç → TL.\n  Paragraf 3 (4 kod 379–382): Altın hesabı → TL dönüşümü.\n  ★★ ON ÜÇ KODUN TAMAMININ GELİRİ YİAKV MATRAHINDA DÜŞÜLEMEZ. YİAKV E.7 satırı 382'yi de kapsayacak şekilde SON GÜNCELLEME yapılmalıdır. GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F29",
+      "rows": [
+        [
+          "382 – KVK GEÇİCİ MD.14/3 VADE SONU DİĞER KAZANÇLAR | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | 379/380/381 Çapraz | Özelge | YİAKV E.7 Finali",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ 379/380/381 Çalışma Kâğıtları — Paragraf 3 Zinciri ve 'Diğer' Teyidi",
+          "379 (altın dönüşümü) + 380 (dönem sonu) + 381 (vade) üçü birlikte 382'nin 'diğer' niteliğini teyit eder.\n382 tutarının 379/380/381 kapsamına girmediği bu dosyalar üzerinden kanıtlanmalıdır.",
+          "379/380/381 çalışma kâğıtları",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Kazanç Türüne Özgü Belge (Sözleşme / Banka Yazısı / Hesaplama)",
+          "Her 382 kalemi için ayrı belge. Altın fiyat farkı → Fiyat tablosu + Hesaplama.\nPrim/teşvik → Banka resmi yazısı. Her kalem için ayrı belge zorunludur.",
+          "Kazanç türüne göre",
+          null
+        ],
+        [
+          null,
+          "3",
+          "GİB Özelgesi (Tartışmalı 382 Kalemleri İçin — Tavsiye)",
+          "382 'diğer' niteliği özellikle altın fiyat farkı ek kazancı konusunda tartışmalı olabilir.\nGİB özelgesi alınması risk yönetiminin temelidir.",
+          "GİB özelge başvuru sistemi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "KV Beyannamesi Taslağı — 382. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV E.7 güncellenmiş (382 dahil 13 kod — SON GÜNCELLEME).",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Muhasebe Yevmiyesi — 646/648/679 Vade Diğer Kazanç Kaydı",
+          "382 kapsamındaki kazancın muhasebe kaydı. 642 (faiz) ile karışmamalı.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "6",
+          "374 ve 378 Çalışma Kâğıtları (Paragraf Ayrıştırma)",
+          "Aynı dönemde 374/378/382 hepsi uygulanıyorsa araç bazlı ayrıştırma belgelenmelidir.",
+          "374/378 çalışma kâğıtları",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (SON PAKET)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ 379/380/381 Paragraf 3 zinciri mevcut mu?",
+          "382 bağlantısı zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Bu kazanç 379/380/381 kapsamına girmiyor mu?",
+          "'Diğer' niteliği üç kodun kapsamı karşılaştırılarak teyit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 379/380/381 ile mükerrerlik analizi (C Sütun 6) yapıldı mı?",
+          "'Yok' olanlar 382'ye yazıldı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Kazanç türü belgelendi mi?",
+          "Her kalem için belge ve savunulabilir yasal dayanak.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "374 (Par.1) ve 378 (Par.2) ile doğru ayrıştırıldı mı?",
+          "Altın araçları → 382.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Tartışmalı kalemler için özelge alındı mı?",
+          "GİB özelgesi tavsiye.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ 382 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370–382 (13 kod) tamamı YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★ YİAKV E.7 satırı 382 dahil tüm 13 kodu kapsıyor mu?",
+          "13 kodun tamamı E.7'de listeli — SON GÜNCELLEME.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 382 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14 PAKETİ TAMAMLANDI (370–382 ON ÜÇ KOD):\n  Paragraf 1 (5 kod): 370 | 371 | 372 | 373 | 374\n  Paragraf 2 (4 kod): 375 | 376 | 377 | 378\n  Paragraf 3 (4 kod): 379 | 380 | 381 | 382\n  ★★ ON ÜÇ KODUN TAMAMININ GELİRİ YİAKV MATRAHINDA DÜŞÜLEMEZ. YİAKV E.7 satırı 382 dahil 13 kodu kapsayacak şekilde SON GÜNCELLEMESİ yapılmalıdır.\n  GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

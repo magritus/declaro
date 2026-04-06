@@ -22,10 +22,76 @@ ana_kategori: yurtdisi_istisnalar
 wizard_agaci:
   tetikleyici_soru: "Yurt dışında işyeri (şube) veya daimi temsilci aracılığıyla kazanç elde ettin mi?"
   info_modal: |
-    KVK 5/1-g kapsamında yurt dışında işyeri (şube) veya daimi temsilci aracılığıyla elde edilen
-    kazançlar, 3 şartın birlikte sağlanması halinde %100 istisna olarak uygulanır.
-    Beyannamede 322. satırda "Zarar Olsa Dahi İndirilecek" bölümünde gösterilir.
-    5/1-h (yurt dışı inşaat/montaj) ile karıştırılmamalıdır: 5/1-g'de Türkiye'ye transfer ZORUNLUDUR.
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-g kapsamındaki istisna, Türk kurumlarının yurt dışında **işyeri (şube)** veya
+    **daimi temsilci** aracılığıyla elde ettiği kazançları kurumlar vergisinden muaf tutar. İstisna
+    oranı **%100** olup "Zarar Olsa Dahi İndirilecek" bölümünde (322. satır) gösterilir; kazanç
+    bulunmasa da istisnadan yararlanılabilir.
+
+    Bu istisna, aynı amaca hizmet eden **KVK 5/1-h (yurt dışı inşaat/montaj/teknik hizmet —
+    304. satır)** ile sıklıkla karıştırılır. İki hüküm arasındaki en kritik fark şudur: 5/1-g'de
+    Türkiye'ye **transfer zorunludur**; 5/1-h'de transfer şartı aranmaz. Ayrıca 5/1-g'de **en
+    az %15 vergi yükü** şartı aranırken 5/1-h'de böyle bir şart bulunmaz.
+
+    ## Temel Koşullar
+
+    Üç şartın **tamamının eş zamanlı** sağlanması zorunludur:
+
+    **1. İşyeri veya Daimi Temsilci Varlığı:** Kazancın yurt dışında **şube veya işyeri** ya da
+    **daimi temsilci** aracılığıyla elde edilmesi gerekir. Yurt dışı bağlı ortaklık (ayrı tüzel
+    kişilik) kazançları bu madde kapsamında değil; KVK 5/1-b (tam istisna) veya 5/1-c (hisse
+    satışı) kapsamında değerlendirilir. Yurt dışı inşaat ve montaj faaliyetleri ise 5/1-h'e tabidir.
+
+    **2. Türkiye'ye Transfer:** Kazancın, Türkiye'de kurumlar vergisi beyannamesinin verildiği
+    tarihe kadar (normal dönemde 30 Nisan) **fiilen transfer edilmiş** olması zorunludur. Transfer
+    gerçekleşmemişse istisna **hiçbir koşulda uygulanamaz**. Transfer kanıtı olarak banka SWIFT
+    çıktısı veya havale dekontu dosyaya eklenmelidir.
+
+    **3. Yurt Dışında %15 Vergi Yükü:** Şubenin/işyerinin bulunduğu ülkede ödenen verginin
+    vergiden önceki kazanca oranı en az **%15** olmalıdır. Hesaplama: Ödenen Yurt Dışı Vergi /
+    Vergiden Önceki Şube Kazancı. Yüksek vergili ülkeler için alternatif eşik: (KV oranı + En
+    Yüksek GV Dilimi) / 2 × %75 (2025 için yaklaşık %24,375). Bu eşiğin altındaki ülkelerdeki
+    şube kazançları istisna kapsamına giremez.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    **Transfer Şartının Katılığı:** Beyanname tarihine kadar transfer gerçekleşmemişse o yıl için
+    istisna tamamen kaybedilir; ertesi yıla sarkamaz. Nakit yönetimi ve hazine planlaması bu
+    şartı dikkate alarak yapılmalıdır.
+
+    **Vergi Yükü Hesaplama Güçlüğü:** Yurt dışı vergilerin hesaplanmasında kur farkları, vergi
+    iadesi, peşin vergi, stopaj gibi unsurların dahil edilip edilmeyeceği ülke mevzuatına göre
+    değişir. Yanlış hesaplama, eşiğin altında kalan ülkelerde istisna uygulanmasına yol açabilir.
+
+    **5/1-h ile Sınır Belirsizliği:** Yurt dışında hem sürekli işyeri hem de inşaat faaliyeti
+    olan Türk şirketlerinde, hangi kazancın 5/1-g, hangisinin 5/1-h kapsamına girdiği özellikle
+    ayırt edilmelidir. Karıştırılması transfer şartı açısından kritik hata yaratır.
+
+    **KVK 33 Mahsup İmkanı:** KVK 5/1-g istisnasından yararlanılırken yurt dışında ödenen
+    verginin mahsup mekanizması (KVK Madde 33) genellikle kullanılmaz; ancak istisnadan
+    vazgeçilip mahsup tercih edilmesi seçeneği analiz edilmelidir.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-g istisnasının **YİAKV (KVK Madde 32/C) matrahına etkisi tartışmalıdır.** 322. satırda
+    gösterilen yurt dışı şube/daimi temsilci kazancı istisnasının YİAKV matrahından indirilip
+    indirilemeyeceği GİB tarafından net biçimde açıklanmamıştır.
+
+    Uygulamada bazı vergi danışmanları bu istisnayı "zarar olsa dahi" bölümünde yer alması
+    nedeniyle YİAKV matrahıyla ilişkilendirmemekte; diğerleri KVK 32/C'nin genel indirim
+    listesinden hareketle düşülebilir saymaktadır. Yüksek tutarlı işlemlerde GİB özelgesi
+    alınması ve YİAKV etkisinin finansal modele dahil edilmesi önerilir.
+
+    ## Pratik Notlar
+
+    - İşyerinin yurt dışında tescilini gösteren belge (ticaret sicili kaydı, vergi numarası vb.)
+      dosyaya eklenmelidir.
+    - Beyanname tarihi itibarıyla gerçekleşen transferi kanıtlayan banka belgesi zorunludur.
+    - Yurt dışı vergi yükü hesabını destekleyen vergi ödeme makbuzu ve mahalli vergi beyannamesi
+      kopyası saklanmalıdır.
+    - Vergi yükü hesabı için yurt dışındaki muhasebe kayıtlarının (yerel GAAP) dökümü alınmalıdır.
+    - 49 No.lu KV GT kapsamında YMM tasdik raporu eşiği kontrol edilmelidir.
   kapi_sorulari:
     - id: isyeri_daimi_temsilci_mi
       soru: "Kazanç yurt dışında işyeri (şube) veya daimi temsilci aracılığıyla mı elde edildi?"

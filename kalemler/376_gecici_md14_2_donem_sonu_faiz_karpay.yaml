@@ -25,16 +25,61 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "375 (borç dönüşümü) gerçekleştikten sonra kurulan TL aracından dönem sonu faiz/kâr payı tahakkuku yapıldı mı?"
   info_modal: |
-    KVK Geçici Md.14/2 (Paragraf 2) kapsamında, yabancı para borç dönüşümü (375) sonrası
-    kurulan TL araçtan VUK Md.280/281 gereği dönem sonunda (31 Aralık) tahakkuk ettirilen
-    kâr payı ve faiz kurumlar vergisinden istisnadır.
+    ## Genel Çerçeve
 
-    **372 vs 376 Fark:**
-    372 (Paragraf 1): Aktif taraf — Mevduat/altın → TL KKM dönüşümü sonrası araç
-    376 (Paragraf 2): Pasif taraf — Borç → TL dönüşümü sonrası araç
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Paragraf 2 (375–378), Paragraf 1'in (370–374) pasif taraftaki aynasıdır. Yabancı para
+    borçlar TL'ye çevrildikten sonra kurulan TL araçlardan elde edilen gelirler de istisna
+    kapsamındadır. Beyanname 376, bu zincirde borç dönüşümü sonrasındaki TL araçtan dönem
+    sonunda tahakkuk ettirilen faiz ve kâr payını kapsar.
 
-    **KRİTİK — YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ (E.7).
-    370-376 tamamı E.7 DÜŞÜLEMEZ listesindedir.
+    ## Bu Satırın Kapsamı
+
+    Beyanname **376**, 375 (yabancı para borç kur farkı) kapsamındaki borç dönüşümünün
+    ardından kurulan TL araçtan 31 Aralık dönem sonu itibarıyla VUK Madde 280/281 kapsamında
+    **tahakkuk ettirilen** faiz ve kâr payı istisnasıdır. 372 ile aynı muhasebe mekanizmasına
+    (Dr 181 / Kr 642) dayanır; ancak yasal dayanak farklıdır: 372 Paragraf 1 (aktif/mevduat
+    dönüşümü) araçlarını, 376 ise Paragraf 2 (pasif/borç dönüşümü) araçlarını kapsar. Aynı
+    TL araç için yalnızca biri uygulanabilir; her iki kod da aynı anda kullanılamaz.
+
+    ## Temel Koşullar
+
+    - 375 kapsamında yabancı para borç dönüşümü gerçekleştirilmiş ve çalışma kâğıdı hazır
+      olmalıdır (376, 375 olmadan oluşamaz)
+    - Borç dönüşümü sonrası kurulan TL araç dönem sonunda hâlâ açık olmalıdır
+    - VUK Madde 280/281 kapsamında dönem sonu tahakkuk muhasebe kaydı yapılmış olmalıdır
+    - 372 (Paragraf 1) ile mükerrerlik analizi yapılmış; aynı araç için her iki kodun da
+      uygulanmadığı teyit edilmiş olmalıdır
+    - Yılı aşan vadeli araçlarda 376-377 mükerrerlik kuralı uygulanır:
+      Net 377 = Vade Toplam − Önceki Yıl 376 Tahakkuku
+
+    ## Önemli Uyarılar
+
+    - **375 bağımlılığı:** 376, 375 ile zincirleme bağlantılıdır. 375 çalışma kâğıdı olmadan
+      376 uygulaması desteklenemez; tasdik dosyasında 375 referansı zorunludur
+    - **372 ile çakışma riski:** Paragraf 1 araçları için 372, Paragraf 2 araçları için 376
+      uygulanır. Eğer firma hem döviz mevduatını (370) hem de döviz borcunu (375) dönüştürdüyse
+      iki ayrı TL araç söz konusudur; her araç yalnızca kendi Paragraf'ının koduna yazılır
+    - **Tahakkuk kaydı zorunlu:** 181 Dr / 642 Kr muhasebe kaydı olmadan 376 istisnasının
+      muhasebe dayanağı bulunmaz
+    - **YMM tasdik eşiği:** Net 376 tutarı ≥ 500.000 TL ise YMM tasdik raporu zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    370–376 arası tüm kodlar E.7 DÜŞÜLEMEZ listesindedir. Paragraf 2 kodlarının (375–378)
+    Paragraf 1 kodlarından ayrı tutulması uygulamada kolaylık sağlar; ancak YİAKV etkisi
+    açısından her iki paragrafın tüm kodları eşit muameleye tabidir.
+
+    ## Pratik Notlar
+
+    - **Paragraf 2 zinciri:** 375 (borç kur farkı) → 376 (dönem sonu tahakkuk) → 377 (vade
+      sonu kâr payı/faiz) → 378 (vade sonu diğer) şeklinde dört kod Paragraf 2 paketini
+      oluşturur. Tüm zincir çalışma kâğıdında tutarlı biçimde belgelenmelidir
+    - **Muhasebe mekanizması:** 372 ile aynı — Dr 181 Gelir Tahakkukları / Kr 642 Faiz
+      Gelirleri. Fark yalnızca bağlantılı dönüşüm kodundadır (375 vs. 370)
+    - **Sonraki dönem:** 376 tahakkuku sonraki dönemde tahsil edildiğinde 181 kapatılır; o
+      dönemde yeniden 376 uygulanmaz. Vade sonu tahsilat 377 kapsamındadır
   kapi_sorulari:
     - id: borcdonusum_yapildi
       soru: "KVK Geçici Md.14/2 kapsamında yabancı para borç dönüşümü (375) gerçekleştirildi mi?"

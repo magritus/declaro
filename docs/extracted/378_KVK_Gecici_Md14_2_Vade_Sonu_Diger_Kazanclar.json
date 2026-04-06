@@ -1,0 +1,1279 @@
+{
+  "file": "378_KVK_Gecici_Md14_2_Vade_Sonu_Diger_Kazanclar.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G53",
+      "rows": [
+        [
+          "378 – KVK GEÇİCİ MADDE 14/2 | VADE SONUNDA DOĞAN DİĞER KAZANÇLARDAN İSTİSNA | PARAGRAF 2 — 375/376/377 DIŞINDA KALAN | KVK GEÇİCİ MD.14 SON KOD | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/2 (Paragraf 2) | Borç Dönüşümü Sonrası Vade Sonu Diğer Kazançlar | Beyanname 378 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ | KVK GEÇİCİ MD.14 PAKET TAMAMLANDI (370–378)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "374 – 378 PARAGRAF KARŞILAŞTIRMASI:\n  374 (Md.14/1-b): Paragraf 1 AKTİF — TL KKM (mevduat/altın) vade sonu DİĞER kazançları (371/372/373 dışı).\n  378 (Md.14/2): Paragraf 2 PASİF — Borç dönüşümü sonrası vade sonu DİĞER kazançlar (375/376/377 dışı) → BU DOSYA.\n  ★ KVK GEÇİCİ MD.14 PAKETI TAMAMLANDI: 370→378 dokuz kod (Paragraf 1: 370–374 | Paragraf 2: 375–378).\n  Tüm dokuz kod YİAKV matrahından DÜŞÜLEMEZ (E.7).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 378 kapsamındaki vade sonu diğer kazançlar YİAKV matrahından DÜŞÜLEMEZ. 370–378 tamamı E.7 DÜŞÜLEMEZ listesindedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  KVK Geçici Md.14/2 kapsamında borç dönüşümü (375) gerçekleştirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "378, 375 bağlantısı gerektirir. 375 olmadan 378 oluşamaz. 375 çalışma kâğıdıyla çapraz kontrol zorunludur.",
+          null
+        ],
+        [
+          "A0.2  ★ Bu kazanç 375/376/377 kapsamına girmiyor mu? ('Diğer' niteliği teyit edildi mi?)",
+          null,
+          null,
+          null,
+          "EVET",
+          "378 = 375 (kur farkı) + 376 (dönem sonu tahakkuk) + 377 (vade kâr payı/faiz) DIŞINDA kalan kazançlar. Üç kodun kapsamını önce kontrol edin — 378 gerçekten 'diğer' niteliğinde olmalı.",
+          null
+        ],
+        [
+          "A0.3  Kazanç türü belirlendi mi? (Borç dönüşümü avantajı / Özel TL araç getirisi / Diğer)",
+          null,
+          null,
+          null,
+          "Borç Dönüşümü TL Avantajı",
+          "Her tür için ayrı yasal dayanak ve belge zorunludur. B bölümünde detaylandırın.",
+          null
+        ],
+        [
+          "A0.4  Vade tarihi dönem içinde (01.01–31.12) mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "378, vade sonu kazancıdır. Vade tarihi dönem içinde olmalı.",
+          null
+        ],
+        [
+          "A0.5  375/376/377 ile mükerrerlik analizi yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "378 kapsamındaki kazancın 375/376/377'den farklı kalem olduğu teyit edilmeli. 374 ile de mükerrerlik kontrolü: Paragraf 1 araçları → 374. Paragraf 2 araçları → 378.",
+          null
+        ],
+        [
+          "A0.6  ★ 378 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "370–378 tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de dokuz satır da kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (diğer niteliği), A0.5 (mükerrerlik), A0.6 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/378-01",
+          null
+        ],
+        [
+          "375/376/377 Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          null,
+          null,
+          "Paragraf 2 zinciri — üç dosya çapraz mutabakat",
+          null
+        ],
+        [
+          "B. KAZANÇ TÜRÜ ANALİZİ — 378 KAPSAMININ KATEGORİLERİ (Paragraf 2)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "378 = 'Diğer' — Paragraf 2 kapsamında 375/376/377 dışında kalan her KKM veya borç dönüşümü kaynaklı vade sonu kazancı. Her kalem için GİB'e açıklanabilir 'diğer' niteliği teyit edilmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B.1  BAŞLICA 378 KALEMLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "① BORÇ DÖNÜŞÜMÜ TL AVANTAJI (En Tipik 378 Kalemi): Paragraf 2 kapsamında yabancı para borç TL'ye dönüştürüldüğünde, TL araç üzerinden elde edilen faiz/kâr payı (376/377) dışındaki finansal fayda — örneğin TL kredi maliyetinin yabancı para maliyetinin altında kalmasından doğan kur avantajı.\n  ② ÖZEL TL ARAÇ GETİRİSİ: Paragraf 2 dönüşümü sonrası kurulan TL araçlardan (tahvil, bono vb.) faiz/kâr payı dışında oluşan ek getiri (sermaye artışı, değer artış kazancı vb.).\n  ③ PRİM / TEŞVİK ÖDEMESİ: Borç dönüşümü kapsamında banka/alacaklı tarafından ödenen teşvik ödemesi.\n  ④ DİĞER: 375/376/377 kapsamına girmediği açık olan her türlü Paragraf 2 vade sonu kazancı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "374 ile KAPSAM KARŞILAŞTIRMASI: 374 Paragraf 1 (altın KKM, prim, endeks vb.) diğer kazançları. 378 Paragraf 2 (borç dönüşümü TL avantajı, özel TL araç getirisi vb.) diğer kazançları. Her ikisi de 'diğer' kategorisi — ancak farklı paragraf ve farklı enstrüman.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. VADE SONU DİĞER KAZANÇ TABLOSU (378) — KALEMİ VE TUTARI GİRİN",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her 378 kalemi için ayrı satır. SÜTUN 3 (kazanç türü) ve SÜTUN 5 (tutar) ANA GİRİŞ. 375/376/377 ile mükerrerlik var mı? kontrolü SÜTUN 6'da yapılır. Mükerrerlik yoksa tüm tutar istisna — varsa 0.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazanç Türü",
+          "Açıklama / Hesap",
+          "375/376 Araç",
+          "Vade Tarihi",
+          "378 Brüt Tutar (TL)",
+          "375–377 Mükerrerlik?",
+          "Net 378 İstisna (TL)"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "378 Kapsamı Vade Sonu Diğer Kazançlar → Beyanname 378",
+          null,
+          null,
+          "0",
+          "—",
+          "0"
+        ],
+        [
+          "SÜTUN 5 (lacivert çerçeve): 378 kapsamındaki vade sonu diğer kazanç — ANA GİRİŞ. SÜTUN 6: Mükerrerlik analizi — 375/376/377'de zaten gösterildiyse 'Var' seçin, net 378 = 0. 374 (Paragraf 1) ile de ayrıştırma zorunlu: Paragraf 1 → 374. Paragraf 2 → 378.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. VADE SONU DİĞER KAZANÇ İSTİSNASI ÖZET — BEYANNAME 378",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam 378 Brüt Kazanç (C Tablosu Sütun 5)",
+          null,
+          "0",
+          "C Sütun 5 toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Mükerrer Kalemler (375/376/377 ile çakışan)",
+          null,
+          "0",
+          "Mükerrer tutarlar — 378'e yazılmaz",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  ★ NET 378 İSTİSNA TUTARI → BEYANNAME 378",
+          null,
+          "0",
+          "→ Beyanname 378 | Kazancın Bulunması Halinde",
+          null,
+          "KVK Geçici Md.14/2",
+          null
+        ],
+        [
+          "D.4  Kapsam Dışı (Paragraf 2 dışı araçlar)",
+          null,
+          null,
+          "Vergilendirilir",
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  TOPLAM İSTİSNA → Beyanname Satır 378 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Geçici Md.14/2 | Paragraf 2 Vade Sonu Diğer Kazançlar",
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 370–378 tamamı asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) KAPSAM SINIRI: 378 = 375+376+377 DIŞINDA kalan Paragraf 2 vade sonu kazançlar. Mükerrerlik önle.\n(3) 374 ile KAPSAM FARKI: 374 Paragraf 1 araçları, 378 Paragraf 2 araçları. Aynı araç için ikisi yazılamaz.\n(4) 'DİĞER' GEREKÇESİ: Her kalem için GİB'e savunulabilir yasal dayanak gereklidir. Tartışmalı kalemler için özelge alınması tavsiye edilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H39",
+      "rows": [
+        [
+          "378 – KVK GEÇİCİ MD.14/2 VADE SONU DİĞER KAZANÇLAR | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 2 Diğer Kazançlar | 370–378 KVK GEÇİCİ MD.14 PAKET TAMAMLANDI | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazanç Türü (A0.3)",
+          null,
+          null,
+          "Borç Dönüşümü TL Avantajı",
+          "Borç avantajı/Prim/Özel/Diğer",
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam Brüt (D.1)",
+          null,
+          null,
+          "0",
+          "C Sütun 5 toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Mükerrer Kalemler (D.2)",
+          null,
+          null,
+          "0",
+          "375-377 çakışan — hariç tutuldu",
+          null,
+          null,
+          null
+        ],
+        [
+          "378 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "370–378 tamamı E.7 (9 kod)",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null,
+          null
+        ],
+        [
+          "B. KVK GEÇİCİ MD.14 TAM PAKET — 370'DEN 378'E DOKUZ KOD (TAMAMLANDI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ PAKET TAMAMLANDI: 370–378 dokuz kod, iki paragraf, iki taraf (aktif + pasif). Tümü YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7 satırı tüm dokuz kodu kapsamalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Par.",
+          "Taraf",
+          "Kapsam",
+          "Muhasebe",
+          "Zaman",
+          "Beyanname",
+          "YİAKV"
+        ],
+        [
+          "370",
+          "1-a",
+          "Aktif",
+          "Kur farkı değerleme (dönüşüm)",
+          "646/679",
+          "Dönüşüm anı",
+          "370",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "371",
+          "1-b",
+          "Aktif",
+          "Kur farkı tazminat (bankadan)",
+          "102/648",
+          "Ödeme dönemleri",
+          "371",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "372",
+          "1-b",
+          "Aktif",
+          "Dönem sonu faiz/kâr payı tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "372",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "373",
+          "1-b",
+          "Aktif",
+          "Vade sonu faiz/kâr payı tahsilat",
+          "102/(181+642)",
+          "Vade tarihi",
+          "373",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "374",
+          "1-b",
+          "Aktif",
+          "Vade sonu diğer kazançlar",
+          "646/648/679",
+          "Vade tarihi",
+          "374",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "375",
+          "2",
+          "Pasif",
+          "Borç kur farkı kazancı",
+          "646/679",
+          "Dönüşüm anı",
+          "375",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "376",
+          "2",
+          "Pasif",
+          "Dönem sonu faiz/kâr payı tahakkuk",
+          "181/642",
+          "31 Aralık",
+          "376",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "377",
+          "2",
+          "Pasif",
+          "Vade sonu faiz/kâr payı tahsilat",
+          "102/(181+642)",
+          "Vade tarihi",
+          "377",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "378",
+          "2",
+          "Pasif",
+          "Vade sonu diğer kazançlar (BU)",
+          "646/648/679",
+          "Vade tarihi",
+          "378",
+          "DÜŞÜLEMEZ"
+        ],
+        [
+          "★★ YİAKV E.7 GÜNCELLENMESİ GEREKLİ (9 KOD TAMAMLANDI):\n  E.7 satırı: 'KKM Aktif+Pasif Kur Farkı + Faiz/Kâr Payı + Vade Kazançları (Tüm Paragraflar ve Kodlar) (KVK Geçici Md.14 Md.14/2) → YİAKV'de DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373/374/375/376/377/378'\n  YMM, tüm 9 kodun YİAKV çalışma kâğıdında E.7'de eksiksiz listelendiğini teyit etmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ 375 kapsamı borç dönüşümü var mı? (375 ÇK hazır mı?)",
+          null,
+          "378, Paragraf 2 zincirinin son kodu — 375/376/377 olmadan oluşamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K2",
+          "★ Bu kazanç türü gerçekten 375/376/377 kapsamına girmiyor mu?",
+          null,
+          "378 = 'Diğer' = 375+376+377 dışı. Her üçünün kapsamı kontrol edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K3",
+          "Kazanç türü belgelendi mi? (Sözleşme, banka yazısı vb.)",
+          null,
+          "Her 378 kalemi için ayrı belge ve savunulabilir yasal dayanak.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K4",
+          "★ 375/376/377 ile mükerrerlik analizi (C Sütun 6) yapıldı mı?",
+          null,
+          "'Yok' olanlar 378'e yazıldı. 'Var' olanlar dışlandı (D.2).",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K5",
+          "374 (Paragraf 1) ile 378 (Paragraf 2) doğru ayrıştırıldı mı?",
+          null,
+          "Paragraf 1 araçları → 374. Paragraf 2 araçları → 378. Ayrı satırlar.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K6",
+          "375/376/377 çalışma kâğıtlarıyla çapraz mutabakat yapıldı mı?",
+          null,
+          "Paragraf 2 zinciri tutarlı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K7",
+          "Tartışmalı 378 kalemleri için özelge alındı mı?",
+          null,
+          "'Diğer' niteliği tartışmalı olabilir — GİB özelgesi risk yönetiminin temelidir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K8",
+          "★★ 378 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370–378 dokuz kod tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de dokuz satır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K9",
+          "YİAKV E.7 satırı 378 dahil tüm 9 kodu kapsıyor mu?",
+          null,
+          "YİAKV çalışma kâğıdı E.7 güncellenmeli — 378 eklenmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K10",
+          "Beyanname 378 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K11",
+          "Vade tarihi dönem içinde (01.01–31.12) mi?",
+          null,
+          "Sonraki dönemde vadeye girenler → Gelecek yıl.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G21",
+      "rows": [
+        [
+          "378 – KVK GEÇİCİ MD.14/2 VADE SONU DİĞER KAZANÇLAR | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Paragraf 2 Diğer Kazanç Kaydı | 370–378 Tam Muhasebe Tablosu (9 Kod) | KVK Geçici Md.14 Kapanışı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — VADE SONU: PARAGRAF 2 DİĞER KAZANÇ TASFİYESİ (BORÇ DÖNÜŞÜMÜ TL AVANTAJI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Borç dönüşümü TL avantajı: Yabancı para borçlanma maliyeti > TL borçlanma maliyeti farkından doğan kazanç.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Vade Tarihi]",
+          "102 Bankalar / 300-320 Borçlar",
+          "Paragraf 2 diğer kazanç tahsilatı (veya hesaplaması)",
+          "[Tutar]",
+          "—",
+          "Hesaplama/Belge"
+        ],
+        [
+          "Kr",
+          "[Vade Tarihi]",
+          "646 Kambiyo Kârları / 679 Diğer Kâr / 648 Diğer Gelir",
+          "Paragraf 2 vade sonu diğer kazanç — KVK Geçici Md.14/2 → Beyanname 378",
+          "—",
+          "[Tutar]",
+          "KV 378"
+        ],
+        [
+          "KAYIT 2 — 370–378 TAM MUHASEBE TABLOSU (DOKUZ KOD)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14 kapsamındaki tüm dokuz kod ve muhasebe hesapları:",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "370",
+          "Dönüşüm",
+          "646/679",
+          "P1 AKT: Döviz/altın KKM kur farkı değerleme → 370",
+          "—",
+          "[370]",
+          "KV 370"
+        ],
+        [
+          "371",
+          "Ödeme",
+          "102/648",
+          "P1 AKT: Bankadan kur farkı tazminat → 371",
+          "—",
+          "[371]",
+          "KV 371"
+        ],
+        [
+          "372",
+          "31.12",
+          "181/642",
+          "P1 AKT: Dönem sonu faiz/kâr payı tahakkuk → 372",
+          "—",
+          "[372]",
+          "KV 372"
+        ],
+        [
+          "373",
+          "Vade",
+          "102/(181+642)",
+          "P1 AKT: Vade sonu faiz/kâr payı tahsilat → 373",
+          "—",
+          "[373]",
+          "KV 373"
+        ],
+        [
+          "374",
+          "Vade",
+          "646/648/679",
+          "P1 AKT: Vade sonu diğer kazançlar → 374",
+          "—",
+          "[374]",
+          "KV 374"
+        ],
+        [
+          "375",
+          "Dönüşüm",
+          "646/679",
+          "P2 PAS: Borç kur farkı kazancı → 375",
+          "—",
+          "[375]",
+          "KV 375"
+        ],
+        [
+          "376",
+          "31.12",
+          "181/642",
+          "P2 PAS: Dönem sonu faiz/kâr payı tahakkuk → 376",
+          "—",
+          "[376]",
+          "KV 376"
+        ],
+        [
+          "377",
+          "Vade",
+          "102/(181+642)",
+          "P2 PAS: Vade sonu faiz/kâr payı tahsilat → 377",
+          "—",
+          "[377]",
+          "KV 377"
+        ],
+        [
+          "378",
+          "Vade",
+          "646/648/679",
+          "P2 PAS: Vade sonu diğer kazançlar (BU) → 378",
+          "—",
+          "[378]",
+          "KV 378"
+        ],
+        [
+          "KVK GEÇİCİ MD.14 PAKETI TAMAMLANDI (370–378 DOKUZ KOD):\n  Paragraf 1 (5 kod: 370–374): Aktif taraf — Yabancı para mevduat/altın → TL KKM\n  Paragraf 2 (4 kod: 375–378): Pasif taraf — Yabancı para borç → TL dönüşümü\n  ★★ TÜME DOKUZ KODUN TAMAMININ GELİRİ YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7 — GÜNCELLENMESİ GEREKİR).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "378 – KVK GEÇİCİ MD.14/2 VADE SONU DİĞER KAZANÇLAR | DENETÇİ NOTLARI | PAKET KAPANIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | 374 ile Karşılaştırma | 370–378 Tam Paket | YİAKV E.7 Güncellemesi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/2 — 378 Kapsamı ve 374 ile Karşılaştırması",
+          "378 (PARAGRAF 2 — VADE SONU DİĞER KAZANÇLAR) TANIMI:\n\nKVK Geçici Madde 14/2 kapsamında yabancı para borçlarını TL'ye dönüştüren kurumların,\ndönüşüm sonrası TL araçlarından vade sonunda elde ettiği 375 (kur farkı) +\n376 (dönem sonu tahakkuk) + 377 (vade kâr payı/faiz) dışında kalan diğer kazançlar.\n\n374 ile FARK:\n• 374 (Paragraf 1): Aktif — TL KKM (mevduat/altın) diğer kazançları (altın, prim, endeks)\n• 378 (Paragraf 2): Pasif — Borç dönüşümü TL araç diğer kazançları\n\nBAŞLICA 378 KALEMLERİ:\n① Borç dönüşümü TL finansman avantajı\n② Özel TL araç sermaye/değer artış kazancı\n③ Prim/teşvik ödemeleri\n④ 375+376+377 kapsamına girmeyen diğer Paragraf 2 vade sonu kazançları\n\nBEYANNAME: 378 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/2 | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "Paragraf 1 (374) ile Paragraf 2 (378) Mükerrerlik Önleme",
+          "374 ve 378 BIRLIKTE UYGULANABİLİR (Mükerrerlik Değil):\n\nKurum hem Paragraf 1 (mevduat/altın → KKM) hem Paragraf 2 (borç → TL) yaptıysa:\n• Paragraf 1 diğer kazancı → 374\n• Paragraf 2 diğer kazancı → 378\nHer ikisi ayrı enstrüman, ayrı paragraf, ayrı satır — MÜKERRERLİK DEĞİL.\n\nMÜKERRERLİK HATASI:\nAynı TL araç hem 374 hem 378 kapsamında raporlanırsa → Mükerrerlik.\nAynı kazanç hem 377 (kâr payı/faiz) hem 378 (diğer) olarak yazılırsa → Mükerrerlik.\n\nÖZELGE TAVSİYESİ:\n378'in 'diğer' niteliği 374'e göre daha tartışmalıdır. Özellikle borç avantajının\nnasıl hesaplanacağı ve belgeleneceği konusunda GİB özelgesi alınması tavsiye edilir.",
+          "KVK Geçici Md.14/1-b (374) | KVK Geçici Md.14/2 (378)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370–378 Tamamı DÜŞÜLEMEZ + E.7 Güncelleme",
+          "KVK GEÇİCİ MD.14 DOKUZ KODUNUN TAMAMININ YİAKV MATRAHINDA DÜŞÜLEMEZLİĞİ:\n\nParagraf 1: 370 | 371 | 372 | 373 | 374 → BEŞİ DE DÜŞÜLEMEZ\nParagraf 2: 375 | 376 | 377 | 378 → DÖRDÜ DE DÜŞÜLEMEZ\nTOPLAM DOKUZ KOD: TAMAMINA YİAKV MATRAHINDA DÜŞÜLEMEZ\n\n★ YİAKV ÇALIŞMA KÂĞIDI E.7 GÜNCELLEME ZORUNLU:\nMevcut E.7 metni 370–374 veya 370–377 ile sınırlıysa 378 eklenerek güncellenmelidir.\n\nGÜNCEL E.7 METNİ (Önerilen):\n'KKM Aktif+Pasif Kur Farkı + Faiz/Kâr Payı + Vade Kazançları (Paragraf 1 ve 2)\n(KVK Geçici Md.14) → DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373/374/375/376/377/378'\n\nYMM, YİAKV çalışma kâğıdında E.7 güncellenmesini ilk kontrol noktası olarak belirlemelidir.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "KVK Geçici Md.14 370–378 Paket Özeti — YMM Tasdik Perspektifi",
+          "370–378 PAKETİNDE YMM'NİN KONTROL ODAKLARI:\n\nPARAGRAF 1 (370–374) — AKTİF TARAF:\n• 372-373 çapraz: Her KKM hesabı için 372 + 373 = Toplam kâr payı/faiz\n• 374 'diğer' niteliği teyidi (özellikle altın KKM)\n• 370 tek seferlik — sonraki yıllarda 370 sıfır olmalı\n\nPARAGRAF 2 (375–378) — PASİF TARAF:\n• 375 bağlantısı: 376/377/378 için 375 dönüşüm belgesi zorunlu\n• 376-377 çapraz: Her araç için 376 + 377 = Toplam kâr payı/faiz\n• 378 'diğer' niteliği teyidi — özelge tavsiye\n\nHER İKİ PARAGRAF İÇİN ORTAK:\n• YİAKV E.7: 9 kodun tamamı DÜŞÜLEMEZ listesinde\n• Beyanname bölümü: 'Kazancın Bulunması Halinde' (zarar döneminde uygulanamaz)\n• 49 No.lu Tebliğ: >=500.000 TL → YMM raporu",
+          "KVK Geçici Md.14 | GİB KV Beyan Reh. 2026 (No:606) | 49 No.lu Tebliğ",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...KVK Geçici Madde 14/2 kapsamında yabancı para borçlarının TL'ye dönüştürülmesi\nsonucunda kurulan [Araç Türü] hesabından vade sonunda elde edilen, faiz/kâr payı ve kur\nfarkı istisnası dışında kalan [Tutar] TL [Kazanç Türü], KVK Geçici Madde 14/2 kapsamında\nkurumlar vergisinden istisna edilmiş ve yurt içi asgari kurumlar vergisi matrahından\nindirilmemiştir.'\n\nKULLANMAYIN:\n'...378 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...374 ve 378 aynı araç için uygulanmıştır.' (Mükerrerlik)\n\nKRİTİK RİSKLER:\n(1) 378'i YİAKV matrahından düşmek.\n(2) YİAKV E.7'de 378'i unutmak (9 kod tamamı listede olmalı).\n(3) 377 (kâr payı/faiz) ile 378 (diğer) ayrımını yapmamak.\n(4) Paragraf 1 araçlarını (374) Paragraf 2'ye (378) yazmak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14 PAKETI TAMAMLANDI — 370'DEN 378'E DOKUZ KOD:\n  Paragraf 1 (5 kod 370–374): Aktif taraf yabancı para mevduat/altın → TL KKM.\n  Paragraf 2 (4 kod 375–378): Pasif taraf yabancı para borç → TL dönüşümü.\n  ★★ TÜME DOKUZ KODUN TAMAMININ GELİRİ YİAKV MATRAHINDA DÜŞÜLEMEZ. YİAKV E.7 satırı 378'i de kapsayacak şekilde güncellenmelidir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F29",
+      "rows": [
+        [
+          "378 – KVK GEÇİCİ MD.14/2 VADE SONU DİĞER KAZANÇLAR | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | 375/376/377 Çapraz | Özelge | YİAKV E.7 Güncelleme",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ 375/376/377 Çalışma Kâğıtları — Paragraf 2 Zinciri ve 'Diğer' Teyidi",
+          "375 (borç kur farkı) + 376 (dönem sonu) + 377 (vade) üçü birlikte 378'in 'diğer' niteliğini teyit eder.\n378 tutarının 375/376/377 kapsamına girmediği bu dosyalar üzerinden kanıtlanmalıdır.",
+          "375/376/377 çalışma kâğıtları",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Kazanç Türüne Özgü Belge (Sözleşme / Banka Yazısı / Hesaplama)",
+          "Borç avantajı → Kredi sözleşmeleri + TL/YP maliyet karşılaştırması.\nPrim/teşvik → Banka resmi yazısı. Özel araç getirisi → Araç sözleşmesi.\nHer 378 kalemi için ayrı belge zorunludur.",
+          "Kazanç türüne göre",
+          null
+        ],
+        [
+          null,
+          "3",
+          "GİB Özelgesi (Tartışmalı 378 Kalemleri İçin — Tavsiye)",
+          "378 'diğer' niteliği özellikle borç avantajı konusunda tartışmalı olabilir.\nGİB özelgesi alınması risk yönetiminin temelidir — özellikle ilk uygulama döneminde.",
+          "GİB özelge başvuru sistemi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "KV Beyannamesi Taslağı — 378. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış.\n★ YİAKV E.7 satırı 378'i de kapsayacak şekilde güncellenmiş.",
+          "GİB e-Beyanname sistemi + YİAKV çalışma kâğıdı",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Muhasebe Yevmiyesi — 646/648/679 Vade Diğer Kazanç Kaydı",
+          "378 kapsamındaki kazancın muhasebe yevmiye kaydı. 642 (faiz) ile karışmamalı.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "6",
+          "374 (Paragraf 1) ve 378 (Paragraf 2) Ayrıştırma Notu",
+          "Aynı dönemde hem 374 hem 378 uygulanıyorsa araç bazlı ayrıştırma belgelenmelidir.",
+          "Çalışma kâğıdı notu",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ 375/376/377 Paragraf 2 zinciri mevcut mu?",
+          "378 bağlantısı zorunlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Bu kazanç 375/376/377 kapsamına girmiyor mu? ('Diğer' niteliği teyit)",
+          "Üç kodun kapsamı karşılaştırılarak teyit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 375/376/377 ile mükerrerlik analizi (C Sütun 6) yapıldı mı?",
+          "'Yok' olanlar 378'e yazıldı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Kazanç türü belgelendi mi? (Sözleşme/banka yazısı)",
+          "Her kalem için ayrı belge.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "374 (Paragraf 1) ile 378 (Paragraf 2) doğru ayrıştırıldı mı?",
+          "Paragraf 1 → 374. Paragraf 2 → 378.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Tartışmalı kalemler için özelge alındı mı?",
+          "GİB özelgesi — borç avantajı gibi tartışmalı kalemler.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ 378 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370–378 tamamı YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★ YİAKV E.7 satırı 378'i de kapsayacak şekilde güncellendi mi?",
+          "9 kodun tamamı E.7'de listelenmiş.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 378 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14 PAKETI TAMAMLANDI (370–378):\n  Paragraf 1 (5 kod): 370 Kur farkı değerleme | 371 Kur farkı tazminat | 372 Dönem sonu tahakkuk | 373 Vade kâr payı/faiz | 374 Vade diğer kazançlar.\n  Paragraf 2 (4 kod): 375 Borç kur farkı | 376 Dönem sonu tahakkuk | 377 Vade kâr payı/faiz | 378 Vade diğer kazançlar.\n  ★★ TÜMÜ YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7 — 9 kod eksiksiz listede). GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

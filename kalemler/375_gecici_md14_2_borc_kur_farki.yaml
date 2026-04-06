@@ -23,20 +23,64 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "31/12/2021 bilançosunda yabancı para borç veya yükümlülük var mıydı ve bunlar TL'ye dönüştürüldü mü?"
   info_modal: |
-    KVK Geçici Madde 14/2 — Paragraf 2 (Borç/Pasif Tarafı):
+    ## Genel Çerçeve
 
-    Kurumların 31/12/2021 tarihli bilançolarında kayıtlı YABANCI PARA BORÇLARINI
-    ve YÜKÜMLÜLÜKLERİNİ yasal süre (CB Kararı) içinde TL'ye dönüştürmeleri
-    halinde bu dönüşüm esnasında oluşan KUR FARKI KAZANCI kurumlar vergisinden istisnadır.
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    Maddenin Paragraf 2'si, Paragraf 1'den (370–374) farklı olarak bilanço **pasif tarafını**
+    kapsar: yabancı para borçların ve yükümlülüklerin TL'ye dönüştürülmesinden doğan kur farkı
+    kazancı istisnasıdır. Bu sayede Türk lirasının değer kazandığı dönemlerde borçların TL'ye
+    çevrilmesiyle oluşan muhasebe kazancı vergiden istisna tutulmuştur.
 
-    Kapsam dahili borç türleri: Banka kredileri, tahvil/bonolar, finansal kiralama,
-    ticari borçlar ve diğer yabancı para yükümlülükler.
+    ## Bu Satırın Kapsamı
 
-    Hesaplama: Kur Farkı Kazancı = MAX(Bilanço TL − Dönüşüm TL, 0)
-    Bilanço kuru (31/12/2021) > Dönüşüm kuru ise kazanç oluşur.
+    Beyanname **375**, 31/12/2021 tarihli bilançoda kayıtlı yabancı para borçların yasal süre
+    içinde TL'ye dönüştürülmesinden doğan kur farkı kazancını kapsar. Paragraf 1'den (370–374)
+    temel fark şudur: 370 varlık/aktif tarafını (döviz mevduatı, altın) TL'ye çevirirken; 375
+    yükümlülük/pasif tarafını (döviz borçları) TL'ye çevirir. Kur farkı yönü de zıttır: pasif
+    tarafta bilanço kuru dönüşüm kurundan **yüksek** olduğunda kazanç oluşur. Kapsam dahili
+    borç türleri arasında banka kredileri (yabancı para), tahvil/bonolar, finansal kiralama
+    yükümlülükleri ve ticari borçlar yer alır.
 
-    ★★ YİAKV: Bu istisna YİAKV matrahından DÜŞÜLEMEZ (E.7).
-    Paragraf 1 (370–374) aktif taraf; Paragraf 2 (375) pasif/borç tarafıdır.
+    ## Temel Koşullar
+
+    - 31/12/2021 tarihli bilançoda yabancı para borç/yükümlülük bakiyesi bulunmalıdır
+    - Borç, Cumhurbaşkanı kararıyla belirlenen **yasal süre içinde** TL'ye dönüştürülmüş olmalıdır
+    - Kur farkı kazancı formülü: **MAX(Bilanço TL − Dönüşüm TL, 0)**; bilanço kuru dönüşüm
+      kurundan yüksek değilse kazanç oluşmaz ve 375 sıfır olur
+    - 31/12/2021 sonrası doğan yabancı para borçlar kapsam **dışıdır**; yalnızca bilanço
+      tarihinde mevcut bakiyeler geçerlidir
+    - Her iki tarih için TCMB resmi döviz **alış** kuru kullanılmalıdır; başka kur kabul edilmez
+    - Kısmi dönüşüm yapılmışsa orantılı hesaplama zorunludur
+
+    ## Önemli Uyarılar
+
+    - **Paragraf 1 ile karıştırma riski:** 375 (borç/pasif) ile 370–374 (mevduat-altın/aktif)
+      farklı Paragraflar altındadır; aynı işlemi her iki koda yazmak mükerrerlik oluşturur
+    - **Borç türü analizi:** Banka kredisi, tahvil, finansal kiralama ve ticari borç için
+      ayrı kur farkı kazancı hesaplanmalı ve ayrı belgeleme yapılmalıdır
+    - **Dönüşüm belgesi kritik:** Yabancı para borcun TL'ye dönüştürüldüğünü kanıtlayan resmi
+      banka belgesi veya dönüşüm sözleşmesi tasdik dosyasının temel dayanağıdır
+    - **Yasal süre kontrolü:** Cumhurbaşkanı kararıyla belirlenen son tarih Resmî Gazete'den
+      kontrol edilmeli; bu tarih dışındaki dönüşümler istisna kapsamına girmez
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca ≥ 500.000 TL ise YMM raporu
+      zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    375'in "pasif taraf kur farkı" niteliği YİAKV muamelesini değiştirmez; 370–375 arası tüm
+    kodlar E.7 DÜŞÜLEMEZ listesinde yer alır. YMM'nin müteselsil sorumluluk riskini minimize
+    etmek için YİAKV çalışma kâğıdında 375'in ayrıca teyit edilmesi önerilir.
+
+    ## Pratik Notlar
+
+    - **Hesaplama örneği:** 31/12/2021 TCMB kuru 14,00, dönüşüm günü kuru 12,50, dönüştürülen
+      borç 1.000.000 USD → 14.000.000 − 12.500.000 = 1.500.000 TL → Beyanname 375 tutarı
+    - **Muhasebe kaydı:** Dönüşüm günü borç hesabı (300/320) Dr / Kasa-Banka Kr / 646-679 Kur
+      Farkı Kazancı Kr şeklinde kaydedilir; pasif kur farkı kazancı da beyannamede indirilir
+    - **376-378 zinciri:** 375 dönüşümü tamamlandıktan sonra kurulan TL araçtan dönem sonu
+      tahakkuk (376), vade sonu kâr payı/faiz (377) ve diğer kazançlar (378) ayrı kodlarda
+      istisna uygulamasına konu olabilir
   kapi_sorulari:
     - id: kkm_borc_taraf
       soru: "31/12/2021 bilançosunda yabancı para borç/yükümlülük bakiyesi var mıydı?"

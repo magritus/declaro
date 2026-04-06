@@ -1,0 +1,1077 @@
+{
+  "file": "305_Egitim_Ogretim_Rehabilitasyon_Kazanc_Istisnasi_1.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:E65",
+      "rows": [
+        [
+          "305 – EĞİTİM, ÖĞRETİM VE REHABİLİTASYON KAZANÇ İSTİSNASI | KVK Md. 5/1-ı | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Özel Okul • Kreş ve Gündüz Bakımevi • Rehabilitasyon Merkezi | Faaliyete Geçilen Dönemden İtibaren 5 Hesap Dönemi | Kazancın Bulunması Halinde İndirilir",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KULLANIM: Sarı zemin hücrelere veri giriniz. A0 tamamlanmadan ilerlemeyiniz. Her birim ayrı değerlendirilir.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "MODÜL KİMLİĞİ VE VERSİYON",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Modül Kodu / İstisna",
+          null,
+          "305 — KVK Md. 5/1-ı Eğitim & Rehabilitasyon",
+          "KVK Md. 5/1-ı | 1 Seri No.lu KV GT Bölüm 5.13",
+          null
+        ],
+        [
+          "Çalışma Kâğıdı Versiyonu",
+          null,
+          "v1.0",
+          "Her mevzuat değişikliğinde güncellenir",
+          null
+        ],
+        [
+          "Hazırlama / Güncelleme Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK KONTROLÜ — Tasdik Öncesi Zorunlu Ön Kontrol",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "⚠️ YMM UYARISI: Bu çalışma kâğıdı yalnızca 5580 s.K. kapsamında faaliyet gösteren kurumlar için hazırlanmıştır. İstisna 'Kazancın Bulunması Halinde' indirilir — ZARAR DURUMUNDA KULLANILAMAZ (4691/TGB'den farklı). Her birim (okul/kreş/merkez) ayrı değerlendirilmelidir.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tasdik Uygunluk Kontrol Soruları",
+          null,
+          "Yanıt",
+          "Açıklama / Tasdik Notu",
+          null
+        ],
+        [
+          "A0.1  Kurum, 5580 s.K. kapsamında MEB veya ASHB'den kurum açma izni almış mı?",
+          null,
+          "EVET",
+          "5580 sayılı Kanun kapsamı zorunludur. Yükseköğretim, dershaneler ve etüt merkezleri kapsam dışıdır.",
+          null
+        ],
+        [
+          "A0.2  Kurum türü netleştirildi mi? (Okul / Kreş / Rehabilitasyon Merkezi)",
+          null,
+          "EVET",
+          "Her kurum türünün kendine özgü koşulları vardır. Rehabilitasyon için vakıf/dernek bağı zorunludur.",
+          null
+        ],
+        [
+          "A0.3  Faaliyete geçiş tarihi ve 5 yıllık istisna süresi doğrulandı mı?",
+          null,
+          "EVET",
+          "Süre, kurum açma izin belgesinin değil faaliyete geçilen hesap döneminin başından başlar.",
+          null
+        ],
+        [
+          "A0.4  Dönem net kârı mevcut mu? (Zarar durumunda istisna uygulanamaz)",
+          null,
+          "EVET",
+          "Bu istisna 'Kazancın Bulunması Halinde İndirilecek' bölümündedir. Zarar = İstisna yok. 310/TGB'den farklı.",
+          null
+        ],
+        [
+          "A0.5  YİAKV (KVK Md. 32/C) etkisi ayrıca analiz edildi mi?",
+          null,
+          "EVET",
+          "Dönem mevzuatı çerçevesinde ayrıca analiz edilmelidir. Kesin hüküm verilemez.",
+          null
+        ],
+        [
+          "A0.6  Tasdik Uygunluk Sonucu",
+          null,
+          "=IF(AND(C13=\"EVET\",C14=\"EVET\",C15=\"EVET\",C16=\"EVET\",C17=\"EVET\"),\"✅ OK – Hesaplanabilir\",\"⛔ HATA – Ön koşul eksik\")",
+          "Tüm kontroller 'EVET' olmadan tasdik dosyasına eklenemez.",
+          null
+        ],
+        [
+          "Tasdik Engelleyici Uyarı",
+          null,
+          null,
+          "Hata giderildiğinde uyarı otomatik kalkar.",
+          null
+        ],
+        [
+          "A. MÜKELLEF, YMM VE DÖNEM BİLGİLERİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Alan",
+          null,
+          "Giriş",
+          "Açıklama",
+          null
+        ],
+        [
+          "Mükellef Unvanı",
+          null,
+          null,
+          "KV mükellefinin ticaret sicilindeki tam unvanı",
+          null
+        ],
+        [
+          "Vergi Kimlik Numarası",
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          "01.01.…… – 31.12.……",
+          null
+        ],
+        [
+          "Çalışma Kâğıdı Hazırlayan",
+          null,
+          null,
+          "Tasdiki yapan YMM",
+          null
+        ],
+        [
+          "Hazırlama Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          "KVK Md. 32: %25 genel; %30 finans",
+          null
+        ],
+        [
+          "YİAKV Oranı (%)",
+          null,
+          null,
+          "KVK Md. 32/C — Dönem mevzuatı teyit edilmeli",
+          null
+        ],
+        [
+          "B. BİRİM KİMLİĞİ VE İSTİSNA SÜRE KONTROLÜ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "⚠️ Her okul, kreş veya rehabilitasyon merkezi ayrı birim olarak değerlendirilir. Birden fazla birim varsa her biri için ayrı çalışma yapılmalı ve muhasebe ayrı tutulmalıdır. İstisna süresi faaliyete geçilen hesap döneminden başlar — kurum açma izin belgesi tarihi değil.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Birim Bilgisi",
+          null,
+          "Değer",
+          "Açıklama / YMM Kontrol Notu",
+          null
+        ],
+        [
+          "Kurum Türü",
+          null,
+          null,
+          "Her türün kendine özgü koşulları vardır — uygun türü seçin",
+          null
+        ],
+        [
+          "Kurum Adı / Unvanı",
+          null,
+          null,
+          "MEB/ASHB kurum açma iznindeki tam kurum adı",
+          null
+        ],
+        [
+          "MEB/ASHB Kurum Açma İzin Belgesi Tarihi",
+          null,
+          null,
+          "Belge üzerindeki resmi tarih — ancak istisna başlangıcını belirlemez. Fiili faaliyete geçiş tarihi farklıysa aşağıdaki satırı doldurun.",
+          null
+        ],
+        [
+          "Fiilen Faaliyete Geçilen Tarih (GG.AA.YYYY)",
+          null,
+          null,
+          "İstisna süresini başlatan tarih — gün/ay/yıl olarak giriniz. Kurum açma izninden FARKLI olabilir; fiili başlangıç esas alınır.",
+          null
+        ],
+        [
+          "Fiilen Faaliyete Geçilen Hesap Dönemi",
+          null,
+          null,
+          "İstisna süresinin başladığı yıl (örn. 2022)",
+          null
+        ],
+        [
+          "İstisna Bitiş Hesap Dönemi (Faaliyete Geçiş+4)",
+          null,
+          null,
+          "Faaliyete geçiş yılı dahil 5 yıl (örn. 2022→2026)",
+          null
+        ],
+        [
+          "Kaçıncı İstisna Yılı? (1–5)",
+          null,
+          null,
+          "5'i aşmışsa istisna uygulanamaz",
+          null
+        ],
+        [
+          "Devir Durumu Var mı?",
+          null,
+          "HAYIR",
+          "Devralan kalan süreden yararlanır — yeni 5 yıl başlamaz",
+          null
+        ],
+        [
+          "Yeni Birim mi?",
+          null,
+          "EVET",
+          "Yeni birim kendi faaliyete geçiş tarihinden ayrı 5 yıl alır",
+          null
+        ],
+        [
+          "C. HASILAT, GİDER VE İSTİSNA KAZANÇ HESABI (BİRİM BAZINDA)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kapsam içi hasılat (eğitim/bakım/terapi ücretleri, ücrete dahil yemek/konaklama) ile kapsam dışı hasılat (kantin, büfe, ayrı servis/yemek, kiralama) muhasebe kayıtlarında ayrı izlenmelidir.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kalem",
+          null,
+          "Tutar (TL)",
+          "Açıklama / YMM Kontrol Notu",
+          null
+        ],
+        [
+          "C.1  İstisna Kapsamı Toplam Hasılat (Eğitim/Bakım/Terapi)",
+          null,
+          null,
+          "Okul/kreş/terapi ücretleri; ücrete dahil yemek/konaklama dahil. KDV hariç.",
+          null
+        ],
+        [
+          "C.2  (–) Kapsam Dışı Hasılat (Kantin, Ayrı Servis, Kiralama vb.)",
+          null,
+          null,
+          "Ayrı fatura edilen servis, kantin/büfe, kitap satışı, tesis kiralama — kapsam dışı.",
+          null
+        ],
+        [
+          "C.3  İstisna Kapsamı Net Hasılat (C.1 – C.2)",
+          null,
+          "0",
+          "İstisna hesabına esas alınacak net hasılat",
+          null
+        ],
+        [
+          "C.4  (–) İstisna Faaliyetine Ait Toplam Giderler",
+          null,
+          null,
+          "Dağıtım anahtarı (hasılat oranı, personel sayısı, m²) belgelenmelidir.",
+          null
+        ],
+        [
+          "C.5  BİRİM İSTİSNA KAZANCI (C.3 – C.4)",
+          null,
+          "0",
+          "Negatif ise sıfır alın — zarar diğer faaliyetlere yüklenemez (ring-fence yok ama zarar anlamını bildir).",
+          null
+        ],
+        [
+          "C.6  Bu Dönem Kullanılacak İstisna Tutarı (KVB Satır 305)",
+          null,
+          null,
+          "A0.6=OK ise uygulanır. 'Kazancın Bulunması Halinde' bölümüne yazılır.",
+          null
+        ],
+        [
+          "D. REHABİLİTASYON MERKEZİ EK KONTROLLERİ (Yalnızca Rehabilitasyon Merkezi)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Rehabilitasyon merkezlerinde Cumhurbaşkanı vergi muafiyeti tanınmış vakıf/dernek bağı ve vakıf senedinde/tüzükte sağlık amacı bulunması zorunludur. Bu koşullar sağlanmadan istisna uygulanamaz.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bağlı Olunan Vakıf / Dernek Adı",
+          null,
+          null,
+          "İstisna için bu bağın belgelenmiş olması zorunludur",
+          null
+        ],
+        [
+          "Cumhurbaşkanlığı Vergi Muafiyeti Kararı Var mı?",
+          null,
+          null,
+          "Eski: Bakanlar Kurulu kararı — belgesi tasdik dosyasında bulunmalı",
+          null
+        ],
+        [
+          "Vakıf Senedi/Tüzükte Sağlık Amacı Var mı?",
+          null,
+          null,
+          "Genel insan sağlığına ilişkin kurum kurma amacı yer almalıdır",
+          null
+        ],
+        [
+          "E. KREŞ VE GÜNDÜZ BAKIMEVİ EK KONTROLLERİ (Yalnızca Kreş/Bakımevi)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "6745 s.K. (07.09.2016) ile 01.01.2017 tarihinden itibaren yürürlüğe girmiştir. Bu tarihten önce faaliyete başlayan kreş/gündüz bakımevleri istisnadan kesinlikle yararlanamaz.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "01.01.2017 veya Sonrasında Faaliyete Başlandı mı?",
+          null,
+          null,
+          "6745 s.K. kısıtı — bu tarihten önce açılanlar kapsam dışıdır",
+          null
+        ],
+        [
+          "Aile ve Sosyal Hizmetler Bakanlığı Kurum Açma İzni Var mı?",
+          null,
+          null,
+          "Kreş/gündüz bakımevleri için ASHB izni zorunludur — MEB izni yeterli değildir",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:F39",
+      "rows": [
+        [
+          "305 – EĞİTİM, ÖĞRETİM VE REHABİLİTASYON | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/1-ı | 1 Seri No.lu KV GT Bölüm 5.13 | KV Beyannamesi Satır 305 — Tasdik Çalışma Kâğıdı",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "TASDİK ÖZET TABLOSU — Hızlı Değerlendirme Paneli",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tasdik Uygunluk",
+          null,
+          "='VERİ GİRİŞİ'!C18",
+          "VERİ GİRİŞİ A0.6 — OK ise hesap kullanılabilir",
+          null,
+          null
+        ],
+        [
+          "Kurum Türü",
+          null,
+          "='VERİ GİRİŞİ'!C34",
+          "Seçilen birim türü",
+          null,
+          null
+        ],
+        [
+          "İstisna Kaçıncı Yıl?",
+          null,
+          "0",
+          "1–5 arası olmalı",
+          null,
+          null
+        ],
+        [
+          "İstisna Tutarı (TL)",
+          null,
+          "='VERİ GİRİŞİ'!C51",
+          "KV Beyannamesi Satır 305 — Kazancın Bulunması Halinde",
+          null,
+          null
+        ],
+        [
+          "YİAKV Durumu",
+          null,
+          "=IF('VERİ GİRİŞİ'!C17=\"EVET\",\"✅ TEST EDİLDİ\",\"⚠ TEST EDİLMEDİ\")",
+          "Bilgi amaçlı; nihai etki ayrıca hesaplanmalı",
+          null,
+          null
+        ],
+        [
+          "İSTİSNA KAZANÇ HESAP İZLEYİCİSİ — VERİ GİRİŞİ'NDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          "Birim",
+          "Açıklama",
+          null
+        ],
+        [
+          "(+) Kapsam İçi Toplam Hasılat (C.1)",
+          null,
+          "0",
+          "TL",
+          "Okul/kreş/terapi ücretleri; dahili yemek/konaklama dahil",
+          null
+        ],
+        [
+          "(–) Kapsam Dışı Hasılat (C.2)",
+          null,
+          "0",
+          "TL",
+          "Kantin, büfe, ayrı servis, kiralama — kapsam dışı",
+          null
+        ],
+        [
+          "(=) Kapsam İçi Net Hasılat (C.3)",
+          null,
+          "0",
+          "TL",
+          "Hasılat istisna tabanı",
+          null
+        ],
+        [
+          "(–) İstisna Faaliyetine Ait Giderler (C.4)",
+          null,
+          "0",
+          "TL",
+          "Birime yüklenen toplam gider",
+          null
+        ],
+        [
+          "(=) Kapsam İçi Faaliyet Kârı (C.5)",
+          null,
+          "0",
+          "TL",
+          "Negatif ise istisna uygulanamaz",
+          null
+        ],
+        [
+          "Dönem Net Kârı (A0.4 — Zarar Kontrolü)",
+          null,
+          null,
+          "TL",
+          "Muhasebe kayıtlarından manuel giriniz — kapsam içi kâr ≤ dönem kârı olmalı",
+          null
+        ],
+        [
+          "KULLANILACAK İSTİSNA TUTARI (KVB Satır 305)",
+          null,
+          null,
+          "TL",
+          "Beyanname 305 satırı — 'Kazancın Bulunması Halinde'",
+          null
+        ],
+        [
+          "Bilgi: 310 (TGB) Farkı — Bu İstisna Zarar Durumunda Kullanılamaz!",
+          null,
+          null,
+          "—",
+          "4691/TGB aksine 305 kodu kârsız dönemde geçersizdir",
+          null
+        ],
+        [
+          "DENETİM VE TASDİK KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kontrol Maddesi",
+          null,
+          "Yasal Dayanak",
+          "YMM Tasdik Notu",
+          "Değ.",
+          "Sonuç"
+        ],
+        [
+          "K1. Kurumun 5580 s.K. kapsamında MEB/ASHB kurum açma iznine sahip olduğu doğrulandı mı?",
+          null,
+          "KVK Md. 5/1-ı | 5580 s.K.",
+          "Kurum açma izin belgesi tasdik dosyasında yer almalıdır. Dershaneler ve kurslar kapsam dışıdır.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K2. Rehabilitasyon merkezi için CB vergi muafiyeti kararı ve vakıf/dernek bağı teyit edildi mi?\n(▶ YALNIZCA Kurum Türü = Rehabilitasyon Merkezi ise uygulanır. Okul ve kreş için bu satır N/A sayılır.)",
+          null,
+          "KVK Md. 5/1-ı Son Fıkra",
+          "CB vergi muafiyeti kararı + vakıf senedinde/tüzükte sağlık amacı = her ikisi birlikte zorunlu. Bu iki koşuldan biri eksikse istisna uygulanamaz. Kurum türü okul veya kreş ise bu satırı 'N/A' olarak işaretleyin.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K3. Kreş/gündüz bakımevinde 01.01.2017 sonrası faaliyet başlangıcı belgelendi mi?\n(▶ YALNIZCA Kurum Türü = Kreş ve Gündüz Bakımevi ise uygulanır. Okul ve rehabilitasyon merkezi için bu satır N/A sayılır.)",
+          null,
+          "6745 s.K. | 01.01.2017 yürürlük",
+          "6745 s.K. kısıtı: Bu tarihten önce faaliyete başlayan kreş/bakımevleri istisnadan yararlanamaz. Faaliyete geçiş tarihi ASHB belgesiyle belgelenmeli. Kurum türü okul veya rehabilitasyon ise bu satırı 'N/A' olarak işaretleyin.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K4. 5 yıllık istisna süresinin başlangıç ve bitiş yılı doğrulandı mı?",
+          null,
+          "KVK Md. 5/1-ı | 1 S.No.lu KV GT 5.13",
+          "Süre faaliyete geçilen hesap döneminin başından başlar. 5. yılı geçmişse istisna uygulanamaz.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K5. Dönemde net kâr bulunduğu teyit edildi mi? (Zarar = İstisna yok)",
+          null,
+          "KVK Md. 5/1-ı | 'Kazancın Bulunması Halinde'",
+          "Bu istisna zarar durumunda kullanılamaz. Beyanname 305 satırı 'Kazancın Bulunması Halinde' bölümündedir.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K6. Kapsam dışı gelirler (kantin, büfe, ayrı servis, kiralama) ayrıştırıldı mı?",
+          null,
+          "1 S.No.lu KV GT 5.13.4",
+          "Bu gelirler muhasebe kayıtlarında ayrı hesaplarda izlenmeli ve istisna hesabından çıkarılmalıdır.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K7. Yemek/konaklama bedelinin okul ücretine dahil olduğu teyit edildi mi?",
+          null,
+          "1 S.No.lu KV GT 5.13.4 | GİB Özelgesi",
+          "Ücrete dahil yemek/konaklama → kapsam içi. Ayrı fatura edilen → kapsam dışı. Sözleşme incelenmeli.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K8. Birden fazla birim varsa her birim için ayrı muhasebe ve ayrı istisna hesabı yapıldı mı?",
+          null,
+          "1 S.No.lu KV GT 5.13.5",
+          "Her birim ayrı değerlendirilir. Hasılat/gider her birim için ayrı izlenmeli.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K9. Devir söz konusuysa devir belgesi ve kalan istisna süresi hesaplandı mı?",
+          null,
+          "1 S.No.lu KV GT 5.13.6",
+          "Devralan kalan süreden yararlanır — yeni 5 yıl başlamaz. Devir belgesi dosyada bulunmalıdır.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K10. Takviye kursu/yan hizmetlerin istisna kapsamında olup olmadığı değerlendirildi mi?",
+          null,
+          "GİB Özelgesi — 5580 s.K. kapsamı sorgusu",
+          "5580 s.K. kapsamında verilen takviye kursları bazı özelgelere göre kapsam içi sayılabilir; belgelenmelidir. Ayrı faaliyet niteliğinde olanlar kapsam dışıdır.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K11. Muhasebe kayıtları ile beyanname 305 satırı mutabakatı yapıldı mı?",
+          null,
+          "VUK Md. 175 | KV Beyannamesi",
+          "60x-64x hesap dökümü ile beyanname 305 satırı mutabık olmalıdır. Fark belgelenmelidir.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "K12. YİAKV (KVK Md. 32/C) matrahında bu istisnanın etkisi analiz edildi mi?",
+          null,
+          "KVK Md. 32/C | GİB 2025 KV Rehberi",
+          "Dönem mevzuatı çerçevesinde analiz edilmeli. Genel olarak düşülebilir ancak kesin hüküm verilemez.",
+          "☐ UYGUN  ☐ EKSİK  ☐ RİSK",
+          "✅/❌/⚠"
+        ],
+        [
+          "YİAKV UYARI VE ANALİZ (KVK Md. 32/C)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 5/1-ı eğitim/rehabilitasyon istisnasının YİAKV matrahındaki etkisi dönem mevzuatıyla analiz edilmelidir. Genel kural olarak KVK 5. madde kapsamındaki istisnalar YİAKV matrahından düşülebilir değerlendirilmektedir, ancak 4691 s.K. (310 kodu) gibi net bir kısıtlama olmamakla birlikte kesin hüküm verilemez. GİB KV Rehberi (güncel) her dönem teyit edilmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G21",
+      "rows": [
+        [
+          "305 – KVK Md. 5/1-ı | MUHASEBE KAYITLARI ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Muhasebe Kayıtları Rehberi — TDHP Esaslarına ve Şirket Hesap Planına Göre Uyarlanır. Muhasebe sorumluluğu mükellefte, tasdik sorumluluğu YMM'dedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "HESAP YAZIM STANDARDI: ✅ 12x/alacak | 60x/hasılat | 64x/diğer gelir | 36x/vergi | 19x/mahsup\n  Kapsam içi/dışı gelirler muhasebede ayrı hesaplarda izlenmelidir. Birim bazında ayrım zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — EĞİTİM/BAKIM/TERAPİ HİZMETİ GELİR KAYDEDME (İstisna Kapsamı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tarih",
+          "Hesap No / Açıklama",
+          null,
+          "Not",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Ref"
+        ],
+        [
+          null,
+          null,
+          "[1. hesap / açıklama]",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "[2. hesap / açıklama]",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "60x/600 → Kapsam içi hasılat (eğitim/bakım ücretleri). 12x/120 → Alacak. Kapsam içi ve dışı hasılat ayrı hesaplarda izlenmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — KAPSAM DIŞI GELİR KAYDEDME (Kantin, Ayrı Servis vb.)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tarih",
+          "Hesap No / Açıklama",
+          null,
+          "Not",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Ref"
+        ],
+        [
+          null,
+          null,
+          "[1. hesap / açıklama]",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "[2. hesap / açıklama]",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "64x/649 → Kapsam dışı gelir (kantin, ayrı servis). İstisna kapsamı hasılatla birleştirilmemeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — KV BEYANNAMESİ ETKİSİ (Bilgi ve Açıklayıcı Not)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tarih",
+          "Hesap No / Açıklama",
+          null,
+          "Not",
+          "Borç (TL)",
+          "Alacak (TL)",
+          "Ref"
+        ],
+        [
+          null,
+          null,
+          "[1. hesap / açıklama]",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "[2. hesap / açıklama]",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: KV beyannamesinde istisna tutarı 'Kazancın Bulunması Halinde İndirilecek İstisna ve İndirimler' bölümünde 305 kodu ile gösterilir. Muhasebe kaydı yapılmaz; beyanname notu niteliğindedir. DİKKAT: 4691/TGB (310 kodu) istisnasından farklı olarak bu istisna ZARAR DURUMUNDA UYGULANAMAZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LİSTESİ",
+      "dimensions": "A1:E20",
+      "rows": [
+        [
+          "305 – KVK Md. 5/1-ı | TASDİK BELGE LİSTESİ VE DENETİM KANITI ENVANTERİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 17 / 3568 s.K. Kapsamında YMM Tasdik Dosyası — Zorunlu ve Destekleyici Belgeler",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Denetim Kanıtı",
+          "İçerik ve YMM Tasdik Kontrol Notu",
+          "Temin Kaynağı"
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU TASDİK BELGELERİ (Eksiklik Tasdik Kapsamından Çıkarılma Gerekçesi Oluşturur)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "✅ 1",
+          "MEB / ASHB Kurum Açma İzin Belgesi",
+          "5580 s.K. kapsamındaki faaliyet türünü ve faaliyete geçiş tarihini belgeler. İstisna süresinin başlangıcı bu belgeden tespit edilir. Birim bazında her kurum için ayrı ayrı temin edilmeli.",
+          "MEB / Aile ve Sosyal Hizmetler Bakanlığı"
+        ],
+        [
+          null,
+          "✅ 2",
+          "5 Yıllık İstisna Dönem Tablosu (YMM Hazırlık Çalışması)",
+          "Faaliyete geçiş yılı, her birim için istisna başlangıç-bitiş yılları. Devir varsa kalan süre hesabı. Her birim ayrıca değerlendirilmeli.",
+          "YMM çalışma notu"
+        ],
+        [
+          null,
+          "✅ 3",
+          "Hasılat ve Gider Ayrıştırma Tablosu (Kapsam İçi / Kapsam Dışı)",
+          "İstisna kapsamı hasılat (okul ücretleri, dahili yemek/konaklama) ile kapsam dışı hasılat (kantin, büfe, ayrı servis) ayrıştırılmış. Birim bazında; muhasebe hesap ekstresiyle desteklenmeli.",
+          "Muhasebe / ERP"
+        ],
+        [
+          null,
+          "✅ 4",
+          "KV Beyannamesi 305 Satırı — Tutarlılık Kontrolü",
+          "Beyanname 305 satırı ile bu çalışma kâğıdı C.6 tutarı mutabık olmalıdır. 'Kazancın Bulunması Halinde İndirilecek' bölümünde yer aldığı teyit edilmeli.",
+          "GİB e-Beyanname"
+        ],
+        [
+          null,
+          "✅ 5",
+          "60x-64x Muhasebe Hesap Ekstresi (Hasılat Kaydı)",
+          "Kapsam içi gelirlerın muhasebe kaydı. Birim bazında ayrışma ve beyanname tutarı ile mutabakat.",
+          "Muhasebe programı"
+        ],
+        [
+          "KATEGORİ 2 — KRİTİK DESTEK BELGELERİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "➕ 6",
+          "Rehabilitasyon Merkezi: Vakıf Senedi/Dernek Tüzüğü ve CB Vergi Muafiyeti Kararı",
+          "İki koşul birlikte zorunludur: (i) CB vergi muafiyeti kararı, (ii) vakıf senedinde/tüzükte genel insan sağlığı amacı.",
+          "Vakıf/Dernek / CB Kararı"
+        ],
+        [
+          null,
+          "➕ 7",
+          "Kreş/Bakımevi: 01.01.2017 Sonrası Faaliyet Başlangıcı Belgesi",
+          "6745 s.K. kısıtı — ASHB izin belgesi tarihi ve faaliyete geçiş tarihi birlikte doğrulanmalıdır.",
+          "ASHB / Faaliyete Geçiş Belgesi"
+        ],
+        [
+          null,
+          "➕ 8",
+          "Okul Ücret Sözleşmesi (Yemek/Konaklama Ücrete Dahil Mi?)",
+          "Yemek/konaklama okul ücretine dahilse kapsam içi; ayrı faturalıysa kapsam dışı. Sözleşme ve fatura incelenmeli.",
+          "Veli kayıt sözleşmesi"
+        ],
+        [
+          null,
+          "➕ 9",
+          "Devir Durumunda Devir Sözleşmesi ve Kalan Süre Hesabı",
+          "Devralan kalan süreden yararlanır — yeni 5 yıl başlamaz. Devir belgesi dosyada bulunmalıdır.",
+          "Devir sözleşmesi"
+        ],
+        [
+          null,
+          "➕ 10",
+          "YİAKV Matrah Hesaplama Notu",
+          "KVK 5/1-ı istisnasının YİAKV matrahına etkisi; dönem mevzuatı çerçevesinde YMM tarafından hazırlanmalıdır.",
+          "YMM çalışma notu"
+        ],
+        [
+          "⚠️ TASDİK KURALI — KVK Md. 17 / 3568 s.K.: İstisna 'Kazancın Bulunması Halinde' bölümündedir — zarar durumunda kesinlikle kullanılamaz. Kurum türüne özgü ek koşullar (rehabilitasyon: vakıf bağı + CB kararı; kreş: 01.01.2017 kısıtı) belgelenmeden beyanname satırına alınamaz.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "TASDİK DOSYASI HAZIRLIK KONTROL ÖZETİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "305 — KVK Md. 5/1-ı Eğitim, Öğretim ve Rehabilitasyon Kazanç İstisnası — Tasdik Hazırlık Kontrol Listesi\n\n  □ A0 kontrol bloğu tamamlandı ve 'OK' sonucu alındı\n  □ MEB / ASHB kurum açma izin belgesi temin edildi\n  □ Faaliyete geçiş tarihi ve 5 yıllık istisna süresi doğrulandı\n  □ Dönem kârı olduğu teyit edildi ('Kazancın Bulunması Halinde' koşulu)\n  □ Kreş/bakımevi için 01.01.2017 sonrası faaliyet başlangıcı belgelendi\n  □ Rehabilitasyon merkezi için CB vergi muafiyeti kararı ve vakıf/dernek bağı temin edildi\n  □ Kapsam dışı gelirler (kantin, büfe, ayrı servis) muhasebede ayrı hesaplarda izlendi\n  □ Yemek/konaklama ücretinin okul ücretine dahil olup olmadığı sözleşmeden teyit edildi\n  □ Devir varsa devir belgesi ve kalan süre hesabı yapıldı\n  □ YİAKV matrahına etkisi analiz edildi ve belgelendi\n  □ Beyanname 305 satırı 'Kazancın Bulunması Halinde İndirilecek' bölümünde gösterildi",
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETÇİ NOTLARI",
+      "dimensions": "A1:D22",
+      "rows": [
+        [
+          "305 – KVK Md. 5/1-ı | EĞİTİM / ÖĞRETİM / REHABİLİTASYON | YMM MESLEKİ DEĞERLENDİRME VE TASDİK NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/1-ı | 1 Seri No.lu KV GT Bölüm 5.13 | Tasdik Kapsamı • Risk Analizi • YİAKV • İnceleme Notları",
+          null,
+          null,
+          null
+        ],
+        [
+          "📌 YMM TASDİK YAZIM DİLİ STANDARDI:\n✅ KULLANIN: değerlendirilmelidir | uygun koşullar sağlandığı takdirde | belgelenmelidir | incelenip teyit edilmeli\n❌ KULLANMAYIN: uygulanır | kesin olarak | tamamı istisnadır — bu ifadeler YMM sorumluluğu doğurur",
+          null,
+          null,
+          null
+        ],
+        [
+          "I. HUKUK VE MEVZUAT DEĞERLENDİRMESİ (Ana Tasdik Tespiti)",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/1-ı (Güncel Metin):\nOkul öncesi eğitim, ilköğretim, özel eğitim ve orta öğretim özel okulları, özel kreş ve gündüz bakımevleri ile Cumhurbaşkanınca vergi muafiyeti tanınan vakıflara veya kamu yararına çalışan derneklere bağlı rehabilitasyon merkezlerinin işletilmesinden, beş hesap dönemi itibarıyla elde edilen kazançlar kurumlar vergisinden istisnadır.\n\nTasdik Tespiti: İstisnanın uygulanabilmesi için tüm koşulların birlikte sağlanmış olması gerekir:\n  (i)   5580 s.K. kapsamında MEB/ASHB'den kurum açma izni alınmış olması\n  (ii)  Dönemde net kâr bulunması — zarar durumunda istisna uygulanamaz\n  (iii) 5 yıllık istisna süresinin dolmamış olması (faaliyete geçilen dönemden itibaren)\n  (iv)  Kurum türüne özgü ek koşulların sağlanması (rehabilitasyon: vakıf bağı; kreş: 01.01.2017+)\n  (v)   Kapsam dışı gelirlerin muhasebe kayıtlarında ayrıştırılması",
+          null,
+          null,
+          null
+        ],
+        [
+          "II. KURUM TÜRÜNE ÖZGÜ KOŞULLAR VE KRİTİK FARKLILIKLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "A — ÖZEL OKULLAR (Okul Öncesi / İlköğretim / Özel Eğitim / Ortaöğretim):\n  • 5580 s.K. kapsamında MEB kurum açma izni zorunludur.\n  • Kantin, büfe, kitap satışı kapsam dışıdır. Ücrete dahil yemek/konaklama kapsam içidir.\n\nB — ÖZEL KREŞ VE GÜNDÜZ BAKIMEVLERİ:\n  • 6745 s.K. (07.09.2016) ile 01.01.2017'den itibaren kapsama alındı.\n  • Bu tarihten önce faaliyete başlayan kreş/bakımevleri istisnadan kesinlikle yararlanamaz.\n  • İzin mercii: Aile ve Sosyal Hizmetler Bakanlığı (MEB değil).\n\nC — REHABİLİTASYON MERKEZLERİ:\n  • Cumhurbaşkanınca vergi muafiyeti tanınmış vakıf veya kamu yararına çalışan derneğe bağlı olması şarttır.\n  • Vakıf senedinde/dernek tüzüğünde genel insan sağlığına ilişkin kurum kurma/işletme amacı yer almalıdır.\n  • Bu iki koşulun birlikte sağlanması zorunludur — sadece MEB izni yeterli değildir.\n\nKRİTİK FARK — 4691/TGB (310 KODU) İLE KARŞILAŞTIRMA:\n  305 kodu: 'Kazancın Bulunması Halinde' → Zarar durumunda KULLANILAMAZ, devredilemez\n  310 kodu: 'Zarar Olsa Dahi İndirilecek' → Zarar olsa da uygulanır",
+          null,
+          null,
+          null
+        ],
+        [
+          "III. TASDİK RİSK ANALİZİ — KRİTİK RİSKLER",
+          null,
+          null,
+          null
+        ],
+        [
+          "RİSK 1 — ZARAR DURUMUNDA İSTİSNA KULLANIMI:\nEn sık karşılaşılan hata. 305 kodu 'Kazancın Bulunması Halinde' bölümündedir. Zarar eden dönemde kullanılması durumunda cezalı tarhiyat riski doğar.\n\nRİSK 2 — İSTİSNA SÜRESİNİN YANLIŞ HESAPLANMASI:\nKurum açma izin belgesinin tarihi değil faaliyete geçilen hesap döneminin başı esas alınır. Kârsız geçen dönemler de süreyi tüketir.\n\nRİSK 3 — KAPSAM DIŞI GELİRLERİN İSTİSNA HESABINA DÂHİL EDİLMESİ:\nKantin, büfe, ayrı fatura edilen servis/yemek, tesis kiralamadan elde edilen gelirler kapsam dışıdır. Muhasebe kayıtlarında ayrıştırılmadan istisna hesabına dahil edilmesi tarhiyat riskine yol açar.\n\nRİSK 4 — REHABİLİTASYON MERKEZİ KOŞULLARININ EKSİK OLMASI:\nCB vergi muafiyeti kararı veya vakıf senedindeki sağlık amacı maddesi eksikse istisna uygulanamaz.\n\nRİSK 5 — KREŞ 01.01.2017 SINIRI:\nBu tarihten önce faaliyete başlayan kreş/gündüz bakımevleri istisnadan yararlanamaz. Devir yoluyla elde edilen kurumda da bu kısıt geçerlidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "IV. YİAKV ETKİ ANALİZİ (KVK Md. 32/C)",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md. 5/1-ı kapsamındaki eğitim/rehabilitasyon istisnasının YİAKV matrahına etkisi dönem mevzuatı çerçevesinde ayrıca analiz edilmelidir.\n\nGüncel Değerlendirme (2025):\n  • Genel kural: KVK 5. maddesi kapsamındaki istisnalar büyük ölçüde YİAKV matrahından düşülebilir olarak değerlendirilmektedir.\n  • 4691 s.K. istisnası (310 kodu) açıkça YİAKV'den düşülemeyen istisna olarak belirlenmiştir — bu istisna (305 kodu) için böyle net bir kısıtlama bulunmamaktadır.\n  • Ancak kesin hüküm verilemez; GİB KV Rehberinin güncel versiyonu her dönem teyit edilmeli.\n\nTasdik Notu: YİAKV matrahı ve 305 istisnasının etkisi ayrı tabloda hesaplanmalı; dönem mevzuatı teyit edilerek YMM tarafından imzalanmalıdır.",
+          null,
+          null,
+          null
+        ],
+        [
+          "V. MEVZUAT DAYANAKLARI VE KAYNAK LİSTESİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Birincil Mevzuat:\n  • KVK Md. 5/1-ı (Güncel metin — 6745 s.K. ile 01.01.2017'den itibaren kreş/bakımevi eklendi)\n  • 1 Seri No.lu Kurumlar Vergisi Genel Tebliği — Bölüm 5.13\n  • 254 Seri No.lu Gelir Vergisi Genel Tebliği (GVK Md. 20 kapsamı kreş/okul uygulaması)\n  • 5580 sayılı Özel Öğretim Kurumları Kanunu\n  • 6745 s.K. Md. 64: Kreş ve gündüz bakımevlerini 01.01.2017'den kapsama alan değişiklik\n  • KVK Md. 32/C — Asgari kurumlar vergisi (YİAKV)\n\nGüncel Kaynaklar:\n  • GİB 2025 Kurumlar Vergisi Beyan Rehberi (Mart 2025, Yayın No: 563)\n  • GİB Özelge: Yemek/servis bedellerinin eğitim istisnası kapsamı (güncel özelge havuzu)\n  • MEB Özel Öğretim Kurumları Yönetmeliği (güncel versiyon, 2024-2025 değişiklikleri)\n  • GİB KV Beyan Rehberi 2025: 305 kodu uygulama açıklaması",
+          null,
+          null,
+          null
+        ],
+        [
+          "VI. VERGİ İNCELEMESİ VE TASDİK HAZIRLIK NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "1. ÖNCELİKLİ BELGE: MEB/ASHB kurum açma izin belgesi — faaliyete geçiş tarihi buradan belirlenir.\n\n2. ZARAR KONTROLÜ: Dönem kârının olduğu teyit edilmeden beyanname 305 satırına yazılmamalıdır. YMM, muhasebe kayıtlarından bağımsız olarak dönem kâr/zarar durumunu test etmelidir.\n\n3. KAPSAM İÇİ/DIŞI EN KRİTİK NOKTA: Kantin/büfe gelirleri, ayrı faturalandırılan servis/yemek muhasebe hesap bazında ayrıştırılmalı ve tasdik dosyasına eklenmelidir.\n\n4. BEYANNAME SATIRI: 305 kodu 'Kazancın Bulunması Halinde İndirilecek' bölümündedir — 310 kodunun aksine 'Zarar Olsa Dahi' bölümüne yazılmamalıdır.\n\n5. YMM SORUMLULUK NOTU: Bu çalışma kâğıdındaki veriler mükellef beyanına dayanmaktadır. Tevsik belgelerinin doğruluğu ve tutarlılığı YMM tarafından 3568 sayılı Kanun çerçevesinde bağımsız olarak test edilmiştir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

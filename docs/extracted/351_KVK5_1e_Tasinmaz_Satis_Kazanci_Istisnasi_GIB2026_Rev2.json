@@ -1,0 +1,1552 @@
+{
+  "file": "351_KVK5_1e_Tasinmaz_Satis_Kazanci_Istisnasi_GIB2026_Rev2.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G90",
+      "rows": [
+        [
+          "351 – TAŞINMAZ SATIŞ KAZANCI İSTİSNASI | KVK Md.5/1-e | GİB REHBERİ MART 2026 (YAYIN NO:601) | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-e | 3 Dönemli Oran (%75/%50/%25) | 15/7/2023 Sonrası Aktifler: İstisna Yok | 2 Yıl Aktifinde | 549 Fon (5 Yıl) | Taşınmaz Ticareti Yasağı | KDVK Geçici Md.43 | Beyanname Satır 351",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB REHBERİ MART 2026 (YAYIN NO:601) — TAŞINMAZ SATIŞ KAZANCI İSTİSNA ORAN DEĞİŞİM TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "%75",
+          "5/12/2017 ÖNCESİ yapılan taşınmaz satışları",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "%50",
+          "5/12/2017'den itibaren (bu tarih dahil) → 15/7/2023'e kadar",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "%25",
+          "15/7/2023 ÖNCESİ aktife giren taşınmazlar → 15/7/2023 SONRASI satışlarda (KVK Geçici Md.16)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "YOK",
+          "15/7/2023 SONRASI aktife giren taşınmazlar → İSTİSNA TAMAMEN KALDIRILDI (7456 s.K.)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ GYO / GKO / YATIRIM FONU — ÖZEL DURUM UYARISI (7524 s.K. Md.32 — 1/1/2025+):\nGayrimenkul Yatırım Ortaklıkları ve Fonlarının taşınmaz satış kazançları ağırlıklı olarak KVK 5/1-d (fon/ortaklık kazancı istisnası) kapsamında değerlendirilir. 5/1-d istisnasından yararlanabilmek için 1/1/2025'ten itibaren taşınmaz gelirlerinin en az %50'sinin KV beyan ayını izleyen 2. ayın sonuna kadar dağıtılması zorunludur. Dağıtım şartı sağlanmazsa TÜM kazançlar (taşınmaz dahil) için istisna ortadan kalkar. GYO'nun faaliyetine tahsis ettiği taşınmazlar (ofis, depo vb.) 5/1-e kapsamında olabilir — ayrı analiz gerekir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ — GİB Rehberi Mart 2026",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "Yanıt",
+          null,
+          null
+        ],
+        [
+          "A0.1  ★ Aktife giriş tarihi ve satış tarihine göre oran hangi dilime giriyor?",
+          null,
+          null,
+          null,
+          "15/7/2023 ÖNCESİ aktife — Sonrası satış → %25",
+          "KRİTİK: Aktife giriş + satış tarihi birlikte değerlendirilmeli. 15/7/2023 sonrası aktife girenler kapsam dışı.",
+          null
+        ],
+        [
+          "A0.2  ★ 2 Tam Yıl (730 Gün) Aktifinde Bulundurma şartı sağlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Tapuya tescil / cins tashih tarihi esas — aktife kayıt tarihi değil. Devir/bölünmede önceki kurum süresi de sayılır.",
+          null
+        ],
+        [
+          "A0.3  ★ Taşınmaz ticareti / kiralamasıyla FIILEN ve/veya ana sözleşmede UĞRAŞILMIYOR mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Ana sözleşmede taşınmaz ticareti → Kapsam dışı. Fiili çok sayıda alım-satım → Karine. Holding taşınmazı → İstisna uygulanabilir.\n★ GYO/GKO İSE: Portföy taşınmazlarının satışı taşınmaz ticareti kapsamında değerlendirilebilir → 5/1-e istisnası yerine 5/1-d analizi yapın. 5/1-d için %50 dağıtım şartı (7524 s.K. Md.32 — 1/1/2025+) kontrol edin. (KV Beyan Rehberi 2026 — Yayın No:606)",
+          null
+        ],
+        [
+          "A0.4  Satış bedeli satışı izleyen 2. takvim yılı sonuna kadar tahsil edilecek mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Nakit veya Altın/DT/HB/BİST hisseleriyle tahsil mümkün (2 yıl içinde nakde çevrilmeli). Tahsil edilmezse → Vergi ziyaı.",
+          null
+        ],
+        [
+          "A0.5  ★ İstisna edilen kazanç süresi içinde 549 Özel Fonlar hesabına alınacak mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Satışı izleyen hesap döneminin başından KV beyan süresine kadar 549'a alınmalı. 5 yıl tutulacak.",
+          null
+        ],
+        [
+          "A0.6  KDV istisnası (KDVK 17/4-r / Geçici Md.43) değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "15/7/2023 itibariyle KDV istisnası kaldırıldı. Geçici Md.43: 15/7/2023 ÖNCESİ aktife girenler için devam.",
+          null
+        ],
+        [
+          "A0.7  YİAKV matrahında 351 istisnasının etkisi analiz edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-e taşınmaz istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ — matrahta kalır.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik. Tam tasdik → Ayrıca rapor yok.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "HATA - Ön koşul eksik",
+          "★ A0.2 (2 yıl), A0.3 (ticaret yasağı), A0.5 (549 fon) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B. TAŞINMAZ KİMLİĞİ VE NİTELİK KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aktife giriş ve satış tarihleri istisna oranını belirler. Üç kritik tarih: 5/12/2017 | 15/7/2023.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "Değer / Seçim",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "B.1  Taşınmaz Türü",
+          null,
+          "Bina/Fabrika/Depo",
+          "Türk Medeni Kanunu kapsamında taşınmaz",
+          null,
+          "GİB Rehberi Md.6",
+          null
+        ],
+        [
+          "B.2  Tapu Ada/Parsel No",
+          null,
+          null,
+          "Tapu belgesiyle uyumlu olmalı",
+          null,
+          "Tapu belgesi",
+          null
+        ],
+        [
+          "B.3  Aktife Giriş Türü",
+          null,
+          "Satın Alma (Tapuya Tescil)",
+          "Süre başlangıcı giriş türüne bağlı",
+          null,
+          "GİB Rehberi Md.14-18",
+          null
+        ],
+        [
+          "B.4  ★ Aktife Alınma Tarihi (Tapuya Tescil / Cins Tashih)",
+          null,
+          null,
+          "Tapuya tescil/cins tashih tarihi esas. Aktife KAYIT tarihi değil.",
+          null,
+          "GİB Rehberi Md.13,14",
+          null
+        ],
+        [
+          "B.5  Satış / Elden Çıkarma Tarihi",
+          null,
+          null,
+          "Satış vaadi değil — tapuya tescil tarihi esas.",
+          null,
+          "GİB Rehberi Md.26",
+          null
+        ],
+        [
+          "B.6  Satış Bedeli (TL)",
+          null,
+          null,
+          "Yabancı para ise satış günü TCMB kuru × Miktar.",
+          null,
+          "GİB Rehberi Md.29, Örnek 6",
+          null
+        ],
+        [
+          "B.7  Satış Bedeli Döviz Cinsinden mi?",
+          null,
+          "HAYIR",
+          "EVET ise kur farkları istisna kazancını/fon tutarını etkilemez.",
+          null,
+          "GİB Rehberi Md.30",
+          null
+        ],
+        [
+          "B.8  Taşınmaz Defter Değeri (Net — Amortisman Düşülmüş, TL)",
+          null,
+          null,
+          "Birikmiş amortisman düşüldükten sonraki değer.",
+          null,
+          "252/253 hesap kartı",
+          null
+        ],
+        [
+          "B.9  Satış Giderleri (Tapu Harcı, Komisyon, Noter vb., TL)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "AKTİFE GİRİŞ TARİHİ ÖZEL DURUMLAR (GİB Rehberi Md.14-18):\n① Satın alma → Tapuya TESCİL tarihi (aktife kayıt tarihi değil). ② Bina inşası → Cins TASHİH tarihi (YKİ tek başına yeterli değil).\n③ Finansal kiralama → Mülkiyet TESCİL tarihi (kiralama dönemi sayılmaz). ④ Devir/bölünme → Önceki kurumda geçen süreler de sayılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. 2 TAM YIL (730 GÜN) AKTİFİNDE BULUNDURMA — SÜRE HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "C.1  Aktife Alınma Tarihi",
+          null,
+          "0",
+          "B.4'ten otomatik — Tapuya tescil / cins tashih tarihi",
+          null,
+          "GİB Md.13-18",
+          null
+        ],
+        [
+          "C.2  Satış / Elden Çıkarma Tarihi",
+          null,
+          "0",
+          "B.5'ten otomatik",
+          null,
+          "GİB Md.5",
+          null
+        ],
+        [
+          "C.3  Elde Tutma Süresi (Gün)",
+          null,
+          "0",
+          "Otomatik: B.5 − B.4 | 730 gün eşiği",
+          null,
+          null,
+          null
+        ],
+        [
+          "C.4  ★ 2 Tam Yıl (730 Gün) Şartı",
+          null,
+          "HAYIR — Süre Yetersiz",
+          "Otomatik değerlendirme",
+          null,
+          "730 gün",
+          null
+        ],
+        [
+          "D. İSTİSNA ORANI BELİRLEME — TARİH DİLİMİNE GÖRE (GİB Rehberi Md.2-3)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "İstisna Oranı",
+          null,
+          "Yasal Dayanak",
+          "Durumu"
+        ],
+        [
+          "5/12/2017 ÖNCESİ yapılan satışlar",
+          null,
+          "%75",
+          "KVK 5/1-e — Eski",
+          null,
+          "Eski Dönem",
+          null
+        ],
+        [
+          "5/12/2017 sonrası satış + 15/7/2023 öncesi aktife giriş VE satış",
+          null,
+          "%50",
+          "KVK 5/1-e",
+          null,
+          "Orta Dönem",
+          null
+        ],
+        [
+          "15/7/2023 ÖNCESİ aktife girmiş + 15/7/2023 SONRASI satış",
+          null,
+          "%25",
+          "KVK Geçici Md.16 — 7456 s.K.",
+          null,
+          "GÜNCEL",
+          null
+        ],
+        [
+          "15/7/2023 SONRASI aktife girmiş (herhangi bir tarihte satış)",
+          null,
+          "YOK",
+          "7456 s.K. — İstisna Kaldırıldı",
+          null,
+          null,
+          null
+        ],
+        [
+          "D.1  Bu satış için geçerli olan istisna oranı:",
+          null,
+          "(Yukarıdan seçin)",
+          "Aktife giriş + satış tarihine göre yukarıdaki tablodan seçin → E bölümündeki hesapta kullanılacak",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. SATIŞ KAZANCI VE İSTİSNA HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAZANÇ = Satış Bedeli − Defter Değeri − Satış Giderleri | DÖVİZLİ SATIŞTA KUR FARKLARI İSTİSNA TUTARINI ETKİLEMEZ (GİB Rehberi Md.30, Örnek 6)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "E.1  Satış Bedeli",
+          null,
+          "0",
+          "B.6'dan otomatik",
+          null,
+          "Fiili satış bedeli esas (GİB Md.29)",
+          null
+        ],
+        [
+          "E.2  Defterdeki Kayıtlı Değer (Net — Amortisman Düşülmüş)",
+          null,
+          "0",
+          "B.8'den otomatik",
+          null,
+          "Birikmiş amortisman düşülmüş",
+          null
+        ],
+        [
+          "E.3  Satış Giderleri",
+          null,
+          "0",
+          "B.9'dan otomatik",
+          null,
+          "Tapu harcı, komisyon, noter vb.",
+          null
+        ],
+        [
+          "E.4  SATIŞ KAZANCI (E.1 − E.2 − E.3)",
+          null,
+          "0",
+          "Negatifse 0 — istisna yok",
+          null,
+          "Brüt satış kazancı",
+          null
+        ],
+        [
+          "E.5  Seçilen İstisna Oranı (D.1'den)",
+          null,
+          null,
+          "D.1 seçiminden manuel olarak giriniz (0.75, 0.50, 0.25 veya 0)",
+          null,
+          "GİB Rehberi D bölümü",
+          null
+        ],
+        [
+          "E.6  ★ İSTİSNA TUTARI (E.4 × Oran)",
+          null,
+          "0",
+          "→ Beyanname 351",
+          null,
+          "Satış kazancı × Seçilen oran",
+          null
+        ],
+        [
+          "E.7  Vergiye Tabi Kısım (E.4 − E.6)",
+          null,
+          "0",
+          "KV matrahına dahil",
+          null,
+          "KVK 5/3 gider ayrışımı",
+          null
+        ],
+        [
+          "E.8  549 FONA ALINACAK TUTAR (= E.6)",
+          null,
+          "0",
+          "İstisna edilen kazanç = Fon tutarı",
+          null,
+          null,
+          null
+        ],
+        [
+          "★ DÖVİZLİ SATIŞ — GİB Rehberi Md.30, Örnek 6: 3.000.000 USD × 39 TL = 117.000.000 TL Satış | Maliyet 17.000.000 TL | Kazanç 100.000.000 TL | İstisna %25 = 25.000.000 TL | Fon 25.000.000 TL. Döviz kur farkları / alacak değerleme farkları istisna tutarını VE fon tutarını DEĞİŞTİRMEZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "F. 549 ÖZEL FONLAR HESABI TAKİBİ — 5 YIL ZORUNLU SÜRE (GİB Rehberi Md.19-22)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "Tutar / Tarih",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "F.1  Fona Alınacak Tutar (= E.8)",
+          null,
+          "0",
+          "Otomatik",
+          null,
+          "İstisna tutarı = Fon tutarı",
+          null
+        ],
+        [
+          "F.2  Fona Alınma Son Tarihi",
+          null,
+          null,
+          "Satışı izleyen hesap döneminin başından KV beyan süresine kadar",
+          null,
+          "GG.AA.YYYY — genellikle 30 Nisan",
+          null
+        ],
+        [
+          "F.3  Fon Hesabına Alındı mı?",
+          null,
+          "EVET",
+          "EVET,HAYIR-İstisna Geçersiz",
+          null,
+          "549 hesabına kayıt yoksa istisna tamamen geçersiz",
+          null
+        ],
+        [
+          "F.4  5 Yıl Tutma Süresi Sonu",
+          null,
+          null,
+          "Satış yılından itibaren 5. yıl sonu",
+          null,
+          "GG.AA.YYYY",
+          null
+        ],
+        [
+          "F.5  Fon Hesabından Erken Çekim Riski",
+          null,
+          "Yok",
+          "Yok,Var-Risk,Tasfiye-Risk",
+          null,
+          "Tasfiye = Otomatik çekim → Vergi ziyaı. İflas erteleme = İstisna yok.",
+          null
+        ],
+        [
+          "F.6  Satış Bedeli Tahsil Durumu (2. Takvim Yılı Sonu)",
+          null,
+          null,
+          "Satışı izleyen ikinci takvim yılı sonuna kadar tahsil",
+          null,
+          "GG.AA.YYYY — Tahsil edilmezse vergi ziyaı",
+          null
+        ],
+        [
+          "F.7  Tahsil Aracı Türü (GİB Md.25)",
+          null,
+          "Nakit",
+          "Nakit,Altın (2 Yıl İçinde Nakde),Devlet Tahvili (2 Yıl İçinde Nakde),Hazine Bonosu (2 Yıl İçinde Nakde),BİST Hisse Senedi (2 Yıl İçinde Nakde)",
+          null,
+          "Nakit veya belirtilen araçlar. 2 yıl içinde nakde çevrilmeli.",
+          null
+        ],
+        [
+          "G. KDV BOYUTU — KDVK Md.17/4-r ve GEÇİCİ Md.43 (15/7/2023 SINIRI KRİTİK)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "7456 s.K.: 15/7/2023 itibariyle KDV istisnası KALDIRILDI. Geçici Md.43: 15/7/2023 ÖNCESİ aktifine giren taşınmazlar için KDV istisnası DEVAM EDER.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          "Değerlendirme",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "G.1  Satıcı KDV Mükellefi mi?",
+          null,
+          "EVET",
+          "KDV mükellefiyeti yoksa bu bölüm uygulanmaz.",
+          null,
+          "KDVK",
+          null
+        ],
+        [
+          "G.2  ★ 15/7/2023 ÖNCESİ aktife giren taşınmaz mı? (KDV istisnası için kritik)",
+          null,
+          "EVET",
+          "HAYIR ise: 15/7/2023 sonrası aktife girmiş → KDV istisnası YOKTUR.",
+          null,
+          "KDVK Geçici Md.43",
+          null
+        ],
+        [
+          "G.3  KDV İstisnası Uygulanacak mı?",
+          null,
+          "EVET",
+          "G.1=EVET ve G.2=EVET ise KDV istisnası uygulanır.",
+          null,
+          "KDVK Geçici Md.43",
+          null
+        ],
+        [
+          "H. BEYANNAME SATIR 351 — TAŞINMAZ SATIŞ KAZANCI İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "H.1  TOPLAM İSTİSNA → Beyanname Satır 351 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "E.6 — %25/%50/%75 × Satış Kazancı",
+          null
+        ],
+        [
+          "KRİTİK UYARILAR: (1) 351 — 'KAZANCIN BULUNMASI HALİNDE İNDİRİLECEK' — dönemde zarar varsa istisna uygulanamaz.\n(2) 15/7/2023 SONRASI aktife giren taşınmazlarda: İstisna tamamen kaldırıldı — beyanname 351 doldurulmaz.\n(3) Satış vaadi sözleşmesiyle tahsil edilenler istisnaya konu edilemez — tapu tescili zorunlu (GİB Md.26).\n(4) Grup şirketleri: Nakit girişi olmaksızın satış veya ayni sermaye devri → İstisna uygulanmaz (GİB Md.27-28).\n(5) YİAKV (KVK 32/C) matrahından bu istisna DÜŞÜLEMEZ — matrahta kalır.\n(6) GYO/GKO/FON: Portföy taşınmaz satışları genellikle 5/1-d kapsamındadır. 5/1-d için 1/1/2025+ dağıtım şartı (%50) karşılanmalıdır. GYO'nun kendi faaliyetlerine tahsis ettiği taşınmaz (örn. ofis binası) ise 5/1-e kapsamında ayrıca değerlendirilebilir. (KV Beyan Rehberi 2026 — Yayın No:606 | 7524 s.K. Md.32)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G37",
+      "rows": [
+        [
+          "351 – TAŞINMAZ SATIŞ KAZANCI İSTİSNASI | HESAPLAMALAR VE DENETİM KONTROLLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | 3 Tarih Dilimi | %75/%50/%25/İstisna Yok | KDV Geçici Md.43 | 549 Fon | 2 Yıl Aktif | Beyanname 351",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluk",
+          null,
+          null,
+          "HATA - Ön koşul eksik",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "2 Yıl Şartı (C.4)",
+          null,
+          null,
+          "HAYIR — Süre Yetersiz",
+          "730 gün EVET",
+          null,
+          null
+        ],
+        [
+          "Elde Tutma (Gün)",
+          null,
+          null,
+          "0",
+          "730 eşiği",
+          null,
+          null
+        ],
+        [
+          "Oran (D.1)",
+          null,
+          null,
+          "(Yukarıdan seçin)",
+          "Seçilen oran",
+          null,
+          null
+        ],
+        [
+          "Satış Kazancı (E.4)",
+          null,
+          null,
+          "0",
+          "Brüt kazanç",
+          null,
+          null
+        ],
+        [
+          "351 İSTİSNA (E.6)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "549 Fon (F.1)",
+          null,
+          null,
+          "0",
+          "5 yıl tutulacak",
+          null,
+          null
+        ],
+        [
+          "KDV İstisnası (G.3)",
+          null,
+          null,
+          "EVET",
+          "15/7/2023 sınırı",
+          null,
+          null
+        ],
+        [
+          "B. DÖNEMSEL İSTİSNA ORANI TABLOSU (GİB Rehberi Mart 2026 Md.2-3)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem / Durum",
+          "Aktife Giriş Tarihi",
+          "Satış Tarihi",
+          "Taşınmaz Oranı",
+          "Yasal Dayanak",
+          "Not"
+        ],
+        [
+          "Eski Dönem",
+          "Herhangi",
+          "5/12/2017 Öncesi",
+          "%75",
+          "KVK 5/1-e — Eski",
+          null,
+          null
+        ],
+        [
+          "Orta Dönem",
+          "15/7/2023 Öncesi",
+          "5/12/2017–15/7/2023",
+          "%50",
+          "KVK 5/1-e",
+          null,
+          null
+        ],
+        [
+          "Geçiş (GÜNCEL)",
+          "15/7/2023 Öncesi",
+          "15/7/2023 Sonrası",
+          "%25",
+          "KVK Geçici Md.16",
+          null,
+          null
+        ],
+        [
+          "İSTİSNA YOK",
+          "15/7/2023 Sonrası",
+          "Herhangi",
+          "YOK",
+          "7456 s.K. — Kaldırıldı",
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K14) — TAŞINMAZ SATIŞI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama / GİB Rehberi",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ İstisna oranı doğru tarih dilimine yerleştirildi mi? (%75/%50/%25/YOK)",
+          null,
+          "GİB Md.2-3: Aktife giriş + satış tarihine göre 4 dilim. En sık yapılan hata.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ 15/7/2023 sonrası aktife giren taşınmazda istisna uygulanmadı mı?",
+          null,
+          "7456 s.K.: Bu tarihten sonra aktife giren → İstisna tamamen kaldırıldı. Beyanname 351 doldurulmaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Aktife alınma tarihi tapuya tescil / cins tashih tarihi mi?",
+          null,
+          "GİB Md.13-18: Aktife kayıt tarihi değil. Bina → Cins tashih. Finansal kiralama → Mülkiyet tescil.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ 2 Tam Yıl (730 gün) şartı sağlandı mı? C.4 EVET veriyor mu?",
+          null,
+          "730 gün. 1 gün eksik → İstisna yok. Devir/bölünmede önceki süre sayılır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ Taşınmaz ticareti / kiralaması yasağı kontrol edildi mi?\n★ GYO/GKO İSE: Portföy taşınmaz satışı → 5/1-d analizi. 7524 s.K. Md.32 kapsamı %50 dağıtım şartı kontrol edildi mi? Dağıtım şartı sağlanmazsa 5/1-d istisnası tamamen kalkabilir.",
+          null,
+          "GİB Md.10: Ana sözleşme + fiili faaliyet. Çok sayıda alım-satım → Karine. Holding → İstisna uygulanabilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "Satış bedeli fiili satış bedeli mi? Transfer fiyatlandırması?",
+          null,
+          "GİB Md.29: Fiili satış bedeli esas. KVK Md.13: İlişkili kişi satışında emsal bedel zorunlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Grup şirketleri arası satışta nakit girişi var mı? Ayni sermaye devri yok mu?",
+          null,
+          "GİB Md.27-28: Nakit girişi olmayan satış veya ayni sermaye devri → İstisna uygulanmaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "Satış vaadi sözleşmesiyle değil — tapuya tescil yapıldı mı?",
+          null,
+          "GİB Md.26: Satış vaadi yeterli değil — tapuya tescil zorunlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "★ Satış bedeli 2. takvim yılı sonuna kadar tahsil edilecek mi?",
+          null,
+          "Nakit veya Altın/DT/HB/BİST hisseleri (2 yıl içinde nakde). Tahsil edilmezse → Vergi ziyaı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "★ İstisna tutarı (E.6) süresi içinde 549 hesabına alındı mı?",
+          null,
+          "Satışı izleyen dönem KV beyan süresi içinde. Fon kaydı yoksa istisna tamamen geçersiz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "5 Yıl Fon Tutma kontrolü — Tasfiye / erken çekim riski?",
+          null,
+          "GİB Md.20-22: Tasfiye = Otomatik çekim. İflas erteleme = İstisna yok. Sermayeye ilave mümkün.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "KDV Geçici Md.43 istisnası doğru uygulandı mı?",
+          null,
+          "15/7/2023 öncesi aktife giren → KDV istisnası devam. Sonrası → KDV istisnası yok.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K13",
+          "Dövizli satışta kur farkları istisna tutarını etkilemedi mi?",
+          null,
+          "GİB Md.30, Örnek 6: Kur farkları / alacak değerleme farkları istisna ve fon tutarını değiştirmez.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K14",
+          "Beyanname 351 'Kazancın Bulunması Halinde' bölümünde mi? YMM raporu?",
+          null,
+          "351 → 'Kazancın Bulunması Halinde'. Zarar varsa istisna uygulanamaz. >=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K15",
+          "★ GYO/GKO/Fon ise: 5/1-d kapsamı ve %50 dağıtım şartı analizi yapıldı mı?",
+          "GYO/GKO portföy taşınmaz satışı → 5/1-d. 5/1-e genellikle uygulanmaz.\n5/1-d istisnası için 7524 s.K. Md.32 kapsamı %50 dağıtım şartı (1/1/2025+) analiz edilmeli.",
+          null,
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G17",
+      "rows": [
+        [
+          "351 – TAŞINMAZ SATIŞ KAZANCI İSTİSNASI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 | %25/%50/%75 Dönemsel Oran | 549 Fon | KDV Geçici Md.43 | Dövizli Satış",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Aşağıdaki kayıtlar örnek niteliğindedir. Şirkete özgü muhasebe politikasına ve aktifin döneme göre uyarlanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — TAŞINMAZ SATIŞ KAYDI (GİB Rehberi Md.29 — Fiili Satış Bedeli Esas)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "102 Bankalar / 120 Alıcılar",
+          "Satış bedeli tahsilatı (Nakit / Altın / DT / HB / BİST — 2 yıl içinde nakde)",
+          "[Satış Bedeli]",
+          "—",
+          "Tapu+Banka"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "257 Birikmiş Amortismanlar",
+          "Birikmiş amortismanın kapatılması",
+          "—",
+          "[Birikmiş Amor.]",
+          "257 kartı"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "252/253 Binalar / Arazi ve Arsalar",
+          "Taşınmazın net defter değeriyle aktiften çıkışı",
+          "—",
+          "[Defter Değeri]",
+          "252/253 kartı"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "679 Diğer Olağandışı Kâr ve Gelirler",
+          "Satış kazancı (E.4) — KVK 5/1-e | %25/%50/%75 → Beyanname 351",
+          "—",
+          "[E.4 TL]",
+          "KV 351"
+        ],
+        [
+          "★ KDV NOTU: 15/7/2023 ÖNCESİ aktife giren → KDVK Geçici Md.43 KDV istisnası DEVAM. 15/7/2023 SONRASI aktife giren → Genel hükümler çerçevesinde KDV HESAPLANIR.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ DÖVİZLİ SATIŞ (GİB Md.30, Örnek 6): Kazanç = TCMB kuru × Miktar − Maliyet. Sonradan oluşan kur farkları istisna tutarını ve fon tutarını ETKİLEMEZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — 549 ÖZEL FONLAR HESABINA ALMA (Satışı İzleyen Dönem KV Beyan Süresine Kadar — GİB Md.19)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[KV Beyan]",
+          "679 Diğer Olağandışı Kâr ve Gelirler",
+          "İstisna edilen satış kazancının gelir hesabından çıkarılması",
+          "[İstisna E.6]",
+          "—",
+          "E.6 tutarı"
+        ],
+        [
+          "Kr",
+          "[KV Beyan]",
+          "549 Özel Fonlar",
+          "KVK 5/1-e İstisna | %25/%50/%75 | 5 yıl tutulacak (Taşınmaz Satış Kazancı İstisnası)",
+          "—",
+          "[İstisna E.6]",
+          "5 Yıl"
+        ],
+        [
+          "5 YIL KURALI (GİB Md.19-22): 5 yıl içinde işletmeden çekilemez. Sermayeye ilave mümkün. Tasfiye = Otomatik çekim → Vergi ziyaı. İflas erteleme = İstisna yok.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ GYO/GKO MUHASEBE NOTU (7524 s.K. Md.32 — 1/1/2025+): Portföy taşınmaz satışları ağırlıklı olarak KVK 5/1-d kapsamındadır. 5/1-d istisnası için taşınmaz gelirlerinin %50'si dağıtılmalıdır. Dağıtım şartı sağlanamıyorsa tüm kazançlar vergiye tabidir. GYO'nun kendi faaliyetlerine tahsis ettiği taşınmaz satışında 5/1-e ve bu çalışma kâğıdı kullanılabilir. (KV Beyan Rehberi Mart 2026 — Yayın No:606)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G10",
+      "rows": [
+        [
+          "351 – TAŞINMAZ SATIŞ KAZANCI İSTİSNASI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | 7456 s.K. | KVK Geçici Md.16 | KDVK Geçici Md.43 | YMM Tasdik Standardı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / GİB Rehberi Mart 2026",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK 5/1-e — İstisna Oranları ve 3 Dönemli Yapı (GİB Rehberi Md.2-3)",
+          "TAŞINMAZ SATIŞ KAZANCI İSTİSNA ORANLARI (GİB Rehberi Mart 2026):\n\nDÖNEM 1 — 5/12/2017 ÖNCESİ: Satıştan doğan kazancın %75'i istisna.\nDÖNEM 2 — 5/12/2017'den itibaren (dahil) → 15/7/2023'e kadar: %50 istisna.\nDÖNEM 3 — 7456 s.K. ile değişiklik (15/7/2023):\n  → 15/7/2023 ÖNCESİ aktifine alınan taşınmazların SONRAKI SATIŞLARI: %25 (KVK Geçici Md.16)\n  → 15/7/2023 SONRASI aktifine alınan taşınmazlar: İSTİSNA TAMAMEN KALDIRILDI.\n\nKDV İSTİSNASI (GİB Rehberi Bölüm A-II):\n  → 15/7/2023 itibariyle genel KDV istisnası kaldırıldı (7456 s.K., KDVK 17/4-r).\n  → KDVK Geçici Md.43: 15/7/2023 ÖNCESİ aktife giren taşınmazlar için KDV istisnası DEVAM EDER.\nBEYANNAME: 351 | Kazancın Bulunması Halinde | YİAKV matrahından DÜŞÜLEMEZ.",
+          "KVK 5/1-e | KVK Geçici Md.16 | 7456 s.K. | KDVK Geçici Md.43 | GİB Rehberi Mart 2026",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ Aktife Alınma Tarihi — En Kritik Kontrol (GİB Rehberi Md.13-18)",
+          "GİB Rehberi Md.13-18 AKTİFE GİRİŞ TARİHİ KURALI:\n\n① Satın alma: Tapuya TESCİL tarihi esas — aktife kayıt tarihi değil.\n② Bina inşası: CİNS TASHİH / TESCİL tarihi esas — yapı kullanma izni yeterli değil.\n③ İnşa halindeki bina (tamamlanmamış) satışı: Sadece arsa kısmına istisna uygulanır.\n④ Finansal kiralama: Mülkiyetin kuruma geçtiği TESCİL tarihi — kiralama dönemi sayılmaz.\n⑤ Sat-Kirala-Geri Al: 7456 s.K. öncesinde finansal kiralama aktifindeki süreler sayılırdı; bu uygulama kaldırıldı.\n⑥ Devir/bölünme: Devralınan kurumun aktifinde geçen süreler dikkate alınır (GİB Md.15).\n⑦ Satış vaadi sözleşmesi: Yeterli değil — tapuya tescil zorunlu (GİB Md.26).",
+          "GİB Rehberi Md.13-18,26 | KVK 5/1-e",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "Dövizli Satış ve Kur Farkları (GİB Rehberi Md.30, Örnek 6)",
+          "GİB Rehberi Md.30 — DÖVİZLİ SATIŞ KURALI:\n\nİstisna kapsamındaki taşınmazın satışından kaynaklanan alacaklar için alınan:\n  • Faiz ve komisyon gelirleri\n  • Döviz cinsinden belirlenen satış bedelinde ortaya çıkan KUR FARKLARI\nistisna kazancın tespitinde dikkate ALINAMAZ — fon tutarını da DEĞİŞTİRMEZ.\n\nÖRNEK 6 (GİB Rehberi Mart 2026):\n  Satış: 3.000.000 USD × 39 TL = 117.000.000 TL | Maliyet: 17.000.000 TL\n  Kazanç: 100.000.000 TL | İstisna %25 = 25.000.000 TL | Fon: 25.000.000 TL\n  Döviz/alacak değerlemesi → İstisna ve fon tutarı değişmez.",
+          "GİB Rehberi Md.30, Örnek 6 | KVK 5/1-e",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Fon Hesabı, Tahsil Şartı ve Grup Şirketleri (GİB Rehberi Md.19-28)",
+          "FON HESABI (GİB Md.19-22):\n  • Satışı izleyen hesap döneminin başından KV beyan süresine kadar 549'a alınmalı.\n  • 5 yıl tutma zorunlu. Sermayeye ilave mümkün. Fon çekilirse o dönem gelir sayılır.\n  • Tasfiye → Otomatik çekim = Vergi ziyaı. İflas erteleme → İstisna yok.\n\nSATIŞ BEDELİ TAHSİLİ (GİB Md.25):\n  • Satışı izleyen 2. takvim yılı sonuna kadar tahsil zorunlu.\n  • Kabul: Nakit + Altın, Devlet tahvili, Hazine bonosu, BİST hisse senetleri (2 yıl içinde nakde).\n\nGRUP ŞİRKETLERİ (GİB Md.27-28):\n  • Nakit girişi olmaksızın satış → İstisna uygulanmaz.\n  • Ayni sermaye olarak bağlı ortaklığa taşınmaz devri → İstisna yok.",
+          "GİB Rehberi Md.19-28 | KVK 5/1-e",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı (GİB Rehberi Bölüm C)",
+          "49 No.lu Tebliğ: >=500.000 TL → YMM raporu. KV beyannamesi ile birlikte veya 2 ay içinde elektronik gönderim. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN (Güncel — %25):\n'...15/7/2023 tarihinden önce kurum aktifinde kayıtlı bulunan taşınmazın [tarih] tarihinde\n  satışından doğan kazancın KVK Geçici Madde 16 kapsamında %25'i olan [tutar] TL\n  kurumlar vergisinden istisna edilmiş, söz konusu kazanç [tarih] tarihine kadar\n  549 Özel Fonlar hesabına alınmıştır.'\n\nKULLANMAYIN:\n'...%50 istisna uygulanmıştır' (15/7/2023 öncesi aktif + sonrası satış → %25)\n'...15/7/2023 sonrası aktife giren taşınmaza istisna uygulanmıştır' (Kaldırıldı)\n'...kur farkı istisnayı artırdı' (Kur farkları istisna tutarını etkilemez)\n\nKRİTİK RİSK ALANLARI:\n(1) Yanlış tarih dilimine yanlış oran. (2) 15/7/2023 sonrası aktif taşınmazda istisna uygulamak.\n(3) Aktife alınma tarihi hatası (tescil yerine kayıt tarihi). (4) Fon hesabı zamanlaması hatası.",
+          "49 No.lu Tebliğ | GİB Rehberi Mart 2026 Bölüm C | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "N6",
+          "★ GYO/GKO Taşınmaz Satışı — 5/1-d Dağıtım Şartı ve 5/1-e Ayrımı",
+          "GYO/GKO TAŞINMAZ SATIŞINDA KAPSAM ANALİZİ:\n\nGayrimenkul Yatırım Ortaklıkları ve Fonlarının taşınmaz satış kazançları:\n\n① PORTFÖY TAŞINMAZLARI → 5/1-d (GYO/Fon Kazancı İstisnası):\n   GYO'nun asıl faaliyeti taşınmaz yatırımı/kiralama olduğundan portföy taşınmazları\n   'taşınmaz ticaretiyle uğraşan kurumlar' kapsamında değerlendirilebilir → 5/1-e UYGULANMAZ.\n   Bu taşınmazlar için 5/1-d kapsamında istisna analizi yapılmalıdır.\n\n② GYO'NUN FAALIYETINE TAHSİS ETTİĞİ TAŞINMAZLAR → 5/1-e OLABİLİR:\n   GYO'nun kendi kullanımına tahsis ettiği taşınmaz (yönetim ofisi, depo vb.)\n   → 5/1-e kapsamında değerlendirilebilir → Bu çalışma kâğıdı kullanılır.\n\n★ 5/1-d DAĞITIM ŞARTI (7524 s.K. Md.32 — 1/1/2025 tarihinden itibaren):\n   GYO/GKO/Fon taşınmaz gelirlerinin en az %50'sini KV beyan ayını izleyen\n   2. ayın sonuna kadar kar payı olarak dağıtmak zorundadır.\n   ✓ Dağıtım şartı SAĞLANIYORSA → 5/1-d kapsamında taşınmaz dışı kazançlar da istisna.\n   ✗ Dağıtım şartı SAĞLANAMIYORSA → TÜM kazançlar için istisna kalkar.\n\nYMM TASDIK NOTU: GYO/GKO mükellefi için 5/1-d kapsamı ve dağıtım şartı analizi\ntasdik dosyasında ayrıca belgelenmelidir. Portföy taşınmazı satışına 5/1-e istisnası\nuygulamak ciddi hata riski oluşturur.",
+          "KVK Md.5/1-d, 5/1-e\n7524 s.K. Md.32 (1/1/2025+)\nKV Beyan Rehberi Mart 2026\n(Yayın No:606)\nGİB Rehberi Md.9-10",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB REHBERİ MART 2026 KAPANIŞ: Kritik güncellemeler: (1) %25 yeni oran — 15/7/2023 öncesi aktif / sonraki satış. (2) 15/7/2023 sonrası aktifler: İstisna tamamen kaldırıldı. (3) KDV Geçici Md.43 sınırı. (4) Dövizli satış kur farkı kuralı. YMM müteselsil sorumluluk: SM-SMMM-YMM K. Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F36",
+      "rows": [
+        [
+          "351 – TAŞINMAZ SATIŞ KAZANCI İSTİSNASI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberi Mart 2026 (Yayın No:601) | %75/%50/%25/YOK | 549 Fon | KDV Geçici Md.43 | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Tapu Belgesi / Güncel Tapu Kaydı",
+          "Mülkiyetin kuruma ait olduğunu gösteren güncel tapu. Ada/parsel/tescil tarihi görünmeli.\nYMM: Tescil tarihi → aktife alınma tarihi için birincil delil.",
+          "Tapu Sicil Müdürlüğü / e-Devlet",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Aktife Giriş Tarihi İspat Belgesi (2 Yıl Kontrolü — GİB Md.13-18)",
+          "Satın alma → Tapuya tescil belgesi.\nBina inşası → Cins tashih belgesi (yapı ruhsatı + YKİ tek başına yeterli değil).\nFinansal kiralama → Mülkiyet tescil belgesi.",
+          "Tapu, Cins Tashih, Yapı Ruhsatı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ İstisna Oranı Belirleme Belgesi (Tarih Dilimi — GİB Md.2-3)",
+          "Aktife giriş tarihi + satış tarihi → Hangi dilim: %75/%50/%25/İstisna Yok.\nBu çalışma kâğıdı D bölümü hesabı ile birlikte dosyada yer almalı.",
+          "Bu çalışma kâğıdı D bölümü",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Satış Sözleşmesi ve Tapu Devir Belgesi",
+          "Satış bedeli, tarih, alıcı bilgileri açık olmalı. Satış vaadi yeterli değil (GİB Md.26).",
+          "Satış sözleşmesi + Tapu devir belgesi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Ana Sözleşme — Taşınmaz Ticareti/Kiralaması Kontrol (GİB Md.10)",
+          "Ana sözleşmede taşınmaz alım-satımı veya kiralaması var mı? Kontrol zorunlu.",
+          "Şirket ana sözleşmesi / MERSİS",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Satış Kazancı Hesaplama Tablosu (E.4 — GİB Md.29)",
+          "E.4 = Satış Bedeli − Defter Değeri − Satış Giderleri. Dövizli satış: TCMB kuru × Miktar.",
+          "Muhasebe programı — 252/253 kartı",
+          null
+        ],
+        [
+          null,
+          "7",
+          "★ 549 Fon Hesabına Alınma Belgesi (Muhasebe Kaydı — GİB Md.19)",
+          "İstisna tutarının (E.6) 549 hesabına kaydedildiğini gösteren yevmiye. Zamanlama kritik.",
+          "Yevmiye defteri / 549 hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "8",
+          "KV Beyannamesi Taslağı — 351. Satır",
+          "351 tutarının E.6 ile birebir uyumlu. 'Kazancın Bulunması Halinde' bölümünde.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Dövizli Satış: TCMB Kuru + Kur Farkı Ayrıştırma (GİB Md.30, Örnek 6)",
+          "Satış günü TCMB kuru belgesi. Kur farkları istisna tutarını ETKİLEMEZ — ayrı hesaplanır.",
+          "TCMB web sitesi / Banka dekontu",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Nakit Dışı Tahsil: Altın/DT/HB/BİST Hisse Belgesi (GİB Md.25)",
+          "2 yıl içinde nakde çevrildiğine dair belge.",
+          "Banka dekontu / Broker hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "11",
+          "KDV İstisnası: 15/7/2023 Öncesi Aktif Teyidi (KDVK Geçici Md.43)",
+          "15/7/2023 öncesi aktife giriş tarihi teyit belgesi → KDV istisnası devam. Sonrası → KDV yok.",
+          "Tapu tescil belgesi",
+          null
+        ],
+        [
+          null,
+          "12",
+          "Taşınmaz Ticareti Yapılmadığının Beyanı + Geçmiş Dönem Satış Listesi",
+          "Son 3-5 yıldaki taşınmaz alım-satım listesi. Çok sayıda satış → Karine riski.",
+          "Tapu sicil sorgusu / Muhasebe kayıtları",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ İstisna oranı doğru dilime yerleştirildi mi?",
+          "GİB Md.2-3: %75/%50/%25/YOK. Aktife giriş + satış tarihi.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ 15/7/2023 sonrası aktifler için istisna uygulanmadı mı?",
+          "7456 s.K.: Sonrası aktife giren → İstisna tamamen kaldırıldı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Aktife alınma tarihi tescil / cins tashih tarihi mi?",
+          "GİB Md.13-18: Aktife kayıt tarihi değil.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ 2 Tam Yıl (730 gün) şartı sağlandı mı?",
+          "730 gün. 1 gün eksik → İstisna yok.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "★ Taşınmaz ticareti yasağı kontrol edildi mi?",
+          "GİB Md.10: Ana sözleşme + fiili faaliyet.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "★ Satış bedeli 2. takvim yılı sonuna kadar tahsil edilecek mi?",
+          "Nakit veya Altın/DT/HB/BİST (2 yıl içinde nakde).",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★ İstisna tutarı süresi içinde 549 hesabına alındı mı?",
+          "Satışı izleyen dönem KV beyan süresi içinde.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "KDV Geçici Md.43 istisnası doğru uygulandı mı?",
+          "15/7/2023 öncesi aktif → KDV istisnası devam.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Dövizli satışta kur farkları istisna tutarını etkilemedi mi?",
+          "GİB Md.30, Örnek 6: Kur farkları etkilemez.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB Rehberi Mart 2026 (Yayın No:601). Kritik güncellemeler: (1) %25 — 15/7/2023 öncesi aktif / sonraki satış. (2) 15/7/2023 sonrası aktifler: İstisna tamamen kaldırıldı. (3) KDV Geçici Md.43 sınırı. (4) Dövizli satış: Kur farkları istisna ve fon tutarını etkilemez. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

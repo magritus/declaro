@@ -1,0 +1,1090 @@
+{
+  "file": "306_KVK12_Ortulu_Sermaye_Istirak_Kazanci_Istisnasi_6.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G49",
+      "rows": [
+        [
+          "306 – İŞTİRAK KAZANÇLARI İSTİSNASI | KVK Md. 5/1-a | KVK Md. 12'den Kaynaklanan",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Örtülü Sermaye Faizi → Kâr Payı Dönüşümü | Borç Veren Kurum Beyannamesi | Zarar olsa dahi indirilecek istisna",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "⚠️ KRİTİK GÜNCEL DURUM (Şubat 2025): Danıştay VDDK 05.02.2025 tarih E:2024/774 K:2025/2 kararıyla içtihat değiştirmiştir.\n  YENİ İÇTİHAT: Borç alan kurumun zarar etmesi veya matrah oluşmaması durumunda → borç veren kurumda düzeltme YAPILAMAZ, iştirak kazancı istisnası KULLANILMAZ.\n  ESKİ İÇTİHAT (2023-2024 VDDK kararları — lehte): Zarar durumunda da düzeltme ve istisna uygulanabilir görüşü. Bu karar İçtihadı Birleştirme Kararı değil; hukuken bağlayıcı değil ancak pratikte belirleyici.\n  UYGULAMA ÖNERİSİ: Yüksek riskli durumlarda ihtirazi kayıtla beyan ve YMM/hukuk görüşü alınması önerilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "RENK KODLARI: 🔵 Mavi metin = Kullanıcı girişi  ⚫ Siyah = Formül  🟢 Yeşil = Ara sonuç  🔵 Koyu yeşil = Nihai",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A – GENEL BİLGİLER (BORÇ VEREN KURUM — İSTİSNA KULLANAN)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Borç Veren Kurum (İstisna Kullanan) — Unvanı",
+          null,
+          null,
+          null,
+          "Bu çalışma kâğıdını hazırlayan kurumun adı",
+          null
+        ],
+        [
+          null,
+          "Borç Alan Kurum (Örtülü Sermaye Kullanan) — Unvanı",
+          null,
+          null,
+          null,
+          "İlişkili kuruluş; örtülü sermaye nitelendirmesi bu kurumda yapılmıştır",
+          null
+        ],
+        [
+          null,
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          null,
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          "2025: %25 (Finansal sektör: %30)",
+          null
+        ],
+        [
+          null,
+          "Borç Veren ile Borç Alan Arasındaki İlişki Türü",
+          null,
+          null,
+          null,
+          "Örn: Grup şirketi, ana şirket-bağlı şirket, ortak ve ilişkili kurum vb.",
+          null
+        ],
+        [
+          "B – ÖRTÜLÜ SERMAYE OLUŞUM KONTROLÜ (BORÇ ALAN KURUMDA — KVK Md.12 Şart Analizi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "UYARI: Bu bölüm BORÇ ALAN kurumun bilgileriyle doldurulur. Örtülü sermaye şartlarının gerçekleştiğini teyit etmek amaçlıdır.\n  Örtülü sermaye şartı gerçekleşmeden borç veren kurumda 306 istisnası uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Değer (TL)",
+          "Açıklama / Dayanak",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Dönem Başı Öz Sermaye (VUK — hesap dönemi başı bilançosu)",
+          "0",
+          "VUK Md.192 uyarınca hesap dönemi başı özsermayesi (Aktif toplamı – Borçlar). Hesap dönemi 01.01 açılış bilançosu esas alınır.",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "İzin Verilen Maksimum İlişkili Borç Eşiği (Dönem Başı Öz Sermaye × 3)",
+          "0",
+          "KVK Md.12/1: Örtülü sermaye sayılmayan üst sınır. Bu tutarın üzerindeki ilişkili borçlar örtülü sermayedir.",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Toplam İlişkili Kişi Borcu (Normal)",
+          "0",
+          "Ortak/ortakla ilişkili kişilerden alınan standart borçlar (banka/finans kurumu olmayan).",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "İlişkili Banka/Finans Kurumu Borcu × %50 (KVK Md.12/2)",
+          "0",
+          "Ana faaliyet konusuna uygun ilişkili banka/kredi kurumundan borçlanmaların %50'si karşılaştırmaya dahil edilir.",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kıyaslamaya Giren Toplam Borç",
+          "0",
+          "C18 + C19. Bu tutar C17 ile kıyaslanır.",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "ÖRTÜLÜ SERMAYE TUTARI",
+          "0",
+          "= MAX(Kıyaslama Borcu − Eşik, 0). Sıfır veya pozitif olabilir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "C – ÖRTÜLÜ SERMAYEYE İSABET EDEN FAİZ VE BENZER TUTARLAR (BORÇ ALAN KURUMDA KKEG YAPILAN)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bu bölümdeki tutarlar BORÇ ALAN kurumun KKEG listesindeki örtülü sermaye faizlerine karşılık gelir.\n  Borç veren kurumda bunların aynısı KÂR PAYI sayılır → KVK 5/1-a kapsamında istisna uygulanır (306 satırı).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Tutar (TL)",
+          "Beyanname / Hesap",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Toplam Faiz Gideri (İlişkili Kişiye Ödenen)",
+          "0",
+          "Hesap dönemi içinde borç alan kurumun ilişkili kişiye ödediği toplam faiz",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Örtülü Sermaye Oranı",
+          "0",
+          "Örtülü Sermaye / Kıyaslama Borcu. Bu oran faiz giderlerine uygulanır.",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "ÖRTÜLÜ SERMAYEYE İSABET EDEN FAİZ (KKEG)",
+          "0",
+          "= Toplam Faiz × Örtülü Sermaye Oranı. BORÇ ALAN'da KKEG, BORÇ VEREN'de Kâr Payı",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Örtülü Sermayeye İsabet Eden KUR FARKI Gideri",
+          "0",
+          "Borç alan kurumda ayrıca kur farkı KKEG yapıldıysa — ancak bu, borç verende iştirak istisnasına KONU OLMAZ",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kur Farkı Geliri (örtülü sermayeye isabet eden — vergiye tabi değil)",
+          "0",
+          "KVK Md.12/7: Kur farkı gelirinin örtülü sermayeye isabet eden kısmı da vergiye tabi kazancın tespitinde dikkate alınmaz",
+          null,
+          null,
+          null
+        ],
+        [
+          "D – BORÇ VEREN KURUMDA DÜZELTME VE KVK 5/1-a İSTİSNASI (BEYANNAME 306 SATIRI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "TEMEL KURAL: Borç alanda KKEG yapılan örtülü sermaye faizi → Hesap döneminin son günü itibarıyla kâr payı sayılır (KVK 12/7).\n  Borç veren tam mükellef kurumda: Faiz geliri → Kâr payı → KVK 5/1-a kapsamında iştirak kazancı istisnası → Beyanname 306.\n  KUR FARKI: Örtülü sermayeye isabet eden kur farkı geliri ve gideri ayrıca vergiye tabi kazancın tespitinde dikkate alınmaz (bu, 306 satırı değil — ayrı düzeltme).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Tutar (TL)",
+          "Beyanname / Açıklama",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Borç Veren Kurumun Faiz Geliri Kaydı (6xx hesapları)",
+          "0",
+          "Muhasebede faiz geliri olarak kaydedilen tutar (örtülü sermayeye isabet eden kısım)",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "İstisna Konu Edilecek Tutar (Kâr Payı Sayılan)",
+          "0",
+          "= Örtülü Sermaye Faizi. Beyanname 306 satırına yazılacak tutar.",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "KUR FARKI DÜZELTMESİ — Vergiye Tabi Kazançtan Çıkarılacak Kur Farkı Geliri",
+          "0",
+          "KVK 12/7: İstisna değil — vergiye tabi kazancın tespitinde ayrıca dikkate alınmaz",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "TOPLAM İSTİSNA (306 Satırı — Zarar olsa dahi indirilir)",
+          "0",
+          "KVK 5/1-a — Borç verenden tam mükellef kurum kâr payı. Şartlar sağlanıyorsa indirilir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "E – DÜZELTME ZAMANLAMA TAKVİMİ (KRİTİK)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "HESAP DÖNEMİ KAPANMADAN ÖNCE (Geçici vergi dönemlerinde): Borç alan kurumun kendi beyanında KKEG yaparsa → Borç veren aynı dönemde düzeltme yapabilir. Ödeme şartı ARANMAZ (önceki VDDK kararlarına göre).\n  HESAP DÖNEMİ KAPANDIKTAN SONRA: Borç alan kurum adına tarh edilen verginin KESİNLEŞMİŞ ve ÖDENMİŞ olması şarttır (KVK Md.12/7 son cümle + Danıştay VDDK 05.02.2025 kararı). Süreye bakılmaksızın düzeltme yapılabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Senaryo",
+          "Durum",
+          "Sonuç / Öneri",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap dönemi kapanmadan — KKEG yapıldı, dönem içinde düzeltme",
+          "Borç alan cari dönemde KKEG yaptı → Borç veren aynı dönem beyannamesiyle 306 istisnası uygular.",
+          "✅ Ödeme şartı aranmaz — Uygulayabilirsiniz",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap dönemi kapandı — Borç alan kâr etti, vergi ödedi",
+          "Vergi tarhiyatı kesinleşmiş ve ödenmiş → Klasik şartlar gerçekleşti.",
+          "✅ İstisna uygulanabilir — Süre sınırı yok",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap dönemi kapandı — Borç alan ZARAR etti, vergi ödemedi (YENİ VDDK 2025)",
+          "VDDK 05.02.2025: Ödeme şartı gerçekleşmeden istisna KULLANILAMAZ.",
+          "⚠️ YÜKSEK RİSK — İhtirazi kayıt + YMM görüşü önerilir",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Sonraki yıllarda borç alan vergi öderse (geriye dönük düzeltme)",
+          "Borç alan zarar nedeniyle ertelenen vergiyi sonradan öderse → Borç verende zamanaşımına bakılmaksızın düzeltme hakkı doğar.",
+          "✅ Süreye bakılmaksızın — Vergi ödeme belgesi teyit edilmeli",
+          null,
+          null,
+          null
+        ],
+        [
+          "F – İSTİSNA TOPLAM ÖZETİ → BEYANNAME 306",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "BEYANNAME 306 SATIRI — KVK Md.12'den Kaynaklanan İştirak Kazancı İstisnası",
+          null,
+          null,
+          null,
+          "0",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:E32",
+      "rows": [
+        [
+          "306 – HESAPLAMALAR & DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a ← KVK Md.12 | Örtülü Sermaye Faizi → Kâr Payı → İstisna | 2025 VDDK İçtihat Değişikliği",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A – KVK Md.12 ÖRTÜLÜ SERMAYE ŞEKEMASİ — ÖZET",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BORÇ ALAN'da → Ortak/ilişkili kişi borcu > Özsermaye × 3 → Aşan kısım = Örtülü Sermaye\n  → Faiz, kur farkı ve benzeri giderlerin örtülü sermayeye isabet eden kısmı = KKEG (KVK 11/1-b)\n  → Hesap döneminin son günü itibarıyla KÂR PAYI sayılır (KVK 12/7)\n  BORÇ VEREN'de → Faiz geliri → Kâr Payı geliri → KVK 5/1-a uyarınca İştirak Kazancı İstisnası (Beyanname 306)\n  KUR FARKI: Ayrı kural — örtülü sermayeye isabet eden kur farkı geliri/gideri vergiye tabi kazançta DİKKATE ALINMAZ (istisna değil!)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B – VERİ GİRİŞİ ÖZETİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Tutar (TL)",
+          "Beyanname Satırı / Açıklama",
+          null
+        ],
+        [
+          null,
+          "Dönem Başı Öz Sermaye",
+          "0",
+          "B – KVK 12 hesaplama tabanı",
+          null
+        ],
+        [
+          null,
+          "Örtülü Sermaye Tutarı",
+          "0",
+          "B – Borç aşım kısmı",
+          null
+        ],
+        [
+          null,
+          "Örtülü Sermayeye İsabet Eden Faiz (KKEG)",
+          "0",
+          "C28 – Borç alanda KKEG",
+          null
+        ],
+        [
+          null,
+          "KUR FARKI Düzeltmesi (Ayrı kalem — 306 değil)",
+          "0",
+          "Ayrı düzeltme — 306 satırına yazılmaz",
+          null
+        ],
+        [
+          null,
+          "306 İSTİSNA TUTARI",
+          "0",
+          "Zarar olsa dahi indirilir",
+          null
+        ],
+        [
+          "C – DENETİM KONTROL LİSTESİ",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Maddesi",
+          "Referans",
+          "Sonuç",
+          null
+        ],
+        [
+          null,
+          "K1. KVK 12 Şartı — Borç ortak/ilişkili kişiden mi alınıyor?",
+          "KVK Md.12/1: Ortak veya ortakla ilişkili kişi tanımı (en az %10 ortaklık/oy/kâr payı hakkı) doğru belirlendi mi?",
+          "Ortak yapısı belgesi",
+          null
+        ],
+        [
+          null,
+          "K2. Örtülü Sermaye Hesabı — Dönem başı özsermaye ve eşik doğru mu?",
+          "VUK Md.192: Dönem başı bilançosu esas alınmalı. Yeni kurulan şirketlerde kuruluş tarihi itibarıyla tespit edilir.",
+          "Dönem başı bilançosu",
+          null
+        ],
+        [
+          null,
+          "K3. Banka İstisna Eşiği — İlişkili banka borcuna %50 uygulandı mı?",
+          "KVK 12/2: Ana faaliyet konusuna uygun ilişkili banka/finans kurumu borçları %50 oranında kıyaslama yapılır.",
+          "Banka faaliyet belgesi",
+          null
+        ],
+        [
+          null,
+          "K4. Örtülü sermayeden sayılmayan borçlar hariç tutuldu mu?",
+          "KVK 12/4: Gayrinakdi teminat borçları, aynı şartlarla aktarılan finansman, banka, faktoring şirketi borçları kapsam dışı.",
+          "Sözleşme incelemesi",
+          null
+        ],
+        [
+          null,
+          "K5. Faiz oranı emsale uygun mu? (Aşırı faiz riski)",
+          "Örtülü sermaye tespiti sadece tutar bazlı — ancak faiz oranı transferfiyatlandırması açısından da değerlendirilmeli.",
+          "Emsal faiz karşılaştırması",
+          null
+        ],
+        [
+          null,
+          "K6. BORÇ ALAN KURUMDA KKEG belgesi var mı?",
+          "Borç alan kurumun beyannamesi/çalışma kâğıdı; örtülü sermaye faizinin KKEG yapıldığını gösteren belge.",
+          "Borç alan KV beyannamesi",
+          null
+        ],
+        [
+          null,
+          "K7. 2025 VDDK kararı riski — Borç alan zarar etti mi?",
+          "VDDK 05.02.2025 E:2024/774 K:2025/2: Borç alan zararda → Ödeme şartı gerçekleşmeden istisna riski.\nİhtirazi kayıtla beyan ve YMM/hukuk danışmanlığı önerilir.",
+          "Risk kalemi — ayrıca belgelenmeli",
+          null
+        ],
+        [
+          null,
+          "K8. Kur Farkı Ayrımı — 306 satırına dahil edilmedi mi?",
+          "KVK 12/7: Kur farkı geliri örtülü sermayeye isabet eden kısımda vergiye tabi kazanç tespitinde dikkate alınmaz.\nBu 306 istisnası DEĞİL — ayrı düzeltme kalemidir!",
+          "Kur farkı hesaplama",
+          null
+        ],
+        [
+          null,
+          "K9. Muhasebe 64x hesabı ile beyanname 306 satırı uyumlu mu?",
+          "Faiz geliri olarak kaydedilen tutar ile kâr payı dönüşümü / 306 satırı tutarı örtüşüyor mu?",
+          "Muhasebe çapraz kontrol",
+          null
+        ],
+        [
+          null,
+          "K10. YİAKV matrahında 306 istisnası düşüldü mü?",
+          "KVK 5/1-a istisnası (306) YİAKV matrahından DÜŞÜLEBİLİR.",
+          "YİAKV hesap tablosu",
+          null
+        ],
+        [
+          "D – BEYANNAME SATIR EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır No",
+          "Tutar (TL)",
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "306",
+          "0",
+          "KVK 5/1-a — KVK Md.12'den Kaynaklanan İştirak Kazancı İstisnası (Örtülü Sermaye Faizi → Kâr Payı) | Zarar olsa dahi indirilir",
+          null
+        ],
+        [
+          null,
+          "HAT",
+          "KUR FARKI",
+          "KVK 12/7 Kur Farkı Düzeltmesi → 306 satırına YAZILMAZ — Kazancın tespitinde ayrıca dikkate alınmaz",
+          null
+        ],
+        [
+          null,
+          "HAT",
+          "307",
+          "307 Satırı: KVK Md.13'ten Kaynaklanan (Transfer Fiyatlandırması örtülü kâr dağıtımı). Bu form (306) KVK 12 kaynaklıdır — karıştırılmamalı.",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G25",
+      "rows": [
+        [
+          "306 – MUHASEBE KAYITLARI REHBERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a ← KVK Md.12 | Borç Veren + Borç Alan Muhasebe Akışı | Örtülü Sermaye → Kâr Payı Düzeltmesi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "UYARI: Rehber niteliğindedir. Şirkete özgü muhasebe politikası esas alınmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BORÇ ALAN KURUMDA — ÖRTÜLÜ SERMAYE FAİZİ KKEG KAYDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap No / Açıklama",
+          "Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          null
+        ],
+        [
+          null,
+          "Dönem içi",
+          "690 Dönem Karı ve Zararı / 659 Olağandışı Giderler",
+          "Örtülü sermaye faizinin KKEG olarak dönem kazancına ilavesi — muhasebe kaydı değil, beyanname üzerinde düzeltme",
+          "KKEG Tutarı",
+          null,
+          null
+        ],
+        [
+          "NOT (BORÇ ALAN): Örtülü sermaye faizi muhasebede gider olarak kaydedilmiş olmakla birlikte, KV beyannamesi üzerinde KKEG olarak matraha ilave edilir. Muhasebe kaydı değiştirilmez.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BORÇ VEREN KURUMDA — FAİZ GELİRİ KAYDI VE DÜZELTME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap No / Açıklama",
+          "Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          null
+        ],
+        [
+          null,
+          "Dönem içi",
+          "641 Faiz Gelirleri (veya 649)",
+          "Faiz geliri olarak kaydedilen tutar — örtülü sermayeye isabet eden kısım dahil tüm faiz",
+          "Faiz Geliri",
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          "Borçlu — 120/321 İlişkili Cari",
+          null,
+          null,
+          "Faiz Geliri",
+          null
+        ],
+        [
+          "DÜZELTMENİN ZAMANI: Örtülü sermaye şartları hesap döneminin son günü itibarıyla oluşur (KVK 12/7).\n  Geçici vergi dönemlerinde erken tespite bağlı olarak aynı dönemde düzeltme yapılabilir.\n  Yıllık beyannamede: Faiz geliri kaydı değiştirilmez — sadece beyanname üzerinde 306 satırına istisna yazılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME ÜZERİNDE İSTİSNA KAYDI (306 SATIRI)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap No / Açıklama",
+          "Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          null
+        ],
+        [
+          null,
+          "31.12.20XX",
+          "BEYANNAME — 306 Satırı",
+          "Örtülü sermayeye isabet eden faiz geliri = kâr payı sayılır → KVK 5/1-a istisna",
+          "0",
+          null,
+          null
+        ],
+        [
+          "MUHASEBE NOT: Beyanname 306 satırı yalnızca KV beyannamesi üzerinde bir düzeltme/istisnadan ibarettir.\n  Muhasebede faiz geliri olarak kaydedilen tutarın 5/1-a kapsamında istisna edildiğine dair genel muhasebe kaydı gerekmez.\n  Ancak YMM çalışma kâğıdında borç alan kurumun KKEG belgesi ile borç verende faiz geliri ve 306 istisnası arasındaki bağlantı belgelenmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KUR FARKI DÜZELTMESİ — 306 SATIRI DIŞI (Ayrı Kalem)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap No / Açıklama",
+          "Açıklama",
+          "Borç (TL)",
+          "Alacak (TL)",
+          null
+        ],
+        [
+          null,
+          "31.12.20XX",
+          "Kur Farkı Geliri / 646 Kambiyo Kârları",
+          "Örtülü sermayeye isabet eden kur farkı geliri — kazancın tespitinde dikkate alınmaz.\nBeyanname 306 değil — Diğer indirimler/düzeltmeler alanında.",
+          null,
+          "KUR FARKI GELİRİ",
+          null
+        ],
+        [
+          null,
+          "31.12.20XX",
+          "Kur Farkı Gideri / 656 Kambiyo Zararları",
+          "Örtülü sermayeye isabet eden kur farkı gideri — kazancın tespitinde dikkate alınmaz.\nÖnceden KKEG yapılmışsa düzeltme gerekebilir.",
+          "KUR FARKI GİDERİ",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETÇİ NOTLARI",
+      "dimensions": "A1:D20",
+      "rows": [
+        [
+          "306 – DENETÇİ NOTLARI, TARTIŞMALI KONULAR VE RİSK ANALİZİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a ← KVK Md.12 | Örtülü Sermaye Faizi → Kâr Payı | 2025 VDDK İçtihat Değişikliği",
+          null,
+          null,
+          null
+        ],
+        [
+          "A – YASAL DAYANAK VE MEKANİZMA",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "KVK Md.12/7 (Kâr Payı Sayılma Hükmü):\n'Örtülü sermaye üzerinden kur farkı hariç olmak üzere hesaplanan faiz ve benzeri ödemeler veya hesaplanan tutarlar, Gelir ve Kurumlar Vergisi Kanunlarının uygulanmasında, gerek borç alan gerekse borç veren nezdinde, örtülü sermaye şartlarının gerçekleştiği hesap döneminin SON GÜNÜ itibarıyla dağıtılmış kâr payı veya dar mükellefler için ana merkeze aktarılan tutar sayılır.'\n\nKVK Md.11/1-b (Borç Alan'da KKEG):\n'Örtülü sermaye üzerinden ödenen veya hesaplanan faiz, kur farkları ve benzeri giderler' kurum kazancının tespitinde indirim konusu yapılamaz.\n\nKVK Md.5/1-a (Borç Veren'de İstisna — 306 Satırı):\n'Tam mükellef kurumlardan elde edilen iştirak kazançları (kâr payları) kurumlar vergisinden istisnadır.' Örtülü sermaye faizi → kâr payı dönüşümü bu hükmü tetikler.\n\n1 Seri No.lu KV GT Bölüm 12.4.1:\n'Borç veren kurum tam mükellef ise, faiz gelirlerinden örtülü sermayeye isabet eden kısımlar kâr payı geliri olarak dikkate alınacak ve şartların varlığı halinde KVK 5/1-a uyarınca iştirak kazançları istisnası olarak vergiden istisna edilecektir.'",
+          null,
+          null
+        ],
+        [
+          "B – ÖRTÜLÜ SERMAYE ŞARTLARI — KVK Md.12 ÖZETİ",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "ŞAR 1 — BORÇ VEREN KİM OLMALI?\n• Ortak: Herhangi bir ortak (ortaklık oranı sınırı yok; BIST hisseleri için en az %10 aranır)\n• Ortakla ilişkili kişi: Ortağın doğrudan/dolaylı en az %10 ortağı olduğu veya en az %10 oy/kâr payı hakkına sahip olduğu kurum\n• Ya da: Ortağın veya ortakla ilişkili bu kurumun sermayesinin/oy haklarının en az %10'unu elinde bulunduran gerçek kişi/kurum\n\nŞART 2 — BORÇ EŞİĞİ (En Kritik Hesap)\n• Borçların hesap dönemi içinde HERHANGİ BİR TARİHTE özsermayenin 3 katını aşması (en yüksek borç tutarı esas alınır)\n• Özsermaye = VUK Md.192 uyarınca hesap dönemi BAŞINDAKI özsermaye (dönem sonu değil!)\n• İlişkili banka/finans kurumu borçları %50 oranında dikkate alınır → Fiilen 6 kat eşiği gibi çalışır\n\nKAPSAM DIŞI BORÇLAR (Örtülü Sermayeye Dahil Edilmez):\n1. Ortakların sağladığı gayrinakdi teminat karşılığında 3. kişilerden yapılan borçlanmalar\n2. İştirak/ortak/ilişkili kişilerin banka ve sermaye piyasalarından temin edip AYNI ŞARTLARLA kullandırdığı borçlar\n3. Bankacılık Kanunu'na göre faaliyette bulunan bankaların yaptığı borçlanmalar\n4. Finansal kiralama, finansman ve faktoring şirketlerinin faaliyetleriyle ilgili ilişkili banka borçları",
+          null,
+          null
+        ],
+        [
+          "C – EN KRİTİK TARTIŞMALI KONU: ZARAR DURUMUNDA İSTİSNA",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "⚠️ TÜRKİYE VERGİ GÜNDEMİNİN EN TARTIŞMALI KONULARINDAN BİRİ — GÜNCEL (2025)\n\nSORUN: Borç alan kurum zarar ettiğinde veya matrah oluşmadığında → borç veren kurumda 306 istisnası uygulanabilir mi?\n\nGİB GÖRÜŞÜ (Tarihsel): Kesinleşmiş ve ödenmiş vergi yoksa düzeltme yapılamaz, istisna uygulanamaz.\n\nYARGI SÜRECİ:\n• VDDK 08.03.2023 (E:2021/1152 K:2023/156): ZARAR durumunda da istisna uygulanabilir — mükellef LEHİNE\n• VDDK 06.03.2024 (E:2022/93 K:2024/102): ZARAR durumunda da düzeltme yapılabilir — mükellef LEHİNE\n• VDDK 02.10.2019 (E:2019/433 K:2019/667): Ödeme şartı aranmalı — GİB YANLISI\n• VDDK 05.02.2025 (E:2024/774 K:2025/2): İÇTİHAT DEĞİŞİKLİĞİ — Zarar durumunda ödeme şartı aranır, istisna KULLANILAMAZ — GİB YANLISI\n\n2025 KARARI: Bu karar İçtihadı Birleştirme Kararı DEĞİL. Hukuken bağlayıcı değil.\nANCAK: Danıştay VDDK'nın en güncel kararı olması nedeniyle uygulamada son derece ağırlıklı. 'Pratikte artık farklı bir karar çıkacağını zannetmiyorum' (BD Turkey, Mart 2025).\n\nUYGULAMA ÖNERİSİ: Borç alan zarar ettiyse → İhtirazi kayıtla beyan veya beyanname 306 satırını boş bırakma. YMM + hukuk görüşü zorunlu.",
+          null,
+          null
+        ],
+        [
+          "D – KUR FARKI AYRIMI (SIKÇA YANLIŞ ANLAŞILAN)",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "KVK Md.12/7 Kur Farkı Kuralı:\n'...kur farkı hariç olmak üzere...' → Örtülü sermaye faizi kâr payı sayılırken KUR FARKI BU KAPSAMA GİRMEZ.\n\nKUR FARKI UYGULAMASI (Borç Veren İçin):\n• Örtülü sermayeye isabet eden kur farkı GELİRİ → Vergiye tabi kazancın tespitinde DIKKATE ALINMAZ (istisna değil!)\n• Örtülü sermayeye isabet eden kur farkı GİDERİ → Vergiye tabi kazancın tespitinde DIKKATE ALINMAZ\n• Bu düzeltme 306 satırına değil, beyannamede ayrı bir kalem olarak yapılır.\n\nYANLIŞ UYGULAMA RİSKİ: Kur farkı gelirinin de 306 satırına yazılması → Matrah fazla düşürülmesi → Cezalı tarhiyat riski.\nDOĞRU UYGULAMA: Faiz = 306 satırı | Kur Farkı Geliri = Ayrı indirim kalemi | Kur Farkı Gideri = Ayrı düzeltme",
+          null,
+          null
+        ],
+        [
+          "E – 306 vs 307 AYRIMI (BEYANNAME SATIR KARIŞIKLIĞI)",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "KOD 306: KVK Md.5/1-a ← KVK Md.12'den Kaynaklanan (Örtülü Sermaye)\n→ Borç veren kurum, örtülü sermaye faizini kâr payı sayarak iştirak kazancı istisnası uygular\n→ Kaynak: Ortak/ilişkili kişiye verilen borçtan elde edilen faiz → örtülü sermaye sınırı aşıldığında\n\nKOD 307: KVK Md.5/1-a ← KVK Md.13'ten Kaynaklanan (Transfer Fiyatlandırması)\n→ Borç veren kurum, TF yoluyla örtülü kâr dağıtımında kazancı kâr payı sayarak istisna uygular\n→ Kaynak: Emsale aykırı bedelle mal/hizmet alım-satımı → örtülü kâr aktarımı\n\nTEMEL FARK: 306 = Borç/faiz kaynaklı; 307 = Fiyatlandırma kaynaklı. Her ikisi de KVK 5/1-a'nın kâr payı sayma hükmünü farklı mekanizmalarla tetikler.",
+          null,
+          null
+        ],
+        [
+          "F – YİAKV, BEYANNAME VE KAYNAKLAR",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "YİAKV (KVK 32/C):\n• KVK 5/1-a istisnası (306) YİAKV matrahından DÜŞÜLEBİLİR.\n\nBEYANNAME EK TABLOSU:\n• 2024 yılından itibaren beyanname Ekler sekmesinde 'KVK 5/1-a Maddesine Göre Yurtiçi İştirak Kazancı İstisnasına İlişkin Bilgiler' tablosu eklenmesi zorunludur.\n• 297, 298, 299, 300, 306 ve 307 satırlarına giriş yapılırsa bu tablo doldurulur (GİB VergıNet Sirküler 2024/39).\n\nKAYNAKLAR:\n• 5520 s.K. KVK Md.12 (Örtülü Sermaye) + Md.11/1-b (KKEG) + Md.5/1-a (İstisna)\n• 1 Seri No.lu KV GT Bölüm 12 (GİB.gov.tr) + 23 No.lu Değişiklik Tebliği (28.09.2024)\n• Danıştay VDDK Kararları: 08.03.2023 (E:2021/1152 K:2023/156), 06.03.2024 (E:2022/93 K:2024/102) — Lehte\n• Danıştay VDDK 05.02.2025 (E:2024/774 K:2025/2) — İçtihat Değişikliği / Aleyhte\n• BD Turkey (Mart 2025): '2025 Kurumlar Vergisi İhtirazi Kayıtla Beyan Konuları'\n• Erdem & Erdem: 'Örtülü Sermaye Kapsamında Faiz Ödemelerine Dair Güncel Yargı Kararları'\n• PwC: 'Örtülü Sermaye Düzeltmesinde Ödeme Koşulu' + GİB Özelge: B.07.1.GİB.0.03.49-010.01-21\n• Aksan Hukuk: 'Örtülü Sermaye ve Düzeltme Mekanizması' (2024)\n• VergıAlgı: 'Örtülü sermayeden kaynaklı iştirak kazançları istisnası' (Şubat 2026)\n• GİB VergıNet Sirküler 2024/39: 306 ve 307 satır açıklaması + Ek tablo zorunluluğu",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "YZ BELGE & BİLGİ LİSTESİ",
+      "dimensions": "A1:F30",
+      "rows": [
+        [
+          "306 – ÖRTÜLÜ SERMAYE İŞTİRAK KAZANCI | YZ BELGE & BİLGİ LİSTESİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a ← KVK Md.12 | Borç Veren Kurum | Kâr Payı Dönüşümü | 2025 VDDK Riski",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KULLANIM: Bu sayfayı doldurun → PROMPT ŞABLONU'nu kopyalayıp YZ modeline gönderin.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Ayrıntı — YZ İçin Ne İçermeli?",
+          "Temin Yeri",
+          null
+        ],
+        [
+          "KATEGORİ 1 – ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "1",
+          "Dönem Başı Bilançosu (Borç Alan Kuruma Ait)",
+          "VUK Md.192 uyarınca özsermaye hesabı için kullanılır. Hesap dönemi başındaki aktif-pasif tablosu.\nYZ için: Özsermaye tutarı = Aktif toplamı – Borçlar.",
+          "Borç alan kurumun dönem başı bilançosu",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Kredi / Borç Sözleşmesi (Borç Veren → Borç Alan)",
+          "İlişkili kişi borçlanmasının türü, tutarı, vadesi, faiz oranı, taraflar.\nYZ için: Borç tutarı, faiz oranı, vade, taraflar arasındaki ilişki türü (KVK 12 kapsamı var mı?).",
+          "Borçlanma sözleşmesi / kredi anlaşması",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Dönem İçi Borç Bakiye Tablosu (Hesap dönemi içinde herhangi bir tarih kriteri)",
+          "KVK 12/1: Hesap dönemi içinde herhangi bir tarihte özsermayenin 3 katını aşma kriteri.\nYZ için: Her ay sonundaki borç bakiyesi ve özsermaye eşiğiyle karşılaştırma.",
+          "Dönem içi borç bakiye dökümü — muhasebe veya ERP sistemi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Borç Alan Kurumun KV Beyannamesi (KKEG Dökümü)",
+          "Örtülü sermaye faizinin borç alan kurumda KKEG yapıldığını belgeleyen dönem beyannamesi.\nYZ için: KKEG tutarı ve örtülü sermaye faizi açıklaması.",
+          "Borç alan kurumun KV beyannamesi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Faiz Hesap Kâğıdı / Faiz Tahakkuk Tablosu",
+          "Dönem içinde ödenen/hesaplanan toplam faiz ve örtülü sermayeye isabet eden kısmının hesabı.\nYZ için: Toplam faiz, örtülü sermaye oranı, örtülü sermaye faizi.",
+          "Muhasebe 64x hesabı + borç hesaplama tablosu",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Ortak Yapısı / İlişkili Kişi Tespit Belgesi",
+          "KVK 12/3 ortakla ilişkili kişi tanımına uygunluk teyidi. En az %10 oy/kâr/ortaklık hakkı var mı?\nYZ için: Borç veren ile borç alan arasındaki ortaklık/kontrol zinciri.",
+          "Ticaret sicil kaydı, ortaklık belgesi, ana şirket beyannamesi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KV Beyannamesi Taslağı (Borç Veren — 306 Satırı)",
+          "İstisna tutarı VERİ GİRİŞİ sekmesi C38 hücresiyle tutarlı mı? Ek tablo dolduruldu mu?\nYZ için: 306 satır tutarı ve istisna tutarının borç alan KKEG'iyle örtüşmesi.",
+          "İnternet Vergi Dairesi / beyanname taslağı",
+          null
+        ],
+        [
+          "KATEGORİ 2 – DESTEKLEYİCİ BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "8",
+          "Emsal Faiz Karşılaştırması (Transfer Fiyatlandırması Perspektifi)",
+          "Örtülü sermaye tespiti tutar bazlıdır; ancak faiz oranı TF açısından da emsale uygun olmalı.\nYZ için: Piyasa faiz oranı ve uygulanan oran karşılaştırması.",
+          "Merkez Bankası faiz verileri, emsal sözleşmeler",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Borç Alan Kurumun Zarar/Kâr Durumu (2025 VDDK Riski İçin)",
+          "Danıştay VDDK 05.02.2025 kararı: Borç alan zararda ise 306 istisnası riski.\nYZ için: Borç alan kurumun dönem net sonucu ve ödenen KV tutarı.",
+          "Borç alan kurumun KV beyannamesi / gelir tablosu",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Geçici Vergi Beyannameleri (Dönem İçi Düzeltme Analizi)",
+          "Örtülü sermaye şartları geçici vergi döneminde oluştuysa, erken düzeltme yapıldı mı?\nYZ için: Dönem içi hesap ve beyan süreci.",
+          "Geçici vergi beyannameleri",
+          null
+        ],
+        [
+          "KATEGORİ 3 – YZ'YE SORULACAK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Detay / Beklenen Çıktı",
+          null,
+          null
+        ],
+        [
+          null,
+          "S1",
+          "KVK 12 örtülü sermaye şartları gerçekleşti mi?",
+          "Borç ortak/ilişkili kişiden mi? Hesap dönemi içinde herhangi bir tarihte özsermayenin 3 katı aşıldı mı? İlişkili banka borcuna %50 uygulandı mı?",
+          "→ YZ'ye gönderin",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "Borç alan kurumda KKEG doğru belirlendi mi?",
+          "Toplam faiz × (Örtülü Sermaye/Kıyaslama Borcu) = KKEG Tutarı. Bu tutar borç alan kurumun beyannamesiyle örtüşüyor mu?",
+          "→ YZ'ye gönderin",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "2025 VDDK kararı riski — Borç alan zarar etti mi?",
+          "Evet ise → İhtirazi kayıt öneri + YMM/hukuk danışmanlığı zorunluluğu. Risk değerlendirmesi yap.",
+          "→ YZ'ye gönderin",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Kur farkı düzeltmesi 306 satırından ayrı tutuldu mu?",
+          "KVK 12/7: Kur farkı → 306'ya yazılmaz. Ayrı indirim kalemi olarak işlendi mi?",
+          "→ YZ'ye gönderin",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "307 ile 306 karıştırılmadı mı?",
+          "307 = KVK 13 TF kaynaklı; 306 = KVK 12 örtülü sermaye kaynaklı. Ayrım doğru yapıldı mı?",
+          "→ YZ'ye gönderin",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Beyanname ek tablosu dolduruldu mu?",
+          "GİB Sirküler 2024/39: 306 satırı kullanılıyorsa 'KVK 5/1-a Yurtiçi İştirak Kazancı İstisnasına İlişkin Bilgiler' tablosu zorunlu.",
+          "→ YZ'ye gönderin",
+          null
+        ],
+        [
+          "YZ PROMPT ŞABLONU",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "306 – KVK Md.5/1-a ← KVK Md.12 Örtülü Sermaye İştirak Kazancı İstisnası — YZ Kontrolü\n\n  Ekler: [Borç alan dönem başı bilançosu] [Borç/kredi sözleşmesi] [Dönem içi borç bakiye tablosu] [Borç alan KV beyannamesi — KKEG dökümü] [Faiz hesap kâğıdı] [Ortak yapısı belgesi] [Borç veren beyanname taslağı — 306 satırı]\n\n  a) VERİ GİRİŞİ B bölümünü doldurun: Dönem başı özsermaye, kıyaslama borçları, örtülü sermaye tutarı.\n  b) C bölümünü doldurun: Toplam faiz, örtülü sermaye oranı, KKEG tutarını hesaplayın.\n  c) Borç alan kurumun kâr/zarar durumunu kontrol edin — 2025 VDDK riski var mı? Risk varsa ihtirazi kayıt önerisi ekleyin.\n  d) Kur farkı tutarının 306 satırına dahil edilmediğini teyit edin.\n  e) Beyanname 306 satırı = C38 (Örtülü Sermaye Faizi) kontrolü yapın.\n  f) Borç alan KKEG tutarı ile borç veren 306 istisnası arasındaki tutarlılığı belgeleyin.\n  g) Beyanname ek tablosunun doldurulduğunu teyit edin (GİB Sirküler 2024/39).\n  h) DENETÇİ NOTLARI kontrol listesindeki her K maddesi için UYGUN / EKSİK / RİSK sonucu verin.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

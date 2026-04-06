@@ -1,0 +1,1472 @@
+{
+  "file": "317_KVK5_1b_Yurtdisi_Istirak_Tam_Istisna_100.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G67",
+      "rows": [
+        [
+          "317 – YURT DIŞI İŞTİRAK KÂR PAYI | %100 TAM İSTİSNA | KVK Md.5/1-b | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-b | 4 Şartın TAMAMININ Sağlanması | %100 Tam İstisna | Zarar Olsa Dahi İndirilecek — Beyanname Satır 317 | YİAKV'den DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "4 KÜMÜLATİF ŞART: ① Sermaye payı ≥%10 (kesintisiz) | ② 1 Yıl Kesintisiz Elde Tutma | ③ Yurt Dışı Kurumun Vergi Yükü ≥%15 (Finans/Sigortacılık/MK→%25) | ④ Kazancın TAMAMININ KV Beyanname Süresine Kadar Transferi. BİR ŞAR T EKSİK → 317 KULLANILAMAZ (387 değerlendirin).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "317 vs 387: 317 şartları sağlanıyorsa 317 tercih edilmelidir (%100 tam istisna avantajı). 387 (%50 kısmi) yalnızca 317 şartlarından biri sağlanamadığında devreye girer.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Yurt dışı iştirak AŞ/Ltd niteliğinde ve kanuni + iş merkezi yurt dışında mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Kazancı elde eden yurt dışı kurumun AŞ veya Ltd hukuki yapısında olması zorunludur. Kanuni VE iş merkezinin IKISININ de Türkiye dışında bulunması gerekir. Apostilli tescil belgesi zorunludur.",
+          null
+        ],
+        [
+          "A0.2  ★ Sermaye payı elde etme tarihi itibarıyla ≥%10 mi? Kesintisiz mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Kazancın elde edildiği tarih itibarıyla ≥%10 olmalıdır. Kesintisiz 1 yılın herhangi bir anında %10'un altına düşülmüşse şart sağlanmamış. Ortaklık belgesi + tarihe göre pay oranı teyidi zorunludur.",
+          null
+        ],
+        [
+          "A0.3  ★ 1 Yıl Kesintisiz Elde Tutma şartı sağlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Kazancın elde edildiği tarihten geriye doğru kesintisiz 1 yıl elde tutulmuş olmalı. 1 günlük bile kesinti → Şart sağlanmamış. Devir/bölünmede kaynak kurum süresi hesaba katılabilir.",
+          null
+        ],
+        [
+          "A0.4  ★ Vergi Yükü ≥%15 mi? (Finans/Sigortacılık/MK yatırımında ≥%25)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Yurt dışı iştirakin fiilen ödediği toplam gelir/kurumlar vergisi / Ticari kâr. Düşük vergili ülkelerde bu şart sağlanamayabilir → 387 değerlendirin. Finans/sigortacılık/MK yatırım ortaklığı faaliyeti: Eşik %25'e yükselir.",
+          null
+        ],
+        [
+          "A0.5  ★ Kazancın TAMAMININ KV Beyanname Süresine Kadar Transferi yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Kazancın TAMAMININ transferi zorunludur. Kısmi transfer → İstisna hakkı TAMAMEN kaybolur. Normal hesap dönemi: 30 Nisan. Geçici vergi: İlgili dönem beyanname tarihi.",
+          null
+        ],
+        [
+          "A0.6  İstisna hesabı BRÜT tutar üzerinden mi? Kur tarihi doğru mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "317 istisnası = Brüt kâr payı (TL) × %100. Stopaj sonrası net tutar değil — brüt tutar esas alınır. Kur: Kâr payının elde edildiği tarihteki TCMB döviz alış kuru.",
+          null
+        ],
+        [
+          "A0.7  ★ YİAKV matrahından 317 DÜŞÜLMEYECEĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: KVK 5/1-b (317) istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ. Yurt dışı kaynaklı gelir olduğu için YİAKV hesabından çıkarılamaz. YİAKV çalışma kâğıdında 317 tutarı matrahtan çıkarılmamalıdır.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu (A0.1-A0.8 tümü)",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2-A0.5 (4 şartin tümü) ve A0.7 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER VE İŞLEM KİMLİĞİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "İstisna uygulayan kurumun tam adı",
+          null
+        ],
+        [
+          "Vergi Kimlik Numarası",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Yurt Dışı İştirakin Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Kanuni + iş merkezi yurt dışı AŞ/Ltd",
+          null
+        ],
+        [
+          "İştirakin Bulunduğu Ülke",
+          null,
+          null,
+          null,
+          null,
+          "Ülke adı — ÇVÖA varlığı ve vergi yükü için",
+          null
+        ],
+        [
+          "Kâr Payı Elde Etme Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — 4 şartın tümü bu tarihe göre",
+          null
+        ],
+        [
+          "Transfer Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — 30 Nisan veya geçici vergi dönemine kadar",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "Genel KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Finans sektörü: %30",
+          null
+        ],
+        [
+          "B. 317 TAM İSTİSNA 4 ŞART KONTROLÜ — Hepsinin EVET Olması Zorunlu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "4 şarttan BİRİ sağlanamaması → 317 kullanilamaz. Bu durumda ≥%50 sermaye payı varsa 387 (%50 kısmi istisna) değerlendirin. Formüllü sonuç satırı tüm şartları otomatik kontrol eder.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Şart",
+          null,
+          "Durum",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "B.1  ★ ŞART 1 — Sermaye Payı ≥%10 (Kesintisiz — Kazancın Elde Edildiği Tarihte)",
+          null,
+          null,
+          null,
+          null,
+          "Kazancın elde edildiği tarih itibarıyla kesintisiz ≥%10 olmalıdır. %9,9 → Yetersiz. Ortaklık belgesi + tarihe göre hisse oranı zorunludur.",
+          null
+        ],
+        [
+          "B.2  ★ ŞART 2 — 1 Yıl Kesintisiz Elde Tutma Şartı",
+          null,
+          null,
+          "EVET",
+          null,
+          "Kazancın elde edildiği tarihten geriye 1 yıl boyunca KESİNTİSİZ elde tutulmalı. Devir/bölünmede kaynak kurum süresi geçebilir. D bölümündeki tarih hesabı ile teyit edin.",
+          null
+        ],
+        [
+          "B.3  ★ ŞART 3 — Vergi Yükü ≥%15 (Finans/Sigortacılık/MK: ≥%25)",
+          null,
+          null,
+          "EVET",
+          null,
+          "C bölümündeki vergi yükü hesabından otomatik değerlendirin. Düşük vergili ülkelerde bu şart sağlanamayabilir → 387 değerlendirin.",
+          null
+        ],
+        [
+          "B.4  ★ ŞART 4 — Kazancın TAMAMININ KV Beyanname Süresine Kadar Transferi",
+          null,
+          null,
+          "EVET",
+          null,
+          "Kısmi transfer → Tüm istisna hakkı kaybolur (23 No.lu KV GT). Normal hesap dönemi: 30 Nisan. Geçici vergi: İlgili dönem beyanname tarihi. Banka SWIFT + dekont ile TAMAMİNIN transferi belgelenmelidir.",
+          null
+        ],
+        [
+          "B.5  317 SONUÇ — 4 Şartın TAMAMININ Durumu",
+          null,
+          null,
+          "HAYIR — Şart Eksik (387 değerlendirin)",
+          null,
+          "4 şartın tümü EVET ise 317 uygulanabilir. Eksik şart → 387 değerlendirin.",
+          null
+        ],
+        [
+          "C. VERGİ YÜKÜ HESABI — Şart 3 (≥%15 veya Finans/Sigorta/MK → ≥%25)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "VERGİ YÜKÜ = Yurt Dışı İştirakin Fiilen Ödediği Toplam Gelir/Kurumlar Vergisi / Ticari Kâr (Vergi Öncesi Kâr) × 100. Bu hesap için iştirakten mali tablo temin edilmeli. Eşik: Genel → ≥%15 | Finansman/Sigortacılık/MK Yatırım Ortaklığı → ≥%25.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Yurt Dışı İştirakin Faaliyet Türü",
+          null,
+          "Genel",
+          "Faaliyet türü seçin — vergi yükü eşiğini belirler",
+          null,
+          "Faaliyet türüne göre vergi yükü eşiği belirlenir.",
+          null
+        ],
+        [
+          "C.2  Vergi Yükü Eşiği (%)",
+          null,
+          "15",
+          "Otomatik: Genel → %15 | Finans/Sigortacılık/MK → %25",
+          null,
+          "C.1 seçimine göre otomatik",
+          null
+        ],
+        [
+          "C.3  Yurt Dışı İştirakin Ticari Kârı (Vergi Öncesi) — Yerel Para Birimi",
+          null,
+          null,
+          "Mali tablolardan — Vergi ve istisnalar öncesi brüt kâr",
+          null,
+          "İştirakin yıllık mali tablosu",
+          null
+        ],
+        [
+          "C.4  Fiilen Ödenen Toplam Gelir/Kurumlar Vergisi — Yerel Para Birimi",
+          null,
+          null,
+          "Peşin vergiler dahil fiilen ödenen toplam vergi",
+          null,
+          "İştirakin vergi beyannamesi / mali tablosu",
+          null
+        ],
+        [
+          "C.5  VERGİ YÜKÜ % = C.4 / C.3 × 100",
+          null,
+          "#VALUE!",
+          "Hesaplanan vergi yükü oranı",
+          null,
+          "C.2 ile karşılaştırın",
+          null
+        ],
+        [
+          "C.6  Vergi Yükü Şartı Sağlandı mı? (C.5 ≥ C.2)",
+          null,
+          "#VALUE!",
+          "Otomatik değerlendirme",
+          null,
+          "HAYIR ise 387 kısmi istisna değerlendirin",
+          null
+        ],
+        [
+          "D. ELDE TUTMA SÜRESİ — Şart 2 (1 Yıl Kesintisiz)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazancın elde edildiği tarihten geriye doğru kesintisiz 1 yıl (365 gün) elde tutulmuş olmalıdır. Devir/bölünme yoluyla edinilen hisselerde kaynak kurumdaki süre hesaba katılabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  İktisap Tarihi (Aktifte Kayıtlı Olduğu Tarih)",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Hisse aktife alındığı tarih. Devir/bölünmede kaynak kurum tarihi geçebilir.",
+          null
+        ],
+        [
+          "D.2  Kâr Payı Elde Etme Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Kazancın elde edildiği tarih. 1 yıl bu tarihten geriye sayılır.",
+          null
+        ],
+        [
+          "D.3  Elde Tutma Süresi (Gün)",
+          null,
+          "#VALUE!",
+          "Otomatik: Elde Etme − İktisap",
+          null,
+          "365 gün veya üzeri olmalıdır.",
+          null
+        ],
+        [
+          "D.4  1 Yıl Elde Tutma Şartı",
+          null,
+          "#VALUE!",
+          "Otomatik değerlendirme",
+          null,
+          "HAYIR ise 317 şartı sağlanmamış → 387 değerlendirin.",
+          null
+        ],
+        [
+          "E. İSTİSNA TUTARI HESABI (Brüt Kâr Payı × %100)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "317 istisnası = BRÜT kâr payı (TL) × %100 = Kazancın TAMAMI istisnadır. Stopaj/withholding tax sonrası net tutar değil — brüt tutar esas alınır. KUR: Kâr payının fiilen elde edildiği tarihteki TCMB döviz alış kuru.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  Brüt Kâr Payı (Yabancı Para Birimi)",
+          null,
+          null,
+          "Dağıtım kararındaki stopaj öncesi brüt tutar",
+          null,
+          "Yurt dışı iştirak kâr dağıtım kararından",
+          null
+        ],
+        [
+          "E.2  Elde Etme Tarihi TCMB Alış Kuru",
+          null,
+          null,
+          "Kâr payının elde edildiği tarihteki TCMB döviz alış kuru",
+          null,
+          "TCMB.gov.tr kur arşivi — transfer tarihi değil!",
+          null
+        ],
+        [
+          "E.3  Brüt Kâr Payı (TL) = E.1 × E.2",
+          null,
+          "#VALUE!",
+          "Elde etme tarihi kuru ile TL karşılığı",
+          null,
+          "İstisna bu tutar üzerinden hesaplanır",
+          null
+        ],
+        [
+          "E.4  Yurt Dışında Ödenen Stopaj / Withholding Tax (TL)",
+          null,
+          null,
+          "Yurt dışında kesilen vergi — TL karşılığı",
+          null,
+          "ÇVÖA varsa anlaşma stopaj oranı geçerli",
+          null
+        ],
+        [
+          "E.5  Net Transfer Tutarı (TL) = E.3 − E.4",
+          null,
+          "#VALUE!",
+          "Türkiye'ye gelen net tutar (kontrol için)",
+          null,
+          "317'de %100 istisna olduğundan KVK 33 mahsup yoktur",
+          null
+        ],
+        [
+          "E.6  317 İSTİSNA TUTARI (%100) = E.3 × 1,00",
+          null,
+          "#VALUE!",
+          null,
+          null,
+          "Zarar olsa dahi indirilecek",
+          null
+        ],
+        [
+          "F. BEYANNAME 317 — İSTİSNA TUTARI SONUCU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 317 (Zarar Olsa Dahi İndirilecek)",
+          null,
+          null,
+          null,
+          null,
+          "#VALUE!",
+          "E.6 brüt × %100 = Kazancın Tamamı"
+        ],
+        [
+          "KRİTİK UYARILAR: (1) YİAKV: KVK 5/1-b (317) istisnası YİAKV matrahından DÜŞÜLEMEZ. (2) KVK 33 MAHSUP: 317'de tümü istisna olduğundan yurt dışı vergi mahsubu YAPILAMAZ. (3) KISMİ TRANSFER: Tek kuruş eksik transferde istisna TAMAMEN kaybolur. (4) 4 ŞART KÜMÜLATİF: Biri eksikse 317 kullanilamaz → 387 değerlendirin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G47",
+      "rows": [
+        [
+          "317 – YD. İŞTİRAK KÂR PAYI %100 TAM İSTİSNA | HESAPLAMALAR VE DENETİM KONTROL",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-b | 4 Şart Kümülatif | %100 Tam İstisna | Vergi Yükü ≥%15/25 | 1 Yıl Elde Tutma | Tam Transfer | YİAKV'den Düşülemez",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "A0.9 OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Şart 1 — Sermaye Payı (B.31)",
+          null,
+          null,
+          "0",
+          "≥%10 zorunlu",
+          null,
+          null
+        ],
+        [
+          "Şart 2 — Elde Tutma (D.4)",
+          null,
+          null,
+          "#VALUE!",
+          "1 Yıl Kesintisiz",
+          null,
+          null
+        ],
+        [
+          "Şart 3 — Vergi Yükü (C.6)",
+          null,
+          null,
+          "#VALUE!",
+          "≥%15 veya %25",
+          null,
+          null
+        ],
+        [
+          "Şart 4 — Transfer (B.34)",
+          null,
+          null,
+          "EVET",
+          "TAMAMININ transferi",
+          null,
+          null
+        ],
+        [
+          "317 SONUÇ — 4 Şart (B.5)",
+          null,
+          null,
+          "HAYIR — Şart Eksik (387 değerlendirin)",
+          "4 şart sağlandıysa EVET",
+          null,
+          null
+        ],
+        [
+          "Brüt Kâr Payı TL (E.3)",
+          null,
+          null,
+          "#VALUE!",
+          "Elde etme kuru",
+          null,
+          null
+        ],
+        [
+          "317 İSTİSNA TUTARI (E.6)",
+          null,
+          null,
+          "#VALUE!",
+          null,
+          null,
+          null
+        ],
+        [
+          "Vergi Yükü % (C.5)",
+          null,
+          null,
+          "#VALUE!",
+          "Hesaplanan oran",
+          null,
+          null
+        ],
+        [
+          "Vergi Yükü Eşiği % (C.2)",
+          null,
+          null,
+          "15",
+          "Faaliyet türüne göre 15 veya 25",
+          null,
+          null
+        ],
+        [
+          "B. 317 (TAM) vs 387 (KISMİ) KARŞILAŞTIRMA TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "317 — Tam İstisna",
+          null,
+          "387 — Kısmi İstisna",
+          null
+        ],
+        [
+          "Sermaye Payı Eşiği",
+          null,
+          "≥%10",
+          null,
+          "≥%50 — Daha Yüksek",
+          null,
+          null
+        ],
+        [
+          "Elde Tutma Süresi",
+          null,
+          "1 Yıl Kesintisiz ZORUNLU",
+          null,
+          "YOK",
+          null,
+          null
+        ],
+        [
+          "Vergi Yükü Şartı",
+          null,
+          "≥%15 (Finans: %25) ZORUNLU",
+          null,
+          "YOK",
+          null,
+          null
+        ],
+        [
+          "Transfer Şartı",
+          null,
+          "TAMAMININ Transferi",
+          null,
+          "TAMAMININ Transferi",
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100 TAM İSTİSNA",
+          null,
+          "%50 KISMİ İSTİSNA",
+          null,
+          null
+        ],
+        [
+          "KVK 33 Mahsup",
+          null,
+          "Tümü istisna — Mahsup YAPILAMAZ",
+          null,
+          "Vergiye tabi %50 için mahsup var",
+          null,
+          null
+        ],
+        [
+          "YİAKV Etkisi",
+          null,
+          "DÜŞÜLEMEZ",
+          null,
+          "DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "Beyanname Satırı",
+          null,
+          "317",
+          null,
+          "387",
+          null,
+          null
+        ],
+        [
+          "Hangisi Avantajlı?",
+          null,
+          "317 DAHA AVANTAJLI — Önce bunu dene",
+          null,
+          "317 mümkün değilse 387",
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama ve Kanıt",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "Yurt dışı iştirak AŞ/Ltd mi? Kanuni + iş merkezi yurt dışında mı?",
+          null,
+          "Her iki merkez de Türkiye dışında olmalı. Apostilli tescil belgesi zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Sermaye payı kazancın elde edildiği tarihte ≥%10 mi? Kesintisiz mi?",
+          null,
+          "%9,9 → Yetersiz. Tarihe göre belge + kesintisizlik teyidi zorunlu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ 1 Yıl Kesintisiz Elde Tutma şartı sağlandı mı?",
+          null,
+          "D.3 ≥365 gün. D.4 EVET vermelidir. Devir/bölünmede kaynak kurum süresi hesaba katılabilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ Vergi yükü ≥%15 mi? (Finans/Sigortacılık/MK → ≥%25)",
+          null,
+          "C.5 ≥ C.2 olmalıdır. C.6 EVET vermelidir. İştirakin mali tablosu ve vergi beyannamesi ile teyit.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ Kazancın TAMAMI transfer edildi mi? Kısmi transfer var mı?",
+          null,
+          "Kısmi transfer → İstisna TAMAMEN kaybolur. SWIFT + dekont ile TAMAMININ transferi belgelenmeli. 30 Nisan öncesi mi?",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "İstisna BRÜT tutar üzerinden mi? Kur tarihi doğru mu?",
+          null,
+          "Brüt × %100. Net tutar değil. TCMB kuru: Elde etme tarihi.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "★ YİAKV matrahından 317 DÜŞÜLMEDI mi?",
+          null,
+          "317 YİAKV'den DÜŞÜLEMEZ. YİAKV çalışma kâğıdında teyit.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "317'de KVK 33 mahsup yapılmadı mı? (Yapılmamalı)",
+          null,
+          "%100 tam istisna → Yurt dışı verginin tamamı istisna kapsamında → Mahsup YAPILAMAZ. 387'de kısmen mümkündü — 317'de değil.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "Elde tutma süresinde kesinti var mı? (Satış-Geri Alım, Bölünme vb.)",
+          null,
+          "Kesinti anı varsa şart sağlanmamış olabilir. Devir/bölünmede kaynak kurum süresi analizi yapılmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "Faaliyet türü doğru belirlendi mi? Finans/Sigortacılık/MK eşiği uygulandı mı?",
+          null,
+          "Finans/Sigortacılık/MK yatırım ortaklığı → Vergi yükü eşiği %25. Yanlış eşik uygulaması → Hatalı değerlendirme.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "TF Formu (Ek:2) yurt dışı iştirak bölümü dolduruldu mu?",
+          null,
+          "317 uygulanmış olsa da Ek:2 doldurulmalıdır. Eksiklik → Beyanname hatası.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K12",
+          "ÇVÖA — Stopaj oranı ve vergi yükü hesabına etkisi değerlendirildi mi?",
+          null,
+          "ÇVÖA stopaj oranını sınırlayabilir. Vergi yükü hesabında ÇVÖA etkisi ve fiilen ödenen vergi tutarı doğrulanmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "D. BEYANNAME SATIR EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "317",
+          null,
+          "#VALUE!",
+          "KVK 5/1-b %100 Tam İstisna | 4 Şart | Zarar Olsa Dahi İndirilecek",
+          null,
+          null,
+          null
+        ],
+        [
+          "387",
+          null,
+          "Kısmi İstisna (%50)",
+          "KVK 5/1-b %50 Kısmi — 317 şartlarından biri sağlanamadıysa. 317 ile aynı anda kullanılamaz.",
+          null,
+          null,
+          null
+        ],
+        [
+          "297-307",
+          null,
+          "YD. İştirak — HAYIR",
+          "297-307 satırları KVK 5/1-a kapsamı (YURT İÇİ iştirak). 317 yurt dışı — karıştırılmamalı.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G24",
+      "rows": [
+        [
+          "317 – YD. İŞTİRAK KÂR PAYI %100 TAM İSTİSNA | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-b | %100 Tam İstisna | 4 Şart | Brüt Kâr Payı | Elde Etme Tarihi Kuru",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. 317 muhasebe kaydı 387 ile aynıdır. Fark yalnızca beyannamede: 317'de %100 istisna, KVK 33 mahsup YAPILAMAZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — KÂR PAYI TAHAKKUK (ELDE ETME TARİHİ)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Elde etme tarihi TCMB alış kuru ile TL'ye çevrilir. Brüt tutar kaydedilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Elde etme]",
+          "241 Bağlı Ortaklıklar / 122 Alacaklar",
+          "Brüt kâr payı alacağı — Elde etme tarihi TCMB alış kuru × Brüt döviz tutarı",
+          "[Brüt TL]",
+          "—",
+          "TCMB kur + dağıtım kararı"
+        ],
+        [
+          "Kr",
+          "[Elde etme]",
+          "642 İştirak Kazançları",
+          "Brüt kâr payı geliri — 317 istisnasının tamamı bu hesaba yansır",
+          "—",
+          "[Brüt TL]",
+          "KV 317. Satır"
+        ],
+        [
+          "NOT: Muhasebede BRÜT tutar kaydedilir. 642 hesabındaki tutarın %100'ü beyanname 317'de istisna. KVK 33 mahsubu YAPILAMAZ — tüm kazanç istisna kapsamındadır. 387'de %50 mahsup mümkündü; 317'de değil.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — STOPAJ / WITHHOLDING TAX",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Transfer]",
+          "193 Peşin Ödenen Vergiler / 689 Diğer Gider",
+          "Yurt dışında kesilen withholding tax — 317'de KVK 33 mahsup YAPILAMAZ (tüm kazanç istisna → mahsup yok)",
+          "[Stopaj TL]",
+          "—",
+          "Vergi makbuzu / ÇVÖA"
+        ],
+        [
+          "Kr",
+          "[Transfer]",
+          "241 / 122 Alacaklar",
+          "Alacak kapatma",
+          "—",
+          "[Stopaj TL]",
+          null
+        ],
+        [
+          "ÖNEMLI — 317 vs 387 FARK: 317'de kazancın %100'ü istisna → Yurt dışı stopajın tamamı istisna kapsamı → KVK 33 mahsup YAPILAMAZ. 387'de %50 vergiye tabi kalırdı → Stopajın %50'si mahsup edilebilirdi. Bu fark 317'nin dezavantajı değil; zaten %100 istisna uygulanmaktadır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — NET TRANSFER TAHSİLATI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Transfer]",
+          "102 Bankalar",
+          "Net transfer tahsilatı (Brüt − Stopaj). Kur farkı varsa 646/656.",
+          "[Net TL]",
+          "—",
+          "Banka SWIFT + dekont"
+        ],
+        [
+          "Kr",
+          "[Transfer]",
+          "241 / 122 Alacaklar",
+          "Alacak kapatma",
+          "—",
+          "[Net TL]",
+          null
+        ],
+        [
+          "KAYIT 4 — BEYANNAME 317 SATIRI (%100 TAM İSTİSNA)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME AKIŞI:\n\n1. Muhasebede 642 hesabına BRÜT kâr payı kaydedilir → Ticari kâra dahil olur.\n2. KV Beyannamesi: 642 tutarı ticari kârda, 317 satırında 'Zarar Olsa Dahi İndirilecek' bölümüne BRÜT tutarın tamamı yazılır.\n3. KVK 33 Mahsup: YAPILAMAZ — tüm kazanç istisna kapsamında.\n\n4 ŞART SONUÇ AKIŞI:\nB.5 'EVET' → C.6 'Sağlandı' → D.4 'Sağlandı' → Transfer belgesi → E.6 (Brüt × %100) → Beyanname 317. Satır\n\nKRİTİK: YİAKV matrahından 317 DÜŞÜLEMEZ. Muhasebede ayrı kayıt gerekmez — beyanname üzeri işlem.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D18",
+      "rows": [
+        [
+          "317 – YD. İŞTİRAK KÂR PAYI %100 TAM İSTİSNA | DENETÇİ NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-b | 4 Şart Kümülatif | %100 Tam İstisna | Vergi Yükü ≥%15/25 | 1 Yıl Elde Tutma | Tam Transfer | YİAKV Düşülemez",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK VE 4 ŞART ANALİZİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-b — 317 Tam İstisna Yasal Çerçevesi",
+          "KVK Md.5/1-b kapsamında yurt dışı iştirak kâr payı istisnası:\n\n317 TAM İSTİSNA (%100, Zarar Olsa Dahi): 4 ŞARTIN TAMAMININ sağlanması:\n① Kazancın elde edildiği tarihte kesintisiz ≥%10 sermaye payı\n② Kazancın elde edildiği tarihten geriye kesintisiz 1 yıl elde tutma\n③ Yurt dışı iştirakin vergi yükü ≥%15 (Finans/Sigortacılık/MK: ≥%25)\n④ Kazancın TAMAMININ KV beyanname süresine kadar Türkiye'ye transferi\n\nBir şart eksik → 317 kullanılamaz. 387 (%50 kısmi, ≥%50 + tam transfer) değerlendirin.",
+          "KVK Md.5/1-b | 23 No.lu KV GT"
+        ],
+        [
+          "N2",
+          "★ Vergi Yükü Hesabı — En Teknik Şart",
+          "VERGİ YÜKÜ = Fiilen Ödenen Toplam Gelir/Kurumlar Vergisi / Ticari Kâr × 100\n\nEŞIK:\nGenel → ≥%15\nFinansman, Sigortacılık, Menkul Kıymet Yatırım Ortaklığı → ≥%25\n\nHESAPTA DİKKAT:\n• Ticari kâr = Vergi ve istisnalar öncesi brüt kâr\n• Vergi = Fiilen ödenen (tahakkuk eden değil)\n• Birden fazla ülkede vergi ödenmişse kümülatif toplam\n• ÇVÖA etkisi: Stopaj oranını ÇVÖA sınırlıyorsa anlaşma oranı geçerli\n\nYMM notu: İştirakin yıllık mali tablosu ve vergi beyannamesi birincil kaynak.",
+          "KVK Md.5/1-b | 23 No.lu KV GT"
+        ],
+        [
+          "N3",
+          "1 Yıl Kesintisiz Elde Tutma — Uygulama Notları",
+          "Kazancın elde edildiği tarihten geriye KESINTISIZ 1 yıl elde tutma zorunludur.\n\nKESİNTİ SAYILAMAZ:\n• Devir veya bölünmede edinilen hisselerde kaynak kurumdaki süre sayılabilir (KVK 18-20)\n\nKESİNTİ SAYILIR:\n• Kısmen satış sonrası geri alım (Bazı görüşlere göre)\n• Pay bölünmesi/birleşmesinde dikkat\n\nYMM notu: D.3 (elde tutma gün sayısı) ≥365 ve D.4 EVET vermelidir. Kesintili dönemler ayrıca analiz edilmeli.",
+          "KVK Md.5/1-b | 23 No.lu KV GT"
+        ],
+        [
+          "N4",
+          "★ Kısmi Transfer Yasağı — Tam Transfer Zorunlu",
+          "Kazancın TAMAMININ transfer edilmesi zorunludur.\nKısmi transfer → İstisna hakkı TAMAMEN kaybolur (23 No.lu KV GT).\n\nZamanlama:\nNormal hesap dönemi → 30 Nisan'a kadar\nGeçici vergi dönemi → İlgili dönem beyanname tarihine kadar\n\nYMM notu: Banka SWIFT belgesi + transfer dekontu ile TAMAMININ transferi her zaman belgelenmeli.",
+          "23 No.lu KV GT | KVK Md.5/1-b"
+        ],
+        [
+          "BÖLÜM 2 — YMM TASDİK DEĞERLENDİRMESİ VE KRİTİK FARKLAR",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "★ YİAKV'den DÜŞÜLEMEZ — 317 ve 387 Ortak Kural",
+          "KVK 32/C YİAKV hesabında 317 istisnası matrahtan ÇIKARILMAZ.\nYurt dışı kaynaklı gelir olduğundan YİAKV hesabında indirilemez.\nBu kural 387 için de geçerlidir — her iki kod için aynı kuralı uygulayın.\n\nYMM notu: YİAKV çalışma kâğıdında 317 tutarı matrahtan çıkarılmadığı teyit edilmeli.",
+          "KVK Md.32/C | YİAKV Tebliğleri"
+        ],
+        [
+          "N6",
+          "KVK 33 Mahsup — 317'de Yapılamaz (387'den Fark)",
+          "317'de KVK 33 mahsup YAPILAMAZ — tüm kazanç istisna olduğundan yurt dışı vergi mahsup edilemez.\n\n387 (kısmi istisna) ile KRİTİK FARK:\n387'de vergiye tabi %50'ye tekabül eden vergi mahsup edilebiliyordu.\n317'de vergiye tabi kısım yok → Mahsup olanağı yok.\n\nYMM notu: 317 kullanıldığında beyannamede KVK 33 satırına bu iştirak için tutar yazılmamalıdır.",
+          "KVK Md.33 | KVK Md.5/1-b"
+        ],
+        [
+          "N7",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...4 şartın tamamı kazancın elde edildiği tarih itibarıyla doğrulanmıştır'\n'...vergi yükü hesabı iştirakin mali tablolarına dayandırılmıştır'\n'...kazancın tamamının transfer edildiği banka belgesiyle tevsik edilmiştir'\n\nKULLANMAYIN:\n'...istisna uygulanır' | '...4 şart sağlandı' (belge olmadan) | '...sorunsuz'\n\nKRİTİK RİSK: (1) Vergi yükü hesabı hatalı, (2) Kısmi transfer, (3) Kesintili elde tutma, (4) YİAKV'den düşüm.",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "N8",
+          "Vergi Yükü Tartışmalı Durumlar ve Özelge Alanları",
+          "VERGİ YÜKÜ HESABINDA TARTIŞMALI ALANLAR:\n\n① Vergi tatilinden yararlanan iştiraklerde: Vergi sıfır → Vergi yükü sıfır → Şart sağlanmaz\n② Karma faaliyetli iştiraklerde faaliyet türü belirlenmesi\n③ Holding yapısında konsolide vergi yükü mü yoksa münferit mi?\n④ Transfer fiyatlandırması düzeltmelerinin etkisi\n⑤ Vergi sığınakları / düşük vergili bölgeler (OECD Pillar Two etkisi izlenmeli)\n\nYMM notu: Tartışmalı durumlarda özelge alınması ve yazılı belgeleme şiddetle tavsiye edilir.",
+          "GİB Özelgeleri | OECD Pillar Two"
+        ],
+        [
+          "GÜNCEL GELİŞME — OECD Pillar Two (Küresel Asgari Vergi): 2024+ yıllarında yürürlüğe giren Pillar Two düzenlemeleri, bazı ülkelerde efektif vergi oranını %15'e yükseltebilir. Bu durum vergi yükü şartını sağlamakta zorlanan iştiraklerde olumlu etki yaratabilir. Ancak kendi ülke düzenlemeleri ayrıca izlenmelidir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F34",
+      "rows": [
+        [
+          "317 – YD. İŞTİRAK KÂR PAYI %100 TAM İSTİSNA | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-b | 4 Şart Kümülatif | %100 Tam İstisna | Vergi Yükü ≥%15/25 | 1 Yıl Elde Tutma | Tam Transfer | YİAKV Düşülemez | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Zorunlu belgeler (4 şartın her biri için). Kategori 2: Destekleyici. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER  (4 Şartın Her Biri İçin Ayrı Belge)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "İştirak Tescil + Yerleşiklik Belgesi (Yurt Dışı AŞ/Ltd)",
+          "Yurt dışı iştirak AŞ/Ltd niteliğinde ve kanuni + iş merkezinin her ikisinin de yurt dışında olduğu teyidi.\nApostilli ticaret sicil belgesi veya konsolosluk tasdikli tescil belgesi.\nYMM notu: Güncel tarihli belge tercih edilir.",
+          "Apostilli tescil belgesi / Konsolosluk tasdikli belge",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Sermaye Payı Belgesi ≥%10 (Kazancın Elde Edildiği Tarih İtibarıyla)",
+          "Kazancın elde edildiği tarihteki kesintisiz ≥%10 sermaye payını kanıtlayan belge.\nOrtaklık tescil belgesi + tarihe göre hisse kayıt defteri / pay defteri.\nYMM notu: Dönem içi pay değişikliği varsa tarihe göre belgeleme kritiktir.",
+          "Ortaklık tescil belgesi + Pay defteri / Hisse kayıt defteri",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Elde Tutma Süresi — İktisap Tarihi Belgesi (1 Yıl Şartı)",
+          "Hissenin aktife alındığı tarihi kanıtlayan belge.\nDevir/bölünmede kaynak kurum iktisap tarihi belgesi de gerekebilir.\nD.1 ve D.2'nin teyidiyle D.3 ≥365 gün sağlanmalıdır.\nYMM notu: 1 gün bile eksik → Şart sağlanmamış.",
+          "Hisse senedi / Transfer belgesi / Pay defteri / Devir tescil belgesi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Vergi Yükü Hesaplama Belgesi — İştirakin Mali Tablosu + Vergi Beyannamesi",
+          "Vergi Yükü = Fiilen Ödenen Toplam Vergi / Ticari Kâr × 100 hesabının dayanağı.\nİştirakin yıllık gelir/kurumlar vergisi beyannamesi veya yerel vergi otoritesi belgesi.\nYılsonu gelir tablosu ve bilanço (denetimli tercih edilir).\nYMM notu: Finans/sigortacılık/MK ise eşik %25 — faaliyet türü belgesi de gerekir.",
+          "İştirakin yıllık mali tablosu + Vergi beyannamesi / Vergi ödeme makbuzu",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Transfer Belgesi — TAMAMININ Transferi Kanıtı",
+          "Kazancın TAMAMININ KV beyanname süresine kadar Türkiye'ye transfer edildiğini gösterir.\nBanka SWIFT belgesi + Transfer dekontu — TL karşılığı ve tarih açık olmalı.\nYMM notu: Kısmi transfer varsa istisna TAMAMEN kaybolur — mutlaka teyit edin.",
+          "Banka SWIFT belgesi + Transfer dekontu",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Kâr Payı Dağıtım Kararı ve TCMB Kur Belgesi",
+          "Brüt kâr payı tutarı, para birimi ve dağıtım kararı tarihi.\nElde etme tarihi TCMB döviz alış kuru — TCMB.gov.tr kur arşivinden.\nYMM notu: Transfer tarihi kuru değil — elde etme tarihi kuru esas alınır.",
+          "GK/YK kararı + TCMB.gov.tr kur arşivi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "KV Beyannamesi Taslağı — 317. Satır",
+          "317. satırındaki tutarın VERİ GİRİŞİ F.1 ile birebir uyumlu olduğu teyit edilmeli.\n'Zarar Olsa Dahi İndirilecek' bölümünde 317 kodunda konumlandırıldığı kontrol edilmeli.\nBeyanname Ek:2 yurt dışı iştirak bölümünün doldurulduğu teyit edilmeli.",
+          "GİB e-Beyanname sistemi / İnternet Vergi Dairesi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — DESTEKLEYİCİ BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "ÇVÖA (Çifte Vergilendirmeyi Önleme Anlaşması)",
+          "Türkiye'nin ilgili ülkeyle ÇVÖA'sı varsa: Stopaj oranı ve vergi yükü analizi.\nÇVÖA stopaj oranı fiilen ödenen vergiyi etkileyebilir.\n317'de mahsup yoktur ancak vergi yükü hesabında ÇVÖA etkisi değerlendirilmeli.",
+          "Hazine ve Maliye Bakanlığı ÇVÖA listesi / ÇVÖA metni",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Devir/Bölünme Belgesi (Elde Tutma Süresinin Kaynak Kuruma Aktarımı)",
+          "KVK 18-20 kapsamında devir/bölünmede kaynak kurumdaki süre sayılabiliyorsa:\nDevir/bölünme tescil belgesi + Kaynak kurumun iktisap tarihi belgesi.\nYMM notu: Süre aktarımının hukuki dayanağı yazılı olarak belgelenmeli.",
+          "Devir/bölünme tescil belgesi / Birleşme belgesi",
+          null
+        ],
+        [
+          null,
+          "10",
+          "YİAKV Matrah Hesaplama Tablosu (317 Dahil Edilmemeli)",
+          "KVK 5/1-b (317) istisnası YİAKV matrahından DÜŞÜLEMEZ.\nYİAKV çalışma kâğıdında 317 tutarının matrahtan düşülmediği teyit edilmeli.\n387 için de aynı kural geçerlidir.",
+          "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri",
+          null
+        ],
+        [
+          null,
+          "11",
+          "Kur Farkı Hesabı (Elde Etme — Transfer Tarihleri Arası)",
+          "Elde etme kuru ile transfer kuru arasında fark varsa kur farkı kazancı/zararı.\n241 hesabına elde etme kurunda kayıt. Transfer tahsilatında kur farkı 646/656.",
+          "TCMB kur arşivi / Muhasebe hesap kartları",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (★ Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "Yurt dışı iştirak AŞ/Ltd mi? Kanuni + iş merkezleri yurt dışında mı?",
+          "Her iki merkez yurt dışında. Apostilli tescil belgesi kontrolü.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Sermaye payı kazancın elde edildiği tarihte ≥%10 mi? Kesintisiz mi?",
+          "≥%10 ve kesintisiz. Ortaklık belgesi + tarihe göre teyit. %9,9 → Yetersiz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 1 Yıl Kesintisiz Elde Tutma sağlandı mı? (D.3 ≥365, D.4 EVET)",
+          "D.4 EVET vermelidir. Kesintili dönem varsa analiz. Devir/bölünmede kaynak kurum süresi dahil mi kontrol et.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ Vergi Yükü ≥%15 mi? (Finans/Sigortacılık/MK → ≥%25) — C.6 EVET mi?",
+          "C.5 ≥ C.2 ve C.6 EVET. İştirakin mali tablosu + vergi beyannamesi ile teyit. Faaliyet türü doğru sınıflandırıldı mı?",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "★ Kazancın TAMAMI transfer edildi mi? Kısmi transfer var mı?",
+          "Kısmi transfer → İstisna TAMAMEN kaybolur. SWIFT + dekont ile teyit. 30 Nisan öncesi mi?",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "İstisna BRÜT tutar üzerinden mi? Elde etme tarihi kuru kullanıldı mı?",
+          "Brüt × %100. Transfer tarihi kuru değil — elde etme tarihi TCMB alış kuru.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★ YİAKV matrahından 317 DÜŞÜLMEDI mi?",
+          "317 YİAKV'den DÜŞÜLEMEZ. YİAKV çalışma kâğıdında teyit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "317'de KVK 33 mahsup yapılmadı mı? (Yapılmamalı)",
+          "%100 istisna → Tüm kazanç istisna → KVK 33 mahsup YAPILAMAZ. Beyanname KVK 33 satırında bu iştirak için tutar olmamalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname Ek:2 yurt dışı iştirak bölümü dolduruldu mu?",
+          "317 uygulanmış olsa da Ek:2 doldurulmalıdır. Eksiklik → Beyanname hatası.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. 4 şartten biri eksik → 317 kullanılamaz (387 değerlendirin). Vergi yükü en teknik ve riskli şarttır — mali tablo + beyanname belgesi zorunludur. Kısmi transfer → İstisna TAMAMEN kaybolur. YİAKV'den DÜŞÜLEMEZ. KVK 33 mahsup YAPILAMAZ. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

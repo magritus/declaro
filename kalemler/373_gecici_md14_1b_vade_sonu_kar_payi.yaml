@@ -26,15 +26,61 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "370/372 kapsamındaki KKM hesabı dönem içinde vadeye ulaşarak kâr payı/faiz tahsil edildi mi?"
   info_modal: |
-    KVK Geçici Md.14/1-b kapsamında, 370 (dönüşüm kazancı) kapsamındaki KKM hesabı
-    vadeye ulaştığında bankadan fiilen alınan kâr payı ve faiz kurumlar vergisinden istisnadır.
+    ## Genel Çerçeve
 
-    **KRİTİK — 372-373 Mükerrerlik:**
-    Yılı aşan vadeli hesaplarda: Net 373 = Vade Toplam − Önceki Yıl 372 Tahakkuku
-    Bu kural uygulanmazsa mükerrer istisna → tarhiyat riski.
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    KKM hesabı süresince birden fazla türde istisna kazancı oluşabilir: dönüşüm anındaki kur
+    farkı (370), dönemsel bankadan alınan tazminat (371), dönem sonu tahakkuk (372) ve vadeye
+    ulaşıldığında fiilen tahsil edilen faiz/kâr payı (373). Beyanname 373, bu zincirin son
+    halkasını oluşturur.
 
-    **KRİTİK — YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ (E.7).
-    370+371+372+373 tamamı E.7 DÜŞÜLEMEZ listesindedir.
+    ## Bu Satırın Kapsamı
+
+    Beyanname **373**, 370 kapsamındaki KKM hesabının vadeye ulaşmasıyla birlikte bankadan
+    fiilen tahsil edilen kâr payı ve faiz istisnasını kapsar. 372 ile fark nakit/tahakkuk
+    ayrımından kaynaklanır: 372 hesap henüz açıkken dönem sonunda yapılan tahakkumdur; 373 ise
+    hesabın vade sonunda kapatılmasıyla birlikte fiilen tahsil edilen tutardır. Yılı aşan vadeli
+    hesaplarda hem 372 hem 373 oluşabilir; bu durumda **mükerrerlik kuralı** kritik hale gelir:
+    Net 373 = Vade Sonu Toplam − Önceki Yıl 372 Tahakkuku. Bu hesap yapılmazsa aynı gelir için
+    iki kez istisna uygulanmış olur ve tarhiyat riski doğar.
+
+    ## Temel Koşullar
+
+    - KKM hesabının dönem içinde (01.01–31.12) vadeye ulaşmış olması şarttır
+    - Hesap 31/12/2021 bilanço kaynaklı dönüşümden açılmış olmalıdır
+    - Önceki yılda 372 tahakkuku yapılmışsa Net 373 = Vade Toplam − Önceki 372 formülü
+      zorunlu olarak uygulanır
+    - Banka vade bildirimi toplam kâr payı/faiz tutarını belgelemeli; 372 mahsup tutarı ayrıca
+      hesaplanmalı ve çalışma kâğıdında gösterilmelidir
+
+    ## Önemli Uyarılar
+
+    - **Mükerrerlik kuralı hayatidir:** Yılı aşan vadeli hesaplar için önceki yıl 372 mahsubu
+      yapılmadan 373 uygulamak en sık yapılan ve en ağır sonuçlar doğuran hatadır
+    - **Çapraz kontrol formülü:** 372 + Net 373 = Toplam kâr payı/faiz (banka bildirimi). Bu
+      eşitlik sağlanmıyorsa hesaplamada hata vardır
+    - **Muhasebe senaryoları:** Önceki yıl 372 yoksa (Senaryo A) kayıt 102 Dr / 642 Kr şeklinde;
+      varsa (Senaryo B) kayıt 102 Dr / 181 Kr + 642 Kr şeklinde yapılır
+    - **372 ve 373 aynı dönemde olamaz:** Aynı hesap için dönem sonunda hem 372 (tahakkuk) hem
+      373 (tahsilat) uygulanamaz; hesap ya hâlâ açıktır (372) ya da vadeye ulaşmıştır (373)
+    - **YMM tasdik eşiği:** Net 373 tutarı ≥ 500.000 TL ise YMM tasdik raporu zorunludur
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    370+371+372+373 tamamı E.7 DÜŞÜLEMEZ listesindedir. YİAKV çalışma kâğıdında dört satır da
+    ayrıca kontrol edilmelidir. 373'ü diğerlerinden bağımsız bir istisna olarak ele alıp
+    yalnızca 373'ü YİAKV matrahından çıkarmak da tarhiyat riski taşır.
+
+    ## Pratik Notlar
+
+    - **Banka vade bildirimi kritik:** Vade tarihi, toplam kâr payı/faiz tutarı ve hesap
+      detaylarını içeren resmi banka bildirimi tasdik dosyasının temel belgesidir
+    - **KKM zincirinin tamamlanması:** Aynı KKM hesabına ilişkin 370, 371, 372 ve 373
+      çalışma kâğıtları bütünlük içinde hazırlanmalı; hesap bilgileri (açılış tarihi,
+      referans kur, kaynak bakiye) tüm dosyalarda tutarlı olmalıdır
+    - **Vade tarihi dönem sınırı:** Vade tarihi 31 Aralık'ı geçiyorsa 373 o dönemde uygulanamaz;
+      vade tarihinin içinde olduğu hesap döneminde gösterilir
   kapi_sorulari:
     - id: vade_geldi_mi
       soru: "Dönem içinde (01.01–31.12) KKM hesabı vadeye ulaştı mı?"

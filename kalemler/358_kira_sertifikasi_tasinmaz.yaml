@@ -24,12 +24,66 @@ ana_kategori: varlik_satis_istisnalari
 wizard_agaci:
   tetikleyici_soru: "Bir taşınmazı (arsa, bina, fabrika) münhasıran kira sertifikası ihracını mümkün kılmak amacıyla SPK lisanslı Varlık Kiralama Şirketine (VKŞ) tapu devrediyle sattınız mı?"
   info_modal: |
-    KVK 5/1-k kapsamında, kurumların taşınmazlarını kira sertifikası ihracını mümkün kılmak
-    amacıyla SPK lisanslı VKŞ'ye tapu devriyle satmalarından doğan kazançlar %100 istisnadır.
-    358, 355 (5/1-j taşınmaz) ile sıkça karıştırılan en kritik dosyadır:
-    - 355 (5/1-j): Alıcı BDDK lisanslı FK/banka, geri devir ZORUNLU
-    - 358 (5/1-k): Alıcı SPK lisanslı VKŞ, geri devir OPSİYONEL
-    TAPU DEVRİ her iki bent için de zorunludur.
+    ## Genel Çerçeve
+
+    **KVK Madde 5/1-k** kapsamında, kurumların **taşınmazlarını** (arsa, arazi, bina, fabrika,
+    depo) kira sertifikası ihracını mümkün kılmak amacıyla **SPK lisanslı Varlık Kiralama
+    Şirketine (VKŞ) tapu devriyle** satmalarından doğan kazançlar **%100 istisnadır.** 358,
+    setimizin en çok karışıklığa yol açan dosyasıdır; 355 (5/1-j — BDDK FK/banka — geri devir
+    ZORUNLU) ile 358 (5/1-k — SPK VKŞ — geri devir OPSİYONEL) arasındaki ayrım kritiktir;
+    **her iki bent için de tapu devri zorunludur** ancak alıcı kurum türü ve geri devir şartı
+    farklılaşmaktadır.
+
+    ## Temel Koşullar
+
+    - Devredilen varlık **taşınmaz** (arsa, arazi, bina, fabrika, depo) olmalıdır; taşınır/hak
+      devirleri için 357 kodu kullanılmalıdır.
+    - Alıcı kurum **6362 s.K. kapsamında SPK lisanslı VKŞ** olmalıdır; BDDK lisanslı FK/banka
+      ise 355 veya 356 kodu kullanılmalıdır.
+    - Devrin amacı **münhasıran kira sertifikası ihracını mümkün kılmak** olmalıdır; bu amaç
+      SPK onaylı izahname/ihraç belgesiyle belgelenmelidir.
+    - **Tapunun VKŞ adına tescil edilmesi** zorunludur; taşınmaz satışı tapuya tescil olmaksızın
+      hukuken tamamlanmış sayılmaz ve tapu senedi zorunlu belgedir.
+    - Devir kazancının tamamı **tapu devir yılında 549 Özel Fonlar hesabına** alınmalıdır; sukuk
+      vadesine paralel kira/getiri payına orantılı amortizasyon yapılır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **355 ile sıkça karıştırılır — 4'lü karşılaştırma:** 355 (5/1-j): BDDK FK/Banka alıcı,
+      geri devir ZORUNLU; 356 (5/1-j VKŞ): SPK VKŞ alıcı, geri devir ZORUNLU; 358 (5/1-k):
+      SPK VKŞ alıcı, geri devir OPSİYONEL; 357 (5/1-k taşınır/hak): tapu yok. Yanlış satır
+      seçimi tarhiyat riskine yol açar.
+    - **Geri devir taahhütlüyse bent değişimi riski:** Sözleşmede tapu geri devri taahhüdü varsa
+      işlem 5/1-j (355/356) kapsamına girebilir; bent seçimi gerekçesi belgelenmeli, şüpheli
+      durumlarda GİB özelgesi alınmalıdır.
+    - **Tapu harcı:** Devir aşamasında VKŞ adına tescilden ve opsiyonel geri devirde kurum
+      adına tescilden olmak üzere tapu harcı iki kez doğabilir; önceden maliyet analizi yapılmalıdır.
+    - **KDV Md.17/4-r muafiyeti:** Taşınmaz devri ile ilgili KDV muafiyetinin 5/1-k işlemine
+      uygulanabilirliği ayrıca incelenmelidir.
+    - **Değerleme zorunluluğu:** SPK ihraç bağlamında SPK lisanslı gayrimenkul değerleme raporu
+      kritiktir; emsal değerden uzak satış KVK Md.13 ve SPK riskini beraberinde getirir.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-k (358) istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır.** Dönem
+    mevzuatı ve GİB açıklamaları takip edilerek her dönem ayrıca değerlendirilmelidir; özellikle
+    geri devir opsiyonelliği konusunda GİB özelgesi alınması hem YİAKV hem de bent seçimi
+    açısından koruyucu bir adımdır.
+
+    ## Pratik Notlar
+
+    - **Bent seçim kararı yazılı belgelenmelidir:** 5/1-j (355/356) mi 5/1-k (358) mi
+      sorusunun yanıtı; alıcı kurumun lisans türü (BDDK/SPK) ve geri devir şartının varlığına
+      göre belirlenmeli; bu gerekçe YMM çalışma kağıdında yer almalıdır.
+    - **GİB özelgesi şiddetle tavsiye edilir:** 5/1-k uygulamaları 5/1-j'ye kıyasla daha az
+      GİB emsaline sahiptir; özellikle geri devir opsiyonelliği ve KDV/tapu harcı konularında
+      özelge alınması kritiktir.
+    - **SPK lisanslı gayrimenkul değerleme:** Değerleme raporu olmadan gerçekleştirilen tapu
+      devirlerinde değer farkı KVK Md.13 ve SPK mevzuatı açısından risk oluşturur.
+    - **549 fon amortizasyonu:** Devir yılında 549'a alınan tutarın sukuk vadesine paralel
+      kira/getiri payına orantılı azaltılması ve vade sonunda sıfırlanması takip edilmelidir.
+    - **YMM tasdik raporu:** 49 No.lu Tebliğ kapsamında tek satırda ≥500.000 TL veya toplamda
+      ≥1.000.000 TL olması halinde YMM tasdik raporu zorunludur.
   kapi_sorulari:
     - id: varlik_tasinmaz_mi
       soru: "Devredilen varlık taşınmaz mı? (Arsa, arazi, bina, fabrika, depo — taşınır/hak değil)"

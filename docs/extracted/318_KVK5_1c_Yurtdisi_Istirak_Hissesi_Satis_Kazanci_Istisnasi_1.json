@@ -1,0 +1,1405 @@
+{
+  "file": "318_KVK5_1c_Yurtdisi_Istirak_Hissesi_Satis_Kazanci_Istisnasi_1.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G66",
+      "rows": [
+        [
+          "318 – YURT DIŞI İŞTİRAK HİSSESİ SATIŞ KAZANCI İSTİSNASI | KVK Md.5/1-c | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-c | YALNIZCA Tam Mükellef ANONİM ŞİRKET | Holding Aktif Yapısı %75 | 730 Gün Elde Tutma | %100 Tam İstisna | Fon Hesabı Yok | Zarar Olsa Dahi İndirilecek — Beyanname Satır 318",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KRİTİK UNSURLAR: (1) SADECE tam mükellef ANONİM ŞİRKET — Ltd olamaz! (2) Holding aktif oranı ≥%75 — 1 yıl aralıksız. (3) 730 gün elde tutma zorunlu. (4) YİAKV matrahından DÜŞÜLEMEZ. (5) Fon hesabı GEREKMEZ (5/1-e'den temel fark).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "RENK KODLARI: Sarı = Manuel giriş  |  Yeşil = Otomatik hesaplama  |  Kırmızı arka plan = Kritik uyarı  |  Dropdown = Listeden seçim",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ (HEPSİ EVET OLMADAN DEVAM ETMEYİN)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  ★ İstisna kullanan kurum YALNIZCA tam mükellef ANONİM ŞİRKET mi? (KRİTİK)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-c'nin en kritik şartı: SADECE tam mükellef anonim şirketler kullanabilir. Ltd.Şti., kooperatif, iktisadi kamu kuruluşu → 5/1-c KULLANILAMAZ (5/1-e'ye bakın). Ticaret sicil belgesi zorunludur.",
+          null
+        ],
+        [
+          "A0.2  Satılan iştirak kanuni/iş merkezi yurt dışında mı? AŞ veya Ltd niteliğinde mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Türkiye'de tam mükellef olmamalıdır. Satılan iştirak AŞ (corporation) veya Ltd (limited) hukuki yapısında olmalıdır. Partnership, kooperatif vb. yapılar kapsam dışıdır.",
+          null
+        ],
+        [
+          "A0.3  ★ Holding aktif oranı şartı sağlanıyor mu? (Nakit dışı aktifin ≥%75'i — 1 yıl aralıksız)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: Satış tarihinden geriye doğru 1 yıl boyunca aralıksız nakit dışı aktifin ≥%75'i yurt dışı iştirak hisselerinden oluşmalıdır. Her bir iştirak için ≥%10 sermaye payı eşiği gereklidir. Tek çeyrek bile sağlanamaması şartı bozar.",
+          null
+        ],
+        [
+          "A0.4  ★ Elde tutma süresi 730 gün (2 tam yıl) sağlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "730 güne 1 gün eksik olsa bile şart sağlanmaz. Devir/bölünme yoluyla elde edilen hisselerde süre kaynak kurumdaki süreden hesaplanır. C bölümündeki tarih hesabı ile teyit edin.",
+          null
+        ],
+        [
+          "A0.5  Kurum menkul kıymet ticareti yapan bir kurum değil mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Ana faaliyet konusu menkul kıymet ticareti olan kurumlar bu istisnadan yararlanamaz. Esas sözleşme ve NACE/faaliyet kodu kontrol edilmelidir.",
+          null
+        ],
+        [
+          "A0.6  5/1-c vs 5/1-e tercihi doğru yapıldı mı? (Fon hesabı farkı teyit edildi mi?)",
+          null,
+          null,
+          null,
+          "EVET",
+          "5/1-c (%100 tam istisna — fon hesabı GEREKMİYOR). 5/1-e (%50 istisna — 549 Özel Fonlar hesabı + 5 yıl tutma zorunlu). AŞ ise 5/1-c daha avantajlıdır. Ltd ise 5/1-e kullanılabilir.",
+          null
+        ],
+        [
+          "A0.7  ★ YİAKV matrahından DÜŞÜLMEYECEĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: KVK 5/1-c (318) istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ. Bu kural 5/1-a istisnalarından farklıdır. YİAKV çalışma kâğıdında 318 tutarı matrahtan çıkarılmamalıdır.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu (A0.1-A0.8 tümü)",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.1 (AŞ şartı), A0.3 (aktif oranı), A0.4 (730 gün), A0.7 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER VE SATIŞ KİMLİK BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satıcı Kurum (Tam Mükellef AŞ)",
+          null,
+          null,
+          null,
+          null,
+          "İstisna kullanan anonim şirketin tam adı",
+          null
+        ],
+        [
+          "Vergi Kimlik Numarası",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "Satılan Yurt Dışı İştirakin Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Kanuni/iş merkezi yurt dışında olan AŞ/Ltd",
+          null
+        ],
+        [
+          "İştirakin Bulunduğu Ülke",
+          null,
+          null,
+          null,
+          null,
+          "Ülke adı — Vergi anlaşması varlığı not edilmeli",
+          null
+        ],
+        [
+          "Satış Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — 730 gün ve aktif oranı hesabı için kritik",
+          null
+        ],
+        [
+          "İktisap Tarihi (Aktifte Kayıtlı)",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — 730 gün süre hesabının başlangıcı",
+          null
+        ],
+        [
+          "Genel KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Finans sektörü: %30",
+          null
+        ],
+        [
+          "B. MÜKELLEF TİPİ VE ŞEKİL ŞARTLARI (Beş Temel Kural)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/1-c istisnasından YALNIZCA tam mükellefiyete tabi anonim şirketler yararlanabilir. Ltd.Şti. için 5/1-e (361 kodu) değerlendirin. Aşağıdaki 5 şart KÜMÜLATİF olarak sağlanmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Şart",
+          null,
+          "Durum (Sağlandı mı?)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "B.1  ★ Satıcı Kurum: Tam Mükellef ANONİM ŞİRKET mi?",
+          null,
+          null,
+          "EVET",
+          null,
+          "5/1-c'nin en katı şartı. AŞ değilse bu istisna uygulanamaz. Ticaret sicili belgesi ile kanıtlanmalıdır.",
+          null
+        ],
+        [
+          "B.2  Satılan İştirak: Kanuni/İş Merkezi Yurt Dışında mı?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Türkiye'de tam mükellef olmamalıdır. Yurt dışındaki AŞ/Ltd hukuki yapısında olmalıdır.",
+          null
+        ],
+        [
+          "B.3  Satılan İştirak AŞ veya Ltd Niteliğinde mi?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Partnership, trust, kooperatif vb. yapılar kapsam dışıdır. İştirakin hukuki statüsü apostilli tescil belgesiyle teyit edilmelidir.",
+          null
+        ],
+        [
+          "B.4  Kurum Ana Faaliyeti Menkul Kıymet Ticareti Değil mi?",
+          null,
+          null,
+          "EVET",
+          null,
+          "Ana faaliyet konusu menkul kıymet ticareti olan kurumlar istisna dışıdır. NACE kodu ve esas sözleşme kontrolü yapılmalıdır.",
+          null
+        ],
+        [
+          "B.5  5/1-c — FON HESABINA ALMA GEREKMİYOR (5/1-e'den Fark)",
+          null,
+          null,
+          "EVET-Onaylandı",
+          null,
+          "5/1-c'de 549 Özel Fonlar hesabına kayıt YAPILMAZ. 5/1-e'de bu zorunludur. İki kod karıştırılmamalıdır.",
+          null
+        ],
+        [
+          "C. HOLDİNG AKTİF ORANI HESABI (%75 Şartı — 1 Yıl Aralıksız)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ŞART: Satış tarihinden geriye doğru 1 yıl boyunca ARALIKSIZT: nakit dışı aktif toplamının ≥%75'inin yurt dışı iştirak hisselerinden oluşması gerekir. Her bir iştirak için ≥%10 sermaye payı eşiği aranır. Tek çeyrek bile sağlanamaması şartı bozar — dönem sonlarında mutlaka kontrol edilmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Toplam Aktif (Bilanço Toplamı)",
+          null,
+          null,
+          "Bilanço toplam aktifi (nakit dahil)",
+          null,
+          "Dönem bazlı kontrol: 4 çeyrek bilançosu veya aylık bakiyeler",
+          null
+        ],
+        [
+          "C.2  Nakit Varlıklar (Kasa + Banka + Çekler + Diğer Hazır Değerler)",
+          null,
+          null,
+          "TDY Grup 10 (100+101+102+108+109) toplamı",
+          null,
+          "Nakit bu hesaptan çıkarılarak aktif oranı hesaplanır",
+          null
+        ],
+        [
+          "C.3  Nakit Dışı Aktif Toplamı (C.1 − C.2)",
+          null,
+          null,
+          "#VALUE!",
+          null,
+          "Negatif olamaz; C.2 > C.1 ise veri hatası",
+          null
+        ],
+        [
+          "C.4  Aktif Oranına Giren YD İştirak Hisselerinin Kayıtlı Değeri",
+          null,
+          null,
+          "Yalnızca sermayesine ≥%10 iştirak edilen yurt dışı hisseler",
+          null,
+          "Her iştirak ≥%10 eşiğini ayrıca teyit edin",
+          null
+        ],
+        [
+          "C.5  AKTİF ORANI % (C.4 / C.3 × 100)",
+          null,
+          null,
+          "#VALUE!",
+          null,
+          "Hedef: ≥75. Bu tek anlık değer; tüm dönem boyunca sağlanmalı",
+          null
+        ],
+        [
+          "C.6  Aktif Oranı Şartı Sağlandı mı? (1 Yıl Boyunca Aralıksız)",
+          null,
+          null,
+          "EVET / HAYIR — Elle girin",
+          null,
+          "Tek çeyrek bile <%75 ise şart bozulur",
+          null
+        ],
+        [
+          "D. ELDE TUTMA SÜRESİ HESABI (En Az 730 Gün = 2 Tam Yıl)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "730 güne 1 gün eksik olsa bile şart sağlanmaz. Devir/bölünme yoluyla elde edilen hisselerde süre, kaynak kurumdaki süreyi de kapsar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "Değer",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  İktisap Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Hisse aktife alındığı tarih. Devir/bölünmede kaynak kurum tarihi esas alınabilir.",
+          null
+        ],
+        [
+          "D.2  Satış (Elden Çıkarma) Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Hissenin fiilen devredildiği tarih. Sözleşme tarihi ile tescil tarihi farklı olabilir.",
+          null
+        ],
+        [
+          "D.3  Elde Tutma Süresi (Gün)",
+          null,
+          null,
+          "#VALUE!",
+          null,
+          "730 gün veya üzeri olmalı. 1 gün bile eksik geçersizdir.",
+          null
+        ],
+        [
+          "D.4  730 GÜN ŞARTI SAĞLANDI MI?",
+          null,
+          null,
+          "#VALUE!",
+          null,
+          "HAYIR ise 318 istisnası KULLANILAMAZ.",
+          null
+        ],
+        [
+          "E. SATIŞ KAZANCI VE 318 İSTİSNA TUTARI (%100 Tam İstisna)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/1-c istisnası %100 TAM İSTİSNAdır — satış kazancının TAMAMI istisna kapsamındadır. Zarar çıkarsa istisna sıfırdır (zarar aktarımı söz konusu olabilir — ayrıca değerlendirin). KVK 5/3: Satış giderlerinin TAMAMINA gider hakkı kullanılamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "E.1  Satış Bedeli (TL)",
+          null,
+          null,
+          "Hissenin elden çıkarılması karşılığında alınan toplam bedel",
+          null,
+          "Kur farkı etkisi: Yabancı para ise satış tarihi TCMB kuru ile TL'ye çevirin",
+          null
+        ],
+        [
+          "E.2  Defter Değeri / Maliyet (TL)",
+          null,
+          null,
+          "Hissenin bilançoda kayıtlı değeri (maliyet bedeli veya düzeltilmiş tutar)",
+          null,
+          "İktisap sırasında ödenen bedel + ilk kayıt değeri",
+          null
+        ],
+        [
+          "E.3  Satış Giderleri (TL)",
+          null,
+          null,
+          "Aracılık komisyonu, noter, tescil, avukat vb. satışa özgü giderler",
+          null,
+          "KVK 5/3: Bu giderlerin TAMAMINA gider hakkı kısıtlanabilir — KKEG analizi zorunlu",
+          null
+        ],
+        [
+          "E.4  SATIŞ KAZANCI (E.1 − E.2 − E.3)",
+          null,
+          null,
+          "#VALUE!",
+          null,
+          "Negatif ise istisna = 0; ancak zarar aktarımı değerlendirilebilir",
+          null
+        ],
+        [
+          "E.5  318 İSTİSNA TUTARI — %100 (E.4 pozitifse tamamı)",
+          null,
+          null,
+          "#VALUE!",
+          null,
+          "Fon hesabı YAPILMAZ — 5/1-e'den fark",
+          null
+        ],
+        [
+          "F. BEYANNAME 318 — İSTİSNA TUTARI SONUCU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 318 (Zarar Olsa Dahi İndirilecek)",
+          null,
+          null,
+          null,
+          null,
+          "#VALUE!",
+          "E.5 istisna tutarından otomatik"
+        ],
+        [
+          "⛔ KRİTİK — YİAKV UYARISI: KVK 5/1-c (318) istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ. YİAKV hesaplamasında 318 tutarı matrahtan çıkarılmamalıdır. Bu, 5/1-a istisnalarından temel bir farktır. Ayrıca: Satış giderlerinin KKEG analizi yapılmalı (KVK 5/3) — istisna kazancına ilişkin giderlerin gider hakkı kısıtlanabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G44",
+      "rows": [
+        [
+          "318 – YD. İŞTİRAK HİSSESİ SATIŞ KAZANCI | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-c | Tam Mükellef AŞ | Holding Aktif %75 | 730 Gün | %100 İstisna | Fon Hesabı Yok | YİAKV'den Düşülemez",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "A0.9 OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Satıcı Kurum AŞ Şartı (B.1)",
+          null,
+          null,
+          "EVET",
+          "EVET ise devam",
+          null,
+          null
+        ],
+        [
+          "Aktif Oranı % (C.5)",
+          null,
+          null,
+          "#VALUE!",
+          "≥%75 — 1 yıl aralıksız",
+          null,
+          null
+        ],
+        [
+          "Aktif Oranı Şartı (C.6)",
+          null,
+          null,
+          "EVET / HAYIR — Elle girin",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Elde Tutma Süresi Gün (D.3)",
+          null,
+          null,
+          "#VALUE!",
+          "≥730 gün zorunlu",
+          null,
+          null
+        ],
+        [
+          "730 Gün Şartı (D.4)",
+          null,
+          null,
+          "#VALUE!",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Satış Kazancı (E.4)",
+          null,
+          null,
+          "#VALUE!",
+          "Brüt kazanç",
+          null,
+          null
+        ],
+        [
+          "318 İSTİSNA TUTARI — %100 (E.5)",
+          null,
+          null,
+          "#VALUE!",
+          null,
+          null,
+          null
+        ],
+        [
+          "B. 5/1-c (318) ve 5/1-e (361) KARŞILAŞTIRMA TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kriter",
+          null,
+          "5/1-c — Kod 318",
+          null,
+          "5/1-e — Kod 361",
+          null
+        ],
+        [
+          "Mükellefiyet",
+          null,
+          "Sadece Tam Mükellef AŞ",
+          null,
+          "Tam Mükellef Tüm Kurumlar",
+          null,
+          null
+        ],
+        [
+          "Satılan İştirak",
+          null,
+          "Yurt Dışı (AŞ/Ltd)",
+          null,
+          "Yurt İçi veya Diğer",
+          null,
+          null
+        ],
+        [
+          "İstisna Oranı",
+          null,
+          "%100 Tam İstisna",
+          null,
+          "%50 İstisna",
+          null,
+          null
+        ],
+        [
+          "Aktif Oranı Şartı",
+          null,
+          "Nakit Dışı Aktifin ≥%75 — 1 Yıl",
+          null,
+          "YOK",
+          null,
+          null
+        ],
+        [
+          "Elde Tutma Süresi",
+          null,
+          "730 Gün (2 Tam Yıl)",
+          null,
+          "730 Gün (2 Tam Yıl)",
+          null,
+          null
+        ],
+        [
+          "Fon Hesabı (549)",
+          null,
+          "GEREKMİYOR",
+          null,
+          "5 YIL TUTULMAK ÜZERE ZORUNLU",
+          null,
+          null
+        ],
+        [
+          "YİAKV Etkisi",
+          null,
+          "DÜŞÜLEMEZ",
+          null,
+          "Dönem mevzuatına göre analiz",
+          null,
+          null
+        ],
+        [
+          "KVK 5/3 Gider",
+          null,
+          "Satış giderleri KKEG",
+          null,
+          "Satış giderleri KKEG",
+          null,
+          null
+        ],
+        [
+          "Beyanname Satırı",
+          null,
+          "318",
+          null,
+          "361",
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K11)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama ve Kanıt",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "★ Satıcı Kurum Tam Mükellef ANONİM ŞİRKET mi?",
+          null,
+          "5/1-c'nin en kritik şartı. Ticaret sicil belgesi — AŞ ibaresi zorunlu. Ltd.Şti. için 5/1-e (361) değerlendirilmelidir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "Satılan İştirak Yurt Dışında Yerleşik AŞ/Ltd mı?",
+          null,
+          "Kanuni/iş merkezi Türkiye'de olmayan AŞ veya Ltd. Apostilli tescil belgesi zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Aktif Oranı ≥%75 — 1 Yıl Boyunca Aralıksız Sağlandı mı?",
+          null,
+          "Satış tarihinden geriye 1 yıl: Nakit dışı aktifin ≥%75'i yurt dışı iştirak hissesi. 4 çeyrek bilançosu veya aylık bakiyeler ile doğrulanmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "Her Bir YD İştirakin Sermayesine ≥%10 İştirak Var mı?",
+          null,
+          "Aktif oranı hesabına dahil edilecek her iştirakin %10 eşiğini aşması zorunlu. Ortaklık sözleşmesi + pay defteri ile teyit.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ 730 Gün (2 Tam Yıl) Elde Tutma Şartı Sağlandı mı?",
+          null,
+          "D.4 formülü EVET vermelidir. 1 gün eksik → şart sağlanmamış. Devir/bölünmede kaynak kurum süresi hesaba katılabilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "Satış Kazancı Doğru Hesaplandı mı? (Maliyet, Giderler, Kur Farkı)",
+          null,
+          "Satış Kazancı = Satış Bedeli − Maliyet − Satış Giderleri. Yabancı para ise satış tarihi TCMB kuru ile TL'ye çevrilmelidir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "★ KVK 5/3 — Satış Giderleri KKEG Analizi Yapıldı mı?",
+          null,
+          "İstisna kapsamındaki kazanca ilişkin giderler KKEG olarak değerlendirilebilir. Satış giderleri (aracılık, noter, tescil vb.) için KKEG teyidi zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "5/1-c'de Fon Hesabına Alma YAPILMADI mı?",
+          null,
+          "5/1-c'de 549 Özel Fonlar hesabına kayıt YAPILMAZ. Bu, 5/1-e'den temel farktır. Muhasebe kaydı kontrol edilmelidir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "★ YİAKV Matrahından 318 DÜŞÜLMEDI mi?",
+          null,
+          "KVK 5/1-c (318) YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ. YİAKV hesap tablosunda bu kontrol zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "318 ile 361 (Yurt İçi) Ayrımı Doğru Yapıldı mı?",
+          null,
+          "318 = Yurt dışı iştirak (5/1-c, %100, AŞ). 361 = Yurt içi/diğer (5/1-e, %50, Fon). İştirakin yerleşiklik belgesiyle teyit.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "Menkul Kıymet Ticareti Yasağı Kontrol Edildi mi?",
+          null,
+          "Ana faaliyet konusu menkul kıymet ticareti olan kurumlar bu istisnadan yararlanamaz. Esas sözleşme + NACE/faaliyet kodu kontrolü zorunludur.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "D. BEYANNAME SATIR EŞLEŞTİRME VE KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "318",
+          null,
+          "#VALUE!",
+          "KVK 5/1-c — Tam Mük. AŞ YD İştirak Satışı | %100 İstisna | Zarar Olsa Dahi İndirilecek",
+          null,
+          null,
+          null
+        ],
+        [
+          "317",
+          null,
+          "YD İştirak KÂR PAYI",
+          "KVK 5/1-b — Yurt dışı iştirak KÂR PAYI istisnası (temettü). Satış değil!",
+          null,
+          null,
+          null
+        ],
+        [
+          "361",
+          null,
+          "YD/Diğer İştirak %50",
+          "KVK 5/1-e — Yurt içi veya diğer iştirak %50 + Fon hesabı. Ltd kurumlar bu kodu kullanır.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G18",
+      "rows": [
+        [
+          "318 – YD. İŞTİRAK HİSSESİ SATIŞ KAZANCI | MUHASEBE KAYITLARI ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-c | %100 Tam İstisna | Tam Mükellef AŞ | Fon Hesabı Gerekmez",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. Şirkete özgü hesap planına göre uyarlanmalıdır. 5/1-c'de FON HESABINA ALMA zorunluluğu yoktur — 5/1-e'den temel fark budur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — YD. İŞTİRAK HİSSESİ SATIŞ KAYDININ ÇÖZÜMÜ (Örnek)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Satılan İştirak: [___] | Satış Tarihi: [___] | Satış Bedeli: [TL] | Maliyet: [TL]",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "102 Bankalar / 101 Alınan Çekler",
+          "Satış bedelinin tahsilatı",
+          "[Satış Bedeli]",
+          "—",
+          "Banka dekontu / Sözleşme"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "245 Bağlı Ortaklıklar",
+          "İştirakin kayıtlı defter değerinin düşülmesi",
+          "—",
+          "[Defter Değeri]",
+          "245 hesap kartı"
+        ],
+        [
+          "Dr",
+          "[Satış Tarihi]",
+          "631/689 Satış Giderleri",
+          "Aracılık, noter, tescil vb. — KVK 5/3 KKEG analizi zorunlu",
+          "[Giderler]",
+          "—",
+          "KKEG → Fatura+KVK 5/3"
+        ],
+        [
+          "Kr",
+          "[Satış Tarihi]",
+          "679 Diğer Olağandışı Gelir",
+          "Satış kazancı — İstisna tutarıyla eşleşmeli",
+          "—",
+          "[Satış Kazancı]",
+          "KV 318. Satır"
+        ],
+        [
+          "MUHASEBE NOTU: 679 hesabındaki satış kazancı ticari kâra dahil edilir. Yılsonu KKEG tablosuna eklenerek beyanname matrahı artar. Ardından 318. satırda %100 istisna olarak düşülür. 679 toplamı ile beyanname 318 satırı uyumlu olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — ★ FON HESABINA ALMA GEREKMİYOR (5/1-c'nin 5/1-e'den Temel Farkı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5/1-c (318) ile 5/1-e (361) ARASINDAKİ KRİTİK MUHASEBE FARKI:\n\n5/1-c (BU FORM): İstisna tutarı için 549 Özel Fonlar hesabına kayıt YAPILMAZ. Kazanç doğrudan beyanname 318. satırında gösterilir.\n\n5/1-e (361 KODU): İstisna tutarının %50'si 549 Özel Fonlar hesabına alınır ve en az 5 yıl tutulması zorunludur. Erken dağıtım → İstisna geri alınır.\n\nUYARI: 5/1-c kullanan kurumda 549 hesabına kayıt yapılırsa, bu muhasebe hatası olup beyanname tutarsızlığına yol açar.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — BEYANNAME 318. SATIRI — YMM TASDİK MUTABAKATI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME AKIŞI (Muhasebe Kaydı Değil — Beyanname Üzeri İşlem):\n\na) 679 hesabındaki satış kazancı ticari kâra dahildir.\nb) Yılsonu KKEG tablosu: Satış giderleri KKEG olarak eklenebilir (KVK 5/3 analizi).\nc) KV Beyannamesi 318. Satır: 'Zarar Olsa Dahi İndirilecek' bölümünde istisna tutarı.\n\n3 KADEME UYUM KONTROLÜ:\nMuhasebe 679 (Satış Kazancı) = VERİ GİRİŞİ E.4/E.5 = HESAPLAMALAR Özet = Beyanname 318\n\nKRİTİK: Beyanname 318 tutarı YİAKV (KVK 32/C) matrahından ÇIKARILMAMALIDIR.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D19",
+      "rows": [
+        [
+          "318 – YD. İŞTİRAK HİSSESİ SATIŞ KAZANCI | DENETÇİ NOTLARI VE MESLEKİ DEĞERLENDİRME",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-c | Tam Mükellef AŞ | Holding Aktif %75 | 730 Gün | %100 İstisna | Fon Yok | YİAKV'den Düşülemez",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK VE TEMEL ŞARTLAR",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "★ Mükellef Tipi Şartı — SADECE Tam Mükellef AŞ",
+          "KVK 5/1-c'nin en kritik ve ayırt edici özelliği: Bu istisnadan YALNIZCA tam mükellefiyete tabi anonim şirketler yararlanabilir.\nLtd.Şti., kooperatif, iktisadi kamu kuruluşu, özel finans kurumları → 5/1-c KULLANILAMAZ.\nBu kurumlar için değerlendirilecek alternatif: KVK 5/1-e (361 kodu, %50 istisna).\nYMM notu: Ticaret sicil belgesi ile AŞ statüsü mutlaka teyit edilmelidir.",
+          "KVK Md.5/1-c | Danıştay içtihatları"
+        ],
+        [
+          "N2",
+          "★ Holding Aktif Oranı (%75 — 1 Yıl Aralıksız)",
+          "Satış tarihinden geriye doğru 1 yıl boyunca ARALIKSIZT:\nNakit dışı aktif toplamının ≥%75'i yurt dışı iştirak hisselerinden oluşmalıdır.\nAktif oranına dahil: Yalnızca sermayesine ≥%10 iştirak edilen YD hisseleri.\nNakit dışı aktif = Toplam Aktif − Kasa − Banka − Alınan Çekler − Diğer Hazır Değerler.\nTek çeyrek bile <%75 → Şart bozulur. 4 çeyrek bilançosu veya aylık bakiyeler zorunludur.\nYMM notu: Aktif oranı tek bir gün için değil tüm yıl boyunca sağlanmış olmalıdır.",
+          "KVK Md.5/1-c/2 | 1 No.lu KV GT"
+        ],
+        [
+          "N3",
+          "730 Gün Elde Tutma Şartı",
+          "Elden çıkarma tarihinde en az 730 gün (2 tam yıl) boyunca elde tutulmuş olması şartı.\n730 güne 1 gün eksik olsa bile şart sağlanmamış sayılır.\nDevir veya bölünme yoluyla elde edilen hisselerde süre, kaynak kurumdaki süreden itibaren hesaplanabilir.\nYMM notu: D.3 (elde tutma gün sayısı) ve D.4 (şart durumu) formüllerini kontrol edin.",
+          "KVK Md.5/1-c/1 | 276 No.lu GV GT"
+        ],
+        [
+          "N4",
+          "%100 Tam İstisna — Fon Hesabı Yok",
+          "5/1-c istisnası %100 tam istisnadır — satış kazancının TAMAMI istisna kapsamındadır.\n5/1-e (361) ile KRİTİK FARK: 5/1-c'de 549 Özel Fonlar hesabına kayıt GEREKMEMEKTEDİR.\n5/1-e'de fon hesabı zorunludur ve 5 yıl tutma şartı geçerlidir.\nYMM notu: 5/1-c kullanan kurumda 549 hesabı kaydı varsa muhasebe hatasıdır. Düzeltme zorunlu.",
+          "KVK Md.5/1-c | KVK Md.5/1-e"
+        ],
+        [
+          "BÖLÜM 2 — KRİTİK RİSK ALANLARI VE YMM DEĞERLENDİRMESİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "★ KVK 5/3 — Gider Hakkı Kısıtlaması",
+          "KVK Md.5/3: İştirak hisseleri alımıyla ilgili finansman giderleri dahil, istisna kapsamındaki kazanca ilişkin BÜTÜN GİDERLER KKEG olabilir.\nBu kural satış giderlerine (aracılık, noter, tescil) uygulanır.\nYMM notu: Satış giderlerinin tamamı KKEG sayılmadan önce her gider kalemi için istisna/gider ilişkisi analiz edilmeli ve belgelenmelidir.\nRisk: Satış giderlerinin yanlış sınıflandırılması → Tarhiyat + vergi ziyaı cezası.",
+          "KVK Md.5/3 | Danıştay içtihatları"
+        ],
+        [
+          "N6",
+          "★ YİAKV Matrahından DÜŞÜLEMEZ",
+          "KVK 32/C kapsamındaki Yurt İçi Asgari Kurumlar Vergisi hesabında KVK 5/1-c (318) istisnası matrahtan ÇIKARILMAZ.\nBu kural bazı 5/1-a istisnalarından farklıdır ve sıklıkla karıştırılmaktadır.\nYMM notu: YİAKV çalışma kâğıdında 318 satırı düşüm olarak yer almıyorsa doğrudur. 318 düşülmüşse hata — düzeltme zorunludur.\nRisk: Yanlış YİAKV hesabı → Eksik vergi ödeme → Ceza tarhiyatı.",
+          "KVK Md.32/C | YİAKV Tebliğleri"
+        ],
+        [
+          "N7",
+          "5/1-c ile 5/1-e Kod Karıştırma Riski",
+          "Sık yapılan hata: AŞ'nin yurt dışı iştirak satışını 361 (5/1-e) koduna yazması.\nBunun sonucu: %50 istisna (yerine %100 alınması gerekiyor) + Fon hesabı şartı.\nTersi de mümkün: Ltd'nin yurt dışı iştirak satışını 318 koduna yazması → KULLANILAMAZ.\nYMM notu: Satıcı kurumun hukuki yapısı + iştirakin yerleşikliği + istisna oranı birlikte değerlendirilerek doğru kod belirlenmeli.",
+          "KVK Md.5/1-c ve 5/1-e"
+        ],
+        [
+          "N8",
+          "49 No.lu Tebliğ — Tasdik Raporu",
+          "30.12.2025 tarihli 49 No.lu Tebliğ:\nTek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM tasdik raporu zorunlu.\nTam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.\nYMM notu: 318 satırı tutarını eşikle karşılaştırın. Eşiği aşıyorsa rapor olmadan istisna kullanılması tarhiyat riskidir.",
+          "49 No.lu Tebliğ (30.12.2025) | YMM Kanunu Md.12"
+        ],
+        [
+          "N9",
+          "YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...KVK 5/1-c şartlarının sağlandığı ölçüde istisna uygulanabilecektir'\n'...aktif oranı dönem boyunca doğrulanmalıdır' | '...ayrıca analiz edilmelidir'\n\nKULLANMAYIN:\n'...istisna uygulanır' | '...tüm şartlar sağlanmıştır' | '...sorunsuz'\n\nKRİTİK RİSK ALANLARI:\n(1) AŞ statüsü | (2) Aktif oranı 1 yıl teyidi | (3) 730 gün | (4) KVK 5/3 KKEG | (5) YİAKV dışında tutma | (6) Fon hesabı yapılmadığı",
+          "SM-SMMM-YMM Kanunu Md.12"
+        ],
+        [
+          "TARTIŞMALI/RİSKLİ ALAN: KVK 5/3'te yer alan 'iştirak hisseleri alımıyla ilgili finansman giderleri' ile 'satışa ilişkin giderler' arasındaki sınırın belirlenmesi zaman zaman tartışmalıdır. Özellikle uzun vadeli yabancı kaynakla finanse edilen iştirak alımlarında finansman giderlerinin kısmen KKEG sayılıp sayılmayacağı konusunda güncel özelge araştırması yapılması tavsiye edilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F35",
+      "rows": [
+        [
+          "318 – YD. İŞTİRAK HİSSESİ SATIŞ KAZANCI | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-c | Tam Mükellef AŞ | Holding Aktif %75 | 730 Gün | %100 İstisna | Fon Hesabı Yok | YİAKV'den Düşülemez | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Zorunlu belgeler (eksik olmamalı). Kategori 2: Destekleyici belgeler. Kategori 3: YMM tasdik kontrol soruları (★ işaretli sorular kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER  (Tamamı Mevcut Olmadan Tasdik Tamamlanmaz)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "Satıcı Kurumun Anonim Şirket Statüsünü İspat Eden Belge",
+          "Tam mükellef ANONİM ŞİRKET olduğunun teyidi — Ltd ise 318 KULLANILAMAZ.\nTicaret sicil gazetesi veya güncel ticaret sicil tasdiknamesi.\nYMM notu: AŞ ibaresi açıkça görünmeli; merkezi veya şube olduğu kontrol edilmelidir.",
+          "Ticaret sicil gazetesi / MERSİS / Ticaret sicil tasdiknamesi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Satılan YD İştirakin Apostilli Tescil + Yerleşiklik Belgesi",
+          "Kanuni/iş merkezi yurt dışında olan AŞ/Ltd olduğunun teyidi.\nTürkiye'de tam mükellef olmadığı (vergi mukimi sayılmadığı) gösterilmeli.\nApostil şerhi ülkeye göre değişebilir; yerel noter onayı veya konsolosluk tasdiki gerekebilir.\nYMM notu: Belgenin satış tarihine yakın bir tarihli olması tercih edilir.",
+          "İştirakin apostilli ticaret sicil belgesi / Konsolosluk tasdikli tescil",
+          null
+        ],
+        [
+          null,
+          "3",
+          "İktisap Belgeleri (730 Gün Hesabı İçin)",
+          "Hissenin aktife alındığı tarihi kanıtlayan belgeler.\nHisse senedi, transfer belgesi, ortaklık sözleşmesi, pay defteri kaydı.\nDevir/bölünme yoluyla elde edildiyse: Devir/bölünme tescil belgesi + kaynak kurum iktisap tarihi.\nYMM notu: İktisap tarihi VERİ GİRİŞİ D.1 ile uyumlu olmalıdır.",
+          "Hisse senedi / Transfer belgesi / Pay defteri / Ortaklık sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Satış Sözleşmesi ve Hisse Devir Belgesi",
+          "Satış bedeli, satış tarihi, alıcı bilgileri, devir koşulları.\nTescil tarihi ile ödeme tarihi farklı olabilir — satış tarihi olarak hangisi esas alındığı belirtilmeli.\nYabancı para ise TCMB satış tarihi kuru ile TL karşılığı hesaplanmalıdır.\nYMM notu: Satış bedeli VERİ GİRİŞİ E.1 ile uyumlu olmalıdır.",
+          "Hisse devir sözleşmesi / Noter onayı / Tescil belgesi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Bilanço — Aktif Oranı Hesabı İçin (Satış Tarihinden Geriye 1 Yıl)",
+          "4 çeyrek bilançosu veya aylık bakiyeler — C bölümü hesabının dayanağı.\nNakit dışı aktif (Toplam Aktif − Hazır Değerler) ve YD iştirak hisselerinin kayıtlı değeri.\nHer dönemde ≥%75 şartının sağlandığı gösterilmelidir.\nYMM notu: 1 yıl boyunca aralıksız şart — tek çeyrek <%75 → şart bozulur.",
+          "4 çeyrek bilançosu / Aylık mizan bakiyeleri",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Her Bir YD İştirakin ≥%10 Sermaye Payını Gösteren Belge",
+          "Aktif oranı hesabına dahil edilecek her YD iştirak için %10 eşiği teyit belgesi.\nOrtaklık sözleşmesi, pay defteri veya iştirak tescil belgesi.\nYMM notu: <%10 olan iştiraklerin değerleri orana dahil edilemez.",
+          "Ortaklık sözleşmesi + Pay defteri / İştirak tescil belgesi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Satış Kazancı Hesaplama Tablosu (Maliyet, Giderler, Kur Farkı)",
+          "Satış Bedeli − Defter Değeri (maliyet) − Satış Giderleri = Satış Kazancı.\nYabancı para ise kur farkı etkisi ayrıca gösterilmeli.\nKVK 5/3: Satış giderleri KKEG analizi bu tabloda yapılmalıdır.\nYMM notu: VERİ GİRİŞİ E bölümü ile muhasebe 679 hesabı uyumlu olmalıdır.",
+          "Muhasebe kayıtları / Satış sözleşmesi / Maliyet tablosu",
+          null
+        ],
+        [
+          null,
+          "8",
+          "KV Beyannamesi Taslağı — 318. Satır (Nihai veya Taslak)",
+          "318. satırındaki tutarın VERİ GİRİŞİ F.1 ile birebir uyumlu olduğu teyit edilmeli.\n'Zarar Olsa Dahi İndirilecek' bölümünde 318 kodunda doğru konumlandırıldığı kontrol edilmeli.\nYMM notu: 318 > F.1 ise hata. 318 < F.1 ise neden az kullanıldığı açıklanmalı.",
+          "GİB e-Beyanname sistemi / İnternet Vergi Dairesi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — DESTEKLEYİCİ BELGELER  (Duruma Göre Gereklidir)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Devir/Bölünme Belgesi (Elde Tutma Süresinin Kaynak Kuruma Aktarımı)",
+          "Devir veya bölünme yoluyla elde edilen hisselerde: Süre kaynak kurumdaki iktisap tarihinden hesaplanabilir.\nDevir/bölünme tescil belgesi + Kaynak kurumun iktisap tarih belgesi gerekir.\nYMM notu: Süre aktarımının hukuki dayanağı teyit edilmeli.",
+          "Devir/bölünme tescil belgesi / Ticaret sicil kaydı",
+          null
+        ],
+        [
+          null,
+          "10",
+          "Satış Giderleri Listesi ve KVK 5/3 KKEG Analizi",
+          "Aracılık komisyonu, noter harcı, tescil ücretleri, avukatlık vb. satış giderleri.\nKVK 5/3: Bu giderlerin hangi kısmının KKEG sayılacağı analiz edilmelidir.\nYMM notu: KKEG kararı yazılı olarak belgelenmeli ve tasdik dosyasına eklenmelidir.",
+          "Fatura + gider belgesi / KVK 5/3 analiz notu",
+          null
+        ],
+        [
+          null,
+          "11",
+          "5/1-c vs 5/1-e Tercih Analizi",
+          "Kurum AŞ ise ve şartlar sağlanıyorsa 5/1-c (%100) öne çıkar.\nLtd kurumlar için 5/1-e (361, %50 + fon) değerlendirilmelidir.\nHer iki istisnanın karşılaştırmalı analizi tasdik dosyasına eklenmelidir.",
+          "YMM iç değerlendirme notu / Karşılaştırma tablosu",
+          null
+        ],
+        [
+          null,
+          "12",
+          "YİAKV Matrah Hesaplama Tablosu (KVK 32/C — 318 Dahil Edilmemeli)",
+          "KVK 5/1-c (318) istisnası YİAKV matrahından ÇIKARILMAMALIDIR.\nYİAKV çalışma kâğıdında 318 tutarının matrahtan düşülmediği teyit edilmeli.\nYMM notu: Bu kontrol olmadan tasdik dosyası eksik sayılır.",
+          "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri",
+          null
+        ],
+        [
+          null,
+          "13",
+          "Kur Farkı Hesap Tablosu (Yabancı Para Cinsinden Satışlarda)",
+          "Satış bedeli ve maliyet yabancı para ise:\nSatış tarihi TCMB döviz alış kuru ile TL'ye çevrim tablosu.\nKur farkı ayrı gösterilmeli; varsa kur farkı kazancı/zararının istisna kapsamını etkisi analiz edilmeli.",
+          "TCMB kur tablosu / Döviz hesap kartı",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI  (★ İşaretli Sorular Kritiktir)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Satıcı kurum gerçekten tam mükellef ANONİM ŞİRKET mi? (Ltd ise 318 KULLANILAMAZ)",
+          "Ticaret sicil belgesi kontrol edilmelidir. AŞ değilse istisna geçersiz — tarhiyat riski en yüksek kontrol noktası. Ltd kurumlar için 5/1-e (361) değerlendirilmelidir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Aktif oranı ≥%75 — 1 yıl boyunca aralıksız sağlandı mı?",
+          "4 çeyrek bilanço veya aylık bakiyeler ile doğrulanmalıdır. Tek çeyrek bile <%75 → Şart bozulur. VERİ GİRİŞİ C.5 ve C.6 değerleri teyit edilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "Her bir YD iştirakin sermayesine ≥%10 iştirak var mı?",
+          "Aktif oranı hesabına dahil edilecek hisseler için %10 eşiği zorunlu. <%10 olan iştiraklerin değerleri orana dahil edilemez.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ 730 gün elde tutma şartı sağlandı mı? D.4 EVET veriyor mu?",
+          "VERİ GİRİŞİ D.3 (gün sayısı) ≥730, D.4 'EVET' vermelidir. 1 gün bile eksik → İstisna kullanılamaz. Devir/bölünmede kaynak kurum süresi dahil mi teyit edin.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Satış kazancı doğru hesaplandı mı? KVK 5/3 KKEG analizi yapıldı mı?",
+          "E.4 = E.1 − E.2 − E.3. Satış giderleri için KKEG analizi zorunlu. Yabancı para varsa TCMB kuru ile TL çevirimi yapılmalıdır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "★ 5/1-c'de FON HESABINA ALMA YAPILMADI mı? (549 hesabı kontrolü)",
+          "5/1-c'de 549 Özel Fonlar hesabına kayıt YAPILMAZ. Muhasebe kayıtlarında 549 hareketi varsa hata var. Düzeltme zorunludur.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★ YİAKV matrahından 318 DÜŞÜLMEDI mi?",
+          "KVK 5/1-c (318) YİAKV matrahından ÇIKARILMAZ. YİAKV çalışma kâğıdında 318 tutarı matrahtan düşülmemişse doğrudur. Düşülmüşse: Hata — YİAKV beyannamesi düzeltilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "318 ile 317 (KÂR PAYI) ayrımı doğru yapıldı mı?",
+          "317 = YD iştirak KÂR PAYI istisnası (5/1-b, temettü geliri). 318 = YD iştirak HİSSE SATIŞI kazancı (5/1-c). İki kod kesinlikle karıştırılmamalıdır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT (YMM TASDİK HATIRLATMASI): 49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. En kritik 3 şart: (1) AŞ statüsü, (2) Aktif oranı ≥%75 — 1 yıl, (3) 730 gün. YİAKV matrahından 318 DÜŞÜLEMEZ. 5/1-c'de fon hesabına alma GEREKMEZ — bu 5/1-e ile temel farktır. KVK 5/3 satış giderleri KKEG analizi zorunludur. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

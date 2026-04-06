@@ -1,0 +1,1664 @@
+{
+  "file": "YİAKV_Calisma_Kagidi_KVK_32C_GIB2026_Rev4.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:F84",
+      "rows": [
+        [
+          "YURT İÇİ ASGARİ KURUMLAR VERGİSİ (YİAKV) ÇALIŞMA KÂĞIDI | KVK Md.32/C | 7524 SAYILI KANUN | YMM TASDİK KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "VERİ GİRİŞİ SAYFASI — Sarı alanları doldurun. Hesaplamalar YİAKV HESAPLAMA sayfasına otomatik yansır.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAPSAM: 2025 yılı ve izleyen dönemler | Geçici vergi dahil | GİB Rehberleri: No:607 (YİAKV) | No:606 (KV Beyan) | No:605 (KV Oran) | No:589 (%5 İndirim)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. MÜKELLEF BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mükellef Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı — beyannamedeki ile aynı"
+        ],
+        [
+          "Vergi Kimlik Numarası",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN"
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025"
+        ],
+        [
+          "Kuruluş Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY — Yeni şirket 3 hesap dönemi muafiyet kontrolü için"
+        ],
+        [
+          "Faaliyet Konusu",
+          null,
+          null,
+          null,
+          null,
+          "İmalat / İhracat / Hizmet / Karma"
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/AV-01"
+        ],
+        [
+          "YMM Adı Soyadı",
+          null,
+          null,
+          null,
+          null,
+          "Tasdiki yapan YMM"
+        ],
+        [
+          "Tasdik Tarihi",
+          null,
+          null,
+          null,
+          null,
+          "GG.AA.YYYY"
+        ],
+        [
+          "B. YİAKV MÜKELLEFİYET ÖN KONTROL",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mükellefin YİAKV kapsamında olup olmadığını belirleyin — GİB Rehberi Bölüm 1.2",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          "Açıklama"
+        ],
+        [
+          "B.1  ★ Mükellef kurumlar vergisinden muaf mı?",
+          null,
+          null,
+          "HAYIR",
+          "Muaf kurumlar YİAKV kapsamı dışındadır.",
+          null
+        ],
+        [
+          "B.2  ★ İlk defa faaliyete başlayan şirket mi? (3 hesap dönemi muafiyet)",
+          null,
+          null,
+          "HAYIR",
+          "2025'te kurulduysa 2025-26-27 muaf. 2024'te → 2025-26. 2023'te → 2025.",
+          null
+        ],
+        [
+          "B.3  Birleşme/devir/tür değişikliği/bölünme yoluyla mı kuruldu?",
+          null,
+          null,
+          "HAYIR",
+          "Bu yollarla kurulan şirket 'ilk defa' sayılmaz.",
+          null
+        ],
+        [
+          "B.4  Hasılat esasına göre vergilendirilen kurum mu? (GVK Md.113)",
+          null,
+          null,
+          "HAYIR",
+          "Hasılat esaslı mükellefler kapsam dışı.",
+          null
+        ],
+        [
+          "B.5  02.08.2024 öncesi alınmış YTB var mı?",
+          null,
+          null,
+          "HAYIR",
+          "Eski YTB → 32/A alınmayan vergi asgari vergiden düşülür.",
+          null
+        ],
+        [
+          "B.6  02.08.2024 sonrası alınan YTB var mı?",
+          null,
+          null,
+          "HAYIR",
+          "Yeni YTB alınmayan vergi asgari vergiden DÜŞÜLEMEZ.",
+          null
+        ],
+        [
+          "B.7  YİAKV UYGULAMA SONUCU",
+          null,
+          null,
+          "KAPSAM İÇİ — YİAKV Hesaplanacak",
+          "Kapsam içiyse → YİAKV HESAPLAMA sayfasına geçin.",
+          null
+        ],
+        [
+          "C. TEMEL MALİ VERİLER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "UYARI: Enflasyon düzeltmesi uygulandıysa düzeltilmiş bilanço değerleri kullanılmalıdır (VUK Mük.Md.298/Geçici Md.33).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "Tutar (TL)",
+          null,
+          "Kaynak / YMM Notu"
+        ],
+        [
+          "C.1  Ticari Bilanço Kârı (+) / Zararı (-)",
+          null,
+          null,
+          "Mizan / Bilanço",
+          "Enflasyon düzeltmesi dahil — formülün başlangıç noktası",
+          null
+        ],
+        [
+          "C.2  Kanunen Kabul Edilmeyen Giderler (KKEG)",
+          null,
+          null,
+          "Muavin Defter",
+          "BSMV, gecikme faizi, özel gider vb. — eksiksiz liste",
+          null
+        ],
+        [
+          "C.3  Geçmiş Yıl Zararları (GYZ) — BİLGİ AMAÇLI",
+          null,
+          null,
+          "Beyanname",
+          "YİAKV matrahından DÜŞÜLEMEZ — Danıştay 3.D. E:2024/5700",
+          null
+        ],
+        [
+          "C.4  TİCARİ KAZANÇ TABANI = C.1 + C.2  (YİAKV için — GİB Rehberi Md.2.4)",
+          null,
+          "0",
+          "Bu tutar > 0 ise YİAKV hesaplanır | ≤ 0 ise YİAKV hesaplanmaz",
+          null,
+          null
+        ],
+        [
+          "D. YİAKV MATRAHTAN DÜŞÜLEBİLECEK İSTİSNA VE İNDİRİMLER (GİB Rehberi Bölüm 3.1)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Beyannamede kullandığınız tutarı girin. Yalnızca bu kalemler YİAKV matrahından düşülür.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "İstisna / İndirim Kalemi",
+          null,
+          "Kullanılan Tutar (TL)",
+          null,
+          "YMM Kontrol Notu"
+        ],
+        [
+          "D.1  İştirak Kazançları İstisnası (KVK 5/1-a)",
+          null,
+          null,
+          "Beyanname 301",
+          "Yurt içi iştirak kâr payları.\n★ YENİ (7524 s.K. Md.32): 5/1-d fon/ort. %50 dağıtım şartını\nSAĞLIYORSA → bu fondan alınan kâr payı 5/1-a istisnasına KONU EDİLEMEZ.\nDağıtım şartı SAĞLANAMIYORSA → 5/1-a kapsamında istisna uygulanabilir.\n(KV Beyan Rehberi 2026 — Yayın No:606)",
+          null
+        ],
+        [
+          "D.2  Emisyon Primi Kazancı (KVK 5/1-ç)",
+          null,
+          null,
+          "Beyanname 302",
+          "Hisse ihraç primleri",
+          null
+        ],
+        [
+          "D.3  Yat.Fon/Ort. — Taşınmaz HARİÇ Kazancı (KVK 5/1-d)\n     ★ KOŞULLU: %50 Dağıtım Şartı (7524 s.K. Md.32 — 1/1/2025+)",
+          null,
+          null,
+          "Beyanname 305-308",
+          "★ 1/1/2025'ten itibaren KOŞULLU:\n✓ Dağıtım şartı SAĞLANIYORSA: Taşınmaz dışı kazanç düşülür.\n✗ Dağıtım şartı SAĞLANAMIYORSA: Tüm kazanç (taşınmaz dahil) DÜŞÜLEMEZ.\nDağıtım: KV beyan ayını izleyen 2. ayın sonu. Beyanname 305-308.\nGYO taşınmaz gelirleri her durumda DÜŞÜLEMEZ (E.3 bölümü).",
+          null
+        ],
+        [
+          "D.4  Risturn Kazancı (KVK 5/1-i)",
+          null,
+          null,
+          "Beyanname 309",
+          "Kooperatif risturnları",
+          null
+        ],
+        [
+          "D.5  Sat-Kirala-Geri Al İstisnası (KVK 5/1-j)",
+          null,
+          null,
+          "Beyanname 310-312",
+          "SKG",
+          null
+        ],
+        [
+          "D.6  Varlık Kiralama (Sukuk) İstisnası (KVK 5/1-k)",
+          null,
+          null,
+          "Beyanname 313-315",
+          "VKŞ — Sukuk",
+          null
+        ],
+        [
+          "D.7  TUGS — Türk Uluslararası Gemi Sicili (4490 s.K. Md.12)",
+          null,
+          null,
+          "Beyanname 315",
+          "TUGS kayıtlı gemi işletme/devir",
+          null
+        ],
+        [
+          "D.8  Serbest Bölge Kazanç İstisnası (3218 s.K. Geçici Md.)",
+          null,
+          null,
+          "Beyanname 350",
+          "SB faaliyet lisanslı kazanç",
+          null
+        ],
+        [
+          "D.9  Teknokent Kazanç İstisnası (4691 s.K. Geçici Md.2)",
+          null,
+          null,
+          "Beyanname 350",
+          "TGB girişimci yazılım/Ar-Ge",
+          null
+        ],
+        [
+          "D.10  Ar-Ge ve Tasarım İndirimi (5746 s.K. Md.3/3A; 6550 Geçici Md.1/c)",
+          null,
+          null,
+          "Beyanname 283/284",
+          "Ar-Ge/Tasarım Merkezi + Araştırma Altyapıları",
+          null
+        ],
+        [
+          "D.11  Girişim Sermayesi Fonu İndirimi (KVK Md.10/1-g)",
+          null,
+          null,
+          "Beyanname 285",
+          "Sınır: %10 ve %20 uyumu kontrol",
+          null
+        ],
+        [
+          "D.12  Engelliler — Korumalı İşyeri İndirimi (KVK Md.10/1-h)",
+          null,
+          null,
+          "Beyanname 286",
+          "5378 s.K. kapsamı",
+          null
+        ],
+        [
+          "D.13  TOPLAM MATRAHTAN DÜŞÜLEBİLECEK",
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. YİAKV MATRAHTAN DÜŞÜLEMEYEN İSTİSNA/İNDİRİMLER — BİLGİ AMAÇLI (GİB Rehberi Bölüm 3.3)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bu kalemler genel KV matrahından düşülmekle birlikte YİAKV matrahını ETKİLEMEZ — matrahta kalır.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "İstisna / İndirim Kalemi",
+          null,
+          "Tutar (TL) Ref.",
+          null,
+          "Beyanname / YMM Notu"
+        ],
+        [
+          "E.1   Yurt Dışı İştirak/Şube/İnşaat Kazançları (KVK 5/1-b,c,g,h)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "303/304/322",
+          null
+        ],
+        [
+          "E.2   Taşınmaz / İştirak Hissesi / Fon Satış Kazancı (KVK 5/1-e)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "351-359",
+          null
+        ],
+        [
+          "E.3   GYO/Fon — Taşınmaz Gelirleri (KVK 5/1-d — Taşınmaz Kısmı)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "305-308",
+          null
+        ],
+        [
+          "E.4   Banka Borçlu Taşınmaz/İştirak Satış (KVK 5/1-f)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "321",
+          null
+        ],
+        [
+          "E.5   Eğitim/Öğretim Kazanç İstisnası (KVK 5/1-ı)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "339",
+          null
+        ],
+        [
+          "E.6   Yabancı Fon Yönetici Şirketi (KVK 5/A-3) + Patent Box (KVK 5/B)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "323/324",
+          null
+        ],
+        [
+          "E.7   KKM İstisnalar — Tüm Kodlar (KVK Geçici Md.14 Paragraf 1, 2, 3 ve 4)\nParagraf 1 (Aktif — 5 kod): 370 Kur farkı değerleme | 371 Kur farkı tazminat | 372 Dönem sonu tahakkuk | 373 Vade kâr payı/faiz | 374 Vade diğer kazançlar\nParagraf 2 (Pasif/Borç — 4 kod): 375 Borç kur farkı | 376 Dönem sonu tahakkuk | 377 Vade kâr payı/faiz | 378 Vade diğer kazançlar\nParagraf 3 (Altın Hesabı — 4 kod): 379 Altın dönüşüm kazancı | 380 Dönem sonu tahakkuk | 381 Vade kâr payı/faiz | 382 Vade diğer kazançlar\nParagraf 4 (3 kod): 383 Dönem sonu tahakkuk | 384 Kâr payı ve faiz | 385 Vade sonu kazanç",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "370/371/372/373/374/375/376/377/378/379/380/381/382/383/384/385",
+          null
+        ],
+        [
+          "E.8   Ürün Senedi Kazanç İstisnası (GVK Geçici Md.76 / 5300 s.K.)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "349",
+          null
+        ],
+        [
+          "E.9   Araştırma Altyapıları Ar-Ge (6550 s.K. Geçici Md.1/a)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "350",
+          null
+        ],
+        [
+          "E.10  Nakdi Sermaye Artışı Faiz İndirimi (KVK 10/1-ı)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "283",
+          null
+        ],
+        [
+          "E.11  Bağış ve Sponsorluk — Tümü (KVK 10/1-b,c,ç,d,e,f)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "260-270",
+          null
+        ],
+        [
+          "E.12  Yurt Dışı Yazılım/Müh./Eğ./Sağ. İndirimi (KVK 10/1-ğ)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "280",
+          null
+        ],
+        [
+          "E.13  Yatırım İndirimi + Teknogirişim/Teknokent Sermaye Desteği",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "Geçici/286-287",
+          null
+        ],
+        [
+          "E.14  İstanbul Finans Merkezi İndirimi (KVK 10/1-i)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "290",
+          null
+        ],
+        [
+          "E.15  ÇVÖA Kapsamı İstisnaları (Uluslararası Anlaşmalar)",
+          null,
+          null,
+          "YİAKV'de DÜŞÜLEMEZ ✗",
+          "Diğer",
+          null
+        ],
+        [
+          "F. VERGİ ORANI İNDİRİMLERİ — ASGARİ VERGİDEN (MATRAHTAN DEĞİL) DÜŞÜLECEK TUTARLAR",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bu kalemlerdeki tutarlar HAM asgari vergiden (%10) düşülür — YİAKV matrahından değil (GİB Rehberi Md.2.6).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "İndirim Kalemi",
+          null,
+          "İlgili Matrah / Kazanç (TL)",
+          null,
+          "Alınmayan Vergi (TL)"
+        ],
+        [
+          "F.1  İhracat 5 Puan İndirim — Alınmayan Vergi (KVK 32/6)",
+          null,
+          null,
+          "İndirimli orana tabi ihracat matrahı → × %5",
+          "0",
+          null
+        ],
+        [
+          "F.2  Üretim 1 Puan İndirim — Alınmayan Vergi (KVK 32/7)",
+          null,
+          null,
+          "İndirimli orana tabi üretim matrahı → × %1",
+          "0",
+          null
+        ],
+        [
+          "F.3  Halka Arz 2 Puan İndirim — Alınmayan Vergi (KVK 32/8)",
+          null,
+          null,
+          "≥%20 halka arz matrahı → × %2",
+          "0",
+          null
+        ],
+        [
+          "F.4  02.08.2024 ÖNCESİ YTB — KVK 32/A Alınmayan Vergi",
+          null,
+          null,
+          "Yatırıma katkı kaynaklı alınmayan vergi tutarı",
+          "0",
+          null
+        ],
+        [
+          "F.5  TOPLAM ASGARİ VERGİDEN DÜŞÜLECEKLER",
+          null,
+          null,
+          null,
+          "0",
+          null
+        ],
+        [
+          "★ UYARI: 02.08.2024 SONRASI alınan YTB kaynaklı alınmayan vergi asgari vergiden DÜŞÜLEMEZ (GİB Rehberi Md.2.6).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "G. GENEL KURUMLAR VERGİSİ (BEYANNAME VERİLERİ)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "Tutar (TL)",
+          null,
+          "Kaynak"
+        ],
+        [
+          "G.1  Hesaplanan Kurumlar Vergisi (Genel Hüküm)",
+          null,
+          null,
+          "Beyanname 'Hesaplanan KV' satırı",
+          null,
+          null
+        ],
+        [
+          "G.2  Tevkif Suretiyle Ödenen Kurumlar Vergisi",
+          null,
+          null,
+          "Beyanname tevkifat satırı",
+          null,
+          null
+        ],
+        [
+          "G.3  Ödenen Geçici Vergiler",
+          null,
+          null,
+          "Cari dönem geçici vergi mahsup tutarı",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "YİAKV HESAPLAMA",
+      "dimensions": "A1:G57",
+      "rows": [
+        [
+          "YİAKV HESAPLAMA VE DENETİM TABLOSU | KVK Md.32/C | 7524 SAYILI KANUN | GİB REHBERİ NİSAN 2026",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "|   Hesap Dönemi:    |   Dosya Ref:",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "I. YİAKV HESAPLAMA TABLOSU — GİB REHBERİ NİSAN 2026",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "No",
+          "Hesap Kalemi",
+          "Referans",
+          "Tutar (TL)",
+          "Etki",
+          "Formül / Açıklama",
+          "YMM Denetim Notu"
+        ],
+        [
+          "1",
+          "Ticari Bilanço Kârı / Zararı",
+          "VERİ GİRİŞİ C.1",
+          "0",
+          "+",
+          "Mizan/Bilanço",
+          "KVK 32/C Formül Başlangıcı"
+        ],
+        [
+          "2",
+          "(+) Kanunen Kabul Edilmeyen Giderler",
+          "VERİ GİRİŞİ C.2",
+          "0",
+          "+",
+          "KKEG toplamı",
+          "BSMV, gecikme faizi vb."
+        ],
+        [
+          "3",
+          "TİCARİ KAZANÇ TABANI (1+2)",
+          "Auto",
+          "0",
+          "=",
+          "(1)+(2)",
+          "Sıfırdan büyükse YİAKV hesaplanır"
+        ],
+        [
+          "4",
+          "(-) İştirak Kazançları (KVK 5/1-a)",
+          "VERİ GİRİŞİ D.1",
+          "0",
+          "−",
+          "Düşülür",
+          "Beyanname 301"
+        ],
+        [
+          "5",
+          "(-) Emisyon Primi (KVK 5/1-ç)",
+          "VERİ GİRİŞİ D.2",
+          "0",
+          "−",
+          "Düşülür",
+          "Beyanname 302"
+        ],
+        [
+          "6",
+          "(-) Yat.Fon/Ort. — Taşınmaz HARİÇ (KVK 5/1-d)",
+          "VERİ GİRİŞİ D.3",
+          "0",
+          "−",
+          "Düşülür",
+          "GYO taşınmaz DÜŞÜLEMEZ"
+        ],
+        [
+          "7",
+          "(-) Risturn (KVK 5/1-i)",
+          "VERİ GİRİŞİ D.4",
+          "0",
+          "−",
+          "Düşülür",
+          "Beyanname 309"
+        ],
+        [
+          "8",
+          "(-) Sat-Kirala-Geri Al (KVK 5/1-j)",
+          "VERİ GİRİŞİ D.5",
+          "0",
+          "−",
+          "Düşülür",
+          "Beyanname 310-312"
+        ],
+        [
+          "9",
+          "(-) Varlık Kiralama (Sukuk) (KVK 5/1-k)",
+          "VERİ GİRİŞİ D.6",
+          "0",
+          "−",
+          "Düşülür",
+          "Beyanname 313-315"
+        ],
+        [
+          "10",
+          "(-) TUGS Gemi Sicili (4490 s.K. Md.12)",
+          "VERİ GİRİŞİ D.7",
+          "0",
+          "−",
+          "Düşülür",
+          "Beyanname 315"
+        ],
+        [
+          "11",
+          "(-) Serbest Bölge Kazanç İstisnası (3218 s.K.)",
+          "VERİ GİRİŞİ D.8",
+          "0",
+          "−",
+          "Düşülür",
+          "SB faaliyet kazancı"
+        ],
+        [
+          "12",
+          "(-) Teknokent Kazanç İstisnası (4691 s.K. Geçici Md.2)",
+          "VERİ GİRİŞİ D.9",
+          "0",
+          "−",
+          "Düşülür",
+          "TGB girişimci"
+        ],
+        [
+          "13",
+          "(-) Ar-Ge ve Tasarım İndirimi (5746; 6550 Geçici Md.1/c)",
+          "VERİ GİRİŞİ D.10",
+          "0",
+          "−",
+          "İndirilir",
+          "Ar-Ge/Tasarım Merkezi"
+        ],
+        [
+          "14",
+          "(-) Girişim Sermayesi Fonu İndirimi (KVK 10/1-g)",
+          "VERİ GİRİŞİ D.11",
+          "0",
+          "−",
+          "İndirilir",
+          "GS Fonu"
+        ],
+        [
+          "15",
+          "(-) Engelliler Korumalı İşyeri İndirimi (KVK 10/1-h)",
+          "VERİ GİRİŞİ D.12",
+          "0",
+          "−",
+          "İndirilir",
+          "5378 s.K."
+        ],
+        [
+          "16",
+          "ASGARİ VERGİ MATRAHI",
+          "Auto",
+          "0",
+          "=",
+          "(3)−İzin Verilen İstisna/İndirimler",
+          "GİB Rehberi Bölüm 3.1"
+        ],
+        [
+          "17",
+          "HAM ASGARİ VERGİ  (×%10)",
+          "Auto",
+          "0",
+          "×%10",
+          "Matrah × %10",
+          "Negatif matrahta 0"
+        ],
+        [
+          "18",
+          "(-) İhracat 5 Puan — Alınmayan Vergi (KVK 32/6)",
+          "VERİ GİRİŞİ F.1",
+          "0",
+          "−",
+          "Vergiden düşer",
+          "İhracat matrahı × %5"
+        ],
+        [
+          "19",
+          "(-) Üretim 1 Puan — Alınmayan Vergi (KVK 32/7)",
+          "VERİ GİRİŞİ F.2",
+          "0",
+          "−",
+          "Vergiden düşer",
+          "Üretim matrahı × %1"
+        ],
+        [
+          "20",
+          "(-) Halka Arz 2 Puan — Alınmayan Vergi (KVK 32/8)",
+          "VERİ GİRİŞİ F.3",
+          "0",
+          "−",
+          "Vergiden düşer",
+          "≥%20 BİST halka arz"
+        ],
+        [
+          "21",
+          "(-) Eski YTB 32/A Alınmayan Vergi (02.08.2024 ÖNCESİ)",
+          "VERİ GİRİŞİ F.4",
+          "0",
+          "−",
+          "Vergiden düşer",
+          "YENİ YTB DÜŞÜLEMEZ"
+        ],
+        [
+          "22",
+          "NİHAİ ASGARİ KURUMLAR VERGİSİ BARAJI",
+          "Auto",
+          "0",
+          "=",
+          "Ham Asgari − İndirim Oranı Avantajları",
+          "GİB Rehberi Md.2.6/2.7"
+        ],
+        [
+          "II. KARŞILAŞTIRMA VE ÖDENECEK VERGİ TESPİTİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A",
+          "Genel Hükümlere Göre Hesaplanan KV",
+          null,
+          "0",
+          "Beyanname Hesaplanan KV",
+          null,
+          null
+        ],
+        [
+          "B",
+          "Nihai Asgari Kurumlar Vergisi Baraji",
+          null,
+          "0",
+          "Hesaplama Tablosu No.22",
+          null,
+          null
+        ],
+        [
+          "→",
+          "ÖDENECEK VERGİ = MAX (A, B)",
+          null,
+          "0",
+          "✓ Genel KV Uygulanır — YİAKV Ek Yük Yok",
+          null,
+          null
+        ],
+        [
+          "Δ",
+          "YİAKV EK VERGİ YÜKÜ (Fark)",
+          null,
+          "0",
+          "0 → YİAKV ek yük yok | Pozitif → Bu tutar ilave vergi ödenir",
+          null,
+          null
+        ],
+        [
+          "III. TEVKİFAT VE GEÇİCİ VERGİ MAHSUBU (GİB Rehberi Md.2.8)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "Tevkif Suretiyle Ödenen KV",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "Ödenen Geçici Vergiler",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "TOPLAM MAHSUP",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "NİHAİ ÖDENECEK YİAKV (Mahsup Sonrası)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "IV. YMM DENETİM KONTROL LİSTESİ (K1–K14)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ Mükellef YİAKV kapsamında mı? (3 muafiyet hali kontrol edildi mi?)",
+          null,
+          "KV muaf | Yeni şirket | Hasılat esaslı — VERİ GİRİŞİ B bölümü.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Ticari bilanço kârı doğru mu? Enflasyon düzeltmesi dikkate alındı mı?",
+          null,
+          "VUK Mük.Md.298 / Geçici Md.33.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "★ Matrahtan düşülemeyen istisnalar matrahta bırakıldı mı? (5/1-e, KKM, Ürün Senedi vb.)",
+          null,
+          "GİB Rehberi Bölüm 3.3 tablosu. KVK Geçici Md.14: TÜM 16 KOD (370–385, Paragraf 1-4) YİAKV matrahından DÜŞÜLEMEZ — VERİ GİRİŞİ E.7 satırı kontrol edilmeli. ÇVÖA istisnaları (386): YİAKV etkisi ayrıca analiz edilmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ GYZ YİAKV matrahından düşülmedi mi?",
+          null,
+          "GYZ sadece genel KV matrahını etkiler — Danıştay 3.D.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "GYO/Fon taşınmaz gelir ayrıştırması (5/1-d) yapıldı mı?\n★ YENİ: %50 dağıtım şartı analizi de yapıldı mı?\nDağıtım şartı karşılanmıyorsa taşınmaz dışı kazanç da düşülemez.",
+          null,
+          "Taşınmaz gelirleri matrahta kalmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "TMS-VUK değerleme farkları, kıdem tazm. karşılık iptali kapsam dışı tutuldu mu?",
+          null,
+          "GİB Rehberi Md.3.2.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "İhracat/Üretim/Halka Arz alınmayan vergi doğru hesaplandı mı?",
+          null,
+          "Matrah oranlaması + puan uygulaması.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "YTB tarihi 02.08.2024 öncesi/sonrası ayrıştırması yapıldı mı?",
+          null,
+          "Eski → Düşülür. Yeni → Düşülemez.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "Ödenecek vergi MAX(Genel KV, Nihai Asgari Vergi) ile belirlendi mi?",
+          null,
+          "Her iki hesabın büyüğü ödenir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "Tevkifat ve geçici vergiler doğru mahsup edildi mi?",
+          null,
+          "Asgari vergiden mahsup edilebilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "Tasfiye/Birleşme/Devir beyannamelerinde de YİAKV hesaplandı mı?",
+          null,
+          "GİB Rehberi Md.2.9.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K12",
+          "GİB Rehberi Md.2.10 | %5 Vergi İndirimi:\n★ 1/1/2026+ KV beyannamelerinde üst limit: 12.000.000 TL\n(332 Seri No.lu GV GT | Yayın No:589)",
+          null,
+          "GİB Rehberi Md.2.10.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K13",
+          "Beyanname 350 'Diğer indirimler' satırındaki kapsam dışı tutarlar analiz edildi mi?",
+          null,
+          "ÇVÖA, değerleme farkı vb. — GİB Rehberi Md.3.2.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K14",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "İSTİSNA & İNDİRİM MATRİSİ",
+      "dimensions": "A1:E36",
+      "rows": [
+        [
+          "YİAKV İSTİSNA VE İNDİRİM MATRİSİ — GİB REHBERİ NİSAN 2026 | KV BEYAN REHBERİ MART 2026 (No:606)",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "HIZLI BAŞVURU — Hangi istisnalar YİAKV matrahından düşülür/düşülemez?",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sıra",
+          "İstisna / İndirim (Kanun Maddesi)",
+          "Genel KV",
+          "YİAKV Matrahı",
+          "Beyanname"
+        ],
+        [
+          "1",
+          "İştirak Kazançları (KVK 5/1-a)",
+          "Düşülür ✓",
+          "Düşülür ✓",
+          "301"
+        ],
+        [
+          "2",
+          "Emisyon Primi (KVK 5/1-ç)",
+          "Düşülür ✓",
+          "Düşülür ✓",
+          "302"
+        ],
+        [
+          "3",
+          "Yat.Fon/Ort. — Taşınmaz HARİÇ (KVK 5/1-d)",
+          "Düşülür ✓",
+          "KOŞULLU ★ (1/1/2025+)\n✓ %50 Dağıtım SAĞLANIYORSA:\n  Taşınmaz Dışı → Düşülür\n✗ Dağıtım SAĞLANAMIYORSA:\n  TÜM KAZANÇ DÜŞÜLEMEZ\n(7524 s.K. Md.32 | KV Beyan Reh. No:606)",
+          "305-308"
+        ],
+        [
+          "4",
+          "Risturn (KVK 5/1-i)",
+          "Düşülür ✓",
+          "Düşülür ✓",
+          "309"
+        ],
+        [
+          "5",
+          "Sat-Kirala-Geri Al (KVK 5/1-j)",
+          "Düşülür ✓",
+          "Düşülür ✓",
+          "310-312"
+        ],
+        [
+          "6",
+          "Varlık Kiralama/Sukuk (KVK 5/1-k)",
+          "Düşülür ✓",
+          "Düşülür ✓",
+          "313-315"
+        ],
+        [
+          "7",
+          "TUGS Gemi Sicili (4490 s.K. Md.12)",
+          "Düşülür ✓",
+          "Düşülür ✓",
+          "315"
+        ],
+        [
+          "8",
+          "Serbest Bölge Kazanç İstisnası (3218 s.K.)",
+          "Düşülür ✓",
+          "Düşülür ✓",
+          "350"
+        ],
+        [
+          "9",
+          "Teknokent Kazanç İstisnası (4691 s.K. Geçici Md.2)",
+          "Düşülür ✓",
+          "Düşülür ✓",
+          "350"
+        ],
+        [
+          "10",
+          "Ar-Ge ve Tasarım İndirimi (5746 s.K.; 6550 Geçici Md.1/c)",
+          "İndirilir ✓",
+          "İndirilir ✓",
+          "283/284"
+        ],
+        [
+          "11",
+          "Girişim Sermayesi Fonu (KVK 10/1-g)",
+          "İndirilir ✓",
+          "İndirilir ✓",
+          "285"
+        ],
+        [
+          "12",
+          "Engelliler Korumalı İşyeri (KVK 10/1-h)",
+          "İndirilir ✓",
+          "İndirilir ✓",
+          "286"
+        ],
+        [
+          "— İZİN VERİLENLER (Üstte) — DÜŞÜLEMEYENLER (Altta) —",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "13",
+          "Yurt Dışı İştirak/Şube/İnşaat Kaz. (KVK 5/1-b,c,g,h)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "303/304/322"
+        ],
+        [
+          "14",
+          "GYO/Fon — Taşınmaz Gelirleri (KVK 5/1-d taşınmaz kısım)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "305-308"
+        ],
+        [
+          "15",
+          "Taşınmaz/İştirak/Fon Satış Kazancı (KVK 5/1-e)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "351-359"
+        ],
+        [
+          "16",
+          "Banka Borçlu Taşınmaz/İştirak Satışı (KVK 5/1-f)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "321"
+        ],
+        [
+          "17",
+          "Eğitim/Öğretim Kazanç İstisnası (KVK 5/1-ı)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "339"
+        ],
+        [
+          "18",
+          "Yabancı Fon Yönetici Şirketi (KVK 5/A) + Patent Box (KVK 5/B)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "323/324"
+        ],
+        [
+          "19",
+          "KKM İstisnalar — Tüm Kodlar (KVK Geçici Md.14)\nP1: 370/371/372/373/374 (Aktif) | P2: 375/376/377/378 (Pasif)\nP3: 379/380/381/382 (Altın) | P4: 383/384/385",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "370–385"
+        ],
+        [
+          "20",
+          "Ürün Senedi Kazancı (GVK Geçici Md.76 / 5300 s.K.)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "349"
+        ],
+        [
+          "21",
+          "Araştırma Altyapıları Ar-Ge (6550 s.K. Geçici Md.1/a)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "350"
+        ],
+        [
+          "22",
+          "Sponsorluk + Bağış/Yardımlar — Tümü (KVK 10/1-b,c,ç,d,e,f)",
+          "İndirilir ✓",
+          "DÜŞÜLEMEZ ✗",
+          "260-270"
+        ],
+        [
+          "23",
+          "Yurt Dışı Yazılım/Müh./Eğ./Sağ. İndirimi (KVK 10/1-ğ)",
+          "İndirilir ✓",
+          "DÜŞÜLEMEZ ✗",
+          "280"
+        ],
+        [
+          "24",
+          "Nakdi Sermaye Artışı Faiz İndirimi (KVK 10/1-ı)",
+          "İndirilir ✓",
+          "DÜŞÜLEMEZ ✗",
+          "283"
+        ],
+        [
+          "25",
+          "İstanbul Finans Merkezi İndirimi (KVK 10/1-i)",
+          "İndirilir ✓",
+          "DÜŞÜLEMEZ ✗",
+          "290"
+        ],
+        [
+          "26",
+          "Yatırım İndirimi + Teknogirişim/Teknokent Serm.Desteği",
+          "İndirilir ✓",
+          "DÜŞÜLEMEZ ✗",
+          "Geçici"
+        ],
+        [
+          "27",
+          "ÇVÖA İstisnaları (Uluslararası Anlaşmalar)",
+          "Düşülür ✓",
+          "DÜŞÜLEMEZ ✗",
+          "Diğer"
+        ],
+        [
+          "— ÖZEL: İNDİRİM ORANI KAYNAKLIYLAR (Asgari Vergiden Düşülür) —",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "28",
+          "İhracat 5 Puan / Üretim 1 Puan / Halka Arz 2 Puan (KVK 32/6-7-8)",
+          "Mat. indirim",
+          "★ ASGARİ VERGİDEN DÜŞÜLÜR",
+          "KVK 32"
+        ],
+        [
+          "29",
+          "02.08.2024 ÖNCESİ YTB — KVK 32/A Alınmayan Vergi",
+          "Mat. indirim",
+          "★ ASGARİ VERGİDEN DÜŞÜLÜR",
+          "KVK 32/A"
+        ],
+        [
+          "30",
+          "02.08.2024 SONRASI YTB — KVK 32/A Alınmayan Vergi",
+          "Mat. indirim",
+          "✗ ASGARİ VERGİDEN DE DÜŞÜLEMEZ",
+          "KVK 32/A"
+        ],
+        [
+          "★ 5/1-d KOŞULLU DÜZENLEME (7524 s.K. Md.32 — 1/1/2025+): GYO/fon ve ortaklıklar taşınmaz gelirlerinin %50'sini dağıtmazsa hem taşınmaz hem taşınmaz dışı kazançlar için istisna yoktur. Bu durumda D.3 ve E.3 satırlarının ikisi de DÜŞÜLEMEZ olur. 5/1-d dağıtım şartı sağlandığında alınan kar payları 5/1-a istisnasına konu edilemez. (KV Beyan Rehberi Mart 2026 — Yayın No:606)",
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETÇİ NOTLARI",
+      "dimensions": "A1:D10",
+      "rows": [
+        [
+          "YİAKV DENETÇİ NOTLARI VE YMM TASDİK STANDARDI | KVK Md.32/C",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB Rehberleri: Yayın No:607 (YİAKV Nis.2026) | No:606 (KV Beyan Mar.2026) | No:605 (KV Oran Mar.2026) | No:589 (%5 İndirim Şub.2026) | 7524 Sayılı Kanun",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak"
+        ],
+        [
+          "N1",
+          "YİAKV — Temel Kural, Formül ve Yürürlük",
+          "YİAKV TEMEL KURALI (KVK Md.32/C — 7524 Sayılı Kanun Md.36):\nHesaplanan KV < Ticari Bilanço Kârı + KKEG × %10 ise aradaki fark YİAKV olarak ödenir.\n\nHESAPLAMA FORMÜLÜ:\n① Ticari Bilanço Kârı/Zararı + KKEG = Kazanç Tabanı\n② Kazanç Tabanı − İzin Verilen İstisna/İndirimler = Asgari Vergi Matrahı\n③ Asgari Vergi Matrahı × %10 = Ham Asgari Vergi\n④ Ham Asgari Vergi − İndirim Oranı Kaynaklı Alınmayan Vergiler = Nihai Asgari Vergi\n⑤ MAX(Genel KV, Nihai Asgari Vergi) = Ödenecek KV\n\nYÜRÜRLÜK: 2025 yılı I. Geçici Vergi döneminden itibaren.\n\nMUAFİYETLER: KV muafları | İlk 3 hesap dönemi | Hasılat esaslı mükellefler.\nBirleşme/devir/tür değiş./bölünme yoluyla kurulanlar muafiyet kapsamı dışı.",
+          "KVK Md.32/C | 7524 s.K. Md.36 | GİB Rehberi Nisan 2026"
+        ],
+        [
+          "N2",
+          "Matrahtan Düşülemeyen İstisnalar — En Sık Yapılan Hatalar",
+          "YİAKV MATRAHINDA KALACAK (DÜŞÜLEMEZ) İSTİSNA VE İNDİRİMLER:\n\n① KVK 5/1-e: Taşınmaz/İştirak/Fon Satış Kazancı (351-359)\n② KVK 5/1-b,c,g,h: Yurt dışı iştirak/şube/inşaat kazançları\n③ KVK 5/A: Yabancı fon yönetici şirketi (323) | KVK 5/B: Patent Box (324)\n④ KVK Geçici Md.14 TÜM ON ALTI KOD — DÜŞÜLEMEZ:\n   Paragraf 1 (Aktif): 370 Kur farkı değerleme | 371 Kur farkı tazminat |\n   372 Dönem sonu faiz/kâr payı tahakkuku | 373 Vade sonu faiz/kâr payı |\n   374 Vade sonu diğer kazançlar\n   Paragraf 2 (Pasif/Borç): 375 Borç kur farkı | 376 Dönem sonu tahakkuk |\n   377 Vade sonu faiz/kâr payı | 378 Vade sonu diğer kazançlar\n   Paragraf 3 (Altın Hesabı): 379 Altın dönüşüm kazancı | 380 Dönem sonu tahakkuk |\n   381 Vade sonu faiz/kâr payı | 382 Vade sonu diğer kazançlar\n   Paragraf 4: 383 Dönem sonu tahakkuk | 384 Kâr payı ve faiz | 385 Vade sonu kazanç\n⑤ GVK Geçici Md.76: Ürün senedi kazancı (349)\n⑥ KVK 10/1-ı: Nakdi sermaye artışı faiz indirimi\n⑦ KVK 10/1-b,c,ç,d,e,f: Tüm bağış ve sponsorluklar\n⑧ Yatırım indirimi (devreden dahil)\n⑨ ÇVÖA kapsamı istisnaları (386 — Beyanname ayrı satır)\n\nYMM NOT: Bu istisnaları yanlışlıkla matrahtan düşmek YİAKV'nin EN SIK YAPILAN HATASIDIR.\n★ KVK Geçici Md.14 için: Tüm 16 kod birden E.7 satırında — herhangi birini düşmek hata.\n★ ÇVÖA istisnaları (386): YİAKV etkisi anlaşma/gelir türüne göre ayrıca analiz edilmeli.",
+          "KVK Md.32/C | GİB Rehberi Bölüm 3.3"
+        ],
+        [
+          "N3",
+          "GYZ, Enflasyon Düzeltmesi, TMS-VUK Farkları",
+          "GEÇMİŞ YIL ZARARLARI (GYZ):\nGYZ YİAKV matrahından düşülemez. GYZ sadece genel KV matrahını etkiler.\n(Danıştay 3.D. E:2024/5700 doğrultusunda)\n\nENFLASYON DÜZELTMESİ:\nVUK Mük.Md.298 / Geçici Md.33 uygulandığında düzeltilmiş değerler kullanılır.\n\nTMS/TFRS ile VUK ARASINDA DEĞERLEME FARKLARI:\nBu farklar istisna/indirim niteliğinde değil — YİAKV kapsamı dışı (GİB Rehberi Md.3.2).\nÖzellikle: Örtülü sermaye kur farkı geliri, kıdem tazm. karşılık iptali,\nGVK Mük.121 vergi indirimi hakkı gelir kaydı — YİAKV kapsamı dışı.\n\nÇVÖA İSTİSNALARI:\nTürkiye'nin vergi alma hakkı olmadığı ÇVÖA kazançları YİAKV matrahına dahil edilmez.",
+          "VUK Mük.Md.298 | GİB Rehberi Md.2.5, 3.2 | Danıştay 3.D."
+        ],
+        [
+          "N4",
+          "İndirim Oranı Kaynaklı Alınmayan Vergiler",
+          "HAM ASGARİ VERGİDEN DÜŞÜLECEK TUTARLAR:\n\nİHRACAT 5 PUAN:\nİhracat matrahı = KV matrahı × (İhracat kazancı / Ticari bilanço kârı)\nAlınmayan vergi = İhracat matrahı × %5\n\nÜRETİM 1 PUAN (Sanayi Sicil + Fiili Üretim):\nÜretim matrahı = KV matrahı × (Üretim kazancı / Ticari bilanço kârı)\nAlınmayan vergi = Üretim matrahı × %1\n\nHALKA ARZ 2 PUAN (≥%20 BİST): Alınmayan vergi = İlgili matrah × %2\n\nYTB — KVK 32/A:\n02.08.2024 ÖNCESİ YTB → Alınmayan vergi asgari vergiden DÜŞÜLÜR\n02.08.2024 SONRASI YTB → ASGARİ VERGİDEN DE DÜŞÜLEMEZ\nYatırım tutarında bu tarihten sonraki revize artışlar dahil edilmez.",
+          "KVK 32/6-7-8 | KVK 32/A | GİB Rehberi Md.2.6-2.7"
+        ],
+        [
+          "N5",
+          "YMM Tasdik Dil Standardı",
+          "YİAKV YOK — KULLANIN:\n'...KVK Md.32/C kapsamında yapılan hesaplamada [mükellef]'in [dönem] dönemine\n  ait ticari bilanço kârına KKEG eklenmesiyle bulunan [X] TL üzerinden %10 oranında\n  hesaplanan [Y] TL nihai asgari kurumlar vergisi, genel hükümlere göre hesaplanan\n  [Z] TL kurumlar vergisinin altında kaldığından, yurt içi asgari kurumlar vergisi\n  nedeniyle ilave vergi yükü doğmamıştır.'\n\nYİAKV DEVREYE GİRDİ — KULLANIN:\n'...hesaplanan [Z] TL kurumlar vergisi, nihai asgari vergi baraji [Y] TL'nin altında\n  kaldığından; aradaki [Y-Z] TL fark tutar yurt içi asgari kurumlar vergisi olarak\n  tahakkuk ettirilmiştir.'\n\nKULLANMAYIN:\n'...GYZ asgari vergiden düşülmüştür...' | '...5/1-e istisnası matrahtan indirilmiştir...'\n'...yeni YTB alınmayan vergi mahsup edilmiştir...' (02.08.2024+ YTB düşülemez)",
+          "49 No.lu Tebliğ | KVK Md.32/C | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "N6",
+          "★ GYO/Fon 5/1-d Dağıtım Şartı + 5/1-a Bağlantısı + %5 İndirim Limiti + YİD/KÖİ Oranı",
+          "★ 5/1-d DAĞITIM ŞARTI (7524 s.K. Md.32 — 1/1/2025 tarihinden itibaren):\n\nGYO/GKO/fon ve ortaklıklar (emeklilik fonları HARİÇ) istisna kazançlarından yararlanabilmek\niçin taşınmaz gelirlerinin en az %50'sini, elde edildiği KV beyan ayını izleyen 2. ayın\nsonuna kadar kar payı olarak DAĞITMAK ZORUNDADIR.\n\nSONUÇLAR:\n✓ Dağıtım şartı SAĞLANIYORSA: Taşınmaz dışı kazançlar (D.3) YİAKV matrahından düşülür.\n✗ Dağıtım şartı SAĞLANAMIYORSA: Hem taşınmaz HEM taşınmaz dışı kazançların tamamı için\n   istisna KALKAR → YİAKV matrahından HİÇBİR TUTAR düşülemez.\n\n★ 5/1-a İŞTİRAK KAZANCI VE 5/1-d BAĞLANTISI (KV Beyan Rehberi 2026 — Yayın No:606):\n• 5/1-d %50 dağıtım şartını SAĞLAYAN fon/ort.'dan alınan kâr payı\n   → 5/1-a (İştirak Kazançları) istisnasına KONU EDİLEMEZ (D.1).\n• 5/1-d dağıtım şartını SAĞLAYAMAYAN fon/ort.'dan alınan kâr payı\n   → 5/1-a kapsamında istisna uygulanabilir.\n\n★ %5 VERGİ İNDİRİMİ ÜST LİMİTİ (Yayın No:589 — Şubat 2026):\n1/1/2026'dan itibaren verilecek KV beyannamelerinde hesaplanan %5 indirim tutarı\n12.000.000 TL'yi aşamaz (332 Seri No.lu GV GT). Dar mükellefler de yararlanabilir.\n\n★ YAP-İŞLET-DEVRET / KAMU-ÖZEL İŞBİRLİĞİ ŞİRKETLERİ (Yayın No:605):\n3996 s.K. (YİD) ve 6428 s.K. (KÖİ) kapsamındaki şirketler 2025 yılı ve izleyen\ndönemlerde %30 KV oranına tabidir. Bu mükelleflerin dosyalarında oran %30 girilmeli.",
+          "7524 s.K. Md.32 | KVK Md.5/1-a, 5/1-d\nKV Beyan Rehberi Mart 2026 (No:606)\nKV Oran Rehberi Mart 2026 (No:605)\n%5 Vergi İndirimi Reh. Şubat 2026 (No:589)\n332 Seri No.lu GV Genel Tebliği"
+        ],
+        [
+          "49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. YİAKV 2025 ve sonrası tüm KV tasdiklerinde DENETİM ODAĞI haline gelmiştir. Bu çalışma kâğıdı her KV tasdik dosyasında bulunmalıdır. YMM müteselsil sorumluluk: SM-SMMM-YMM K. Md.12.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LİSTESİ",
+      "dimensions": "A1:F32",
+      "rows": [
+        [
+          "YİAKV TASDİK DOSYASI BELGE LİSTESİ | KVK Md.32/C | GİB REHBERİ NİSAN 2026",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU ANA BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Kurumlar Vergisi Beyannamesi (e-Beyanname çıktısı)",
+          "Hesaplanan KV, matrah ve istisna satırları — YİAKV hesaplamasıyla uyum.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Kesinleşmiş Mizan ve Bilanço (Enflasyon Düzeltmeli — Uygulanıyorsa)",
+          "Ticari bilanço kârı/zararının kaynağı. Düzeltme uygulandıysa düzeltilmiş bilanço zorunlu.",
+          "Muhasebe programı",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ KKEG Dökümü (Kanunen Kabul Edilmeyen Giderler Listesi)",
+          "BSMV, gecikme faizi, özel gider, tüm KKEG kalemleri — eksiksiz liste.",
+          "Muhasebe ekstresi — 689/770",
+          null
+        ],
+        [
+          null,
+          "4",
+          "★ YİAKV Hesaplama Tablosu (Bu Çalışma Kâğıdı — YİAKV HESAPLAMA Sayfası)",
+          "GİB Rehberi Nisan 2026 formülüne uygun tam hesaplama. Her satır için referans belirtilmeli.",
+          "Bu dosya — YİAKV HESAPLAMA",
+          null
+        ],
+        [
+          null,
+          "5",
+          "★ İstisna/İndirim Ayrıştırma Analizi (Bu Dosya — İSTİSNA & İNDİRİM MATRİSİ)",
+          "Hangi istisnaların YİAKV matrahından düşüldüğü — kalem kalem teyit.",
+          "Bu dosya — Matris Sayfası",
+          null
+        ],
+        [
+          "KATEGORİ 2 — MUAFİYET VE ÖZEL DURUM BELGELERİ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi",
+          "Açıklama / YMM Kontrol",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "6",
+          "Kuruluş Belgesi / Ticaret Sicil Gazetesi (Yeni Şirket Muafiyet Kontrolü)",
+          "3 hesap dönemi muafiyeti. Birleşme/devir/bölünme ile kurulma kontrolü.",
+          "Ticaret Sicil Gazetesi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Yatırım Teşvik Belgesi (YTB) + 02.08.2024 Tarih Analizi",
+          "Eski YTB → Asgari vergiden düşülür. Yeni YTB → Düşülemez. Revize geçmişi incelenmeli.",
+          "Sanayi ve Teknoloji Bakanlığı",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Sanayi Sicil Belgesi + Fiili Üretim Kanıtı (1 Puan İçin)",
+          "Aktif sanayi sicil belgesi + fiili üretim belgesi.",
+          "Sanayi Sicil Belgesi — güncel",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Ar-Ge/Tasarım Merkezi Belgesi + Dönem Harcama Listesi",
+          "Sanayi Bakanlığı onaylı merkez belgesi. Harcama listesi D.10 ile uyumlu.",
+          "Ar-Ge/Tasarım Merkezi Belgesi",
+          null
+        ],
+        [
+          null,
+          "10",
+          "TGB Kiracı Belgesi / SB Faaliyet Lisansı (Teknokent / SB İstisnası İçin)",
+          "TGB kiracı teyidi (4691) veya SB faaliyet lisansı (3218).",
+          "TGB Yönetici / SB Bölge Müd.",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Mükellef YİAKV kapsamında mı? 3 muafiyet hali kontrol edildi mi?",
+          "KV muaf | Yeni şirket | Hasılat esaslı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Matrahtan düşülemeyen istisnalar matrahta bırakıldı mı?",
+          "5/1-e, KKM, Ürün Senedi, Patent Box vb.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ GYZ asgari vergi matrahından düşülmedi mi?",
+          "GYZ sadece genel KV matrahını etkiler.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Enflasyon düzeltmesi uygulandıysa düzeltilmiş değerler kullanıldı mı?",
+          "VUK Mük.Md.298/Geçici Md.33.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "GYO/Fon taşınmaz gelir ayrıştırması yapıldı mı? (5/1-d)",
+          "Taşınmaz gelirleri matrahta kalmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "TMS-VUK değerleme farkları vb. kapsam dışı tutarlar temizlendi mi?",
+          "GİB Rehberi Md.3.2.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "İhracat/Üretim/Halka Arz alınmayan vergi doğru hesaplandı mı?",
+          "Matrah oranlaması + puan uygulaması.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "YTB tarihi 02.08.2024 öncesi/sonrası ayrıştırması yapıldı mı?",
+          "Eski → Düşülür. Yeni → Düşülemez.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Ödenecek vergi MAX(Genel KV, Nihai Asgari Vergi) ile belirlendi mi?",
+          "Her iki hesabın büyüğü ödenir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB Rehberi Nisan 2026 (Yayın No:607) esas alınarak hazırlanmıştır. YİAKV, 2025 yılı I. Geçici Vergi döneminden itibaren uygulanmaktadır. Temel kural: Ödenecek KV = MAX(Genel KV, Nihai Asgari Vergi). Kritik hatalar: GYZ'yi matrahtan düşmek | 5/1-e ve KKM istisnasını yanlış sınıflandırmak | Yeni YTB alınmayan vergiyi asgari vergiden düşmek. Bu çalışma kâğıdı her KV tasdik dosyasında yer almalıdır. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

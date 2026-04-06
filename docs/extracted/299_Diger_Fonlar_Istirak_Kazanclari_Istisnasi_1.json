@@ -1,0 +1,1434 @@
+{
+  "file": "299_Diger_Fonlar_Istirak_Kazanclari_Istisnasi_1.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G61",
+      "rows": [
+        [
+          "299 – DİĞER YATIRIM FONLARINDAN İŞTİRAK KAZANCI İSTİSNASI | KVK Md.5/1-a-4 | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a-4 | 7456 s.K. Mülga (15.07.2023) | GEÇİŞ UYGULAMASI: 15.07.2023 Öncesi İktisap | TL Esaslı Fon (Döviz/Altın/KKM Hariç) | Kâr Payı + Fon İadesi + VUK 279 Değerleme | Zarar Olsa Dahi İndirilecek — Beyanname Satır 299",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KRİTİK UYARILAR: (1) İktisap tarihi 15.07.2023'ten ÖNCE olmalı — sonrası vergiye tabi. (2) Portföyde döviz/altın/kıymetli maden OLMAMALI. (3) GSYF/GSYO için bu form DEĞİL — 298 kodu kullanılır. (4) Portföy ≥%51 hisse senedi → Alış bedeli → VUK 279 değerleme farkı İSTİSNA DIŞİ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "RENK KODLARI: Sarı = Manuel giriş  |  Yeşil = Otomatik hesaplama  |  Kırmızı = Kritik uyarı / kapsam dışı  |  Dropdown = Listeden seçim",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  ★ İstisna uygulanacak fon(lar)ın iktisap tarihi 15.07.2023'ten ÖNCE mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: 7456 s.K. (15.07.2023) ile bu bent mülga edilmiştir. 15.07.2023 sonrası iktisap edilen fonların kâr payı ve değerleme farkı VERGIYE TABİDİR. Karma tarihli alımlarda pay adedi bazında ayrıştırma zorunludur.",
+          null
+        ],
+        [
+          "A0.2  ★ Portföyde döviz/altın/kıymetli maden araçları YOK mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: KVK 5/1-a-4 yalnızca TL esaslı fonlar içindir. Portföyde yabancı para birimi, altın, kıymetli maden araçları olan fonlar kapsam dışıdır. Fon bilgi formu/izahnamesi ile portföy bileşimi teyit edilmelidir.",
+          null
+        ],
+        [
+          "A0.3  Bu form GSYF/GSYO için değil — doğru form kullanılıyor mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "GSYF (Girişim Sermayesi YF) ve GSYO → Beyanname 298 kodu (KVK 5/1-a-3 kapsamı). Bu form (299) sadece diğer yatırım fonları içindir. GYF/GYO (Gayrimenkul) için ayrıca 5/1-d şartları değerlendirilmelidir.",
+          null
+        ],
+        [
+          "A0.4  VUK 279 değerleme yöntemi doğru belirlendi mi? (Portföy %51 kriteri)",
+          null,
+          null,
+          null,
+          "EVET",
+          "Portföy ≥%51 hisse senedi: Alış bedeli → değerleme farkı OLUŞMAZ → C tablosu boş kalır. Portföy <%51 hisse senedi: Borsa rayici → değerleme farkı = istisna. Portföy bileşimi fon bilgi formundan her dönem teyit edilmelidir.",
+          null
+        ],
+        [
+          "A0.5  Karma tarihli alım ayrıştırması tam yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Aynı fonda 15.07.2023 öncesi ve sonrası alım varsa: Pay adedi bazında ayrıştırma zorunludur. FIFO veya ağırlıklı ortalama maliyet yöntemi tutarlı biçimde uygulanmalıdır.",
+          null
+        ],
+        [
+          "A0.6  Muhasebe hesapları ile beyanname 299 tutarı uyumlu mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Üç kademe uyum: 118/640/645 hesap kartları = VERİ GİRİŞİ B+C toplamı = Beyanname 299. Uyumsuzluk varsa kayıt hatası veya kapsam dışı gelir karışmış olabilir.",
+          null
+        ],
+        [
+          "A0.7  YİAKV matrahından 299 istisnası DÜŞÜLEBİLİR mi? (5/1-a kapsamı — EVET)",
+          null,
+          null,
+          null,
+          "EVET",
+          "NOT: KVK 5/1-a-4 (299) istisnası YİAKV matrahından DÜŞÜLEBİLİR (5/1-a kapsamı). Bu, 5/1-c (318) ve 5/1-e (361) istisnalarından önemli bir farktır. YİAKV çalışma kâğıdında 299 tutarı matrahtan doğru şekilde düşülmelidir.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.1 (iktisap tarihi) ve A0.2 (portföy bileşimi) kritik. A0.5 karma ayrıştırmayı kontrol et.",
+          null
+        ],
+        [
+          "A. MÜKELLEF VE DÖNEM BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mükellef Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "İstisna uygulayan kurumun tam adı",
+          null
+        ],
+        [
+          "Vergi Kimlik Numarası",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "Genel KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Finans sektörü: %30",
+          null
+        ],
+        [
+          "B. KÂR PAYI + FON İADESİ KAZANCI (15.07.2023 Öncesi İktisap, TL Esaslı Fonlar)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAPSAM: Para piyasası, tahvil-bono, karma, serbest ve diğer TL esaslı yatırım fonu katılma payları. Her fon satırı: 15.07.2023 öncesi iktisap edilmiş paylardan elde edilen kâr payı ve fon iadesi kazancı. Portföyde döviz/altın olanlar kapsam dışıdır (D tablosuna alın).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Adı / Tanımlayıcı",
+          "İktisap Tarihi",
+          "Kâr Payı (TL)",
+          "Fon İadesi Kaz. (TL)",
+          "Toplam (TL)",
+          "YMM Notu"
+        ],
+        [
+          null,
+          "Fon-1",
+          null,
+          null,
+          null,
+          "0",
+          "İktisap tarihi ve portföy bileşimi teyit edilmeli."
+        ],
+        [
+          null,
+          "Fon-2",
+          null,
+          null,
+          null,
+          "0",
+          "İktisap tarihi ve portföy bileşimi teyit edilmeli."
+        ],
+        [
+          null,
+          "Fon-3",
+          null,
+          null,
+          null,
+          "0",
+          "İktisap tarihi ve portföy bileşimi teyit edilmeli."
+        ],
+        [
+          null,
+          "Fon-4",
+          null,
+          null,
+          null,
+          "0",
+          "İktisap tarihi ve portföy bileşimi teyit edilmeli."
+        ],
+        [
+          null,
+          "Fon-5",
+          null,
+          null,
+          null,
+          "0",
+          "İktisap tarihi ve portföy bileşimi teyit edilmeli."
+        ],
+        [
+          null,
+          "Fon-6",
+          null,
+          null,
+          null,
+          "0",
+          "İktisap tarihi ve portföy bileşimi teyit edilmeli."
+        ],
+        [
+          null,
+          "Fon-7",
+          null,
+          null,
+          null,
+          "0",
+          "İktisap tarihi ve portföy bileşimi teyit edilmeli."
+        ],
+        [
+          null,
+          "Fon-8",
+          null,
+          null,
+          null,
+          "0",
+          "İktisap tarihi ve portföy bileşimi teyit edilmeli."
+        ],
+        [
+          null,
+          "B — KÂR PAYI + FON İADESİ KAZANCI TOPLAMI",
+          null,
+          "0",
+          "0",
+          "0",
+          "→ Beyanname 299 (B kısmı)"
+        ],
+        [
+          "C. VUK 279 DEĞERLEME FARKI KAZANCI (15.07.2023 Öncesi İktisap, Portföy <%51 Hisse)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAPSAM: Portföyünün <%51'i BIST hisse senedinden oluşan fonlar → Borsa rayiciyle değerlenir → Değerleme farkı istisna kapsamındadır. Portföy ≥%51 hisse: Alış bedeli → değerleme farkı YOKTUR (C tablosu boş). Portföy bileşimi fon bilgi formuyla dönem başı ve sonu kontrol edilmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Adı / Tanımlayıcı",
+          "İktisap Tarihi",
+          "Dönem Başı Değer (TL)",
+          "Dönem Sonu VUK 279 (TL)",
+          "Değerleme Farkı (TL)",
+          "YMM Notu"
+        ],
+        [
+          null,
+          "VUK-1",
+          null,
+          null,
+          null,
+          "0",
+          "Portföy %51 kriteri teyit edilmeli. Yalnızca artış istisna."
+        ],
+        [
+          null,
+          "VUK-2",
+          null,
+          null,
+          null,
+          "0",
+          "Portföy %51 kriteri teyit edilmeli. Yalnızca artış istisna."
+        ],
+        [
+          null,
+          "VUK-3",
+          null,
+          null,
+          null,
+          "0",
+          "Portföy %51 kriteri teyit edilmeli. Yalnızca artış istisna."
+        ],
+        [
+          null,
+          "VUK-4",
+          null,
+          null,
+          null,
+          "0",
+          "Portföy %51 kriteri teyit edilmeli. Yalnızca artış istisna."
+        ],
+        [
+          null,
+          "VUK-5",
+          null,
+          null,
+          null,
+          "0",
+          "Portföy %51 kriteri teyit edilmeli. Yalnızca artış istisna."
+        ],
+        [
+          null,
+          "VUK-6",
+          null,
+          null,
+          null,
+          "0",
+          "Portföy %51 kriteri teyit edilmeli. Yalnızca artış istisna."
+        ],
+        [
+          null,
+          "C — VUK 279 DEĞERLEME FARKI TOPLAMI",
+          null,
+          "0",
+          "0",
+          "0",
+          "→ Beyanname 299 (C kısmı)"
+        ],
+        [
+          "D. KAPSAM DIŞI FONLAR — Vergiye Tabi (Kontrol Tablosu, Beyanname 299'a Yazılmaz)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kapsam dışı: 15.07.2023 sonrası iktisap edilen fonlar, portföyde döviz/altın/kıymetli maden olan fonlar, GSYF/GSYO (298 kodu kullanılır). Bu gelirler beyanname matrahında kalır — hatalı şekilde 299 satırına yazılmamalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Adı / Tanımlayıcı",
+          "Kapsam Dışı Neden",
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "KD-1",
+          null,
+          null,
+          null,
+          "Vergiye tabi — beyanname matrahında kalır, 299 satırına yazılmaz",
+          null
+        ],
+        [
+          null,
+          "KD-2",
+          null,
+          null,
+          null,
+          "Vergiye tabi — beyanname matrahında kalır, 299 satırına yazılmaz",
+          null
+        ],
+        [
+          null,
+          "KD-3",
+          null,
+          null,
+          null,
+          "Vergiye tabi — beyanname matrahında kalır, 299 satırına yazılmaz",
+          null
+        ],
+        [
+          null,
+          "KD-4",
+          null,
+          null,
+          null,
+          "Vergiye tabi — beyanname matrahında kalır, 299 satırına yazılmaz",
+          null
+        ],
+        [
+          null,
+          "D — KAPSAM DIŞI TOPLAM (Vergiye Tabi — 299'a Yazılmaz!)",
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. İSTİSNA TUTARI — KV BEYANNAMESİ SATIR 299",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  Kâr Payı + Fon İadesi Kazancı (B Tablosu)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "B tablosu toplamından otomatik"
+        ],
+        [
+          "E.2  VUK 279 Değerleme Farkı Kazancı (C Tablosu)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "C tablosu toplamından otomatik"
+        ],
+        [
+          "E.3  TOPLAM İSTİSNA → Beyanname Satır 299 (E.1 + E.2)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          null
+        ],
+        [
+          "YİAKV NOTU (5/1-a Kapsamı): KVK 5/1-a-4 (299) istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR — 5/1-c (318) ve 5/1-e (361)'den farklı olarak bu istisna matrahtan çıkarılabilir. YİAKV çalışma kâğıdında 299 tutarı doğru şekilde matrahtan düşülmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G40",
+      "rows": [
+        [
+          "299 – DİĞER YATIRIM FONLARI | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a-4 | 7456 s.K. Mülga (15.07.2023) | TL Esaslı Fon | Kâr Payı + Fon İadesi + VUK 279 | YİAKV'den DÜŞÜLEBİLİR | Beyanname Satır 299",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "A0.9 OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Kâr Payı + Fon İadesi Toplam (B Tablosu)",
+          null,
+          null,
+          "0",
+          "B Toplamı",
+          null,
+          null
+        ],
+        [
+          "VUK 279 Değerleme Farkı Toplam (C Tablosu)",
+          null,
+          null,
+          "0",
+          "C Toplamı",
+          null,
+          null
+        ],
+        [
+          "TOPLAM İSTİSNA (E.3 — Beyanname 299)",
+          null,
+          null,
+          "0",
+          "B+C Toplamı → 299 Satırı",
+          null,
+          null
+        ],
+        [
+          "Kapsam Dışı (D — Vergiye Tabi, Kontrol)",
+          null,
+          null,
+          "0",
+          "Beyanname matrahında kalır",
+          null,
+          null
+        ],
+        [
+          "B. FON TÜRÜ VE KAPSAM TABLOSU — 298 / 299 / Kapsam Dışı Ayrımı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Fon Türü",
+          null,
+          "299 Kapsamı?",
+          null,
+          "298 mi?",
+          "Açıklama"
+        ],
+        [
+          "Para Piyasası Fonu",
+          null,
+          "EVET (TL)",
+          null,
+          "HAYIR",
+          null,
+          "TL esaslı — 15.07.2023 öncesi iktisap şartıyla 299"
+        ],
+        [
+          "Tahvil-Bono Fonu",
+          null,
+          "EVET (TL)",
+          null,
+          "HAYIR",
+          null,
+          "TL esaslı — 15.07.2023 öncesi iktisap şartıyla 299"
+        ],
+        [
+          "Karma Fon (TL)",
+          null,
+          "EVET (TL)",
+          null,
+          "HAYIR",
+          null,
+          "Portföyde döviz/altın yoksa 299 kapsamında"
+        ],
+        [
+          "Hisse Senedi Fonu",
+          null,
+          "★ VUK 279 Dikkat",
+          null,
+          "HAYIR",
+          null,
+          "≥%51 hisse → Alış bedeli → Değerleme farkı yok"
+        ],
+        [
+          "GSYF (Girişim Sermayesi)",
+          null,
+          "HAYIR",
+          null,
+          "EVET",
+          null,
+          "KVK 5/1-a-3 kapsamı → 298 kodu"
+        ],
+        [
+          "GSYO",
+          null,
+          "HAYIR",
+          null,
+          "EVET",
+          null,
+          "KVK 5/1-a-3 kapsamı → 298 kodu"
+        ],
+        [
+          "Döviz/Altın Fonu",
+          null,
+          "HAYIR",
+          null,
+          "HAYIR",
+          null,
+          "Kapsam dışı — vergiye tabi"
+        ],
+        [
+          "KKM Fonu",
+          null,
+          "HAYIR",
+          null,
+          "HAYIR",
+          null,
+          "Kapsam dışı — vergiye tabi"
+        ],
+        [
+          "GYF/GYO (Gayrimenkul)",
+          null,
+          "★ 5/1-d Koşullu",
+          null,
+          "HAYIR",
+          null,
+          "5/1-d şartları ayrıca değerlendirilmeli"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K10)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama ve Kanıt",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "★ İktisap tarihi her fon için ayrı ayrı 15.07.2023 öncesi mi?",
+          null,
+          "Banka/MKK alış dekontu ile her fon ayrı ayrı belgelenmelidir. Belgesiz hiçbir fon istisna kapsamında değerlendirilemez.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Portföy bileşimi: Döviz/altın/kıymetli maden YOK mu?",
+          null,
+          "Fon bilgi formu/izahnamesinden portföy bileşimi teyit edilmelidir. Yabancı para birimi, altın, kıymetli maden araçları içeren fonlar kapsam dışıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "Fon türü doğru sınıflandırıldı mı? (298 / 299 / Kapsam Dışı ayrımı)",
+          null,
+          "GSYF/GSYO → 298. GYF/GYO → 5/1-d. Döviz/Altın fonlar → Kapsam dışı. Bu form (299) sadece TL esaslı diğer fonlar içindir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "VUK 279 değerleme yöntemi portföy bileşimiyle uyumlu mu?",
+          null,
+          "≥%51 BIST hisse senedi: Alış bedeli → Değerleme farkı yok → C tablosu boş. <%51 hisse: Borsa rayici → C tablosuna değerleme farkı işlenir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "Kâr payı ve fon iadesi kazancı muhasebe hesaplarıyla uyumlu mu?",
+          null,
+          "118 (maliyet), 640 (kâr payı), 645 (satış kazancı) hesap kartları ile VERİ GİRİŞİ B tablosu tutarlı olmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "VUK 279 değerleme farkı muhasebe 649 hesabıyla uyumlu mu?",
+          null,
+          "Değerleme artışı 649 hesabına gelir kaydedilmeli. 649 toplamı (VUK 279 kısmı) ile C tablosu toplamı uyumlu olmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "Beyanname 299 satırı E.3 tutarıyla birebir uyumlu mu?",
+          null,
+          "3 kademe uyum: Muhasebe hesapları = VERİ GİRİŞİ E.3 = Beyanname 299. Fark varsa kaynak belgelere inilmeli ve açıklanmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "Karma tarihli alım ayrıştırması doğru yapıldı mı?",
+          null,
+          "Aynı fonda 15.07.2023 öncesi ve sonrası alım: Pay adedi bazında ayrıştırma zorunlu. Kapsam içi kısım B tablosuna, kapsam dışı D tablosuna alınmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "YİAKV matrahında 299 istisnası doğru konumlandırıldı mı?",
+          null,
+          "KVK 5/1-a-4 (299) istisnası YİAKV matrahından DÜŞÜLEBİLİR (5/1-a kapsamı). YİAKV çalışma kâğıdında 299 tutarı matrahtan doğru düşülmelidir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "Beyanname 299 'Zarar Olsa Dahi' bölümünde doğru konumlandı mı?",
+          null,
+          "299 satırı 'Zarar Olsa Dahi İndirilecek İstisna ve İndirimler' bölümündedir. 'Kazancın Bulunması Halinde' bölümüyle karıştırılmamalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "D. BEYANNAME SATIR EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Beyanname Satırı",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "Satır 299",
+          null,
+          "0",
+          "KVK 5/1-a-4 — 15.07.2023 Öncesi İktisap TL Fon | Kâr Payı+Fon İadesi+VUK 279 | Zarar Olsa Dahi İndirilecek",
+          null,
+          null,
+          null
+        ],
+        [
+          "DİKKAT: 298",
+          null,
+          "GSYF/GSYO Kazancı",
+          "KVK 5/1-a-3 kapsamı (GSYF/GSYO) → 298 kodu. Bu forma dahil edilmez.",
+          null,
+          null,
+          null
+        ],
+        [
+          "DİKKAT: 300",
+          null,
+          "Diğer Fon VUK 279",
+          "KVK 5/1-a-5 kapsamındaki VUK 279 → 300 kodu. 299 ile karıştırılmamalı.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G33",
+      "rows": [
+        [
+          "299 – DİĞER YATIRIM FONLARI | MUHASEBE KAYITLARI ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a-4 | 15.07.2023 Öncesi İktisap | Kâr Payı + Fon İadesi + VUK 279",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. Şirkete özgü muhasebe politikasına göre uyarlanmalıdır. Stopaj oranı kurumlar için %0'dır — brüt = net.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — YATIRIM FONU SATIN ALIM KAYDI (Alış Tarihini Belgelemek Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Fon Adı: [___] | Alış Tarihi: [GG.AA.YYYY] — 15.07.2023'ten ÖNCESİ olmali",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Alış Tarihi]",
+          "118 Diğer Menkul Kıymetler",
+          "Fon katılma payı alış bedeli — İktisap tarihi mutlaka not edilmeli",
+          "[Alış Bedeli]",
+          "—",
+          "Banka / aracı kurum dekontu"
+        ],
+        [
+          "Kr",
+          "[Alış Tarihi]",
+          "102 Bankalar",
+          "Ödeme",
+          "—",
+          "[Alış Bedeli]",
+          "Banka dekontu"
+        ],
+        [
+          "ÖNEMLİ: İktisap tarihi 15.07.2023'ten önce olduğu banka dekontu veya MKK kaydıyla belgelenmelidir. Bu belge olmadan istisna uygulanamaz. Tarih muhasebe kayıt açıklamasına da yazılmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — KÂR PAYI GELİRİ (Fon Tarafından Dağıtılırsa)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[Kâr dağıtımı]",
+          "102 Bankalar",
+          "Net kâr payı tahsilatı (Stopaj %0 — brüt = net)",
+          "[Kâr Payı]",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Kâr dağıtımı]",
+          "640 İştiraklerden Temettü Gelirleri",
+          "Fon kâr payı geliri — 5/1-a-4 istisnası",
+          "—",
+          "[Kâr Payı]",
+          "KV 299 satırı"
+        ],
+        [
+          "NOT: Yatırım fonu kâr payı dağıtımında kurumlar için stopaj %0'dır. 640 hesabındaki tutar beyanname 299 satırı ile uyumlu olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — FON İADESİ / SATIŞ KAYDI (Kazanç Tespiti)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "[İade tarihi]",
+          "102 Bankalar",
+          "Net iade bedeli tahsilatı",
+          "[İade Bedeli]",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[İade tarihi]",
+          "118 Diğer Menkul Kıymetler",
+          "Maliyet değerinin çıkışı (VUK 279 değerleme sonrası bilanço değeri)",
+          "—",
+          "[Maliyet]",
+          "118 hesap kartı"
+        ],
+        [
+          "Kr",
+          "[İade tarihi]",
+          "645 Menkul Kıymet Satış Kârı",
+          "Fon iadesi kazancı — 5/1-a-4 istisnası",
+          "—",
+          "[Fark]",
+          "KV 299 satırı"
+        ],
+        [
+          "NOT: İade kazancı (İade Bedeli − Maliyet) 645 hesabına gelir kaydedilir. Bu tutar VERİ GİRİŞİ B tablosundaki fon iadesi kazancı ile uyumlu olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 4 — DÖNEM SONU VUK 279 DEĞERLEME KAYDI (Portföy <%51 Hisse)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Uygulama koşulu: Fonun portföyündeki hisse senedi oranı <%51 ise borsa rayiciyle değerleme yapılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "31.12.20XX",
+          "118 Diğer Menkul Kıymetler",
+          "VUK 279 borsa rayici ile dönem sonu değerleme artışı",
+          "[Artış]",
+          "—",
+          "VUK Md.279"
+        ],
+        [
+          "Kr",
+          "31.12.20XX",
+          "649 Diğer Olağandışı Gelir",
+          "Değerleme artışı — 5/1-a-4 istisnası (15.07.2023 öncesi iktisap)",
+          "—",
+          "[Artış]",
+          "KV 299 satırı"
+        ],
+        [
+          "VUK 279 AKIŞ: 649 hesabına gelir kaydı → KKEG tablosuna eklenir → Beyanname 299'da istisna düşülür. 649 toplamı (VUK 279 kısmı) ile VERİ GİRİŞİ C tablosu toplamı uyumlu olmalıdır. Portföy ≥%51 hisse ise bu kayıt YAPILMAZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 5 — BEYANNAME 299 MUTABAKAT NOTU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME 299 AKIŞI:\n\n1. B Tablosu (Kâr Payı + Fon İadesi): 640 + 645 hesap toplamı → VERİ GİRİŞİ B → Beyanname 299 B kısmı\n2. C Tablosu (VUK 279): 649 hesap (VUK kısmı) toplamı → VERİ GİRİŞİ C → Beyanname 299 C kısmı\n3. Toplam 299 = B + C → 'Zarar Olsa Dahi İndirilecek' bölümü 299. satır\n\n3 KADEME UYUM KONTROLÜ:\nMuhasebe (640+645+649 VUK kısmı) = VERİ GİRİŞİ E.3 = Beyanname 299\n\nYİAKV NOTU: 5/1-a-4 (299) istisnası YİAKV matrahından DÜŞÜLEBİLİR — 5/1-c (318) ve 5/1-e (361)'den farklı olarak bu kapsamda matrahtan çıkarılabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D19",
+      "rows": [
+        [
+          "299 – DİĞER YATIRIM FONLARI | DENETÇİ NOTLARI VE MESLEKİ DEĞERLENDİRME",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a-4 | 7456 s.K. Mülga (15.07.2023) | Geçiş Uygulaması | TL Esaslı Fon | Kâr Payı+Fon İadesi+VUK 279 | YİAKV'den DÜŞÜLEBİLİR",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK, TARİHSEL ÇERÇEVE VE KAPSAM",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-a-4 İstisnasının Tarihsel Çerçevesi",
+          "7394 s.K. (15.04.2022): Diğer yatırım fonlarına istisna tanındı (TL esaslı, döviz/altın hariç).\n7456 s.K. (15.07.2023): Bu bent mülga edildi.\nGEÇİŞ UYGULAMASI: 15.07.2023'ten önce iktisap edilen paylar için istisna DEVAM ETMEKTEDİR.\nYeni iktisaplarda: Kazanç vergiye tabidir.\nBeyanname 299. Satır: 'Zarar Olsa Dahi İndirilecek' bölümündedir.",
+          "KVK Md.5/1-a-4 | 7394 ve 7456 s.K."
+        ],
+        [
+          "N2",
+          "İstisna Kapsamındaki Fon Türleri (TL Esaslı)",
+          "KAPSAM İÇİ (Portföyde döviz/altın olmayan, TL esaslı, 15.07.2023 öncesi iktisap):\n✓ MKYO (Menkul Kıymet Yatırım Ortaklığı) — KVK 5/1-a-1,2 iken bu bent 5/1-a-4 kapsar\n✓ Para Piyasası Fonu, Tahvil-Bono Fonu, Karma Fon (TL), Serbest Fon (TL)\n✓ Diğer TL esaslı fon türleri\n\nKAPSAM DIŞI:\n✗ GSYF/GSYO → 298 kodu (KVK 5/1-a-3)\n✗ Portföyde döviz/altın/kıymetli maden olan fonlar\n✗ KKM (Kur Korumalı Mevduat) fonları\n✗ 15.07.2023 sonrası iktisap",
+          "KVK Md.5/1-a-4 | 7394 ve 7456 s.K."
+        ],
+        [
+          "N3",
+          "★ 15.07.2023 İktisap Tarihi — En Kritik Kontrol",
+          "Bu tarih kesin sınırdır:\nÖNCE iktisap → İstisna kapsamında (299 satırı)\nSONRA iktisap → Vergiye tabi (Beyanname matrahında)\n\nKARMA DURUM (Aynı Fonda Farklı Tarihli Alım):\nPay adedi bazında ayrıştırma zorunludur.\nHer alım partisi için ayrı maliyet ve kazanç hesabı yapılmalıdır.\nFIFO veya ağırlıklı ortalama maliyet yöntemi tutarlı biçimde uygulanmalıdır.\nYMM notu: Banka/MKK dekontu olmadan hiçbir fon istisna kapsamında değerlendirilemez.",
+          "7456 s.K. | KVK Md.5/1-a-4"
+        ],
+        [
+          "N4",
+          "VUK 279 Değerleme — Portföy %51 Kriteri",
+          "VUK Md.279 kapsamında değerleme:\nPortföy ≥%51 BIST hisse senedi → ALİŞ BEDELİ ile değerlenir → Değerleme farkı OLUŞMAZ → C tablosu boş\nPortföy <%51 hisse senedi → BORSA RAYİCİ ile değerlenir → Değerleme farkı C tablosuna işlenir\n\nPortföy bileşimi fon bilgi formu/izahnamesinden DÖNEM BAŞI VE SONU kontrol edilmelidir.\nDönem içinde portföy bileşimi değişmişse: Hangi yöntemin geçerli olduğu ayrıca analiz edilmeli.\nYMM notu: Değerleme yönteminin yanlış belirlenmesi C tablosunu tamamen etkiler.",
+          "VUK Md.279 | Fon Mevzuatı"
+        ],
+        [
+          "BÖLÜM 2 — YMM TASDİK DEĞERLENDİRMESİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "★ YİAKV Matrahından DÜŞÜLEBİLİR (5/1-a Kapsamı — Kritik Fark)",
+          "KVK 5/1-a-4 (299) istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.\nBu kural önemli bir karşılaştırma noktasıdır:\n5/1-a kapsamı (299) → YİAKV matrahından düşülebilir ✓\n5/1-c kapsamı (318) → YİAKV matrahından DÜŞÜLEMEZ ✗\n5/1-e kapsamı (361) → Ayrıca analiz gerekli ✗/?\n\nYMM notu: YİAKV çalışma kâğıdında 299 tutarının matrahtan doğru biçimde düşüldüğü teyit edilmelidir.",
+          "KVK Md.32/C | YİAKV Tebliğleri"
+        ],
+        [
+          "N6",
+          "298 / 299 / 300 Kod Karışıklığı Riski",
+          "298 (KVK 5/1-a-3): GSYF/GSYO kazancı — Girişim Sermayesi\n299 (KVK 5/1-a-4): Diğer TL esaslı yatırım fonları (BU FORM)\n300 (KVK 5/1-a-5): Diğer fon VUK 279 değerleme farkı (mülga — geçiş)\n\nSık karıştırma: GSYF'yi 299'a veya diğer TL fonu 298'e yazmak.\nVUK 279 değerleme farkını 299 yerine 300'e yazmak (veya tersi).\nYMM notu: Fon türü teyidi belge bazında yapılmalı; kod karıştırma → tarhiyat riski.",
+          "KVK Md.5/1-a-3,4,5"
+        ],
+        [
+          "N7",
+          "49 No.lu Tebliğ — Tasdik Raporu",
+          "30.12.2025 tarihli 49 No.lu Tebliğ:\nTek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM tasdik raporu zorunlu.\nTam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.\nYMM notu: Beyanname 299 satırı tutarını eşikle karşılaştırın.",
+          "49 No.lu Tebliğ (30.12.2025) | YMM Kanunu Md.12"
+        ],
+        [
+          "N8",
+          "Muhasebe-Beyanname 3 Kademe Uyum Kontrolü",
+          "Uyum zinciri:\n1. Muhasebe: 640 (kâr payı) + 645 (fon iadesi kazancı) + 649 (VUK 279 artış kısmı)\n2. VERİ GİRİŞİ: B toplamı + C toplamı = E.3\n3. Beyanname: 299. satır\n\nBu üç tutarın birebir uyumlu olması tasdik dosyasının tamamlanma koşuludur.\nUyumsuzluk varsa: Kapsam dışı gelir karışmış, karma tarihli ayrıştırma eksik veya VUK 279 yöntemi hatalı uygulanmış olabilir.",
+          "KVK Md.5/1-a-4 | VUK Md.279"
+        ],
+        [
+          "N9",
+          "YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...iktisap tarihi teyit edilen paylar için kazanç istisnadan yararlanabilecektir'\n'...portföy bileşimi dönem başı ve sonu itibariyle doğrulanmalıdır'\n'...VUK 279 yöntemi fon bilgi formuyla teyit edildiği ölçüde uygulanabilir'\n\nKULLANMAYIN:\n'...tüm fon geliri istisnadan yararlanır' | '...kesin istisna alır' | '...sorunsuz'\n\nKRİTİK RİSK ALANLARI:\n(1) İktisap tarihi belgesi | (2) Portföy bileşimi | (3) Karma tarihli ayrıştırma | (4) VUK 279 %51 kriteri | (5) 298/299/300 kod ayrımı | (6) YİAKV düşüm teyidi",
+          "SM-SMMM-YMM Kanunu Md.12"
+        ],
+        [
+          "TARTIŞMALI ALAN — GEÇİŞ DÖNEMİ: Aynı fonda 15.07.2023 öncesi ve sonrası alım varsa ve fon iadesi (redemption) geliyorsa hangi payın iade edildiği (FIFO vs. Ağırlıklı Ortalama) istisna tutarını doğrudan etkiler. GİB'in karma tarihli durumlar için kapsamlı bir özelgesi henüz yayımlanmamıştır. Karma tarihli alımlarda ihtiyati yaklaşım ve yazılı belgeleme önerilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F33",
+      "rows": [
+        [
+          "299 – DİĞER YATIRIM FONLARI İŞTİRAK KAZANCI | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a-4 | 7456 s.K. Mülga | 15.07.2023 Öncesi İktisap | TL Esaslı Fon | Kâr Payı+Fon İadesi+VUK 279 | YİAKV'den Düşülebilir | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Her fon için zorunlu belgeler. Kategori 2: Destekleyici belgeler. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER  (Her Fon İçin Ayrı Ayrı Temin Edilmeli)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "Fon Alış Dekontu / MKK Hesap Ekstresi (İktisap Tarihi İspat)",
+          "Her fon için 15.07.2023'ten ÖNCE iktisap edildiğini kanıtlayan belge.\nBanka alış dekontu veya MKK (Merkezi Kayıt Kuruluşu) hesap ekstresi.\nYMM notu: İktisap tarihi bulunmayan veya belgelenemeyenler istisna kapsamında değerlendirilemez. Tarih belirsizliği en büyük tarhiyat riskidir.",
+          "Banka / aracı kurum alış dekontu / MKK portal ekstresi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Fon Bilgi Formu / İzahname (Portföy Bileşimi Teyidi)",
+          "Portföyde döviz/altın/kıymetli maden araçları olmadığının teyidi (TL esaslı fon).\nVUK 279 değerleme yöntemi için portföy hisse oranı belirlenmesi (%51 kriteri).\nYMM notu: Fon bilgi formu dönem başı ve sonu itibariyle kontrol edilmelidir. Portföy bileşimi değişmişse hangi dönem için hangi yöntemin geçerli olduğu analiz edilmeli.",
+          "KAP / fon yöneticisi / Borsa İstanbul / SPK veri sistemi",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Muhasebe Hesap Kartları (118, 640, 645 Hesapları)",
+          "118 (maliyet): Fon katılma payı alış bedeli ve bilanço değeri.\n640 (kâr payı): Fon tarafından dağıtılan kâr payı gelirleri.\n645 (satış/iade kazancı): Fon iadesi/satışından elde edilen kazançlar.\nYMM notu: Bu hesapların B tablosu toplamıyla uyumu üç kademe kontrolün birinci adımıdır.",
+          "Muhasebe programı — hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "VUK 279 Değerleme Tablosu (Portföy <%51 Hisse İçin)",
+          "Dönem başı ve sonu birim pay değerleri ile değerleme farkı hesabı.\n31.12 tarihli fon yöneticisi ilanı veya borsa rayici kullanılmalıdır.\nSadece artışlar istisna kapsamındadır — düşüşler ayrıca analiz edilmelidir.\nYMM notu: 649 hesabı (VUK 279 kısmı) ile C tablosu toplamı uyumlu olmalıdır.",
+          "Fon yöneticisi 31.12 ilanı / KAP / Borsa günlük veri",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Fon İadesi / Satış Dekontu (Kazanç Tespiti İçin)",
+          "İade tarihi, iade bedeli, pay adedi ve birim fiyat bilgileri.\nKazanç = İade Bedeli − Alış Maliyeti (FIFO veya ortalama maliyet).\nYMM notu: İade bedeli ile 645 hesabı kazancı uyumlu olmalıdır.",
+          "Banka / aracı kurum satış/iade dekontu",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 299. Satır (Nihai veya Taslak)",
+          "Beyanname 299. satırındaki tutarın VERİ GİRİŞİ E.3 ile birebir uyumlu olduğu teyit edilmeli.\n'Zarar Olsa Dahi İndirilecek' bölümünde 299 kodunda doğru konumlandırıldığı kontrol edilmeli.\nYMM notu: 299 > E.3 ise hata; 299 < E.3 ise neden az kullanıldığı açıklanmalı.",
+          "GİB e-Beyanname sistemi / İnternet Vergi Dairesi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — DESTEKLEYİCİ BELGELER  (Duruma Göre Gereklidir)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Karma Tarihli Alım Ayrıştırma Tablosu (15.07.2023 Öncesi/Sonrası)",
+          "Aynı fonda 15.07.2023 öncesi ve sonrası alım varsa: Pay adedi bazında ayrıştırma tablosu.\nHer alım partisi: Tarih, pay adedi, birim fiyat, maliyet.\nKapsam içi kısım B/C tablosuna, kapsam dışı kısım D tablosuna alınmalıdır.\nYMM notu: FIFO veya ağırlıklı ortalama maliyet yöntemi seçimi tutarlı uygulanmalıdır.",
+          "Muhasebe / yatırım hesabı ekstresi / aracı kurum raporu",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Fon Türü Sınıflandırma ve 298/299/300 Kod Kontrol Tablosu",
+          "Portföydeki tüm yatırım fonlarının türe göre sınıflandırması:\nGSYF/GSYO → 298 | TL esaslı diğer fonlar → 299 | VUK 279 diğer fon → 300.\nHer fonun hangi koda dahil edildiğini gösteren kontrol tablosu tasdik dosyasına eklenmelidir.",
+          "Muhasebe / finans birimi / fon portföy listesi",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Değerleme Düşüşü Analiz Notu (Fon Değeri Düştüyse)",
+          "VUK 279 değerleme kaybı (dönem sonu < dönem başı) durumunda:\nBu tutarın KKEG mi yoksa indirilebilir gider mi olduğu ayrıca değerlendirilmelidir.\nİstisna yalnızca artışlar için geçerlidir — düşüşler istisna dışındadır.",
+          "YMM görüş notu / Güncel mukteza araştırması",
+          null
+        ],
+        [
+          null,
+          "10",
+          "YİAKV Matrah Hesaplama Tablosu (299 Tutarının Düşümü)",
+          "KVK 5/1-a-4 (299) istisnası YİAKV matrahından DÜŞÜLEBİLİR.\nYİAKV çalışma kâğıdında 299 tutarının matrahtan doğru biçimde düşüldüğü teyit edilmelidir.\nYMM notu: Bu kontrol 5/1-c (318) ve 5/1-e (361) ile karıştırılmamalıdır.",
+          "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri",
+          null
+        ],
+        [
+          null,
+          "11",
+          "KKEG Tablosu — Muhasebe-Beyanname Bağlantısı",
+          "B tablosu (640+645) ve C tablosu (649 VUK kısmı) gelirlerinin KKEG akışındaki konumunun gösterildiği tablo.\nYılsonu KKEG → Beyanname matrahı → 299 istisna → Net etki zincirinin belgelenmesi.",
+          "Muhasebe çalışma kâğıdı / KKEG tablosu",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI  (★ İşaretli Sorular Kritiktir)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ Her fonun iktisap tarihi 15.07.2023'ten önce olduğu belgeyle teyit edildi mi?",
+          "Banka/MKK dekontu mevcut olmalı. Belgesiz fon istisna kapsamında değerlendirilemez. Risk: Tarihin 15.07.2023 sonrası olması veya belge eksikliği → Tarhiyat.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Portföyde döviz/altın/kıymetli maden araçları YOK mu?",
+          "Fon bilgi formu/izahnamesi kontrol edilmeli. Bu varlıkları içeren fonlar kapsam dışıdır. Kapsam dışı fonlar D tablosuna alınmış olmalıdır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "Fon türü doğru sınıflandırıldı mı? (298 / 299 / 300 ayrımı)",
+          "GSYF/GSYO → 298. GYF/GYO → 5/1-d analiz. Döviz/Altın fon → Kapsam dışı. VUK 279 diğer fon → 300 (mülga geçiş). Bu form 299 TL esaslı diğer fonlar içindir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "VUK 279 değerleme yöntemi portföy %51 kriteri ile uyumlu mu?",
+          "≥%51 BIST hisse: Alış bedeli → Değerleme farkı yok → C tablosu boş. <%51 hisse: Borsa rayici → C tablosuna değerleme farkı. Fon bilgi formu ile teyit edilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Muhasebe 640+645+649 toplamı beyanname 299 ile uyumlu mu?",
+          "3 kademe uyum: Muhasebe hesapları = VERİ GİRİŞİ E.3 = Beyanname 299. Fark varsa kapsam dışı gelir karışmış veya karma tarihli ayrıştırma eksik olabilir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Karma tarihli alım ayrıştırması tam yapıldı mı?",
+          "Aynı fonda 15.07.2023 öncesi/sonrası alım varsa pay adedi bazında ayrıştırma zorunlu. Kapsam içi kısım → B/C tablosu. Kapsam dışı kısım → D tablosu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "YİAKV matrahında 299 istisnası DÜŞÜLDܒ mü? (5/1-a kapsamı — düşülebilir)",
+          "299 istisnası YİAKV matrahından DÜŞÜLEBİLİR. YİAKV çalışma kâğıdında 299 tutarı matrahtan düşülmüşse doğrudur. Düşülmemişse gözden geçirilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Beyanname 299 'Zarar Olsa Dahi' bölümünde mi? Doğru konumlandı mı?",
+          "'Kazancın Bulunması Halinde' bölümüyle karıştırılmamalıdır. 299 satırı 'Zarar Olsa Dahi İndirilecek' bölümündedir. Yanlış bölüm: Tarhiyat riski.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT (YMM TASDİK): 49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu zorunlu. Tam tasdik → ayrıca rapor yok. İktisap tarihi belgesi eksikliği en büyük tarhiyat riskidir. Portföy bileşimi her dönem teyit edilmelidir. 298/299/300 kod ayrımı titizlikle yapılmalıdır. YİAKV matrahından 299 istisnası DÜŞÜLEBİLİR (5/1-c'den farklı). YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

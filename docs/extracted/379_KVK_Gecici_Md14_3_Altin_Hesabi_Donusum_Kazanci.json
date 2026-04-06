@@ -1,0 +1,1349 @@
+{
+  "file": "379_KVK_Gecici_Md14_3_Altin_Hesabi_Donusum_Kazanci.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G69",
+      "rows": [
+        [
+          "379 – KVK GEÇİCİ MADDE 14/3 | ALTIN HESAPLARININ DÖNÜŞTÜRÜLMESİNDEN DOĞAN KAZANÇ İSTİSNASI | YENİ PARAGRAF (Md.14/3) | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/3 (Paragraf 3) | Altın Hesabı → TL Dönüşümü | Altın Fiyat Farkı Kazancı İstisnası | Beyanname 379 | ★ YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "370 – 379 PARAGRAF KARŞILAŞTIRMASI:\n  370 (Md.14/1-a): Paragraf 1 — Yabancı para VE altın hesabı → TL KKM. Kur farkı değerleme kazancı istisnası.\n  379 (Md.14/3): Paragraf 3 — Yalnızca ALTIN HESAPLARI dönüşümüne özgü ayrı hüküm. Altın fiyat farkından doğan kazanç istisnası. Farklı yasal dayanak, farklı kapsam koşulları.\n  NOT: Hem 370 hem 379 altın dönüşümünü kapsıyor olabilir — ancak farklı paragraflar. YMM hangi paragrafın uygulanacağını dikkatle belirlemelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 379 kapsamındaki altın hesabı dönüşüm kazancı YİAKV matrahından DÜŞÜLEMEZ. (YİAKV Reh. No:607 | E.7 DÜŞÜLEMEZ listesi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ — KVK GEÇİCİ MD.14/3 ÖZEL KOŞULLAR",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Kurumun 31/12/2021 tarihli bilançosunda altın hesabı (gram altın, altın mevduatı vb.) bakiyesi var mıydı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14/3 kapsamı yalnızca 31/12/2021 bilançosunda yer alan altın hesabı bakiyelerini kapsar. Sonradan edinilen altın hesapları kapsam dışıdır.",
+          null
+        ],
+        [
+          "A0.2  ★ Bu altın hesabı yasal süre içinde TL'ye dönüştürüldü mü?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Dönüşüm tarihi Cumhurbaşkanı Kararıyla belirlenen yasal süre içinde olmalıdır. Banka belgesiyle teyit zorunludur.",
+          null
+        ],
+        [
+          "A0.3  Dönüşüm esnasında altın fiyat farkından kazanç oluştu mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Bilanço günü altın fiyatı < Dönüşüm günü altın fiyatı ise kazanç oluşur. Dönüşüm günü fiyatı düşükse (altın değer kaybı) 379 tutarı sıfırdır.",
+          null
+        ],
+        [
+          "A0.4  ★ 370 (Paragraf 1) kapsamında aynı altın hesabı daha önce işlem gördü mü? (Çift uygulama riski)",
+          null,
+          null,
+          null,
+          "HAYIR",
+          "Hem 370 hem 379 altın dönüşümünü kapsayabilir. Aynı altın hesabının hem 370 hem 379'a yazılmaması için paragraf analizi zorunludur. Özelge alınması tavsiye edilir.",
+          null
+        ],
+        [
+          "A0.5  Altın hesabı türü belirlendi mi? (Gram altın / Altın mevduatı / Fiziki altın / Diğer)",
+          null,
+          null,
+          null,
+          "Gram Altın Hesabı",
+          "Her türün farklı muhasebe işlemi ve belge gereksinimleri olabilir.",
+          null
+        ],
+        [
+          "A0.6  ★ 379 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK Geçici Md.14/3 kapsamı kazançlar YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7'de bu satır kontrol edilmeli.",
+          null
+        ],
+        [
+          "A0.7  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null
+        ],
+        [
+          "A0.8  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (yasal süre), A0.4 (370 ile çift uygulama), A0.6 (YİAKV) kritik.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/379-01",
+          null
+        ],
+        [
+          "370 Çalışma Kâğıdı Referansı",
+          null,
+          null,
+          null,
+          null,
+          "370 ile çift uygulama riski — paragraf analizi zorunlu",
+          null
+        ],
+        [
+          "B. KVK GEÇİCİ MD.14/3 — KAPSAM KOŞULLARI VE ALTIN HESABI BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "379 Kapsamı: 31/12/2021 bilançosunda yer alan ALTIN HESAPLARININ (gram altın, altın mevduatı, fiziki altın hesabı vb.) yasal süre içinde TL'ye dönüştürülmesinden doğan altın fiyat farkı kazancı istisnası.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ALTIN HESABI TÜRLERİ:\n  ① GRAM ALTIN HESABI: Bankadaki gram altın cinsinden hesap. Bakiye gram × TCMB/İAB altın fiyatı = TL karşılığı.\n  ② ALTIN MEVDUATI: Altın teminatlı TL mevduat hesabı.\n  ③ FİZİKİ ALTIN HESABI: Fiziki altın karşılığı açılan hesap (ton, gram, ons cinsinden).\n  ④ DİĞER ALTIN HESABI: Banka ürünü altın bağlantılı hesaplar.\n  ALTIN FİYAT KAYNAĞI: TCMB resmi altın fiyatı veya İstanbul Altın Borsası (İAB) kapanış fiyatı. Tutarlı kaynak kullanılmalı.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Kaynak"
+        ],
+        [
+          "B.1  31/12/2021 Bilançosundaki Altın Hesabı Türü",
+          null,
+          "Gram Altın Hesabı",
+          "Dönüştürülen altın hesabı türü. Her tür için ayrı belge.",
+          null,
+          "Bilanço / Hesap ekstresi",
+          null
+        ],
+        [
+          "B.2  31/12/2021 Altın Hesabı Bakiyesi (Gram / Ons)",
+          null,
+          null,
+          "31/12/2021 tarihi itibarıyla altın miktarı (gram veya ons cinsinden).",
+          null,
+          "Bilanço / Banka ekstresi",
+          null
+        ],
+        [
+          "B.3  31/12/2021 Altın Birim Fiyatı (TL/Gram veya TL/Ons)",
+          null,
+          null,
+          "31/12/2021 tarihi TCMB resmi altın alış fiyatı veya İAB kapanış fiyatı.",
+          null,
+          "TCMB / İAB",
+          null
+        ],
+        [
+          "B.4  31/12/2021 TL Bilanço Değeri (B.2 × B.3)",
+          null,
+          null,
+          "Formül: Altın Miktarı × Birim Fiyat = Bilanço TL değeri. Bilanço ile mutabık.",
+          null,
+          "Hesaplama",
+          null
+        ],
+        [
+          "B.5  ★ Dönüşüm Tarihi (TL'ye Geçiş Tarihi)",
+          null,
+          null,
+          "Yasal süre içinde olduğu banka belgesiyle teyit edilmeli.",
+          null,
+          "Banka belgesi",
+          null
+        ],
+        [
+          "B.6  Dönüşüm Günü Altın Birim Fiyatı (TL/Gram veya TL/Ons)",
+          null,
+          null,
+          "Dönüşüm tarihindeki TCMB veya İAB resmi altın fiyatı.",
+          null,
+          "TCMB / İAB",
+          null
+        ],
+        [
+          "B.7  Dönüşüm TL Tutarı (B.2 × B.6)",
+          null,
+          null,
+          "Formül: Altın Miktarı × Dönüşüm Günü Fiyatı.",
+          null,
+          "Hesaplama",
+          null
+        ],
+        [
+          "B.8  Dönüşüm 31/12/2021 Bakiyesi İle Sınırlı mı?",
+          null,
+          "EVET",
+          "Dönüşüm tutarı 31/12/2021 bakiyesini aşamaz. Aşan kısım kapsam dışı.",
+          null,
+          "KVK Geç.Md.14/3",
+          null
+        ],
+        [
+          "B.9  Altın Fiyat Kaynağı Tutarlılığı",
+          null,
+          "TCMB",
+          "Her iki tarih için aynı fiyat kaynağı kullanılmalı. Kaynağı belgeleyin.",
+          null,
+          "Seçilen kaynak",
+          null
+        ],
+        [
+          "C. ALTIN HESABI BAZINDA KAZANİÇ HESABI — PARAGRAF 3 (BEYANNAME 379)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her altın hesabı türü için ayrı satır. Kazanç = MAX(Dönüşüm TL − Bilanço TL, 0). Altın fiyatı yükselmiş → kazanç. Altın fiyatı düşmüş → zarar (sıfırlanır).\n  Col 4 (teal çerçeve): Bilanço TL. Col 6 (altın çerçeve): Dönüşüm TL. Col 7: Otomatik kazanç.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Altın Hesabı Türü",
+          "Miktar (Gram/Ons)",
+          "31/12/2021 Fiyatı (TL)",
+          "Bilanço TL Değeri",
+          "Dönüşüm Günü Fiyatı (TL)",
+          "Dönüşüm TL Tutarı",
+          "Kazanç (TL)"
+        ],
+        [
+          "Gram Altın Hesabı",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Altın Mevduatı",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Fiziki Altın Hesabı",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Diğer Altın Hesabı",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Ek Altın Hesabı (1)",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Ek Altın Hesabı (2)",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Ek Altın Hesabı (3)",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "Ek Altın Hesabı (4)",
+          null,
+          null,
+          "0",
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam Altın Fiyat Farkı Kazancı → Beyanname 379",
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "ALTIN KAZANÇ MANTIĞI: Dönüşüm Günü Altın Fiyatı > 31/12/2021 Altın Fiyatı → KAZANÇ oluşur.\n  Formül: MAX(Dönüşüm TL − Bilanço TL, 0) = MAX([Gram × Dönüşüm Fiyatı] − [Gram × Bilanço Fiyatı], 0).\n  Fiyat kaynağı: TCMB veya İAB (tutarlı kaynak — her iki tarih için aynı kaynak kullanılmalı). Negatif fark → 379 tutarı sıfır (altın değer kaybı = zarar).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. ALTIN HESABI DÖNÜŞÜM KAZANCI İSTİSNASI ÖZET — BEYANNAME 379",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "D.1  Toplam Altın Fiyat Farkı Kazancı (C Tablosu)",
+          null,
+          "0",
+          "C tablosu toplam — tüm altın hesabı türleri",
+          null,
+          "TCMB/İAB fiyatlarıyla doğrulanmış",
+          null
+        ],
+        [
+          "D.2  Kapsam Dışı Kazanç (31/12/2021 bakiyesini aşan dönüşüm)",
+          null,
+          null,
+          "Bilanço bakiyesini aşan kısım orantılı ayrıştırmaya tabi",
+          null,
+          "Vergiye tabi kısım",
+          null
+        ],
+        [
+          "D.3  ★ NET 379 İSTİSNA TUTARI (D.1 − D.2) → BEYANNAME 379",
+          null,
+          "0",
+          "→ Beyanname 379 | Kazancın Bulunması Halinde İndirilecek",
+          null,
+          "KVK Geçici Md.14/3",
+          null
+        ],
+        [
+          "D.4  Vergiye Tabi Kalan Altın Fiyat Farkı (Kapsam Dışı)",
+          null,
+          "0",
+          "Bu kısım KV matrahında kalır",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. 370 (PARAGRAF 1-a) – 379 (PARAGRAF 3) ÇAPRAZ KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          "370 (Md.14/1-a) — Paragraf 1",
+          null,
+          "379 (Md.14/3) — Paragraf 3",
+          null,
+          "Dikkat"
+        ],
+        [
+          "Kapsam",
+          null,
+          "Yabancı para VE altın hesabı dönüşümü",
+          null,
+          "Yalnızca ALTIN HESAPLARI dönüşümü",
+          null,
+          "379 altın'a özgü"
+        ],
+        [
+          "Yasal Dayanak",
+          null,
+          "KVK Geçici Md.14/1-a",
+          null,
+          "KVK Geçici Md.14/3",
+          null,
+          "Farklı paragraflar"
+        ],
+        [
+          "31/12/2021 Şartı",
+          null,
+          "31/12/2021 bilanço bakiyesi zorunlu",
+          null,
+          "31/12/2021 bilanço bakiyesi zorunlu",
+          null,
+          "Her ikisi de şartlı"
+        ],
+        [
+          "Hesaplama",
+          null,
+          "(Dönüşüm Kuru − Bilanço Kuru) × Döviz/Altın",
+          null,
+          "(Dönüşüm Fiyatı − Bilanço Fiyatı) × Altın Miktarı",
+          null,
+          "Birim: TL/gram"
+        ],
+        [
+          "Mükerrerlik Riski",
+          null,
+          "Aynı altın hesabı hem 370 hem 379 → Mükerrerlik",
+          null,
+          "Sadece Paragraf 3 kapsamında ise → 379",
+          null,
+          "★ Özelge tavsiye"
+        ],
+        [
+          "YİAKV",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          null,
+          "DÜŞÜLEMEZ (E.7)",
+          null,
+          "Her ikisi E.7'de"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 379 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — KVK Geçici Md.14/3 | Altın Hesabı Dönüşüm Kazancı",
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 379 asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) 370 İLE MÜKERRERLİK: Aynı altın hesabının hem 370 (Paragraf 1) hem 379 (Paragraf 3) kapsamında değerlendirilip değerlendirilemeyeceği analiz edilmeli. Özelge alınması tavsiye edilir.\n(3) ALTIN FİYAT KAYNAĞI: TCMB veya İAB — her iki tarih için aynı kaynak kullanılmalı.\n(4) BEYANNAME: 'Kazancın Bulunması Halinde İndirilecek' — Zarar döneminde uygulanamaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G38",
+      "rows": [
+        [
+          "379 – KVK GEÇİCİ MD.14/3 ALTIN HESABI DÖNÜŞÜM KAZANCI | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Altın Hesabı → TL Dönüşüm | Paragraf 3 | Beyanname 379 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Altın Hesabı Türü (A0.5)",
+          null,
+          null,
+          "Gram Altın Hesabı",
+          "Gram/Mevduat/Fiziki/Diğer",
+          null,
+          null
+        ],
+        [
+          "Toplam Altın Kazancı (D.1)",
+          null,
+          null,
+          "0",
+          "TCMB/İAB fiyatlarıyla hesaplanmış",
+          null,
+          null
+        ],
+        [
+          "Kapsam Dışı (D.2)",
+          null,
+          null,
+          "0",
+          "Bakiye aşımı varsa ayrıştır",
+          null,
+          null
+        ],
+        [
+          "379 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "370–379 tamamı E.7 (10 kod)",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null
+        ],
+        [
+          "B. ALTIN HESABI BAZINDA KAZANÇ ÖZET (VERİ GİRİŞİ C TABLOSUNDAN)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Altın Hesabı Türü",
+          "Miktar (Gram)",
+          "31/12/2021 Fiyatı",
+          "Bilanço TL",
+          "Dönüşüm Fiyatı",
+          "Dönüşüm TL",
+          "Kazanç (TL)"
+        ],
+        [
+          "Gram Altın Hesabı",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Altın Mevduatı",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Fiziki Altın Hesabı",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Diğer Altın Hesabı",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Ek (1)",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Ek (2)",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Ek (3)",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Ek (4)",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "TOPLAM",
+          "Toplam → Beyanname 379",
+          null,
+          null,
+          null,
+          "0",
+          "0"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K13)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null
+        ],
+        [
+          "K1",
+          "★ 31/12/2021 bilançosunda altın hesabı bakiyesi var mıydı?",
+          null,
+          "Bilanço altın hesapları teyit. Sonradan edinilen altın kapsam dışı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Dönüşüm tarihi yasal süre (CB Kararı) içinde mi?",
+          null,
+          "Banka belgesi tarihi ≤ Yasal son tarih. B.5 kontrolü.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K3",
+          "Dönüşüm tutarı 31/12/2021 bilanço bakiyesini aşmıyor mu?",
+          null,
+          "Aşan kısım kapsam dışı — orantılı ayrıştırma zorunlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ Altın birim fiyatları yetkili kaynaktan alındı mı? (TCMB veya İAB)",
+          null,
+          "Her iki tarih için aynı kaynak — B.9 kaynağı tutarlılığı kontrol.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K5",
+          "Altın kazancı muhasebe kayıtlarıyla mutabık mı?",
+          null,
+          "646/679 hesabındaki altın fiyat farkı kazancı ile C tablosu toplamı uyumlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K6",
+          "★ 370 ile ÇİFT UYGULAMA riski analiz edildi mi?",
+          null,
+          "Aynı altın hesabı hem 370 (Paragraf 1) hem 379 (Paragraf 3) kapsamında değerlendirilemez. Paragraf analizi zorunlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K7",
+          "Altın hesabı türü doğru belirlendi mi? (Gram/Mevduat/Fiziki)",
+          null,
+          "Her türün farklı belge ve muhasebe gereksinimleri olabilir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K8",
+          "★★ 379 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370–379 tüm kodlar YİAKV matrahından DÜŞÜLEMEZ. E.7'de kontrol.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K9",
+          "Beyanname 379 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K10",
+          "Tartışmalı kapsam durumlarında GİB özelgesi alındı mı?",
+          null,
+          "370 vs 379 paragraf tercihi tartışmalıysa özelge zorunlu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K11",
+          "Kısmi dönüşüm varsa orantılı ayrıştırma (D.2) yapıldı mı?",
+          null,
+          "31/12/2021 bakiyesinin tamamı dönüştürülmediyse orantılandı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K12",
+          "Altın fiyat kaynağı tutarlılığı (B.9) belgelendi mi?",
+          null,
+          "Her iki tarih için aynı kaynak (TCMB veya İAB) kullanılmış.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ],
+        [
+          "K13",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G16",
+      "rows": [
+        [
+          "379 – KVK GEÇİCİ MD.14/3 ALTIN HESABI DÖNÜŞÜM KAZANCI | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Altın Hesabı → TL Kapatma | Altın Fiyat Farkı Kazancı | 370 ile Muhasebe Karşılaştırması",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — DÖNÜŞÜM GÜNÜ: ALTIN HESABI KAPAMA VE TL DÖNÜŞÜMÜ (Md.14/3 — Paragraf 3)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Gram Altın: 100 gram × 31/12/2021 fiyatı 1.500 TL/gr = 150.000 TL bilanço. Dönüşüm günü 2.200 TL/gr → 220.000 TL. Kazanç = 70.000 TL.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Dönüşüm Tarihi]",
+          "102 Bankalar / 100 Kasa",
+          "TL dönüşüm tutarı — Gram × Dönüşüm Günü Altın Fiyatı",
+          "[Dönüşüm TL]",
+          "—",
+          "Banka dekontu"
+        ],
+        [
+          "Kr",
+          "[Dönüşüm Tarihi]",
+          "105 Altın Hesapları / 108 Diğer Hazır Değerler",
+          "Altın hesabı kapanışı — Gram × 31/12/2021 bilanço değeri",
+          "—",
+          "[Bilanço TL]",
+          "Altın hesap kaydı"
+        ],
+        [
+          "Kr",
+          "[Dönüşüm Tarihi]",
+          "646 Kambiyo Kârları / 679 Diğer Olağandışı Kâr",
+          "Altın fiyat farkı kazancı (Dönüşüm TL − Bilanço TL) → KVK Geçici Md.14/3 → Beyanname 379",
+          "—",
+          "[Kazanç]",
+          "KV 379"
+        ],
+        [
+          "MUHASEBESİ: 370 kapsamındaki altın dönüşümüyle aynı mekanizma — fark yasal dayanakta (Paragraf 1 vs Paragraf 3).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — 370 (PARAGRAF 1) ve 379 (PARAGRAF 3) YAN YANA KARŞILAŞTIRMA",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aynı altın hesabının hem 370 hem 379'a yazılması mükerrerlik oluşturur. Hangi paragrafın uygulanacağı YMM tarafından belirlenmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "370",
+          "[Dönüşüm]",
+          "646/679",
+          "Paragraf 1-a: Yab. para VE altın → TL KKM. Kur farkı değerleme → 370",
+          "—",
+          "[370]",
+          "KV 370"
+        ],
+        [
+          "379",
+          "[Dönüşüm]",
+          "646/679",
+          "Paragraf 3: Yalnızca ALTIN HESAPLARI → TL. Altın fiyat farkı kazancı → 379",
+          "—",
+          "[379]",
+          "KV 379"
+        ],
+        [
+          "ÖNEMLİ AÇIKLAMA:\n370 ve 379 AYNI ALTIN DÖNÜŞÜMÜne uygulanamaz. YMM, aynı hesabın yalnızca bir paragraf kapsamında değerlendirildiğini teyit etmelidir. Tartışmalı durumlarda GİB özelgesi zorunludur.\n★★ Her iki kod da YİAKV matrahından DÜŞÜLEMEZ (E.7).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "379 – KVK GEÇİCİ MD.14/3 ALTIN HESABI DÖNÜŞÜM KAZANCI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | KVK Geçici Md.14/3 | 370 vs 379 Analizi | ★★ YİAKV",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/3 — Altın Hesabı Dönüşüm Kazancı Mekanizması",
+          "379 (PARAGRAF 3 — ALTIN HESAPLARI DÖNÜŞÜMÜ) TANIMI:\n\nKurumların 31/12/2021 tarihli bilançolarında yer alan ALTIN HESAPLARINI yasal süre içinde\nTürk lirasına dönüştürmeleri halinde, bu dönüşümden kaynaklanan altın fiyat farkı kazancı\nKVK Geçici Madde 14/3 kapsamında kurumlar vergisinden istisnadır.\n\nKAPSAM DAHİLİ ALTIN HESAPLARI:\n① Gram Altın Hesabı (en yaygın — banka gram altın hesabı)\n② Altın Mevduatı (altın teminatlı mevduat)\n③ Fiziki Altın Hesabı (fiziki altın karşılığı hesap)\n④ Diğer Altın Hesabı türleri\n\nKAZANÇ HESABI:\nKazanç = MAX([Dönüşüm Günü Fiyatı − 31/12/2021 Fiyatı] × Altın Miktarı, 0)\n\nALTIN FİYAT KAYNAĞI: TCMB resmi altın fiyatı veya İstanbul Altın Borsası (İAB) kapanış fiyatı.\nHer iki tarih için aynı kaynak kullanılmalı ve belgelenmelidir.\n\nBEYANNAME: 379 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/3 | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ 370 ile Paragraf Analizi — Çift Uygulama Riski",
+          "370 ve 379 KESİŞİM ANALİZİ:\n\n370 (Paragraf 1-a): 'Yabancı para VE altın hesabı → TL KKM'\nHem döviz hem altın dönüşümünü kapsar. Altın dönüşümü de 370 kapsamındadır.\n\n379 (Paragraf 3): 'Altın hesaplarının dönüştürülmesinden doğan kazanç'\nYalnızca altın hesabına özgü ayrı hüküm.\n\nÇAKIŞMA SORUNU:\nAynı altın hesabı hem 370 kapsamındaki Paragraf 1 hükmüne hem de 379 kapsamındaki\nParagraf 3 hükmüne girebilir. Bu çakışma için birkaç senaryo:\n① Paragraf 3 özel hüküm: 'Lex specialis' ilkesiyle 379 uygulanabilir\n② Paragraf 1 genel hüküm: 370 kapsamında 31/12/2021 bilanço şartıyla uygulanır\n③ Birlikte uygulama yasak: Aynı kazanç için yalnızca biri uygulanabilir\n\nYMM YAKLAŞIMI:\nGİB özelgesi alınmadan 370 ve 379'u aynı altın hesabına uygulamayın.\nÖzelge yolunu tercih edin — tarhiyat riski yüksektir.",
+          "KVK Geçici Md.14/1-a (370) | KVK Geçici Md.14/3 (379) | Lex Specialis",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370–379 Tamamı DÜŞÜLEMEZ",
+          "KVK GEÇİCİ MD.14 KAPSAMININ TAMAMININ YİAKV MATRAHINDA DÜŞÜLEMEZLİĞİ:\n\nParagraf 1: 370 | 371 | 372 | 373 | 374 → BEŞİ DE DÜŞÜLEMEZ\nParagraf 2: 375 | 376 | 377 | 378 → DÖRDÜ DE DÜŞÜLEMEZ\nParagraf 3: 379 → DÜŞÜLEMEZ\nTOPLAM ON KOD: TAMAMINA YİAKV MATRAHINDA DÜŞÜLEMEZ\n\nYİAKV çalışma kâğıdı E.7 (Güncellenmeli — 379 eklenmeli):\n'KVK Geçici Md.14 (Tüm Paragraflar 1-3, Tüm Kodlar 370-379)\n→ YİAKV'de DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373/374/375/376/377/378/379'\n\nYMM, 379'un eklenmesiyle E.7'yi yeniden güncellemeli ve onay kontrolü yapmalıdır.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Altın Fiyat Kaynağı ve TCMB/İAB Fiyat Referansları",
+          "ALTIN FİYAT KAYNAKLARI:\n\n① TCMB RESMİ ALTIN FİYATI:\nTCMB tarafından ilan edilen resmi altın alış fiyatı.\ntcmb.gov.tr → Altın → İlgili tarih bilgileri\nGram ve ons cinsinden fiyatlar mevcuttur.\n\n② İSTANBUL ALTIN BORSASI (İAB) KAPANIS FİYATI:\nİAB tarafından ilan edilen günlük kapanış fiyatları.\nÖzellikle gram altın hesapları için sık kullanılır.\n\nTUTARLILIK KURALI:\n31/12/2021 tarihinde İAB kullandıysanız → Dönüşüm tarihinde de İAB kullanın.\n31/12/2021 tarihinde TCMB kullandıysanız → Dönüşüm tarihinde de TCMB kullanın.\n\nBİRİM TUTARLILIĞI:\nGram mı, Ons mu? Bakiye ve fiyat birimleri birebir eşleşmeli.\nDönüşüm: Ons → Gram: 1 Ons = 31.1035 Gram",
+          "TCMB (tcmb.gov.tr) | İAB | KVK Geçici Md.14/3",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...31/12/2021 tarihli bilançoda kayıtlı [Miktar] gram altın hesabının [Dönüşüm Tarihi]\ntarihinde Türk lirasına dönüştürülmesi sonucunda, [Bilanço Günü] [Kaynak] altın fiyatı\n[X] TL/gram ile dönüşüm günü [Kaynak] altın fiyatı [Y] TL/gram arasındaki fark nedeniyle\noluşan [Tutar] TL altın fiyat farkı kazancı, KVK Geçici Madde 14/3 kapsamında kurumlar\nvergisinden istisna edilmiş ve yurt içi asgari kurumlar vergisi matrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...379 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n'...Aynı altın hesabına hem 370 hem 379 uygulanmıştır.' (Çift uygulama hatası)\n\nKRİTİK RİSKLER:\n(1) 379'u YİAKV matrahından düşmek.\n(2) Aynı altın hesabını hem 370 hem 379'a yazmak.\n(3) TCMB ve İAB fiyatlarını karıştırarak tutarsız hesap yapmak.\n(4) YİAKV E.7'yi 379'yu da kapsayacak şekilde güncellemeyip eski metinle bırakmak.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14/3 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (379): KVK Geçici Md.14/3 (Paragraf 3) altın hesaplarına özgü ayrı hükümdür. 370 (Paragraf 1) ile potansiyel örtüşme nedeniyle GİB özelgesi tavsiye edilir. YİAKV E.7 güncellenmeli — 379 dahil 10 kod eksiksiz listede. Altın fiyat kaynağı (TCMB/İAB) her iki tarih için tutarlı olmalı. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F31",
+      "rows": [
+        [
+          "379 – KVK GEÇİCİ MD.14/3 ALTIN HESABI DÖNÜŞÜM KAZANCI | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | TCMB/İAB Altın Fiyatı | 31/12/2021 Bilanço | 370 Özelge",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ 31/12/2021 Kesinleşmiş Bilançosu — Altın Hesabı Bakiyeleri",
+          "31/12/2021 tarihi itibarıyla altın hesabı (gram, ons veya TL karşılığı) bakiyeleri.\nYMM: B.2 (gram miktar) kaynağıdır. Dönüşüm tutarı bu bakiyeyi aşmamalı.",
+          "Kesinleşmiş Bilanço / Banka altın hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ Altın Hesabı Dönüşüm Dekontu (Kapatma Belgesi)",
+          "Altın hesabının TL'ye dönüştürüldüğünü kanıtlayan banka belgesi.\nGram miktarı, dönüşüm tarihi, uygulanan fiyat ve TL karşılığı görünmeli.\nYMM: Dönüşüm tarihi yasal süre içinde mi? B.5 teyidi.",
+          "Banka şubesi",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ TCMB / İAB Altın Fiyat Tablosu (31/12/2021 ve Dönüşüm Günü)",
+          "Her iki tarih için seçilen kaynaktan (TCMB veya İAB) resmi altın fiyatları.\nTutarlılık: Aynı kaynak her iki tarih için de kullanılmış olmalı.\nGram veya ons birimi C tablosuyla eşleşmeli.",
+          "TCMB (tcmb.gov.tr) / İAB web sitesi",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Altın Kazancı Hesaplama Tablosu (Bu Çalışma Kâğıdı C Bölümü)",
+          "Her altın hesabı türü için ayrı hesap. D.3 net 379 tutarı beyanname ile uyumlu.",
+          "Bu çalışma kâğıdı C ve D bölümleri",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 379. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış.\n★ YİAKV E.7 güncellenmiş (379 dahil 10 kod listede).",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "GİB Özelgesi (370 vs 379 Paragraf Analizi — Tavsiye)",
+          "Aynı altın hesabının hem 370 (Paragraf 1) hem 379 (Paragraf 3) kapsamında\ndeğerlendirilip değerlendirilemeyeceği konusunda GİB özelgesi alınması tavsiye edilir.\nTarhiyat riskini minimize etmek için özelge en güvenli yoldur.",
+          "GİB özelge başvuru sistemi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Muhasebe Yevmiyesi — Altın Hesap Kapatma ve 646/679 Kazanç Kaydı",
+          "Dönüşüm günü yevmiye: 102 Dr / 105 Kr / 646-679 Kur Farkı Kazancı Kr.\nC tablosu kazancı ile 646/679 tutarı uyumlu olmalı.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Dönüşüm Tarihinin Yasal Süre İçinde Olduğunu Gösteren CB Kararı",
+          "İlgili Cumhurbaşkanı Kararı — dönüşüm tarihinin yasal son tarih içinde olduğu kontrol.",
+          "Resmî Gazete / mevzuat.gov.tr",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ 31/12/2021 bilançosunda altın hesabı bakiyesi var mıydı?",
+          "Bilanço teyidi zorunlu. Sonraki edinimler kapsam dışı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Dönüşüm tarihi yasal süre (CB Kararı) içinde mi?",
+          "Dönüşüm dekontu tarihi ≤ Yasal son tarih.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Altın fiyatları TCMB veya İAB'dan alındı mı? (Her iki tarih, tutarlı kaynak)",
+          "Aynı kaynak her iki tarih için.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ 370 ile çift uygulama riski analiz edildi mi?",
+          "Aynı altın hesabı hem 370 hem 379'a yazılmamalı. Özelge tavsiye.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Dönüşüm tutarı bilanço bakiyesini aşmıyor mu?",
+          "Aşan kısım kapsam dışı — orantılı ayrıştırma.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Altın kazancı muhasebe 646/679 ile mutabık mı?",
+          "C tablosu toplam ile yevmiye kaydı uyumlu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ 379 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370–379 tüm kodlar YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "★ YİAKV E.7 satırı 379'u kapsayacak şekilde güncellendi mi?",
+          "10 kodun tamamı E.7'de listelenmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "Beyanname 379 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14/3 (379) SON NOT:\n  GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 379 = Paragraf 3 = Altın hesaplarına özgü hüküm.\n  ★ 370 (Paragraf 1) ile potansiyel örtüşme nedeniyle GİB özelgesi tavsiye edilir.\n  ★★ 370–379 ON KODUN TAMAMININ YİAKV MATRAHINDA DÜŞÜLEMEZ. E.7 güncellenmeli.\n  Altın fiyat kaynağı tutarlılığı (TCMB/İAB) ve 31/12/2021 bilanço şartı zorunludur. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

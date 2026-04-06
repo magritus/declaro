@@ -1,0 +1,1416 @@
+{
+  "file": "302_KVK5_1d_Portfoy_Isletmeciligi_Kazanci.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G58",
+      "rows": [
+        [
+          "302 – YATIRIM FON VE ORTAKLIĞI PORTFÖY İŞLETMECİLİĞİ KAZANCI | KVK Md.5/1-d | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-d | MKYO · GYO · GSYO · GYF · BYF · EYF ve Diğer Fon/Ortaklıklar | %100 Tam İstisna | Zarar Olsa Dahi İndirilecek — Beyanname Satır 302",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★ TEMEL İLKE — PORTFÖY İÇİ / DIŞI AYRIMI: İstisna YALNIZCA portföy işletmeciliğinden doğan kazançlara uygulanır. Portföy dışı gelirler (yönetim ücreti, danışmanlık, portföyde olmayan taşınmaz kira geliri vb.) vergiye tabidir. Bu ayrımın muhasebede izlenmesi ve beyannamede doğru yansıtılması zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "RENK KODLARI: Sarı = Manuel giriş  |  Yeşil = Portföy içi (istisna)  |  Kırmızı = Portföy dışı (vergiye tabi)  |  Mavi = Otomatik hesaplama",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  Kurum KVK Md.5/1-d kapsamında bir yatırım fonu veya ortaklığı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-d: MKYO, GYO, GSYO, Altyapı YO, BYF, EYF, GYF, GSYF, Altyapı YF, Konut Finansmanı Fonu, Varlık Finansmanı Fonu, Serbest Fon. Kurum türü SPK/BDDK lisansı ve ana sözleşmesi ile teyit edilmelidir.",
+          null
+        ],
+        [
+          "A0.2  ★ Portföy işletmeciliği kazancı, portföy DIŞI gelirlerden ayrıştırıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KRİTİK: İstisna YALNIZCA portföy kapsamındaki varlıklardan elde edilen gelirler için. Yönetim ücreti, danışmanlık komisyonu, portföyde olmayan gayrimenkul kira gelirleri istisna dışıdır. Muhasebede ayrı hesap takibi zorunludur.",
+          null
+        ],
+        [
+          "A0.3  Portföy kapsamı SPK/BKK/BDDK mevzuatına uygun tanımlandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Her kurum türünün portföy kapsamı farklıdır: GYO → Gayrimenkul + MKTS + başka varlıklar. GSYO → Girişim şirketleri + MKTS. MKYO → Menkul kıymetler. Portföy dışına çıkan varlıklardan elde edilen gelir istisna değil.",
+          null
+        ],
+        [
+          "A0.4  Kurum türüne özgü özel durumlar değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "GYO: İnşaat/Kat karşılığı gelirleri — portföy içi mi dışı mı? GSYO: Yönetim ücreti, danışmanlık, başarı primi — portföy dışı! EYF: Emeklilik sözleşmesi yönetim ücretleri — portföy dışı! B bölümünde kurum türü seçilerek özel durumlar izlenmeli.",
+          null
+        ],
+        [
+          "A0.5  Muhasebe ayrımı doğru kuruldu mu? (Portföy içi / dışı hesap ayrımı)",
+          null,
+          null,
+          null,
+          "EVET",
+          "Portföy işletmeciliği kazancının ayrı hesaplarda izlenmesi veya güvenilir bir dağıtım anahtarı uygulanması zorunludur. Karma hesaplarda tümü istisna sayılması hatalıdır.",
+          null
+        ],
+        [
+          "A0.6  Negatif portföy kazancı (zarar) beyanname tekniği doğru uygulandı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Portföy işletmeciliği zararı: 'Zarar Olsa Dahi İndirilecek' bölümünde gösterildiğinden matrahı azaltır. Negatif tutar durumunda uygulamanın doğruluğu teyit edilmeli.",
+          null
+        ],
+        [
+          "A0.7  YİAKV matrahında 302 doğru konumlandırıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 5/1-d (302) istisnasının YİAKV matrahına etkisi dönem mevzuatı ve GİB açıklamalarıyla analiz edilmelidir. Portföy işletmeciliği kazancının YİAKV matrahından düşülüp düşülemeyeceği teyit edin.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (portföy ayrımı) ve A0.5 (muhasebe ayrımı) kritik.",
+          null
+        ],
+        [
+          "A. MÜKELLEF BİLGİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Portföy işletmeciliği istisnasını kullanan fon veya ortaklık",
+          null
+        ],
+        [
+          "Vergi Kimlik Numarası",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "Genel KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25",
+          null
+        ],
+        [
+          "B. KURUM TÜRÜ VE PORTFÖY KAPSAM KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurum türünü seçin → O türe özgü portföy kapsamı ve istisna/kapsam dışı gelir ayrımı C bölümünde uygulanır. Her kurum türünün portföy sınırları SPK/BKK/BDDK mevzuatıyla belirlenmiştir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Parametre",
+          null,
+          "Değer / Seçim",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "B.1  Kurum Türü Seçimi",
+          null,
+          "MKYO",
+          "Listeden seçin",
+          null,
+          "Kurum türü istisna kapsamını ve portföy tanımını belirler.",
+          null
+        ],
+        [
+          "B.2  SPK/BKK/BDDK Lisans/Tescil Tarihi",
+          null,
+          null,
+          "GG.AA.YYYY",
+          null,
+          "Kurum türünün yetkili makam onay/tescil tarihi",
+          null
+        ],
+        [
+          "B.3  Ana Sözleşme / Katılma Belgesi'ndeki Portföy Kapsamı",
+          null,
+          null,
+          "Kısa özet girin",
+          null,
+          "Portföy yatırım stratejisi ve kapsam sınırları",
+          null
+        ],
+        [
+          "B.4  Portföy İçi Varlıkların Muhasebede Ayrı İzlenip İzlenmediği",
+          null,
+          "EVET",
+          "Listeden seçin",
+          null,
+          "Ayrı hesap yoksa dağıtım anahtarı yöntemi açıklanmalı ve belgelenmeli.",
+          null
+        ],
+        [
+          "C. PORTFÖY İŞLETMECİLİĞİ KAZANCI — İstisna Kapsamı Gelirler (Portföy İçi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bu tabloya YALNIZCA portföydeki varlıklardan elde edilen gelirler girilir. Yeşil satırlar = İstisna kapsamı. Portföy varlıklarından: faiz, temettü, kira, değerleme artışı, satış kazancı. Portföy dışı herhangi bir geliri bu tabloya YALNITIZCA portföy kapsamında olduğu teyit edildikten sonra girin.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Portföy İçi Gelir Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu"
+        ],
+        [
+          "C.1  Portföy Menkul Kıymet Faiz Gelirleri (Tahvil, Bono, Eurobond vb.)",
+          null,
+          null,
+          null,
+          null,
+          "MKYO/BYF için ana kalem. Portföy listesiyle mutabık olmalı.",
+          null
+        ],
+        [
+          "C.2  Portföy Temettü / Kâr Payı Gelirleri (Hisse Senetleri)",
+          null,
+          null,
+          null,
+          null,
+          "5/1-a kapsamındaki temettüler ayrıca değerlendirilebilir.",
+          null
+        ],
+        [
+          "C.3  Portföy Kira Gelirleri (GYO/GYF İçin — Portföydeki Taşınmazlar)",
+          null,
+          null,
+          null,
+          null,
+          "GYO/GYF: Portföyde hangi taşınmazların olduğu güncel portföy raporuyla teyit edin.",
+          null
+        ],
+        [
+          "C.4  Portföy Menkul Kıymet / Varlık Satış Kazançları",
+          null,
+          null,
+          null,
+          null,
+          "FIFO / Ağırlıklı ortalama maliyet yöntemine uygunluk kontrol edilmeli.",
+          null
+        ],
+        [
+          "C.5  Portföy VUK Değerleme Artışları (Borsa Rayici vb.)",
+          null,
+          null,
+          null,
+          null,
+          "MKTS değerleme yöntemi SPK tebliğlerine uygun olmalı.",
+          null
+        ],
+        [
+          "C.6  Portföy Taşınmaz Geliştirme / Kira Benzeri Gelirler (GYO Özel)",
+          null,
+          null,
+          null,
+          null,
+          "GYO dışı kurumlar için bu satırı BOŞ bırakın.",
+          null
+        ],
+        [
+          "C.7  Portföy Girişim Şirketi Gelirleri (GSYO/GSYF Özel)",
+          null,
+          null,
+          null,
+          null,
+          "GSYO/GSYF dışı kurumlar için bu satırı BOŞ bırakın.",
+          null
+        ],
+        [
+          "C.8  Diğer Portföy İşletmeciliği Gelirleri",
+          null,
+          null,
+          null,
+          null,
+          "Açıklama ekleyin.",
+          null
+        ],
+        [
+          "C.9  Portföy İşletme Giderleri (−) — Portföyle İlişkili Giderler",
+          null,
+          null,
+          null,
+          null,
+          "Karma giderler için dağıtım anahtarıyla portföy payı belirlenmeli.",
+          null
+        ],
+        [
+          null,
+          "C — NET PORTFÖY İŞLETMECİLİĞİ KAZANCI = 302 İSTİSNA TUTARI",
+          null,
+          "0",
+          null,
+          null,
+          "→ Beyanname Satır 302 (Zarar Olsa Dahi İndirilecek)"
+        ],
+        [
+          "D. PORTFÖY DIŞI GELİRLER — Vergiye Tabi (302 Satırına YAZILMAZ)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bu tablodaki gelirler KVK 5/1-d istisnası dışındadır — beyanname matrahında yer alır. Portföy dışı taşınmaz kira, yönetim ücreti, danışmanlık komisyonu, başarı primi, portföyde olmayan menkul kıymet gelirleri bu tabloya alınır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Gelir Kalemi",
+          "Kapsam Dışı Neden",
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          null,
+          "Kapsam Dışı-1",
+          null,
+          null,
+          null,
+          "Vergiye tabi — matrahta kalır",
+          null
+        ],
+        [
+          null,
+          "Kapsam Dışı-2",
+          null,
+          null,
+          null,
+          "Vergiye tabi — matrahta kalır",
+          null
+        ],
+        [
+          null,
+          "Kapsam Dışı-3",
+          null,
+          null,
+          null,
+          "Vergiye tabi — matrahta kalır",
+          null
+        ],
+        [
+          null,
+          "Kapsam Dışı-4",
+          null,
+          null,
+          null,
+          "Vergiye tabi — matrahta kalır",
+          null
+        ],
+        [
+          null,
+          "D — PORTFÖY DIŞI GELİRLER TOPLAMI (Vergiye Tabi)",
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "E. BEYANNAME 302 — PORTFÖY İŞLETMECİLİĞİ KAZANCI İSTİSNASI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  PORTFÖY İŞLETMECİLİĞİ KAZANCI İSTİSNASI → Beyanname Satır 302",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "Zarar Olsa Dahi İndirilecek | %100 Tam İstisna"
+        ],
+        [
+          "E.2  Portföy Dışı (Vergiye Tabi) Kontrol",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "Beyanname matrahında — 302'ye yazılmaz"
+        ],
+        [
+          "ÖNEMLİ NOTLAR: (1) PORTFÖY TANIMI: İstisna kapsamı, kurumun SPK/BKK/BDDK onaylı portföy kapsamıyla sınırlıdır. (2) GYO ÖZEL: İnşaat/kat karşılığı gelirler portföy içi/dışı analizi zorunludur. (3) GSYO ÖZEL: Yönetim ücreti, danışmanlık, başarı primi portföy dışıdır — vergiye tabidir. (4) EYF ÖZEL: Sözleşme yönetim ücreti portföy dışıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G43",
+      "rows": [
+        [
+          "302 – PORTFÖY İŞLETMECİLİĞİ | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-d | MKYO · GYO · GSYO · BYF · EYF · GYF · GSYF ve Diğerleri | Portföy İçi / Dışı Ayrımı | %100 İstisna | Beyanname Satır 302",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "A0.9 OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Kurum Türü (B.1)",
+          null,
+          null,
+          "MKYO",
+          "Portföy kapsamını belirler",
+          null,
+          null
+        ],
+        [
+          "Muhasebe Ayrımı (B.4)",
+          null,
+          null,
+          "EVET",
+          "EVET zorunlu",
+          null,
+          null
+        ],
+        [
+          "Portföy İçi Gelirler Toplamı",
+          null,
+          null,
+          "0",
+          "C.1-C.8 toplamı",
+          null,
+          null
+        ],
+        [
+          "Portföy İşletme Giderleri",
+          null,
+          null,
+          "0",
+          "C.9 — gider",
+          null,
+          null
+        ],
+        [
+          "302 İSTİSNA TUTARI (E.1)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null
+        ],
+        [
+          "Portföy Dışı (Vergiye Tabi — D)",
+          null,
+          null,
+          "0",
+          "Matrahta kalır",
+          null,
+          null
+        ],
+        [
+          "B. KURUM TÜRÜNE GÖRE PORTFÖY İÇİ / DIŞI GELİR SINIFLANDIRMA REHBERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Aşağıdaki tablo her kurum türü için hangi gelirlerin portföy içi (istisna) ve portföy dışı (vergiye tabi) sayıldığını gösterir. Mevzuatta değişiklik olması halinde güncel tebliğ ve tüzükler esas alınmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kurum Türü",
+          null,
+          "Portföy İçi (İstisna — 302)",
+          null,
+          "Portföy Dışı (Vergiye Tabi)",
+          null
+        ],
+        [
+          "MKYO",
+          null,
+          "Hisse faiz, temettü, repo, değerleme artışı, MKTS satış kaz.",
+          null,
+          "Yönetim ücreti (olağandışı), portföy dışı varlık gelirleri",
+          null,
+          null
+        ],
+        [
+          "GYO",
+          null,
+          "Portföydeki taşınmaz kira, MKTS geliri, portföy satış kazancı",
+          null,
+          "Portföy dışı taşınmaz geliri, inşaat taahhüt (tartışmalı), yönetim ücreti",
+          null,
+          null
+        ],
+        [
+          "GSYO",
+          null,
+          "Portföy girişim şirketi kâr payı ve satış kazancı, MKTS gelirleri",
+          null,
+          "Yönetim ücreti, danışmanlık ücreti, başarı (performans) primi",
+          null,
+          null
+        ],
+        [
+          "BYF",
+          null,
+          "Endeks takip geliri, hisse temettü, değerleme artışı",
+          null,
+          "Fon yönetim ücreti (ayrı kurum alır), fon dışı gelirler",
+          null,
+          null
+        ],
+        [
+          "EYF",
+          null,
+          "Portföy faiz, temettü, değerleme artışı, satış kazancı",
+          null,
+          "Emeklilik sözleşme yönetim ücreti, sigorta komisyonu",
+          null,
+          null
+        ],
+        [
+          "GYF",
+          null,
+          "Portföydeki taşınmaz kira, MKTS geliri, satış kazancı",
+          null,
+          "Portföy dışı taşınmaz, yönetim ücreti",
+          null,
+          null
+        ],
+        [
+          "GSYF",
+          null,
+          "Girişim şirketi kâr payı/satış, MKTS geliri",
+          null,
+          "Yönetim/performans ücreti, danışmanlık",
+          null,
+          null
+        ],
+        [
+          "Altyapı YO/YF",
+          null,
+          "Altyapı proje gelirleri, MKTS, portföy faiz/temettü",
+          null,
+          "Proje geliştirme danışmanlığı, portföy dışı gelirler",
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K11)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama ve Kanıt",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "Kurum KVK 5/1-d kapsamında mı? SPK/BKK/BDDK lisansı var mı?",
+          null,
+          "Kurum türü ve yetkili makam onayı teyit edilmelidir. Lisans belgesi + ana sözleşme tasdik dosyasında yer almalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "★ Portföy içi / dışı gelir ayrımı muhasebede doğru kuruldu mu?",
+          null,
+          "Ayrı hesaplar veya güvenilir dağıtım anahtarı zorunludur. Karma hesaplarda tümünü istisna saymak hatalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "Portföy kapsamı SPK/BKK mevzuatına uygun mu? Portföy dışı varlık var mı?",
+          null,
+          "Portföy yatırım limitleri aşılmışsa veya portföy dışı varlık varsa bu varlıkların gelirleri istisna dışındadır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "★ GYO Özel: İnşaat/Kat Karşılığı gelirleri doğru sınıflandırıldı mı?",
+          null,
+          "GYO'da inşaat taahhüt ve kat karşılığı gelirlerinin portföy içi/dışı sınıflaması tartışmalıdır. Güncel GİB görüşü veya özelge alınmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ GSYO/GSYF Özel: Yönetim/Performans Ücreti portföy dışı olarak ayrıldı mı?",
+          null,
+          "GSYO/GSYF'nin yönetim ücreti, danışmanlık komisyonu ve başarı primi portföy işletmeciliği kazancı değildir — vergiye tabidir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "EYF Özel: Emeklilik sözleşme yönetim ücreti portföy dışı alındı mı?",
+          null,
+          "EYF'nin emeklilik sözleşme yönetim ücreti portföy işletmeciliğinden değil, emeklilik sözleşmesi hizmetinden kaynaklanır → Vergiye tabi.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "Portföy dışı gelirler D tablosuna alındı mı? Matrahta doğru yansıtıldı mı?",
+          null,
+          "D tablosundaki tutarlar beyanname matrahında yer almalıdır. D tutarlarının beyanname ile mutabakatı sağlanmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "Portföy işletme giderleri (C.9) doğru ayrıştırıldı mı?",
+          null,
+          "Yalnızca portföy faaliyetiyle ilgili giderler C.9'a alınmalıdır. Karma giderler için portföy / toplam gelir oranı gibi dağıtım anahtarı kullanılmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "Portföy satış kazancı hesaplama yöntemi tutarlı mı?",
+          null,
+          "FIFO veya ağırlıklı ortalama maliyet yöntemi tutarlı biçimde uygulanmalıdır. Değerleme yöntemi dönem içinde değiştirilmişse açıklanmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "YİAKV matrahında 302 istisnasının konumu analiz edildi mi?",
+          null,
+          "KVK 5/1-d portföy işletmeciliği kazancının YİAKV matrahına etkisi dönem mevzuatı ve GİB açıklamalarıyla analiz edilmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K11",
+          "Beyanname 302 satırındaki tutar E.1 ile uyumlu mu?",
+          null,
+          "302 = Portföy İçi Net Kazanç (C.1-C.8 − C.9). Muhasebe hesapları = VERİ GİRİŞİ C toplamı = Beyanname 302 üç kademe uyum.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "D. BEYANNAME SATIR EŞLEŞTİRME",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Satır",
+          null,
+          "Tutar / Not",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "302",
+          null,
+          "0",
+          "KVK 5/1-d — Portföy İşletmeciliği | %100 İstisna | Zarar Olsa Dahi İndirilecek",
+          null,
+          null,
+          null
+        ],
+        [
+          "297-301",
+          null,
+          "MKYO Diğer Kazançlar",
+          "Yurt içi iştirak kâr payı (5/1-a) gibi ilgili diğer satırlar — ayrı değerlendirin",
+          null,
+          null,
+          null
+        ],
+        [
+          "387/317",
+          null,
+          "YD. İştirak Kâr Payı",
+          "Portföy içindeki yabancı ortaklık kâr payları → Ayrıca 317/387 değerlendirilebilir",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G31",
+      "rows": [
+        [
+          "302 – PORTFÖY İŞLETMECİLİĞİ KAZANCI | MUHASEBE KAYITLARI REHBERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-d | MKYO · GYO · GSYO ve Diğerleri | Portföy İçi / Dışı Ayrımı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. Kurum türüne ve portföy yapısına göre uyarlanmalıdır. Portföy içi / dışı muhasebe ayrımı istisna uygulamasının dayanağıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — PORTFÖY FAİZ VE TEMETTÜ GELİRİ TAHAKKUKU (İstisna Kapsamı)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Portföy menkul kıymetlerinden dönem faizi ve hisse senedi temettüsü",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "Tahakkuk",
+          "241 Bağlı Ortaklıklar / 122 Alacaklar",
+          "Portföy MK faiz/temettü alacağı — 5/1-d istisna kapsamı",
+          "[Tutar]",
+          "—",
+          "Portföy raporu"
+        ],
+        [
+          "Kr",
+          "Tahakkuk",
+          "642 İştirak Kazançları / 641 Faiz Gelirleri",
+          "Portföy işletmeciliği geliri — İstisna (302 satırı)",
+          "—",
+          "[Tutar]",
+          "KV 302"
+        ],
+        [
+          "PORTFÖY İÇİ GELİR: Bu hesaplardaki tutarlar VERİ GİRİŞİ C tablosuna alınır ve beyanname 302. satırında istisna olarak gösterilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — PORTFÖY DIŞI GELİR (Yönetim Ücreti / Danışmanlık — Vergiye Tabi)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Portföy işletmeciliği dışı gelirler — GSYO/EYF gibi kurumlarda yönetim ücreti gibi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "Tahakkuk",
+          "221 Alacaklar / 180 Peşin Öd. Giderler",
+          "Yönetim/performans ücreti alacağı — Portföy dışı — VERGIYE TABİ",
+          "[Tutar]",
+          "—",
+          "Sözleşme"
+        ],
+        [
+          "Kr",
+          "Tahakkuk",
+          "649 Diğer Olağandışı Gelir / 600 Yurt İçi Satışlar",
+          "Portföy dışı gelir — 302 satırına YAZILMAZ — Matrahta kalır",
+          "—",
+          "[Tutar]",
+          "VERGİYE TABİ"
+        ],
+        [
+          "PORTFÖY DIŞI GELİR: Bu hesaplardaki tutarlar VERİ GİRİŞİ D tablosuna alınır ve beyanname matrahında yer alır — 302 satırına yazılmaz.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — GYO ÖZEL: PORTFÖY TAŞINMAZ KİRA GELİRİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "Ay sonu",
+          "127 Diğer Ticari Alacaklar",
+          "Portföyde kayıtlı taşınmazdan kira geliri tahakkuku — İstisna kapsamı",
+          "[Kira]",
+          "—",
+          "Kira sözleşmesi"
+        ],
+        [
+          "Kr",
+          "Ay sonu",
+          "602 Kira Gelirleri",
+          "GYO portföy taşınmaz kira — 5/1-d istisna (302 satırı)",
+          "—",
+          "[Kira]",
+          "KV 302"
+        ],
+        [
+          "GYO DİKKAT: Yalnızca portföyde kayıtlı taşınmazların kira gelirleri istisna kapsamındadır. Portföy dışı taşınmaz kira gelirleri D tablosuna alınarak vergiye tabi tutulur. Portföy kayıt belgesi ile hangi taşınmazın portföyde olduğu teyit edilmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 4 — PORTFÖY MENKUL KIYMET DEĞERLEME (Dönem Sonu)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "31.12.20XX",
+          "111-118 Menkul Kıymetler",
+          "Portföy MK borsa rayici değerleme artışı — İstisna kapsamı",
+          "[Artış]",
+          "—",
+          "SPK değerleme"
+        ],
+        [
+          "Kr",
+          "31.12.20XX",
+          "644 / 649 Değerleme Gelirleri",
+          "Portföy işletmeciliği değerleme geliri — 302 satırına dahil",
+          "—",
+          "[Artış]",
+          "KV 302"
+        ],
+        [
+          "KAYIT 5 — BEYANNAME 302 MUTABAKAT NOTU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME 302 AKIŞI:\n\n1. Portföy içi gelirler (642, 641, 602 portföy kısmı vb.) → VERİ GİRİŞİ C tablosu → Net portföy kazancı\n2. Portföy dışı gelirler (yönetim ücreti, danışmanlık vb.) → VERİ GİRİŞİ D tablosu → Matrahta kalır\n3. KV Beyannamesi 302. Satır: C tablosu net tutarı → 'Zarar Olsa Dahi İndirilecek' bölümü\n\n3 KADEME UYUM KONTROLÜ:\nMuhasebe portföy hesapları = VERİ GİRİŞİ C toplamı = Beyanname 302\n\nKRİTİK: Portföy içi / dışı ayrımı doğru kurulmadan 302 güvenilir şekilde hesaplanamaz. Muhasebe kayıt politikası ve dağıtım anahtarı YMM tasdik dosyasına eklenmelidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D19",
+      "rows": [
+        [
+          "302 – PORTFÖY İŞLETMECİLİĞİ KAZANCI | DENETÇİ NOTLARI VE MESLEKİ DEĞERLENDİRME",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-d | MKYO · GYO · GSYO · BYF · EYF ve Diğerleri | Portföy İçi / Dışı Ayrımı | %100 İstisna | Beyanname 302",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK, KAPSAM VE TEMEL İLKE",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 5/1-d — Yasal Çerçeve ve Kapsam",
+          "KVK Md.5/1-d: Türkiye'de kurulu ve kanunların öngördüğü şekilde kurulan yatırım fon ve ortaklıklarının portföy işletmeciliğinden doğan kazançları kurumlar vergisinden istisnadır.\n\nKapsam dahili kurumlar: MKYO, GYO, GSYO, Altyapı YO, BYF, EYF, GYF, GSYF, Altyapı YF, Konut Finansmanı Fonu, Varlık Finansmanı Fonu, Serbest Yatırım Fonu.\n\nBeyanname Satır 302 | %100 Tam İstisna | Zarar Olsa Dahi İndirilecek.",
+          "KVK Md.5/1-d | SPK/BKK/BDDK Mevzuatı"
+        ],
+        [
+          "N2",
+          "★ Portföy İçi / Dışı Ayrımı — İstisnanın Temel Koşulu",
+          "İstisna YALNIZCA portföy işletmeciliğinden doğan kazançlara uygulanır.\n\nPORTFÖY İÇİ (İstisna — 302):\n• Portföydeki varlıklardan elde edilen faiz, temettü, kira\n• Portföy varlıklarının satışından doğan kazanç\n• Portföy varlıklarının dönem sonu değerleme artışları\n\nPORTFÖY DIŞI (Vergiye Tabi):\n• Yönetim ücreti, performans/başarı primi, danışmanlık komisyonu\n• Portföyde kayıtlı olmayan varlıklardan gelir\n• Faaliyetle ilgili olmayan finansman gelirleri\n\nYMM notu: Bu ayrımın muhasebede izlenmesi zorunludur. Ayrım yapılmadan 302 güvensizdir.",
+          "KVK Md.5/1-d | Danıştay İçtihatları"
+        ],
+        [
+          "N3",
+          "★ GYO Özel Durumları — En Tartışmalı Alan",
+          "GYO portföyünde yer alan gayrimenkullerden elde edilen kira → İstisna kapsamı\nGYO portföyünde OLMAYAN gayrimenkullerden kira → Vergiye tabi\n\nTARTIŞMALI KONULAR:\n① İnşaat/kat karşılığı projelerde geliştirme kazancı: Portföy işletmeciliği mi, inşaat faaliyeti mi?\n② GYO'nun satış sözleşmesi kapsamındaki konut satışından elde ettiği gelir\n③ Arsa geliştirme aşamasındaki gelirlerin sınıflaması\n\nYMM notu: GYO inşaat/geliştirme gelirleri için güncel GİB görüşü veya özelge alınması şiddetle tavsiye edilir. Portföy kayıt belgesi her dönem güncel tutulmalıdır.",
+          "KVK Md.5/1-d | GYO Tüzüğü | GİB Özelgeleri"
+        ],
+        [
+          "N4",
+          "★ GSYO/GSYF Özel Durumları",
+          "GSYO/GSYF portföy işletmeciliği kazancı (İstisna — 302):\n• Portföydeki girişim şirketlerinden kâr payı ve satış kazancı\n• Portföydeki MKTS gelirleri (faiz, temettü)\n\nPORTFÖY DIŞI — VERGIYE TABİ:\n• Yönetim ücreti (management fee)\n• Başarı/Performans primi (carried interest / success fee)\n• Danışmanlık/müşavirlik komisyonu\n• Ortaklara yapılan hizmet bedelleri\n\nYMM notu: GSYO'nun yönetim şirketi ile mükellefiyet ayrımı kritiktir. Yönetim şirketinin gelirleri GSYO'nun 302 istisna kazancı içine dahil edilemez.",
+          "KVK Md.5/1-d | GSYO Tüzüğü | Danıştay"
+        ],
+        [
+          "BÖLÜM 2 — YMM TASDİK DEĞERLENDİRMESİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "Muhasebe Ayrımı Yöntemi — YMM Tasdik Standardı",
+          "İstisna ve vergiye tabi gelirin doğru ayrılması için iki yöntem kabul görmektedir:\n\nYÖNTEM 1 — AYRI HESAPLAR:\nPortföy geliri ve portföy dışı gelir ayrı hesaplarda izlenir. En güvenilir yöntemdir.\n\nYÖNTEM 2 — DAĞITIM ANAHTARI:\nKarma hesap kullanılıyorsa: Portföy varlıkları / Toplam varlıklar oranı gibi güvenilir bir anahtarla dağıtım yapılır.\n\nYMM notu: Seçilen yöntem yazılı olarak belgelenmeli ve dönem içinde tutarlı uygulanmalıdır. Muhasebe politikası belgesi tasdik dosyasına eklenmelidir.",
+          "KVK Md.5/1-d | VUK Md.175"
+        ],
+        [
+          "N6",
+          "49 No.lu Tebliğ + YMM Tasdik Dil Standardı",
+          "49 No.lu Tebliğ (30.12.2025): >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok.\n\nKULLANIN:\n'...portföy işletmeciliğinden doğan kazançlar mevzuat kapsamında tespit edilmiştir'\n'...portföy içi ve dışı gelir ayrımı muhasebe kayıtlarına dayandırılmıştır'\n'...kurum türünün portföy kapsamı SPK/BKK mevzuatıyla örtüşmektedir'\n\nKULLANMAYIN:\n'...tüm gelirler portföy işletmeciliğidir' | '...istisna kapsamında'\n\nKRİTİK RİSK: (1) Portföy dışı gelirin 302'ye dahil edilmesi, (2) Muhasebe ayrımının yokluğu, (3) GYO/GSYO özel gelirlerinin yanlış sınıflaması.",
+          "49 No.lu Tebliğ | SM-SMMM-YMM K. Md.12"
+        ],
+        [
+          "N7",
+          "YİAKV ve Portföy İşletmeciliği",
+          "KVK 5/1-d portföy işletmeciliği kazancının YİAKV (KVK 32/C) matrahına etkisi GİB'in bu konudaki açıklamalarıyla analiz edilmelidir.\n\nYMM notu: YİAKV matrahı hesaplanırken 302 istisna tutarının nasıl dikkate alınacağı dönem mevzuatıyla teyit edilmeli ve YİAKV çalışma kâğıdında açıkça gösterilmelidir.",
+          "KVK Md.32/C | YİAKV Tebliğleri"
+        ],
+        [
+          "N8",
+          "Portföy Değerleme Yöntemi ve Muhasebe Tutarlılığı",
+          "Portföy varlıklarının değerleme yöntemi (borsa rayici, alış bedeli, gerçeğe uygun değer) SPK/BKK tebliğlerine uygun ve tutarlı biçimde uygulanmalıdır.\n\nDeğerleme artış/azalışlarının 302 kapsamındaki gelir/gider hesabına doğru alındığı her dönem teyit edilmelidir.\n\nYMM notu: Değerleme yöntemi değişikliği varsa açıklanmalı ve etkisi gösterilmelidir.",
+          "SPK/BKK Değerleme Tebliğleri | VUK"
+        ],
+        [
+          "N9",
+          "YMM Tasdik Kapsamı — Özel Raporlama",
+          "GYO/GSYO gibi kurumlar için YMM tasdik raporu aşağıdakileri içermeli:\n① Portföy kapsamının SPK/BKK belgesiyle doğrulanması\n② Portföy içi / dışı gelir ayrım metodolojisinin açıklanması\n③ Her gelir kalemi için portföy içi/dışı sınıflamasının gerekçesi\n④ GYO'da: Portföydeki taşınmaz listesi ve kira geliri mutabakatı\n⑤ GSYO'da: Yönetim ücreti ve portföy kazancı ayrıştırma tablosu\n⑥ 302 satırı ile muhasebe hesap mutabakat tablosu",
+          "SM-SMMM-YMM K. Md.12 | KVK Md.5/1-d"
+        ],
+        [
+          "TARTIŞMALI ALAN — GYO İNŞAAT GELİRLERİ: GYO'nun portföyündeki arsa üzerinde gerçekleştirdiği inşaat/geliştirme faaliyetinden elde ettiği gelirin portföy işletmeciliği sayılıp sayılmayacağı konusunda GİB özelgeleri ve Danıştay kararları arasında tutarsızlık mevcuttur. Bu konuda özelge alınması ve ihtiyati yaklaşım benimsenmesi önerilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F33",
+      "rows": [
+        [
+          "302 – PORTFÖY İŞLETMECİLİĞİ KAZANCI | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-d | MKYO · GYO · GSYO · BYF · EYF ve Diğerleri | Portföy İçi / Dışı Ayrımı | %100 İstisna | Beyanname 302 | 49 No.lu Tebliğ",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Tüm kurum türleri için zorunlu belgeler. Kategori 2: Kurum türüne özgü ek belgeler. Kategori 3: YMM tasdik kontrol soruları (★ kritik).",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER (Tüm Kurum Türleri İçin)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "SPK/BKK/BDDK Kuruluş/Faaliyet Lisans Belgesi",
+          "Kurumun KVK 5/1-d kapsamında olduğunu kanıtlayan lisans/tescil belgesi.\nKurum türü (MKYO, GYO, GSYO vb.) ve portföy kapsamı açıkça görünmeli.\nYMM notu: Lisans belgesi güncel olmalı; iptal/askıya alınma durumu kontrol edilmeli.",
+          "SPK / BKK / BDDK resmi yazısı / lisans belgesi",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Ana Sözleşme / Katılma Belgesi / İzahname (Portföy Kapsamı İçin)",
+          "Kurumun portföy yatırım stratejisi ve kapsamını tanımlayan temel belge.\nPortföyde yer alabilecek ve alamayacak varlıklar net tanımlanmış olmalı.\nYMM notu: Portföy kapsamı bu belgeden tespit edilir — eksik veya muğlak ise risk oluşur.",
+          "Şirket ana sözleşmesi / Fon katılma belgesi / SPK onaylı izahname",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Portföy Varlık Listesi / Portföy Raporu (Dönem Başı ve Sonu)",
+          "Dönem boyunca portföyde yer alan tüm varlıkların listesi.\nHer varlığın portföy kodu, türü, iktisap tarihi, değeri bilgileri.\nYMM notu: Portföy içi / dışı ayrımının dayanağıdır. GYO'da taşınmaz listesi kritiktir.",
+          "Saklama kuruluşu raporu / Portföy yöneticisi raporu / Şirket kayıtları",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Portföy İçi / Dışı Gelir Muhasebe Ayrım Belgesi",
+          "Portföy işletmeciliği gelirlerinin portföy dışı gelirlerden nasıl ayrıştırıldığını gösteren belge.\nAyrı hesap kullanılıyorsa: Hesap planı ve hesap ekstresi.\nDağıtım anahtarı kullanılıyorsa: Anahtar formülü ve dönem hesabı.\nYMM notu: Bu belge olmadan 302 istisna güvenilir şekilde tespit edilemez.",
+          "Muhasebe politikası belgesi / Hesap planı / Dağıtım anahtarı tablosu",
+          null
+        ],
+        [
+          null,
+          "5",
+          "Portföy Değerleme Tablosu (Dönem Sonu — SPK Değerleme Esasları)",
+          "Portföy varlıklarının dönem sonu değerleme hesabı ve kullanılan yöntem.\nBorsa rayici, alış bedeli veya gerçeğe uygun değer — SPK tebliğine uygunluk.\nYMM notu: Değerleme artış/azalışları C tablosundaki tutarlarla mutabık olmalıdır.",
+          "Değerleme raporu / Saklama kuruluşu değerleme özeti",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Taslağı — 302. Satır",
+          "302. satırındaki tutarın VERİ GİRİŞİ E.1 ile birebir uyumlu olduğu teyit edilmeli.\n'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldığı kontrol edilmeli.\nYMM notu: 302 = C net tutarı = Beyanname üç kademe uyum.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Muhasebe Hesap Ekstreleri (Portföy Gelir/Gider Hesapları)",
+          "Portföy içi gelirlerin kaydedildiği muhasebe hesaplarının dönem ekstresi.\n642, 641, 602 (portföy kira) gibi hesapların toplamı C tablosuna uyumlu olmalıdır.\nYMM notu: Muhasebe = VERİ GİRİŞİ C = Beyanname 302 üç kademe uyum.",
+          "Muhasebe programı — hesap ekstreleri",
+          null
+        ],
+        [
+          "KATEGORİ 2 — KURUM TÜRÜNE ÖZGÜ EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "GYO: Portföy Taşınmaz Listesi ve Tapu/Kira Sözleşmeleri",
+          "GYO portföyündeki taşınmazların güncel listesi (adres, tapusal bilgiler).\nKira gelirinin portföydeki taşınmazdan kaynaklandığını gösteren kira sözleşmeleri.\nİnşaat/geliştirme gelirleri için ayrı analiz notu zorunludur.",
+          "Tapu kayıtları / Kira sözleşmeleri / Portföy Yönetim Planı",
+          null
+        ],
+        [
+          null,
+          "9",
+          "GYO/GSYO: Portföy Dışı Gelir Ayrıştırma Tablosu",
+          "Yönetim ücreti, danışmanlık, başarı primi gibi portföy dışı gelirlerin ayrı gösterildiği tablo.\nBu tutarların D tablosunda ve beyanname matrahında yer aldığı teyit edilmeli.\nYMM notu: Portföy dışı gelirlerin 302'ye dahil edilmesi tarhiyat riski oluşturur.",
+          "Sözleşmeler / Fatura kayıtları / Muhasebe hesap ekstresi",
+          null
+        ],
+        [
+          null,
+          "10",
+          "GSYO/GSYF: Girişim Şirketi Portföy Belgesi",
+          "Portföyde yer alan girişim şirketlerinin listesi ve sermaye payları.\nŞirketten elde edilen kâr payı ve satış kazancının portföy içi sayılacağının teyidi.\nBaşarı/performans priminin ayrı sözleşme ile portföy dışı tutulduğu belge.",
+          "Ortaklık sözleşmeleri / Pay defteri / GSYO portföy tescil belgesi",
+          null
+        ],
+        [
+          null,
+          "11",
+          "YİAKV Matrah Hesaplama Tablosu (302 Etkisi)",
+          "302 portföy işletmeciliği kazancının YİAKV matrahına etkisini gösteren hesaplama.\nGüncel GİB açıklamaları ve dönem mevzuatı ile desteklenmeli.",
+          "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI (★ Kritik)",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "Kurum türü KVK 5/1-d kapsamında mı? SPK/BKK/BDDK lisansı güncel mi?",
+          "Lisans belgesi + ana sözleşme ile teyit. İptal/askı durumu kontrol edilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Portföy içi / dışı gelir ayrımı muhasebede doğru kuruldu mu?",
+          "Ayrı hesap veya belgelenmiş dağıtım anahtarı zorunludur. Ayrım yoksa 302 güvenilir değildir.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ GYO: İnşaat/geliştirme gelirleri portföy içi olarak mı sınıflandırıldı? Doğru mu?",
+          "Tartışmalı alan — güncel özelge veya GİB görüşü alınmalıdır. İnşaat taahhüt geliri portföy işletmeciliği değil tartışmalıdır.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "★ GSYO/GSYF: Yönetim/performans ücreti portföy dışı (D tablosu) olarak alındı mı?",
+          "Yönetim ücreti, başarı primi, danışmanlık → Portföy dışı. D tablosunda ve beyanname matrahında yer alması zorunludur.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Portföy değerleme yöntemi SPK/BKK tebliğine uygun ve tutarlı mı?",
+          "Dönem içinde yöntem değişikliği varsa açıklanmalı. C.5 (değerleme artışı) değerleme raporuyla uyumlu olmalı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Portföy dışı gelirler D tablosuna alındı mı? Matrahta doğru yansıdı mı?",
+          "D toplamı ile beyanname matrahı arasındaki bağlantı gösterilmeli. D tutarlarının matrahta olmaması eksik vergileme riski oluşturur.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "Muhasebe hesap ekstresi ile VERİ GİRİŞİ C toplamı uyumlu mu?",
+          "Üç kademe uyum: Muhasebe = C toplamı = Beyanname 302. Fark varsa kaynak belgelere inilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "YİAKV matrahında 302 etkisi analiz edildi mi?",
+          "Güncel GİB açıklaması ile 302'nin YİAKV matrahına etkisi teyit edilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: 49 No.lu Tebliğ: >=500.000 TL → YMM raporu. Tam tasdik → ayrıca rapor yok. En kritik risk: Portföy dışı gelirlerin 302'ye dahil edilmesi. GYO inşaat gelirleri tartışmalı — özelge alınması önerilir. GSYO yönetim ücreti portföy dışıdır — kesinlikle ayrıştırılmalıdır. Muhasebe ayrım belgesi olmadan 302 güvenilir değildir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

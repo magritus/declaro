@@ -24,6 +24,32 @@ export function useCalisma(id: number | undefined) {
   })
 }
 
+export function useTamamla(calismaId: number | undefined) {
+  const queryClient = useQueryClient()
+  return useMutation<Calisma, Error, void>({
+    mutationFn: async () => {
+      const { data } = await apiClient.post<Calisma>(`/calisma/${calismaId}/tamamla`)
+      return data
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['calisma', calismaId] })
+    },
+  })
+}
+
+export function useYenidenAc(calismaId: number | undefined) {
+  const queryClient = useQueryClient()
+  return useMutation<Calisma, Error, void>({
+    mutationFn: async () => {
+      const { data } = await apiClient.post<Calisma>(`/calisma/${calismaId}/yeniden_ac`)
+      return data
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['calisma', calismaId] })
+    },
+  })
+}
+
 export function useCreateCalisma(donemId: number | undefined) {
   const queryClient = useQueryClient()
   return useMutation<Calisma, Error, void>({

@@ -1,0 +1,1460 @@
+{
+  "file": "374_KVK_Gecici_Md14_1b_Vade_Sonu_Diger_Kazanclar.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:H68",
+      "rows": [
+        [
+          "374 – KVK GEÇİCİ MADDE 14/1-b | VADE SONUNDA DOĞAN DİĞER KAZANÇLARDAN İSTİSNA | KUR KORUMALI MEVDUAT (KKM) — ALTINLI KKM VE ÖZEL ÜRÜNLER | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Geçici Md.14/1-b | 371–372–373 Dışında Kalan Vade Sonu Kazançları | Altın KKM | Özel KKM Ürünleri | Beyanname 374 | ★ YİAKV DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK GEÇİCİ MD.14 — BEŞ İSTİSNA KODU ÖZET:\n  370 (1-a) Dönüşüm kur farkı — tek seferlik | 371 (1-b) Bankadan kur farkı tazminatı — nakit/dönemsel\n  372 (1-b) Dönem sonu (31/12) faiz/kâr payı tahakkuku | 373 (1-b) Vade sonu faiz/kâr payı tahsilatı\n  374 (1-b) Vade sonunda doğan DİĞER kazançlar — 371/372/373 kapsamına girmeyen → BU DOSYA\n  KAPSAM: Altın KKM vade kazançları | Özel KKM ürün getirileri | Prim/bonus ödemeleri | Diğer KKM kaynaklı vade sonu kazançları. ★★ Tüm beş kod YİAKV matrahından DÜŞÜLEMEZ.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV (KVK Md.32/C) KRİTİK: 374 kapsamındaki vade sonu diğer kazançlar YİAKV matrahından DÜŞÜLEMEZ. 370+371+372+373+374 tamamı E.7 DÜŞÜLEMEZ listesindedir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu",
+          null
+        ],
+        [
+          "A0.1  KKM hesabı KVK Geçici Md.14/1-a kapsamı dönüşümden mi açıldı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "374, yalnızca 370 kapsamındaki dönüşümden açılan KKM hesaplarına uygulanır. 370 çalışma kâğıdıyla çapraz kontrol.",
+          null,
+          null
+        ],
+        [
+          "A0.2  ★ Bu kazanç türü 371/372/373 kapsamına girmiyor mu? ('Diğer' niteliği teyit edildi mi?)",
+          null,
+          null,
+          null,
+          "EVET",
+          "374 = 371 (kur farkı tazminat) + 372 (dönem sonu tahakkuk) + 373 (vade faiz/kâr payı) DIŞINDA KALAN kazançlar. Bu üç kodun kapsamını önce kontrol edin. 374 gerçekten 'diğer' niteliğinde olmalı.",
+          null,
+          null
+        ],
+        [
+          "A0.3  Kazanç türü belirlendi mi? (Altın KKM / Özel KKM Ürünü / Diğer)",
+          null,
+          null,
+          null,
+          "Altın KKM",
+          "B bölümünde kazanç türünü detaylandırın. Her tür için ayrı yasal dayanak ve belge zorunludur.",
+          null,
+          null
+        ],
+        [
+          "A0.4  Vade tarihi dönem içinde (01.01–31.12) mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "374, vade sonu kazancı olduğundan vade tarihinin dönem içinde olması zorunludur.",
+          null,
+          null
+        ],
+        [
+          "A0.5  371/372/373 ile mükerrerlik analizi yapıldı mı?",
+          null,
+          null,
+          null,
+          "EVET",
+          "374 kapsamındaki kazancın 371/372/373'ten farklı bir kalem olduğu teyit edilmeli. Aynı tutarın hem 373 (faiz/kâr payı) hem 374 (diğer) olarak gösterilmesi mükerrerlik oluşturur.",
+          null,
+          null
+        ],
+        [
+          "A0.6  ★ 374 tutarının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "370+371+372+373+374 tamamı YİAKV matrahından DÜŞÜLEMEZ. YİAKV E.7'de beş satır da kontrol edilmeli.",
+          null,
+          null
+        ],
+        [
+          "A0.7  Kazanç türüne özgü belge mevcut mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "Altın KKM → Altın fiyat belgesi + Banka bildirimi. Özel ürün → Ürün sözleşmesi + Getiri bildirimi. Prim/bonus → Banka yazısı/bildirimi.",
+          null,
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          ">=500.000 TL → YMM raporu.",
+          null,
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "★ A0.2 (diğer niteliği teyidi), A0.5 (mükerrerlik), A0.6 (YİAKV) kritik.",
+          null,
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kurumun Unvanı",
+          null,
+          null,
+          null,
+          null,
+          "Tam ticaret unvanı",
+          null,
+          null
+        ],
+        [
+          "VKN",
+          null,
+          null,
+          null,
+          null,
+          "10 haneli VKN",
+          null,
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "01.01.2025 – 31.12.2025",
+          null,
+          null
+        ],
+        [
+          "KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Banka/Finans: %30",
+          null,
+          null
+        ],
+        [
+          "Dosya Referansı",
+          null,
+          null,
+          null,
+          null,
+          "YMM-2025/374-01",
+          null,
+          null
+        ],
+        [
+          "370/371/372/373 Referansı",
+          null,
+          null,
+          null,
+          null,
+          "Aynı KKM hesabı — beş dosya çapraz mutabakat",
+          null,
+          null
+        ],
+        [
+          "B. KAZANÇ TÜRÜ ANALİZİ — 374 KAPSAMININ TEMEL KATEGORİLERİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "374 = 'Diğer' kapsamı. 371/372/373 dışında kalan her KKM kaynaklı vade sonu kazancı buraya girer. Her kazanç türü için ayrı yasal dayanak, ayrı belge ve ayrı muhasebe hesabı zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B.1  ALTIN KKM VADE KAZANCI — En Yaygın 374 Kalemi",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tanım: Altın hesabı → TL KKM dönüşümü (370 kapsamında). Vade sonunda TL KKM hesabındaki getirinin faiz/kâr payı dışındaki kısmı (altın fiyat artışına bağlı getiri, altın kur farkı vb.) → 374.\n  Hesaplama: Vade Sonu Altın Değeri (adet × vade sonu TCMB altın kuru) − Dönüşüm TL Bedeli − Faiz/Kâr Payı (373)\n  NOT: Altın hesabı KKM'de dönüşüm kazancı 370'te (tek seferlik kur farkı değerleme) zaten istisna edilmiştir. 374'te yalnızca vade sonu ek getiri (altın endeksli kısım) yer alır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Altın KKM Parametresi",
+          null,
+          "Değer / Tarih",
+          null,
+          "Açıklama",
+          "Belge",
+          null
+        ],
+        [
+          "B.1.1  Altın KKM Hesabı Açılış Tarihi (= 370 Dönüşüm Tarihi)",
+          null,
+          null,
+          "370 dönüşüm tarihi ile örtüşmeli.",
+          null,
+          "370 çalışma kâğıdı",
+          null,
+          null
+        ],
+        [
+          "B.1.2  Dönüşüm Anındaki Altın Miktarı (Gram/Ons)",
+          null,
+          null,
+          "370 kapsamında dönüştürülen altın miktarı.",
+          null,
+          "Banka dekontu",
+          null,
+          null
+        ],
+        [
+          "B.1.3  Dönüşüm TL Bedeli (Toplam — 370'teki tutar)",
+          null,
+          null,
+          "370 dosyasındaki dönüşüm TL değeri.",
+          null,
+          "370 çalışma kâğıdı",
+          null,
+          null
+        ],
+        [
+          "B.1.4  Vade Sonu Altın Değeri (Altın Endeksli Getiri varsa)",
+          null,
+          null,
+          "Altın fiyat artışına bağlı vade sonu ek getiri. TCMB altın fiyatı × Altın miktarı.",
+          null,
+          "TCMB + Banka bildirimi",
+          null,
+          null
+        ],
+        [
+          "B.1.5  Vade Sonu Faiz/Kâr Payı (373'teki tutar)",
+          null,
+          null,
+          "373 çalışma kâğıdından. Mükerrerlik önleme için çıkarılacak.",
+          null,
+          "373 çalışma kâğıdı",
+          null,
+          null
+        ],
+        [
+          "B.1.6  Net 374 Altın KKM Kazancı (B.1.4 − B.1.5)",
+          null,
+          null,
+          "Bu tutar C tablosuna girilecek. Altın fiyat farkı getirisi.",
+          null,
+          "Hesaplama",
+          null,
+          null
+        ],
+        [
+          "B.2  ÖZEL KKM ÜRÜN GETİRİSİ / PRİM-BONUS / ENDEKSLİ ÜRÜN KAZANCI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİLER:\n  ① Prim/Bonus Ödemeleri: Banka tarafından KKM hesabı için ödenen teşvik prim veya bonusu. Faiz/kâr payı niteliğinde değil → 374.\n  ② Endeksli KKM Kazancı: Belirli bir endekse (TÜFE, altın vb.) bağlı getiri. Sözleşme kapsamında faiz dışı ek getiri → 374.\n  ③ Özel Vade Avantajı: Uzun vadeli KKM hesaplarına banka tarafından uygulanan ek getiri.\n  ④ Diğer KKM Kaynaklı Kazanç: Yukarıdaki kategorilere girmeyen, KKM hesabından doğan ve 371/372/373 kapsamına girmeyen her türlü kazanç.\n  NOT: Her kalem için GİB'e açıklanabilir yasal dayanak (KVK Geçici Md.14/1-b) ile banka belgesi zorunludur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. VADE SONU DİĞER KAZANÇ TABLOSU (374) — KALEMİ VE TUTARI GİRİN",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Her 374 kalemi için ayrı satır. SÜTUN 3 (kazanç türü) ve SÜTUN 5 (tutar) ANA GİRİŞ. 371/372/373 ile mükerrerlik var mı? kontrolü SÜTUN 6'da yapılır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazanç Türü",
+          "Açıklama / Hesap",
+          "KKM Hesap",
+          "Vade Tarihi",
+          "374 Brüt Tutar (TL)",
+          "371–373 Mükerrerlik Var mı?",
+          "Net 374 İstisna (TL)",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0",
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          "Yok",
+          "0",
+          null
+        ],
+        [
+          "TOPLAM",
+          "374 Kapsamı Vade Sonu Diğer Kazançlar → Beyanname 374",
+          null,
+          null,
+          "0",
+          "—",
+          "0",
+          null
+        ],
+        [
+          "SÜTUN 5 (kırmızı çerçeve): 374 kapsamındaki vade sonu diğer kazanç tutarı — ANA GİRİŞ (banka bildirimi veya hesaplama tablosundan).\n  SÜTUN 6: Mükerrerlik analizi — aynı tutar 371/372/373'te zaten gösterildiyse 'Var' seçin, net 374 = 0 olur. Yok ise tüm tutar 374.\n  ★ Altın KKM kazancı: B.1.6 tutarını buraya yazın. Faiz/kâr payı (373) zaten ayrı beyanname satırında — mükerrer göstermein.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D. VADE SONU DİĞER KAZANÇ İSTİSNASI ÖZET — BEYANNAME 374",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          "YMM Notu",
+          null
+        ],
+        [
+          "D.1  Toplam 374 Brüt Kazanç (C Tablosu Sütun 5)",
+          null,
+          "0",
+          "C Sütun 5 toplamı — tüm diğer kazançlar",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D.2  Mükerrer Kalemler (371/372/373 ile çakışan — C Sütun 6 'Var' olanlar)",
+          null,
+          "0",
+          "Mükerrer olduğu tespit edilen kalemler — 374'e yazılmaz",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "D.3  ★ NET 374 İSTİSNA TUTARI → BEYANNAME 374",
+          null,
+          "0",
+          "→ Beyanname 374 | Kazancın Bulunması Halinde",
+          null,
+          "KVK Geçici Md.14/1-b",
+          null,
+          null
+        ],
+        [
+          "D.4  Kapsam Dışı Diğer Kazanç (31/12/2021 dışı KKM)",
+          null,
+          null,
+          "Kapsam dışı tutarlar vergilendirilir",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E. 370 – 371 – 372 – 373 – 374 TAM PAKET MUTABAKAT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "370",
+          "371",
+          "372",
+          "373",
+          "374 (BU)",
+          "YİAKV"
+        ],
+        [
+          "Konu",
+          null,
+          "Kur farkı değerleme",
+          "Kur farkı tazminat",
+          "Dönem sonu tahakkuk",
+          "Vade faiz/kâr payı",
+          "Vade diğer kazançlar",
+          "Beşi de DÜŞÜLEMEZ"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "646/679",
+          "102/648",
+          "181/642",
+          "102/(181+642)",
+          "646/648/679 vb.",
+          "E.7"
+        ],
+        [
+          "374 Kapsamı",
+          null,
+          "—",
+          "—",
+          "—",
+          "Faiz/kâr payı",
+          "Altın+prim+endeks+diğer",
+          "Ayrıştırma zorunlu"
+        ],
+        [
+          "F.1  TOPLAM İSTİSNA → Beyanname Satır 374 (Kazancın Bulunması Halinde)",
+          null,
+          null,
+          null,
+          "0",
+          "D.3 — Net 374 | KVK Geçici Md.14/1-b | Vade Sonu Diğer Kazançlar",
+          null,
+          null
+        ],
+        [
+          "★★ KRİTİK UYARILAR:\n(1) YİAKV MATRAHINDA DÜŞÜLEMEZ: 370+371+372+373+374 tamamı asgari KV matrahından çıkarılmaz — YİAKV E.7.\n(2) KAPSAM SINIRI: 374 = 371+372+373 DIŞINDA kalan KKM kaynaklı vade sonu kazançlar. Zaten 371/372/373'te gösterilen tutar 374'e yazılamaz (mükerrerlik).\n(3) 'DİĞER' GEREKÇESİ: Her kalem için GİB'e açıklanabilir 'diğer' niteliği teyit edilmeli. Tartışmalı kalemler için özelge alınması tavsiye edilir.\n(4) BELGE: Altın KKM → Altın fiyat tablosu + banka bildirimi. Prim/bonus → Banka yazısı. Her kalem ayrı belge ile desteklenmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:H35",
+      "rows": [
+        [
+          "374 – KVK GEÇİCİ MD.14/1-b VADE SONU DİĞER KAZANÇLAR | HESAPLAMALAR VE DENETİM",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Altın KKM | Özel KKM Ürünü | Prim/Bonus | Endeksli Getiri | Beyanname 374 | YİAKV MATRAHINDA DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. TASDİK ÖZETİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "OK ise devam",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazanç Türü (A0.3)",
+          null,
+          null,
+          "Altın KKM",
+          "Altın/Prim/Endeks/Diğer",
+          null,
+          null,
+          null
+        ],
+        [
+          "Toplam Brüt (D.1)",
+          null,
+          null,
+          "0",
+          "C Sütun 5 toplamı",
+          null,
+          null,
+          null
+        ],
+        [
+          "Mükerrer Kalemler (D.2)",
+          null,
+          null,
+          "0",
+          "371-373 çakışan — hariç tutuldu",
+          null,
+          null,
+          null
+        ],
+        [
+          "374 NET İSTİSNA (D.3)",
+          null,
+          null,
+          "0",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "★★ YİAKV'de DÜŞÜLEMEZ",
+          null,
+          null,
+          "370+371+372+373+374 — Beşi de E.7",
+          "Her zaman DÜŞÜLEMEZ",
+          null,
+          null,
+          null
+        ],
+        [
+          "B. 370–371–372–373–374 TAM KARŞILAŞTIRMA MATRİSİ — KVK GEÇİCİ MD.14",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Özellik",
+          "370",
+          "371",
+          "372",
+          "373",
+          "374 (BU)",
+          "Ortak"
+        ],
+        [
+          "Konu",
+          null,
+          "Kur farkı değerleme",
+          "Kur farkı tazminat",
+          "Dönem sonu tahakkuk",
+          "Vade faiz/kâr payı",
+          "Vade diğer kazançlar",
+          "5 ayrı mekanizma"
+        ],
+        [
+          "Zaman",
+          null,
+          "Dönüşüm — tek",
+          "Ödeme dönemleri",
+          "31 Aralık",
+          "Vade tarihi",
+          "Vade tarihi",
+          "Her biri farklı dönem"
+        ],
+        [
+          "İçerik",
+          null,
+          "Kur farkı",
+          "Koruma ödemesi",
+          "Faiz/kâr payı accrual",
+          "Faiz/kâr payı nakit",
+          "Altın+prim+endeks+diğer",
+          "371+372+373 dışı"
+        ],
+        [
+          "Muhasebe",
+          null,
+          "646/679",
+          "102/648",
+          "181/642",
+          "102/(181+642)",
+          "646/648/679 vb.",
+          "Türüne göre değişir"
+        ],
+        [
+          "Beyanname",
+          null,
+          "370",
+          "371",
+          "372",
+          "373",
+          "374",
+          "Kazancın Bulunması Halinde"
+        ],
+        [
+          "YİAKV",
+          null,
+          "DÜŞÜLEMEZ",
+          "DÜŞÜLEMEZ",
+          "DÜŞÜLEMEZ",
+          "DÜŞÜLEMEZ",
+          "DÜŞÜLEMEZ",
+          "Beşi birlikte E.7"
+        ],
+        [
+          "374 Özgün Kural",
+          null,
+          "—",
+          "—",
+          "—",
+          "Faiz/kâr payı + 374",
+          "371-373 dışı",
+          "Mükerrer gösterilmez"
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K12)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama",
+          null,
+          "Sonuç",
+          null,
+          null
+        ],
+        [
+          "K1",
+          "★ KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden mi açıldı?",
+          null,
+          "370 çalışma kâğıdıyla çapraz teyit.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K2",
+          "★ Bu kazanç türü gerçekten 371/372/373 kapsamına girmiyor mu?",
+          null,
+          "374 = 'Diğer' = 371+372+373 dışı. Her üçünün kapsamı kontrol edilmeli.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K3",
+          "Kazanç türü belgelendi mi? (Altın / Prim / Endeks / Diğer)",
+          null,
+          "Her kalem için ayrı belge. Altın KKM → TCMB fiyat tablosu. Prim/bonus → Banka yazısı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K4",
+          "★ 371/372/373 ile mükerrerlik analizi (C Sütun 6) yapıldı mı?",
+          null,
+          "'Yok' olanlar 374'e yazıldı. 'Var' olanlar dışlandı (D.2).",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K5",
+          "Altın KKM varsa B.1.6 hesabı (Net Altın Kazancı) doğru mu?",
+          null,
+          "Vade Altın Değeri − Dönüşüm TL − Faiz/Kâr Payı (373) = Net Altın KKM Kazancı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K6",
+          "370/371/372/373 çalışma kâğıtlarıyla çapraz mutabakat yapıldı mı?",
+          null,
+          "Beş dosyanın KKM hesap bilgileri tutarlı.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K7",
+          "Tartışmalı 374 kalemleri için özelge alındı mı?",
+          null,
+          "374 'diğer' niteliği tartışmalı olabilir → GİB özelgesi risk yönetiminin temelidir.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K8",
+          "★★ 374 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          null,
+          "370+371+372+373+374 tamamı YİAKV matrahından DÜŞÜLEMEZ. E.7'de beş satır.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K9",
+          "Beyanname 374 'Kazancın Bulunması Halinde' bölümünde mi?",
+          null,
+          "Zarar döneminde uygulanamaz.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K10",
+          "Vade tarihi dönem içinde (01.01–31.12) mi?",
+          null,
+          "Sonraki dönemde vadeye girenler → Gelecek yıl.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K11",
+          "374 tutarının muhasebe kaydı yapıldı mı? Hangi hesap kullanıldı?",
+          null,
+          "Kazanç türüne göre: 646/648/679. Ticari kâra dahil.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ],
+        [
+          "K12",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          null,
+          ">=500.000 TL → YMM raporu.",
+          null,
+          "Uygun/Eksik/Risk",
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G23",
+      "rows": [
+        [
+          "374 – KVK GEÇİCİ MD.14/1-b VADE SONU DİĞER KAZANÇLAR | MUHASEBE KAYITLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Altın KKM Vade Kaydı | Prim/Bonus Kaydı | 370–371–372–373–374 Tam Muhasebe Tablosu",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 1 — ALTIN KKM: VADE SONU ALTIN FİYAT FARKI KAZANCI (374 — En Yaygın Kalem)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Altın KKM hesabı vadeye geldiğinde altın fiyat artışından doğan ek getiri → 374 (faiz/kâr payı dışındaki kısım).",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Vade Tarihi]",
+          "102 Bankalar",
+          "Altın KKM vade sonu toplam tahsilat (altın fiyat getirisi + faiz/kâr payı)",
+          "[Toplam]",
+          "—",
+          "Banka bildirimi"
+        ],
+        [
+          "Kr",
+          "[Vade Tarihi]",
+          "646 Kambiyo Kârları / 679 Diğer Kâr",
+          "Altın fiyat farkı kazancı (374 kapsamı) — KVK Geçici Md.14/1-b → Beyanname 374",
+          "—",
+          "[374 Net]",
+          "KV 374"
+        ],
+        [
+          "Kr",
+          "[Vade Tarihi]",
+          "642 Faiz Gelirleri / 644 Kâr Payları",
+          "Vade faiz/kâr payı (373 kapsamı) — ayrı beyanname satırı 373",
+          "—",
+          "[373 Tutar]",
+          "KV 373"
+        ],
+        [
+          "Altın KKM vade tahsilatında: Altın fiyat getirisi → 646/679 (374). Faiz/kâr payı → 642/644 (373). Ayrı hesaplar zorunlu.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 2 — PRİM / BONUS ÖDEMESİ (374 — Özel KKM Teşvik Ödemeleri)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "Dr",
+          "[Ödeme Tarihi]",
+          "102 Bankalar",
+          "Bankadan alınan KKM prim/bonus ödemesi — faiz niteliğinde değil",
+          "[Tutar]",
+          "—",
+          "Banka yazısı/bildirimi"
+        ],
+        [
+          "Kr",
+          "[Ödeme Tarihi]",
+          "648 Diğer Olağan Gelirler / 679 Diğer Olağandışı Kâr",
+          "KKM prim/bonus — KVK Geçici Md.14/1-b kapsamı → Beyanname 374",
+          "—",
+          "[Tutar]",
+          "KV 374"
+        ],
+        [
+          "Prim/bonus niteliği: Faiz/kâr payı değil, teşvik niteliğinde ödeme. 642 değil 648 veya 679 hesabına alınır. YMM: Banka yazısı ile prim niteliği teyit edilmeli.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KAYIT 3 — 370/371/372/373/374 TAM MUHASEBE TABLOSU",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap",
+          "Not",
+          "Dr",
+          "Kr",
+          "Ref"
+        ],
+        [
+          "370",
+          "[Dönüşüm]",
+          "646/679",
+          "Kur farkı değerleme → Tek seferlik → Beyanname 370",
+          "—",
+          "[370]",
+          "KV 370"
+        ],
+        [
+          "371",
+          "[Ödeme]",
+          "102/648",
+          "Bankadan kur farkı koruma ödemesi → Dönemsel nakit → Beyanname 371",
+          "—",
+          "[371]",
+          "KV 371"
+        ],
+        [
+          "372",
+          "[31.12]",
+          "181/642",
+          "Dönem sonu faiz/kâr payı tahakkuku → Beyanname 372",
+          "—",
+          "[372]",
+          "KV 372"
+        ],
+        [
+          "373",
+          "[Vade]",
+          "102/(181+642)",
+          "Vade sonu faiz/kâr payı tahsilatı → Beyanname 373",
+          "—",
+          "[373]",
+          "KV 373"
+        ],
+        [
+          "374",
+          "[Vade]",
+          "646/648/679",
+          "Vade sonu diğer kazançlar (altın+prim+endeks) → Beyanname 374",
+          "—",
+          "[374]",
+          "KV 374"
+        ],
+        [
+          "YİAKV: 646+648+642+679 hesaplarındaki tüm KKM geliri ticari kâra dahil. 370+371+372+373+374 BEŞİ DE YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7). Genel KV matrahından çıkarılır (her satır ayrı beyannamede). Muhasebe hesabı türüne bakılmaksızın tamamı YİAKV matrahında kalır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:G9",
+      "rows": [
+        [
+          "374 – KVK GEÇİCİ MD.14/1-b VADE SONU DİĞER KAZANÇLAR | DENETÇİ NOTLARI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | Altın KKM | Prim/Bonus | Endeksli Getiri | ★★ YİAKV DÜŞÜLEMEZ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme / Tasdik Standardı",
+          "Mevzuat / Kaynak",
+          null,
+          null,
+          null
+        ],
+        [
+          "N1",
+          "KVK Geçici Md.14/1-b — 374 Vade Sonu Diğer Kazançların Kapsamı",
+          "374 (VADE SONUNDA DOĞAN DİĞER KAZANÇLAR) TANIMI:\n\nKVK Geçici Madde 14/1-b kapsamındaki KKM hesaplarından vade sonu elde edilen kazançların\n371 (kur farkı tazminat) + 372 (dönem sonu tahakkuk) + 373 (faiz/kâr payı) dışında kalan kısmı.\n\nBAŞLICA 374 KALEMLERİ:\n\n① ALTIN KKM VADE KAZANCI: Altın hesabını TL KKM'ye dönüştüren kurumların (370 kapsamı)\n   vade sonunda altın fiyat farkından kaynaklanan getirisi. Bu kısım faiz/kâr payı değil.\n   Hesaplama: (Vade Sonu Altın Fiyatı × Altın Miktarı) − Dönüşüm TL Bedeli − Faiz/Kâr Payı\n\n② PRİM / BONUS ÖDEMESİ: Banka tarafından KKM hesabı için ödenen teşvik primi veya bonusu.\n   Faiz/kâr payı niteliğinde değil — sözleşmede ayrıca tanımlanmış ödeme türü.\n\n③ ENDEKSLİ KKM KAZANCI: TÜFE, döviz veya başka bir endekse bağlı getirinin faiz dışı kısmı.\n\n④ DİĞER ÖZEL KKM GETİRİSİ: Yukarıdakiler dışında, 371/372/373 kapsamına girmediği açık\n   olan her türlü KKM kaynaklı vade sonu kazancı.\n\nBEYANNAME: 374 | Kazancın Bulunması Halinde İndirilecek",
+          "KVK Geçici Md.14/1-b | GİB KV Beyan Reh. 2026 (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N2",
+          "★ 374 ve 371/372/373 Arasındaki Sınır — Mükerrerlik Önleme",
+          "374 KAPSAM SINIRI — KRİTİK:\n\n374 = 'DİĞER' kategorisi. Dolayısıyla önce şu üç soru yanıtlanmalı:\n① Bu kazanç 371 (kur farkı tazminat) midir? → Hayırsa devam.\n② Bu kazanç 372 (dönem sonu faiz/kâr payı tahakkuku) mudur? → Hayırsa devam.\n③ Bu kazanç 373 (vade sonu faiz/kâr payı) midir? → Hayırsa 374.\n\nALTIN KKM ÖRNEK AYRIŞIMI:\nToplam Vade Getirisi: 50.000 TL\n• Faiz/kâr payı: 20.000 TL → Beyanname 373\n• Altın fiyat farkı getirisi: 30.000 TL → Beyanname 374\nYANLIŞ: 50.000 TL'nin tamamını 373 veya tamamını 374 yazmak.\nDOĞRU: 20.000 TL → 373 | 30.000 TL → 374 (toplam = banka bildirim tutarı)\n\nYMM: C tablosu Sütun 6 (mükerrerlik analizi) kritik kontroldür.",
+          "KVK Geçici Md.14/1-b | 1 Seri No.lu KVK GT",
+          null,
+          null,
+          null
+        ],
+        [
+          "N3",
+          "★★ YİAKV ile İlişki — 370+371+372+373+374 Tamamı DÜŞÜLEMEZ",
+          "YİAKV (KVK Md.32/C) MATRAHINDA:\n\n• 370 → DÜŞÜLEMEZ | • 371 → DÜŞÜLEMEZ | • 372 → DÜŞÜLEMEZ\n• 373 → DÜŞÜLEMEZ | • 374 → DÜŞÜLEMEZ\n\nYİAKV çalışma kâğıdı E.7 satırı (GÜNCELLENMESİ GEREKİR):\n'KKM Kur Farkı Değerleme + Tazminat + Dönem Sonu + Vade + Vade Diğer Kazançları\n(KVK Geçici Md.14) → YİAKV'de DÜŞÜLEMEZ ✗ | Beyanname 370/371/372/373/374'\n\nYMM, beş kodun tamamının asgari vergi matrahında kaldığını teyit etmelidir.\n374'ün 'diğer' niteliği taşıması YİAKV muamelesini değiştirmez.",
+          "KVK Md.32/C | YİAKV Reh. (No:607) | GİB KV Beyan Reh. (No:606)",
+          null,
+          null,
+          null
+        ],
+        [
+          "N4",
+          "Altın KKM — Hesaplama Yöntemi ve TCMB Fiyat Tablosu",
+          "ALTIN KKM VADE KAZANCI HESAPLAMA:\n\nAltın hesabı → TL KKM dönüşümü aşamaları:\n370 (Dönüşüm): Altın birim × Dönüşüm günü altın kuru = TL KKM başlangıç\n373 (Vade faiz): KKM faiz/kâr payı = TL KKM × Oran × Gün\n374 (Vade altın farkı): Vade sonu altın değeri − Dönüşüm bedeli − Faiz/kâr payı\n\nTCMB ALTIN FİYATI: İstanbul Altın Borsası (İAB) veya TCMB resmi altın fiyatı.\nDönüşüm günü fiyatı (370 için) ve vade sonu fiyatı (374 için) ayrı ayrı alınır.\n\nÖRNEK:\n100 gr altın → Dönüşüm Mart 2024 @ 2.000 TL/gr = 200.000 TL KKM\nVade Eylül 2025: Altın 2.800 TL/gr → 100 gr × 2.800 = 280.000 TL\nFaiz (373): 20.000 TL | Altın farkı (374): 280.000 − 200.000 − 20.000 = 60.000 TL\nBanka bildirimi: Toplam 300.000 TL (faiz 20.000 + altın getirisi 280.000 − maliyet 200.000 = 80.000)\n→ 373: 20.000 TL | 374: 60.000 TL",
+          "TCMB Altın Fiyatı | İAB | KVK Geçici Md.14/1-b",
+          null,
+          null,
+          null
+        ],
+        [
+          "N5",
+          "Tartışmalı Kalemler — Özelge Stratejisi ve YMM Tasdik Standardı",
+          "ÖZELGE STRATEJİSİ:\n374 'diğer' niteliği tartışmaya açık olabilir. Şu durumlarda GİB özelgesi alınması tavsiye edilir:\n• Altın KKM kazancının hesaplama yöntemi farklı yorumlanabiliyorsa\n• Prim/bonus ödemeleri için bankanın nitelendirmesi farklıysa\n• Endeksli KKM ürünlerinde getiri türü belirsizse\n\nYMM TASDIK DİLİ — KULLANIN:\n'...31/12/2021 tarihli bilançoda kayıtlı altın hesabının TL kur korumalı mevduat hesabına\ndönüştürülmesi sonucunda açılan KKM hesabı [Vade Tarihi] tarihinde vadeye ulaşmış;\nvade süresi boyunca oluşan faiz/kâr payı dışındaki [374 Tutar] TL altın fiyat farkı kazancı,\nKVK Geçici Madde 14/1-b kapsamında kurumlar vergisinden istisna edilmiş ve yurt içi asgari\nkurumlar vergisi matrahından indirilmemiştir.'\n\nKULLANMAYIN:\n'...Tüm vade kazancı 374 kapsamındadır.' (Faiz/kâr payı ayrımı yapılmamış)\n'...374 tutarı YİAKV matrahından düşülmüştür.' (YANLIŞ)\n\nKRİTİK RİSKLER:\n(1) 373 kapsamındaki faiz/kâr payını 374'e yazmak (mükerrerlik değil, yanlış sınıflama).\n(2) 374'ü YİAKV matrahından düşmek.\n(3) Altın KKM hesaplama yöntemini belgelememek.",
+          "49 No.lu Tebliğ | KVK Geçici Md.14 | SM-SMMM-YMM K. Md.12",
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV BEYAN REHBERİ MART 2026 (No:606) KAPANIŞ (374): KVK Geçici Md.14 paketi 370+371+372+373+374 beş kodla tamamlanmıştır. 374 = 'Diğer' kategorisi — Altın KKM, prim/bonus, endeksli getiri ve diğer özel KKM ürün kazançları. YİAKV E.7'de beş satırın tamamı DÜŞÜLEMEZ. Tartışmalı 374 kalemleri için GİB özelgesi tavsiye edilir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F31",
+      "rows": [
+        [
+          "374 – KVK GEÇİCİ MD.14/1-b VADE SONU DİĞER KAZANÇLAR | BELGE LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "GİB KV Beyan Rehberi Mart 2026 (No:606) | Altın KKM | Prim/Bonus | TCMB Altın Fiyatı | 370–373 Çapraz",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "1",
+          "★ Banka Vade Bildirimi — Kazanç Türü Ayrıştırılmış",
+          "Vade sonunda bankadan alınan resmi bildiri: Faiz/kâr payı ve diğer kazançlar ayrı satırlarda.\n374 kapsamındaki kazancın (altın getirisi / prim / endeks) faiz/kâr payından ayrı gösterildiği teyit edilmeli.",
+          "Banka şubesi/internet bankacılığı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "★ TCMB Altın Fiyat Tablosu (Altın KKM için — Dönüşüm ve Vade Tarihleri)",
+          "Altın KKM vade kazancı hesabında: Dönüşüm günü altın kuru (370 ile aynı) + Vade sonu altın kuru.\nB.1 bölümündeki hesabın dayanağıdır. TCMB resmi fiyatı veya İAB verileri.",
+          "TCMB/İAB web sitesi",
+          null
+        ],
+        [
+          null,
+          "3",
+          "★ 370/371/372/373 Çalışma Kâğıtları — Mükerrerlik Analizi",
+          "374'ün 371+372+373 dışında kaldığı çapraz kontrol. Aynı kazanç birden fazla satırda gösterilmemeli.\nC tablosu Sütun 6 mükerrerlik analizi bu dosyalardan yararlanır.",
+          "370/371/372/373 çalışma kâğıtları",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Prim/Bonus Bildirimi (Prim/Bonus Varsa)",
+          "Banka tarafından düzenlenen resmi prim/bonus ödeme bildirisi.\nFaiz niteliğinde olmadığı (teşvik/prim) banka yazısıyla teyit edilmeli.",
+          "Banka yazısı/bildirimi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "KV Beyannamesi Taslağı — 374. Satır",
+          "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış.",
+          "GİB e-Beyanname sistemi",
+          null
+        ],
+        [
+          "KATEGORİ 2 — EK BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge",
+          "Açıklama",
+          "Temin",
+          null
+        ],
+        [
+          null,
+          "6",
+          "GİB Özelgesi (Tartışmalı 374 Kalemleri İçin)",
+          "374 niteliği tartışmalı olabilecek kalemler: Altın KKM hesaplama yöntemi, endeksli getiri, özel prim.\nGİB özelgesi risk yönetiminin temelidir — özellikle yeni/az emsal kalemler için.",
+          "GİB özelge başvuru sistemi",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Altın KKM Hesap Sözleşmesi",
+          "Altın KKM ürününün sözleşme koşulları: Vade, getiri mekanizması, faiz/altın getiri ayrımı.",
+          "Banka altın KKM sözleşmesi",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Muhasebe Yevmiyesi — 646/648/679 Vade Kazanç Kaydı",
+          "374 kapsamındaki kazancın muhasebe yevmiye kaydı. Faiz hesabı (642) ile karışmamalı.",
+          "Yevmiye defteri",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "★ KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden mi açıldı?",
+          "370 çapraz teyit.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Bu kazanç gerçekten 371/372/373 kapsamına girmiyor mu?",
+          "'Diğer' niteliği her üç kodun kapsamı karşılaştırılarak teyit edilmeli.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ 371/372/373 ile mükerrerlik analizi (C Sütun 6) yapıldı mı?",
+          "Aynı tutar birden fazla satırda gösterilmemiş.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Kazanç türü belgelendi mi? (Banka bildirimi + faiz ayrımı)",
+          "Her kalem için banka belgesi ve faiz/kâr payı dışı nitelik teyidi.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Altın KKM varsa B.1.6 hesabı (TCMB fiyatıyla) doğru mu?",
+          "Dönüşüm ve vade sonu altın fiyatları TCMB/İAB'dan alınmış.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Tartışmalı kalemler için özelge alındı mı?",
+          "GİB özelgesi — özellikle altın KKM ve prim kalemleri için.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "★★ 374 istisnası YİAKV matrahından DÜŞÜLMEDI mi?",
+          "370+371+372+373+374 tamamı YİAKV E.7'de DÜŞÜLEMEZ.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S8",
+          "Beyanname 374 'Kazancın Bulunması Halinde' bölümünde mi?",
+          "Zarar döneminde uygulanamaz.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S9",
+          "370/371/372/373 çalışma kâğıtlarıyla çapraz mutabakat tamam mı?",
+          "Beş dosya tutarlı.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          null,
+          "S10",
+          "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?",
+          ">=500.000 TL → YMM raporu.",
+          "YMM kontrolü",
+          null
+        ],
+        [
+          "SON NOT: GİB KV Beyan Rehberi Mart 2026 (No:606) esas alınmıştır. 374, KVK Geçici Md.14 paketinin beşinci ve son kodudur. 374 = 371+372+373 dışında kalan KKM kaynaklı vade sonu kazançlar (altın, prim, endeks vb.). 370+371+372+373+374 tamamı YİAKV matrahından DÜŞÜLEMEZ (E.7). Tartışmalı kalemler için GİB özelgesi alınması tavsiye edilir. YMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

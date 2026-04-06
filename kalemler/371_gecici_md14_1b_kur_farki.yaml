@@ -25,15 +25,66 @@ ana_kategori: doviz_alacak_istisnalari
 wizard_agaci:
   tetikleyici_soru: "370 kapsamında açılan KKM hesabından dönem içinde bankadan kur farkı tazminat ödemesi alındı mı?"
   info_modal: |
-    KVK Geçici Md.14/1-b kapsamında, 370 (Md.14/1-a) kapsamında açılan KKM hesabından
-    dönem boyunca bankadan alınan kur farkı tazminat ödemeleri kurumlar vergisinden istisnadır.
+    ## Genel Çerçeve
 
-    **370 ile Fark:**
-    370 = Dönüşüm anındaki tek seferlik kur farkı değerleme kazancı (Md.14/1-a).
-    371 = KKM hesabı süresince bankadan dönemsel kur farkı koruma ödemeleri (Md.14/1-b).
+    KVK Geçici Madde 14, 7352 Sayılı Kanun ile 24/12/2021 tarihinde yürürlüğe girmiştir.
+    KKM (Kur Korumalı Mevduat) sistemi; TL'nin değer kaybettiği dönemlerde bankaların hesap
+    sahiplerine kur farkını tazmin etmesi esasına dayanır. Bu tazminat ödemeleri de kurumlar
+    vergisi istisnası kapsamına alınmıştır. Beyanname 371, söz konusu bankadan alınan dönemsel
+    nakit kur farkı tazminatlarına ilişkin istisnayı temsil eder.
 
-    **KRİTİK — YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ.
-    370 ve 371 birlikte YİAKV E.7 listesinde yer almaktadır.
+    ## Bu Satırın Kapsamı
+
+    Beyanname **371**, 370 (Md.14/1-a) kapsamındaki dönüşümden açılan KKM hesabına dönem
+    içinde bankadan fiilen **nakit olarak ödenen** kur farkı tazminatlarını kapsar. Bu ödeme,
+    referans kur ile dönem sonu TCMB kuru arasındaki farkın hesap sahibine banka tarafından
+    aktarılmasından oluşur. 370 ile temel fark şudur: 370 dönüşüm anında bir kez oluşan değerleme
+    kazancıdır; 371 ise KKM hesabı boyunca dönem dönem bankadan tahsil edilen ödemelerdir. Aynı
+    KKM hesabından her iki türde de gelir elde edilebilir; bunlar ayrı muhasebe hesaplarına
+    (646 vs. 648) ve ayrı beyanname satırlarına yazılmalıdır.
+
+    ## Temel Koşullar
+
+    - 371 yalnızca **31/12/2021 bilanço kaynaklı** dönüşümden açılan KKM hesapları için geçerlidir
+    - Bankadan kur farkı tazminatının dönem içinde **fiilen tahsil edilmiş** olması gerekir
+    - TL'nin güçlü olduğu dönemlerde banka ödeme yapmaz; bu durumda 371 sıfır olacaktır
+    - Kapsam dışı KKM hesaplarından (31/12/2021 kaynaklı olmayan) alınan ödemeler vergiye tabi
+      olmaya devam eder; bu ayrımın banka ekstresi bazında yapılması zorunludur
+    - Kur farkı tazminat ödemeleri, faiz ve kâr payı gelirlerinden muhasebede **ayrı** takip
+      edilmeli; her ikisi de KKM hesabından gelse bile aynı muhasebe hesabına yazılmamalıdır
+
+    ## Önemli Uyarılar
+
+    - **Faiz/kâr payı ayrımı:** Aynı KKM hesabından elde edilen faiz/kâr payı gelirleri 371
+      kapsamında değildir; bunlar ayrı bir gelir olarak değerlendirilir (372 veya 373 kapsamı)
+    - **Banka ekstresi zorunlu:** Kur farkı tazminat ödemelerinin teyidi için banka ekstresi
+      alınmalı; "KKM Kur Farkı" veya "Döviz Farkı Tazminatı" satırları tek tek doğrulanmalıdır
+    - **Hesap yenileme (rollover):** Hesap yenilendiğinde yeni bir referans kur oluşur; 31/12/2021
+      kaynaklı bakiyenin devamı olduğu takdirde 371 kapsamı analizi sürer
+    - **YMM tasdik eşiği:** 49 No.lu KV Genel Tebliği uyarınca net 371 tutarı ≥ 500.000 TL ise
+      YMM tasdik raporu zorunludur
+    - **370 ile çapraz mutabakat:** Her iki dosyanın KKM hesap referans tarihleri ve kurları
+      birbiriyle tutarlı olmalıdır
+
+    ## YİAKV İlişkisi
+
+    Bu istisna YİAKV matrahından **DÜŞÜLEMEZ** — beyanname E.7 bölümünde gösterilir.
+    370 ve 371 birlikte E.7 DÜŞÜLEMEZ listesinde yer almaktadır. Sık yapılan hata: 371
+    tutarını 370'ten ayrı bir kalem olarak değerlendirip yalnızca 370'i E.7'ye yazmak,
+    371'i ise YİAKV matrahından düşmektir. Her iki kod da ayrı ayrı ve birlikte
+    YİAKV matrahından çıkarılamaz.
+
+    ## Pratik Notlar
+
+    - **Dönem kapsamı:** 371 istisnası yalnızca beyan dönemine ait ödeme tahsilatlarını kapsar;
+      farklı dönemlere ait ödemeler o dönemin beyannamelerinde gösterilir
+    - **Muhasebe kodu:** Bankadan alınan kur farkı tazminatları 648 Diğer Olağan Gelirler veya
+      642 Faiz Gelirleri hesabına kaydedilir; 370'in girdiği 646 Kambiyo Kârları hesabı ile
+      karıştırılmamalıdır
+    - **370 zincirinin tamamı:** Aynı KKM hesabından 370 (dönüşüm anı) + 371 (dönemsel
+      tazminat) + 372 (dönem sonu faiz tahakkuku) + 373 (vade sonu faiz/kâr payı) dört farklı
+      istisna kodu oluşabilir. Tüm kodlar için ayrı çalışma kâğıdı ve ayrı beyanname satırı
+      zorunludur
   kapi_sorulari:
     - id: kkm_aktif
       soru: "370 kapsamında dönüşümden açılmış aktif KKM hesabı var mı?"

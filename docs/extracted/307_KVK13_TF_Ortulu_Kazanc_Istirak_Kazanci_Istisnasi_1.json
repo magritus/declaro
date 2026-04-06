@@ -1,0 +1,1218 @@
+{
+  "file": "307_KVK13_TF_Ortulu_Kazanc_Istirak_Kazanci_Istisnasi_1.xlsx",
+  "sheets": [
+    {
+      "name": "VERİ GİRİŞİ",
+      "dimensions": "A1:G53",
+      "rows": [
+        [
+          "307 – TF ÖRTÜLÜ KAZANÇ → İŞTİRAK KAZANCI İSTİSNASI | KVK Md.5/1-a ← KVK Md.13 | YMM TASDİK ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Transfer Fiyatlandırması Örtülü Kazanç → KVK 13/6 Kâr Payı Sayılma → KVK 5/1-a İştirak Kazancı İstisnası | Zarar Olsa Dahi İndirilecek — Beyanname Satır 307",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KRİTİK FARKLAR — 306 vs 307: 306 (KVK 12) = Örtülü sermaye faiz/kur farkı gideri → faiz geliri sayılma. 307 (KVK 13) = TF emsali aşan fark → kâr payı sayılma. Kaynak işleme göre doğru satır seçilmeli. 307'de ödeme şartı ve Hazine zararı şartı kritiktir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "RENK KODLARI: Sarı = Manuel giriş  |  Yeşil = Otomatik hesaplama  |  Kırmızı zemin = Kritik uyarı / Ödeme şartı kontrolü  |  İndigo banner = Bölüm başlığı",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0. KAPSAM VE NİTELİK UYGUNLUK ÖN KONTROLÜ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Sorusu",
+          null,
+          null,
+          "Yanıt",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "A0.1  KVK 13 şartları gerçekleşti mi? (İlişkili kişi + Emsale aykırı fiyat)",
+          null,
+          null,
+          null,
+          "EVET",
+          "İki koşul birlikte: (1) İlişkili kişiyle işlem (KVK 13/2), (2) Emsallere uygunluk ilkesine aykırı fiyat. Bu iki koşul yoksa KVK 13 uygulaması yapılamaz.",
+          null
+        ],
+        [
+          "A0.2  İlişkili kişi tanımı doğru yapıldı mı? (KVK 13/2 — geniş kapsam)",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 13/2: Ortaklar, yönetimde nüfuz sahipleri, ortakların eşleri ve üçüncü dereceye kadar kan hısımları. Örtülü sermaye (KVK 12) ile aynı ilişkili kişi tanımı değil — KVK 13/2 özelinde değerlendirilmeli.",
+          null
+        ],
+        [
+          "A0.3  ★ Yurt içi işlem ise Hazine zararı doğdu mu? (KVK 13/7 — KRİTİK)",
+          null,
+          null,
+          null,
+          "Hayır-Yurt Dışı",
+          "KRİTİK: KVK 13/7 — Yurt içi tam mükellef kurumlar arası işlemde Hazine zararı doğmuyorsa KVK 13 uygulanmaz. Hazine zararı = Her iki tarafta toplam vergi tahakkuku azalıyorsa. Yurt dışı işlemlerde bu şart aranmaz.",
+          null
+        ],
+        [
+          "A0.4  ★ Dağıtan kurumda vergi tarh, kesinleşip ödendi mi? (KVK 13/6 Ödeme Şartı — KRİTİK)",
+          null,
+          null,
+          null,
+          "EVET",
+          "EN KRİTİK ŞART: KVK 13/6 — Dağıtılan örtülü kazanç dağıtan kurumda vergi olarak kesinleşip ödenmedikçe alan kurum 307 istisnasını KULLANAMAZ. Ödeme olmadan 307 kullanımı: Tarhiyat ve ceza riski.",
+          null
+        ],
+        [
+          "A0.5  Emsal fiyat yöntemi doğru belirlendi ve belgelendi mi?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KVK 13/3-5: Karşılaştırılabilir fiyat, maliyet artı, yeniden satış fiyatı veya diğer yöntemler. Yıllık TF raporu (beyanname süresi sonuna kadar hazır) zorunludur.",
+          null
+        ],
+        [
+          "A0.6  Beyanname Ek:2 (TF Formu) dolduruldu mu?",
+          null,
+          null,
+          null,
+          "EVET",
+          "KV beyannamesi eki Transfer Fiyatlandırması formu 307 satırı kullanıldığında zorunludur. GİB Sirküler 2024/39 kapsamında ek tablo doldurulup imzalanmalıdır.",
+          null
+        ],
+        [
+          "A0.7  307 vs 306 ayrımı doğru yapıldı mı? (Kaynak işlem teyidi)",
+          null,
+          null,
+          null,
+          "EVET",
+          "306 = KVK 12 örtülü sermaye → faiz/kur farkı gideri → faiz geliri sayılma. 307 = KVK 13 TF → emsali aşan fark → kâr payı sayılma. Kaynak işlem yanlış sınıflandırılırsa yanlış satır kullanılmış olur.",
+          null
+        ],
+        [
+          "A0.8  YMM Tasdik Raporu gereksinimi değerlendirildi mi? (49 No.lu Tebliğ)",
+          null,
+          null,
+          null,
+          "EVET",
+          "49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu zorunlu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.",
+          null
+        ],
+        [
+          "A0.9  Tasdik Uygunluk Sonucu",
+          null,
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "A0.3 (Hazine zararı) ve A0.4 (Ödeme şartı) KRİTİK — kırmızı işaretli.",
+          null
+        ],
+        [
+          "A. GENEL BİLGİLER VE TARAFLAR",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kazancı Dağıtan Kurum (Emsale Aykırı Fiyat Uygulayan)",
+          null,
+          null,
+          null,
+          null,
+          "İlişkili kişiye emsale aykırı fiyat uygulayan kurum",
+          null
+        ],
+        [
+          "İstisna Kullanan Kurum (307 Satırını Kullanan)",
+          null,
+          null,
+          null,
+          null,
+          "KVK 13/6 düzeltmesiyle kâr payı kazancını istisna eden kurum",
+          null
+        ],
+        [
+          "İşlem Türü",
+          null,
+          null,
+          null,
+          null,
+          "Mal satışı / Hizmet / Kira / Ödünç para / Gayri maddi hak vb.",
+          null
+        ],
+        [
+          "İşlem Yurt İçi / Yurt Dışı",
+          null,
+          null,
+          null,
+          null,
+          "Yurt içi → KVK 13/7 Hazine zararı şartı aranır",
+          null
+        ],
+        [
+          "Hesap Dönemi",
+          null,
+          null,
+          null,
+          null,
+          "Örn: 01.01.2025 – 31.12.2025",
+          null
+        ],
+        [
+          "Genel KV Oranı (%)",
+          null,
+          null,
+          null,
+          null,
+          "2025: %25 | Finans/Bankacılık: %30",
+          null
+        ],
+        [
+          "B. TRANSFER FİYATLANDIRMASI — EMSALİ AŞAN TUTAR HESABI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Örtülü Kazanç = Uygulanan İşlem Bedeli − Emsallere Uygun Bedel (Pozitif ise örtülü kazanç var, negatif veya sıfır ise KVK 13 uygulanamaz). KVK 13/3-5 yöntemleri: Karşılaştırılabilir fiyat | Maliyet artı | Yeniden satış fiyatı | Diğer.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kalem",
+          "Tutar (TL)",
+          null,
+          "Açıklama / Yöntem Notu",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "B.1  Uygulanan İşlem Bedeli (Fatura / Sözleşme Tutarı)",
+          null,
+          null,
+          "İlişkili kişiyle yapılan gerçek işlem bedeli.",
+          null,
+          "Fatura veya sözleşmedeki tutar. Muhasebe kaydıyla uyumlu olmalı.",
+          null
+        ],
+        [
+          "B.2  Emsal Bedel (Emsallere Uygun Fiyat — KVK 13/3-5)",
+          null,
+          null,
+          "Bağımsız taraflar arasında oluşacak fiyat. Yöntem ve kaynak belirtilmeli.",
+          null,
+          "TF raporu ile desteklenmeli. Yöntem tutarlı ve gerekçeli olmalı.",
+          null
+        ],
+        [
+          "B.3  Örtülü Kazanç Farkı = MAX(B.1 − B.2, 0)",
+          null,
+          "0",
+          "Emsali aşan tutar. Negatif ise istisna yok.",
+          null,
+          "Bu tutar C bölümünde kâr payı sayılma ve ödeme şartı kontrolüne gider.",
+          null
+        ],
+        [
+          "B.4  Emsal Fiyat Belirleme Yöntemi",
+          null,
+          null,
+          "KVK 13/3: CUP | Maliyet Artı | Yeniden Satış | TNMM | Kâr Bölüşüm | Diğer",
+          null,
+          "Yöntem seçimi gerekçeli olmalı ve TF raporunda belgelenmeli.",
+          null
+        ],
+        [
+          "C. YURTİÇİ İŞLEMLER İÇİN HAZİNE ZARARI KONTROLÜ (KVK 13/7)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 13/7: Yurt içi tam mükellef kurumlar arası işlemlerde Hazine zararı yoksa KVK 13 UYGULANMAZ. Hazine zararı = İki tarafta toplam vergi tahakkukunda azalma. Yurt dışı işlemlerde bu bölümü atlayın.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol Kalemi",
+          "Değer",
+          null,
+          "Açıklama",
+          null,
+          "YMM Notu"
+        ],
+        [
+          "C.1  İşlem Yurt İçi mi?",
+          null,
+          "Evet",
+          "Yurt dışı ise Hazine zararı şartı aranmaz — D bölümüne geçin.",
+          null,
+          "Sözleşme ve karşı taraf teyidi ile belgelenmeli.",
+          null
+        ],
+        [
+          "C.2  Dağıtan Kurumda Emsale Aykırı Bedel Nedeniyle Vergi Matrahı Azaldı mı?",
+          null,
+          "Evet",
+          "Fazla gider → KKEG eklenmemişse matrah azalıyor. Bu Hazine zararı doğurur.",
+          null,
+          "Dağıtan kurum KV beyannamesi incelenmeli.",
+          null
+        ],
+        [
+          "C.3  Alan Kurumda Emsale Aykırı Bedel Nedeniyle Vergi Matrahı Azaldı mı?",
+          null,
+          "Hayır",
+          "Düşük fiyatlı alımda maliyet düşmesi matrahı artırır → Hazine lehine.",
+          null,
+          "Alan kurum matrah etkisi analiz edilmeli.",
+          null
+        ],
+        [
+          "C.4  Toplam Hazine Zararı Doğdu mu? (Her İki Taraf Birlikte)",
+          null,
+          "Evet",
+          "Toplam vergi tahakkuku azaldıysa Hazine zararı var → KVK 13 uygulanır. Azalmadıysa Hazine zararı yok → Yurt içi işlemde KVK 13 uygulanamaz.",
+          null,
+          "İki taraf beyanname karşılaştırması zorunlu.",
+          null
+        ],
+        [
+          "D. ÖDEME ŞARTI KONTROLÜ VE 307 İSTİSNA TUTARI (KVK 13/6)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK 13/6: Örtülü dağıtılan kazanç hesap döneminin SON GÜNÜ (31.12) itibarıyla kâr payı sayılır. ANCAK dağıtan kurumda tarh edilen vergi kesinleşip ödenmedikçe alan kurum 307 istisnasını KULLANAMAZ. Bu ödeme şartı en kritik koşuldur.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Hesap Kalemi",
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null,
+          "YMM Tasdik Notu"
+        ],
+        [
+          "D.1  Örtülü Kazanç Tutarı (B.3'ten)",
+          null,
+          "0",
+          "Emsali aşan fark = Kâr payı sayılan tutar.",
+          null,
+          "B.3 ile aynı olmalı. Negatifse 307 uygulaması yoktur.",
+          null
+        ],
+        [
+          "D.2  Dağıtan Kurumda KKEG (KVK 11/1-c) Tutarı",
+          null,
+          null,
+          "Dağıtan kurum KV beyannamesinde KKEG olarak beyan edilen örtülü kazanç.",
+          null,
+          "D.1 ile eşit olmalı. Farklıysa tutarsızlık var — açıklanmalı.",
+          null
+        ],
+        [
+          "D.3  ★ Dağıtan Kurumda Tarh Edilen ve ÖDENEN Vergi (Ödeme Şartı)",
+          null,
+          null,
+          "KVK 13/6 ödeme şartı: Tarh + Kesinleşme + Ödeme üç adım tamamlanmalı.",
+          null,
+          "Ödeme belgesi (vergi makbuzu) tasdik dosyasına eklenmelidir.",
+          null
+        ],
+        [
+          "D.4  Ödeme Şartı Sağlandı mı?",
+          null,
+          "EVET",
+          "EVET,HAYIR-Risk,Beklemede",
+          null,
+          "HAYIR ise 307 istisnası KULLANILAMAZ.",
+          null
+        ],
+        [
+          "D.5  307 SATIRI — İSTİSNA TUTARI",
+          null,
+          "0",
+          "Ödeme şartı sağlandıysa D.1 tutarı, aksi hâlde SIFIR.",
+          null,
+          "Beyanname 307 satırı = Bu hücre.",
+          null
+        ],
+        [
+          "E. TOPLAM İSTİSNA TUTARI — KV BEYANNAMESİ SATIR 307",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "E.1  TOPLAM İSTİSNA → Beyanname Satır 307 (Zarar Olsa Dahi İndirilecek)",
+          null,
+          null,
+          null,
+          null,
+          "0",
+          "D.5 ödeme şartı sağlandıysa dolu, aksi sıfır"
+        ],
+        [
+          "KRİTİK HATIRLATMA: (1) Dağıtan kurumda KKEG (D.2) ile alan kurumda 307 istisnası (E.1) eşit olmalıdır. (2) Kâr payı sayılma tarihi hesap döneminin SON GÜNÜDÜR (31.12). (3) Beyanname Ek:2 (TF Formu) 307 satırıyla birlikte doldurulmalıdır. (4) Ödeme şartı gerçekleşmeden istisna kullanımı tarhiyat riskidir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "HESAPLAMALAR & KONTROL",
+      "dimensions": "A1:G35",
+      "rows": [
+        [
+          "307 – TF ÖRTÜLÜ KAZANÇ İSTİSNASI | HESAPLAMALAR VE DENETİM KONTROL PANELİ",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a ← KVK Md.13 | TF Örtülü Kazanç → Kâr Payı Sayılma → İştirak Kazancı İstisnası | Zarar Olsa Dahi İndirilecek | Beyanname Satır 307",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. KVK 13 MEKANİZMA ŞEMASI (Adım Adım Akış)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ADIM 1 — İlişkili kişiyle emsallere AYKIRI fiyatla işlem (mal satışı / hizmet / kira / ödünç para vb.)\n  ADIM 2 — Emsale AŞAN fark tespit edilir → Örtülü kazanç (B.3)\n  ADIM 3 — YURT İÇİ İŞLEM: Hazine zararı kontrolü (KVK 13/7) → Hazine zararı yoksa uygulama durur\n  ADIM 4 — Dağıtan kurumda KKEG (KVK 11/1-c) olarak beyan matrahına eklenir\n  ADIM 5 — Dağıtan kurumda vergi TARH → KESİNLEŞME → ÖDEME (KVK 13/6 ödeme şartı)\n  ADIM 6 — Hesap döneminin SON GÜNÜ (31.12) itibarıyla kâr payı sayılır (KVK 13/6)\n  ADIM 7 — Alan kurum → KVK 5/1-a iştirak kazancı istisnası → Beyanname Satır 307",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B. TASDİK ÖZETİ — VERİ GİRİŞİNDEN OTOMATİK",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A0 Tasdik Uygunluğu",
+          null,
+          null,
+          "OK - Hesaplanabilir",
+          "A0.9 — OK ise devam",
+          null,
+          null
+        ],
+        [
+          "Uygulanan İşlem Bedeli (B.1)",
+          null,
+          null,
+          "0",
+          "Gerçek işlem tutarı",
+          null,
+          null
+        ],
+        [
+          "Emsal Bedel (B.2)",
+          null,
+          null,
+          "0",
+          "KVK 13/3-5 emsal fiyat",
+          null,
+          null
+        ],
+        [
+          "Örtülü Kazanç Farkı (B.3)",
+          null,
+          null,
+          "0",
+          "=MAX(B.1−B.2, 0)",
+          null,
+          null
+        ],
+        [
+          "Dağıtan Kurumda KKEG (D.2)",
+          null,
+          null,
+          "0",
+          "KVK 11/1-c — D.2 = D.1 olmalı",
+          null,
+          null
+        ],
+        [
+          "Dağıtan Kurumda Ödenen Vergi (D.3)",
+          null,
+          null,
+          "0",
+          "Ödeme şartı kontrolü",
+          null,
+          null
+        ],
+        [
+          "Ödeme Şartı Durumu (D.4)",
+          null,
+          null,
+          "EVET",
+          "EVET / HAYIR / Beklemede",
+          null,
+          null
+        ],
+        [
+          "★ BEYANNAME 307 SATIRI (E.1)",
+          null,
+          null,
+          "0",
+          "Ödeme şartı sağlandıysa dolu",
+          null,
+          null
+        ],
+        [
+          "DKKG ve 307 Farkı (D.2 − E.1)",
+          null,
+          null,
+          "0",
+          "SIFIR OLMALI: Dağıtan KKEG = Alan İstisna",
+          null,
+          null
+        ],
+        [
+          "C. DENETİM KONTROL LİSTESİ (K1–K10)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Kontrol",
+          null,
+          "Açıklama ve Referans",
+          null,
+          "Sonuç",
+          "YMM Aksiyonu"
+        ],
+        [
+          "K1",
+          "İlişkili kişi tanımı KVK 13/2 çerçevesinde doğru kuruldu mu?",
+          null,
+          "KVK 13/2: Ortaklar, yönetimde nüfuz sahipleri, ortakların eşleri ve üçüncü dereceye kadar kan hısımları. KVK 12'deki ilişkili taraf tanımından farklıdır. Ortaklık yapısı belgesiyle teyit edilmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K2",
+          "Emsal fiyat yöntemi doğru seçildi ve gerekçeli belgelendi mi?",
+          null,
+          "1 TF GT Bölüm 5: CUP (karşılaştırılabilir), Maliyet Artı, Yeniden Satış, TNMM, Kâr Bölüşüm, Diğer. Yöntem seçimi TF raporunda gerekçeli olmalı ve tutarlı uygulanmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K3",
+          "Yurt içi işlemde Hazine zararı analizi yapıldı mı? (KVK 13/7)",
+          null,
+          "Her iki tarafta toplam vergi tahakkuku azaldıysa Hazine zararı var → KVK 13 uygulanır. Hazine zararı yoksa yurt içi işlemde KVK 13 uygulanamaz. İki taraf KV beyanname karşılaştırması yapılmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K4",
+          "Dağıtan kurumda KKEG (KVK 11/1-c) doğru tutarda beyan edildi mi?",
+          null,
+          "KVK 11/1-c: Örtülü kazanç farkı (B.3) dağıtan kurum KV beyannamesinde KKEG olarak eklenmeli. KKEG tutarı = Alan kurumun 307 istisnası tutarı. Fark varsa açıklanmalı.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K5",
+          "★ KVK 13/6 Ödeme Şartı: Vergi tarh, kesinleşip ödendi mi?",
+          null,
+          "EN KRİTİK ŞART: Tarh → Kesinleşme → Ödeme. Üç adım tamamlanmadan 307 kullanımı yasaktır. Vergi tahakkuku + ödeme makbuzu tasdik dosyasına eklenmelidir. Ödeme beklemedeyse 307 istisnası ertesi dönem kullanılabilir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K6",
+          "Kâr payı sayılma tarihi hesap döneminin son günü mü? (KVK 13/6)",
+          null,
+          "KVK 13/6: Örtülü kazanç hesap döneminin SON GÜNÜ itibarıyla kâr payı sayılır. 31.12 tarihinde muhasebe kaydı ve beyanname düzeltmesi yapılmalıdır.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K7",
+          "Beyanname Ek:2 (TF Formu) dolduruldu ve imzalandı mı?",
+          null,
+          "KV Beyannamesi eki TF formu zorunludur. GİB Sirküler 2024/39 kapsamında 307 satırı kullanıldığında ek tablo doldurulmalı ve tasdik dosyasına eklenmelidir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K8",
+          "307 vs 306 ayrımı doğru yapıldı mı? (Kaynak işlem teyidi)",
+          null,
+          "306 = KVK 12 örtülü sermaye → faiz geliri sayılma. 307 = KVK 13 TF → kâr payı sayılma. Kaynak işlem hatalı sınıflandırılırsa yanlış satır kullanılmış olur → tarhiyat riski.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K9",
+          "TF belgelendirme yükümlülüğü zamanında yerine getirildi mi? (Ceza indirimi)",
+          null,
+          "KVK 13/8: TF raporu beyanname süresi sonuna kadar hazır olursa vergi ziyaı cezasında %50 indirim uygulanır. Gecikme ceza indirimini kaybettirir.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "K10",
+          "YİAKV matrahında 307 istisnasının etkisi değerlendirildi mi?",
+          null,
+          "KVK 5/1-a istisnası (307) 'Zarar Olsa Dahi İndirilecek' bölümündedir. YİAKV matrahında nasıl dikkate alındığı dönem mevzuatıyla analiz edilmeli.",
+          null,
+          "Uygun / Eksik / Risk",
+          null
+        ],
+        [
+          "D. BEYANNAME SATIR EŞLEŞTİRME VE MUTABAKAT",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Beyanname Satırı",
+          null,
+          "Tutar (TL)",
+          null,
+          "Açıklama",
+          null
+        ],
+        [
+          "Satır 307",
+          null,
+          "0",
+          "KVK 5/1-a ← KVK 13 — Zarar Olsa Dahi İndirilecek — TF Örtülü Kazanç İstisnası",
+          null,
+          null,
+          null
+        ],
+        [
+          "HATA: Satır 306",
+          null,
+          "KVK 12 Örtülü Sermaye",
+          "KVK 12 örtülü sermaye → faiz geliri sayılma → 306 satırı. Bu forma YAZILMAZ.",
+          null,
+          null,
+          null
+        ],
+        [
+          "HATA: Satır 297",
+          null,
+          "Doğrudan kâr payı",
+          "Tam mükellef kurum kâr payı → doğrudan dağıtılan temettü → 297 satırı. TF kaynaklı değil.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "MUHASEBE KAYITLARI",
+      "dimensions": "A1:G20",
+      "rows": [
+        [
+          "307 – TF ÖRTÜLÜ KAZANÇ İSTİSNASI | MUHASEBE KAYITLARI ÇALIŞMA KÂĞIDI",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a ← KVK Md.13 | Dağıtan ve Alan Kurum Kayıtları",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "NOT: Rehber niteliğindedir. Şirkete özgü muhasebe planı ve işlem türüne göre uyarlanmalıdır. KVK 13 kaydı gider hesabı türüne göre (gider / kira / faiz / royalti vb.) farklılaşır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "A. DAĞITAN KURUMDA — İŞLEM KAYDI VE KVK 13 KKEG ETKİSİ (KVK 11/1-c)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Emsale aykırı bedelle yüksek fiyatlı satış yapan kurumda (mal satan / hizmet veren / yüksek kira uygulayan)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "İşlem Dönemi",
+          "120/321 Alacak veya İlgili Hesap",
+          "Emsale aykırı yüksek fatura tutarı",
+          "[İşlem Bedeli]",
+          "—",
+          "Sözleşme/Fatura"
+        ],
+        [
+          "Kr",
+          "İşlem Dönemi",
+          "600/640 Satış / Gelir Hesabı",
+          "Emsali aşan fark dahil gelir kaydı",
+          "—",
+          "[İşlem Bedeli]",
+          "Gelir kaydı"
+        ],
+        [
+          "KVK 11/1-c ETKİSİ (KKEG): Muhasebe kaydı değişmez. KV beyannamesi aşamasında emsali aşan fark (örtülü kazanç = B.3) KKEG olarak matraha eklenir.\nBeyanname KKEG satırı = VERİ GİRİŞİ D.2 = VERİ GİRİŞİ B.3 (tutarlı olmalı).\nÖdenen vergi belgesi (ödeme makbuzu) 307 istisnası için şarttır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "B. ALAN KURUMDA — İŞLEM KAYDI VE 307 İSTİSNASI (KVK 5/1-a)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Emsale aykırı bedelle yüksek fiyatlı alım yapan kurumda (mal alan / hizmet alan / yüksek kira ödeyen)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "Tarih",
+          "Hesap Adı / Kodu",
+          "Muhasebe Notu",
+          "Dr (TL)",
+          "Kr (TL)",
+          "Referans"
+        ],
+        [
+          "Dr",
+          "İşlem Dönemi",
+          "153/160/760 veya İlgili Gider/Stok",
+          "Emsale aykırı (yüksek) fatura tutarı",
+          "[İşlem Bedeli]",
+          "—",
+          "Sözleşme/Fatura"
+        ],
+        [
+          "Kr",
+          "İşlem Dönemi",
+          "320/321 veya İlgili Borç",
+          "Emsale aykırı fatura bedeli ödeme yükümlülüğü",
+          "—",
+          "[İşlem Bedeli]",
+          "Fatura"
+        ],
+        [
+          "NOT: Alan kurumun muhasebe kaydı değişmez. Emsale aykırı yüksek bedel gider/stok olarak kaydedilir.\nKV beyannamesi aşamasında: Örtülü kazanç tutarı KVK 13/6 uyarınca 31.12 itibarıyla kâr payı sayılır ve 307 satırında istisna olarak düşülür.\nÖdeme şartı sağlandıktan sonra 307 satırı kullanılabilir.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "C. KÂR PAYI SAYILMA VE 307 BEYANNAME NOTU (Muhasebe Kaydı Gerekmez)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "BEYANNAME AKIŞI — 31.12 İtibarıyla Kâr Payı Sayılma (KVK 13/6):\n\nAdım 1: Emsali aşan fark (B.3) hesap döneminin son günü (31.12) itibarıyla kâr payı sayılır.\nAdım 2: Dağıtan kurumda vergi tarh + kesinleşme + ödeme tamamlanır (Ödeme şartı — KVK 13/6).\nAdım 3: Alan kurum KV beyannamesinde 307. satıra istisna tutarını yazar.\nAdım 4: Beyanname Ek:2 (TF formu) 307 satırıyla birlikte doldurulur.\n\nMUTABAKAT: Dağıtan KKEG (D.2) = Alan İstisna (307) = B.3 Örtülü Kazanç → Fark SIFIR olmalıdır.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "DENETCİ NOTLARI",
+      "dimensions": "A1:D19",
+      "rows": [
+        [
+          "307 – TF ÖRTÜLÜ KAZANÇ → İŞTİRAK KAZANCI İSTİSNASI | DENETÇİ NOTLARI",
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a ← KVK Md.13 | TF Örtülü Kazanç | Hazine Zararı + Ödeme Şartı | YMM Tasdik Notu Katalogu",
+          null,
+          null,
+          null
+        ],
+        [
+          "BÖLÜM 1 — YASAL DAYANAK VE KVK 13 MEKANİZMASI",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N1",
+          "KVK 13 Transfer Fiyatlandırması — Temel Çerçeve",
+          "KVK Md.13/1: Kurumlar, ilişkili kişilerle emsallere uygunluk ilkesine aykırı olarak tespit ettikleri bedel veya fiyat üzerinden mal veya hizmet alım ya da satımında bulunursa, kazanç tamamen veya kısmen transfer fiyatlandırması yoluyla örtülü olarak dağıtılmış sayılır.\nKVK 13/6: Örtülü kazanç kâr payı sayılır (hesap döneminin son günü itibarıyla).\nKVK 5/1-a: Bu kâr payı iştirak kazancı istisnasından yararlanır → Beyanname 307.",
+          "KVK Md.13 | 1 Seri No.lu TF GT | KVK Md.5/1-a"
+        ],
+        [
+          "N2",
+          "307 vs 306 Ayrımı — Sık Yapılan Hata",
+          "306 (KVK 12 Örtülü Sermaye): Ortaktan veya ilişkili kişiden alınan borç → faiz ve kur farkı gideri → faiz geliri sayılma → 306 satırı.\n307 (KVK 13 Transfer Fiyatlandırması): İlişkili kişiyle emsale aykırı fiyatlı işlem → emsali aşan fark → kâr payı sayılma → 307 satırı.\nYANLIŞ UYGULAMA: KVK 12 kaynaklı tutarı 307'ye yazmak veya KVK 13 kaynaklı tutarı 306'ya yazmak. Kaynak işlem her zaman doğrulanmalıdır.",
+          "KVK Md.12 | KVK Md.13"
+        ],
+        [
+          "N3",
+          "★ KVK 13/7 Hazine Zararı Şartı (Yurt İçi İşlemler — KRİTİK)",
+          "KVK 13/7: Yurt içi tam mükellef kurumlar arası işlemlerde Hazine zararı doğmuyorsa transfer fiyatlandırması hükümleri UYGULANMAZ.\nHazine zararı testi: Her iki tarafta toplam vergi tahakkukunda azalma var mı?\nÖrnek: A, B'ye yüksek fiyatla sattı → A'da daha fazla gelir (Hazine'ye fayda) → B'de fazla gider ancak KKEG eklenirse Hazine zararı doğmuyor.\nYMM notu: İki taraf KV beyannameleri karşılaştırmalı analiz zorunludur.",
+          "KVK Md.13/7 | 1 Seri No.lu TF GT"
+        ],
+        [
+          "N4",
+          "★ KVK 13/6 Ödeme Şartı (En Kritik Uygulama Koşulu)",
+          "KVK 13/6: Örtülü kazancın kâr payı sayılabilmesi ve 307 istisnasının kullanılabilmesi için dağıtan kurumda bu örtülü kazanç dolayısıyla tarh edilen verginin kesinleşip ÖDENMESİ gerekir.\nÖdeme şartı üç aşamadan oluşur: TARH → KESİNLEŞME → ÖDEME.\nÖdeme yapılmadan 307 kullanımı: Tarhiyat + vergi ziyaı cezası riski.\nÖdeme bekliyorsa: 307 istisnası ödemenin gerçekleştiği dönemde kullanılabilir.\nYMM notu: Ödeme makbuzu tasdik dosyasının zorunlu belgesidir.",
+          "KVK Md.13/6 | 1 Seri No.lu TF GT"
+        ],
+        [
+          "BÖLÜM 2 — YMM TASDİK STANDARDI VE RİSK ANALİZİ",
+          null,
+          null,
+          null
+        ],
+        [
+          "Kod",
+          "Konu",
+          "Mesleki Değerlendirme",
+          "Mevzuat"
+        ],
+        [
+          "N5",
+          "Emsal Fiyat Yöntemi ve Belgelendirme",
+          "KVK 13/3-5: Emsal fiyat yöntemi hiyerarşisi:\n1. Karşılaştırılabilir kontrol dışı fiyat (CUP) — öncelikli\n2. Maliyet artı yöntemi / Yeniden satış fiyatı yöntemi\n3. İşlemsel net marj yöntemi (TNMM) / Kâr bölüşüm yöntemi\n4. Mükellefin belirlediği diğer yöntem (gerekçeli)\nYöntem seçimi gerekçeli, tutarlı ve TF raporunda belgelenmeli. Yanlış yöntem veya belgelenmemiş yöntem = Belgelendirme ihlali riski.",
+          "KVK Md.13/3-5 | 1 Seri No.lu TF GT Bölüm 5"
+        ],
+        [
+          "N6",
+          "TF Belgelendirme Yükümlülüğü ve Ceza İndirimi (KVK 13/8)",
+          "KVK 13/8: Belgelendirme yükümlülüğü tam ve zamanında yerine getirilirse vergi ziyaı cezasında %50 indirim uygulanır.\nYurt dışı işlemler: Her zaman yıllık TF raporu hazırlanmalıdır.\nYurt içi işlemler: Bakanlık belirlediği hadleri aşarsa rapor zorunludur.\nRapor hazırlama süresi: KV beyanname süresi sonuna kadar hazır (teslim değil, hazır) olmalıdır.\nYMM notu: Belgelendirme zamanlaması ve kapsamı dosyada teyit edilmeli.",
+          "KVK Md.13/8 | 2 Seri No.lu TF GT"
+        ],
+        [
+          "N7",
+          "Beyanname Ek:2 — TF Formu Zorunluluğu",
+          "KV beyannamesi eki Transfer Fiyatlandırması formu (Ek:2) 307 satırı kullanıldığında zorunludur.\nGİB Sirküler kapsamında ek tablonun doldurulması ve imzalanması gerekmektedir.\nYMM notu: Ek:2 formu eksik veya hatalı ise beyanname teknik olarak eksik kabul edilebilir.",
+          "KV Beyannamesi Ek:2 | GİB Sirküleri"
+        ],
+        [
+          "N8",
+          "49 No.lu Tebliğ — YMM Tasdik Raporu",
+          "30.12.2025 tarihli 49 No.lu Tebliğ:\nTek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM tasdik raporu zorunlu.\nTam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.\nYMM müteselsil sorumluluk: SM-SMMM-YMM Kanunu Md.12.",
+          "49 No.lu Tebliğ (30.12.2025)"
+        ],
+        [
+          "N9",
+          "YMM Tasdik Dil Standardı",
+          "KULLANIN:\n'...KVK 13 şartlarının gerçekleştiği ve ödeme koşulunun sağlandığı ölçüde istisnadan yararlanılabilir'\n'...Hazine zararı analizi yapılmış ve yurt içi işlemde değerlendirilmiştir'\n'...emsal fiyat yöntemi TF raporu ile belgelenmiştir'\n\nKULLANMAYIN:\n'...istisna uygulanır' | '...kesinlikle kapsama girer' | '...sorunsuz'\n\nKRİTİK RİSK ALANLARI:\n(1) Ödeme şartı gerçekleşmeden 307 kullanımı | (2) Hazine zararı analizi eksikliği | (3) 306 ile karıştırma | (4) Belgelendirme ihlali | (5) Ek:2 formu eksikliği",
+          "SM-SMMM-YMM Kanunu Md.12"
+        ],
+        [
+          "TARTIŞMALI KONU: KVK 13/6 ödeme şartı gerçekleşmeden 307 istisnası kullanılmış ise vergi incelemesinde hatalı beyan olarak değerlendirilebilir. Ödeme bekleyen dönemlerde 307 satırını boş bırakmak ve ödeme gerçekleşince kullanmak daha güvenli bir yaklaşımdır. Özelge alınması tavsiye edilir.",
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "name": "BELGE LISTESI",
+      "dimensions": "A1:F33",
+      "rows": [
+        [
+          "307 – TF ÖRTÜLÜ KAZANÇ → İŞTİRAK KAZANCI İSTİSNASI | BELGE VE BİLGİ LİSTESİ | YMM TASDİK",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KVK Md.5/1-a ← KVK Md.13 | Hazine Zararı + Ödeme Şartı | Belgelendirme | 49 No.lu Tebliğ YMM Raporu",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Kategori 1: Zorunlu belgeler (ödeme şartı dahil). Kategori 2: Destekleyici belgeler. Kategori 3: YMM tasdik kontrol soruları.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "KATEGORİ 1 — ZORUNLU BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "1",
+          "Fatura / Sözleşme (Emsale Aykırı İşlemi Belgeleyen)",
+          "İlişkili kişiyle yapılan işlemin gerçek bedeli. Uygulanan işlem bedeli (VERİ GİRİŞİ B.1) ile uyumlu olmalıdır.\nİşlem türü (mal / hizmet / kira / ödünç / royalti vb.) açık olmalıdır.\nYMM notu: Fatura tarihi, tutarı ve tarafları doğrulanmalıdır.",
+          "İşlem faturası / hizmet sözleşmesi / kira kontratı",
+          null
+        ],
+        [
+          null,
+          "2",
+          "Emsal Fiyat Belgesi / Yıllık TF Raporu",
+          "KVK 13/3-5 yöntemiyle belirlenen emsal fiyat. Hangi yöntem kullanıldığı ve gerekçesi açık olmalıdır.\nYıllık TF raporu (beyanname süresi sonuna kadar hazır) kapsamlı olmalıdır.\nYMM notu: Emsal kaynağı (bağımsız işlem verileri, veritabanı) belirtilmeli.",
+          "Yıllık TF raporu / piyasa verileri / Bloomberg, Royalty Range vb.",
+          null
+        ],
+        [
+          null,
+          "3",
+          "Ortaklık Yapısı / İlişkili Kişi Tespit Belgesi (KVK 13/2)",
+          "KVK 13/2 kapsamında ilişkili kişi tespiti: Ortaklık, yönetimde nüfuz, kan hısımlığı bağları.\nTicaret sicil gazetesi, pay defteri, ana şirket yapısı belgesi.\nYMM notu: İlişkili kişi tanımı KVK 12'den farklıdır — KVK 13/2 özelinde değerlendirilmeli.",
+          "Ticaret sicil gazetesi / ortaklık sözleşmesi / ana şirket yapısı",
+          null
+        ],
+        [
+          null,
+          "4",
+          "Dağıtan Kurumun KV Beyannamesi (KKEG Dökümü — KVK 11/1-c)",
+          "Dağıtan kurumun KV beyannamesinde KVK 11/1-c uyarınca eklenen KKEG tutarı.\nKKEG tutarı = Örtülü kazanç farkı (B.3) = Alan kurumun 307 istisnası (E.1).\nYMM notu: Bu üç tutarın birebir uyumlu olması zorunludur.",
+          "Dağıtan kurumun KV beyannamesi",
+          null
+        ],
+        [
+          null,
+          "5",
+          "★ Dağıtan Kurumda Vergi Tahakkuk + ÖDEME Belgesi (KVK 13/6 Ödeme Şartı)",
+          "KRİTİK: KVK 13/6 ödeme şartı — tarh + kesinleşme + ödeme üç adım tamamlanmalıdır.\nVergi dairesi tahakkuk fişi ve banka ödeme makbuzu her ikisi de dosyada olmalıdır.\nYMM notu: Ödeme belgesi olmadan 307 istisnası KULLANILAMAZ. En kritik koşuldur.",
+          "Vergi dairesi tahakkuk fişi + banka ödeme makbuzu",
+          null
+        ],
+        [
+          null,
+          "6",
+          "KV Beyannamesi Ek:2 — Transfer Fiyatlandırması Formu",
+          "307 satırı kullanıldığında zorunlu olan beyanname eki.\nİlişkili kişi işlemleri formu eksiksiz doldurulmalı ve imzalanmalıdır.\nYMM notu: Ek:2 eksikliği beyanname teknik hatasına yol açabilir.",
+          "KV Beyannamesi Ek:2",
+          null
+        ],
+        [
+          null,
+          "7",
+          "Alan Kurumun KV Beyannamesi Taslağı — 307. Satır",
+          "Beyanname 307. satırındaki tutarın VERİ GİRİŞİ E.1 ile birebir uyumlu olduğu teyit edilmeli.\n'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldığı kontrol edilmeli.\nYMM notu: 307 = E.1 = D.5 = B.3. Bu dört tutarın uyumu tasdik koşuludur.",
+          "GİB İnternet Vergi Dairesi / e-Beyanname / mali müşavir",
+          null
+        ],
+        [
+          "KATEGORİ 2 — DESTEKLEYİCİ BELGELER",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Belge / Bilgi Adı",
+          "Detay ve YMM Kontrol Noktaları",
+          "Temin Yeri",
+          null
+        ],
+        [
+          null,
+          "8",
+          "Hazine Zararı Analizi Çalışma Tablosu (Yurt İçi İşlemler)",
+          "Her iki tarafın KV beyanname matrahı karşılaştırması.\nToplam vergi tahakkuku azalıyor mu? Azalmıyorsa yurt içi işlemde KVK 13 uygulanamaz.\nYMM notu: Bu analiz olmadan yurt içi işlemde 307 kullanımı metodolojik olarak savunulamaz.",
+          "Her iki tarafın KV beyannameleri / muhasebe kayıtları",
+          null
+        ],
+        [
+          null,
+          "9",
+          "Karşılaştırılabilir İşlem Verileri (Emsal Fiyat Kaynağı)",
+          "Bağımsız taraflarla yapılan benzer işlemlerin fiyat verileri.\nBloomberg, Royalty Range, piyasa veri kaynakları, sektörel analizler.\nYMM notu: Emsal kaynağının güvenilirliği ve karşılaştırılabilirliği TF raporunda açıklanmalı.",
+          "Bloomberg / piyasa verileri / sektörel analizler / veritabanı",
+          null
+        ],
+        [
+          null,
+          "10",
+          "İşlemin Yurt İçi / Yurt Dışı Olduğunu Gösteren Belge",
+          "Yurt içi ise Hazine zararı analizi zorunlu. Yurt dışı ise bu şart aranmaz.\nSözleşme ve karşı taraf teyidi ile belgelenmeli.\nYMM notu: Sözleşmede taraf bilgileri ve ülke/adres açık olmalıdır.",
+          "Sözleşme / muhaberat / karşı taraf belgeleri",
+          null
+        ],
+        [
+          null,
+          "11",
+          "Önceki Dönem TF Değerlendirmeleri / GİB Özelgeleri",
+          "Benzer işlemlere ilişkin GİB özelgeleri veya önceki dönem yıllık TF raporları.\nYMM notu: Tutarlı yöntem uygulaması için önceki dönem yaklaşımı referans alınabilir.",
+          "GİB özelge havuzu / önceki dönem TF raporları",
+          null
+        ],
+        [
+          null,
+          "12",
+          "YİAKV Matrah Hesaplama Tablosu",
+          "KVK 32/C kapsamındaki yurt içi asgari KV hesabında 307 istisnasının etkisi analiz edilmeli.\nYMM notu: 307 istisnasının YİAKV matrahından nasıl düşüleceği dönem mevzuatıyla doğrulanmalı.",
+          "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri",
+          null
+        ],
+        [
+          "KATEGORİ 3 — YMM TASDİK KONTROL SORULARI",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          "No",
+          "Kontrol Sorusu",
+          "Beklenen Sonuç / Tasdik Standardı",
+          "YMM Aksiyonu",
+          null
+        ],
+        [
+          null,
+          "S1",
+          "KVK 13 şartları gerçekleşti mi? (İlişkili kişi + Emsale aykırı fiyat)",
+          "İki koşul birlikte: İlişkili kişi (KVK 13/2) ve emsale aykırı fiyat. Ortaklık yapısı ve işlem koşulları belgelenmeli.",
+          "YMM kontrolü uygulayın",
+          null
+        ],
+        [
+          null,
+          "S2",
+          "★ Yurt içi işlemde Hazine zararı doğdu mu? (KVK 13/7)",
+          "Her iki tarafta toplam vergi tahakkuku azaldıysa Hazine zararı var → KVK 13 uygulanır. Hazine zararı analizi çalışma tablosu zorunludur.",
+          "YMM kontrolü uygulayın",
+          null
+        ],
+        [
+          null,
+          "S3",
+          "★ Ödeme şartı sağlandı mı? (KVK 13/6 — Tarh + Kesinleşme + Ödeme)",
+          "Ödeme makbuzu olmadan 307 kullanımı YASAKTIR. Vergi tahakkuku + ödeme belgesi ikisi birlikte dosyada olmalıdır.",
+          "YMM kontrolü uygulayın",
+          null
+        ],
+        [
+          null,
+          "S4",
+          "Dağıtan KKEG (D.2) ile alan 307 istisnası (E.1) eşit mi?",
+          "KVK 11/1-c KKEG tutarı = KVK 5/1-a istisna tutarı. Fark varsa açıklanmalı; genellikle kaynak hesaplama hatası olur.",
+          "YMM kontrolü uygulayın",
+          null
+        ],
+        [
+          null,
+          "S5",
+          "Emsal fiyat yöntemi TF raporunda gerekçeli belgelendi mi?",
+          "1 TF GT Bölüm 5 yöntem hiyerarşisi uygulanmış ve gerekçelendirilmiş olmalı. Raporun beyanname süresine kadar hazır olup olmadığı kontrol edilmeli.",
+          "YMM kontrolü uygulayın",
+          null
+        ],
+        [
+          null,
+          "S6",
+          "Beyanname Ek:2 (TF Formu) eksiksiz dolduruldu mu?",
+          "307 satırı kullanan her kurum için Ek:2 formu zorunludur. Eksik veya imzasız form teknik hata sayılabilir.",
+          "YMM kontrolü uygulayın",
+          null
+        ],
+        [
+          null,
+          "S7",
+          "307 vs 306 ayrımı doğru yapıldı mı? Kaynak işlem teyit edildi mi?",
+          "Kaynak işlem KVK 13 kapsamında (TF) mı, KVK 12 kapsamında (örtülü sermaye) mı? Hatalı sınıflandırma tarhiyat riskidir.",
+          "YMM kontrolü uygulayın",
+          null
+        ],
+        [
+          "SON NOT (YMM TASDİK HATIRLATMASI): 49 No.lu Tebliğ (30.12.2025): Tek satır >=500.000 TL veya toplam >=1.000.000 TL → YMM raporu zorunlu. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez. KVK 13/6 ödeme şartı sağlanmadan 307 kullanımı en büyük tarhiyat riskidir. Yurt içi işlemlerde Hazine zararı analizi zorunludur. Ek:2 (TF Formu) eksikliği beyanname hatası oluşturur. YMM müteselsil sorumluluk: YMM Kanunu Md.12.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ]
+}

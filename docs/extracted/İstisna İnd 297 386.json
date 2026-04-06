@@ -1,0 +1,215 @@
+{
+  "file": "İstisna İnd 297 386.xlsx",
+  "sheets": [
+    {
+      "name": "Sayfa1",
+      "dimensions": "A1:B58",
+      "rows": [
+        [
+          "kod",
+          "açıklama"
+        ],
+        [
+          "297",
+          "İştirak Kazançları (K.V.K. Mad. 5/1-a-2)(Tam mükellef kurumlardan)"
+        ],
+        [
+          "298",
+          "İştirak Kazançları (K.V.K. Mad. 5/1-a-3) (GSYF'lerin katılma paylarının fona iadesinden doğan gelirler, GSYO'ların hisse senetlerinden elde ettikleri kar payları ve katılma paylarının fona iadesinden doğan gelirler ile bu fonların katılma paylarının değerlenmesinden kaynaklanan değer artış kazançları)"
+        ],
+        [
+          "299",
+          "İştirak Kazançları (K.V.K. Mad. 5/1-a-4) (Diğer fonlardan)"
+        ],
+        [
+          "300",
+          "İştirak Kazançları (K.V.K. Mad. 5/1-a-5) (Diğer yatırım fonlarına katılma paylarının değerlenmesinden kaynaklanan değer artış kazançları)"
+        ],
+        [
+          "306",
+          "İştirak Kazançları İstisnası (K.V.K. Mad. 5/1-a) (K.V.K. Mad. 12’den kaynaklanan)"
+        ],
+        [
+          "307",
+          "İştirak Kazançları İstisnası (K.V.K. Mad. 5/1-a) (K.V.K. Mad. 13’ten kaynaklanan)"
+        ],
+        [
+          "317",
+          "Yurtdışı İştirak Kazançları (K.V.K. Mad. 5/1-b)"
+        ],
+        [
+          "387",
+          "Yurtdışı İştirak Kazançları (K.V.K. Mad. 5/1-b) (Ödenmiş sermayenin en az %50’sine sahip olunmak suretiyle iştirak edilen yurt dışı kurumlardan elde edilen ve yarısı istisna kapsamında olan kazançlar)"
+        ],
+        [
+          "318",
+          "Tam Mükellef Anonim Şirketlerin Yurtdışı İştirak Hisseleri Satış Kazançları (K.V.K. Mad. 5/1-c)"
+        ],
+        [
+          "319",
+          "Emisyon Primi Kazancı (K.V.K. Mad. 5/1-ç)"
+        ],
+        [
+          "302",
+          "Yatırım Fon ve Ortaklığı Portföy İşletmeciliği Kazancı (K.V.K. Mad. 5/1-d)"
+        ],
+        [
+          "351",
+          "Taşınmaz Satış Kazancı İstisnası (K.V.K. Mad. 5/1-e)"
+        ],
+        [
+          "352",
+          "İştirak Hissesi Satış Kazancı İstisnası (K.V.K. Mad. 5/1-e)"
+        ],
+        [
+          "353",
+          "Kurucu Senetleri, İntifa Senetleri, Rüçhan Hakları ve Yatırım Fonlarının Katılma Paylarının Satışından Kaynaklanan İstisna (K.V.K. Mad. 5/1-e)"
+        ],
+        [
+          "321",
+          "Bank., Fin.Kir yada Fin.Sir veya TMSF’ye borçlu durumda olan kurumların taşınır, taşınmaz ve iştirak hisseleri ile kurucu sen., intifa sen. ve rüçhan hakları satış kazancı (K.V.K. Mad. 5/1-f)"
+        ],
+        [
+          "322",
+          "Yurtdışı Şube Kazançları (K.V.K. Mad. 5/1-g)"
+        ],
+        [
+          "304",
+          "Yurt Dışı İnşaat, Onarma, Montaj ve Teknik Hizmetlerden Sağlanan Kazançlar (K.V.K. Mad. 5/1-h)"
+        ],
+        [
+          "305",
+          "Eğ., Öğr., Kült. ile Öz.Kreş ve Gündüz Bakımevi Rehabilitasyon Mrkz. Kazançları (K.V.K. Mad. 5/1-ı)"
+        ],
+        [
+          "354",
+          "Sat-Kirala-Geri Al İşlemlerinden Doğan Kazançlarda İstisna (K.V.K. Mad. 5/1-j) (Taşınırlar)"
+        ],
+        [
+          "355",
+          "Sat-Kirala-Geri Al İşlemlerinden Doğan Kazançlarda İstisna (K.V.K. Mad. 5/1-j) (Taşınmazlar)"
+        ],
+        [
+          "356",
+          "Sat-Kirala-Geri Al İşlemlerinden Doğan Kazançlarda İstisna (K.V.K. Mad. 5/1-j) (Diğer)"
+        ],
+        [
+          "357",
+          "Kira Sertifikası İhracı Amacıyla Varlık ve Hakların Satışından Doğan Kazançlarda İstisna (K.V.K. Mad. 5/1-k) (Taşınırlar)"
+        ],
+        [
+          "358",
+          "Kira Sertifikası İhracı Amacıyla Varlık ve Hakların Satışından Doğan Kazançlarda İstisna (K.V.K. Mad. 5/1-k) (Taşınmazlar)"
+        ],
+        [
+          "359",
+          "Kira Sertifikası İhracı Amacıyla Varlık ve Hakların Satışından Doğan Kazançlarda İstisna (K.V.K. Mad. 5/1-k) (Diğer)"
+        ],
+        [
+          "308",
+          "Serbest Bölgelerde Elde Edilen Kazançlar"
+        ],
+        [
+          "310",
+          "Teknoloji Geliştirme Bölgelerinde Elde Edilen Kazançlar"
+        ],
+        [
+          "311",
+          "Teknoloji Geliştirme Bölgelerinde Elde Edilen Kazançlar (Yönetici Şirketler)"
+        ],
+        [
+          "315",
+          "Türk Uluslararası Gemi Siciline Kayıtlı Gemilerin İşletilmesinden ve Devrinden Sağlanan Kazançlar"
+        ],
+        [
+          "323",
+          "Yabancı Fon Kazançlarının Vergilendirilmesine yönelik yönetici şirketlere ilişkin istisna (K.V.K. Mad. 5/A/3)"
+        ],
+        [
+          "324",
+          "Sınai Mülkiyet Haklarında İstisna (K.V.K. Mad. 5/B)"
+        ],
+        [
+          "349",
+          "5300 sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu kapsamında düzenlenen ürün senetlerinin elden çıkarılmasından doğan kazanç istisnası (193 s. Kanun Geçici Madde 76)"
+        ],
+        [
+          "350",
+          "Diğer İndirimler ve İstisnalar"
+        ],
+        [
+          "370",
+          "1-KVK Geç. Mad. 14/1-a kapsamında değerlemeden doğan kazanç istisnası"
+        ],
+        [
+          "371",
+          "2-KVK Geç. Mad. 14/1-b kapsamında kur farkı kazanç istisnası"
+        ],
+        [
+          "372",
+          "3-KVK Geçici Mad. 14/1-b kapsamında dönem sonu değerlemesinden doğan kar payı ve faiz istisnası"
+        ],
+        [
+          "373",
+          "4-KVK Geçici Mad. 14/1-b kapsamında vade sonunda oluşan kar payı ve faiz istisnası"
+        ],
+        [
+          "374",
+          "5-KVK Geçici Mad. 14/1-b kapsamında vade sonunda doğan diğer kazançlardan istisna"
+        ],
+        [
+          "375",
+          "6-KVK Geçici Mad. 14/2 kapsamında kur farkı kazanç istisnası"
+        ],
+        [
+          "376",
+          "7-KVK Geçici Mad. 14/2 kapsamında dönem sonu değerlemesinden doğan kar payı ve faiz istisnası"
+        ],
+        [
+          "377",
+          "8-KVK Geçici Mad. 14/2 kapsamında vade sonunda oluşan kar payı ve faiz istisnası"
+        ],
+        [
+          "378",
+          "9-KVK Geçici Mad. 14/2 kapsamında vade sonunda doğan diğer kazançlardan istisna"
+        ],
+        [
+          "379",
+          "10-KVK Geçici Mad. 14/3 kapsamında altın hesaplarının dönüştürülmesinden doğan kazanç istisnası"
+        ],
+        [
+          "380",
+          "11-KVK Geçici Mad. 14/3 kapsamında dönem sonu değerlemesinden doğan kar payı ve faiz istisnası"
+        ],
+        [
+          "381",
+          "12-KVK Geçici Mad. 14/3 kapsamında vade sonunda oluşan kar payı ve faiz istisnası"
+        ],
+        [
+          "382",
+          "13-KVK Geçici Mad. 14/3 kapsamında vade sonunda doğan diğer kazanç istisnası"
+        ],
+        [
+          "383",
+          "14-KVK Geçici Mad. 14/4 kapsamında dönem sonu değerlemesinden doğan kar payı ve faiz istisnası"
+        ],
+        [
+          "384",
+          "KVK Geçici Madde 14/4 kapsamında kar payı ve faiz istisnası"
+        ],
+        [
+          "385",
+          "KVK Geçici Madde 14/4 kapsamında vade sonunda oluşan kazanç istisnası"
+        ],
+        [
+          "386",
+          "ÇVÖA kapsamında istisna"
+        ],
+        [
+          null,
+          "Formul hatalarını, satır kaymalarını, bağlantı hatalarını kontrol et. Hataları düzelt. Excel tabloda varsa başkaca tüm hataları düzelt."
+        ]
+      ]
+    }
+  ]
+}
