@@ -50,6 +50,18 @@ export function useYenidenAc(calismaId: number | undefined) {
   })
 }
 
+export function useDeleteCalisma(donemId: number | undefined) {
+  const queryClient = useQueryClient()
+  return useMutation<void, Error, number>({
+    mutationFn: async (calismaId) => {
+      await apiClient.delete(`/calisma/${calismaId}`)
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['calismalar', donemId] })
+    },
+  })
+}
+
 export function useCreateCalisma(donemId: number | undefined) {
   const queryClient = useQueryClient()
   return useMutation<Calisma, Error, void>({

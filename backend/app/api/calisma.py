@@ -130,6 +130,19 @@ async def calisma_yeniden_ac(calisma_id: int, db: AsyncSession = Depends(get_db)
     return calisma
 
 
+@kalem_router.delete("/{calisma_id}", status_code=204)
+async def calisma_sil(calisma_id: int, db: AsyncSession = Depends(get_db)):
+    calisma = await db.get(Calisma, calisma_id)
+    if not calisma:
+        raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
+    # Kalem verileri cascade ile silinir; elle de temizleyelim
+    result = await db.execute(select(KalemVerisi).where(KalemVerisi.calisma_id == calisma_id))
+    for kv in result.scalars().all():
+        await db.delete(kv)
+    await db.delete(calisma)
+    await db.commit()
+
+
 @kalem_router.put("/{calisma_id}/kalem/{ic_kod}/veri")
 async def kalem_veri_kaydet(
     calisma_id: int, ic_kod: str, data: KalemVeriGirdisi, db: AsyncSession = Depends(get_db)

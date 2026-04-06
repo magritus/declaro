@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { useCalismalar, useCreateCalisma } from '@/api/calisma'
+import { useCalismalar, useCreateCalisma, useDeleteCalisma } from '@/api/calisma'
 import { useDonem } from '@/api/donem'
 import ThemeToggle from '@/components/ThemeToggle'
 
@@ -24,9 +25,11 @@ export default function DonemDetay() {
   const navigate = useNavigate()
   const id = donemId ? parseInt(donemId, 10) : undefined
 
+  const [silinecek, setSilinecek] = useState<number | null>(null)
   const { data: donem } = useDonem(donemId)
   const { data: calismalar, isLoading: calismalarLoading, error: calismalarError } = useCalismalar(id)
   const createCalisma = useCreateCalisma(id)
+  const deleteCalisma = useDeleteCalisma(id)
 
   const handleCreateCalisma = () => {
     createCalisma.mutate(undefined, {
@@ -121,6 +124,35 @@ export default function DonemDetay() {
                 <ErrorBox message="Çalışma oluşturulurken hata oluştu." />
               )}
 
+              {/* Silme onay modali */}
+              {silinecek !== null && (
+                <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+                  <div className="bg-surface-raised border border-border-default rounded-2xl shadow-2xl w-full max-w-sm p-6 space-y-4">
+                    <h3 className="text-lg font-semibold text-primary">Çalışmayı Sil</h3>
+                    <p className="text-sm text-secondary">
+                      Çalışma <span className="font-mono font-medium">#{silinecek}</span> ve tüm kalem verileri kalıcı olarak silinecek. Bu işlem geri alınamaz.
+                    </p>
+                    <div className="flex gap-3 pt-1">
+                      <button
+                        onClick={() => setSilinecek(null)}
+                        className="flex-1 py-2.5 border border-border-default hover:border-border-subtle text-secondary font-semibold text-sm rounded-lg transition-colors"
+                      >
+                        İptal
+                      </button>
+                      <button
+                        onClick={() => {
+                          deleteCalisma.mutate(silinecek, { onSuccess: () => setSilinecek(null) })
+                        }}
+                        disabled={deleteCalisma.isPending}
+                        className="flex-1 py-2.5 bg-red-600 hover:bg-red-700 disabled:opacity-50 text-white font-semibold text-sm rounded-lg transition-colors"
+                      >
+                        {deleteCalisma.isPending ? 'Siliniyor…' : 'Evet, Sil'}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {calismalar && calismalar.length > 0 ? (
                 <div className="bg-surface-raised border border-border-default rounded-xl overflow-hidden">
                   <table className="w-full text-sm">
@@ -138,11 +170,13 @@ export default function DonemDetay() {
                         const hedef = c.wizard_faz >= 3
                           ? `/calisma/${c.id}/istek-listesi`
                           : `/calisma/${c.id}/wizard/faz${c.wizard_faz}`
+                        const duzenleme = c.wizard_faz >= 1
+                          ? `/calisma/${c.id}/wizard/faz1`
+                          : `/calisma/${c.id}/wizard/faz0`
                         return (
                         <tr
                           key={c.id}
-                          onClick={() => navigate(hedef)}
-                          className={`cursor-pointer hover:bg-surface-overlay transition-colors duration-100 ${idx < calismalar.length - 1 ? 'border-b border-border-subtle' : ''}`}
+                          className={`${idx < calismalar.length - 1 ? 'border-b border-border-subtle' : ''}`}
                         >
                           <td className="px-5 py-4 font-mono font-medium text-primary">
                             #{c.id}
@@ -166,10 +200,27 @@ export default function DonemDetay() {
                           <td className="px-5 py-4 text-muted text-xs hidden lg:table-cell">
                             {new Date(c.created_at).toLocaleDateString('tr-TR')}
                           </td>
-                          <td className="px-5 py-4 text-right">
-                            <svg className="w-4 h-4 text-muted ml-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                            </svg>
+                          <td className="px-5 py-4">
+                            <div className="flex items-center justify-end gap-2">
+                              <button
+                                onClick={() => navigate(hedef)}
+                                className="text-xs font-medium px-3 py-1.5 rounded-md border border-border-default hover:border-accent hover:text-accent text-secondary transition-colors"
+                              >
+                                Görüntüle
+                              </button>
+                              <button
+                                onClick={() => navigate(duzenleme)}
+                                className="text-xs font-medium px-3 py-1.5 rounded-md border border-border-default hover:border-blue-400 hover:text-blue-400 text-secondary transition-colors"
+                              >
+                                Düzenle
+                              </button>
+                              <button
+                                onClick={() => setSilinecek(c.id)}
+                                className="text-xs font-medium px-3 py-1.5 rounded-md border border-border-default hover:border-red-500 hover:text-red-500 text-secondary transition-colors"
+                              >
+                                Sil
+                              </button>
+                            </div>
                           </td>
                         </tr>
                         )

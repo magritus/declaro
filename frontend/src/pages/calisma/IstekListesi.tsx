@@ -117,10 +117,25 @@ export default function IstekListesi() {
         </div>
       )}
 
+      <div className="mt-6 flex gap-2">
+        <button
+          onClick={() => navigate(`/calisma/${calismaId}/wizard/faz1`)}
+          className="flex-1 text-sm border border-border-default text-secondary py-2 px-3 rounded-md hover:border-accent hover:text-accent transition-colors"
+        >
+          ← Faz 1
+        </button>
+        <button
+          onClick={() => navigate(`/calisma/${calismaId}/wizard/faz2`)}
+          className="flex-1 text-sm border border-border-default text-secondary py-2 px-3 rounded-md hover:border-accent hover:text-accent transition-colors"
+        >
+          ← Faz 2
+        </button>
+      </div>
+
       <button
         onClick={() => navigate(`/calisma/${calismaId}/kalem/${seciliKalemler[0]}`)}
         disabled={seciliKalemler.length === 0}
-        className="mt-4 w-full bg-accent text-white py-2 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium"
+        className="mt-3 w-full bg-accent text-white py-2 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium"
       >
         Çalışma Kâğıtlarını Aç →
       </button>
