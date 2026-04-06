@@ -1,16 +1,23 @@
-from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy.ext.asyncio import AsyncSession
+import logging
+
+from fastapi import APIRouter, Depends, HTTPException, Path
+from pydantic import BaseModel
 from sqlalchemy import select
-from app.db.session import get_db
+from sqlalchemy.ext.asyncio import AsyncSession
+from typing import Any
+
+from app.auth.deps import get_current_user, verify_calisma_owner
 from app.db.models.calisma import Calisma
 from app.db.models.donem import Donem
 from app.db.models.kalem_verisi import KalemVerisi
 from app.db.models.mukellef import Mukellef
+from app.db.models.user import User
+from app.db.session import get_db
 from app.katalog.cache import get_katalog
 from app.pipeline.kalem_hesaplayici import kalem_hesapla
 from app.pipeline.pipeline import pipeline_calistir
-from pydantic import BaseModel
-from typing import Any
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/calisma", tags=["hesaplama"])
 
@@ -22,19 +29,27 @@ class KalemHesaplaRequest(BaseModel):
 @router.get("/{calisma_id}/kalem/{ic_kod}/veri")
 async def kalem_veri_getir(
     calisma_id: int,
-    ic_kod: str,
+    ic_kod: str = Path(pattern=r"^[a-z0-9_]+$", max_length=100),
     db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
-    """Daha önce kaydedilmiş girdi verilerini ve hesap sonucunu döner."""
+    await verify_calisma_owner(calisma_id, current_user, db)
+
     result = await db.execute(
         select(KalemVerisi).where(
             KalemVerisi.calisma_id == calisma_id,
-            KalemVerisi.ic_kod == ic_kod
+            KalemVerisi.ic_kod == ic_kod,
         )
     )
     kv = result.scalar_one_or_none()
     if not kv:
-        return {"girdi_verileri": None, "istisna_tutari": None, "ara_sonuclar": None, "k_checklist_durumu": None, "belge_durumu": None}
+        return {
+            "girdi_verileri": None,
+            "istisna_tutari": None,
+            "ara_sonuclar": None,
+            "k_checklist_durumu": None,
+            "belge_durumu": None,
+        }
     return {
         "girdi_verileri": kv.girdi_verileri,
         "istisna_tutari": float(kv.istisna_tutari) if kv.istisna_tutari is not None else None,
@@ -47,30 +62,27 @@ async def kalem_veri_getir(
 @router.post("/{calisma_id}/kalem/{ic_kod}/hesapla")
 async def kalem_hesapla_endpoint(
     calisma_id: int,
-    ic_kod: str,
     data: KalemHesaplaRequest,
+    ic_kod: str = Path(pattern=r"^[a-z0-9_]+$", max_length=100),
     db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
-    """Tek kalem hesaplar ve sonucu DB'ye kaydeder."""
     katalog = get_katalog()
     kalem = katalog.get(ic_kod)
     if not kalem:
-        raise HTTPException(status_code=404, detail=f"Kalem bulunamadı: {ic_kod}")
+        raise HTTPException(status_code=404, detail=f"Kalem bulunamadi: {ic_kod}")
 
-    calisma = await db.get(Calisma, calisma_id)
-    if not calisma:
-        raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
+    calisma = await verify_calisma_owner(calisma_id, current_user, db)
 
     if ic_kod not in (calisma.istek_listesi or []):
-        raise HTTPException(status_code=400, detail=f"{ic_kod} bu çalışmanın istek listesinde değil")
+        raise HTTPException(status_code=400, detail=f"{ic_kod} bu calismanin istek listesinde degil")
 
     sonuc = kalem_hesapla(kalem, data.girdi_verileri)
 
-    # Sonucu DB'ye kaydet
     result = await db.execute(
         select(KalemVerisi).where(
             KalemVerisi.calisma_id == calisma_id,
-            KalemVerisi.ic_kod == ic_kod
+            KalemVerisi.ic_kod == ic_kod,
         )
     )
     kalem_verisi = result.scalar_one_or_none()
@@ -100,22 +112,21 @@ async def kalem_hesapla_endpoint(
 
 
 @router.post("/{calisma_id}/hesapla")
-async def pipeline_hesapla_endpoint(calisma_id: int, db: AsyncSession = Depends(get_db)):
-    """Çalışmanın tüm pipeline'ını çalıştırır."""
-    calisma = await db.get(Calisma, calisma_id)
-    if not calisma:
-        raise HTTPException(status_code=404, detail="Çalışma bulunamadı")
+async def pipeline_hesapla_endpoint(
+    calisma_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    calisma = await verify_calisma_owner(calisma_id, current_user, db)
 
     if not calisma.istek_listesi:
-        raise HTTPException(status_code=400, detail="Wizard tamamlanmamış veya istek listesi boş")
+        raise HTTPException(status_code=400, detail="Wizard tamamlanmamis veya istek listesi bos")
 
-    # Kalem verilerini yükle
     result = await db.execute(
         select(KalemVerisi).where(KalemVerisi.calisma_id == calisma_id)
     )
     kalem_verileri_db = {kv.ic_kod: kv.girdi_verileri or {} for kv in result.scalars().all()}
 
-    # Dönem ve mükellef bilgilerini al
     donem = await db.get(Donem, calisma.donem_id)
     donem_yili = donem.yil if donem else 2025
     mukellef = await db.get(Mukellef, donem.mukellef_id) if donem else None

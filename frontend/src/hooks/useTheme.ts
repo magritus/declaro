@@ -19,7 +19,11 @@ export function useTheme(): ThemeContextValue {
 export function useThemeProvider() {
   const [theme, setThemeState] = useState<Theme>(() => {
     if (typeof window !== 'undefined') {
-      return (localStorage.getItem('declaro-theme') as Theme) || 'light'
+      try {
+        return (localStorage.getItem('declaro-theme') as Theme) || 'light'
+      } catch {
+        return 'light'
+      }
     }
     return 'light'
   })
@@ -31,7 +35,11 @@ export function useThemeProvider() {
     } else {
       root.classList.remove('dark')
     }
-    localStorage.setItem('declaro-theme', theme)
+    try {
+      localStorage.setItem('declaro-theme', theme)
+    } catch {
+      // ignore storage errors
+    }
   }, [theme])
 
   const toggleTheme = () => setThemeState(t => t === 'light' ? 'dark' : 'light')

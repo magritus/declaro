@@ -1,0 +1,1 @@
+from app.db.models import mukellef, donem, calisma, kalem_verisi, user  # noqa: F401

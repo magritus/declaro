@@ -22,8 +22,8 @@ class Calisma(Base):
     istek_listesi: Mapped[list | None] = mapped_column(JSON, default=list)  # seçilen ic_kod listesi
 
     tamamlandi: Mapped[bool] = mapped_column(Boolean, default=False)
-    created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
-    updated_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), onupdate=func.now())
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
 
     donem: Mapped["Donem"] = relationship("Donem", back_populates="calismalar")
     kalem_verileri: Mapped[list["KalemVerisi"]] = relationship("KalemVerisi", back_populates="calisma", cascade="all, delete-orphan")

@@ -2,27 +2,14 @@ import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useCalismalar, useCreateCalisma, useDeleteCalisma } from '@/api/calisma'
 import { useDonem } from '@/api/donem'
-
-function Spinner() {
-  return (
-    <div className="flex justify-center py-12">
-      <div className="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin" />
-    </div>
-  )
-}
-
-function ErrorBox({ message }: { message: string }) {
-  return (
-    <div className="bg-red-950 border border-red-800 text-red-300 rounded-lg px-4 py-3 text-sm">
-      {message}
-    </div>
-  )
-}
+import Spinner from '@/components/ui/Spinner'
+import ErrorBox from '@/components/ui/ErrorBox'
 
 export default function DonemDetay() {
   const { donemId } = useParams<{ donemId: string }>()
   const navigate = useNavigate()
-  const id = donemId ? parseInt(donemId, 10) : undefined
+  const parsedId = donemId ? parseInt(donemId, 10) : NaN
+  const id = !isNaN(parsedId) ? parsedId : undefined
 
   const [silinecek, setSilinecek] = useState<number | null>(null)
   const { data: donem } = useDonem(donemId)

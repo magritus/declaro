@@ -1,7 +1,10 @@
+import logging
 import yaml
 from pathlib import Path
 from pydantic import ValidationError
 from app.schemas.kalem import KalemSchema
+
+logger = logging.getLogger(__name__)
 
 
 class KatalogYuklemeHatasi(Exception):
@@ -47,6 +50,7 @@ class KatalogLoader:
                 f"Katalog yüklenirken {len(hatalar)} hata:\n" + "\n".join(hatalar)
             )
 
+        logger.info("Katalog yuklendi: %d kalem", len(katalog))
         self._cache = katalog
         return katalog
 

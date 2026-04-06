@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import VeriGirisiForm from '@/components/VeriGirisiForm'
 import ChecklistTab from '@/components/kalem/ChecklistTab'
@@ -77,6 +77,7 @@ export default function KalemSayfasi() {
   const [checklistDurum, setChecklistDurum] = useState<ChecklistDurum>({})
   const [belgeDurum, setBelgeDurum] = useState<BelgeDurum>({})
   const [kayitMesaji, setKayitMesaji] = useState<string | null>(null)
+  const kayitMesajiTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const { data: kalem, isLoading: schemaYukleniyor, error: schemaHata } = useKalemSchema(icKod)
   const { data: kalemVeri } = useKalemVeri(calismaId, icKod)
@@ -94,24 +95,37 @@ export default function KalemSayfasi() {
   const updateChecklistMutation = useUpdateChecklist(calismaId, icKod)
   const updateBelgelerMutation = useUpdateBelgeler(calismaId, icKod)
 
+  const showKayitMesaji = (mesaj: string) => {
+    if (kayitMesajiTimerRef.current) {
+      clearTimeout(kayitMesajiTimerRef.current)
+    }
+    setKayitMesaji(mesaj)
+    kayitMesajiTimerRef.current = setTimeout(() => setKayitMesaji(null), 3000)
+  }
+
+  useEffect(() => {
+    return () => {
+      if (kayitMesajiTimerRef.current) {
+        clearTimeout(kayitMesajiTimerRef.current)
+      }
+    }
+  }, [])
+
   const handleVeriSubmit = async (data: Record<string, unknown>) => {
     try {
       const sonuc = await hesaplaMutation.mutateAsync(data)
       setHesapSonucu(sonuc)
       await saveVeriMutation.mutateAsync(data)
-      setKayitMesaji('Veriler kaydedildi.')
-      setTimeout(() => setKayitMesaji(null), 3000)
-    } catch (err) {
+      showKayitMesaji('Veriler kaydedildi.')
+    } catch {
       // Error displayed via hesaplaMutation.error / saveVeriMutation.error in UI
-      console.error('Veri kaydetme hatası:', err)
     }
   }
 
   const handleChecklistKaydet = async () => {
     try {
       await updateChecklistMutation.mutateAsync(checklistDurum)
-      setKayitMesaji('K-Checklist kaydedildi.')
-      setTimeout(() => setKayitMesaji(null), 3000)
+      showKayitMesaji('K-Checklist kaydedildi.')
     } catch {
       // mutasyon hatası gösterilir
     }
@@ -120,8 +134,7 @@ export default function KalemSayfasi() {
   const handleBelgelerKaydet = async () => {
     try {
       await updateBelgelerMutation.mutateAsync(belgeDurum)
-      setKayitMesaji('Belgeler kaydedildi.')
-      setTimeout(() => setKayitMesaji(null), 3000)
+      showKayitMesaji('Belgeler kaydedildi.')
     } catch {
       // mutasyon hatası gösterilir
     }

@@ -5,6 +5,8 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { useMukellef } from '@/api/mukellef'
 import { useDonemler, useCreateDonem } from '@/api/donem'
+import Spinner from '@/components/ui/Spinner'
+import ErrorBox from '@/components/ui/ErrorBox'
 import type { Donem } from '@/types'
 
 const CEYREK_OPTIONS: Donem['ceyrek'][] = ['Q1-GV', 'Q2-GV', 'Q3-GV', 'Q4-GV', 'YILLIK']
@@ -16,6 +18,8 @@ const CEYREK_LABELS: Record<Donem['ceyrek'], string> = {
   'YILLIK': 'Yıllık Kurumlar Vergisi Beyannamesi',
 }
 
+// Remove local Spinner/ErrorBox in favour of shared ui components above
+
 const donemSchema = z.object({
   yil: z.number().int().min(2000).max(2100),
   ceyrek: z.enum(['Q1-GV', 'Q2-GV', 'Q3-GV', 'Q4-GV', 'YILLIK']),
@@ -23,26 +27,11 @@ const donemSchema = z.object({
 
 type DonemFormData = z.infer<typeof donemSchema>
 
-function Spinner() {
-  return (
-    <div className="flex justify-center py-12">
-      <div className="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin" />
-    </div>
-  )
-}
-
-function ErrorBox({ message }: { message: string }) {
-  return (
-    <div className="bg-red-950 border border-red-800 text-red-300 rounded-lg px-4 py-3 text-sm">
-      {message}
-    </div>
-  )
-}
-
 export default function MukellefDetay() {
   const { mukellefId } = useParams<{ mukellefId: string }>()
   const navigate = useNavigate()
-  const id = mukellefId ? parseInt(mukellefId, 10) : undefined
+  const parsedId = mukellefId ? parseInt(mukellefId, 10) : NaN
+  const id = !isNaN(parsedId) ? parsedId : undefined
 
   const [showDonemForm, setShowDonemForm] = useState(false)
 

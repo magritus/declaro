@@ -56,8 +56,9 @@ export function useUpdateMukellef() {
       const { data } = await apiClient.put<Mukellef>(`/mukellef/${id}`, input)
       return data
     },
-    onSuccess: () => {
+    onSuccess: (data) => {
       queryClient.invalidateQueries({ queryKey: ['mukellefler'] })
+      queryClient.invalidateQueries({ queryKey: ['mukellef', data.id] })
     },
   })
 }

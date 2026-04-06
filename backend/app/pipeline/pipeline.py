@@ -1,3 +1,4 @@
+import logging
 from decimal import Decimal
 from functools import lru_cache
 from typing import Any
@@ -6,6 +7,8 @@ from pathlib import Path
 from app.pipeline.types import PipelineAdim, PipelineSonucu, KalemHesapSonucu
 from app.pipeline.kalem_hesaplayici import kalem_hesapla
 from app.katalog.cache import get_katalog
+
+logger = logging.getLogger(__name__)
 
 
 @lru_cache(maxsize=1)
@@ -52,10 +55,15 @@ def pipeline_calistir(
     kv_orani_override: float | None = None,
 ) -> PipelineSonucu:
     """
-    Ticari kâr → matrah → vergi tam pipeline.
+    Ticari kar → matrah → vergi tam pipeline.
 
     §8'deki 13 adım sırayla uygulanır.
     """
+    logger.info(
+        "Pipeline baslatildi: donem_yili=%d istek_listesi=%d kalem",
+        donem_yili,
+        len(istek_listesi),
+    )
     katalog = get_katalog()
     parametreler = _parametreler_yukle()
     kv_orani = Decimal(str(kv_orani_override)) if kv_orani_override else _kv_orani_al(donem_yili, parametreler)

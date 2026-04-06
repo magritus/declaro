@@ -1,11 +1,11 @@
 from datetime import datetime
-from pydantic import BaseModel, field_validator
+from pydantic import BaseModel, Field, field_validator
 
 
 class MukellefCreate(BaseModel):
-    unvan: str
-    vkn: str
-    vergi_dairesi: str | None = None
+    unvan: str = Field(..., min_length=1, max_length=200)
+    vkn: str = Field(..., min_length=10, max_length=10)
+    vergi_dairesi: str | None = Field(default=None, max_length=100)
     kv_orani: float = 0.25
 
     @field_validator("vkn")

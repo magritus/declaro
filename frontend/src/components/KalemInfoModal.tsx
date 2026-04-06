@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import type { KalemSchema } from '@/api/kalem'
 import { renderMarkdown } from '@/lib/renderMarkdown'
 
@@ -15,16 +15,23 @@ const YIAKV_STYLE: Record<string, { label: string; cls: string }> = {
 }
 
 export default function KalemInfoModal({ kalem, yiakv, onClose }: Props) {
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
     document.addEventListener('keydown', onKey)
     return () => document.removeEventListener('keydown', onKey)
   }, [onClose])
 
+  useEffect(() => {
+    closeButtonRef.current?.focus()
+  }, [])
+
   const yiakvInfo = yiakv ? YIAKV_STYLE[yiakv] : undefined
   const beyanKodlari = kalem.beyanname_kodlari
     ? [...new Set(kalem.beyanname_kodlari.map((b: { kod: number }) => b.kod))].join(' / ')
     : undefined
+  const titleId = 'kalem-info-modal-title'
 
   return (
     <div
@@ -32,6 +39,9 @@ export default function KalemInfoModal({ kalem, yiakv, onClose }: Props) {
       onClick={onClose}
     >
       <div
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
         className="bg-surface-raised border border-border-default rounded-2xl w-full max-w-2xl max-h-[88vh] flex flex-col shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
@@ -43,7 +53,7 @@ export default function KalemInfoModal({ kalem, yiakv, onClose }: Props) {
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 min-w-0">
               <p className="text-xs font-semibold text-sky-500 dark:text-sky-400 uppercase tracking-widest mb-1.5">Kalem Bilgisi</p>
-              <h2 className="text-lg font-bold text-sky-900 dark:text-sky-100 leading-snug">{kalem.baslik}</h2>
+              <h2 id={titleId} className="text-lg font-bold text-sky-900 dark:text-sky-100 leading-snug">{kalem.baslik}</h2>
               {beyanKodlari && (
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5">
                   Beyanname satırı:{' '}
@@ -52,7 +62,9 @@ export default function KalemInfoModal({ kalem, yiakv, onClose }: Props) {
               )}
             </div>
             <button
+              ref={closeButtonRef}
               onClick={onClose}
+              aria-label="Modalı kapat"
               className="w-8 h-8 rounded-full bg-surface-overlay hover:bg-sky-100 dark:hover:bg-sky-950 flex items-center justify-center text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 transition-colors flex-shrink-0"
             >
               ✕

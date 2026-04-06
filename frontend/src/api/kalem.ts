@@ -120,6 +120,8 @@ export function useKalemSchema(icKod: string | undefined) {
 export function useHesapla(calismaId: string | undefined, icKod: string | undefined) {
   return useMutation<HesapSonucu, Error, Record<string, unknown>>({
     mutationFn: async (girdiVerileri) => {
+      if (!calismaId) throw new Error('calismaId is required')
+      if (!icKod) throw new Error('icKod is required')
       const { data } = await apiClient.post<HesapSonucu>(
         `/calisma/${calismaId}/kalem/${icKod}/hesapla`,
         { girdi_verileri: girdiVerileri }
@@ -132,6 +134,8 @@ export function useHesapla(calismaId: string | undefined, icKod: string | undefi
 export function useSaveVeri(calismaId: string | undefined, icKod: string | undefined) {
   return useMutation<void, Error, Record<string, unknown>>({
     mutationFn: async (girdiVerileri) => {
+      if (!calismaId) throw new Error('calismaId is required')
+      if (!icKod) throw new Error('icKod is required')
       await apiClient.put(
         `/calisma/${calismaId}/kalem/${icKod}/veri`,
         { girdi_verileri: girdiVerileri }
@@ -143,6 +147,8 @@ export function useSaveVeri(calismaId: string | undefined, icKod: string | undef
 export function useUpdateChecklist(calismaId: string | undefined, icKod: string | undefined) {
   return useMutation<void, Error, ChecklistDurum>({
     mutationFn: async (durum) => {
+      if (!calismaId) throw new Error('calismaId is required')
+      if (!icKod) throw new Error('icKod is required')
       await apiClient.put(
         `/calisma/${calismaId}/kalem/${icKod}/checklist`,
         { durum }
@@ -154,6 +160,8 @@ export function useUpdateChecklist(calismaId: string | undefined, icKod: string 
 export function useUpdateBelgeler(calismaId: string | undefined, icKod: string | undefined) {
   return useMutation<void, Error, BelgeDurum>({
     mutationFn: async (durum) => {
+      if (!calismaId) throw new Error('calismaId is required')
+      if (!icKod) throw new Error('icKod is required')
       await apiClient.put(
         `/calisma/${calismaId}/kalem/${icKod}/belgeler`,
         { durum }

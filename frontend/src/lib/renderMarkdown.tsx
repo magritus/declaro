@@ -1,7 +1,18 @@
 import React from 'react'
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
+}
+
 function boldify(text: string): string {
-  return text
+  // Escape raw content first, then apply safe markdown transformations
+  const escaped = escapeHtml(text)
+  return escaped
     .replace(/\*\*(.+?)\*\*/g, '<strong class="text-primary font-semibold">$1</strong>')
     .replace(/`(.+?)`/g, '<code class="px-1 py-0.5 bg-surface-overlay rounded text-xs font-mono">$1</code>')
 }

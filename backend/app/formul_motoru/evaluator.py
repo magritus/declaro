@@ -1,8 +1,11 @@
+import logging
 import re
 from datetime import date, datetime
 from decimal import Decimal, ROUND_HALF_UP
 from typing import Any
 from simpleeval import SimpleEval, NameNotDefined, FunctionNotDefined, InvalidExpression
+
+logger = logging.getLogger(__name__)
 
 
 class EvaluatorGuvenlikHatasi(Exception):
@@ -192,8 +195,11 @@ class ForumulEvaluator:
                 ara_sonuclar[degisken] = self.hesapla(formul, tam_context)
                 # float olarak da ekle (sonraki formüller için)
                 tam_context[degisken] = float(ara_sonuclar[degisken])
-            except (ForumulDegiskenHatasi, EvaluatorGuvenlikHatasi):
+            except ForumulDegiskenHatasi:
                 ara_sonuclar[degisken] = Decimal("0")
+            except EvaluatorGuvenlikHatasi:
+                logger.error("Guvenlik ihlali: formul %s", degisken)
+                raise
 
         hatalar = self.validasyon_kontrol(validasyonlar or [], context, {k: float(v) for k, v in ara_sonuclar.items()})
 

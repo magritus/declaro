@@ -1,12 +1,12 @@
 from datetime import datetime
 from typing import Literal
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 CeyrekTip = Literal["Q1-GV", "Q2-GV", "Q3-GV", "Q4-GV", "YILLIK"]
 
 
 class DonemCreate(BaseModel):
-    yil: int
+    yil: int = Field(..., ge=2000, le=2100)
     ceyrek: CeyrekTip
 
 

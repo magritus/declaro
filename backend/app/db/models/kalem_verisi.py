@@ -25,7 +25,7 @@ class KalemVerisi(Base):
     k_checklist_durumu: Mapped[dict | None] = mapped_column(JSON, default=dict)
     belge_durumu: Mapped[dict | None] = mapped_column(JSON, default=dict)
 
-    created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
-    updated_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), onupdate=func.now())
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
 
     calisma: Mapped["Calisma"] = relationship("Calisma", back_populates="kalem_verileri")

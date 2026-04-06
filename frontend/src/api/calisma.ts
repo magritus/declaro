@@ -28,6 +28,7 @@ export function useTamamla(calismaId: number | undefined) {
   const queryClient = useQueryClient()
   return useMutation<Calisma, Error, void>({
     mutationFn: async () => {
+      if (!calismaId) throw new Error('calismaId is required')
       const { data } = await apiClient.post<Calisma>(`/calisma/${calismaId}/tamamla`)
       return data
     },
@@ -41,6 +42,7 @@ export function useYenidenAc(calismaId: number | undefined) {
   const queryClient = useQueryClient()
   return useMutation<Calisma, Error, void>({
     mutationFn: async () => {
+      if (!calismaId) throw new Error('calismaId is required')
       const { data } = await apiClient.post<Calisma>(`/calisma/${calismaId}/yeniden_ac`)
       return data
     },
@@ -66,6 +68,7 @@ export function useCreateCalisma(donemId: number | undefined) {
   const queryClient = useQueryClient()
   return useMutation<Calisma, Error, void>({
     mutationFn: async () => {
+      if (!donemId) throw new Error('donemId is required')
       const { data } = await apiClient.post<Calisma>(`/donem/${donemId}/calisma`)
       return data
     },

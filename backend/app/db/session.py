@@ -1,12 +1,15 @@
+import logging
 from collections.abc import AsyncGenerator
 
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 
 from app.config import settings
 
+logger = logging.getLogger(__name__)
+
 engine = create_async_engine(
     settings.database_url,
-    echo=settings.environment == "development",
+    echo=False,
     pool_pre_ping=True,
 )
 
@@ -24,6 +27,7 @@ async def get_db() -> AsyncGenerator[AsyncSession, None]:
             await session.commit()
         except Exception:
             await session.rollback()
+            logger.exception("Database session error")
             raise
         finally:
             await session.close()

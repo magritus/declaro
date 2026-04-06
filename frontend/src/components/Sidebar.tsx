@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, NavLink } from 'react-router-dom'
 import { useCalisma } from '@/api/calisma'
 import { useDonem } from '@/api/donem'
 import { useMukellef } from '@/api/mukellef'
@@ -27,19 +27,20 @@ interface NavItemProps {
 }
 
 function NavItem({ to, icon, label, active }: NavItemProps) {
-  const navigate = useNavigate()
   return (
-    <button
-      onClick={() => navigate(to)}
-      className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 text-left ${
-        active
-          ? 'bg-accent/10 text-accent dark:bg-accent/15'
-          : 'text-secondary hover:bg-surface-overlay hover:text-primary'
-      }`}
+    <NavLink
+      to={to}
+      className={({ isActive }) =>
+        `w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 text-left ${
+          isActive || active
+            ? 'bg-accent/10 text-accent dark:bg-accent/15'
+            : 'text-secondary hover:bg-surface-overlay hover:text-primary'
+        }`
+      }
     >
       <span className={`flex-shrink-0 ${active ? 'text-accent' : 'text-muted'}`}>{icon}</span>
       <span className="truncate">{label}</span>
-    </button>
+    </NavLink>
   )
 }
 
