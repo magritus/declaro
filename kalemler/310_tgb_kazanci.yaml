@@ -1,0 +1,260 @@
+ic_kod: tgb_kazanci_4691
+baslik: Teknoloji Geliştirme Bölgelerinde Elde Edilen Kazançlar İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 310 }
+  - { donem: 2025, kod: 310 }
+
+mevzuat_dayanagi:
+  - 4691 Sayılı Teknoloji Geliştirme Bölgeleri Kanunu Geçici Madde 2
+  - 4691 Sayılı Kanun Ek Madde 3 (7263 s.K. ile eklendi; 7953/10803 No.lu CBK ile güncellendi)
+  - 1 Seri No.lu Kurumlar Vergisi Genel Tebliği Bölüm 10.4
+  - 7953 No.lu Cumhurbaşkanı Kararı (16.12.2023, 32401 sayılı RG — fon %3, 2M alt sınır)
+  - 10803 No.lu Cumhurbaşkanı Kararı (31.12.2025, 33124 sayılı RG — fon alt sınırı 5M TL)
+  - KVK Madde 32/C (YİAKV — 4691 istisnası düşülemeyen istisnalar kapsamında)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "1985-01-01"
+  bitis: "2028-12-31"
+
+ana_kategori: serbest_bolge_tgb_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Teknoloji Geliştirme Bölgesi'nde (TGB/Teknokent) faaliyet gösteriyor musunuz?"
+  info_modal: |
+    4691 Sayılı Kanun Geçici Md. 2 kapsamında Teknoloji Geliştirme Bölgelerinde münhasıran
+    yazılım, tasarım ve Ar-Ge faaliyetlerinden elde edilen kazançlar 31.12.2028 tarihine kadar
+    (dönem mevzuatı ayrıca kontrol edilmelidir) kurumlar vergisinden istisnadır.
+    Kapsam dışı gelirler (faiz, kur farkı, ATİK satışı) ayrıştırılmalıdır.
+    NOT: Bu istisna YİAKV (KVK Md. 32/C) matrahından indirilemeyen istisnalar kapsamındadır —
+    4691 istisnası uygulayan kurumlar için YİAKV yükü doğabilir.
+  kapi_sorulari:
+    - id: tgb_faaliyet
+      soru: "Faaliyet TGB içinde yürütülüyor mu? (TGB dışı faaliyetler kapsam dışıdır)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: faaliyet_turu
+      soru: "Kazanç türü yazılım, tasarım veya Ar-Ge faaliyetinden mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yalnızca bu üç faaliyet türü istisna kapsamındadır. Ticari satış, destek,
+        danışmanlık (Ar-Ge dışı) kapsam dışıdır."
+    - id: yiakv_analiz
+      soru: "YİAKV etkisi ayrıca test edildi mi? (4691 istisnası YİAKV'den indirilemeyen
+        istisnalar kapsamındadır)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+  fon_oran: 0.03
+  fon_alt_sinir_tl: 5000000
+  fon_ust_sinir_tl: 100000000
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: proje_bazli_istisna
+      etiket: "Proje bazlı istisna kazanç toplamı (Yazılım/Tasarım/Ar-Ge)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        TGB içinde yürütülen yazılım, tasarım veya Ar-Ge projelerinin her biri için ayrı
+        hasılat, gider ve bölge içi gider payı hesaplanarak bulunan net istisna kazanç toplamı.
+        Kapsam dışı gelirler (faiz, kur farkı, ATİK satışı) dahil edilmez.
+    - id: gmh_satis_istisna
+      etiket: "Gayri maddi hak satışı istisna kısmı (Cumhurbaşkanı Kararı kapsamı — varsa)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Patent veya fonksiyonel eşdeğer belgeye sahip gayri maddi hakkın satış/devir/kiralama
+        kazancının NHO (Nitelikli Harcama Oranı = Nitelikli Harcamalar / Toplam Harcamalar)
+        oranında istisna kapsamındaki kısmı. Yurt dışı ilişkili kişi payı ≤%30 sınırı.
+        Patent belgesi yoksa bu alan doldurulmamalıdır.
+  formuller:
+    istisna_tutari: "(proje_bazli_istisna + gmh_satis_istisna) * oran"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "proje_bazli_istisna >= 0"
+      hata: "Proje bazlı istisna kazanç negatif olamaz. TGB kapsam içi faaliyet zararda ise
+        zarar diğer faaliyetlere yüklenemez (zarar ring-fence)."
+    - kural: "gmh_satis_istisna >= 0"
+      hata: "GMH satışı istisna kısmı negatif olamaz."
+
+denetci_notlari: |
+  ## A. Yasal Dayanak Metni
+
+  4691 s.K. Geçici Madde 2 (Yürürlük: 31.12.2028'e kadar — dönem mevzuatı kontrol edilmelidir):
+  "Yönetici şirketlerin bu Kanun uygulaması kapsamında elde ettikleri kazançlar ile Bölgede
+  faaliyet gösteren gelir ve kurumlar vergisi mükelleflerinin, münhasıran bu Bölgedeki
+  yazılım, tasarım ve AR-GE faaliyetlerinden elde ettikleri kazançları ilgili süre tarihine
+  kadar gelir ve kurumlar vergisinden müstesnadır."
+
+  Ek Madde 3 — Girişim Sermayesi Fon Yükümlülüğü:
+  Yıllık beyanname üzerinden istisna edilen kazanç tutarı 5.000.000 TL ve üzerinde olan
+  mükellefler bu tutarın %3'ünü pasifte geçici bir hesaba aktarır.
+  Azami: 100.000.000 TL | Süre: Hesap döneminin son günü | Yaptırım: İstisnanın %20'si iptal.
+
+  ## B. Kritik Risk Tablosu
+
+  RİSK 1 — YİAKV ÇARPAN ETKİSİ:
+  4691 s.K. kapsamındaki istisna YİAKV matrahından indirilemeyen istisnalar arasındadır
+  (KVK 32/C-2 fıkrası). TGB istisnası uygulayan kurumlar için YİAKV yükü doğabilir.
+  Normal KV ve YİAKV hesapları ayrı çalışma kağıtlarıyla test edilmelidir.
+  Bu durum 3218 s.K. SB istisnasından (düşülebilen — KVK 32/C (g)) farklıdır.
+
+  RİSK 2 — BÖLGE DIŞI FAALİYET:
+  Faaliyetin bölge dışında yürütülen kısmı için özel düzenleme yoksa istisna riski doğar.
+  Bölge dışı çalışma süreleri ve proje kayıtları ayrıca kontrol edilmelidir.
+
+  RİSK 3 — KAPSAM DIŞI GELİRLERİN İSTİSNAYA DAHİL EDİLMESİ:
+  Faiz, kur farkı, ATİK satış kazancı ve TGB dışı ticari faaliyetlerden elde edilen gelirler
+  istisna kapsamı dışındadır. Bu gelirlerin 310 satırına yazılması vergi incelemesinde
+  ceza riskidir.
+
+  RİSK 4 — FON YÜKÜMLÜLÜĞÜNÜN YAPILMAMASI:
+  İstisna ≥ 5.000.000 TL iken fon yapılmazsa → İstisnanın %20'si iptal, vergi ziyaısız tarh.
+  Hesap döneminin son günü itibarıyla GSYF payı, GSYO sermayesi veya kuluçka merkezi
+  girişimcisine sermaye konulması şarttır.
+
+  RİSK 5 — GMH SATIŞINDA PATENT VE NHO:
+  CBK kapsamındaki GMH satışında patent zorunludur. NHO = Nitelikli harcamalar / Toplam
+  harcamalar. Yurt dışı ilişkili kişi payı ≤%30 sınırını aşan kısım NHO'ya dahil edilmez.
+
+  RİSK 6 — İSTİSNA KAPSAMINDAKİ ZARARIN AKTARILMASI:
+  TGB istisna kapsamı faaliyetin zararla sonuçlanması halinde bu zarar diğer kazançlardan
+  indirilemez. "Zarar ring-fence" prensibi.
+
+  ## C. Önemli Mevzuat Kaynakları
+
+  - 4691 sayılı Kanun Geçici Md.2, Ek Md.3
+  - 1 Seri No.lu KV GT Bölüm 10.4
+  - 7953 No.lu CBK (16.12.2023) — fon %2→%3, 1M→2M alt sınır
+  - 10803 No.lu CBK (31.12.2025) — fon alt sınırı 2M→5M TL (01.01.2026+)
+  - CBK 2017/10821 ve 54 No.lu CBK — NHO hesaplama esasları
+  - GİB Özelge, 26.11.2025 — Kuluçka merkezi sermaye şartı
+  - KVK Md. 32/C (7524 s.K. ile 02.08.2024) — YİAKV (01.01.2025+)
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Ar-Ge / Yazılım / Tasarım Geliri Tahakkuku (Dönem İçi)
+  Borç: 120 Alıcılar / uygun alacak hesabı — Proje hizmet bedeli hakediş
+  Alacak: 600 Yurt İçi Satışlar (TGB Bağımsız Hesap) — Bölge içi yazılım/tasarım/Ar-Ge gelirleri
+  Not: 642 (faiz) ve 646 (kur farkı) hesaplarıyla karıştırılmamalıdır.
+
+  ## Kayıt 2 — Fonun Pasifde İzlenmesi (İstisna ≥ 5.000.000 TL ise)
+  Borç: 590 Dönem Net Kârı (veya 689 Diğer Gider) — Fon aktarımı (İstisna × %3)
+  Alacak: 549 Özel Fonlar — Girişim sermayesi fon hesabı
+  Not: Fon tutarı pasifte geçici bir hesapta izlenmeli; hesap döneminin sonuna kadar uygun
+  yatırım araçlarına (GSYF/GSYO/Kuluçka merkezi) yönlendirilmelidir.
+
+  ## Kayıt 3 — Fon Yatırıldığında (GSYF Fonu Satın Alımı Örneği)
+  Borç: 242 İştirakler / 110 Hisse Senetleri — GSYF payı alımı
+  Alacak: 549 Özel Fonlar — Fon hesabı kapatma
+
+  ## Kayıt 4 — Dönem Sonu: İstisna Nazım Kaydı (İsteğe Bağlı Takip)
+  Borç: 950 Nazım Hesaplar — İstisna kazanç takibi (İstisna tutarı)
+  Alacak: 951 Karşılıklı Nazım Hesabı (İstisna tutarı)
+  Not: Muhasebe kârı değişmez — istisna beyanname üzerinde uygulanır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: TGB Katılımcı Belgesi / Yönetici Şirket Onayı
+    detay: "Firmanın TGB'de faaliyete geçiş tarihi ve kapsama alınan proje onayları.
+      Faaliyet tarihinin projenin başlangıcından önce olduğu teyit edilmelidir."
+    temin_yeri: Yönetici şirket / TGB
+  - kategori: zorunlu
+    "no": 2
+    baslik: Yıllık Proje Listesi ve Hakediş Raporları
+    detay: "Yürütülen yazılım/tasarım/Ar-Ge projelerinin adı, bütçesi, süresi, müşterisi.
+      Her projenin istisna kapsamında olduğu ve bölge içinde yürütüldüğü doğrulanmalıdır."
+    temin_yeri: Proje yönetim sistemi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Bölge İçi Hasılat ve Gider Hesap Dökümü
+    detay: "TGB faaliyetlerine özgü 600/601 hesap hareketleri, proje bazında ayrıştırılmış
+      giderler. Kapsam dışı gelirlerin (faiz/kur farkı) ayrı hesaplarda olduğu kontrol edilir."
+    temin_yeri: Muhasebe / ERP
+  - kategori: zorunlu
+    "no": 4
+    baslik: KV Beyannamesi ve 310 Satır Tutarı
+    detay: "İstisna tutarının beyannamede 'Zarar Olsa Dahi İndirilecek İstisnalar' bölümünde
+      gösterilmesi. Beyanname satır 310 = Çalışma kağıdı E bölümü toplamı uyumu."
+    temin_yeri: GİB e-Beyanname
+  - kategori: zorunlu
+    "no": 5
+    baslik: Fon Yükümlülük Hesaplaması ve Aktarım Belgesi (≥5M TL ise)
+    detay: "İstisna ≥ 5M TL ise: %3 fon hesaplaması, 549 Özel Fonlar hesabı dökümü,
+      GSYF/GSYO/Kuluçka merkezi yatırım belgesi (hesap döneminin sonuna kadar)."
+    temin_yeri: Muhasebe + yatırım belgesi
+  - kategori: zorunlu
+    "no": 6
+    baslik: TGB Faaliyet Yeri Belgesi (Bölge İçi Faaliyet Teyidi)
+    detay: "TGB yönetici şirketi onayı veya katılımcı belgesi. Faaliyetin münhasıran bölge
+      içinde yürütüldüğünü belgeler. Bölge içi/dışı çalışma süreleri ve proje kayıtları
+      ayrıca kontrol edilmelidir."
+    temin_yeri: TGB yönetici şirketi
+  - kategori: destekleyici
+    "no": 7
+    baslik: Patent / Fonksiyonel Eşdeğer Belge (GMH Satışı Varsa)
+    detay: "CBK kapsamında GMH satışından istisna uygulanıyorsa patent veya eşdeğer belge
+      zorunludur. Belge tarihi ve proje ile ilişkisi kontrol edilmelidir."
+    temin_yeri: TPE / USPTO / EPO
+  - kategori: destekleyici
+    "no": 8
+    baslik: NHO (Nitelikli Harcama Oranı) Hesaplama Tablosu
+    detay: "Toplam harcamalar, nitelikli harcamalar, yurt dışı ilişkili kişi harcamaları
+      ≤%30 sınırı kontrol edilmelidir."
+    temin_yeri: Proje finans kayıtları
+  - kategori: destekleyici
+    "no": 9
+    baslik: Personel GV Stopajı İstisna Tablosu
+    detay: "İstisna kapsamı personel listesi, çalışılan saat/proje dökümü, muhtasar beyanname
+      terkin tutarları. İlgili dönemde geçerli sınır/şartlar (brüt asgari ücretin 40 katı
+      üst sınırı) ayrıca teyit edilmelidir."
+    temin_yeri: İnsan kaynakları / bordro
+  - kategori: destekleyici
+    "no": 10
+    baslik: YİAKV Matrah Hesaplama Tablosu
+    detay: "4691 s.K. istisnası YİAKV matrahından indirilemeyen istisnalar kapsamında
+      değerlendirilmelidir. Normal KV ve YİAKV matrahları ayrı çalışma kağıtlarıyla
+      karşılaştırılmalıdır."
+    temin_yeri: Muhasebe çalışma kağıdı
+
+k_checklist:
+  - id: K1
+    soru: "Faaliyet TGB'de yürütüldü mü? (Bölgede faaliyete geçiş tarihi sonrası projeler)"
+    referans: "1 No.lu KV GT 10.4.1"
+  - id: K2
+    soru: "Faaliyet türü yazılım / tasarım / Ar-Ge mi? (Ticari satış ve Ar-Ge dışı danışmanlık kapsam dışı)"
+    referans: "4691 s.K. Geçici Md. 2"
+  - id: K3
+    soru: "Hasılat, maliyet ve giderler ayrı hesapta izleniyor mu? (Bölge içi/dışı ayrıştırma)"
+    referans: "1 No.lu KV GT 10.4.2"
+  - id: K4
+    soru: "İstisna kapsamı zararlar diğer faaliyetlere yüklendi mi? (Yüklenmemeli — zarar ring-fence)"
+    referans: "KVK | Zarar ring-fence prensibi"
+  - id: K5
+    soru: "Kapsam dışı gelirler (faiz/kur farkı/ATİK) istisna dışı tutuldu mu?"
+    referans: "1 No.lu KV GT 10.4.2"
+  - id: K6
+    soru: "GMH satışı için patent/eşdeğer belge var mı? (CBKK kapsamı için zorunlu)"
+    referans: "CBK 2017/10821 | 54 No.lu CBK"
+  - id: K7
+    soru: "NHO (Nitelikli Harcama Oranı) doğru hesaplandı mı? (Yurt dışı ilişkili payı ≤%30)"
+    referans: "CBK 2017/10821 | 54 No.lu CBK"
+  - id: K8
+    soru: "Fon yükümlülüğü oluştu mu ve zamanında yapıldı mı? (≥5M TL → %3 fon, yıl sonu)"
+    referans: "4691 s.K. Ek Md.3 | 10803 No.lu CBK"
+  - id: K9
+    soru: "YİAKV matrahında 4691 istisnası DÜŞÜLMEDEN ayrı hesaplandı mı? (Düşülemeyen istisna)"
+    referans: "KVK Md. 32/C | GİB değerlendirmesi"
+  - id: K10
+    soru: "Beyanname 310 satırı 'Zarar Olsa Dahi İndirilecek' bölümünde mi?"
+    referans: "KV Beyannamesi formu"
+  - id: K11
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (≥500.000 TL)"
+    referans: "49 S.No.lu KV GT"

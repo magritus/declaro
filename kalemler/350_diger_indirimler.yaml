@@ -1,0 +1,194 @@
+ic_kod: diger_indirimler_istisnalar
+baslik: Diğer İndirimler ve İstisnalar (302–349 Dışı)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 350 }
+  - { donem: 2025, kod: 350 }
+
+mevzuat_dayanagi:
+  - Çeşitli Kanunlar (her kalem için ayrı yasal dayanak)
+  - 3218 Sayılı Serbest Bölgeler Kanunu Geçici Madde 3
+  - 4691 Sayılı Teknoloji Geliştirme Bölgeleri Kanunu GVM Madde 2
+  - 5746 Sayılı Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun Madde 3
+  - KVK Madde 10/1-b (Sponsorluk), 10/1-c (Bağış), 10/1-g (Girişim Sermayesi Fonu)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: diger_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "302–349 arasındaki özel satırlara girmeyen bir istisna veya indirim kalemin var mı?"
+  info_modal: |
+    Beyanname 350. satırı, KV beyannamesindeki 302–349 arasındaki özel satırlara
+    dahil edilemeyen tüm istisna ve indirimlerin toplamını içerir.
+    **Her kalem için AYRI yasal dayanak ve AYRI belge paketi zorunludur.**
+    Toplu tutar yazımı GİB tarafından kabul edilmez — tarhiyat riski taşır.
+
+    Sık kullanılan 350 kalemleri:
+    - Serbest Bölge Kazancı İstisnası (3218 s.K.)
+    - Teknokent Girişimci/Yazılım Kazancı (4691 s.K.)
+    - Ar-Ge ve Tasarım İndirimi (5746 s.K.)
+    - Girişim Sermayesi Fonu İndirimi (KVK Md.10/1-g)
+    - Bağış ve Sponsorluk İndirimleri (KVK Md.10/1-b,c,d)
+    - Diğer Özel Kanun İstisnaları
+  kapi_sorulari:
+    - id: ozel_satir_kontrolu
+      soru: "Beyan etmek istediğin istisna/indirim için 302–349 arasında özel bir satır olmadığı teyit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Özel satır varsa 350 değil, o satır kullanılır. Örnek: TGB Yönetici Şirket → 311 | TUGS Gemi → 315 | Ürün Senedi → 349."
+    - id: ayri_yasal_dayanak
+      soru: "Her kalem için ayrı yasal dayanak ve belge mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Toplu tutar kabul edilemez — her kalem bağımsız belgelenmeli. GİB her kalemi tek tek açıklatabilir."
+    - id: beyanname_bolumu_dogru_mu
+      soru: "Her kalemin beyanname bölümü (Kazancın Bulunması Halinde / Zarar Olsa Dahi) doğru mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Ar-Ge indirimi zarar döneminde de uygulanır (Zarar Olsa Dahi). Diğer kalemlerin çoğu Kazancın Bulunması Halinde bölümündedir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: istisna_tutari_beyan
+      etiket: "350. satıra girilecek toplam istisna/indirim tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Tüm kalemlerin (K1, K2, ... Kn) toplamı. Her kalem ayrı yasal dayanak + belge ile desteklenmeli."
+    - id: kalem_aciklamasi
+      etiket: "İstisna/indirim kalemlerinin özet açıklaması"
+      tip: metin
+      zorunlu: false
+      yardim: "Örn: Serbest Bölge Kazancı (3218 s.K.) + Teknokent Ar-Ge (4691 s.K.) = Toplam"
+  formuller:
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  Beyanname 350. satırı, 302–349 özel satırlarına dahil edilemeyen tüm istisna ve
+  indirimlerin toplandığı kümülatif satırdır. Her kalem kendi yasal dayanağına göre
+  ayrı ayrı hesaplanır ve belgelenir.
+
+  ## Temel Kural
+  - Özel satır varsa 350 KULLANILMAZ.
+  - Her kalem için ayrı yasal dayanak + ayrı belge paketi zorunludur.
+  - Toplu tutar yazımı kabul edilemez — GİB her kalemi tek tek açıklatabilir.
+  - Matrah hesabında sıralama: Önce KVK 5 istisnaları, sonra KVK 10 indirimleri.
+
+  ## En Sık Kullanılan 350 Kalemleri
+  1. Serbest Bölge Kazancı İstisnası — 3218 s.K. Geçici Md.3 — KB Halinde
+  2. Teknokent Girişimci Ar-Ge/Yazılım Kazancı — 4691 s.K. GVM Md.2 — KB Halinde
+  3. Ar-Ge ve Tasarım İndirimi — 5746 s.K. Md.3 — Zarar Olsa Dahi (devreden takip)
+  4. Girişim Sermayesi Fonu İndirimi — KVK Md.10/1-g — KB Halinde (%10/%20 sınır)
+  5. Sponsorluk Harcamaları — KVK Md.10/1-b — KB Halinde (amatör %100, profesyonel %50)
+  6. Bağış ve Yardımlar — KVK Md.10/1-c,d,e,f — KB Halinde (kazancın %5 veya %10)
+  7. Diğer Özel Kanun İstisnaları — Her biri için ayrı yasal dayanak
+
+  ## YİAKV Etkisi
+  350 kapsamındaki kalemlerin YİAKV matrahına etkisi kalem bazında farklılık gösterir.
+  Her kalem için ayrı analiz zorunludur. Yurt dışı kaynaklı kalemler YİAKV'yi
+  etkilemeyebilir; yurt içi kalemler etkileyebilir.
+
+  ## YMM Tasdik Notu
+  49 No.lu Tebliğ kapsamında: Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu.
+  Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez. 350 setten en riskli satırdır.
+
+muhasebe_kayitlari: |
+  ## Genel Not
+  350. satırı kapsayan her istisna/indirim kalemi kendi muhasebe kaydı sistemine göre izlenir.
+  Aşağıda sık kullanılan kalemlerin temel kayıtları özetlenmiştir.
+
+  ## Serbest Bölge Kazancı (3218 s.K.)
+  Borç: 120/102 Alıcılar / Bankalar
+  Alacak: 600 Yurt İçi Satışlar (Serbest Bölge geliri ayrı hesapta izlenmeli)
+  Beyanname: 350 — 3218 s.K. kapsamı olarak belgelenir.
+
+  ## Teknokent Girişimci Kazancı (4691 s.K.)
+  Borç: 120/102 Alıcılar / Bankalar
+  Alacak: 600 Yurt İçi Satışlar (TGB içi Ar-Ge/Yazılım geliri ayrı hesap)
+  Beyanname: 350 — 4691 s.K. GVM Md.2 kapsamı.
+
+  ## Ar-Ge İndirimi (5746 s.K.)
+  Borç: 750 Ar-Ge Giderleri / 760 Pazarlama Giderleri (tasarım)
+  Alacak: 102/320 ilgili hesaplar
+  Beyanname: 350 — 5746 s.K. Md.3 kapsamı. Zarar döneminde devreder.
+
+  ## Sponsorluk / Bağış (KVK Md.10)
+  Borç: 689 Diğer Olağandışı Gider — Sponsorluk/Bağış
+  Alacak: 102 Bankalar
+  Beyanname: 350 — KVK Md.10/1-b veya c,d kapsamı. Sınır: Kazancın %5 veya %10.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Her Kalem İçin Ayrı Yasal Dayanak Belgesi
+    detay: "Her istisna/indirim kalemi için kanun maddesi, tebliğ veya özelge referansı yazılı olarak dosyada bulunmalı. Toplu tutar kabul edilmez."
+    temin_yeri: Mevzuat / GİB
+  - kategori: zorunlu
+    "no": 2
+    baslik: Serbest Bölge Faaliyet Belgesi (varsa)
+    detay: "3218 s.K. kapsamı: Üretim lisansı ve serbest bölge faaliyet/üretim belgesi. AB üyelik tarihi güncelliği kontrol edilmeli."
+    temin_yeri: Serbest Bölge Müdürlüğü
+  - kategori: zorunlu
+    "no": 3
+    baslik: TGB Kiracılık Belgesi + Kazanç Ayrıştırma Tablosu (varsa)
+    detay: "4691 s.K. kapsamı: TGB içi kiracı firma belgesi ve TGB içi/dışı kazanç ayrımı. Yönetici şirket (311 satırı) için değil."
+    temin_yeri: Teknoloji Geliştirme Bölgesi Yönetici Şirketi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ar-Ge Merkezi Belgesi + Harcama Listesi (varsa)
+    detay: "5746 s.K. kapsamı: Bakanlık onaylı Ar-Ge/Tasarım Merkezi belgesi ve nitelikli harcama listesi."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı
+  - kategori: zorunlu
+    "no": 5
+    baslik: Bağış/Sponsorluk Sözleşmesi ve Makbuzlar (varsa)
+    detay: "KVK Md.10/1-b,c,d kapsamı: Sözleşme + banka dekontu/makbuz. Sınır hesabı (kazancın %5 veya %10) belgeli olmalı."
+    temin_yeri: İlgili Kurum / Banka Dekontu
+  - kategori: destekleyici
+    "no": 6
+    baslik: Kalem Bazında 350 Detay Tablosu (YMM Çalışma Kağıdı)
+    detay: "Her kalem: Adı, yasal dayanağı, tutarı, beyanname bölümü (KB Halinde / Zarar Olsa Dahi), belge türü ve YMM durumu."
+    temin_yeri: YMM Ofisi / Muhasebe
+
+k_checklist:
+  - id: K1
+    soru: "Beyan edilecek her istisna/indirim kalemi için 302–349 arasında daha uygun özel satır olmadığı teyit edildi mi?"
+    referans: "GİB KV Beyan Rehberi"
+  - id: K2
+    soru: "Her kalem için ayrı yasal dayanak ve belge paketi dosyada mevcut mu? (Toplu tutar değil)"
+    referans: "GİB KV Beyan Rehberi | 49 S.No.lu KV GT"
+  - id: K3
+    soru: "Her kalemin beyanname bölümü (Kazancın Bulunması Halinde / Zarar Olsa Dahi) doğru olarak belirlendi mi?"
+    referans: "KVK | İlgili Kanunlar"
+  - id: K4
+    soru: "Serbest bölge kazancı varsa üretim lisansı ve AB üyelik tarihi güncelliği kontrol edildi mi?"
+    referans: "3218 s.K. Geçici Md.3"
+  - id: K5
+    soru: "Teknokent kazancı varsa TGB kiracı belgesi ve TGB içi/dışı kazanç ayrımı belgelendi mi?"
+    referans: "4691 s.K. GVM Md.2"
+  - id: K6
+    soru: "Ar-Ge indirimi varsa Bakanlık belgesi ve nitelikli harcama listesi dosyada mevcut mu? Zarar döneminde devredenler takip ediliyor mu?"
+    referans: "5746 s.K. Md.3"
+  - id: K7
+    soru: "Bağış/sponsorluk varsa sınır hesabı (kazancın %5 veya %10) yapıldı mı ve belgeler dosyada mı?"
+    referans: "KVK Md.10/1-b,c,d"
+  - id: K8
+    soru: "Matrah hesabında sıralama doğru mu? (Önce KVK 5 istisnaları, sonra KVK 10 indirimleri)"
+    referans: "KVK Md.5, Md.10"
+  - id: K9
+    soru: "Tartışmalı kalemler için GİB özelgesi alındı mı veya alınması planlandı mı?"
+    referans: "GİB Özelge"
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

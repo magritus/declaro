@@ -1,0 +1,205 @@
+ic_kod: cvoa_kapsaminda_istisna
+baslik: Çifte Vergilendirmeyi Önleme Anlaşması (ÇVÖA) Kapsamında İstisna
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 386 }
+  - { donem: 2025, kod: 386 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/3
+  - İlgili ÇVÖA (Türkiye ile anlaşma ülkesi arasındaki Çifte Vergilendirmeyi Önleme Anlaşması)
+  - KVK Madde 22 (Yurt Dışı Daimi İşyeri Kazancı Beyan Şartı)
+  - 1 Seri No.lu KV Genel Tebliği
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: yurtdisi_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "Türkiye'nin taraf olduğu bir Çifte Vergilendirmeyi Önleme Anlaşması (ÇVÖA) kapsamında, yurt dışından elde ettiğin ve Türkiye'de vergiden istisna edilen bir kazanç/irat var mı?"
+  info_modal: |
+    KVK Madde 5/3 + ilgili ÇVÖA uyarınca, Türkiye'nin taraf olduğu Çifte Vergilendirmeyi
+    Önleme Anlaşmaları kapsamında Türkiye'de kurumlar vergisinden istisna edilen kazanç
+    ve iratlar beyanname 386. satırında gösterilir.
+
+    Başlıca uygulama alanları:
+    ① Yurt dışı daimi işyeri (PE/şube) kazançları — ÇVÖA işyeri maddesi uyarınca yalnızca
+       kaynak ülkede vergilendirilen kazançlar Türkiye'de istisna.
+    ② Anlaşma kapsamında diğer gelirler — Temettü, faiz, gayrimaddi hak bedeli, sermaye
+       kazancı vb. ÇVÖA hükümleri gereğince Türkiye'de vergiden muaf tutulan tutarlar.
+
+    **Dikkat:** Muafiyet yöntemi → 386. Mahsup yöntemi → 386 DEĞİL, ayrı satır.
+    KVK 5/1-g (yurt dışı şube) veya 5/1-h ile çakışma analizi zorunludur.
+  kapi_sorulari:
+    - id: cvoa_yururlukte_mi
+      soru: "Türkiye ile anlaşma ülkesi arasında Resmî Gazete'de yayımlanmış ve yürürlükte bir ÇVÖA mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Anlaşma imzalandı ancak henüz yürürlüğe girmedi → İstisna uygulanamaz. Resmî Gazete yayım tarihi ve yürürlük tarihi teyit edilmeli."
+    - id: muafiyet_yontemi_mi
+      soru: "İlgili ÇVÖA maddesi, Türkiye'ye vergilendirme yetkisi tanımıyor mu? (Muafiyet yöntemi mi uygulanıyor?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Muafiyet yöntemi → 386 kullanılır. Mahsup (credit) yöntemi → 386 DEĞİL, KVK Md.33 kapsamında mahsup hesabı yapılır. Anlaşma metni incelenmeli."
+    - id: kvk_cakisma_analizi
+      soru: "Bu gelir için KVK Md.5/1-g (yurt dışı şube) veya Md.5/1-h (yurt dışı inşaat) kapsamında ayrıca istisna uygulanmıyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Aynı tutar için mükerrer istisna uygulanamaz. ÇVÖA 386 ile KVK 5/1-g veya 5/1-h arasındaki ilişki analiz edilmeli."
+    - id: yiakv_analizi
+      soru: "ÇVÖA kapsamı istisnanın YİAKV (KVK Md.32/C) matrahına etkisi analiz edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "ÇVÖA istisnaları türe ve anlaşmaya göre YİAKV'yi farklı etkiler. Her gelir kalemi için ayrı analiz zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: cvoa_brut_istisna_tutari
+      etiket: "ÇVÖA kapsamında brüt istisna tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Her ülke ve gelir türü için ayrı hesaplanır. Normalde tam muafiyet (%100). Kısmi muafiyet varsa orantılı tutar girilir."
+    - id: anlasmali_ulke
+      etiket: "Anlaşma ülkesi"
+      tip: metin
+      zorunlu: true
+      yardim: "Resmî Gazete numarası ve tarihi ile birlikte kaydedilmeli."
+    - id: cvoa_maddesi
+      etiket: "Uygulanan ÇVÖA maddesi (numarası ve başlığı)"
+      tip: metin
+      zorunlu: true
+      yardim: "Örn: 'Madde 7 — Ticari Kazançlar' veya 'Madde 23 — Çifte Vergilendirmenin Önlenmesi'"
+    - id: gelir_turu
+      etiket: "İstisna gelir türü"
+      tip: metin
+      zorunlu: true
+      yardim: "Örn: Yurt Dışı Daimi İşyeri (PE) Kazancı, Temettü, Faiz, Gayrimaddi Hak Bedeli vb."
+    - id: kismi_muafiyet_duzeltme
+      etiket: "Kısmi muafiyet düzeltmesi (TL, varsa)"
+      tip: para
+      zorunlu: false
+      yardim: "Anlaşmada kısmi muafiyet öngörülen kısım. Tam muafiyet durumunda boş bırakılabilir."
+  formuller:
+    istisna_tutari: "cvoa_brut_istisna_tutari - kismi_muafiyet_duzeltme"
+  sonuc_alan: istisna_tutari
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/3 + ilgili ÇVÖA: Türkiye'nin taraf olduğu ÇVÖ Anlaşmaları kapsamında,
+  anlaşma hükümleri gereğince Türkiye'de kurumlar vergisinden istisna edilen kazanç ve
+  iratlar beyanname 386. satırında gösterilir.
+
+  ## ÇVÖA İstisna Kapsamı
+  ① Yurt dışı daimi işyeri (PE/şube) kazançları: ÇVÖA işyeri maddesi gereğince yalnızca
+     kaynak ülkede vergilendirilen PE kazancı → Türkiye'de istisna.
+  ② Temettü, faiz, royalti, sermaye kazancı: ÇVÖA hükümleri uyarınca Türkiye'de
+     vergiden istisna edilen gelirler.
+
+  ## Kritik Noktalar
+  - Anlaşmanın Resmî Gazete'de yayımlanmış ve yürürlüğe girmiş olması zorunludur.
+  - Muafiyet yöntemi (exemption) → 386. Mahsup (credit) yöntemi → 386 DEĞİL.
+  - KVK Md.5/1-g veya 5/1-h ile çakışma analizi yapılmalı — mükerrer istisna uygulanamaz.
+  - Yurt dışı daimi işyeri kazancı için KVK Md.22 koşulları ayrıca sağlanmalıdır.
+  - Her ülke ve gelir türü için ayrı satır düzenlenir.
+  - Normal muafiyette kısmi istisna oranı 100 olarak uygulanır.
+
+  ## YİAKV Etkisi
+  ÇVÖA kapsamı istisnalar, YİAKV matrahını her zaman otomatik olarak azaltmaz.
+  Her gelir türü ve anlaşma hükmü için ayrı analiz zorunludur.
+  GİB özelgesi ve OECD yorumları referans alınmalıdır.
+  Muafiyet yöntemi uygulanan ülkelerdeki PE gelirinin YİAKV matrahında nasıl ele
+  alınacağı açıklama gerektirmektedir — "tartismalı" olarak işaretlenmiştir.
+
+  ## YMM Tasdik Notu
+  49 No.lu Tebliğ kapsamında: Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu.
+  Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Yurt Dışı PE Kazancı Tahakkuk
+  Borç: 181 Gelir Tahakkukları / 120 Alıcılar — Brüt PE kazancı alacağı
+  Alacak: 640 Faiz Gelirleri / 649 Diğer Olağandışı Gelirler — Yurt dışı PE kazancı
+  Açıklama: ÇVÖA kapsamı gelir türüne göre uygun hesap kodu seçilmeli.
+  Kur: Tahakkuk tarihindeki TCMB döviz alış kuru.
+
+  ## Kayıt 2 — Tahsilat (Transfer)
+  Borç: 102 Bankalar
+  Alacak: 181 Gelir Tahakkukları / 120 Alıcılar
+  Kur farkı: 646 Kambiyo Kârları / 656 Kambiyo Zararları
+  Not: Muafiyet yönteminde mahsup gündeme gelmez.
+
+  ## Beyanname Akışı
+  1. ÇVÖA kapsamı gelir Türkiye gelir tablosuna yansır.
+  2. KV Beyannamesi 386. Satır: "Kazancın Bulunması Halinde" bölümüne istisna tutarı.
+  3. Her ülke ve gelir türü için ayrı satır kullanılır.
+  4. Muafiyet yönteminde yurt dışı vergi mahsubu (KVK Md.33) uygulanmaz.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: ÇVÖA Metni (Resmî Gazete'de Yayımlanmış ve Yürürlükte Olan)
+    detay: "Resmî Gazete numarası, yayım tarihi ve yürürlük tarihi ile anlaşma metni. İmzalandı ancak yürürlüğe girmedi → İstisna uygulanamaz."
+    temin_yeri: Resmî Gazete / GİB / Hazine ve Maliye Bakanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Uygulanan ÇVÖA Maddesi Analizi (Madde Numarası + Vergilendirme Yöntemi)
+    detay: "Hangi anlaşma maddesinin uygulandığı ve muafiyet mi yoksa mahsup yöntemi mi kullanıldığının yazılı analizi. Anlaşma metni referansıyla."
+    temin_yeri: ÇVÖA Metni / YMM Analiz Belgesi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Yurt Dışı PE Varlığı veya Gelir Kaynağı Belgesi
+    detay: "Daimi işyeri (PE) için yurt dışı kayıt belgesi, sözleşme veya şantiye belgesi. Temettü için iştirak belgesi. Faiz için borç sözleşmesi."
+    temin_yeri: Yurt Dışı Kayıt Belgesi / Apostilli Tescil Belgesi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Brüt Gelir Hesaplama Tablosu ve Kur Dönüşüm Belgesi
+    detay: "Her ülke ve gelir türü için ayrı tablo: Brüt gelir (döviz), TCMB alış kuru, TL karşılığı. İstisna oranı (normalde %100)."
+    temin_yeri: Muhasebe / TCMB Kur Arşivi
+  - kategori: zorunlu
+    "no": 5
+    baslik: KVK Md.5/1-g veya 5/1-h Çakışma Analizi Belgesi
+    detay: "Aynı gelir için KVK 5/1-g veya 5/1-h kapsamında ayrı istisna uygulanmadığının yazılı teyidi. Mükerrer istisna önleme."
+    temin_yeri: YMM Analiz Belgesi
+  - kategori: destekleyici
+    "no": 6
+    baslik: YİAKV Etkisi Analiz Belgesi
+    detay: "ÇVÖA kapsamı istisnanın YİAKV (KVK Md.32/C) matrahına etkisinin kalem bazında analizi. GİB özelgesi mevcutsa eklenir."
+    temin_yeri: YMM Analiz Belgesi / GİB Özelgesi
+
+k_checklist:
+  - id: K1
+    soru: "Türkiye ile anlaşma ülkesi arasında Resmî Gazete'de yayımlanmış ve yürürlükte bir ÇVÖA olduğu teyit edildi mi?"
+    referans: "KVK Md.5/3 | Resmî Gazete"
+  - id: K2
+    soru: "Uygulanan ÇVÖA maddesi belirlendi mi ve muafiyet yöntemi (exemption) uygulandığı teyit edildi mi?"
+    referans: "ÇVÖA Md.23 veya ilgili madde"
+  - id: K3
+    soru: "Aynı gelir için KVK Md.5/1-g veya 5/1-h kapsamında mükerrer istisna uygulanmadığı teyit edildi mi?"
+    referans: "KVK Md.5/1-g, Md.5/1-h"
+  - id: K4
+    soru: "Yurt dışı daimi işyeri (PE) varsa KVK Md.22 koşulları sağlandı mı?"
+    referans: "KVK Md.22"
+  - id: K5
+    soru: "Her ülke ve gelir türü için ayrı satır düzenlendi mi?"
+    referans: "GİB KV Beyan Rehberi"
+  - id: K6
+    soru: "ÇVÖA kapsamı istisnanın YİAKV (KVK Md.32/C) matrahına etkisi kalem bazında analiz edildi mi?"
+    referans: "KVK Md.32/C"
+  - id: K7
+    soru: "Mahsup yöntemi uygulanmadığı (muafiyet yöntemi seçildiği) teyit edildi mi? (Mahsup → 386 değil)"
+    referans: "ÇVÖA | KVK Md.33"
+  - id: K8
+    soru: "Brüt gelir hesabında TCMB döviz alış kuru (tahakkuk tarihi) kullanıldı mı?"
+    referans: "TCMB Kur Arşivi"
+  - id: K9
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

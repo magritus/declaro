@@ -1,0 +1,246 @@
+ic_kod: diger_fon_vuk279_deger_artis
+baslik: Diğer Fon VUK 279 Değer Artış Kazancı İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 300 }
+  - { donem: 2025, kod: 300 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-a alt bent 5 (7456 s.K. ile 15.07.2023 tarihinde mülga — geçiş uygulaması)
+  - VUK Madde 279
+  - 7456 Sayılı Kanun Madde 19 (15.07.2023 — bu bendi mülga eden kanun)
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.1
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: tartismali
+# KVK 5/1-a-5 istisnasının YİAKV matrahına etkisi dönem mevzuatı ve GİB
+# açıklamalarıyla analiz edilmelidir. 5/1-a-5 istisnası "Zarar Olsa Dahi İndirilecek"
+# bölümündedir; YİAKV matrahından düşülüp düşülemeyeceği dönem tebliğleriyle teyit edilmelidir.
+durum: aktif
+yururluk_araligi:
+  baslangic: "2022-04-15"
+  bitis: null
+  not: "15.07.2023 öncesi iktisap şartı ile geçiş uygulaması olarak devam eder. 15.07.2023 sonrası iktisap edilen payların değerleme farkları kapsam dışıdır. GSYF değerleme farkı bu forma dahil edilmez (298 satırı)."
+
+ana_kategori: istirak_kazanc_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "15.07.2023 öncesi iktisap edilmiş TL esaslı yatırım fonu katılma payı için dönem sonu VUK 279 değerleme artışı var mı?"
+  info_modal: |
+    KVK 5/1-a-5 kapsamında 3. ve 4. alt bentlere kaynak teşkil eden yatırım fonlarının
+    VUK 279 değerlemesinden kaynaklanan değer artış kazançları istisnadır.
+    KRİTİK UYARILAR:
+    (1) İktisap tarihi 15.07.2023'ten ÖNCE olmalıdır — sonrası vergiye tabidir.
+    (2) GSYF değerleme farkı bu forma DAHİL EDİLMEZ — 298/386 satırı kullanılır.
+    (3) Portföy ≥%51 hisse senedi → Alış bedeli → Değerleme farkı İSTİSNA DIŞIDIR.
+    (4) İstisna yalnızca değer ARTIŞLARI içindir — düşüşler ayrıca analiz edilmeli.
+    Beyanname 300. Satır: "Zarar Olsa Dahi İndirilecek" bölümü.
+    MUHASEBE AKIŞI: 649 hesabına gelir kaydı → KKEG tablosuna eklenir → Beyanname 300'de istisna düşülür.
+  kapi_sorulari:
+    - id: iktisap_tarihi_oncesi
+      soru: "İstisna uygulanacak fon(lar)ın iktisap tarihi 15.07.2023'ten ÖNCE mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: 15.07.2023 sonrası iktisap edilen payların değerleme farkı istisna dışıdır. Karma tarihli alımlarda pay adedi bazında ayrıştırma zorunludur."
+    - id: gsyf_degil
+      soru: "Fon GSYF DEĞİL mi? (GSYF değerleme farkı 298/386 satırına alınmalıdır)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5/1-a-5: Sadece 3. ve 4. alt bentlere kaynak teşkil eden diğer fonlar. GSYF (5/1-a-3) değerleme farkı → 298 veya 386 satırı. Bu ayrım kritiktir."
+    - id: vuk279_yontemi
+      soru: "VUK 279 değerleme yöntemi doğru uygulandı mı? (Portföy bileşimi teyit edildi mi?)"
+      tip: evet_hayir
+      aciklama: "Portföy %51+ hisse senedi → Alış bedeli (değerleme farkı = 0). Diğer durum → Borsa rayici/ilan edilen fiyat. Fon bilgi formu/izahname ile teyit edilmelidir."
+    - id: deger_artisi_var
+      soru: "Dönem sonu değer, dönem başı değerinden yüksek mi? (Değer artışı = istisna)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna yalnızca değer artışları için geçerlidir. Değer düşüşü durumunda istisna uygulanamaz; KKEG değerlendirmesi gerekir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: donem_basi_deger
+      etiket: "Toplam dönem başı değer (01.01 — Muhasebe açılış bakiyesi, 118/245 hesap)"
+      tip: para
+      zorunlu: true
+      yardim: "Bir önceki dönem VUK 279 değerlemesi bu dönem başı değeri olmalıdır."
+    - id: donem_sonu_vuk279_deger
+      etiket: "Toplam dönem sonu VUK 279 değeri (31.12 — Fon yöneticisi ilanı veya borsa rayici)"
+      tip: para
+      zorunlu: true
+      yardim: "Fon yöneticisinin 31.12 tarihli birim pay değer ilanı veya borsa rayici. KAP, borsa veya aracı kurum verisi kayıt olarak dosyaya eklenmeli."
+    - id: istisna_tutari_beyan
+      etiket: "Beyan edilecek istisna tutarı (Beyanname Satır 300 — yalnızca artış tutarı)"
+      tip: para
+      zorunlu: true
+  formuller:
+    deger_farki: "max(donem_sonu_vuk279_deger - donem_basi_deger, 0)"
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "donem_sonu_vuk279_deger > donem_basi_deger"
+      hata: "Değerleme artışı yok — değer düşüşü varsa istisna uygulanamaz, KKEG analizi gerekir"
+    - kural: "istisna_tutari_beyan > 0"
+      hata: "İstisna tutarı pozitif olmalıdır"
+    - kural: "istisna_tutari_beyan <= deger_farki"
+      hata: "Beyan edilen tutar hesaplanan değerleme farkını aşamaz"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-a alt bent 5: "(3) ve (4) numaralı alt bentlerde yer alan istisna
+  kazançlarına kaynak oluşturan yatırım fonlarının katılma paylarının VUK'un 279.
+  maddesi kapsamında değerlenmesinden kaynaklanan değer artış kazançları" istisnadır.
+  7456 s.K. (15.07.2023) ile mülga edilmiştir. Geçiş uygulaması: 15.07.2023 öncesi
+  iktisap edilen paylar için değerleme farkı istisnası devam etmektedir.
+
+  ## Kritik Noktalar
+  - İktisap tarihi 15.07.2023'ten önce olmalı — kesin sınır
+  - GSYF değerleme farkı bu forma DAHİL EDİLMEZ (5/1-a-3 kapsamı → 298 veya 386 satırı)
+  - VUK 279: Portföy ≥%51 hisse → alış bedeli (değerleme farkı = 0 → C tablosu boş)
+  - VUK 279: Portföy <%51 hisse → borsa rayici/ilan edilen fiyat (değerleme farkı = istisna)
+  - Karma tarihli alım: Her alım partisi için ayrı değerleme farkı hesabı zorunlu
+  - İstisna yalnızca değer ARTIŞLARI için; düşüşler (659 gider) KKEG mi sorusu ayrıca analiz edilmeli
+  - Muhasebe akışı: 649 hesabına gelir kaydı → KKEG tablosuna eklenir → Beyanname 300'de istisna düşülür
+  - 3 kademe uyum: 649 hesap toplamı = VERİ GİRİŞİ = Beyanname 300
+
+  ## YİAKV Etkisi
+  KVK 5/1-a-5 istisnasının YİAKV matrahını etkileyip etkilemediği dönem mevzuatı
+  çerçevesinde analiz edilmeli ve YİAKV çalışma kâğıdına yansıtılmalıdır.
+  Tartışmalıdır; dönem tebliğleri ve GİB açıklamalarıyla teyit zorunludur.
+
+  ## Beyanname Konumu
+  "Zarar Olsa Dahi İndirilecek İstisna ve İndirimler" bölümü — 300 kodlu satır.
+  298 (GSYF/GSYO) ve 299 (diğer fon kâr payı) kodlarıyla karıştırılmamalıdır.
+
+  ## Risk Alanları
+  1. İktisap tarihi belgesi eksikliği — en büyük tarhiyat riski
+  2. GSYF değerleme farkının bu forma yanlışlıkla dahil edilmesi
+  3. VUK 279 %51 kriteri yanlış uygulaması
+  4. Dönem sonu değer belgesi eksikliği (31.12 fon ilanı)
+  5. Karma tarihli alım ayrıştırması eksikliği
+  6. Değerleme düşüşünün KKEG olup olmadığının analiz edilmemesi
+  7. 649 hesabı ile beyanname 300 uyumsuzluğu
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Dönem Sonu VUK 279 Değerleme (Değer Artışı — İstisna Kapsamı)
+  Borç: 118 Diğer Menkul Kıymetler (veya 245 Bağlı MK) ← Değer artışı tutarı
+  Alacak: 649 Diğer Olağandışı Gelir ← Değer artışı tutarı
+  Açıklama: VUK 279 dönem sonu değerleme artışı — KVK 5/1-a-5 istisnası (15.07.2023 öncesi iktisap)
+
+  ## Yıl Sonu Beyanname Döngüsü
+  1. Değerleme artışı 649 hesabına gelir kaydedilir → Ticari kâr artar
+  2. Yılsonu: KKEG tablosuna eklenir (hesaplama matrahını artırır)
+  3. KV Beyannamesi: 300. satırda "Zarar Olsa Dahi İndirilecek" olarak istisna düşülür
+  YMM notu: 649 toplamı ile beyanname 300 tutarı uyumlu olmalıdır.
+
+  ## Kayıt 2 — Dönem Sonu VUK 279 Değerleme (Değer Düşüşü — KKEG Değerlendirmesi)
+  Borç: 659 Diğer Olağandışı Gider ← Düşüş tutarı
+  Alacak: 118 Diğer Menkul Kıymetler ← Düşüş tutarı
+  Açıklama: Değerleme düşüşü — KKEG mı? Güncel özelge/muktezaya bakılmalı; KKEG ise beyanname matrahına eklenir.
+
+  ## Kayıt 3 — Fon Satış/İade Kaydi (Elden Çıkarma)
+  Borç: 102 Bankalar ← Satış/iade bedeli
+  Alacak: 118 Diğer Menkul Kıymetler ← VUK 279 değerleme sonrası bilanço değeri
+  Alacak/Borç: 645/659 Menkul Kıymet Satış Kârı/Zararı ← Fark
+  Açıklama: Fonun elden çıkarılmasından doğan kazanç 5/1-a-4 kapsamında ayrıca değerlendirilmeli. 300 satırı yalnızca elde tutma süresindeki VUK 279 değerleme artışları içindir.
+
+  ## Beyanname 300 Mutabakat Özeti
+  3 KADEME UYUM KONTROLÜ:
+  Muhasebe 649 (VUK 279 artış toplamı) = VERİ GİRİŞİ D.1 = KV Beyannamesi 300. Satır
+  Bu üç tutarın birebir uyumlu olması YMM tasdik dosyasının tamamlanma koşuludur.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Fon Alış Dekontu / MKK Hesap Ekstresi (İktisap Tarihi Belgesi)
+    detay: "Her fon için iktisap tarihi (alış tarihi) belgesi zorunludur. 15.07.2023 öncesi alış tarihinin ispat belgesidir. Banka alış dekontu veya MKK hesap ekstresi. Belgelenemeyenler istisna kapsamında değerlendirilemez."
+    temin_yeri: "Banka / aracı kurum alış dekontu / MKK hesap ekstresi"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Dönem Başı Bilanço Değeri (01.01 — Muhasebe Kaydı)
+    detay: "VUK 279 değerleme tablosunda dönem başı değeri. Önceki dönem sonu VUK 279 değeriyle tutarlılık teyit edilmeli. 118/245 hesap kartı açılış bakiyesiyle uyumlu olmalıdır."
+    temin_yeri: "Muhasebe 118/245 hesap kartı — dönem başı bakiyesi"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Sonu VUK 279 Değer Belgesi (31.12 — Fon Yöneticisi İlanı)
+    detay: "Fon yöneticisinin 31.12 tarihli birim pay değer ilanı. KAP, Borsa İstanbul verisi veya aracı kurum portföy değerleme raporu. VUK 279 değerleme farkının doğru hesaplandığını teyit eder."
+    temin_yeri: "KAP / fon yöneticisi / Borsa İstanbul veri sistemi / aracı kurum"
+  - kategori: zorunlu
+    "no": 4
+    baslik: Fon Bilgi Formu / İzahname (Portföy Bileşimi Teyidi)
+    detay: "VUK 279 değerleme yöntemini belirleyen belge. Portföy %51+ BIST hisse senedi → Alış bedeli (değerleme farkı = 0). Aksi durumda borsa rayici/ilan fiyatı kullanılır. Dönem başı ve sonu kontrol edilmeli."
+    temin_yeri: "KAP / fon yöneticisi / SPK / Borsa İstanbul"
+  - kategori: zorunlu
+    "no": 5
+    baslik: Muhasebe 649 Hesap Kartı (VUK 279 Değerleme Gelirleri)
+    detay: "Dönem içinde kaydedilen VUK 279 değerleme artışlarının muhasebe dökümü. 649 hesabı toplamının VERİ GİRİŞİ B Tablosu toplamıyla uyumlu olduğu teyit edilmeli."
+    temin_yeri: "Muhasebe programı — 649 hesap ekstresi"
+  - kategori: zorunlu
+    "no": 6
+    baslik: KV Beyannamesi Taslağı — 300. Satır
+    detay: "Beyanname 300. satırındaki tutarın çalışma kâğıdı D.1 tutarıyla birebir uyumlu olduğu teyit edilmeli. 'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldığı kontrol edilmeli."
+    temin_yeri: "GİB İnternet Vergi Dairesi / e-Beyanname sistemi"
+  - kategori: destekleyici
+    "no": 7
+    baslik: Karma Tarihli Alım Ayrıştırma Tablosu (15.07.2023 Öncesi/Sonrası)
+    detay: "Aynı fonda 15.07.2023 öncesi ve sonrası alım varsa pay adedi bazında ayrıştırma tablosu zorunludur. Her alım partisi için ayrı maliyet ve değerleme farkı hesabı."
+    temin_yeri: "Muhasebe / yatırım hesabı ekstresi / aracı kurum raporu"
+  - kategori: destekleyici
+    "no": 8
+    baslik: Değerleme Düşüşü KKEG Değerlendirme Notu
+    detay: "Dönem sonu < Dönem başı ise değerleme kaybı oluşur. 659 gider kaydı yapılır. Bu tutarın KKEG olup olmadığı ayrıca analiz edilmelidir. Güncel özelge/mukteza araştırması yapılarak YMM görüşü dosyaya eklenmelidir."
+    temin_yeri: "YMM görüş notu / Güncel mukteza araştırması"
+  - kategori: destekleyici
+    "no": 9
+    baslik: Önceki Dönem Beyannamesi ve Karşılaştırma Tablosu
+    detay: "Önceki dönem 300 satırı ile cari dönem karşılaştırması. Süreklilik teyidi yapılmalıdır. Önceki dönemde kullanılan istisnalar ve bu dönemki değişimler analiz edilmelidir."
+    temin_yeri: "Geçmiş dönem KV beyannameleri / önceki dönem çalışma kâğıdı"
+  - kategori: destekleyici
+    "no": 10
+    baslik: YİAKV Matrah Hesaplama Tablosu
+    detay: "KVK 32/C kapsamındaki YİAKV hesabında 300 satırı istisnasının etkisi analiz edilmelidir. YİAKV matrahında 5/1-a-5 istisnasının nasıl dikkate alındığı dönem mevzuatıyla doğrulanmalı."
+    temin_yeri: "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri"
+  - kategori: destekleyici
+    "no": 11
+    baslik: KKEG Tablosu ve Beyanname Mutabakat Çalışması
+    detay: "VUK 279 değerleme artışının KKEG olarak nasıl ele alındığı. 649 hesabı → KKEG tablosu → Beyanname matrahı → 300 satırı istisna bağlantısı. Zincirleme uyumun çalışma tablosu dosyaya eklenmelidir."
+    temin_yeri: "Muhasebe çalışma kâğıdı / KKEG tablosu / Vergi hesabı"
+
+k_checklist:
+  - id: K1
+    soru: "İktisap tarihi kriteri her fon için ayrı ayrı teyit edildi mi? (Banka/MKK alış dekontu)"
+    referans: "7456 s.K. Md.19 | KVK Md. 5/1-a-5 | 15.07.2023 tarihi"
+  - id: K2
+    soru: "Fon türü ayrıştırması yapıldı mı? (GSYF → 298/386, diğer fonlar → 300)"
+    referans: "KVK Md. 5/1-a-3 ve 5/1-a-5 | Beyanname satır ayrımı"
+  - id: K3
+    soru: "VUK 279 değerleme yöntemi fon portföy bileşimiyle uyumlu mu? (≥%51 HS = alış bedeli)"
+    referans: "VUK Md. 279 | Fon bilgi formu"
+  - id: K4
+    soru: "Dönem başı değer (01.01) ile muhasebe açılış bakiyesi uyumlu mu? (118/245 hesap kartı)"
+    referans: "3 kademe uyum | Önceki dönem VUK 279 değerlemesi"
+  - id: K5
+    soru: "Dönem sonu VUK 279 değeri belgelenmiş mi? (31.12 tarihli fon yöneticisi ilanı)"
+    referans: "VUK Md. 279 | KAP / fon yöneticisi / Borsa İstanbul"
+  - id: K6
+    soru: "Değerleme düşüşü varsa KKEG değerlendirmesi yapıldı mı?"
+    referans: "Değerleme kaybı → 659 gider | KKEG analizi zorunlu"
+  - id: K7
+    soru: "Muhasebe 649 hesabı ile beyanname 300 satırı uyumlu mu?"
+    referans: "3 kademe uyum: 649 = VERİ GİRİŞİ = Beyanname 300"
+  - id: K8
+    soru: "Karma tarihli alım ayrıştırması tam ve doğru yapıldı mı? (Her alım partisi ayrı)"
+    referans: "7456 s.K. | Karma tarihli pay ayrıştırması"
+  - id: K9
+    soru: "Beyanname 300 satırı 'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldı mı?"
+    referans: "Beyanname bölüm kontrolü | 'Kazancın Bulunması Halinde' ile karıştırılmamalı"
+  - id: K10
+    soru: "YİAKV matrahında 300 istisnasının etkisi analiz edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"
+  - id: K11
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (≥500.000 TL tek satır)"
+    referans: "49 No.lu KV GT (30.12.2025)"

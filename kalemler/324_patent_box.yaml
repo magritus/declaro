@@ -1,0 +1,201 @@
+ic_kod: sinai_mulkiyet_patent_box_5b
+baslik: Sınai Mülkiyet Haklarında İstisna (Patent Box)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 324 }
+  - { donem: 2025, kod: 324 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/B
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2015-04-02"
+  bitis: null
+
+ana_kategori: ar_ge_istisna
+
+wizard_agaci:
+  tetikleyici_soru: "Türkiye'de gerçekleştirilen Ar-Ge faaliyetleri sonucu elde edilen patent veya faydalı model belgeli buluşunuz var mı?"
+  info_modal: |
+    KVK Madde 5/B kapsamında Türkiye'de yapılan Ar-Ge faaliyetleri sonucunda elde edilen
+    patent veya faydalı model belgeli buluşlardan elde edilen kazançların %50'si kurumlar
+    vergisinden istisnadır. İstisna NEXUS oranı ile ağırlıklandırılır.
+    NEXUS = min((NARGe × 1.3) / TARGe, 1) × %50
+  kapi_sorulari:
+    - id: patent_belgesi
+      soru: "Türk Patent ve Marka Kurumu'ndan (veya yabancı ülke patent ofisinden) alınmış geçerli patent veya faydalı model belgeniz var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Tescilsiz buluş, marka, tasarım kapsam dışıdır. Patent: 20 yıl, Faydalı model: 10 yıl geçerlilik."
+    - id: turkiye_arge
+      soru: "Buluş Türkiye'de gerçekleştirilen Ar-Ge/tasarım faaliyeti sonucu mu ortaya çıktı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Tamamen yurt dışından satın alınan buluşlarda NEXUS oranı sıfır olabilir — istisna uygulanamaz."
+    - id: istisna_oran_50
+      soru: "İstisna oranının %50 olduğu teyit edildi mi? (%100 değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/B istisnası %50 oranındadır. Yanlışlıkla %100 uygulanması tarhiyat riski doğurur. Bu istisna setimizin geri kalanından bu açıdan ayrışır."
+    - id: nexus_hesaplandi
+      soru: "NEXUS oranı için nitelikli (NARGe) ve toplam (TARGe) Ar-Ge harcamaları ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "NARGe: Türkiye'de yapılan + ilişkili kuruluş dışı taraflara ödenen Ar-Ge harcamaları. TARGe: Tüm Ar-Ge harcamaları (ilişkili + satın alınan buluş bedeli dahil)."
+
+parametreler:
+  istisna_orani: 0.50
+  nexus_carpani: 1.3
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: bulus_kazanci
+      etiket: "Buluştan elde edilen kazanç (satış/devir + lisans/royalty + imalat katkısı toplamı)"
+      tip: para
+      zorunlu: true
+      yardim: "Patent veya faydalı model belgeli buluşun satışı, devri, lisansı veya imalata katkısından elde edilen toplam kazanç. Her kazanç türü (satış, lisans, imalat katkısı) ayrı hesaplanıp toplanır."
+    - id: nargehy
+      etiket: "Nitelikli Ar-Ge Harcaması (NARGe) — Türkiye'de yapılan ve ilişkili kuruluş dışı"
+      tip: para
+      zorunlu: true
+      yardim: |
+        NARGe üç bileşenden oluşur:
+        (1) Kurumun kendi bünyesinde Türkiye'de yaptığı Ar-Ge/tasarım harcamaları (personel, malzeme, amortisman)
+        (2) İlişkisiz yurt içi taraflara ödenen Ar-Ge harcamaları (üniversiteler, bağımsız araştırma kurumları)
+        (3) İlişkisiz yurt dışı taraflara ödenen Ar-Ge harcamaları (yabancı bağımsız araştırma kuruluşları)
+        KAPSAM DIŞI: İlişkili kuruluşlara ödenen Ar-Ge, satın alınan buluş bedeli.
+    - id: targehy
+      etiket: "Toplam Ar-Ge Harcaması (TARGe)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        TARGe = NARGe + İlişkili kuruluşlara ödenen Ar-Ge harcamaları + Satın alınan buluş bedeli.
+        TARGe her zaman NARGe'den büyük veya eşittir.
+  formuller:
+    narge_carpili: "nargehy * 1.3"
+    nexus_orani: "min((nargehy * 1.3) / targehy, 1)"
+    istisna_tutari: "max(bulus_kazanci * min((nargehy * 1.3) / targehy, 1) * 0.50, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "bulus_kazanci > 0"
+      hata: "Buluş kazancı pozitif olmalıdır — kazanç yoksa istisna uygulanamaz"
+    - kural: "targehy > 0"
+      hata: "Toplam Ar-Ge harcaması (TARGe) sıfır olamaz"
+    - kural: "nargehy <= targehy"
+      hata: "Nitelikli Ar-Ge harcaması (NARGe) toplam Ar-Ge harcamasını (TARGe) aşamaz"
+    - kural: "nargehy >= 0"
+      hata: "Nitelikli Ar-Ge harcaması negatif olamaz"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/B: Türkiye'de yapılan Ar-Ge faaliyetleri sonucu elde edilen patent/faydalı model
+  belgeli buluşlardan elde edilen kazançların %50'si KV'den istisnadır.
+
+  ## 324'ün Setteki 3 Temel Farkı
+  (1) %50 İSTİSNA: Setimizin geri kalanı %100 tam istisna; 324'te istisna %50 ile sınırlıdır.
+  (2) NEXUS ORANI: İstisna tutarı Türkiye'deki nitelikli Ar-Ge harcaması / Toplam Ar-Ge harcaması
+      oranına göre ağırlıklandırılır — setimizin tek formüllü istisna hesabı.
+  (3) ÇOKLU KAZANÇ TÜRÜ: Satış/Devir + Lisans/Royalty + İmalat Katkısı — her biri ayrı hesaplanır.
+  KVK 5/B: 5/1 bentleri değil, 5/A değil — üçüncü özel madde kategorisi.
+
+  ## NEXUS Formülü (Tam)
+  İstisna Tutarı = Buluş Kazancı × min[(NARGe × 1.3) / TARGe, 1] × %50
+  - NARGe: Nitelikli Ar-Ge (Türkiye'de + ilişkisiz yurt dışı)
+  - TARGe: Toplam Ar-Ge (hepsi dahil — ilişkili + satın alınan buluş bedeli)
+  - 1.3 katsayısı: Türkiye'deki Ar-Ge'yi teşvik eder, NEXUS 1'i aşamaz
+  - NEXUS %100 ise istisna doğrudan buluş kazancının %50'sidir
+
+  ## Kritik Noktalar
+  - %50 oranı (setimizin diğer istisnalarından farklı) — %100 uygulanması tarhiyat riski
+  - NEXUS oranı buluşun Türkiye bağlantısını ölçer
+  - Satış/Devir (C bölümü) + Lisans/Royalty (D bölümü) + İmalat Katkısı (E bölümü) — ayrı hesaplanır
+  - Türk Patent ve Marka Kurumu belgesi zorunlu (veya yabancı ülke patent ofisi)
+  - Patent: 20 yıl, Faydalı model: 10 yıl — süresi dolan belge kapsam dışı
+  - YİAKV matrahından düşülebilir (GİB 2026 açıklamalarına göre)
+  - 49 No.lu Tebliğ (30.12.2025): ≥500.000 TL veya ≥1.000.000 TL → YMM raporu zorunlu
+
+  ## Belge Zorunluluğu
+  Patent/Faydalı Model Belgesi + NARGe/TARGe ayrıştırma tablosu + Kazanç türü ayrımı (satış/lisans/imalat)
+
+muhasebe_kayitlari: |
+  ## İstisna Kaydı
+  Muhasebe kaydı yapılmaz — KV beyannamesinde 324. satıra istisna tutarı yazılır.
+
+  ## Royalty/Lisans Geliri
+  Borç: 120/102 Alıcılar / Bankalar
+  Alacak: 642 Faiz Gelirleri (veya 600 Satışlar)
+  Açıklama: Lisans/royalty geliri — 324 satırında istisna uygulanır
+
+  ## Patent/Faydalı Model Satış Geliri
+  Borç: 120/102 Alıcılar / Bankalar
+  Alacak: 679 Diğer Olağandışı Gelir (veya 600)
+  Açıklama: Patent satış/devir kazancı — 324 satırında %50 istisna uygulanır
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Patent veya Faydalı Model Belgesi (TPMK veya Yabancı Patent Ofisi)
+    detay: "Belge numarası, tescil tarihi, kapsam ve geçerlilik süresi açıkça görünmeli. Patent 20 yıl, Faydalı model 10 yıl."
+    temin_yeri: Türk Patent ve Marka Kurumu (TPMK) / EPO / USPTO / Diğer
+  - kategori: zorunlu
+    "no": 2
+    baslik: Ar-Ge Harcaması Dökümü — NARGe ve TARGe Ayrıştırması
+    detay: "İlişkili ve ilişkisiz taraflara yapılan Ar-Ge ödemeleri ayrı ayrı listelenmeli. Satın alınan buluş bedeli ayrıca gösterilmeli."
+    temin_yeri: Muhasebe / Ar-Ge Departmanı
+  - kategori: zorunlu
+    "no": 3
+    baslik: Buluş Kazanç Hesaplama Tablosu (Satış/Lisans/İmalat Ayrımı)
+    detay: "Her kazanç türü (satış/devir, lisans/royalty, imalat katkısı) ayrı ayrı hesaplanmış ve NEXUS oranı uygulanmış olmalı."
+    temin_yeri: Bu çalışma kağıdı
+  - kategori: zorunlu
+    "no": 4
+    baslik: NEXUS Oranı Hesaplama Belgesi
+    detay: "NARGe bileşenleri (Türkiye bünyesi + ilişkisiz yurt içi + ilişkisiz yurt dışı) ile TARGe toplamı ve oran hesabı."
+    temin_yeri: Ar-Ge Departmanı / Muhasebe
+  - kategori: destekleyici
+    "no": 5
+    baslik: İlişkili Taraf Ar-Ge Ödemeleri Listesi
+    detay: "NEXUS hesabı için NARGe'den çıkarılan ilişkili kuruluş Ar-Ge ödemeleri. Transfer fiyatlandırması belgesiyle desteklenmeli."
+    temin_yeri: Transfer Fiyatlandırması Dokümantasyonu
+  - kategori: destekleyici
+    "no": 6
+    baslik: Ar-Ge Merkezi / TGB Faaliyet Belgesi
+    detay: "Buluşun Türkiye'deki Ar-Ge merkezinde veya TGB'de yapıldığını gösterir belge."
+    temin_yeri: Ar-Ge Merkezi / TGB Yönetimi
+
+k_checklist:
+  - id: K1
+    soru: "TPMK veya yabancı patent ofisinden alınmış geçerli patent/faydalı model belgesi mevcut mu? Geçerlilik süresi dolmamış mı?"
+    referans: "KVK Md. 5/B | TPMK"
+  - id: K2
+    soru: "İstisna oranı %50 mi uygulandı? (%100 değil — KVK 5/B'nin özgün niteliği)"
+    referans: "KVK Md. 5/B"
+  - id: K3
+    soru: "NEXUS oranı doğru hesaplandı mı? min[(NARGe × 1.3) / TARGe, 1] formülü uygulandı mı?"
+    referans: "KVK Md. 5/B | NEXUS Formülü"
+  - id: K4
+    soru: "NARGe bileşenleri doğru ayrıştırıldı mı? (Türkiye bünyesi + ilişkisiz yurt içi + ilişkisiz yurt dışı)"
+    referans: "KVK Md. 5/B | NEXUS"
+  - id: K5
+    soru: "İlişkili kuruluşlara yapılan Ar-Ge ödemeleri NARGe'den doğru çıkarıldı mı?"
+    referans: "KVK Md. 5/B | NEXUS"
+  - id: K6
+    soru: "Satın alınan buluş bedeli TARGe'ye dahil edildi, NARGe'ye dahil edilmedi mi?"
+    referans: "KVK Md. 5/B | NEXUS"
+  - id: K7
+    soru: "Kazanç türleri (satış/devir, lisans/royalty, imalat katkısı) ayrı hesaplandı mı?"
+    referans: "KVK Md. 5/B | GİB Rehberi"
+  - id: K8
+    soru: "Buluşun Türkiye'de yapılan Ar-Ge faaliyetiyle bağlantısı belgelendi mi? (NEXUS yaklaşımı)"
+    referans: "KVK Md. 5/B | NEXUS Yaklaşımı"
+  - id: K9
+    soru: "YİAKV matrahından düşüm analizi yapıldı mı?"
+    referans: "KVK Md. 32/C"
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

@@ -1,0 +1,293 @@
+ic_kod: tgb_yonetici_sirket_4691
+baslik: Teknoloji Geliştirme Bölgesi Yönetici Şirket Kazanç İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 311 }
+  - { donem: 2025, kod: 311 }
+
+mevzuat_dayanagi:
+  - 4691 Sayılı Teknoloji Geliştirme Bölgeleri Kanunu Madde 3
+  - 4691 Sayılı Kanun Ek Madde (Yönetici Şirket İstisnası — Süresiz)
+  - Sanayi ve Teknoloji Bakanlığı TGB Uygulama Tebliğleri
+  - 49 Seri No.lu Kurumlar Vergisi Genel Tebliği (30.12.2025)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2001-07-26"
+  bitis: null
+
+ana_kategori: serbest_bolge_tgb_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Kurum Sanayi ve Teknoloji Bakanlığı onaylı bir TGB Yönetici Şirketi midir?"
+  info_modal: |
+    4691 Sayılı Kanun Madde 3 kapsamında, Sanayi ve Teknoloji Bakanlığı tarafından onaylanmış
+    Yönetici Şirketin TGB'yi yönetmekten elde ettiği kazançlar süresiz olarak kurumlar
+    vergisinden istisnadır. Bu istisna girişimci firmaların Ar-Ge/yazılım istisnasından
+    (Geçici Md.2 — tarih sınırlı) farklıdır ve tarih sınırı yoktur.
+    UYARI: Bu istisna YİAKV matrahından indirilemeyen istisnalar kapsamında değerlendirilmelidir.
+  kapi_sorulari:
+    - id: bakanlık_onay
+      soru: "Kurum Sanayi ve Teknoloji Bakanlığı tarafından onaylanmış Yönetici Şirket statüsünde midir?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bakanlık onay belgesi ve TGB kuruluş kararı (RG) zorunludur. Bakanlık onayı
+        olmadan 311 istisnası uygulanamaz."
+    - id: tgb_faaliyette
+      soru: "TGB fiilen işletiliyor mu? Aktif girişimci firma var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Faaliyete geçmemiş TGB'nin yönetici şirketi risk alanıdır."
+    - id: kapsam_kazanc
+      soru: "İstisna uygulanacak kazanç TGB yönetim faaliyetinden (kira, yönetim ücreti,
+        altyapı bedeli) mi kaynaklanıyor?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Mevduat faizi, temettü ve TGB dışı ticari faaliyetler kapsam dışıdır."
+    - id: kapsam_disi_ayristirma
+      soru: "Kapsam dışı gelirler (mevduat faizi, TGB dışı gelirler) muhasebede ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: kazanc_var_mi
+      soru: "Bu dönem TGB yönetim faaliyetinden kârda mısınız? (Bu istisna zararda kullanılamaz)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: kapsam_ici_kazanc
+      etiket: "TGB yönetim kazancı (kapsam içi gelir − kapsam içi giderler)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Kapsam içi: Girişimci firmalardan kira bedeli, yönetim/işletme ücreti, altyapı hizmet
+        bedelleri (elektrik/su/gaz dağıtımı dahil), güvenlik, temizlik, teknik hizmet gelirleri,
+        kuluçka/hızlandırma program ücretleri.
+        Kapsam dışı (istisna uygulanmaz): Mevduat faizi, repo, temettü, TGB dışı taşınmaz kira
+        geliri, TGB dışı ticari faaliyetler.
+        Bu alan D.4 = D.1 − D.2 − D.3 formülüne karşılık gelir. Kapsam dışı gelire düşen
+        gider payı kazançtan çıkarılmalıdır.
+  formuller:
+    istisna_tutari: "kapsam_ici_kazanc * oran"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "kapsam_ici_kazanc > 0"
+      hata: "TGB yönetim kazancı sıfır veya negatif ise istisna uygulanamaz (Kazancın
+        Bulunması Halinde). Yönetim faaliyeti zararında istisna uygulanmaz."
+
+denetci_notlari: |
+  ## Bölüm 1 — Yasal Dayanak, Süresizlik ve Yönetici Şirket Statüsü
+
+  4691 SAYILI TEKNOLOJİ GELİŞTİRME BÖLGELERİ KANUNU — MADDE 3:
+  Yönetici şirket: Üniversite veya araştırma kurumu ile diğer kuruluşlar tarafından kurulan
+  ve Sanayi ve Teknoloji Bakanlığı tarafından onaylanan tüzel kişiliktir.
+
+  İSTİSNA KAPSAMI:
+  Yönetici şirketin bu Kanun uygulamasından doğan faaliyetleri dolayısıyla elde ettiği kazançlar
+  kurumlar vergisinden müstesnadır.
+
+  SÜRESİZLİK:
+  4691 s.K. Geçici Madde 2: Girişimci firmaların (Ar-Ge/yazılım) istisnasına tarih sınırı
+  getirmiştir. Ancak Madde 3 kapsamındaki yönetici şirket istisnası kanunun asli maddesine
+  dayanmaktadır → SÜRESİZDİR.
+
+  BEYANNAME: 311. Satır | 'Kazancın Bulunması Halinde İndirilecek' | %100
+
+  ## Bölüm 2 — Kapsam İçi / Kapsam Dışı Gelir Ayrımı
+
+  YÖNETİCİ ŞİRKETİN TÜM GELİRLERİ İSTİSNA KAPSAMINDA DEĞİLDİR:
+
+  KAPSAM İÇİ (4691 Kanun uygulamasından doğan):
+  ✓ Girişimci firmalardan alınan kira bedeli (ofis/laboratuvar/servis)
+  ✓ Yönetim / işletme ücreti
+  ✓ Altyapı, güvenlik, temizlik hizmet bedelleri
+  ✓ Elektrik/su/gaz dağıtım geliri
+  ✓ Kuluçka hizmetleri (tartışmalı — özelge önerilir)
+  ✓ Otopark gelirleri (bölge işletme kapsamındaki hizmetler)
+
+  KAPSAM DIŞI (istisna uygulanmaz):
+  ✗ Mevduat faizi, repo, menkul kıymet gelirleri (KESİN KAPSAM DIŞI)
+  ✗ TGB dışı taşınmaz kira geliri
+  ✗ İştirak temettüsü (KVK 5/1-a'dan ayrıca yararlanır)
+  ✗ TGB dışında yürütülen ticari faaliyetler
+
+  KOŞULLU ALANLAR (özelge önerilir):
+  ⚠ Konferans salonu / eğitim alanı kiralama
+  ⚠ Kuluçka firmaların başarı payı (royalty)
+  ⚠ Bakanlık destekleri ve hibeler
+
+  UYARI: GİB bazı özelgelerinde yönetici şirketin bir kısım gelirlerini kapsam dışı saymıştır.
+  Tartışmalı gelirler için özelge alınması tavsiye edilir.
+
+  ## Bölüm 3 — 311 vs Girişimci İstisnası — Kritik Farklar
+
+  | Kriter               | 311 — Yönetici Şirket              | Girişimci Firma Kazancı            |
+  |----------------------|------------------------------------|------------------------------------|
+  | Yasal Dayanak        | 4691 s.K. Md.3                     | 4691 s.K. Geçici Md.2              |
+  | İstisna Süresi       | SÜRESİZ                            | SINIRLI (kanunda belirtilen tarihe)|
+  | Yararlanan Kurum     | TGB'yi yöneten Yönetici Şirket     | TGB içinde Ar-Ge/yazılım yapan     |
+  | İstisna Kapsamı      | Bölge yönetim faaliyeti kazançları | Ar-Ge, yazılım, tasarım kazançları |
+  | Beyanname Satırı     | 311                                | Farklı satır                       |
+  | Bakanlık Onayı       | ZORUNLU                            | Zorunlu değil (kiracılık yeterli)  |
+  | Personel GV İstisnası| Yönetici şirket personeline yok   | Ar-Ge personeli ücret istisnası var|
+
+  ## Bölüm 4 — YMM Tasdik Dil Standardı
+
+  KULLANILIN:
+  "...[kurum adı] Sanayi ve Teknoloji Bakanlığı tarafından onaylanmış yönetici şirket sıfatıyla
+  [TGB adı]'nı işletmekte olup bu faaliyetten elde ettiği kazanç 4691 sayılı Kanun Madde 3
+  kapsamında kurumlar vergisinden müstesnadır."
+
+  KULLANILMASIN:
+  - "...4691 Geçici Md.2 kapsamında..." (Yönetici Şirket Md.3 kapsamındadır)
+  - "...2028 tarihine kadar..." (Yönetici şirket istisnasında tarih sınırı yok)
+  - "...TGB içindeki girişimci..." (Yönetici şirket girişimci değil)
+
+  KRİTİK HATALAR:
+  (1) Mevduat faizini 311 kapsamında beyan etmek
+  (2) Yönetici şirket istisnasını Geçici Md.2 tarihine bağlamak
+  (3) Kapsam içi/dışı gelir ayrıştırması yapmadan 311 uygulamak
+  (4) Gider paylaştırmasını yapmadan tüm giderleri 311 kapsam içine almak
+
+  KDV BOYUTU UYARISI: 311 kurumlar vergisi istisnası KDV muafiyeti anlamına gelmez.
+  Kira bedeli ve yönetim ücretleri KDV'ye tabi olabilir. KDV uygulaması ayrıca incelenmelidir.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Kapsam İçi Gelirlerin Tahsilatı (TGB Yönetim Hizmetleri)
+  (Kira, yönetim ücreti, altyapı bedeli — Kapsam içi gelirler)
+  Borç: 120/121 Alacaklar (Kapsam İçi — TGB Yönetim) — Girişimci firmalardan kira + yönetim ücreti
+  Alacak: 640 Hizmet Gelirleri (640.01 — TGB Yönetim Gelirleri / KAPSAMİÇİ) — Beyanname 311
+
+  KAPSAM İÇİ/DIŞI AYRIMI İÇİN ALT HESAP ZORUNLULUĞU:
+  640.01 — TGB Yönetim Gelirleri (KAPSAM İÇİ)
+  640.02 — TGB Dışı/Finansal Gelirler (KAPSAM DIŞI)
+
+  ## Kayıt 2 — Kapsam Dışı Gelirlerin Kaydı (Mevduat Faizi vb.)
+  Borç: 102 Bankalar / 108 Diğer Hazır Değerler — Mevduat faizi tahsilatı
+  Alacak: 642 Faiz Gelirleri (KAPSAM DIŞI) — Mevduat faizi geliri — vergiye tabi
+
+  ## Kayıt 3 — Gider Dağıtımı (Kapsam İçi/Dışı Paylaştırma)
+  Borç: 760/780/630 İlgili Gider Hesabı (Kapsam İçi Payı) — D.3 formülü
+  Borç: 760/780/630 İlgili Gider Hesabı (Kapsam Dışı Payı) — Vergiye tabi kazançtan düşülür
+  Alacak: 102 Bankalar / 320 Borçlar — Toplam gider ödemesi
+  Dağıtım: Kapsam İçi Gider Payı = Toplam GYG × (C.5 / C.11)
+
+  ## Kayıt 4 — Beyanname 311 Mutabakat Notu
+  KV Beyannamesi 311. Satır: 'KAZANCIN BULUNMASI HALİNDE' bölümü
+  311 = D.6 = D.4 (Yönetim Kazancı) × %100
+  3 Kademe Uyum: Muhasebe alt hesap (640.01) = C.5 = Beyanname 311 (D.6)
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: "Sanayi ve Teknoloji Bakanlığı Yönetici Şirket Onay Belgesi"
+    detay: "Kurumun 4691 s.K. kapsamında yönetici şirket olarak Bakanlıkça onaylandığını
+      gösteren resmi belge. 311 tasdik dosyasının birincil dayanağıdır. Bakanlık onayı
+      olmadan 311 istisnası uygulanamaz."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı — Onay belgesi aslı veya onaylı sureti
+  - kategori: zorunlu
+    "no": 2
+    baslik: TGB Kuruluş Kararı — Resmi Gazete (Yayım Tarihi ve Sayısı)
+    detay: "4691 s.K. Md.4: TGB kuruluş kararının Resmi Gazete'de yayımlanması zorunludur.
+      Tarih, karar numarası ve bölge adı içermelidir. TGB'nin hukuki varlığının kanıtıdır."
+    temin_yeri: Resmi Gazete — İlgili kuruluş kararı
+  - kategori: zorunlu
+    "no": 3
+    baslik: Yönetici Şirket Ana Sözleşmesi / Ticaret Sicil Belgesi
+    detay: "Yönetici şirketin kuruluş amacı, ortaklık yapısı (üniversite+kamu+sanayi) ve
+      tescili. Ana sözleşmede TGB yöneticisi olduğu belirtilmiş olmalıdır."
+    temin_yeri: Ticaret Sicil Gazetesi + Ana sözleşme
+  - kategori: zorunlu
+    "no": 4
+    baslik: Kapsam İçi / Kapsam Dışı Gelir Ayrıştırma Tablosu (C Bölümü)
+    detay: "Kapsam içi TGB yönetim gelirleri ile kapsam dışı finansal/diğer gelirlerin
+      ayrıştırıldığı tablo. Muhasebe alt hesap ekstresi (640.01/640.02) ile uyumlu.
+      Bu tablo olmadan 311 kapsam teyidi yapılamaz."
+    temin_yeri: C bölümü tablosu + Muhasebe alt hesap ekstresi
+  - kategori: zorunlu
+    "no": 5
+    baslik: Gider Dağıtım Anahtarı Belgesi (Kapsam İçi/Dışı Gider Payı)
+    detay: "Genel yönetim giderlerinin kapsam içi/dışı gelir oranına göre dağıtımını
+      gösteren tablo. D.3 formülüyle uyumlu. Yöntem yazılı ve tutarlı olmalıdır.
+      Kapsam dışı gelire düşen gider payı 311'den çıkarılmalıdır."
+    temin_yeri: Dağıtım anahtarı tablosu + Muhasebe gider ekstresi
+  - kategori: zorunlu
+    "no": 6
+    baslik: KV Beyannamesi Taslağı — 311. Satır
+    detay: "311. satırındaki tutarın D.6 ile birebir uyumlu olduğu kontrol edilmeli.
+      'Kazancın Bulunması Halinde İndirilecek' bölümünde doğru konumlandırma.
+      Mevduat faizi vb. kapsam dışı gelirler 311'e yazılmamalıdır."
+    temin_yeri: GİB e-Beyanname sistemi
+  - kategori: destekleyici
+    "no": 7
+    baslik: Bakanlık'a Sunulan Yıllık Faaliyet Raporu
+    detay: "4691 s.K. kapsamında yönetici şirketin Bakanlık'a sunmakla yükümlü olduğu
+      dönem raporu. TGB'deki girişimci firma sayısı, istihdam, Ar-Ge harcaması içermelidir.
+      Raporun sunulmaması istisna hakkını etkileyebilir."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı'na sunulan yıllık faaliyet raporu
+  - kategori: destekleyici
+    "no": 8
+    baslik: Aktif Girişimci Firma Listesi ve Kira Sözleşmeleri Özeti
+    detay: "TGB'de aktif faaliyet gösteren firmaların listesi ve kira sözleşmeleri özeti.
+      C.1 kira geliri ile kira sözleşmeleri arasında mutabakat yapılacak. Bölgenin fiilen
+      işletildiğini belgeler."
+    temin_yeri: Girişimci sözleşmeleri özet tablosu + İstihdam listesi
+  - kategori: destekleyici
+    "no": 9
+    baslik: TGB Yönetim Gelir-Gider Tablosu (Alt Hesap Bazında)
+    detay: "Kapsam içi/dışı alt hesap bazında dönem gelir-gider tablosu. 640.01 (Kapsam
+      İçi) ve 640.02 (Kapsam Dışı) tutarları ayrı gösterilmeli."
+    temin_yeri: Muhasebe programı — Alt hesap bazında dönem ekstresi
+  - kategori: destekleyici
+    "no": 10
+    baslik: Bakanlık-Yönetici Şirket Protokolü / Yönetim Sözleşmesi (Dönem Geçerliliği)
+    detay: "Bakanlık ile yönetici şirket arasındaki yönetim protokolü veya sözleşmesinin
+      geçerliliği. Süresi dolan protokol istisna riskine yol açar."
+    temin_yeri: Yönetim protokolü / Sözleşme (ilgili dönem)
+
+k_checklist:
+  - id: K1
+    soru: "Kurum Bakanlık onaylı Yönetici Şirket statüsünde mi? Belge var mı?"
+    referans: "4691 s.K. Md.3 | Sanayi ve Teknoloji Bakanlığı"
+  - id: K2
+    soru: "TGB fiilen işletiyor mu? Aktif girişimci firma sayısı sıfır değil mi?"
+    referans: "4691 s.K. Md.3"
+  - id: K3
+    soru: "Kapsam içi / kapsam dışı gelir ayrıştırması yapıldı mı? (C Bölümü)"
+    referans: "4691 s.K. Md.3 | GİB Özelgeleri"
+  - id: K4
+    soru: "Kapsam dışı gelirlerin gider payı 311 istisnasına dahil edilmedi mi?"
+    referans: "D.3 gider dağıtım formülü"
+  - id: K5
+    soru: "İstisnanın SÜRESİZ olduğu teyit edildi mi? (Geçici Md.2 tarih sınırı uygulanmadı mı?)"
+    referans: "4691 s.K. Md.3 — Yönetici Şirket istisnasında tarih sınırı yoktur"
+  - id: K6
+    soru: "Personele ödenen ücretlerin gelir vergisi boyutu analiz edildi mi?"
+    referans: "4691 s.K. | Ücret istisnası koşulları"
+  - id: K7
+    soru: "Bakanlık'a yıllık faaliyet raporu sunuldu mu?"
+    referans: "4691 s.K. | Yönetici Şirket yükümlülükleri"
+  - id: K8
+    soru: "311 'Kazancın Bulunması Halinde' bölümünde mi? ('Zarar Olsa Dahi' değil)"
+    referans: "KV Beyannamesi formu"
+  - id: K9
+    soru: "Beyanname 311 tutarı D.6 ile uyumlu mu? (D.6 = D.4 × %100)"
+    referans: "D bölümü hesap akışı"
+  - id: K10
+    soru: "KDV boyutu analiz edildi mi? Yönetim hizmetleri KDV'ye tabi mi?"
+    referans: "KDVK | 4691 s.K. KDV hükümleri"
+  - id: K11
+    soru: "YİAKV matrahında 311 istisnasının etkisi analiz edildi mi?"
+    referans: "KVK Md. 32/C | Dönem mevzuatı"
+  - id: K12
+    soru: "Girişimci firma kazancı (Ar-Ge/yazılım) 311 yerine doğru koda beyan edildi mi?"
+    referans: "4691 s.K. Geçici Md.2 — Girişimci istisna kodu ayrıdır"
+  - id: K13
+    soru: "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi? (≥500.000 TL)"
+    referans: "49 S.No.lu KV GT (30.12.2025)"

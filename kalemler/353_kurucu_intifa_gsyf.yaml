@@ -1,0 +1,270 @@
+ic_kod: kurucu_intifa_gsyf_5_1_e
+baslik: Kurucu Senetleri, İntifa Senetleri ve GSYF Katılma Payı Satış Kazancı İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 353 }
+  - { donem: 2025, kod: 353 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-e
+  - KVK Madde 5/3 (zarar durumu — KKEG kuralı)
+  - 9160 Sayılı Cumhurbaşkanı Kararı (27/11/2024)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:601)
+  - TTK Madde 348 (Kurucu senetleri)
+  - TTK Madde 502 (İntifa senetleri)
+  - SPK Mevzuatı (GSYF katılma payları)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Kurucu senedi, intifa senedi veya GSYF katılma payı sattınız mı?"
+  info_modal: |
+    KVK Madde 5/1-e kapsamında kurucu senetleri, intifa senetleri ve Girişim Sermayesi Yatırım
+    Fonu (GSYF) katılma paylarının satışından doğan kazançların bir kısmı kurumlar vergisinden
+    istisnadır. İstisna oranı: 27/11/2024 öncesi satışlarda %75, 27/11/2024 ve sonrasında %50
+    (9160 s. CB Kararı). 2 tam yıl (730 gün) aktifinde bulundurma şartı aranır.
+
+    ÖNEMLİ UYARILAR:
+    • Rüçhan hakkı: TTK'ya göre kullanım süresi en fazla 15 gündür. Bu nedenle 730 günlük
+      aktifinde bulundurma şartı pratikte ASLA sağlanamaz → Rüçhan hakkı satışında istisna
+      UYGULANAMAZtır. Kazancın tamamı vergilendirilir.
+    • GSYF: Yalnızca SPK'dan izinli Girişim Sermayesi Yatırım Fonları kapsam dahilindedir.
+      Diğer yatırım fonlarının katılma belgeleri bu satıra girmez (298/299 analizi gerekebilir).
+    • Zararlı satışlarda zararın istisna oranına isabet eden kısmı KKEG sayılır (KVK 5/3).
+    • Bu istisna YİAKV matrahından düşülemez — matrahta kalır.
+  kapi_sorulari:
+    - id: varlik_turu_uygun
+      soru: "Satılan varlık kurucu senedi, intifa senedi veya SPK izinli GSYF katılma payı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Rüçhan hakkı satışında 2 yıl şartı pratikte sağlanamaz — istisna uygulanamaz. İştirak hissesi (A.Ş./Ltd. payı) satışları → 352 beyanname satırını kullanın."
+    - id: ruchan_hakki_degil
+      soru: "Satılan varlık rüçhan hakkı DEĞİL mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Rüçhan hakları TTK uyarınca en fazla 15 günde kullanılmak zorundadır. 730 günlük aktifinde bulundurma şartı hiçbir zaman sağlanamaz. Rüçhan hakkı satış kazancı vergiye tabi kurum kazancıdır."
+    - id: gsyf_spk_izinli
+      soru: "GSYF katılma payı ise SPK'dan izinli Girişim Sermayesi Yatırım Fonu mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yalnızca SPK izinli GSYF katılma payları bu istisnadan yararlanır. Diğer yatırım fonları (para piyasası, karma vb.) bu satıra girmez; önce 298/299 analizi yapın."
+    - id: iki_yil_aktif
+      soru: "Varlık satış tarihi itibarıyla en az 2 tam yıl (730 gün) aktifinde bulunuyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "2 yıl (730 gün) şartı sağlanmadan istisna uygulanamaz. Aktife giriş tarihi olarak muhasebe aktif kaydı tarihi esas alınır (kurucu senedinde TTK tescil tarihi, intifa senedinde düzenleme/devir tarihi, GSYF'de alım tarihi)."
+    - id: fon_ayrimi_yapilacak
+      soru: "İstisna tutarı 549 Özel Fonlar hesabına alınacak mı? (Zorunlu)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna kazancının satışı izleyen hesap dönemi başından KV beyan süresine kadar 549 hesabına alınması zorunludur. 5 yıl boyunca tutulacaktır. Aksi halde istisna geçersiz sayılır."
+
+parametreler:
+  oran_eski: 0.75
+  oran_yeni: 0.50
+  oran_kesim_tarihi: "2024-11-27"
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: varlik_turu
+      etiket: "Satılan varlığın türü"
+      tip: secenek
+      secenekler:
+        - "Kurucu Senedi (TTK Md.348)"
+        - "İntifa Senedi (TTK Md.502)"
+        - "GSYF Katılma Payı (SPK izinli)"
+      zorunlu: true
+      yardim: |
+        • Kurucu Senedi: A.Ş. kurucularına kâra iştirak hakkı tanıyan belge (TTK Md.348).
+          Aktife giriş tarihi: TTK tescil tarihi veya devir tarihi.
+          İzlendiği hesap: 248 Diğer Mali Duran Varlıklar önerilir.
+        • İntifa Senedi: Kâra ve/veya tasfiye payına iştirak hakkı belgesi (TTK Md.502).
+          Aktife giriş tarihi: Düzenlendiği veya devir alındığı tarih.
+        • GSYF Katılma Payı: Yalnızca SPK'dan izinli Girişim Sermayesi Yatırım Fonu.
+          Diğer fonlar bu satıra girmez.
+    - id: oran_dilimi
+      etiket: "Uygulanacak istisna oranı (satış tarihine göre)"
+      tip: secenek
+      secenekler:
+        - "%75 — 27/11/2024 öncesi satış"
+        - "%50 — 27/11/2024 ve sonrası satış (9160 s. CB Kararı)"
+      zorunlu: true
+      yardim: |
+        9160 Sayılı Cumhurbaşkanı Kararı (27/11/2024) ile oran değişimi — tüm 353 araçları için geçerli:
+        • %75: Satış tarihi 27/11/2024 öncesi
+        • %50: Satış tarihi 27/11/2024 ve sonrası (bu tarih dahil)
+        GİB Rehberi Mart 2026 Bölüm B-I.1 esas alınmıştır.
+    - id: satis_kazanci
+      etiket: "Satış kazancı (net — 2 yıl şartını taşıyan kısım)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Satış bedeli eksi defter değeri (muhasebe kayıtlı maliyet). Negatif değer girilirse
+        zarar durumu için uyarı tetiklenir: Zararın istisna oranına isabet eden kısmı KKEG sayılır.
+        Yabancı para cinsinden satışlarda TCMB kuru × miktar kullanın.
+  formuller:
+    oran_sayisal: "0.75 if oran_dilimi == '%75 — 27/11/2024 öncesi satış' else 0.50"
+    istisna_tutari: "max(satis_kazanci * oran_sayisal, 0)"
+    kkeg_tutari: "abs(satis_kazanci) * oran_sayisal if satis_kazanci < 0 else 0"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_kazanci >= 0"
+      hata: |
+        UYARI — ZARAR DURUMU (KVK Md.5/3): Satışta zarar oluştuysa, zararın istisna oranına
+        (%75 veya %50) isabet eden kısmı Kanunen Kabul Edilmeyen Gider (KKEG) sayılır.
+        Kalan kısım (zarar × (1 - oran)) ise gider olarak indirilebilir.
+        Örnek (%50 oran): 100.000 TL zarar → 50.000 TL KKEG + 50.000 TL indirilebilir zarar.
+        KKEG tutarı beyannamede ayrıca gösterilmelidir.
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-e: En az 2 tam yıl aktifinde tutulan kurucu senetleri, intifa senetleri ve
+  KVK 5/1-a kapsamı yatırım fonu (GSYF) katılma paylarının satışından doğan kazancın belirli
+  bir kısmı kurumlar vergisinden istisnadır.
+  9160 Sayılı CB Kararı (27/11/2024): İstisna oranı %75'ten %50'ye indirildi.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:601) esas alınmıştır.
+
+  ## Oran Tablosu (GİB Rehberi Bölüm B-I.1)
+  - %75: Satış tarihi 27/11/2024 öncesi
+  - %50: Satış tarihi 27/11/2024 ve sonrası (9160 s. CB Kararı)
+  Oran değişimi 353 kapsamındaki TÜM araçlar için geçerlidir.
+
+  ## Araç Türleri ve Özel Koşullar
+
+  ### 1. Kurucu Senedi (TTK Md.348)
+  - A.Ş. kurucularına kâra iştirak hakkı tanıyan belge
+  - Aktife giriş: TTK tescil tarihi (kuruluşta) veya devir tarihi
+  - İzlendiği hesap: 248 Diğer Mali Duran Varlıklar önerilir
+  - 2 yıl şartı muhasebe aktif tarihi esas alınarak hesaplanır
+
+  ### 2. İntifa Senedi (TTK Md.502)
+  - Kâra ve/veya tasfiye payına iştirak hakkı belgesi
+  - Aktife giriş: Düzenlendiği veya devir alındığı tarih
+  - Niteliğine göre kâra iştirak / tasfiyeye iştirak / her ikisi
+
+  ### 3. GSYF Katılma Payı
+  - Yalnızca SPK'dan izinli Girişim Sermayesi Yatırım Fonları kapsam dahili
+  - GİB Rehberi Md.5: KVK 5/1-a kapsamında istisna kazançlara kaynak oluşturan fonlar = GSYF
+  - Diğer yatırım fonları (para piyasası, karma, borsa vb.) → önce 298/299 analizi
+
+  ### 4. Rüçhan Hakkı (BU SATIRA GİRMEZ — UYARI)
+  - TTK uyarınca rüçhan hakkı kullanım süresi en fazla 15 gündür
+  - 730 günlük aktifinde bulundurma şartı pratikte HİÇBİR ZAMAN sağlanamaz
+  - Rüçhan hakkı satış kazancı vergiye tabi kurum kazancıdır — istisna uygulanamaz
+  - Beyanname 353'e dahil edilmemeli
+
+  ## Kritik Noktalar
+  - 2 tam yıl (730 gün) aktifinde bulundurma zorunlu (rüçhan hakkı hariç)
+  - 549 Özel Fonlar hesabına alınma zorunlu — aksi halde istisna geçersiz
+  - 5 yıl boyunca fon hesabında tutulacak; erken çekilirse matraha eklenir
+
+  ## Zarar Durumu (KVK 5/3)
+  Zararlı satışlarda: zarar × oran = KKEG, zarar × (1 - oran) = indirilebilir zarar.
+  352 ile aynı kural uygulanır (GİB Rehberi A0.7 — "Zarar × İstisna Oranı = KKEG").
+
+  ## YİAKV Etkisi
+  KVK 5/1-e (353) istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  İstisna tutarı YİAKV matrahında kalır (GİB Rehberi Mart 2026, A0.8 kontrolü).
+
+  ## YMM Tasdik
+  İstisna tutarı ≥ 500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  KV beyannamesiyle birlikte veya 2 ay içinde elektronik olarak verilir.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Kurucu/İntifa Senedi veya GSYF Satışı (Kazanç Durumu)
+  Borç: 102 Bankalar / 120 Alıcılar   [Satış bedeli]
+  Alacak: 248 Diğer Mali Duran Varlıklar (Defter değeri)
+  Alacak: 679 Diğer Olağandışı Gelir ve Kârlar (Satış kazancı)
+
+  ## Kayıt 2 — 549 Fon Hesabına Alma
+  Borç: 570 Geçmiş Yıllar Kârları (veya 690 Dönem Net Kârı)
+  Alacak: 549 Özel Fonlar
+  Açıklama: İstisna kazancının (satis_kazanci × oran) en geç KV beyan süresine kadar 549 hesabına
+  alınması zorunludur. 5 yıl süreyle tutulacaktır.
+
+  ## Kayıt 3 — Zarar Durumu (KVK 5/3 KKEG)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Toplam zarar)
+  Alacak: 248 Diğer Mali Duran Varlıklar
+  Beyanname düzeltmesi: Zarar × oran kadar kısım KKEG olarak kanunen kabul edilmeyen giderler
+  satırına eklenir; geri kalan kısım indirilebilir.
+
+  ## Uyarı
+  549 hesabından 5 yıl içinde çekilirse, çekildiği tarihte matraha eklenerek vergilendirilir.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Satış / Devir Sözleşmesi veya GSYF Çıkış Belgesi
+    detay: "Satış tarihi (27/11/2024 öncesi/sonrası oran tespiti için) ve satış bedelinin belgesi."
+    temin_yeri: "Kurucu/İntifa: Noter / Genel Kurul Tutanağı | GSYF: Saklama Kuruluşu"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Varlığın Aktife Giriş Kaydı
+    detay: "2 yıl şartının tespiti için aktife giriş tarihi ve tutarı. Kurucu senedinde TTK tescil tarihi; intifa senedinde düzenleme/devir tarihi; GSYF'de alım tarihi."
+    temin_yeri: 248 Hesap Kartı / Muhasebe Arşivi
+  - kategori: zorunlu
+    "no": 3
+    baslik: 549 Hesap Kaydı ve Yevmiye
+    detay: "İstisna tutarının 549 Özel Fonlar hesabına alındığını gösteren yevmiye kaydı."
+    temin_yeri: Muhasebe / Yevmiye defteri
+  - kategori: zorunlu
+    "no": 4
+    baslik: Dönem Bilanço ve Gelir Tablosu
+    detay: "Satış kazancının/zararının ve ticari kâr tutarının doğrulanması için."
+    temin_yeri: Muhasebe
+  - kategori: destekleyici
+    "no": 5
+    baslik: "GSYF: SPK İzin Belgesi / Fon Tüzüğü"
+    detay: "GSYF katılma payının SPK izinli Girişim Sermayesi Yatırım Fonu olduğunu belgeler."
+    temin_yeri: SPK / Fon Yöneticisi
+  - kategori: destekleyici
+    "no": 6
+    baslik: TTK Tescil Belgesi (Kurucu Senedi İçin)
+    detay: "Kurucu senedinin TTK kapsamında tescil edildiğini gösteren sicil kaydı."
+    temin_yeri: Ticaret Sicili Gazetesi
+  - kategori: destekleyici
+    "no": 7
+    baslik: KKEG Hesaplama Tablosu (Zarar Durumunda)
+    detay: "Zararlı satışta KVK 5/3 kapsamında KKEG ve indirilebilir zarar ayrıştırması."
+    temin_yeri: Muhasebe / Beyanname Çalışma Kağıdı
+
+k_checklist:
+  - id: K1
+    soru: "Satılan varlık türü doğrulandı mı? (Kurucu senedi / İntifa senedi / SPK izinli GSYF — rüçhan hakkı değil)"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 Bölüm B-I | TTK Md.348, 502"
+  - id: K2
+    soru: "Rüçhan hakkı ise istisna uygulanamayacağı teyit edildi mi? (TTK max 15 gün — 730 gün şartı imkânsız)"
+    referans: "TTK | GİB Beyan Reh. 2026 A0.4"
+  - id: K3
+    soru: "GSYF ise SPK'dan izinli Girişim Sermayesi Yatırım Fonu olduğu doğrulandı mı? (Diğer fonlar → 298/299)"
+    referans: "GİB Beyan Reh. 2026 A0.5 | SPK Mevzuatı"
+  - id: K4
+    soru: "2 tam yıl (730 gün) aktifinde bulundurma şartı sağlandı mı?"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 A0.3"
+  - id: K5
+    soru: "Satış tarihi 27/11/2024 öncesi mi sonrası mı? (Oran tespiti için kritik — %75 veya %50)"
+    referans: "9160 s. CB Kararı | GİB Beyan Reh. 2026 A0.2"
+  - id: K6
+    soru: "İstisna tutarı (satis_kazanci × oran) 549 hesabına en geç KV beyan süresine kadar alındı mı?"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 A0.6"
+  - id: K7
+    soru: "5 yıllık fon tutma süresi takibi yapılıyor mu? (Erken çekilirse matraha eklenir)"
+    referans: "KVK Md.5/1-e"
+  - id: K8
+    soru: "Zarar durumunda KVK 5/3 KKEG hesabı yapıldı mı? (Zarar × oran = KKEG)"
+    referans: "KVK Md.5/3 | GİB Beyan Reh. 2026 A0.7"
+  - id: K9
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (Bu istisna YİAKV'dan düşülemez — matrahta kalır)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 A0.8"
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

@@ -1,0 +1,226 @@
+ic_kod: transfer_fiyat_ortulu_kazanc_kvk13
+baslik: Transfer Fiyatlandırması Örtülü Kazancının Kâr Payına Dönüşmesinden Kaynaklanan İştirak Kazancı İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 307 }
+  - { donem: 2025, kod: 307 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-a
+  - KVK Madde 13
+  - KVK Madde 13/6 (Ödeme Şartı)
+  - KVK Madde 13/7 (Hazine Zararı)
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 13
+  - GİB Sirküler 2024/39
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: istirak_kazanc_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "İlgili hesap döneminde ilişkili bir kurumun (dağıtan kurumun) sizinle emsallere aykırı fiyatla işlem yaptığı tespit edildi mi ve bu kurumda örtülü kazanç KKEG olarak beyan edildi mi?"
+  info_modal: |
+    KVK Madde 13 kapsamında ilişkili kişilerle yapılan işlemlerde emsallere aykırı fiyat
+    nedeniyle oluşan örtülü kazanç, hesap döneminin son günü (31.12) itibarıyla KÂR PAYI
+    sayılır (KVK 13/6).
+
+    Bu kâr payı, kazancı ALAN tam mükellef kurumda KVK Madde 5/1-a kapsamında İŞTİRAK
+    KAZANCI İSTİSNASI olarak beyanname 307 satırına yazılır. Zarar olsa dahi indirilir.
+
+    ⚠️ EN KRİTİK ŞART — ÖDEME ŞARTI (KVK 13/6):
+    Dağıtan kurumda tarh edilen vergi kesinleşip ödenmedikçe alan kurum 307 istisnasını
+    KULLANAMAZ. Ödeme olmadan 307 kullanımı tarhiyat ve ceza riskidir.
+
+    ⚠️ YURT İÇİ İŞLEMLER İÇİN HAZİNE ZARARI ŞARTI (KVK 13/7):
+    Yurt içi tam mükellef kurumlar arası işlemde Hazine zararı oluşmuyorsa KVK 13
+    uygulanmaz. Yurt dışı işlemlerde bu şart aranmaz.
+  kapi_sorulari:
+    - id: iliskili_kisi_islem
+      soru: "İşlem KVK Md.13/2 kapsamında ilişkili kişiyle mi yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 13/2: Ortaklar, yönetimde nüfuz sahipleri, ortakların eşleri ve üçüncü dereceye kadar kan hısımları. KVK 12 ile aynı tanım değil — KVK 13/2 özelinde değerlendirilmeli."
+    - id: emsale_aykiri_fiyat
+      soru: "Uygulanan fiyat emsallere uygunluk ilkesine aykırı mı? (Örtülü kazanç tespit edildi mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 13/3-5 yöntemleriyle emsal bedel belirlenmeli: Karşılaştırılabilir fiyat, maliyet artı, yeniden satış fiyatı, TNMM, kâr bölüşüm veya diğer. Yıllık TF raporu zorunludur."
+    - id: hazine_zarari
+      soru: "İşlem yurt içi mi, yurt dışı mı?"
+      tip: secenek
+      secenekler: [yurt_ici, yurt_disi]
+      zorunlu: true
+      aciklama: "Yurt içi işlemlerde KVK 13/7 Hazine zararı kontrolü zorunludur. İki tarafta toplam vergi tahakkuku azalmıyorsa KVK 13 uygulanamaz. Yurt dışı işlemlerde bu kontrol atlanır."
+    - id: odeme_sarti
+      soru: "Dağıtan kurumda tarh edilen vergi kesinleşti ve ödendi mi? (KVK 13/6 ödeme şartı)"
+      tip: secenek
+      secenekler: [kesinlesti_ve_odendi, odenmedi_beklemede, hayir_odenmedi]
+      zorunlu: true
+      aciklama: |
+        - Kesinleşti ve ödendi: 307 istisnası uygulanabilir.
+        - Ödenmedi/Beklemede: 307 istisnası KULLANILAMAZ — tarhiyat riski.
+        - Hayır: 307 uygulaması kesinlikle mümkün değil.
+
+parametreler:
+  istisna_orani: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: uygulanan_islem_bedeli
+      etiket: "Uygulanan işlem bedeli (fatura/sözleşme tutarı) (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "İlişkili kişiyle yapılan gerçek işlem bedeli. Muhasebe kaydıyla uyumlu olmalı."
+    - id: emsal_bedel
+      etiket: "Emsal bedel — emsallere uygun fiyat (KVK 13/3-5) (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Bağımsız taraflar arasında oluşacak fiyat. Yöntem ve kaynak TF raporunda gerekçeli olarak belirtilmeli. Yöntem tutarlı olmalı."
+    - id: dagitan_kurumda_odenen_vergi
+      etiket: "Dağıtan kurumda tarh ve ödenen vergi tutarı (TL) — ödeme şartı kontrolü"
+      tip: para
+      zorunlu: true
+      yardim: "KVK 13/6 ödeme şartı: Tarh + Kesinleşme + Ödeme üç adım tamamlanmalı. Ödeme belgesi (vergi makbuzu) zorunludur."
+  formuller:
+    ortulu_kazanc: "max(uygulanan_islem_bedeli - emsal_bedel, 0)"
+    istisna_tutari: "ortulu_kazanc"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "uygulanan_islem_bedeli > emsal_bedel"
+      hata: "Uygulanan işlem bedeli emsal bedelden fazla değilse örtülü kazanç oluşmamıştır — 307 uygulanamaz"
+    - kural: "dagitan_kurumda_odenen_vergi > 0"
+      hata: "Dağıtan kurumda vergi ödenmemişse KVK 13/6 ödeme şartı gerçekleşmemiştir — 307 istisnası kullanılamaz"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 13/6: İlişkili kişilerle emsallere aykırı fiyatla yapılan işlemde örtülü dağıtılan
+  kazanç hesap döneminin son günü itibarıyla kâr payı sayılır. Dağıtan kurumda vergi kesinleşip
+  ödenmedikçe alan kurum 307 istisnasını kullanamaz.
+  KVK Madde 5/1-a: Alan tam mükellef kurumda bu kâr payı iştirak kazancı istisnasıdır
+  (Beyanname 307).
+
+  ## KVK 13 Mekanizması — Adım Adım Akış
+  ADIM 1 — İlişkili kişiyle emsallere AYKIRI fiyatla işlem (mal satışı / hizmet / kira / ödünç para vb.)
+  ADIM 2 — Emsale AŞAN fark tespit edilir → Örtülü kazanç
+  ADIM 3 — YURT İÇİ İŞLEM: Hazine zararı kontrolü (KVK 13/7) → Hazine zararı yoksa uygulama durur
+  ADIM 4 — Dağıtan kurumda KKEG (KVK 11/1-c) olarak beyan matrahına eklenir
+  ADIM 5 — Dağıtan kurumda vergi TARH → KESİNLEŞME → ÖDEME (KVK 13/6 ödeme şartı)
+  ADIM 6 — Hesap döneminin SON GÜNÜ (31.12) itibarıyla kâr payı sayılır
+  ADIM 7 — Alan kurum → KVK 5/1-a iştirak kazancı istisnası → Beyanname Satır 307
+
+  ## 306 vs 307 Ayrımı (KRİTİK)
+  306 = KVK 12 örtülü sermaye → faiz/kur farkı gideri → kâr payı sayılma
+  307 = KVK 13 transfer fiyatlandırması → emsali aşan fark → kâr payı sayılma
+  Kaynak işlem yanlış sınıflandırılırsa yanlış satır kullanılmış olur.
+
+  ## En Kritik Şart — Ödeme Şartı (KVK 13/6)
+  Dağıtan kurumda tarh edilen vergi kesinleşip ödenmedikçe alan kurum 307 istisnasını
+  KULLANAMAZ. Bu ödeme şartı en kritik koşuldur. Ödeme belgesi (vergi makbuzu) zorunludur.
+
+  ## Yurt İçi Hazine Zararı Şartı (KVK 13/7)
+  Yurt içi tam mükellef kurumlar arası işlemde:
+  - İki tarafta toplam vergi tahakkuku azaldıysa → Hazine zararı VAR → KVK 13 uygulanır
+  - Azalmadıysa → Hazine zararı YOK → KVK 13 uygulanamaz
+  Yurt dışı işlemlerde bu şart aranmaz.
+
+  ## Tutarlılık Zorunluluğu
+  Dağıtan kurumda KKEG (D.2) = Alan kurumda 307 istisnası (E.1). Tutarsızlık açıklanmalı.
+
+  ## Beyanname Ek:2 Zorunluluğu
+  307 satırı kullanıldığında KV beyannamesi eki Transfer Fiyatlandırması formu (Ek:2) zorunludur.
+  GİB Sirküler 2024/39 kapsamında ek tablo doldurulup imzalanmalıdır.
+
+  ## Kâr Payı Sayılma Tarihi
+  Her zaman hesap döneminin SON GÜNÜDÜR (31.12) — bu tarih sabit, dönem içi tarihe göre değişmez.
+
+  ## YMM Tasdik
+  49 No.lu Tebliğ (30.12.2025): ≥500.000 TL veya ≥1.000.000 TL → YMM raporu zorunlu.
+  Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.
+
+muhasebe_kayitlari: |
+  ## Dağıtan Kurum — KKEG Kaydı (Borç Veren Taraf)
+  Muhasebe kaydı yapılmaz — Dağıtan kurumun KV beyannamesinde KKEG olarak beyan edilir.
+  (Mal/Hizmet satışının fazla bedeli veya düşük maliyetle alınan hizmet farkı)
+
+  ## Alan Kurum — 307 İstisnası
+  Muhasebe kaydı yapılmaz — KV beyannamesinde 307. satıra örtülü kazanç (kâr payı sayılan tutar) yazılır.
+
+  ## Alan Kurum — Emsale Aykırı Gelir Kaydı (Düşük Fiyatlı Alım Örneği)
+  Borç: 153/157 Ticari Mallar (maliyetle)
+  Alacak: 120/102 Alıcılar / Bankalar
+  Açıklama: Emsale aykırı düşük fiyatlı alım — fark KVK 13/6 kâr payı sayılır, 307 satırında istisna
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Transfer Fiyatlandırması Raporu (Yıllık)
+    detay: "KVK 13/3-5 kapsamında emsal fiyat belirleme yöntemi, kaynak ve hesaplama. Beyanname verme süresine kadar hazırlanmış olmalı."
+    temin_yeri: Danışman / Transfer Fiyatlandırması Birimi
+  - kategori: zorunlu
+    "no": 2
+    baslik: KV Beyannamesi Ek:2 — Transfer Fiyatlandırması Formu
+    detay: "307 satırı kullanıldığında beyanname eki TF formu (Ek:2) zorunludur. GİB Sirküler 2024/39."
+    temin_yeri: GİB Beyanname Sistemi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dağıtan Kurumun KKEG Kaydı ve KV Beyannamesi
+    detay: "Dağıtan kurumun beyannamesindeki KKEG tutarı ile bu çalışma kağıdındaki örtülü kazanç tutarı uyumlu olmalı."
+    temin_yeri: Dağıtan Kurum — GİB / Beyanname Arşivi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Dağıtan Kurumda Tarh Edilen Verginin Ödeme Belgesi (KVK 13/6 Ödeme Şartı)
+    detay: "Tarh + Kesinleşme + Ödeme belgesi. Vergi makbuzu zorunludur. Ödeme olmadan 307 uygulanamaz."
+    temin_yeri: Dağıtan Kurum — GİB / Banka
+  - kategori: zorunlu
+    "no": 5
+    baslik: İşlem Belgesi (Fatura / Sözleşme)
+    detay: "Uygulanan işlem bedelini gösteren fatura veya sözleşme. Muhasebe kaydıyla uyumlu olmalı."
+    temin_yeri: Muhasebe / Arşiv
+  - kategori: destekleyici
+    "no": 6
+    baslik: Hazine Zararı Analizi (Yurt İçi İşlemlerde)
+    detay: "KVK 13/7: İki taraftaki vergi tahakkuku karşılaştırması. Hazine zararı yoksa KVK 13 uygulanamaz."
+    temin_yeri: Her İki Tarafın KV Beyannamesi
+  - kategori: destekleyici
+    "no": 7
+    baslik: İlişkili Kişi Tanım Belgesi (KVK 13/2)
+    detay: "Pay defteri, Ticaret Sicili Gazetesi veya yönetim belgesi. KVK 13/2 kapsamında ilişkiyi kanıtlar."
+    temin_yeri: Ticaret Sicili / Şirket Arşivi
+
+k_checklist:
+  - id: K1
+    soru: "İşlemin KVK 13/2 kapsamında ilişkili kişiyle yapıldığı belgelendi mi?"
+    referans: "KVK Md. 13/2"
+  - id: K2
+    soru: "Emsal bedel KVK 13/3-5 yöntemlerinden biriyle belirlenip TF raporunda gerekçeli olarak belgelendi mi?"
+    referans: "KVK Md. 13/3-5 | TF Raporu"
+  - id: K3
+    soru: "Yurt içi işlemse Hazine zararı analizi yapıldı mı? (KVK 13/7)"
+    referans: "KVK Md. 13/7 | Yurt içi şart"
+  - id: K4
+    soru: "Dağıtan kurumda tarh edilen vergi kesinleşip ödendi mi? Ödeme belgesi tasdik dosyasına eklendi mi?"
+    referans: "KVK Md. 13/6 | En kritik şart"
+  - id: K5
+    soru: "Dağıtan kurumda KKEG = Alan kurumda 307 istisnası tutarı uyumlu mu? Tutarsızlık açıklandı mı?"
+    referans: "KVK Md. 13/6 | Tutarlılık"
+  - id: K6
+    soru: "KV beyannamesi eki Transfer Fiyatlandırması formu (Ek:2) dolduruldu mu? (GİB Sirkü 2024/39)"
+    referans: "GİB Sirküler 2024/39 | Beyanname Ek:2"
+  - id: K7
+    soru: "306 ile karıştırılmadı mı? Kaynak işlemin KVK 13 (TF örtülü kazanç) olduğu teyit edildi mi?"
+    referans: "KVK Md. 13 vs Md. 12 | 307 vs 306 ayrımı"
+  - id: K8
+    soru: "Kâr payı sayılma tarihinin hesap döneminin son günü (31.12) olduğu esas alındı mı?"
+    referans: "KVK Md. 13/6"
+  - id: K9
+    soru: "YİAKV matrahı ayrıca hesaplandı mı?"
+    referans: "KVK Md. 32/C"
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

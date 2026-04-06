@@ -1,0 +1,185 @@
+ic_kod: urun_senedi_gvk76
+baslik: Ürün Senedi Elden Çıkarma Kazanç İstisnası (GVK Geçici Md. 76)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 349 }
+  - { donem: 2025, kod: 349 }
+
+mevzuat_dayanagi:
+  - GVK Geçici Madde 76
+  - 5300 Sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2017-01-01"
+  bitis: null
+
+ana_kategori: diger_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "Hesap döneminde tarım ürünü ürün senedi (ELÜS veya kağıt) sattın/devretttin mi?"
+  info_modal: |
+    GVK Geçici Madde 76 kapsamında, 5300 Sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu
+    çerçevesinde düzenlenen ürün senetlerinin (ELÜS veya kağıt ürün senedi) elden
+    çıkarılmasından doğan kazançlar **%100 tam istisna** olarak uygulanır.
+    Beyannamede "Kazancın Bulunması Halinde" bölümünde 349. satırda gösterilir.
+    ÖNEMLİ: Geçici Madde statüsünde olup yürürlük tarihinin dönem için geçerli
+    olduğu güncel mevzuatla teyit edilmelidir.
+  kapi_sorulari:
+    - id: lisansli_depo_mu
+      soru: "Ürün senedi, Tarım ve Orman Bakanlığı lisanslı depo işletmecisi tarafından düzenlendi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Temel şart. Lisanssız depo → kapsam dışı. Lisanslı depo belgesi zorunludur."
+    - id: elden_cikarma_mi
+      soru: "Kazanç, ürün senedinin satış/devir/temlik yoluyla elden çıkarılmasından mı kaynaklanıyor?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Depolama hizmet geliri veya başka gelir türleri kapsam dışıdır. Yalnızca elden çıkarma kazancı istisna kapsamındadır."
+    - id: maliyet_belgelendi_mi
+      soru: "Ürün senedinin maliyet bedeli belgelendi mi? (BİAŞ alış kaydı / fatura / müstahsil makbuzu)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Belgesiz maliyet → GİB tarafından tüm satış bedeli kazanç sayılabilir. En yüksek risk kalemidir."
+    - id: donem_karda_mi
+      soru: "Bu istisna 'Kazancın Bulunması Halinde' bölümündedir — dönem kârlı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Geçici Madde 76 istisnası zarar döneminde uygulanamaz."
+    - id: yururluk_kontrolu
+      soru: "GVK Geçici Md.76'nın cari hesap dönemi için yürürlükte olduğu güncel mevzuatla teyit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Geçici Madde statüsü nedeniyle her dönem yürürlük kontrolü zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: urun_senedi_satis_bedeli
+      etiket: "Ürün senedinin toplam satış/devir bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "BİAŞ Emtia işlem kaydı veya satış sözleşmesindeki tutar."
+    - id: urun_senedi_maliyet_bedeli
+      etiket: "Ürün senedinin toplam ediniş/maliyet bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "BİAŞ alış kaydı / fatura / müstahsil makbuzu ile belgelenmiş tutar. Belgesiz → tüm satış kazanç sayılır riski."
+    - id: elden_cikarma_giderleri
+      etiket: "Elden çıkarma giderleri (BİAŞ komisyonu, harç, taşıma vb.) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "BİAŞ komisyonu, takas ücreti ve benzeri belgeli giderler."
+  formuller:
+    urun_senedi_satis_kazanci: "urun_senedi_satis_bedeli - urun_senedi_maliyet_bedeli - elden_cikarma_giderleri"
+    istisna_tutari: "max(urun_senedi_satis_kazanci, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "urun_senedi_satis_kazanci > 0"
+      hata: "Ürün senedi elden çıkarma işlemi zararla sonuçlanmış — bu istisna uygulanamaz (Kazancın Bulunması Halinde bölümüdür)."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  GVK Geçici Madde 76 kapsamında, 5300 sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu
+  çerçevesinde düzenlenen ürün senetlerinin elden çıkarılmasından doğan kazançlar %100
+  istisna olarak beyanname 349. satırında "Kazancın Bulunması Halinde" bölümüne girilir.
+
+  ## Kapsam
+  - ELÜS (Elektronik Ürün Senedi): MKK/BİAŞ Emtia Piyasası altyapısı.
+  - Kağıt Ürün Senedi: Lisanslı depo tarafından fiziken düzenlenen kıymetli evrak, ciro ile devredilebilir.
+  - Kapsam içi ürünler: Buğday, arpa, mısır, pamuk, zeytinyağı, fındık ve diğer tarım ürünleri.
+
+  ## Kritik Noktalar
+  - 5300 s.K. kapsamında Bakanlık LİSANSLI depo şartı temel şarttır.
+  - Kazancın elden çıkarma (satış/devir/temlik) kaynaklanması zorunludur; depolama hizmet geliri kapsam dışıdır.
+  - Maliyet bedeli (C.2) belgelenmeden kazanç hesabı yapılamaz — en yüksek risk kalemidir.
+  - GVK Geçici Madde statüsü nedeniyle her dönem yürürlük kontrolü zorunludur.
+  - Beyanname bölümü: Kazancın Bulunması Halinde — zarar döneminde uygulanamaz.
+
+  ## YİAKV Etkisi
+  GVK Geçici Md.76 ürün senedi istisnasının YİAKV matrahına etkisi bulunmamaktadır.
+
+  ## YMM Tasdik Notu
+  49 No.lu Tebliğ kapsamında: Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu.
+  Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Ürün Senedi Alımı (Maliyet Kaydı)
+  Borç: 110 Hisse Senetleri / 111 Özel Kesim Tahvil/Senet veya İlgili Finansal Varlık Hesabı
+  Alacak: 102 Bankalar
+  Açıklama: ELÜS veya kağıt ürün senedi edinimi — BİAŞ alış kaydı / fatura ile belgelenmiş maliyet
+
+  ## Kayıt 2 — Ürün Senedi Satışı/Devri
+  Borç: 102 Bankalar (veya 120 Alıcılar)
+  Alacak: 110/111 İlgili Finansal Varlık Hesabı (Maliyet)
+  Alacak: 645 Menkul Kıymet Satış Kârları (veya ilgili gelir hesabı) — Satış Kazancı
+  Açıklama: BİAŞ işlem kaydı veya satış sözleşmesi dayanağıyla
+
+  ## Beyanname Akışı
+  1. Elden çıkarma kazancı (satış bedeli − maliyet − giderler) gelir tablosuna yansır.
+  2. KV Beyannamesi 349. Satır: "Kazancın Bulunması Halinde" bölümüne istisna tutarı.
+  3. İstisna tutarı = Kazanç × %100 (tam istisna).
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Tarım ve Orman Bakanlığı Lisanslı Depo Belgesi
+    detay: "5300 s.K. kapsamında Bakanlık tarafından verilen lisanslı depoculuk belgesi. Temel şart — lisanssız depo → kapsam dışı."
+    temin_yeri: Tarım ve Orman Bakanlığı / Lisanslı Depo İşletmecisi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Ürün Senedi Maliyet Belgesi (BİAŞ Alış Kaydı / Fatura / Müstahsil Makbuzu)
+    detay: "En kritik belge. Belgesiz maliyet → GİB tüm satış bedelini kazanç sayabilir. ELÜS için BİAŞ alım ekstresi; kağıt senet için alış faturası veya müstahsil makbuzu."
+    temin_yeri: BİAŞ Emtia Piyasası / Satıcı Faturası / Müstahsil Makbuzu
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ürün Senedi Satış/Devir Belgesi (BİAŞ İşlem Kaydı veya Satış Sözleşmesi)
+    detay: "ELÜS için BİAŞ Emtia Piyasası işlem ekstresi; kağıt senet için satış sözleşmesi veya ciro belgesi."
+    temin_yeri: BİAŞ Emtia Piyasası / Satış Sözleşmesi
+  - kategori: zorunlu
+    "no": 4
+    baslik: ELÜS Kodu veya Kağıt Senet Seri Numarası
+    detay: "MKK ELÜS ID veya fiziki senet seri numarası. İzlenebilirlik açısından zorunludur."
+    temin_yeri: MKK / BİAŞ / Lisanslı Depo
+  - kategori: destekleyici
+    "no": 5
+    baslik: Elden Çıkarma Gider Belgeleri (BİAŞ Komisyon Dekontları vb.)
+    detay: "BİAŞ komisyonu, takas ücreti, taşıma giderleri gibi elden çıkarmayla doğrudan ilgili belgeli giderler."
+    temin_yeri: BİAŞ / Fatura
+  - kategori: destekleyici
+    "no": 6
+    baslik: GVK Geçici Md.76 Güncel Yürürlük Teyidi (Mevzuat Belgesi)
+    detay: "Geçici Madde statüsü nedeniyle ilgili dönem için yürürlükte olduğunu gösteren mevzuat kaynağı veya GİB açıklaması."
+    temin_yeri: Resmî Gazete / GİB / Mevzuat Yayını
+
+k_checklist:
+  - id: K1
+    soru: "Ürün senedini düzenleyen deponun 5300 s.K. kapsamında Bakanlık lisanslı depo olduğu teyit edildi mi?"
+    referans: "GVK Geçici Md.76 | 5300 s.K."
+  - id: K2
+    soru: "Kazancın elden çıkarma (satış/devir/temlik) kaynaklı olduğu doğrulandı mı? (Depolama hizmet geliri değil)"
+    referans: "GVK Geçici Md.76"
+  - id: K3
+    soru: "Ürün senedinin maliyet bedeli belgesi (BİAŞ alış kaydı / fatura / müstahsil makbuzu) dosyada mevcut mu?"
+    referans: "GVK Geçici Md.76 — En kritik belge"
+  - id: K4
+    soru: "ELÜS veya kağıt senet türü belirlendi ve senet kodu/seri numarası kayıt altına alındı mı?"
+    referans: "5300 s.K."
+  - id: K5
+    soru: "GVK Geçici Md.76'nın ilgili hesap dönemi için yürürlükte olduğu güncel mevzuatla doğrulandı mı?"
+    referans: "GVK Geçici Md.76 — Yürürlük kontrolü"
+  - id: K6
+    soru: "Birden fazla ürün senedi işlemi varsa her işlem ayrı satır olarak belgelendi mi?"
+    referans: "GVK Geçici Md.76"
+  - id: K7
+    soru: "İstisna tutarının yalnızca kazanç (pozitif) kalemleri için hesaplandığı ve zarar pozisyonlarının dahil edilmediği doğrulandı mı?"
+    referans: "GVK Geçici Md.76 — Kazancın Bulunması Halinde"
+  - id: K8
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

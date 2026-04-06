@@ -1,0 +1,213 @@
+ic_kod: tasinmaz_satis_5_1_e
+baslik: Taşınmaz Satış Kazancı İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 351 }
+  - { donem: 2025, kod: 351 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-e
+  - KVK Geçici Madde 16
+  - 7456 Sayılı Kanun
+  - 9160 Sayılı Cumhurbaşkanı Kararı
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:601)
+  - KDVK Geçici Madde 43
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "2 yıldan fazla aktifinde tuttuğunuz bir taşınmazı sattınız mı?"
+  info_modal: |
+    KVK Madde 5/1-e kapsamında kurumların en az 2 tam yıl aktifinde tuttuğu
+    taşınmazların satışından doğan kazançların bir kısmı kurumlar vergisinden istisnadır.
+    İstisna oranı; aktife giriş ve satış tarihine göre %75, %50 veya %25'tir.
+    15/7/2023 sonrası aktife giren taşınmazlar için istisna tamamen kaldırılmıştır (7456 s.K.).
+    Bu istisna YİAKV matrahından düşülemez — matrahta kalır.
+  kapi_sorulari:
+    - id: iki_yil_aktif
+      soru: "Taşınmaz satış tarihi itibarıyla en az 2 tam yıl (730 gün) aktifinde bulunuyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "2 yıl şartı sağlanmadan istisna uygulanamaz. Süre tapuya tescil/cins tashih tarihinden başlar; aktife kayıt tarihi değil."
+    - id: tasinmaz_ticareti_yok
+      soru: "Kurumun ana faaliyeti taşınmaz ticareti veya kiralaması değil mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taşınmaz ticareti veya kiralanmasıyla fiilen uğraşan kurumlar bu istisnadan yararlanamaz. GYO/GKO için portföy taşınmazları ayrıca 5/1-d analizi gerektirir."
+    - id: aktife_giris_15072023_oncesi
+      soru: "Taşınmazın aktife giriş tarihi 15/07/2023 öncesi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "15/7/2023 sonrası aktife giren taşınmazlar için istisna tamamen kaldırılmıştır (7456 s.K.). Bu durumda istisna uygulanamaz."
+    - id: fon_ayrimi_yapilacak
+      soru: "İstisna tutarı 549 Özel Fonlar hesabına alınacak mı? (Zorunlu)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna kazancının satışı izleyen hesap dönemi başından KV beyan süresine kadar 549 hesabına alınması zorunludur. 5 yıl boyunca tutulacaktır. Aksi halde istisna geçersiz sayılır."
+
+parametreler:
+  oran_eski: 0.75
+  oran_orta: 0.50
+  oran_gecis: 0.25
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: oran_dilimi
+      etiket: "Uygulanacak istisna oranı (tarih dilimine göre)"
+      tip: secenek
+      secenekler:
+        - "%75 — Satış tarihi 5/12/2017 öncesi"
+        - "%50 — 5/12/2017 ile 15/7/2023 arası satış (aktife giriş 15/7/2023 öncesi)"
+        - "%25 — 15/7/2023 öncesi aktif, 15/7/2023 sonrası satış (KVK Geçici Md.16)"
+      zorunlu: true
+      yardim: |
+        GİB Beyan Rehberi Mart 2026 (No:601) oran tablosu:
+        • %75: Satış tarihi 5/12/2017 öncesi (aktife giriş tarihi fark etmez)
+        • %50: Aktife giriş 15/7/2023 öncesi + satış tarihi 5/12/2017–15/7/2023 arası
+        • %25: Aktife giriş 15/7/2023 öncesi + satış tarihi 15/7/2023 sonrası (KVK Geçici Md.16)
+        • 0% (İstisna yok): Aktife giriş 15/7/2023 sonrası — bu ekran bu durumda gösterilmez (kapı sorusu tarafından engellenir)
+        Kritik: Süre tapuya tescil/cins tashih tarihinden başlar; aktife kayıt tarihi değil.
+    - id: satis_kazanci
+      etiket: "Taşınmaz satış kazancı (net, 2 yıl şartını taşıyan kısım)"
+      tip: para
+      zorunlu: true
+      yardim: "Satış bedeli eksi net defter değeri (birikmiş amortisman düşülmüş). Kısmen kapsam dışı durum varsa orantılı ayrıştırma yapın. Yabancı para cinsinden satışlarda TCMB kuru × miktar kullanın."
+  formuller:
+    oran_sayisal: "0.75 if oran_dilimi == '%75 — Satış tarihi 5/12/2017 öncesi' else (0.50 if oran_dilimi == '%50 — 5/12/2017 ile 15/7/2023 arası satış (aktife giriş 15/7/2023 öncesi)' else 0.25)"
+    istisna_tutari: "max(satis_kazanci * oran_sayisal, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_kazanci > 0"
+      hata: "Satış kazancı pozitif olmalıdır. Zararlı taşınmaz satışında bu istisna uygulanmaz (zarar KKEG olmaz — taşınmaz satışında KVK 5/3 farklı çalışır; zararlı kısım için özelge alınması önerilir)."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-e: En az 2 tam yıl aktifinde tutulan taşınmazların satışından doğan kazancın
+  belirli bir kısmı kurumlar vergisinden istisnadır.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:601) esas alınmıştır.
+
+  ## Oran Tablosu (GİB Rehberi)
+  - %75: Satış tarihi 5/12/2017 öncesi
+  - %50: Aktife giriş 15/7/2023 öncesi + satış tarihi 5/12/2017–15/7/2023 arası
+  - %25: Aktife giriş 15/7/2023 öncesi + satış tarihi 15/7/2023 sonrası (KVK Geçici Md.16)
+  - 0% (İstisna yok): Aktife giriş 15/7/2023 sonrası (7456 s.K.)
+
+  ## Kritik Noktalar
+  - 2 tam yıl (730 gün) aktifinde bulundurma şartı — süre tapuya tescil/cins tashih tarihinden başlar
+  - Satın almada tapuya tescil tarihi, inşaatta cins tashih tarihi, finansal kiralamada mülkiyet tescil tarihi esas
+  - Devir/bölünme durumunda önceki kurumda geçen süreler de sayılır
+  - Taşınmaz ticareti veya kiralanmasıyla fiilen uğraşanlar kapsam dışı
+  - 549 Özel Fonlar hesabına alınma zorunlu — aksi halde istisna geçersiz
+  - 5 yıl boyunca fon hesabında tutulacak; erken çekilirse o tarihte matraha eklenir
+  - Satış bedeli satışı izleyen 2. takvim yılı sonuna kadar tahsil edilmeli
+  - KDV istisnası (KDVK Geçici Md.43): 15/7/2023 öncesi aktife girenler için KDV istisnası devam eder
+  - GYO/GKO portföy taşınmazları için 5/1-d analizi gerekebilir (7524 s.K. Md.32 — 1/1/2025+)
+
+  ## YİAKV Etkisi
+  KVK 5/1-e taşınmaz satış kazancı istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  İstisna tutarı YİAKV matrahında kalır (GİB Rehberi Mart 2026, A0.7 kontrolü).
+
+  ## YMM Tasdik
+  İstisna tutarı ≥ 500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  KV beyannamesiyle birlikte veya 2 ay içinde elektronik olarak verilir.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Taşınmaz Satışı
+  Borç: 102 Bankalar / 120 Alıcılar   [Satış bedeli]
+  Alacak: 252/253 Binalar (Net defter değeri)
+  Alacak: 679 Diğer Olağandışı Gelir ve Kârlar (Satış kazancı)
+
+  ## Kayıt 2 — 549 Fon Hesabına Alma
+  Borç: 570 Geçmiş Yıllar Kârları (veya 690 Dönem Net Kârı)
+  Alacak: 549 Özel Fonlar
+  Açıklama: İstisna kazancının (satis_kazanci × oran) en geç KV beyan süresine kadar 549 hesabına
+  alınması zorunludur. 5 yıl süreyle tutulacaktır.
+
+  ## Uyarı
+  549 hesabından 5 yıl içinde çekilirse, çekildiği tarihte matraha eklenerek vergilendirilir.
+  Sermayeye ilave durumunda fon kapatılır; ilave tarihinde matraha eklenmez
+  (ancak ilerleyen dönemde sermaye azaltılırsa vergileme gündeme gelebilir).
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Taşınmaz Tapu Senedi (Alım) ve Aktife Giriş Kaydı
+    detay: "Aktife giriş tarihinin (tapuya tescil/cins tashih) ve tutarının belgesi. 2 yıl şartı ve oran diliminin tespiti için zorunludur."
+    temin_yeri: Tapu Müdürlüğü / Muhasebe Arşivi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Satış Tapu Senedi ve Satış Sözleşmesi
+    detay: "Satış tarihi ve bedelinin belgesi. Satış tarihi tapuya tescil tarihi olarak esas alınır (satış vaadi değil)."
+    temin_yeri: Tapu Müdürlüğü / Noter
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Başı ve Sonu Bilanço + Gelir Tablosu
+    detay: "Satış kazancının tespiti ve ticari kâr tutarının doğrulanması için."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 4
+    baslik: Amortisman Tablosu ve Birikmiş Amortisman Kaydı
+    detay: "Net defter değeri hesabı için birikmiş amortisman tutarının tespiti."
+    temin_yeri: Muhasebe / Amortisman tablosu
+  - kategori: zorunlu
+    "no": 5
+    baslik: 549 Hesap Kaydı ve Yevmiye
+    detay: "İstisna tutarının 549 Özel Fonlar hesabına alındığını gösteren yevmiye kaydı. Zorunlu koşul — eksikliği istisnayı geçersiz kılar."
+    temin_yeri: Muhasebe / Yevmiye defteri
+  - kategori: destekleyici
+    "no": 6
+    baslik: KDV İstisnası Belgesi (KDVK Geçici Md.43)
+    detay: "15/7/2023 öncesi aktife giren taşınmazlar için KDV istisnasının uygulandığına dair kayıt."
+    temin_yeri: Muhasebe / KDV beyannamesi
+  - kategori: destekleyici
+    "no": 7
+    baslik: Devir/Bölünme Belgeleri (Varsa)
+    detay: "Devir veya bölünme yoluyla edinilen taşınmazlarda önceki kurumda geçen sürenin ispatı."
+    temin_yeri: Ticaret Sicili / Muhasebe Arşivi
+
+k_checklist:
+  - id: K1
+    soru: "Taşınmazın aktife giriş tarihi (tapuya tescil / cins tashih) doğrulandı mı? (2 yıl + oran dilimi tespiti için kritik)"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 (No:601) Md.13-18"
+  - id: K2
+    soru: "Aktife giriş tarihi 15/07/2023 öncesi mi? (Sonrası ise istisna uygulanamaz — 7456 s.K.)"
+    referans: "7456 s.K. | GİB Beyan Reh. 2026 Md.3"
+  - id: K3
+    soru: "2 tam yıl (730 gün) aktifinde bulundurma şartı sağlandı mı?"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 Md.12"
+  - id: K4
+    soru: "Uygulanacak oran dilimi (satış tarihi + aktife giriş tarihi kombinasyonu) doğru seçildi mi? (%75 / %50 / %25)"
+    referans: "GİB Beyan Reh. 2026 (No:601) Oran Tablosu | KVK Geçici Md.16"
+  - id: K5
+    soru: "Kurum ana sözleşmesinde ve fiilen taşınmaz ticareti / kiralaması yapılmıyor mu?"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 Md.10"
+  - id: K6
+    soru: "İstisna tutarı (satis_kazanci × oran) 549 hesabına en geç KV beyan süresine kadar alındı mı?"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 Md.40-42"
+  - id: K7
+    soru: "5 yıllık fon tutma süresi takibi yapılıyor mu? (Erken çekilirse matraha eklenir)"
+    referans: "KVK Md.5/1-e"
+  - id: K8
+    soru: "Satış bedeli satışı izleyen 2. takvim yılı sonuna kadar tahsil edilecek mi?"
+    referans: "GİB Beyan Reh. 2026 Md.29-30"
+  - id: K9
+    soru: "GYO/GKO ise portföy taşınmazı için 5/1-d analizi yapıldı mı? (7524 s.K. Md.32 — 1/1/2025+ dağıtım şartı)"
+    referans: "KVK Md.5/1-d | 7524 s.K. Md.32"
+  - id: K10
+    soru: "KDV istisnası (KDVK Geçici Md.43) değerlendirildi mi? (15/7/2023 öncesi aktifler için devam eder)"
+    referans: "KDVK Geçici Md.43 | GİB Beyan Reh. 2026 A0.6"
+  - id: K11
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (Bu istisna YİAKV'dan düşülemez — matrahta kalır)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 A0.7"
+  - id: K12
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

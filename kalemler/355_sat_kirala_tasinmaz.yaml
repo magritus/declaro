@@ -1,0 +1,211 @@
+ic_kod: sat_kirala_tasinmaz_5_1_j
+baslik: Sat-Kirala-Geri Al İşlemlerinden Doğan Kazançlarda İstisna (Taşınmazlar)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 355 }
+  - { donem: 2025, kod: 355 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-j
+  - 6361 Sayılı Finansal Kiralama, Faktoring, Finansman ve Tasarruf Finansman Şirketleri Kanunu
+  - 5411 Sayılı Bankacılık Kanunu
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2013-04-13"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Bir taşınmazı (arsa, bina, fabrika, depo) finansal kiralama şirketine veya katılım bankasına tapuyla devredip geri kiralayarak kullanıyorsunuz?"
+  info_modal: |
+    KVK 5/1-j kapsamında, kurumların taşınmazlarını sat-kirala-geri al işlemi çerçevesinde
+    finansal kiralama şirketi, katılım bankası veya kalkınma/yatırım bankasına tapu devriyle
+    satmaları ve finansal kiralama sözleşmesiyle geri kiralamaları durumunda doğan satış kazancı
+    %100 istisnadır. 354 (taşınır) ile aynı mekanizma ancak tapu boyutu özgün koşul ekler.
+    Kira süresi sonunda tapu geri devri zorunludur.
+  kapi_sorulari:
+    - id: varlik_tasinmaz_mi
+      soru: "Satılan varlık taşınmaz mı? (Arsa, arazi, bina, fabrika, depo — taşınır/makine değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taşınır (makine, araç, ekipman) için 354 kodu kullanılmalıdır. Bu istisna yalnızca taşınmazlar içindir."
+    - id: alici_lisansli_mi
+      soru: "Alıcı kurum; 6361 s.K. kapsamında BDDK lisanslı finansal kiralama şirketi, katılım bankası veya kalkınma/yatırım bankası mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Mevduat bankası kapsam dışıdır. KVK 5/1-j yalnızca bu kurumlara yapılan işlemler için geçerlidir."
+    - id: tapu_devri_gerceklesti_mi
+      soru: "Taşınmazın tapusu alıcı kurum adına tapuya tescil edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taşınmaz satışı tapuya tescil olmadan hukuken tamamlanmış sayılmaz. Tapu senedi zorunlu belgedir."
+    - id: geri_devir_taahhut_var_mi
+      soru: "Kira süresi sonunda tapunun geri devir taahhüdü/opsiyonu finansal kiralama sözleşmesinde yazılı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Tapu geri devri 355 istisnasının devamlılığı için zorunludur. Geri devir gerçekleşmezse istisna iptal riski doğar."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: tapu_devir_bedeli
+      etiket: "Tapu Devir (Satış) Bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Tapuda belirtilen satış bedeli. Gerçek satış bedeli ile uyumlu olmalıdır. Emsal değere uygunluk için değerleme raporu önerilir."
+    - id: net_defter_degeri
+      etiket: "Taşınmazın Net Defter Değeri (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Birikmiş amortisman düşüldükten sonraki net aktif değeri (250/252/258 hesap kartı ile uyumlu)."
+    - id: satis_giderleri
+      etiket: "Satış Giderleri (Tapu harcı satıcı payı, ekspertiz, komisyon vb.) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Tapu harcı satıcı payı (%2), döner sermaye, ekspertiz ve komisyon giderleri. KDV dahil/hariç ayrımı yapılmalıdır."
+  formuller:
+    satis_kazanci: "tapu_devir_bedeli - net_defter_degeri - satis_giderleri"
+    istisna_tutari: "max(satis_kazanci * oran, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_kazanci > 0"
+      hata: "Satış kazancı pozitif olmalıdır. Zarar durumunda bu istisna uygulanamaz (Kazancın Bulunması Halinde bölümü)."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-j: Finansal kiralama ya da finansman şirketleri, katılım bankaları ile kalkınma
+  ve yatırım bankalarına satılıp geri kiralanan taşınmazlardan doğan satış kazançları %100 istisnadır.
+
+  ## Mekanizma — 3 Aşamalı Döngüsel İşlem (Taşınmaza Özgün: Tapu Boyutu)
+  AŞAMA 1 — TAPU DEVRİ: Kurum taşınmazını FK/Bankaya tapu tesciliyle satar → Satış kazancı
+  %100 istisna → 549 Özel Fon Hesabına alınır.
+  AŞAMA 2 — GERİ KİRALAMA: FK/Banka aynı taşınmazı finansal kiralamaya verir → Kira ödemeleri
+  gider olarak indirilebilir → 549 Fon her dönem kira payına orantılı azaltılır.
+  AŞAMA 3 — TAPU GERİ DEVRİ: Kira süresi sonunda tapu satıcı/kiracı adına tescil edilir →
+  Geri alım bedeli yeni aktif değer → 549 Fon sıfırlanır → İstisna korundu.
+
+  ## 354 (Taşınır) ile Karşılaştırma — 355'e Özgün Koşullar
+  - TAPU DEVRİ zorunlu (354'te teslim tutanağı yeterli)
+  - Kira süresi sonunda TAPU GERİ DEVRİ taahhüdü sözleşmede yazılı olmalı
+  - SPK lisanslı gayrimenkul değerleme raporu güçlü belge olarak önerilir
+  - KDV Md.17/4-r (taşınmaz) muafiyeti ile 5/1-j etkileşimi analiz edilmeli
+  - Tapu harcı hem satışta hem geri devirde olmak üzere iki kez doğabilir
+  - Tapu üzerinde kiralama şerhi konulabilir (kiracı koruma güvencesi)
+
+  ## Kritik Noktalar
+  - 355 sadece tapu devir yılında beyannamede gösterilir; sonraki yıllarda 355 satırına yazılmaz
+  - Fon amortizasyonu: Her dönem = Fon × (Dönem Kira / Toplam Kira)
+  - Geri devir olmadan 549'daki kalan bakiye vergiye tabi hale gelir
+  - 2 yıl aktif şartı (351/5/1-e) bu istisna için aranmaz
+  - Taşınmaz ticareti yasağı (351/5/1-e) bu istisna için geçerli değildir
+
+  ## YİAKV Etkisi
+  KVK 5/1-j (355) istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır; dönem mevzuatı
+  ve GİB açıklamalarıyla ayrıca analiz edilmelidir.
+
+  ## YMM Tasdik Raporu
+  49 No.lu Tebliğ (30.12.2025): Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu
+  zorunludur. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Tapu Devir Kaydı (Taşınmazın FK Şirketine/Bankaya Tapu Tesciliyle Satışı)
+  Borç: 102 Bankalar / 120 Alacaklar              [Tapu Devir Bedeli]
+  Alacak: 250/252 İlgili Taşınmaz Aktif Hesabı    [Brüt Defter Değeri]
+  Alacak: 258 Birikmiş Amortismanlar              [Birikim]
+  Alacak: 679 Diğer Olağandışı Kâr                [Satış Kazancı]
+  Açıklama: Taşınmazın FK şirketine/bankaya sat-kirala-geri al kapsamında tapu tesciliyle satışı
+
+  ## Kayıt 2 — 549 Özel Fon Hesabına Alma (Tapu Devir Yılında)
+  Borç: 679 Diğer Olağandışı Kâr / 645 Satış Kârı   [İstisna Tutarı]
+  Alacak: 549 Özel Fonlar — KVK 5/1-j 355 İstisnası  [İstisna Tutarı]
+  Açıklama: Satış kazancının tamamının KVK 5/1-j kapsamında 549 hesabına alınması
+
+  ## Kayıt 3 — Dönemsel Kira Gideri Kaydı (Her Dönem — Finansal Kiralama)
+  Borç: 770 Genel Yönetim Giderleri               [Kira Bedeli + KDV]
+  Alacak: 102 Bankalar                             [Kira Bedeli + KDV]
+  Açıklama: FK şirketine ödenen finansal kiralama kira bedeli — gider kabul edilir
+
+  ## Kayıt 4 — Fon Amortizasyonu (Her Dönem — Kira Payına Orantılı)
+  Borç: 549 Özel Fonlar                   [Dönem Fon Azalışı]
+  Alacak: 549 Özel Fonlar (alt hesap)     [Dönem Fon Azalışı]
+  Açıklama: Fon = Başlangıç Fon × (Dönem Kira / Toplam Kira)
+  Not: Kira süresi sonunda 549 hesabı sıfırlanmış ve tapu geri devri tamamlanmış olmalıdır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Tapu Senedi (Alıcı FK/Banka Adına Tescil)
+    detay: "Tapu sicilinde alıcı FK şirketi veya banka adına 'Mülkiyet' tescilini gösterir. Tescil tarihi = Satış tarihi = İstisnanın başladığı tarih."
+    temin_yeri: Tapu Sicil Müdürlüğü
+  - kategori: zorunlu
+    "no": 2
+    baslik: BDDK Lisans Belgesi (Alıcı Kurum)
+    detay: "6361 s.K. kapsamında FK şirketi lisansı veya 5411 s.K. kapsamında banka statü belgesi. Mevduat bankası kapsam dışıdır."
+    temin_yeri: BDDK / Alıcı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Sat-Kirala-Geri Al Sözleşme Paketi (Satış + Finansal Kiralama Sözleşmeleri)
+    detay: "Geri devir taahhüdü/opsiyonu sözleşmede açıkça yer almalıdır. Şifahi taahhüt geçersizdir."
+    temin_yeri: Hukuk Birimi / Sözleşme Arşivi
+  - kategori: zorunlu
+    "no": 4
+    baslik: 549 Özel Fon Hesabı Kayıt ve Amortizasyon Tablosu
+    detay: "Tapu devir yılında fona alınan tutar ve her dönem kira payına orantılı amortizasyon hesaplamaları."
+    temin_yeri: Muhasebe / ERP
+  - kategori: destekleyici
+    "no": 5
+    baslik: SPK Lisanslı Gayrimenkul Değerleme Raporu
+    detay: "Satış bedelinin piyasa değeriyle uyumlu olduğunu belgeler. Emsal bedel riski ve örtülü kazanç dağıtımına karşı güçlü savunma."
+    temin_yeri: SPK Lisanslı Değerleme Şirketi
+
+k_checklist:
+  - id: K1
+    soru: "Satılan varlık taşınmaz mı? (Arsa, bina, fabrika, depo) — 354 (taşınır) ile karıştırılmadı mı?"
+    referans: "KVK Md. 5/1-j | Beyanname Kodu 355"
+  - id: K2
+    soru: "Alıcı kurum; BDDK lisanslı FK şirketi, katılım bankası veya kalkınma/yatırım bankası mı? Mevduat bankası kapsam dışında."
+    referans: "KVK Md. 5/1-j | 6361 s.K. | 5411 s.K."
+  - id: K3
+    soru: "TAPU DEVRİ gerçekleşti mi? Alıcı kurum adına tapuya tescil mevcut mu? Tapu senedi dosyada var mı?"
+    referans: "KVK Md. 5/1-j | Medeni Kanun Md. 705"
+  - id: K4
+    soru: "Sözleşmede TAPU GERİ DEVİR taahhüdü/opsiyonu açıkça yazılı mı? Şifahi taahhüt geçersizdir."
+    referans: "KVK Md. 5/1-j"
+  - id: K5
+    soru: "Satış ve geri kiralama sözleşmeleri eş zamanlı/bağlantılı mı? Ayrı bağımsız işlem tartışmalı."
+    referans: "KVK Md. 5/1-j | GİB Özelgeleri"
+  - id: K6
+    soru: "Satış kazancının tamamı 549 hesabına tapu devir yılında alındı mı? F.6 = G.1 uyumlu mu?"
+    referans: "KVK Md. 5/1-j | 1 S.No.lu KV GT"
+  - id: K7
+    soru: "Fon amortizasyonu kira payına orantılı mı hesaplanıyor? Her dönem: Fon × (Dönem Kira / Toplam Kira)"
+    referans: "KVK Md. 5/1-j | 1 S.No.lu KV GT"
+  - id: K8
+    soru: "KDV Md.17/4-r analizi yapıldı mı? Tapu harcı hem satış hem geri devir aşamaları için hesaplandı mı?"
+    referans: "KDVK Md. 17/4-r | Harçlar Kanunu"
+  - id: K9
+    soru: "Satış bedeli değerleme raporu ile uyumlu mu? Emsal fiyattan uzak satış KVK Md.13 riskini tetikler."
+    referans: "KVK Md. 13"
+  - id: K10
+    soru: "Tapu üzerinde kiralama şerhi konuldu mu? Kiracı kurumun geri devir güvencesi açısından değerlendirildi mi?"
+    referans: "TMK / Tapu Sicili"
+  - id: K11
+    soru: "Tapu geri devri gerçekleşti mi veya planlı mı? Risk analizi yapıldı mı? Geri devir yoksa → istisna iptali."
+    referans: "KVK Md. 5/1-j"
+  - id: K12
+    soru: "355 yalnızca TAPU DEVİR YILINDA kullanıldı mı? Sonraki yıllarda 355 satırına yazılmadı mı?"
+    referans: "KV Beyannamesi 355 Satırı"
+  - id: K13
+    soru: "355 'Kazancın Bulunması Halinde' bölümünde mi? 'Zarar Olsa Dahi' bölümünde değil mi?"
+    referans: "KVK Md. 5/1-j"
+  - id: K14
+    soru: "YİAKV matrahında 355 istisnasının etkisi ayrıca analiz edildi mi? (Tartışmalı — dönem mevzuatı esas)"
+    referans: "KVK Md. 32/C"

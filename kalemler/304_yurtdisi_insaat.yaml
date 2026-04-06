@@ -1,0 +1,212 @@
+ic_kod: yurtdisi_insaat_montaj_5_1_h
+baslik: Yurt Dışı İnşaat, Onarma, Montaj ve Teknik Hizmet Kazanç İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 304 }
+  - { donem: 2025, kod: 304 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-h
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.9
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: yurtdisi_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "Yurt dışında fiilen gerçekleştirilen inşaat, onarma, montaj veya teknik hizmet faaliyetinden elde ettiğin kazanç var mı?"
+  info_modal: |
+    KVK Madde 5/1-h kapsamında yurt dışında fiilen icra edilen inşaat, onarma, montaj
+    ve teknik hizmet faaliyetlerinden elde edilen kazançlar **%100 tam istisna** olarak
+    uygulanır. Beyannamede **"Zarar Olsa Dahi İndirilecek"** bölümünde 304. satırda gösterilir.
+
+    **322 (5/1-g) ile farkı:**
+    - Türkiye'ye **transfer zorunlu DEĞİL** — yalnızca Türkiye gelir tablosuna yansıması yeterli
+    - **%15 vergi yükü şartı YOK**
+    - Faaliyet türü sınırlı: İnşaat / Onarma / Montaj / Teknik Hizmet (genel şube faaliyeti dışında)
+
+    **Kritik şartlar:**
+    ① Faaliyet yurt dışında **FİİLEN** icra edilmeli (Türkiye'den uzaktan hizmet tartışmalıdır)
+    ② Kazanç Türkiye'de **genel sonuç hesaplarına (gelir tablosuna) intikal** ettirilmeli
+    ③ Sözleşme niteliği inşaat/onarma/montaj/teknik hizmet olmalı
+  kapi_sorulari:
+    - id: faaliyet_turu_uygun_mu
+      soru: "Faaliyet türü inşaat, onarma, montaj veya teknik hizmet mi? (Sözleşme niteliğiyle teyit edildi mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kapsam İçi: İnşaat (bina/köprü/yol/baraj), onarma/tadilat, montaj/kurulum, teknik hizmet. Kapsam Dışı: Ticaret, komisyon, aracılık, yazılım ürünü satışı, yatırım danışmanlığı."
+    - id: yurtdisinda_fiilen_mi
+      soru: "Faaliyet yurt dışında FİİLEN icra edildi mi? (Personel/şantiye fiziken yurt dışında bulundu mu?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: Pasaport, vize, çalışma izni, şantiye belgesi ile ispat edilmeli. Türkiye'den uzaktan (remote) verilen teknik danışmanlık tartışmalıdır — özelge önerilir."
+    - id: genel_sonuc_hesaplari
+      soru: "Yurt dışı proje kazancı Türkiye'de genel sonuç hesaplarına (gelir tablosuna) intikal ettirildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: 'Türkiye'de genel sonuç hesaplarına intikal ettirilen kazançlar' KVK 5/1-h'ın temel şartıdır. Transfer gerekmez ancak gelir tablosuna yansıtılması zorunludur."
+    - id: istisna_mahsup_analizi
+      soru: "5/1-h istisnası ile KVK Md.33 yurt dışı vergi mahsubu alternatifleri karşılaştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5/1-h seçilirse yurt dışında ödenen vergi mahsup edilemez. Yüksek yurt dışı vergi oranında KVK Md.33 mahsubu daha avantajlı olabilir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: yurtdisi_hakkedis_geliri
+      etiket: "Yurt dışı hâkediş / hizmet gelirleri — tüm projeler toplamı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Tahakkuk eden veya tahsil edilen gelir. Döviz ise TCMB alış kuru ile TL'ye çevrilir. İlgili gelir hesabı (600/640/649) ekstreleriyle uyumlu olmalı."
+    - id: yurtdisi_dogrudan_giderler
+      etiket: "Yurt dışı projeyle doğrudan ilgili giderler (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "İşçilik (yurt dışı personel), malzeme, ekipman, alt yüklenici, ulaşım, konaklama. Fatura + ödeme belgesiyle belgelenmiş."
+    - id: merkez_genel_gider_payi
+      etiket: "Türkiye merkezi genel gider payı — projeye isabet eden (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Dağıtım anahtarı: Proje cirosu / Toplam ciro vb. Yöntem yazılı belgelenmeli."
+  formuller:
+    yurtdisi_faaliyet_kazanci: "yurtdisi_hakkedis_geliri - yurtdisi_dogrudan_giderler - merkez_genel_gider_payi"
+    istisna_tutari: "max(yurtdisi_faaliyet_kazanci, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "yurtdisi_hakkedis_geliri > 0"
+      hata: "Yurt dışı proje geliri sıfır veya negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-h: Yurt dışında yapılan inşaat, onarma, montaj işleri ile teknik hizmetlerden
+  sağlanarak Türkiye'de genel sonuç hesaplarına intikal ettirilen kazançlar kurumlar
+  vergisinden istisnadır. Beyanname 304. satırı, "Zarar Olsa Dahi İndirilecek" bölümündedir.
+
+  ## 322 (5/1-g) ile Karşılaştırma — 304 (5/1-h) Daha Esnek
+  | Kriter                    | 322 (KVK 5/1-g)          | 304 (KVK 5/1-h)              |
+  |---------------------------|--------------------------|------------------------------|
+  | Türkiye'ye transfer       | ZORUNLU                  | ZORUNLU DEĞİL                |
+  | Vergi yükü şartı          | ≥%15                     | YOK                          |
+  | Faaliyet türü             | Genel şube faaliyeti     | İnşaat/Onarma/Montaj/T.Hizmet|
+  | İstisna oranı             | %100                     | %100                         |
+  | Beyanname bölümü          | Zarar Olsa Dahi          | Zarar Olsa Dahi              |
+
+  ## Kritik Noktalar
+  1. Faaliyet yurt dışında FİİLEN icra edilmiş olmalı — personel/şantiye fiziken yurt dışında.
+  2. Kazanç Türkiye gelir tablosuna intikal ettirilmeli (transfer zorunlu DEĞİL).
+  3. Sözleşme niteliği: İnşaat, onarma, montaj veya teknik hizmet. Ticaret/komisyon → kapsam dışı.
+  4. Uzaktan (remote) teknik hizmet: Tartışmalı — özelge alınması şiddetle tavsiye edilir.
+  5. Karma faaliyette (hizmet + mal satışı): Yalnızca hizmet kısmı istisna, mal satışı ayrıştırılmalı.
+  6. 5/1-h seçilirse yurt dışı ödenen vergi KVK Md.33 kapsamında mahsup YAPILAMAZ.
+
+  ## YİAKV Etkisi
+  KVK 5/1-h (304) istisnasının YİAKV (KVK Md.32/C) matrahına etkisi dönem mevzuatı ve
+  GİB açıklamalarıyla analiz edilmelidir. Tartışmalı kabul edilmektedir.
+
+  ## YMM Tasdik Notu
+  49 No.lu Tebliğ (30.12.2025): Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu.
+  Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Yurt Dışı Proje Geliri Tahakkuku
+  Borç: 120 Alıcılar / 181 Gelir Tahakkukları — Hâkediş alacağı (TCMB alış kuru)
+  Alacak: 600 Yurt İçi Satışlar / 601 Yurt Dışı Satışlar veya 649 Diğer Gelirler
+  NOT: Gelir Türkiye gelir tablosuna yansıtılır (KVK 5/1-h'ın temel şartı).
+
+  ## Kayıt 2 — Yurt Dışı Proje Giderleri
+  Borç: 740/750/760 İlgili Gider Hesabı — Proje personel, malzeme, ekipman, alt yüklenici giderleri
+  Alacak: 102 Bankalar / 320 Borçlar
+  NOT: Doğrudan proje giderleri ve merkez genel gider payı ayrı izlenmeli.
+
+  ## Kayıt 3 — Tahsilat
+  Borç: 102 Bankalar — Net tahsilat (kur farkı varsa 646/656)
+  Alacak: 120 Alıcılar / 181 Gelir Tahakkukları
+  NOT: Transfer olmasa bile gelir tablosu kaydı zorunludur.
+
+  ## Beyanname Akışı
+  1. Yurt dışı proje kazancı Türkiye gelir tablosuna yansır → Ticari kâra dahil.
+  2. KV Beyannamesi 304. Satır: "Zarar Olsa Dahi İndirilecek" bölümüne net kazanç.
+  3. KVK Md.33 mahsup: 5/1-h istisnası seçilirse uygulanamaz.
+  4. 5/1-h seçilmediyse KVK Md.33 ile yurt dışı ödenen vergi KV'den mahsup edilebilir.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Yurt Dışı Proje Sözleşmesi (İnşaat/Onarma/Montaj/Teknik Hizmet)
+    detay: "Sözleşme niteliği faaliyet türünü belirler. Ticaret, komisyon, aracılık içeriyorsa ayrıştırılmalı. Her proje için ayrı sözleşme."
+    temin_yeri: Proje Dosyası / Hukuk Departmanı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Yurt Dışında Fiilen İcra Belgesi (Pasaport/Vize/Çalışma İzni/Şantiye Belgesi)
+    detay: "Personelin yurt dışında fiziken bulunduğunu kanıtlayan belgeler. Türkiye'den uzaktan hizmet için özelge alınması tavsiye edilir."
+    temin_yeri: İnsan Kaynakları / Proje Yönetimi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Türkiye Gelir Tablosu — Yurt Dışı Proje Gelirinin İntikali Belgesi
+    detay: "Yurt dışı kazancın Türkiye 600/601/649 hesabına intikal ettirildiğini gösteren muhasebe ekstreleri. KVK 5/1-h'ın temel şartı."
+    temin_yeri: Muhasebe / ERP
+  - kategori: zorunlu
+    "no": 4
+    baslik: Proje Gelir-Gider Tablosu ve Dağıtım Anahtarı Belgesi
+    detay: "Her proje için ayrı gelir-gider takibi. Karma muhasebede yalnızca yurt dışı proje kazancı alınmalı. Merkez genel gider dağıtım yöntemi yazılı belgelenmeli."
+    temin_yeri: Muhasebe / Proje Muhasebesi
+  - kategori: zorunlu
+    "no": 5
+    baslik: TCMB Döviz Alış Kuru Belgesi
+    detay: "Dövizli proje gelirleri için tahakkuk veya transfer tarihindeki TCMB alış kuru. Tutarlılık zorunludur."
+    temin_yeri: TCMB Kur Arşivi (tcmb.gov.tr)
+  - kategori: destekleyici
+    "no": 6
+    baslik: Yurt Dışı Vergi Ödeme Belgesi (KVK Md.33 Analizi İçin — Varsa)
+    detay: "5/1-h istisnası seçilirse mahsup yapılamaz. Mahsup alternatifi değerlendiriliyorsa yurt dışı vergi makbuzu gereklidir."
+    temin_yeri: Yurt Dışı Vergi Otoritesi / Muhasebe
+  - kategori: destekleyici
+    "no": 7
+    baslik: ÇVÖA Varlığı ve Şantiye İşyeri Analiz Belgesi (Varsa)
+    detay: "İşin yapıldığı ülkeyle Türkiye arasında ÇVÖA varsa şantiye işyeri maddesine göre vergilendirme yetkisi analizi."
+    temin_yeri: ÇVÖA Metni / YMM Analiz Belgesi
+
+k_checklist:
+  - id: K1
+    soru: "Faaliyet türü sözleşme niteliğiyle inşaat, onarma, montaj veya teknik hizmet olarak teyit edildi mi? (Ticaret/komisyon değil)"
+    referans: "KVK Md.5/1-h | 1 S.No.lu KV GT 5.9"
+  - id: K2
+    soru: "Faaliyetin yurt dışında FİİLEN icra edildiği pasaport/vize/çalışma izni/şantiye belgesiyle kanıtlandı mı?"
+    referans: "KVK Md.5/1-h — Fiilen icra şartı"
+  - id: K3
+    soru: "Yurt dışı proje kazancının Türkiye gelir tablosuna (genel sonuç hesaplarına) intikal ettirildiği muhasebe kayıtlarıyla teyit edildi mi?"
+    referans: "KVK Md.5/1-h — Temel şart"
+  - id: K4
+    soru: "Birden fazla proje varsa her proje için ayrı gelir-gider takibi veya belgelenmiş dağıtım anahtarı mevcut mu?"
+    referans: "1 S.No.lu KV GT 5.9"
+  - id: K5
+    soru: "Karma faaliyette (hizmet + mal satışı) yalnızca hizmet kısmının istisna alındığı ve mal satışının ayrıştırıldığı teyit edildi mi?"
+    referans: "KVK Md.5/1-h"
+  - id: K6
+    soru: "5/1-h istisnası ile KVK Md.33 mahsup alternatifleri karşılaştırıldı ve 5/1-h seçildi ise mahsup uygulanmadığı teyit edildi mi?"
+    referans: "KVK Md.5/1-h | KVK Md.33"
+  - id: K7
+    soru: "Uzaktan (remote) teknik hizmet varsa özelge alındı mı veya bu gelir kapsam dışı tutuldu mu?"
+    referans: "KVK Md.5/1-h — Tartışmalı alan"
+  - id: K8
+    soru: "İşin yapıldığı ülkeyle ÇVÖA varsa şantiye işyeri maddesi ve vergilendirme yetkisi analiz edildi mi?"
+    referans: "İlgili ÇVÖA"
+  - id: K9
+    soru: "Döviz kuru dönüşümünün TCMB alış kuru ile tutarlı şekilde yapıldığı teyit edildi mi?"
+    referans: "TCMB Kur Arşivi"
+  - id: K10
+    soru: "KVK 5/1-h istisnasının YİAKV (KVK Md.32/C) matrahına etkisi analiz edildi mi?"
+    referans: "KVK Md.32/C"
+  - id: K11
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

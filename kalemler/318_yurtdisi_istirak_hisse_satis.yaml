@@ -1,0 +1,234 @@
+ic_kod: yurtdisi_istirak_hisse_satis_5_1_c
+baslik: Yurt Dışı İştirak Hissesi Satış Kazancı İstisnası (%100 — Tam Mükellef AŞ)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 318 }
+  - { donem: 2025, kod: 318 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-c
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: yurtdisi_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "Yurt dışındaki bir iştirakın hisselerini sattın mı?"
+  info_modal: |
+    KVK 5/1-c kapsamında yurt dışı iştirak hissesi satış kazancı istisnası YALNIZCA tam mükellef
+    anonim şirketlere uygulanır. Satış kazancının tamamı (%100) istisna kapsamındadır.
+    5/1-e (361 kodu, %50) ile karıştırılmamalıdır. Fon hesabı (549) GEREKMEMEKTEDİR.
+    ÖNEMLİ: Bu istisna YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  kapi_sorulari:
+    - id: satici_as_mi
+      soru: "İstisna kullanan kurum YALNIZCA tam mükellef ANONİM ŞİRKET mi? (KRİTİK)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5/1-c'nin en kritik şartı: SADECE tam mükellef anonim şirketler kullanabilir. Ltd.Şti. için 5/1-e (361 kodu) değerlendirilmelidir."
+    - id: istirak_yurtdisi_mi
+      soru: "Satılan iştirakın kanuni ve iş merkezi yurt dışında mı? AŞ veya Ltd niteliğinde mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Türkiye'de tam mükellef olmamalıdır. Partnership, trust vb. yapılar kapsam dışıdır."
+    - id: holding_aktif_orani
+      soru: "Nakit dışı aktifinizin ≥%75'i yurt dışı iştirak hisselerinden mi oluşuyor? (Satış tarihinden geriye 1 yıl aralıksız)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Her bir iştirak için ≥%10 sermaye payı eşiği gereklidir. Tek çeyrek bile <%75 ise şart bozulur."
+    - id: elde_tutma_730_gun
+      soru: "Satılan hisseler en az 730 gün (2 tam yıl) elde tutuldu mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "730 güne 1 gün eksik olsa bile şart sağlanmaz. Devir/bölünmede kaynak kurum süresi esas alınabilir."
+    - id: mk_ticareti_degil
+      soru: "Kurumun ana faaliyet konusu menkul kıymet ticareti değil mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Ana faaliyet konusu menkul kıymet ticareti olan kurumlar bu istisnadan yararlanamaz."
+
+parametreler:
+  oran: 1.0
+  min_holding_aktif_orani: 0.75
+  min_elde_tutma_gun: 730
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: satis_bedeli_tl
+      etiket: "Satış bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Hissenin elden çıkarılması karşılığında alınan toplam bedel. Yabancı para ise satış tarihi TCMB kuru ile TL'ye çevirin."
+    - id: defter_degeri_tl
+      etiket: "Defter değeri / maliyet (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Hissenin bilançoda kayıtlı değeri (maliyet bedeli veya düzeltilmiş tutar)."
+    - id: satis_giderleri_tl
+      etiket: "Satış giderleri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Aracılık komisyonu, noter, tescil, avukat vb. satışa özgü giderler. KVK 5/3: Bu giderlerin KKEG analizi zorunludur."
+  formuller:
+    satis_kazanci: "max(satis_bedeli_tl - defter_degeri_tl - satis_giderleri_tl, 0)"
+    istisna_tutari: "satis_kazanci * oran"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_bedeli_tl > defter_degeri_tl"
+      hata: "Satış kazancı negatif veya sıfır — istisna uygulanamaz. Zarar aktarımı ayrıca değerlendirilebilir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-c kapsamında yurt dışı iştirak hissesi satış kazancı istisnası.
+  YALNIZCA tam mükellef anonim şirketlere uygulanır — bu 5/1-e'den temel farktır.
+
+  ## Temel Şartlar (Kümülatif)
+  ① Satıcı kurum: SADECE tam mükellef anonim şirket (AŞ)
+  ② Satılan iştirak: Kanuni/iş merkezi yurt dışında olan AŞ/Ltd
+  ③ Holding aktif oranı: Nakit dışı aktifin ≥%75'i yurt dışı iştirak hissesi — satış tarihinden geriye 1 yıl aralıksız
+  ④ Her iştirak için ≥%10 sermaye payı
+  ⑤ En az 730 gün (2 tam yıl) elde tutma
+  ⑥ Ana faaliyet konusu menkul kıymet ticareti olmama
+
+  ## Kritik Noktalar
+  - 5/1-c'de 549 Özel Fonlar hesabına kayıt YAPILMAZ (5/1-e'den temel fark)
+  - Satış giderleri için KVK 5/3 KKEG analizi zorunludur
+  - Aktif oranı tüm dönem boyunca (sadece dönem sonu değil) sağlanmış olmalıdır
+  - Devir/bölünmede elde tutma süresi kaynak kurumdaki tarihten hesaplanabilir
+
+  ## YİAKV Etkisi
+  KVK 5/1-c (318) istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdında 318 tutarı matrahtan çıkarılmamalıdır.
+
+  ## 5/1-c (318) vs 5/1-e (361) Karşılaştırma
+  318 (5/1-c): Sadece tam mükellef AŞ | Yurt dışı iştirak | %100 tam istisna | Fon hesabı GEREKMİYOR
+  361 (5/1-e): Tüm tam mükellef kurumlar | %50 istisna | 549 Özel Fonlar hesabı + 5 yıl tutma ZORUNLU
+  AŞ ise 5/1-c daha avantajlıdır. Ltd ise 5/1-e kullanılabilir.
+
+  ## KVK 5/3 Gider Kısıtlaması
+  İstisna kapsamındaki kazanca ilişkin satış giderleri (aracılık, noter, tescil vb.) KKEG olabilir.
+  Her gider kalemi için istisna/gider ilişkisi analiz edilmeli ve belgelenmelidir.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Yurt Dışı İştirak Hissesi Satış Kaydı
+  Borç: 102 Bankalar / 101 Alınan Çekler — Satış bedelinin tahsilatı
+  Alacak: 245 Bağlı Ortaklıklar — İştirakin kayıtlı defter değerinin düşülmesi
+  Borç: 631/689 Satış Giderleri — KVK 5/3 KKEG analizi zorunlu
+  Alacak: 679 Diğer Olağandışı Gelir — Satış kazancı (318. satır ile eşleşmeli)
+
+  ## Kayıt 2 — Fon Hesabına Alma GEREKMEZ (5/1-c'nin 5/1-e'den Temel Farkı)
+  5/1-c (318): İstisna tutarı için 549 Özel Fonlar hesabına kayıt YAPILMAZ.
+  5/1-e (361): 549 hesabı zorunludur ve en az 5 yıl tutulması şarttır.
+  5/1-c kullanan kurumda 549 hesabına kayıt yapılırsa muhasebe hatasıdır.
+
+  ## Beyanname Akışı
+  1. 679 hesabındaki satış kazancı ticari kâra dahildir.
+  2. KKEG tablosu: Satış giderleri KKEG olarak eklenebilir (KVK 5/3 analizi).
+  3. KV Beyannamesi 318. Satır: "Zarar Olsa Dahi İndirilecek" bölümünde istisna tutarı.
+  KRİTİK: 318 tutarı YİAKV matrahından ÇIKARILMAMALIDIR.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Satıcı Kurumun Anonim Şirket Statüsünü İspat Eden Belge
+    detay: "Tam mükellef ANONİM ŞİRKET olduğunun teyidi. Ticaret sicil gazetesi veya güncel ticaret sicil tasdiknamesi. AŞ ibaresi açıkça görünmeli."
+    temin_yeri: Ticaret sicil gazetesi / MERSİS / Ticaret sicil tasdiknamesi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Satılan Yurt Dışı İştirakin Apostilli Tescil + Yerleşiklik Belgesi
+    detay: "Kanuni/iş merkezi yurt dışında olan AŞ/Ltd olduğunun teyidi. Apostil şerhi ülkeye göre değişebilir; yerel noter onayı veya konsolosluk tasdiki gerekebilir."
+    temin_yeri: İştirakin apostilli ticaret sicil belgesi / Konsolosluk tasdikli tescil
+  - kategori: zorunlu
+    "no": 3
+    baslik: İktisap Belgeleri (730 Gün Hesabı İçin)
+    detay: "Hissenin aktife alındığı tarihi kanıtlayan belgeler. Devir/bölünme yoluyla elde edildiyse kaynak kurum iktisap tarihi belgesi. 1 gün eksik → İstisna kullanılamaz."
+    temin_yeri: Hisse senedi / Transfer belgesi / Pay defteri / Ortaklık sözleşmesi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Satış Sözleşmesi ve Hisse Devir Belgesi
+    detay: "Satış bedeli, satış tarihi, alıcı bilgileri, devir koşulları. Tescil tarihi ile ödeme tarihi farklı olabilir. Yabancı para ise TCMB satış tarihi kuru ile TL karşılığı hesaplanmalıdır."
+    temin_yeri: Hisse devir sözleşmesi / Noter onayı / Tescil belgesi
+  - kategori: zorunlu
+    "no": 5
+    baslik: Bilanço — Aktif Oranı Hesabı İçin (Satış Tarihinden Geriye 1 Yıl)
+    detay: "4 çeyrek bilançosu veya aylık bakiyeler. Nakit dışı aktif ve YD iştirak hisselerinin kayıtlı değeri. Her dönemde ≥%75 şartının sağlandığı gösterilmelidir. Tek çeyrek <%75 → Şart bozulur."
+    temin_yeri: 4 çeyrek bilançosu / Aylık mizan bakiyeleri
+  - kategori: zorunlu
+    "no": 6
+    baslik: Her Bir Yurt Dışı İştirakin ≥%10 Sermaye Payını Gösteren Belge
+    detay: "Aktif oranı hesabına dahil edilecek her yurt dışı iştirak için %10 eşiği teyit belgesi. <%10 olan iştiraklerin değerleri orana dahil edilemez."
+    temin_yeri: Ortaklık sözleşmesi + Pay defteri / İştirak tescil belgesi
+  - kategori: zorunlu
+    "no": 7
+    baslik: Satış Kazancı Hesaplama Tablosu (Maliyet, Giderler, Kur Farkı)
+    detay: "Satış Bedeli − Defter Değeri − Satış Giderleri = Satış Kazancı. KVK 5/3: Satış giderleri KKEG analizi bu tabloda yapılmalıdır."
+    temin_yeri: Muhasebe kayıtları / Satış sözleşmesi / Maliyet tablosu
+  - kategori: zorunlu
+    "no": 8
+    baslik: KV Beyannamesi Taslağı — 318. Satır
+    detay: "318. satırındaki tutarın hesaplama sonucuyla birebir uyumlu olduğu teyit edilmeli. 'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldığı kontrol edilmeli."
+    temin_yeri: GİB e-Beyanname sistemi / İnternet Vergi Dairesi
+  - kategori: destekleyici
+    "no": 9
+    baslik: Devir/Bölünme Belgesi (Elde Tutma Süresinin Kaynak Kuruma Aktarımı)
+    detay: "Devir veya bölünme yoluyla elde edilen hisselerde: Süre kaynak kurumdaki iktisap tarihinden hesaplanabilir."
+    temin_yeri: Devir/bölünme tescil belgesi / Ticaret sicil kaydı
+  - kategori: destekleyici
+    "no": 10
+    baslik: Satış Giderleri Listesi ve KVK 5/3 KKEG Analizi
+    detay: "Aracılık komisyonu, noter harcı, tescil ücretleri, avukatlık vb. satış giderleri. KKEG kararı yazılı olarak belgelenmeli ve tasdik dosyasına eklenmelidir."
+    temin_yeri: Fatura + gider belgesi / KVK 5/3 analiz notu
+  - kategori: destekleyici
+    "no": 11
+    baslik: YİAKV Matrah Hesaplama Tablosu (KVK 32/C — 318 Dahil Edilmemeli)
+    detay: "KVK 5/1-c (318) istisnası YİAKV matrahından ÇIKARILMAMALIDIR. YİAKV çalışma kâğıdında 318 tutarının matrahtan düşülmediği teyit edilmeli."
+    temin_yeri: YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri
+  - kategori: destekleyici
+    "no": 12
+    baslik: Kur Farkı Hesap Tablosu (Yabancı Para Cinsinden Satışlarda)
+    detay: "Satış bedeli ve maliyet yabancı para ise satış tarihi TCMB döviz alış kuru ile TL'ye çevrim tablosu. Kur farkı ayrı gösterilmeli."
+    temin_yeri: TCMB kur tablosu / Döviz hesap kartı
+
+k_checklist:
+  - id: K1
+    soru: "★ Satıcı kurum gerçekten tam mükellef ANONİM ŞİRKET mi? (Ltd ise 318 KULLANILAMAZ)"
+    referans: "KVK Md. 5/1-c | Ticaret Sicili"
+  - id: K2
+    soru: "Satılan iştirak kanuni/iş merkezi yurt dışında olan AŞ/Ltd mi? Apostilli tescil belgesi mevcut mu?"
+    referans: "KVK Md. 5/1-c"
+  - id: K3
+    soru: "★ Aktif oranı ≥%75 — 1 yıl boyunca aralıksız sağlandı mı? (4 çeyrek bilanço veya aylık bakiyelerle doğrulandı mı?)"
+    referans: "KVK Md. 5/1-c/2 | 1 S.No.lu KV GT"
+  - id: K4
+    soru: "Her bir yurt dışı iştirakin sermayesine ≥%10 iştirak var mı?"
+    referans: "KVK Md. 5/1-c"
+  - id: K5
+    soru: "★ 730 gün (2 tam yıl) elde tutma şartı sağlandı mı? (1 gün bile eksik → Şart sağlanmamış)"
+    referans: "KVK Md. 5/1-c/1 | 276 S.No.lu GV GT"
+  - id: K6
+    soru: "Satış kazancı doğru hesaplandı mı? (Maliyet, satış giderleri, kur farkı)"
+    referans: "KVK Md. 5/1-c"
+  - id: K7
+    soru: "★ KVK 5/3 — Satış giderleri KKEG analizi yapıldı mı? Belgelendi mi?"
+    referans: "KVK Md. 5/3 | Danıştay içtihatları"
+  - id: K8
+    soru: "★ 5/1-c'de Fon Hesabına Alma YAPILMADI mı? (549 hesabı kontrolü)"
+    referans: "KVK Md. 5/1-c | KVK Md. 5/1-e"
+  - id: K9
+    soru: "★ YİAKV matrahından 318 DÜŞÜLMEDI mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"
+  - id: K10
+    soru: "318 ile 317 (Kâr Payı) ve 361 (Yurt İçi) ayrımı doğru yapıldı mı?"
+    referans: "KVK Md. 5/1-b, 5/1-c, 5/1-e"
+  - id: K11
+    soru: "Kurumun ana faaliyeti menkul kıymet ticareti değil mi? (Esas sözleşme + NACE kodu kontrol edildi mi?)"
+    referans: "KVK Md. 5/1-c"
+  - id: K12
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL)"
+    referans: "49 S.No.lu KV GT (30.12.2025)"

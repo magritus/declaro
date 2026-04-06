@@ -8,6 +8,7 @@ export interface KatalogKalem {
   beyanname_bolumu: string
   yiakv_etkisi: string
   durum: string
+  beyanname_kodlari?: { donem: number; kod: number }[]
 }
 
 export interface VeriGirisiAlani {

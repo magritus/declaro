@@ -1,0 +1,210 @@
+ic_kod: kira_sertifikasi_tasinir_5_1_k
+baslik: Kira Sertifikası İhracı Amacıyla Taşınır Varlık ve Hakların Satışından Doğan Kazançlarda İstisna
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 357 }
+  - { donem: 2025, kod: 357 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-k
+  - 6362 Sayılı Sermaye Piyasası Kanunu
+  - SPK Kira Sertifikası (Sukuk) Tebliği
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2013-04-13"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Taşınır varlıklarınızı (makine, araç, ekipman) veya haklarınızı (patent, marka, telif, yazılım lisansı) münhasıran kira sertifikası ihracını mümkün kılmak amacıyla SPK lisanslı Varlık Kiralama Şirketine (VKŞ) devrettiniz mi?"
+  info_modal: |
+    KVK 5/1-k kapsamında, kurumların taşınır varlıklarını veya haklarını kira sertifikası
+    ihracını mümkün kılmak amacıyla SPK lisanslı VKŞ'ye devretmelerinden doğan kazançlar
+    %100 istisnadır. 5/1-j'den kritik farklar:
+    (1) Geri alım zorunlu değil — ihraç amacı yeterli koşuldur
+    (2) HAKLAR da kapsam içindedir (patent, lisans, marka, telif vb.)
+    (3) VKŞ kira sertifikası ihraç eder ve hasılatı kurucuya iletir
+    (4) Sukuk türleri: İcara, Murabaha, Wakala, Muşaraka
+  kapi_sorulari:
+    - id: varlik_tasinir_veya_hak_mi
+      soru: "Devredilen varlık taşınır mı veya hak mı? (Taşınmaz/bina/arazi için 358 kodu kullanılmalıdır)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "357: Taşınır varlıklar (makine/araç/ekipman) VE haklar (patent/marka/telif/yazılım). Taşınmaz → 358."
+    - id: alici_vks_mi
+      soru: "Alıcı kurum, 6362 sayılı SPK Kanunu kapsamında SPK lisanslı Varlık Kiralama Şirketi (VKŞ) mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5/1-k yalnızca SPK lisanslı VKŞ'ye yapılan devirler için geçerlidir. BDDK lisanslı FK/banka ise 5/1-j (354/355/356) kapsamına girer."
+    - id: ihrac_amaci_var_mi
+      soru: "Devrin amacı münhasıran kira sertifikası ihracını mümkün kılmak mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bu 5/1-k'nın özgün koşuludur. İhraç amacı SPK onaylı izahname/ihraç belgesiyle belgelenmelidir."
+    - id: izahname_mevcut_mu
+      soru: "SPK onaylı kira sertifikası izahnamesi/ihraç belgesi mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: devir_bedeli
+      etiket: "VKŞ'ye Devir Bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Piyasa değerine uygun devir bedeli. SPK ihraç bağlamında değerleme raporu ile desteklenmeli."
+    - id: net_defter_degeri
+      etiket: "Taşınır/Hakkın Net Defter Değeri (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Taşınır için 253/254 hesap kartı (amortisman düşülmüş). Hak için 260/263 hesap kartı (itfa sonrası net değer)."
+    - id: devir_giderleri
+      etiket: "Devir Giderleri (Komisyon, tescil, noter, SPK harçları, hukuki danışmanlık vb.) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Hak devirlerinde TPMK devir harcı, noter giderleri ve SPK harçları dahildir."
+  formuller:
+    satis_kazanci: "devir_bedeli - net_defter_degeri - devir_giderleri"
+    istisna_tutari: "max(satis_kazanci * oran, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_kazanci > 0"
+      hata: "Devir kazancı pozitif olmalıdır. Zarar durumunda bu istisna uygulanamaz (Kazancın Bulunması Halinde bölümü)."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-k: Her türlü varlık ve hakların, kira sertifikası ihraç etmek amacıyla
+  kurulan varlık kiralama şirketlerine satışından doğan kazançlar %100 istisnadır.
+
+  ## Mekanizma — Kira Sertifikası İhraç Zinciri
+  1. Kurucu (Satıcı) taşınır varlığını veya hakkını VKŞ'ye devreder
+  2. VKŞ bu varlık/hak karşılığında kira sertifikası ihraç eder
+  3. Yatırımcılar kira sertifikası satın alır
+  4. VKŞ ihraç hasılatını kurucuya iletir
+  5. Sukuk vadesi boyunca yatırımcılara kira/getiri geliri ödenir
+  6. Devir kazancı → %100 İstisna (357) → 549 Fon → Sukuk vadesinde amortize
+
+  ## 5/1-j (354/356) ile Kritik Farklar
+  5/1-j (Sat-Kirala-Geri Al): Geri alım taahhüdü ZORUNLU — aksi 5/1-j kapsamı dışında
+  5/1-k (357): Geri alım OPSİYONEL — ihraç amacı yeterli koşuldur
+  5/1-k Kapsamı: Taşınır + HAKLAR (patent/lisans/marka/telif — maddi olmayan varlıklar)
+  Sukuk Türleri: İcara + Murabaha + Wakala + Muşaraka
+
+  ## Haklar Kapsamı (5/1-j'den Geniş)
+  - Tescilli: Patent, faydalı model, tasarım → TPMK belgesi zorunlu
+  - Tescilsiz: Telif hakkı, know-how → Devir sözleşmesi + Tespit belgesi
+  - Yazılım lisansı / kaynak kodu hakkı → Lisans devir sözleşmesi
+  - Kamu kaynaklı: İmtiyaz/ruhsat → Özel izin gerekebilir (özelge alın)
+
+  ## 549 Fon Mekanizması
+  Devir yılında E.6 tutarı 549'a alınır. Her dönem sukuk vadesine paralel kira/getiri
+  ödemelerine orantılı fon azalır. Sukuk vadesi sonunda 549 sıfır.
+
+  ## GİB Özelgesi
+  5/1-k uygulaması için özelge alınması şiddetle tavsiye edilir. GİB emsal yoğunluğu
+  5/1-j'ye kıyasla daha düşüktür.
+
+  ## YMM Tasdik Raporu
+  49 No.lu Tebliğ (30.12.2025): Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1a — Taşınır Varlık Devir Kaydı (VKŞ'ye Sukuk İhracı Amacıyla)
+  Borç: 102 Bankalar / 121 Alacaklar                [Devir Bedeli]
+  Alacak: 253/254 İlgili Taşınır Aktif Hesabı        [Net Defter Değeri]
+  Alacak: 258 Birikmiş Amortismanlar                 [Birikim]
+  Alacak: 679 Diğer Olağandışı Kâr / 645 Satış Kârı  [Devir Kazancı]
+  Açıklama: KVK 5/1-k 357 — Kira sertifikası ihraç amacıyla taşınır devri
+
+  ## Kayıt 1b — Hak Devir Kaydı (Tescilli: Patent/Marka — TPMK Devir Tescil Tarihi)
+  Borç: 102 Bankalar                                 [Devir Bedeli]
+  Alacak: 260 Haklar (Patent/Marka/Tasarım)          [Net Defter Değeri]
+  Alacak: 268 Birikmiş İtfa Payları                  [Birikim]
+  Alacak: 679 Diğer Olağandışı Kâr                   [Devir Kazancı]
+  Açıklama: KVK 5/1-k 357 — Kira sertifikası ihraç amacıyla hak devri
+
+  ## Kayıt 2 — 549 Özel Fon Hesabına Alma (Devir Yılında)
+  Borç: 679 Diğer Olağandışı Kâr / 645 Satış Kârı   [İstisna Tutarı]
+  Alacak: 549 Özel Fonlar — KVK 5/1-k 357 İstisnası  [İstisna Tutarı]
+  Açıklama: Devir kazancının tamamının 549 hesabına alınması (devir yılı)
+
+  ## Kayıt 3 — Fon Amortizasyonu (Her Dönem — Sukuk Vadesine Orantılı)
+  Borç: 549 Özel Fonlar                   [Dönem Fon Azalışı]
+  Alacak: 549 Özel Fonlar (alt hesap)     [Dönem Fon Azalışı]
+  Açıklama: Fon = Başlangıç Fon × (Dönem Kira/Getiri / Toplam Kira/Getiri). Sukuk vadesi sonunda 549 sıfır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: VKŞ SPK Lisansı / Kuruluş İzin Belgesi
+    detay: "6362 s.K. kapsamında SPK tarafından verilen lisans. SPK'nın resmi VKŞ listesinden teyit. VKŞ münhasıran kira sertifikası ihraç amacıyla kurulmuş olmalı."
+    temin_yeri: SPK / VKŞ
+  - kategori: zorunlu
+    "no": 2
+    baslik: SPK Onaylı Kira Sertifikası İzahnamesi / İhraç Belgesi
+    detay: "İhraç amacını ve sukuk yapısını belgeler. KAP bildirimleri (halka açık ihraçlarda) ile birlikte dosyaya eklenmelidir."
+    temin_yeri: SPK / VKŞ / Aracı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Devir Belgesi (Varlık/Hak Türüne Göre)
+    detay: "Taşınır: E-Fatura + Teslim-tesellüm tutanağı. Tescilli hak: TPMK devir tescili + Devir sözleşmesi. Tescilsiz hak: Devir/temlik sözleşmesi + Tespit belgesi."
+    temin_yeri: TPMK / Hukuk Birimi / Muhasebe
+  - kategori: zorunlu
+    "no": 4
+    baslik: 549 Özel Fon Hesabı Kayıt ve Amortizasyon Tablosu
+    detay: "Devir yılında fona alınan tutar ve sukuk vadesine paralel her dönem kira/getiri payına orantılı amortizasyon."
+    temin_yeri: Muhasebe / ERP
+  - kategori: destekleyici
+    "no": 5
+    baslik: Bağımsız Değerleme Raporu (Taşınır / Hak Değerlemesi)
+    detay: "Devir bedelinin piyasa değeriyle uyumluluğunu belgeler. Hak değerlemesi için akredite değerleme kuruluşu raporu özellikle kritiktir."
+    temin_yeri: Bağımsız Değerleme Şirketi / TPMK Uzmanı
+
+k_checklist:
+  - id: K1
+    soru: "Devredilen varlık taşınır mı veya hak mı? Taşınmaz (bina/arazi) ise 358 kullanıldı mı? Hak türü teyit edildi mi?"
+    referans: "KVK Md. 5/1-k | Beyanname Kodu 357"
+  - id: K2
+    soru: "Alıcı SPK lisanslı VKŞ mi? 6362 s.K. kapsamında mı? BDDK lisanslı FK/banka ise 354/355/356 (5/1-j) kullanıldı mı?"
+    referans: "KVK Md. 5/1-k | 6362 s.K."
+  - id: K3
+    soru: "Devrin amacı münhasıran kira sertifikası ihracı mı? SPK onaylı izahname/ihraç belgesi mevcut mu?"
+    referans: "KVK Md. 5/1-k | SPK"
+  - id: K4
+    soru: "5/1-k (357) mı 5/1-j (354/356) mi doğru bent? Seçim gerekçesi belgelendi mi? (Geri alım taahhütlü → 5/1-j)"
+    referans: "KVK Md. 5/1-j ve 5/1-k"
+  - id: K5
+    soru: "KAP bildirimleri yapıldı mı? İzahname SPK onaylı mı? (Halka açık ihraçlarda KAP zorunlu)"
+    referans: "SPK Mevzuatı | KAP"
+  - id: K6
+    soru: "Hak devrinde tescil/devir belgesi mevcut mu? (Patent/marka: TPMK devir tescili. Telif: Devir sözleşmesi. Yazılım: Teslim tutanağı.)"
+    referans: "TPMK | 5846 Sayılı FSEK"
+  - id: K7
+    soru: "E.6 tutarı 549 hesabına devir yılında alındı mı? F.1 = E.6 uyumlu mu?"
+    referans: "KVK Md. 5/1-k | 1 S.No.lu KV GT"
+  - id: K8
+    soru: "Fon amortizasyonu sukuk vadesine paralel, kira/getiri payına orantılı mı yapılıyor?"
+    referans: "KVK Md. 5/1-k"
+  - id: K9
+    soru: "Devir bedeli değerleme raporu ile uyumlu mu? Büyük fark → KVK Md.13 + SPK riski."
+    referans: "KVK Md. 13 | SPK"
+  - id: K10
+    soru: "Sukuk türüne uygun sözleşme paketi (İcara/Murabaha/Wakala/Muşaraka) var mı? Her sukuk türünün kendi belge yapısı mevcuttur."
+    referans: "SPK Sukuk Tebliği"
+  - id: K11
+    soru: "357 yalnızca DEVİR YILINDA kullanıldı mı? Sonraki yıllarda 357 satırına yazılmadı mı?"
+    referans: "KV Beyannamesi 357 Satırı"
+  - id: K12
+    soru: "357 'Kazancın Bulunması Halinde' bölümünde mi? 'Zarar Olsa Dahi' bölümünde değil mi?"
+    referans: "KVK Md. 5/1-k"
+  - id: K13
+    soru: "YİAKV matrahında 357 istisnasının etkisi ayrıca analiz edildi mi? (Tartışmalı — dönem mevzuatı esas)"
+    referans: "KVK Md. 32/C"

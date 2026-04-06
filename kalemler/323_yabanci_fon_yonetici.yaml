@@ -1,0 +1,205 @@
+ic_kod: yabanci_fon_yonetici_5a3
+baslik: Yabancı Fon Kazançlarının Vergilendirilmesine Yönelik Yönetici Şirket İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 323 }
+  - { donem: 2025, kod: 323 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/A Fıkra 3
+  - 1 Seri No.lu KV Genel Tebliği
+  - Portföy Yönetim Şirketleri Tebliği (SPK)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2013-01-01"
+  bitis: null
+
+ana_kategori: diger_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "SPK'dan portföy yönetim şirketi lisansına sahip misiniz ve yurt dışında kurulu yabancı fon(lar)ı Türkiye'den yönetiyor musunuz?"
+  info_modal: |
+    KVK Madde 5/A Fıkra 3 kapsamında; Türkiye'de SPK'dan portföy yönetim şirketi lisansı
+    almış kurumların, yurt dışında kurulu yabancı kolektif yatırım kuruluşlarını (fonları)
+    Türkiye'den yönetmesi faaliyetinden elde ettikleri yönetim ve performans ücreti kazançlarının
+    tamamı kurumlar vergisinden istisnadır.
+
+    Mekanizma: SPK lisanslı portföy yönetim şirketi (Türkiye) → Yabancı fonu Türkiye'den yönetir
+    → Yönetim ücreti (management fee) + Performans ücreti (performance fee) kazanır → %100 istisna.
+
+    Bu istisna Türkiye'nin uluslararası finans merkezi olma hedefine hizmet etmektedir.
+    KVK 5/A ayrı bir madde olup 5/1 bentleri veya 5/B değildir.
+  kapi_sorulari:
+    - id: spk_lisansi
+      soru: "SPK'dan Portföy Yönetim Şirketi lisansınız var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5/A-3 istisnası yalnızca SPK'dan portföy yönetim şirketi lisansı almış kurumlara uygulanır. SPK Portföy Yönetim Şirketi lisans belgesi zorunludur."
+    - id: yabanci_fon
+      soru: "Yönetilen fon yurt dışında kurulu (yabancı) kolektif yatırım kuruluşu mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna yalnızca YABANCI fon yönetimi için geçerlidir. Türkiye'de kurulu Türk yatırım fonu yönetimi 5/A-3 kapsamında değildir."
+    - id: turkiyeden_yonetim
+      soru: "Fon yönetimi Türkiye'deki şirket ve personel tarafından Türkiye'den mi veriliyor?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Salt aracı sıfatıyla veya Türkiye dışından yönetim 5/A-3 kapsamı dışındadır. Yönetim sözleşmesi Türkiye'deki şirketi taraf olarak göstermelidir."
+    - id: kapsam_ici_gelir_ayristirma
+      soru: "Yabancı fon yönetiminden kaynaklanan gelirler, kapsam dışı gelirlerden (mevduat faizi, yerli fon vb.) ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yalnızca yabancı fon yönetim gelirleri istisna kapsamındadır. Mevduat faizi, yerli fon yönetimi gelirleri kapsam dışıdır."
+
+parametreler:
+  istisna_orani: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: yonetim_ucreti
+      etiket: "Yönetim ücreti (Management Fee) — yabancı fon"
+      tip: para
+      zorunlu: true
+      yardim: "AUM'un belirli yüzdesi olarak belirlenen yıllık yönetim ücreti. 5/A-3'ün ana kapsam içi geliridir."
+    - id: performans_ucreti
+      etiket: "Performans ücreti (Performance/Incentive Fee)"
+      tip: para
+      zorunlu: false
+      yardim: "Fon performansına bağlı ücret. Kapsam içi gelirdir."
+    - id: danismanlik_ucreti
+      etiket: "Danışmanlık/araştırma ücreti (yabancı fon için)"
+      tip: para
+      zorunlu: false
+      yardim: "Yabancı fona yönelik araştırma/danışmanlık/risk yönetimi hizmeti geliri. Kapsam içi."
+    - id: dogrudan_giderler
+      etiket: "Yabancı fon yönetimine doğrudan atfedilen giderler (personel, yazılım, araştırma, seyahat)"
+      tip: para
+      zorunlu: true
+      yardim: "Yalnızca yabancı fon yönetimine doğrudan bağlı giderler. Genel yönetim giderleri ayrıca dağıtılır."
+    - id: gyg_payi
+      etiket: "Genel yönetim gideri payı (kapsam içi gelir oranıyla dağıtılan)"
+      tip: para
+      zorunlu: false
+      yardim: "Toplam GYG × (Kapsam içi gelir / Toplam gelir). Dağıtım yöntemi belgelenmeli."
+  formuller:
+    kapsam_ici_gelir: "yonetim_ucreti + performans_ucreti + danismanlik_ucreti"
+    yonetim_kazanci: "max(kapsam_ici_gelir - dogrudan_giderler - gyg_payi, 0)"
+    istisna_tutari: "yonetim_kazanci * 1.0"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "kapsam_ici_gelir > 0"
+      hata: "Kapsam içi yabancı fon yönetim geliri sıfırsa istisna uygulanamaz"
+    - kural: "yonetim_kazanci > 0"
+      hata: "Yönetim kazancı sıfır veya zararda — istisna uygulanamaz (Kazancın Bulunması Halinde indirilecek)"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/A Fıkra 3: Türkiye'de SPK'dan portföy yönetim şirketi lisansı almış kurumların
+  yurt dışında kurulu yabancı kolektif yatırım kuruluşlarını Türkiye'den yönetmesi faaliyetinden
+  elde ettikleri kazançların tamamı KV'den istisnadır.
+
+  ## 323'ün Setteki Konumu — KVK 5/A Ayrı Madde
+  - KVK Md. 5/1 bentleri (302/304/311/315/354-359 vb.): KVK 5. maddesinin 1. fıkrası
+  - 323 → KVK Md. 5/A, Fıkra 3: Türkiye'yi uluslararası finans merkezi yapma politikasına yönelik ayrı madde
+  - 311 (TGB) / 315 (TUGS) ile fark: Bunlar özel kanun, 323 KVK içindedir; ama 5/1 değil 5/A
+
+  ## İki Temel Koşul
+  1. SPK Portföy Yönetim Şirketi lisansı — kurumun lisans sahibi olduğunu belgeleyen SPK yazısı zorunlu
+  2. Fonun yabancı (yurt dışında kurulu) kolektif yatırım kuruluşu olması — fon kurulu olduğu ülkenin
+     otoritesinden lisanslı/kayıtlı (Cayman, Lüksemburg SICAV, İrlanda, BVI, Jersey vb.)
+
+  ## Kapsam İçi Gelirler
+  - Yönetim ücreti (management fee) — AUM'a dayalı
+  - Performans ücreti (performance/incentive fee) — fon performansına bağlı
+  - Danışmanlık ücreti (advisory fee) — yabancı fona yönelik araştırma/danışmanlık
+  - Risk yönetimi / izleme ücreti — yabancı fona verilen hizmet
+
+  ## Kapsam Dışı Gelirler (İstisna Dışında Kalır)
+  - Mevduat faizi ve finansal gelirler
+  - Yerli (Türk) fon yönetim ücretleri
+  - TGB/TUGS/diğer faaliyet gelirleri (başka istisna kapsamında olabilir)
+
+  ## Gider Dağıtımı
+  Doğrudan giderler + Kapsam içi gelir oranıyla dağıtılan GYG payı = Toplam düşülecek gider.
+  Dağıtım yöntemi belgelenmeli.
+
+  ## YMM Tasdik
+  49 No.lu Tebliğ (30.12.2025): ≥500.000 TL veya ≥1.000.000 TL → YMM raporu.
+
+muhasebe_kayitlari: |
+  ## Yönetim Ücreti Gelir Kaydı (Kapsam İçi)
+  Borç: 120/102 Alıcılar / Bankalar
+  Alacak: 600 Yurt Dışı Satışlar (veya 642 Komisyon Gelirleri)
+  Açıklama: Yabancı fon yönetim ücreti geliri — 323 satırında istisna uygulanır
+
+  ## Performans Ücreti Kaydı
+  Borç: 120/102 Alıcılar / Bankalar
+  Alacak: 649 Diğer Olağandışı Gelirler
+  Açıklama: Yabancı fon performans ücreti — 323 satırında istisna
+
+  ## Kapsam Dışı Gelir (Mevduat Faizi vb.)
+  Borç: 102 Bankalar
+  Alacak: 642 Faiz Gelirleri
+  Açıklama: Kapsam dışı finansal gelir — 323 satırında istisna UYGULANMAZ
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Portföy Yönetim Şirketi Lisansı
+    detay: "SPK'dan alınan portföy yönetim şirketi lisans belgesi. Lisans no ve tarihi açıkça görünmeli."
+    temin_yeri: Sermaye Piyasası Kurulu (SPK)
+  - kategori: zorunlu
+    "no": 2
+    baslik: Yabancı Fonun Kuruluş ve Kayıt Belgesi
+    detay: "Yabancı fonun kurulu olduğu ülkedeki yetkili otorite tarafından verilmiş lisans/kayıt belgesi. Fon adı, kuruluş ülkesi ve yapısı açık olmalı."
+    temin_yeri: Yabancı Fonun Kayıtlı Olduğu Otorite
+  - kategori: zorunlu
+    "no": 3
+    baslik: Portföy Yönetim Sözleşmesi (Türkiye'deki Şirket ile Yabancı Fon Arasında)
+    detay: "Sözleşme Türkiye'deki portföy yönetim şirketini taraf olarak göstermeli. Yönetim ücreti ve performans ücreti koşulları açıkça belirtilmeli."
+    temin_yeri: Hukuk / Sözleşme Arşivi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Kapsam İçi / Kapsam Dışı Gelir Ayrıştırma Tablosu
+    detay: "Yabancı fon yönetim gelirleri (kapsam içi) ile mevduat faizi, yerli fon gelirleri vb. (kapsam dışı) ayrı gösterilmeli."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 5
+    baslik: Gider Dağıtım Tablosu
+    detay: "Doğrudan giderler + GYG payı dağıtım yöntemi ve hesabı. Kapsam içi/dışı oran bazlı dağıtım belgelenmeli."
+    temin_yeri: Muhasebe
+  - kategori: destekleyici
+    "no": 6
+    baslik: AUM (Yönetilen Varlık Büyüklüğü) Belgesi
+    detay: "Hesap dönemi sonu yönetilen toplam varlık büyüklüğü. Yönetim ücreti hesabının dayanağı."
+    temin_yeri: Fon Yönetim Sistemi / Saklama Kuruluşu
+
+k_checklist:
+  - id: K1
+    soru: "SPK Portföy Yönetim Şirketi lisansı geçerli mi ve tasdik dosyasına eklendi mi?"
+    referans: "KVK Md. 5/A-3 | SPK Mevzuatı"
+  - id: K2
+    soru: "Yönetilen fonun yabancı (yurt dışında kurulu) kolektif yatırım kuruluşu olduğu belgelendi mi?"
+    referans: "KVK Md. 5/A-3 | Ana koşul"
+  - id: K3
+    soru: "Fonun ilgili ülke otoritesinden lisanslı/kayıtlı olduğu teyit edildi mi?"
+    referans: "KVK Md. 5/A-3"
+  - id: K4
+    soru: "Yönetim hizmetinin Türkiye'deki şirket ve personel tarafından Türkiye'den verildiği belgelendi mi?"
+    referans: "KVK Md. 5/A-3 | Türkiye'den yönetim şartı"
+  - id: K5
+    soru: "Kapsam içi gelirler (yönetim + performans + danışmanlık ücreti) ile kapsam dışı gelirler (mevduat faizi, yerli fon) ayrıştırıldı mı?"
+    referans: "KVK Md. 5/A-3 | Kapsam sınırı"
+  - id: K6
+    soru: "Gider dağıtımı kapsam içi/dışı gelir oranıyla yapıldı ve yöntemi belgelendi mi?"
+    referans: "KVK Md. 5/A-3 | Gider dağıtımı"
+  - id: K7
+    soru: "Portföy yönetim sözleşmesi Türkiye'deki şirketi taraf olarak gösteriyor mu?"
+    referans: "KVK Md. 5/A-3 | Sözleşme şartı"
+  - id: K8
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

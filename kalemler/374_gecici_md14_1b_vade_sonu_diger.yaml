@@ -1,0 +1,219 @@
+ic_kod: gecici_md14_1b_vade_sonu_diger
+baslik: KKM Vade Sonunda Doğan Diğer Kazançlar İstisnası (Geçici Md.14/1-b)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 374 }
+  - { donem: 2025, kod: 374 }
+
+mevzuat_dayanagi:
+  - KVK Geçici Madde 14/1-b
+  - 7352 Sayılı Kanun Madde 8
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) Bölüm 2.2.15
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2021-12-24"
+  bitis: null
+
+ana_kategori: doviz_alacak_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "370 kapsamındaki KKM hesabınız vadeye ulaştığında faiz/kâr payı DIŞINDA başka kazanç elde ettiniz mi? (Altın KKM getirisi, prim/bonus, endeksli getiri vb.)"
+  info_modal: |
+    KVK Geçici Madde 14/1-b kapsamında: KKM hesaplarından vade sonu elde edilen kazançların
+    371 (kur farkı tazminat) + 372 (dönem sonu tahakkuk) + 373 (faiz/kâr payı) **dışında kalan**
+    kısmı kurumlar vergisinden **istisna** edilmiştir.
+
+    **374 Kapsamındaki Başlıca Kalemler:**
+    - Altın KKM vade kazancı: Altın hesabının TL KKM'ye dönüşümü sonrasında vade sonu altın fiyat farkından kaynaklanan getiri (faiz/kâr payı dışındaki kısım)
+    - Prim/Bonus ödemeleri: Banka tarafından KKM hesabı için ödenen teşvik prim veya bonusu
+    - Endeksli KKM kazancı: Belirli bir endekse (TÜFE, altın vb.) bağlı getirinin faiz dışı kısmı
+    - Diğer özel KKM getirileri: 371/372/373 kapsamına girmeyen her türlü KKM kaynaklı vade sonu kazancı
+
+    **Önce kontrol edin:** Bu kazanç 371/372/373 kapsamına giriyor mu? Giriyorsa 374 uygulanmaz.
+    **Kritik Uyarı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (E.7 — Beşi birlikte).
+  kapi_sorulari:
+    - id: kkm_kaynakli_mi
+      soru: "KKM hesabı KVK Geçici Md.14/1-a kapsamı dönüşümden mi açıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "374, yalnızca 370 kapsamındaki dönüşümden açılan KKM hesaplarına uygulanır."
+    - id: diger_niteligi_mi
+      soru: "★ Bu kazanç türü 371/372/373 kapsamına girmiyor mu? ('Diğer' niteliği teyit edildi mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "374 = 371 (kur farkı tazminat) + 372 (dönem sonu tahakkuk) + 373 (vade faiz/kâr payı) DIŞINDA KALAN kazançlar."
+    - id: vade_tarih_donem_icinde
+      soru: "Vade tarihi dönem içinde (01.01–31.12) mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "374, vade sonu kazancı olduğundan vade tarihinin dönem içinde olması zorunludur."
+    - id: mukerrerlik_analizi
+      soru: "★ 371/372/373 ile mükerrerlik analizi yapıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "374 kapsamındaki kazancın 371/372/373'ten farklı bir kalem olduğu teyit edilmeli. Aynı tutarın birden fazla satırda gösterilmesi mükerrerlik oluşturur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: istisna_tutari_beyan
+      etiket: "Beyan edilen istisna tutarı (Beyanname 374 satırı — Net tutar)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        374 = Toplam Vade Diğer Kazanç − Mükerrer Kalemler (371/372/373 ile çakışan).
+        Altın KKM için: Net 374 = Vade Sonu Altın Değeri − Dönüşüm TL Bedeli − Faiz/Kâr Payı (373).
+        Her kalem için banka bildirimi veya TCMB/İAB fiyat tablosu dayanak alınır.
+        Tartışmalı kalemler için GİB özelgesi alınması tavsiye edilir.
+        Altın KKM Örnek Ayrışımı: Toplam Vade Getirisi 50.000 TL →
+          Faiz/kâr payı: 20.000 TL → Beyanname 373
+          Altın fiyat farkı getirisi: 30.000 TL → Beyanname 374
+  formuller:
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "istisna_tutari_beyan > 0"
+      hata: "İstisna tutarı pozitif olmalıdır. 374 kapsamına giren kazanç yoksa bu kalem kullanılmaz."
+
+denetci_notlari: |
+  ## 374 Vade Sonu Diğer Kazançların Kapsamı
+  374 = KKM hesaplarından vade sonu elde edilen kazançların 371+372+373 dışında kalan kısmı.
+  Beyanname: 374 | Kazancın Bulunması Halinde İndirilecek.
+  GİB KV Beyan Rehberi 2026 (No:606) Bölüm 2.2.15 kapsamındadır.
+
+  Başlıca 374 kalemleri:
+  ① Altın KKM vade kazancı: (Vade Sonu Altın Değeri − Dönüşüm TL Bedeli − Faiz/Kâr Payı)
+  ② Prim/bonus ödemeleri: Banka tarafından KKM hesabı için ödenen teşvik prim veya bonusu.
+  ③ Endeksli KKM kazancı: TÜFE, döviz veya başka bir endekse bağlı getirinin faiz dışı kısmı.
+  ④ Diğer özel KKM getirileri: Yukarıdakiler dışında 371/372/373 kapsamına girmeyen kazançlar.
+
+  ## ★ 374 ve 371/372/373 Arasındaki Sınır — Mükerrerlik Önleme
+  374 kapsam sınırı: Önce şu üç soru yanıtlanmalı:
+  ① Bu kazanç 371 (kur farkı tazminat) midir? → Hayırsa devam.
+  ② Bu kazanç 372 (dönem sonu faiz/kâr payı tahakkuku) mudur? → Hayırsa devam.
+  ③ Bu kazanç 373 (vade sonu faiz/kâr payı) midir? → Hayırsa → 374.
+  YANLIŞ: 50.000 TL vade getirisinin tamamını 373 veya tamamını 374 yazmak.
+  DOĞRU: Faiz/kâr payı kısmı → 373 | Altın fiyat farkı getirisi → 374.
+
+  ## Altın KKM Hesaplama Yöntemi
+  Dönüşüm: Altın birim × Dönüşüm günü altın kuru = TL KKM başlangıcı (370 kapsamı)
+  Vade faiz: KKM faiz/kâr payı = TL KKM × Oran × Gün → 373
+  Vade altın farkı: Vade sonu altın değeri − Dönüşüm bedeli − Faiz/kâr payı → 374
+  TCMB altın fiyatı veya İstanbul Altın Borsası (İAB) resmi fiyatı esas alınır.
+
+  ## ★★ YİAKV ile İlişki — 370+371+372+373+374 Tamamı DÜŞÜLEMEZ
+  YİAKV (KVK Md.32/C) matrahında beş kodun TÜMÜ DÜŞÜLEMEZ (E.7 listesi).
+  374'ün 'diğer' niteliği taşıması YİAKV muamelesini değiştirmez.
+  YMM, beş kodun tamamının asgari vergi matrahında kaldığını teyit etmelidir.
+
+  ## Tartışmalı Kalemler — Özelge Stratejisi
+  374 'diğer' niteliği tartışmaya açık olabilir. Şu durumlarda GİB özelgesi alınması tavsiye edilir:
+  - Altın KKM kazancının hesaplama yöntemi farklı yorumlanabiliyorsa
+  - Prim/bonus ödemeleri için bankanın nitelendirmesi farklıysa
+  - Endeksli KKM ürünlerinde getiri türü belirsizse
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Altın KKM: Vade Sonu Altın Fiyat Farkı Kazancı (374 — En Yaygın Kalem)
+  Borç: 102 Bankalar — Altın KKM vade sonu toplam tahsilat (altın fiyat getirisi + faiz/kâr payı)
+  Alacak: 646 Kambiyo Kârları / 679 Diğer Kâr — Altın fiyat farkı kazancı (374 kapsamı → Beyanname 374)
+  Alacak: 642 Faiz Gelirleri / 644 Kâr Payları — Vade faiz/kâr payı (373 kapsamı → Beyanname 373)
+  Altın KKM vade tahsilatında: Altın fiyat getirisi → 646/679 (374). Faiz/kâr payı → 642/644 (373).
+
+  ## Kayıt 2 — Prim / Bonus Ödemesi (374 — Özel KKM Teşvik Ödemeleri)
+  Borç: 102 Bankalar — Bankadan alınan KKM prim/bonus ödemesi (faiz niteliğinde değil)
+  Alacak: 648 Diğer Olağan Gelirler / 679 Diğer Olağandışı Kâr — KKM prim/bonus (Beyanname 374)
+  Prim/bonus niteliği: Faiz/kâr payı değil, teşvik niteliğinde ödeme → 642 değil 648 veya 679.
+
+  ## Kayıt 3 — 370/371/372/373/374 Tam Muhasebe Tablosu
+  370: [Dönüşüm] — 646/679 — Kur farkı değerleme → Tek seferlik → Beyanname 370
+  371: [Ödeme] — 102/648 — Bankadan kur farkı koruma ödemesi → Dönemsel nakit → Beyanname 371
+  372: [31.12] — 181/642 — Dönem sonu faiz/kâr payı tahakkuku → Beyanname 372
+  373: [Vade] — 102/(181+642) — Vade sonu faiz/kâr payı tahsilatı → Beyanname 373
+  374: [Vade] — 646/648/679 — Vade sonu diğer kazançlar (altın+prim+endeks) → Beyanname 374
+  YİAKV: 370+371+372+373+374 BEŞİ DE YİAKV MATRAHINDA DÜŞÜLEMEZ (E.7).
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: "★ Banka Vade Bildirimi — Kazanç Türü Ayrıştırılmış"
+    detay: "Vade sonunda bankadan alınan resmi bildiri: Faiz/kâr payı ve diğer kazançlar ayrı satırlarda. 374 kapsamındaki kazancın faiz/kâr payından ayrı gösterildiği teyit edilmeli."
+    temin_yeri: Banka şubesi / internet bankacılığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: "★ TCMB Altın Fiyat Tablosu (Altın KKM için — Dönüşüm ve Vade Tarihleri)"
+    detay: "Altın KKM vade kazancı hesabında: Dönüşüm günü altın kuru (370 ile aynı) + Vade sonu altın kuru. TCMB resmi fiyatı veya İAB verileri."
+    temin_yeri: TCMB / İAB web sitesi
+  - kategori: zorunlu
+    "no": 3
+    baslik: "★ 370/371/372/373 Çalışma Kâğıtları — Mükerrerlik Analizi"
+    detay: "374'ün 371+372+373 dışında kaldığı çapraz kontrol. Aynı kazanç birden fazla satırda gösterilmemeli."
+    temin_yeri: 370/371/372/373 çalışma kâğıtları
+  - kategori: zorunlu
+    "no": 4
+    baslik: Prim/Bonus Bildirimi (Prim/Bonus Varsa)
+    detay: "Banka tarafından düzenlenen resmi prim/bonus ödeme bildirisi. Faiz niteliğinde olmadığı (teşvik/prim) banka yazısıyla teyit edilmeli."
+    temin_yeri: Banka yazısı / bildirimi
+  - kategori: zorunlu
+    "no": 5
+    baslik: "KV Beyannamesi Taslağı — 374. Satır"
+    detay: "'Kazancın Bulunması Halinde' bölümü. ★★ YİAKV matrahından çıkarılmamış."
+    temin_yeri: GİB e-Beyanname sistemi
+  - kategori: destekleyici
+    "no": 6
+    baslik: GİB Özelgesi (Tartışmalı 374 Kalemleri İçin)
+    detay: "374 niteliği tartışmalı olabilecek kalemler için GİB özelgesi risk yönetiminin temelidir — özellikle yeni/az emsal kalemler için."
+    temin_yeri: GİB özelge başvuru sistemi
+  - kategori: destekleyici
+    "no": 7
+    baslik: Altın KKM Hesap Sözleşmesi
+    detay: "Altın KKM ürününün sözleşme koşulları: Vade, getiri mekanizması, faiz/altın getiri ayrımı."
+    temin_yeri: Banka altın KKM sözleşmesi
+  - kategori: destekleyici
+    "no": 8
+    baslik: "Muhasebe Yevmiyesi — 646/648/679 Vade Kazanç Kaydı"
+    detay: "374 kapsamındaki kazancın muhasebe yevmiye kaydı. Faiz hesabı (642) ile karışmamalı."
+    temin_yeri: Yevmiye defteri
+
+k_checklist:
+  - id: K1
+    soru: "★ KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden mi açıldı?"
+    referans: "KVK Geçici Md.14/1-b | 370 çalışma kâğıdıyla çapraz teyit."
+  - id: K2
+    soru: "★ Bu kazanç türü gerçekten 371/372/373 kapsamına girmiyor mu?"
+    referans: "KVK Geçici Md.14/1-b | 374 = 'Diğer' = 371+372+373 dışı. Her üçünün kapsamı kontrol edilmeli."
+  - id: K3
+    soru: "Kazanç türü belgelendi mi? (Altın / Prim / Endeks / Diğer)"
+    referans: "Her kalem için ayrı belge. Altın KKM → TCMB fiyat tablosu. Prim/bonus → Banka yazısı."
+  - id: K4
+    soru: "★ 371/372/373 ile mükerrerlik analizi yapıldı mı?"
+    referans: "KVK Geçici Md.14/1-b | 'Yok' olanlar 374'e yazıldı. 'Var' olanlar dışlandı."
+  - id: K5
+    soru: "Altın KKM varsa net altın kazancı hesabı (Vade Altın Değeri − Dönüşüm TL − Faiz/Kâr Payı) doğru mu?"
+    referans: "TCMB Altın Fiyatı | İAB | KVK Geçici Md.14/1-b | Dönüşüm ve vade sonu altın fiyatları resmi kaynaktan alınmış."
+  - id: K6
+    soru: "370/371/372/373 çalışma kâğıtlarıyla çapraz mutabakat yapıldı mı?"
+    referans: "Beş dosyanın KKM hesap bilgileri tutarlı."
+  - id: K7
+    soru: "Tartışmalı 374 kalemleri için özelge alındı mı?"
+    referans: "GİB özelge başvuru sistemi | 374 'diğer' niteliği tartışmalı olabilir → GİB özelgesi risk yönetiminin temelidir."
+  - id: K8
+    soru: "★★ 374 istisnası YİAKV matrahından DÜŞÜLMEDI mi?"
+    referans: "KVK Md.32/C | YİAKV Reh. (No:607) E.7 | 370+371+372+373+374 tamamı YİAKV matrahından DÜŞÜLEMEZ."
+  - id: K9
+    soru: "Beyanname 374 'Kazancın Bulunması Halinde' bölümünde mi?"
+    referans: "KVK Geçici Md.14/1-b | Zarar döneminde uygulanamaz."
+  - id: K10
+    soru: "Vade tarihi dönem içinde (01.01–31.12) mi?"
+    referans: "KVK Geçici Md.14/1-b | Sonraki dönemde vadeye girenler → Gelecek yıl."
+  - id: K11
+    soru: "374 tutarının muhasebe kaydı yapıldı mı? Hangi hesap kullanıldı?"
+    referans: "Kazanç türüne göre: 646/648/679. Ticari kâra dahil. Faiz hesabı (642) ile karıştırılmamalı."
+  - id: K12
+    soru: "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?"
+    referans: "49 No.lu Tebliğ | >=500.000 TL → YMM raporu."

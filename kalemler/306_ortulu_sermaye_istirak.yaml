@@ -1,0 +1,213 @@
+ic_kod: ortulu_sermaye_istirak_kvk12
+baslik: Örtülü Sermaye Faizinin Kâr Payına Dönüşmesinden Kaynaklanan İştirak Kazancı İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 306 }
+  - { donem: 2025, kod: 306 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-a
+  - KVK Madde 12
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 12
+  - Danıştay VDDK Kararı E:2024/774 K:2025/2 (05.02.2025)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: istirak_kazanc_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "İlgili hesap döneminde ilişkili bir kuruluşa (ortak veya ortakla ilişkili) borç verdинiz mi ve bu kurumda örtülü sermaye nitelendirmesi yapıldı mı?"
+  info_modal: |
+    KVK Madde 12 kapsamında; ilişkili kişinin özsermayesinin 3 katını aşan ilişkili borçlanmaları
+    örtülü sermaye sayılır. Borç alan kurumda örtülü sermayeye isabet eden faiz, kur farkı ve
+    benzer giderler KKEG (kanunen kabul edilmeyen gider) olarak nitelendirilir ve hesap döneminin
+    son günü itibarıyla KÂR PAYI sayılır (KVK 12/7).
+
+    Bu kâr payı, borç veren tam mükellef kurumda KVK Madde 5/1-a kapsamında İŞTİRAK KAZANCI
+    İSTİSNASI olarak beyanname 306 satırına yazılır. Zarar olsa dahi indirilir.
+
+    ⚠️ KRİTİK GÜNCEL DURUM (Şubat 2025): Danıştay VDDK 05.02.2025 kararıyla; borç alan kurumun
+    zarar etmesi veya matrah oluşmaması durumunda borç veren kurumda düzeltme YAPILAMAZ ve
+    iştirak kazancı istisnası KULLANILAMAZ (yeni içtihat). Bu karar İçtihadı Birleştirme Kararı
+    değildir, hukuken bağlayıcı değil ancak pratikte belirleyicidir.
+  kapi_sorulari:
+    - id: iliskili_borca_veren
+      soru: "Borç veren (istisna kullanan) kurum ile borç alan kurum arasında KVK Md.12 anlamında ilişki var mı? (En az %10 ortaklık/oy/kâr payı hakkı)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 12/1: Ortak veya ortakla ilişkili kişi tanımı. Borç veren-alan ilişkisi grup şirketi, ana-bağlı şirket vb. şeklinde olabilir."
+    - id: ortulu_sermaye_tespit
+      soru: "Borç alan kurumda KVK Md.12 kapsamında örtülü sermaye nitelendirmesi yapıldı mı ve KKEG tutarı tespit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Borç alan kurumun dönem başı özsermayesinin 3 katını aşan ilişkili borçlanmaları örtülü sermayedir. KKEG tutarı: Toplam faiz × (Örtülü sermaye / Kıyaslama borcu) oranı."
+    - id: zarar_durumu_kontrolu
+      soru: "Borç alan kurum ilgili hesap döneminde kâr etti ve vergi ödedi mi?"
+      tip: secenek
+      secenekler: [kar_ve_vergi_odedi, zarar_etti_vergi_odemedi, donem_icinde_kkeg_yapildi]
+      zorunlu: true
+      aciklama: |
+        - Kâr ve vergi ödedi: İstisna güvenli şekilde uygulanabilir.
+        - Zarar etti / vergi ödemedi: VDDK 05.02.2025 kararı → YÜKSEKRİSK. İhtirazi kayıtla beyan + YMM/hukuk görüşü önerilir.
+        - Dönem içinde KKEG yapıldı (hesap dönemi kapanmadan): İstisna uygulanabilir, ödeme şartı aranmaz.
+
+parametreler:
+  istisna_orani: 1.0
+  max_iliskili_borc_orani: 3.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: donem_basi_ozsermaye
+      etiket: "Borç alan kurumun dönem başı özsermayesi (TL) — VUK bazlı"
+      tip: para
+      zorunlu: true
+      yardim: "VUK Md.192 uyarınca hesap dönemi başı özsermayesi (Aktif toplamı – Borçlar). 01.01 açılış bilançosu esas alınır."
+    - id: toplam_iliskili_borc
+      etiket: "Borç alan kurumun toplam ilişkili kişi borcu — normal (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Ortak/ortakla ilişkili kişilerden alınan standart borçlar (banka/finans kurumu olmayan)."
+    - id: iliskili_banka_borc_yuzde50
+      etiket: "İlişkili banka/finans kurumu borcunun %50'si (TL) — KVK Md.12/2"
+      tip: para
+      zorunlu: false
+      yardim: "Ana faaliyet konusuna uygun ilişkili banka/kredi kurumundan borçlanmaların %50'si kıyaslamaya dahil edilir."
+    - id: toplam_faiz_gideri
+      etiket: "Borç alan kurumun ilişkili kişiye ödediği toplam faiz gideri (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Hesap dönemi içinde borç alan kurumun ilişkili kişiye ödediği/tahakkuk ettirdiği toplam faiz."
+  formuller:
+    max_izin_verilen_borc: "donem_basi_ozsermaye * 3"
+    kiyaslama_borcu: "toplam_iliskili_borc + iliskili_banka_borc_yuzde50"
+    ortulu_sermaye: "max(kiyaslama_borcu - max_izin_verilen_borc, 0)"
+    ortulu_sermaye_orani: "ortulu_sermaye / kiyaslama_borcu"
+    kkeg_faiz: "toplam_faiz_gideri * ortulu_sermaye_orani"
+    istisna_tutari: "kkeg_faiz"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "donem_basi_ozsermaye > 0"
+      hata: "Dönem başı özsermaye pozitif olmalıdır"
+    - kural: "kiyaslama_borcu > max_izin_verilen_borc"
+      hata: "Kıyaslama borcu izin verilen eşiği aşmıyorsa örtülü sermaye oluşmamıştır — istisna uygulanamaz"
+    - kural: "toplam_faiz_gideri > 0"
+      hata: "Faiz gideri yoksa örtülü sermayeye isabet eden faiz de sıfır olur"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 12/7: Örtülü sermaye üzerinden kılık değiştirerek ödenen faizler, borç alan kurumda
+  KKEG olarak nitelendirilir ve hesap döneminin son günü itibarıyla KÂR PAYI sayılır.
+  KVK Madde 5/1-a: Borç veren tam mükellef kurumda bu kâr payı iştirak kazancı istisnasıdır
+  (Beyanname 306).
+
+  ## Mekanizma Şeması
+  BORÇ ALAN'da → İlişkili borç > Özsermaye × 3 → Aşan kısım = Örtülü Sermaye
+  → Faiz giderinin örtülü sermayeye isabet eden kısmı = KKEG (KVK 11/1-b)
+  → Hesap döneminin SON GÜNÜ itibarıyla KÂR PAYI sayılır (KVK 12/7)
+  BORÇ VEREN'de → Faiz geliri → Kâr Payı geliri → KVK 5/1-a uyarınca İştirak Kazancı İstisnası
+  → Beyanname 306 (zarar olsa dahi indirilir)
+
+  ## 306 vs 307 Ayrımı (KRİTİK)
+  306 = KVK 12 örtülü sermaye → faiz/kur farkı gideri → KÂR PAYI SAYILMA
+  307 = KVK 13 transfer fiyatlandırması → emsali aşan fark → KÂR PAYI SAYILMA
+  Kaynak işlem yanlış sınıflandırılırsa yanlış satır kullanılmış olur.
+
+  ## KUR FARKI Uyarısı (306 Değil — Ayrı Düzeltme)
+  Örtülü sermayeye isabet eden kur farkı geliri ve gideri vergiye tabi kazancın tespitinde
+  DIKKATE ALINMAZ (KVK 12/7). Bu 306 satırına yazılmaz — ayrı düzeltme kalemidir.
+
+  ## Düzeltme Zamanlama Takvimi
+  - Dönem kapanmadan (geçici vergi): Borç alan KKEG yaparsa → Borç veren aynı dönemde 306 uygular.
+    Ödeme şartı aranmaz.
+  - Dönem kapandı, borç alan KÂRLIYSA ve vergi ödediyse: İstisna uygulanabilir — süre sınırı yok.
+  - Dönem kapandı, borç alan ZARARLIYSA: VDDK 05.02.2025 kararı → YÜKSEK RİSK.
+    İhtirazi kayıtla beyan + YMM/hukuk görüşü önerilir.
+  - Sonraki yıllarda borç alan vergi öderse: Zamanaşımına bakılmaksızın geriye dönük düzeltme hakkı.
+
+  ## Örtülü Sermaye Eşiği
+  KVK 12/1: Ortaktan veya ortakla ilişkili kişiden alınan borçların dönem başı özsermayenin
+  3 katını aşan kısmı örtülü sermayedir.
+  KVK 12/2: İlişkili banka/finans kurumu borçlarının %50'si kıyaslamaya dahil edilir.
+
+muhasebe_kayitlari: |
+  ## Borç Veren Kurum — Faiz Geliri Kaydı
+  Borç: 120/102 Alıcılar / Bankalar (veya Tahakkuk)
+  Alacak: 642 Faiz Gelirleri
+  Açıklama: İlişkili kuruma verilen borç faizi — örtülü sermaye nitelendirmesi yapılırsa kâr payına dönüşür
+
+  ## 306 İstisnası (KV Beyannamesinde — Muhasebe Kaydı Yok)
+  Muhasebe kaydı yapılmaz — KV beyannamesinde 306. satıra örtülü sermaye faizi (kâr payı sayılan tutar) yazılır.
+
+  ## Kur Farkı Düzeltmesi (Ayrı Kalem — 306 Değil)
+  Örtülü sermayeye isabet eden kur farkı geliri vergiye tabi kazançtan ayrıca çıkarılır.
+  Muhasebe dışı düzeltme — 306 satırına yazılmaz.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Borç Alan Kurumun Dönem Başı Bilançosu ve Özsermaye Hesabı
+    detay: "VUK Md.192 bazlı dönem başı özsermayesi (01.01 açılış bilançosu). Örtülü sermaye eşiğinin (Özsermaye × 3) hesaplanması için."
+    temin_yeri: Borç Alan Kurum — Muhasebe
+  - kategori: zorunlu
+    "no": 2
+    baslik: İlişkili Kişi Borç Listesi (Borç Alan Kurumun)
+    detay: "Ortak ve ortakla ilişkili kişilerden alınan borçların dökümü. Banka/finans kurumu borçları ayrıca gösterilmeli (KVK 12/2 uygulaması için)."
+    temin_yeri: Borç Alan Kurum — Muhasebe / Transfer Fiyatlandırması
+  - kategori: zorunlu
+    "no": 3
+    baslik: Örtülü Sermaye Hesaplama Tablosu ve KKEG Tutarı
+    detay: "Eşik hesabı, örtülü sermaye tutarı, oran ve örtülü sermayeye isabet eden faiz (KKEG) hesabı."
+    temin_yeri: Bu çalışma kağıdı / Borç Alan Kurum KV Beyannamesi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Borç Alan Kurumun KV Beyannamesi (KKEG Bölümü)
+    detay: "Borç alan kurumun beyannamesindeki KKEG tutarıyla bu çalışma kağıdındaki tutar uyumlu olmalı."
+    temin_yeri: Borç Alan Kurum — GİB / Beyanname Arşivi
+  - kategori: zorunlu
+    "no": 5
+    baslik: Ortaklık/İlişki Yapısı Belgesi
+    detay: "KVK 12/1 kapsamında ilişkili kişi tanımını kanıtlayan belge. Pay defteri, Ticaret Sicili Gazetesi, ortaklık sözleşmesi."
+    temin_yeri: Ticaret Sicili / Şirket Arşivi
+  - kategori: destekleyici
+    "no": 6
+    baslik: Borç Alan Kurumun Vergi Ödeme Belgesi (Zarar Riski Senaryosu İçin)
+    detay: "Borç alan kurum zarardaysa ve VDDK 2025 kararı geçerliyse — istisna uygulanmadan önce ödeme kanıtı aranabilir."
+    temin_yeri: Borç Alan Kurum — GİB / Banka
+
+k_checklist:
+  - id: K1
+    soru: "Borç veren ile borç alan kurum arasında KVK 12/1 kapsamında ilişki (en az %10 ortaklık/oy/kâr payı) doğrulandı mı?"
+    referans: "KVK Md. 12/1"
+  - id: K2
+    soru: "Borç alan kurumun dönem başı özsermayesi VUK bazlı doğru hesaplandı mı?"
+    referans: "KVK Md. 12/1 | VUK Md. 192"
+  - id: K3
+    soru: "İlişkili banka/finans kurumu borçlarının %50'si kıyaslamaya dahil edildi mi? (KVK 12/2)"
+    referans: "KVK Md. 12/2"
+  - id: K4
+    soru: "Örtülü sermaye tutarı ve buna isabet eden faiz (KKEG) doğru hesaplandı mı?"
+    referans: "KVK Md. 12/1-2"
+  - id: K5
+    soru: "Borç alan kurumun KKEG listesiyle bu çalışma kağıdındaki tutar uyumlu mu?"
+    referans: "KVK Md. 12/7 | Beyanname tutarlılığı"
+  - id: K6
+    soru: "Kur farkı düzeltmesi 306 satırından ayrı tutuldu mu? (306 değil — ayrı kalem)"
+    referans: "KVK Md. 12/7 | Kur farkı özel kuralı"
+  - id: K7
+    soru: "VDDK 05.02.2025 kararı değerlendirildi mi? Borç alan kurum zarardaysa risk analizi yapıldı mı?"
+    referans: "VDDK E:2024/774 K:2025/2 | 05.02.2025"
+  - id: K8
+    soru: "Zarar durumunda ihtirazi kayıtla beyan ve YMM/hukuk görüşü alındı mı?"
+    referans: "VDDK 2025 içtihat riski"
+  - id: K9
+    soru: "Düzeltme zamanlama takvimi (dönem içi/kapandı sonrası/geriye dönük) doğru değerlendirildi mi?"
+    referans: "KVK Md. 12/7 | Zamanlama"
+  - id: K10
+    soru: "YİAKV matrahı ayrıca hesaplandı mı?"
+    referans: "KVK Md. 32/C"

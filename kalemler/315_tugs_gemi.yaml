@@ -1,0 +1,257 @@
+ic_kod: tugs_gemi_5_1_c
+baslik: Türk Uluslararası Gemi Siciline Kayıtlı Gemilerin İşletilmesinden ve Devrinden Sağlanan Kazançlar İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 315 }
+  - { donem: 2025, kod: 315 }
+
+mevzuat_dayanagi:
+  - 4490 Sayılı Türk Uluslararası Gemi Sicili Kanunu
+  - Ulaştırma ve Altyapı Bakanlığı TUGS Sicil Mevzuatı
+  - 49 Seri No.lu Kurumlar Vergisi Genel Tebliği (30.12.2025)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "1999-12-16"
+  bitis: null
+
+ana_kategori: serbest_bolge_tgb_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Türk Uluslararası Gemi Siciline (TUGS) kayıtlı gemi işletiyor veya devrediyor musunuz?"
+  info_modal: |
+    4490 Sayılı Türk Uluslararası Gemi Sicili Kanunu kapsamında TUGS'a kayıtlı gemilerin
+    (1) işletilmesinden ve (2) devrinden elde edilen kazançlar süresiz olarak kurumlar
+    vergisinden istisnadır. İstisnanın temel koşulu kazancın elde edildiği tarihte TUGS
+    sicil kaydının aktif olmasıdır. Sicili askıya alınmış veya terkin edilmiş dönem
+    kazancı kapsam dışıdır.
+    NOT: 315 istisnası "Kazancın Bulunması Halinde" bölümündedir — gemi işletme zararında
+    uygulanamaz.
+  kapi_sorulari:
+    - id: tugs_kayitli
+      soru: "Gemi Türk Uluslararası Gemi Sicili'ne (TUGS) kayıtlı mı? Tescil şahadetnamesi var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Ulusal Gemi Sicili veya başka bir sicile kayıtlı gemi kapsam dışıdır.
+        TUGS tescil şahadetnamesi tasdik dosyasının birincil belgesidir."
+    - id: sicil_aktif
+      soru: "Hesap dönemi boyunca TUGS sicil kaydı aktif mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sicili kısmen askıya alınmış dönemler için orantılı ayrıştırma yapılmalıdır."
+    - id: kapsam_kazanc
+      soru: "Kazanç türü nedir? (Gemi işletme, gemi devir veya her ikisi)"
+      tip: secenek_coklu
+      aciklama: "Her iki kazanç türü de 315 kapsamındadır. İşletme (D bölümü) ve devir (E bölümü)
+        ayrı hesaplanır, 315 beyanname satırında toplanır."
+    - id: kapsam_disi_ayristirma
+      soru: "Kapsam dışı gelirler (mevduat faizi, TUGS dışı gemi gelirleri) ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: kazanc_var_mi
+      soru: "Bu dönem gemi işletme/devir faaliyetinden kârda mısınız? (Bu istisna zararda
+        kullanılamaz)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: gemi_isletme_kazanci
+      etiket: "Gemi işletme kazancı (kapsam içi gelir − doğrudan gider − GYG payı)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Kapsam içi gemi işletme gelirleri: Navlun gelirleri, zaman kiralama (time charter),
+        çıplak tekne kiralama (bare boat), yolcu taşıma, kurtarma/yardım (salvage),
+        sürastarya (demurrage) gelirleri.
+        Kapsam dışı (istisna uygulanmaz): Mevduat faizi, TUGS dışı gemi/araç gelirleri.
+        D.4 = Kapsam İçi Toplam İşletme Geliri − Doğrudan Gemi Giderleri − GYG Payı.
+    - id: gemi_devir_kazanci
+      etiket: "Gemi devir kazancı (satış bedeli − net defter değeri − satış giderleri)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        TUGS'a kayıtlı geminin satışından doğan kazanç. Devir tarihinde TUGS kaydı aktif
+        olmalıdır. E.4 = Satış Bedeli − Net Defter Değeri (253 hesap) − Satış Giderleri.
+        Devir yoksa bu alan boş bırakılır.
+  formuller:
+    istisna_tutari: "(gemi_isletme_kazanci + gemi_devir_kazanci) * oran"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "gemi_isletme_kazanci >= 0 or gemi_devir_kazanci >= 0"
+      hata: "En az bir kazanç türü (işletme veya devir) girilmelidir."
+    - kural: "(gemi_isletme_kazanci + gemi_devir_kazanci) > 0"
+      hata: "Toplam gemi kazancı sıfır veya negatif ise istisna uygulanamaz (Kazancın
+        Bulunması Halinde). Gemi işletme zararında istisna uygulanmaz."
+
+denetci_notlari: |
+  ## N1. 4490 s.K. TUGS İstisnası — Yasal Çerçeve
+
+  4490 SAYILI TÜRK ULUSLARARASI GEMİ SİCİLİ KANUNU (1999):
+
+  İSTİSNA KAPSAMI — İKİ AYAK:
+  ① GEMİ İŞLETME: TUGS kayıtlı geminin işletilmesinden elde edilen kazançlar KV'den müstesna.
+  ② GEMİ DEVİR: TUGS kayıtlı geminin devrinden sağlanan kazançlar da istisna kapsamında.
+  (311 TGB Yönetici Şirket'ten farkı: 311'de devir kazancı istisnası yoktur.)
+
+  SÜRESİZLİK: 4490 s.K. istisnası için tarih sınırı yoktur — süresizdir.
+
+  SİCİL AKTİFLİĞİ: Kazancın elde edildiği tarihte TUGS kaydı aktif olmalıdır.
+  Askıya alınmış veya terkin edilmiş gemi → Kapsam dışı.
+
+  BEYANNAME: 315. Satır | 'Kazancın Bulunması Halinde' | %100
+
+  ## N2. Kapsam İçi/Dışı ve YMM Tasdik Standardı
+
+  KAPSAM İÇİ:
+  - Navlun gelirleri (yük/kargo taşıma)
+  - Zaman kiralama (time charter) gelirleri
+  - Çıplak tekne kiralama (bare boat) gelirleri
+  - Yolcu taşıma gelirleri
+  - Kurtarma/yardım (salvage) gelirleri
+  - Sürastarya (demurrage) gelirleri
+
+  KAPSAM DIŞI:
+  - Mevduat faizi ve finansal gelirler (KESİN KAPSAM DIŞI)
+  - TUGS dışı gemi/araç gelirleri
+
+  YMM KULLANISIN:
+  "...TUGS Tescil Şahadetnamesi No:[...] ile kayıtlı [gemi adı/IMO] işletmesinden elde
+  edilen kazanç 4490 s.K. kapsamında kurumlar vergisinden müstesnadır."
+  "...sicil kaydı tüm hesap dönemi boyunca aktif olduğu teyit edilmiştir."
+
+  KRİTİK HATALAR:
+  (1) Mevduat faizini 315 kapsamında beyan etmek.
+  (2) Sicil askıya alınmış dönem kazancına istisna uygulamak.
+  (3) Gemi işletme zararını "Zarar Olsa Dahi" bölümüne yazmak.
+  (4) İstisna için tarih sınırı uygulamak (315 süresizdir).
+
+  KDV NOTU: 315 KV istisnası KDV muafiyeti sağlamaz — uluslararası deniz taşımacılığı
+  KDV'si KDVK kapsamında ayrıca incelenmelidir.
+
+  ## 315 vs 311 Özet Karşılaştırma
+
+  | Kriter             | 315 — TUGS Gemi              | 311 — TGB Yönetici Şirket      |
+  |--------------------|------------------------------|--------------------------------|
+  | Yasal Dayanak      | 4490 s.K. TUGS Kanunu        | 4691 s.K. TGB Kanunu           |
+  | Statü Şartı        | TUGS'a kayıtlı gemi          | Bakanlık onaylı yönetici şirket|
+  | İstisna Konusu     | Gemi işletme + devir kazancı | TGB yönetim faaliyeti kazancı  |
+  | Devir Kazancı      | EVET — TUGS gemisinin satışı | HAYIR                          |
+  | Kapsam İçi Gelir   | Navlun/kira/kurtarma/taşıma  | Kira/yönetim ücreti/altyapı    |
+  | Kapsam Dışı        | Mevduat faizi, gemi dışı     | Mevduat faizi, TGB dışı        |
+  | İstisna Oranı      | %100                         | %100                           |
+  | Süre               | SÜRESİZ                      | SÜRESİZ                        |
+  | Beyanname          | 315 (Kazancın Bulunması)     | 311 (Kazancın Bulunması)       |
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Gemi İşletme Geliri (Navlun/Charter — Kapsam İçi)
+  Borç: 120/121 Alacaklar (600.01 Kapsam İçi) — Navlun/charter alacağı [Tutar]
+  Alacak: 600 Hizmet Gelirleri (600.01 — GEMİ İŞL.) — 315 istisna / Beyanname 315
+
+  ALT HESAP ZORUNLULUĞU:
+  600.01 — TUGS Gemi İşletme (Kapsam İçi)
+  600.02 — Kapsam Dışı (Mevduat faizi vb.)
+  Muhasebe ayrımı yapılmadan C bölümü belgelenemiyor.
+
+  ## Kayıt 2 — Gemi Devir Kazancı (TUGS Kayıtlı Geminin Satışı)
+  Borç: 102 Bankalar — Satış bedeli tahsilatı [Satış Bedeli]
+  Alacak: 253 Taşıtlar — Net defter değeriyle aktiften çıkış [Net Defter]
+  Alacak: 257 Birikmiş Amortismanlar — Amortisman kapatma [Amortisman]
+  Alacak: 679 Diğer Olağandışı Kâr — Devir kazancı (4490 s.K. 315 — TUGS aktif şart)
+
+  Not: 315 (TUGS GEMİ) vs 311 (TGB): 311'de devir kazancı istisnası yoktur. 315'te hem
+  işletme hem devir kazancı kapsam içindedir. Gemi devri Türk Gemi Sicili tesciliyle
+  tamamlanır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: "TUGS Tescil Şahadetnamesi (Her Gemi İçin)"
+    detay: "TUGS'a kayıtlı gemi tescil belgesi — gemi adı, IMO No, tonaj, tescil tarihi.
+      315 tasdik dosyasının birincil belgesidir. Ulusal sicildeki gemi kapsam dışıdır."
+    temin_yeri: Ulaştırma Bakanlığı TUGS Sicil Müdürlüğü
+  - kategori: zorunlu
+    "no": 2
+    baslik: "TUGS Sicil Aktiflik Teyit Yazısı (Dönem İçin)"
+    detay: "Hesap dönemi boyunca TUGS kaydının aktif olduğunu gösteren Bakanlık teyit yazısı.
+      Askıya alınan dönem kazancı 315 dışındadır."
+    temin_yeri: TUGS Sicil Müdürlüğü / Bakanlık yazısı
+  - kategori: zorunlu
+    "no": 3
+    baslik: Navlun/Charter Sözleşmeleri
+    detay: "Gemi işletme gelirini belgeleyen charter party ve taşıma sözleşmeleri.
+      C.1-C.6 kapsam içi gelirlerin dayanağıdır."
+    temin_yeri: Charter party + Faturalar
+  - kategori: zorunlu
+    "no": 4
+    baslik: Kapsam İçi/Dışı Gelir Ayrıştırma Tablosu (C Bölümü)
+    detay: "Kapsam içi gemi işletme gelirleri ile kapsam dışı finansal gelirlerin
+      ayrıştırıldığı tablo. Muhasebe alt hesap (600.01/600.02) ile uyumlu."
+    temin_yeri: C bölümü + Muhasebe ekstresi
+  - kategori: zorunlu
+    "no": 5
+    baslik: KV Beyannamesi Taslağı — 315. Satır
+    detay: "315 = D.6 + E.5 uyumlu. 'Kazancın Bulunması Halinde' bölümünde.
+      Mevduat faizi vb. 315'e yazılmamış."
+    temin_yeri: GİB e-Beyanname
+  - kategori: destekleyici
+    "no": 6
+    baslik: Gemi Alım-Satım Sözleşmesi + Sicil Devir Belgesi (Devir Varsa)
+    detay: "Geminin TUGS sicilinden alıcıya devir tescilini gösteren belge. Devir tarihinde
+      TUGS kaydının aktif olduğu teyit edilmeli."
+    temin_yeri: TUGS Sicil Müdürlüğü devir tescil belgesi
+  - kategori: destekleyici
+    "no": 7
+    baslik: Gemi 253 Hesap Kartı ve Amortisman Tablosu
+    detay: "E.2 net defter değerini belgeler. Amortisman tutarı 257 kartıyla uyumlu."
+    temin_yeri: 253 ve 257 hesap kartları
+  - kategori: destekleyici
+    "no": 8
+    baslik: Gider Dağıtım Anahtarı Belgesi
+    detay: "D.3 formülüne dayanan kapsam içi/dışı gider dağıtım tablosu.
+      Yöntem yazılı ve tutarlı olmalıdır."
+    temin_yeri: Dağıtım tablosu + Gider ekstresi
+
+k_checklist:
+  - id: K1
+    soru: "Gemi TUGS'a kayıtlı mı? Tescil şahadetnamesi dosyada mı?"
+    referans: "4490 s.K. | TUGS Sicil Müdürlüğü"
+  - id: K2
+    soru: "Hesap döneminde TUGS sicil kaydı AKTİF mi? (Tüm dönem belgelenmeli)"
+    referans: "4490 s.K. — Sicil aktifliği temel şart"
+  - id: K3
+    soru: "Kapsam içi/dışı gelir ayrıştırması C bölümünde yapıldı mı?"
+    referans: "4490 s.K. | Mevduat faizi kesin kapsam dışı"
+  - id: K4
+    soru: "Gider dağıtımı kapsam içi/dışı oranına göre yapıldı mı? (D.3 belgelenmiş mi?)"
+    referans: "D.3 dağıtım yöntemi"
+  - id: K5
+    soru: "İstisnanın SÜRESİZ olduğu teyit edildi mi? (KVK Geçici Md. sınırı uygulanmadı mı?)"
+    referans: "4490 s.K. — Tarih sınırı yoktur"
+  - id: K6
+    soru: "Devir kazancı varsa devir tarihinde TUGS kaydı aktif miydi?"
+    referans: "4490 s.K. | Devir tarihinde aktif sicil zorunlu"
+  - id: K7
+    soru: "Gemi devir belgesi (sicil devir tescili) mevcut mu?"
+    referans: "TUGS Sicil Müdürlüğü devir tescil belgesi"
+  - id: K8
+    soru: "Çoklu gemi varsa her gemi için ayrı analiz yapıldı mı?"
+    referans: "Her TUGS gemisi için ayrı gelir-gider tablosu"
+  - id: K9
+    soru: "315 'Kazancın Bulunması Halinde' bölümünde mi? ('Zarar Olsa Dahi' değil)"
+    referans: "KV Beyannamesi formu"
+  - id: K10
+    soru: "Beyanname 315 = D.6 + E.5 uyumlu mu? (İşletme + Devir toplamı)"
+    referans: "F.1 = D.6 + E.5"
+  - id: K11
+    soru: "TUGS çalışanları GV ücret istisnası ayrıca analiz edildi mi?"
+    referans: "KV tasdikinin dışında ayrıca incelenmeli"
+  - id: K12
+    soru: "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi? (≥500.000 TL)"
+    referans: "49 S.No.lu KV GT (30.12.2025)"

@@ -1,0 +1,172 @@
+ic_kod: gecici_md14_3_vade_sonu_diger
+baslik: KVK Geçici Md.14/3 Vade Sonunda Doğan Diğer Kazanç İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 382 }
+  - { donem: 2025, kod: 382 }
+
+mevzuat_dayanagi:
+  - KVK Geçici Madde 14/3
+  - 7352 Sayılı Kanun
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2021-12-24"
+  bitis: null
+
+ana_kategori: doviz_alacak_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "KVK Geçici Md.14/3 kapsamında altın hesabı dönüşümü (379) sonrası vade sonu kazancı oluştu mu ve bu kazanç 379/380/381 kapsamına girmiyor mu?"
+  info_modal: |
+    KVK Geçici Madde 14/3 (Paragraf 3) kapsamında altın hesabı TL'ye dönüştürüldükten
+    (379) sonra kurulan TL araçtan vade sonunda oluşan, **379/380/381 kapsamına girmeyen**
+    diğer kazançlar kurumlar vergisinden istisnadır (Beyanname 382).
+
+    382, 370-382 KVK Geçici Md.14 paketinin son kodudur (13 kodun tamamı tamamlanmıştır).
+
+    **Başlıca 382 kalemleri:**
+    - Altın fiyat farkı ek kazancı (379 dönüşüm anı dışında vade süresindeki ek fiyat hareketleri)
+    - Prim / teşvik ödemesi (faiz/kâr payı niteliğinde olmayan)
+    - Özel TL araç getirisi (faiz/kâr payı dışındaki ek getiri)
+    - Diğer (379/380/381 kapsamına girmediği açık olan Paragraf 3 vade sonu kazançları)
+
+    **YİAKV uyarısı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (YİAKV E.7 listesi).
+  kapi_sorulari:
+    - id: paragraf3_zinciri
+      soru: "KVK Geçici Md.14/3 kapsamında altın hesabı dönüşümü (379) gerçekleştirildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: diger_nitelik
+      soru: "Bu kazanç türü 379/380/381 kapsamına girmiyor mu? ('Diğer' niteliği teyit edildi mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "382 = 379+380+381 DIŞINDA kalan Paragraf 3 vade sonu kazançları. Üç kodun kapsamını önce kontrol edin."
+    - id: vade_tarih
+      soru: "Vade tarihi dönem içinde (01.01-31.12) mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: istisna_tutari_beyan
+      etiket: "Beyan edilen istisna tutarı (Beyanname 382)"
+      tip: para
+      zorunlu: true
+      yardim: "Net 382 = Brüt 382 Kazancı − 379/380/381 ile mükerrer tutarlar. Her kalem için GİB'e açıklanabilir 'diğer' niteliği teyit edilmelidir."
+  formuller:
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "istisna_tutari_beyan >= 0"
+      hata: "İstisna tutarı negatif olamaz"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Geçici Madde 14/3 (Paragraf 3): Altın hesabı dönüşümü (379) sonrası kurulan TL
+  araçtan vade sonunda oluşan, 379/380/381 kapsamı dışındaki diğer kazançlar istisnası.
+  7352 Sayılı Kanun kapsamında yürürlüğe girmiştir.
+  382, KVK Geçici Md.14 paketinin son kodu (13. kod) olup 370-382 paketi tamamlanmıştır.
+
+  ## Kapsam (382 = "Diğer")
+  - Altın fiyat farkı ek kazancı (vade süresindeki ek fiyat hareketleri)
+  - Prim / teşvik ödemesi (faiz/kâr payı niteliğinde olmayan banka ödemesi)
+  - Özel TL araç getirisi (faiz/kâr payı dışındaki ek getiri)
+  - Diğer: 379/380/381 kapsamına girmediği açık olan her türlü Paragraf 3 vade sonu kazancı
+
+  ## 379/380/381 ile Mükerrerlik
+  Net 382 = Brüt 382 − Mükerrer Tutarlar. Mükerrer olanlar (379/380/381'de zaten gösterilen)
+  382'ye yazılmaz. 374 (P1) ve 378 (P2) ile de ayrıştırma: Altın araçları → 382.
+
+  ## YİAKV Etkisi (KVK Md.32/C)
+  370-382 (13 kod) tamamı YİAKV matrahından DÜŞÜLEMEZ. Bu kod paketin son kodu olup
+  YİAKV E.7 son güncellemesinde 13 kodun tamamı eksiksiz yer almalıdır.
+
+  ## Beyanname Bölümü
+  "Kazancın Bulunması Halinde İndirilecek" — zarar döneminde uygulanamaz.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Vade Sonu: Paragraf 3 Diğer Kazanç Tahsilatı
+  Borç:    102 Bankalar / Çeşitli Hesap         [Vade sonu diğer kazanç tutarı]
+  Alacak:  646 Kambiyo Kârları / 679 Diğer Kâr  [Kazanç türüne göre seçilir]
+             / 648 Diğer Gelirler
+  Açıklama: KVK Geçici Md.14/3 Paragraf 3 vade sonu diğer kazanç → Beyanname 382
+
+  Not: 374 (P1: TL KKM vade diğer), 378 (P2: Borç TL araç vade diğer), 382 (P3: Altın
+  TL araç vade diğer) — aynı muhasebe mekanizması, farklı yasal dayanak.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: "379/380/381 Çalışma Kâğıtları Referansı"
+    detay: "382, Paragraf 3 zincirinin tamamlayıcısıdır. 379/380/381 çalışma kâğıtları olmadan 382 kapsamı belirlenemez."
+    temin_yeri: "379, 380, 381 çalışma kâğıtları"
+  - kategori: zorunlu
+    "no": 2
+    baslik: "382 Kazanç Türü Belgesi"
+    detay: "Her 382 kalemi için ayrı belge ve savunulabilir yasal dayanak. Kazanç türü (altın fiyat farkı ek kazancı, prim, özel getiri vb.) teyit edilmeli."
+    temin_yeri: "Sözleşme / banka yazısı / hesaplama"
+  - kategori: zorunlu
+    "no": 3
+    baslik: "379/380/381 ile Mükerrerlik Analizi"
+    detay: "Net 382 = Brüt 382 − Mükerrer Tutarlar. Mükerrer olanlar (zaten 379/380/381'de gösterilen) dışlandığı belgelenmeli."
+    temin_yeri: "YMM çalışma kâğıdı"
+  - kategori: zorunlu
+    "no": 4
+    baslik: "KV Beyannamesi Taslağı — 382. Satır"
+    detay: "'Kazancın Bulunması Halinde' bölümü. YİAKV matrahından çıkarılmamış olmalıdır. 13 kodun tamamı E.7'de listeli."
+    temin_yeri: "GİB e-Beyanname sistemi"
+  - kategori: destekleyici
+    "no": 5
+    baslik: "GİB Özelgesi (Tartışmalı 382 Kalemleri İçin)"
+    detay: "'Diğer' niteliği tartışmalı olabilir. GİB özelgesi risk yönetiminin temelidir."
+    temin_yeri: "GİB özelge başvuru sistemi"
+  - kategori: destekleyici
+    "no": 6
+    baslik: "374/378 ile Paragraf Ayrıştırma Notu"
+    detay: "Altın araçları → 382. Diğer paragraflara (374 veya 378) karıştırma olmadığı teyit edilmeli."
+    temin_yeri: "YMM kapsam analizi notu"
+
+k_checklist:
+  - id: K1
+    soru: "379/380/381 Paragraf 3 zinciri mevcut mu? (382, Paragraf 3 zincirinin son kodu — 379+380+381 olmadan oluşamaz)"
+    referans: "KVK Geçici Md.14/3"
+  - id: K2
+    soru: "Bu kazanç türü gerçekten 379/380/381 kapsamına girmiyor mu? (382 = 'Diğer' = 379+380+381 dışı)"
+    referans: "KVK Geçici Md.14/3"
+  - id: K3
+    soru: "Kazanç türü belgelendi mi? (Her 382 kalemi için ayrı belge ve savunulabilir yasal dayanak)"
+    referans: "KVK Geçici Md.14/3"
+  - id: K4
+    soru: "379/380/381 ile mükerrerlik analizi yapıldı mı? (Mükerrer tutarlar 382'ye yazılmadı — D.2 ayrıştırıldı)"
+    referans: "KVK Geçici Md.14/3"
+  - id: K5
+    soru: "374 (P1) ve 378 (P2) ile doğru ayrıştırıldı mı? (Altın araçları → 382, diğer paragraflara karıştırma yok)"
+    referans: "KVK Geçici Md.14/1-b ve 14/2 ve 14/3"
+  - id: K6
+    soru: "379/380/381 çalışma kâğıtlarıyla çapraz mutabakat yapıldı mı? (Paragraf 3 zinciri tutarlı)"
+    referans: "KVK Geçici Md.14/3"
+  - id: K7
+    soru: "Tartışmalı 382 kalemleri için GİB özelgesi alındı mı? ('Diğer' niteliği tartışmalıysa özelge zorunludur)"
+    referans: "GİB özelge sistemi"
+  - id: K8
+    soru: "382 istisnası YİAKV matrahından DÜŞÜLMEDI mi? (370-382 tüm 13 kod YİAKV E.7'de DÜŞÜLEMEZ)"
+    referans: "KVK Md.32/C | YİAKV Reh. No:607 E.7"
+  - id: K9
+    soru: "YİAKV E.7 satırı 382 dahil tüm 13 kodu kapsıyor mu? (Son güncelleme — 13 kodun tamamı E.7'de listeli)"
+    referans: "KVK Md.32/C | YİAKV Reh. No:607 E.7"
+  - id: K10
+    soru: "Beyanname 382 'Kazancın Bulunması Halinde' bölümünde yer alıyor mu? (Zarar döneminde uygulanamaz)"
+    referans: "KVK Geçici Md.14/3"
+  - id: K11
+    soru: "Vade tarihi dönem içinde (01.01-31.12) mi? (Sonraki dönemde vadeye girenler gelecek yıl 382)"
+    referans: "KVK Geçici Md.14/3"
+  - id: K12
+    soru: "YMM Tasdik Raporu (49 No.lu Tebliğ) gereksinimi değerlendirildi mi? (≥500.000 TL → YMM raporu)"
+    referans: "49 S.No.lu KV GT"

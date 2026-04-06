@@ -1,0 +1,140 @@
+ic_kod: gecici_md14_2_donem_sonu_faiz_karpay
+baslik: KVK Geçici Md.14/2 — Borç Dönüşümü Sonrası Dönem Sonu Kâr Payı ve Faiz İstisnası (Paragraf 2)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 376 }
+  - { donem: 2025, kod: 376 }
+
+mevzuat_dayanagi:
+  - KVK Geçici Madde 14/2 (Paragraf 2)
+  - VUK Madde 280/281 (Dönem sonu değerleme)
+  - GİB KV Beyan Rehberi Mart 2026 (No:606)
+  - YİAKV Rehberi No:607 (E.7 DÜŞÜLEMEZ listesi)
+  - 49 No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2021-09-27"
+  bitis: null
+
+ana_kategori: doviz_alacak_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "375 (borç dönüşümü) gerçekleştikten sonra kurulan TL aracından dönem sonu faiz/kâr payı tahakkuku yapıldı mı?"
+  info_modal: |
+    KVK Geçici Md.14/2 (Paragraf 2) kapsamında, yabancı para borç dönüşümü (375) sonrası
+    kurulan TL araçtan VUK Md.280/281 gereği dönem sonunda (31 Aralık) tahakkuk ettirilen
+    kâr payı ve faiz kurumlar vergisinden istisnadır.
+
+    **372 vs 376 Fark:**
+    372 (Paragraf 1): Aktif taraf — Mevduat/altın → TL KKM dönüşümü sonrası araç
+    376 (Paragraf 2): Pasif taraf — Borç → TL dönüşümü sonrası araç
+
+    **KRİTİK — YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ (E.7).
+    370-376 tamamı E.7 DÜŞÜLEMEZ listesindedir.
+  kapi_sorulari:
+    - id: borcdonusum_yapildi
+      soru: "KVK Geçici Md.14/2 kapsamında yabancı para borç dönüşümü (375) gerçekleştirildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "376, 375 bağlantısı gerektirir. 375 olmadan 376 oluşamaz."
+    - id: donem_sonu_tahakkuk
+      soru: "Borç dönüşümü sonrası TL araçtan dönem sonu faiz/kâr payı tahakkuku yapıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: mukerrerlik_372
+      soru: "372 (Paragraf 1) ile mükerrerlik analizi yapıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Aynı araç için hem 372 hem 376 uygulanamaz."
+    - id: yiakv_dusulemez
+      soru: "376 tutarının YİAKV matrahından DÜŞÜLMEYECEĞI teyit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+  ymm_tasdik_esigi_tl: 500000
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: donem_sonu_tahakkuk_tutari
+      etiket: "Dönem sonu (31 Aralık) tahakkuk ettirilen kâr payı/faiz tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Borç dönüşümü sonrası kurulan TL araçtan tahakkuk ettirilen tutar — 181/642 kaydıyla uyumlu"
+    - id: beyan_edilen_istisna
+      etiket: "Beyan edilen 376 istisna tutarı"
+      tip: para
+      zorunlu: false
+  formuller:
+    istisna_tutari: "donem_sonu_tahakkuk_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "donem_sonu_tahakkuk_tutari > 0"
+      hata: "Tahakkuk tutarı sıfır — 376 istisnası uygulanamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Geçici Md.14/2: 375 kapsamındaki borç dönüşümü sonrası kurulan TL araçtan
+  VUK Md.280/281 gereği dönem sonunda tahakkuk ettirilen kâr payı ve faiz istisnadır.
+
+  ## Paragraf 1 (372) ile Temel Fark
+  Tahakkuk mekanizması aynı (VUK Md.280/281), ancak yasal dayanak ve bağlantılı dönüşüm farklı:
+  372: Paragraf 1 (mevduat/altın → KKM) ile ilgili araç
+  376: Paragraf 2 (yabancı para borç → TL) ile ilgili araç
+
+  ## 376-377 Mükerrerlik Kuralı
+  Yılı aşan vadeli araçlarda: Net 377 = Vade Toplam − Önceki Yıl 376 Tahakkuku
+  (372-373 kuralının Paragraf 2 karşılığıdır)
+
+muhasebe_kayitlari: |
+  ## Kayıt — Dönem Sonu Kâr Payı/Faiz Tahakkuku (31 Aralık — Paragraf 2)
+  Borç: 181 Gelir Tahakkukları
+  Alacak: 642 Faiz Gelirleri (veya 644)
+  Açıklama: Borç dönüşümü sonrası TL araç — Paragraf 2 dönem sonu tahakkuku — 376 istisna
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Banka Dönem Sonu Tahakkuk Belgesi
+    detay: "Borç dönüşümü sonrası TL araçtan 31 Aralık itibarıyla tahakkuk eden kâr payı/faizi gösteren banka belgesi."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 2
+    baslik: 375 Çalışma Kâğıdı Referansı
+    detay: "376'nın bağlı olduğu borç dönüşümü (375) çalışma kâğıdı — aynı araç olduğunun teyidi."
+    temin_yeri: YMM Dosyası
+  - kategori: zorunlu
+    "no": 3
+    baslik: Tahakkuk Muhasebe Kaydı (181 Dr / 642 Kr)
+    detay: "Dönem sonu tahakkuk yevmiyesi — tutar banka belgesindeki ile uyumlu olmalı."
+    temin_yeri: Muhasebe
+  - kategori: destekleyici
+    "no": 4
+    baslik: 372 Çalışma Kâğıdı (Paragraf 1/2 Ayrıştırması)
+    detay: "Aynı araç için hem 372 hem 376 uygulanmadığının teyidi."
+    temin_yeri: YMM Dosyası
+
+k_checklist:
+  - id: K1
+    soru: "376'nın bağlı olduğu 375 (borç dönüşümü) çalışma kâğıdı mevcut ve uyumlu mu?"
+    referans: "KVK Geçici Md.14/2"
+  - id: K2
+    soru: "Dönem sonu tahakkuk kaydı (Dr 181 / Kr 642) yapıldı mı ve banka belgesiyle uyuşuyor mu?"
+    referans: "VUK Md.280/281"
+  - id: K3
+    soru: "Aynı araç için 372 (Paragraf 1) ile 376 (Paragraf 2) aynı anda uygulanmadı mı?"
+    referans: "KVK Geçici Md.14/1-b ve 14/2"
+  - id: K4
+    soru: "Yılı aşan vadeli araçlar için 376-377 mükerrerlik analizi yapıldı mı?"
+    referans: "GİB Rehberi No:606"
+  - id: K5
+    soru: "370-376 toplamının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?"
+    referans: "KVK Md.32/C | YİAKV Rehberi No:607 E.7"
+  - id: K6
+    soru: ">=500.000 TL ise YMM tasdik raporu düzenlendi mi?"
+    referans: "49 No.lu KV GT"

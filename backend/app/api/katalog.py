@@ -15,6 +15,10 @@ async def kalem_listesi():
             "yiakv_etkisi": k.yiakv_etkisi,
             "durum": k.durum,
             "ana_kategori": k.ana_kategori,
+            "beyanname_kodlari": [
+                {"donem": b.donem, "kod": b.kod}
+                for b in (k.beyanname_kodlari or [])
+            ],
         }
         for k in katalog.values()
     ]

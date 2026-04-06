@@ -1,0 +1,147 @@
+ic_kod: gecici_md14_3_vade_sonu_karpay_faiz
+baslik: KVK Geçici Md.14/3 — Altın Dönüşümü Sonrası Vade Sonu Kâr Payı ve Faiz İstisnası (Paragraf 3)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 381 }
+  - { donem: 2025, kod: 381 }
+
+mevzuat_dayanagi:
+  - KVK Geçici Madde 14/3 (Paragraf 3)
+  - GİB KV Beyan Rehberi Mart 2026 (No:606)
+  - YİAKV Rehberi No:607 (E.7 DÜŞÜLEMEZ listesi)
+  - 49 No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2021-09-27"
+  bitis: null
+
+ana_kategori: doviz_alacak_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "379/380 kapsamındaki Paragraf 3 TL araç dönem içinde vadeye ulaşarak kâr payı/faiz tahsil edildi mi?"
+  info_modal: |
+    KVK Geçici Md.14/3 (Paragraf 3): Altın dönüşümü (379) sonrası kurulan TL araç vadeye
+    ulaştığında bankadan fiilen alınan kâr payı ve faiz istisnadır.
+
+    **373 / 377 / 381 Karşılaştırması:**
+    373 (P1): TL KKM vade sonu kâr payı/faiz | 372-373 mükerrerlik
+    377 (P2): Borç → TL araç vade sonu kâr payı/faiz | 376-377 mükerrerlik
+    381 (P3): Altın → TL araç vade sonu kâr payı/faiz | 380-381 mükerrerlik
+
+    **KRİTİK — 380-381 Mükerrerlik:**
+    Net 381 = Vade Toplam − Önceki Yıl 380 Tahakkuku
+
+    **YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ (E.7).
+    370-381 tamamı (12 kod) E.7 listesindedir.
+  kapi_sorulari:
+    - id: altin_donusum_379
+      soru: "KVK Geçici Md.14/3 kapsamında altın dönüşümü (379) ve dönem sonu tahakkuku (380) mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: vade_geldi
+      soru: "Dönem içinde Paragraf 3 TL araç vadeye ulaştı mı? Kâr payı/faiz tahsil edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: mukerrerlik_380
+      soru: "Önceki yıl 380 tahakkuku yapılmış araç için Net 381 = Vade − Önceki 380 kuralı uygulandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: yiakv_dusulemez
+      soru: "381 tutarının YİAKV matrahından DÜŞÜLMEYECEĞI teyit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+  ymm_tasdik_esigi_tl: 500000
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: vade_toplam_karpay_faiz
+      etiket: "Vade sonunda alınan toplam kâr payı/faiz (TL)"
+      tip: para
+      zorunlu: true
+    - id: onceki_yil_380_tahakkuk
+      etiket: "Önceki yılda yapılan 380 tahakkuku (varsa)"
+      tip: para
+      zorunlu: false
+      yardim: "Yılı aşan vadeli araçlarda mükerrerlik önlemi için girilmesi zorunludur"
+    - id: beyan_edilen_istisna
+      etiket: "Beyan edilen 381 istisna tutarı"
+      tip: para
+      zorunlu: false
+  formuller:
+    net_istisna: "vade_toplam_karpay_faiz - onceki_yil_380_tahakkuk"
+    istisna_tutari: "max(net_istisna, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "vade_toplam_karpay_faiz > 0"
+      hata: "Vade sonu kâr payı/faiz tutarı sıfır — 381 istisnası uygulanamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Geçici Md.14/3: 379 kapsamındaki altın dönüşümü sonrası kurulan TL araç vadeye
+  ulaştığında fiilen tahsil edilen kâr payı ve faiz istisnadır.
+
+  ## 380-381 Mükerrerlik Kuralı
+  Yılı aşan vadeli Paragraf 3 araçlarında:
+  Net 381 = Vade Toplam − Önceki 380 Tahakkuku
+  Bu kural 372-373 ve 376-377 kurallarının Paragraf 3 karşılığıdır.
+
+  ## Kritik Noktalar
+  - 381, Paragraf 3 zincirinin son halkasıdır: 379 → 380 → 381
+  - Paragraf 1 araçları → 373. Paragraf 2 araçları → 377. Paragraf 3 araçları → 381.
+  - 370-381 tamamı (12 kod) YİAKV matrahından DÜŞÜLEMEZ (E.7)
+
+muhasebe_kayitlari: |
+  ## Kayıt — Vade Sonu Tahsilat (Paragraf 3 — Altın Dönüşümü Sonrası)
+  Borç: 102 Bankalar (TL)
+  Alacak: 181 Gelir Tahakkukları (önceki yıl 380 kapatma)
+  Alacak: 642 Faiz Gelirleri (bu yılın yeni kısmı)
+  Açıklama: Paragraf 3 altın dönüşümü TL araç vade sonu — 381 istisna (Net: Toplam − Önceki 380)
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Banka Vade Bildirimi (Paragraf 3 TL Araç)
+    detay: "Vade tarihi ve toplam kâr payı/faiz tutarını gösteren banka resmi bildirimi."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 2
+    baslik: 380 Çalışma Kâğıdı (Mükerrerlik Analizi İçin)
+    detay: "Önceki yıl 380 tahakkuku yapılmışsa Net 381 hesaplaması için zorunludur."
+    temin_yeri: YMM Dosyası
+  - kategori: zorunlu
+    "no": 3
+    baslik: 379 Çalışma Kâğıdı Referansı
+    detay: "Aynı TL aracının 379 kapsamındaki altın dönüşümünden açıldığının teyidi."
+    temin_yeri: YMM Dosyası
+  - kategori: destekleyici
+    "no": 4
+    baslik: 373/377 Paragraf Ayrıştırma Notu
+    detay: "Aynı araç için hem 373/377 (diğer paragraflar) hem 381 uygulanmadığının teyidi."
+    temin_yeri: YMM
+
+k_checklist:
+  - id: K1
+    soru: "381 bağlantılı TL aracının 379 kapsamındaki altın dönüşümünden açıldığı teyit edildi mi?"
+    referans: "KVK Geçici Md.14/3"
+  - id: K2
+    soru: "Önceki yıl 380 tahakkuku yapılan araçlar için Net 381 = Vade − 380 kuralı uygulandı mı?"
+    referans: "KVK Geçici Md.14/3 | GİB Rehberi No:606"
+  - id: K3
+    soru: "Paragraf 1 (373) ve Paragraf 2 (377) ile mükerrerlik kontrolü yapıldı mı?"
+    referans: "KVK Geçici Md.14/1-b, 14/2 ve 14/3"
+  - id: K4
+    soru: "Vade sonu muhasebe kaydı (102 Dr / 181+642 Kr) doğru yapıldı mı?"
+    referans: "VUK Md.280/281"
+  - id: K5
+    soru: "370-381 toplamının YİAKV matrahından DÜŞÜLMEDIĞI teyit edildi mi?"
+    referans: "KVK Md.32/C | YİAKV Rehberi No:607 E.7"
+  - id: K6
+    soru: ">=500.000 TL ise YMM tasdik raporu düzenlendi mi?"
+    referans: "49 No.lu KV GT"

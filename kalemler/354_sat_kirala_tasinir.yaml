@@ -1,0 +1,203 @@
+ic_kod: sat_kirala_tasinir_5_1_j
+baslik: Sat-Kirala-Geri Al İşlemlerinden Doğan Kazançlarda İstisna (Taşınırlar)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 354 }
+  - { donem: 2025, kod: 354 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-j
+  - 6361 Sayılı Finansal Kiralama, Faktoring, Finansman ve Tasarruf Finansman Şirketleri Kanunu
+  - 5411 Sayılı Bankacılık Kanunu
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2013-04-13"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Bir taşınır varlığı (makine, araç, ekipman) finansal kiralama şirketine veya katılım bankasına satıp geri kiralayarak kullanıyorsunuz?"
+  info_modal: |
+    KVK 5/1-j kapsamında, kurumların taşınır varlıklarını sat-kirala-geri al işlemi çerçevesinde
+    finansal kiralama şirketine veya katılım/kalkınma/yatırım bankasına satmaları ve geri
+    kiralamaları durumunda doğan satış kazancı %100 istisnadır.
+    İstisna edilen kazanç 549 özel fon hesabına alınır ve kira süresi boyunca kira
+    ödemelerine orantılı olarak amortize edilir. Kira süresi sonunda varlığın geri alınması
+    istisnasının sürdürülmesi için zorunludur.
+  kapi_sorulari:
+    - id: varlik_tasinir_mi
+      soru: "Satılan varlık taşınır mı? (Makine, araç, ekipman, teçhizat — taşınmaz/bina/arazi değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taşınmaz (bina, arazi, fabrika) için 355 kodu kullanılmalıdır. Bu istisna yalnızca taşınır varlıklar içindir."
+    - id: alici_lisansli_mi
+      soru: "Alıcı kurum; 6361 s.K. kapsamında BDDK lisanslı finansal kiralama şirketi, katılım bankası veya kalkınma/yatırım bankası mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-j yalnızca bu kurumlara yapılan satış-geri kiralama işlemleri için geçerlidir. Başka alıcılara satış kapsam dışıdır."
+    - id: geri_al_taahhut_var_mi
+      soru: "Kira süresi sonunda varlığı geri alma taahhüdü/opsiyonu sözleşmede açıkça yer alıyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Geri alma şartı istisnasının özüdür. Geri alım gerçekleşmezse istisna iptal edilir — ceza + vergi riski doğar."
+    - id: fon_hesabina_alindi_mi
+      soru: "İstisna edilen kazancın 549 Özel Fonlar hesabına alınacak ve kira süresi boyunca amortize edilecek midir?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Fon hesabına alınmayan veya erken çekilen tutar vergiye tabi olur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: satis_bedeli
+      etiket: "Taşınırın FK Şirketine/Bankaya Satış Bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Finansal kiralama şirketine veya bankaya yapılan satışın fatura bedeli. Piyasa değeriyle uyumlu olmalıdır."
+    - id: net_defter_degeri
+      etiket: "Taşınırın Net Defter Değeri (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Birikmiş amortisman düşüldükten sonraki net aktif değeri. Muhasebe kartı ile uyumlu olmalıdır."
+    - id: satis_giderleri
+      etiket: "Satış Giderleri (Komisyon, noter, fatura düzenleme vb.) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Satışa ilişkin komisyon, noter ve benzeri giderler."
+  formuller:
+    satis_kazanci: "satis_bedeli - net_defter_degeri - satis_giderleri"
+    istisna_tutari: "max(satis_kazanci * oran, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_kazanci > 0"
+      hata: "Satış kazancı pozitif olmalıdır. Zarar durumunda bu istisna uygulanamaz (Kazancın Bulunması Halinde bölümü)."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-j: Finansal kiralama ya da finansman şirketleri, katılım bankaları ile kalkınma
+  ve yatırım bankalarına satılıp geri kiralanan varlıklardan doğan satış kazançları %100 istisnadır.
+
+  ## Mekanizma — 3 Aşamalı Döngüsel İşlem
+  AŞAMA 1 — SATIŞ: Kurum taşınır varlığı FK şirketine/bankaya satar → Satış kazancı %100 istisna
+  → 549 Özel Fon Hesabına alınır.
+  AŞAMA 2 — GERİ KİRALAMA: FK/Banka aynı taşınırı kuruma finansal kiralama sözleşmesiyle kiralar
+  → Kira ödemeleri gider olarak indirilebilir → 549 Fon her dönem kira payına orantılı azaltılır.
+  AŞAMA 3 — GERİ ALMA: Kira süresi sonunda kurum satın alma hakkını kullanır → Geri alım bedeli
+  yeni aktif değer → 549 Fon sıfırlanır → İstisna korundu.
+
+  ## Kritik Noktalar
+  - Alıcı zorunlu olarak: BDDK lisanslı FK şirketi (6361 s.K.) / Katılım bankası / Kalkınma-yatırım bankası (5411 s.K.)
+  - Satış ve geri kiralama sözleşmeleri eş zamanlı veya birbirine bağlı olmalıdır
+  - Geri alma taahhüdü sözleşmede yazılı olmalı — şifahi taahhüt geçersiz
+  - İstisna sadece satış yılında 354 satırında gösterilir; sonraki yıllarda 354 satırına yazılmaz
+  - Kira ödemeleri KV matrahından gider olarak indirilebilir
+  - 549 Fon amortizasyonu: Her dönem = Fon × (Dönem Kira / Toplam Kira)
+  - Taşınmaz (bina/arazi) işlemleri için 355 kodu kullanılmalıdır
+
+  ## YİAKV Etkisi
+  KVK 5/1-j (354) istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır; dönem mevzuatı
+  ve GİB açıklamalarıyla ayrıca analiz edilmelidir.
+
+  ## YMM Tasdik Raporu
+  49 No.lu Tebliğ (30.12.2025): Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu
+  zorunludur. Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Satış Kaydı (Taşınır Varlığın FK Şirketine/Bankaya Satışı)
+  Borç: 102 Bankalar / 120 Alacaklar           [Satış Bedeli]
+  Alacak: 253/254 İlgili Taşınır Aktif Hesabı  [Net Defter Değeri]
+  Alacak: 258 Birikmiş Amortismanlar           [Birikim]
+  Alacak: 679 Diğer Olağandışı Kâr             [Satış Kazancı]
+  Açıklama: Taşınırın FK şirketine/bankaya sat-kirala-geri al kapsamında satışı
+
+  ## Kayıt 2 — 549 Özel Fon Hesabına Alma (Satış Yılında)
+  Borç: 679 Diğer Olağandışı Kâr / 645 Satış Kârı   [İstisna Tutarı]
+  Alacak: 549 Özel Fonlar — KVK 5/1-j 354 İstisnası  [İstisna Tutarı]
+  Açıklama: Satış kazancının tamamının KVK 5/1-j kapsamında 549 hesabına alınması
+
+  ## Kayıt 3 — Dönemsel Kira Gideri Kaydı (Her Dönem)
+  Borç: 770 Genel Yönetim Giderleri / 760 Pazarlama   [Kira Bedeli + KDV]
+  Alacak: 102 Bankalar                                 [Kira Bedeli + KDV]
+  Açıklama: FK şirketine ödenen finansal kiralama kira bedeli — gider kabul edilir
+
+  ## Kayıt 4 — Fon Amortizasyonu (Her Dönem — Kira Payına Orantılı)
+  Borç: 549 Özel Fonlar                         [Dönem Fon Azalışı]
+  Alacak: 549 Özel Fonlar (karşı hesap) / 679   [Dönem Fon Azalışı]
+  Açıklama: Fon = Başlangıç Fon × (Dönem Kira / Toplam Kira)
+  Not: Kira süresi sonunda 549 hesabı sıfırlanmış olmalıdır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: BDDK Lisans Belgesi (Alıcı FK Şirketi / Katılım / Kalkınma-Yatırım Bankası)
+    detay: "6361 s.K. kapsamında FK şirketi lisansı veya 5411 s.K. kapsamında banka statü belgesi. BDDK resmi web sitesinden teyit edilmelidir."
+    temin_yeri: BDDK / Alıcı Kurum
+  - kategori: zorunlu
+    "no": 2
+    baslik: Sat-Kirala-Geri Al Sözleşme Paketi (Satış Sözleşmesi + Finansal Kiralama Sözleşmesi)
+    detay: "Her iki sözleşme eş zamanlı veya bağlı olmalıdır. Geri alım taahhüdü/opsiyonu sözleşmede açıkça yer almalıdır."
+    temin_yeri: Hukuk Birimi / Sözleşme Arşivi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Satış Faturası ve Teslim-Tesellüm Tutanağı
+    detay: "Taşınırın FK şirketine fiilen teslim edildiğini belgeler. Muhasebede aktiften çıkış kaydıyla uyumlu olmalıdır."
+    temin_yeri: Muhasebe / Lojistik
+  - kategori: zorunlu
+    "no": 4
+    baslik: 549 Özel Fon Hesabı Kayıt ve İzleme Tablosu
+    detay: "Satış yılında fona alınan tutar ve her dönem kira payına orantılı amortizasyon hesaplamalarını içerir."
+    temin_yeri: Muhasebe / ERP
+  - kategori: destekleyici
+    "no": 5
+    baslik: Bağımsız Değerleme / Ekspertiz Raporu
+    detay: "Satış bedelinin piyasa (emsal) değeriyle uyumlu olduğunu belgeler. Örtülü kazanç dağıtımı riskine karşı koruma sağlar."
+    temin_yeri: Bağımsız Değerleme Şirketi
+
+k_checklist:
+  - id: K1
+    soru: "Satılan varlık taşınır mı? (Makine, araç, ekipman) — 355 (taşınmaz) ile karıştırılmadı mı?"
+    referans: "KVK Md. 5/1-j | Beyanname Kodu 354"
+  - id: K2
+    soru: "Alıcı kurum; BDDK lisanslı FK şirketi, katılım bankası veya kalkınma/yatırım bankası mı? Lisans belgesi dosyada mevcut mu?"
+    referans: "KVK Md. 5/1-j | 6361 s.K. | 5411 s.K."
+  - id: K3
+    soru: "Satış ve geri kiralama sözleşmeleri eş zamanlı/bağlantılı mı? Gerçek bir sat-kirala-geri al işlemi mi?"
+    referans: "KVK Md. 5/1-j | GİB Özelgeleri"
+  - id: K4
+    soru: "Kira süresi sonunda geri alım taahhüdü/opsiyonu sözleşmede yazılı mı? Şifahi taahhüt mevcut değil mi?"
+    referans: "KVK Md. 5/1-j"
+  - id: K5
+    soru: "Satış kazancının tamamı 549 hesabına satış yılında alındı mı? E.6 = F.1 tutarı uyumlu mu?"
+    referans: "KVK Md. 5/1-j | 1 S.No.lu KV GT"
+  - id: K6
+    soru: "Fon amortizasyonu kira payına orantılı mı hesaplanıyor? Her dönem: Fon × (Dönem Kira / Toplam Kira)"
+    referans: "KVK Md. 5/1-j | 1 S.No.lu KV GT"
+  - id: K7
+    soru: "Satış bedeli piyasa değeriyle uyumlu mu? Emsal fiyatından düşük satış örtülü kazanç dağıtımı riski taşır."
+    referans: "KVK Md. 13"
+  - id: K8
+    soru: "Satılan taşınır muhasebede aktiften düşüldü mü? Aktiften çıkış kaydı ve teslim faturası mevcut mu?"
+    referans: "VUK Md. 229"
+  - id: K9
+    soru: "Kira ödemeleri gider olarak kaydedildi mi? (Kira gideri + fon amortizasyonu birlikte uygulanabilir)"
+    referans: "KVK Md. 8"
+  - id: K10
+    soru: "Geri alım gerçekleşti mi veya gerçekleşecek mi? Risk analizi yapıldı mı? (Geri alım yoksa → istisna iptali)"
+    referans: "KVK Md. 5/1-j"
+  - id: K11
+    soru: "354 'Kazancın Bulunması Halinde' bölümünde mi? 'Zarar Olsa Dahi' bölümünde değil mi?"
+    referans: "KVK Md. 5/1-j"
+  - id: K12
+    soru: "Beyanname 354 tutarı hesaplanan satış kazancıyla uyumlu mu? Yalnızca satış yılında yazıldı mı?"
+    referans: "KV Beyannamesi 354 Satırı"
+  - id: K13
+    soru: "YİAKV matrahında 354 istisnasının etkisi ayrıca analiz edildi mi? (Tartışmalı — dönem mevzuatı esas)"
+    referans: "KVK Md. 32/C"

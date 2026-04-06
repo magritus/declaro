@@ -5,23 +5,26 @@ import { useWizardStore } from '@/store/wizardStore'
 import { useKatalogKalemler } from '@/api/kalem'
 import ThemeToggle from '@/components/ThemeToggle'
 
-// Category IDs must match the ana_kategori values in the YAML catalog (single source of truth).
-// Display labels and sort order are kept here; active/inactive state comes from the catalog.
+// Category IDs must match the ana_kategori values in the YAML catalog.
 const ANA_KATEGORILER = [
-  { id: 'istirak_kazanci', soru: 'İştirak kazancın var mı?', grup: 'zarar_olsa_dahi',
-    bilgi: 'KVK 5/1-a kapsamında tam mükellef kurumlardan elde edilen kâr payları.' },
-  { id: 'emisyon_primi', soru: 'Emisyon primi kazancı var mı?', grup: 'zarar_olsa_dahi',
-    bilgi: 'KVK 5/1-ç — Hisse senedi ihraç primlerinden elde edilen kazançlar.' },
-  { id: 'yurtdisi_insaat', soru: 'Yurtdışı inşaat/teknik hizmet faaliyetin var mı?', grup: 'zarar_olsa_dahi',
-    bilgi: 'KVK 5/1-h — Yurtdışında fiilen icra edilen inşaat işlerinden elde edilen kazançlar.' },
+  // Zarar olsa dahi (always shown)
+  { id: 'istirak_kazanc_istisnalari', soru: 'İştirak kazancı istisnası (KVK 5/1-a, 5/1-b, 5/1-d)?', grup: 'zarar_olsa_dahi',
+    bilgi: 'Tam ve dar mükellef kurumlardan elde edilen kâr payları, yurtdışı iştirak kazançları, fon/ortaklık kazançları.' },
+  { id: 'serbest_bolge_tgb_istisnalari', soru: 'Serbest bölge veya TGB (Teknoloji Geliştirme Bölgesi) faaliyetin var mı?', grup: 'zarar_olsa_dahi',
+    bilgi: '3218 s.K. Serbest Bölge istisnası ve 4691 s.K. Teknoloji Geliştirme Bölgesi kazanç istisnası.' },
+  { id: 'yurtdisi_istisnalar', soru: 'Yurtdışı şube, daimi temsilci veya inşaat/montaj faaliyetin var mı?', grup: 'zarar_olsa_dahi',
+    bilgi: 'KVK 5/1-g yurtdışı şube/daimi temsilci, KVK 5/1-h yurtdışı inşaat/montaj/teknik hizmet kazanç istisnaları.' },
+  // Kazanç varsa
+  { id: 'doviz_alacak_istisnalari', soru: 'KKM veya altın hesabı TL\'ye dönüştürdün mü? (Geçici Md.14)', grup: 'kazanc_varsa',
+    bilgi: 'KVK Geçici Madde 14 kapsamında yabancı para veya altın hesaplarının TL\'ye dönüştürülmesinden doğan kazanç ve faiz istisnası (370–387 beyanname satırları).' },
+  { id: 'varlik_satis_istisnalari', soru: 'Taşınmaz, iştirak hissesi veya sat-kirala-geri al işlemi yaptın mı?', grup: 'kazanc_varsa',
+    bilgi: 'KVK 5/1-e taşınmaz/iştirak hissesi satışı, KVK 5/1-j sat-kirala-geri al, KVK 5/1-k kira sertifikası ihracı kazanç istisnaları.' },
+  { id: 'ar_ge_istisna', soru: 'Patent veya faydalı model belgeli buluşundan kazanç elde ettin mi?', grup: 'kazanc_varsa',
+    bilgi: 'KVK Madde 5/B — Türkiye\'de yapılan Ar-Ge sonucu elde edilen patent/faydalı model belgeli buluşlardan kazancın %50\'si istisna (NEXUS oranıyla).' },
   { id: 'egitim_saglik_istisnalari', soru: 'Özel okul, kreş veya rehabilitasyon merkezi işletiyor musun?', grup: 'kazanc_varsa',
     bilgi: 'KVK 5/1-ı — 5580 s.K. kapsamında faaliyete geçilen hesap döneminden itibaren 5 yıl istisna.' },
-  { id: 'sponsorluk', soru: 'Sponsorluk harcaman var mı?', grup: 'kazanc_varsa',
-    bilgi: 'KVK 10/1-b — Amatör spor dalları için %100, profesyonel için %50 indirim.' },
-  { id: 'bagis_yardim', soru: 'Bağış ve yardım yaptın mı?', grup: 'kazanc_varsa',
-    bilgi: 'KVK 10/1-c ve diğer — Kurum kazancının %5\'i genel tavan.' },
-  { id: 'arge', soru: 'Ar-Ge harcaman var mı?', grup: 'kazanc_varsa',
-    bilgi: 'KVK 10/1-a — 5746 s.K. kapsamında Ar-Ge indirimi.' },
+  { id: 'diger_istisnalar', soru: 'Diğer özel indirim veya istisna kalemlerin var mı?', grup: 'kazanc_varsa',
+    bilgi: 'Beyanname 350 (diğer indirimler), GVK Geçici Md.76 ürün senedi istisnası, CVOA kapsamı ve benzeri özel kalemler.' },
 ]
 
 export default function Faz1AnaKategoriTarama() {

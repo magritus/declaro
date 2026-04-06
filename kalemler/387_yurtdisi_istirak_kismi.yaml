@@ -1,0 +1,216 @@
+ic_kod: yurtdisi_istirak_kismi_50_5_1_b
+baslik: Yurt Dışı İştirak Kâr Payı Kısmi İstisnası (%50)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 387 }
+  - { donem: 2025, kod: 387 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-b
+  - 7491 Sayılı Kanun (01.01.2023 tarihinden itibaren yürürlük)
+  - 23 Seri No.lu KV Genel Tebliği
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2023-01-01"
+  bitis: null
+
+ana_kategori: yurtdisi_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "Yurt dışındaki bir iştirakten kâr payı (temettü) elde ettin mi ve 317 tam istisna şartlarını tam olarak karşılayamıyor musun?"
+  info_modal: |
+    KVK Md.5/1-b kapsamında, 7491 s.K. ile 01.01.2023 tarihinden itibaren yürürlüğe giren
+    **%50 kısmi istisna**: Yalnızca 2 şart gereklidir:
+    ① Kazancın elde edildiği tarihte ödenmiş sermayenin ≥**%50**'sine sahip olmak
+    ② Kazancın **TAMAMININ** KV beyanname süresine kadar Türkiye'ye transfer edilmesi
+
+    **ÖNCE 317'Yİ DEĞERLENDİR!** 317 (4 şart + %100 tam istisna) şartları sağlanıyorsa
+    387 (%50) yerine 317 tercih edilmelidir. 387'ye ancak 317 şartlarından biri sağlanamadığında geçilir.
+
+    **KRİTİK:** Kısmi transfer durumunda bile istisna **TAMAMEN** kaybolur.
+    **YİAKV:** Bu istisna YİAKV (KVK Md.32/C) matrahından DÜŞÜLEMEZ.
+  kapi_sorulari:
+    - id: once_317_degerlendirildi_mi
+      soru: "317 tam istisna şartları (≥%10 pay + 1 yıl elde tutma + ≥%15 vergi yükü + tam transfer) değerlendirildi ve sağlanamadığı tespit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "387 ikinci seçenektir. 317 şartlarının tamamı sağlanıyorsa 317 kullanılmalıdır — %100 istisna %50'den daha avantajlıdır."
+    - id: istirak_as_ltd_mi
+      soru: "Yurt dışı iştirak AŞ veya Ltd niteliğinde mi? (Kanuni VE iş merkezi yurt dışında mı?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kanuni VE iş merkezinin ikisinin de Türkiye dışında bulunması zorunludur. Apostilli tescil belgesi gereklidir."
+    - id: sermaye_payi_elli_yuzde
+      soru: "Kazancın elde edildiği tarihte ödenmiş sermayenin ≥%50'sine sahip misin?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: %49,9 bile yetersizdir. Kazancın elde edildiği tarihteki güncel oran esas alınır. Dönem içinde %50'nin altına düşüldüyse şart sağlanmamış sayılır."
+    - id: tamami_transfer_387
+      soru: "Kazancın TAMAMININ KV beyanname süresine kadar (30 Nisan veya geçici vergi tarihi) Türkiye'ye transferi gerçekleşti mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KISMİ TRANSFER YASAĞI: Kazancın tek kuruşu bile eksik transferde istisna hakkı TAMAMEN kaybolur. Kısmen bile kullanılamaz."
+    - id: yiakv_teyidi
+      soru: "387 (KVK 5/1-b) istisnasının YİAKV (KVK Md.32/C) matrahından düşülemeyeceği teyit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: 387 istisnası YİAKV matrahından DÜŞÜLEMEZ. Yurt dışı kaynaklı gelir olduğu için YİAKV hesabında çıkarılmamalıdır."
+
+parametreler:
+  oran: 0.50
+  min_sermaye_payi: 0.50
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: brut_kar_payi_doviz
+      etiket: "Brüt kâr payı (yabancı para birimi — stopaj öncesi)"
+      tip: para
+      zorunlu: true
+      yardim: "Dağıtım kararındaki stopaj öncesi brüt tutar. Net transfer tutarı değil — brüt tutar esas alınır."
+    - id: elde_etme_tarihi_kuru
+      etiket: "Elde etme tarihi TCMB döviz alış kuru"
+      tip: sayi
+      zorunlu: true
+      yardim: "Kâr payının elde edildiği tarihteki TCMB döviz alış kuru. Transfer tarihi kuru DEĞİL."
+    - id: yurtdisi_stopaj_tl
+      etiket: "Yurt dışında ödenen stopaj / withholding tax (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "ÇVÖA varsa anlaşma stopaj oranı geçerlidir. Stopaj, KVK 33 kapsamında vergiye tabi %50 kısım için mahsup edilebilir."
+  formuller:
+    brut_kar_payi_tl: "brut_kar_payi_doviz * elde_etme_tarihi_kuru"
+    istisna_tutari: "brut_kar_payi_tl * oran"
+    vergiye_tabi_kisim: "brut_kar_payi_tl * (1 - oran)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "brut_kar_payi_tl > 0"
+      hata: "Brüt kâr payı sıfır veya negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-b, 7491 Sayılı Kanun (01.01.2023'ten itibaren): Yurt dışı iştirak kâr
+  payı %50 kısmi istisnası. Yalnızca 2 şart gereklidir: (1) ≥%50 sermaye payı ve
+  (2) kazancın tamamının transferi.
+
+  ## 317 vs 387 Karşılaştırma (ÖNCE 317 DEĞERLENDİR)
+  | Kriter              | 317 (Tam İstisna)                    | 387 (Kısmi İstisna)          |
+  |---------------------|--------------------------------------|------------------------------|
+  | Sermaye payı        | ≥%10                                 | ≥%50 (daha yüksek eşik)      |
+  | Elde tutma süresi   | Kazancın elde edildiği tarihten 1 yıl| ARANMAZ                      |
+  | Vergi yükü          | ≥%15 (Finans/MK: ≥%25)              | ARANMAZ                      |
+  | Transfer            | TAMAMININ transferi zorunlu          | TAMAMININ transferi zorunlu  |
+  | İstisna oranı       | %100                                 | %50                          |
+  317 şartlarının tamamı sağlanıyorsa 317 tercih edilmelidir.
+
+  ## Kritik Noktalar
+  - İstisna BRÜT kâr payı (TL) üzerinden hesaplanır (stopaj sonrası net tutar değil).
+  - Kur: Kâr payının elde edildiği tarihteki TCMB döviz ALIŞ kuru (transfer tarihi kuru değil).
+  - Kısmi transfer → İstisna hakkı TAMAMEN kaybolur (23 No.lu KV GT).
+  - Vergiye tabi kalan %50 kısım için KVK Md.33 kapsamında yurt dışı vergi mahsubu yapılabilir.
+  - İstisna edilen %50 kısma isabet eden yurt dışı vergi mahsup EDİLEMEZ.
+
+  ## YİAKV Etkisi
+  KVK 5/1-b (387) istisnası YİAKV (KVK Md.32/C) matrahından DÜŞÜLEMEZ.
+  Yurt dışı kaynaklı gelir olduğu için YİAKV hesabından çıkarılamaz.
+  YİAKV çalışma kâğıdında 387 tutarı matrahtan çıkarılmamalıdır.
+
+  ## YMM Tasdik Notu
+  49 No.lu Tebliğ (30.12.2025): Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu.
+  Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Kâr Payı Tahakkuk (Elde Etme Tarihi)
+  Borç: 241 Bağlı Ortaklıklar / 122 Alacaklar — Brüt kâr payı alacağı
+  Alacak: 642 İştirak Kazançları — Brüt kâr payı geliri (elde etme tarihi TCMB alış kuru)
+  NOT: Brüt tutar kaydedilir. 642 hesabındaki tutarın %50'si beyanname 387'de istisna,
+  kalan %50 vergiye tabi.
+
+  ## Kayıt 2 — Stopaj / Withholding Tax
+  Borç: 193 Peşin Ödenen Vergiler — Yurt dışında kesilen withholding tax
+  Alacak: 241 / 122 Alacaklar — Alacak kapatma
+  NOT: Stopaj vergiye tabi %50 kısma isabet eden kısmı için KVK 33 mahsup değerlendirilebilir.
+
+  ## Kayıt 3 — Net Transfer Tahsilatı
+  Borç: 102 Bankalar — Net transfer tahsilatı, kur farkı varsa 646/656
+  Alacak: 241 / 122 Alacaklar — Alacak kapatma
+
+  ## Beyanname Akışı
+  1. Muhasebede 642 hesabına BRÜT kâr payı kaydedilir → Ticari kâra dahil.
+  2. KV Beyannamesi 387. Satır: "Zarar Olsa Dahi İndirilecek" bölümüne brüt tutarın %50'si.
+  3. KVK 33 Mahsup: Vergiye tabi %50 kısma isabet eden yurt dışı vergi mahsup edilebilir.
+     İstisna edilen %50'ye isabet eden yurt dışı vergi mahsup EDİLEMEZ.
+  4. YİAKV matrahından 387 tutarı ÇIKARILMAZ.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: İştirak Tescil + Yerleşiklik Belgesi (Yurt Dışı AŞ/Ltd)
+    detay: "Yurt dışı iştirak AŞ/Ltd niteliğinde ve kanuni + iş merkezinin ikisinin de yurt dışında olduğu teyidi. Apostilli ticaret sicil belgesi veya konsolosluk tasdikli tescil belgesi."
+    temin_yeri: Apostilli tescil belgesi / Konsolosluk tasdikli belge
+  - kategori: zorunlu
+    "no": 2
+    baslik: Sermaye Payı Belgesi ≥%50 (Kazancın Elde Edildiği Tarih İtibarıyla)
+    detay: "Kazancın elde edildiği tarihteki ≥%50 sermaye payını kanıtlayan belge. Ortaklık tescil belgesi + tarihe göre hisse kayıt defteri / pay defteri. %49,9 → yetersiz."
+    temin_yeri: Ortaklık tescil belgesi / Pay defteri / Hisse kayıt defteri
+  - kategori: zorunlu
+    "no": 3
+    baslik: Transfer Belgesi — Kazancın TAMAMININ Transferi Kanıtı
+    detay: "Kazancın TAMAMININ KV beyanname süresine kadar (30 Nisan veya geçici vergi tarihi) Türkiye'ye transfer edildiğini gösterir. Banka SWIFT belgesi + Transfer dekontu. Kısmi transfer → İstisna TAMAMEN kaybolur."
+    temin_yeri: Banka SWIFT belgesi / Transfer dekontu
+  - kategori: zorunlu
+    "no": 4
+    baslik: Kâr Dağıtım Kararı Belgesi (Brüt Kâr Payı Tutarı)
+    detay: "İştirakin yetkili organının kâr dağıtım kararı. Stopaj öncesi brüt kâr payı tutarı ve döviz cinsi belirlenmelidir."
+    temin_yeri: Yurt Dışı İştirak — Kâr Dağıtım Kararı / Ana Sözleşme
+  - kategori: zorunlu
+    "no": 5
+    baslik: Elde Etme Tarihi TCMB Döviz Alış Kuru Belgesi
+    detay: "Kâr payının elde edildiği tarihteki TCMB döviz alış kuru. Transfer tarihi kuru değil — elde etme tarihi kuru esas."
+    temin_yeri: TCMB Kur Arşivi (tcmb.gov.tr)
+  - kategori: destekleyici
+    "no": 6
+    baslik: 317 Tam İstisna Şart Değerlendirme Belgesi (Neden 387 Seçildiğinin Gerekçesi)
+    detay: "4 tam istisna şartından hangisinin sağlanamadığı yazılı olarak belgelenmeli. YMM dosyasının temel dayanağıdır."
+    temin_yeri: YMM Analiz Belgesi
+  - kategori: destekleyici
+    "no": 7
+    baslik: KVK 33 Mahsup Hesabı (Vergiye Tabi %50 İçin — Varsa)
+    detay: "Vergiye tabi kalan %50 kısma isabet eden yurt dışı stopaj/vergi için KVK Md.33 mahsup hesaplama tablosu."
+    temin_yeri: YMM / Muhasebe
+
+k_checklist:
+  - id: K1
+    soru: "317 tam istisna şartları (4 şart) önce değerlendirildi ve sağlanamadığı tespit edildi mi?"
+    referans: "KVK Md.5/1-b | 7491 s.K."
+  - id: K2
+    soru: "Yurt dışı iştirak AŞ/Ltd niteliğinde ve kanuni + iş merkezinin ikisi de yurt dışında olduğu apostilli belgeyle teyit edildi mi?"
+    referans: "KVK Md.5/1-b"
+  - id: K3
+    soru: "Kazancın elde edildiği tarihte sermaye payının ≥%50 olduğu belgelendi mi? (%49,9 yetersiz)"
+    referans: "KVK Md.5/1-b | 7491 s.K."
+  - id: K4
+    soru: "Kazancın TAMAMININ KV beyanname süresine kadar Türkiye'ye transfer edildiği banka belgeleriyle kanıtlandı mı?"
+    referans: "23 S.No.lu KV GT — Kısmi transfer yasağı"
+  - id: K5
+    soru: "İstisna tutarı BRÜT kâr payı (elde etme tarihi TCMB alış kuru) × %50 olarak hesaplandı mı? (Net transfer değil)"
+    referans: "KVK Md.5/1-b"
+  - id: K6
+    soru: "387 istisnasının YİAKV (KVK Md.32/C) matrahından düşülmediği teyit edildi mi?"
+    referans: "KVK Md.32/C — YİAKV"
+  - id: K7
+    soru: "Vergiye tabi kalan %50 kısım için KVK Md.33 mahsup imkânı değerlendirildi mi?"
+    referans: "KVK Md.33"
+  - id: K8
+    soru: "İstisna edilen %50 kısma isabet eden yurt dışı verginin mahsup edilmediği teyit edildi mi?"
+    referans: "KVK Md.33 — Mahsup sınırlaması"
+  - id: K9
+    soru: "7491 s.K. ile 01.01.2023 tarihi sonrasına ait kazanç olduğu (yürürlük) teyit edildi mi?"
+    referans: "7491 s.K."
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

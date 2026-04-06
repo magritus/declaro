@@ -1,0 +1,245 @@
+ic_kod: emisyon_primi_5_1_c
+baslik: Emisyon Primi Kazancı İstisnası (%100 — Anonim Şirket)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 319 }
+  - { donem: 2025, kod: 319 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-ç
+  - 1 Seri No.lu KV Genel Tebliği
+  - TTK Madde 519/2
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: yurtdisi_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "Bu dönem kendi hisselerini itibari değerin üzerinde (primli) ihraç ettin mi?"
+  info_modal: |
+    KVK 5/1-ç kapsamında anonim şirketlerin kuruluş veya sermaye artırımı sırasında primli
+    pay ihracından elde ettikleri emisyon primi %100 istisnadır.
+    KRİTİK BEYANNAME TEKNİĞİ: Emisyon primi 520 hesabına gider — gelir tablosuna GİRMEZ.
+    Bu nedenle ÖNCE KKEG ilavesi (519 satırı), SONRA 319 istisnası birlikte uygulanmalıdır.
+    Bu istisna YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.
+  kapi_sorulari:
+    - id: as_mi
+      soru: "İstisna kullanan kurum ANONİM ŞİRKET mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-ç'de 'anonim şirketlerin' ifadesi açık hükümdür. Ltd.Şti. için bu madde kapsamında tartışmalıdır."
+    - id: kendi_pay_ihraci
+      soru: "İstisna şirketin KENDİ paylarının primli ihracından mı? (Başkasına ait hisse satışı değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "AŞ'nin başkasına ait hisseleri satması → Bu istisna kullanilamaz. 5/1-c veya 5/1-e değerlendirin."
+    - id: sermaye_artirimi_mi
+      soru: "Pay ihracı kuruluş veya sermaye artırımı kapsamında mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-ç: 'Kuruluşlarında VEYA sermayelerini artırdıkları sırada' ifadesi zorunludur."
+    - id: satış_bedeli_itibari_ustunde
+      soru: "Satış bedeli itibari değerin ÜSTÜNDE mi? (Gerçek primli ihraç)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Emisyon primi = Satış Bedeli − İtibari Değer > 0 olmalıdır."
+    - id: hes_520_kullanildi
+      soru: "Emisyon primi 520 (Hisse Senedi İhraç Primleri) hesabına kaydedildi mi? Gelir tablosuna girmedi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "520 yerine 649 veya 679'a kaydedilmişse muhasebe hatası var — düzeltme zorunludur."
+    - id: kkeg_ilavesi_yapildi
+      soru: "Emisyon primi için KKEG ilavesi (519 satırı) yapıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Emisyon primi gelir tablosuna girmediğinden önce KKEG olarak matrah artırılmalı (519 satırı), ardından 319 ile düşülmelidir. KKEG yapılmadan sadece 319 yazılırsa beyanname HATALIDIR."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: ihrac_edilen_pay_adedi
+      etiket: "İhraç edilen pay adedi"
+      tip: sayi
+      zorunlu: true
+      yardim: "GK/YK kararındaki pay adediyle uyumlu olmalıdır."
+    - id: pay_basi_itibari_deger
+      etiket: "Pay başına itibari değer (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Hisse senedinin üzerinde yazılı nominal değer (örn: 1 TL). Ticaret sicili tescilindeki nominal değer esas alınır."
+    - id: pay_basi_ihrac_fiyati
+      etiket: "Pay başına ihraç fiyatı / satış bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Primli ihraç fiyatı — itibari değerin ÜSTÜNDE olmalıdır. GK/YK kararında belirlenen fiyat."
+  formuller:
+    emisyon_primi_tutari: "(pay_basi_ihrac_fiyati - pay_basi_itibari_deger) * ihrac_edilen_pay_adedi"
+    istisna_tutari: "emisyon_primi_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "pay_basi_ihrac_fiyati > pay_basi_itibari_deger"
+      hata: "İhraç fiyatı itibari değere eşit veya altında — emisyon primi oluşmamış. İstisna uygulanamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-ç: "Anonim şirketlerin kuruluşlarında veya sermayelerini artırdıkları sırada
+  çıkardıkları payların bedelinin itibarî değeri aşan kısmı."
+  Emisyon Primi = (Satış Bedeli − İtibari Değer) × Pay Adedi
+
+  ## Üç Temel Şart (Kümülatif)
+  ① Anonim şirket statüsü (AŞ)
+  ② Şirketin KENDİ paylarının primli ihracı (başkasına ait hisse satışı değil)
+  ③ Kuruluş veya sermaye artırımı kapsamında ihraç
+
+  ## Kapsam Dışı İşlemler
+  - AŞ'nin başkasına ait hisseleri satmasından sağlanan kazanç (→ 5/1-c veya 5/1-e)
+  - Sermaye azaltımı sırasında iptal edilen payların bedeli
+  - Kâr dağıtımından kaynaklanan işlemler
+  - İkincil piyasada hisse senedi alım-satımı
+
+  ## Kritik Beyanname Tekniği — KKEG + 319 Birlikte Zorunlu
+  Emisyon primi → 520 hesabına gider → Gelir tablosuna GİRMEZ → Ticari karda YOKTUR.
+  DOĞRU BEYANNAME AKIŞI:
+  ADIM 1: KKEG ilavesi (519 satırı): 520'ye giden tutar KKEG olarak matrahı artırır
+  ADIM 2: 319 istisnası: "Zarar Olsa Dahi İndirilecek" bölümünde AYNI TUTAR düşülür
+  ADIM 3: Net etki SIFIR → Emisyon priminde KV ödenmez
+  HATA: Sadece 319 yazılır, KKEG yapılmaz → Beyanname HATALI → Tarhiyat riski!
+
+  ## YİAKV Etkisi
+  Emisyon primi istisnası (319) YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.
+  YİAKV çalışma kâğıdında 319 tutarı matrahtan doğru biçimde düşülmelidir.
+
+  ## NSA İlişkisi
+  Emisyon primleri Nakdi Sermaye Artışı İndirimi (NSA/KVK 10/1-ı) hesabına DAHİL EDİLMEZ.
+  NSA'ya giren tutar: Ticaret siciline tescil edilen sermaye artışının nakdi kısmı.
+
+  ## TTK 519 Zorunluluğu
+  Emisyon primlerinin giderler düşüldükten sonra kalan kısmının TAMAMI kanuni yedek akçeye
+  eklenmeli (TTK Md.519/2). Bu KVK istisnasının koşulu olmasa da uyum kontrol edilmelidir.
+
+  ## KVK 5/3 Gider Kısıtlaması
+  İhraç giderlerinin emisyon primine isabet eden kısmı KKEG'dir.
+  Oran = Emisyon Primi / Toplam Tahsilat.
+  İlgili KDV'nin indirimi tartışmalıdır (KDVK 30/d).
+
+  ## Özelge/Danıştay
+  İzmir VDB (2011): KKEG + 319 tekniğiyle beyan onaylanmıştır.
+  Danıştay: İhraç giderlerinin KKEG sayıldığı teyit edilmiştir.
+  Ltd şirketler için emisyon primi istisnasının uygulanabilirliği tartışmalıdır.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Primli Pay İhraç Kaydı
+  Borç: 102 Bankalar — Toplam tahsil edilen bedel (itibari + prim)
+  Alacak: 501 Ödenmemiş Sermaye — Toplam nominal bedel (tescil edilen kısım)
+  Alacak: 520 Hisse Senedi İhraç Primleri — Emisyon primi tutarı
+  NOT: 520 hesabı öz kaynaklarda yer alır; GELİR TABLOSUNA GİRMEZ.
+
+  ## Kayıt 2 — Beyanname KKEG + 319 Tekniği
+  ADIM 1: KV Beyannamesi KKEG Tablosu (519 Satırı)
+    → 520'ye giden emisyon primi tutarı KKEG olarak matrahı artırır
+  ADIM 2: KV Beyannamesi 319. Satır ("Zarar Olsa Dahi İndirilecek")
+    → Aynı tutar istisna olarak matrahtan düşülür
+  SONUÇ: Net vergi etkisi SIFIR
+
+  ## Kayıt 3 — TTK 519 Kanuni Yedek Akçe Aktarımı
+  Borç: 520 Hisse Senedi İhraç Primleri
+  Alacak: 541 Yasal Yedekler — İhraç giderleri düşüldükten sonra kalan kısım
+  (TTK Md.519/2 uyarınca genel kurul kararıyla gerçekleştirilir)
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Anonim Şirket Statüsünü İspat Eden Belge
+    detay: "KVK 5/1-ç açık hükmü: 'Anonim şirketlerin...' — AŞ statüsü zorunludur. Ltd şirketler için tartışmalıdır; özelge alınması tavsiye edilir."
+    temin_yeri: Ticaret sicil gazetesi / MERSİS / Ticaret sicil tasdiknamesi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Primli Pay İhraç Kararı (GK veya YK Kararı)
+    detay: "Primli ihraç fiyatı, itibari değer ve pay adedini açıkça göstermeli. İhraç fiyatının itibari değeri aştığı kararda görünmeli."
+    temin_yeri: GK/YK karar metni / Yönetim kurulu toplantı tutanağı
+  - kategori: zorunlu
+    "no": 3
+    baslik: Sermaye Artırım Tescil Belgesi (Ticaret Sicili)
+    detay: "Tescil edilen nominal sermaye artışı tutarı görünmeli. Emisyon priminin tescil edilmediği teyit edilmeli. NSA hesabında tescil edilen tutar esas alınır."
+    temin_yeri: Türkiye Ticaret Sicili Gazetesi / MERSİS tescil çıktısı
+  - kategori: zorunlu
+    "no": 4
+    baslik: 520 Hesap Hareketi — Yevmiye ve Mizan
+    detay: "520 hesabına kaydedildiği ve gelir tablosuna GİRMEDİĞİ teyit edilmeli. 520 yerine 649/679'a kaydedilmişse muhasebe hatası — düzeltme zorunlu."
+    temin_yeri: Yevmiye defteri + Mizan / 520 hesap ekstresi
+  - kategori: zorunlu
+    "no": 5
+    baslik: KV Beyannamesi KKEG Tablosu (519 Satırı — Emisyon Primi)
+    detay: "Emisyon priminin KKEG olarak beyanname matrahına eklendiği teyit edilmeli. KKEG tutarı = Emisyon primi tutarı ile eşit olmalıdır. KKEG ilavesi yapılmadan sadece 319 yazılırsa beyanname HATALIDIR."
+    temin_yeri: Onaylı KV beyannamesi — KKEG tablosu
+  - kategori: zorunlu
+    "no": 6
+    baslik: KV Beyannamesi 319. Satır
+    detay: "'Zarar Olsa Dahi İndirilecek' bölümünde 319 satırında gösterilmeli. KKEG tutarıyla HER ZAMAN EŞİT olmalı. Net etki (KKEG − 319) SIFIR vermelidir."
+    temin_yeri: Onaylı KV beyannamesi — 319. satır
+  - kategori: destekleyici
+    "no": 7
+    baslik: İhraç Giderleri Listesi ve KVK 5/3 KKEG Analizi
+    detay: "Aracılık komisyonu, tescil harcı, noter, gazete ilanı, danışmanlık vb. Emisyon primine isabet eden kısım KKEG. KDV: İstisna kısma isabet eden KDV'nin indirimi tartışmalıdır (KDVK 30/d)."
+    temin_yeri: Fatura + Oran hesaplama tablosu
+  - kategori: destekleyici
+    "no": 8
+    baslik: TTK 519 Kanuni Yedek Akçe Ayrım Belgesi
+    detay: "Emisyon priminin giderler düşüldükten sonra kanuni yedek akçeye aktarıldığını gösterir. Genel kurul kararı ve muhasebe aktarım kaydı."
+    temin_yeri: GK kararı + 520→541 muhasebe kaydı
+  - kategori: destekleyici
+    "no": 9
+    baslik: NSA (KVK 10/1-ı) Hesaplama Tablosu
+    detay: "Emisyon priminin NSA hesabına DAHİL EDİLMEDİĞİNİN teyidi. NSA'ya giren tutar: Tescil edilen nominal sermaye artışı (nakdi kısım)."
+    temin_yeri: NSA hesaplama tablosu / KVK 10/1-ı çalışma kâğıdı
+  - kategori: destekleyici
+    "no": 10
+    baslik: YİAKV Matrah Hesaplama Tablosu (319 Düşümü)
+    detay: "Emisyon primi istisnası (319) YİAKV matrahından DÜŞÜLEBİLİR. YİAKV çalışma kâğıdında 319 tutarının matrahtan doğru biçimde düşüldüğü teyit edilmeli."
+    temin_yeri: YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri
+
+k_checklist:
+  - id: K1
+    soru: "★ Kurum gerçekten Anonim Şirket mi? (Ltd için açık hüküm yok — özelge gerekebilir)"
+    referans: "KVK Md. 5/1-ç"
+  - id: K2
+    soru: "★ İstisna şirketin KENDİ paylarının ihracından mı? (Başkasına ait hisse satışı değil)"
+    referans: "KVK Md. 5/1-ç"
+  - id: K3
+    soru: "Pay ihracı kuruluş veya sermaye artırımı kapsamında mı? (Ticaret sicili tescil belgesi mevcut mu?)"
+    referans: "KVK Md. 5/1-ç"
+  - id: K4
+    soru: "Satış bedeli itibari değerin ÜSTÜNDE mi? (C.4 > 0 — Emisyon primi pozitif)"
+    referans: "KVK Md. 5/1-ç"
+  - id: K5
+    soru: "★ 520 hesabı kullanıldı mı? Emisyon primi gelir tablosuna GİRMEDİ mi?"
+    referans: "KVK Md. 5/1-ç | Muhasebe Sistemi Uygulama GT"
+  - id: K6
+    soru: "★ KKEG ilavesi yapıldı mı? (519 satırı — 319 ile aynı tutar zorunlu)"
+    referans: "KVK Md. 5/1-ç | GİB Özelgeleri"
+  - id: K7
+    soru: "★ KKEG tutarı = 319 tutarı mı? Net vergi etkisi SIFIR mu?"
+    referans: "KVK Md. 5/1-ç"
+  - id: K8
+    soru: "İhraç giderleri KVK 5/3 kapsamında doğru ayrıştırıldı mı? İlgili KDV için KDVK 30/d analizi yapıldı mı?"
+    referans: "KVK Md. 5/3 | KDVK Md. 30/d"
+  - id: K9
+    soru: "TTK 519 kanuni yedek akçe aktarımı yapıldı mı? (520 → 541 kaydı)"
+    referans: "TTK Md. 519/2"
+  - id: K10
+    soru: "NSA hesabında emisyon primi tescil edilmeyen kısma dahil edilmedi mi?"
+    referans: "KVK Md. 10/1-ı"
+  - id: K11
+    soru: "YİAKV matrahından 319 istisnası DÜŞÜLDܒ mü? (Düşülebilir — teyit et)"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"
+  - id: K12
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL)"
+    referans: "49 S.No.lu KV GT (30.12.2025)"

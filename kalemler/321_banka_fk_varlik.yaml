@@ -1,0 +1,215 @@
+ic_kod: banka_fk_varlik_satis_5_1_f
+baslik: Banka/Finansal Kiralama/Finansal Şirket/TMSF'ye Borçlu Kurumların Varlık Satış Kazancı İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 321 }
+  - { donem: 2025, kod: 321 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-f
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Banka, finansal kiralama şirketi, finansal şirket veya TMSF'ye olan borçların ödenmesi amacıyla varlık sattınız mı?"
+  info_modal: |
+    KVK Madde 5/1-f kapsamında; banka, finansal kiralama şirketi, finansal şirket veya
+    TMSF'ye borçlu kurumların bu borçların ödenmesine yönelik yaptıkları varlık satışlarından
+    elde edilen kazançların tamamı kurumlar vergisinden istisnadır.
+
+    351/352/353 numaralı satırlardan temel farklar:
+    - 2 yıl aktifinde bulundurma şartı YOKTUR
+    - 549 Özel Fonlar hesabına alma zorunluluğu YOKTUR
+    - Taşınmaz ticareti yapan şirketler de yararlanabilir
+    - %100 tam istisna (kısmi oran yok)
+    - Taşınır varlıklar da kapsam içindedir
+  kapi_sorulari:
+    - id: alacakli_kurum_turu
+      soru: "Alacaklı kurum türü nedir? (Banka, finansal kiralama şirketi, finansal şirket veya TMSF)"
+      tip: secenek
+      secenekler: [banka_5411, finansal_kiralama_6361, finansal_sirket_6361, tmsf]
+      zorunlu: true
+      aciklama: "Banka: 5411 s.K. kapsamında. Finansal kiralama/faktoring/finansman: 6361 s.K. kapsamında lisanslı. TMSF: Tasarruf Mevduatı Sigorta Fonu."
+    - id: borc_belgesi
+      soru: "Borcun varlığı yazılı sözleşme veya belgeyle kanıtlanıyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kredi sözleşmesi, leasing sözleşmesi veya faktoring sözleşmesi + temerrüt/icra belgesi zorunludur. Belgesiz istisna uygulaması vergi incelemesinde reddedilir."
+    - id: satis_amaci
+      soru: "Satışın amacı borcu ödemek mi? (Satış hasılatı alacaklıya aktarıldı/aktarılacak mı?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Satıştan elde edilen hasılat borç ödemesine tahsis edilmelidir. Hasılatın alacaklı kuruma aktarıldığına dair banka dekontu/ödeme belgesi zorunludur."
+    - id: satis_tamamlandi
+      soru: "Satış fiilen tamamlandı mı? (Mülkiyet/tapu/tescil devri gerçekleşti mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Satış vaadi yeterli değildir. Taşınmaz: Tapu devri. Hisse: Devir sözleşmesi + tescil. Taşınır: Teslim belgesi / fatura."
+
+parametreler:
+  istisna_orani: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: varlik_turu
+      etiket: "Satılan varlık türü"
+      tip: secenek
+      secenekler: [tasinmaz, istirak_hissesi, tasinir_varlik, kurucu_intifa_senedi, ruchan_hakki]
+      zorunlu: true
+      yardim: "KVK 5/1-f taşınmaz ve hisse dışında taşınır varlıkları da kapsar. Bu özelliği 351/352/353'ten ayırır."
+    - id: satis_bedeli
+      etiket: "Satış bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Sözleşmedeki satış fiyatı. Alacaklıya veya ilişkili kişiye satışta KVK Md.13 emsal bedel analizi zorunludur."
+    - id: defter_degeri
+      etiket: "Varlığın muhasebe defter değeri / maliyet (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Aktif kayıtlı maliyet veya net değer (amortismandan sonra). Maliyet belgesi + amortisman tablosu eklenecek."
+    - id: satis_giderleri
+      etiket: "Satış giderleri (tapu harcı, komisyon, noter, ekspertiz vb.) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Belgelenmiş satış giderleri kazanç hesabında düşülür."
+  formuller:
+    satis_kazanci: "max(satis_bedeli - defter_degeri - satis_giderleri, 0)"
+    istisna_tutari: "satis_kazanci * 1.0"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_bedeli > 0"
+      hata: "Satış bedeli pozitif olmalıdır"
+    - kural: "defter_degeri >= 0"
+      hata: "Defter değeri negatif olamaz"
+    - kural: "satis_kazanci > 0"
+      hata: "Satış kazancı yoksa (zarar veya başabaş) istisna uygulanamaz"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-f: Banka, finansal kiralama şirketi, finansal şirket veya TMSF'ye borçlu
+  kurumların bu borçların ödenmesine yönelik yaptıkları varlık satışlarından elde edilen
+  kazançların tamamı KV'den istisnadır.
+
+  ## 351/352/353 ile Kritik Farklar
+  ① 2 yıl aktifinde bulundurma şartı YOKTUR
+  ② 549 Özel Fonlar hesabına alma zorunluluğu YOKTUR
+  ③ Taşınmaz ticareti yapan şirketler de yararlanabilir
+  ④ %100 tam istisna — kısmi oran yok
+  ⑤ Taşınır varlıklar da kapsam içindedir (taşınmaz + hisse + taşınır + kurucu/intifa senedi + rüçhan hakkı)
+
+  ## En Kritik Şart — Borçluluk ve Satış Amacı
+  - Kurumun banka/FK/finansal şirket/TMSF'ye GERÇEKten BORÇLU olması zorunlu
+  - Satışın bu borcun ödenmesine yönelik yapılması zorunlu
+  - Borç ilişkisi: Kredi sözleşmesi + temerrüt/icra belgesi
+  - Satış hasılatının alacaklıya aktarıldığına dair banka dekontu
+
+  ## Alacaklı Kurum Türü
+  - Banka: 5411 sayılı Kanun kapsamındaki mevduat/katılım/kalkınma/yatırım bankaları
+  - Finansal kiralama: 6361 s.K. kapsamında lisanslı FK şirketleri
+  - Finansal şirket: 6361 s.K. kapsamında faktoring, finansman, varlık yönetim şirketleri
+  - TMSF: 5411 s.K. Ek Madde 1 kapsamında
+
+  ## Emsal Bedel Zorunluluğu
+  Alacaklıya doğrudan satış (dation in payment / borç yerine ifa) veya ilişkili kişiye satışta
+  KVK Md.13 emsal bedel analizi zorunludur. Bağımsız değerleme raporu önerilir.
+
+  ## YİAKV Etkisi
+  KVK 5/1-f istisnasının YİAKV (KVK 32/C) matrahına etkisi dönem mevzuatı ve GİB
+  açıklamalarıyla ayrıca analiz edilmelidir.
+
+  ## YMM Tasdik
+  49 No.lu Tebliğ (30.12.2025): ≥500.000 TL veya ≥1.000.000 TL → YMM raporu.
+  Tam tasdik sözleşmesi olanlar ayrıca rapor düzenlemez.
+
+muhasebe_kayitlari: |
+  ## Taşınmaz Satış Kaydı
+  Borç: 102 Bankalar (satış hasılatı)
+  Alacak: 250/252 Arazi-Arsalar / Binalar (defter değeri)
+  Alacak: 679 Diğer Olağandışı Gelir (satış kazancı)
+  Açıklama: Satış kazancı — KVK 5/1-f kapsamında %100 istisna, 321 satırına yazılır
+
+  ## İştirak Hissesi Satış Kaydı
+  Borç: 102 Bankalar
+  Alacak: 242 İştirakler (maliyet)
+  Alacak: 645 Menkul Kıymet Satış Kârları (kazanç)
+  Açıklama: İştirak satış kazancı — 321 satırında istisna
+
+  ## Banka Transferi (Borç Ödeme)
+  Borç: 300/400 Banka Kredileri (kalan borç)
+  Alacak: 102 Bankalar
+  Açıklama: Satış hasılatının alacaklı bankaya aktarılması
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alacaklı Kurum Belgesi (BDDK/SPK Lisansı veya TMSF Statüsü)
+    detay: "Banka için 5411 s.K. kapsamında faaliyet belgesi. Finansal kiralama/faktoring için 6361 s.K. BDDK lisansı. TMSF için resmi statü belgesi."
+    temin_yeri: BDDK / SPK / TMSF
+  - kategori: zorunlu
+    "no": 2
+    baslik: Borç İlişkisi Belgesi (Kredi/Leasing/Faktoring Sözleşmesi)
+    detay: "Borcu doğuran sözleşme: Sözleşme no, tarih ve tutar açıkça görünmeli. Sözleşme kopyası zorunludur."
+    temin_yeri: Alacaklı Kurum / Arşiv
+  - kategori: zorunlu
+    "no": 3
+    baslik: Temerrüt/İcra Belgesi veya Yeniden Yapılandırma Anlaşması
+    detay: "Borcun temerrüt/icra durumu belgesi veya yeniden yapılandırma anlaşması. Belge olmasa da borçluluk kanıtlanmalıdır."
+    temin_yeri: Alacaklı Kurum / İcra Dairesi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Satış Belgesi (Tapu Senedi / Devir Sözleşmesi / Fatura)
+    detay: "Taşınmaz: Tapu devir senedi. Hisse: Devir sözleşmesi + ticaret sicili. Taşınır: Fatura + teslim belgesi."
+    temin_yeri: Tapu Müdürlüğü / Ticaret Sicili / Muhasebe
+  - kategori: zorunlu
+    "no": 5
+    baslik: Satış Hasılatının Alacaklıya Aktarıldığına Dair Ödeme Belgesi
+    detay: "Banka transfer dekontu veya virman belgesi — hasılatın alacaklı kuruma aktarıldığını kanıtlar."
+    temin_yeri: Banka / Muhasebe
+  - kategori: destekleyici
+    "no": 6
+    baslik: Bağımsız Değerleme Raporu (Taşınmaz veya İlişkili Kişi Satışında)
+    detay: "Emsal bedel analizi için. Alacaklıya doğrudan satışta (dation in payment) zorunludur."
+    temin_yeri: SPK Lisanslı Değerleme Kuruluşu
+  - kategori: destekleyici
+    "no": 7
+    baslik: Maliyet Belgesi ve Amortisman Tablosu
+    detay: "Varlığın aktif kayıtlı maliyet veya net defter değerini gösteren muhasebe kayıtları."
+    temin_yeri: Muhasebe / ERP
+
+k_checklist:
+  - id: K1
+    soru: "Alacaklı kurumun banka, finansal kiralama şirketi, finansal şirket veya TMSF olduğu BDDK/SPK lisansı veya resmi belgeyle kanıtlandı mı?"
+    referans: "KVK Md. 5/1-f | 5411 s.K. | 6361 s.K."
+  - id: K2
+    soru: "Borç ilişkisi kredi/leasing/faktoring sözleşmesiyle belgelendi mi?"
+    referans: "KVK Md. 5/1-f | Vergi incelemesi riski"
+  - id: K3
+    soru: "Satışın amacının borç ödemek olduğu belgelendi mi? (Hasılat alacaklıya aktarıldı mı?)"
+    referans: "KVK Md. 5/1-f | Ana şart"
+  - id: K4
+    soru: "Satış fiilen tamamlandı mı? (Tapu devri / hisse tescili / teslim belgesi mevcut mu?)"
+    referans: "KVK Md. 5/1-f"
+  - id: K5
+    soru: "351/352/353 ile karıştırılmadı mı? 2 yıl şartı ve 549 fon şartı UYGULANMAMALI."
+    referans: "KVK Md. 5/1-e vs 5/1-f farkı"
+  - id: K6
+    soru: "Alacaklıya veya ilişkili kişiye satışta KVK Md.13 emsal bedel analizi yapıldı mı?"
+    referans: "KVK Md. 13 | Transfer Fiyatlandırması"
+  - id: K7
+    soru: "Satış hasılatının borç ödemesi dışında kullanılmadığı teyit edildi mi?"
+    referans: "KVK Md. 5/1-f | Satış amacı şartı"
+  - id: K8
+    soru: "YİAKV matrahı ayrıca analiz edildi mi?"
+    referans: "KVK Md. 32/C"
+  - id: K9
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

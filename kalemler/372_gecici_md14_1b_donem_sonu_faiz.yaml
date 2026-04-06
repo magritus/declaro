@@ -1,0 +1,190 @@
+ic_kod: gecici_md14_1b_donem_sonu_faiz
+baslik: KKM Dönem Sonu Değerlemesinden Doğan Faiz ve Kâr Payı İstisnası (Geçici Md.14/1-b)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 372 }
+  - { donem: 2025, kod: 372 }
+
+mevzuat_dayanagi:
+  - KVK Geçici Madde 14/1-b
+  - VUK Madde 280/281
+  - 7352 Sayılı Kanun Madde 8
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) Bölüm 2.2.15
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2021-12-24"
+  bitis: null
+
+ana_kategori: doviz_alacak_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "370 kapsamındaki KKM hesabınız dönem sonunda (31 Aralık) hâlâ açık mıydı ve VUK gereği dönem sonu faiz/kâr payı tahakkuku yapıldı mı?"
+  info_modal: |
+    KVK Geçici Madde 14/1-b kapsamında: VUK Md.280/281 gereği dönem sonunda (31 Aralık)
+    KKM hesabında tahakkuk ettirilen faiz ve kâr payı geliri kurumlar vergisinden **istisna** edilmiştir.
+
+    **KVK Geçici Md.14 Üç İstisna Kodu:**
+    - 370 (1-a): Dönüşüm anındaki kur farkı değerleme kazancı (tek seferlik, dönüşüm yılı)
+    - 371 (1-b): Bankadan alınan kur farkı tazminat ödemeleri (nakit esaslı, dönemsel)
+    - 372 (1-b): Dönem sonu VUK değerlemesiyle tahakkuk ettirilen kâr payı ve faiz (tahakkuk esaslı — bu kalem)
+
+    Muhasebe kaydı (181/642) 372 istisnasının zorunlu dayanağıdır.
+    **Kritik Uyarı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (E.7 — Üçü birlikte).
+  kapi_sorulari:
+    - id: kkm_kaynakli_mi
+      soru: "KKM hesabı KVK Geçici Md.14/1-a kapsamında dönüşümden (370) açılmış mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "372, aynı KKM hesabından dönem sonunda tahakkuk eden kâr payı/faizdir. 370 kapsamı dışındaki hesaplar 372'den de yararlanamaz."
+    - id: donem_sonu_tahakkuk_mu
+      soru: "Dönem sonunda KKM hesabına VUK değerlemesi gereği kâr payı/faiz tahakkuku yapıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "VUK Md.280/281: Mevduat ve katılım hesaplarında dönem sonu itibariyle tahakkuk eden faiz/kâr payı geliri kayıtlara alınır."
+    - id: muhasebe_kaydi_yapildi_mi
+      soru: "Tahakkuk muhasebe kaydı yapıldı mı? (181 Gelir Tahakkukları / 642 Faiz Gelirleri)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Dönem sonu: Dr 181 Gelir Tahakkukları / Kr 642 Faiz Gelirleri. Bu kayıt olmadan 372 istisnasının muhasebe dayanağı bulunmaz."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: istisna_tutari_beyan
+      etiket: "Beyan edilen istisna tutarı (Beyanname 372 satırı)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Dönem sonu (31 Aralık) itibariyle tahakkuk ettirilen toplam faiz/kâr payı tutarı.
+        Banka dönem sonu bildirimi VEYA (Hesap Bakiyesi × Yıllık Oran × Gün/365) formülünden hesaplanır.
+        Yalnızca 370 kapsamındaki dönüşümden açılan KKM hesapları kapsama girer.
+        TL KKM mevduat → 642 Faiz Gelirleri. TL KKM katılım → 644 Temettü ve Kâr Payları.
+        181/642 muhasebe kaydı ile uyumlu olmalıdır.
+  formuller:
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "istisna_tutari_beyan > 0"
+      hata: "İstisna tutarı pozitif olmalıdır. Tahakkuk muhasebe kaydı (181/642) yapılmadan istisna uygulanamaz."
+
+denetci_notlari: |
+  ## 372 Dönem Sonu Değerleme Mekanizması
+  KKM hesapları üzerinde dönem sonu (31 Aralık) itibariyle tahakkuk eden faiz ve kâr payı geliri,
+  VUK Md.280/281 gereği muhasebe kayıtlarına alınır (Dr 181 Gelir Tahakkukları / Kr 642 Faiz Gelirleri).
+  Bu tahakkuk tutarı KVK Geçici Madde 14/1-b kapsamında kurumlar vergisinden istisnadır.
+  Beyanname: 372 | Kazancın Bulunması Halinde İndirilecek.
+
+  ## 371 ile 372 Ayrımı
+  - 371: Bankadan fiilen ALINAN kur farkı tazminat ödemeleri (nakit esaslı, 102/648).
+  - 372: Dönem sonunda TAHAKKUK ettirilen faiz/kâr payı (tahakkuk esaslı, 181/642).
+  Karıştırılmamalı — farklı hesaplar, farklı beyanname satırları.
+
+  ## Tahakkuk Hesaplama Yöntemleri
+  Banka Bildirimi (Tercih edilen): Banka dönem sonu tahakkuk bildiriminden doğrudan alınır.
+  Sözleşme Oranı Hesabı: Hesap Bakiyesi × Yıllık Oran × Geçen Gün / 365.
+  Sonraki dönem tahsili: 372 istisnası YALNIZCA dönem sonu tahakkuk anında uygulanır —
+  tahsil döneminde (Dr 102 / Kr 181) ikinci bir istisna söz konusu değildir.
+
+  ## YİAKV ile İlişki — 370+371+372 Tamamı DÜŞÜLEMEZ
+  YİAKV (KVK Md.32/C) matrahında 370, 371 ve 372 tutarlarının TÜMÜ DÜŞÜLEMEZ (E.7 listesi).
+  En sık yapılan hata: 372 tahakkuk tutarını YİAKV matrahından düşmek.
+  YMM, üç satırın tamamının asgari vergi matrahında kaldığını teyit etmelidir.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Dönem Sonu (31 Aralık): Faiz/Kâr Payı Tahakkuk Kaydı
+  Borç: 181 Gelir Tahakkukları — KKM hesabından dönem sonu tahakkuk eden faiz/kâr payı
+  Alacak: 642 Faiz Gelirleri / 644 Temettü ve Kâr Payları — KKM faiz/kâr payı tahakkuku (Beyanname 372)
+  Hesap seçimi: TL KKM mevduat → 642. TL KKM katılım → 644.
+  Bu tahakkuk kaydı KV Beyannamesinde 372 istisnasının muhasebe dayanağıdır.
+
+  ## Kayıt 2 — Tahsil: Sonraki Dönemde Faiz/Kâr Payının Bankadan Alınması
+  Borç: 102 Bankalar — KKM hesabından tahsil edilen faiz/kâr payı
+  Alacak: 181 Gelir Tahakkukları — Önceki dönem tahakkuk kaydının kapatılması
+  Not: 372 istisnası DÖNEM SONU TAHAKKUK anında uygulanır. Tahsil döneminde yeni gelir/istisna yazılmaz.
+
+  ## Kayıt 3 — 370/371/372 Tam Muhasebe Tablosu (Aynı KKM Hesabından)
+  370: [Dönüşüm] — 646/679 — Kur farkı değerleme kazancı → Tek seferlik → Beyanname 370
+  371: [Ödeme] — 102/648 — Bankadan alınan kur farkı koruma ödemesi → Dönemsel nakit → Beyanname 371
+  372: [31.12] — 181/642 — Dönem sonu faiz/kâr payı tahakkuku → Yıl sonu accrual → Beyanname 372
+  YİAKV: 370+371+372 HİÇBİRİ YİAKV matrahından çıkarılmaz (E.7 — DÜŞÜLEMEZ).
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: "Muhasebe Yevmiyesi — 181 Dr / 642 Kr Tahakkuk Kaydı"
+    detay: "Dönem sonu (31 Aralık) itibariyle yapılan faiz/kâr payı tahakkuk yevmiye kaydı. Kayıt olmadan 372 istisnasının muhasebe dayanağı yoktur."
+    temin_yeri: Yevmiye defteri / Muhasebe ekstresi
+  - kategori: zorunlu
+    "no": 2
+    baslik: "Banka Dönem Sonu Bildirimi / Tahakkuk Ekstresi"
+    detay: "Dönem sonu itibariyle tahakkuk eden faiz/kâr payı tutarını gösteren resmi banka belgesi."
+    temin_yeri: Banka şubesi / internet bankacılığı
+  - kategori: zorunlu
+    "no": 3
+    baslik: "KKM Hesap Sözleşmesi — Faiz/Kâr Payı Oranı ve Vade"
+    detay: "KKM hesap sözleşmesi: Faiz/kâr payı oranı, vade tarihi, ödeme koşulları."
+    temin_yeri: Banka KKM sözleşmesi
+  - kategori: zorunlu
+    "no": 4
+    baslik: "370/371 Çalışma Kâğıtları — Çapraz Mutabakat"
+    detay: "Üç dosyanın KKM hesap bilgileri (açılış tarihi, referans kur) tutarlı olmalı. 31/12/2021 kaynaklı olduğu üç dosyada teyit edilmeli."
+    temin_yeri: 370 ve 371 çalışma kâğıtları
+  - kategori: zorunlu
+    "no": 5
+    baslik: Tahakkuk Hesaplama Tablosu
+    detay: "Her KKM hesabı için dönem sonu tahakkuk. Net istisna tutarı beyanname 372 ile uyumlu."
+    temin_yeri: Bu çalışma kâğıdı
+  - kategori: zorunlu
+    "no": 6
+    baslik: "KV Beyannamesi Taslağı — 372. Satır"
+    detay: "'Kazancın Bulunması Halinde İndirilecek' bölümü. YİAKV matrahından çıkarılmamış olmalı."
+    temin_yeri: GİB e-Beyanname sistemi
+  - kategori: destekleyici
+    "no": 7
+    baslik: 181 Hesap Kapatma Kaydı (Sonraki Dönem Tahsilat)
+    detay: "Önceki dönem tahakkuklarının tahsil edildiğinde 181 hesabının kapatıldığını gösteren yevmiye."
+    temin_yeri: Yevmiye defteri
+
+k_checklist:
+  - id: K1
+    soru: "KKM hesabı 31/12/2021 bilanço kaynaklı dönüşümden mi açıldı?"
+    referans: "KVK Geçici Md.14/1-b | 370 çalışma kâğıdıyla çapraz teyit zorunlu."
+  - id: K2
+    soru: "Dönem sonu faiz/kâr payı tahakkuk muhasebe kaydı yapıldı mı? (181 / 642)"
+    referans: "VUK Md.280/281 | Kayıt olmadan 372 istisnasının muhasebe dayanağı yoktur. Yevmiye kontrol zorunlu."
+  - id: K3
+    soru: "C tablosundaki tahakkuk tutarları 181/642 muhasebe kayıtlarıyla mutabık mı?"
+    referans: "Her KKM hesabı satırı muhasebe ekstresiyle doğrulanmış olmalı."
+  - id: K4
+    soru: "Banka dönem sonu bildirimi mevcut mu?"
+    referans: "Faiz/kâr payı tahakkuk bildirimini gösteren resmi banka belgesi."
+  - id: K5
+    soru: "371 (nakit kur farkı) ile 372 (dönem sonu tahakkuk) doğru ayrıştırıldı mı?"
+    referans: "KVK Geçici Md.14/1-b | 371: Bankadan alınan nakit kur farkı ödemesi. 372: Faiz/kâr payı dönem sonu tahakkuku. Farklı hesaplar."
+  - id: K6
+    soru: "370 ve 371 çalışma kâğıtlarıyla çapraz mutabakat yapıldı mı?"
+    referans: "Üç dosyanın KKM hesap bilgileri tutarlı olmalı."
+  - id: K7
+    soru: "Kapsam dışı faiz/kâr payı ayrıştırıldı mı?"
+    referans: "31/12/2021 kaynaklı olmayan KKM hesapları kapsam dışı — vergiye tabi."
+  - id: K8
+    soru: "372 istisnası YİAKV matrahından DÜŞÜLMEDI mi?"
+    referans: "KVK Md.32/C | YİAKV Reh. (No:607) E.7 | 370+371+372 tamamı YİAKV matrahından DÜŞÜLEMEZ. EN KRİTİK."
+  - id: K9
+    soru: "Beyanname 372 'Kazancın Bulunması Halinde' bölümünde mi?"
+    referans: "KVK Geçici Md.14/1-b | Zarar döneminde uygulanamaz. 370/371 ile aynı bölüm — ayrı satır."
+  - id: K10
+    soru: "Sonraki dönemde 181 tahakkuk kaydı tahsil edildiğinde düzeltme yapıldı mı?"
+    referans: "VUK Md.280/281 | Tahakkuk → Tahsil: 102 Dr / 181 Kr. İstisna 372'de dönem sonu tahakkuk anında uygulanır."
+  - id: K11
+    soru: "Birden fazla KKM hesabı varsa her biri ayrı ayrı değerlendirildi mi?"
+    referans: "KVK Geçici Md.14/1-b | Her hesap için ayrı kapsam analizi ve tahakkuk hesabı."
+  - id: K12
+    soru: "YMM Tasdik Raporu (49 No.lu Tebliğ) değerlendirildi mi?"
+    referans: "49 No.lu Tebliğ | >=500.000 TL → YMM raporu."

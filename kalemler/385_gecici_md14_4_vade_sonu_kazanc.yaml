@@ -1,0 +1,190 @@
+ic_kod: gecici_md14_4_vade_sonu_kazanc
+baslik: KVK Geçici Md.14/4 Vade Sonunda Oluşan Kazanç İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 385 }
+  - { donem: 2025, kod: 385 }
+
+mevzuat_dayanagi:
+  - KVK Geçici Madde 14/4
+  - 7352 Sayılı Kanun
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2021-12-24"
+  bitis: null
+
+ana_kategori: doviz_alacak_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "KVK Geçici Md.14/4 (Paragraf 4) kapsamında vade sonu kazancı oluştu mu ve bu kazanç 383 (dönem sonu tahakkuk) ile 384 (kâr payı/faiz) kapsamına girmiyor mu?"
+  info_modal: |
+    KVK Geçici Madde 14/4 (Paragraf 4) kapsamındaki araçların vade sonunda oluşan,
+    **383 ve 384 kapsamına girmeyen** diğer kazançlar kurumlar vergisinden istisnadır
+    (Beyanname 385).
+
+    385, Paragraf 4 paketinin son kodudur (383-384-385 tam paket).
+    Paralel zincir: P1(372-373-374) | P2(376-377-378) | P3(380-381-382) | P4(383-384-385)
+
+    **Başlıca 385 kalemleri:**
+    - Değer artışı kazancı (nominal değer üzerinde oluşan kazanç)
+    - Sermaye kazancı (kâr payı/faiz niteliği taşımayan)
+    - Prim / teşvik ödemesi (384'teki kâr payı/faiz niteliği taşımayan kısım)
+    - Enflasyon farkı kazancı
+    - Diğer: 383/384 kapsamına girmeyen her türlü P4 vade sonu kazancı
+
+    **GİB özelgesi:** Paragraf 4 vade kazancı yeni ve tartışmalı olabilir.
+
+    **YİAKV uyarısı:** Bu istisna YİAKV matrahından DÜŞÜLEMEZ (YİAKV E.7 listesi).
+  kapi_sorulari:
+    - id: paragraf4_kapsam
+      soru: "KVK Geçici Md.14/4 kapsamında işlem gerçekleştirildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+    - id: diger_nitelik
+      soru: "Bu kazanç 383 (dönem sonu tahakkuk) ve 384 (kâr payı/faiz) kapsamına girmiyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "385 = 383 (accrual) + 384 (kâr payı/faiz) DIŞINDA kalan vade sonu kazançlar. Örnek: Vade sonu değer artışı, sermaye kazancı, prim, enflasyon farkı."
+    - id: vade_tarih
+      soru: "Vade tarihi dönem içinde (01.01-31.12) mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: istisna_tutari_beyan
+      etiket: "Beyan edilen istisna tutarı (Beyanname 385)"
+      tip: para
+      zorunlu: true
+      yardim: "Net 385 = Brüt 385 Kazancı − 383/384 ile mükerrer tutarlar. Her kalem için GİB'e açıklanabilir yasal dayanak ve belge zorunludur."
+  formuller:
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "istisna_tutari_beyan >= 0"
+      hata: "İstisna tutarı negatif olamaz"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Geçici Madde 14/4 (Paragraf 4): Paragraf 4 kapsamındaki araçların vade sonunda
+  oluşan, 383 ve 384 kapsamı dışındaki kazançlar istisnası.
+  7352 Sayılı Kanun kapsamında yürürlüğe girmiştir.
+  385, Paragraf 4 paketinin son kodudur (383-384-385 tamamlandı).
+
+  ## Kapsam (385 = 383/384 Dışı)
+  - Değer artışı kazancı (anaparaya ek artış, enflasyon etkisi)
+  - Sermaye kazancı (kâr payı/faiz niteliği taşımayan)
+  - Prim / teşvik ödemesi (384'teki kâr payı/faiz niteliği taşımayan kısım)
+  - Enflasyon farkı kazancı
+  - Diğer: 383/384 kapsamına girmeyen her türlü Paragraf 4 vade sonu kazancı
+
+  ## 383/384 ile Mükerrerlik
+  Net 385 = Brüt 385 − Mükerrer Tutarlar. Mükerrer olanlar (383/384'te zaten gösterilen)
+  385'e yazılmaz. 374 (P1), 378 (P2), 382 (P3) ile de ayrıştırma: Paragraf 4 araçları → 385.
+
+  ## Muhasebe
+  Borç: 102 Bankalar / Çeşitli
+  Alacak: 646 Kambiyo Kârları / 679 Diğer Kâr / 648 Diğer Gelirler
+  (Kazanç türüne göre seçilir — 374/378/382 ile aynı muhasebe mekanizması)
+
+  ## YİAKV Etkisi (KVK Md.32/C)
+  KVK Geçici Md.14 tüm kodları YİAKV matrahından DÜŞÜLEMEZ.
+  Paragraf 4 paketi (383-384-385) tamamlanmış olup YİAKV E.7'de üç satır da kontrol edilmelidir.
+
+  ## Beyanname Bölümü
+  "Kazancın Bulunması Halinde İndirilecek" — zarar döneminde uygulanamaz.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Vade Sonu: Paragraf 4 Kazancı (383/384 Dışında)
+  Borç:    102 Bankalar / Çeşitli          [Vade sonu kazanç tutarı]
+  Alacak:  646 Kambiyo Kârları / 679 Diğer Kâr [Kazanç türüne göre seçilir]
+             / 648 Diğer Gelirler
+  Açıklama: KVK Geçici Md.14/4 P4 vade sonu kazancı (kâr payı/faiz dışı) → Beyanname 385
+
+  ## Paragraf 4 Tam Paket (383-384-385) Muhasebe
+  383 (Dönem sonu): 31.12 / 181/642    — P4: Dönem sonu tahakkuk (accrual)
+  384 (Kâr payı/faiz): Tahsilat / 102/(181+642) — P4: Kâr payı/faiz genel
+  385 (Vade sonu): Vade / 646/648/679   — P4: Vade sonu kazanç-diğer (BU)
+
+  ## 374/378/382/385 Dört Paragraf Karşılaştırması
+  374 (P1): P1 AKT: TL KKM vade diğer kazançlar → 374
+  378 (P2): P2 PAS: Borç dönüşümü TL araç vade diğer → 378
+  382 (P3): P3 ALT: Altın dönüşümü TL araç vade diğer → 382
+  385 (P4): P4 ÖZL: Paragraf 4 kapsamı vade diğer (BU) → 385
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: "Paragraf 4 Kapsam Analizi Notu (YMM Tarafından Hazırlanan)"
+    detay: "KVK Geçici Md.14/4 kapsamı belirleme notu. GİB KV Beyan Rehberi (No:606) ve CB Kararları referans alınarak hazırlanmalıdır."
+    temin_yeri: "YMM tarafından hazırlanır"
+  - kategori: zorunlu
+    "no": 2
+    baslik: "385 Kazanç Türü Belgesi"
+    detay: "Her 385 kalemi için ayrı belge ve savunulabilir yasal dayanak. Kazanç türü (değer artışı, sermaye kazancı, prim, enflasyon farkı vb.) teyit edilmeli."
+    temin_yeri: "Banka belgesi / hesaplama"
+  - kategori: zorunlu
+    "no": 3
+    baslik: "383/384 ile Mükerrerlik Analizi"
+    detay: "Net 385 = Brüt 385 − Mükerrer Tutarlar. Mükerrer olanlar (383/384'te gösterilen) dışlandığı belgelenmeli."
+    temin_yeri: "YMM çalışma kâğıdı"
+  - kategori: zorunlu
+    "no": 4
+    baslik: "KV Beyannamesi Taslağı — 385. Satır"
+    detay: "'Kazancın Bulunması Halinde' bölümü. YİAKV matrahından çıkarılmamış. Paragraf 4 paketi (383-384-385) tamamlandı."
+    temin_yeri: "GİB e-Beyanname sistemi"
+  - kategori: destekleyici
+    "no": 5
+    baslik: "GİB Özelgesi (Paragraf 4 Vade Kazancı — Tavsiye)"
+    detay: "Paragraf 4 vade kazancı yeni ve tartışmalı olabilir. GİB özelgesi risk yönetimi için tavsiye edilir."
+    temin_yeri: "GİB özelge başvuru sistemi"
+  - kategori: destekleyici
+    "no": 6
+    baslik: "374/378/382 ile Paragraf Ayrıştırma Notu"
+    detay: "Paragraf 4 araçları → 385. Diğer paragraflara (374, 378 veya 382) karıştırma olmadığı teyit edilmeli."
+    temin_yeri: "YMM kapsam analizi notu"
+
+k_checklist:
+  - id: K1
+    soru: "Paragraf 4 kapsamı analizi yapıldı ve belgelendi mi? (GİB Beyan Reh. No:606 + CB Kararları referans alındı)"
+    referans: "KVK Geçici Md.14/4 | GİB KV Beyan Reh. No:606"
+  - id: K2
+    soru: "Bu kazanç 383 (dönem sonu tahakkuk) ve 384 (kâr payı/faiz) kapsamına girmiyor mu? (385 = 383+384 dışı)"
+    referans: "KVK Geçici Md.14/4"
+  - id: K3
+    soru: "Kazanç türü belgelendi mi? (Her 385 kalemi için ayrı belge ve yasal dayanak)"
+    referans: "KVK Geçici Md.14/4"
+  - id: K4
+    soru: "383/384 ile mükerrerlik analizi yapıldı mı? (Mükerrer tutarlar 385'e yazılmadı — 'Yok' olanlar dahil edildi)"
+    referans: "KVK Geçici Md.14/4"
+  - id: K5
+    soru: "374 (P1) / 378 (P2) / 382 (P3) ile doğru ayrıştırıldı mı? (Paragraf 4 araçları → 385)"
+    referans: "KVK Geçici Md.14/1-b ve 14/2 ve 14/3 ve 14/4"
+  - id: K6
+    soru: "Vade tarihi dönem içinde (01.01-31.12) mi? (Sonraki dönemde vadeye girenler gelecek yıl 385)"
+    referans: "KVK Geçici Md.14/4"
+  - id: K7
+    soru: "Tartışmalı kapsam için GİB özelgesi alındı mı? (385 'diğer/genel' niteliği tartışmalı olabilir)"
+    referans: "GİB özelge sistemi"
+  - id: K8
+    soru: "385 istisnası YİAKV matrahından DÜŞÜLMEDI mi? (KVK Geçici Md.14 tüm kodları YİAKV E.7'de DÜŞÜLEMEZ)"
+    referans: "KVK Md.32/C | YİAKV Reh. No:607 E.7"
+  - id: K9
+    soru: "Paragraf 4 paketi (383+384+385) eksiksiz mi? YİAKV E.7'de üç satır da güncellendi mi?"
+    referans: "KVK Md.32/C | YİAKV Reh. No:607 E.7"
+  - id: K10
+    soru: "Beyanname 385 'Kazancın Bulunması Halinde' bölümünde yer alıyor mu? (Zarar döneminde uygulanamaz)"
+    referans: "KVK Geçici Md.14/4"
+  - id: K11
+    soru: "Birden fazla 385 kalemi varsa her biri ayrı satırda mı? (Her kalem C tablosunda ayrı satır ve belge)"
+    referans: "KVK Geçici Md.14/4"
+  - id: K12
+    soru: "YMM Tasdik Raporu (49 No.lu Tebliğ) gereksinimi değerlendirildi mi? (≥500.000 TL → YMM raporu)"
+    referans: "49 S.No.lu KV GT"

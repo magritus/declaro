@@ -1,0 +1,251 @@
+ic_kod: yurtdisi_sube_temsilci_5_1_g
+baslik: Yurt Dışı Şube / Daimi Temsilci Kazançları İstisnası (%100)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 322 }
+  - { donem: 2025, kod: 322 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-g
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: yurtdisi_istisnalar
+
+wizard_agaci:
+  tetikleyici_soru: "Yurt dışında işyeri (şube) veya daimi temsilci aracılığıyla kazanç elde ettin mi?"
+  info_modal: |
+    KVK 5/1-g kapsamında yurt dışında işyeri (şube) veya daimi temsilci aracılığıyla elde edilen
+    kazançlar, 3 şartın birlikte sağlanması halinde %100 istisna olarak uygulanır.
+    Beyannamede 322. satırda "Zarar Olsa Dahi İndirilecek" bölümünde gösterilir.
+    5/1-h (yurt dışı inşaat/montaj) ile karıştırılmamalıdır: 5/1-g'de Türkiye'ye transfer ZORUNLUDUR.
+  kapi_sorulari:
+    - id: isyeri_daimi_temsilci_mi
+      soru: "Kazanç yurt dışında işyeri (şube) veya daimi temsilci aracılığıyla mı elde edildi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yurt dışı iştirak (ayrı tüzel kişilik) kazançları → 5/1-b/c kapsamındadır. Yurt dışı inşaat/montaj → 5/1-h kapsamındadır."
+    - id: genel_sonuc_hesaplari
+      soru: "Kazanç Türkiye'de genel sonuç hesaplarına intikal ettirildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yurt dışında bırakılan kazanç istisna kapsamına GİREMEZ. Türkiye gelir tablosuna yansıtılması zorunludur."
+    - id: kv_beyan_tarihine_kadar_transfer
+      soru: "Kazanç KV beyanname tarihine kadar (normal dönem: 30 Nisan) Türkiye'ye TRANSFER EDİLDİ mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK — 5/1-h'dan AYRILAN ŞART: Transfer gerçekleşmemişse istisna UYGULANAMAZ. Banka transfer dekontu zorunludur."
+    - id: vergi_yuku_yuzde15
+      soru: "Yurt dışında en az %15 vergi yükü şartı sağlandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Vergi Yükü = Ödenen Yurt Dışı Vergi / Vergiden Önceki Şube Kazancı. Yüksek vergili ülkelerde: (KV + En Yüksek GV) / 2 × %75 eşiği esas alınır (2025: %24,375)."
+
+parametreler:
+  oran: 1.0
+  min_vergi_yuku_standart: 0.15
+  yuksek_ulke_esigi_2025: 0.24375
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: sube_brut_gelirleri_tl
+      etiket: "Yurt dışı şube brüt gelirleri (TL — TCMB alış kuru ile)"
+      tip: para
+      zorunlu: true
+      yardim: "Şube gelir tablosundan TCMB alış kuru ile TL'ye çevrilmiş brüt gelir."
+    - id: sube_dogrudan_giderleri_tl
+      etiket: "Yurt dışı şube doğrudan giderleri (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Şubede fiilen oluşan tüm giderler (personel, kira, vergi vb.)."
+    - id: merkez_gider_payi_tl
+      etiket: "Türkiye merkezinden dağıtılan genel gider payı (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Dağıtım anahtarı (ciro/personel/gider oranı) ile belirlenen merkez gider payı. Dağıtım yöntemi belgelenmeli."
+    - id: yurtdisi_odenen_vergi_tl
+      etiket: "Yurt dışında ödenen gelir/KV benzeri vergi (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "TCMB alış kuru ile TL'ye çevrilmiş. Vergi iadesi varsa net ödenen vergi esas alınır."
+  formuller:
+    net_sube_kazanci: "sube_brut_gelirleri_tl - sube_dogrudan_giderleri_tl - merkez_gider_payi_tl"
+    fiili_vergi_yuku_oran: "yurtdisi_odenen_vergi_tl / sube_brut_gelirleri_tl"
+    istisna_tutari: "max(net_sube_kazanci, 0) * oran"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "net_sube_kazanci > 0"
+      hata: "Şube kazancı negatif (zarar) — istisna tutarı sıfır olur."
+    - kural: "fiili_vergi_yuku_oran >= 0.15"
+      hata: "Yurt dışı vergi yükü %15 eşiğinin altında — istisna uygulanamaz. KVK Madde 33 mahsubunu değerlendirin."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-g kapsamında yurt dışında işyeri (şube) veya daimi temsilci aracılığıyla elde
+  edilen kazançlar 3 şartın birlikte sağlanması halinde %100 tam istisna.
+  Beyanname 322. satırı — "Zarar Olsa Dahi İndirilecek" bölümü.
+
+  ## 3 Temel Şart (Kümülatif)
+  ① Kazancın Türkiye'de genel sonuç hesaplarına intikal ettirilmesi
+  ② Kazancın yıllık KV beyannamesinin verilmesi gereken tarihe kadar Türkiye'ye transfer edilmesi
+     (2025 için genellikle 30 Nisan 2026)
+  ③ Şube kazancının faaliyet ülkesinde en az %15 vergi yüküne tabi tutulmuş olması
+
+  ## 5/1-g ve 5/1-h Karşılaştırması
+  5/1-g (322): Yurt dışı şube/daimi temsilci genel faaliyet — Transfer ZORUNLU — Vergi yükü %15 ZORUNLU
+  5/1-h: Yurt dışı inşaat/montaj/teknik hizmet — Transfer zorunlu DEĞİL — Vergi yükü şartı YOK
+  Aynı şubenin karma faaliyeti varsa faaliyet bazında ayrım zorunludur.
+
+  ## %15 Vergi Yükü Eşiği ve İki Formül
+  Standart ülkeler: Vergi Yükü = Ödenen Vergi / Brüt Kazanç ≥ %15
+  Yüksek vergili ülkeler: (KV Oranı + En Yüksek GV Oranı) / 2 × %75
+  2025 için yüksek ülke eşiği: (25 + 40) / 2 × 0,75 = %24,375
+
+  ## Transfer Şartı — Kritik
+  Kazancın TAMAMININ KV beyanname tarihine kadar Türkiye'ye fiilen transfer edilmesi zorunludur.
+  Kısmi transfer durumunda yalnızca transfer edilen tutara isabet eden kazanç istisnaya girer
+  (ihtiyatlı yaklaşım — tartışmalı alan, özelge alınması tavsiye edilir).
+
+  ## Zarar Durumu
+  322 "Zarar Olsa Dahi İndirilecek" bölümündedir: Türkiye ana şirketinin zarar etmesi istisnayı engellemez.
+  Şube kazancı negatif (zarar) ise istisna = 0.
+
+  ## YİAKV Etkisi
+  KVK 5/1-g istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır.
+  Güncel GİB açıklamaları ve dönem mevzuatı esas alınarak ayrıca analiz edilmelidir.
+
+  ## 5/1-g ile KVK Madde 33 Mahsup
+  İki alternatif birlikte kullanılamaz — tercih yapılmalıdır.
+  Yüksek yurt dışı vergi oranında mahsup daha avantajlı olabilir.
+
+  ## Gider Dağıtımı
+  Her şube için ayrı gelir-gider takibi veya tutarlı dağıtım anahtarı zorunludur.
+  Merkez gider payı dağıtım yöntemi yazılı belgelenmelidir.
+
+  ## ÇVÖA Etkisi
+  İşyeri oluşumu ÇVÖA'ya göre teyit edilmelidir.
+  İşyeri oluşmuyorsa kazanç Türkiye'de vergilenir → KVK Md.33 mahsup değerlendirin.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Şube Gelirlerinin Türkiye Gelir Tablosuna İntikali
+  Borç: 131 Ortaklardan Alacaklar / 241 Bağlı Ortaklıklar (Şube)
+  Alacak: 600/640/649 Gelir Hesapları — Şube gelirleri (TCMB alış kuru ile TL)
+  NOT: "Genel sonuç hesaplarına intikal" şartının yerine getirilmesi için zorunludur.
+
+  ## Kayıt 2 — Türkiye'ye Transfer Tahsilatı
+  Borç: 102 Bankalar — Transfer tutarı (transfer günü TCMB alış kuru ile TL)
+  Alacak: 131 Ortaklardan Alacaklar / 241 (Şube) — Alacak kapatma
+  Kur farkı varsa: 646 Kambiyo Kârları / 656 Kambiyo Zararları
+  NOT: Transfer dekontu (EFT/havale tarih ve tutarı) zorunlu belgedir.
+
+  ## Kayıt 3 — Yurt Dışında Ödenen Vergi
+  Borç: 193 Peşin Ödenen Vergiler — Yurt dışı vergi
+  Alacak: 131 / 241 (Şube)
+  NOT: 5/1-g ile istisna seçilmişse KVK Md.33 mahsup YAPILAMAZ.
+
+  ## Beyanname Akışı
+  1. Şube gelirleri Türkiye gelir tablosuna yansır → Ticari kâra dahil.
+  2. KV Beyannamesi 322. Satır: "Zarar Olsa Dahi İndirilecek" bölümünde net şube kazancı.
+  3. Vergi yükü şartı sağlanmıyorsa 322 kullanılamaz.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: "★ Türkiye'ye Transfer Belgesi — Banka EFT/Havale Dekontu"
+    detay: "Gönderici (yurt dışı şube hesabı), alıcı (Türkiye ana şirket hesabı), transfer tarihi (KV beyan tarihinden önce olmalı), tutar ve döviz türü. Bu belge olmadan transfer şartı kanıtlanamaz."
+    temin_yeri: Banka EFT/Havale dekontu (tarih + tutar + hesap bilgisi)
+  - kategori: zorunlu
+    "no": 2
+    baslik: "★ Yurt Dışı Vergi Makbuzu / Vergi Beyannamesi Kopyası (%15 Şartı İçin)"
+    detay: "Şube kazancı üzerinden faaliyet ülkesinde ödenen gelir/KV benzeri vergiyi gösteren makbuz. Türkçe tercümesi ile birlikte dosyaya eklenmelidir. Vergi yükü hesabının dayanağıdır."
+    temin_yeri: Yurt dışı vergi makbuzu / Ülke vergi beyannamesi (onaylı kopya + tercüme)
+  - kategori: zorunlu
+    "no": 3
+    baslik: Türkiye Gelir Tablosu — Şube Gelirlerinin İntikal Teyidi
+    detay: "Şube gelirlerinin Türkiye'deki 600/640/649 hesaplarına yansıdığını gösteren ekstreler. Beyanname başlangıç ticari kârı ile uyumlu olmalıdır."
+    temin_yeri: Muhasebe programı — Gelir hesabı ekstresi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Vergi Yükü Hesap Tablosu (%15 Eşik Kontrolü)
+    detay: "Fiili vergi yükü (%) hesabını gösteren tablo. Standart eşik ≥%15 veya yüksek ülke eşiği ≥%24,375 (2025). Şart sağlanmıyorsa istisna uygulanamaz."
+    temin_yeri: Hesaplama tablosu + Vergi makbuzu çapraz teyidi
+  - kategori: zorunlu
+    "no": 5
+    baslik: Yurt Dışı Şube Tescil / Faaliyet Belgesi
+    detay: "Şubenin yurt dışında tescilini gösteren ticaret sicil belgesi. Şube adresi, faaliyet konusu ve kuruluş tarihi görünmeli. Daimi temsilcide: Temsilcilik yetki belgesi (sözleşme veya vekaletname)."
+    temin_yeri: Yurt dışı ticaret sicil belgesi (onaylı kopya + Türkçe tercüme)
+  - kategori: zorunlu
+    "no": 6
+    baslik: KV Beyannamesi Taslağı — 322. Satır
+    detay: "322. satırındaki tutarın hesaplama sonucu ile birebir uyumlu olduğu kontrol edilmeli. 'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldığı teyit edilmeli ('Kazancın Bulunması Halinde' bölümünde DEĞİL)."
+    temin_yeri: GİB e-Beyanname sistemi
+  - kategori: destekleyici
+    "no": 7
+    baslik: Şube Gelir-Gider Tablosu / Muhasebe Ekstreleri (Yerel Muhasebe)
+    detay: "Yurt dışı şubenin yerel muhasebe sistemindeki dönem gelir-gider tablosu. TCMB alış kuru ile TL'ye çevrim tablosu da eklenmelidir."
+    temin_yeri: Şube yerel muhasebe raporu (onaylı + tercüme)
+  - kategori: destekleyici
+    "no": 8
+    baslik: Türkiye Merkezi Gider Dağıtım Anahtarı Belgesi
+    detay: "Türkiye merkez genel giderlerinden şubeye düşen payın nasıl hesaplandığını gösteren belge. Dağıtım yöntemi (ciro/personel/gider oranı) yazılı ve tutarlı uygulanmalıdır."
+    temin_yeri: Dağıtım anahtarı tablosu + Dönem muhasebe ekstresi
+  - kategori: destekleyici
+    "no": 9
+    baslik: ÇVÖA Analiz Notu — İşyeri Maddesine Göre Değerlendirme
+    detay: "Faaliyet ülkesiyle Türkiye arasındaki ÇVÖA'nın işyeri maddesine göre analiz. İşyeri oluşup oluşmadığı, vergilendirme yetkisi ve yürürlükteki ÇVÖA hükümleri."
+    temin_yeri: ÇVÖA metni (ilgili maddeler) + YMM analiz notu
+  - kategori: destekleyici
+    "no": 10
+    baslik: Birden Fazla Şube Varsa Her Şube İçin Ayrı Vergi Yükü Hesabı
+    detay: "Her şube farklı ülkede farklı vergi yüküne tabi olabilir. Bazı şubelerin %15 şartını karşılamayabileceği unutulmamalıdır."
+    temin_yeri: Her şube için ayrı vergi yükü hesap tablosu
+  - kategori: destekleyici
+    "no": 11
+    baslik: YİAKV Matrah Hesaplama Tablosu (322 Etkisi)
+    detay: "KVK 5/1-g istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır. Güncel GİB açıklamaları ve dönem mevzuatı esas alınarak analiz edilmelidir."
+    temin_yeri: YİAKV çalışma kâğıdı / KVK 32/C
+
+k_checklist:
+  - id: K1
+    soru: "Kazanç yurt dışı işyeri/daimi temsilci aracılığıyla mı elde edildi? Tescil belgesi var mı?"
+    referans: "KVK Md. 5/1-g"
+  - id: K2
+    soru: "★ %15 Vergi Yükü Şartı sağlandı mı? (Standart ≥%15 veya Yüksek Ülke ≥%24,375 için 2025)"
+    referans: "KVK Md. 5/1-g | 1 S.No.lu KV GT"
+  - id: K3
+    soru: "★ Kazanç KV beyan tarihine kadar (30 Nisan) Türkiye'ye transfer edildi mi? Banka dekontu var mı?"
+    referans: "KVK Md. 5/1-g | GİB Özelgeleri"
+  - id: K4
+    soru: "Şube kazancı Türkiye gelir tablosuna intikal etti mi? (600/640/649 hesap ekstresi ile teyit)"
+    referans: "KVK Md. 5/1-g"
+  - id: K5
+    soru: "5/1-g ve 5/1-h faaliyetleri karıştırıldı mı? (Karma faaliyette faaliyet bazında ayrım zorunlu)"
+    referans: "KVK Md. 5/1-g | KVK Md. 5/1-h"
+  - id: K6
+    soru: "5/1-g ve KVK Madde 33 mahsup birlikte uygulanmadı mı? (İkisi aynı anda kullanılamaz)"
+    referans: "KVK Md. 33 | KVK Md. 5/1-g"
+  - id: K7
+    soru: "322 'Zarar Olsa Dahi İndirilecek' bölümünde mi? ('Kazancın Bulunması Halinde' değil)"
+    referans: "KVK Md. 5/1-g | Beyanname Yapısı"
+  - id: K8
+    soru: "Kısmi transfer varsa sadece transfer edilen kısma isabet eden kazanç istisna tutuldu mu? (Tartışmalı — özelge tavsiye edilir)"
+    referans: "KVK Md. 5/1-g | GİB Özelgeleri"
+  - id: K9
+    soru: "Merkez gider dağıtım anahtarı belgelendi mi? Tutarlı mı?"
+    referans: "VUK Md. 175 | 1 S.No.lu KV GT"
+  - id: K10
+    soru: "Birden fazla şube varsa her biri için ayrı vergi yükü analizi ve transfer belgesi hazırlandı mı?"
+    referans: "KVK Md. 5/1-g"
+  - id: K11
+    soru: "YİAKV matrahına 322'nin etkisi güncel mevzuat çerçevesinde ayrıca analiz edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"
+  - id: K12
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL)"
+    referans: "49 S.No.lu KV GT (30.12.2025)"

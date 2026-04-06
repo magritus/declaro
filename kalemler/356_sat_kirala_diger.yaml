@@ -1,0 +1,200 @@
+ic_kod: sat_kirala_diger_vks_5_1_j
+baslik: Sat-Kirala-Geri Al İşlemlerinden Doğan Kazançlarda İstisna (VKŞ/Sukuk Kanalı)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 356 }
+  - { donem: 2025, kod: 356 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-j
+  - 6362 Sayılı Sermaye Piyasası Kanunu
+  - SPK Kira Sertifikası (Sukuk) Tebliği
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2013-04-13"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Bir varlığı (taşınır veya taşınmaz) SPK lisanslı Varlık Kiralama Şirketine (VKŞ) satarak kira sertifikası (sukuk) ihracını mümkün kıldınız ve varlığı geri kiralayarak kullanıyorsunuz?"
+  info_modal: |
+    KVK 5/1-j kapsamında, kurumların varlıklarını sat-kirala-geri al işlemi çerçevesinde
+    6362 sayılı SPK Kanunu kapsamında kurulmuş SPK lisanslı Varlık Kiralama Şirketine (VKŞ)
+    satmaları ve geri kiralamaları durumunda doğan satış kazancı %100 istisnadır.
+    354/355'ten kritik fark: Alıcı kurum BDDK lisanslı FK/banka değil, SPK lisanslı VKŞ'dir.
+    VKŞ satın aldığı varlık karşılığında kira sertifikası (sukuk) ihraç eder.
+  kapi_sorulari:
+    - id: alici_vks_mi
+      soru: "Alıcı kurum, 6362 sayılı Sermaye Piyasası Kanunu kapsamında SPK lisanslı Varlık Kiralama Şirketi (VKŞ) mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "356 yalnızca SPK lisanslı VKŞ kanalını kapsar. BDDK lisanslı FK şirketi/banka ise 354 (taşınır) veya 355 (taşınmaz) kullanılmalıdır."
+    - id: sukuk_ihrac_var_mi
+      soru: "VKŞ satın aldığı varlık karşılığında kira sertifikası (sukuk) ihraç etti mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kira sertifikası ihracı 356'nın ayırt edici unsurudur. SPK onaylı izahname/ihraç belgesi zorunludur."
+    - id: geri_alim_taahhut_var_mi
+      soru: "Vade sonunda varlığın geri alınması taahhüdü/opsiyonu sözleşmede açıkça yer alıyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5/1-j istisnası için geri alım taahhüdü zorunludur. Geri alım olmadan → istisna iptali riski (5/1-k'dan fark)."
+    - id: fon_hesabina_alinacak_mi
+      soru: "İstisna edilen kazanç 549 hesabına alınacak ve kira süresi boyunca amortize edilecek mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: devir_bedeli
+      etiket: "VKŞ'ye Devir (Satış) Bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "VKŞ'nin satın alma bedeli. Değerleme raporu ile desteklenmeli. SPK bağlamında piyasa değeriyle uyumlu olmalıdır."
+    - id: net_defter_degeri
+      etiket: "Varlığın Net Defter Değeri (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Birikmiş amortisman düşüldükten sonraki net aktif değeri. Taşınmaz için 250/252/258, taşınır için 253/254 hesap kartları."
+    - id: devir_giderleri
+      etiket: "Devir Giderleri (Tapu harcı, komisyon, ihraç giderleri, noter vb.) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Taşınmaz devrinde tapu harcı, SPK harçları, değerleme ve hukuki danışmanlık giderleri."
+  formuller:
+    satis_kazanci: "devir_bedeli - net_defter_degeri - devir_giderleri"
+    istisna_tutari: "max(satis_kazanci * oran, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_kazanci > 0"
+      hata: "Satış kazancı pozitif olmalıdır. Zarar durumunda bu istisna uygulanamaz (Kazancın Bulunması Halinde bölümü)."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-j: Finansal kiralama ya da finansman şirketleri, katılım bankaları ile kalkınma
+  ve yatırım bankalarına satılıp geri kiralanan varlıklardan doğan satış kazançları %100 istisnadır.
+  356 kodu: VKŞ kanalı — alıcı kurum 6362 s.K. kapsamında SPK lisanslı VKŞ'dir.
+
+  ## Mekanizma — VKŞ/Sukuk Kanalı (4 Taraflı İşlem)
+  1. Kurum (Satıcı/Kiracı): Varlığını VKŞ'ye satar → Geri kiralar → Vade sonunda geri alır
+  2. VKŞ (Varlık Kiralama Şirketi): Varlığı satın alır → Kira sertifikası ihraç eder → Kuruma kiralar
+  3. Kira Sertifikası Sahipleri: Sukuk satın alır → Dönemsel kira geliri alır → Vade sonunda anapara
+  4. SPK: VKŞ ve kira sertifikası ihracını denetler, izin verir
+
+  ## 354/355'ten Kritik Fark — Alıcı Kurum Türü
+  354 (Taşınır) / 355 (Taşınmaz): BDDK lisanslı FK şirketi / Katılım / Kalkınma-Yatırım Bankası
+  356 (Diğer VKŞ Kanalı): SPK lisanslı Varlık Kiralama Şirketi (6362 s.K.)
+  Varlık türü: 356, hem taşınır hem taşınmaz için kullanılabilir
+
+  ## Kritik Noktalar
+  - VKŞ 6362 s.K. kapsamında münhasıran kira sertifikası ihraç etmek amacıyla kurulmuş olmalı
+  - SPK onaylı izahname/ihraç belgesi zorunludur
+  - KAP bildirimleri (halka açık ihraçlarda) zorunludur
+  - Geri alım taahhüdü sözleşmede yazılı olmalı (5/1-j şartı)
+  - 356 sadece devir yılında kullanılır; sonraki yıllarda 356 satırına yazılmaz
+  - Taşınmaz devirlerinde KDV Md.17/4-r ve tapu harcı analizi zorunludur
+
+  ## YİAKV Etkisi
+  KVK 5/1-j (356) istisnasının YİAKV (KVK 32/C) matrahına etkisi tartışmalıdır.
+
+  ## YMM Tasdik Raporu
+  49 No.lu Tebliğ (30.12.2025): Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — VKŞ'ye Varlık Devir Kaydı
+  Borç: 102 Bankalar / 120/121 Alacaklar            [Devir Bedeli]
+  Alacak: 250/252/253/254 İlgili Aktif Hesabı        [Net Defter Değeri]
+  Alacak: 679 Diğer Olağandışı Kâr / 645 Satış Kârı  [Satış Kazancı]
+  Açıklama: VKŞ'ye sat-kirala-geri al (5/1-j) kapsamında varlık devri (sukuk ihraç hasılatı VKŞ üzerinden)
+
+  ## Kayıt 2 — 549 Özel Fon Hesabına Alma (Devir Yılında)
+  Borç: 679 Diğer Olağandışı Kâr / 645 Satış Kârı   [İstisna Tutarı]
+  Alacak: 549 Özel Fonlar — KVK 5/1-j 356 İstisnası  [İstisna Tutarı]
+  Açıklama: Satış kazancının tamamının 549 hesabına alınması
+
+  ## Kayıt 3 — Dönemsel Kira Gideri Kaydı (Her Dönem — VKŞ'ye Kira)
+  Borç: 770 Genel Yönetim Giderleri                 [Kira Bedeli + KDV]
+  Alacak: 102 Bankalar                               [Kira Bedeli + KDV]
+  Açıklama: VKŞ'ye ödenen kira bedeli — VKŞ kira sertifikası sahiplerine aktarır
+
+  ## Kayıt 4 — Fon Amortizasyonu (Her Dönem — Kira Payına Orantılı)
+  Borç: 549 Özel Fonlar                   [Dönem Fon Azalışı]
+  Alacak: 549 Özel Fonlar (alt hesap)     [Dönem Fon Azalışı]
+  Açıklama: Fon = Başlangıç Fon × (Dönem Kira / Toplam Kira). Sukuk vadesi sonunda 549 sıfır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: VKŞ SPK Lisansı / Kuruluş İzin Belgesi
+    detay: "6362 sayılı Sermaye Piyasası Kanunu kapsamında SPK tarafından verilen lisans veya kuruluş izni. SPK'nın resmi VKŞ listesinden teyit edilmelidir."
+    temin_yeri: SPK / VKŞ
+  - kategori: zorunlu
+    "no": 2
+    baslik: SPK Onaylı Kira Sertifikası İzahnamesi / İhraç Belgesi
+    detay: "Sukuk ihracını belgeleyen SPK onaylı izahname veya sirküler. Hem ihraç amacını hem VKŞ'nin rolünü kanıtlar. 356 istisnasının temel dayanağıdır."
+    temin_yeri: SPK / VKŞ / Aracı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Sat-Kirala-Geri Al Sözleşme Paketi (Satış + Geri Kiralama Sözleşmeleri)
+    detay: "Geri alım taahhüdü/opsiyonu sözleşmede açıkça yer almalıdır. Her iki sözleşme eş zamanlı/bağlantılı olmalıdır."
+    temin_yeri: Hukuk Birimi / Sözleşme Arşivi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Devir Belgesi (Varlık Türüne Göre — Tapu/Fatura+Teslim/Devir Sözleşmesi)
+    detay: "Taşınmaz: Tapu senedi. Taşınır: E-Fatura + Teslim-tesellüm tutanağı. Aktiften çıkış muhasebe kaydıyla uyumlu."
+    temin_yeri: Tapu Sicil Müdürlüğü / Muhasebe
+  - kategori: destekleyici
+    "no": 5
+    baslik: Bağımsız Değerleme Raporu (SPK Bağlamı)
+    detay: "Satış bedelinin piyasa değeriyle uyumluluğunu belgeler. SPK ihraç bağlamında değerleme raporu kritik öneme sahiptir."
+    temin_yeri: Değerleme Şirketi
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı kurum SPK lisanslı VKŞ mi? 6362 s.K. kapsamında mı? BDDK lisanslı FK/banka ise 354 veya 355 kullanıldı mı?"
+    referans: "KVK Md. 5/1-j | 6362 s.K."
+  - id: K2
+    soru: "VKŞ münhasıran kira sertifikası ihraç etmek amacıyla mı kurulmuş? Farklı faaliyet alanları olan şirket VKŞ sayılmaz."
+    referans: "6362 s.K. Md. 61"
+  - id: K3
+    soru: "Kira Sertifikası (Sukuk) İhraç Belgesi / İzahname SPK onaylı mı? Tasdik dosyasında mevcut mu?"
+    referans: "6362 s.K. | SPK Sukuk Tebliği"
+  - id: K4
+    soru: "KAP bildirimleri yapıldı mı? (Halka açık kira sertifikası ihraçlarında zorunlu)"
+    referans: "KAP / SPK Mevzuatı"
+  - id: K5
+    soru: "Satış ve geri kiralama sözleşmeleri eş zamanlı/bağlantılı mı? Ayrı/bağımsız işlemler tartışmalı."
+    referans: "KVK Md. 5/1-j | GİB Özelgeleri"
+  - id: K6
+    soru: "Geri alım taahhüdü/opsiyonu sözleşmede yazılı mı? Geri alım olmadan → istisna iptali + vergi + ceza."
+    referans: "KVK Md. 5/1-j"
+  - id: K7
+    soru: "Satış kazancının tamamı 549 hesabına devir yılında alındı mı? E.6 = F.1 uyumlu mu?"
+    referans: "KVK Md. 5/1-j | 1 S.No.lu KV GT"
+  - id: K8
+    soru: "Fon amortizasyonu kira payına orantılı mı? Her dönem: Fon × (Dönem Kira / Toplam Kira)"
+    referans: "KVK Md. 5/1-j"
+  - id: K9
+    soru: "Satış bedeli değerleme raporu ile uyumlu mu? Büyük fark → KVK Md.13 + SPK riski."
+    referans: "KVK Md. 13 | SPK"
+  - id: K10
+    soru: "356 yalnızca DEVİR YILINDA kullanıldı mı? Sonraki yıllarda 356 satırına yazılmadı mı?"
+    referans: "KV Beyannamesi 356 Satırı"
+  - id: K11
+    soru: "356 'Kazancın Bulunması Halinde' bölümünde mi? 'Zarar Olsa Dahi' bölümünde değil mi?"
+    referans: "KVK Md. 5/1-j"
+  - id: K12
+    soru: "Vade sonu geri alım gerçekleşti mi? Takip var mı? Geri alım olmadan → istisna iptali riski."
+    referans: "KVK Md. 5/1-j"
+  - id: K13
+    soru: "YİAKV matrahında 356 istisnasının etkisi ayrıca analiz edildi mi? (Tartışmalı — dönem mevzuatı esas)"
+    referans: "KVK Md. 32/C"

@@ -1,0 +1,226 @@
+ic_kod: istirak_hissesi_satis_5_1_e
+baslik: İştirak Hissesi Satış Kazancı İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 352 }
+  - { donem: 2025, kod: 352 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-e
+  - KVK Madde 5/3 (zarar durumu — KKEG kuralı)
+  - 9160 Sayılı Cumhurbaşkanı Kararı (27/11/2024)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:601)
+  - KDVK Madde 17/4-r
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "2 yıldan fazla aktifinde tuttuğunuz iştirak hisselerini (ortaklık paylarını) sattınız mı?"
+  info_modal: |
+    KVK Madde 5/1-e kapsamında kurumların en az 2 tam yıl aktifinde tuttuğu iştirak hisselerinin
+    satışından doğan kazançların bir kısmı kurumlar vergisinden istisnadır.
+    İstisna oranı: 27/11/2024 öncesi satışlarda %75, 27/11/2024 ve sonrasında %50 (9160 s. CB Kararı).
+    Aynı kuruma ait farklı tarihlerde alınan hisseler için FIFO yöntemi uygulanır.
+    Zararlı satışlarda zararın istisna oranına isabet eden kısmı KKEG sayılır (KVK 5/3).
+    Bu istisna YİAKV matrahından düşülemez — matrahta kalır.
+  kapi_sorulari:
+    - id: iki_yil_aktif
+      soru: "İştirak hisseleri satış tarihi itibarıyla en az 2 tam yıl (730 gün) aktifinde bulunuyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "2 yıl (730 gün) şartı sağlanmadan istisna uygulanamaz. Aynı kuruma farklı tarihlerde alınan hisselerde FIFO uygulanır — en eski iktisap tarihi esas alınır."
+    - id: menkul_kiymet_ticareti_yok
+      soru: "Kurum menkul kıymet ticareti yapıyor mu? (Hisseler iştirak amaçlı — 24 hesapta — tutuluyor mu?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Menkul kıymet ticareti kapsamında elde tutulan hisseler kapsam dışıdır. Holding şirketlerinde 24-Mali Duran Varlıklar'daki iştirakler istisna kapsamındadır. 11-Menkul Kıymetler hesabındaki ticari amaçlı hisseler kapsam dışıdır."
+    - id: istirak_hissesi_niteligi
+      soru: "Satılan varlık gerçek anlamda iştirak hissesi mi? (A.Ş. payı, Ltd. payı, koop. payı, iş ortaklığı payı)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "SPK fonlarının katılma belgeleri iştirak hissesi sayılmaz (352 kapsamı dışıdır). Kurucu senetleri, intifa senetleri, rüçhan hakları ve GSYF katılma payları → 353 beyanname satırını kullanın."
+    - id: fon_ayrimi_yapilacak
+      soru: "İstisna tutarı 549 Özel Fonlar hesabına alınacak mı? (Zorunlu)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna kazancının satışı izleyen hesap dönemi başından KV beyan süresine kadar 549 hesabına alınması zorunludur. 5 yıl boyunca tutulacaktır. Aksi halde istisna geçersiz sayılır."
+
+parametreler:
+  oran_eski: 0.75
+  oran_yeni: 0.50
+  oran_kesim_tarihi: "2024-11-27"
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: oran_dilimi
+      etiket: "Uygulanacak istisna oranı (satış tarihine göre)"
+      tip: secenek
+      secenekler:
+        - "%75 — 27/11/2024 öncesi satış"
+        - "%50 — 27/11/2024 ve sonrası satış (9160 s. CB Kararı)"
+      zorunlu: true
+      yardim: |
+        9160 Sayılı Cumhurbaşkanı Kararı (27/11/2024) ile oran değişimi:
+        • %75: Satış tarihi 27/11/2024 öncesi olan tüm iştirak hissesi satışları
+        • %50: Satış tarihi 27/11/2024 ve sonrası (bu tarih dahil) olan satışlar
+        Satış tarihi olarak hisse devir sözleşmesinin tescil / noter tarihi esas alınır.
+    - id: satis_kazanci
+      etiket: "İştirak hissesi satış kazancı (net — FIFO bazında, 2 yıl şartını taşıyan kısım)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Satış bedeli eksi FIFO bazında defter değeri (birikmiş maliyetler). Negatif değer girilirse
+        zarar durumu için uyarı tetiklenir: Zararın istisna oranına isabet eden kısmı KKEG sayılır.
+        Yabancı para cinsinden satışlarda TCMB kuru × miktar kullanın.
+  formuller:
+    oran_sayisal: "0.75 if oran_dilimi == '%75 — 27/11/2024 öncesi satış' else 0.50"
+    istisna_tutari: "max(satis_kazanci * oran_sayisal, 0)"
+    kkeg_tutari: "abs(satis_kazanci) * oran_sayisal if satis_kazanci < 0 else 0"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_kazanci >= 0"
+      hata: |
+        UYARI — ZARAR DURUMU (KVK Md.5/3): İştirak hissesi satışında zarar oluştuysa, zararın istisna
+        oranına (%75 veya %50) isabet eden kısmı Kanunen Kabul Edilmeyen Gider (KKEG) sayılır.
+        Kalan kısım (zarar × (1 - oran)) ise gider olarak indirilebilir.
+        Örnek: 100.000 TL zarar, %50 oran → 50.000 TL KKEG + 50.000 TL indirilebilir zarar.
+        KKEG tutarı beyannamede ayrıca gösterilmelidir.
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-e: En az 2 tam yıl aktifinde tutulan iştirak hisselerinin satışından doğan kazancın
+  belirli bir kısmı kurumlar vergisinden istisnadır.
+  9160 Sayılı CB Kararı (27/11/2024): İstisna oranı %75'ten %50'ye indirildi.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:601) esas alınmıştır.
+
+  ## Oran Tablosu
+  - %75: Satış tarihi 27/11/2024 öncesi
+  - %50: Satış tarihi 27/11/2024 ve sonrası (9160 s. CB Kararı)
+
+  ## Kapsam — Hangi Varlıklar 352'ye Girer
+  - A.Ş. ortaklık payları (hisseleri)
+  - Ltd. Şti. ortaklık payları
+  - Kooperatif ortaklık payları
+  - İş ortaklığı payları
+  NOT: Kurucu senetleri, intifa senetleri, rüçhan hakları, GSYF katılma payları → 353 beyanname satırı
+
+  ## Kritik Noktalar
+  - 2 tam yıl (730 gün) aktifinde bulundurma zorunlu
+  - Aynı kuruma farklı tarihlerde alınan hisseler → FIFO uygulanır (GİB Rehberi Md.6)
+  - Menkul kıymet ticareti yapanlar kapsam dışı; iştirak amaçlı (24-MDV hesabı) olması şart
+  - 549 Özel Fonlar hesabına alınma zorunlu — aksi halde istisna geçersiz
+  - 5 yıl boyunca fon hesabında tutulacak; erken çekilirse matraha eklenir
+  - Satış giderlerinin vergiye tabi kısma isabet eden payı gider yazılabilir (KVK 5/3)
+
+  ## Zarar Durumu (KVK 5/3)
+  Zararlı satışlarda: zarar × oran = KKEG, zarar × (1 - oran) = indirilebilir zarar.
+  Örnek (%50 oran): 200.000 TL zarar → 100.000 TL KKEG + 100.000 TL indirilebilir zarar.
+
+  ## KDV İstisnası
+  İştirak hissesi satışında KDV istisnası (KDVK Md.17/4-r) 15/7/2023 değişikliğinden
+  etkilenmez — süresiz devam eder.
+
+  ## YİAKV Etkisi
+  KVK 5/1-e iştirak hissesi satış kazancı istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  İstisna tutarı YİAKV matrahında kalır (GİB Rehberi Mart 2026, A0.7 kontrolü).
+
+  ## YMM Tasdik
+  İstisna tutarı ≥ 500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  KV beyannamesiyle birlikte veya 2 ay içinde elektronik olarak verilir.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — İştirak Hissesi Satışı (Kazanç Durumu)
+  Borç: 102 Bankalar / 120 Alıcılar   [Satış bedeli]
+  Alacak: 242/245 İştirakler / Bağlı Ortaklıklar (FIFO bazında defter değeri)
+  Alacak: 679 Diğer Olağandışı Gelir ve Kârlar (Satış kazancı)
+
+  ## Kayıt 2 — 549 Fon Hesabına Alma
+  Borç: 570 Geçmiş Yıllar Kârları (veya 690 Dönem Net Kârı)
+  Alacak: 549 Özel Fonlar
+  Açıklama: İstisna kazancının (satis_kazanci × oran) en geç KV beyan süresine kadar 549 hesabına
+  alınması zorunludur. 5 yıl süreyle tutulacaktır.
+
+  ## Kayıt 3 — Zarar Durumu (KVK 5/3 KKEG)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Toplam zarar)
+  Alacak: 242/245 İştirakler
+  Beyanname düzeltmesi: Zarar × oran kadar kısım KKEG olarak kanunen kabul edilmeyen giderler
+  satırına eklenir; geri kalan kısım indirilebilir.
+
+  ## Uyarı
+  549 hesabından 5 yıl içinde çekilirse, çekildiği tarihte matraha eklenerek vergilendirilir.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: İştirak Hissesi Devir Sözleşmesi / Pay Devir Belgesi
+    detay: "Satış tarihi (27/11/2024 öncesi/sonrası oran tespiti için) ve satış bedelinin belgesi."
+    temin_yeri: Noter / Şirket Genel Kurulu Tutanağı
+  - kategori: zorunlu
+    "no": 2
+    baslik: İştirak Hissesinin Aktife Giriş Kaydı (İlk İktisap Belgesi)
+    detay: "FIFO için en eski iktisap tarihi ve maliyeti. 2 yıl şartının tespiti için zorunludur."
+    temin_yeri: 242/245 Hesap Kartı / Muhasebe Arşivi
+  - kategori: zorunlu
+    "no": 3
+    baslik: FIFO Hesaplama Tablosu (Birden Fazla Alım Varsa)
+    detay: "Aynı kuruma ait farklı tarihlerde alınan hisselerde FIFO yöntemiyle satılan payın maliyeti."
+    temin_yeri: Muhasebe / Serbest Muhasebe Kaydı
+  - kategori: zorunlu
+    "no": 4
+    baslik: 549 Hesap Kaydı ve Yevmiye
+    detay: "İstisna tutarının 549 Özel Fonlar hesabına alındığını gösteren yevmiye kaydı."
+    temin_yeri: Muhasebe / Yevmiye defteri
+  - kategori: zorunlu
+    "no": 5
+    baslik: Dönem Bilanço ve Gelir Tablosu
+    detay: "Satış kazancının/zararının ve ticari kâr tutarının doğrulanması için."
+    temin_yeri: Muhasebe
+  - kategori: destekleyici
+    "no": 6
+    baslik: KKEG Hesaplama Tablosu (Zarar Durumunda)
+    detay: "Zararlı satışta KVK 5/3 kapsamında KKEG ve indirilebilir zarar ayrıştırması."
+    temin_yeri: Muhasebe / Beyanname Çalışma Kağıdı
+
+k_checklist:
+  - id: K1
+    soru: "Satılan varlığın türü iştirak hissesi (A.Ş., Ltd., koop., iş ort. payı) olarak doğrulandı mı? (Kurucu/intifa/rüçhan/GSYF ise → 353)"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 Bölüm B-I"
+  - id: K2
+    soru: "2 tam yıl (730 gün) aktifinde bulundurma şartı sağlandı mı?"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 Md.6"
+  - id: K3
+    soru: "Hisseler iştirak amaçlı (24-Mali Duran Varlıklar) hesapta mı izleniyor? (11-Menkul Kıymetler'deki ticari hisseler kapsam dışı)"
+    referans: "GİB Beyan Reh. 2026 Md.8"
+  - id: K4
+    soru: "Satış tarihi 27/11/2024 öncesi mi sonrası mı? (Oran tespiti için kritik)"
+    referans: "9160 s. CB Kararı | GİB Beyan Reh. 2026 A0.2"
+  - id: K5
+    soru: "Birden fazla alım varsa FIFO yöntemiyle maliyet hesabı yapıldı mı?"
+    referans: "GİB Beyan Reh. 2026 Md.6"
+  - id: K6
+    soru: "İstisna tutarı (satis_kazanci × oran) 549 hesabına en geç KV beyan süresine kadar alındı mı?"
+    referans: "KVK Md.5/1-e | GİB Beyan Reh. 2026 Md.40-42"
+  - id: K7
+    soru: "5 yıllık fon tutma süresi takibi yapılıyor mu? (Erken çekilirse matraha eklenir)"
+    referans: "KVK Md.5/1-e"
+  - id: K8
+    soru: "Zarar durumunda KVK 5/3 KKEG hesabı yapıldı mı? (Zarar × oran = KKEG)"
+    referans: "KVK Md.5/3 | GİB Beyan Reh. 2026"
+  - id: K9
+    soru: "Satış giderlerinin (komisyon, damga vb.) vergiye tabi kısma isabet eden payı gider olarak yazıldı mı? (KVK 5/3)"
+    referans: "KVK Md.5/3"
+  - id: K10
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (Bu istisna YİAKV'dan düşülemez — matrahta kalır)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 A0.7"
+  - id: K11
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

@@ -49,7 +49,7 @@ class KapiSorusu(BaseModel):
     id: str
     soru: str
     tip: str
-    zorunlu_cevap: str
+    zorunlu_cevap: str | None = None
     aciklama: str | None = None
 
 

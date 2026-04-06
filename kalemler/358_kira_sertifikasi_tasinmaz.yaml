@@ -1,0 +1,200 @@
+ic_kod: kira_sertifikasi_tasinmaz_5_1_k
+baslik: Kira Sertifikası İhracı Amacıyla Taşınmazların Satışından Doğan Kazançlarda İstisna
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 358 }
+  - { donem: 2025, kod: 358 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-k
+  - 6362 Sayılı Sermaye Piyasası Kanunu
+  - SPK Kira Sertifikası (Sukuk) Tebliği
+  - 1 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2013-04-13"
+  bitis: null
+
+ana_kategori: varlik_satis_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Bir taşınmazı (arsa, bina, fabrika) münhasıran kira sertifikası ihracını mümkün kılmak amacıyla SPK lisanslı Varlık Kiralama Şirketine (VKŞ) tapu devrediyle sattınız mı?"
+  info_modal: |
+    KVK 5/1-k kapsamında, kurumların taşınmazlarını kira sertifikası ihracını mümkün kılmak
+    amacıyla SPK lisanslı VKŞ'ye tapu devriyle satmalarından doğan kazançlar %100 istisnadır.
+    358, 355 (5/1-j taşınmaz) ile sıkça karıştırılan en kritik dosyadır:
+    - 355 (5/1-j): Alıcı BDDK lisanslı FK/banka, geri devir ZORUNLU
+    - 358 (5/1-k): Alıcı SPK lisanslı VKŞ, geri devir OPSİYONEL
+    TAPU DEVRİ her iki bent için de zorunludur.
+  kapi_sorulari:
+    - id: varlik_tasinmaz_mi
+      soru: "Devredilen varlık taşınmaz mı? (Arsa, arazi, bina, fabrika, depo — taşınır/hak değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taşınır (makine/araç) veya hak (patent/marka) için 357 kodu kullanılmalıdır. Bu istisna yalnızca taşınmazlar içindir."
+    - id: alici_vks_mi
+      soru: "Alıcı kurum, 6362 sayılı SPK Kanunu kapsamında SPK lisanslı Varlık Kiralama Şirketi (VKŞ) mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "BDDK lisanslı FK şirketi/banka ise → 355 (geri devir zorunluysa) veya 356 (5/1-j VKŞ kanalı) kullanılmalıdır."
+    - id: ihrac_amaci_var_mi
+      soru: "Devrin amacı münhasıran kira sertifikası ihracını mümkün kılmak mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bu 5/1-k'nın özgün koşuludur. İhraç amacı SPK onaylı izahname/ihraç belgesiyle belgelenmelidir."
+    - id: tapu_devri_gerceklesti_mi
+      soru: "Taşınmazın tapusu VKŞ adına tapuya tescil edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taşınmaz satışı tapuya tescil olmadan hukuken tamamlanmış sayılmaz. Tapu senedi zorunlu belgedir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: tapu_devir_bedeli
+      etiket: "VKŞ'ye Tapu Devir Bedeli (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Tapudaki satış bedeli. Gerçek satış bedeli ile uyumlu olmalıdır. SPK bağlamında değerleme raporu önerilir."
+    - id: net_defter_degeri
+      etiket: "Taşınmazın Net Defter Değeri (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Birikmiş amortisman düşüldükten sonraki net aktif değeri (250/252/258 hesap kartı ile uyumlu)."
+    - id: satis_giderleri
+      etiket: "Satış Giderleri (Tapu harcı, komisyon, SPK harçları, ihraç giderleri vb.) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Tapu harcı satıcı payı, SPK harçları, hukuki danışmanlık ve değerleme giderleri."
+  formuller:
+    satis_kazanci: "tapu_devir_bedeli - net_defter_degeri - satis_giderleri"
+    istisna_tutari: "max(satis_kazanci * oran, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "satis_kazanci > 0"
+      hata: "Satış kazancı pozitif olmalıdır. Zarar durumunda bu istisna uygulanamaz (Kazancın Bulunması Halinde bölümü)."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-k: Her türlü varlık ve hakların, kira sertifikası ihraç etmek amacıyla
+  kurulan varlık kiralama şirketlerine satışından doğan kazançlar %100 istisnadır.
+  358 kodu: Taşınmaz varlıklar (arsa/arazi/bina/fabrika/depo).
+
+  ## 358'in 4'lü Karşılaştırması — En Çok Karıştırılan Dosya
+  355 (5/1-j): Alıcı BDDK FK/Banka | Geri devir ZORUNLU | Leaseback ZORUNLU
+  356 (5/1-j VKŞ): Alıcı SPK VKŞ | Geri devir ZORUNLU (5/1-j) | Leaseback ZORUNLU
+  358 (5/1-k): Alıcı SPK VKŞ | Geri devir OPSİYONEL | Leaseback ZORUNLU DEĞİL
+  357 (5/1-k): Alıcı SPK VKŞ | Taşınır/Hak | Tapu yok
+
+  ## 358'e Özgün Tapu Boyutu
+  - TAPU DEVRİ zorunlu (355 ile aynı) — VKŞ adına tapuya tescil
+  - Geri devir OPSİYONEL (355'ten fark) — istisna geri devir olmadan da korunur
+  - KDV Md.17/4-r muafiyeti değerlendirilmeli
+  - Tapu harcı: Devir aşamasında kesin, geri devir opsiyonel ise belirsiz
+  - Geri devir taahhütlü ise dikkat: 5/1-j (355/356) kapsamına dönebilir — bent seçimine dikkat
+
+  ## 549 Fon Mekanizması
+  Tapu devir yılında F.6 tutarı 549'a alınır. Her dönem sukuk vadesine paralel
+  kira/getiri ödemelerine orantılı fon azalır. Sukuk vadesi sonunda 549 sıfır.
+
+  ## GİB Özelgesi
+  5/1-k (358) uygulaması için özelge alınması şiddetle tavsiye edilir. Özellikle geri
+  devir opsiyonelliği ve KDV/tapu harcı konularında özelge kritiktir.
+
+  ## YMM Tasdik Raporu
+  49 No.lu Tebliğ (30.12.2025): Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Tapu Devir Kaydı (VKŞ'ye Tapu Tesciliyle Satış — Sukuk İhracı Amacıyla)
+  Borç: 102 Bankalar / 120 Alacaklar              [Tapu Devir Bedeli]
+  Alacak: 250/252 İlgili Taşınmaz Aktif Hesabı    [Brüt Defter Değeri]
+  Alacak: 258 Birikmiş Amortismanlar              [Birikim]
+  Alacak: 679 Diğer Olağandışı Kâr                [Satış Kazancı]
+  Açıklama: KVK 5/1-k 358 — Kira sertifikası ihraç amacıyla taşınmaz tapu devri
+
+  ## Kayıt 2 — 549 Özel Fon Hesabına Alma (Tapu Devir Yılında)
+  Borç: 679 Diğer Olağandışı Kâr / 645 Satış Kârı   [İstisna Tutarı]
+  Alacak: 549 Özel Fonlar — KVK 5/1-k 358 İstisnası  [İstisna Tutarı]
+  Açıklama: Satış kazancının tamamının 549 hesabına alınması (tapu devir yılı)
+
+  ## Kayıt 3 — Fon Amortizasyonu (Her Dönem — Sukuk Vadesine Orantılı)
+  Borç: 549 Özel Fonlar                   [Dönem Fon Azalışı]
+  Alacak: 549 Özel Fonlar (alt hesap)     [Dönem Fon Azalışı]
+  Açıklama: Fon = Başlangıç Fon × (Dönem Kira/Getiri / Toplam Kira/Getiri). Sukuk vadesi sonunda 549 sıfır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Tapu Senedi (VKŞ Adına Tescil)
+    detay: "Tapu sicilinde VKŞ adına 'Mülkiyet' tescilini gösterir. Tescil tarihi = Satış tarihi = İstisnanın başladığı tarih. 358'e özgün zorunlu belge."
+    temin_yeri: Tapu Sicil Müdürlüğü
+  - kategori: zorunlu
+    "no": 2
+    baslik: VKŞ SPK Lisansı / Kuruluş İzin Belgesi
+    detay: "6362 s.K. kapsamında SPK lisansı. SPK'nın resmi VKŞ listesinden teyit edilmelidir."
+    temin_yeri: SPK / VKŞ
+  - kategori: zorunlu
+    "no": 3
+    baslik: SPK Onaylı Kira Sertifikası İzahnamesi / İhraç Belgesi
+    detay: "İhraç amacını, sukuk yapısını ve VKŞ'nin rolünü belgeler. KAP bildirimleri (halka açık ihraçlarda) ile birlikte dosyaya eklenmelidir."
+    temin_yeri: SPK / VKŞ / Aracı Kurum
+  - kategori: zorunlu
+    "no": 4
+    baslik: 549 Özel Fon Hesabı Kayıt ve Amortizasyon Tablosu
+    detay: "Tapu devir yılında fona alınan tutar ve sukuk vadesine paralel her dönem kira/getiri payına orantılı amortizasyon."
+    temin_yeri: Muhasebe / ERP
+  - kategori: destekleyici
+    "no": 5
+    baslik: SPK Lisanslı Gayrimenkul Değerleme Raporu
+    detay: "Satış bedelinin piyasa değeriyle uyumluluğunu belgeler. SPK ihraç bağlamında değerleme kritiktir."
+    temin_yeri: SPK Lisanslı Gayrimenkul Değerleme Şirketi
+
+k_checklist:
+  - id: K1
+    soru: "Devredilen varlık taşınmaz mı? 357 (taşınır/hak) ile karıştırılmadı mı? Varlık türü tapu sicili ile teyit edildi mi?"
+    referans: "KVK Md. 5/1-k | Beyanname Kodu 358"
+  - id: K2
+    soru: "Alıcı SPK lisanslı VKŞ mi? BDDK lisanslı FK/banka ise 355 (geri devir zorunluysa) veya 356 (5/1-j) kullanıldı mı?"
+    referans: "KVK Md. 5/1-k | 6362 s.K."
+  - id: K3
+    soru: "Devrin amacı münhasıran kira sertifikası ihracı mı? SPK onaylı izahname/ihraç belgesi mevcut mu?"
+    referans: "KVK Md. 5/1-k | SPK"
+  - id: K4
+    soru: "TAPU DEVRİ gerçekleşti mi? VKŞ adına tapuya 'Mülkiyet' tescili var mı? Tapu senedi dosyada mı?"
+    referans: "KVK Md. 5/1-k | Medeni Kanun Md. 705"
+  - id: K5
+    soru: "5/1-k (358) mı 5/1-j (355/356) mi? Geri devir taahhütlü + leaseback varsa 5/1-j kapsamına dönebilir — özelge!"
+    referans: "KVK Md. 5/1-j ve 5/1-k"
+  - id: K6
+    soru: "Geri devir opsiyonelliği (5/1-k) ile zorunluluk (5/1-j) ayrışması belgelendi mi? Bent seçim gerekçesi dosyada mı?"
+    referans: "KVK Md. 5/1-j ve 5/1-k | GİB Özelgesi"
+  - id: K7
+    soru: "KDV 17/4-r analizi yapıldı mı? Tapu harcı hem devir hem geri devir (opsiyonel) aşamaları için analiz edildi mi?"
+    referans: "KDVK Md. 17/4-r | Harçlar Kanunu"
+  - id: K8
+    soru: "F.6 tutarı 549 hesabına tapu devir yılında alındı mı? G.1 = F.6 uyumlu mu?"
+    referans: "KVK Md. 5/1-k | 1 S.No.lu KV GT"
+  - id: K9
+    soru: "Fon amortizasyonu sukuk vadesine paralel, kira/getiri payına orantılı mı yapılıyor?"
+    referans: "KVK Md. 5/1-k"
+  - id: K10
+    soru: "Satış bedeli değerleme raporu ile uyumlu mu? SPK ihraç bağlamında gayrimenkul değerleme kritiktir."
+    referans: "KVK Md. 13 | SPK"
+  - id: K11
+    soru: "Sukuk türü (İcara/Murabaha/Wakala/Muşaraka) doğru belirlendi mi? Her türün kendi sözleşme paketi mevcuttur."
+    referans: "SPK Sukuk Tebliği"
+  - id: K12
+    soru: "358 yalnızca TAPU DEVİR YILINDA kullanıldı mı? Sonraki yıllarda 358 satırına yazılmadı mı?"
+    referans: "KV Beyannamesi 358 Satırı"
+  - id: K13
+    soru: "358 'Kazancın Bulunması Halinde' bölümünde mi? 'Zarar Olsa Dahi' bölümünde değil mi?"
+    referans: "KVK Md. 5/1-k"
+  - id: K14
+    soru: "YİAKV matrahında 358 istisnasının etkisi ayrıca analiz edildi mi? (Tartışmalı — dönem mevzuatı esas)"
+    referans: "KVK Md. 32/C"
