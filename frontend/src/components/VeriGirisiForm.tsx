@@ -43,6 +43,45 @@ function secenekEtiketi(value: string): string {
   return SECENEK_ETIKETLERI[value] ?? value
 }
 
+// Human-readable labels for snake_case formula/intermediate result keys
+const ARA_ALAN_ETIKETLERI: Record<string, string> = {
+  brut_kar_payi_tl: 'Brüt Kâr Payı (TL)',
+  deger_farki: 'Değerleme Farkı',
+  emisyon_primi_tutari: 'Emisyon Primi Tutarı',
+  faaliyet_kari: 'Faaliyet Kârı',
+  fiili_vergi_yuku_oran: 'Fiili Vergi Yükü Oranı',
+  gsyf_toplam: 'GSYF Toplam Kazanç',
+  gsyo_toplam: 'GSYO Toplam Kazanç',
+  istisna_toplam: 'İstisna Toplamı',
+  istisna_tutari: 'İstisna Tutarı',
+  kapsam_ici_gelir: 'Kapsam İçi Gelir',
+  kiyaslama_borcu: 'Örtülü Sermaye Kıyaslama Borcu',
+  kkeg_faiz: 'KKEG Faiz Tutarı',
+  kkeg_tutari: 'KKEG Tutarı',
+  kur_farki_kazanci: 'Kur Farkı Kazancı',
+  max_izin_verilen_borc: 'Azami İzin Verilen Borç',
+  narge_carpili: 'Ar-Ge Oranı Uygulanmış Tutar',
+  net_istisna: 'Net İstisna',
+  net_istisna_tutari: 'Net İstisna Tutarı',
+  net_portfoy_kazanci: 'Net Portföy Kazancı',
+  net_sube_kazanci: 'Net Şube Kazancı',
+  nexus_orani: 'NEXUS Oranı',
+  oran_sayisal: 'Oran (Sayısal)',
+  ortulu_kazanc: 'Örtülü Kazanç Tutarı',
+  ortulu_sermaye: 'Örtülü Sermaye Tutarı',
+  ortulu_sermaye_orani: 'Örtülü Sermaye Oranı',
+  portfoy_ici_toplam: 'Portföy İçi Toplam',
+  satis_kazanci: 'Satış Kazancı',
+  urun_senedi_satis_kazanci: 'Ürün Senedi Satış Kazancı',
+  vergiye_tabi_kisim: 'Vergiye Tabi Kısım',
+  yonetim_kazanci: 'Yönetim Kazancı',
+  yurtdisi_faaliyet_kazanci: 'Yurt Dışı Faaliyet Kazancı',
+}
+
+function araAlaniEtiketi(key: string): string {
+  return ARA_ALAN_ETIKETLERI[key] ?? key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+}
+
 type FormFieldValue = string | number | boolean | null
 type FormValues = Record<string, FormFieldValue>
 
@@ -242,7 +281,7 @@ export default function VeriGirisiForm({
                 <p className="text-xs text-green-600 dark:text-green-400 font-medium mb-1">Ara Sonuçlar</p>
                 {Object.entries(hesapSonucu.ara_sonuclar).map(([key, val]) => (
                   <div key={key} className="flex justify-between text-xs text-green-700 dark:text-green-400">
-                    <span>{key}</span>
+                    <span>{araAlaniEtiketi(key)}</span>
                     <span>{formatCurrency(val)}</span>
                   </div>
                 ))}
