@@ -1,0 +1,211 @@
+ic_kod: gecici_md14_1b_kur_farki
+baslik: KVK Geçici Md.14/1-b — KKM Bankadan Alınan Kur Farkı Tazminat Ödemeleri İstisnası
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 371 }
+  - { donem: 2025, kod: 371 }
+
+mevzuat_dayanagi:
+  - KVK Geçici Madde 14/1-b
+  - '7352 sayılı Kanun (Yürürlük: 24/12/2021)'
+  - GİB KV Beyan Rehberi Mart 2026 (No:606)
+  - YİAKV Rehberi No:607 (E.7 DÜŞÜLEMEZ listesi)
+  - 49 No.lu KV Genel Tebliği (YMM tasdik)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2021-12-24"
+  bitis: null
+
+ana_kategori: doviz_alacak_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "370 kapsamında açılan KKM hesabından dönem içinde bankadan kur farkı tazminat ödemesi alındı mı?"
+  info_modal: |
+    KVK Geçici Md.14/1-b kapsamında, 370 (Md.14/1-a) kapsamında açılan KKM hesabından
+    dönem boyunca bankadan alınan kur farkı tazminat ödemeleri kurumlar vergisinden istisnadır.
+
+    **370 ile Fark:**
+    370 = Dönüşüm anındaki tek seferlik kur farkı değerleme kazancı (Md.14/1-a).
+    371 = KKM hesabı süresince bankadan dönemsel kur farkı koruma ödemeleri (Md.14/1-b).
+
+    **KRİTİK — YİAKV:** Bu istisna KVK 32/C (YİAKV) matrahından DÜŞÜLEMEZ.
+    370 ve 371 birlikte YİAKV E.7 listesinde yer almaktadır.
+  kapi_sorulari:
+    - id: kkm_aktif
+      soru: "370 kapsamında dönüşümden açılmış aktif KKM hesabı var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "371 yalnızca 31/12/2021 bilanço kaynaklı dönüşümden açılan KKM hesapları için geçerlidir."
+    - id: kur_farki_odeme_alindi
+      soru: "Dönem içinde bankadan kur farkı tazminat ödemesi/kredisi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "TL güçlü dönemlerde banka ödeme yapmaz → 371 sıfır olur. Banka ekstresiyle teyit zorunludur."
+    - id: yiakv_dusulemez
+      soru: "370 ve 371 toplamının YİAKV matrahından DÜŞÜLMEYECEĞI teyit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "370+371 tamamı YİAKV matrahından DÜŞÜLEMEZ (E.7). Her ikisi birlikte de ayrı ayrı da düşülemez."
+
+parametreler:
+  oran: 1.0
+  ymm_tasdik_esigi_tl: 500000
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: toplam_kur_farki_odeme
+      etiket: "Dönem içinde bankadan alınan toplam kur farkı tazminat ödemesi (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Banka hesap ekstresindeki 'KKM Kur Farkı' / 'Döviz Farkı Tazminatı' satırlarının toplamı"
+    - id: kapsam_disi_tutari
+      etiket: "Kapsam dışı tutarlar (31/12/2021 kaynaklı olmayan hesaplar)"
+      tip: para
+      zorunlu: false
+      yardim: "Kapsam dışı hesaplardan alınan ödemeler vergiye tabi kalır"
+    - id: beyan_edilen_istisna
+      etiket: "Beyan edilen 371 istisna tutarı (doğrudan giriş)"
+      tip: para
+      zorunlu: false
+  formuller:
+    net_istisna_tutari: "toplam_kur_farki_odeme - kapsam_disi_tutari"
+    istisna_tutari: "max(net_istisna_tutari, 0)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "toplam_kur_farki_odeme >= 0"
+      hata: "Kur farkı tazminat tutarı negatif olamaz. Banka ekstresiyle kontrol ediniz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Geçici Md.14/1-b (7352 sayılı Kanun, 24/12/2021): 370 kapsamındaki KKM hesabının
+  dönem boyunca bankadan fiilen tahsil edilen kur farkı tazminat ödemeleri istisna kapsamındadır.
+
+  ## KKM Kur Farkı Koruma Mekanizması
+  KKM hesabı açılışında referans kur (açılış günü TCMB kuru) belirlenir.
+  Dönem boyunca piyasa TCMB kuru referans kurun ÜSTÜNE çıkarsa:
+  → Banka, hesap sahibine kur farkını tazmin eder (102 Dr / 648 Kr veya 642 Kr).
+  → Bu tazminat ödemesi KVK Geçici Md.14/1-b kapsamında kurumlar vergisinden istisnadır.
+  TL güçlü dönemlerde (piyasa kuru < referans kur) banka ödeme yapmaz → 371 = 0.
+
+  ## 370 vs 371 Ayrımı
+  370 (Geçici Md.14/1-a): Dönüşüm anındaki TEK SEFERLİK kur farkı değerleme kazancı.
+  371 (Geçici Md.14/1-b): Hesap süresince bankadan DÖNEMSEL kur farkı koruma ödemeleri.
+  Aynı KKM hesabından her ikisi oluşabilir; her biri için ayrı beyanname satırı ve ayrı çalışma kâğıdı.
+
+  ## Faiz/Kâr Payı Ayrımı
+  KKM hesabı aynı zamanda faiz ve kâr payı da üretebilir.
+  Kur farkı tazminat ödemesi → 371 kapsamında istisna.
+  Faiz ve kâr payı geliri → 371 kapsamında DEĞİL; ayrı muhasebe ve vergi değerlendirmesi gerekir.
+  Banka ekstresinde bu iki tür gelirin ayrı satırlarda gösterilmesi zorunludur.
+
+  ## Hesap Yenileme (Rollover) ve Erken Kapatma
+  Yenileme: Yenilenen hesap için yeni referans kur (yenileme günü TCMB kuru) oluşur.
+  Orijinal 31/12/2021 kaynaklı bakiyenin devamı ise 371 kapsam analizi devam edebilir.
+  Erken Kapanma: Kapanma tarihine kadar alınan kur farkı ödemeleri 371 kapsamındadır.
+
+  ## YİAKV Etkisi — KRİTİK
+  371 kapsamındaki kur farkı tazminat istisnası YİAKV (KVK Md.32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV E.7'de hem 370 hem 371 DÜŞÜLEMEZ listesindedir.
+  EN SIK YAPILAN HATA: 371 tutarını 370'ten ayrı değerlendirerek YİAKV hesabını hatalı yapmak.
+  HER İKİSİ BİRLİKTE DE AYRI AYRI DA DÜŞÜLEMEZ.
+
+  ## YMM Tasdik
+  49 No.lu KV Genel Tebliği: Net 371 istisna tutarı ≥ 500.000 TL ise YMM tasdik raporu zorunludur.
+  370 tasdik raporu ile koordineli hazırlanması önerilir.
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Dönem İçinde Bankadan Alınan Kur Farkı Tazminat Ödemesi
+  Borç: 102 Bankalar (TL)
+  Alacak: 648 Diğer Olağan Gelirler / 642 Faiz Gelirleri
+  Açıklama: KKM hesabına bankadan alınan kur farkı tazminat ödemesi — KVK Geçici Md.14/1-b kapsamı
+
+  ## Kayıt 2 — 370 (Tek Seferlik) vs 371 (Dönemsel) Karşılaştırması
+  370 [Dönüşüm tarihi]: 646/679 Kr — Dönüşüm kur farkı değerleme kazancı (tek seferlik — Beyanname 370)
+  371 [Her ödeme]: 648/642 Kr — Bankadan alınan dönemsel kur farkı tazminatı (Beyanname 371)
+
+  ## Beyanname Akışı (370 + 371 Birlikte)
+  1. 646/679 ve 648/642 hesaplarındaki kazançlar ticari kârda yer alır.
+  2. KV Beyannamesi: 370. satır (değerleme) + 371. satır (kur farkı tazminat) → Kazancın Bulunması Halinde.
+  3. YİAKV MATRAHI: Her iki tutar da çıkarılmaz — asgari vergi matrahında kalır (E.7 DÜŞÜLEMEZ).
+  4. Faiz/kâr payı geliri 371 kapsamında değildir; ayrı satırda değerlendirilir.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Banka Hesap Ekstresi — Kur Farkı Tazminat Ödemeleri Ayrıştırılmış
+    detay: "Dönem içinde her KKM hesabına yapılan kur farkı tazminat ödemelerini gösteren banka ekstresi. Kur farkı satırları faiz gelirinden AYRI gösterilmiş olmalıdır."
+    temin_yeri: Banka Şubesi / İnternet Bankacılığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: KKM Hesap Sözleşmesi — Referans Kur ve Vade Bilgisi
+    detay: "KKM hesap açılış belgesi: Açılış tarihi, referans kur, vade, kur farkı ödeme şartları. 370 dönüşüm tarihi ile uyumlu olmalıdır."
+    temin_yeri: Banka KKM Sözleşmesi
+  - kategori: zorunlu
+    "no": 3
+    baslik: 370 Çalışma Kâğıdı — Çapraz Mutabakat
+    detay: "370 dosyasıyla çapraz kontrol — hesap tarihleri ve referans kurlar tutarlı olmalıdır. 31/12/2021 kaynaklı dönüşümün teyidi."
+    temin_yeri: 370 Çalışma Kâğıdı
+  - kategori: destekleyici
+    "no": 4
+    baslik: Kur Farkı Hesaplama Tablosu (C ve D Bölümleri)
+    detay: "Her KKM hesabı için dönem ödemeleri — D.3 net istisna tutarı beyanname 371 ile uyumlu olmalıdır."
+    temin_yeri: YMM Tasdik Dosyası
+  - kategori: destekleyici
+    "no": 5
+    baslik: KV Beyannamesi 371. Satır Doğrulama
+    detay: "Kazancın Bulunması Halinde bölümü. YİAKV matrahından çıkarılmamış olmalıdır."
+    temin_yeri: GİB e-Beyanname Sistemi
+  - kategori: destekleyici
+    "no": 6
+    baslik: TCMB Döviz Kur Tablosu
+    detay: "Banka kur farkı hesabını doğrulamak için dönem TCMB kurları."
+    temin_yeri: tcmb.gov.tr
+  - kategori: destekleyici
+    "no": 7
+    baslik: Muhasebe Yevmiye Kayıtları — 648/642
+    detay: "Kur farkı ödeme yevmiye kayıtları — C tablosu toplamıyla mutabık olmalıdır."
+    temin_yeri: Yevmiye Defteri
+  - kategori: destekleyici
+    "no": 8
+    baslik: Hesap Yenileme Belgesi (Varsa)
+    detay: "Rollover için yenileme sözleşmesi — yeni referans kur bilgisi ve kapsam analizi."
+    temin_yeri: Banka Belgesi
+
+k_checklist:
+  - id: K1
+    soru: "KKM hesabının 31/12/2021 bilanço kaynaklı dönüşümden açıldığı 370 çalışma kâğıdıyla çapraz teyit edildi mi?"
+    referans: "KVK Geçici Md.14/1-b"
+  - id: K2
+    soru: "Kur farkı tazminat ödemeleri banka ekstresiyle teyit edildi mi? Her hesap için banka ekstresi — kur farkı satırları faiz ve diğer gelirlerden ayrı mı?"
+    referans: "KVK Geçici Md.14/1-b | GİB Rehberi No:606"
+  - id: K3
+    soru: "C tablosundaki ödemeler banka ekstresiyle mutabık mı? Her KKM hesabı satırı ekstreden doğrulanmış mı?"
+    referans: "GİB KV Beyan Rehberi No:606"
+  - id: K4
+    soru: "Kapsam dışı KKM hesapları (31/12/2021 kaynaklı olmayan) ayrıştırıldı ve D.2 vergiye tabi tutuldu mu?"
+    referans: "KVK Geçici Md.14/1-b"
+  - id: K5
+    soru: "370 çalışma kâğıdıyla çapraz mutabakat yapıldı mı? KKM hesap tarihleri ve referans kurlar her iki dosyada tutarlı mı?"
+    referans: "KVK Geçici Md.14/1-a ve 1-b"
+  - id: K6
+    soru: "Kur farkı tazminatı, faiz/kâr payı gelirinden doğru ayrıştırıldı mı? Kur farkı → 371. Faiz/kâr payı → ayrı gelir."
+    referans: "KVK Geçici Md.14/1-b"
+  - id: K7
+    soru: "371 istisnası YİAKV matrahından DÜŞÜLMEDI mi? YİAKV E.7'de hem 370 hem 371 DÜŞÜLEMEZ kontrolü yapıldı mı?"
+    referans: "KVK Md.32/C | YİAKV Rehberi No:607 E.7"
+  - id: K8
+    soru: "Beyanname 371 satırı 'Kazancın Bulunması Halinde' bölümünde mi? Dönem zararı varsa uygulanmadı mı?"
+    referans: "GİB KV Beyan Rehberi No:606"
+  - id: K9
+    soru: "KKM hesabı vadeye kadar sürdü mü? Erken kapatma varsa o tarihe kadar alınan ödemelerin doğru hesaplandığı kontrol edildi mi?"
+    referans: "KVK Geçici Md.14/1-b"
+  - id: K10
+    soru: "Hesap yenileme (rollover) durumunda yeni kapsam analizi yapıldı ve yeni referans kur belirlendi mi?"
+    referans: "KVK Geçici Md.14/1-b | Banka Sözleşmesi"
+  - id: K11
+    soru: ">=500.000 TL ise YMM tasdik raporu düzenlendi veya tam tasdik kapsamında değerlendirildi mi?"
+    referans: "49 No.lu KV GT"
