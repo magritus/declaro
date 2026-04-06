@@ -5,6 +5,7 @@ from app.db.session import get_db
 from app.db.models.calisma import Calisma
 from app.db.models.donem import Donem
 from app.db.models.kalem_verisi import KalemVerisi
+from app.db.models.mukellef import Mukellef
 from app.katalog.cache import get_katalog
 from app.pipeline.kalem_hesaplayici import kalem_hesapla
 from app.pipeline.pipeline import pipeline_calistir
@@ -112,9 +113,11 @@ async def pipeline_hesapla_endpoint(calisma_id: int, db: AsyncSession = Depends(
     )
     kalem_verileri_db = {kv.ic_kod: kv.girdi_verileri or {} for kv in result.scalars().all()}
 
-    # Dönem yılını al
+    # Dönem ve mükellef bilgilerini al
     donem = await db.get(Donem, calisma.donem_id)
     donem_yili = donem.yil if donem else 2025
+    mukellef = await db.get(Mukellef, donem.mukellef_id) if donem else None
+    kv_orani_override = float(mukellef.kv_orani) if mukellef and mukellef.kv_orani else None
 
     sonuc = pipeline_calistir(
         ticari_kar_zarar=float(calisma.ticari_kar_zarar or 0),
@@ -123,6 +126,7 @@ async def pipeline_hesapla_endpoint(calisma_id: int, db: AsyncSession = Depends(
         istek_listesi=list(calisma.istek_listesi),
         kalem_verileri=kalem_verileri_db,
         donem_yili=donem_yili,
+        kv_orani_override=kv_orani_override,
     )
 
     return {

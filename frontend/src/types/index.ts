@@ -3,6 +3,7 @@ export interface Mukellef {
   unvan: string
   vkn: string
   vergi_dairesi?: string
+  kv_orani: number
   created_at: string
 }
 

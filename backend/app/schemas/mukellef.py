@@ -6,6 +6,7 @@ class MukellefCreate(BaseModel):
     unvan: str
     vkn: str
     vergi_dairesi: str | None = None
+    kv_orani: float = 0.25
 
     @field_validator("vkn")
     @classmethod
@@ -22,6 +23,26 @@ class MukellefCreate(BaseModel):
             raise ValueError("Ünvan boş olamaz")
         return v.strip()
 
+    @field_validator("kv_orani")
+    @classmethod
+    def kv_orani_gecerli(cls, v: float) -> float:
+        if not (0 < v <= 1):
+            raise ValueError("KV oranı 0 ile 1 arasında olmalıdır (örn: 0.25)")
+        return v
+
+
+class MukellefUpdate(BaseModel):
+    unvan: str | None = None
+    vergi_dairesi: str | None = None
+    kv_orani: float | None = None
+
+    @field_validator("kv_orani")
+    @classmethod
+    def kv_orani_gecerli(cls, v: float | None) -> float | None:
+        if v is not None and not (0 < v <= 1):
+            raise ValueError("KV oranı 0 ile 1 arasında olmalıdır (örn: 0.25)")
+        return v
+
 
 class MukellefResponse(BaseModel):
     model_config = {"from_attributes": True}
@@ -30,4 +51,5 @@ class MukellefResponse(BaseModel):
     unvan: str
     vkn: str
     vergi_dairesi: str | None
+    kv_orani: float
     created_at: datetime

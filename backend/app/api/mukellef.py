@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from app.db.session import get_db
 from app.db.models.mukellef import Mukellef
-from app.schemas.mukellef import MukellefCreate, MukellefResponse
+from app.schemas.mukellef import MukellefCreate, MukellefUpdate, MukellefResponse
 
 router = APIRouter(prefix="/mukellef", tags=["mukellef"])
 
@@ -40,6 +40,23 @@ async def mukellef_getir(mukellef_id: int, db: AsyncSession = Depends(get_db)):
     mukellef = result.scalar_one_or_none()
     if not mukellef:
         raise HTTPException(status_code=404, detail="Mükellef bulunamadı")
+    return mukellef
+
+
+@router.put("/{mukellef_id}", response_model=MukellefResponse)
+async def mukellef_guncelle(mukellef_id: int, data: MukellefUpdate, db: AsyncSession = Depends(get_db)):
+    result = await db.execute(select(Mukellef).where(Mukellef.id == mukellef_id))
+    mukellef = result.scalar_one_or_none()
+    if not mukellef:
+        raise HTTPException(status_code=404, detail="Mükellef bulunamadı")
+    if data.unvan is not None:
+        mukellef.unvan = data.unvan.strip()
+    if data.vergi_dairesi is not None:
+        mukellef.vergi_dairesi = data.vergi_dairesi or None
+    if data.kv_orani is not None:
+        mukellef.kv_orani = data.kv_orani
+    await db.commit()
+    await db.refresh(mukellef)
     return mukellef
 
 

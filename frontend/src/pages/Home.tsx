@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import ThemeToggle from '@/components/ThemeToggle'
+import declaroLogo from '@/assets/declero_logo.png'
 
 export default function Home() {
   const navigate = useNavigate()
@@ -9,9 +10,7 @@ export default function Home() {
       {/* Header */}
       <header className="border-b border-border-default px-8 py-5">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
-          <span className="text-xl font-semibold tracking-tight text-primary">
-            Declaro
-          </span>
+          <img src={declaroLogo} alt="Declaro" className="h-8 w-auto" />
           <div className="flex items-center gap-3">
             <span className="text-xs font-medium text-muted uppercase tracking-widest">
               Kurumlar Vergisi Yardımcısı
@@ -25,9 +24,9 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center justify-center px-8 py-24">
         <div className="max-w-2xl text-center space-y-8">
           <div className="space-y-4">
-            <h1 className="text-5xl font-bold tracking-tight text-primary leading-tight">
-              Declaro
-            </h1>
+            <div className="flex justify-center">
+              <img src={declaroLogo} alt="Declaro" className="h-40 w-auto" />
+            </div>
             <p className="text-xl text-secondary leading-relaxed">
               Kurumlar Vergisi beyanname süreçlerinizi adım adım yönetin.
               Mükellef kaydı, dönem tanımlama ve çalışma dosyası oluşturma

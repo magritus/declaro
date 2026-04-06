@@ -49,6 +49,7 @@ def pipeline_calistir(
     istek_listesi: list[str],
     kalem_verileri: dict[str, dict[str, Any]],
     donem_yili: int = 2025,
+    kv_orani_override: float | None = None,
 ) -> PipelineSonucu:
     """
     Ticari kâr → matrah → vergi tam pipeline.
@@ -57,7 +58,7 @@ def pipeline_calistir(
     """
     katalog = get_katalog()
     parametreler = _parametreler_yukle()
-    kv_orani = _kv_orani_al(donem_yili, parametreler)
+    kv_orani = Decimal(str(kv_orani_override)) if kv_orani_override else _kv_orani_al(donem_yili, parametreler)
     yiakv_orani = _yiakv_orani_al(donem_yili, parametreler)
 
     sonuc = PipelineSonucu()

@@ -11,6 +11,7 @@ class Mukellef(Base):
     unvan: Mapped[str] = mapped_column(String(200), nullable=False)
     vkn: Mapped[str] = mapped_column(String(10), nullable=False, unique=True, index=True)
     vergi_dairesi: Mapped[str | None] = mapped_column(String(100))
+    kv_orani: Mapped[float] = mapped_column(default=0.25, server_default="0.25")
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
     updated_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now(), onupdate=func.now())
 
