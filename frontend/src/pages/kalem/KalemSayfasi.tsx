@@ -6,12 +6,51 @@ import ChecklistTab from '@/components/kalem/ChecklistTab'
 import BelgelerTab from '@/components/kalem/BelgelerTab'
 import {
   useKalemSchema,
+  useKalemVeri,
   useHesapla,
   useSaveVeri,
   useUpdateChecklist,
   useUpdateBelgeler,
 } from '@/api/kalem'
 import type { HesapSonucu, ChecklistDurum, BelgeDurum } from '@/api/kalem'
+
+const ARA_ALAN_ETIKETLERI: Record<string, string> = {
+  brut_kar_payi_tl: 'Brüt Kâr Payı (TL)',
+  deger_farki: 'Değerleme Farkı',
+  emisyon_primi_tutari: 'Emisyon Primi Tutarı',
+  faaliyet_kari: 'Faaliyet Kârı',
+  fiili_vergi_yuku_oran: 'Fiili Vergi Yükü Oranı',
+  gsyf_toplam: 'GSYF Toplam Kazanç',
+  gsyo_toplam: 'GSYO Toplam Kazanç',
+  istisna_toplam: 'İstisna Toplamı',
+  istisna_tutari: 'İstisna Tutarı',
+  kapsam_ici_gelir: 'Kapsam İçi Gelir',
+  kiyaslama_borcu: 'Örtülü Sermaye Kıyaslama Borcu',
+  kkeg_faiz: 'KKEG Faiz Tutarı',
+  kkeg_tutari: 'KKEG Tutarı',
+  kur_farki_kazanci: 'Kur Farkı Kazancı',
+  max_izin_verilen_borc: 'Azami İzin Verilen Borç',
+  narge_carpili: 'Ar-Ge Oranı Uygulanmış Tutar',
+  net_istisna: 'Net İstisna',
+  net_istisna_tutari: 'Net İstisna Tutarı',
+  net_portfoy_kazanci: 'Net Portföy Kazancı',
+  net_sube_kazanci: 'Net Şube Kazancı',
+  nexus_orani: 'NEXUS Oranı',
+  oran_sayisal: 'Oran (Sayısal)',
+  ortulu_kazanc: 'Örtülü Kazanç Tutarı',
+  ortulu_sermaye: 'Örtülü Sermaye Tutarı',
+  ortulu_sermaye_orani: 'Örtülü Sermaye Oranı',
+  portfoy_ici_toplam: 'Portföy İçi Toplam',
+  satis_kazanci: 'Satış Kazancı',
+  urun_senedi_satis_kazanci: 'Ürün Senedi Satış Kazancı',
+  vergiye_tabi_kisim: 'Vergiye Tabi Kısım',
+  yonetim_kazanci: 'Yönetim Kazancı',
+  yurtdisi_faaliyet_kazanci: 'Yurt Dışı Faaliyet Kazancı',
+}
+
+function araAlaniEtiketi(key: string): string {
+  return ARA_ALAN_ETIKETLERI[key] ?? key.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
+}
 
 type Tab = 'veri' | 'hesaplamalar' | 'checklist' | 'belgeler' | 'muhasebe'
 
@@ -42,6 +81,7 @@ export default function KalemSayfasi() {
   const [kayitMesaji, setKayitMesaji] = useState<string | null>(null)
 
   const { data: kalem, isLoading: schemaYukleniyor, error: schemaHata } = useKalemSchema(icKod)
+  const { data: kalemVeri } = useKalemVeri(calismaId, icKod)
   const hesaplaMutation = useHesapla(calismaId, icKod)
   const saveVeriMutation = useSaveVeri(calismaId, icKod)
   const updateChecklistMutation = useUpdateChecklist(calismaId, icKod)
@@ -181,9 +221,17 @@ export default function KalemSayfasi() {
         <>
           <VeriGirisiForm
             alanlar={kalem.hesaplama_sablonu.veri_girisi_alanlari}
+            defaultValues={(kalemVeri?.girdi_verileri as Record<string, string | number | boolean | null>) ?? undefined}
             onSubmit={handleVeriSubmit}
             isLoading={hesaplaMutation.isPending || saveVeriMutation.isPending}
-            hesapSonucu={hesapSonucu}
+            hesapSonucu={hesapSonucu ?? (kalemVeri?.istisna_tutari != null ? {
+              ic_kod: icKod ?? '',
+              istisna_tutari: kalemVeri.istisna_tutari,
+              ara_sonuclar: kalemVeri.ara_sonuclar ?? {},
+              hatalar: [],
+              uyarilar: [],
+              aciklama: '',
+            } : null)}
           />
           {hesaplaMutation.error && (
             <div className="mt-3 p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded text-sm text-red-700 dark:text-red-300">
@@ -228,7 +276,7 @@ export default function KalemSayfasi() {
                   <div className="divide-y divide-border-subtle">
                     {Object.entries(hesapSonucu.ara_sonuclar).map(([key, val]) => (
                       <div key={key} className="flex justify-between px-4 py-3 text-sm">
-                        <span className="text-secondary">{key}</span>
+                        <span className="text-secondary">{araAlaniEtiketi(key)}</span>
                         <span className="font-medium text-primary">{formatCurrency(val)}</span>
                       </div>
                     ))}

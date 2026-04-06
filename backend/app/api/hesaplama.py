@@ -18,6 +18,29 @@ class KalemHesaplaRequest(BaseModel):
     girdi_verileri: dict[str, Any]
 
 
+@router.get("/{calisma_id}/kalem/{ic_kod}/veri")
+async def kalem_veri_getir(
+    calisma_id: int,
+    ic_kod: str,
+    db: AsyncSession = Depends(get_db),
+):
+    """Daha önce kaydedilmiş girdi verilerini ve hesap sonucunu döner."""
+    result = await db.execute(
+        select(KalemVerisi).where(
+            KalemVerisi.calisma_id == calisma_id,
+            KalemVerisi.ic_kod == ic_kod
+        )
+    )
+    kv = result.scalar_one_or_none()
+    if not kv:
+        return {"girdi_verileri": None, "istisna_tutari": None, "ara_sonuclar": None}
+    return {
+        "girdi_verileri": kv.girdi_verileri,
+        "istisna_tutari": float(kv.istisna_tutari) if kv.istisna_tutari is not None else None,
+        "ara_sonuclar": {k: float(v) for k, v in (kv.hesap_sonucu or {}).items()},
+    }
+
+
 @router.post("/{calisma_id}/kalem/{ic_kod}/hesapla")
 async def kalem_hesapla_endpoint(
     calisma_id: int,

@@ -85,6 +85,25 @@ export function useKatalogKalemler() {
   })
 }
 
+export interface KalemVeriResponse {
+  girdi_verileri: Record<string, unknown> | null
+  istisna_tutari: number | null
+  ara_sonuclar: Record<string, number> | null
+}
+
+export function useKalemVeri(calismaId: string | undefined, icKod: string | undefined) {
+  return useQuery<KalemVeriResponse>({
+    queryKey: ['kalem-veri', calismaId, icKod],
+    queryFn: async () => {
+      const { data } = await apiClient.get<KalemVeriResponse>(
+        `/calisma/${calismaId}/kalem/${icKod}/veri`
+      )
+      return data
+    },
+    enabled: !!calismaId && !!icKod,
+  })
+}
+
 export function useKalemSchema(icKod: string | undefined) {
   return useQuery<KalemSchema>({
     queryKey: ['kalem-schema', icKod],

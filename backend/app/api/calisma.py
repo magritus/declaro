@@ -250,6 +250,17 @@ async def istek_listesi_excel(calisma_id: int, db: AsyncSession = Depends(get_db
         "tartismali": "Tartışmalı",
     }
 
+    ana_kategori_map = {
+        "ar_ge_istisna": "Ar-Ge ve Teknoloji İstisnaları",
+        "diger_istisnalar": "Diğer İstisnalar",
+        "doviz_alacak_istisnalari": "Döviz / KKM Alacak İstisnaları",
+        "egitim_saglik_istisnalari": "Eğitim ve Sağlık İstisnaları",
+        "istirak_kazanc_istisnalari": "İştirak Kazancı İstisnaları",
+        "serbest_bolge_tgb_istisnalari": "Serbest Bölge ve TGB İstisnaları",
+        "varlik_satis_istisnalari": "Varlık Satış İstisnaları",
+        "yurtdisi_istisnalar": "Yurt Dışı İstisnaları (ÇVÖA)",
+    }
+
     for row_idx, ic_kod in enumerate(istek_listesi, start=2):
         kalem = katalog.get(ic_kod)
         if kalem is None:
@@ -258,7 +269,8 @@ async def istek_listesi_excel(calisma_id: int, db: AsyncSession = Depends(get_db
         bk_kodlar = list({bk.kod for bk in kalem.beyanname_kodlari})
         beyanname_satiri = "/".join(str(k) for k in sorted(bk_kodlar)) if bk_kodlar else ic_kod
         yiakv = yiakv_map.get(kalem.yiakv_etkisi.value if hasattr(kalem.yiakv_etkisi, "value") else kalem.yiakv_etkisi, str(kalem.yiakv_etkisi))
-        ana_kategori = kalem.ana_kategori or ""
+        ana_kategori_raw = kalem.ana_kategori or ""
+        ana_kategori = ana_kategori_map.get(ana_kategori_raw, ana_kategori_raw)
 
         row_fill = alt_fill if row_idx % 2 == 0 else None
 
