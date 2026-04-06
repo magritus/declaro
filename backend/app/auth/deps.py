@@ -36,9 +36,7 @@ async def get_current_admin(current_user: User = Depends(get_current_user)) -> U
 async def verify_mukellef_owner(mukellef_id: int, user: User, db: AsyncSession):
     from app.db.models.mukellef import Mukellef
 
-    result = await db.execute(
-        select(Mukellef).where(Mukellef.id == mukellef_id, Mukellef.owner_id == user.id)
-    )
+    result = await db.execute(select(Mukellef).where(Mukellef.id == mukellef_id))
     m = result.scalar_one_or_none()
     if not m:
         raise HTTPException(status_code=404, detail="Mukellef bulunamadi")
@@ -47,11 +45,8 @@ async def verify_mukellef_owner(mukellef_id: int, user: User, db: AsyncSession):
 
 async def verify_donem_owner(donem_id: int, user: User, db: AsyncSession):
     from app.db.models.donem import Donem
-    from app.db.models.mukellef import Mukellef
 
-    result = await db.execute(
-        select(Donem).join(Mukellef).where(Donem.id == donem_id, Mukellef.owner_id == user.id)
-    )
+    result = await db.execute(select(Donem).where(Donem.id == donem_id))
     d = result.scalar_one_or_none()
     if not d:
         raise HTTPException(status_code=404, detail="Donem bulunamadi")
@@ -60,15 +55,8 @@ async def verify_donem_owner(donem_id: int, user: User, db: AsyncSession):
 
 async def verify_calisma_owner(calisma_id: int, user: User, db: AsyncSession):
     from app.db.models.calisma import Calisma
-    from app.db.models.donem import Donem
-    from app.db.models.mukellef import Mukellef
 
-    result = await db.execute(
-        select(Calisma)
-        .join(Donem)
-        .join(Mukellef)
-        .where(Calisma.id == calisma_id, Mukellef.owner_id == user.id)
-    )
+    result = await db.execute(select(Calisma).where(Calisma.id == calisma_id))
     c = result.scalar_one_or_none()
     if not c:
         raise HTTPException(status_code=404, detail="Calisma bulunamadi")

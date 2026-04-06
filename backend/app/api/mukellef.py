@@ -21,9 +21,9 @@ async def mukellef_olustur(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    # VKN tekrar kontrolü — only within this user's records
+    # VKN tekrar kontrolü — sistem genelinde
     mevcut = await db.execute(
-        select(Mukellef).where(Mukellef.vkn == data.vkn, Mukellef.owner_id == current_user.id)
+        select(Mukellef).where(Mukellef.vkn == data.vkn)
     )
     if mevcut.scalar_one_or_none():
         raise HTTPException(status_code=409, detail="Bu VKN zaten kayitli")
@@ -45,7 +45,6 @@ async def mukellef_listele(
 ):
     result = await db.execute(
         select(Mukellef)
-        .where(Mukellef.owner_id == current_user.id)
         .order_by(Mukellef.unvan)
         .offset(skip)
         .limit(limit)
