@@ -23,12 +23,61 @@ ana_kategori: diger_istisnalar
 wizard_agaci:
   tetikleyici_soru: "Hesap döneminde tarım ürünü ürün senedi (ELÜS veya kağıt) sattın/devretttin mi?"
   info_modal: |
-    GVK Geçici Madde 76 kapsamında, 5300 Sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu
-    çerçevesinde düzenlenen ürün senetlerinin (ELÜS veya kağıt ürün senedi) elden
-    çıkarılmasından doğan kazançlar **%100 tam istisna** olarak uygulanır.
-    Beyannamede "Kazancın Bulunması Halinde" bölümünde 349. satırda gösterilir.
-    ÖNEMLİ: Geçici Madde statüsünde olup yürürlük tarihinin dönem için geçerli
-    olduğu güncel mevzuatla teyit edilmelidir.
+    ## Genel Çerçeve
+
+    GVK Geçici Madde 76, **5300 Sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu** çerçevesinde
+    lisanslı depo işletmecileri tarafından düzenlenen ürün senetlerinin (ELÜS veya kağıt ürün
+    senedi) elden çıkarılmasından doğan kazançlara **%100 tam istisna** tanımaktadır. İstisna,
+    KV beyannamesinin "Kazancın Bulunması Halinde" bölümündeki **349. satırda** gösterilir.
+    Geçici Madde statüsü nedeniyle her dönem için yürürlüğün ayrıca teyit edilmesi zorunludur.
+
+    ## Temel Koşullar
+
+    - Ürün senedini düzenleyen deponun **Tarım ve Orman Bakanlığı tarafından lisanslandırılmış**
+      olması zorunludur; lisanssız depo işletmecilerinin düzenlediği belgeler kapsam dışındadır.
+    - Kazancın **elden çıkarmadan** (satış, devir veya temlik) kaynaklanması şarttır; depolama
+      hizmet bedeli, taşıma geliri veya benzeri nitelikteki gelirler istisna kapsamına girmez.
+    - Ürün senedinin iktisap maliyeti **belgelenmiş** olmalıdır: ELÜS için BİAŞ Emtia Piyasası
+      alım ekstresi, kağıt ürün senedi için alış faturası veya müstahsil makbuzu zorunludur.
+    - İstisna "Kazancın Bulunması Halinde" bölümünde yer aldığından **dönem kâr ile pozitif**
+      sonuçlanmış olmalıdır; zarar döneminde bu satır kullanılamaz.
+    - **GVK Geçici Md.76'nın ilgili hesap dönemi için yürürlükte olduğu** güncel mevzuat veya
+      GİB açıklaması ile teyit edilmelidir; Geçici Madde süre uzatmaları Resmî Gazete'den takip
+      edilmelidir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Maliyet belgesi en yüksek risk kalemidir:** Belgesiz maliyet durumunda GİB tüm satış
+      bedelini kazanç olarak kabul edebilir ve tarhiyat yapabilir.
+    - İstisna yalnızca **elden çıkarma kazancını** kapsar; ürün senetlerinden elde edilen faiz,
+      kar payı veya kira benzeri getiriler istisna dışıdır.
+    - **ELÜS ve kağıt ürün senedi** ayrımı belge düzeninde kritiktir; ELÜS için MKK/BİAŞ ELÜS
+      kodu, kağıt senet için fiziki senet seri numarası kayıt altında tutulmalıdır.
+    - Kapsamdaki tarımsal ürünler (buğday, arpa, mısır, pamuk, zeytinyağı, fındık vb.) açısından
+      lisanslı depo yetkisinin bu ürünleri kapsayıp kapsamadığı kontrol edilmelidir.
+    - **49 No.lu KV Genel Tebliği kapsamında YMM tasdik raporu:** Tek satırda ≥500.000 TL veya
+      toplam ≥1.000.000 TL olması halinde YMM tasdik raporu zorunludur; tam tasdik kapsamındaki
+      mükellefler ayrıca rapor düzenlemez.
+
+    ## YİAKV İlişkisi
+
+    GVK Geçici Madde 76 kapsamındaki ürün senedi elden çıkarma kazancı istisnasının **Yurt İçi
+    Asgari Kurumlar Vergisi (YİAKV) matrahına herhangi bir etkisi bulunmamaktadır.** Bu istisna,
+    YİAKV matrahının hesabında indirim kalemi olarak dikkate alınmaz.
+
+    ## Pratik Notlar
+
+    - Birden fazla ürün senedi işlemi varsa her işlem için **ayrı satır ve ayrı belge paketi**
+      oluşturulmalı; toplu tutar GİB tarafından kabul edilmeyebilir.
+    - ELÜS alım-satım işlemlerinde BİAŞ Emtia Piyasası ekstrelerinin **her iki yönde de** (alış
+      ve satış) dosyada bulunması şiddetle tavsiye edilir.
+    - Kağıt ürün senedi ciro yoluyla devredildiğinde ciro zincirinin eksiksiz belgede yer alması
+      gerekmekte; kopuk ciro → ispat güçlüğü riskini beraberinde getirmektedir.
+    - İstisna kazancı hesabı: **Satış/devir bedeli − Maliyet − Elden çıkarma giderleri** (BİAŞ
+      komisyonu, takas ücreti, taşıma giderleri vb.). Sonucun negatif çıkması durumunda bu istisna
+      uygulanamaz, ancak oluşan zarar diğer kurum kazançlarından indirilebilir.
+    - GVK Geçici Md.76 bir **Geçici Madde** olduğundan beyanname dönemi için yürürlük kontrolü
+      beyan rehberine veya Resmî Gazete'ye bakılarak her dönem mutlaka yapılmalıdır.
   kapi_sorulari:
     - id: lisansli_depo_mu
       soru: "Ürün senedi, Tarım ve Orman Bakanlığı lisanslı depo işletmecisi tarafından düzenlendi mi?"
