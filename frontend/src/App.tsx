@@ -6,6 +6,9 @@ import ErrorBoundary from '@/components/ErrorBoundary'
 import { useAuth } from '@/hooks/useAuth'
 import LoginPage from '@/pages/auth/LoginPage'
 import RegisterPage from '@/pages/auth/RegisterPage'
+import ProfilePage from '@/pages/profile/ProfilePage'
+import AdminUsersPage from '@/pages/admin/AdminUsersPage'
+import AdminRoute from '@/components/AdminRoute'
 import Faz0DonemAcilis from '@/pages/wizard/Faz0DonemAcilis'
 import Faz1AnaKategoriTarama from '@/pages/wizard/Faz1AnaKategoriTarama'
 import Faz2AltKategoriAyirma from '@/pages/wizard/Faz2AltKategoriAyirma'
@@ -44,6 +47,10 @@ function App() {
             <Route path="/calisma/:calismaId/istek-listesi" element={<IstekListesi />} />
             <Route path="/calisma/:calismaId/ozet" element={<MaliKarOzeti />} />
             <Route path="/calisma/:calismaId/kalem/:icKod" element={<KalemSayfasi />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route element={<AdminRoute />}>
+              <Route path="/admin/users" element={<AdminUsersPage />} />
+            </Route>
           </Route>
         </Route>
       </Routes>

@@ -21,4 +21,5 @@ class UserResponse(BaseModel):
 
     id: int
     email: str
+    role: str
     is_active: bool

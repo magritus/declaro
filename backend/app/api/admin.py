@@ -1,0 +1,159 @@
+import logging
+
+from fastapi import APIRouter, Depends, HTTPException, Query
+from sqlalchemy import func, select
+from sqlalchemy.ext.asyncio import AsyncSession
+
+from app.auth.deps import get_current_admin
+from app.db.models.mukellef import Mukellef
+from app.db.models.user import User, UserRole
+from app.db.session import get_db
+from app.schemas.user import (
+    AdminStatsResponse,
+    AdminUpdateUserRequest,
+    UserDetailResponse,
+    UserListResponse,
+)
+
+logger = logging.getLogger(__name__)
+router = APIRouter(prefix="/admin", tags=["admin"])
+
+
+async def _user_with_count(user: User, db: AsyncSession) -> UserDetailResponse:
+    count_result = await db.execute(
+        select(func.count()).where(Mukellef.owner_id == user.id)
+    )
+    mukellef_count = count_result.scalar() or 0
+    return UserDetailResponse(
+        id=user.id,
+        email=user.email,
+        role=user.role.value,
+        is_active=user.is_active,
+        created_at=user.created_at,
+        updated_at=user.updated_at,
+        mukellef_count=mukellef_count,
+    )
+
+
+@router.get("/users", response_model=UserListResponse)
+async def list_users(
+    page: int = Query(default=1, ge=1),
+    page_size: int = Query(default=20, le=100),
+    role: str | None = None,
+    is_active: bool | None = None,
+    db: AsyncSession = Depends(get_db),
+    _: User = Depends(get_current_admin),
+):
+    q = select(User)
+    if role:
+        q = q.where(User.role == role)
+    if is_active is not None:
+        q = q.where(User.is_active == is_active)
+    total_result = await db.execute(select(func.count()).select_from(q.subquery()))
+    total = total_result.scalar() or 0
+    result = await db.execute(
+        q.order_by(User.created_at.desc())
+        .offset((page - 1) * page_size)
+        .limit(page_size)
+    )
+    users = result.scalars().all()
+    items = [await _user_with_count(u, db) for u in users]
+    return UserListResponse(items=items, total=total, page=page, page_size=page_size)
+
+
+@router.get("/users/{user_id}", response_model=UserDetailResponse)
+async def get_user(
+    user_id: int,
+    db: AsyncSession = Depends(get_db),
+    _: User = Depends(get_current_admin),
+):
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı")
+    return await _user_with_count(user, db)
+
+
+@router.patch("/users/{user_id}", response_model=UserDetailResponse)
+async def update_user(
+    user_id: int,
+    data: AdminUpdateUserRequest,
+    db: AsyncSession = Depends(get_db),
+    current_admin: User = Depends(get_current_admin),
+):
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı")
+    # Son admin koruması — kendi hesabını deaktif veya rolünü düşürme
+    if user.id == current_admin.id and (data.role == "user" or data.is_active is False):
+        raise HTTPException(
+            status_code=400,
+            detail="Kendi hesabınızı deaktif edemez veya rolünüzü düşüremezsiniz",
+        )
+    if data.role == "user" and user.role == UserRole.admin:
+        admin_count_result = await db.execute(
+            select(func.count()).where(User.role == UserRole.admin, User.is_active == True)  # noqa: E712
+        )
+        admin_count = admin_count_result.scalar() or 0
+        if admin_count <= 1:
+            raise HTTPException(
+                status_code=400,
+                detail="Son admin kullanıcısının rolü değiştirilemez",
+            )
+    if data.role is not None:
+        user.role = UserRole(data.role)
+    if data.is_active is not None:
+        user.is_active = data.is_active
+    await db.commit()
+    await db.refresh(user)
+    logger.info("Admin updated user id=%d by admin id=%d", user_id, current_admin.id)
+    return await _user_with_count(user, db)
+
+
+@router.delete("/users/{user_id}", status_code=204)
+async def delete_user(
+    user_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_admin: User = Depends(get_current_admin),
+):
+    if user_id == current_admin.id:
+        raise HTTPException(status_code=400, detail="Kendi hesabınızı silemezsiniz")
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı")
+    if user.role == UserRole.admin:
+        admin_count_result = await db.execute(
+            select(func.count()).where(User.role == UserRole.admin, User.is_active == True)  # noqa: E712
+        )
+        if (admin_count_result.scalar() or 0) <= 1:
+            raise HTTPException(status_code=400, detail="Son admin silinemez")
+    await db.delete(user)
+    await db.commit()
+    logger.info("User id=%d deleted by admin id=%d", user_id, current_admin.id)
+
+
+@router.get("/stats", response_model=AdminStatsResponse)
+async def get_stats(
+    db: AsyncSession = Depends(get_db),
+    _: User = Depends(get_current_admin),
+):
+    total_users = (await db.execute(select(func.count(User.id)))).scalar() or 0
+    active_users = (
+        await db.execute(select(func.count(User.id)).where(User.is_active == True))  # noqa: E712
+    ).scalar() or 0
+    admin_count = (
+        await db.execute(select(func.count(User.id)).where(User.role == UserRole.admin))
+    ).scalar() or 0
+    user_count = (
+        await db.execute(select(func.count(User.id)).where(User.role == UserRole.user))
+    ).scalar() or 0
+    total_mukellefler = (await db.execute(select(func.count(Mukellef.id)))).scalar() or 0
+    return AdminStatsResponse(
+        total_users=total_users,
+        active_users=active_users,
+        total_mukellefler=total_mukellefler,
+        admin_count=admin_count,
+        user_count=user_count,
+    )

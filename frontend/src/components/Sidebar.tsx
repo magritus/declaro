@@ -2,6 +2,7 @@ import { useLocation, useNavigate, NavLink } from 'react-router-dom'
 import { useCalisma } from '@/api/calisma'
 import { useDonem } from '@/api/donem'
 import { useMukellef } from '@/api/mukellef'
+import { useAuth } from '@/hooks/useAuth'
 import ThemeToggle from '@/components/ThemeToggle'
 import declaroLogo from '@/assets/declero_logo.png'
 
@@ -86,6 +87,7 @@ function WizardStep({ to, label, active, done, accessible }: WizardStepProps) {
 export default function Sidebar() {
   const { pathname } = useLocation()
   const navigate = useNavigate()
+  const { user, logout } = useAuth()
   const calismaId = useCalismaId()
   const calismaIdNum = calismaId ? Number(calismaId) : undefined
 
@@ -231,10 +233,73 @@ export default function Sidebar() {
         )}
       </nav>
 
-      {/* Bottom: theme toggle */}
-      <div className="px-4 py-3.5 border-t border-border-subtle flex items-center justify-between flex-shrink-0">
-        <span className="text-xs text-muted font-medium">Görünüm</span>
-        <ThemeToggle />
+      {/* Bottom: user section */}
+      <div className="border-t border-border-subtle px-3 py-3 space-y-1 flex-shrink-0">
+        {/* User avatar + info */}
+        <div className="flex items-center gap-2 px-1 py-1.5 mb-1">
+          <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-white text-xs font-bold flex-shrink-0">
+            {user?.email?.[0]?.toUpperCase() ?? '?'}
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm text-primary truncate font-medium">{user?.email}</p>
+            {user?.role === 'admin' && (
+              <span className="text-xs text-emerald-500 dark:text-emerald-400 font-medium">Admin</span>
+            )}
+          </div>
+        </div>
+
+        {/* Profile link */}
+        <NavLink
+          to="/profile"
+          className={({ isActive }: { isActive: boolean }) =>
+            `w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
+              isActive
+                ? 'bg-accent/10 text-accent dark:bg-accent/15'
+                : 'text-secondary hover:bg-surface-overlay hover:text-primary'
+            }`
+          }
+        >
+          <svg className="w-4 h-4 flex-shrink-0 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Profil
+        </NavLink>
+
+        {/* Admin users link — only for admins */}
+        {user?.role === 'admin' && (
+          <NavLink
+            to="/admin/users"
+            className={({ isActive }: { isActive: boolean }) =>
+              `w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
+                isActive
+                  ? 'bg-accent/10 text-accent dark:bg-accent/15'
+                  : 'text-secondary hover:bg-surface-overlay hover:text-primary'
+              }`
+            }
+          >
+            <svg className="w-4 h-4 flex-shrink-0 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            Kullanıcı Yönetimi
+          </NavLink>
+        )}
+
+        {/* Theme toggle + logout row */}
+        <div className="flex items-center justify-between px-1 pt-1">
+          <div className="flex items-center gap-1.5">
+            <span className="text-xs text-muted font-medium">Görünüm</span>
+            <ThemeToggle />
+          </div>
+          <button
+            onClick={logout}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs font-medium text-muted hover:text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30 transition-colors duration-150"
+          >
+            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            </svg>
+            Çıkış
+          </button>
+        </div>
       </div>
     </aside>
   )

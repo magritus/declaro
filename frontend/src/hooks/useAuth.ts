@@ -6,12 +6,14 @@ const TOKEN_KEY = 'declaro-auth-token'
 interface AuthUser {
   id: number
   email: string
+  role: 'user' | 'admin'
 }
 
 interface AuthStore {
   token: string | null
   user: AuthUser | null
   initialized: boolean
+  isAdmin: () => boolean
   login: (email: string, password: string) => Promise<void>
   register: (email: string, password: string) => Promise<void>
   logout: () => void
@@ -19,14 +21,15 @@ interface AuthStore {
 }
 
 async function fetchMe(): Promise<AuthUser> {
-  const { data } = await apiClient.get<{ id: number; email: string; is_active: boolean }>('/auth/me')
-  return { id: data.id, email: data.email }
+  const { data } = await apiClient.get<{ id: number; email: string; role: 'user' | 'admin'; is_active: boolean }>('/auth/me')
+  return { id: data.id, email: data.email, role: data.role ?? 'user' }
 }
 
 export const useAuth = create<AuthStore>((set, get) => ({
   token: null,
   user: null,
   initialized: false,
+  isAdmin: () => get().user?.role === 'admin',
 
   init: async () => {
     if (get().initialized) return
