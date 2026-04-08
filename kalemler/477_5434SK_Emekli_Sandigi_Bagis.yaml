@@ -1,0 +1,171 @@
+ic_kod: emekli_sandigi_bagis_5434sk
+baslik: T.C. Emekli Sandığına Bağış
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 477 }
+  - { donem: 2025, kod: 477 }
+
+mevzuat_dayanagi:
+  - 5434 sayılı T.C. Emekli Sandığı Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "5434 sayılı T.C. Emekli Sandığı Kanunu kapsamında TC Emekli Sandığı'na bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **5434 sayılı T.C. Emekli Sandığı Kanunu** kapsamında TC Emekli Sandığı'na
+    veya Sandık bünyesindeki sosyal destek fonu/programa yapılan bağış ve
+    yardımların **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ## Alıcı Niteliği
+
+    - TC Emekli Sandığı (doğrudan, 5434 s.K. kapsamı)
+    - Sandık bünyesindeki sosyal destek fonu veya program
+
+    **Not:** 5434 sayılı Kanun kapsamındaki Emekli Sandığı, SGK'ya devredilmiş olmakla
+    birlikte hukuki referans aynı kalmaktadır.
+
+    **Kapsam dışı:** SGK'ya yapılan genel prim katkısı veya başka emeklilik kuruluşu.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **477 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_emekli_sandigi
+      soru: "Bağış 5434 s.K. kapsamında TC Emekli Sandığı'na mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "TC Emekli Sandığı (5434 s.K.) veya bünyesindeki fon/program. SGK'ya yapılan genel katkı veya başka emeklilik kuruluşu → Bu kod değil. 5434 s.K. özelinde Emekli Sandığı alıcı olmalı."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "Emekli Sandığı / SGK'dan resmi bağış makbuzu / kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5434 s.K. kapsamında Emekli Sandığı veya devir sonrası SGK'dan düzenlenen resmi makbuz veya bağış kabul yazısı zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile TC Emekli Sandığı'na yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Ayni bağışın maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Ayni bağış varsa maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  5434 sayılı T.C. Emekli Sandığı Kanunu kapsamında TC Emekli Sandığı'na veya
+  bünyesindeki sosyal destek fonu/programa yapılan bağış ve yardımların tamamı
+  kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı 5434 s.K. kapsamında TC Emekli Sandığı mı?
+  - SGK'ya genel prim katkısıyla karıştırılmadı mı?
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - Emekli Sandığı/SGK'dan resmi makbuz/kabul yazısı
+
+  ## YİAKV Etkisi
+  477 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 5434 s.K. kapsamında TC Emekli Sandığı'na nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 5434 s.K. kapsamında TC Emekli Sandığı'na ayni bağış.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 477. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (TC Emekli Sandığı / 5434 s.K. Kapsamı)
+    detay: "TC Emekli Sandığı veya SGK'nın 5434 s.K. kapsamındaki statüsünü gösteren belge."
+    temin_yeri: Emekli Sandığı / SGK
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Resmi Makbuz
+    detay: "Emekli Sandığı veya SGK'dan düzenlenen resmi makbuz veya bağış kabul yazısı."
+    temin_yeri: Alıcı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme Emekli Sandığı/SGK'nın resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim tutanağı ve maliyet/net defter değerini gösteren belge."
+    temin_yeri: Muhasebe / Alıcı Kurum
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (TC Emekli Sandığı — 5434 s.K. kapsamı)"
+    referans: "5434 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "SGK genel prim katkısı veya başka emeklilik kuruluşu ile karıştırılmadı mı?"
+    referans: "5434 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "5434 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "Emekli Sandığı/SGK'dan resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "5434 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (477 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

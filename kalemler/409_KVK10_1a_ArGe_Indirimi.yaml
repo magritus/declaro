@@ -1,0 +1,305 @@
+ic_kod: arge_indirimi_kvk_10_1a
+baslik: Ar-Ge İndirimi (KVK Md.10/1-a)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 409 }
+  - { donem: 2025, kod: 409 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-a
+  - 1 Seri No.lu Kurumlar Vergisi Genel Tebliği
+  - 49 Seri No.lu KV Genel Tebliği (30.12.2025)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: arge_tasarim_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "İşletme bünyesinde Ar-Ge faaliyeti yürüttünüz ve nitelikli Ar-Ge harcaması yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-a** kapsamında, **işletme bünyesinde** yürütülen ve
+    münhasıran yeni teknoloji ve bilgi arayışına yönelik Ar-Ge faaliyetlerine
+    ilişkin harcamaların **%100'ü** kurumlar vergisi matrahından indirilebilir.
+
+    ## Ar-Ge Merkezi Belgesi Gerekir mi?
+
+    **HAYIR.** KVK Md.10/1-a kapsamında Ar-Ge Merkezi Belgesi veya STB proje
+    onayı **gerekmez**. Bu, 5746 sayılı Kanun kapsamındaki Ar-Ge Merkezi
+    İndiriminden (410 kodu) temel farkıdır.
+
+    Ancak faaliyetlerin işletme bünyesinde ve münhasıran yeni teknoloji/bilgi
+    arayışına yönelik olması zorunludur.
+
+    ## İndirim Oranı ve Devreden Tutarlar
+
+    - Cari dönem nitelikli Ar-Ge harcamasının **%100'ü** temel indirim olarak
+      uygulanır.
+    - Önceki dönemden devreden Ar-Ge indirimi **YDO (Yeniden Değerleme Oranı)
+      ile artırılmaz** — artırımsız olarak devredilir. Bu, 5746 kapsamındaki
+      410 kodundan kritik bir farktır.
+    - Kazancı aşan kısım sonraki dönemlere devrolur.
+
+    ## Kritik Fark: 409 ile 410 Karşılaştırması
+
+    | Özellik | 409 (KVK 10/1-a) | 410 (5746 Md.3) |
+    |---------|------------------|-----------------|
+    | Ar-Ge Merkezi Belgesi | Gerekmez | Zorunlu |
+    | Devreden indirim YDO artışı | YOK | VAR |
+    | GV Stopaj Terkini | Yok | Var |
+    | SGK Desteği | Yok | Var |
+    | Artırımlı indirim | Yok | Var (≥%20 artış şartı) |
+
+    ## Çifte İndirim Yasağı
+
+    Aynı Ar-Ge harcaması için hem KVK 10/1-a (409) hem de 5746 (410 veya 454)
+    birlikte kullanılamaz. Mükellef, hangi kanun kapsamında yararlanacağını
+    seçmeli ve tutarlı şekilde uygulamalıdır.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-a kapsamındaki Ar-Ge indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEBİLİR.** Bu, 402 kodu (bağış indirimi) gibi yalnızca bilgi satırında
+    gösterilen bir kalemden farklı olarak YİAKV matrahını azaltır.
+
+    ## Pratik Notlar
+
+    - Ar-Ge harcamaları muhasebede diğer faaliyetlerden ayrı izlenmeli ve
+      belgelenmelidir (1 No.lu KV GT zorunluluğu).
+    - Kısmi çalışan personel için Ar-Ge süresi / Toplam süre oranı uygulanır.
+    - Finansman giderleri (faiz vb.) kapsam dışıdır.
+    - İndirim tutarı ≥500.000 TL veya toplam ≥1.000.000 TL ise YMM tasdik
+      raporu zorunludur (49 No.lu KV GT).
+  kapi_sorulari:
+    - id: faaliyet_isletme_bunyesinde
+      soru: "Ar-Ge faaliyetleri işletme bünyesinde yürütülüyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 10/1-a kapsamında faaliyetlerin işletme bünyesinde yürütülmesi zorunludur. Dışarıdan alınan hizmetler sınırlı tutulabilir. Sipariş bazlı Ar-Ge veya tamamen dış hizmete dayalı faaliyetler bu kapsama girmeyebilir."
+    - id: faaliyet_yeni_teknoloji
+      soru: "Ar-Ge faaliyetleri münhasıran yeni teknoloji ve bilgi arayışına yönelik mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Mevcut bilgi veya tekniklerle çözülebilir faaliyetler kapsam dışıdır. Rutin geliştirme, pazarlanabilir ürün testleri ve olağan ürün iyileştirmeleri kapsama girmez."
+    - id: muhasebe_ayrim
+      soru: "Ar-Ge harcamaları diğer faaliyetlerden ayrı muhasebeleştiriliyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "1 No.lu KV GT'de Ar-Ge harcamalarının diğer faaliyetlerden ayrıştırılarak muhasebeleştirilmesi zorunlu tutulmuştur. Ayrım yapılmaksızın hesaplanan indirim reddedilebilir."
+    - id: cifte_indirim_yok
+      soru: "Aynı harcamalar için 5746 Md.3 (410) veya Md.3/A (454) kapsamında indirim uygulanmıyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "ÇİFTE İNDİRİM YASAĞI: Aynı Ar-Ge harcaması için hem KVK 10/1-a (409) hem de 5746 (410 veya 454) birlikte kullanılamaz. Mükellef tek bir rejim seçmeli ve tutarlı uygulamalıdır."
+
+parametreler:
+  temel_indirim_orani: 1.0
+  ydo_artirimi: false
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nitelikli_arge_harcamasi
+      etiket: "Nitelikli Ar-Ge harcaması (TL) — Cari dönemde yapılan kapsam içi harcamalar"
+      tip: para
+      zorunlu: true
+      yardim: |
+        KVK Md.10/1-a kapsamında kapsam içi harcama türleri:
+        - Ar-Ge personeli ücret giderleri (Ar-Ge faaliyetine ayrılan süre oranında)
+        - Malzeme ve hammadde giderleri (Ar-Ge'ye özgü tüketilen)
+        - Amortisman giderleri (Ar-Ge'de kullanılan ATİK'lere isabet eden)
+        - Dışarıdan alınan fayda ve hizmetler (üniversite, araştırma kurumu vb.)
+        - Genel giderler (Ar-Ge faaliyetine isabet eden orantılı pay)
+        - Vergi, resim ve harçlar (proje ile doğrudan ilişkili)
+        KAPSAM DIŞI: Finansman giderleri (faiz vb.) dahil edilmez.
+    - id: onceki_donem_devreden_arge
+      etiket: "Önceki dönemden devreden Ar-Ge indirimi (TL) — YDO artışı uygulanmaz"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: |
+        Önceki yıl KV beyannamesi 409. satırında kullanılamayan devreden Ar-Ge indirimi tutarı.
+        KRİTİK: KVK 10/1-a'da devreden indirim YDO (Yeniden Değerleme Oranı) ile ARTIRILAMAZ.
+        Bu, 5746 Md.3 (410) kapsamındaki devreden tutardan temel farktır.
+        Önceki yıl beyanname bakiyesini doğrudan bu alana yazınız.
+    - id: beyan_edilen_kazanc
+      etiket: "Beyan edilen kazanç (TL) — Ar-Ge indirimi öncesi kurum kazancı"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Ar-Ge indirimi uygulanmadan önceki dönem kurum kazancı.
+        Bu tutar, indirim üst sınırını belirler; kazancı aşan indirim tutarı
+        sonraki dönemlere devredilir. Devreden tutar YDO ile artırılmaz.
+  formuller:
+    arge_indirimi_hesaplanan: "nitelikli_arge_harcamasi * 1.00"
+    toplam_indirim: "arge_indirimi_hesaplanan + onceki_donem_devreden_arge"
+    istisna_tutari: "min(toplam_indirim, beyan_edilen_kazanc)"
+    devreden_sonraki_doneme: "max(0, toplam_indirim - beyan_edilen_kazanc)"
+  sonuc_alan: istisna_tutari
+  ek_sonuc_alanlari:
+    - devreden_sonraki_doneme
+  validasyonlar:
+    - kural: "nitelikli_arge_harcamasi >= 0"
+      hata: "Nitelikli Ar-Ge harcaması negatif olamaz."
+    - kural: "nitelikli_arge_harcamasi > 0"
+      hata: "Nitelikli Ar-Ge harcaması sıfırdan büyük olmalıdır."
+    - kural: "onceki_donem_devreden_arge >= 0"
+      hata: "Devreden Ar-Ge indirimi negatif olamaz."
+    - kural: "beyan_edilen_kazanc >= 0"
+      hata: "Beyan edilen kazanç negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-a: İşletme bünyesinde gerçekleştirilen münhasıran yeni teknoloji
+  ve bilgi arayışına yönelik Ar-Ge harcamalarının %100'ü kurumlar vergisi matrahından
+  indirilir. 1 No.lu KV GT ve GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Hesaplama Özeti
+
+  1. Cari dönem nitelikli harcama × %100 = Temel Ar-Ge indirimi
+  2. + Önceki dönem devreden (YDO artışı YOKTUR)
+  3. = Toplam kullanılabilir indirim
+  4. Beyan edilen kazancı aşan kısım → sonraki dönemlere devrolur
+
+  ## 409 ile 410 Arasındaki Kritik Farklar
+
+  409 (KVK 10/1-a):
+  - Ar-Ge Merkezi Belgesi GEREKMEz
+  - Devreden indirim YDO ile ARTIRILAMAZ (artırımsız devredilir)
+  - GV Stopaj Terkini YOK
+  - SGK Desteği YOK
+  - Artırımlı indirim YOK
+
+  410 (5746 Md.3):
+  - Ar-Ge Merkezi Belgesi ZORUNLU
+  - Devreden indirim YDO ile artırılır
+  - GV Stopaj Terkini VAR (Doktoralı %95, YL %90, Diğer %80)
+  - SGK Desteği VAR (%50 Hazine)
+  - Artırımlı indirim VAR (≥%20 artış → artış tutarının %50'si ek indirim)
+
+  ## Çifte İndirim Yasağı
+  Aynı Ar-Ge harcaması için hem 409 (KVK 10/1-a) hem de 410/454 (5746)
+  birlikte kullanılamaz. Mükellef tek rejim seçmeli ve tutarlı uygulamalıdır.
+
+  ## Kapsam İçi Harcamalar (1 No.lu KV GT'ye Göre)
+
+  - H.1: Ar-Ge personeli ücret giderleri (kısmi çalışmada süre oranı)
+  - H.2: Malzeme ve hammadde giderleri (Ar-Ge'ye özgü tüketilen)
+  - H.3: Amortisman giderleri (Ar-Ge'de kullanılan ATİK'lere isabet eden)
+  - H.4: Dışarıdan alınan fayda/hizmetler (üniversite, araştırma kurumu vb.)
+  - H.5: Genel giderler (orantılı pay)
+  - H.6: Vergi, resim ve harçlar (proje ile doğrudan ilişkili)
+  KAPSAM DIŞI: H.7 — Finansman giderleri (faiz vb.)
+
+  NOT: 5746'dan farklı olarak destek personeli %10 ve dış hizmet %20 limiti
+  bu kapsam için açıkça belirlenmemiştir; ancak faaliyetlerin işletme bünyesinde
+  olduğu özünde korunmalıdır.
+
+  ## Devreden Tutar — Önemli Not
+  Devreden Ar-Ge indirimi VUK YDO ile artırılmaz. Gelecek dönemlere ham tutar
+  devredilir. YMM tasdik raporlarında devreden tutarın YDO uygulanmadan
+  doğrudan alındığı teyit edilmelidir.
+
+  ## YİAKV Etkisi
+  409 Ar-Ge indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.
+  "Kazancın Bulunması Halinde İndirilecek" bölümündedir; YİAKV matrahını azaltır.
+
+  ## YMM Tasdik Yükümlülüğü
+  - Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu zorunludur (49 No.lu KV GT).
+  - 41 No.lu Tebliğ Ar-Ge indirimi tasdik şartı da ayrıca değerlendirilmelidir.
+  - Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmeyebilir.
+
+muhasebe_kayitlari: |
+  ## Ar-Ge Harcaması Kaydı
+  Borç: 750 Araştırma ve Geliştirme Giderleri
+  Alacak: İlgili hesap (102 Bankalar / 191 İndirilecek KDV / vb.)
+  Açıklama: KVK Md.10/1-a kapsamında nitelikli Ar-Ge harcaması.
+
+  ## Dönem Sonu Aktifleştirme (Gerekiyorsa)
+  Borç: 263 Araştırma ve Geliştirme Giderleri (Aktifleştirilen)
+  Alacak: 750 Araştırma ve Geliştirme Giderleri
+  Açıklama: Tamamlanmamış Ar-Ge projesine ait aktifleştirilen giderler.
+
+  ## Beyanname
+  Hesaplanan toplam Ar-Ge indirimi beyanname 409. satırına aktarılır.
+  Beyan edilen kazancı aşan kısım devreden olarak kaydedilir ve
+  sonraki dönem beyannamesi 409. satırına dahil edilir (YDO artışı uygulanmaz).
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Ar-Ge Faaliyeti Kapsamı ve Nitelik Belgesi
+    detay: "Ar-Ge faaliyetinin yeni teknoloji ve bilgi arayışına yönelik olduğunu gösteren proje tanım belgesi veya teknik rapor. Faaliyetin rutin geliştirme/iyileştirmeden ayırt edilmesine imkân veren açıklama içermeli."
+    temin_yeri: İşletme Ar-Ge Birimi / Teknik Müdürlük
+  - kategori: zorunlu
+    "no": 2
+    baslik: Ar-Ge Harcamaları Detay Listesi ve Muhasebe Kayıtları
+    detay: "Harcama türleri (H.1–H.6) bazında dönem içinde yapılan tüm nitelikli Ar-Ge harcamalarının dökümü. Muhasebede Ar-Ge hesabına atılan tutarlarla uyumlu olmalı."
+    temin_yeri: Muhasebe / Mali İşler
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ar-Ge Personeli Listesi ve Çalışma Süresi Dağılımı
+    detay: "Ar-Ge faaliyetine dahil edilen personelin listesi, unvanları, eğitim durumları ve Ar-Ge faaliyetine ayırdıkları süre oranları (kısmi çalışanlar için süre cetveli)."
+    temin_yeri: İnsan Kaynakları / Bordro
+  - kategori: zorunlu
+    "no": 4
+    baslik: Önceki Dönem Devreden Ar-Ge İndirimi Belgesi
+    detay: "Önceki yıl kurumlar vergisi beyannamesi 409. satırında kullanılamayan devreden Ar-Ge indirimi tutarını gösteren belge. YDO artışı uygulanmamalıdır."
+    temin_yeri: Önceki Dönem KV Beyannamesi
+  - kategori: destekleyici
+    "no": 5
+    baslik: Proje Bazında Harcama Dağılım Tablosu
+    detay: "Birden fazla Ar-Ge projesi yürütülüyorsa her projeye ait harcama dökümü. Projelerin ayrı izlendiğini gösteren muhasebe detayları."
+    temin_yeri: Muhasebe / Proje Yönetimi
+  - kategori: destekleyici
+    "no": 6
+    baslik: ATİK Amortisman Hesaplama Cetveli (Ar-Ge'ye İsabet Eden Pay)
+    detay: "Kısmen Ar-Ge'de kullanılan duran varlıklar için gün sayısı oranına göre hesaplanan amortisman pay belgesi."
+    temin_yeri: Muhasebe / Sabit Kıymet Birimi
+  - kategori: destekleyici
+    "no": 7
+    baslik: Dışarıdan Alınan Ar-Ge Hizmetleri Sözleşme ve Faturaları
+    detay: "Üniversite, araştırma merkezi veya benzeri kuruluşlardan alınan Ar-Ge hizmetlerine ait sözleşme ve faturalar. Hizmetin Ar-Ge kapsamında olduğunu gösteren teknik açıklama içermeli."
+    temin_yeri: Satın Alma / İlgili Birim
+
+k_checklist:
+  - id: K1
+    soru: "Ar-Ge faaliyetlerinin işletme bünyesinde yürütüldüğü teyit edildi mi?"
+    referans: "KVK Md.10/1-a | 1 No.lu KV GT"
+  - id: K2
+    soru: "Faaliyetlerin münhasıran yeni teknoloji ve bilgi arayışına yönelik olduğu (rutin geliştirme olmadığı) belgelendi mi?"
+    referans: "KVK Md.10/1-a | 1 No.lu KV GT"
+  - id: K3
+    soru: "Ar-Ge harcamaları muhasebede diğer faaliyetlerden ayrı hesaplarda izleniyor mu?"
+    referans: "KVK Md.10/1-a | 1 No.lu KV GT"
+  - id: K4
+    soru: "Kapsam dışı harcamalar (finansman giderleri/faiz) indirim hesabına dahil edilmedi mi?"
+    referans: "KVK Md.10/1-a | 1 No.lu KV GT"
+  - id: K5
+    soru: "Kısmi çalışan Ar-Ge personeli için süre oranı (Ar-Ge süresi / Toplam süre) doğru uygulandı mı?"
+    referans: "KVK Md.10/1-a | 1 No.lu KV GT"
+  - id: K6
+    soru: "Aynı harcamalar için 5746 Md.3 (410) veya Md.3/A (454) kapsamında çifte indirim yapılmadığı doğrulandı mı?"
+    referans: "KVK Md.10/1-a — Çifte indirim yasağı"
+  - id: K7
+    soru: "Önceki dönemden devreden Ar-Ge indirimi YDO artışı uygulanmadan ham tutar olarak alındı mı?"
+    referans: "KVK Md.10/1-a — YDO artışı YOK (410'dan fark)"
+  - id: K8
+    soru: "Devreden tutar gelecek dönem için not edildi mi ve beyanname eki olarak saklandı mı?"
+    referans: "KVK Md.10/1-a | GİB Beyan Reh. 2026"
+  - id: K9
+    soru: "YİAKV (KVK 32/C) matrahına etkisi analiz edildi mi? (409 DÜŞÜLEBİLİR)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026"
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (tek satır ≥500.000 TL veya toplam ≥1.000.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT | 41 S.No.lu KV GT"
+  - id: K11
+    soru: "41 No.lu Tebliğ Ar-Ge indirimi tasdik şartı ayrıca değerlendirildi mi?"
+    referans: "41 S.No.lu KV GT"

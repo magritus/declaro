@@ -1,0 +1,177 @@
+ic_kod: antalya_diplomasi_forum_bagis_7430sk
+baslik: Antalya Diplomasi Forumu Vakfı'na Bağış
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 481 }
+  - { donem: 2025, kod: 481 }
+
+mevzuat_dayanagi:
+  - 7430 sayılı Antalya Diplomasi Forumu Vakfı Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "7430 sayılı Kanun kapsamında Antalya Diplomasi Forumu Vakfı'na bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **7430 sayılı Antalya Diplomasi Forumu Vakfı Kanunu** kapsamında Antalya
+    Diplomasi Forumu Vakfı'na (ADF Vakfı) yapılan bağış ve yardımların **tamamı**
+    kurumlar vergisi matrahından indirilir.
+
+    ADF Vakfı, Antalya Diplomasi Forumu kapsamında uluslararası diplomasi, diyalog
+    ve işbirliği faaliyetlerini desteklemek amacıyla 7430 sayılı Kanunla kurulan
+    vakıftır.
+
+    ## 483 (7512 s.K.) ile Fark
+
+    - 481 (7430 s.K.): Antalya Diplomasi Forumu etkinlik ve faaliyetleri
+    - 483 (7512 s.K.): Dışişleri Teşkilatını Güçlendirme Vakfı — kurumsal kapasite odaklı
+
+    **Kapsam dışı:** Antalya'daki başka vakıf/kurum, diplomasi forumu adını taşıyan
+    özel kuruluş.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **481 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_adf_vakfi
+      soru: "Bağış 7430 s.K. kapsamında Antalya Diplomasi Forumu Vakfı'na mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Antalya Diplomasi Forumu Vakfı (ADF Vakfı) — 7430 sayılı Kanunla kurulan resmi vakıf. Antalya'daki başka vakıf/kurum → Kapsam dışı. Diplomasi forumu adını taşıyan başka özel kuruluş → Kapsam dışı."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "ADF Vakfı'ndan resmi bağış makbuzu / kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "ADF Vakfı tarafından düzenlenen resmi makbuz veya bağış kabul yazısı zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla ADF Vakfı'na yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile ADF Vakfı'na yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Ayni bağışın maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Ayni bağış varsa maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  7430 sayılı Antalya Diplomasi Forumu Vakfı Kanunu kapsamında ADF Vakfı'na
+  yapılan bağış ve yardımların tamamı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## 483 ile Fark
+  481 (ADF Vakfı/7430 s.K.): Antalya Diplomasi Forumu etkinlikleri ve faaliyetleri.
+  483 (Dışişleri Vakfı/7512 s.K.): Dışişleri teşkilatının kurumsal kapasitesi güçlendirme.
+  İki farklı vakıf, iki farklı beyanname kodu — karıştırılmamalı.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı ADF Vakfı (7430 s.K.) mi?
+  - 483 ile karıştırılmadığı teyit edildi mi?
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - ADF Vakfı'ndan resmi makbuz/kabul yazısı
+
+  ## YİAKV Etkisi
+  481 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 7430 s.K. kapsamında ADF Vakfı'na nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 7430 s.K. kapsamında ADF Vakfı'na ayni bağış.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 481. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (ADF Vakfı — 7430 s.K. Kapsamı)
+    detay: "Antalya Diplomasi Forumu Vakfı'nın 7430 s.K. kapsamındaki resmi statüsünü gösteren belge."
+    temin_yeri: ADF Vakfı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Resmi Makbuz
+    detay: "ADF Vakfı tarafından düzenlenen resmi makbuz veya bağış kabul yazısı."
+    temin_yeri: ADF Vakfı
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme ADF Vakfı'nın resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim tutanağı ve maliyet/net defter değerini gösteren belge."
+    temin_yeri: Muhasebe / ADF Vakfı
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (ADF Vakfı — 7430 s.K. kapsamı)"
+    referans: "7430 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "483 (Dışişleri Teşkilatını Güçlendirme Vakfı) ile karıştırılmadığı teyit edildi mi?"
+    referans: "7430 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "7430 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "ADF Vakfı'ndan resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "7430 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (481 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

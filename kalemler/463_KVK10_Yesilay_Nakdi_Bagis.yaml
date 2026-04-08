@@ -1,0 +1,197 @@
+ic_kod: yesilay_nakdi_bagis_10_1f
+baslik: Türkiye Yeşilay Cemiyetine Nakdi Bağış (KVK Md.10/1-f)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 463 }
+  - { donem: 2025, kod: 463 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-f
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Türkiye Yeşilay Cemiyetine banka yoluyla nakdi bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-f** kapsamında, **Türkiye Yeşilay Cemiyetine** makbuz
+    karşılığında yapılan **nakdi bağış ve yardımların tamamı** kurumlar vergisi
+    matrahından indirilir.
+
+    Yeşilay; alkol, sigara ve madde bağımlılığıyla mücadele eden, bağımlılık
+    önleme, eğitim, rehabilitasyon ve toplumsal farkındalık faaliyetleri yürüten
+    sivil toplum kuruluşudur.
+
+    ## !! KRİTİK UYARI — YALNIZCA NAKDİ BAĞIŞ !! (462 Kızılay ile Aynı Kısıtlama)
+
+    **KVK Md.10/1-f kapsamında YALNIZCA NAKDİ bağış indirim konusu olabilir.**
+
+    Yeşilay'a yapılan **AYNİ bağış ve yardımlar** (malzeme, ekipman, broşür,
+    tanıtım materyali vb.) **KVK Md.10/1-f kapsamında İNDİRİLEMEZ** — kapsam dışıdır.
+
+    Ayni bağış yapıldıysa bu tutar KKEG'e alınır ve kurumlar vergisi matrahından
+    düşülemez → Net KV yükü doğurur.
+
+    **Yeşilay'a yardım planlanıyorsa nakdi bağış tercih edilmeli.**
+
+    ## Ödeme Koşulu
+
+    Nakdi bağış, **Türkiye Yeşilay Cemiyetinin resmi banka hesabına doğrudan**
+    EFT/havale ile yapılmalıdır. Üçüncü kişi hesabına ödeme → kapsam riski.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara
+    **devredilemez**.
+
+    ## 462 Kızılay ile Fark
+
+    Her iki kod da KVK Md.10/1-f altında yer alır. Kızılay için 462, Yeşilay için 463.
+    Her ikisinde de yalnızca nakdi bağış indirilebilir — ayni bağış kapsam dışıdır.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-f kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+  kapi_sorulari:
+    - id: yesilay_alici
+      soru: "Bağış Türkiye Yeşilay Cemiyetine mi yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Alıcı: Türkiye Yeşilay Cemiyeti (resmi unvan). Yeşilay'ın bağlı kuruluşları → Teyit gerekli. Başka bağımlılıkla mücadele derneği → Kapsam dışı."
+    - id: nakdi_mi
+      soru: "Bağış NAKDİ mi? (Ayni bağış = Kapsam dışı — KKEG!)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "★ EN KRİTİK KONTROL — 462 ile aynı kısıtlama: Nakdi bağış → 463 kapsamı. Ayni bağış → KVK Md.10/1-f KAPSAMI DIŞI. Ayni bağış KKEG'e alınır → Net KV yükü."
+    - id: yesilay_hesabina_odeme
+      soru: "Ödeme Yeşilay'ın resmi banka hesabına doğrudan yapıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yeşilay'ın resmi banka hesabına EFT/havale. Nakit ödeme veya üçüncü şahıs hesabı → Risk."
+    - id: makbuz_alindi
+      soru: "Türkiye Yeşilay Cemiyetinden resmi bağış makbuzu alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Türkiye Yeşilay Cemiyeti tarafından düzenlenen resmi makbuz zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Yeşilay banka hesabına EFT/havale"
+      tip: para
+      zorunlu: true
+      yardim: "YALNIZCA NAKDİ bağış girilmeli. Türkiye Yeşilay Cemiyetinin resmi banka hesabına yapılan EFT/havale tutarı. Ayni bağış bu alana girilmez — kapsam dışıdır."
+  formuller:
+    istisna_tutari: "nakdi_bagis_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari > 0"
+      hata: "Nakdi bağış tutarı sıfırdan büyük olmalıdır."
+    - kural: "nakdi_bagis_tutari >= 0"
+      hata: "Nakdi bağış tutarı negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-f: Türkiye Yeşilay Cemiyetine makbuz karşılığında yapılan
+  nakdi bağış ve yardımların tamamı matrahtan indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## !! AYNİ BAĞIŞ UYARISI — KRİTİK !! (462 Kızılay ile Aynı)
+  Yeşilay'a yapılan AYNİ bağış (malzeme, ekipman, broşür, tanıtım materyali vb.)
+  KVK Md.10/1-f kapsamında İNDİRİLEMEZ — kapsam dışıdır.
+  Ayni bağış KKEG'e alınır ve matrahtan düşülemez → Net KV yükü doğurur.
+  Yeşilay'a yardım planlanıyorsa nakdi bağış tercih edilmeli.
+
+  ## İndirim Kuralları
+  - YALNIZCA NAKDİ bağış indirim konusu
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcının Türkiye Yeşilay Cemiyeti olduğu teyit edilmeli
+  - Ödemenin banka yoluyla (EFT/havale) yapıldığı dekontla kanıtlanmalı
+  - Yeşilay'dan resmi makbuz alınmalı
+  - Ayni bağış yapılmışsa ayrı KKEG kaydı — beyanname 463'e dahil edilmez
+
+  ## 462 ile 463 Farkı
+  462: Türkiye Kızılay Derneği (KVK Md.10/1-f)
+  463: Türkiye Yeşilay Cemiyeti (KVK Md.10/1-f)
+  Her iki kod için de aynı bent ve aynı kısıtlama (yalnızca nakdi) geçerlidir.
+
+  ## YİAKV Etkisi
+  463 nakdi bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: KVK Md.10/1-f kapsamında Yeşilay nakdi bağış.
+
+  ## Ayni Bağış Varsa (Kapsam Dışı — KKEG)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (KKEG — Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: Yeşilay'a ayni bağış — KVK Md.10/1-f kapsamı dışı, KKEG.
+  NOT: Ayni bağış beyanname 463'e dahil edilmez.
+
+  ## Beyanname
+  Yalnızca nakdi bağış tutarı beyanname 463. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Türkiye Yeşilay Cemiyeti Resmi Bağış Makbuzu
+    detay: "Türkiye Yeşilay Cemiyeti tarafından düzenlenen resmi makbuz. Tarih, tutar ve bağışçı bilgileri açıkça belirtilmeli."
+    temin_yeri: Türkiye Yeşilay Cemiyeti
+  - kategori: zorunlu
+    "no": 2
+    baslik: Yeşilay Banka Hesabına Ödeme Dekontu
+    detay: "Türkiye Yeşilay Cemiyetinin resmi banka hesabına (IBAN) yapılan EFT/havale dekontu. Ödeme alıcısının Yeşilay olduğu açıkça görünmeli."
+    temin_yeri: Banka
+  - kategori: destekleyici
+    "no": 3
+    baslik: Yeşilay Resmi Banka Hesap Bilgileri
+    detay: "Türkiye Yeşilay Cemiyetinin resmi IBAN ve banka bilgileri. Ödeme dekontundaki hesap numarasıyla örtüşmeli."
+    temin_yeri: Türkiye Yeşilay Cemiyeti / Yeşilay Resmi Web Sitesi
+
+k_checklist:
+  - id: K1
+    soru: "Alıcının Türkiye Yeşilay Cemiyeti olduğu teyit edildi mi?"
+    referans: "KVK Md.10/1-f | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağışın NAKDİ olduğu doğrulandı mı? (Ayni bağış varsa KKEG kaydı yapıldı mı?)"
+    referans: "KVK Md.10/1-f — YALNIZCA NAKDİ"
+  - id: K3
+    soru: "Ödeme Yeşilay'ın resmi banka hesabına doğrudan EFT/havale ile yapıldı mı?"
+    referans: "KVK Md.10/1-f"
+  - id: K4
+    soru: "Yeşilay'dan resmi makbuz alındı mı?"
+    referans: "KVK Md.10/1-f"
+  - id: K5
+    soru: "Bağış dönem içinde fiilen gerçekleşti mi?"
+    referans: "KVK Md.10/1-f"
+  - id: K6
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (463 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K7
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

@@ -1,0 +1,243 @@
+ic_kod: korumali_isveri_indirimi_10_1h
+baslik: Korumalı İşyeri İndirimi (KVK Md.10/1-h)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 452 }
+  - { donem: 2025, kod: 452 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-h
+  - 5378 Sayılı Engelliler Hakkında Kanun
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: hizmet_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "5378 sayılı Engelliler Hakkında Kanun kapsamında kurulan korumalı işyerinde zihinsel veya ruhsal engelli sigortalı çalıştırıyor musunuz?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-h** kapsamında, **5378 sayılı Engelliler Hakkında Kanun**
+    kapsamında kurulan **korumalı işyerlerinde** çalıştırılan **zihinsel veya ruhsal
+    engelli sigortalılar** için her bir engelli çalışanın yıllık **prime esas kazanç
+    tutarının %100'ü** ayrıca kurumlar vergisi matrahından indirilir.
+
+    ## Kapsam Koşulları (Dördü Birden Zorunlu)
+
+    ① **İŞYERİ STATÜSÜ:** 5378 sayılı Kanun kapsamında Aile ve Sosyal Hizmetler
+    Bakanlığı tarafından verilmiş **korumalı işyeri kuruluş izni** bulunmalıdır.
+
+    ② **ÇALIŞAN TÜRÜ:** Yalnızca **zihinsel engelli** ve **ruhsal engelli** sigortalılar
+    kapsama girer. Fiziksel engelli çalışanlar bu indirim kapsamına dahil değildir.
+
+    ③ **ASGARİ SAYI:** Korumalı işyerinde dönem boyunca kesintisiz olarak **en az 3
+    engelli çalışan** istihdam edilmelidir.
+
+    ④ **PRİME ESAS KAZANÇ:** Her engelli çalışan için yıllık prime esas kazanç tutarı
+    SGK işyeri bildirgeleri ve bordro kayıtlarıyla belgelenmelidir.
+
+    ## İndirim Oranı ve Tutarı
+
+    İndirim oranı **%100**'dür. Bu indirim, işverenin zaten gider yazdığı prim
+    tutarlarına **ayrıca (ilave olarak)** uygulanır; gider indirimine ek bir avantaj sağlar.
+
+    Formül: **Beyanname 452 = Toplam Yıllık Prime Esas Kazanç Toplamı**
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Sadece zihinsel/ruhsal engelli:** Fiziksel engelli çalışanlar bu kapsama girmez;
+      sağlık kurulu raporuyla engel türü teyit edilmelidir.
+    - **Korumalı işyeri izni zorunlu:** Bakanlık kuruluş izni olmadan indirim uygulanamaz.
+    - **Asgari 3 kişi şartı:** Dönem içinde 3 kişinin altına düşülmesi indirim hakkını
+      riske atar.
+    - **"Ayrıyeten" kelimesinin önemi:** Bu indirim, işverenin zaten gider yazan prim
+      tutarları için ek %100 indirim hakkı doğurur — iki kez yararlanma anlamına gelir.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-h kapsamındaki korumalı işyeri indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha
+    etki etmez.
+
+    ## Pratik Notlar
+
+    - **Kuruluş izin numarası:** Çalışma kâğıdına Bakanlık tarafından verilen kuruluş
+      izin numarası ve tarihi kaydedilmelidir.
+    - **Engelli çalışan tablosu:** Her çalışan için TC kimlik no, engel türü, yıllık
+      prime esas kazanç tutarı ayrı satırda gösterilmelidir.
+    - **YMM tasdik raporu:** İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  kapi_sorulari:
+    - id: korumali_isveri_izni_var
+      soru: "İşyeri 5378 sayılı Kanun kapsamında korumalı işyeri statüsü almış mı? (Aile ve Sosyal Hizmetler Bakanlığı kuruluş izni)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bakanlık tarafından verilmiş korumalı işyeri kuruluş izni zorunludur. İzin belgesi olmadan KVK Md.10/1-h indirimi uygulanamaz."
+    - id: calisanlar_zihinsel_ruhsal
+      soru: "Korumalı işyerinde çalışan engelliler zihinsel veya ruhsal engelli sigortalılar mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kapsam: Yalnızca zihinsel engelli + ruhsal engelli çalışanlar. Fiziksel engelli çalışanlar bu indirim kapsamına girmez. Sağlık kurulu raporu ile engel türü teyit edilmelidir."
+    - id: asgari_uc_kisi_sarti
+      soru: "Korumalı işyerinde dönem boyunca en az 3 engelli çalışan istihdam ediliyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK Md.10/1-h uygulaması için dönem boyunca kesintisiz en az 3 engelli çalışan şartı aranır. 3 kişinin altına düşülmesi indirim hakkını riske sokar."
+    - id: pek_sgk_bildirildi
+      soru: "Engelli çalışanların prime esas kazançları SGK'ya bildirildi mi? (Bordro ve işyeri bildirgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Prime esas kazanç SGK işyeri bildirgeleri ve bordro kayıtlarıyla desteklenmelidir. İndirim: Yıllık prime esas kazanç toplamının %100'ü."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: korumali_isci_sayisi
+      etiket: "Korumalı işyerinde çalışan zihinsel/ruhsal engelli sayısı"
+      tip: sayi
+      zorunlu: true
+      yardim: "Dönem boyunca korumalı işyerinde istihdam edilen zihinsel ve ruhsal engelli sigortalıların toplam sayısı. En az 3 kişi şartı karşılanmalıdır."
+    - id: yillik_prime_esas_kazanc_toplami
+      etiket: "Toplam yıllık prime esas kazanç (TL) — tüm engelli çalışanlar dahil"
+      tip: para
+      zorunlu: true
+      yardim: "Korumalı işyerindeki tüm zihinsel/ruhsal engelli çalışanların yıllık prime esas kazanç tutarlarının toplamı. Diğer kişi ve kurumlarca karşılanan tutarlar dahildir. SGK bildirgeleri esas alınır."
+  formuller:
+    istisna_tutari: "yillik_prime_esas_kazanc_toplami * 1.0"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "korumali_isci_sayisi >= 3"
+      hata: "En az 3 engelli çalışan şartı sağlanmıyor. KVK Md.10/1-h uygulanabilmesi için korumalı işyerinde dönem boyunca en az 3 zihinsel/ruhsal engelli sigortalı istihdam edilmelidir."
+    - kural: "yillik_prime_esas_kazanc_toplami > 0"
+      hata: "Toplam yıllık prime esas kazanç sıfır olamaz."
+    - kural: "korumali_isci_sayisi > 0"
+      hata: "Engelli çalışan sayısı pozitif olmalıdır."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-h: 5378 sayılı Engelliler Hakkında Kanun kapsamında kurulan
+  korumalı işyerlerinde çalıştırılan zihinsel veya ruhsal engelli sigortalılar için,
+  diğer kişi ve kurumlarca karşılanan tutarlar dahil, her bir engelli çalışan için
+  yıllık olarak hesaplanan prime esas kazanç tutarının %100'ü nispetinde ayrıyeten
+  indirim yapılır.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kapsam Koşulları
+
+  KOŞULİŞYERI STATÜSÜ:
+  - 5378 s.K. kapsamında korumalı işyeri → Onaylıdır
+  - Aile ve Sosyal Hizmetler Bakanlığı kuruluş izni olmayan → Kapsam dışı
+
+  ÇALIŞAN TÜRÜ:
+  - Zihinsel engelli sigortalı → Onaylıdır
+  - Ruhsal engelli sigortalı → Onaylıdır
+  - Fiziksel engelli sigortalı → Kapsam dışı
+
+  ASGARİ SAYI:
+  - En az 3 engelli çalışan → Şart
+  - 3 kişi altı → İndirim riski (uygulanamaz)
+
+  ## İndirim Kuralları
+  - İndirim oranı: %100 (prime esas kazancın tamamı)
+  - "Ayrıyeten" ibaresi: Gider yazılan prim tutarlarına EK olarak uygulanır
+  - Diğer kişi/kurumlarca karşılanan tutarlar da dahildir
+  - Formül: Beyanname 452 = Toplam Yıllık Prime Esas Kazanç × %100
+
+  ## Kritik Kontroller
+  - Korumalı işyeri kuruluş izni (Bakanlık yazısı, izin numarası ve tarihi)
+  - Engel türü teyidi (sağlık kurulu raporu — zihinsel/ruhsal, fiziksel değil)
+  - Asgari 3 kişi şartının dönem boyunca sağlanması
+  - SGK bildirgeleri ve bordro kayıtlarıyla prime esas kazanç teyidi
+  - Diğer kişi/kurumlarca karşılanan tutarların da dahil edilmesi
+
+  ## "Ayrıyeten" İndirimin Anlamı
+  Bu indirim, işverenin zaten gider yazdığı (SGK prime esas kazanç üzerinden
+  hesaplanan prim giderleri) tutarlar için ek bir indirim hakkı doğurur.
+  Dolayısıyla işveren hem gider yazar hem de ayrıca %100 oranında KV matrahından
+  indirim yapar — bu durum indirim etkisini iki katlar.
+
+  ## YİAKV Etkisi
+  452 korumalı işyeri indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Engelli Sigortalı Prim Gideri Kaydı
+  Borç: 770/780 Genel Yönetim/Üretim Giderleri (SGK işveren prim payı)
+  Alacak: 361 Ödenecek Sosyal Güvenlik Kesintileri
+  Açıklama: Engelli çalışan prime esas kazanç üzerinden hesaplanan SGK işveren prim gideri.
+
+  ## Beyanname
+  Korumalı işyerindeki zihinsel/ruhsal engelli çalışanların yıllık prime esas
+  kazanç toplamı beyanname 452. satırına aktarılır.
+  Kazancın bulunması halinde uygulanır — matrahı aşan kısım sonraki yıla devredilmez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Korumalı İşyeri Kuruluş İzin Belgesi
+    detay: "Aile ve Sosyal Hizmetler Bakanlığı tarafından verilen korumalı işyeri kuruluş izni. İzin numarası ve tarihi çalışma kâğıdına kaydedilmeli."
+    temin_yeri: Aile ve Sosyal Hizmetler Bakanlığı / İşyeri Dosyası
+  - kategori: zorunlu
+    "no": 2
+    baslik: Engelli Çalışan Sağlık Kurulu Raporları
+    detay: "Her engelli çalışan için sağlık kurulu raporu. Engel türünün 'zihinsel engelli' veya 'ruhsal engelli' olduğunu teyit eden rapor. Fiziksel engelli çalışanlar kapsam dışıdır."
+    temin_yeri: Sağlık Kurulu / Çalışan Dosyası
+  - kategori: zorunlu
+    "no": 3
+    baslik: SGK İşyeri Bildirgeleri (Aylık Prim ve Hizmet Belgeleri)
+    detay: "Engelli çalışanların prime esas kazançlarını gösteren SGK aylık prim ve hizmet belgeleri. Her çalışan için yıllık dönem boyunca tüm ayların bildirgeleri."
+    temin_yeri: SGK / e-Devlet
+  - kategori: zorunlu
+    "no": 4
+    baslik: Bordro Kayıtları (Ücret Bordroları)
+    detay: "Engelli çalışanların yıllık prime esas kazançlarını gösteren aylık ücret bordroları. Engel türü ve çalışan bilgileri birlikte gösterilmeli."
+    temin_yeri: Muhasebe / İnsan Kaynakları
+  - kategori: destekleyici
+    "no": 5
+    baslik: Engelli Çalışan Listesi (TC Kimlik ve Engel Türü)
+    detay: "Korumalı işyerinde çalışan tüm zihinsel/ruhsal engelli sigortalıların TC kimlik numarası, engel türü ve yıllık prime esas kazanç tutarını gösteren özet tablo."
+    temin_yeri: İnsan Kaynakları / Muhasebe
+  - kategori: destekleyici
+    "no": 6
+    baslik: Diğer Kişi/Kurumlarca Karşılanan Tutar Belgesi
+    detay: "Engelli çalışanların prime esas kazançlarının bir kısmı başka kişi veya kurumlarca karşılanıyorsa bu tutarları gösteren belge. Bu tutarlar da indirime dahil edilir."
+    temin_yeri: İlgili Kurum / Sözleşme
+
+k_checklist:
+  - id: K1
+    soru: "İşyerinin 5378 sayılı Kanun kapsamında korumalı işyeri kuruluş izni bulunduğu doğrulandı mı?"
+    referans: "KVK Md.10/1-h | 5378 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Çalışanların zihinsel veya ruhsal engelli sigortalılar olduğu sağlık kurulu raporuyla teyit edildi mi? (Fiziksel engelli değil)"
+    referans: "KVK Md.10/1-h"
+  - id: K3
+    soru: "Korumalı işyerinde dönem boyunca kesintisiz en az 3 engelli çalışan istihdam edildiği doğrulandı mı?"
+    referans: "KVK Md.10/1-h"
+  - id: K4
+    soru: "Engelli çalışanların yıllık prime esas kazançları SGK bildirgeleri ve bordro kayıtlarıyla belgelendi mi?"
+    referans: "KVK Md.10/1-h | GİB Beyan Reh. 2026"
+  - id: K5
+    soru: "Diğer kişi ve kurumlarca karşılanan prime esas kazanç tutarları da indirim hesabına dahil edildi mi?"
+    referans: "KVK Md.10/1-h"
+  - id: K6
+    soru: "'Ayrıyeten' indirimin niteliği değerlendirildi mi? (Gider yazılan prim tutarlarına EK indirim hakkı)"
+    referans: "KVK Md.10/1-h"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (452 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K8
+    soru: "YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "GİB Beyan Reh. 2026 (No:606)"

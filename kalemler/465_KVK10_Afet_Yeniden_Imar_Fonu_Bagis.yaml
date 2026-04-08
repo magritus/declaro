@@ -1,0 +1,199 @@
+ic_kod: afet_imar_fonu_bagis
+baslik: Afet Yeniden İmar Fonu'na Bağış (7441 s.K. Md.7)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 465 }
+  - { donem: 2025, kod: 465 }
+
+mevzuat_dayanagi:
+  - 7441 Sayılı Kanun Madde 7
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2023-02-08"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Afet Yeniden İmar Fonu'na bağış veya yardım yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **7441 sayılı Kanun Madde 7** kapsamında, **Afet Yeniden İmar Fonu'na** yapılan
+    bağış ve yardımların **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ## Arka Plan
+
+    7441 sayılı Kanun, 2023 Kahramanmaraş depremlerinin ardından çıkarılan Afet ve
+    Yeniden İmar Kanunu kapsamında oluşturulmuştur. Afet Yeniden İmar Fonu (AYİF),
+    afet bölgelerinde yeniden yapılanmayı desteklemeye yönelik bağışları toplamak
+    amacıyla kurulmuştur.
+
+    ## Alıcı — Yalnızca Afet Yeniden İmar Fonu
+
+    Bu indirim **yalnızca 7441 sayılı Kanunla kurulan Afet Yeniden İmar Fonu'na**
+    yapılan bağış ve yardımlar için geçerlidir. Farklı bir fon veya kuruluşa yapılan
+    afet bağışları bu kod kapsamında değildir.
+
+    ## Bağış Şekli
+
+    - **Nakdi:** Banka transferi (EFT/havale) ile
+    - **Ayni:** Mal veya hizmet şeklinde (teslim belgesi + maliyet değeri ile değerleme)
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara
+    **devredilemez**.
+
+    ## Ayni Bağış Değerleme
+
+    Ayni bağışlarda **maliyet veya net defter değeri** esas alınır (piyasa değeri
+    değil). KDV hesaplanmaz — KDVK Md.17/2-b istisna kapsamında.
+
+    ## YİAKV İlişkisi
+
+    **7441 s.K. Md.7 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+    402/460/461/464 ile aynı E.11 kategorisi.
+  kapi_sorulari:
+    - id: ayif_alici
+      soru: "Bağış/yardım Afet Yeniden İmar Fonu'na mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "7441 s.K. Md.7 yalnızca Afet Yeniden İmar Fonu'na yapılan bağışları kapsar. Farklı bir fon veya kuruluşa yapılan afet bağışları bu kod kapsamında değildir."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış/yardım fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt edilmiş ama henüz gerçekleşmemiş bağış indirime konu olamaz. Nakdi: Banka EFT/havale dekontu; Ayni: İmzalı teslim tutanağı."
+    - id: makbuz_alindi
+      soru: "Afet Yeniden İmar Fonu'ndan resmi makbuz veya bağış kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Fon tarafından düzenlenen resmi makbuz veya bağış kabul yazısı. Bu belge olmadan 465 indirimi belgelenemiyor."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla Afet Yeniden İmar Fonu'na yapılan ödeme"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile Afet Yeniden İmar Fonu'na yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Teslim edilen mal/hizmetin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Ayni bağış varsa maliyet veya net defter değeri (piyasa değeri değil). KDV hesaplanmaz — KDVK Md.17/2-b istisna kapsamında."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  7441 Sayılı Kanun Madde 7: Afet Yeniden İmar Fonu'na yapılan bağış ve yardımların
+  tamamı kurumlar vergisi matrahından indirilir.
+  7441 s.K., 2023 Kahramanmaraş depremleri sonrasında çıkarılmıştır.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Alıcı Koşulu
+  Yalnızca 7441 sayılı Kanunla kurulan Afet Yeniden İmar Fonu (AYİF) alıcı olabilir.
+  Farklı afet fonu/dernek/vakıf → Kapsam dışı.
+  451 CB kampanyası ile karıştırılmamalı — bu farklı bir yasal düzenlemedir.
+
+  ## İndirim Kuralları
+  - Nakdi + Ayni bağışların tamamı indirilir
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Ayni Bağış Değerleme
+  Maliyet veya net defter değeri esas alınır (piyasa değeri değil).
+  KDV hesaplanmaz — KDVK Md.17/2-b istisna kapsamı.
+
+  ## Kritik Kontroller
+  - Alıcının Afet Yeniden İmar Fonu olduğu teyit edilmeli
+  - Fiili ödeme/teslim (taahhüt değil)
+  - AYİF'ten resmi makbuz veya bağış kabul yazısı alınmalı
+  - Ayni bağışlarda maliyet/defter değeri ile doğru değerleme yapılmalı
+
+  ## YİAKV Etkisi
+  465 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+  402/460/461/464 ile aynı E.11 kategorisi.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 7441 s.K. Md.7 kapsamında Afet Yeniden İmar Fonu nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 7441 s.K. Md.7 kapsamında Afet Yeniden İmar Fonu ayni bağış.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 465. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Afet Yeniden İmar Fonu Bağış Makbuzu / Kabul Belgesi
+    detay: "Afet Yeniden İmar Fonu (AYİF) tarafından düzenlenen resmi makbuz veya bağış kabul yazısı. Bu belge olmadan 465 indirimi belgelenemiyor."
+    temin_yeri: Afet Yeniden İmar Fonu
+  - kategori: zorunlu
+    "no": 2
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme Afet Yeniden İmar Fonu'nun resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve malların maliyet/net defter değerini gösteren değerleme belgesi. Piyasa değeri değil maliyet esas."
+    temin_yeri: Muhasebe / Afet Yeniden İmar Fonu
+  - kategori: destekleyici
+    "no": 4
+    baslik: Bağışın Kullanım Amacına İlişkin Fon Protokolü
+    detay: "Fon tarafından belirlenen kullanım alanı varsa (afet bölgesi/proje) bunu gösteren protokol veya bildirim belgesi."
+    temin_yeri: Afet Yeniden İmar Fonu
+
+k_checklist:
+  - id: K1
+    soru: "Alıcının 7441 s.K. ile kurulan Afet Yeniden İmar Fonu olduğu teyit edildi mi?"
+    referans: "7441 s.K. Md.7 | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya teslim tutanağı ile belgelenmiş)"
+    referans: "7441 s.K. Md.7"
+  - id: K3
+    soru: "AYİF'ten resmi makbuz veya bağış kabul belgesi alındı mı?"
+    referans: "7441 s.K. Md.7"
+  - id: K4
+    soru: "Ayni bağış varsa maliyet/net defter değeri ile doğru değerleme yapıldı mı? (Piyasa değeri değil)"
+    referans: "7441 s.K. Md.7"
+  - id: K5
+    soru: "451 (CB Kampanya) ile karışıklık riski değerlendirildi mi? (Farklı yasal düzenlemeler)"
+    referans: "7441 s.K. Md.7 — KVK Md.10/1-e'den ayrı"
+  - id: K6
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (465 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K7
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

@@ -1,0 +1,238 @@
+ic_kod: kultur_turizm_bagis_10_1d
+baslik: Kültür ve Turizm Amaçlı Bağış ve Yardımlar (KVK Md.10/1-d)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 404 }
+  - { donem: 2025, kod: 404 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-d
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Kültür ve turizm amaçlı (tarihi miras, müze, kütüphane, sanat, turizm altyapısı) karşılıksız bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-d** kapsamında kültür ve turizm amaçlı yapılan karşılıksız
+    bağış ve yardımlar kurumlar vergisi matrahından indirilir.
+
+    ## EN KRİTİK ÖZELLİK — İndirim Oranı Alıcıya Göre Değişir
+
+    | Alıcı | İndirim Oranı |
+    |-------|---------------|
+    | Kültür ve Turizm Bakanlığı doğrudan | %100 |
+    | Diğer kamu idareleri doğrudan | %100 |
+    | Bakanlık onaylı proje kapsamında | %100 |
+    | Kamu yararına çalışan dernek (KYD) | %50 |
+    | Vergi muafiyeti tanınan vakıf | %50 |
+
+    Bu oran ayrımı **402/403/417'den farklıdır** — diğer bentlerde KYD/vakıf alıcıda
+    da tamamı indirilirken, **404'te KYD/vakıf alıcıda yalnızca %50 indirilir**.
+
+    ## Kapsam — Faaliyet Alanları
+
+    - Tarihi ve kültürel miras koruma ve restorasyonu
+    - Müze kurulumu ve geliştirilmesi
+    - Kütüphane, arşiv, kültür merkezi
+    - Güzel sanatlar (resim, heykel, mimari)
+    - Sinema, tiyatro, opera, bale, konser faaliyetleri
+    - Turizm altyapısı geliştirme
+
+    ## Kritik Ayrım — Bağış mı, Sponsorluk mu?
+
+    **Karşılıksız bağış → 404 kodu.** Karşılıklı işlem
+    (reklam/tanıtım/isim hakkı karşılığı) → **460/461 Sponsorluk kodu**.
+    Bu ayrım hatalı uygulanırsa tarhiyat riski doğurur.
+
+    ## Önemli Sınırlamalar
+
+    - **Fiili ödeme zorunluluğu:** Taahhüt edilen bağışlar kapsam dışıdır.
+    - **Alıcı statüsü ve oran teyidi:** Her bağış için alıcı statüsüne göre
+      doğru oran (%100/%50) belirlenmeli ve belgelenmeli.
+    - **Devir yasağı:** Matrahı aşan kısım sonraki yıllara devredilmez.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-d kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+  kapi_sorulari:
+    - id: kapsam_uygun
+      soru: "Bağış KVK Md.10/1-d kapsamında kültür/turizm amaçlı mı? (Tarihi miras / Müze / Kütüphane / Sanat / Sinema-Tiyatro / Turizm altyapısı)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kapsam: Tarihi/kültürel miras, müze, kütüphane, güzel sanatlar, sinema/tiyatro/opera/bale/konser, turizm altyapısı. Genel eğlence veya ticari etkinlik → Kapsam dışı."
+    - id: karsiliksiz_bagis
+      soru: "İşlem karşılıksız bağış mı? (Sponsorluk değil — reklam/isim hakkı/tanıtım karşılığı ödeme değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Karşılıksız → 404. Karşılıklı (reklam/tanıtım/isim hakkı) → 460/461 (Sponsorluk). Bu ayrım hayati — hatalı kod tarhiyat riski doğurur."
+    - id: alici_ve_oran
+      soru: "Alıcı niteliği ve indirim oranı belirlendi mi? (%100: Bakanlık/Kamu — %50: KYD/Vakıf)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "ORAN KRİTİK: Kültür ve Turizm Bakanlığı/kamu idaresi → %100. KYD dernek/muafiyet vakfı → %50. 402/403'ten farklı — burada KYD/vakıf için %50 uygulanır."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez."
+
+parametreler:
+  oran_kamu: 1.0
+  oran_kyd_vakif: 0.5
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_kamu
+      etiket: "Nakdi bağış tutarı — Bakanlık/Kamu idaresi alıcı (TL) — %100 indirim"
+      tip: para
+      zorunlu: false
+      yardim: "Kültür ve Turizm Bakanlığı veya diğer kamu idarelerine doğrudan yapılan nakdi bağış. Tamamı indirilir."
+    - id: ayni_bagis_kamu
+      etiket: "Ayni bağış değeri — Bakanlık/Kamu idaresi alıcı (TL) — %100 indirim"
+      tip: para
+      zorunlu: false
+      yardim: "Kamu idaresi alıcıya yapılan ayni bağışın maliyet/net defter değeri. Tamamı indirilir."
+    - id: nakdi_bagis_kyd_vakif
+      etiket: "Nakdi bağış tutarı — KYD Dernek / Muafiyet Vakfı alıcı (TL) — %50 indirim"
+      tip: para
+      zorunlu: false
+      yardim: "KYD dernek veya vergi muafiyeti tanınan vakıf alıcıya yapılan nakdi bağış. Yalnızca %50'si indirilir."
+    - id: ayni_bagis_kyd_vakif
+      etiket: "Ayni bağış değeri — KYD Dernek / Muafiyet Vakfı alıcı (TL) — %50 indirim"
+      tip: para
+      zorunlu: false
+      yardim: "KYD dernek veya vergi muafiyeti tanınan vakıf alıcıya yapılan ayni bağışın maliyet/net defter değeri. Yalnızca %50'si indirilir."
+  formuller:
+    bagis_kamu_toplam: "nakdi_bagis_kamu + ayni_bagis_kamu"
+    bagis_kyd_vakif_toplam: "nakdi_bagis_kyd_vakif + ayni_bagis_kyd_vakif"
+    indirim_kamu: "nakdi_bagis_kamu + ayni_bagis_kamu"
+    indirim_kyd_vakif: "(nakdi_bagis_kyd_vakif + ayni_bagis_kyd_vakif) * 0.5"
+    istisna_tutari: "indirim_kamu + indirim_kyd_vakif"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_kamu >= 0 and ayni_bagis_kamu >= 0 and nakdi_bagis_kyd_vakif >= 0 and ayni_bagis_kyd_vakif >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_kamu + ayni_bagis_kamu + nakdi_bagis_kyd_vakif + ayni_bagis_kyd_vakif > 0"
+      hata: "En az bir bağış tutarı girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-d: Kültür ve turizm amaçlı karşılıksız bağış ve yardımlar.
+  İndirim oranı alıcı statüsüne göre değişir: Bakanlık/kamu idaresi → %100,
+  KYD dernek/muafiyet vakfı → %50.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Oranı Tablosu
+  Kültür ve Turizm Bakanlığı (doğrudan) → %100
+  Diğer kamu idareleri (doğrudan) → %100
+  Bakanlık onaylı proje kapsamında → %100
+  KYD dernek (bakanlık kararı) → %50
+  Vergi muafiyeti tanınan vakıf (CB kararı) → %50
+
+  ## 404 ile 402/403/417 Farkı
+  402/403/417'de KYD/vakıf alıcı için de tamamı indirilir.
+  404'te KYD/vakıf alıcı için yalnızca %50 indirilir — en sık karıştırılan fark.
+
+  ## 404 ile 460/461 Farkı
+  404: Karşılıksız bağış (kültür/turizm)
+  460/461: Sponsorluk (karşılıklı — reklam/isim hakkı/tanıtım)
+  Karşılık varsa → Sponsorluk (460/461). Karşılık yoksa → 404.
+
+  ## Kritik Kontroller
+  - Her bağış için alıcı statüsü ve %100/%50 oran seçimi belgelenmeli
+  - Bağışın kültür/turizm kapsamında olduğu proje/protokol ile teyit edilmeli
+  - Fiili ödeme/teslim (taahhüt değil)
+  - Karşılıksız nitelik (sponsorluk değil) doğrulanmalı
+
+  ## YİAKV Etkisi
+  404 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: KVK Md.10/1-d kapsamında nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: KVK Md.10/1-d kapsamında ayni bağış.
+
+  ## Beyanname
+  İndirim hesaplaması: Kamu alıcı brüt bağış × %100 + KYD/vakıf brüt bağış × %50.
+  Toplam indirim beyanname 404. satırına aktarılır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi ve İndirim Oranı Teyidi
+    detay: "Kamu idaresi için resmi tescil belgesi. KYD dernek için bakanlık/CB kararı. Vakıf için CB vergi muafiyeti kararı. Her alıcı için %100 veya %50 oran gerekçesi belgelenmeli."
+    temin_yeri: İlgili Bakanlık / Alıcı Kurum
+  - kategori: zorunlu
+    "no": 2
+    baslik: Kültür/Turizm Amacını Gösteren Proje veya Protokol
+    detay: "Bağışın kültür/turizm amaçlı olduğunu kanıtlayan proje belgesi, sözleşme veya protokol. KVK Md.10/1-d kapsamında olduğu açıkça ifade edilmeli."
+    temin_yeri: Alıcı Kurum / Proje Belgesi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Resmi Makbuz veya Bağış Kabul Yazısı
+    detay: "Alıcı kurumdan alınan resmi makbuz. Tarih, tutar ve bağışın niteliği (karşılıksız) belirtilmeli."
+    temin_yeri: Alıcı Kurum
+  - kategori: zorunlu
+    "no": 4
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme alıcının resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 5
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / Alıcı Kurum
+  - kategori: destekleyici
+    "no": 6
+    baslik: Karşılıksız Bağış Niteliğini Gösteren Belge
+    detay: "Bağışın reklam/sponsorluk karşılığı olmadığını teyit eden yazışma veya sözleşme maddesi. 460/461 ile karışıklık riskini önler."
+    temin_yeri: Alıcı Kurum / İç Kayıtlar
+
+k_checklist:
+  - id: K1
+    soru: "Bağış KVK Md.10/1-d kapsamında kültür/turizm amaçlı mı teyit edildi?"
+    referans: "KVK Md.10/1-d | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağış karşılıksız mı teyit edildi? (Sponsorluk değil — 460/461 ile ayrım)"
+    referans: "KVK Md.10/1-d"
+  - id: K3
+    soru: "Her bağış için alıcı statüsü belirlendi ve doğru oran (%100/%50) uygulandı mı?"
+    referans: "KVK Md.10/1-d"
+  - id: K4
+    soru: "KYD/Vakıf alıcı için güncel statü belgesi temin edildi mi?"
+    referans: "KVK Md.10/1-d"
+  - id: K5
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya teslim tutanağı ile belgelenmiş)"
+    referans: "KVK Md.10/1-d | GİB Beyan Reh. 2026"
+  - id: K6
+    soru: "Alıcıdan resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "KVK Md.10/1-d"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (404 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K8
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

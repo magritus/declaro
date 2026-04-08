@@ -1,0 +1,213 @@
+ic_kod: teknogirism_sermaye_destegi_5746
+baslik: Teknogirişim Sermaye Desteği Hibe Geliri İndirimi (5746 s.K. Md.3/5)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 456 }
+  - { donem: 2025, kod: 456 }
+
+mevzuat_dayanagi:
+  - 5746 sayılı Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun Madde 3/5
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2008-04-01"
+  bitis: null
+
+ana_kategori: arge_tasarim_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "Sanayi ve Teknoloji Bakanlığı'ndan 5746 s.K. Md.3/5 kapsamında Teknogirişim Sermaye Desteği (hibe) aldınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **5746 sayılı Kanun Madde 3/5** kapsamında Sanayi ve Teknoloji Bakanlığı (STB)
+    tarafından bireysel girişimcilere ve Ar-Ge/inovasyon odaklı teknoloji şirketlerine
+    sağlanan sermaye/hibe desteğidir.
+
+    ## Muhasebe-Beyanname Mekanizması
+
+    Teknogirişim Sermaye Desteği indirimi iki adımlı bir mekanizma ile çalışır:
+
+    **①** Destek alındığında → **GELİR kaydedilir** (679/649 hesabı) → KV matrahına girer.
+    **②** Beyanname 456 → Alınan destek tutarı matrahtan **DÜŞÜLÜR** → Net vergi yükü sıfırlanır.
+
+    **SONUÇ:** Teknogirişim desteği üzerinden kurumlar vergisi ödenmez.
+
+    ## Kapsam — Alıcı Niteliği
+
+    Aşağıdaki kişi/kurumlar bu desteği alabilir:
+    - Bireysel girişimciler (teknoloji/Ar-Ge odaklı)
+    - Kuluçka merkezi bünyesindeki girişimler
+    - STB tarafından onaylanan Ar-Ge/inovasyon odaklı teknoloji şirketleri
+
+    ## Önemli Ön Koşullar
+
+    - **STB Karar/Protokolü:** Sanayi ve Teknoloji Bakanlığı tarafından imzalanmış destek kararı
+      veya protokol belgesi zorunludur. KOSGEB, TÜBİTAK vb. kurumlardan alınan destekler bu
+      kod kapsamında değildir.
+    - **Fiili tahsilat:** İndirim, yalnızca fiilen tahsil edilen tutar için uygulanır.
+      Protokol/sözleşme tutarı değil, banka havalesiyle alınan kısım esastır.
+    - **Gelir kaydı zorunluluğu:** Destek alındığında **önce gelir hesabına alınmalı**
+      (679/649). Gelir kaydedilmemişse beyanname 456 ile matrahtan çıkarılamaz.
+    - **Amaca uygun kullanım:** STB protokolüne uygun Ar-Ge/teknoloji harcaması yapılmış olmalıdır.
+
+    ## YİAKV İlişkisi
+
+    **5746 Md.3/5 kapsamındaki Teknogirişim Sermaye Desteği İndirimi YİAKV (KVK 32/C)
+    matrahından DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.13 bilgi satırında gösterilir ancak
+    matrahı etkilemez.
+
+    ## 456 ile 457 Farkı
+
+    - **456 (5746 Md.3/5):** STB tarafından TGB dışındaki girişimcilere sağlanan Teknogirişim desteği.
+    - **457 (4691 Geç.Md.4):** 4691 s.K. kapsamında TGB/Teknokent bünyesindeki firmalar için.
+    Mekanizma aynı; yasal dayanak ve kapsam farklı.
+  kapi_sorulari:
+    - id: stb_destek_alindi
+      soru: "Sanayi ve Teknoloji Bakanlığı'ndan 5746 s.K. Md.3/5 kapsamında Teknogirişim Sermaye Desteği alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5746 Md.3/5 kapsamında STB tarafından verilmiş destek kararı/protokolü zorunludur. KOSGEB, TÜBİTAK, TGB Yönetici Şirketi vb. başka kurumlardan alınan destekler bu kod kapsamında değildir."
+    - id: fiilen_tahsil_edildi
+      soru: "Destek tutarı dönem içinde fiilen tahsil edildi mi? (Banka yoluyla)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim yalnızca fiilen tahsil edilen kısım için uygulanır. Protokol/sözleşme tutarı değil, banka havalesiyle alınan kısım esastır."
+    - id: gelir_kaydedildi
+      soru: "Tahsil edilen destek tutarı gelir olarak kaydedildi mi? (679/649 hesabı)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "ZORUNLU ADIM: Destek alındığında önce gelir hesabına (679 Diğer Olağandışı Gelirler veya 649 Diğer Gelirler) alınmalı ve KV matrahına girmeli. Gelir kaydedilmemişse beyanname 456 ile matrahtan çıkarılamaz — hatalı beyan riski doğar."
+    - id: stb_belge_mevcut
+      soru: "STB Destek Kararı / Protokolü ve ilgili belgeler mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "STB tarafından imzalanmış destek kararı veya protokol belgesi zorunludur. Özel kaynaklardan veya belediyeden alınan destekler bu kapsamda değildir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: alinan_hibe_tutari
+      etiket: "Dönem içinde fiilen tahsil edilen destek tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Banka yoluyla tahsil edilen Teknogirişim Sermaye Desteği tutarı. STB protokolündeki toplam tutarı değil, bu dönemde fiilen alınan kısmı giriniz."
+    - id: stb_karar_no
+      etiket: "STB Destek Karar Numarası / Protokol Referansı (Bilgi)"
+      tip: metin
+      zorunlu: false
+      yardim: "Sanayi ve Teknoloji Bakanlığı tarafından verilen destek kararının referans numarası. Belgeleme ve denetim amacıyla giriniz."
+  formuller:
+    istisna_tutari: "alinan_hibe_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "alinan_hibe_tutari > 0"
+      hata: "Tahsil edilen destek tutarı sıfırdan büyük olmalıdır."
+    - kural: "alinan_hibe_tutari >= 0"
+      hata: "Tahsil edilen destek tutarı negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  5746 sayılı Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında
+  Kanun Madde 3/5: STB tarafından sağlanan Teknogirişim Sermaye Desteği hibe geliri,
+  kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Mekanizması
+
+  Teknogirişim desteği iki adımlı mekanizma ile beyannamede yer alır:
+  - ADIM 1: Destek alındığında → Gelir kaydedilir (679/649) → KV matrahına girer
+  - ADIM 2: Beyanname 456 → Destek tutarı matrahtan DÜŞÜLÜR → Net vergi yükü = 0
+
+  ## Kritik Ön Koşullar
+
+  A0.1 ★ STB desteği: 5746 Md.3/5 kapsamında STB tarafından verilmiş olmalı
+  A0.2 ★ Fiili tahsilat: Banka yoluyla fiilen alınmış kısım esas
+  A0.3 ★ Gelir kaydı: 679/649 gelir kaydı olmadan 456 uygulanamaz
+  A0.4 STB destek kararı/protokolü belgesi mevcut olmalı
+
+  ## 456 ile 457 Ayrımı
+  456 (5746 Md.3/5): Teknogirişim desteği — TGB dışı, STB kaynaklı
+  457 (4691 Geç.Md.4): Teknokent/TGB desteği — 4691 s.K. kapsamında TGB bünyesi
+  Mekanizma aynıdır; yasal dayanak ve kapsam farklıdır. Çift sayım yapılmamalıdır.
+
+  ## YİAKV Etkisi
+  456 Teknogirişim Sermaye Desteği İndirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.13 bilgi satırında gösterilir — matrahı etkilemez.
+  Hem 456 hem 457 varsa E.13'e toplam yazılır.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Destek Tahsilat Kaydı
+  Borç: 102 Bankalar
+  Alacak: 679 Diğer Olağandışı Gelirler (veya 649 Diğer Gelirler)
+  Açıklama: 5746 s.K. Md.3/5 kapsamında alınan Teknogirişim Sermaye Desteği.
+
+  NOT: Bu gelir kaydı olmadan beyanname 456 uygulanamaz.
+  Tahsil edilen destek önce gelir hesabına alınır, ardından beyanname 456 ile matrahtan düşülür.
+
+  ## Beyanname
+  Fiilen tahsil edilen destek tutarı beyanname 456. satırına aktarılır.
+  İndirim tutarı = Tahsil edilen hibe tutarı (gelir kaydı şartıyla).
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: STB Destek Kararı / Protokol Belgesi
+    detay: "Sanayi ve Teknoloji Bakanlığı tarafından imzalanmış 5746 s.K. Md.3/5 kapsamındaki destek kararı veya protokolü. Belge, 5746 Md.3/5 referansını içermelidir."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Banka Tahsilat Dekontu / Ekstresi
+    detay: "Destek tutarının fiilen alındığını gösteren banka havalesi dekontu veya banka ekstresi. Tahsilat tarihi ve tutarı açıkça görünmeli."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 3
+    baslik: Gelir Kaydı — Yevmiye Defteri Kaydı
+    detay: "Destek alındığında yapılan 679/649 gelir kaydının yevmiye defteri çıktısı. Gelir kaydı olmadan 456 indirimi uygulanamaz."
+    temin_yeri: Muhasebe / Yevmiye Defteri
+  - kategori: destekleyici
+    "no": 4
+    baslik: Amaca Uygun Kullanım Belgesi / STB Raporlaması
+    detay: "Desteğin STB protokolüne uygun Ar-Ge/teknoloji harcaması amacıyla kullanıldığını gösteren belgeler veya STB'ye yapılan dönemsel raporlama."
+    temin_yeri: STB / İç Muhasebe
+  - kategori: destekleyici
+    "no": 5
+    baslik: Proje Tanıtım Belgesi / Başvuru Dosyası
+    detay: "Desteklenen Ar-Ge/teknoloji projesine ilişkin başvuru belgesi veya proje özeti. Denetim için referans amaçlı."
+    temin_yeri: STB Başvuru Dosyası
+
+k_checklist:
+  - id: K1
+    soru: "Destek, 5746 s.K. Md.3/5 kapsamında Sanayi ve Teknoloji Bakanlığı'ndan alındı mı? (KOSGEB, TÜBİTAK vb. değil)"
+    referans: "5746 s.K. Md.3/5 | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Destek tutarı dönem içinde banka yoluyla fiilen tahsil edildi mi?"
+    referans: "5746 s.K. Md.3/5"
+  - id: K3
+    soru: "Tahsil edilen destek tutarı dönem içinde gelir olarak kaydedildi mi? (679/649)"
+    referans: "5746 s.K. Md.3/5 | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "STB Destek Kararı / Protokol belgesi dosyada mevcut mu?"
+    referans: "5746 s.K. Md.3/5"
+  - id: K5
+    soru: "Beyanname 456 indirimi, fiilen tahsil edilen ve gelir kaydedilen tutarla örtüşüyor mu?"
+    referans: "5746 s.K. Md.3/5 | GİB Beyan Reh. 2026"
+  - id: K6
+    soru: "457 kodu ile çakışma riski değerlendirildi mi? (Aynı destek çift sayılmadı mı?)"
+    referans: "5746 s.K. Md.3/5 | 4691 s.K. Geçici Md.4"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (456 DÜŞÜLEMEZ — E.13 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.13"
+  - id: K8
+    soru: "YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "GİB Beyan Reh. 2026 (No:606)"

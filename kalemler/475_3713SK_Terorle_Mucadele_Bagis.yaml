@@ -1,0 +1,177 @@
+ic_kod: terorle_mucadele_bagis_3713sk
+baslik: Şehit/Gazi Desteği Bağışı (3713 s.K.)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 475 }
+  - { donem: 2025, kod: 475 }
+
+mevzuat_dayanagi:
+  - 3713 sayılı Terörle Mücadele Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "3713 sayılı Terörle Mücadele Kanunu kapsamında şehit yakınlarına veya malul gazilere destek amacıyla bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **3713 sayılı Terörle Mücadele Kanunu** kapsamında terörle mücadelede şehit olan
+    kişilerin yakınlarına ve bu mücadelede malul ya da engelli hale gelen gazilere
+    yapılan yardımlar ile bu kişilere destek sağlayan fon/kurumlara yapılan bağışların
+    **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ## Alıcı Niteliği
+
+    - İçişleri Bakanlığı bünyesindeki ilgili birimler
+    - 3713 s.K. kapsamında kurulan fon veya program
+    - Şehit yakınlarına doğrudan yapılan yardımlar (şehitlik belgesi gerekir)
+    - Malul gazilere doğrudan yapılan yardımlar (gazi belgesi gerekir)
+
+    **Not:** Genel güvenlik/savunma bağışları farklı kodlara girer (örn. 474 TSKGV).
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **475 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: kapsam_sehit_gazi
+      soru: "Bağış 3713 s.K. kapsamında şehit/gazi desteği için mi yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "3713 s.K. kapsamında terörle mücadelede şehit olan kişilerin yakınları veya malul/engelli hale gelen gazilere destek amaçlı bağış. Genel güvenlik/savunma bağışları farklı kodlar (474 vb.)."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "Resmi makbuz / kabul belgesi alındı mı? (Bakanlık/Fon/Lehdar)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bakanlık, ilgili fon veya yardım yapılan kişi/aile adına düzenlenen makbuz. Belgesiz bağış 475 kapsamında gösterilemez."
+    - id: sehit_gazi_belgesi
+      soru: "Yardımın 3713 s.K. şehit/malul gazi kapsamında olduğu belgelendi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Şehit yakınına yapılan doğrudan yardımda şehitlik belgesi, malul gaziye yapılanda gazi belgesi gerekir. Bakanlık/fon kanalıyla ise protokol yeterli."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Ayni yardımın maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Ayni yardım varsa maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  3713 sayılı Terörle Mücadele Kanunu kapsamında şehit yakınlarına, malul ve
+  engelli gazilere destek amacıyla yapılan bağışların tamamı kurumlar vergisi
+  matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Bağış 3713 s.K. kapsamında şehit/gazi desteği amacı taşımalı
+  - Doğrudan kişiye yapılan yardımda şehitlik/gazi belgesi zorunlu
+  - Bakanlık/fon kanalıyla yapılan bağışta protokol yeterli
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - Bakanlık/fon/alıcıdan resmi makbuz
+
+  ## YİAKV Etkisi
+  475 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 3713 s.K. kapsamında şehit/gazi desteği için nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 3713 s.K. kapsamında şehit/gazi desteği için ayni yardım.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 475. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Şehitlik / Maluliyet-Gazi Belgesi (Doğrudan Yardımda)
+    detay: "Şehit yakınına yapılan yardımda şehitlik belgesi; malul gaziye yapılanda gazi veya maluliyet belgesi. Bakanlık/fon kanalıyla yapılıyorsa bu belge şart değil."
+    temin_yeri: İlgili Bakanlık / Mülkiye
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Makbuzu / Kabul Yazısı / Protokol
+    detay: "Bakanlık, ilgili fon veya yardım yapılan kişi/aile adına düzenlenen resmi makbuz ya da kabul yazısı. Bakanlık kanalıyla yapılıyorsa protokol yeterli."
+    temin_yeri: Bakanlık / İlgili Fon / Alıcı
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme resmi hesaba doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni yardımda imzalı teslim tutanağı ve maliyet/net defter değerini gösteren belge."
+    temin_yeri: Muhasebe / Alıcı
+
+k_checklist:
+  - id: K1
+    soru: "Bağış 3713 s.K. kapsamında şehit/gazi desteği amacı taşıdığı doğrulandı mı?"
+    referans: "3713 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Doğrudan kişiye yapılan yardımda şehitlik/maluliyet-gazi belgesi temin edildi mi?"
+    referans: "3713 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "3713 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "Bakanlık/fon/alıcıdan resmi makbuz veya kabul yazısı alındı mı?"
+    referans: "3713 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (475 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

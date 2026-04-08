@@ -1,0 +1,256 @@
+ic_kod: risturnlar_5_1_i
+baslik: Risturnlar (Kooperatiflerden Ortak Payı Kazanç İstisnası)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 401 }
+  - { donem: 2025, kod: 401 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-i
+  - 1163 Sayılı Kooperatifler Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: yatirim_tesvikleri
+
+wizard_agaci:
+  tetikleyici_soru: "Kooperatifiniz, ortaklarıyla yaptığı muameleler üzerinden risturn hesaplayıp dağıttı mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 5/1-i** kapsamında, kooperatiflerin ortakları için hesapladıkları
+    **risturnlar** kurumlar vergisinden istisnadır. Risturn; kooperatifin ortaklarıyla
+    yaptığı muameleler üzerinden hesaplayıp, ortaklara işlem hacimleriyle orantılı
+    olarak dağıttığı kazanç payıdır.
+
+    ## Temel Koşullar
+
+    - **Yalnızca kooperatifler:** KVK Md.5/1-i istisnası yalnızca kooperatiflere
+      uygulanır; anonim şirket, limited şirket gibi diğer kurum türleri bu
+      istisnadan yararlanamaz.
+    - **Ana sözleşme kapsamı:** Kooperatifin ana sözleşmesinde belirtilen amaçlar
+      çerçevesinde faaliyet göstermesi zorunludur; kapsam dışı faaliyetlerden doğan
+      kazanç risturn istisnasından yararlanamaz.
+    - **Ortak muamelesi şartı:** İstisna yalnızca ortaklarla yapılan muamelelerden
+      doğan kazancı kapsar. Ortak dışı muamelelerden elde edilen kazanç istisna
+      kapsamı dışındadır; karma faaliyette orantılama zorunludur.
+    - **Orantılı dağıtım:** Risturnun ortaklara işlem hacimleriyle (muamele
+      miktarlarıyla) orantılı olarak dağıtılması gerekir; sermaye payı veya sabit
+      tutarda dağıtım risturn niteliği taşımaz.
+    - **Genel kurul kararı:** Risturn dağıtımının kooperatif genel kurulunca karara
+      bağlanmış olması zorunludur.
+    - **Dağıtılan kısım:** Ortakla yapılan muamelelerden doğan kazancın tamamı değil,
+      genel kurul kararıyla dağıtımına karar verilen kısmı istisna kapsamındadır;
+      dağıtılmayan kısım KV matrahında kalır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Orantılama hatası riski:** Ortak dışı muamele oranı yanlış hesaplanırsa
+      gereğinden fazla istisna uygulanır; bu durum incelemede tarhiyat riskine yol açar.
+    - **Orantısız dağıtım:** Sabit tutarda veya sermaye payına göre yapılan dağıtım
+      KVK anlamında risturn sayılmaz; bu şekilde yapılan dağıtım üzerinden istisna
+      uygulanamaz.
+    - **Genel kurul kararı zorunluluğu:** Kararın yokluğunda veya sonradan alınması
+      durumunda istisnanın geçerliliği tartışmalı hale gelir; karar önce alınmalıdır.
+    - **Kooperatif türü:** Her kooperatif türünde (tüketim, üretim, tarım, yapı)
+      risturn hesaplama yöntemi ve muamele tanımı farklılık gösterebilir; türe özgü
+      uygulamanın ana sözleşmeyle uyumlu olması gerekir.
+
+    ## YİAKV İlişkisi
+
+    **KVK 5/1-i risturn istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.**
+    YİAKV çalışma kâğıdı D.4 satırına — "Risturn (KVK 5/1-i)" — olarak aktarılır.
+    Bu özelliğiyle 370–385 arası KKM istisnalarından farklıdır.
+
+    ## Pratik Notlar
+
+    - **Ortak defteri:** Her ortağın dönem işlem hacmini gösteren ortak defteri
+      veya kayıt sistemi, risturn dağıtım oranlarının tespiti için zorunludur.
+    - **Karma faaliyet oranlaması:** Hem ortak hem de ortak dışı faaliyetleri olan
+      kooperatiflerde orantılama tablosu (Ortak işlem hacmi / Toplam işlem hacmi)
+      çalışma kâğıdına eklenmeli ve her dönem güncellenmeli.
+    - **Nakit veya pay risturn:** Risturn nakit veya pay olarak da dağıtılabilir;
+      her iki türde de genel kurul kararı ve muhasebe kaydı zorunludur.
+    - **YMM tasdik raporu:** İstisna tutarı ≥500.000 TL ise 49 No.lu KV GT
+      kapsamında YMM tasdik raporu zorunludur.
+  kapi_sorulari:
+    - id: kooperatif_niteligi
+      soru: "Kurum KVK kapsamında bir kooperatif midir? (1163 s.K. veya özel kanun)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK Md.5/1-i yalnızca kooperatiflere uygulanır. A.Ş., Ltd. vb. tüm diğer kurum türleri bu istisnadan yararlanamaz."
+    - id: ortak_muamelesi_var
+      soru: "Risturn, ortaklarla yapılan muameleler üzerinden mi hesaplanıyor? (Ortak dışı muameleler ayrıştırıldı mı?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna yalnızca ortak muamelelerinden doğan kazancı kapsar. Karma faaliyette orantılama (Ortak işlem / Toplam işlem) zorunludur."
+    - id: orantili_dagitim
+      soru: "Risturn ortaklara işlem hacimleriyle orantılı olarak mı dağıtılıyor?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Orantısız dağıtım (sermayeye veya sabit tutara göre) risturn niteliği taşımaz ve istisna uygulanamaz."
+    - id: gk_karari_var
+      soru: "Risturn dağıtımı kooperatif genel kurulunca karara bağlandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Genel kurul kararı olmadan gerçekleştirilen dağıtım, risturn istisnasının dayanağını oluşturamaz."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: donem_net_kazanci
+      etiket: "Dönem net kazancı (bilanço kârı, beyanname öncesi)"
+      tip: para
+      zorunlu: true
+      yardim: "Ticari bilanço kârı — vergiye tabi kazanç hesabına giriş noktası. Mali tablolardan alınır."
+    - id: ortak_muamele_orani
+      etiket: "Ortak muamelesi oranı (%) — Ortak işlem hacmi / Toplam işlem hacmi × 100"
+      tip: sayi
+      zorunlu: true
+      yardim: |
+        Karma faaliyette (ortak + ortak dışı) orantılama zorunludur.
+        Formül: Ortak işlem hacmi / Toplam işlem hacmi × 100.
+        Yalnızca ortaklarla çalışıyorsa 100 giriniz.
+        Bu oran, risturn istisna tabanının tespitinde kullanılır.
+    - id: gk_karari_risturn
+      etiket: "Genel kurul kararıyla dağıtıma karar verilen risturn tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Ortak muamelelerinden doğan kazancı (Dönem kazancı × Oran) aşamaz.
+        Genel kurul karar tutanağındaki tutar esas alınır.
+        Dağıtılmayan kısım KV matrahında kalır.
+  formuller:
+    ortak_kazanci: "donem_net_kazanci * (ortak_muamele_orani / 100)"
+    istisna_tutari: "min(gk_karari_risturn, ortak_kazanci) if gk_karari_risturn is not None else 0"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "gk_karari_risturn <= donem_net_kazanci * (ortak_muamele_orani / 100)"
+      hata: "Dağıtılan risturn tutarı, ortak muamelelerinden doğan kazancı (Net Kazanç × Ortak Oranı) aşamaz. Lütfen genel kurul kararı tutarını ve oranlama hesabını kontrol edin."
+    - kural: "ortak_muamele_orani > 0 and ortak_muamele_orani <= 100"
+      hata: "Ortak muamelesi oranı 0'dan büyük ve 100'den küçük veya eşit olmalıdır."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-i: Kooperatiflerin ortakları için hesapladıkları risturnlar kurumlar
+  vergisinden istisnadır.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Risturn Tanımı ve Hesaplama
+  Risturn = Kooperatifin ortaklarıyla yaptığı muameleler üzerinden hesaplayıp
+  ortaklara işlem hacimleriyle orantılı olarak dağıttığı kazanç payıdır.
+
+  ## Kritik Koşullar
+  - Yalnızca kooperatiflere uygulanır (1163 s.K. veya özel kanun kapsamında)
+  - Kooperatif ana sözleşmesi kapsamında faaliyet göstermeli
+  - Yalnızca ortak muamelelerinden doğan kazanç (karma faaliyette orantılama zorunlu)
+  - Dağıtım ortaklara işlem hacimleriyle orantılı olmalı
+  - Genel kurul kararına dayalı dağıtım zorunlu
+  - Dağıtılmayan kısım istisna dışı — KV matrahında kalır
+
+  ## Ortak Dışı Muamele Ayrıştırması
+  Karma faaliyette (ortak + ortak dışı):
+  - Ortak muamelesi oranı = Ortak işlem hacmi / Toplam işlem hacmi
+  - İstisna tabanı = Dönem net kazancı × Ortak muamelesi oranı
+  - İstisna = İstisna tabanından GK kararıyla dağıtılan kısım
+
+  ## YİAKV Etkisi
+  KVK 5/1-i Risturn İstisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.
+  YİAKV çalışma kâğıdı D.4 satırına "Risturn (KVK 5/1-i)" olarak aktarılır.
+  Bu özelliği, 370–385 arası KKM istisnalarından temel farklıdır.
+
+  ## YMM Tasdik
+  İstisna tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Risturn Dağıtım Kararı (Genel Kurul Kararı Sonrası)
+  Borç: 590 Dönem Net Kârı (veya 570 Geçmiş Yıllar Kârları)
+  Alacak: 360 Ödenecek Vergi ve Fonlar (Varsa) / 430 Alınan Sipariş Avansları
+  veya
+  Alacak: 320 Satıcılar / 335 Ortaklara Borçlar (Risturn borcu olarak)
+  Açıklama: Genel kurul kararında belirlenen risturn tutarı.
+
+  ## Risturn Ödemesi
+  Borç: 335 Ortaklara Borçlar (veya ilgili borç hesabı)
+  Alacak: 102 Bankalar
+  Açıklama: Ortaklara nakit ödeme. Pay şeklinde ise ayrı kayıt.
+
+  ## Not
+  Risturn istisnası beyanname düzeyinde uygulanır; muhasebede ayrı bir
+  fon hesabına (549) alma zorunluluğu bulunmamaktadır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Kooperatif Kuruluş/Tescil Belgesi ve Ana Sözleşme
+    detay: "Kurumun kooperatif niteliğini kanıtlayan tescil belgesi ve güncel ana sözleşme. Faaliyet alanının risturn kapsamında olduğunun teyidi."
+    temin_yeri: Ticaret Sicili / Kooperatif Arşivi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Genel Kurul Kararı (Risturn Dağıtım Kararı)
+    detay: "Risturn dağıtım tutarı ve yönteminin karara bağlandığı genel kurul tutanağı. Kararın tarihi ve numarası esas alınır."
+    temin_yeri: Kooperatif Genel Kurul Arşivi / Noterde Tescil
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ortak Defteri / İşlem Hacmi Kayıtları
+    detay: "Her ortağın dönem işlem hacmini gösteren kayıtlar. Orantılı dağıtım ve istisna tabanı hesabı için zorunludur."
+    temin_yeri: Kooperatif Muhasebesi / Ortak Kayıt Sistemi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ortak / Ortak Dışı Muamele Ayrıştırma Tablosu
+    detay: "Karma faaliyette toplam işlem hacmi içinde ortak payının hesaplanması. İstisna tabanı oranlamasının dayanağı."
+    temin_yeri: Kooperatif Muhasebesi
+  - kategori: zorunlu
+    "no": 5
+    baslik: Risturn Dağıtım Listesi
+    detay: "Ortak bazında işlem hacmi ve bu hacme göre hesaplanan risturn payı listesi. Genel kurul kararıyla tutarlı olmalıdır."
+    temin_yeri: Kooperatif Muhasebesi
+  - kategori: destekleyici
+    "no": 6
+    baslik: Banka Dekontları / Ödeme Kayıtları
+    detay: "Risturnun ortaklara ödenmesine ilişkin banka çıktıları veya kasa kayıtları."
+    temin_yeri: Banka / Muhasebe
+  - kategori: destekleyici
+    "no": 7
+    baslik: Dönem Bilanço ve Gelir Tablosu
+    detay: "Dönem net kazancının tespiti ve risturn istisna tabanının hesabı için."
+    temin_yeri: Muhasebe
+
+k_checklist:
+  - id: K1
+    soru: "Kurum KVK kapsamında kooperatif statüsünde mi? (1163 s.K. veya özel kanun)"
+    referans: "KVK Md.5/1-i | 1163 s.K."
+  - id: K2
+    soru: "Kooperatif, ana sözleşmesinde belirtilen amaçlar doğrultusunda mı faaliyet gösteriyor?"
+    referans: "KVK Md.5/1-i | Ana Sözleşme"
+  - id: K3
+    soru: "Risturn, yalnızca ortaklarla yapılan muamelelerden doğan kazanç üzerinden mi hesaplandı? (Ortak dışı ayrıştırma yapıldı mı?)"
+    referans: "KVK Md.5/1-i | GİB Beyan Reh. 2026 (No:606)"
+  - id: K4
+    soru: "Karma faaliyette ortak muamelesi oranı (Ortak işlem / Toplam işlem) doğru hesaplandı ve belgelendi mi?"
+    referans: "KVK Md.5/1-i | GİB Beyan Reh. 2026 (No:606)"
+  - id: K5
+    soru: "Risturn ortaklara işlem hacimleriyle orantılı dağıtılıyor mu? (Sermayeye veya sabit tutara göre dağıtım değil)"
+    referans: "KVK Md.5/1-i"
+  - id: K6
+    soru: "Risturn dağıtımı kooperatif genel kurulunca karara bağlandı ve tutanak hazırlandı mı?"
+    referans: "KVK Md.5/1-i | 1163 s.K."
+  - id: K7
+    soru: "Genel kurulda karar verilen risturn tutarı, ortakla yapılan muamelelerden doğan kazancı aşmıyor mu?"
+    referans: "KVK Md.5/1-i"
+  - id: K8
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (Risturn istisnası YİAKV'den DÜŞÜLEBİLİR — D.4 satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 D.4"
+  - id: K9
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

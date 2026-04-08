@@ -1,0 +1,176 @@
+ic_kod: sosyal_hizmetler_bagis_2828sk
+baslik: AÇSHB Sosyal Hizmet Kuruluşlarına Bağış
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 471 }
+  - { donem: 2025, kod: 471 }
+
+mevzuat_dayanagi:
+  - 2828 sayılı Sosyal Hizmetler Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "2828 sayılı Sosyal Hizmetler Kanunu kapsamında bir sosyal hizmet kurum veya kuruluşuna bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **2828 sayılı Sosyal Hizmetler Kanunu** kapsamında faaliyet gösteren Aile ve
+    Sosyal Hizmetler Bakanlığı veya bakanlığa bağlı sosyal hizmet kurum ve
+    kuruluşlarına yapılan bağış ve yardımların **tamamı** kurumlar vergisi
+    matrahından indirilir.
+
+    ## Alıcı Niteliği
+
+    - Aile ve Sosyal Hizmetler Bakanlığı (doğrudan)
+    - Bakanlığa bağlı huzurevleri
+    - Çocuk yuvaları ve yetiştirme yurtları
+    - Engelli bakım merkezleri
+    - Sevgi evleri ve diğer sosyal hizmet kuruluşları
+
+    **Kapsam dışı:** Özel sosyal hizmet işletmesi, sosyal amaçlı özel dernek veya vakıf.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **471 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_sosyal_hizmet
+      soru: "Bağış 2828 s.K. kapsamında bir sosyal hizmet kurum/kuruluşuna mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "2828 s.K. kapsamı: Aile ve Sosyal Hizmetler Bakanlığı ve bakanlığa bağlı sosyal hizmet kuruluşları (huzurevi, çocuk yuvası, yetiştirme yurdu, engelli bakım merkezi, sevgi evi vb.). Özel sosyal hizmet işletmesi → Bu kod değil."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "Sosyal hizmet kuruluşundan resmi bağış makbuzu / kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bakanlık veya ilgili kuruluştan düzenlenen resmi makbuz veya bağış kabul yazısı zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile sosyal hizmet kuruluşuna yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Gıda/giyim/mobilya/malzemenin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Gıda, giyim, mobilya, malzeme gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  2828 sayılı Sosyal Hizmetler Kanunu kapsamında Aile ve Sosyal Hizmetler Bakanlığı
+  veya bakanlığa bağlı sosyal hizmet kurum ve kuruluşlarına yapılan bağış ve
+  yardımların tamamı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Not: 402 ile Fark
+  402 (KVK Md.10/1-c): Kamu idaresine spesifik tesis (huzurevi/çocuk yuvası) İNŞASI bağışı.
+  471 (2828 s.K.): Sosyal hizmet kurumlarına genel bağış/yardım — inşaat şartı yok.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı 2828 s.K. kapsamında AÇSHB bağlı kuruluş mu?
+  - Bağışın amacı 2828 s.K. kapsamında sosyal hizmet faaliyetiyle ilgili mi?
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - Bakanlık/kuruluştan resmi makbuz/kabul yazısı
+
+  ## YİAKV Etkisi
+  471 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 2828 s.K. kapsamında sosyal hizmet kuruluşuna nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 2828 s.K. kapsamında sosyal hizmet kuruluşuna ayni bağış.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 471. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (AÇSHB Bağlı Kuruluş)
+    detay: "Aile ve Sosyal Hizmetler Bakanlığı bünyesindeki kuruluşun resmi kimliğini gösteren belge. Özel işletme belgesi geçersizdir."
+    temin_yeri: Bakanlık / İlgili Kuruluş
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Resmi Makbuz
+    detay: "Bakanlık veya ilgili sosyal hizmet kuruluşundan düzenlenen resmi makbuz veya bağış kabul yazısı."
+    temin_yeri: Alıcı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme kuruluşun resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Gıda, giyim, mobilya, malzeme bağışlarında imzalı teslim-tesellüm tutanağı ve maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / Alıcı Kurum
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (AÇSHB veya bakanlığa bağlı 2828 s.K. kapsamı sosyal hizmet kuruluşu)"
+    referans: "2828 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağışın amacı 2828 s.K. kapsamında sosyal hizmet faaliyetiyle ilgili mi?"
+    referans: "2828 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "2828 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "Bakanlık/kuruluştan resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "2828 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (471 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

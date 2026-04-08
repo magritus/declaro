@@ -269,6 +269,141 @@ Bu istisna **YİAKV matrahından düşülemez** — "kazanç varsa" grubunda yer
 - Kazancın ayrı hesapta izlenmesi ve beyannamede bu şubeye ait ayrı hesap tablosu sunulması denetim açısından kritiktir.`,
   },
   {
+    id: 'arge_tasarim_indirimleri',
+    soru: 'Ar-Ge, tasarım veya teknogirişim indirimine hak kazandınız mı?',
+    grup: 'kazanc_varsa',
+    etiket: 'Kazanç varsa indirilecek',
+    bilgi: `## Genel Çerçeve
+KVK **10/1-a** ve **5746 Sayılı Kanun Madde 3** kapsamında Ar-Ge, yenilik ve tasarım harcamalarının **tamamı** (%100) kurum kazancından indirilir. Teknogirişim sermaye desteği alanlar için ek indirim imkânı mevcuttur.
+
+## Ar-Ge İndirimi (5746 s.K. Md.3)
+- Ar-Ge merkezi veya TGB bünyesinde yapılan Ar-Ge ve yenilik harcamalarının **%100'ü** indirim konusu yapılır.
+- **Doktoralı veya temel bilimler lisanslı** Ar-Ge personeli için ek **%50 indirim** uygulanır.
+- İndirim tutarı kazançla sınırlıdır; aşan kısım sonraki dönemlere devreder.
+
+## Tasarım İndirimi (5746 s.K. Md.3/A)
+- Tasarım merkezi bünyesinde yapılan tasarım harcamalarının **%100'ü** indirim konusu yapılır.
+- Nitelikli tasarım personeli için ek **%50 indirim** uygulanabilir.
+
+## Teknogirişim Desteği (5746 s.K. Md.3/B)
+- Teknogirişim şirketlerine sağlanan sermaye desteğinin **%75'i** indirim konusu yapılır.
+
+## Önemli Sınırlamalar
+- **Ar-Ge merkezi belgesi:** 50+ personel şartı ve Sanayi Bakanlığı onayı zorunludur.
+- **TGB dışı harcamalar:** TGB dışında yapılan Ar-Ge harcamaları farklı koşullara tabidir.
+- **Belge zorunluluğu:** Ar-Ge harcama listesi, proje bazlı zaman çizelgesi ve personel listesi denetimde istenir.
+
+## YİAKV İlişkisi
+Ar-Ge ve tasarım indirimleri **YİAKV matrahından düşülür** — beyanname sıralamasında kazanç varsa grubunda yer alır ve YİAKV matrahını azaltır.
+
+## Pratik Notlar
+- Ar-Ge merkezi veya tasarım merkezi belgesi olmadan 5746 s.K. indirimi uygulanamaz.
+- Proje bazlı maliyet takibi ve zaman çizelgesi vergi incelemesinde kritik kanıttır.
+- YMM tam tasdik raporunda Ar-Ge harcama listesi ayrıntılı açıklanmalıdır.`,
+  },
+  {
+    id: 'bagis_yardim_sponsorluk',
+    soru: 'Bağış, yardım veya sponsorluk harcamanız var mı?',
+    grup: 'kazanc_varsa',
+    etiket: 'Kazanç varsa indirilecek',
+    bilgi: `## Genel Çerçeve
+KVK **10. Madde** kapsamında çeşitli kurumlara yapılan bağış ve yardımlar ile spor sponsorluğu harcamaları kurum kazancından indirilir. İndirim tutarı beyan edilen kurum kazancının belirli bir oranıyla sınırlıdır.
+
+## Genel Bağış ve Yardımlar (KVK 10/1-c)
+- Genel bütçeli idareler, belediyeler, köyler ile kamu yararına çalışan dernek ve vakıflara yapılan bağışların **%5'i** indirim konusu yapılır.
+- Tam indirimli kurumlar (Cumhurbaşkanlığı kararıyla belirlenen vakıf ve dernekler) için **tamamı** indirilir.
+
+## Spor Sponsorluğu (KVK 10/1-b)
+- **Amatör spor dalları** için sponsorluk harcamalarının **tamamı** (%100) indirilir.
+- **Profesyonel spor dalları** için sponsorluk harcamalarının **%50'si** indirilir.
+
+## Eğitim ve Sağlık Bağışları
+- Okul, sağlık tesisi, yurt, kütüphane inşası veya onarımı için yapılan bağışlar (müstakil satırlar).
+- Belirtilen amaçlara özgü kısıtlama şartı aranır.
+
+## Önemli Sınırlamalar
+- **Makbuz zorunluluğu:** Her bağış ve yardım için alıcı kurumdan makbuz alınması şarttır.
+- **Amaç kısıtı:** Bağışın yalnızca belirlenen amaç için kullanılması gerekir; genel amaçlı bağışlar özel indirimden yararlanamaz.
+- **Nakdi/ayni:** Her ikisi de indirim konusu yapılabilir; ayni bağışlarda değer tespiti belgesi gereklidir.
+
+## YİAKV İlişkisi
+Bağış ve yardım indirimleri **YİAKV matrahından düşülür** — beyannamede kazanç varsa grubunda yer alır.
+
+## Pratik Notlar
+- Kamu yararına dernek veya muafiyetli vakıf statüsü, bağış yapılmadan önce teyit edilmelidir.
+- Yıllık bağış toplamının %5 tavanını aşıp aşmadığı dönem sonunda kontrol edilmelidir.
+- Sponsorluk sözleşmesi ve reklam özelliği taşımadığına dair belge incelemede istenir.`,
+  },
+  {
+    id: 'yatirim_tesvikleri',
+    soru: 'Yatırım indirimi, risturn veya özel teşviklerden yararlandınız mı?',
+    grup: 'kazanc_varsa',
+    etiket: 'Kazanç varsa indirilecek',
+    bilgi: `## Genel Çerçeve
+GVK **Geçici Madde 61** kapsamındaki yatırım indirimi, kooperatiflere özgü risturn istisnası ve **KVK 10/1-ı** nakdi sermaye artışı indirimi bu grupta yer alır.
+
+## GVK Geçici Md.61 — Yatırım İndirimi
+- **24/04/2003 tarihinden önce** başlanan yatırımlara ait yatırım indirimi istisnası hâlâ uygulanabilir.
+- İndirim tutarı, yatırım teşvik belgesi kapsamındaki harcamalar üzerinden hesaplanır.
+- Endekslenmiş bakiye tutar beyannamede ayrı satırda gösterilir.
+
+## Risturn İstisnası (KVK 5/1-i)
+- **Kooperatifler** tarafından ortaklara dağıtılan risturnlar kurumlar vergisinden istisnadır.
+- Üretim, kredi ve pazarlama kooperatifleri için ayrı koşullar geçerlidir.
+- Risturnun ortakların kooperatifle yaptığı işlem hacmiyle orantılı olması şarttır.
+
+## Nakdi Sermaye Artışı İndirimi (KVK 10/1-ı)
+- Nakdi olarak artırılan sermaye üzerinden TCMB 1 yıllık mevduat faiz oranı esas alınarak hesaplanan tutarın **%50'si** indirim konusu yapılır.
+- Finans sektörü kurumları ve BİST'te işlem gören şirketler için farklı oranlar uygulanabilir.
+
+## Önemli Sınırlamalar
+- **Yatırım teşvik belgesi:** Geçici Md.61 için belgenin hâlâ geçerli olması ve harcamaların belgede yer alması şarttır.
+- **Sermaye tescili:** Nakdi sermaye artışının ticaret siciline tescil edilmiş olması zorunludur.
+- **Kooperatif şartları:** Risturn dağıtım kararı genel kurul kararıyla alınmalıdır.
+
+## YİAKV İlişkisi
+Bu gruptaki indirimler **YİAKV matrahından düşülür** — kazanç varsa grubunda yer alır.
+
+## Pratik Notlar
+- GVK Geçici Md.61 yatırım indirimi bakiyesi enflasyon düzeltmesiyle güncellenmiş olmalıdır.
+- Nakdi sermaye artışında banka transferi belgesi ve sermaye tescil tarihi kritik kanıttır.
+- Risturn dağıtımında kooperatif defterlerinde ortaklara isabet eden tutarların ayrıştırılması zorunludur.`,
+  },
+  {
+    id: 'hizmet_indirimleri',
+    soru: 'Sağlık, eğitim veya diğer hizmet indirimlerinden yararlandınız mı?',
+    grup: 'kazanc_varsa',
+    etiket: 'Kazanç varsa indirilecek',
+    bilgi: `## Genel Çerçeve
+KVK **10. Madde** ve ilgili özel kanunlar kapsamında sağlık tesisi işletmeciliği, eğitim-öğretim ve diğer hizmet faaliyetlerine yönelik çeşitli indirimler bu grupta yer almaktadır.
+
+## Sağlık Tesisi İndirimi (KVK 10/1-d)
+- **Hastane ve rehabilitasyon merkezi** kurarak işleten şirketler için bu faaliyetten elde edilen kazancın belirli bir kısmı indirim konusu yapılabilir.
+- Sağlık Bakanlığı ruhsatı ve faaliyet belgesi zorunludur.
+
+## Eğitim-Öğretim İndirimi (KVK 10/1-e)
+- Okul öncesi, ilk ve orta öğretim ile yükseköğretim kurumu işleten kurumlar için eğitim faaliyetinden elde edilen kazanç indirim konusu yapılabilir.
+- MEB onayı ve ilgili mevzuat kapsamında kuruluş belgesi zorunludur.
+
+## Diğer KVK 10 Kapsamlı İndirimler
+- **KVK 10/1-f:** Girişim sermayesi fonu ayıranlar için fon tutarının %10'u.
+- **KVK 10/1-g:** Engelli bireylere yönelik istihdam ve erişilebilirlik harcamaları.
+- **KVK 10/1-h:** Türkiye'ye özgü bazı özel teşvik düzenlemeleri.
+
+## Önemli Sınırlamalar
+- **Faaliyet ayrımı:** İndirim yalnızca ilgili hizmet faaliyetinden elde edilen kazanca uygulanır; diğer gelirler ayrı tutulmalıdır.
+- **Ruhsat ve belgeler:** Her hizmet türü için ilgili bakanlıktan alınmış ruhsat/izin belgesi zorunludur.
+- **Kazanç tespiti:** Karma faaliyetlerde hizmet kazancının ayrıştırılması ve belgelenmesi denetimde kritiktir.
+
+## YİAKV İlişkisi
+Bu gruptaki indirimler kalem bazında değişmekle birlikte çoğunlukla **YİAKV matrahından düşülür** — her kalemin kendi YAML tanımına ayrıca bakılmalıdır.
+
+## Pratik Notlar
+- Girişim sermayesi fonu indirimi için fon ayrım kararı ve muhasebe kaydı dönem sonuna kadar tamamlanmalıdır.
+- Sağlık veya eğitim tesisi işletmeciliğinde, tesisin bir bölümünün başka amaçla kullanılması halinde kazanç ayrıştırması özelge alınarak netleştirilmelidir.
+- Bu kategoride yer alan indirimler teknik ve niş nitelikte olduğundan vergi danışmanınızla teyit edilmesi önerilir.`,
+  },
+  {
     id: 'diger_istisnalar',
     soru: 'Diğer özel indirim veya istisna kalemlerin var mı?',
     grup: 'kazanc_varsa',

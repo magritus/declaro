@@ -1,0 +1,223 @@
+ic_kod: yurtdisi_saglik_hizmet_10_1g
+baslik: Yurt Dışı Sağlık Hizmetleri Kazanç İndirimi (%50)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 414 }
+  - { donem: 2025, kod: 414 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-ğ
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: hizmet_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "Türkiye'de yerleşmemiş kişilere (yabancı/yurt dışı ikametli) sağlık hizmeti verdikten kazanç elde ettiniz mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-ğ** kapsamında, **Türkiye'de yerleşmiş olmayan kişilere**
+    Türkiye'den verilen ve münhasıran yurt dışında yararlanılan **sağlık hizmetlerinden**
+    elde edilen **net kazancın %50'si** kurumlar vergisi matrahından indirilir.
+
+    ## Kapsam Koşulları
+
+    Aşağıdaki dört koşulun tamamının sağlanması gerekir:
+
+    1. **Alıcı:** Türkiye'de yerleşmemiş kişi (yabancı veya yurt dışı ikametli hasta)
+    2. **Hizmet veren:** Sağlık Bakanlığı izni ve denetimine tabi sağlık kuruluşu
+    3. **Yararlanan:** Hizmet münhasıran yurt dışında yararlanılmak üzere verilmeli
+       (Yurt dışı ikametli hastanın Türkiye'ye gelerek tedavi alması kapsam içidir)
+    4. **Kazanç:** Net kazanç (brüt gelir eksi ilgili giderler) — brüt gelir değil
+
+    ## İndirim Oranı
+
+    Net kazancın **%50'si** matrahtan indirilir. Matrahı aşan kısım sonraki yıllara
+    **devredilemez**.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-ğ kapsamındaki bu indirim YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+    ## 414 ile 415 İlişkisi
+
+    414 (sağlık) ve 415 (eğitim) aynı bent (KVK Md.10/1-ğ) kapsamındadır.
+    Aynı dönemde birlikte uygulanabilir — ayrı faaliyetleri kapsarlar.
+
+    ## Önemli Uyarılar
+
+    - **Net kazanç zorunlu:** İndirim brüt gelire değil, brüt gelirden ilgili giderlerin
+      düşülmesiyle bulunan net kazanca uygulanır.
+    - **Karma faaliyet:** Hem yurt içi hem yurt dışı hastalara hizmet veriliyorsa,
+      yurt dışı hasta geliri ve ilgili gider payı ayrıştırılmalıdır.
+    - **Ruhsat zorunluluğu:** Sağlık Bakanlığı izni ve denetimine tabi olmayan
+      kuruluşlar kapsam dışıdır.
+    - **YMM tasdik raporu:** İndirim tutarı ≥500.000 TL ise YMM tasdik raporu
+      zorunludur.
+  kapi_sorulari:
+    - id: alici_yurtdisi
+      soru: "Hizmet Türkiye'de yerleşmemiş kişilere (yabancı/yurt dışı ikametli hasta) mi verildi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yurt dışı ikametli yabancı hasta → Kapsam. Yurt içi ikametli (Türk vatandaşı veya Türkiye'de ikamet eden yabancı) → Kapsam dışı."
+    - id: saglik_bakanligi_ruhsati
+      soru: "Hizmet veren kuruluş Sağlık Bakanlığı izni ve denetimine tabi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sağlık Bakanlığı faaliyet ruhsatı olmayan kuruluş → Kapsam dışı. Özel hastane, klinik, tıp merkezi vb. ruhsatlı kuruluşlar kapsam içindedir."
+    - id: munhasiran_yurtdisi
+      soru: "Hizmet münhasıran yurt dışında yararlanılmak üzere mi verildi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yurt dışı ikametli hastanın Türkiye'ye gelerek tedavi alması kapsam içidir. Hizmet Türkiye'de veriliyor, yararlanma yurt dışında gerçekleşiyor."
+    - id: net_kazanc_hesaplandi
+      soru: "İndirime esas net kazanç (brüt gelir eksi ilgili giderler) ayrı hesaplandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim brüt gelire değil, NET KAZANCA uygulanır. Karma faaliyette yurt dışı hasta geliri ve gider payı ayrıştırılmalıdır."
+
+parametreler:
+  oran: 0.50
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: yurtdisi_saglik_brut_gelir
+      etiket: "Yurt dışı hasta brüt geliri (TL) — Türkiye'de yerleşmemiş kişilerden elde edilen toplam sağlık geliri"
+      tip: para
+      zorunlu: true
+      yardim: "Yurt dışı ikametli hastalara verilen sağlık hizmetlerinden elde edilen toplam brüt gelir. Karma faaliyette yalnızca yurt dışı hasta payı girilmeli."
+    - id: yurtdisi_saglik_giderler
+      etiket: "İlişkili giderler (TL) — Yurt dışı hasta hizmetiyle doğrudan ilişkili maliyet ve giderler"
+      tip: para
+      zorunlu: true
+      yardim: "Yurt dışı sağlık hizmeti ile doğrudan ilişkili giderler. Karma faaliyette yurt dışı hasta hizmeti payı ayrıştırılır. Net kazanç = Brüt gelir - Bu giderler."
+    - id: yurtdisi_musteri_teyit
+      etiket: "Yurt dışı hasta niteliği teyit edildi mi? (Pasaport/kimlik kontrolü yapıldı)"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: "Alıcının Türkiye'de yerleşmemiş kişi olduğu pasaport, yurt dışı ikametgah belgesi veya benzeri resmi belge ile teyit edilmelidir."
+  formuller:
+    net_kazanc: "max(0, yurtdisi_saglik_brut_gelir - yurtdisi_saglik_giderler)"
+    istisna_tutari: "net_kazanc * 0.50"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "yurtdisi_saglik_brut_gelir >= 0 and yurtdisi_saglik_giderler >= 0"
+      hata: "Gelir ve gider tutarları negatif olamaz."
+    - kural: "yurtdisi_saglik_brut_gelir > 0"
+      hata: "Yurt dışı hasta brüt geliri girilmelidir."
+    - kural: "yurtdisi_musteri_teyit == 'evet'"
+      hata: "Alıcının yurt dışı ikametli olduğu belgelenmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-ğ: Türkiye'de yerleşmiş olmayan kişilere Türkiye'den verilen ve
+  münhasıran yurt dışında yararlanılan sağlık hizmetlerinden elde edilen kazancın
+  %50'si kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kapsam Tablosu
+
+  KAPSAM KOŞULLARI:
+  - Alıcı yurt dışı ikametli kişi → Zorunlu
+  - Sağlık Bakanlığı ruhsatlı kuruluş → Zorunlu
+  - Münhasıran yurt dışında yararlanma → Zorunlu
+  - Net kazanç (brüt değil) → Zorunlu
+
+  KAPSAM DIŞI DURUMLAR:
+  - Yurt içi ikametli hastalara verilen hizmetler
+  - Sağlık Bakanlığı ruhsatı olmayan kuruluşlar
+  - Net kazanç negatifse (0 TL uygulanır, indirim yapılamaz)
+
+  ## İndirim Kuralları
+  - Net kazancın %50'si indirim konusu yapılır
+  - Matrahı aşan kısım sonraki yıla devredilmez
+  - Brüt gelire değil, net kazanca uygulanır
+
+  ## Kritik Kontroller
+  - Alıcının yurt dışı ikameti pasaport veya belge ile teyit edilmeli
+  - Karma faaliyette yurt içi/yurt dışı gelir ve gider ayrımı yapılmalı
+  - Sağlık Bakanlığı ruhsat belgesi dosyada bulunmalı
+  - Net kazanç negatifse indirim sıfırdır
+
+  ## 414 ile 415 İlişkisi
+  414 (Sağlık) ve 415 (Eğitim) aynı bent KVK Md.10/1-ğ kapsamındadır.
+  Aynı dönemde her ikisi de uygulanabilir — farklı faaliyetleri kapsar.
+  Aynı gelir hem 414 hem 415 olarak gösterilemez.
+
+  ## YİAKV Etkisi
+  414 sağlık hizmeti indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Sağlık Bakanlığı Faaliyet Ruhsatı
+    detay: "Hizmet veren kuruluşun Sağlık Bakanlığı'ndan aldığı ve geçerliliği devam eden faaliyet ruhsatı. Ruhsatsız kuruluşlar kapsam dışıdır."
+    temin_yeri: Sağlık Bakanlığı / Kurum Arşivi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Yurt Dışı Hasta Kimlik/Pasaport Belgesi veya İkamet Teyidi
+    detay: "Alıcının Türkiye'de yerleşmemiş kişi olduğunu gösteren pasaport, yurt dışı ikametgah belgesi veya benzeri resmi belge. Hasta kayıt/kabul belgeleri de destekleyici niteliktedir."
+    temin_yeri: Hasta / Hasta Dosyası
+  - kategori: zorunlu
+    "no": 3
+    baslik: Yurt Dışı Hasta Fatura/Gelir Kayıtları
+    detay: "Yurt dışı ikametli hastalara düzenlenen faturalar ve ilgili gelir kayıtları. Karma faaliyette yurt dışı hasta gelirinin ayrıştırıldığını gösteren belge."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 4
+    baslik: İlişkili Gider Dağıtım Tablosu
+    detay: "Yurt dışı hasta hizmetiyle doğrudan ilişkili giderleri gösteren tablo. Karma faaliyette yurt dışı hasta payına düşen giderlerin hesaplanma yöntemi ve dayanaklarını içermeli."
+    temin_yeri: Muhasebe
+  - kategori: destekleyici
+    "no": 5
+    baslik: Hasta Kabul/Tedavi Protokolü
+    detay: "Yurt dışı ikametli hastaya verilen hizmetin içeriğini, tarihini ve tutarını gösteren hastane/klinik kayıtları veya tedavi özeti."
+    temin_yeri: Hasta Dosyası / Hastane Arşivi
+  - kategori: destekleyici
+    "no": 6
+    baslik: Döviz Geliri Banka Kayıtları (varsa)
+    detay: "Hizmet bedelinin döviz olarak tahsil edildiğine ilişkin banka ekstreleri. Zorunlu olmamakla birlikte yurt dışı müşteri niteliğini destekler."
+    temin_yeri: Banka
+
+k_checklist:
+  - id: K1
+    soru: "Alıcının Türkiye'de yerleşmemiş kişi (yurt dışı ikametli) olduğu belgelendi mi?"
+    referans: "KVK Md.10/1-ğ | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Hizmet veren kuruluşun Sağlık Bakanlığı izni ve denetimine tabi olduğu teyit edildi mi?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K3
+    soru: "Hizmetin münhasıran yurt dışında yararlanılmak üzere verildiği doğrulandı mı?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K4
+    soru: "İndirim NET KAZANCA uygulandı mı? (Brüt gelir değil: Brüt gelir − İlişkili giderler)"
+    referans: "KVK Md.10/1-ğ"
+  - id: K5
+    soru: "Karma faaliyette (yurt içi + yurt dışı hasta) gelir ve gider ayrıştırması yapıldı mı?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K6
+    soru: "Net kazanç negatifse indirim sıfır olarak uygulandı mı? (Negatif net kazanç indirime konu edilemez)"
+    referans: "KVK Md.10/1-ğ"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (414 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K8
+    soru: "414 (sağlık) ve 415 (eğitim) kapsamı arasında çakışma ve mükerrer indirim riski değerlendirildi mi?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K9
+    soru: "YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "GİB Beyan Reh. 2026 (No:606)"

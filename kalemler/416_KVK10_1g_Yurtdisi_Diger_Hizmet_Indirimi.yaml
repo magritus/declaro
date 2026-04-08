@@ -1,0 +1,268 @@
+ic_kod: yurtdisi_diger_hizmet_10_1g
+baslik: Yurt Dışı Diğer Hizmet Kazançları İndirimi (%50)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 416 }
+  - { donem: 2025, kod: 416 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-ğ
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: hizmet_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "Yurt dışı müşterilere (sağlık ve eğitim hariç) mimarlık, mühendislik, yazılım, tasarım, çağrı merkezi, veri işleme veya benzeri hizmetler vererek kazanç elde ettiniz mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-ğ** kapsamında, **Türkiye'de yerleşmiş olmayan kişilerle veya
+    işyeri/kanuni/iş merkezi yurt dışında bulunanlara** Türkiye'den verilen ve münhasıran
+    yurt dışında yararlanılan belirli hizmetlerden elde edilen **net kazancın %50'si**
+    kurumlar vergisi matrahından indirilir.
+
+    Bu kod (416) sağlık (414) ve eğitim (415) dışındaki tüm KVK Md.10/1-ğ kapsamlı
+    hizmetleri kapsar.
+
+    ## Kapsam — Hizmet Türleri
+
+    KVK Md.10/1-ğ'de sayılan hizmet türleri:
+    - Mimarlık
+    - Mühendislik
+    - Tasarım
+    - Yazılım
+    - Tıbbi raporlama
+    - Muhasebe kaydı tutma
+    - Çağrı merkezi hizmetleri
+    - Ürün testi, kalite kontrol ve sertifikasyon
+    - Veri saklama, işleme ve analizi
+    - Maliye Bakanlığınca belirlenen mesleki eğitim alanları
+
+    ## Kapsam — Alıcı Niteliği (414/415'ten Farklı)
+
+    **416'da alıcı yelpazesi daha geniştir:**
+    - Türkiye'de yerleşmemiş gerçek kişiler (yurt dışı ikametli bireyler)
+    - **VEYA** işyeri yurt dışında bulunan kuruluşlar
+    - **VEYA** kanuni merkezi yurt dışında bulunan kuruluşlar
+    - **VEYA** iş merkezi yurt dışında bulunan kuruluşlar
+
+    414/415'te yalnızca gerçek kişi alıcılar kapsama girerken, 416'da kurumsal
+    yurt dışı müşteriler de kapsam içindedir.
+
+    ## Kapsam Koşulları
+
+    1. **Hizmet türü:** KVK Md.10/1-ğ listesinde yer alan hizmetlerden biri
+    2. **Alıcı:** Türkiye'de yerleşmemiş gerçek kişi VEYA işyeri/kanuni/iş merkezi
+       yurt dışında olan kuruluş
+    3. **Yararlanan:** Hizmet münhasıran yurt dışında yararlanılmak üzere verilmeli
+    4. **Kazanç:** Net kazanç (brüt gelir eksi ilgili giderler) — brüt gelir değil
+    5. **Bakanlık izni:** Bu hizmetler için herhangi bir bakanlık izni/denetimi ŞARTI YOK
+
+    ## İndirim Oranı
+
+    Net kazancın **%50'si** matrahtan indirilir. Matrahı aşan kısım sonraki yıllara
+    **devredilemez**.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-ğ kapsamındaki bu indirim YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+    ## Önemli Uyarılar
+
+    - **Net kazanç zorunlu:** İndirim brüt gelire değil, net kazanca uygulanır.
+    - **Karma faaliyet:** Hem yurt içi hem yurt dışı müşterilere hizmet veriliyorsa,
+      yurt dışı müşteri geliri ve ilgili gider payı ayrıştırılmalıdır.
+    - **Hizmet türü kontrolü:** Listede yer almayan hizmetler kapsam dışıdır.
+    - **YMM tasdik raporu:** İndirim tutarı ≥500.000 TL ise zorunludur.
+  kapi_sorulari:
+    - id: hizmet_turu_uygun
+      soru: "Hizmet KVK Md.10/1-ğ'de sayılan türlerden biri mi? (Mimarlık, mühendislik, tasarım, yazılım, tıbbi raporlama, muhasebe kaydı, çağrı merkezi, ürün testi/sertifikasyon, veri saklama/işleme/analizi, mesleki eğitim)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Listede yer almayan hizmetler (örn. inşaat, üretim, ticaret, nakliye) bu kod kapsamında değildir. Sağlık hizmetleri 414, eğitim hizmetleri 415 koduna girer."
+    - id: alici_yurtdisi
+      soru: "Alıcı Türkiye'de yerleşmemiş gerçek kişi VEYA işyeri/kanuni merkezi/iş merkezi yurt dışında olan kuruluş mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yurt dışı gerçek kişi müşteri VEYA yurt dışı merkezi/işyeri olan kurumsal müşteri → Kapsam. Türkiye'de faaliyet gösteren kuruluşlar (yabancı sermayeli olsa bile) → Kapsam dışı."
+    - id: munhasiran_yurtdisi
+      soru: "Hizmet münhasıran yurt dışında yararlanılmak üzere mi verildi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Türkiye'de üretilen yazılımın/tasarımın yurt dışında kullanılması, çağrı merkezinin yurt dışı müşterilere hizmet vermesi, veri işlemenin yurt dışı kuruluş için yapılması → Kapsam içi."
+    - id: net_kazanc_hesaplandi
+      soru: "İndirime esas net kazanç (brüt gelir eksi ilgili giderler) ayrı hesaplandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim brüt gelire değil, NET KAZANCA uygulanır. Karma faaliyette yurt dışı müşteri geliri ve gider payı ayrıştırılmalıdır."
+
+parametreler:
+  oran: 0.50
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: yurtdisi_hizmet_brut_gelir
+      etiket: "Yurt dışı müşteri brüt geliri (TL) — KVK Md.10/1-ğ kapsamındaki yurt dışı müşterilerden elde edilen toplam gelir"
+      tip: para
+      zorunlu: true
+      yardim: "Yurt dışı gerçek kişi veya yurt dışı merkezi/işyeri olan kurumsal müşterilere verilen KVK Md.10/1-ğ kapsamlı hizmetlerden elde edilen brüt gelir. Karma faaliyette yalnızca yurt dışı müşteri payı girilmeli."
+    - id: yurtdisi_hizmet_giderler
+      etiket: "İlişkili giderler (TL) — Yurt dışı müşteri hizmetiyle doğrudan ilişkili maliyet ve giderler"
+      tip: para
+      zorunlu: true
+      yardim: "Yurt dışı hizmet ile doğrudan ilişkili giderler. Karma faaliyette yurt dışı müşteri hizmeti payı ayrıştırılır. Net kazanç = Brüt gelir - Bu giderler."
+    - id: hizmet_turu
+      etiket: "Hizmet türü (KVK Md.10/1-ğ listesinden)"
+      tip: metin
+      zorunlu: true
+      yardim: "Örnek: Yazılım geliştirme, mimarlık, mühendislik danışmanlığı, grafik tasarım, çağrı merkezi, veri analizi, muhasebe kaydı tutma, ürün sertifikasyonu vb."
+    - id: yurtdisi_musteri_teyit
+      etiket: "Yurt dışı müşteri/alıcı niteliği teyit edildi mi? (Sözleşme veya faturada yurt dışı adres/merkez bilgisi)"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: "Alıcının yurt dışı gerçek kişi veya yurt dışı merkezi/işyeri olan kuruluş olduğu sözleşme, fatura veya benzeri belge ile teyit edilmelidir."
+  formuller:
+    net_kazanc: "max(0, yurtdisi_hizmet_brut_gelir - yurtdisi_hizmet_giderler)"
+    istisna_tutari: "net_kazanc * 0.50"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "yurtdisi_hizmet_brut_gelir >= 0 and yurtdisi_hizmet_giderler >= 0"
+      hata: "Gelir ve gider tutarları negatif olamaz."
+    - kural: "yurtdisi_hizmet_brut_gelir > 0"
+      hata: "Yurt dışı müşteri brüt geliri girilmelidir."
+    - kural: "hizmet_turu != '' and hizmet_turu != null"
+      hata: "Hizmet türü belirtilmelidir."
+    - kural: "yurtdisi_musteri_teyit == 'evet'"
+      hata: "Alıcının yurt dışı kaynaklı olduğu belgelenmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-ğ: Türkiye'de yerleşmiş olmayan kişilerle, işyeri veya kanuni
+  ya da iş merkezi yurt dışında bulunanlara Türkiye'den verilen ve münhasıran
+  yurt dışında yararlanılan aşağıdaki hizmetlerden elde edilen kazancın %50'si
+  kurumlar vergisi matrahından indirilir:
+  Mimarlık, mühendislik, tasarım, yazılım, tıbbi raporlama, muhasebe kaydı
+  tutma, çağrı merkezi, ürün testi/sertifikasyon, veri saklama/işleme/analizi,
+  Maliye Bakanlığınca belirlenen mesleki eğitim.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kapsam Tablosu
+
+  HİZMET TÜRLERİ (KVK Md.10/1-ğ listesi):
+  - Mimarlık → Kapsam içi
+  - Mühendislik → Kapsam içi
+  - Tasarım → Kapsam içi
+  - Yazılım → Kapsam içi
+  - Tıbbi raporlama → Kapsam içi
+  - Muhasebe kaydı tutma → Kapsam içi
+  - Çağrı merkezi → Kapsam içi
+  - Ürün testi, kalite kontrol ve sertifikasyon → Kapsam içi
+  - Veri saklama, işleme ve analizi → Kapsam içi
+  - Maliye Bakanlığı belirlenen mesleki eğitim → Kapsam içi
+  - Sağlık hizmetleri → 414 kodu
+  - Eğitim hizmetleri → 415 kodu
+  - Listede yer almayan diğer hizmetler → Kapsam dışı
+
+  ALICI NİTELİĞİ (414/415'ten farklı — kurumsal yurt dışı müşteri de kapsam içi):
+  - Türkiye'de yerleşmemiş gerçek kişi → Kapsam içi
+  - İşyeri yurt dışında olan kuruluş → Kapsam içi
+  - Kanuni merkezi yurt dışında olan kuruluş → Kapsam içi
+  - İş merkezi yurt dışında olan kuruluş → Kapsam içi
+  - Türkiye'de faaliyet gösteren kuruluş (yabancı sermayeli olsa bile) → Kapsam dışı
+
+  ## İndirim Kuralları
+  - Net kazancın %50'si indirim konusu yapılır
+  - Bakanlık izni/denetimi şartı yoktur (414/415'ten farklı)
+  - Matrahı aşan kısım sonraki yıla devredilmez
+  - Brüt gelire değil, net kazanca uygulanır
+
+  ## Kritik Kontroller
+  - Hizmet türünün KVK Md.10/1-ğ listesinde yer aldığı teyit edilmeli
+  - Alıcının yurt dışı gerçek kişi veya yurt dışı merkezi/işyeri olan kuruluş
+    olduğu sözleşme/fatura ile belgelenmiş olmalı
+  - Karma faaliyette yurt içi/yurt dışı müşteri geliri ve gider ayrımı yapılmalı
+  - Net kazanç negatifse indirim sıfırdır
+
+  ## 416 ile 414/415 Kritik Farkları
+  - 416'da bakanlık izni/denetimi şartı yok
+  - 416'da kurumsal yurt dışı müşteri de kapsam içi
+  - 414 sağlık, 415 eğitim; 416 diğer tüm KVK Md.10/1-ğ hizmetleri
+  - Aynı gelir birden fazla kod altında gösterilemez
+
+  ## YİAKV Etkisi
+  416 hizmet indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Yurt Dışı Müşteri ile Yapılan Hizmet Sözleşmesi
+    detay: "Hizmet türünü, alıcının yurt dışı niteliğini (adres, merkez bilgisi), hizmet bedelini ve hizmetin münhasıran yurt dışında yararlanılmak üzere verildiğini gösteren sözleşme."
+    temin_yeri: Hukuk / Sözleşme Arşivi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Yurt Dışı Müşteri Fatura/Gelir Kayıtları
+    detay: "Yurt dışı müşterilere düzenlenen faturalar ve ilgili gelir kayıtları. Alıcının yurt dışı adresi/merkezi faturada açıkça yer almalı. Karma faaliyette yurt dışı müşteri gelirinin ayrıştırıldığını gösteren belge."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 3
+    baslik: İlişkili Gider Dağıtım Tablosu
+    detay: "Yurt dışı hizmetle doğrudan ilişkili giderleri gösteren tablo. Karma faaliyette yurt dışı müşteri payına düşen giderlerin hesaplanma yöntemi ve dayanaklarını içermeli."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 4
+    baslik: Alıcı Yurt Dışı Nitelik Belgesi
+    detay: "Gerçek kişi: Pasaport, yurt dışı ikametgah belgesi. Kurumsal: Ticaret sicil belgesi, vergi mükellefiyet belgesi veya yurt dışı adresini gösteren resmi belge."
+    temin_yeri: Müşteri / Sözleşme
+  - kategori: destekleyici
+    "no": 5
+    baslik: Hizmet Teslim Belgesi / Proje Kabul Raporu
+    detay: "Verilen hizmetin içeriğini, teslim tarihini ve hizmetin yurt dışında yararlanıldığını gösteren belge. Yazılım teslimi, tasarım onay belgesi, mühendislik raporu teslimi vb."
+    temin_yeri: Proje / Müşteri Arşivi
+  - kategori: destekleyici
+    "no": 6
+    baslik: Döviz Geliri Banka Kayıtları (varsa)
+    detay: "Hizmet bedelinin döviz olarak tahsil edildiğine ilişkin banka ekstreleri. Zorunlu olmamakla birlikte yurt dışı müşteri niteliğini güçlendirir."
+    temin_yeri: Banka
+
+k_checklist:
+  - id: K1
+    soru: "Hizmet türünün KVK Md.10/1-ğ listesinde yer aldığı teyit edildi mi? (Mimarlık, mühendislik, tasarım, yazılım, tıbbi raporlama, muhasebe kaydı, çağrı merkezi, ürün testi/sertifikasyon, veri saklama/işleme/analizi, mesleki eğitim)"
+    referans: "KVK Md.10/1-ğ | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Alıcının Türkiye'de yerleşmemiş gerçek kişi VEYA işyeri/kanuni merkezi/iş merkezi yurt dışında olan kuruluş olduğu belgelendi mi?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K3
+    soru: "Hizmetin münhasıran yurt dışında yararlanılmak üzere verildiği doğrulandı mı?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K4
+    soru: "İndirim NET KAZANCA uygulandı mı? (Brüt gelir değil: Brüt gelir − İlişkili giderler)"
+    referans: "KVK Md.10/1-ğ"
+  - id: K5
+    soru: "Karma faaliyette (yurt içi + yurt dışı müşteri) gelir ve gider ayrıştırması yapıldı mı?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K6
+    soru: "Net kazanç negatifse indirim sıfır olarak uygulandı mı? (Negatif net kazanç indirime konu edilemez)"
+    referans: "KVK Md.10/1-ğ"
+  - id: K7
+    soru: "416'nın 414 (sağlık) ve 415 (eğitim) ile çakışmadığı kontrol edildi mi? (Aynı gelir birden fazla kodda gösterilemez)"
+    referans: "KVK Md.10/1-ğ"
+  - id: K8
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (416 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K9
+    soru: "YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "GİB Beyan Reh. 2026 (No:606)"

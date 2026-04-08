@@ -1,5 +1,6 @@
-import { useForm } from 'react-hook-form'
+import { useForm, Controller } from 'react-hook-form'
 import type { VeriGirisiAlani, HesapSonucu } from '@/api/kalem'
+import { NumberInput } from '@/components/NumberInput'
 
 // Human-readable labels for snake_case option values
 const SECENEK_ETIKETLERI: Record<string, string> = {
@@ -76,6 +77,36 @@ const ARA_ALAN_ETIKETLERI: Record<string, string> = {
   vergiye_tabi_kisim: 'Vergiye Tabi Kısım',
   yonetim_kazanci: 'Yönetim Kazancı',
   yurtdisi_faaliyet_kazanci: 'Yurt Dışı Faaliyet Kazancı',
+  // Yeni kalemler (401+) için ara sonuç etiketleri
+  arge_indirimi_hesaplanan: 'Hesaplanan Ar-Ge İndirimi (TL)',
+  azami_gsf: 'Azami Girişim Sermayesi Fonu (TL)',
+  bagis_indirimi: 'Bağış İndirimi (TL)',
+  bagis_kamu_toplam: 'Kamu Bağışı Toplam (TL)',
+  bagis_kyd_vakif_toplam: 'KYD/Vakıf Bağışı Toplam (TL)',
+  bagis_toplam: 'Toplam Bağış (TL)',
+  cari_donem_indirim_hakki: 'Cari Dönem İndirim Hakkı (TL)',
+  devreden_bakiye: 'Devreden İndirim Bakiyesi (TL)',
+  devreden_sonraki_doneme: 'Sonraki Döneme Devreden İndirim (TL)',
+  gsf_yukumlulugu: 'Girişim Sermayesi Fonu Yükümlülüğü (TL)',
+  indirim_kamu: 'Kamu Bağışından Hesaplanan İndirim (TL)',
+  indirim_kyd_vakif: 'KYD/Vakıf Bağışından Hesaplanan İndirim (TL)',
+  indirim_orani: 'İndirim Oranı',
+  kalan_ozkaynak_tavan: 'Kalan Özkaynak Tavanı (TL)',
+  kullanilabilir_toplam_indirim: 'Kullanılabilir Toplam İndirim (TL)',
+  max_kazanc_siniri: 'Azami Kazanç Sınırı (TL)',
+  net_kazanc: 'Net Kazanç (TL)',
+  nitelikli_ek: 'Nitelikli Personel Ek Oranı',
+  nitelikli_ek_indirim: 'Nitelikli Personel Ek İndirimi (TL)',
+  ortak_kazanci: 'Ortak Muamelelerinden Doğan Kazanç (TL)',
+  ozkaynak_tavan: 'Özkaynak Tavanı (TL)',
+  sponsorluk_indirimi: 'Sponsorluk İndirimi (TL)',
+  stopaj_tutari: 'Stopaj Tutarı (TL)',
+  temel_indirim: 'Temel İndirim (TL)',
+  toplam_bagis: 'Toplam Bağış (TL)',
+  toplam_indirim: 'Toplam İndirim (TL)',
+  toplam_kullanilabilir: 'Toplam Kullanılabilir İndirim (TL)',
+  toplam_sponsorluk: 'Toplam Sponsorluk (TL)',
+  yillik_faiz: 'Yıllık Faiz Oranı',
 }
 
 function araAlaniEtiketi(key: string): string {
@@ -110,6 +141,7 @@ export default function VeriGirisiForm({
 }: VeriGirisiFormProps) {
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors },
   } = useForm<FormValues>({
@@ -133,32 +165,39 @@ export default function VeriGirisiForm({
             {alan.tip === 'para' && (
               <div className="relative">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted text-sm">₺</span>
-                <input
-                  type="number"
-                  step="0.01"
-                  placeholder="0,00"
-                  className={`w-full pl-8 pr-3 py-2 border rounded-md text-sm bg-surface-raised text-primary placeholder-muted focus:outline-none focus:ring-2 focus:ring-accent ${
-                    errors[alan.id] ? 'border-red-400' : 'border-border-default'
-                  }`}
-                  {...register(alan.id, {
-                    required: alan.zorunlu ? `${alan.etiket} zorunludur` : false,
-                    valueAsNumber: true,
-                  })}
+                <Controller
+                  name={alan.id}
+                  control={control}
+                  rules={{ required: alan.zorunlu ? `${alan.etiket} zorunludur` : false }}
+                  render={({ field }) => (
+                    <NumberInput
+                      value={field.value as number | null}
+                      onChange={(v) => field.onChange(v ?? 0)}
+                      onBlur={field.onBlur}
+                      className={`w-full pl-8 pr-3 py-2 border rounded-md text-sm bg-surface-raised text-primary placeholder-muted focus:outline-none focus:ring-2 focus:ring-accent ${
+                        errors[alan.id] ? 'border-red-400' : 'border-border-default'
+                      }`}
+                    />
+                  )}
                 />
               </div>
             )}
 
             {alan.tip === 'sayi' && (
-              <input
-                type="number"
-                step="1"
-                className={`w-full px-3 py-2 border rounded-md text-sm bg-surface-raised text-primary focus:outline-none focus:ring-2 focus:ring-accent ${
-                  errors[alan.id] ? 'border-red-400' : 'border-border-default'
-                }`}
-                {...register(alan.id, {
-                  required: alan.zorunlu ? `${alan.etiket} zorunludur` : false,
-                  valueAsNumber: true,
-                })}
+              <Controller
+                name={alan.id}
+                control={control}
+                rules={{ required: alan.zorunlu ? `${alan.etiket} zorunludur` : false }}
+                render={({ field }) => (
+                  <NumberInput
+                    value={field.value as number | null}
+                    onChange={(v) => field.onChange(v ?? 0)}
+                    onBlur={field.onBlur}
+                    className={`w-full px-3 py-2 border rounded-md text-sm bg-surface-raised text-primary focus:outline-none focus:ring-2 focus:ring-accent ${
+                      errors[alan.id] ? 'border-red-400' : 'border-border-default'
+                    }`}
+                  />
+                )}
               />
             )}
 

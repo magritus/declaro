@@ -1,0 +1,284 @@
+ic_kod: girisim_sermayesi_fonu_325a
+baslik: Girişim Sermayesi Fonu İndirimi (VUK Md.325/A)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 413 }
+  - { donem: 2025, kod: 413 }
+
+mevzuat_dayanagi:
+  - VUK Madde 325/A
+  - KVK Madde 10/1-g
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2012-01-01"
+  bitis: null
+
+ana_kategori: arge_tasarim_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "Girişim sermayesi yatırım fonu, girişim sermayesi yatırım ortaklığı veya girişim sermayesi vakıf fonu için bu dönem pasifte özel bir fon hesabı ayırdınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **VUK Madde 325/A** kapsamında, kurumlar vergisi mükellefleri bilançolarının
+    pasifinde **"Girişim Sermayesi Fonu" (GSF)** adıyla özel bir hesapta izledikleri
+    tutarları **KVK Madde 10/1-g** uyarınca kurumlar vergisi matrahından indirebilir.
+
+    Bu indirim, girişim ekosistemini desteklemeye yönelik vergisel bir teşviktir.
+
+    ## Fon Kullanım Amacı (KVK Md.10/1-g Kapsamı)
+
+    Ayrılan fon aşağıdaki amaçlardan biri için kullanılmalıdır:
+    - Girişim sermayesi yatırım fonu (GSVF) katılma payı alımı
+    - Girişim sermayesi yatırım ortaklığı (GSYO) hisse senedi alımı
+    - Girişim sermayesi vakıf fonu (GSVF) kurulması (kurucu ortak olarak)
+
+    ## İndirim Sınırları
+
+    İki ayrı sınır **eş zamanlı** uygulanır:
+
+    **1. Dönem Kazancı %10 Sınırı:**
+    Cari yıl indirim tutarı, beyan edilen kazancın **%10'unu** (2025 öncesi)
+    veya **%20'sini** (2025 ve sonrası için geçerli oran — kullanıcı doğrulamalı)
+    aşamaz.
+
+    **2. Öz Kaynak %20 Birikimli Tavanı:**
+    Pasifteki toplam GSF bakiyesi (geçmiş yıllardan devreden + cari yıl) öz
+    kaynakların **%20'sini** aşamaz.
+
+    **Fiilen indirilebilecek tutar = MIN(Kazanç Sınırı, Özkaynak Tavanı Kalan, Fiili Ayrılan Tutar)**
+
+    ## Kullanım Süresi ve Risk
+
+    **KRITIK:** Ayrılan fon, **ayrıldığı yılı izleyen 2 yıl içinde** amacına uygun
+    kullanılmak zorundadır. 2 yıl içinde kullanılmayan GSF:
+    - Kullanılmayan yılın geliri sayılır
+    - Kurumlar vergisi + gecikme faizi + vergi ziyaı cezasına tabi olur
+
+    ## Bloke Hesap Zorunluluğu
+
+    VUK Md.325/A gereği fon **pasifte ayrı bir hesapta** izlenmelidir.
+    Hesap açılmadan 413 indirimi uygulanamaz. (Genellikle 549 nolu hesap kullanılır.)
+
+    ## YİAKV İlişkisi
+
+    **Girişim Sermayesi Fonu İndirimi (413) YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEBİLİR.** YİAKV çalışma kâğıdı **D.11** satırına ("Girişim Sermayesi
+    Fonu — KVK Md.10/1-g") yazılır.
+
+    ## Pratik Notlar
+
+    - 549 hesabına yapılan kayıt, indirim hakkının doğması için zorunludur.
+    - Kullanım planı veya portföy yönetim anlaşması belgelerde bulunmalıdır.
+    - **YMM tasdik raporu:** İndirim tutarı ≥500.000 TL ise zorunludur.
+  kapi_sorulari:
+    - id: pasif_hesap_acildi
+      soru: "Bilançonun pasifinde 'Girişim Sermayesi Fonu' için ayrı bir hesap (549 vb.) açıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "VUK Md.325/A zorunluluğu: Fon pasifte özel hesapta izlenmeli. Hesap açılmadan 413 indirimi uygulanamaz."
+    - id: kullanim_amaci_uygun
+      soru: "Ayrılan fon GSVF katılma payı, GSYO hisse senedi veya GSVF kurulması amacına uygun mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kapsam dışı bir amaç için ayrılan fon KVK Md.10/1-g indirimine konu edilemez."
+    - id: iki_yil_kullanim_planli
+      soru: "Ayrılan fonun 2 yıl içinde amacına uygun kullanılması planlandı ve belgelendi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "2 yıl içinde kullanılmayan GSF kullanılmayan yılın geliri sayılır. Kullanım planı veya portföy yönetim anlaşması belgede olmalıdır."
+
+parametreler:
+  sinir_orani_2024: 10
+  sinir_orani_2025_sonrasi: 20
+  ozkaynak_tavan_orani: 20
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: fon_ayirma_tutari
+      etiket: "Bu dönem ayrılan GSF tutarı (TL) — Pasifte 549 hesabına kaydedilen"
+      tip: para
+      zorunlu: true
+      yardim: "549 hesabına bu dönem eklenen tutar. Pasif hesapta fiilen kayıtlı olmayan tutar indirilemez."
+    - id: beyan_edilen_kazanc
+      etiket: "Dönem kazancı — GSF öncesi kurum kazancı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "KVK Md.10/1-g'deki '%10 kazanç' baz tutarı. 413 uygulanmadan önceki kurum kazancı (ticari bilanço kârı + KKEG − uygun istisnalar bazında belirlenir)."
+    - id: sinir_orani
+      etiket: "Kazanç sınır oranı (%) — 2025 öncesi: 10, 2025 ve sonrası: 20"
+      tip: sayi
+      zorunlu: true
+      varsayilan: 10
+      yardim: "Dönem kazancı üzerinden uygulanacak sınır oranı. Vergi dönemine göre doğrulanmalıdır: 2025 öncesi %10, 2025 ve sonrası için güncel mevzuat kontrol edilmeli."
+    - id: ozkaynak_toplami
+      etiket: "Dönem sonu öz kaynaklar toplamı (TL) — Bilanço pasif"
+      tip: para
+      zorunlu: true
+      yardim: "500+510+520+530+540+549+570 vb. hesapların toplamı. Birikimli GSF tavanı hesabı için gerekli."
+    - id: gecmis_yillar_gsf_bakiyesi
+      etiket: "Geçmiş yıllardan birikmiş GSF bakiyesi (TL) — 549 dönem başı kalanı"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: "Önceki dönemlerden devreden ve henüz kullanılmamış GSF tutarı. 549 hesabının dönem başı kalanı."
+  formuller:
+    max_kazanc_siniri: "beyan_edilen_kazanc * (sinir_orani / 100)"
+    ozkaynak_tavan: "ozkaynak_toplami * 0.20"
+    kalan_ozkaynak_tavan: "ozkaynak_tavan - gecmis_yillar_gsf_bakiyesi"
+    azami_gsf: "min(max_kazanc_siniri, kalan_ozkaynak_tavan)"
+    istisna_tutari: "min(fon_ayirma_tutari, azami_gsf)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "fon_ayirma_tutari > 0"
+      hata: "Ayrılan fon tutarı sıfırdan büyük olmalıdır."
+    - kural: "beyan_edilen_kazanc > 0"
+      hata: "Dönem kazancı sıfırdan büyük olmalıdır (bu kalem 'kazancın bulunması halinde' uygulanır)."
+    - kural: "sinir_orani > 0 and sinir_orani <= 20"
+      hata: "Sınır oranı %0 ile %20 arasında olmalıdır."
+    - kural: "ozkaynak_toplami > 0"
+      hata: "Öz kaynaklar toplamı sıfırdan büyük olmalıdır."
+    - kural: "gecmis_yillar_gsf_bakiyesi >= 0"
+      hata: "Geçmiş yıllar GSF bakiyesi negatif olamaz."
+    - kural: "kalan_ozkaynak_tavan >= 0"
+      hata: "Birikimli GSF bakiyesi öz kaynakların %20'sini zaten aşmış durumda. Cari dönem indirim uygulanamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  VUK Madde 325/A: Pasifte özel hesapta izlenen Girişim Sermayesi Fonu.
+  KVK Madde 10/1-g: Beyan edilen kazancın %10'unu (2025 sonrası %20) ve
+  öz kaynakların %20'sini aşmayan GSF tutarı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Hesaplama Akışı
+
+  B.1 Dönem Kazancı (GSF öncesi baz tutar)
+  B.2 %10 (veya %20) Limit = B.1 × oran (cari yıl azami GSF)
+  B.3 Öz Kaynaklar Toplamı (dönem sonu bilançosu)
+  B.4 Özkaynak %20 Tavanı = B.3 × %20 (birikimli tavan)
+  B.5 Geçmiş yıllar birikmiş GSF bakiyesi (549 dönem başı)
+  B.6 Kalan Özkaynak Tavanı = B.4 − B.5
+  B.7 Azami GSF = MIN(B.2, B.6)
+  B.8 Fiili ayrılan GSF (549 hesabına bu dönem eklenen)
+  B.9 BEYANNAME 413 = MIN(B.7, B.8) → İndirime konu tutar
+
+  ## Çift Sınır Kuralı
+  Her iki sınır eş zamanlı aktif: %10 kazanç sınırı VE özkaynak %20 birikimli tavan.
+  Küçük olan değer azami indirimi belirler.
+
+  ## Kritik Kontroller
+  1. 549 hesabının açık ve kayıtlı olması (VUK 325/A zorunluluğu)
+  2. Fon kullanım amacı KVK Md.10/1-g kapsamında olmalı
+  3. %10/%20 kazanç sınırı aşılmamalı (dönem yılına göre oran doğrulanmalı)
+  4. Birikimli GSF özkaynak %20 tavanını aşmamalı
+  5. 2 yıl kullanım süresi takip edilmeli — süre aşımı gelir + faiz + ceza
+
+  ## YİAKV Etkisi
+  413 Girişim Sermayesi Fonu İndirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.
+  YİAKV çalışma kâğıdı D.11 satırına ("Girişim Sermayesi Fonu — KVK Md.10/1-g") yazılır.
+
+  ## 2 Yıl Kullanım Takip Tablosu
+  VUK Md.325/A: Ayrılan yılı izleyen 2 yıl içinde amacına uygun kullanılmalı.
+  Süre aşımı → Kullanılmayan GSF o yıl GELİR sayılır.
+  KV + gecikme faizi + vergi ziyaı cezası riski. Geçmiş dönem GSF bakiyeleri
+  her dönem takip tablosu ile izlenmelidir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+  ## Bloke Hesap
+  Fon tutarı bloke edilmiş özel hesapta izlenmelidir; 2 yıl süre dolmadan
+  serbest kullanıma alınamaz. Hesap hareketi belgelenmelidir.
+
+muhasebe_kayitlari: |
+  ## Girişim Sermayesi Fonu Kaydı
+  Borç: 590 veya ilgili Dönem Kârı Hesabı
+  Alacak: 549 Özel Fonlar — Girişim Sermayesi Fonu
+  Açıklama: VUK Md.325/A kapsamında GSF ayrılması.
+
+  ## Fon Kullanım Kaydı (Yatırım Gerçekleşince)
+  Borç: 549 Özel Fonlar — Girişim Sermayesi Fonu
+  Alacak: 102 Bankalar (veya ilgili yatırım hesabı)
+  Açıklama: GSVF katılma payı / GSYO hisse alımı.
+
+  ## Süre Aşımı Kaydı (2 Yıl Kullanılmayan)
+  Borç: 549 Özel Fonlar — Girişim Sermayesi Fonu
+  Alacak: 679 Diğer Olağandışı Gelir ve Kârlar
+  Açıklama: 2 yıl içinde kullanılmayan GSF — o yılın geliri sayılır.
+
+  ## Beyanname
+  İndirime konu tutar beyanname 413. satırına aktarılır.
+  YİAKV çalışma kâğıdı D.11 satırına da yazılır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: 549 Hesap Mizan Çıktısı — Dönem Başı ve Dönem Sonu
+    detay: "Girişim Sermayesi Fonu için açılan 549 (veya alt) hesabının dönem başı bakiyesi, dönem içi hareketleri ve dönem sonu kalanını gösteren mizan çıktısı. Pasif hesap zorunlu."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 2
+    baslik: Fon Ayırma Kararı (Yönetim Kurulu Kararı)
+    detay: "GSF ayrılmasına ilişkin yönetim kurulu veya yetkili organ kararı. Tutarı, amacını ve dayanağını (VUK 325/A + KVK 10/1-g) açıkça belirtmeli."
+    temin_yeri: Yönetim Kurulu / Hukuk
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Kazancı Hesap Belgesi (B.1 Baz Tutar)
+    detay: "KVK Md.10/1-g'deki '%10 kazanç' baz tutarını gösteren hesaplama belgesi. 413 öncesi kurum kazancı esas alınmalı."
+    temin_yeri: Muhasebe / YMM
+  - kategori: zorunlu
+    "no": 4
+    baslik: Dönem Sonu Bilançosu (Öz Kaynaklar)
+    detay: "Özkaynak %20 tavanı hesabı için dönem sonu bilançosunun öz kaynaklar bölümü (500+510+520+530+540+549+570 vb.)."
+    temin_yeri: Mali Tablolar
+  - kategori: zorunlu
+    "no": 5
+    baslik: 2 Yıl Kullanım Planı veya Portföy Yönetim Anlaşması
+    detay: "Ayrılan fonun 2 yıl içinde GSVF/GSYO'ya yatırılacağını gösteren kullanım planı veya portföy yönetim anlaşması. Süre aşımı riskini belgeler."
+    temin_yeri: Portföy Yönetim Şirketi / Yönetim
+  - kategori: destekleyici
+    "no": 6
+    baslik: Geçmiş Dönem GSF Takip Tablosu
+    detay: "Önceki dönemlerden devreden GSF bakiyesi, kullanım tarihleri ve kalan tutarları gösteren takip tablosu. 2 yıl süre kontrolü için kritik."
+    temin_yeri: Muhasebe / YMM
+  - kategori: destekleyici
+    "no": 7
+    baslik: YMM Tasdik Raporu (≥500.000 TL İçin)
+    detay: "İndirim tutarı 500.000 TL ve üzerinde ise 49 No.lu KV GT kapsamında YMM tasdik raporu. Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez."
+    temin_yeri: YMM
+
+k_checklist:
+  - id: K1
+    soru: "Bilançonun pasifinde GSF için ayrı hesap (549 vb.) açıldığı ve fon kaydının yapıldığı doğrulandı mı?"
+    referans: "VUK Md.325/A | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Fon kullanım amacı KVK Md.10/1-g kapsamında mı? (GSVF katılma payı / GSYO hisse / GSVF kurulması)"
+    referans: "KVK Md.10/1-g"
+  - id: K3
+    soru: "İndirim tutarı dönem kazancının %10'unu (veya güncel oran) aşmıyor mu?"
+    referans: "KVK Md.10/1-g | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "Birikimli GSF bakiyesi (geçmiş + cari) öz kaynakların %20'sini aşmıyor mu?"
+    referans: "VUK Md.325/A"
+  - id: K5
+    soru: "Beyanname 413 tutarı MIN(Kazanç %10, Özkaynak %20 Kalan, Fiili Ayrılan) formülüne uygun mu?"
+    referans: "KVK Md.10/1-g + VUK Md.325/A"
+  - id: K6
+    soru: "2 yıl kullanım süresi takip tablosu hazırlandı mı? Süre aşımı riski değerlendirildi mi?"
+    referans: "VUK Md.325/A"
+  - id: K7
+    soru: "Geçmiş dönem GSF bakiyeleri için kullanım süresi aşımı durumu kontrol edildi mi?"
+    referans: "VUK Md.325/A"
+  - id: K8
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (413 DÜŞÜLEBİLİR — D.11 satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 D.11"
+  - id: K9
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

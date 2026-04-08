@@ -1,0 +1,216 @@
+ic_kod: ibadethaneler_bagis_10
+baslik: Din Tesislerine Yapılan Bağış ve Yardımlar (KVK Md.10/1-5)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 417 }
+  - { donem: 2025, kod: 417 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-5
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "İbadethanelere veya dini tesislere (cami, cemevi, kilise, havra/sinagog) inşaat, onarım veya ekipman bağışı yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-5** kapsamında, **kamu idare ve müesseselerine, kamu yararına
+    çalışan derneklere (KYD)** ve **Cumhurbaşkanlığı kararıyla vergi muafiyeti
+    tanınan vakıflara** ibadethanelerin ve dini tesislerin inşası, onarımı ve
+    ekipman/tefrişatı amacıyla yapılan bağış ve yardımların **tamamı** kurumlar
+    vergisi matrahından indirilir.
+
+    ## Kapsam — İbadethane ve Tesis Türleri
+
+    - Cami (inşaat, onarım, ekipman, halı, aydınlatma, ses sistemi vb.)
+    - Cemevi
+    - Kilise
+    - Havra / Sinagog
+    - Diğer ibadethaneler
+    - Yukarıdakilere bağlı dini tesisler
+
+    ## Alıcı Niteliği
+
+    - **Diyanet İşleri Başkanlığı** → Kamu idaresi (statü belgesi gerekmez)
+    - **İl/İlçe Müftülükleri** → Kamu idaresi (statü belgesi gerekmez)
+    - **Türkiye Diyanet Vakfı** → Muafiyet kararı teyit edilmeli
+    - **Cami dernek/vakıfları** → KYD kararı veya muafiyet kararı teyit şart
+    - KYD dernekler (bakanlık/CB kararıyla) ve muafiyet vakıfları da kapsama girer
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara
+    **devredilemez**.
+
+    ## Önemli Uyarı
+
+    Diyanet İşleri Başkanlığı kamu idaresi kapsamındadır — statü belgesi gerekmez.
+    Türkiye Diyanet Vakfı için muafiyet kararının bağış tarihinde geçerliliği
+    mutlaka teyit edilmelidir.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-5 kapsamındaki ibadethane bağış indirimi YİAKV (KVK 32/C)
+    matrahından DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+  kapi_sorulari:
+    - id: ibadethane_turu_uygun
+      soru: "Bağış KVK Md.10/1-5 kapsamında ibadethane/dini tesis için mi? (Cami / Cemevi / Kilise / Havra / Sinagog / Dini Tesis)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kapsam: İbadethaneler ve bunlara bağlı dini tesislerin inşası, onarımı, ekipman/tefrişatı. Salt işletme/faaliyet giderleri → Tartışmalı."
+    - id: alici_niteligi_uygun
+      soru: "Alıcı kamu idaresi, KYD dernek veya vergi muafiyeti tanınan vakıf mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Uygun: Diyanet İşleri Başkanlığı/Müftülük (kamu idaresi), Diyanet Vakfı (muafiyet kararı teyit), KYD dernek, muafiyet vakfı. Cami derneği/vakfı → Statü teyidi şart."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi: Banka EFT/havale; Ayni: İmzalı teslim tutanağı."
+    - id: makbuz_alindi
+      soru: "Alıcıdan resmi makbuz veya bağış kabul protokolü alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Makbuz veya inşaat/ekipman protokolü zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Halı, ekipman, inşaat malzemesinin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Halı, aydınlatma, ses sistemi, inşaat malzemesi gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-5: Kamu idare ve müesseselerine, KYD derneklerine ve vergi muafiyeti
+  tanınan vakıflara ibadethaneler ve dini tesislerin inşası, onarımı ve ekipman/tefrişatı
+  amacıyla yapılan bağış ve yardımların tamamı matrahtan indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Alıcı Niteliği Tablosu
+  Diyanet İşleri Başkanlığı → Kamu idaresi (belge gerekmez)
+  İl/İlçe Müftülüğü → Kamu idaresi (belge gerekmez)
+  Türkiye Diyanet Vakfı → Muafiyet kararı teyit edilmeli
+  KYD dernek → Bakanlık/CB kararı zorunlu
+  Muafiyet vakfı (cami vakfı vb.) → CB kararı zorunlu
+  Özel şirket, ticari kurum → Kapsam dışı
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - İbadethane türü (cami/cemevi/kilise/havra vb.) belgelenmeli
+  - KYD/Vakıf için bağış tarihindeki güncel statü belgesi
+  - Fiili ödeme/teslim (taahhüt değil)
+  - Alıcıdan makbuz veya inşaat/ekipman protokolü
+
+  ## Özel Uyarı — Diyanet Vakfı
+  Türkiye Diyanet Vakfı için Cumhurbaşkanlığı vergi muafiyeti kararının
+  bağış tarihi itibarıyla geçerli olduğu teyit edilmelidir. Muafiyet statüsü
+  değişebilir; bağış dönemine ait güncel teyit zorunludur.
+
+  ## YİAKV Etkisi
+  417 ibadethane bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: KVK Md.10/1-5 kapsamında ibadethane/dini tesis nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: KVK Md.10/1-5 kapsamında ibadethane ayni bağış (halı/ekipman/malzeme).
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 417. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (Kamu İdaresi / KYD / Muafiyet Vakfı)
+    detay: "Diyanet İşleri Başkanlığı/Müftülük: Belge gerekmez (kamu idaresi). Diyanet Vakfı: CB muafiyet kararı. KYD dernek: Bakanlık/CB kararı. Cami vakfı: CB muafiyet kararı."
+    temin_yeri: İlgili Bakanlık / Alıcı Kurum
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Makbuz / İnşaat Protokolü
+    detay: "Kamu idaresi (Diyanet/Müftülük): Bağış kabul yazısı veya protokol. KYD/Vakıf: Resmi makbuz. Tarih ve tutar açıkça belirtilmeli."
+    temin_yeri: Alıcı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme alıcının resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve malların maliyet/net defter değerini gösteren değerleme belgesi (halı, aydınlatma, ses sistemi vb.)."
+    temin_yeri: Muhasebe / Alıcı Kurum
+  - kategori: destekleyici
+    "no": 5
+    baslik: İbadethane / Dini Tesis Proje veya İnşaat Belgesi
+    detay: "Bağışın ibadethane veya dini tesise yönelik olduğunu teyit eden proje belgesi, mimari çizim veya inşaat sözleşmesi."
+    temin_yeri: Proje Belgesi / Alıcı Kurum
+
+k_checklist:
+  - id: K1
+    soru: "İbadethane/dini tesis türü (cami/cemevi/kilise/havra/sinagog) belgelendi mi?"
+    referans: "KVK Md.10/1-5 | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Alıcı niteliği doğrulandı mı? (Kamu idaresi / KYD / Vergi muafiyeti tanınan vakıf)"
+    referans: "KVK Md.10/1-5"
+  - id: K3
+    soru: "Diyanet Vakfı alıcıysa muafiyet kararının bağış tarihinde geçerli olduğu teyit edildi mi?"
+    referans: "KVK Md.10/1-5"
+  - id: K4
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya teslim tutanağı ile belgelenmiş)"
+    referans: "KVK Md.10/1-5 | GİB Beyan Reh. 2026"
+  - id: K5
+    soru: "KYD dernek veya vakıf alıcıysa bağış tarihindeki güncel statü belgesi temin edildi mi?"
+    referans: "KVK Md.10/1-5"
+  - id: K6
+    soru: "Alıcıdan bağış kabul yazısı veya resmi makbuz alındı mı?"
+    referans: "KVK Md.10/1-5"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (417 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K8
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

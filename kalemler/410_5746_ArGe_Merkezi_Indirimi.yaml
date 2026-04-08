@@ -1,0 +1,408 @@
+ic_kod: arge_merkezi_indirimi_5746_md3
+baslik: Ar-Ge Merkezi İndirimi (5746 s.K. Md.3)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 410 }
+  - { donem: 2025, kod: 410 }
+
+mevzuat_dayanagi:
+  - 5746 Sayılı Araştırma, Geliştirme ve Tasarım Faaliyetlerinin Desteklenmesi Hakkında Kanun Md.3
+  - 5746 s.K. uygulama yönetmeliği
+  - 7555 Sayılı Kanun (24.07.2025) — GV Stopaj Terkini güncellemesi
+  - 7263 Sayılı Kanun — GSF (Girişim Sermayesi Fonu) yükümlülüğü
+  - 49 Seri No.lu KV Genel Tebliği (30.12.2025)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2008-04-01"
+  bitis: null
+
+ana_kategori: arge_tasarim_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "STB'den geçerli Ar-Ge Merkezi Belgesi bulunan Ar-Ge merkezinizde faaliyet yürüttünüz mü?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **5746 sayılı Kanun Madde 3** kapsamında, Sanayi ve Teknoloji Bakanlığı
+    (STB) tarafından belgelenmiş **Ar-Ge Merkezlerinde** yürütülen faaliyetlere
+    ilişkin nitelikli harcamaların **%100'ü** (artırımlı indirim şartları
+    sağlandığında daha fazlası) kurumlar vergisi matrahından indirilebilir.
+
+    ## Ar-Ge Merkezi Belgesi Zorunluluğu
+
+    **EVET, ZORUNLUDUR.** STB'den alınan geçerli "Ar-Ge Merkezi Belgesi" bu
+    indirimin ön koşuludur. Belge olmadan bu modül kullanılamaz. Ar-Ge Merkezi
+    Belgesi olmayan işletmeler için **409 (KVK Md.10/1-a)** kodu kullanılmalıdır.
+
+    ## Minimum Personel Koşulu
+
+    Ar-Ge Merkezinde genel olarak en az **15 tam zaman eşdeğeri (TZE)** Ar-Ge
+    personeli bulunması gerekir. Bazı NACE kodlarında bu eşik **30 TZE'ye**
+    çıkabilmektedir. Bu koşulun kaybedilmesi belge iptaline yol açar.
+
+    ## Artırımlı İndirim (%50 Ek)
+
+    Beş göstergeden herhangi birinde bir önceki yıla göre **≥%20 artış**
+    sağlandığında, artış tutarının **%50'si** ek indirim olarak uygulanır
+    (31.12.2028 tarihine kadar). Bu artırımlı indirim 409 kodunda yoktur.
+
+    ## Nitelikli Personel Oranı ile Ek İndirim
+
+    Declaro'da hesaplama kolaylığı için: nitelikli personel oranı >%80 ise
+    ek indirim (%50 artırımlı) aktif kabul edilir.
+
+    ## Devreden Ar-Ge İndirimi — YDO Artışı
+
+    5746 kapsamında devreden Ar-Ge indirimi **VUK Yeniden Değerleme Oranı (YDO)
+    ile artırılarak** sonraki dönemlere devredilir. Bu, KVK 10/1-a (409)
+    kodundan temel farktır; 409'da YDO artışı yoktur.
+
+    ## Ek Teşvikler (Bu Modülde Gösterilmez)
+
+    5746 kapsamında ek olarak şunlar da uygulanabilir:
+    - **GV Stopaj Terkini:** Doktoralı %95 | YL %90 | Diğerleri %80
+      (7555 s.K. ile brüt asgari ücretin 40 katını aşan kısım terkin dışı)
+    - **SGK İşveren Hissesi:** %50 Hazine desteği
+    - **Damga Vergisi İstisnası:** Ar-Ge sözleşmelerine ilişkin
+
+    Bu teşvikler ayrı çalışma kâğıtlarında izlenir.
+
+    ## GSF (Girişim Sermayesi Fonu) Yükümlülüğü
+
+    Kullanılan indirim tutarının toplamı ≥1.000.000 TL ise harcamanın **%2'si**
+    GSF olarak ayrılır (7263 s.K., 5746 Md.3/14). Bu yükümlülük konsolidasyon
+    aşamasında hesaplanır.
+
+    ## Kritik Fark: 410 ile 409 Karşılaştırması
+
+    | Özellik | 410 (5746 Md.3) | 409 (KVK 10/1-a) |
+    |---------|-----------------|------------------|
+    | Ar-Ge Merkezi Belgesi | Zorunlu | Gerekmez |
+    | Devreden indirim YDO artışı | VAR | YOK |
+    | GV Stopaj Terkini | Var | Yok |
+    | SGK Desteği | Var (%50) | Yok |
+    | Artırımlı indirim | Var (≥%20 artış) | Yok |
+    | Destek personeli sınırı | %10 TZE | Açık düzenleme yok |
+    | Dış hizmet sınırı | %20 | Açık düzenleme yok |
+
+    ## YİAKV İlişkisi
+
+    **5746 Md.3 kapsamındaki Ar-Ge indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEBİLİR.** "Kazancın Bulunması Halinde İndirilecek" bölümündedir.
+  kapi_sorulari:
+    - id: arge_merkezi_belgesi_var
+      soru: "STB tarafından verilmiş geçerli Ar-Ge Merkezi Belgesi mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5746 Md.3 kapsamında Ar-Ge Merkezi Belgesi zorunlu ön koşuldur. Belge yoksa veya süresi dolmuşsa bu modül kullanılamaz; bunun yerine KVK Md.10/1-a (409) değerlendirin."
+    - id: tze_kosulu_saglanmis
+      soru: "Ar-Ge merkezinde genel olarak en az 15 TZE Ar-Ge personeli koşulu sağlanıyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Genel eşik 15 TZE, bazı NACE kodlarında 30 TZE'dir. Bu koşulun kaybedilmesi belge iptaline ve indirimin reddine yol açar."
+    - id: faaliyet_yeni_teknoloji
+      soru: "Ar-Ge faaliyetleri münhasıran yeni teknoloji ve bilgi arayışına yönelik mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Pazarlanabilir ürün geliştirme, rutin iyileştirme ve mevcut bilgiyle çözülebilir faaliyetler kapsam dışıdır."
+    - id: proje_ayri_izleniyor
+      soru: "Her projenin harcamaları ayrı proje kodu altında izlenebilir mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Her proje ayrı proje kodu ve hesap altında izlenmelidir. Proje bazı muhasebe 5746 kapsamında zorunludur."
+
+parametreler:
+  temel_indirim_orani: 1.0
+  artırimli_indirim_orani: 0.50
+  nitelikli_personel_esigi: 80
+  ydo_artirimi: true
+  gsf_orani: 0.02
+  gsf_esik_tl: 1000000
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nitelikli_arge_harcamasi
+      etiket: "Nitelikli Ar-Ge harcaması (TL) — Cari dönemde yapılan kapsam içi harcamalar"
+      tip: para
+      zorunlu: true
+      yardim: |
+        5746 Md.3 kapsamında kapsam içi harcama türleri:
+        - H.1: Ar-Ge personeli ücret giderleri (GV stopaj terkinine esas)
+        - H.2: Destek personeli giderleri (toplam TZE'nin %10'unu aşamaz)
+        - H.3: Genel giderler (kira, enerji, su, bakım, haberleşme — münhasıran Ar-Ge için)
+        - H.4: Dışarıdan sağlanan fayda/hizmetler (toplam Ar-Ge'nin %20'sini aşamaz)
+        - H.5: Vergi, resim ve harçlar (damga vergisi istisnası hariç)
+        - H.6: Amortisman — münhasıran Ar-Ge ATİK (tam kullanım)
+        - H.7: Amortisman — kısmen Ar-Ge ATİK (gün sayısı oranı)
+        - H.8: Sipariş alınan Ar-Ge (merkez harcamalarının %50'si — yalnızca sipariş alan)
+        - H.9: Sipariş verilen Ar-Ge (ödenen harcamanın %50'si — yalnızca sipariş veren)
+        KAPSAM DIŞI: H.10 — Finansman giderleri (faiz vb.)
+    - id: nitelikli_personel_orani
+      etiket: "Nitelikli personel oranı (%) — Doktora ve lisansüstü mezunu Ar-Ge personeli yüzdesi"
+      tip: sayi
+      zorunlu: true
+      yardim: |
+        Ar-Ge merkezindeki doktora veya lisansüstü eğitimli Ar-Ge personelinin
+        toplam Ar-Ge personeline oranı (yüzde olarak giriniz).
+        Bu oran >%80 ise artırımlı indirim (%50 ek indirim) uygulanır.
+        NOT: Declaro bu alanı artırımlı indirim uygunluğu için proxy göstergesi olarak kullanır.
+        Gerçek artırımlı indirim için 5 göstergeden ≥%20 artış şartına bakınız.
+    - id: onceki_donem_devreden_arge
+      etiket: "Önceki dönemden devreden Ar-Ge indirimi — YDO öncesi ham tutar (TL)"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: |
+        Önceki yıl KV beyannamesi 410. satırında kullanılamayan devreden Ar-Ge indirimi tutarı
+        (YDO güncellemesinden önceki ham tutar).
+        KRİTİK: 5746 kapsamında devreden indirim VUK YDO ile ARTIRILIR. YDO güncellemesi
+        sistem tarafından otomatik hesaplanmaz; güncellemeyi kendiniz dahil ederek
+        YDO güncellenmiş tutarı bu alana yazınız.
+        VEYA: YDO güncellemesini dışarıda hesaplayıp güncellenmiş tutarı giriniz.
+    - id: beyan_edilen_kazanc
+      etiket: "Beyan edilen kazanç (TL) — Ar-Ge indirimi öncesi kurum kazancı"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Ar-Ge indirimi uygulanmadan önceki dönem kurum kazancı.
+        Bu tutar, indirim üst sınırını belirler; kazancı aşan indirim tutarı
+        sonraki dönemlere devredilir. Devreden tutar VUK YDO ile artırılarak devredilir.
+    - id: arge_merkezi_belgesi_var
+      etiket: "Ar-Ge Merkezi Belgesi mevcut mu? (evet / hayır)"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: |
+        STB tarafından düzenlenen ve geçerlilik süresi dolan Ar-Ge Merkezi Belgesi.
+        HAYIR seçilirse bu modül kullanılamaz — 409 (KVK Md.10/1-a) değerlendirin.
+  formuller:
+    temel_indirim: "nitelikli_arge_harcamasi * 1.00"
+    nitelikli_ek_indirim: "(nitelikli_arge_harcamasi * 0.50) if nitelikli_personel_orani > 80 else 0"
+    toplam_indirim: "temel_indirim + nitelikli_ek_indirim + onceki_donem_devreden_arge"
+    istisna_tutari: "min(toplam_indirim, beyan_edilen_kazanc)"
+    devreden_sonraki_doneme: "max(0, toplam_indirim - beyan_edilen_kazanc)"
+    gsf_yukumlulugu: "(nitelikli_arge_harcamasi * 0.02) if istisna_tutari >= 1000000 else 0"
+  sonuc_alan: istisna_tutari
+  ek_sonuc_alanlari:
+    - devreden_sonraki_doneme
+    - nitelikli_ek_indirim
+    - gsf_yukumlulugu
+  validasyonlar:
+    - kural: "arge_merkezi_belgesi_var == 'evet'"
+      hata: "Ar-Ge Merkezi Belgesi olmadan 5746 Md.3 indirimi uygulanamaz. KVK Md.10/1-a (409) kodunu değerlendirin."
+    - kural: "nitelikli_arge_harcamasi >= 0"
+      hata: "Nitelikli Ar-Ge harcaması negatif olamaz."
+    - kural: "nitelikli_arge_harcamasi > 0"
+      hata: "Nitelikli Ar-Ge harcaması sıfırdan büyük olmalıdır."
+    - kural: "nitelikli_personel_orani >= 0 and nitelikli_personel_orani <= 100"
+      hata: "Nitelikli personel oranı 0 ile 100 arasında olmalıdır."
+    - kural: "onceki_donem_devreden_arge >= 0"
+      hata: "Devreden Ar-Ge indirimi negatif olamaz."
+    - kural: "beyan_edilen_kazanc >= 0"
+      hata: "Beyan edilen kazanç negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  5746 sayılı Kanun Madde 3: STB Ar-Ge Merkezi Belgeli işletmelerde yürütülen
+  münhasıran yeni teknoloji ve bilgi arayışına yönelik Ar-Ge harcamalarının
+  %100'ü (artırımlı indirim şartlarında daha fazlası) kurumlar vergisi
+  matrahından indirilebilir. GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Hesaplama Özeti
+
+  1. Cari dönem nitelikli harcama × %100 = Temel Ar-Ge indirimi
+  2. + Artırımlı indirim: 5 göstergeden birinde ≥%20 artış varsa artış tutarı × %50
+     (Declaro'da proxy: nitelikli personel oranı >%80 ise %50 ek)
+  3. + Önceki dönem devreden (YDO ile güncellenmiş tutar)
+  4. = Toplam kullanılabilir indirim
+  5. Beyan edilen kazancı aşan kısım → YDO ile artırılarak sonraki dönemlere devrolur
+
+  ## 410 ile 409 Arasındaki Kritik Farklar
+
+  410 (5746 Md.3):
+  - Ar-Ge Merkezi Belgesi ZORUNLU (STB)
+  - Min. 15 TZE Ar-Ge personeli koşulu (bazı NACE: 30)
+  - Devreden indirim YDO ile ARTTIRILIR
+  - GV Stopaj Terkini VAR (Doktoralı %95, YL %90, Diğer %80)
+  - SGK Desteği VAR (%50 Hazine)
+  - Artırımlı indirim VAR (5 göstergeden ≥%20 artış → artış × %50)
+  - Destek personeli %10 TZE sınırı
+  - Dış hizmet %20 sınırı
+  - GSF yükümlülüğü (≥1.000.000 TL indirimde %2)
+
+  409 (KVK 10/1-a):
+  - Ar-Ge Merkezi Belgesi GEREKMEz
+  - Devreden indirim YDO ile ARTIRILAMAZ (artırımsız devredilir)
+  - GV Stopaj Terkini YOK
+  - SGK Desteği YOK
+  - Artırımlı indirim YOK
+  - GSF yükümlülüğü YOK
+
+  ## Kapsam İçi Harcamalar (5746 Md.3 / 5746 Uygulama Yönetmeliği)
+
+  - H.1: Ar-Ge personeli ücret giderleri (GV stopaj terkinine esas)
+  - H.2: Destek personeli giderleri (TZE Ar-Ge personelinin %10'unu aşamaz)
+  - H.3: Genel giderler (kira, enerji, su, bakım, haberleşme — münhasıran Ar-Ge için)
+  - H.4: Dışarıdan sağlanan fayda/hizmetler (toplam Ar-Ge'nin %20'sini aşamaz)
+  - H.5: Vergi, resim ve harçlar (damga vergisi istisnası hariç)
+  - H.6: Amortisman — münhasıran Ar-Ge ATİK (tam kullanım)
+  - H.7: Amortisman — kısmen Ar-Ge ATİK (gün sayısı oranı)
+  - H.8: Sipariş alınan Ar-Ge (merkez harcamalarının %50'si)
+  - H.9: Sipariş verilen Ar-Ge (ödenen harcamanın %50'si)
+  KAPSAM DIŞI: H.10 — Finansman giderleri (faiz vb.)
+
+  ## Devreden Tutar — YDO Artışı (Kritik Fark)
+  5746 kapsamında devreden Ar-Ge indirimi VUK YDO ile artırılarak devredilir.
+  YMM tasdik raporlarında YDO oranı ve güncellenmiş devreden tutar teyit edilmelidir.
+  Hatalı YDO uygulaması tasdik riski oluşturur.
+
+  ## Artırımlı İndirim Koşulları (5 Göstergeden Biri)
+  31.12.2028 tarihine kadar uygulanabilir:
+  1. Ar-Ge personel sayısı
+  2. Ar-Ge personeli/toplam personel oranı
+  3. Ar-Ge harcaması
+  4. Ar-Ge harcaması/toplam harcama oranı
+  5. Tescil edilen ulusal/uluslararası patent sayısı
+  ≥%20 artış sağlanan projenin/merkezin artış tutarının %50'si ek indirim.
+
+  ## GSF (Girişim Sermayesi Fonu) Yükümlülüğü — 5746 Md.3/14
+  Kullanılan indirim ≥1.000.000 TL ise harcamanın %2'si 3 yıl içinde
+  Türkiye Varlık Fonu veya yurt içi girişim sermayesi yatırım fonlarına yatırılır.
+
+  ## GV Stopaj Terkini — 7555 s.K. (24.07.2025) Güncellemesi
+  Terkin oranları: Doktoralı %95 | YL %90 | Diğerleri %80.
+  Brüt asgari ücretin 40 katını aşan kısım terkin kapsamı dışındadır.
+  Bu teşvik ayrı çalışma kâğıdında izlenir (bu modülde gösterilmez).
+
+  ## YİAKV Etkisi
+  410 Ar-Ge indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEBİLİR.
+  "Kazancın Bulunması Halinde İndirilecek" bölümündedir; YİAKV matrahını azaltır.
+
+  ## YMM Tasdik Yükümlülüğü
+  - Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu zorunludur (49 No.lu KV GT).
+  - 41 No.lu Tebliğ Ar-Ge indirimi tasdik şartı da ayrıca değerlendirilmelidir.
+  - Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmeyebilir.
+
+  ## Sipariş Bazlı Ar-Ge
+  Sipariş alan merkez: kendi harcamalarının %50'sini indirime alır.
+  Sipariş veren: ödediğinin %50'sini indirime alır.
+  Sipariş verenler GV terkini/SGK desteğinden yararlanamaz.
+
+muhasebe_kayitlari: |
+  ## Ar-Ge Harcaması Kaydı
+  Borç: 750 Araştırma ve Geliştirme Giderleri
+  Alacak: İlgili hesap (102 Bankalar / 191 İndirilecek KDV / 360 Ödenecek Vergi vb.)
+  Açıklama: 5746 s.K. Md.3 kapsamında nitelikli Ar-Ge harcaması.
+
+  ## GV Stopaj Terkini Kaydı
+  Borç: 360 Ödenecek Vergi ve Fonlar (terkin edilen stopaj)
+  Alacak: 649 Diğer Olağan Gelir ve Kârlar (terkin geliri)
+  Açıklama: 5746 Md.3 GV stopaj terkini — dönem Ar-Ge personeli ücretleri.
+
+  ## GSF Aktarım Kaydı (Yükümlülük Doğduğunda)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar
+  Alacak: 379 Diğer Çeşitli Borçlar (GSF yükümlülüğü)
+  Açıklama: 5746 Md.3/14 kapsamında GSF yükümlülüğü (%2 — 3 yıl içinde).
+
+  ## Beyanname
+  Hesaplanan toplam Ar-Ge indirimi beyanname 410. satırına aktarılır.
+  Beyan edilen kazancı aşan kısım devreden olarak kaydedilir ve
+  sonraki dönem VUK YDO oranı ile güncellenerek 410. satıra dahil edilir.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Ar-Ge Merkezi Belgesi (STB)
+    detay: "Sanayi ve Teknoloji Bakanlığı tarafından düzenlenen ve geçerlilik süresi dolmamış Ar-Ge Merkezi Belgesi. Belge numarası ve geçerlilik tarihi beyanname ekine konulmalıdır. Süre dolmuşsa modül kullanılamaz."
+    temin_yeri: STB / Sanayi ve Teknoloji Bakanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: TZE Ar-Ge Personeli Listesi ve Sayım Belgesi
+    detay: "Dönem içinde Ar-Ge merkezinde çalışan tam zaman eşdeğeri (TZE) Ar-Ge personeli listesi. Min. 15 TZE (bazı NACE: 30) koşulunun karşılandığını göstermelidir."
+    temin_yeri: İnsan Kaynakları / STB Bildirim Belgesi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ar-Ge Faaliyeti Proje Kapsamı ve Nitelik Belgesi
+    detay: "Her proje için Ar-Ge faaliyetinin yeni teknoloji/bilgi arayışına yönelik olduğunu gösteren proje tanım belgesi. Faaliyetin rutin geliştirmeden ayırt edilmesine imkân veren teknik açıklama içermeli."
+    temin_yeri: Ar-Ge Birimi / Proje Yöneticisi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ar-Ge Harcamaları Proje Bazlı Detay Listesi
+    detay: "Her proje bazında harcama türleri (H.1–H.9) itibarıyla dökümü. Destek personeli %10 ve dış hizmet %20 sınırları kontrol edilmiş olmalı. Finansman giderleri (H.10) hariç."
+    temin_yeri: Muhasebe / Mali İşler
+  - kategori: zorunlu
+    "no": 5
+    baslik: Önceki Dönem Devreden Ar-Ge İndirimi ve YDO Güncellemesi
+    detay: "Önceki yıl KV beyannamesi 410. satırında kullanılamayan ham devreden tutar ve cari dönem VUK YDO oranı ile güncellenmiş tutar. YDO artışı uygulandığı açıkça belgelenmelidir."
+    temin_yeri: Önceki Dönem KV Beyannamesi / VUK Resmi Gazete İlanı
+  - kategori: destekleyici
+    "no": 6
+    baslik: Artırımlı İndirim Hesaplama Cetveli
+    detay: "5 göstergeden biri için ≥%20 artış sağlandıysa önceki ve cari dönem karşılaştırmasını gösteren hesaplama cetveli. Artırımlı indirim tutarının hesabını göstermelidir."
+    temin_yeri: Ar-Ge Birimi / Mali İşler
+  - kategori: destekleyici
+    "no": 7
+    baslik: ATİK Amortisman Hesaplama Cetveli (Ar-Ge'ye İsabet Eden Pay)
+    detay: "Münhasıran veya kısmen Ar-Ge'de kullanılan duran varlıklar için gün sayısı oranına göre hesaplanan amortisman pay belgesi."
+    temin_yeri: Muhasebe / Sabit Kıymet Birimi
+  - kategori: destekleyici
+    "no": 8
+    baslik: Sipariş Bazlı Ar-Ge Sözleşmesi (Varsa)
+    detay: "Sipariş alınan veya verilen Ar-Ge için taraflar arasındaki yazılı sözleşme. %50 dağılımın dayanağı bu sözleşmedir."
+    temin_yeri: Hukuk / Satın Alma
+  - kategori: destekleyici
+    "no": 9
+    baslik: GSF Yükümlülük Hesabı ve Ödeme Belgesi (Varsa)
+    detay: "Kullanılan indirim ≥1.000.000 TL ise %2 GSF yükümlülük hesabı ve 3 yıl içinde Türkiye Varlık Fonu veya GSYF'ye yapılan aktarımın belgesi."
+    temin_yeri: Mali İşler / Yatırım Fonu
+
+k_checklist:
+  - id: K1
+    soru: "STB Ar-Ge Merkezi Belgesi geçerli mi? Belge numarası ve geçerlilik tarihi kontrol edildi mi?"
+    referans: "5746 s.K. Md.3 | STB"
+  - id: K2
+    soru: "Min. 15 TZE Ar-Ge personeli koşulu (bazı NACE: 30 TZE) sağlanıyor mu?"
+    referans: "5746 s.K. Md.3 | BKK"
+  - id: K3
+    soru: "Faaliyetlerin münhasıran yeni teknoloji ve bilgi arayışına yönelik olduğu (rutin geliştirme olmadığı) belgelendi mi?"
+    referans: "5746 s.K. Md.3"
+  - id: K4
+    soru: "Her projenin harcamaları ayrı proje kodu ve muhasebe hesabında izleniyor mu?"
+    referans: "5746 s.K. Md.3 | 5746 Uygulama Yönetmeliği"
+  - id: K5
+    soru: "Destek personeli giderleri TZE Ar-Ge personelinin %10'unu aşmıyor mu?"
+    referans: "5746 s.K. Md.3 | Uygulama Yönetmeliği"
+  - id: K6
+    soru: "Dışarıdan sağlanan fayda/hizmetler toplam Ar-Ge harcamasının %20'sini aşmıyor mu?"
+    referans: "5746 s.K. Md.3 | Uygulama Yönetmeliği"
+  - id: K7
+    soru: "Kapsam dışı harcamalar (finansman giderleri/faiz) indirim hesabına dahil edilmedi mi?"
+    referans: "5746 s.K. Md.3"
+  - id: K8
+    soru: "Önceki dönemden devreden Ar-Ge indirimi VUK YDO oranı ile güncellenerek alındı mı?"
+    referans: "5746 s.K. Md.3 — YDO artışı VAR (409'dan fark)"
+  - id: K9
+    soru: "YDO güncellenmesi için cari dönem VUK YDO oranı doğrulandı mı?"
+    referans: "VUK Resmi Gazete İlanı | 5746 s.K. Md.3"
+  - id: K10
+    soru: "Artırımlı indirim uygunluğu değerlendirildi mi? (5 göstergeden biri için ≥%20 artış)"
+    referans: "5746 s.K. Md.3 — Artırımlı indirim (31.12.2028)"
+  - id: K11
+    soru: "Devreden tutar gelecek dönem için YDO güncelleme notu ile birlikte saklandı mı?"
+    referans: "5746 s.K. Md.3 | GİB Beyan Reh. 2026"
+  - id: K12
+    soru: "GSF (Girişim Sermayesi Fonu) yükümlülüğü kontrol edildi mi? (Kullanılan indirim ≥1.000.000 TL ise %2)"
+    referans: "5746 s.K. Md.3/14 — 7263 s.K."
+  - id: K13
+    soru: "YİAKV (KVK 32/C) matrahına etkisi analiz edildi mi? (410 DÜŞÜLEBİLİR)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026"
+  - id: K14
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (tek satır ≥500.000 TL veya toplam ≥1.000.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT | 41 S.No.lu KV GT"
+  - id: K15
+    soru: "GV Stopaj Terkini ve SGK Desteği ayrı çalışma kâğıtlarında izleniyor mu?"
+    referans: "5746 s.K. Md.3 | 7555 s.K. (24.07.2025)"

@@ -1,0 +1,167 @@
+ic_kod: agaclandirma_masraf_4122sk
+baslik: Ağaçlandırma, Bakım ve Koruma Masrafları
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 476 }
+  - { donem: 2025, kod: 476 }
+
+mevzuat_dayanagi:
+  - 4122 sayılı Milli Ağaçlandırma ve Erozyon Kontrolü Seferberlik Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "4122 sayılı Milli Ağaçlandırma ve Erozyon Kontrolü Seferberlik Kanunu kapsamında ormanlarda ağaçlandırma, bakım veya koruma masrafı yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **4122 sayılı Milli Ağaçlandırma ve Erozyon Kontrolü Seferberlik Kanunu**
+    kapsamında kurulan ormanlarda kurumun **bizzat yaptığı** ağaçlandırma, bakım
+    ve koruma masraflarının **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ## Önemli Ayrım — Bağış Değil, Masraf İndirimi
+
+    476, diğer bağış kodlarından **temel olarak farklıdır**:
+    - Kurumun orman idaresine **para bağışı yapması** → 402 (kamu idaresine bağış)
+    - Kurumun 4122 s.K. kapsamındaki ormanlarda **bizzat masraf yapması** → 476
+
+    ## Kapsam
+
+    - 4122 s.K. kapsamında kurulan ormanlarda yapılan masraflar
+    - Orman Genel Müdürlüğü (OGM) onaylı proje/protokol şarttır
+    - Fidan, tohum, dikim işçiliği, ekipman giderleri
+    - Sulama, gübreleme, budama masrafları
+    - Koruma, yangın önleme, zararlı mücadelesi giderleri
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **476 kapsamındaki masraf indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: bizzat_masraf
+      soru: "Masraflar 4122 s.K. kapsamında ormanlarda bizzat kurum tarafından mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "476 bir bağış değil — kurumun kendi üstlendiği ağaçlandırma/bakım/koruma masrafı. Orman idaresine para transferi → 402. Kurum bizzat masraf yapıyor → 476."
+    - id: ogm_protokol
+      soru: "Orman Genel Müdürlüğü / Orman İdaresi'nden onaylı proje/protokol var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "4122 s.K. kapsamında yapılacak ağaçlandırma çalışmaları OGM/Orman İdaresi'nin onayına ve protokolüne dayanmalıdır. Onaysız masraf → 476 kapsamı tartışmalı."
+    - id: fiili_masraf
+      soru: "Masraflar fiilen gerçekleşti mi? (Fatura/harcama belgeleri mevcut mu?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt edilen ama yapılmayan masraf indirime konu olamaz. Her harcama kalemi için fatura/makbuz/bordro gereklidir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: agaclandirma_masraf_tutari
+      etiket: "Ağaçlandırma, bakım ve koruma masrafları toplamı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "4122 s.K. kapsamındaki ormanlarda yapılan tüm ağaçlandırma (fidan/tohum/dikim), bakım (sulama/gübreleme/budama) ve koruma (yangın/zararlı mücadelesi) masraflarının toplamı."
+  formuller:
+    istisna_tutari: "agaclandirma_masraf_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "agaclandirma_masraf_tutari > 0"
+      hata: "Masraf tutarı sıfırdan büyük olmalıdır."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  4122 sayılı Milli Ağaçlandırma ve Erozyon Kontrolü Seferberlik Kanunu kapsamında
+  kurulan ormanlarda kurumun bizzat yaptığı ağaçlandırma, bakım ve koruma
+  masraflarının tamamı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## 402 ile Temel Fark
+  402 (KVK Md.10/1-c): Kamu idaresine para bağışı (para çıkıyor).
+  476 (4122 s.K.): Kurumun bizzat ormanda yaptığı masraf (mal/hizmet harcaması).
+  Kurum orman idaresine para bağışladıysa → 402. Kendi masraf yaptıysa → 476.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Masraf 4122 s.K. kapsamındaki ormanda mı yapıldı?
+  - OGM/Orman İdaresi onaylı proje/protokol var mı?
+  - Masraflar fiilen gerçekleşti mi? (Fatura/makbuz/bordro)
+  - Masraflar aktifleştirilmeyip dönem gideri olarak mı kaydedildi?
+
+  ## YİAKV Etkisi
+  476 masraf indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Ağaçlandırma Masrafı Kaydı
+  Borç: 770/760 Genel Yönetim/Pazarlama Giderleri veya 689 Diğer Olağandışı Gider
+  Alacak: 102 Bankalar / 320 Satıcılar / 335 Personele Borçlar
+  Açıklama: 4122 s.K. kapsamında ağaçlandırma/bakım/koruma masrafı.
+
+  ## Beyanname
+  Hesaplanan toplam masraf tutarı beyanname 476. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: OGM / Orman İdaresi Proje Onayı ve Protokolü
+    detay: "4122 s.K. kapsamında ağaçlandırma projesinin Orman Genel Müdürlüğü veya bölge orman idaresince onaylandığına dair belge ve protokol."
+    temin_yeri: OGM / Bölge Orman İdaresi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Harcama Faturaları ve Belgeleri
+    detay: "Fidan, tohum, dikim işçiliği, ekipman kirası, sulama, gübreleme, bakım işçiliği, yangın önleme vb. tüm masraflara ait fatura/makbuz/bordro."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 3
+    baslik: 4122 s.K. Kapsamındaki Orman Alanı Belgesi
+    detay: "Masrafın yapıldığı orman alanının 4122 s.K. kapsamında olduğunu gösteren OGM/kadastro belgesi."
+    temin_yeri: OGM / Kadastro
+  - kategori: destekleyici
+    "no": 4
+    baslik: İş Tamamlama Tutanağı
+    detay: "OGM veya orman idaresi tarafından düzenlenen, yapılan ağaçlandırma/bakım/koruma çalışmalarını teyit eden iş tamamlama tutanağı."
+    temin_yeri: OGM / Bölge Orman İdaresi
+
+k_checklist:
+  - id: K1
+    soru: "Masraf 4122 s.K. kapsamındaki ormanda bizzat kurum tarafından mı yapıldı? (Bağış değil, masraf)"
+    referans: "4122 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "OGM/Orman İdaresi onaylı proje veya protokol mevcut mu?"
+    referans: "4122 s.K."
+  - id: K3
+    soru: "Masraflar fiilen gerçekleşti mi? (Her kalem için fatura/makbuz/bordro)"
+    referans: "4122 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "Masraflar aktifleştirilmeyip dönem gideri olarak mı kaydedildi?"
+    referans: "VUK | 4122 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (476 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

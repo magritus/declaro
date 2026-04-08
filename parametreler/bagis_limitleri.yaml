@@ -1,0 +1,23 @@
+# Bağış, Yardım ve Sponsorluk Oranları — KVK 10. Madde
+
+bagis_yardim:
+  genel_bagis_orani: 0.05
+  aciklama: "Kurum kazancının %5'i — KVK 10/1-c genel tavanı (beyan edilen kurum kazancı)"
+
+  egitim_saglik_orani: 0.05
+  aciklama_egitim_saglik: "Eğitim ve sağlık tesislerine yapılan bağışlarda %5 tavanı uygulanır"
+
+spor_sponsorluk:
+  spor_sponsorluk_profesyonel_orani: 0.50
+  aciklama_profesyonel: "Profesyonel spor dalları için sponsorluk harcamalarının %50'si indirim konusu yapılır — KVK 10/1-b"
+
+  spor_sponsorluk_amator_orani: 1.00
+  aciklama_amator: "Amatör spor dalları için sponsorluk harcamalarının tamamı (%100) indirim konusu yapılır — KVK 10/1-b"
+
+tam_indirimli_kurumlar:
+  aciklama: |
+    Aşağıdaki kurumlara yapılan bağış ve yardımların tamamı (kurum kazancıyla sınırlı) indirim konusu yapılır:
+    - Genel bütçeli idareler, il özel idareleri, belediyeler, köyler
+    - Kamu yararına çalışan dernekler ve vakıflar (Cumhurbaşkanlığı kararıyla belirlenenler)
+    - Bakanlar Kurulu kararıyla vergi muafiyeti tanınan vakıflar
+    - Bilimsel araştırma ve geliştirme faaliyetinde bulunan kurum ve kuruluşlar

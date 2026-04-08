@@ -1,0 +1,22 @@
+# Yatırım İndirimi ve Özel Teşvik Parametreleri
+
+yatirim_indirimi:
+  gecici_md61_uygulama_notu: "GVK Geçici Md. 61 kapsamı"
+  aciklama: |
+    GVK Geçici Madde 61 kapsamında, 24/04/2003 tarihinden önce yapılan yatırımlara ilişkin
+    yatırım indirimi istisnasından yararlanma hakkı bulunan mükellefler bu indirimi uygulamaya
+    devam edebilir. Beyannamede ayrı satırda gösterilir.
+
+risturn:
+  aciklama: |
+    Kooperatifler tarafından ortaklarına dağıtılan risturnlar KVK 5/1-i kapsamında
+    kurumlar vergisinden istisna tutulabilir. Üretim, kredi ve pazarlama kooperatifleri
+    için ayrı koşullar geçerlidir.
+
+nakdi_sermaye_artisi:
+  faiz_orani_referans: "TCMB_1_YILLIK_MEVDUAT"
+  indirim_orani: 0.50
+  aciklama: |
+    KVK 10/1-ı kapsamında, nakit olarak artırılan sermaye üzerinden TCMB faiz oranı
+    esas alınarak hesaplanan tutarın %50'si kurum kazancından indirilir. Finans sektörü
+    ve BİST'te işlem gören şirketlere farklı oranlar uygulanabilir.

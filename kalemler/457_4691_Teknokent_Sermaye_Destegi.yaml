@@ -1,0 +1,223 @@
+ic_kod: teknokent_sermaye_destegi_4691
+baslik: TGB Yönetici Şirketi Sermaye Desteği Hibe Geliri İndirimi (4691 s.K. Geçici Md.4)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 457 }
+  - { donem: 2025, kod: 457 }
+
+mevzuat_dayanagi:
+  - 4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu Geçici Madde 4
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2001-07-06"
+  bitis: null
+
+ana_kategori: arge_tasarim_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "4691 s.K. kapsamında bir Teknoloji Geliştirme Bölgesi'nde (TGB/Teknokent) faaliyette bulunuyor musunuz ve TGB Yönetici Şirketi ya da STB aracılığıyla sermaye desteği aldınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu Geçici Madde 4** kapsamında
+    STB veya TGB Yönetici Şirketi aracılığıyla teknokent bünyesindeki firmalara
+    sağlanan sermaye/hibe destek gelirinin kurumlar vergisi matrahından indirilmesidir.
+
+    ## Muhasebe-Beyanname Mekanizması
+
+    **456 Teknogirişim desteği ile mekanizması aynıdır; yasal dayanak ve kapsam farklıdır:**
+
+    **①** Destek alındığında → **GELİR kaydedilir** (679/649 hesabı) → KV matrahına girer.
+    **②** Beyanname 457 → Alınan destek tutarı matrahtan **DÜŞÜLÜR** → Net vergi yükü = 0.
+
+    **SONUÇ:** Teknokent sermaye desteği üzerinden kurumlar vergisi ödenmez.
+
+    ## TGB Tescili — Zorunlu Ön Koşul
+
+    **4691 Geçici Md.4 yalnızca STB lisanslı Teknoloji Geliştirme Bölgesi (TGB/Teknokent)
+    bünyesinde tescilli firmalar için geçerlidir.**
+
+    TGB dışında faaliyet gösteren girişimciler için → 456 (5746 Md.3/5) uygulanır.
+
+    ## Kapsam — Alıcı Niteliği
+
+    - 4691 s.K. kapsamında tescilli TGB/Teknokent bünyesindeki firmalar
+    - Destek kanalı: STB doğrudan veya TGB Yönetici Şirketi aracılığıyla
+
+    ## Önemli Ön Koşullar
+
+    - **TGB Tescil Belgesi:** Firmayı TGB bünyesinde tescil eden STB/TGB belgesi zorunludur.
+    - **4691 Kapsamı Teyidi:** Destek kararı/protokolü 4691 Geçici Md.4'e dayanmalıdır.
+    - **Fiili tahsilat:** Protokol tutarı değil, banka havalesiyle alınan kısım esastır.
+    - **Gelir kaydı zorunluluğu:** Destek alındığında **önce gelir hesabına alınmalı** (679/649).
+      Gelir kaydedilmemişse beyanname 457 ile matrahtan çıkarılamaz.
+
+    ## YİAKV İlişkisi
+
+    **4691 Geçici Md.4 kapsamındaki Teknokent Sermaye Desteği İndirimi YİAKV (KVK 32/C)
+    matrahından DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.13 bilgi satırında gösterilir ancak
+    matrahı etkilemez. Hem 456 hem 457 varsa E.13'e toplam yazılır.
+
+    ## 456 ile 457 Farkı
+
+    | | 456 | 457 |
+    |---|---|---|
+    | Yasal Dayanak | 5746 s.K. Md.3/5 | 4691 s.K. Geçici Md.4 |
+    | Kapsam | STB onaylı girişimciler (TGB dışı dahil) | TGB bünyesindeki firmalar |
+    | Destek Kanalı | STB direkt | STB veya TGB Yönetici Şirketi |
+
+    Mekanizma (Gelir Kaydı → Beyanname İndirimi) her iki kodda aynıdır.
+  kapi_sorulari:
+    - id: tgb_tescilli
+      soru: "Kurum 4691 s.K. kapsamında bir TGB/Teknokent'te tescilli mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "4691 Geçici Md.4 yalnızca STB lisanslı TGB bünyesindeki firmalara yöneliktir. TGB dışında faaliyet gösteren girişimciler için 456 (5746 Md.3/5) uygulanır."
+    - id: destek_4691_kapsaminda
+      soru: "Destek 4691 s.K. Geçici Md.4 kapsamında mı? (Protokolde referans var mı?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Destek kararı/protokolü 4691 Geçici Md.4'e dayanmalıdır. 5746 Md.3/5 kapsamındaysa → 456 uygulanır."
+    - id: fiilen_tahsil_edildi
+      soru: "Destek fiilen tahsil edildi mi? (Banka yoluyla)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Protokol tutarı değil — banka havalesiyle alınan kısım esastır. Yalnızca dönem içinde fiilen alınan kısım indirim konusu yapılabilir."
+    - id: gelir_kaydedildi
+      soru: "Tahsil edilen destek gelir olarak kaydedildi mi? (679/649 — Zorunlu Ön Adım)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "ZORUNLU ADIM: Önce 679/649 gelir kaydı → Sonra beyanname 457. Gelir kaydı olmadan 457 uygulanamaz — hatalı beyan ve tarhiyat riski doğar."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: alinan_hibe_tutari
+      etiket: "Dönem içinde fiilen tahsil edilen destek tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Banka yoluyla tahsil edilen TGB Sermaye Desteği tutarı. STB/TGB protokolündeki toplam tutarı değil, bu dönemde fiilen alınan kısmı giriniz."
+    - id: tgb_adi
+      etiket: "TGB / Teknokent Adı (Bilgi)"
+      tip: metin
+      zorunlu: false
+      yardim: "Faaliyetin yürütüldüğü Teknoloji Geliştirme Bölgesi'nin adı (örn. ODTÜ Teknokent, İTÜ Çekirdek, Hacettepe Teknokent). Belgeleme ve denetim amacıyla giriniz."
+  formuller:
+    istisna_tutari: "alinan_hibe_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "alinan_hibe_tutari > 0"
+      hata: "Tahsil edilen destek tutarı sıfırdan büyük olmalıdır."
+    - kural: "alinan_hibe_tutari >= 0"
+      hata: "Tahsil edilen destek tutarı negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  4691 sayılı Teknoloji Geliştirme Bölgeleri Kanunu Geçici Madde 4: TGB bünyesindeki
+  firmalara STB veya TGB Yönetici Şirketi aracılığıyla sağlanan sermaye desteği hibe geliri,
+  kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Mekanizması
+
+  Teknokent desteği iki adımlı mekanizma ile beyannamede yer alır:
+  - ADIM 1: Destek alındığında → Gelir kaydedilir (679/649) → KV matrahına girer
+  - ADIM 2: Beyanname 457 → Destek tutarı matrahtan DÜŞÜLÜR → Net vergi yükü = 0
+
+  ## Kritik Ön Koşullar
+
+  A0.1 ★ TGB tescili: 4691 s.K. kapsamında STB lisanslı TGB bünyesinde tescil zorunlu
+  A0.2 ★ 4691 kapsamı: Protokolde 4691 Geçici Md.4 referansı bulunmalı
+  A0.3 ★ Fiili tahsilat: Banka yoluyla fiilen alınmış kısım esas
+  A0.4 ★ Gelir kaydı: 679/649 gelir kaydı olmadan 457 uygulanamaz
+  A0.5 STB/TGB destek kararı veya TGB Yönetici Şirketi protokolü mevcut olmalı
+
+  ## 456 ile 457 Ayrımı
+  456 (5746 Md.3/5): Teknogirişim desteği — STB kaynaklı, TGB dışı girişimciler de dahil
+  457 (4691 Geç.Md.4): Teknokent desteği — 4691 s.K. kapsamında TGB bünyesi zorunlu
+  Mekanizma aynıdır; aynı destek her iki kodla çift sayılmamalıdır.
+
+  ## YİAKV Etkisi
+  457 Teknokent Sermaye Desteği İndirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.13 bilgi satırında gösterilir — matrahı etkilemez.
+  Hem 456 hem 457 varsa E.13'e her ikisinin toplamı yazılır.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Destek Tahsilat Kaydı
+  Borç: 102 Bankalar
+  Alacak: 679 Diğer Olağandışı Gelirler (veya 649 Diğer Gelirler)
+  Açıklama: 4691 s.K. Geçici Md.4 kapsamında TGB Yönetici Şirketi/STB'den alınan sermaye desteği.
+
+  NOT: Bu gelir kaydı olmadan beyanname 457 uygulanamaz.
+  Tahsil edilen destek önce gelir hesabına alınır, ardından beyanname 457 ile matrahtan düşülür.
+
+  ## Beyanname
+  Fiilen tahsil edilen destek tutarı beyanname 457. satırına aktarılır.
+  İndirim tutarı = Tahsil edilen hibe tutarı (gelir kaydı şartıyla).
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: TGB Tescil / Üyelik Belgesi
+    detay: "Firmayı 4691 s.K. kapsamında TGB/Teknokent bünyesinde tescil eden STB veya TGB Yönetici Şirketi belgesi. TGB'de fiili faaliyet ve tescil zorunludur."
+    temin_yeri: STB / TGB Yönetici Şirketi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Destek Kararı / TGB Yönetici Şirketi Protokolü
+    detay: "4691 Geçici Md.4 referansını içeren, STB veya TGB Yönetici Şirketi tarafından imzalanmış destek kararı veya protokol belgesi."
+    temin_yeri: STB / TGB Yönetici Şirketi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Banka Tahsilat Dekontu / Ekstresi
+    detay: "Destek tutarının fiilen alındığını gösteren banka havalesi dekontu veya banka ekstresi. Tahsilat tarihi ve tutarı açıkça görünmeli."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Gelir Kaydı — Yevmiye Defteri Kaydı
+    detay: "Destek alındığında yapılan 679/649 gelir kaydının yevmiye defteri çıktısı. Gelir kaydı olmadan 457 indirimi uygulanamaz."
+    temin_yeri: Muhasebe / Yevmiye Defteri
+  - kategori: destekleyici
+    "no": 5
+    baslik: Proje Tanıtım Belgesi / Ar-Ge Faaliyet Özeti
+    detay: "TGB bünyesinde yürütülen Ar-Ge/teknoloji projesine ilişkin başvuru veya faaliyet özeti belgesi. Denetim için referans amaçlı."
+    temin_yeri: TGB Yönetici Şirketi / İç Dosya
+
+k_checklist:
+  - id: K1
+    soru: "Kurum 4691 s.K. kapsamında STB lisanslı bir TGB/Teknokent'te tescilli mi?"
+    referans: "4691 s.K. Geçici Md.4 | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Destek kararı/protokolü 4691 Geçici Md.4'e dayanıyor mu? (5746 Md.3/5 değil)"
+    referans: "4691 s.K. Geçici Md.4"
+  - id: K3
+    soru: "Destek tutarı dönem içinde banka yoluyla fiilen tahsil edildi mi?"
+    referans: "4691 s.K. Geçici Md.4"
+  - id: K4
+    soru: "Tahsil edilen destek tutarı dönem içinde gelir olarak kaydedildi mi? (679/649)"
+    referans: "4691 s.K. Geçici Md.4 | GİB Beyan Reh. 2026"
+  - id: K5
+    soru: "STB/TGB Yönetici Şirketi destek kararı veya protokol belgesi dosyada mevcut mu?"
+    referans: "4691 s.K. Geçici Md.4"
+  - id: K6
+    soru: "Beyanname 457 indirimi, fiilen tahsil edilen ve gelir kaydedilen tutarla örtüşüyor mu?"
+    referans: "4691 s.K. Geçici Md.4 | GİB Beyan Reh. 2026"
+  - id: K7
+    soru: "456 kodu ile çakışma riski değerlendirildi mi? (Aynı destek çift sayılmadı mı?)"
+    referans: "5746 s.K. Md.3/5 | 4691 s.K. Geçici Md.4"
+  - id: K8
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (457 DÜŞÜLEMEZ — E.13 bilgi satırı, 456+457 toplamı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.13"
+  - id: K9
+    soru: "YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "GİB Beyan Reh. 2026 (No:606)"

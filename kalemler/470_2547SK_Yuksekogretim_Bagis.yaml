@@ -1,0 +1,188 @@
+ic_kod: yuksekogretim_bagis_2547sk
+baslik: Yükseköğretim Kurumlarına Bağış (2547 s.K.)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 470 }
+  - { donem: 2025, kod: 470 }
+
+mevzuat_dayanagi:
+  - 2547 sayılı Yükseköğretim Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "2547 sayılı Yükseköğretim Kanunu kapsamında bir üniversite veya yükseköğretim kurumuna bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **2547 sayılı Yükseköğretim Kanunu** kapsamındaki üniversiteler ve diğer
+    yükseköğretim kurumlarına yapılan bağış ve yardımların **tamamı** kurumlar
+    vergisi matrahından indirilir.
+
+    ## Alıcı Niteliği
+
+    - Devlet üniversiteleri (2547 s.K. kapsamı)
+    - YÖK onaylı vakıf üniversiteleri
+    - Yüksekokullar ve meslek yüksekokulları
+    - Bünyelerindeki araştırma merkezi ve enstitüler
+
+    **Kapsam dışı:** Lise ve ilköğretim okulları (farklı kodlar), YÖK onayı olmayan
+    kurum, özel kurs ve dershane.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **470 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_yuksekogretim
+      soru: "Bağış 2547 s.K. kapsamında bir yükseköğretim kurumuna mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "2547 s.K. kapsamındaki devlet üniversiteleri, YÖK onaylı vakıf üniversiteleri, yüksekokullar ve bünyelerindeki araştırma merkezleri/enstitüler. Kapsam dışı: Lise, ilköğretim okulu, özel kurs."
+    - id: vakif_uni_yokonay
+      soru: "Vakıf üniversitesine bağışsa YÖK tescili / onayı teyit edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Vakıf üniversiteleri YÖK tarafından onaylanmış olmalı. YÖK onayı olmayan kurum 2547 s.K. kapsamında sayılmaz."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "Yükseköğretim kurumundan resmi bağış makbuzu / kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Üniversite veya ilgili yükseköğretim kurumundan düzenlenen resmi makbuz veya bağış kabul yazısı zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla üniversiteye yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile yükseköğretim kurumuna yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Cihaz/ekipman/kitabın maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Bilimsel cihaz, ekipman, kitap, araştırma malzemesi gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  2547 sayılı Yükseköğretim Kanunu kapsamındaki üniversiteler ve diğer yükseköğretim
+  kurumlarına yapılan bağış ve yardımların tamamı kurumlar vergisi matrahından
+  indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Alıcı Niteliği
+  - Devlet üniversiteleri → Onaylıdır
+  - YÖK onaylı vakıf üniversiteleri → Onaylıdır (YÖK tescil belgesi şart)
+  - Yüksekokullar/Meslek yüksekokulları → Onaylıdır
+  - Bünyelerindeki araştırma merkezi/enstitüler → Onaylıdır
+  - Lise/ortaokul → Kapsam dışı (farklı kodlar)
+  - YÖK onaysız kurum → Kapsam dışı
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Vakıf üniversitesi ise YÖK tescil/onay belgesi
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - Üniversiteden resmi makbuz/kabul yazısı
+
+  ## YİAKV Etkisi
+  470 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 2547 s.K. kapsamında yükseköğretim kurumuna nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 2547 s.K. kapsamında yükseköğretim kurumuna ayni bağış.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 470. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (Üniversite / YÖK Tescil)
+    detay: "Devlet üniversitesi için kuruluş belgesi. Vakıf üniversitesi için YÖK tescil/onay belgesi. Statü bağış tarihinde geçerli olmalı."
+    temin_yeri: Üniversite / YÖK
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Resmi Makbuz
+    detay: "Üniversite veya ilgili birimden düzenlenen resmi makbuz veya bağış kabul yazısı. Tarih ve tutar açıkça belirtilmeli."
+    temin_yeri: Alıcı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme üniversitenin resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / Alıcı Kurum
+  - kategori: destekleyici
+    "no": 5
+    baslik: Bağış Protokolü veya Sözleşmesi
+    detay: "Bağışın amacını (burs, laboratuvar, kütüphane, Ar-Ge vb.) ve tarafları belirten yazılı protokol."
+    temin_yeri: Alıcı Kurum
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (2547 s.K. kapsamı devlet üniversitesi veya YÖK onaylı vakıf üniversitesi)"
+    referans: "2547 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Vakıf üniversitesiyse bağış tarihinde geçerli YÖK tescil belgesi temin edildi mi?"
+    referans: "2547 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "2547 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "Üniversiteden resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "2547 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (470 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

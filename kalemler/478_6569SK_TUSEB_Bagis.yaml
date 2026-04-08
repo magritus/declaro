@@ -1,0 +1,175 @@
+ic_kod: tuseb_bagis_6569sk
+baslik: TÜSEB'e (Sağlık Enstitüleri Başkanlığı) Bağış
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 478 }
+  - { donem: 2025, kod: 478 }
+
+mevzuat_dayanagi:
+  - 6569 sayılı TÜSEB Kuruluş Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "6569 sayılı Kanun kapsamında Türkiye Sağlık Enstitüleri Başkanlığı'na (TÜSEB) bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **6569 sayılı Kanun** kapsamında Türkiye Sağlık Enstitüleri Başkanlığı'na
+    (TÜSEB) veya bünyesindeki enstitü/fon/programa yapılan bağış ve yardımların
+    **tamamı** kurumlar vergisi matrahından indirilir.
+
+    TÜSEB, sağlık alanında Ar-Ge, inovasyon, biyoteknoloji ve sağlık bilimleri
+    eğitimini desteklemek amacıyla kurulan kamu kurumudur.
+
+    ## TÜBİTAK (469) ile Fark
+
+    - TÜBİTAK (469): Genel Ar-Ge ve bilimsel araştırma
+    - TÜSEB (478): Sağlık odaklı Ar-Ge, biyoteknoloji, tıbbi cihaz
+
+    **Kapsam dışı:** Sağlık alanında faaliyet gösteren başka kurum/vakıf/üniversite.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **478 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_tuseb
+      soru: "Bağış 6569 s.K. kapsamında TÜSEB'e mi yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Türkiye Sağlık Enstitüleri Başkanlığı (TÜSEB) veya bünyesindeki enstitü/fon/program. Sağlık alanındaki başka kurum/vakıf/üniversite → Bu kod değil. TÜSEB, TÜBİTAK'tan farklı — sağlık odaklı, 6569 s.K. kapsamı."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "TÜSEB'den resmi bağış makbuzu / kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "TÜSEB tarafından düzenlenen resmi makbuz veya bağış kabul yazısı zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla TÜSEB'e yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile TÜSEB'e yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Tıbbi cihaz/sarf malzeme/ekipmanın maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Tıbbi cihaz, sarf malzeme, bilimsel ekipman gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  6569 sayılı Kanun kapsamında Türkiye Sağlık Enstitüleri Başkanlığı'na (TÜSEB)
+  yapılan bağış ve yardımların tamamı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## 469 (TÜBİTAK) ile Fark
+  469: TÜBİTAK — genel Ar-Ge ve bilim desteği (278 s.K.)
+  478: TÜSEB — sağlık odaklı Ar-Ge, biyoteknoloji, tıbbi cihaz (6569 s.K.)
+  İki kurum ve iki farklı beyanname satırı — karıştırılmamalı.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı TÜSEB (6569 s.K.) mi?
+  - TÜBİTAK ile karıştırılmadı mı?
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - TÜSEB'den resmi makbuz/kabul yazısı
+
+  ## YİAKV Etkisi
+  478 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 6569 s.K. kapsamında TÜSEB'e nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 6569 s.K. kapsamında TÜSEB'e ayni bağış (tıbbi cihaz/sarf malzeme).
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 478. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (TÜSEB — 6569 s.K. Kapsamı)
+    detay: "TÜSEB'in 6569 s.K. kapsamındaki resmi statüsünü gösteren belge."
+    temin_yeri: TÜSEB
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Resmi Makbuz
+    detay: "TÜSEB tarafından düzenlenen resmi makbuz veya bağış kabul yazısı."
+    temin_yeri: TÜSEB
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme TÜSEB'in resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Tıbbi cihaz, sarf malzeme, bilimsel ekipman bağışlarında imzalı teslim tutanağı ve maliyet değerini gösteren belge."
+    temin_yeri: Muhasebe / TÜSEB
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (TÜSEB — 6569 s.K. kapsamı)"
+    referans: "6569 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "TÜBİTAK (469) ile karıştırılmadığı teyit edildi mi? (TÜSEB sağlık odaklı, ayrı kurum)"
+    referans: "6569 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "6569 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "TÜSEB'den resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "6569 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (478 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

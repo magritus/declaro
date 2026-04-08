@@ -1,0 +1,257 @@
+ic_kod: yatirim_indirimi_gvk_gecici_61
+baslik: Yatırım İndirimi İstisnası (GVK Geçici Md.61)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 406 }
+  - { donem: 2025, kod: 406 }
+
+mevzuat_dayanagi:
+  - GVK Geçici Madde 61
+  - GVK Geçici Madde 61/3 (Stopaj)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - GİB KV Beyan Rehberi No:607 (YİAKV)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2003-04-24"
+  bitis: null
+
+ana_kategori: yatirim_tesvikleri
+
+wizard_agaci:
+  tetikleyici_soru: "24/04/2003 tarihinden önce düzenlenmiş yatırım teşvik belgesi kapsamında kullanılmamış yatırım indirimi hakkınız var mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **GVK Geçici Madde 61** kapsamında, **24/04/2003 tarihinden önce yapılan
+    müracaatlara istinaden düzenlenen yatırım teşvik belgeleri** çerçevesinde
+    hak kazanılan yatırım indirimi tutarları kurumlar vergisi matrahından indirilir.
+
+    Bu, **tarihi bir hak** olup yalnızca 2003 öncesi teşvik belgelerine uygulanır.
+    Sonraki dönemlere devredilen kullanılmamış yatırım indirimi tutarları da bu
+    kapsamda değerlendirilebilir.
+
+    ## Kapsam — Tarihsel Koşul
+
+    - Teşvik belgesi **24/04/2003 tarihinden önce** düzenlenmiş olmalıdır.
+    - Bu tarihten sonra alınan teşvik belgeleri kapsam dışıdır.
+    - Önceki yıllardan devreden kullanılmamış yatırım indirimi hakları da
+      devam eden dönemlerde uygulanabilir.
+
+    ## İndirim Kuralları
+
+    - Cari dönem matrahını aşan kısım **sonraki döneme devredilir**.
+    - Kullanılabilecek azami tutar: **MIN(Toplam Kullanılabilir İndirim, KV Matrahı)**.
+    - Devreden bakiye bir sonraki yılın başlangıç tutarı olarak izlenir.
+
+    ## Stopaj Yükümlülüğü
+
+    **GVK Geçici Md.61/3:** 406 kapsamında kullanılan yatırım indirimi tutarı
+    üzerinden **%19,8 oranında gelir vergisi stopajı** uygulanır. Bu stopaj
+    muhtasar beyanname ile ayrıca beyan edilip ödenmesi gerekir.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **24/04/2003 tarih koşulu:** Bu tarihten sonra düzenlenen teşvik belgeleri
+      bu kapsamda değerlendirilemez. Belge tarihi mutlaka doğrulanmalıdır.
+    - **Stopaj zorunluluğu:** Kullanılan her yatırım indirimi tutarı için %19,8
+      stopaj hesaplanıp ödenmeli; bu yükümlülük ihmal edilemez.
+    - **Matrah sınırı:** Yatırım indirimi KV matrahını aşamaz; aşan kısım
+      devredilir, kullanılamaz veya geri alınamaz.
+    - **Belge ispatı:** Teşvik belgesi aslı veya sureti ve önceki beyannamelerdeki
+      devir tutarlarının belgelenmesi zorunludur.
+
+    ## YİAKV İlişkisi
+
+    **GVK Geçici Md.61 kapsamındaki yatırım indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** Normal KV matrahını sıfırlasa bile YİAKV %10 oranında uygulanmaya
+    devam eder. YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+    ## Pratik Notlar
+
+    - Devreden yatırım indirimi tutarı, önceki beyanname kayıtlarıyla mutabık
+      olmalıdır.
+    - Cari dönemde hak kazanılan yeni tutar çoğu durumda sıfırdır; hak genellikle
+      önceki dönemde doğmuş ve devreden bakiye olarak gelmiştir.
+    - **YMM tasdik raporu:** İndirim tutarı ≥500.000 TL ise 49 No.lu KV GT
+      kapsamında YMM tasdik raporu zorunludur.
+  kapi_sorulari:
+    - id: tesvik_belgesi_tarihi_uygun
+      soru: "Yatırım teşvik belgeniz 24/04/2003 tarihinden ÖNCE düzenlendi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "GVK Geçici Md.61 yalnızca 24/04/2003 öncesi müracaatlara istinaden düzenlenen teşvik belgeleri kapsamındaki hakları kapsar. Bu tarihten sonraki belgeler kapsam dışıdır."
+    - id: devreden_tutar_belgelendi
+      soru: "Önceki dönemden devreden ve/veya cari dönemde hak kazanılan yatırım indirimi tutarı belgelendi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Teşvik belgesi + yatırım indirimi hesap özeti + önceki beyanname kayıtları ile tutar doğrulanmış olmalıdır."
+    - id: stopaj_hesaplandi
+      soru: "Kullanılacak yatırım indirimi üzerinden %19,8 GV stopajı hesaplandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "GVK Geç. Md.61/3 gereği 406 kapsamında kullanılan tutara %19,8 stopaj uygulanır. Stopaj muhtasar beyanname ile ayrıca beyan edilip ödenmesi gerekir."
+
+parametreler:
+  stopaj_orani: 19.8
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: onceki_donem_devreden_tutar
+      etiket: "Önceki dönemden devreden yatırım indirimi tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Bir önceki dönem KV beyannamesinden devreden kullanılmamış yatırım indirimi tutarı. Önceki beyanname kayıtlarıyla mutabık olmalı."
+    - id: cari_donem_yeni_tutar
+      etiket: "Cari dönem hak kazanılan yeni tutar (TL) — çoğu durumda 0"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: "24/04/2003 öncesi teşvik belgesi kapsamında cari dönemde hak kazanılan ek tutar. Hak tamamen önceki dönemde doğmuşsa 0 girilir."
+    - id: bu_donem_kullanilan_yatirim_indirimi
+      etiket: "Bu dönem kullanılan yatırım indirimi (TL) — KV matrahını aşamaz"
+      tip: para
+      zorunlu: true
+      yardim: "Cari dönemde matrahtan düşülecek yatırım indirimi tutarı. KV matrahını aşamaz; aşan kısım sonraki döneme devredilir. Formül: MIN(Toplam Kullanılabilir, KV Matrahı)."
+    - id: tesvik_belgesi_tarihi
+      etiket: "Teşvik belgesi tarihi (GG.AA.YYYY)"
+      tip: tarih
+      zorunlu: true
+      yardim: "24/04/2003 tarihinden önce düzenlenmiş olmalıdır. Belge tarihi bu koşulu sağlamazsa 406 kodu uygulanamaz."
+  formuller:
+    toplam_kullanilabilir: "onceki_donem_devreden_tutar + cari_donem_yeni_tutar"
+    istisna_tutari: "bu_donem_kullanilan_yatirim_indirimi"
+    stopaj_tutari: "bu_donem_kullanilan_yatirim_indirimi * 0.198"
+    devreden_bakiye: "toplam_kullanilabilir - bu_donem_kullanilan_yatirim_indirimi"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "onceki_donem_devreden_tutar >= 0"
+      hata: "Devreden tutar negatif olamaz."
+    - kural: "bu_donem_kullanilan_yatirim_indirimi >= 0"
+      hata: "Kullanılan yatırım indirimi tutarı negatif olamaz."
+    - kural: "bu_donem_kullanilan_yatirim_indirimi <= (onceki_donem_devreden_tutar + cari_donem_yeni_tutar)"
+      hata: "Kullanılan tutar toplam kullanılabilir tutarı aşamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  GVK Geçici Madde 61: 24/04/2003 tarihinden önce yapılan müracaatlara istinaden
+  düzenlenen yatırım teşvik belgeleri kapsamında hak kazanılan yatırım indirimi
+  tutarları kurumlar vergisi matrahından indirilir.
+  GVK Geçici Madde 61/3: Bu kapsamdaki yatırım indirimi üzerinden %19,8 stopaj.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Tarihi Kapsam Kontrolü
+
+  TEŞVIK BELGESİ TARİHİ:
+  - 24/04/2003 öncesi → Kapsam dahili (GVK Geç. Md.61 uygulanır)
+  - 24/04/2003 sonrası → Kapsam dışı (bu kod uygulanamaz)
+
+  ## Hesaplama Akışı
+
+  B.1 Önceki dönemden devreden yatırım indirimi
+  + B.2 Cari dönemde hak kazanılan yeni tutar (çoğu durumda 0)
+  = B.3 Toplam kullanılabilir yatırım indirimi
+
+  B.4 Cari dönem KV matrahı (406 öncesi)
+  B.5 CARİ DÖNEM KULLANILAN = MIN(B.3, B.4) → Beyanname 406
+  B.6 Sonraki döneme devreden = B.3 − B.5
+  B.7 %19,8 GV Stopajı = B.5 × %19,8 → Muhtasar beyanname
+
+  ## Kritik Kontroller
+
+  1. Teşvik belgesi tarihi 24/04/2003 öncesi olmalı (belge aslı veya sureti)
+  2. Devreden yatırım indirimi önceki beyannamelerle mutabık olmalı
+  3. KV matrahı aşılmamalı — aşan kısım devreder, geri alınamaz
+  4. %19,8 stopaj ayrıca muhtasar beyanname ile beyan ve ödeme
+  5. YMM tasdik raporu eşiği (≥500.000 TL) kontrol edilmeli
+
+  ## YİAKV Etkisi
+  406 yatırım indirimi istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  Normal KV matrahını sıfırlasa bile YİAKV'da E.11 bilgi satırı — %10 YİAKV uygulanır.
+  GİB Rehberi No:607: 406 YİAKV matrahından düşülemez.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+  ## Stopaj Uyarısı
+  GVK Geç. Md.61/3 gereği kullanılan tutar × %19,8 = Stopaj.
+  Muhtasar beyanname ile beyan edilip ödenmesi zorunludur.
+  Stopaj ihmalinde gecikme faizi + ceza riski.
+
+muhasebe_kayitlari: |
+  ## Yatırım İndirimi Kaydı (Muhasebe)
+  Yatırım indirimi istisnası bilanço veya gelir tablosuna doğrudan kaydedilmez;
+  KV beyannamesinde indirim olarak uygulanır.
+
+  ## Stopaj Kaydı
+  Borç: 370 Dönem Kârı Vergi ve Diğer Yük. Karşılıkları (Stopaj tutarı)
+  Alacak: 360 Ödenecek Vergi ve Fonlar (GV Stopajı — %19,8)
+  Açıklama: GVK Geç. Md.61/3 kapsamında yatırım indirimi üzerinden %19,8 stopaj.
+
+  ## Beyanname
+  Cari dönemde kullanılan yatırım indirimi tutarı beyanname 406. satırına aktarılır.
+  Matrahı aşan kısım devreder — bir sonraki dönem başlangıç bakiyesi.
+  Stopaj tutarı muhtasar beyanname ile ayrıca beyan ve ödeme.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Yatırım Teşvik Belgesi (Aslı veya Onaylı Sureti)
+    detay: "24/04/2003 öncesi tarihli teşvik belgesi. Belge tarihi ve numarası kritik. 2003 sonrası tarihli belge kapsam dışıdır."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı / Arşiv
+  - kategori: zorunlu
+    "no": 2
+    baslik: Önceki Dönem KV Beyannameleri (Devreden Tutar İspat)
+    detay: "Önceki dönemlerden devreden yatırım indirimi tutarını gösteren beyanname kayıtları. Devreden bakiye önceki beyannamelerle mutabık olmalı."
+    temin_yeri: Beyanname Arşivi / Muhasebe
+  - kategori: zorunlu
+    "no": 3
+    baslik: Yatırım İndirimi Hesap Özeti
+    detay: "Yatırım teşvik belgesi kapsamında hak kazanılan toplam tutar, önceki dönem kullanımları ve cari dönem başlangıç bakiyesini gösteren hesap tablosu."
+    temin_yeri: Muhasebe / YMM
+  - kategori: zorunlu
+    "no": 4
+    baslik: Cari Dönem KV Matrahı Belgesi
+    detay: "406 uygulanmadan önceki KV matrahını gösteren belge. Kullanılacak azami tutar bu matrahla sınırlıdır."
+    temin_yeri: KV Beyannamesi Taslağı
+  - kategori: zorunlu
+    "no": 5
+    baslik: Muhtasar Beyanname (%19,8 Stopaj)
+    detay: "GVK Geç. Md.61/3 kapsamında %19,8 GV stopajının beyan edildiği muhtasar beyanname. Kullanılan tutar × %19,8 = Stopaj tutarı."
+    temin_yeri: Muhtasar Beyanname Arşivi
+  - kategori: destekleyici
+    "no": 6
+    baslik: YMM Tasdik Raporu (≥500.000 TL İçin)
+    detay: "İndirim tutarı 500.000 TL ve üzerinde ise 49 No.lu KV GT kapsamında YMM tasdik raporu. Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez."
+    temin_yeri: YMM
+
+k_checklist:
+  - id: K1
+    soru: "Yatırım teşvik belgesi 24/04/2003 tarihinden önce düzenlendiği doğrulandı mı?"
+    referans: "GVK Geçici Md.61 | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Devreden yatırım indirimi tutarı önceki dönem beyannameleriyle mutabık mı?"
+    referans: "GVK Geçici Md.61"
+  - id: K3
+    soru: "Cari dönem kullanılan tutar MIN(Toplam Kullanılabilir, KV Matrahı) formülüne uygun mu?"
+    referans: "GVK Geçici Md.61"
+  - id: K4
+    soru: "KV matrahını aşan kısım sonraki döneme devir bakiyesi olarak doğru hesaplandı mı?"
+    referans: "GVK Geçici Md.61"
+  - id: K5
+    soru: "%19,8 GV stopajı hesaplandı mı? (Kullanılan tutar × %19,8)"
+    referans: "GVK Geçici Md.61/3"
+  - id: K6
+    soru: "%19,8 stopaj muhtasar beyanname ile ayrıca beyan ve ödeme için hazırlandı mı?"
+    referans: "GVK Geçici Md.61/3"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (406 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. No:607"
+  - id: K8
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

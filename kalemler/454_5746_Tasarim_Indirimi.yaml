@@ -1,0 +1,261 @@
+ic_kod: tasarim_indirimi_5746_3a
+baslik: Tasarım İndirimi (5746 s.K. Md.3/A)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 454 }
+  - { donem: 2025, kod: 454 }
+
+mevzuat_dayanagi:
+  - 5746 sayılı Kanun Madde 3/A
+  - 6676 sayılı Kanun Madde 15 (Ekleme)
+  - 7033 sayılı Kanun Madde 61
+  - Tasarım Merkezi Yönetmeliği
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2017-02-10"
+  bitis: null
+
+ana_kategori: arge_tasarim_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "5746 sayılı Kanun Madde 3/A kapsamında Tasarım Merkezi Belgesi alınmış ve tasarım harcaması gerçekleştirildi mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **5746 sayılı Kanun Madde 3/A** kapsamında, Sanayi ve Teknoloji Bakanlığı'ndan
+    (STB) **Tasarım Merkezi Belgesi** alan kurumların, merkez bünyesinde gerçekleştirdikleri
+    tasarım faaliyetlerine ilişkin harcamalarının **%100'ü** (Cumhurbaşkanlığı Kararnamesiyle
+    artırılabilir) kurumlar vergisi matrahından indirilebilir.
+
+    ## Temel Indirim Mekanizması
+
+    - **Temel indirim:** Nitelikli tasarım harcaması × %100
+    - **Ek indirim (nitelikli personel bonusu):** Nitelikli tasarımcı personel oranı
+      **>%80** ise tasarım harcamasının **ek %50'si** de indirim konusu yapılabilir.
+    - **Devreden indirim:** Kazanç yetersizliği nedeniyle kullanılamayan tutar
+      sonraki dönemlere devredilir (yeniden değerleme oranıyla güncellenir).
+
+    ## YİAKV İlişkisi
+
+    **Tasarım İndirimi (5746 Md.3/A), YİAKV (KVK Md.32/C) matrahından
+    DÜŞÜLEBİLİR.** YİAKV Çalışma Kâğıdı D.10 satırına ("Ar-Ge ve Tasarım İndirimi")
+    dahil edilmelidir.
+
+    ## Tasarım Merkezi Belgesi Zorunluluğu
+
+    Bu indirimden yararlanmak için STB tarafından verilen **Tasarım Merkezi Belgesi**
+    zorunludur. Belgesiz tasarım faaliyetleri bu indirimden yararlanamaz.
+    En az **10 tam zaman eşdeğer (TZE) tasarımcı** koşulu dönem boyunca
+    sağlanmalıdır.
+
+    ## Ar-Ge İndirimi ile Fark
+
+    - **Tasarım İndirimi (454):** Tasarım Merkezi Belgeli, tasarım faaliyetleri
+    - **Ar-Ge İndirimi (455 - Ar-Ge Merkezi):** Ar-Ge Merkezi Belgeli, araştırma-geliştirme faaliyetleri
+    - Aynı harcama her iki indirimde çift sayılamaz.
+
+    ## Önemli Uyarı
+
+    Tasarım harcamaları, diğer faaliyetlere ait harcamalardan ayrı muhasebe
+    hesaplarında izlenmelidir.
+
+  kapi_sorulari:
+    - id: tasarim_merkezi_belgesi_var
+      soru: "Geçerli Tasarım Merkezi Belgesi (STB onaylı) mevcut mu ve dönem içinde geçerliliğini sürdürdü mü?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Tasarım İndirimi yalnızca STB tarafından belgelenmiş Tasarım Merkezleri için geçerlidir. Belgesiz tasarım faaliyetleri bu indirimden yararlanamaz. Belge geçerlilik tarihi ve koşul uyumu kontrol edilmeli."
+    - id: tasarim_faaliyet_kapsami
+      soru: "Tasarım faaliyeti, STB tarafından onaylanan tasarım alanı kapsamında mı gerçekleştirildi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Belgeye yazılan tasarım alanları (endüstriyel, tekstil, grafik vb.) kapsamında gerçekleştirilen harcamalar indirilebilir. Kapsam dışı faaliyetler ayrıştırılmalı."
+    - id: asgari_personel_kosulu
+      soru: "Tasarım Merkezi dönem boyunca en az 10 tam zaman eşdeğer (TZE) tasarımcı koşulunu sağladı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "5746 s.K. Md.3/A: En az 10 TZE tasarımcı koşulu. Koşul sağlanmayan dönemde indirim uygulanamaz. STB'ye bildirilen liste ile muhasebe kayıtları uyumlu olmalı."
+    - id: ayri_muhasebe_takibi
+      soru: "Tasarım harcamaları diğer faaliyetlerden ayrı muhasebe hesaplarında izleniyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Tasarım harcamalarının diğer giderlerden ayrı hesaplarda izlenmesi zorunludur. 760 Araştırma ve Geliştirme Giderleri veya tasarıma özgü hesap kullanılmalı."
+
+parametreler:
+  temel_oran: 1.0
+  ek_oran_kosullu: 0.5
+  nitelikli_personel_esigi: 80
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nitelikli_tasarim_harcamasi
+      etiket: "Nitelikli tasarım harcaması (TL) — Tasarım Merkezi bünyesinde gerçekleştirilen harcamalar"
+      tip: para
+      zorunlu: true
+      yardim: "5746 Md.3/A kapsamında indirilebilecek tasarım harcamalarının toplamı. Kapsam dışı harcamalar ve genel yönetim giderleri ayrıştırılmalıdır."
+    - id: nitelikli_personel_orani
+      etiket: "Nitelikli tasarımcı personel oranı (%) — Lisansüstü dereceli veya temel bilimler lisanslı tasarımcılar"
+      tip: sayi
+      zorunlu: true
+      yardim: "Toplam tasarım personeli içinde nitelikli (lisansüstü dereceli veya temel bilimler lisans dereceli) tasarımcıların oranı. >%80 ise ek indirim (%50) hakkı doğar."
+    - id: onceki_donem_devreden_tasarim
+      etiket: "Önceki dönemden devreden tasarım indirimi (TL)"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: "Önceki dönem beyannamesi veya vergi inceleme raporundan. Yoksa 0 giriniz."
+    - id: beyan_edilen_kazanc
+      etiket: "KV Matrahı — Tasarım indirimi öncesi beyan edilen kazanç (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Kanuni düzeltmeler sonrası kurum kazancı (KKEG eklenmiş, geçmiş yıl zararları düşülmüş), ancak 454 tasarım indirimi düşülmeden önceki tutar."
+  formuller:
+    temel_indirim: "nitelikli_tasarim_harcamasi * 1.00"
+    nitelikli_ek: "(nitelikli_tasarim_harcamasi * 0.50) if nitelikli_personel_orani > 80 else 0"
+    toplam_indirim: "temel_indirim + nitelikli_ek + onceki_donem_devreden_tasarim"
+    istisna_tutari: "min(toplam_indirim, beyan_edilen_kazanc)"
+    devreden_sonraki_doneme: "max(0, toplam_indirim - beyan_edilen_kazanc)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nitelikli_tasarim_harcamasi >= 0"
+      hata: "Nitelikli tasarım harcaması negatif olamaz."
+    - kural: "nitelikli_personel_orani >= 0 and nitelikli_personel_orani <= 100"
+      hata: "Nitelikli personel oranı 0–100 arasında olmalıdır."
+    - kural: "onceki_donem_devreden_tasarim >= 0"
+      hata: "Devreden tasarım indirimi negatif olamaz."
+    - kural: "beyan_edilen_kazanc >= 0"
+      hata: "Beyan edilen kazanç negatif olamaz."
+    - kural: "nitelikli_tasarim_harcamasi > 0 or onceki_donem_devreden_tasarim > 0"
+      hata: "En az cari dönem tasarım harcaması veya devreden indirim girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  5746 sayılı Kanun Madde 3/A: Tasarım Merkezi Belgeli kurumların tasarım
+  faaliyeti harcamalarının %100'ü KV matrahından indirilir.
+  6676 s.K. Md.15 ve 7033 s.K. Md.61 ile düzenleme tamamlanmıştır.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Hesaplama Özeti
+
+  ADIM 1: Temel indirim = Nitelikli tasarım harcaması × %100
+  ADIM 2: Nitelikli personel oranı >%80 ise → Ek indirim = Tasarım harcaması × %50
+  ADIM 3: Toplam indirim hakkı = Temel + Ek + Önceki dönem devreden
+  ADIM 4: Kullanılan indirim = MIN(Toplam indirim, KV matrahı)
+  ADIM 5: Devreden = MAX(0, Toplam indirim - Kullanılan indirim)
+
+  ## Kritik Koşullar
+
+  TASARIM MERKEZİ BELGESİ:
+  - STB (Sanayi ve Teknoloji Bakanlığı) tarafından verilen belge zorunludur
+  - Belgenin dönem içinde geçerliliğini koruması şarttır
+  - Belgesiz tasarım faaliyetleri bu indirimden yararlanamaz
+
+  ASGARİ PERSONEL:
+  - Dönem boyunca en az 10 TZE tasarımcı koşulu
+  - STB'ye bildirilen liste ile muhasebe kayıtları uyumlu olmalı
+  - Koşul ihlali → İlgili dönem için indirim hakkı yok
+
+  KAPSAM DIŞI HARCAMALAR:
+  - Genel yönetim giderleri tasarım harcamasına dahil edilemez
+  - Kapsam dışı faaliyetlere atfedilen paylar ayrıştırılmalı
+  - Tasarım harcamaları ayrı muhasebe hesaplarında izlenmeli
+
+  ## Devreden İndirim Kuralı
+  Kullanılamayan tasarım indirimi sonraki dönemlere devredilir.
+  Devreden tutar yeniden değerleme oranıyla (TÜFE/ÜFE) güncellenerek devredilir.
+
+  ## YİAKV Etkisi
+  Tasarım İndirimi (454) YİAKV (KVK Md.32/C) matrahından DÜŞÜLEBİLİR.
+  YİAKV Çalışma Kâğıdı D.10 satırına ("Ar-Ge ve Tasarım İndirimi") dahil edilmeli.
+  370–385 (KVK Geçici Md.14) düşülemez — karıştırılmamalıdır.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Ar-Ge/Tasarım için özel tebliğ de incelenmeli.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+  ## Ar-Ge İndirimi ile Fark
+  454 (Tasarım): Tasarım Merkezi Belgeli, tasarım faaliyetleri kapsamı
+  Ar-Ge İndirimi (454 kod / 5746 Md.3): Ar-Ge Merkezi Belgeli (≥15 TZE personel)
+  Aynı harcama her iki indirimde çift sayılamaz.
+
+muhasebe_kayitlari: |
+  ## Tasarım Harcaması Kaydı
+  Borç: 760 Araştırma ve Geliştirme Giderleri (Tasarım Harcamaları)
+  Alacak: İlgili Maliyet Hesabı (İşçilik, Malzeme, Amortisman vb.)
+  Açıklama: 5746 Md.3/A kapsamında tasarım merkezi bünyesinde gerçekleştirilen harcama.
+
+  ## Beyanname
+  Hesaplanan tasarım indirimi tutarı beyanname 454. satırına aktarılır.
+  Kullanılamayan kısım devreden indirim olarak izlenir ve sonraki dönemde güncellenir.
+  YİAKV Çalışma Kâğıdı D.10 satırına ayrıca aktarılır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Tasarım Merkezi Belgesi (STB Onaylı)
+    detay: "STB tarafından verilen Tasarım Merkezi Belgesi. Belge numarası, veriliş tarihi ve son geçerlilik tarihini içermeli. Dönem içinde geçerliliğini koruduğu teyit edilmeli."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı (STB)
+  - kategori: zorunlu
+    "no": 2
+    baslik: Tasarım Harcaması Dökümü ve Muhasebe Kayıtları
+    detay: "Harcama türü bazında döküm: personel, malzeme, amortisman, dışarıdan sağlanan hizmet vb. Muhasebe kayıtları ile mutabık. Kapsam dışı harcamaların ayrıştırıldığını gösterir belge."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 3
+    baslik: Tasarımcı Personel Listesi ve TZE Hesaplama
+    detay: "STB'ye bildirilen ve dönem içinde görev yapan tasarımcı personel listesi. Tam zaman eşdeğer (TZE) hesabını gösteren tablo. Asgari 10 TZE koşulunun sağlandığını kanıtlar."
+    temin_yeri: İnsan Kaynakları / STB Bildirim
+  - kategori: zorunlu
+    "no": 4
+    baslik: Nitelikli Personel Oranı Hesaplama (>%80 ek indirim için)
+    detay: "Ek %50 indirim hakkı talep ediliyorsa, lisansüstü dereceli veya temel bilimler lisanslı tasarımcıların toplam tasarım personeline oranını gösteren hesaplama ve diploma/transkript kopyaları."
+    temin_yeri: İnsan Kaynakları / Eğitim Belgeleri
+  - kategori: destekleyici
+    "no": 5
+    baslik: Önceki Dönem Beyannamesi (Devreden İndirim İçin)
+    detay: "Devreden tasarım indirimi varsa önceki dönem KV beyannamesi veya vergi inceleme raporu. Devreden tutarın hesaplanmasına esas teşkil eder."
+    temin_yeri: Beyanname Arşivi
+  - kategori: destekleyici
+    "no": 6
+    baslik: STB Dönem Faaliyeti İzleme Raporu
+    detay: "Dönem içinde gerçekleştirilen tasarım faaliyetlerinin STB'ye bildirildiğine dair belgeler. Faaliyet kapsamını ve tasarım alanı uyumunu gösterir."
+    temin_yeri: STB / Tasarım Merkezi Yönetimi
+
+k_checklist:
+  - id: K1
+    soru: "Tasarım Merkezi Belgesi (STB onaylı) mevcut mu ve dönem içinde geçerliliğini korudu mu?"
+    referans: "5746 s.K. Md.3/A | Tasarım Merkezi Yönetmeliği"
+  - id: K2
+    soru: "Tasarım faaliyeti STB belgesinde yazılan tasarım alanı kapsamında mı? (Endüstriyel / Tekstil / Grafik vb.)"
+    referans: "5746 s.K. Md.3/A"
+  - id: K3
+    soru: "Dönem boyunca en az 10 tam zaman eşdeğer (TZE) tasarımcı koşulu sağlandı mı?"
+    referans: "5746 s.K. Md.3/A"
+  - id: K4
+    soru: "Nitelikli personel oranı >%80 ise ek indirim (%50) hesaplanırken personel belgesi (diploma/transkript) temin edildi mi?"
+    referans: "5746 s.K. Md.3/A"
+  - id: K5
+    soru: "Tasarım harcamaları diğer faaliyetlerden ayrı muhasebe hesaplarında izleniyor mu? (760 veya ayrı hesap)"
+    referans: "5746 s.K. Md.3/A | VUK"
+  - id: K6
+    soru: "Kapsam dışı harcamalar (genel yönetim giderleri, kapsam dışı faaliyetler) ayrıştırıldı mı?"
+    referans: "5746 s.K. Md.3/A"
+  - id: K7
+    soru: "Devreden tasarım indirimi varsa, önceki dönemden devredilen tutar ve güncelleme oranı (yeniden değerleme) doğrulandı mı?"
+    referans: "5746 s.K. Md.3/A"
+  - id: K8
+    soru: "Kullanılan indirim tutarı KV matrahını aşmıyor mu? (MIN kontrolü uygulandı mı?)"
+    referans: "5746 s.K. Md.3/A | GİB Beyan Reh. 2026 (No:606)"
+  - id: K9
+    soru: "YİAKV D.10 satırına aktarım yapıldı mı? (Tasarım İndirimi YİAKV'den düşülebilir)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026"
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

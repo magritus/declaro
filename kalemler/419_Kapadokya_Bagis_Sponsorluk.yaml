@@ -1,0 +1,251 @@
+ic_kod: kapadokya_bagis_sponsorluk_7174
+baslik: Kapadokya Alan Başkanlığına Bağış/Yardım ve Sponsorluk (7174 S.K.)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 419 }
+  - { donem: 2025, kod: 419 }
+
+mevzuat_dayanagi:
+  - 7174 Sayılı Kapadokya Alanı Hakkında Kanun
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2019-06-19"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Kapadokya Alanı Başkanlığına bağış/yardım yaptınız veya Başkanlıkça hazırlanan projelere sponsorluk harcaması gerçekleştirdiniz mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **7174 Sayılı Kapadokya Alanı Hakkında Kanun** kapsamında iki ayrı indirim türü
+    beyanname 419 altında bir arada değerlendirilir:
+
+    ① **BAĞIŞ VE YARDIMLAR:** Kapadokya Alanı Başkanlığı'na yapılan nakdi ve ayni
+    bağış ve yardımların **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ② **SPONSORLUK HARCAMALARI:** Başkanlıkça hazırlanan projelere katılım amacıyla
+    yapılan sponsorluk harcamalarının belirlenen **oranı** matrahtan indirilir.
+
+    ## Bileşik Yapı
+
+    Beyanname 419 hem bağış/yardım hem sponsorluk bileşenini kapsar:
+    - **B Tablosu:** Bağış/Yardım — Tamamının indirimi
+    - **C Tablosu:** Sponsorluk — Oran uygulaması (YMM teyidi gerekli)
+
+    ## İndirim Koşulları
+
+    - **Bağış/Yardım:** Alıcı Kapadokya Alanı Başkanlığı olmalı; fiilen gerçekleşmiş olmalı
+    - **Sponsorluk:** Başkanlıkça hazırlanan proje kapsamında, proje onayı/sözleşmesi zorunlu
+    - Her iki türde de matrahı aşan kısım sonraki yıllara **devredilemez**
+
+    ## Bağış/Yardım ile Sponsorluk Ayrımı
+
+    - **Bağış/Yardım:** Karşılıksız aktarım → B Tablosu → Tamamının indirimi
+    - **Sponsorluk:** Karşılıklı ilişki (proje katılımı) → C Tablosu → Oran uygulaması
+    - Bu ayrım hatalı yapılırsa yanlış tutar beyannamede yer alır
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Fiili ödeme/teslim zorunluluğu:** Taahhüt edilen ancak gerçekleşmemiş bağış
+      veya sponsorluk indirime konu edilemez
+    - **Sponsorluk oran teyidi:** Sponsorluk indirim oranı 7174 s.K. ve GİB Rehberi
+      No:606 kapsamında YMM tarafından teyit edilmelidir
+    - **Devir yasağı:** Matrahı aşan kısım sonraki yıllara devredilmez
+    - **YMM tasdik:** İndirim tutarı ≥500.000 TL ise 49 No.lu KV GT kapsamında
+      YMM tasdik raporu zorunludur
+
+    ## YİAKV İlişkisi
+
+    **419 kapsamındaki indirim YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_kapadokya_baskanligi
+      soru: "Bağış/yardım veya sponsorluk alıcısı Kapadokya Alanı Başkanlığı veya Başkanlıkça hazırlanan bir proje mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Alıcı: 7174 s.K. ile kurulan Kapadokya Alanı Başkanlığı. Başkanlığa doğrudan bağış veya Başkanlıkça hazırlanan proje sponsorluğu olmalı. Başkanlık dışındaki alıcılar bu kod kapsamında değerlendirilemez."
+    - id: islem_turu
+      soru: "İşlem türünü belirlediniz mi? (Bağış/Yardım mı — Sponsorluk mu — Her ikisi mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bağış/Yardım: Karşılıksız aktarım → B Tablosu → Tamamının indirimi. Sponsorluk: Proje katılımlı karşılıklı ilişki → C Tablosu → Oran uygulaması. Her ikisi aynı anda mümkündür."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış/yardım veya sponsorluk harcaması fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki işlem indirime konu edilemez. Nakdi: Banka EFT/havale dekontu. Ayni: İmzalı teslim tutanağı. Sponsorluk: Banka kaydıyla teyit."
+    - id: sponsorluk_proje_onayi
+      soru: "Sponsorluk söz konusuysa Başkanlık proje onayı veya sözleşmesi mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sponsorluk harcamalarında Kapadokya Alanı Başkanlığı'nın proje belgesi veya sözleşmesi zorunludur. Proje onayı olmaksızın sponsorluk indirimi uygulanamaz."
+
+parametreler:
+  bagis_oran: 1.0
+  sponsorluk_oran: null  # YMM tarafından 7174 s.K. kapsamında teyit edilmeli
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış/yardım tutarı (TL) — Banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Kapadokya Alanı Başkanlığı'na banka EFT/havale ile yapılan nakdi bağış ve yardımların toplamı. Ödeme kanalı banka olmalı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış/yardım değeri (TL) — Teslim edilen mal/hizmetin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Kapadokya Alanı Başkanlığı'na yapılan ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+    - id: sponsorluk_tutari
+      etiket: "Net sponsorluk harcaması (TL) — Başkanlık projeleri için yapılan sponsorluk"
+      tip: para
+      zorunlu: false
+      yardim: "Kapadokya Alanı Başkanlığı'nca hazırlanan projelere katılım amacıyla yapılan sponsorluk harcamaları. Reklam bedeli ayrıştırılmış net tutar. İndirim oranı YMM tarafından 7174 s.K. kapsamında teyit edilmeli."
+  formuller:
+    bagis_toplam: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    bagis_indirimi: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    sponsorluk_indirimi: "sponsorluk_tutari * sponsorluk_oran  # YMM oran teyidi zorunlu"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri + sponsorluk_indirimi"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0 and sponsorluk_tutari >= 0"
+      hata: "Tutarlar negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri + sponsorluk_tutari > 0"
+      hata: "En az bir işlem türü (bağış, ayni bağış veya sponsorluk) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  7174 Sayılı Kapadokya Alanı Hakkında Kanun kapsamında:
+  - Kapadokya Alanı Başkanlığı'na yapılan nakdi ve ayni bağış/yardımların tamamı indirilir
+  - Başkanlıkça hazırlanan projelere sponsorluk harcamalarının belirlenen oranı indirilir
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Bileşik Yapı — B ve C Tabloları
+
+  B TABLOSU (Bağış/Yardım):
+  - Alıcı: Kapadokya Alanı Başkanlığı
+  - İndirim: Nakdi + Ayni bağışın tamamı
+  - Belge: Banka dekontu (nakdi) / Teslim tutanağı (ayni) / Alındı makbuzu
+
+  C TABLOSU (Sponsorluk):
+  - Konu: Başkanlıkça hazırlanan projelere katılım
+  - İndirim oranı: 7174 s.K. ve GİB Rehberi No:606 kapsamında YMM teyidi zorunlu
+  - Belge: Proje onayı veya sözleşme + ödeme kaydı
+
+  ## İndirim Kuralları
+  - Bağış/Yardım: Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Sponsorluk: Oran uygulaması — YMM teyidi gerekli
+  - Matrahı aşan kısım sonraki yıllara devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı/proje Kapadokya Alanı Başkanlığı kapsamında mı?
+  - Bağış/Yardım ile Sponsorluk ayrımı doğru yapıldı mı?
+  - Fiili ödeme/teslim belgesi mevcut mu?
+  - Sponsorluk için proje onayı/sözleşmesi temin edildi mi?
+  - Sponsorluk indirim oranı YMM tarafından teyit edildi mi?
+
+  ## 479 (6546 s.K. Gelibolu) ile Yapısal Benzerlik
+  Her ikisi de bağış + sponsorluk bileşenli kanun kapsamı içerir.
+  Ancak 419 yalnızca Kapadokya Alanı Başkanlığı'na özgüdür — 7174 s.K. kapsamında.
+
+  ## YİAKV Etkisi
+  419 bağış/sponsorluk indirimi YİAKV (KVK Md.32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Sponsorluk oranı için ayrıca YMM oran teyidi gereklidir.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış/Yardım Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 7174 s.K. kapsamında Kapadokya Alanı Başkanlığı'na nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 7174 s.K. kapsamında ayni bağış (stoktan teslim).
+
+  ## Sponsorluk Harcaması Kaydı
+  Borç: 760/780 Pazarlama/Genel Yönetim Giderleri (veya 689)
+  Alacak: 102 Bankalar
+  Açıklama: 7174 s.K. Kapadokya projesi sponsorluğu — önce gider, KKEG'e alınır, sonra 419 ile indirilir.
+
+  ## Beyanname
+  B Tablosu bağış/yardım toplamı + C Tablosu sponsorluk indirimi = Beyanname 419. satır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Kapadokya Alanı Başkanlığı Alındı Makbuzu veya Bağış Kabul Yazısı
+    detay: "Bağış/yardım için Başkanlıktan alınan resmi makbuz, alındı belgesi veya bağış kabul yazısı. Tarih ve tutar açıkça belirtilmeli."
+    temin_yeri: Kapadokya Alanı Başkanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme Kapadokya Alanı Başkanlığı'nın resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ayni Bağış İçin Teslim Tutanağı ve Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve malların maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / Kapadokya Alanı Başkanlığı
+  - kategori: zorunlu
+    "no": 4
+    baslik: Sponsorluk Proje Onayı veya Sözleşmesi
+    detay: "Sponsorluk harcamalarında Kapadokya Alanı Başkanlığı'nın hazırladığı projeye ait onay belgesi veya sponsorluk sözleşmesi. Proje adı, tutarı ve tarafları belirtmeli."
+    temin_yeri: Kapadokya Alanı Başkanlığı
+  - kategori: zorunlu
+    "no": 5
+    baslik: Sponsorluk Ödemesi İçin Banka Kaydı
+    detay: "Sponsorluk harcamasının fiilen gerçekleştiğini kanıtlayan banka EFT/havale dekontu."
+    temin_yeri: Banka
+  - kategori: destekleyici
+    "no": 6
+    baslik: YMM Sponsorluk Oranı Teyit Yazısı
+    detay: "Sponsorluk indirim oranının 7174 s.K. ve GİB Rehberi No:606 kapsamında YMM tarafından teyit edildiğini gösteren yazı veya rapor eki."
+    temin_yeri: YMM
+  - kategori: destekleyici
+    "no": 7
+    baslik: Reklam Bedeli Ayrıştırma Analizi
+    detay: "Sponsorluk sözleşmesinde reklam kısmı (logo/banner vb.) varsa ayrıştırma hesabı. Net sponsorluk = Toplam ödeme − Reklam kısmı."
+    temin_yeri: Muhasebe / Hukuk
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı/proje Kapadokya Alanı Başkanlığı (7174 s.K.) kapsamında mı?"
+    referans: "7174 S.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağış/Yardım ile Sponsorluk ayrımı doğru belirlendi mi? (B Tablosu vs. C Tablosu)"
+    referans: "7174 S.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K3
+    soru: "Bağış/yardım fiilen gerçekleşti mi? (Banka dekontu veya teslim tutanağı ile belgelenmiş)"
+    referans: "7174 S.K."
+  - id: K4
+    soru: "Sponsorluk söz konusuysa Başkanlık proje onayı veya sözleşmesi temin edildi mi?"
+    referans: "7174 S.K."
+  - id: K5
+    soru: "Sponsorluk indirim oranı YMM tarafından 7174 s.K. kapsamında teyit edildi mi?"
+    referans: "7174 S.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K6
+    soru: "Sponsorlukta reklam bedeli (logo/banner/forma) ayrıştırıldı mı? Net sponsorluk tutarı doğru mu?"
+    referans: "7174 S.K."
+  - id: K7
+    soru: "Alıcıdan makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "7174 S.K."
+  - id: K8
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (419 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K9
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

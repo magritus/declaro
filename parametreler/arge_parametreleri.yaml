@@ -1,0 +1,25 @@
+# Ar-Ge, Tasarım ve Teknogirişim İndirim Parametreleri
+
+arge_indirimi:
+  arge_indirim_orani: 1.00
+  aciklama: "Ar-Ge ve yenilik harcamalarının %100'ü kurum kazancından indirilir — 5746 s.K. Md.3"
+
+  nitelikli_personel_ek_orani: 0.50
+  aciklama_nitelikli: "Doktoralı veya temel bilimler lisanslı Ar-Ge personeli için ek %50 indirim uygulanır"
+
+tasarim_indirimi:
+  tasarim_indirim_orani: 1.00
+  aciklama: "Tasarım harcamalarının %100'ü kurum kazancından indirilir — 5746 s.K. Md.3/A"
+
+  nitelikli_tasarimci_ek_orani: 0.50
+  aciklama_nitelikli: "Doktoralı veya temel bilimler lisanslı tasarım personeli için ek %50 indirim"
+
+teknogirişim:
+  teknogirişim_orani: 0.75
+  aciklama: "Teknogirişim sermaye desteğinden faydalanan şirketlere sağlanan destek tutarının %75'i — 5746 s.K. Md.3/B kapsamı (sermaye desteğine bağlı özel uygulama)"
+
+kvk_10_1_a:
+  aciklama: |
+    KVK 10/1-a kapsamında Ar-Ge ve yenilik harcamaları ile 5746 s.K. Md.3 indirimleri beyannamede
+    ayrı satırlarda gösterilir. İndirim tutarı ilgili dönem kazancıyla sınırlıdır; aşan kısım
+    sonraki dönemlere devredilir (5746 s.K. Md.3/3).

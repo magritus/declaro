@@ -1,0 +1,184 @@
+ic_kod: tubitak_bagis_278sk
+baslik: TÜBİTAK'a Yapılan Bağış ve Yardımlar
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 469 }
+  - { donem: 2025, kod: 469 }
+
+mevzuat_dayanagi:
+  - 278 sayılı TÜBİTAK Kuruluş Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "278 sayılı Kanun kapsamında TÜBİTAK'a bağış veya yardım yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **278 sayılı TÜBİTAK Kuruluş Kanunu** kapsamında Türkiye Bilimsel ve Teknolojik
+    Araştırma Kurumu'na (TÜBİTAK) veya bünyesindeki fon/program/projeye yapılan
+    bağış ve yardımların **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ## Alıcı Niteliği
+
+    - TÜBİTAK (doğrudan)
+    - TÜBİTAK bünyesindeki fon, program veya proje birimi
+
+    **Kapsam dışı:** TÜBİTAK destekli projeye üçüncü kişi olarak yapılan ödeme,
+    TÜBİTAK'tan alınan Ar-Ge/hibe desteği (bu bir gelirdir, gider değil).
+
+    ## Önemli Uyarı
+
+    469 yalnızca kurumun TÜBİTAK'a **yaptığı bağışı** kapsar. TÜBİTAK'tan **alınan**
+    Ar-Ge desteği veya hibe tamamen farklı bir mekanizmadır — karıştırılmamalı.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **469 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_tubitak
+      soru: "Bağış 278 sayılı Kanun kapsamında TÜBİTAK'a mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "278 s.K. kapsamında TÜBİTAK veya TÜBİTAK bünyesindeki fon/programa yapılan bağışlar. TÜBİTAK destekli projeye yapılan bağışı TÜBİTAK'a bağış ile karıştırmayın."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "TÜBİTAK'tan resmi bağış makbuzu / kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "TÜBİTAK tarafından düzenlenen resmi makbuz veya bağış kabul yazısı zorunludur. Belgesiz bağış 469 kapsamında gösterilemez."
+    - id: karisiklik_yok
+      soru: "469 bağışı ile TÜBİTAK'tan ALINAN destek (hibe/gelir) karıştırılmadı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "469: Kurumun TÜBİTAK'a yaptığı bağış (gider). TÜBİTAK'tan alınan Ar-Ge/hibe desteği ise gelir → Farklı mekanizma. İkisi farklı — karıştırma büyük hata kaynağıdır."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla TÜBİTAK'a yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile TÜBİTAK'a yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Bilimsel cihaz/ekipman/malzemenin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Bilimsel cihaz, ekipman, araştırma malzemesi gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  278 sayılı TÜBİTAK Kuruluş Kanunu kapsamında TÜBİTAK'a veya bünyesindeki
+  fon/programa yapılan bağış ve yardımların tamamı kurumlar vergisi matrahından
+  indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kritik Ayrım
+  469: Kurumun TÜBİTAK'a yaptığı bağış (gider kalemi).
+  TÜBİTAK'tan ALINAN Ar-Ge desteği/hibe: Farklı mekanizma (gelir kalemi).
+  İkisini aynı beyanname satırında karıştırmak en sık yapılan hatadır.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı TÜBİTAK veya bünyesindeki fon/program mı?
+  - Bağış ile TÜBİTAK'tan alınan destek karıştırılmadı mı?
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - TÜBİTAK'tan resmi makbuz/kabul yazısı alındı mı?
+
+  ## YİAKV Etkisi
+  469 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 278 s.K. kapsamında TÜBİTAK'a nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 278 s.K. kapsamında TÜBİTAK'a ayni bağış (stoktan teslim).
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 469. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: TÜBİTAK Resmi Makbuzu veya Bağış Kabul Belgesi
+    detay: "TÜBİTAK tarafından düzenlenen resmi makbuz veya bağış kabul yazısı. Tarih, tutar ve alıcı bilgileri açıkça yer almalı."
+    temin_yeri: TÜBİTAK
+  - kategori: zorunlu
+    "no": 2
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme TÜBİTAK'ın resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Bilimsel cihaz/ekipman/materyal bağışlarında imzalı teslim-tesellüm tutanağı ve maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / TÜBİTAK
+  - kategori: destekleyici
+    "no": 4
+    baslik: Bağış Protokolü veya Proje Sözleşmesi
+    detay: "Bağışın amacını (bilimsel araştırma, teknoloji geliştirme, burs fonu vb.), tutarını ve tarafları belirten yazılı protokol."
+    temin_yeri: TÜBİTAK
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (TÜBİTAK veya 278 s.K. kapsamındaki fon/program)"
+    referans: "278 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "469 bağışı ile TÜBİTAK'tan alınan Ar-Ge/hibe desteği karıştırılmadı mı?"
+    referans: "278 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "278 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "TÜBİTAK'tan resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "278 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (469 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

@@ -1,0 +1,298 @@
+ic_kod: nakdi_sermaye_artisi_faiz_10_1i
+baslik: Nakdi Sermaye Artışı Faiz İndirimi (KVK Md.10/1-ı)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 453 }
+  - { donem: 2025, kod: 453 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-ı
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2015-07-09"
+  bitis: null
+
+ana_kategori: yatirim_tesvikleri
+
+wizard_agaci:
+  tetikleyici_soru: "Dönem içinde ticaret siciline tescil edilmiş nakdi sermaye artırımınız var mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-ı** kapsamında, **nakit olarak artırılan sermaye** tutarı
+    üzerinden Türkiye Cumhuriyet Merkez Bankası (TCMB) tarafından açıklanan
+    ağırlıklı ortalama yıllık faiz oranı esas alınarak hesaplanan tutar, belirli
+    indirim oranlarıyla kurumlar vergisi matrahından indirilebilir.
+
+    ## İndirim Oranları
+
+    - **Genel oran:** %50
+    - **BIST'te işlem gören paylar için ek oran:** %75
+      (BIST'te payları işlem gören kurumlar %50 yerine %75 oranından yararlanır)
+
+    ## Formül
+
+    **İndirim = Nakdi Sermaye Artışı × (TCMB Faiz Oranı / 100) × İndirim Oranı × (Ay Sayısı / 12)**
+
+    Tescil ayından dönem sonuna kadar tam ay olarak hesaplanır; tescil ayı dahildir.
+
+    ## Kapsam Dışı Kurumlar
+
+    - Bankalar ve özel finans kurumları
+    - Finansal kiralama şirketleri
+    - Faktoring şirketleri
+    - Finansman şirketleri
+    - Elektronik para kuruluşları
+    - Sigorta ve reasürans şirketleri
+
+    ## Kapsam Dışı Artırım Türleri
+
+    Yalnızca **nakdi (para olarak)** yapılan artırımlar kapsama girer.
+    Aşağıdakiler kapsam dışıdır:
+    - Ayni sermaye katkısı
+    - İç kaynaklardan artırım (kâr payı, yedek akçe dönüşümü)
+    - Borç dönüşümü
+    - Taahhüt edilmiş ancak ödenmemiş sermaye
+
+    ## Önemli Notlar
+
+    - **Tescil tarihi esası:** İndirim, ticaret siciline tescil ayından itibaren başlar.
+    - **Fiilen ödeme zorunluluğu:** Artırılan sermayenin banka kanalıyla fiilen
+      ödendiği banka dekontlarıyla belgelenmelidir.
+    - **TCMB faiz oranı:** GİB'in her yıl ilan ettiği ağırlıklı ortalama yıllık faiz
+      oranı kullanılır — şirketin kendi ödediği faiz değil.
+    - **Birden fazla artırım:** Aynı dönemde birden fazla nakdi sermaye artırımı varsa
+      her biri ayrı ayrı hesaplanır (farklı tescil tarihleri nedeniyle ay sayıları farklı).
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-ı kapsamındaki nakdi sermaye artışı faiz indirimi YİAKV (KVK 32/C)
+    matrahından DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.10 bilgi satırında gösterilir
+    ancak matraha etki etmez. (413 GSF'den farklı — dikkat!)
+
+    ## Pratik Notlar
+
+    - **TCMB faiz oranı:** GİB her yıl ilgili oran için duyuru yapar; güncel oran
+      GİB web sitesinden teyit edilmelidir.
+    - **Devreden indirim:** Kazancın yetersizliği nedeniyle kullanılamayan kısım
+      sonraki yıllara devredebilir; ancak bu tartışmalıdır — özelge durumuna göre
+      değerlendirilmelidir.
+    - **YMM tasdik raporu:** İndirim tutarı ≥500.000 TL ise YMM tasdik raporu
+      zorunludur.
+  kapi_sorulari:
+    - id: kapsam_disi_sektor_degil
+      soru: "Kurum bankacılık, finansal kiralama, faktoring, finansman, elektronik para, sigorta veya reasürans sektöründe değil mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bankalar, finansal kiralama/faktoring/finansman şirketleri, elektronik para kuruluşları, sigorta ve reasürans şirketleri KVK Md.10/1-ı kapsamı dışındadır. Bu sektörlerdeyse indirim uygulanamaz."
+    - id: sermaye_artirimi_nakdi
+      soru: "Sermaye artırımı nakit olarak yapıldı mı? (Ayni katkı, iç kaynak, borç dönüşümü değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yalnızca nakden ödenen sermaye artırımları kapsama girer. Ayni sermaye, iç kaynaklardan artırım (kâr, yedek akçe), borç dönüşümü kapsam dışıdır."
+    - id: ticaret_sicilinde_tescil
+      soru: "Sermaye artırımı ticaret siciline tescil edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim hesabında tescil tarihi esastır. Tescil edilmemiş artırımlar kapsama girmez. Tescil ayından itibaren ay bazında hesap yapılır."
+    - id: fiilen_odeme_yapildi
+      soru: "Artırılan nakdi sermaye fiilen ödendi mi? (Banka kanalıyla ödeme ve dekontlar temin edildi mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt edilen ancak fiilen ödenmeyen nakdi sermaye indirime konu edilemez. Banka kanalıyla ödeme zorunludur — her taksit için banka dekontu temin edilmelidir."
+
+parametreler:
+  oran_genel: 0.50
+  oran_bist: 0.75
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: artirilan_nakdi_sermaye
+      etiket: "Artırılan nakdi sermaye (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Dönem içinde ticaret siciline tescil edilmiş ve banka kanalıyla fiilen ödenmiş nakdi sermaye artırım tutarı. Birden fazla artırım varsa her biri için ayrı hesaplama yapılır."
+    - id: tcmb_faiz_orani
+      etiket: "TCMB ağırlıklı ortalama yıllık faiz oranı (%) — ilgili yıl GİB duyurusu"
+      tip: sayi
+      zorunlu: true
+      yardim: "GİB'in ilgili hesap dönemi için ilan ettiği TCMB ağırlıklı ortalama yıllık faiz oranı (örn. 45.23). GİB web sitesinden güncel oran teyit edilmelidir."
+    - id: ay_sayisi
+      etiket: "Tescil ayından dönem sonuna kadar ay sayısı (1-12, tescil ayı dahil)"
+      tip: sayi
+      zorunlu: true
+      min: 1
+      max: 12
+      yardim: "Ticaret sicili tescil ayından 31 Aralık'a kadar tam ay sayısı. Tescil ayı dahildir. Örn: Mart'ta tescil edilmişse Mart-Aralık = 10 ay."
+    - id: bist_kapsaminda_mi
+      etiket: "BIST'te payları işlem gören kurum mu? (evet/hayır)"
+      tip: secenek
+      secenekler:
+        - "evet"
+        - "hayir"
+      zorunlu: true
+      yardim: "BIST'te payları işlem gören kurumlar %50 yerine %75 oranından yararlanır (ek 25 puan). Her iki dilim farklı oranla ayrı hesaplanabilir. evet=BIST kapsamında (%75), hayir=Genel oran (%50)"
+  formuller:
+    indirim_orani: "0.75 if bist_kapsaminda_mi == 'evet' else 0.50"
+    yillik_faiz: "tcmb_faiz_orani / 100"
+    istisna_tutari: "artirilan_nakdi_sermaye * yillik_faiz * (ay_sayisi / 12) * indirim_orani"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "artirilan_nakdi_sermaye > 0"
+      hata: "Artırılan nakdi sermaye tutarı pozitif olmalıdır."
+    - kural: "tcmb_faiz_orani > 0"
+      hata: "TCMB faiz oranı pozitif olmalıdır. GİB'in ilgili yıl için ilan ettiği oran kullanılmalıdır."
+    - kural: "ay_sayisi >= 1 and ay_sayisi <= 12"
+      hata: "Ay sayısı 1 ile 12 arasında olmalıdır. Tescil ayı dahil, dönem sonuna kadar tam ay sayısı girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-ı: Finans, bankacılık ve sigortacılık sektörlerinde faaliyet
+  gösteren kurumlar ile kamu iktisadi teşebbüsleri hariç olmak üzere sermaye
+  şirketlerinin ilgili hesap dönemi içinde, ticaret siciline tescil edilmiş olan
+  ödenmiş veya çıkarılmış sermaye tutarlarındaki nakdi sermaye artışları veya yeni
+  kurulan sermaye şirketlerinde ödenmiş sermayenin nakit olarak karşılanan kısmı
+  üzerinden TCMB tarafından en son açıklanan bankalarca açılan TL cinsinden ticari
+  kredilere uygulanan ağırlıklı yıllık ortalama faiz oranı esas alınarak,
+  ilgili hesap döneminin sonuna kadar hesaplanan tutarın %50'si, Borsa İstanbul'da
+  işlem gören paylar için %75'i indirim konusu yapılabilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kapsam Tablosu
+
+  KAPSAM DIŞI SEKTÖRLER:
+  - Bankalar → Kapsam dışı
+  - Finansal kiralama şirketleri → Kapsam dışı
+  - Faktoring şirketleri → Kapsam dışı
+  - Finansman şirketleri → Kapsam dışı
+  - Elektronik para kuruluşları → Kapsam dışı
+  - Sigorta ve reasürans şirketleri → Kapsam dışı
+  - Kamu iktisadi teşebbüsleri → Kapsam dışı
+  - Diğer sermaye şirketleri → Onaylıdır
+
+  KAPSAM DIŞI ARTIRIMI TÜRLERİ:
+  - Nakdi artırım (banka yoluyla ödenen) → Onaylıdır
+  - Ayni sermaye katkısı → Kapsam dışı
+  - İç kaynaklardan artırım (kâr, yedek akçe) → Kapsam dışı
+  - Borç dönüşümü → Kapsam dışı
+  - Taahhüt edilmiş ancak ödenmemiş → Kapsam dışı
+
+  ## İndirim Hesaplama Formülü
+  İndirim = Nakdi Artırım × (TCMB Faiz / 100) × İndirim Oranı × (Ay / 12)
+
+  İndirim Oranları:
+  - Genel: %50
+  - BIST'te işlem gören: %75
+
+  Ay Hesabı: Ticaret sicili tescil ayı dahil, dönem sonuna kadar tam ay sayısı.
+
+  ## Birden Fazla Artırım
+  Aynı dönemde birden fazla nakdi sermaye artırımı varsa her biri için ayrı
+  satırda hesaplama yapılır — tescil tarihleri farklı olacağından ay sayıları
+  da farklı olacaktır.
+
+  ## Devreden İndirim
+  Kazancın yetersizliği nedeniyle kullanılamayan indirim tutarının sonraki
+  dönemlere devredilip devredilemeyeceği tartışmalıdır. Özelge alınması veya
+  YMM değerlendirmesi önerilir.
+
+  ## 453 ile 413 (GSF) Farkı
+  453 (KVK 10/1-ı): Nakdi sermaye artışı faiz indirimi — YİAKV E.10 yalnızca bilgi.
+  413 (GSF): Girişim sermayesi fonu indirimi — YİAKV'dan farklı biçimde etkiler.
+  YİAKV çalışma kâğıdında 453 ile 413 karıştırılmamalıdır.
+
+  ## YİAKV Etkisi
+  453 nakdi sermaye artışı faiz indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.10 bilgi satırında gösterilir — matraha etki etmez.
+
+  ## TCMB Faiz Oranı Teyidi
+  Her yıl GİB, KVK 10/1-ı uygulamasında kullanılacak TCMB ağırlıklı ortalama
+  yıllık faiz oranını duyurur. Şirketin kendi ödediği faiz oranı değil, GİB
+  duyurusu esas alınmalıdır.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Sermaye Artırımı Kayıtları
+  Borç: 102 Bankalar (Ödenen nakdi sermaye tutarı)
+  Alacak: 501 Ödenmemiş Sermaye (Taahhüt aşaması)
+  veya
+  Alacak: 500 Sermaye (Tescil ve ödeme tamamlandığında)
+  Açıklama: KVK Md.10/1-ı kapsamında nakdi sermaye artırımı.
+
+  ## Beyanname
+  Formül hesabıyla bulunan indirim tutarı (kazancı aşmamak kaydıyla)
+  beyanname 453. satırına aktarılır.
+  Kazancın bulunması halinde uygulanır.
+  MIN(Hesaplanan İndirim, KV Matrahı) = Beyanname 453.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Ticaret Sicil Gazetesi — Sermaye Artırım Tescili
+    detay: "Sermaye artırımının ticaret siciline tescilini gösteren Türkiye Ticaret Sicili Gazetesi ilanı. Tescil tarihi indirim hesabı açısından kritiktir."
+    temin_yeri: Ticaret Sicil Gazetesi / Şirket Dosyası
+  - kategori: zorunlu
+    "no": 2
+    baslik: Banka Dekontları — Nakdi Sermaye Ödemesi
+    detay: "Artırılan nakdi sermayenin banka kanalıyla fiilen ödendiğini gösteren banka EFT/havale dekontları. Her taksit için ayrı dekont. Sermayenin taahhüt değil, fiilen ödenmiş olduğunu kanıtlar."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 3
+    baslik: GİB TCMB Faiz Oranı Duyurusu
+    detay: "GİB'in KVK Md.10/1-ı uygulaması için ilan ettiği ilgili dönem TCMB ağırlıklı ortalama yıllık faiz oranı. GİB web sitesinden veya sirkülerden temin edilir."
+    temin_yeri: GİB Web Sitesi / Muhasebe Kaydı
+  - kategori: zorunlu
+    "no": 4
+    baslik: Genel Kurul Kararı — Sermaye Artırım Kararı
+    detay: "Sermaye artırımına ilişkin ortaklar genel kurul kararı veya yönetim kurulu kararı. Artırım tutarı, türü (nakdi) ve tarihi açıkça belirtilmiş olmalı."
+    temin_yeri: Şirket Dosyası
+  - kategori: destekleyici
+    "no": 5
+    baslik: BIST Statü Belgesi (BIST'te işlem gören paylar için)
+    detay: "BIST'te payları işlem gören kurumlar %75 oranından yararlanmak için Borsa İstanbul'daki işlem statüsünü gösteren belge."
+    temin_yeri: Borsa İstanbul / Kamuyu Aydınlatma Platformu (KAP)
+  - kategori: destekleyici
+    "no": 6
+    baslik: Sermaye Artırım Hesaplama Tablosu
+    detay: "Her sermaye artırımı için tescil tarihi, tutarı, indirim oranı, TCMB faiz oranı ve kalan ay sayısını gösteren hesaplama özet tablosu."
+    temin_yeri: Muhasebe / YMM Çalışma Dosyası
+
+k_checklist:
+  - id: K1
+    soru: "Kurumun bankacılık, finansal kiralama, faktoring, finansman, sigorta veya reasürans sektöründe olmadığı doğrulandı mı?"
+    referans: "KVK Md.10/1-ı | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Sermaye artırımının NAKDİ olduğu doğrulandı mı? (Ayni, iç kaynak, borç dönüşümü değil — banka dekontları)"
+    referans: "KVK Md.10/1-ı"
+  - id: K3
+    soru: "Sermaye artırımının ticaret siciline tescil edildiği ve tescil tarihi doğrulandı mı? (Ticaret Sicil Gazetesi)"
+    referans: "KVK Md.10/1-ı"
+  - id: K4
+    soru: "Artırılan nakdi sermayenin banka kanalıyla fiilen ödendiği banka dekontlarıyla belgelendi mi?"
+    referans: "KVK Md.10/1-ı | GİB Beyan Reh. 2026"
+  - id: K5
+    soru: "GİB'in ilgili dönem için ilan ettiği TCMB ağırlıklı ortalama yıllık faiz oranı kullanıldı mı?"
+    referans: "KVK Md.10/1-ı"
+  - id: K6
+    soru: "Tescil ayından dönem sonuna kadar ay sayısı doğru hesaplandı mı? (Tescil ayı dahil)"
+    referans: "KVK Md.10/1-ı"
+  - id: K7
+    soru: "BIST kapsamı değerlendirildi mi? (%50 mi, %75 mi oranı uygulanacak?)"
+    referans: "KVK Md.10/1-ı"
+  - id: K8
+    soru: "Birden fazla nakdi sermaye artırımı varsa her biri için ayrı ayrı hesaplama yapıldı mı?"
+    referans: "KVK Md.10/1-ı"
+  - id: K9
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (453 DÜŞÜLEMEZ — E.10 bilgi satırı; 413 GSF ile karıştırılmamalı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.10"
+  - id: K10
+    soru: "YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "GİB Beyan Reh. 2026 (No:606)"

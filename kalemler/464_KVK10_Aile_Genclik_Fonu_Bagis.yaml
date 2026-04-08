@@ -1,0 +1,182 @@
+ic_kod: aile_genclik_fonu_bagis
+baslik: Aile ve Gençlik Fonu'na Bağış (7474 s.K. Md.6)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 464 }
+  - { donem: 2025, kod: 464 }
+
+mevzuat_dayanagi:
+  - 7474 Sayılı Kanun Madde 6
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2022-01-01"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Aile ve Gençlik Fonu'na bağış veya yardım yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **7474 sayılı Kanun Madde 6** kapsamında, **Aile ve Gençlik Fonu'na** yapılan
+    bağış ve yardımların **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ## Alıcı — Yalnızca Aile ve Gençlik Fonu
+
+    Bu indirim **yalnızca 7474 sayılı Kanunla kurulan Aile ve Gençlik Fonu'na**
+    yapılan bağış ve yardımlar için geçerlidir. Başka bir fon, dernek veya vakfa
+    yapılan bağışlar bu kod kapsamında değildir.
+
+    ## Bağış Şekli
+
+    - **Nakdi:** Banka transferi (EFT/havale) ile
+    - **Ayni:** Mal veya hizmet şeklinde (teslim belgesi + maliyet değeri ile değerleme)
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara
+    **devredilemez**.
+
+    ## Ayni Bağış Değerleme
+
+    Ayni bağışlarda **maliyet veya net defter değeri** esas alınır (piyasa değeri
+    değil). KDV hesaplanmaz — KDVK Md.17 istisna kapsamında.
+
+    ## YİAKV İlişkisi
+
+    **7474 s.K. Md.6 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+    Diğer bağış/yardım kodlarıyla (402, 460, 461 vb.) aynı E.11 kategorisi.
+  kapi_sorulari:
+    - id: agf_alici
+      soru: "Bağış/yardım Aile ve Gençlik Fonu'na mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "7474 s.K. Md.6 yalnızca Aile ve Gençlik Fonu'na yapılan bağış ve yardımları kapsar. Başka bir fon, dernek veya vakfa yapılan bağışlar bu kod kapsamında değildir."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış/yardım fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt edilen ama henüz yapılmayan bağış indirime konu edilemez. Nakdi: Banka EFT/havale dekontu; Ayni: İmzalı teslim tutanağı."
+    - id: makbuz_alindi
+      soru: "Aile ve Gençlik Fonu'ndan resmi makbuz veya bağış kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Aile ve Gençlik Fonu'ndan alınan resmi makbuz veya bağış kabul yazısı. Bu belge olmadan 464 indirimi belgelenemiyor."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla Aile ve Gençlik Fonu'na yapılan ödeme"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile Aile ve Gençlik Fonu'na yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Teslim edilen mal/hizmetin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Ayni bağış varsa maliyet veya net defter değeri (piyasa değeri değil). KDV hesaplanmaz — KDVK Md.17 istisna kapsamında."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  7474 Sayılı Kanun Madde 6: Aile ve Gençlik Fonu'na yapılan bağış ve yardımların
+  tamamı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Alıcı Koşulu
+  Yalnızca 7474 sayılı Kanunla kurulan Aile ve Gençlik Fonu (AGF) alıcı olabilir.
+  Başka fon/dernek/vakıf → Kapsam dışı.
+
+  ## İndirim Kuralları
+  - Nakdi + Ayni bağışların tamamı indirilir
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Ayni Bağış Değerleme
+  Maliyet veya net defter değeri esas alınır (piyasa değeri değil).
+  KDV hesaplanmaz — KDVK Md.17 istisna kapsamı.
+
+  ## Kritik Kontroller
+  - Alıcının Aile ve Gençlik Fonu olduğu teyit edilmeli
+  - Fiili ödeme/teslim (taahhüt değil)
+  - AGF'den resmi makbuz veya bağış kabul yazısı alınmalı
+  - Ayni bağışlarda maliyet/defter değeri ile doğru değerleme yapılmalı
+
+  ## YİAKV Etkisi
+  464 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+  Diğer bağış/yardım kodlarıyla (402, 460, 461 vb.) aynı E.11 kategorisi.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 7474 s.K. Md.6 kapsamında Aile ve Gençlik Fonu nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 7474 s.K. Md.6 kapsamında Aile ve Gençlik Fonu ayni bağış.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 464. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Aile ve Gençlik Fonu Bağış Makbuzu / Kabul Belgesi
+    detay: "Aile ve Gençlik Fonu (AGF) tarafından düzenlenen resmi makbuz veya bağış kabul yazısı. Bu belge olmadan 464 indirimi belgelenemiyor."
+    temin_yeri: Aile ve Gençlik Fonu
+  - kategori: zorunlu
+    "no": 2
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme Aile ve Gençlik Fonu'nun resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve malların maliyet/net defter değerini gösteren değerleme belgesi. Piyasa değeri değil maliyet esas."
+    temin_yeri: Muhasebe / Aile ve Gençlik Fonu
+
+k_checklist:
+  - id: K1
+    soru: "Alıcının 7474 s.K. ile kurulan Aile ve Gençlik Fonu olduğu teyit edildi mi?"
+    referans: "7474 s.K. Md.6 | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya teslim tutanağı ile belgelenmiş)"
+    referans: "7474 s.K. Md.6"
+  - id: K3
+    soru: "AGF'den resmi makbuz veya bağış kabul belgesi alındı mı?"
+    referans: "7474 s.K. Md.6"
+  - id: K4
+    soru: "Ayni bağış varsa maliyet/net defter değeri ile doğru değerleme yapıldı mı? (Piyasa değeri değil)"
+    referans: "7474 s.K. Md.6"
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (464 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

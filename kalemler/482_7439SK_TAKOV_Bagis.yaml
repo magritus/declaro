@@ -1,0 +1,176 @@
+ic_kod: takov_bagis_7439sk
+baslik: TAKOV'a (Türk Arkeoloji ve Kültürel Miras Vakfı) Bağış
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 482 }
+  - { donem: 2025, kod: 482 }
+
+mevzuat_dayanagi:
+  - 7439 sayılı Türk Arkeoloji ve Kültürel Miras Vakfı Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "7439 sayılı Kanun kapsamında Türk Arkeoloji ve Kültürel Miras Vakfı'na (TAKOV) bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **7439 sayılı Türk Arkeoloji ve Kültürel Miras Vakfı Kanunu** kapsamında
+    Türk Arkeoloji ve Kültürel Miras Vakfı'na (TAKOV) yapılan bağış ve yardımların
+    **tamamı** kurumlar vergisi matrahından indirilir.
+
+    TAKOV, Türkiye'nin zengin arkeolojik ve kültürel mirasını araştırmak, korumak,
+    belgelemek ve gelecek nesillere aktarmak amacıyla 7439 sayılı Kanunla kurulan
+    vakıftır.
+
+    ## 472 (AKDTYK) ile Fark
+
+    - 472 (2876 s.K.): TDK/TTK/ATAM/AKM bünyesi — dil/tarih Ar-Ge
+    - 482 (7439 s.K.): TAKOV — arkeoloji ve kültürel miras koruma odaklı
+
+    **Kapsam dışı:** Arkeoloji/kültür miras alanındaki başka vakıf, kurum veya müze.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **482 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_takov
+      soru: "Bağış 7439 s.K. kapsamında Türk Arkeoloji ve Kültürel Miras Vakfı'na (TAKOV) mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Türk Arkeoloji ve Kültürel Miras Vakfı (TAKOV) veya bünyesindeki program/fon. Arkeoloji/kültür miras alanındaki başka vakıf/kurum/müze → Kapsam dışı. 472 (AKDTYK/TTK kapsamı) ile karıştırılmamalı."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "TAKOV'dan resmi bağış makbuzu / kabul belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "TAKOV tarafından düzenlenen resmi makbuz veya bağış kabul yazısı zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla TAKOV'a yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile TAKOV'a yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Arkeolojik ekipman/cihaz/materyalin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Arkeolojik ekipman, ölçüm cihazı, kültürel materyal gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  7439 sayılı Türk Arkeoloji ve Kültürel Miras Vakfı Kanunu kapsamında TAKOV'a
+  yapılan bağış ve yardımların tamamı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## 472 (AKDTYK) ile Fark
+  472 (2876 s.K.): TDK/TTK/ATAM/AKM bünyesi — Türk dili, tarihi, Atatürk ilkeleri.
+  482 (7439 s.K.): TAKOV — arkeolojik kazı, kültürel miras koruma, restorasyon.
+  İki farklı kurum ve iki farklı beyanname kodu — karıştırılmamalı.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı TAKOV (7439 s.K.) mi?
+  - 472 (AKDTYK kapsamı) ile karıştırılmadı mı?
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - TAKOV'dan resmi makbuz/kabul yazısı
+
+  ## YİAKV Etkisi
+  482 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 7439 s.K. kapsamında TAKOV'a nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 7439 s.K. kapsamında TAKOV'a ayni bağış (arkeolojik ekipman/materyal).
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 482. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (TAKOV — 7439 s.K. Kapsamı)
+    detay: "TAKOV'un 7439 s.K. kapsamındaki resmi statüsünü gösteren belge."
+    temin_yeri: TAKOV
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Resmi Makbuz
+    detay: "TAKOV tarafından düzenlenen resmi makbuz veya bağış kabul yazısı."
+    temin_yeri: TAKOV
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme TAKOV'un resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Arkeolojik ekipman/cihaz/kültürel materyal bağışlarında imzalı teslim tutanağı ve maliyet değerini gösteren belge."
+    temin_yeri: Muhasebe / TAKOV
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (TAKOV — 7439 s.K. kapsamı)"
+    referans: "7439 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "472 (AKDTYK kapsamı — TTK/TDK) ile karıştırılmadığı teyit edildi mi?"
+    referans: "7439 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "7439 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "TAKOV'dan resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "7439 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (482 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

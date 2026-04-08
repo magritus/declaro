@@ -1,0 +1,203 @@
+ic_kod: canakkale_gelibolu_bagis_6546sk
+baslik: Çanakkale Gelibolu Tarihi Alanı Bağış ve Sponsorluk
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 479 }
+  - { donem: 2025, kod: 479 }
+
+mevzuat_dayanagi:
+  - 6546 sayılı Çanakkale Savaşları Gelibolu Tarihi Alanı Hakkında Kanun
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "6546 sayılı Kanun kapsamında Çanakkale Savaşları Gelibolu Tarihi Alanı Başkanlığı'na bağış, yardım veya sponsorluk harcaması yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **6546 sayılı Kanun** kapsamında Çanakkale Savaşları Gelibolu Tarihi Alanı
+    Başkanlığı'na yapılan **bağış ve yardımların** tamamı ile alan bünyesindeki
+    etkinlik ve faaliyetlere yönelik **sponsorluk harcamalarının** tamamı kurumlar
+    vergisi matrahından indirilir.
+
+    ## İki Kategori — Aynı Beyanname Satırı
+
+    479, iki farklı harcama türünü tek beyanname satırında birleştirir:
+
+    1. **Bağış ve Yardımlar** — Gelibolu Tarihi Alanı Başkanlığı'na yapılan nakdi
+       veya ayni bağışların tamamı
+    2. **Sponsorluk Harcamaları** — Alan bünyesindeki etkinlik/faaliyetlere yönelik
+       sponsorluk harcamalarının tamamı
+
+    **Not:** KVK 10/1-b'deki %50/%100 ayrımı geçerli değildir — 6546 Md. kapsamında
+    her iki kategori de tamamının indiriminden yararlanır.
+
+    ## Alıcı Niteliği
+
+    Yalnızca **Çanakkale Savaşları Gelibolu Tarihi Alanı Başkanlığı** alıcı olabilir.
+    Çanakkale bölgesindeki başka kamu kurumu veya vakıf → Kapsam dışı.
+
+    ## YİAKV İlişkisi
+
+    **479 kapsamındaki bağış/sponsorluk YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_gelibolu_baskanligi
+      soru: "Ödeme/harcama Çanakkale Savaşları Gelibolu Tarihi Alanı Başkanlığı'na mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "6546 s.K. kapsamında yalnızca Gelibolu Tarihi Alanı Başkanlığı alıcı olabilir. Çanakkale bölgesindeki başka kamu kurumu veya vakıf → Kapsam dışı."
+    - id: islem_niteligi
+      soru: "İşlemin niteliği bağış/yardım mı, sponsorluk harcaması mı, yoksa her ikisi mi?"
+      tip: secim
+      secenekler:
+        - deger: bagis_yardim
+          etiket: "Bağış/Yardım (Tamamı indirilir)"
+        - deger: sponsorluk
+          etiket: "Sponsorluk Harcaması (Tamamı indirilir)"
+        - deger: her_ikisi
+          etiket: "Her ikisi"
+      aciklama: "Bağış ve sponsorluk aynı beyanname satırında toplanır ancak tutarlar ayrı girilir. KVK 10/1-b %50/%100 ayrımı burada geçerli değil."
+    - id: fiili_gerceklesti
+      soru: "İşlem fiilen gerçekleşti mi? (Nakdi: Banka — Ayni/Sponsorluk: Sözleşme + ödeme belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Nakdi: Banka dekontu. Ayni: Teslim tutanağı. Sponsorluk: Yazılı sözleşme + fiili ödeme belgesi."
+    - id: makbuz_protokol
+      soru: "Alan Başkanlığı'ndan resmi makbuz / protokol alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bağış için resmi makbuz veya kabul yazısı. Sponsorluk için yazılı sözleşme."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile Gelibolu Tarihi Alanı Başkanlığı'na yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Teslim edilen malın maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Ayni bağış varsa maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+    - id: sponsorluk_tutari
+      etiket: "Sponsorluk harcaması tutarı (TL) — Etkinlik/faaliyet sponsorluğu"
+      tip: para
+      zorunlu: false
+      yardim: "Alan Başkanlığı bünyesindeki etkinlik ve faaliyetlere yönelik sponsorluk harcamalarının toplamı. Yazılı sözleşme şarttır."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri + sponsorluk_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0 and sponsorluk_tutari >= 0"
+      hata: "Tutarlar negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri + sponsorluk_tutari > 0"
+      hata: "En az bir bağış/sponsorluk tutarı girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  6546 sayılı Çanakkale Savaşları Gelibolu Tarihi Alanı Hakkında Kanun kapsamında
+  Gelibolu Tarihi Alanı Başkanlığı'na yapılan bağış/yardımların tamamı ve
+  sponsorluk harcamalarının tamamı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Bileşik Yapı
+  479 = Bağış/Yardım + Sponsorluk (her ikisi de tamamının indirimi)
+  KVK 10/1-b kapsamındaki %50/%100 ayrımı 479 için geçerli değil.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı yalnızca Gelibolu Tarihi Alanı Başkanlığı olabilir
+  - Bağış ve sponsorluk tutarları ayrı belgelenmeli (ayrı tablolar)
+  - Sponsorlukta yazılı sözleşme + fiili ödeme şartı
+  - Nakdi bağışta banka dekontu, ayni bağışta teslim tutanağı
+
+  ## YİAKV Etkisi
+  479 bağış/sponsorluk YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 6546 s.K. kapsamında Gelibolu Tarihi Alanı Başkanlığı'na nakdi bağış.
+
+  ## Sponsorluk Harcaması Kaydı
+  Borç: 760/770 Pazarlama/Genel Yönetim Giderleri (Sponsorluk gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 6546 s.K. kapsamında Gelibolu Tarihi Alanı etkinlik sponsorluğu.
+
+  ## Beyanname
+  Bağış + Sponsorluk toplamı beyanname 479. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (Gelibolu Tarihi Alanı Başkanlığı)
+    detay: "Çanakkale Savaşları Gelibolu Tarihi Alanı Başkanlığı'nın 6546 s.K. kapsamındaki resmi statüsünü gösteren belge."
+    temin_yeri: Alan Başkanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Makbuzu veya Kabul Yazısı (Bağış/Yardım için)
+    detay: "Alan Başkanlığı'ndan düzenlenen resmi makbuz veya bağış kabul yazısı."
+    temin_yeri: Alan Başkanlığı
+  - kategori: zorunlu
+    "no": 3
+    baslik: Sponsorluk Sözleşmesi + Ödeme Belgesi (Sponsorluk için)
+    detay: "Sponsorluk harcamalarında etkinlik/faaliyet adını, tutarını ve tarafları belirten yazılı sözleşme ile banka ödeme belgesi."
+    temin_yeri: Alan Başkanlığı / Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme Başkanlığın resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 5
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim tutanağı ve maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / Alan Başkanlığı
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (Gelibolu Tarihi Alanı Başkanlığı — 6546 s.K.)"
+    referans: "6546 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağış/yardım ve sponsorluk tutarları ayrı ayrı belgelendi ve hesaplandı mı?"
+    referans: "6546 s.K."
+  - id: K3
+    soru: "Sponsorluk harcaması için yazılı sözleşme + fiili ödeme belgesi mevcut mu?"
+    referans: "6546 s.K."
+  - id: K4
+    soru: "Bağış/işlem fiilen gerçekleşti mi? (Banka dekontu / teslim tutanağı)"
+    referans: "6546 s.K. | GİB Beyan Reh. 2026"
+  - id: K5
+    soru: "Alan Başkanlığı'ndan resmi makbuz veya protokol alındı mı?"
+    referans: "6546 s.K."
+  - id: K6
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (479 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K7
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

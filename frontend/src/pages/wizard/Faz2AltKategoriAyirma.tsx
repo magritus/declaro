@@ -14,6 +14,10 @@ const KATEGORI_BASLIKLAR: Record<string, string> = {
   ar_ge_istisna: 'Ar-Ge ve Sınai Mülkiyet Hakları İstisnası',
   egitim_saglik_istisnalari: 'Eğitim, Öğretim ve Rehabilitasyon İstisnası',
   diger_istisnalar: 'Diğer İndirim ve İstisnalar',
+  arge_tasarim_indirimleri: 'Ar-Ge, Tasarım ve Teknogirişim İndirimleri',
+  bagis_yardim_sponsorluk: 'Bağış, Yardım ve Sponsorluk İndirimleri',
+  yatirim_tesvikleri: 'Yatırım Teşvikleri ve Özel İndirimler',
+  hizmet_indirimleri: 'Sağlık, Eğitim ve Hizmet İndirimleri',
 }
 
 interface InfoState {

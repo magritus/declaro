@@ -1,0 +1,252 @@
+ic_kod: profesyonel_sporcu_sponsorluk_10_1b
+baslik: Profesyonel Sporculara Sponsorluk Harcamaları (KVK Md.10/1-b — %50)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 460 }
+  - { donem: 2025, kod: 460 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-b
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Profesyonel spor dallarında faaliyet gösteren sporcu, kulüp veya federasyonlara sponsorluk harcaması yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-b** kapsamında, sponsorluk harcamalarının kurumlar vergisi
+    matrahından indirimine olanak tanır. İndirim oranı spor dalının niteliğine göre
+    farklılaşır:
+
+    - **Profesyonel spor dalları (Bu dosya / Beyanname 460):** Harcamanın **%50'si**
+    - **Amatör spor dalları (Beyanname 461 — Ayrı çalışma kâğıdı):** Harcamanın **%100'ü**
+
+    ## Sponsorluk ≠ Reklam
+
+    Kritik ayrım: Logo/banner/forma bedeli **reklam gideridir**, sponsorluk değil.
+    - **Reklam:** Karşılıklı hizmet → Doğrudan gider yazılır
+    - **Sponsorluk:** KVK 10/1-b kapsamında → Önce gider/KKEG, sonra beyanname indirimi
+
+    Sözleşmede hem sponsorluk hem reklam varsa reklam bedeli ayrıştırılmalıdır.
+    Net sponsorluk = Toplam ödeme − Reklam kısmı.
+
+    ## Muhasebe Akışı
+
+    Sponsorluk harcaması doğru şekilde işlenmelidir:
+    1. Önce gider kaydı yapılır
+    2. KKEG'e alınır (kanunen kabul edilmeyen gider)
+    3. Beyanname 460 ile matrahtan %50 oranında indirilir
+    Net etki: Net sponsorluk tutarının %50'si kadar matrah azalır.
+
+    ## 4 Temel Koşul
+
+    1. Yazılı **sponsorluk sözleşmesi** imzalanmış olmalı
+    2. Spor dalı **profesyonel** nitelikte olmalı (federasyon/Spor Bakanlığı teyidi)
+    3. Alıcı resmi **federasyon, tescilli kulüp veya lisanslı sporcu** olmalı
+    4. Ödeme **fiilen gerçekleşmiş** olmalı (banka kaydı)
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Sözleşme zorunluluğu:** Sözel anlaşma veya yalnızca fatura yeterli değildir
+    - **Profesyonellik teyidi:** Federasyon veya Spor Bakanlığı belgesi zorunlu;
+      nitelik belirsizse 461 (amatör %100) ile karıştırılma riski vardır
+    - **Reklam ayrıştırması:** Reklam kısmı dahil edilen net tutarlar üzerinden
+      %50 indirim uygulanırsa aşırı indirim riski doğar
+    - **Devir yasağı:** Matrahı aşan kısım sonraki yıllara devredilmez
+    - **YMM tasdik:** İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur
+
+    ## YİAKV İlişkisi
+
+    **460 kapsamındaki sponsorluk indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: sozlesme_imzalandi
+      soru: "Yazılı sponsorluk sözleşmesi imzalandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sözleşme olmadan indirim uygulanamaz. Sözel anlaşma veya yalnızca fatura yeterli değildir. Sözleşmede taraflar, tutar, kapsam ve süre belirtilmeli."
+    - id: profesyonel_nitelik
+      soru: "Spor dalı profesyonel nitelikte mi? (Federasyon veya Spor Bakanlığı teyidi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Profesyonel → 460 → %50. Amatör → 461 → %100. Nitelik: İlgili spor federasyonu veya Gençlik ve Spor Bakanlığı belgesiyle teyit edilmeli. Nitelik belirsizse önce teyit alınmalı."
+    - id: alici_resmi_kurum
+      soru: "Alıcı resmi spor federasyonu, tescilli kulüp veya lisanslı sporcu mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Ticari şirkete yapılan destek bu kapsamda değerlendirilemez. Alıcı: Resmi federasyon, tescilli spor kulübü veya lisanslı profesyonel sporcu."
+    - id: fiili_odeme_yapildi
+      soru: "Sponsorluk ödemesi fiilen gerçekleşti mi? (Banka kaydı)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt edilen ama ödenmeyen sponsorluk indirime konu edilemez. Banka EFT/havale tercih edilmeli — nakit ödeme teyitleme güçlüğü yaratır."
+    - id: reklam_ayristirildi
+      soru: "Reklam kısmı (logo/banner/forma bedeli) net sponsorluk tutarından ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sözleşmede hem sponsorluk hem reklam varsa reklam bedeli ayrı gider yazılır. Net sponsorluk = Toplam ödeme − Reklam kısmı. Yalnızca net sponsorluk tutarı %50 indirimine konu edilir."
+
+parametreler:
+  oran: 0.50
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: sponsorluk_tutari
+      etiket: "Net sponsorluk tutarı (TL) — Reklam kısmı düşüldükten sonra"
+      tip: para
+      zorunlu: true
+      yardim: "Sözleşme kapsamında fiilen ödenen sponsorluk tutarı. Varsa reklam kısmı (logo/banner/forma bedeli) çıkarılmış net tutar. Net sponsorluk = Toplam ödeme − Reklam kısmı."
+    - id: sporcu_kulubu_adi
+      etiket: "Alıcı spor kulübü/federasyon/sporcu adı"
+      tip: metin
+      zorunlu: true
+      yardim: "Sponsorluk sözleşmesindeki alıcının tam ticaret unvanı veya adı. Birden fazla sözleşme varsa her biri için ayrı giriş yapılabilir."
+  formuller:
+    istisna_tutari: "sponsorluk_tutari * 0.50"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "sponsorluk_tutari > 0"
+      hata: "Net sponsorluk tutarı sıfırdan büyük olmalıdır."
+    - kural: "sponsorluk_tutari >= 0"
+      hata: "Net sponsorluk tutarı negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-b: Amatör spor dallarında sporcuların yetiştirilmesi amacıyla yapılan
+  sponsorluk harcamalarının tamamı, profesyonel spor dallarında ise yarısı kurumlar vergisi
+  matrahından indirilir. GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Profesyonel / Amatör Ayrımı
+  Profesyonel → 460 → %50 → Bu dosya
+  Amatör → 461 → %100 → Ayrı çalışma kâğıdı
+  Nitelik teyidi yapılmadan indirim oranı uygulanamaz.
+
+  ## 4 Temel Koşul
+  1. Yazılı sponsorluk sözleşmesi (sözel veya yalnızca fatura yeterli değil)
+  2. Profesyonel nitelik teyidi (federasyon/Spor Bakanlığı belgesi)
+  3. Alıcı: Resmi federasyon, tescilli kulüp veya lisanslı sporcu
+  4. Fiilen gerçekleşmiş ödeme (banka EFT/havale)
+
+  ## Reklam Ayrıştırması
+  Sponsorluk ≠ Reklam. Logo/banner/forma bedeli ayrı gider.
+  Net sponsorluk = Toplam ödeme − Reklam kısmı
+  Yalnızca net sponsorluk × %50 = İndirim tutarı
+
+  ## Muhasebe Akışı
+  Sponsorluk → Gider kaydı → KKEG → Beyanname 460 ile %50 indirim
+  Net etki: Net sponsorluk × %50 kadar matrah azalır
+
+  ## İndirim Kuralları
+  - İndirim oranı: %50 (sabit — değiştirilemez)
+  - Matrahı aşan kısım sonraki yıllara devredilmez
+
+  ## Kritik Kontroller
+  - Sponsorluk sözleşmesi imzalı ve geçerli mi?
+  - Profesyonellik belgesi (federasyon/Bakanlık) mevcut mu?
+  - Alıcı statüsü teyit edildi mi?
+  - Fiili ödeme banka kaydıyla belgelendi mi?
+  - Reklam bedeli doğru ayrıştırıldı mı?
+  - 461 (amatör) ile karışma riski değerlendirildi mi?
+
+  ## YİAKV Etkisi
+  460 sponsorluk indirimi YİAKV (KVK Md.32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Sponsorluk Harcaması Kaydı
+  Borç: 760/780 Pazarlama/Genel Yönetim Giderleri (veya 689)
+  Alacak: 102 Bankalar
+  Açıklama: KVK Md.10/1-b kapsamında profesyonel spor sponsorluğu — önce gider.
+
+  ## KKEG Düzeltmesi
+  Kanunen Kabul Edilmeyen Gider olarak sınıflandırılır.
+  Beyanname 460 ile %50'si matrahtan indirilir.
+  Net etki: Sponsorluk tutarının %50'si kadar matrah azalır.
+
+  ## Reklam Kısmı (Varsa)
+  Borç: 760 Pazarlama Giderleri (Reklam gideri)
+  Alacak: 102 Bankalar
+  Açıklama: Sponsorluk sözleşmesinden ayrıştırılan reklam bedeli — doğrudan gider.
+
+  ## Beyanname
+  Net sponsorluk × %50 = İndirim tutarı → Beyanname 460. satıra aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Sponsorluk Sözleşmesi
+    detay: "Tarafları, sponsorluk tutarını, kapsamını ve süresini belirten imzalı yazılı sözleşme. Sözel anlaşma veya yalnızca fatura yeterli değildir."
+    temin_yeri: Alıcı Kurum / Hukuk
+  - kategori: zorunlu
+    "no": 2
+    baslik: Profesyonellik Teyit Belgesi
+    detay: "Spor dalının profesyonel nitelikte olduğunu kanıtlayan federasyon teyit yazısı veya Gençlik ve Spor Bakanlığı belgesi. Nitelik belirsizse bu belge sağlanmadan %50 oranı uygulanamaz."
+    temin_yeri: İlgili Spor Federasyonu / Bakanlık
+  - kategori: zorunlu
+    "no": 3
+    baslik: Ödeme Banka Dekontu
+    detay: "Sponsorluk ödemesinin fiilen gerçekleştiğini kanıtlayan banka EFT/havale dekontu. Alıcının resmi banka hesabına yapılan ödeme."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Alıcı Tescil / Lisans Belgesi
+    detay: "Alıcının resmi spor federasyonu, tescilli kulüp veya lisanslı sporcu olduğunu gösteren belge. Ticari şirket alıcılarda kapsam dışı riski değerlendirilmeli."
+    temin_yeri: Spor Federasyonu / Bakanlık
+  - kategori: destekleyici
+    "no": 5
+    baslik: Reklam Bedeli Ayrıştırma Analizi
+    detay: "Sözleşmede reklam kısmı (logo/banner/forma) varsa ayrıştırma hesabı. Net sponsorluk = Toplam ödeme − Reklam kısmı. Ayrıştırma belgesi VUK kapsamında düzenlenmiş fatura ile desteklenmeli."
+    temin_yeri: Muhasebe / Hukuk
+  - kategori: destekleyici
+    "no": 6
+    baslik: Fatura veya Alındı Belgesi
+    detay: "Alıcıdan alınan fatura veya alındı belgesi. Sponsorluk tutarını, hizmet kapsamını ve tarafları doğrulamalı."
+    temin_yeri: Alıcı Kurum
+
+k_checklist:
+  - id: K1
+    soru: "Yazılı sponsorluk sözleşmesi imzalandı mı? (Taraflar, tutar, kapsam, süre belirtilmiş)"
+    referans: "KVK Md.10/1-b | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Spor dalının profesyonel niteliği federasyon veya Spor Bakanlığı belgesiyle teyit edildi mi?"
+    referans: "KVK Md.10/1-b"
+  - id: K3
+    soru: "Alıcı resmi federasyon, tescilli kulüp veya lisanslı sporcu mu? (Ticari şirket değil)"
+    referans: "KVK Md.10/1-b"
+  - id: K4
+    soru: "Sponsorluk ödemesi fiilen gerçekleşti mi? (Banka EFT/havale kaydı mevcut)"
+    referans: "KVK Md.10/1-b | GİB Beyan Reh. 2026"
+  - id: K5
+    soru: "Reklam kısmı (logo/banner/forma) doğru ayrıştırıldı mı? Net sponsorluk tutarı doğru mu?"
+    referans: "KVK Md.10/1-b"
+  - id: K6
+    soru: "İndirim oranı %50 olarak uygulandı mı? (Profesyonel spor — sabit oran)"
+    referans: "KVK Md.10/1-b"
+  - id: K7
+    soru: "Muhasebe akışı doğru mu? (Gider → KKEG → Beyanname 460 indirimi)"
+    referans: "KVK Md.10/1-b"
+  - id: K8
+    soru: "461 (amatör %100) ile karışma riski değerlendirildi mi? Nitelik teyidi yapıldı mı?"
+    referans: "KVK Md.10/1-b"
+  - id: K9
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (460 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K10
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

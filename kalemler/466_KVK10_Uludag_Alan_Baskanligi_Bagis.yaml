@@ -1,0 +1,235 @@
+ic_kod: uludag_alan_baskanligi_bagis
+baslik: Uludağ Alan Başkanlığına Bağış ve Sponsorluk (7432 s.K. Md.8)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 466 }
+  - { donem: 2025, kod: 466 }
+
+mevzuat_dayanagi:
+  - 7432 Sayılı Kanun Madde 8
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2022-07-01"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Uludağ Alan Başkanlığına bağış, yardım veya sponsorluk harcaması yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **7432 sayılı Kanun Madde 8** kapsamında, **Uludağ Alan Başkanlığına**
+    yapılan bağış/yardımlar ve sponsorluk harcamalarının **tamamı** kurumlar
+    vergisi matrahından indirilir.
+
+    ## İki Kategori — Aynı Beyanname Kodu
+
+    **1. Bağış ve Yardımlar:**
+    Uludağ Alan Başkanlığına yapılan nakdi veya ayni bağış ve yardımların
+    tamamı indirilir.
+
+    **2. Sponsorluk Harcamaları:**
+    Uludağ Alan Başkanlığı bünyesindeki etkinlik ve faaliyetlere yönelik
+    sponsorluk harcamalarının tamamı indirilir.
+
+    Her iki kategori de **beyanname 466 kodunda** yer alır ancak
+    çalışma kâğıdında ayrı satırlarda gösterilmelidir.
+
+    ## Sponsorluk Farkı — KVK Md.10/1-b ile Karıştırılmamalı
+
+    KVK Md.10/1-b kapsamındaki genel sponsorlukta %50/%100 oranı ayrımı vardır.
+    **7432 Md.8 kapsamında Uludağ sponsorluğunda bu ayrım geçerli değildir —
+    sponsorluk harcamalarının tamamı indirilir.**
+
+    ## Alıcı — Yalnızca Uludağ Alan Başkanlığı
+
+    Bu indirim **yalnızca 7432 sayılı Kanunla kurulan Uludağ Alan Başkanlığına**
+    yapılan bağış/yardım ve sponsorluk harcamaları için geçerlidir. Uludağ
+    bölgesindeki başka kurumlara yapılan ödemeler bu kod kapsamında değildir.
+
+    ## İndirim Oranı
+
+    Her iki kategori için de **tamamının indirimi**. Matrahı aşan kısım sonraki
+    yıllara **devredilemez**.
+
+    ## YİAKV İlişkisi
+
+    **7432 s.K. Md.8 kapsamındaki bağış ve sponsorluk indirimi YİAKV (KVK 32/C)
+    matrahından DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+  kapi_sorulari:
+    - id: uab_alici
+      soru: "Ödeme/harcama Uludağ Alan Başkanlığına mı yapıldı? (7432 s.K.)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "7432 s.K. Md.8, yalnızca Uludağ Alan Başkanlığına yapılan bağış/yardım ve sponsorluk harcamalarını kapsar. Uludağ bölgesindeki başka kurumlara yapılan ödemeler bu kod kapsamında değildir."
+    - id: islem_turu
+      soru: "İşlemin niteliği nedir? (Bağış/Yardım ve/veya Sponsorluk)"
+      tip: secim
+      secenekler:
+        - deger: bagis_yardim
+          etiket: "Bağış/Yardım (Nakdi ve/veya Ayni)"
+        - deger: sponsorluk
+          etiket: "Sponsorluk Harcaması (Yazılı sözleşme ile)"
+        - deger: her_ikisi
+          etiket: "Her İkisi (Bağış + Sponsorluk)"
+      aciklama: "İki kategori aynı beyanname kodunda (466). Bağış = karşılıksız. Sponsorluk = yazılı sözleşmeli. Her ikisi de tamamı indirilebilir."
+    - id: fiili_islem
+      soru: "İşlem fiilen gerçekleşti mi? (Nakdi: Banka — Ayni/Sponsorluk: Teslim/Sözleşme belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Nakdi işlemlerde banka EFT/havale. Ayni bağışta teslim tutanağı. Sponsorlukta yazılı anlaşma + fiili ödeme/hizmet."
+    - id: makbuz_protokol
+      soru: "Uludağ Alan Başkanlığından resmi makbuz veya protokol alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bağış için resmi makbuz veya kabul yazısı. Sponsorluk için yazılı sponsorluk sözleşmesi ve/veya protokol."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla Uludağ Alan Başkanlığına yapılan ödeme"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile Uludağ Alan Başkanlığına yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Teslim edilen mal/hizmetin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Ayni bağış varsa maliyet veya net defter değeri (piyasa değeri değil)."
+    - id: sponsorluk_tutari
+      etiket: "Sponsorluk harcaması tutarı (TL) — Yazılı sözleşmeli UAB sponsorluğu"
+      tip: para
+      zorunlu: false
+      yardim: "Uludağ Alan Başkanlığı bünyesindeki etkinlik/faaliyetler için yazılı sözleşmeli sponsorluk harcamaları. Tamamı indirilir. Not: KVK Md.10/1-b'deki %50/%100 ayrımı geçerli değil."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    toplam_sponsorluk: "sponsorluk_tutari"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri + sponsorluk_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0 and sponsorluk_tutari >= 0"
+      hata: "Tutarlar negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri + sponsorluk_tutari > 0"
+      hata: "En az bir tutar (bağış veya sponsorluk) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  7432 Sayılı Kanun Madde 8: Uludağ Alan Başkanlığına yapılan bağış/yardımlar ve
+  sponsorluk harcamalarının tamamı kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İki Kategori — Aynı Beyanname Kodu
+  1. Bağış ve Yardımlar: Nakdi + Ayni bağışların tamamı
+  2. Sponsorluk Harcamaları: Yazılı sözleşmeli sponsorluğun tamamı
+  Her ikisi beyanname 466'ya dahil edilir ancak çalışma kâğıdında ayrı gösterilmeli.
+
+  ## Sponsorluk Özel Notu
+  KVK Md.10/1-b kapsamındaki genel sponsorlukta %50/%100 oran ayrımı vardır.
+  7432 Md.8 kapsamındaki Uludağ sponsorluğunda bu ayrım UYGULANMAZ —
+  sponsorluk harcamalarının tamamı indirilir.
+
+  ## Alıcı Koşulu
+  Yalnızca Uludağ Alan Başkanlığı (7432 s.K. ile kurulan) alıcı olabilir.
+  Uludağ bölgesindeki başka kurumlar → Kapsam dışı.
+
+  ## İndirim Kuralları
+  - Her iki kategori için tamamının indirimi
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcının Uludağ Alan Başkanlığı olduğu teyit edilmeli
+  - Bağış ve sponsorluk tutarları çalışma kâğıdında ayrı satırlarda gösterilmeli
+  - Sponsorluk için yazılı sözleşme zorunlu
+  - Fiili ödeme/teslim/hizmet (taahhüt değil)
+  - UAB'dan resmi makbuz veya protokol alınmalı
+
+  ## YİAKV Etkisi
+  466 bağış ve sponsorluk indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+  402/460/461/464/465 ile aynı E.11 kategorisi.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 7432 s.K. Md.8 kapsamında Uludağ Alan Başkanlığı nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 7432 s.K. Md.8 kapsamında Uludağ Alan Başkanlığı ayni bağış.
+
+  ## Sponsorluk Harcaması Kaydı
+  Borç: 770 Genel Yönetim Giderleri / 760 Pazarlama Satış Giderleri
+  Alacak: 102 Bankalar
+  Açıklama: 7432 s.K. Md.8 kapsamında Uludağ Alan Başkanlığı sponsorluk harcaması.
+
+  ## Beyanname
+  Toplam (bağış + sponsorluk) beyanname 466. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Uludağ Alan Başkanlığı Bağış Makbuzu / Kabul Yazısı
+    detay: "Bağış/yardım için UAB tarafından düzenlenen resmi makbuz veya bağış kabul yazısı. Tarih, tutar ve nitelik belirtilmeli."
+    temin_yeri: Uludağ Alan Başkanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Sponsorluk Sözleşmesi
+    detay: "Sponsorluk harcamaları için UAB ile imzalanan yazılı sponsorluk sözleşmesi. Etkinlik/faaliyet adı, tutar ve koşullar belirtilmeli. Sözleşme olmadan sponsorluk kapsam riski taşır."
+    temin_yeri: Uludağ Alan Başkanlığı
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Ödeme Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödemenin UAB'ın resmi banka hesabına yapıldığı görünmeli."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve malların maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / Uludağ Alan Başkanlığı
+  - kategori: destekleyici
+    "no": 5
+    baslik: Sponsorluk Fiili Gerçekleşme Belgesi
+    detay: "Sponsorluğun fiilen gerçekleştiğini kanıtlayan belge (etkinlik programı, fatura, ödeme dekontu, hizmet teslimat belgesi vb.)."
+    temin_yeri: Uludağ Alan Başkanlığı / İç Kayıtlar
+
+k_checklist:
+  - id: K1
+    soru: "Alıcının 7432 s.K. ile kurulan Uludağ Alan Başkanlığı olduğu teyit edildi mi?"
+    referans: "7432 s.K. Md.8 | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağış ve sponsorluk tutarları çalışma kâğıdında ayrı satırlarda gösterildi mi?"
+    referans: "7432 s.K. Md.8"
+  - id: K3
+    soru: "Sponsorluk için yazılı sözleşme temin edildi mi?"
+    referans: "7432 s.K. Md.8"
+  - id: K4
+    soru: "KVK Md.10/1-b'deki %50/%100 oranı ayrımının bu kod için geçerli olmadığı not edildi mi? (7432 Md.8 tamamını öngörüyor)"
+    referans: "7432 s.K. Md.8 — KVK Md.10/1-b'den bağımsız"
+  - id: K5
+    soru: "İşlem fiilen gerçekleşti mi? (Banka dekontu/teslim tutanağı/sponsorluk hizmet belgesi)"
+    referans: "7432 s.K. Md.8"
+  - id: K6
+    soru: "UAB'dan resmi makbuz veya protokol alındı mı?"
+    referans: "7432 s.K. Md.8"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (466 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K8
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

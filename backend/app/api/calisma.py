@@ -303,6 +303,10 @@ async def istek_listesi_excel(
         "serbest_bolge_tgb_istisnalari": "Serbest Bolge ve TGB Istisnaları",
         "varlik_satis_istisnalari": "Varlik Satis Istisnaları",
         "yurtdisi_istisnalar": "Yurt Disi Istisnaları (CVOA)",
+        "arge_tasarim_indirimleri": "Ar-Ge, Tasarım ve Teknogirişim İndirimleri",
+        "bagis_yardim_sponsorluk": "Bağış, Yardım ve Sponsorluk İndirimleri",
+        "yatirim_tesvikleri": "Yatırım Teşvikleri ve Özel İndirimler",
+        "hizmet_indirimleri": "Sağlık, Eğitim ve Hizmet İndirimleri",
     }
 
     for row_idx, ic_kod in enumerate(istek_listesi, start=2):

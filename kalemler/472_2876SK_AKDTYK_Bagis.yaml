@@ -1,0 +1,176 @@
+ic_kod: akdtyk_bagis_2876sk
+baslik: TDK, TTK, ATAM, AKM'ye Bağış (AKDTYK)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 472 }
+  - { donem: 2025, kod: 472 }
+
+mevzuat_dayanagi:
+  - 2876 sayılı Atatürk Kültür, Dil ve Tarih Yüksek Kurumu Kanunu
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "2876 sayılı Kanun kapsamında AKDTYK veya bünyesindeki TDK, TTK, ATAM ya da AKM'ye bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **2876 sayılı Atatürk Kültür, Dil ve Tarih Yüksek Kurumu Kanunu** kapsamında
+    AKDTYK ve bünyesindeki kurumlara yapılan bağış ve yardımların **tamamı**
+    kurumlar vergisi matrahından indirilir.
+
+    ## AKDTYK Bünyesindeki Kurumlar
+
+    - Türk Dil Kurumu (TDK) — dil/sözlük çalışmaları
+    - Türk Tarih Kurumu (TTK) — tarih araştırmaları
+    - Atatürk Araştırma Merkezi (ATAM) — Atatürk ilkeleri
+    - Atatürk Kültür Merkezi (AKM) — kültür/sanat faaliyetleri
+
+    **Kapsam dışı:** Bu kurumların isim benzerliğindeki başka kurum, vakıf veya dernek.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara devredilemez.
+
+    ## YİAKV İlişkisi
+
+    **472 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_akdtyk
+      soru: "Bağış 2876 s.K. kapsamında AKDTYK veya bünyesindeki kuruma mı yapıldı? (TDK, TTK, ATAM, AKM)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "AKDTYK (doğrudan) veya bünyesindeki TDK, TTK, ATAM, AKM. Bu kurumların isim benzerliğindeki başka kurum/vakıf/dernek → Kapsam dışı."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "AKDTYK / TDK / TTK / ATAM / AKM'den resmi bağış makbuzu alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İlgili kurumdan düzenlenen resmi makbuz veya bağış kabul yazısı zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile AKDTYK/TDK/TTK/ATAM/AKM'ye yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Kitap/arşiv/ekipmanın maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Kitap, arşiv materyali, dijital içerik, ekipman gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  2876 sayılı Atatürk Kültür, Dil ve Tarih Yüksek Kurumu Kanunu kapsamında AKDTYK
+  ve bünyesindeki TDK, TTK, ATAM, AKM'ye yapılan bağış ve yardımların tamamı
+  kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## AKDTYK Bünyesi
+  - TDK: Türk dili araştırma ve sözlük çalışmaları
+  - TTK: Türk tarihi araştırmaları
+  - ATAM: Atatürk ilkeleri ve inkılap tarihi araştırmaları
+  - AKM: Kültür ve sanat faaliyetleri
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Alıcı AKDTYK veya resmi bünyesindeki kurumlardan biri mi?
+  - İsim benzerliğinden kaynaklanan hatalı alıcı tespiti riski
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - Kurumdan resmi makbuz/kabul yazısı
+
+  ## YİAKV Etkisi
+  472 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 2876 s.K. kapsamında AKDTYK/TDK/TTK/ATAM/AKM'ye nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: 2876 s.K. kapsamında AKDTYK bünyesine ayni bağış.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 472. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Alıcı Nitelik Belgesi (AKDTYK / TDK / TTK / ATAM / AKM)
+    detay: "İlgili kurumun 2876 s.K. kapsamındaki resmi statüsünü gösteren belge."
+    temin_yeri: İlgili Kurum
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Resmi Makbuz
+    detay: "İlgili kurumdan (AKDTYK/TDK/TTK/ATAM/AKM) düzenlenen resmi makbuz veya bağış kabul yazısı."
+    temin_yeri: Alıcı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme kurumun resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Kitap, arşiv materyali, ekipman bağışlarında imzalı teslim tutanağı ve maliyet/net defter değerini gösteren belge."
+    temin_yeri: Muhasebe / Alıcı Kurum
+
+k_checklist:
+  - id: K1
+    soru: "Alıcı niteliği doğrulandı mı? (AKDTYK veya bünyesindeki TDK/TTK/ATAM/AKM)"
+    referans: "2876 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "İsim benzerliği olan başka bir kurum/vakıf ile karışıklık olmadığı teyit edildi mi?"
+    referans: "2876 s.K."
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Banka dekontu veya imzalı teslim tutanağı)"
+    referans: "2876 s.K. | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "İlgili kurumdan resmi makbuz veya bağış kabul yazısı alındı mı?"
+    referans: "2876 s.K."
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (472 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

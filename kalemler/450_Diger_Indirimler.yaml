@@ -1,0 +1,190 @@
+ic_kod: diger_indirimler_450
+baslik: Diğer İndirimler (Beyanname Satırı 450)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 450 }
+  - { donem: 2025, kod: 450 }
+
+mevzuat_dayanagi:
+  - Çeşitli — kullanıcı her kalem için ayrıca belirtir
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: hizmet_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "Standart kodlarda (402–467) karşılığı bulunmayan, mevzuata dayalı bir indirim kalemine sahip misiniz?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **Beyanname Satırı 450 — Diğer İndirimler**, GİB kurumlar vergisi beyannamesinde
+    ayrı bir kod numarası verilmemiş ancak mevzuatta öngörülen indirim kalemlerinin
+    beyan edileceği **genel (catch-all) satırdır**.
+
+    ## Kullanım Koşulları (Üçü Birden Zorunlu)
+
+    1. **Mevzuat Dayanağı:** Her indirim kalemi için açık yasal dayanak (KVK maddesi,
+       geçici madde, özel kanun, ÇVÖA veya özelge) mutlaka belirtilmeli.
+    2. **Belge:** İndirimi kanıtlayan belge(ler) tasdik dosyasında bulunmalı.
+    3. **Tekrar Etmeme:** 450'de yer alan indirim, beyannamede başka bir kodda
+       (402, 404, 414 vb.) zaten beyan edilmemiş olmalı.
+
+    ## Standart Kod Öncelik Kuralı
+
+    450 kodu catch-all niteliğindedir. Standart kodlarda (402–467) karşılığı olan
+    bir indirim 450'ye yazılırsa mükerrerlik veya kod hatası oluşur. Önce standart
+    kodlar kontrol edilmeli — 450 sadece kapsam dışı kalanlar için kullanılır.
+
+    ## YMM Müteselsil Sorumluluğu
+
+    Dayanaksız veya belgesiz indirim → Tarhiyat ve ceza riski.
+    YMM tasdik kapsamında her kalem için mevzuat teyidi zorunludur.
+
+    ## YİAKV İlişkisi
+
+    450'deki her indirim kalemi için YİAKV matrahına etkisi ayrı ayrı değerlendirilmeli.
+    Korumalı kalemler YİAKV matrahından düşülür — E.11 kalemleri düşülemez.
+    Bu çalışma kâğıdı varsayılan olarak "düşülemez" olarak işaretlenmiştir; her kalem
+    için ayrı YMM değerlendirmesi yapılmalıdır.
+
+  kapi_sorulari:
+    - id: standart_kod_kontrolu
+      soru: "Bu indirim, standart kodlarda (402–467 arası) karşılığı OLMAYAN bir kalem mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim 402 (eğitim/sağlık bağışı), 404 (kültür/turizm), 414 (sağlık hizm.), 452 (korumalı işyeri), 467 (İFM) vb. standart kodlara girmiyorsa 450 kullanılır. Standart kodda karşılığı varsa önce o kod kullanılmalı."
+    - id: mevzuat_dayanak_var
+      soru: "Her indirim kalemi için açık mevzuat dayanağı (KVK maddesi, özel kanun, ÇVÖA, özelge) belirlendi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Dayanaksız indirim → Tarhiyat ve ceza riski. KVK maddesi, geçici maddesi, özel kanun, ÇVÖA veya GİB özelgesiyle dayanak gösterilmeli."
+    - id: donem_kontrolu
+      soru: "İndirim hakkı cari döneme ait mi? (Devir/zamanlama kontrolü yapıldı mı?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim hakkının cari döneme ait olduğu teyit edilmeli. Geçmiş dönem indirimleri mahsuplaşma veya düzeltme beyannamesiyle ele alınmalı."
+    - id: belge_mevcut
+      soru: "Her indirim kalemi için destekleyici belge (fatura, sözleşme, özelge, hesaplama vb.) temin edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Fatura, sözleşme, özelge, mahkeme kararı, teknik hesaplama vb. ilgili belge zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: indirim_tutari
+      etiket: "Toplam indirim tutarı (TL) — Tüm 450 kapsamı kalemlerin toplamı"
+      tip: para
+      zorunlu: true
+      yardim: "Beyanname 450 satırına yazılacak toplam tutar. Her indirim kalemi için ayrı belge ve mevzuat dayanağı olmalıdır."
+    - id: yasal_dayanak_aciklamasi
+      etiket: "Yasal dayanak açıklaması — Her kalem için mevzuat ve belge referansı"
+      tip: metin
+      zorunlu: true
+      yardim: "Örnek: 'Kalem 1: KVK Geç. Md. XX — 50.000 TL | Kalem 2: ÇVÖA Md. Y — 30.000 TL'. Her indirim kalemi için ayrı satırda açıklama yapılması tavsiye edilir."
+  formuller:
+    istisna_tutari: "indirim_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "indirim_tutari > 0"
+      hata: "İndirim tutarı sıfırdan büyük olmalıdır."
+    - kural: "len(yasal_dayanak_aciklamasi) > 0"
+      hata: "Yasal dayanak açıklaması boş bırakılamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  Beyanname 450 — Diğer İndirimler: GİB kurumlar vergisi beyannamesinde ayrı kod
+  verilmemiş ancak mevzuatta öngörülen indirimlerin beyan edileceği catch-all satır.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kapsam ve Nitelik
+
+  KULLANIM KOŞULLARI (ÜÇÜ BİRDEN ZORUNLU):
+  - Standart kodlarda (402–467) karşılığı olmayan kalem
+  - Her kalem için açık mevzuat dayanağı (KVK maddesi, geçici madde, özel kanun, ÇVÖA, özelge)
+  - Her kalem için destekleyici belge tasdik dosyasında mevcut
+
+  STANDART KOD KONTROLÜ:
+  - 402: KVK 10/1-c bağışlar (okul/sağlık/yurt)
+  - 403: KVK 10/1-5 bağışlar (eğitim/sağlık/gençlik)
+  - 404: KVK 10/1-d kültür/turizm bağışları
+  - 414: Sağlık hizmetleri indirimleri
+  - 452: Korumalı işyeri indirimleri
+  - 467: İstanbul Finans Merkezi
+
+  ## İndirim Kuralları
+  - Matrahı aşan kısım sonraki yıllara devredilmez
+  - Her kalem için dönem uygunluğu ayrıca kontrol edilmeli
+  - YİAKV etkisi kalem bazında ayrı değerlendirilmeli
+
+  ## Kritik Kontroller
+  - Mükerrer indirim kontrolü: aynı tutar başka kodda beyan edilmemeli
+  - Mevzuat dayanağı belgesi tasdik dosyasında mevcut olmalı
+  - YMM müteselsil sorumluluk riski: dayanaksız kalem tarhiyat doğurur
+
+  ## YİAKV Etkisi
+  450 kapsamındaki her indirim kalemi için YİAKV (KVK 32/C) matrahına etkisi
+  ayrı ayrı değerlendirilmeli. Bu çalışma kâğıdı genel varsayım olarak "düşülemez"
+  işaretlidir; korumalı kalemler için YMM kalem bazında değerlendirme yapmalıdır.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Her Kalem İçin Mevzuat Dayanak Belgesi
+    detay: "KVK maddesi metni, özel kanun hükmü, ÇVÖA ilgili maddesi veya GİB özelgesi. Her indirim kalemi için ayrı belge veya referans."
+    temin_yeri: Mevzuat / GİB
+  - kategori: zorunlu
+    "no": 2
+    baslik: Her Kalem İçin Destekleyici Belge
+    detay: "Fatura, sözleşme, mahkeme kararı, teknik hesaplama, özelge veya diğer kanıtlayıcı belgeler. İndirim kaleminin niteliğine göre değişir."
+    temin_yeri: İlgili Kurum / Muhasebe
+  - kategori: zorunlu
+    "no": 3
+    baslik: İndirim Hesaplama Tablosu (Kalem Bazlı)
+    detay: "Her indirim kalemi için açıklama, mevzuat dayanağı, tutarı ve YİAKV durumunu gösteren tablo. YMM tasdik dosyasının temel parçasıdır."
+    temin_yeri: YMM / Muhasebe
+  - kategori: destekleyici
+    "no": 4
+    baslik: Standart Kod Uygulanamaz Gerekçesi
+    detay: "Her kalem için 402–467 standart kodlarının neden uygulanamadığını açıklayan not veya analiz. Özellikle büyük tutarlarda önerilir."
+    temin_yeri: YMM
+
+k_checklist:
+  - id: K1
+    soru: "Her indirim kalemi için standart kod (402–467) uygulanabilirliği kontrol edildi ve bu kodlarda karşılığı olmadığı teyit edildi mi?"
+    referans: "GİB KV Beyan Reh. 2026 (No:606) | Beyanname 450"
+  - id: K2
+    soru: "Her kalem için açık mevzuat dayanağı (KVK maddesi, geçici madde, özel kanun, ÇVÖA veya özelge) belirlenip dosyalandı mı?"
+    referans: "KVK Md. ilgili hüküm | 49 S.No.lu KV GT"
+  - id: K3
+    soru: "Her kalem için destekleyici belge (fatura, sözleşme, hesaplama vb.) tasdik dosyasında mevcut mu?"
+    referans: "49 S.No.lu KV GT"
+  - id: K4
+    soru: "İndirim hakkının cari döneme ait olduğu doğrulandı mı? (Dönem/zamanlama kontrolü)"
+    referans: "KVK Md. ilgili hüküm"
+  - id: K5
+    soru: "Aynı indirim tutarı başka bir beyanname kodunda (402–467) mükerrer beyan edilmedi mi?"
+    referans: "GİB KV Beyan Reh. 2026 (No:606)"
+  - id: K6
+    soru: "Her kalem için YİAKV matrahına etkisi (düşülür/düşülemez) ayrıca analiz edildi mi?"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11 / D.10"
+  - id: K7
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"
+  - id: K8
+    soru: "YMM müteselsil sorumluluk riski değerlendirildi mi? Dayanaksız kalem bulunmuyor mu?"
+    referans: "3568 s.K. | 49 S.No.lu KV GT"

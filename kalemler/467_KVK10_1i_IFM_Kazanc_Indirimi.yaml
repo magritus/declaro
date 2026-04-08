@@ -1,0 +1,238 @@
+ic_kod: ifm_kazanc_indirimi_10_1i
+baslik: İstanbul Finans Merkezi Katılımcısı Kazanç İndirimi (KVK Md.10/1-i)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 467 }
+  - { donem: 2025, kod: 467 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-i (7412 sayılı İstanbul Finans Merkezi Kanunu ile eklendi)
+  - KVK Madde 32/C fıkra 2 bent g (YİAKV korumalı kalem)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2022-07-22"
+  bitis: null
+
+ana_kategori: yatirim_tesvikleri
+
+wizard_agaci:
+  tetikleyici_soru: "7412 sayılı İstanbul Finans Merkezi Kanunu kapsamında İFM Katılımcısı Belgesi'ne sahip misiniz ve İFM bölgesinde yurt dışı kaynaklı finansal hizmet geliri elde ettiniz mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-i** (7412 sayılı İstanbul Finans Merkezi Kanunu ile eklendi):
+    İstanbul Finans Merkezi'nde (İFM) faaliyette bulunan **katılımcı kurumlara**,
+    yurt dışı kaynaklı finansal hizmet kazançlarına kademeli indirim hakkı tanır.
+
+    ## Kademeli İndirim Oranı (GİB Rehberi No:606)
+
+    | Dönem | İndirim Oranı |
+    |-------|--------------|
+    | 2022 – 2031 | Net kazancın **%100'ü** |
+    | 2032 ve sonrası | Net kazancın **%75'i** |
+
+    **2025 dönemi için indirim oranı %100'dür** — bu dönemde kazanç üzerinden hiç KV ödenmez.
+
+    ## Kapsam Koşulları — Dördü Birden Zorunlu
+
+    **①** **Katılımcı Belgesi:** İFM Başkanlığı'ndan alınmış geçerli katılımcı belgesi
+    **②** **Bölgede Faaliyet:** İFM bölgesinde fiziksel ofis ve fiili faaliyette bulunmak
+    **③** **Personel İstihdamı:** Bölgede fiilen personel istihdam etmek (SGK kayıtlı)
+    **④** **Hizmet Türü:** Yurt dışı kaynaklı finansal hizmetlerden kazanç elde etmek
+
+    ## YİAKV İlişkisi — ÖNEMLİ: KORUMAL KALEMDİR
+
+    **KVK Md.32/C fıkra 2 bent g** kapsamında **467 İFM Kazanç İndirimi YİAKV (Yurt İçi
+    Asgari Kurumlar Vergisi) matrahından DÜŞÜLEBİLİR.** Bu kalem korumalı kalem statüsündedir
+    ve asgari vergi yükü doğurmaz.
+
+    ## 416 ile 467 Ayrımı
+
+    - **416 (Diğer Hizmetler):** Yurt dışına verilen diğer hizmetler — %50 indirim
+    - **467 (İFM Kazancı):** İFM Katılımcısı Belgesi zorunlu — %100/%75 indirim
+    Çakışma durumunda aynı tutar her iki kodla ayrı ayrı indirilemez.
+  kapi_sorulari:
+    - id: katilimci_belgesi_var
+      soru: "Kurum İFM Başkanlığı'ndan geçerli KATİLIMCI BELGESİ aldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "7412 s.K. kapsamında İFM Başkanlığı'nın verdiği katılımcı belgesi zorunludur. Belge olmadan 467 uygulanamaz. Katılımcı belgesinin geçerlilik tarihi de kontrol edilmelidir."
+    - id: fiili_faaliyet_var
+      soru: "Kurum İFM bölgesinde FİİLEN faaliyette bulunuyor mu? (Fiziksel ofis)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İFM bölgesinde fiziksel ofis ve fiili faaliyet zorunludur. Sadece tescil yeterli değildir."
+    - id: personel_istihdami_var
+      soru: "İFM bölgesinde FİİLEN PERSONEL istihdam ediliyor mu? (SGK kayıtlı)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bölgede çalışan personel varlığı zorunludur. SGK kayıtları ile teyit edilmelidir."
+    - id: yurtdisi_kaynakli_kazanc_var
+      soru: "Kazanç YURT DIŞI KAYNAKLI finansal hizmetlerden mi elde ediliyor?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim yalnızca yurt dışı kaynaklı finansal hizmet kazançlarına uygulanır. Yurt içi müşteriye verilen hizmetlerden elde edilen kazançlar kapsam dışıdır."
+
+parametreler:
+  oran_2022_2031: 1.0
+  oran_2032_sonrasi: 0.75
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: yurtdisi_finansal_hizmet_kazanci
+      etiket: "Yurt dışı kaynaklı finansal hizmet net kazancı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "İFM bölgesinde yurt dışı kaynaklı finansal hizmetlerden elde edilen brüt gelirden ilgili maliyet ve giderler düşüldükten sonra kalan NET kazanç. Brüt gelir değil, net kazanç esastır."
+    - id: indirim_orani
+      etiket: "Uygulanan indirim oranı (%)"
+      tip: sayi
+      zorunlu: true
+      varsayilan: 100
+      yardim: "2022-2031 dönemi için %100, 2032 ve sonrası için %75. 2025 dönemi için 100 giriniz. GİB KV Beyan Rehberi No:606'ya göre dönem oranı seçiniz."
+    - id: ifm_katilimci_belgesi_var
+      etiket: "İFM Katılımcısı Belgesi mevcut mu? (evet/hayır)"
+      tip: secenek
+      secenekler: ["evet", "hayir"]
+      zorunlu: true
+      yardim: "İFM Başkanlığı'ndan alınan geçerli katılımcı belgesi. Belge olmadan 467 indirimi uygulanamaz."
+  formuller:
+    istisna_tutari: "yurtdisi_finansal_hizmet_kazanci * (indirim_orani / 100)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "yurtdisi_finansal_hizmet_kazanci > 0"
+      hata: "Yurt dışı kaynaklı finansal hizmet net kazancı sıfırdan büyük olmalıdır."
+    - kural: "yurtdisi_finansal_hizmet_kazanci >= 0"
+      hata: "Net kazanç negatif olamaz."
+    - kural: "indirim_orani == 100 or indirim_orani == 75"
+      hata: "İndirim oranı yalnızca %100 (2022-2031) veya %75 (2032+) olabilir. GİB Rehberi No:606'ya göre dönem seçiniz."
+    - kural: "ifm_katilimci_belgesi_var == 'evet'"
+      hata: "İFM Katılımcısı Belgesi olmadan 467 indirimi uygulanamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-i: 7412 sayılı İstanbul Finans Merkezi Kanunu ile KVK'ya eklenen
+  bent kapsamında, İFM'de faaliyette bulunan katılımcıların yurt dışı kaynaklı
+  finansal hizmet kazançlarına kademeli indirim uygulanır.
+  KVK Madde 32/C fıkra 2 bent g: 467 YİAKV korumalı kalemdir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kademeli İndirim Oranı
+
+  DÖNEM | ORAN
+  2022-2031 arası | %100 (2025 dönemi bu banttadır)
+  2032 ve sonrası | %75
+
+  ## Kritik Ön Koşullar (Dördü Birden Zorunlu)
+
+  A0.1 ★ Katılımcı Belgesi: İFM Başkanlığı'ndan alınmış geçerli belge
+  A0.2 ★ Fiili faaliyet: İFM bölgesinde fiziksel ofis ve fiili faaliyette bulunma
+  A0.3 ★ Personel istihdamı: Bölgede SGK kayıtlı çalışan
+  A0.4 ★ Yurt dışı kaynaklı kazanç: Finansal hizmet, yurt dışı müşteri/kaynak
+  A0.5 ★ Dönem oran tespiti: 2025 için %100, 2032+ için %75
+
+  ## YİAKV Etkisi — KORUMAL KALEMDİR
+  KVK Md.32/C f.2 bent (g) kapsamında 467 YİAKV MATRAHINDA DÜŞÜLEBİLİR.
+  Bu kalem korumalı kalem statüsündedir ve asgari vergi yükü doğurmaz.
+  YİAKV çalışma kâğıdında E.11 (veya ilgili satır) korumalı kalem olarak gösterilir.
+
+  ## 467 ile 416 Ayrımı
+  416 (Diğer Hizmetler — KVK 10/1-h): Yurt dışına hizmet, %50 indirim, İFM belgesi gerekmez
+  467 (İFM Kazancı — KVK 10/1-i): İFM Katılımcısı Belgesi zorunlu, %100/%75 indirim
+  Aynı kazanç tutarı her iki kod altında çift sayılamaz.
+
+  ## Net Kazanç Hesabı
+  İndirim brüt gelire değil, NET KAZANCA uygulanır.
+  Net Kazanç = Yurt dışı finansal hizmet brüt geliri − İlişkili maliyet ve giderler
+  Her finansal hizmet kalemi veya müşteri grubu için ayrı izleme önerilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Yurt Dışı Finansal Hizmet Geliri Kaydı
+  Borç: 102 Bankalar (veya 120 Alıcılar)
+  Alacak: 600 Yurt İçi Satışlar (veya 601 Yurt Dışı Satışlar)
+  Açıklama: İFM bölgesinde yurt dışı kaynaklı finansal hizmet geliri.
+
+  ## İlişkili Gider Kaydı
+  Borç: İlgili gider hesabı (7xx veya 6xx)
+  Alacak: 102 Bankalar (veya 320 Satıcılar)
+  Açıklama: Yurt dışı finansal hizmetle doğrudan ilişkili maliyet/gider.
+
+  ## Beyanname
+  Net kazanç (Brüt Gelir − İlişkili Giderler) × İndirim Oranı = Beyanname 467 tutarı.
+  2025 için: Net Kazanç × %100 = Beyanname 467.
+  YİAKV (KVK 32/C) hesabında: Korumalı kalem olarak düşülür.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: İFM Katılımcısı Belgesi
+    detay: "İFM Başkanlığı tarafından verilen geçerli katılımcı belgesi. Belgenin kazanç döneminde geçerli olduğu teyit edilmelidir. Belge olmadan 467 uygulanamaz."
+    temin_yeri: İFM Başkanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Yurt Dışı Kaynaklı Finansal Hizmet Gelir Tablosu
+    detay: "Yurt dışı kaynaklı finansal hizmetlerden elde edilen brüt gelirin dökümü. Müşterinin yurt dışı yerleşik olduğunu gösteren belge veya sözleşme."
+    temin_yeri: Muhasebe / Faturalar
+  - kategori: zorunlu
+    "no": 3
+    baslik: Net Kazanç Hesap Tablosu
+    detay: "Yurt dışı finansal hizmet brüt gelirinden ilişkili maliyet ve giderlerin düşülmesi ile bulunan net kazancın hesaplama tablosu."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 4
+    baslik: İFM Bölgesinde Fiili Faaliyet Belgesi
+    detay: "İFM bölgesinde fiziksel ofis varlığını gösteren kira sözleşmesi veya tapu/mülkiyet belgesi. Fiili faaliyetin teyidi için."
+    temin_yeri: Kira Sözleşmesi / Tapu
+  - kategori: zorunlu
+    "no": 5
+    baslik: İFM Bölgesinde SGK Personel Kaydı
+    detay: "İFM bölgesinde istihdam edilen personelin SGK bordro veya sigortalı işe giriş bildirgesi. Personelin bölgede çalıştığını teyit eden belge."
+    temin_yeri: SGK / İK Departmanı
+  - kategori: destekleyici
+    "no": 6
+    baslik: Finansal Hizmet Sözleşmeleri / Faturalar
+    detay: "Yurt dışı müşterilere verilen finansal hizmetlere ilişkin sözleşmeler ve faturalar. Hizmetin yurt dışı kaynaklı olduğunu belgelemek için."
+    temin_yeri: Sözleşme / Fatura Dosyası
+  - kategori: destekleyici
+    "no": 7
+    baslik: Dönem İndirim Oranı Teyid Belgesi
+    detay: "GİB KV Beyan Rehberi No:606'dan ilgili dönem indirim oranının (%100 veya %75) teyidi. YMM çalışma kâğıdı notu olarak eklenebilir."
+    temin_yeri: GİB Beyan Rehberi 2026 (No:606)
+
+k_checklist:
+  - id: K1
+    soru: "İFM Katılımcısı Belgesi mevcut ve kazanç döneminde geçerli mi?"
+    referans: "KVK Md.10/1-i | 7412 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Kurum İFM bölgesinde fiziksel ofis ile fiilen faaliyette bulunuyor mu?"
+    referans: "KVK Md.10/1-i | 7412 s.K."
+  - id: K3
+    soru: "İFM bölgesinde SGK kayıtlı personel istihdam ediliyor mu?"
+    referans: "KVK Md.10/1-i | 7412 s.K."
+  - id: K4
+    soru: "Kazanç yurt dışı kaynaklı finansal hizmetlerden mi? (Yurt içi müşteri/kaynak dahil edilmedi mi?)"
+    referans: "KVK Md.10/1-i"
+  - id: K5
+    soru: "İndirime esas tutar net kazanç mı? (Brüt gelir değil, ilgili giderler düşüldükten sonraki tutar)"
+    referans: "KVK Md.10/1-i | GİB Beyan Reh. 2026"
+  - id: K6
+    soru: "Dönem indirim oranı doğru uygulandı mı? (2025: %100 | 2032+: %75)"
+    referans: "KVK Md.10/1-i | GİB Beyan Reh. 2026 (No:606)"
+  - id: K7
+    soru: "416 kodu ile çakışma riski değerlendirildi mi? (Aynı kazanç çift sayılmadı mı?)"
+    referans: "KVK Md.10/1-h | KVK Md.10/1-i"
+  - id: K8
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (467 DÜŞÜLEBİLİR — KVK 32/C f.2 bent g korumalı kalem)"
+    referans: "KVK Md.32/C f.2 bent g | GİB Beyan Reh. 2026"
+  - id: K9
+    soru: "YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "GİB Beyan Reh. 2026 (No:606)"

@@ -1,0 +1,225 @@
+ic_kod: yurtdisi_egitim_hizmet_10_1g
+baslik: Yurt Dışı Eğitim Hizmetleri Kazanç İndirimi (%50)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 415 }
+  - { donem: 2025, kod: 415 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-ğ
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: hizmet_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "Türkiye'de yerleşmemiş kişilere (yabancı/yurt dışı ikametli öğrenci veya katılımcı) eğitim hizmeti vererek kazanç elde ettiniz mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-ğ** kapsamında, **Türkiye'de yerleşmiş olmayan kişilere**
+    Türkiye'den verilen ve münhasıran yurt dışında yararlanılan **eğitim hizmetlerinden**
+    elde edilen **net kazancın %50'si** kurumlar vergisi matrahından indirilir.
+
+    ## Kapsam Koşulları
+
+    Aşağıdaki dört koşulun tamamının sağlanması gerekir:
+
+    1. **Alıcı:** Türkiye'de yerleşmemiş kişi (yabancı veya yurt dışı ikametli öğrenci/katılımcı)
+    2. **Hizmet veren:** İlgili bakanlığın (Milli Eğitim Bakanlığı / YÖK / MYK vb.) izni ve
+       denetimine tabi eğitim kuruluşu
+    3. **Yararlanan:** Hizmet münhasıran yurt dışında yararlanılmak üzere verilmeli
+       (Yurt dışı ikametli öğrencinin Türkiye'ye gelerek eğitim alması veya
+       öğrencinin yurt dışında olduğu online eğitim kapsam içindedir)
+    4. **Kazanç:** Net kazanç (brüt gelir eksi ilgili giderler) — brüt gelir değil
+
+    ## İndirim Oranı
+
+    Net kazancın **%50'si** matrahtan indirilir. Matrahı aşan kısım sonraki yıllara
+    **devredilemez**.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-ğ kapsamındaki bu indirim YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+    ## 415 ile 414 İlişkisi
+
+    415 (eğitim) ve 414 (sağlık) aynı bent (KVK Md.10/1-ğ) kapsamındadır.
+    Aynı dönemde birlikte uygulanabilir — ayrı faaliyetleri kapsarlar.
+
+    ## Önemli Uyarılar
+
+    - **Net kazanç zorunlu:** İndirim brüt gelire değil, brüt gelirden ilgili giderlerin
+      düşülmesiyle bulunan net kazanca uygulanır.
+    - **Karma faaliyet:** Hem yurt içi hem yurt dışı öğrencilere hizmet veriliyorsa,
+      yurt dışı öğrenci geliri ve ilgili gider payı ayrıştırılmalıdır.
+    - **İzin/ruhsat zorunluluğu:** Milli Eğitim Bakanlığı / YÖK / MYK vb. ilgili
+      otoritenin izni ve denetimi dışında kalan kuruluşlar kapsam dışıdır.
+    - **YMM tasdik raporu:** İndirim tutarı ≥500.000 TL ise YMM tasdik raporu
+      zorunludur.
+  kapi_sorulari:
+    - id: alici_yurtdisi
+      soru: "Hizmet Türkiye'de yerleşmemiş kişilere (yabancı/yurt dışı ikametli öğrenci veya katılımcı) mi verildi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yurt dışı ikametli yabancı öğrenci/katılımcı → Kapsam. Yurt içi ikametli (Türk vatandaşı veya Türkiye'de ikamet eden yabancı) → Kapsam dışı."
+    - id: egitim_izni_var
+      soru: "Hizmet veren kuruluş ilgili bakanlık (MEB / YÖK / MYK vb.) izni ve denetimine tabi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Milli Eğitim Bakanlığı, YÖK, Mesleki Yeterlilik Kurumu (MYK) veya ilgili otoritenin izni ve denetimi zorunludur. İzinsiz kuruluşlar kapsam dışıdır."
+    - id: munhasiran_yurtdisi
+      soru: "Hizmet münhasıran yurt dışında yararlanılmak üzere mi verildi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yurt dışı ikametli öğrencinin Türkiye'ye gelerek eğitim alması → Kapsam içi. Online eğitimde öğrencinin yurt dışında olması → Kapsam içi."
+    - id: net_kazanc_hesaplandi
+      soru: "İndirime esas net kazanç (brüt gelir eksi ilgili giderler) ayrı hesaplandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim brüt gelire değil, NET KAZANCA uygulanır. Karma faaliyette yurt dışı öğrenci geliri ve gider payı ayrıştırılmalıdır."
+
+parametreler:
+  oran: 0.50
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: yurtdisi_egitim_brut_gelir
+      etiket: "Yurt dışı öğrenci/katılımcı brüt geliri (TL) — Türkiye'de yerleşmemiş kişilerden elde edilen toplam eğitim geliri"
+      tip: para
+      zorunlu: true
+      yardim: "Yurt dışı ikametli öğrenci ve katılımcılara verilen eğitim hizmetlerinden elde edilen toplam brüt gelir. Karma faaliyette yalnızca yurt dışı öğrenci payı girilmeli."
+    - id: yurtdisi_egitim_giderler
+      etiket: "İlişkili giderler (TL) — Yurt dışı öğrenci hizmetiyle doğrudan ilişkili maliyet ve giderler"
+      tip: para
+      zorunlu: true
+      yardim: "Yurt dışı eğitim hizmeti ile doğrudan ilişkili giderler. Karma faaliyette yurt dışı öğrenci hizmeti payı ayrıştırılır. Net kazanç = Brüt gelir - Bu giderler."
+    - id: yurtdisi_musteri_teyit
+      etiket: "Yurt dışı öğrenci/katılımcı niteliği teyit edildi mi? (Pasaport/kimlik kontrolü yapıldı)"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: "Alıcının Türkiye'de yerleşmemiş kişi olduğu pasaport, yurt dışı ikametgah belgesi, kayıt formu veya benzeri resmi belge ile teyit edilmelidir."
+  formuller:
+    net_kazanc: "max(0, yurtdisi_egitim_brut_gelir - yurtdisi_egitim_giderler)"
+    istisna_tutari: "net_kazanc * 0.50"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "yurtdisi_egitim_brut_gelir >= 0 and yurtdisi_egitim_giderler >= 0"
+      hata: "Gelir ve gider tutarları negatif olamaz."
+    - kural: "yurtdisi_egitim_brut_gelir > 0"
+      hata: "Yurt dışı öğrenci/katılımcı brüt geliri girilmelidir."
+    - kural: "yurtdisi_musteri_teyit == 'evet'"
+      hata: "Alıcının yurt dışı ikametli olduğu belgelenmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-ğ: Türkiye'de yerleşmiş olmayan kişilere Türkiye'den verilen ve
+  münhasıran yurt dışında yararlanılan eğitim hizmetlerinden elde edilen kazancın
+  %50'si kurumlar vergisi matrahından indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kapsam Tablosu
+
+  KAPSAM KOŞULLARI:
+  - Alıcı yurt dışı ikametli kişi → Zorunlu
+  - İlgili bakanlık (MEB/YÖK/MYK) ruhsatlı/izinli kuruluş → Zorunlu
+  - Münhasıran yurt dışında yararlanma → Zorunlu
+  - Net kazanç (brüt değil) → Zorunlu
+
+  KAPSAM DIŞI DURUMLAR:
+  - Yurt içi ikametli öğrencilere verilen hizmetler
+  - İzin/ruhsat belgesi olmayan kuruluşlar
+  - Net kazanç negatifse (0 TL uygulanır, indirim yapılamaz)
+
+  ## İndirim Kuralları
+  - Net kazancın %50'si indirim konusu yapılır
+  - Matrahı aşan kısım sonraki yıla devredilmez
+  - Brüt gelire değil, net kazanca uygulanır
+
+  ## Kritik Kontroller
+  - Alıcının yurt dışı ikameti pasaport veya belge ile teyit edilmeli
+  - Karma faaliyette yurt içi/yurt dışı öğrenci geliri ve gider ayrımı yapılmalı
+  - İlgili bakanlık izin/ruhsat belgesi dosyada bulunmalı
+  - Net kazanç negatifse indirim sıfırdır
+
+  ## 415 ile 414 İlişkisi
+  415 (Eğitim) ve 414 (Sağlık) aynı bent KVK Md.10/1-ğ kapsamındadır.
+  Aynı dönemde her ikisi de uygulanabilir — farklı faaliyetleri kapsar.
+  Aynı gelir hem 414 hem 415 olarak gösterilemez.
+
+  ## YİAKV Etkisi
+  415 eğitim hizmeti indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur.
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Eğitim Kuruluşu İzin/Ruhsat Belgesi
+    detay: "Hizmet veren kuruluşun Milli Eğitim Bakanlığı, YÖK, MYK veya ilgili bakanlıktan aldığı ve geçerliliği devam eden izin/ruhsat belgesi. İzinsiz kuruluşlar kapsam dışıdır."
+    temin_yeri: İlgili Bakanlık / Kurum Arşivi
+  - kategori: zorunlu
+    "no": 2
+    baslik: Yurt Dışı Öğrenci/Katılımcı Kimlik/Pasaport Belgesi veya İkamet Teyidi
+    detay: "Alıcının Türkiye'de yerleşmemiş kişi olduğunu gösteren pasaport, yurt dışı ikametgah belgesi veya kayıt formundaki ikamet bilgisi. Öğrenci kabul/kayıt belgeleri de destekleyicidir."
+    temin_yeri: Öğrenci / Eğitim Arşivi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Yurt Dışı Öğrenci Fatura/Gelir Kayıtları
+    detay: "Yurt dışı ikametli öğrenci ve katılımcılara düzenlenen faturalar ve ilgili gelir kayıtları. Karma faaliyette yurt dışı öğrenci gelirinin ayrıştırıldığını gösteren belge."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 4
+    baslik: İlişkili Gider Dağıtım Tablosu
+    detay: "Yurt dışı öğrenci hizmetiyle doğrudan ilişkili giderleri gösteren tablo. Karma faaliyette yurt dışı öğrenci payına düşen giderlerin hesaplanma yöntemi ve dayanaklarını içermeli."
+    temin_yeri: Muhasebe
+  - kategori: destekleyici
+    "no": 5
+    baslik: Öğrenci Kayıt/Kabul Belgesi
+    detay: "Yurt dışı ikametli öğrencinin kuruma kaydını, aldığı eğitimi ve süresini gösteren kayıt veya kabul belgesi."
+    temin_yeri: Eğitim Arşivi
+  - kategori: destekleyici
+    "no": 6
+    baslik: Döviz Geliri Banka Kayıtları (varsa)
+    detay: "Eğitim hizmet bedelinin döviz olarak tahsil edildiğine ilişkin banka ekstreleri. Zorunlu olmamakla birlikte yurt dışı müşteri niteliğini destekler."
+    temin_yeri: Banka
+
+k_checklist:
+  - id: K1
+    soru: "Alıcının Türkiye'de yerleşmemiş kişi (yurt dışı ikametli öğrenci/katılımcı) olduğu belgelendi mi?"
+    referans: "KVK Md.10/1-ğ | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Hizmet veren kuruluşun ilgili bakanlık (MEB/YÖK/MYK) izni ve denetimine tabi olduğu teyit edildi mi?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K3
+    soru: "Hizmetin münhasıran yurt dışında yararlanılmak üzere verildiği doğrulandı mı?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K4
+    soru: "İndirim NET KAZANCA uygulandı mı? (Brüt gelir değil: Brüt gelir − İlişkili giderler)"
+    referans: "KVK Md.10/1-ğ"
+  - id: K5
+    soru: "Karma faaliyette (yurt içi + yurt dışı öğrenci) gelir ve gider ayrıştırması yapıldı mı?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K6
+    soru: "Net kazanç negatifse indirim sıfır olarak uygulandı mı? (Negatif net kazanç indirime konu edilemez)"
+    referans: "KVK Md.10/1-ğ"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (415 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K8
+    soru: "415 (eğitim) ve 414 (sağlık) kapsamı arasında çakışma ve mükerrer indirim riski değerlendirildi mi?"
+    referans: "KVK Md.10/1-ğ"
+  - id: K9
+    soru: "YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "GİB Beyan Reh. 2026 (No:606)"

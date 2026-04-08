@@ -1,0 +1,228 @@
+ic_kod: egitim_saglik_genclik_insaat_bagis_10
+baslik: Eğitim, Sağlık ve Gençlik Tesisi İnşaatı Bağışı (KVK Md.10/1-5)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 403 }
+  - { donem: 2025, kod: 403 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-5
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Kamu idarelerine eğitim tesisi, sağlık tesisi, gençlik merkezi, izci kampı veya öğrenci yurdu inşaatı amacıyla bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-5** kapsamında, **genel ve özel bütçeli kamu idareleri,
+    il özel idareleri, belediyeler, köyler** ile **kamu yararına çalışan dernekler
+    (KYD)** ve **Cumhurbaşkanlığı kararıyla vergi muafiyeti tanınan vakıflara**
+    eğitim, sağlık, gençlik merkezi, gençlik/izci kampı ve öğrenci yurdu tesisleri
+    için yapılan bağış ve yardımların **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ## 403 ile 402 Arasındaki Fark
+
+    **403 (KVK Md.10/1-5)**, **402 (KVK Md.10/1-c)**'ye ek olarak:
+    - **Gençlik merkezi** inşaatını
+    - **Gençlik kampı** inşaatını
+    - **İzci kampı** inşaatını
+    da kapsar. Eğitim/sağlık/yurt bağışları her iki bent altında da girilebilir
+    ancak **aynı tutara çift indirim yasaktır**.
+
+    ## Kapsam — Tesis Türleri
+
+    - Eğitim tesisi inşaatı, onarımı veya ekipmanı
+    - Sağlık tesisi inşaatı, onarımı veya ekipmanı
+    - Gençlik merkezi inşaatı, onarımı veya ekipmanı
+    - Gençlik kampı inşaatı, onarımı veya ekipmanı
+    - İzci kampı inşaatı, onarımı veya ekipmanı
+    - Öğrenci yurdu inşaatı, onarımı veya ekipmanı
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir — kazancın belirli bir yüzdesiyle
+    sınırlı değildir. Matrahı aşan kısım sonraki yıllara **devredilemez**.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **Fiili ödeme zorunluluğu:** Taahhüt edilen ancak henüz yapılmamış bağışlar
+      indirime konu edilemez.
+    - **Alıcı statüsü teyidi:** KYD dernekler ve vergi muafiyeti tanınan vakıflar için
+      bağış tarihindeki güncel statü belgesi temin edilmelidir.
+    - **Çift indirim yasağı:** 402 ve 403 kapsamı çakışabilir; aynı bağış tutarı her
+      iki kod altında ayrı ayrı indirilemez.
+    - **Devir yasağı:** Matrahı aşan kısım sonraki yıllara devredilmez.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-5 kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha
+    etki etmez.
+
+    ## Pratik Notlar
+
+    - **Kamu idaresine bağış:** Makbuz yerine bağış kabul yazısı veya protokol yeterlidir.
+    - **KYD veya vakıf alıcılarında:** Resmi makbuz ve güncel statü belgesi birlikte dosyalanmalıdır.
+    - **Ayni bağışlarda değerleme:** Stoktaki malların maliyet bedeli veya net defter değeri esas alınır.
+    - **YMM tasdik raporu:** İstisna tutarı ≥500.000 TL ise 49 No.lu KV GT kapsamında YMM tasdik raporu zorunludur.
+  kapi_sorulari:
+    - id: tesis_turu_uygun
+      soru: "Bağışın amacı KVK Md.10/1-5 kapsamında mı? (Eğitim / Sağlık / Gençlik Merkezi / Gençlik Kampı / İzci Kampı / Öğrenci Yurdu)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kapsam: Eğitim tesisi, sağlık tesisi, gençlik merkezi, gençlik kampı, izci kampı, öğrenci yurdu inşaatı/onarımı/ekipmanı. Salt işletme/faaliyet gideri → Kapsam dışı."
+    - id: alici_niteligi_uygun
+      soru: "Alıcı kamu idaresi, kamu yararına çalışan dernek (KYD) veya vergi muafiyeti tanınan vakıf mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Uygun alıcılar: Genel/özel bütçeli kamu idaresi, il özel idaresi, belediye, köy VEYA KYD dernekler VEYA CB kararıyla muafiyet tanınan vakıflar. Özel kuruluş → Kapsam dışı."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış fiilen gerçekleşti mi? (Nakdi: Banka dekontu — Ayni: Teslim belgesi)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Taahhüt aşamasındaki bağış indirime konu edilemez. Nakdi bağışta banka EFT/havale dekontu; ayni bağışta imzalı teslim tutanağı zorunludur."
+    - id: makbuz_alindi
+      soru: "Alıcıdan resmi makbuz veya bağış kabul yazısı/protokol alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kamu idaresi: Bağış kabul yazısı veya protokol. KYD/Vakıf: Resmi makbuz. Tarih ve tutar açıkça belirtilmeli."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Banka EFT/havale ile yapılan nakdi bağışların toplamı. Ödeme kanalı banka olmalı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Teslim edilen mal/hizmetin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "İnşaat malzemesi, ekipman, mobilya gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış türü (nakdi veya ayni) girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-5: Kamu idare ve müesseselerine, KYD derneklerine ve vergi muafiyeti
+  tanınan vakıflara eğitim tesisi, sağlık tesisi, gençlik merkezi, gençlik kampı,
+  izci kampı ve öğrenci yurdu inşaatı/onarımı/ekipmanı amacıyla yapılan bağış ve
+  yardımların tamamı matrahtan indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## 403 ile 402 Farkı
+  402 (KVK Md.10/1-c): Okul, sağlık, yurt, çocuk yuvası, huzurevi, bakım-rehabilitasyon
+  403 (KVK Md.10/1-5): Eğitim, sağlık, gençlik merkezi, gençlik/izci kampı, öğrenci yurdu
+  403, gençlik merkezi ve izci kampını ayrıca kapsar. Aynı bağış her iki kodla çift indirilemez.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Tesis türü listesinden birinin kapsamında olduğu teyit edilmeli
+  - KYD/Vakıf için bağış tarihindeki güncel statü belgesi
+  - Fiili ödeme/teslim (taahhüt değil, gerçekleşmiş bağış)
+  - Alıcıdan makbuz veya bağış kabul yazısı
+
+  ## YİAKV Etkisi
+  403 bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: KVK Md.10/1-5 kapsamında nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: KVK Md.10/1-5 kapsamında ayni bağış (stoktan teslim).
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 403. satırına aktarılır.
+  Matrahı aşan kısım devredilemez — bu dönemde kullanılan kısım indirilir.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Tesis Türü ve Alıcı Nitelik Belgesi
+    detay: "Kamu idaresi için resmi tescil/kuruluş belgesi. KYD dernek için bakanlık/Cumhurbaşkanlığı kararı. Vakıf için Cumhurbaşkanlığı vergi muafiyeti kararı. Statü, bağış tarihinde geçerli olmalı."
+    temin_yeri: İlgili Bakanlık / Alıcı Kurum
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bağış Kabul Yazısı veya Makbuz / Protokol
+    detay: "Kamu idaresi: Bağış kabul yazısı veya imzalı protokol. KYD/Vakıf: Resmi makbuz veya alındı belgesi. Tarih ve tutar açıkça belirtilmeli."
+    temin_yeri: Alıcı Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakdi Bağış İçin Banka Dekontu
+    detay: "Banka EFT/havale dekontu. Ödeme alıcının resmi banka hesabına doğrudan yapılmış olmalı."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve malların maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / Alıcı Kurum
+  - kategori: destekleyici
+    "no": 5
+    baslik: Proje veya İnşaat Belgesi
+    detay: "Bağışın tesis türünü (eğitim/sağlık/gençlik merkezi/izci kampı/yurt) teyit eden proje belgesi veya inşaat protokolü."
+    temin_yeri: Proje Belgesi / Alıcı Kurum
+  - kategori: destekleyici
+    "no": 6
+    baslik: Bağış Sözleşmesi veya Protokol
+    detay: "Bağışın amacını, tutarını ve tarafları belirten yazılı sözleşme veya protokol. Özellikle büyük tutarlı bağışlarda önerilir."
+    temin_yeri: Alıcı Kurum
+
+k_checklist:
+  - id: K1
+    soru: "Tesis türü KVK Md.10/1-5 kapsamında mı teyit edildi? (Eğitim/Sağlık/Gençlik Merkezi/Gençlik Kampı/İzci Kampı/Öğrenci Yurdu)"
+    referans: "KVK Md.10/1-5 | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Alıcı niteliği doğrulandı mı? (Kamu idaresi / KYD / Vergi muafiyeti tanınan vakıf)"
+    referans: "KVK Md.10/1-5"
+  - id: K3
+    soru: "Bağış fiilen gerçekleşti mi? (Taahhüt değil, banka dekontu veya teslim tutanağı ile belgelenmiş)"
+    referans: "KVK Md.10/1-5 | GİB Beyan Reh. 2026"
+  - id: K4
+    soru: "KYD dernek veya vergi muafiyeti tanınan vakıf alıcıysa bağış tarihindeki güncel statü belgesi temin edildi mi?"
+    referans: "KVK Md.10/1-5"
+  - id: K5
+    soru: "Alıcıdan bağış kabul yazısı veya resmi makbuz alındı mı?"
+    referans: "KVK Md.10/1-5 | GİB Beyan Reh. 2026"
+  - id: K6
+    soru: "402 ve 403 kapsamı arasında çakışma ve mükerrer indirim riski değerlendirildi mi?"
+    referans: "KVK Md.10/1-c ve Md.10/1-5"
+  - id: K7
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (403 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K8
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

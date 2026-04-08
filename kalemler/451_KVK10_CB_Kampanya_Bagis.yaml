@@ -1,0 +1,217 @@
+ic_kod: cb_kampanya_bagis_10_1e
+baslik: Cumhurbaşkanlığı Kampanyalarına Yapılan Bağışlar (KVK Md.10/1-e)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2024, kod: 451 }
+  - { donem: 2025, kod: 451 }
+
+mevzuat_dayanagi:
+  - KVK Madde 10/1-e
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+  - 49 Seri No.lu KV Genel Tebliği
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "Cumhurbaşkanı tarafından resmi olarak başlatılan bir yardım kampanyasına bağış yaptınız mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 10/1-e** kapsamında, **Cumhurbaşkanı tarafından başlatılan
+    yardım kampanyalarına** makbuz karşılığında yapılan bağış ve yardımların
+    **tamamı** kurumlar vergisi matrahından indirilir.
+
+    ## Kritik Koşul — Cumhurbaşkanlığı Kampanyası
+
+    Bağışın geçerli sayılması için yardım kampanyasının **Cumhurbaşkanlığı
+    tarafından resmi olarak başlatılmış ve ilan edilmiş** olması şarttır.
+
+    **Kapsam dışı:** Bakanlık kampanyaları, valilik kampanyaları, belediye
+    kampanyaları, sivil toplum kampanyaları.
+
+    Örnek geçerli kampanya: 2023 Kahramanmaraş deprem yardım kampanyası
+    (Resmî Gazete'de ilan edilmiştir).
+
+    ## Resmi Kampanya Teyidi
+
+    - Resmî Gazete ilanı veya
+    - Cumhurbaşkanlığı kararnamesi/duyurusu
+
+    Bu belgelerden biri olmadan 451 kodunun uygulanması tarhiyat riski doğurur.
+
+    ## Ödeme Şekli
+
+    - **Nakdi:** Kampanya için açılan özel banka hesabına EFT/havale
+    - **Ayni:** Resmi teslim tutanağı ile teslim
+
+    Üçüncü kişi hesabına ödeme → Kapsam riski.
+
+    ## İndirim Oranı
+
+    İndirim oranı **tamamının indirimi**dir. Matrahı aşan kısım sonraki yıllara
+    **devredilemez**.
+
+    ## Alternatif Kodlar
+
+    CB kampanyası olmayan afet/yardım bağışları için:
+    - **464** (Aile ve Gençlik Fonu) veya
+    - **465** (Afet Yeniden İmar Fonu) veya
+    - **402** (Kamu idaresine bağış) kodlarını değerlendirin.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.10/1-e kapsamındaki bağış indirimi YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+  kapi_sorulari:
+    - id: cb_kampanyasi
+      soru: "Bağış CUMHURBAŞKANINCA başlatılan resmi yardım kampanyasına mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kampanyanın Cumhurbaşkanlığı tarafından resmi olarak başlatıldığı teyit edilmeli. Bakanlık/valilik/belediye kampanyaları → Kapsam dışı."
+    - id: resmi_ilan
+      soru: "Kampanya Resmî Gazete'de veya resmi Cumhurbaşkanlığı duyurusunda ilan edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Kampanyanın resmi niteliği RG ilanı veya CB kararnamesi ile teyit edilmeli. Bu belge olmadan 451 uygulanması riski."
+    - id: kampanya_hesabina_odeme
+      soru: "Ödeme kampanya için açılan resmi banka hesabına yapıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Nakdi bağış → Kampanya için açılan özel banka hesabına EFT/havale. Ayni bağış → Resmi teslim tutanağı. Üçüncü kişi hesabına ödeme → Kapsam dışı riski."
+    - id: fiili_odeme_yapildi
+      soru: "Bağış dönem içinde fiilen gerçekleşti mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim hakkı fiili ödemenin yapıldığı döneme aittir. Taahhüt → Kapsam dışı."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: nakdi_bagis_tutari
+      etiket: "Nakdi bağış tutarı (TL) — Kampanya hesabına banka yoluyla yapılan ödemeler"
+      tip: para
+      zorunlu: false
+      yardim: "Cumhurbaşkanlığı yardım kampanyası hesabına EFT/havale ile yapılan nakdi bağışların toplamı."
+    - id: ayni_bagis_degeri
+      etiket: "Ayni bağış değeri (TL) — Teslim edilen mal/hizmetin maliyet/net defter değeri"
+      tip: para
+      zorunlu: false
+      yardim: "Gıda, giyim, ekipman, malzeme gibi ayni bağışların maliyet veya net defter değeri. Piyasa değeri değil maliyet esas."
+  formuller:
+    toplam_bagis: "nakdi_bagis_tutari + ayni_bagis_degeri"
+    istisna_tutari: "nakdi_bagis_tutari + ayni_bagis_degeri"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "nakdi_bagis_tutari >= 0 and ayni_bagis_degeri >= 0"
+      hata: "Bağış tutarları negatif olamaz."
+    - kural: "nakdi_bagis_tutari + ayni_bagis_degeri > 0"
+      hata: "En az bir bağış tutarı girilmelidir."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 10/1-e: Cumhurbaşkanı tarafından başlatılan yardım kampanyalarına
+  makbuz karşılığında yapılan bağış ve yardımların tamamı matrahtan indirilir.
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## Kampanya Niteliği — En Kritik Koşul
+  Kampanyanın Cumhurbaşkanlığı tarafından resmi olarak başlatılmış ve ilan
+  edilmiş olması şarttır. Resmî Gazete ilanı veya CB kararnamesi dayanak belge.
+  Bakanlık/valilik/belediye/sivil toplum kampanyaları → Kapsam dışı.
+
+  ## İndirim Kuralları
+  - Tamamının indirimi — kazanç yüzdesiyle sınırlı değil
+  - Matrahı aşan kısım sonraki yıla devredilmez
+
+  ## Kritik Kontroller
+  - Kampanyanın resmi CB kampanyası olduğu RG/CB duyurusu ile teyit edilmeli
+  - Ödemenin kampanya hesabına yapıldığı banka dekontu ile kanıtlanmalı
+  - Kampanya idaresinden resmi makbuz veya bağış teyit belgesi alınmalı
+  - Fiili ödeme dönemi içinde gerçekleşmiş olmalı
+
+  ## Alternatif Kodlar
+  CB kampanyası olmayan yardımlar için:
+  464 (Aile ve Gençlik Fonu — 7474 s.K. Md.6)
+  465 (Afet Yeniden İmar Fonu — 7441 s.K. Md.7)
+  402 (Kamu idaresine bağış — KVK Md.10/1-c)
+
+  ## YİAKV Etkisi
+  451 kampanya bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir.
+
+  ## YMM Tasdik
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: KVK Md.10/1-e — CB yardım kampanyası nakdi bağış.
+
+  ## Ayni Bağış Kaydı (Stoktan)
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Maliyet bedeli)
+  Alacak: 150/153 İlk Madde ve Malzeme / Ticari Mallar
+  Açıklama: KVK Md.10/1-e — CB yardım kampanyası ayni bağış.
+
+  ## Beyanname
+  Hesaplanan toplam bağış tutarı beyanname 451. satırına aktarılır.
+  Matrahı aşan kısım devredilemez.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Kampanya Resmî Gazete İlanı veya Cumhurbaşkanlığı Duyurusu
+    detay: "Kampanyanın Cumhurbaşkanlığı tarafından resmi olarak başlatıldığını kanıtlayan Resmî Gazete ilanı veya CB kararnamesi/duyurusu. Bu belge olmadan 451 indirimi risk altında."
+    temin_yeri: Resmî Gazete / Cumhurbaşkanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: Kampanya Makbuzu veya Bağış Teyit Belgesi
+    detay: "Kampanya idaresinden (Cumhurbaşkanlığı/AFAD/ilgili kurum) alınan resmi makbuz veya bağış teyit belgesi. Banka dekontu tek başına yeterli olmayabilir."
+    temin_yeri: Kampanya İdaresi / AFAD
+  - kategori: zorunlu
+    "no": 3
+    baslik: Kampanya Hesabına Nakdi Ödeme Banka Dekontu
+    detay: "Kampanya için açılan özel banka hesabına yapılan EFT/havale dekontu. Ödemenin kampanya hesabına doğrudan yapıldığı teyit edilmeli."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayni Bağış İçin Teslim Tutanağı + Değerleme Belgesi
+    detay: "Ayni bağışlarda imzalı teslim-tesellüm tutanağı ve malların maliyet/net defter değerini gösteren değerleme belgesi."
+    temin_yeri: Muhasebe / Kampanya İdaresi
+  - kategori: destekleyici
+    "no": 5
+    baslik: Kampanya Hesap Bilgileri (IBAN/Banka)
+    detay: "Kampanya için açılan özel banka hesabının IBAN ve banka bilgileri. Ödeme dekontundaki hesapla örtüşmeli."
+    temin_yeri: Kampanya İlanı / CB Duyurusu
+
+k_checklist:
+  - id: K1
+    soru: "Kampanyanın Cumhurbaşkanlığı tarafından resmi olarak başlatıldığı teyit edildi mi? (RG ilanı veya CB duyurusu)"
+    referans: "KVK Md.10/1-e | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Ödeme kampanya için açılan özel banka hesabına doğrudan yapıldı mı?"
+    referans: "KVK Md.10/1-e"
+  - id: K3
+    soru: "Kampanya idaresinden resmi makbuz veya bağış teyit belgesi alındı mı?"
+    referans: "KVK Md.10/1-e"
+  - id: K4
+    soru: "Bağış dönem içinde fiilen gerçekleşti mi? (Taahhüt değil, fiili ödeme)"
+    referans: "KVK Md.10/1-e"
+  - id: K5
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (451 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K6
+    soru: "CB kampanyası olmayan afet/yardım bağışları için alternatif kodlar (464/465/402) değerlendirildi mi?"
+    referans: "KVK Md.10/1-e"
+  - id: K7
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"
