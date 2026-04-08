@@ -8,6 +8,7 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 
 from app.api.admin import router as admin_router
+from app.api.admin_katalog import router as admin_katalog_router
 from app.api.auth import router as auth_router
 from app.api.users import router as users_router
 from app.api.calisma import kalem_router, router as calisma_router
@@ -60,6 +61,7 @@ app.include_router(hesaplama_router)
 app.include_router(export_router)
 app.include_router(users_router)
 app.include_router(admin_router)
+app.include_router(admin_katalog_router)
 
 
 @app.get("/health")

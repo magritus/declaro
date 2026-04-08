@@ -1,0 +1,143 @@
+ic_kod: enf_duz_farki_cekilen
+baslik: İşletmeden Çekilen Enflasyon Düzeltmesi Farkları
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 450 }
+  - { donem: 2026, kod: 450 }
+
+mevzuat_dayanagi:
+  - VUK Mükerrer Madde 298/A Fıkra 6
+  - VUK Geçici Madde 33 (2023 kapatma farkları)
+  - GVK Madde 94/6-b-i (gerçek kişi stopaj %10)
+  - KVK Madde 5/1-a (tam mükellef kuruma iştirak kazancı istisnası)
+
+beyanname_bolumu: ilave
+yiakv_etkisi: tartismali
+durum: aktif
+yururluk_araligi:
+  baslangic: "2024-01-01"
+  bitis: null
+
+ana_kategori: enflasyon_duzeltmesi
+
+wizard_agaci:
+  tetikleyici_soru: "Enflasyon düzeltmesi fark hesaplarından (502, 549 vb.) çekim yapıldı mı?"
+  info_modal: |
+    ## Enflasyon Düzeltmesi Farklarının İşletmeden Çekilmesi
+
+    VUK Mükerrer Md.298/A kapsamında oluşan olumlu farkların işletmeden çekilmesinde vergi etkisi çekim şekline göre belirlenir:
+
+    - **Sermayeye ekleme:** Nakit kâr dağıtımı sayılmaz → Kurumlar vergisi yok, beyanname matrahını artırmaz.
+    - **Nakit dağıtım (gerçek kişi ortak):** KV matrahına eklenir + %10 GV stopajı (GVK Md.94/6-b-i).
+    - **Nakit dağıtım (tam mükellef kurum):** KV matrahına eklenir; alıcıda iştirak kazancı istisnası (KVK 5/1-a) uygulanabilir — YMM teyidi gerekli.
+
+    **YİAKV:** Bu kalemin YİAKV matrahına etkisi GİB Rehberi No:607 kapsamında YMM tarafından ayrıca değerlendirilmelidir.
+  kapi_sorulari:
+    - id: cekilen_var_mi
+      soru: "Dönem içinde enflasyon düzeltmesi fark hesaplarından (502, 542, 549, 570 vb.) çekim yapıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sermayeye ekleme, nakit dağıtım veya sermaye azaltımı yoluyla çekim."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: toplam_cekilen
+      etiket: "Dönem içi toplam çekilen tutar (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Tüm nitelikteki çekimlerin toplamı: sermayeye ekleme + nakit dağıtım + diğer.
+        502, 542, 549, 570 vb. hesapların dönem içi çıkışları.
+    - id: sermayeye_ekleme
+      etiket: "Sermayeye ekleme tutarı (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        VUK Mük.298/A f.6: Enflasyon farkının sermayeye eklenmesi nakit kâr dağıtımı sayılmaz → vergi yok.
+        Genel Kurul Kararı + TTK Md.462 tescili zorunludur.
+    - id: istirak_istisnasi
+      etiket: "İştirak kazancı istisnası tutarı (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Tam mükellef kuruma yapılan dağıtımda KVK Md.5/1-a kapsamında iştirak kazancı istisnası uygulanabilir.
+        YMM değerlendirmesi ve özelge teyidi gereklidir.
+  formuller:
+    matrah_artirimi: "max(0, toplam_cekilen - sermayeye_ekleme - istirak_istisnasi)"
+  sonuc_alan: matrah_artirimi
+  validasyonlar:
+    - kural: "toplam_cekilen >= 0"
+      hata: "Toplam çekilen tutar negatif olamaz."
+    - kural: "sermayeye_ekleme >= 0"
+      hata: "Sermayeye ekleme tutarı negatif olamaz."
+    - kural: "istirak_istisnasi >= 0"
+      hata: "İştirak kazancı istisnası tutarı negatif olamaz."
+    - kural: "sermayeye_ekleme + istirak_istisnasi <= toplam_cekilen"
+      hata: "İstisnalar toplamı çekilen tutarı aşamaz."
+
+denetci_notlari: |
+  ## Kritik Ayrım: Sermayeye Ekleme ↔ Nakit Dağıtım
+
+  VUK MÜK. MD.298/A FIKRA 6: Enflasyon düzeltmesi farkının sermayeye eklenmesi nakit kâr dağıtımı
+  sayılmaz ve kurumlar vergisine tabi tutulmaz. Bu istisnadan yararlanmak için Genel Kurul Kararı ve
+  TTK Md.462 kapsamında ticaret siciline tescil ŞARTTIR. Tescilsiz yapılan işlemlerde istisna kaybedilir.
+
+  NAKİT DAĞITIM: Gerçek kişi ortaklara yapılan nakit dağıtımda %10 GV stopajı (GVK Md.94/6-b-i)
+  muhtasar beyanname ile beyan ve ödeme zorunludur.
+
+  MATRAH ARTIRIMI FORMÜLÜ: Beyanname matrah artırımı = Toplam Çekilen − Sermayeye Ekleme − İştirak İstisnası
+
+  YİAKV KONUMU: Matrah artırım kalemi YİAKV matrahını artırır (GİB Rehberi No:607 kapsamında YMM değerlendirmesi).
+
+  UYARI: 502/549 bakiye mutabakatı — Dönem başı + eklemeler − çekimler = dönem sonu.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: 502/549/570 Hesap Dönem Hareketleri
+    detay: "Enflasyon düzeltmesi fark hesaplarının tüm dönem hareketleri. Yılbaşı-yılsonu bakiye mutabakatı."
+    temin_yeri: Muhasebe / Yevmiye Defteri
+  - kategori: zorunlu
+    "no": 2
+    baslik: Sermayeye Ekleme Genel Kurul Kararı ve Tescil (varsa)
+    detay: "TTK Md.462 kapsamında Genel Kurul Kararı ve Ticaret Sicili tescil belgesi."
+    temin_yeri: Ticaret Sicili / Şirket Arşivi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Nakit Dağıtım Genel Kurul Kararı ve Banka Dekontu
+    detay: "Nakit dağıtım varsa: Genel Kurul tutanağı + her ortağa ödeme banka dekontları."
+    temin_yeri: Genel Kurul Tutanağı / Banka
+  - kategori: zorunlu
+    "no": 4
+    baslik: "%10 GV Stopaj Muhtasar Beyannamesi"
+    detay: "Gerçek kişi ortaklara dağıtımda GVK Md.94/6-b-i kapsamında %10 stopaj beyanı ve ödeme dekontu."
+    temin_yeri: GİB e-Beyanname / Banka
+  - kategori: destekleyici
+    "no": 5
+    baslik: İştirak Kazancı İstisnası YMM Notu / Özelge
+    detay: "Tam mükellef kuruma dağıtımda KVK Md.5/1-a uygulanabilirliği için YMM değerlendirme notu."
+    temin_yeri: YMM / GİB Özelge
+
+k_checklist:
+  - id: K1
+    soru: "Dönem içi çekimler nitelik bazında ayrıştırıldı mı? (sermaye ekleme / nakit / diğer)"
+    referans: "VUK Mük.298/A"
+  - id: K2
+    soru: "Sermayeye ekleme için Genel Kurul Kararı ve Tescil belgesi mevcut mu?"
+    referans: "TTK Md.462"
+  - id: K3
+    soru: "Gerçek kişi dağıtımda %10 stopaj muhtasar beyannamede gösterildi ve ödendi mi?"
+    referans: "GVK Md.94/6-b-i"
+  - id: K4
+    soru: "İştirak kazancı istisnası için tam mükellef statüsü doğrulandı mı?"
+    referans: "KVK Md.5/1-a"
+  - id: K5
+    soru: "Beyanname matrah artırımı D.4 formülü ile mutabık mı?"
+    referans: "VUK Mük.298/A"
+  - id: K6
+    soru: "YİAKV etkisi GİB Rehberi No:607 kapsamında değerlendirildi mi?"
+    referans: "KVK Md.32/C"

@@ -17,7 +17,7 @@ yururluk_araligi:
   baslangic: "2006-06-21"
   bitis: null
 
-ana_kategori: hizmet_indirimleri
+ana_kategori: saglik_egitim_hizmet_indirimi
 
 wizard_agaci:
   tetikleyici_soru: "Yurt dışı müşterilere (sağlık ve eğitim hariç) mimarlık, mühendislik, yazılım, tasarım, çağrı merkezi, veri işleme veya benzeri hizmetler vererek kazanç elde ettiniz mi?"

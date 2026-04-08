@@ -8,9 +8,8 @@ class CalismaCreate(BaseModel):
 
 
 class WizardFaz0Girdi(BaseModel):
-    ticari_kar_zarar: float
-    kkeg: float = 0.0
-    finansman_fonu: float = 0.0
+    ticari_kar: float = 0.0
+    ticari_zarar: float = 0.0
 
 
 class WizardFaz1Girdi(BaseModel):
@@ -32,6 +31,10 @@ class KChecklistGuncelle(BaseModel):
 
 class BelgeDurumuGuncelle(BaseModel):
     durum: dict[str, dict]  # {belge_no: {durum: "uygun", not: "..."}}
+
+
+class IstekListesiGuncelle(BaseModel):
+    ic_kodlar: list[str]
 
 
 class CalismaResponse(BaseModel):

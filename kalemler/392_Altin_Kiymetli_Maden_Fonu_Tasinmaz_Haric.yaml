@@ -1,0 +1,336 @@
+ic_kod: altin_maden_fonu_tasinmaz_haric
+baslik: Altın ve Kıymetli Maden Fonu Portföy İşletmeciliği Kazancı (Taşınmaz Hariç)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 392 }
+  - { donem: 2026, kod: 392 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-d (Portföyü Türkiye'de kurulu borsalarda işlem gören altın ve kıymetli madenlere dayalı yatırım fonları)
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.4
+  - SPK III-52.1 Tebliği (Yatırım Fonlarına İlişkin Esaslar Tebliği)
+  - SPK VII-128.4 Tebliği (Borsa Yatırım Fonları)
+  - Borsa İstanbul Kıymetli Maden ve Kıymetli Taş Piyasası Mevzuatı
+  - GVK Geçici Madde 67 (Fon düzeyinde stopaj)
+  - 49 Seri No.lu KV Genel Tebliği (30.12.2025)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+# KVK 5/1-d (392) altın ve kıymetli maden yatırım fonu portföy işletmeciliği kazancı
+# YİAKV matrahından DÜŞÜLEBİLİR. Bu satır YALNIZCA taşınmaz dışı portföy gelirlerini
+# (altın, gümüş, platin, paladyum ve bunlara dayalı borsa araçları dahil) kapsar.
+# Fon portföyünün Türkiye'de kurulu borsalarda işlem gören araçlardan oluşması
+# ve taşınmazdan gelir elde edilmemesi şarttır.
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+  not: "2025 beyanname döneminden itibaren ayrı satır kodu (392) ile gösterilmektedir. Önceki dönemlerde 302 kodlu genel portföy işletmeciliği satırı kullanılıyordu. Portföyde taşınmaz geliri varsa 393 satırı kullanılır."
+
+ana_kategori: portfoy_isletmeciligi
+
+wizard_agaci:
+  tetikleyici_soru: "Kurum, portföyü ağırlıklı olarak Türkiye'de kurulu borsalarda işlem gören altın ve kıymetli madenlere dayalı araçlardan oluşan bir yatırım fonu mu ve portföy işletmeciliğinden (taşınmaz hariç) kazanç elde etti mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-d kapsamında **portföyü Türkiye'de kurulu borsalarda işlem gören altın ve kıymetli madenlere dayalı** yatırım fonlarının portföy işletmeciliğinden doğan kazançları kurumlar vergisinden **%100 tam istisna** olarak muaftır. Beyanname **"Zarar Olsa Dahi İndirilecek"** bölümünde **392** numaralı satırda gösterilir.
+
+    Bu kalem (392) **taşınmaz dışı** portföy gelirlerini kapsar. Portföy araçları arasında: Borsa İstanbul Kıymetli Madenler ve Kıymetli Taşlar Piyasası'nda işlem gören altın, gümüş, platin, paladyum, fiziksel kıymetli maden senetleri, kıymetli maden endeksi fonları ve benzeri araçlar yer alabilir. Portföyde taşınmaz bulunuyor ve taşınmazdan gelir elde ediliyorsa **393** satırı kullanılır.
+
+    ## Temel Koşullar
+
+    - **SPK Lisansı:** Fonun SPK tarafından kuruluşuna izin verilmiş ve tescil edilmiş olması zorunludur; güncel kuruluş izni ve KAP kaydı dosyada yer almalıdır.
+    - **Türkiye'de kurulu borsalarda işlem gören araçlar:** Portföyün ağırlıklı bileşenini Borsa İstanbul veya Türkiye'de kurulu diğer borsalarda işlem gören kıymetli maden araçlarının oluşturması gerekir. Yurt dışı borsalarda işlem gören altın araçlarının dahil edilip edilemeyeceği mevzuat kapsamında ayrıca değerlendirilmelidir.
+    - **Taşınmaz geliri olmadığının teyidi:** Bu satırda (392) portföy kaynaklı taşınmaz geliri bulunmamalıdır. Taşınmaz geliri varsa 393 satırı kullanılır.
+    - **Portföy içi/dışı ayrımı:** İstisna YALNIZCA portföy kapsamındaki kıymetli maden varlıklardan elde edilen gelirlere uygulanır. Yönetim ücreti, performans/başarı primi, portföyde kayıtlı olmayan araçlardan elde edilen gelirler vergiye tabidir.
+    - **Muhasebede ayrı hesap:** Portföy içi ve portföy dışı gelirlerin ayrı hesapta veya belgelenmiş dağıtım anahtarıyla izlenmesi zorunludur.
+
+    ## Fon Portföy Kapsamı — Kıymetli Maden Araçları
+
+    Kapsama girebilecek portföy araçları:
+    - **Fiziksel altın / gümüş / platin / paladyum:** BİAŞ Kıymetli Madenler Piyasası veya eşdeğer platformda işlem gören saf altın, sertifikalı altın vb.
+    - **Kıymetli maden senetleri (borsa işlemli):** BİAŞ'ta kota edilmiş ve işlem gören altın senetleri
+    - **Altın ve kıymetli maden endeksi borsa yatırım fonları (ETF):** BİAŞ'ta kota edilen kıymetli maden ETF'leri
+    - **Döviz / kıymetli maden vadeli sözleşmeleri (VOB):** BİAŞ Vadeli İşlemler Piyasası'nda işlem gören sözleşmeler
+    - **Sabit getirili menkul kıymetler (portföy tamamlayıcı bileşeni):** SPK mevzuatı çerçevesinde portföy yönetimi gereklerini karşılamak amacıyla tutulan tahvil, bono
+
+    ## Portföy İçi Gelirler — İstisna (392)
+
+    - Portföy kıymetli maden alım-satım kazançları (altın, gümüş, platin vb.)
+    - Portföy kıymetli maden araçları dönem sonu değerleme artışları (VUK/SPK esasları)
+    - Portföy kıymetli maden ETF fiyat kazancı
+    - Portföy tamamlayıcı sabit getirili MK faiz ve kupon gelirleri
+    - Portföy vadeli işlem sözleşme kazançları
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-d (392) altın ve kıymetli maden fonu portföy işletmeciliği kazancı **YİAKV matrahından düşülebilir**. YİAKV çalışma kâğıdında 392 tutarı matrahtan doğru biçimde düşülmelidir.
+
+    ## GVK Geçici Madde 67 — Fon Düzeyinde Stopaj
+
+    Kıymetli maden yatırım fonları GVK Geçici Madde 67 kapsamında fon düzeyinde stopaja tabi olabilir; araç türüne ve fon yapısına göre stopaj rejimi değişir. Kıymetli maden alım-satım kazançlarının stopaj durumu dönem mevzuatı çerçevesinde ayrıca analiz edilmelidir. GVK Geçici 67 kapsamındaki fon düzeyi stopaj ile KV beyannamesi 392 istisnası birbirini dışlamaz.
+
+    ## Pratik Notlar
+
+    - Portföy değerleme raporunda kullanılan kıymetli maden fiyat kaynağı (BİAŞ kapanış fiyatı, LBMA referans fiyatı vb.) belirtilmeli ve tutarlı biçimde uygulanmalıdır.
+    - 3 kademe uyum kontrolü: Muhasebe portföy hesapları = çalışma kâğıdı = KV beyannamesi 392 satırı.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
+  kapi_sorulari:
+    - id: altin_maden_fonu_statüsü
+      soru: "Kurum SPK lisanslı, portföyü Türkiye'de kurulu borsalarda işlem gören altın/kıymetli maden araçlarına dayalı yatırım fonu mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d kapsamı: Fon, SPK tarafından kuruluşuna izin verilmiş ve portföyü ağırlıklı olarak BİAŞ veya Türkiye'de kurulu diğer borsalarda işlem gören kıymetli maden araçlarından oluşan yapıda olmalıdır."
+    - id: tasinmaz_geliri_yok
+      soru: "Portföyde taşınmazdan elde edilen gelir YOK mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: 392 YALNIZCA taşınmaz dışı portföy gelirleri içindir. Portföyde taşınmaz geliri varsa 393 satırı kullanılmalıdır."
+    - id: portfoy_borsa_islem
+      soru: "Portföy araçları Türkiye'de kurulu borsalarda işlem görüyor mu? (BİAŞ Kıymetli Madenler Piyasası dahil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d şartı: Araçların Türkiye'de kurulu borsalarda işlem görmesi gerekir. Yurt dışı borsa araçlarının dahil edilip edilemeyeceği mevzuat kapsamında ayrıca değerlendirilmelidir."
+    - id: portfoy_ici_disi_ayrim
+      soru: "Portföy işletmeciliği kazancı, portföy DIŞI gelirlerden ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna YALNIZCA portföy kapsamındaki araçlardan elde edilen gelirler için geçerlidir. Yönetim ücreti, danışmanlık komisyonu, başarı primi portföy dışıdır ve vergiye tabidir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: portfoy_altin_satis_kazanci
+      etiket: "Portföy altın alım-satım kazançları (fiziksel altın, altın senedi, altın ETF vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "BİAŞ Kıymetli Madenler Piyasası'nda işlem gören altın araçlarının alım-satım kazancı. Satış bedeli − Maliyet (FIFO veya ağırlıklı ortalama yöntemi tutarlı uygulanmalı)."
+    - id: portfoy_diger_maden_satis_kazanci
+      etiket: "Portföy diğer kıymetli maden alım-satım kazançları (gümüş, platin, paladyum vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "BİAŞ'ta işlem gören diğer kıymetli maden araçlarından satış kazancı."
+    - id: portfoy_maden_deger_artisi
+      etiket: "Portföy kıymetli maden araçları dönem sonu değerleme artışları"
+      tip: para
+      zorunlu: false
+      yardim: "Dönem sonu VUK/SPK değerlemesinde oluşan artışlar. BİAŞ kapanış fiyatı veya LBMA referans fiyatı esas alınabilir; fiyat kaynağı tutarlı biçimde uygulanmalı ve belgelenmeli."
+    - id: portfoy_vadeli_islem_kazanci
+      etiket: "Portföy kıymetli maden vadeli işlem sözleşme kazançları (VOB vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "BİAŞ Vadeli İşlemler Piyasası'nda işlem gören kıymetli maden vadeli sözleşmelerinden kazanç."
+    - id: portfoy_sabit_getirili_faiz
+      etiket: "Portföy tamamlayıcı sabit getirili MK faiz gelirleri (tahvil, bono vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "SPK mevzuatı çerçevesinde portföyde bulundurulan sabit getirili menkul kıymetlerden faiz gelirleri. Bu gelirler de portföy işletmeciliği geliri sayılır."
+    - id: portfoy_diger_gelirler
+      etiket: "Diğer portföy işletmeciliği gelirleri"
+      tip: para
+      zorunlu: false
+      yardim: "Yukarıdaki kategorilere girmeyen diğer portföy araçlarından gelirler. Taşınmaz geliri bu alana girilmez."
+    - id: portfoy_giderleri
+      etiket: "Portföy işletme giderleri (−) — Net kazanç hesabı için"
+      tip: para
+      zorunlu: false
+      yardim: "Portföy işletmeciliğiyle doğrudan ilişkili giderler. Karma giderler için belgelenmiş dağıtım anahtarıyla portföy payı ayrıştırılmalı."
+    - id: istisna_tutari_beyan
+      etiket: "Net portföy işletmeciliği kazancı — Beyan edilecek istisna tutarı (Beyanname Satır 392)"
+      tip: para
+      zorunlu: true
+  formuller:
+    portfoy_toplam_gelir: "portfoy_altin_satis_kazanci + portfoy_diger_maden_satis_kazanci + portfoy_maden_deger_artisi + portfoy_vadeli_islem_kazanci + portfoy_sabit_getirili_faiz + portfoy_diger_gelirler"
+    net_portfoy_kazanci: "portfoy_toplam_gelir - portfoy_giderleri"
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "istisna_tutari_beyan != 0"
+      hata: "İstisna tutarı sıfır olamaz (zarar olsa dahi indirilecek bölümüdür — negatif değer girilebilir)"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-d: Türkiye'de kanunların öngördüğü şekilde kurulan ve portföyü
+  Türkiye'de kurulu borsalarda işlem gören altın ve kıymetli madenlere dayalı yatırım
+  fonlarının portföy işletmeciliğinden doğan kazançları kurumlar vergisinden istisnadır.
+  %100 tam istisna. 2025 beyanname döneminden itibaren ayrı satır kodu (392) ile
+  gösterilmektedir (önceki dönemlerde 302 genel satırına alınıyordu).
+
+  ## Bu Satırın Kapsamı
+  392 satırı YALNIZCA taşınmaz dışı portföy gelirleri içindir:
+  - Portföy altın / gümüş / platin / paladyum alım-satım kazançları
+  - Portföy kıymetli maden araçları dönem sonu değerleme artışları
+  - BİAŞ'ta işlem gören kıymetli maden ETF değer kazançları
+  - Portföy kıymetli maden vadeli sözleşme kazançları (VOB)
+  - Portföy tamamlayıcı sabit getirili MK faiz gelirleri
+
+  TAŞINMAZ GELİRİ VARSA: 393 satırı kullanılır (392 ve 393 birlikte kullanılamaz).
+
+  ## Türkiye'de Kurulu Borsa Şartı
+  KVK 5/1-d metni "portföyü Türkiye'de kurulu borsalarda işlem gören altın ve
+  kıymetli madenlere dayalı" ifadesini içerir. Bu koşulun değerlendirilmesinde:
+  - BİAŞ Kıymetli Madenler Piyasası araçları → Şartı sağlar
+  - BİAŞ Vadeli İşlemler Piyasası kıymetli maden sözleşmeleri → Şartı sağlar
+  - Yurt dışı borsalarda işlem gören araçlar → Ayrıca analiz gerekir
+  Fon izahnamesinin SPK onayı ve portföy kapsamı bu analizin başlangıç belgesidir.
+
+  ## Kritik Noktalar
+  - Fon portföyü BİAŞ veya Türkiye'de kurulu diğer borsalarda işlem gören araçları kapsamalı
+  - Portföyde taşınmaz geliri YOK (392 şartı); taşınmaz geliri varsa → 393
+  - Portföy dışı gelir (yönetim ücreti, başarı primi vb.) 392'ye yazılmaz
+  - Kıymetli maden değerlemesinde kullanılan fiyat kaynağı tutarlı ve belgelenmiş olmalı
+  - GVK Geçici 67 stopaj rejimi araç türüne göre değişir; ayrıca analiz zorunludur
+  - 3 kademe uyum: Muhasebe portföy hesapları = çalışma kâğıdı = beyanname 392
+
+  ## YİAKV Etkisi
+  KVK 5/1-d (392) altın/kıymetli maden fonu portföy işletmeciliği kazancı
+  YİAKV matrahından DÜŞÜLEBİLİR. YİAKV çalışma kâğıdında 392 tutarı
+  matrahtan doğru düşülmelidir.
+
+  ## Beyanname Konumu
+  "Zarar Olsa Dahi İndirilecek İstisna ve İndirimler" bölümü — 392 kodlu satır.
+  393 (taşınmaz dahil) ile karıştırılmamalıdır. Her iki satır aynı anda kullanılamaz.
+
+  ## Risk Alanları
+  1. Portföy araçlarının Türkiye'de kurulu borsa kapsamında olmadığının belgelenmemesi
+  2. Portföy dışı gelirin (yönetim ücreti vb.) 392'ye dahil edilmesi
+  3. Muhasebe portföy içi/dışı ayrımının kurulmamış olması
+  4. Portföyde taşınmaz geliri varken 392 kullanılması (393 yerine)
+  5. Kıymetli maden değerleme fiyat kaynağı tutarsızlığı
+  6. GVK Geçici 67 stopaj durumunun araç türüne göre analiz edilmemesi
+  7. Maliyet yöntemi (FIFO / ağırlıklı ortalama) tutarsız uygulaması
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Portföy Altın / Kıymetli Maden Satış Kazancı
+  Borç: 102 Bankalar ← Satış bedeli
+  Alacak: 111-118 Menkul Kıymetler (Kıymetli Maden) ← Maliyet değeri
+  Alacak: 645 Menkul Kıymet Satış Kârı ← Satış kazancı
+  Açıklama: KVK 5/1-d istisna — portföy kıymetli maden satış kazancı; FIFO veya ağırlıklı ortalama maliyet.
+
+  ## Kayıt 2 — Portföy Kıymetli Maden Değerleme Artışı (Dönem Sonu)
+  Borç: 111-118 Menkul Kıymetler (Kıymetli Maden) ← Değerleme artışı
+  Alacak: 649 Diğer Olağandışı Gelir ← Kıymetli maden değerleme artışı
+  Açıklama: BİAŞ kapanış fiyatı veya LBMA referans fiyatıyla hesaplanan değerleme artışı — KVK 5/1-d istisna (392 satırı).
+
+  ## Kayıt 3 — Portföy Vadeli İşlem Sözleşme Kazancı
+  Borç: 102 Bankalar ← Vadeli işlem uzlaşı bedeli
+  Alacak: 649 Diğer Olağandışı Gelir ← Vadeli işlem kazancı
+  Açıklama: BİAŞ Vadeli İşlemler Piyasası kıymetli maden sözleşmesi kazancı — KVK 5/1-d istisna (392 satırı).
+
+  ## Kayıt 4 — Portföy Tamamlayıcı Sabit Getirili MK Faiz Geliri
+  Borç: 127 Diğer Ticari Alacaklar ← Faiz alacağı
+  Alacak: 642 Faiz Gelirleri ← Portföy MK faiz geliri
+  Açıklama: KVK 5/1-d istisna kapsamı — portföy tamamlayıcı sabit getirili MK faizi; 392 satırına alınır.
+
+  ## Kayıt 5 — Portföy Dışı Gelir (Yönetim Ücreti — Vergiye Tabi)
+  Borç: 136 Diğer Çeşitli Alacaklar ← Yönetim ücreti alacağı
+  Alacak: 649 Diğer Olağandışı Gelir ← Yönetim/performans ücreti
+  Açıklama: PORTFÖY DIŞI — 392 satırına YAZILMAZ. Matrahta kalır; ayrı hesapta izlenmeli.
+
+  ## Beyanname 392 Akışı (Mutabakat)
+  1. Portföy içi gelirler (645, 649 kıymetli maden kısmı + 642 tamamlayıcı MK) → Net portföy kazancı
+  2. Portföy dışı gelirler (yönetim ücreti vb.) → Matrahta kalır (392'ye yazılmaz)
+  3. KV Beyannamesi 392 Satırı: Net portföy kazancı → "Zarar Olsa Dahi İndirilecek"
+  3 KADEME UYUM: Muhasebe portföy hesapları = VERİ GİRİŞİ toplamı = Beyanname 392
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Kuruluş İzni ve KAP Tescil Belgesi
+    detay: "Fonun SPK tarafından kuruluşuna izin verildiğini gösteren belge ve KAP kaydı. Kıymetli maden yatırım fonu statüsü açıkça yer almalıdır. Portföy kapsamında BİAŞ'ta işlem gören araçlara yer verildiği izahnameden teyit edilmeli."
+    temin_yeri: "SPK resmi yazısı / KAP portal (www.kap.org.tr)"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Fon İzahnamesi — Portföy Kapsamı ve Borsa İşlem Teyidi
+    detay: "SPK onaylı fon izahnamesi. Portföyde yer alabilecek kıymetli maden araçları ve bunların Türkiye'de kurulu borsalarda işlem gördüğü açıkça belirtilmiş olmalı. Taşınmaz yatırımı olmadığının teyidi (392 / 393 ayrımı için)."
+    temin_yeri: "SPK onaylı fon izahnamesi / KAP"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Portföy Kıymetli Maden Varlık Listesi (Saklama Kuruluşu Raporu)
+    detay: "Dönem boyunca portföyde yer alan tüm kıymetli maden araçlarının saklama kuruluşu onaylı listesi. Her varlığın kodu, türü, miktarı (gram veya lot), birim değeri ve toplam değeri. Portföyde taşınmaz olmadığını teyit eder (392 için kritik)."
+    temin_yeri: "MKK (Merkezi Kayıt Kuruluşu) portföy raporu / Saklama kuruluşu"
+  - kategori: zorunlu
+    "no": 4
+    baslik: Portföy Kıymetli Maden Değerleme Tablosu (Dönem Sonu)
+    detay: "Portföy kıymetli maden varlıklarının dönem sonu değerleme hesabı. BİAŞ kapanış fiyatı veya LBMA referans fiyatı gibi kullanılan fiyat kaynağı belirtilmeli ve tutarlı biçimde uygulanmalıdır. VUK/SPK değerleme esaslarına uygunluk."
+    temin_yeri: "BİAŞ günlük kapanış fiyatları / LBMA veri / Saklama kuruluşu değerleme raporu"
+  - kategori: zorunlu
+    "no": 5
+    baslik: Portföy Satış Kazancı Hesabı (FIFO / Ağırlıklı Ortalama Maliyet)
+    detay: "Dönem içi kıymetli maden alım-satım işlemlerinde uygulanan maliyet yöntemi ve kazanç hesabı. Seçilen yöntem tutarlı uygulanmalı ve belgelenmeli. Kazanç = Satış bedeli − Maliyet."
+    temin_yeri: "Muhasebe çalışma kâğıdı / Portföy işlem raporları / Saklama kuruluşu verisi"
+  - kategori: zorunlu
+    "no": 6
+    baslik: Portföy İçi / Dışı Gelir Muhasebe Ayrım Belgesi
+    detay: "Portföy işletmeciliği gelirlerinin portföy dışı gelirlerden nasıl ayrıştırıldığını gösteren belge. Muhasebe hesabı veya dağıtım anahtarı. Bu belge 392 istisnasının güvenilir biçimde tespit edilmesinin dayanağıdır."
+    temin_yeri: "Muhasebe politikası belgesi / Hesap planı"
+  - kategori: zorunlu
+    "no": 7
+    baslik: KV Beyannamesi Taslağı — 392. Satır
+    detay: "Beyanname 392. satırındaki tutarın çalışma kâğıdı tutarıyla birebir uyumlu olduğu teyit edilmeli. 393 ile aynı anda kullanılmadığı kontrol edilmeli."
+    temin_yeri: "GİB e-Beyanname sistemi / İnternet Vergi Dairesi"
+  - kategori: destekleyici
+    "no": 8
+    baslik: GVK Geçici Madde 67 Stopaj Analizi (Araç Türüne Göre)
+    detay: "Portföy kıymetli maden araçlarının GVK Geçici Md. 67 kapsamındaki stopaj durumu. Araç türüne (fiziksel altın, ETF, vadeli sözleşme) ve elde tutma süresine göre stopaj rejimi değişir. Fon düzeyi stopaj tutarı ve muhtasar beyanname kaydı."
+    temin_yeri: "Muhtasar ve prim hizmet beyannamesi / YMM analiz notu / Güncel mevzuat araştırması"
+  - kategori: destekleyici
+    "no": 9
+    baslik: Portföy İşletme Giderleri Dağıtım Anahtarı
+    detay: "Karma gider varsa portföy işletmeciliğine isabet eden giderin hesabı ve dağıtım anahtarı. Belgesiz dağıtım anahtarı uygulaması kabul görmez."
+    temin_yeri: "Muhasebe birimi / Vergi danışmanı çalışma notu"
+  - kategori: destekleyici
+    "no": 10
+    baslik: YİAKV Matrah Hesaplama Tablosu (392 Tutarının Düşümü)
+    detay: "KVK 32/C kapsamındaki YİAKV hesabında 392 istisnasının matrahtan düşüldüğünü gösteren çalışma tablosu."
+    temin_yeri: "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri"
+  - kategori: destekleyici
+    "no": 11
+    baslik: Önceki Dönem Beyannamesi Karşılaştırma Notu (302 → 392 Geçiş)
+    detay: "2024 ve önceki dönemlerde bu gelir türünün 302 satırında gösterildiğine ilişkin not. 2025'ten itibaren 392 ayrı satırına geçişin belgelenmesi."
+    temin_yeri: "Geçmiş dönem KV beyannameleri / YMM çalışma notu"
+
+k_checklist:
+  - id: K1
+    soru: "Kurum SPK lisanslı, portföyü Türkiye'de kurulu borsalarda işlem gören kıymetli madenlere dayalı fon mu? (İzahname teyidi)"
+    referans: "KVK Md. 5/1-d | SPK kuruluş izni | Fon izahnamesi"
+  - id: K2
+    soru: "Portföy araçlarının Türkiye'de kurulu borsalarda işlem gördüğü teyit edildi mi? (BİAŞ vb.)"
+    referans: "KVK Md. 5/1-d — Türkiye'de kurulu borsa şartı"
+  - id: K3
+    soru: "Portföyde taşınmazdan elde edilen gelir YOK mu teyit edildi mi? (392 için kritik)"
+    referans: "KVK Md. 5/1-d | 392 / 393 satır ayrımı"
+  - id: K4
+    soru: "Portföy içi / dışı gelir ayrımı muhasebede doğru kuruldu mu? (Ayrı hesap veya dağıtım anahtarı)"
+    referans: "KVK Md. 5/1-d | Muhasebe ayrım yöntemi zorunlu"
+  - id: K5
+    soru: "Kıymetli maden değerleme fiyat kaynağı (BİAŞ / LBMA) tutarlı ve belgelenmiş mi?"
+    referans: "VUK değerleme esasları | SPK III-52.1 Tebliği | Değerleme tutarlılığı"
+  - id: K6
+    soru: "Portföy satış kazancı hesaplama yöntemi (FIFO veya ağırlıklı ortalama) tutarlı ve belgelenmiş mi?"
+    referans: "Maliyet yöntemi tutarlılığı | Dönem içi değişiklik var mı?"
+  - id: K7
+    soru: "Portföy dışı gelirler (yönetim ücreti vb.) beyanname matrahında doğru yansıtıldı mı? (392'ye yazılmadı mı?)"
+    referans: "KVK Md. 5/1-d | Portföy dışı = vergiye tabi"
+  - id: K8
+    soru: "GVK Geçici Madde 67 stopaj durumu araç türüne göre analiz edildi mi? (Fiziksel altın / ETF / vadeli sözleşme ayrımı)"
+    referans: "GVK Geçici Madde 67 | Araç türüne göre stopaj rejimi"
+  - id: K9
+    soru: "YİAKV matrahında 392 istisnasının düşüldüğü teyit edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri | 5/1-d = düşülebilir"
+  - id: K10
+    soru: "Beyanname 392 satırı çalışma kâğıdı tutarıyla uyumlu mu? (3 kademe: muhasebe = çalışma kâğıdı = beyanname)"
+    referans: "3 kademe uyum kontrolü"
+  - id: K11
+    soru: "392 ve 393 satırlarının aynı anda kullanılmadığı teyit edildi mi?"
+    referans: "392 / 393 münhasırlık kuralı"
+  - id: K12
+    soru: "2024 ve önceki dönemlerle karşılaştırma yapıldı mı? (302 → 392 geçiş notu eklendi mi?)"
+    referans: "2025 beyanname düzenlemesi | 302 genel satırından 392 ayrı satırına geçiş"
+  - id: K13
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (≥500.000 TL tek satır)"
+    referans: "49 No.lu KV GT (30.12.2025)"

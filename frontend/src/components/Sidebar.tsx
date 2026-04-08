@@ -1,4 +1,5 @@
 import { useLocation, useNavigate, NavLink } from 'react-router-dom'
+import { WIZARD_STEPS } from '@/config/wizardSteps'
 import { useCalisma } from '@/api/calisma'
 import { useDonem } from '@/api/donem'
 import { useMukellef } from '@/api/mukellef'
@@ -218,31 +219,18 @@ export default function Sidebar() {
                 <span className="text-[11px] font-semibold text-secondary">Sihirbaz</span>
               </div>
               <div className="pl-0.5 space-y-0">
-                <WizardStep
-                  to={`/calisma/${calismaId}/wizard/faz0`}
-                  label="Dönem Açılışı"
-                  stepNum={0}
-                  active={pathname === `/calisma/${calismaId}/wizard/faz0`}
-                  done={wizardFaz > 0}
-                  accessible={true}
-                />
-                <WizardStep
-                  to={`/calisma/${calismaId}/wizard/faz1`}
-                  label="Ana Kategori"
-                  stepNum={1}
-                  active={pathname === `/calisma/${calismaId}/wizard/faz1`}
-                  done={wizardFaz > 1}
-                  accessible={wizardFaz >= 1}
-                />
-                <WizardStep
-                  to={`/calisma/${calismaId}/wizard/faz2`}
-                  label="Alt Kategori"
-                  stepNum={2}
-                  active={pathname === `/calisma/${calismaId}/wizard/faz2`}
-                  done={wizardFaz > 2}
-                  accessible={wizardFaz >= 2}
-                  isLast
-                />
+                {WIZARD_STEPS.map((step, idx) => (
+                  <WizardStep
+                    key={step.key}
+                    to={`/calisma/${calismaId}/wizard/${step.key}`}
+                    label={step.label}
+                    stepNum={step.order}
+                    active={pathname === `/calisma/${calismaId}/wizard/${step.key}`}
+                    done={wizardFaz > step.order}
+                    accessible={wizardFaz >= step.order}
+                    isLast={idx === WIZARD_STEPS.length - 1}
+                  />
+                ))}
               </div>
             </div>
 
@@ -311,23 +299,40 @@ export default function Sidebar() {
           Profil
         </NavLink>
 
-        {/* Admin users link */}
+        {/* Admin links */}
         {user?.role === 'admin' && (
-          <NavLink
-            to="/admin/users"
-            className={({ isActive }: { isActive: boolean }) =>
-              `w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
-                isActive
-                  ? 'bg-accent/10 text-accent dark:bg-accent/15'
-                  : 'text-secondary hover:bg-surface-overlay hover:text-primary'
-              }`
-            }
-          >
-            <svg className="w-4 h-4 flex-shrink-0 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-            Kullanıcı Yönetimi
-          </NavLink>
+          <>
+            <NavLink
+              to="/admin/users"
+              className={({ isActive }: { isActive: boolean }) =>
+                `w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
+                  isActive
+                    ? 'bg-accent/10 text-accent dark:bg-accent/15'
+                    : 'text-secondary hover:bg-surface-overlay hover:text-primary'
+                }`
+              }
+            >
+              <svg className="w-4 h-4 flex-shrink-0 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              Kullanıcı Yönetimi
+            </NavLink>
+            <NavLink
+              to="/admin/katalog"
+              className={({ isActive }: { isActive: boolean }) =>
+                `w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
+                  isActive
+                    ? 'bg-accent/10 text-accent dark:bg-accent/15'
+                    : 'text-secondary hover:bg-surface-overlay hover:text-primary'
+                }`
+              }
+            >
+              <svg className="w-4 h-4 flex-shrink-0 text-muted" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h7" />
+              </svg>
+              Katalog Yönetimi
+            </NavLink>
+          </>
         )}
 
         {/* Theme toggle + logout row */}

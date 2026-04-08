@@ -1,0 +1,291 @@
+ic_kod: eyf_portfoy_tasinmaz_haric
+baslik: Emeklilik Yatırım Fonu Portföy İşletmeciliği Kazancı (Taşınmaz Hariç)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 398 }
+  - { donem: 2026, kod: 398 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-d
+  - 4632 Sayılı Bireysel Emeklilik Tasarruf ve Yatırım Sistemi Kanunu
+  - GVK Geçici Madde 67 (fon düzeyinde stopaj)
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.4
+  - SPK Tebliği III-52.1 (Yatırım Fonlarına İlişkin Esaslar Tebliği)
+  - Emeklilik Gözetim Merkezi (EGM) Mevzuatı
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: portfoy_isletmeciligi
+
+wizard_agaci:
+  tetikleyici_soru: "Kurum, 4632 Sayılı Kanun kapsamında SPK ve EGM denetiminde kurulmuş bir Emeklilik Yatırım Fonu (EYF) mudur?"
+  info_modal: |
+    ## Emeklilik Yatırım Fonu Portföy İşletmeciliği Kazancı (Taşınmaz Hariç)
+
+    **KVK Madde 5/1-d** kapsamında Türkiye'de 4632 Sayılı Bireysel Emeklilik Tasarruf ve Yatırım Sistemi Kanunu çerçevesinde kurulan **Emeklilik Yatırım Fonlarının (EYF)** portföy işletmeciliğinden doğan kazançları kurumlar vergisinden **%100 tam istisna** olarak muaftır.
+
+    **Bu satır (398): Taşınmaz GELİRİ HARİÇ portföy işletmeciliği kazancını kapsar.**
+    EYF'nin taşınmaz yatırımı içeren portföy kazancı için ayrıca 399 numaralı satır kullanılır.
+
+    ### Emeklilik Yatırım Fonu (EYF) Nedir?
+
+    EYF; bireysel emeklilik sistemi kapsamında katılımcıların birikimlerini değerlendirmek amacıyla kurulmuş, **Sermaye Piyasası Kurulu (SPK)** ve **Emeklilik Gözetim Merkezi (EGM)** denetiminde faaliyet gösteren özel nitelikli yatırım fonlarıdır.
+
+    - **Kuruluş:** Emeklilik şirketleri tarafından 4632 Sayılı Kanun ve SPK mevzuatına uygun olarak kurulur.
+    - **Denetim:** Hem SPK (sermaye piyasası mevzuatı) hem EGM (bireysel emeklilik sistemi) denetimine tabidir.
+    - **Portföy sınırları:** SPK Tebliği III-52.1 kapsamında her EYF türünün (hisse, katkı, altın, para piyasası vb.) yatırım limitleri ayrı ayrı belirlenmiştir.
+    - **Fon türleri:** Standart EYF, Devlet Katkısı Fonu (DKF), Emeklilik Tarihi Fonu (ETF), Fon Sepeti vb.
+
+    ### Hukuki Koşullar
+
+    - EYF'nin SPK nezdinde tescilli ve EGM'de kayıtlı olması zorunludur.
+    - İstisna **yalnızca portföy işletmeciliğinden doğan kazançlara** uygulanır. Portföy dışı gelirler (emeklilik şirketi yönetim ücreti, sigorta komisyonu vb.) istisna kapsamında değildir.
+    - **Taşınmaz geliri bu satırda YER ALMAZ.** EYF portföyünde taşınmaz veya taşınmaza dayalı araçlardan gelir varsa 399 satırı ayrıca doldurulur.
+
+    ### GVK Geçici Md.67 Stopaj İlişkisi
+
+    EYF'lerde **fon düzeyinde GVK Geçici Md.67 stopajı** uygulanır. Bu nedenle;
+    - Fonun elde ettiği faiz, temettü ve sermaye kazancı üzerinden fon bünyesinde stopaj kesilir.
+    - Emeklilik şirketinin elinde kalan kazanç **KVK 5/1-d istisnası** kapsamında kurumlar vergisinden muaf tutulur.
+    - İki katmanlı vergileme riskine karşı fon düzeyi stopaj ve kurum düzeyi istisna birlikte izlenmelidir.
+    - Stopaj tutarı ile istisna tutarı arasındaki ilişki muhasebe kayıtlarında şeffaf biçimde gösterilmelidir.
+
+    ### Portföy Kapsamı (Taşınmaz Hariç)
+
+    Bu satırda gösterilecek gelirler:
+    - Devlet tahvili, hazine bonosu, eurobond faiz ve değerleme artışları
+    - Pay senedi temettü ve satış kazançları
+    - Yatırım fonu katılma payı gelirleri (fon sepeti kazancı dahil)
+    - Repo ve ters repo gelirleri
+    - Altın ve kıymetli maden gelirleri (taşınmaz dışı)
+    - Diğer SPK mevzuatına uygun portföy araçlarından gelirler
+
+    **Bu satıra yazılmayacaklar:** Taşınmaz ve taşınmaza dayalı araçlardan gelirler (GYO katılma payı kira/kâr gelirleri dahil — 399 satırı), emeklilik şirketi yönetim/performans ücreti.
+  kapi_sorulari:
+    - id: eyf_tescil_kayit
+      soru: "Kurum SPK nezdinde tescilli ve EGM'de kayıtlı bir Emeklilik Yatırım Fonu (EYF) mudur?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d koşulu: Türkiye'de 4632 Sayılı Kanun kapsamında kurulan ve SPK/EGM denetiminde faaliyet gösteren fon olması zorunludur. Lisans ve kayıt belgesi denetimde ibraz edilmelidir."
+    - id: portfoy_ici_disi_ayrim
+      soru: "Portföy işletmeciliği kazancı, portföy dışı gelirlerden (yönetim ücreti, sigorta komisyonu vb.) ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna yalnızca portföy işletmeciliğinden doğan kazançlara uygulanır. Emeklilik şirketinin portföy dışı gelirleri bu satıra yazılmamalıdır. Muhasebede ayrı hesap veya dağıtım anahtarı zorunludur."
+    - id: tasinmaz_geliri_ayri
+      soru: "Taşınmaz veya taşınmaza dayalı araçlardan elde edilen kazançlar bu satırdan çıkarılarak 399 satırında ayrıca gösterildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "398 ve 399 satırları, EYF portföy kazancını taşınmaz hariç/dahil olarak ayırır. Taşınmaz gelirini buraya dahil etmek hatalıdır."
+    - id: gvk67_stopaj_mutabakat
+      soru: "GVK Geçici Md.67 kapsamında fon düzeyinde kesilen stopaj tutarı muhasebe kayıtlarında ayrı izleniyor mu?"
+      tip: evet_hayir
+      aciklama: "Fon düzeyi stopaj ile istisna tutarı arasındaki bağlantı şeffaf biçimde belgelenmeli; çifte vergilemeye karşı stopaj mahsubu takip edilmelidir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: portfoy_faiz_geliri
+      etiket: "Tahvil, bono, eurobond faiz ve değerleme artışı gelirleri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Devlet tahvili, hazine bonosu, eurobond, kira sertifikası faiz gelirleri ile
+        dönem sonu değerleme artışları. GVK Geçici Md.67 stopajına tabi tutulanlar dahil.
+        Taşınmaza dayalı kira sertifikası gelirleri 399 satırında gösterilmelidir.
+    - id: portfoy_pay_temettu
+      etiket: "Pay senedi temettü gelirleri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        EYF portföyündeki pay senetlerinden elde edilen temettü (kâr payı) gelirleri.
+        5/1-a kapsamındaki iştirak kazancı istisnası varsa ayrıca değerlendirilmelidir.
+    - id: portfoy_pay_satis_kazanci
+      etiket: "Pay senedi ve menkul kıymet satış kazançları (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Portföydeki pay senetleri ve diğer menkul kıymetlerin satışından doğan kazançlar.
+        Maliyet hesabında FIFO veya ağırlıklı ortalama yöntemi tutarlı uygulanmalıdır.
+    - id: portfoy_fon_katilma_payi
+      etiket: "Yatırım fonu katılma payı gelirleri (Fon sepeti, alt fon vb.) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        EYF'nin yatırım yaptığı alt fonlardan elde edilen gelirler. Fon sepeti yapısında
+        her alt fonun portföy içi/dışı niteliğinin ayrıca analiz edilmesi gerekir.
+    - id: portfoy_repo_geliri
+      etiket: "Repo ve ters repo gelirleri (TL)"
+      tip: para
+      zorunlu: false
+    - id: portfoy_altin_diger
+      etiket: "Altın, kıymetli maden ve diğer portföy araçları gelirleri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Altın fonu, kıymetli maden, vadeli işlem ve diğer SPK onaylı portföy araçlarından
+        elde edilen gelirler. Taşınmaz içeren ürünler (GYO payı kira/kâr gelirleri) bu alana
+        dahil edilmeyip 399 satırında gösterilmelidir.
+    - id: portfoy_giderleri
+      etiket: "Portföy işletme giderleri (eksi) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Portföy yönetimi, saklama, bağımsız denetim giderleri ve portföy işletmeciliği ile
+        doğrudan ilişkili diğer giderler. Karma giderler için dağıtım anahtarı belgelenmeli.
+    - id: fon_portfoy_kazanci
+      etiket: "Net EYF portföy işletmeciliği kazancı — Taşınmaz Hariç (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Yukarıdaki gelir kalemlerinin toplamından portföy giderleri düşüldükten sonra kalan
+        net kazanç. Bu tutar beyanname 398 satırına yazılır. Taşınmaz geliri hariç olduğundan
+        emin olunuz; taşınmaz varsa 399 satırı ayrıca doldurulur.
+  formuller:
+    portfoy_gelir_toplam: "portfoy_faiz_geliri + portfoy_pay_temettu + portfoy_pay_satis_kazanci + portfoy_fon_katilma_payi + portfoy_repo_geliri + portfoy_altin_diger"
+    net_portfoy_kazanci_kontrol: "portfoy_gelir_toplam - portfoy_giderleri"
+    istisna_tutari: "fon_portfoy_kazanci"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "fon_portfoy_kazanci != 0"
+      hata: "İstisna tutarı sıfır olamaz."
+    - kural: "portfoy_giderleri >= 0"
+      hata: "Portföy giderleri negatif girilemez."
+
+denetci_notlari: |
+  ## I. Yasal Dayanak — KVK Md.5/1-d
+
+  KVK Madde 5/1-d kapsamında Türkiye'de 4632 Sayılı Kanun çerçevesinde kurulan Emeklilik
+  Yatırım Fonlarının (EYF) portföy işletmeciliğinden doğan kazançları kurumlar vergisinden
+  %100 tam istisna olarak muaftır. İstisna "Zarar Olsa Dahi İndirilecek" bölümünde 398
+  numaralı satırda gösterilir.
+
+  ## II. EYF Kimliği ve Tescil Kontrolü
+
+  - EYF'nin SPK nezdinde tescil tarihi, fon türü ve EGM kayıt numarası teyit edilmeli.
+  - Fonun yönetim şirketi (emeklilik şirketi) ile fon arasındaki hukuki ayrım net korunmalı.
+  - EYF'nin SPK Tebliği III-52.1 kapsamındaki fon türü (standart, devlet katkısı, fon sepeti,
+    emeklilik tarihi fonu vb.) ile portföy yatırım sınırları kontrol edilmeli.
+
+  ## III. Portföy İçi / Dışı Ayrımı (KRİTİK)
+
+  PORTFÖY İÇİ (İstisna — 398 satırı):
+  - Tahvil, bono, eurobond faiz ve değerleme artışları
+  - Pay senedi temettü ve satış kazançları
+  - Yatırım fonu katılma payı gelirleri
+  - Repo/ters repo faiz gelirleri
+  - Altın ve kıymetli maden gelirleri
+
+  PORTFÖY DIŞI (Vergiye Tabi — 398 satırına YAZILMAZ):
+  - Emeklilik şirketi tarafından alınan yönetim ücreti
+  - Fon yönetim komisyonu geliri (yönetici kurum geliri)
+  - Portföyde kayıtlı olmayan varlıklardan elde edilen gelirler
+
+  TAŞINMAZ GELİRİ (Bu satırda YER ALMAZ → 399 satırı):
+  - GYO katılma payı üzerinden alınan kira/kâr payı gelirleri
+  - Gayrimenkule dayalı kira sertifikası gelirleri
+  - Taşınmaz niteliğindeki diğer yatırım araçları gelirleri
+
+  ## IV. GVK Geçici Md.67 Stopaj ve İstisna İlişkisi
+
+  EYF'lerde GVK Geçici Md.67 kapsamında fon bünyesinde stopaj uygulanır.
+  - Fon düzeyinde stopaj → Emeklilik şirketinin elinde istisna (KVK 5/1-d)
+  - Stopaj tutarının beyanname ile mutabakatı yapılmalıdır.
+  - Çifte vergileme riskine karşı kesilen stopajın mahsup durumu izlenmelidir.
+  - Katılımcı düzeyinde (gerçek kişi) vergileme ayrıca değerlendirilir.
+
+  ## V. SPK Portföy Yatırım Limitleri
+
+  EYF'lerin taşınmaz yatırım limitleri SPK Tebliği III-52.1 ile sınırlandırılmıştır.
+  EYF portföyünde taşınmaz veya GYO katılma payı bulunuyorsa bu gelirlerin 399 satırına
+  ayrıştırılması zorunludur. 398 ve 399 satırlarının toplamı EYF toplam portföy kazancına
+  eşit olmalıdır.
+
+  ## VI. YİAKV (KVK Md.32/C) Etkisi
+
+  KVK 5/1-d kapsamındaki EYF portföy işletmeciliği kazancı YİAKV matrahından DÜŞÜLEBİLİR.
+  Ancak dönem tebliğleri ve GİB açıklamaları ile teyit edilmelidir.
+
+  ## VII. Risk Alanları
+
+  1. Fon yönetici şirket gelirlerinin portföy kazancına dahil edilmesi
+  2. Taşınmaz gelirinin 398 satırında gösterilmesi (399 yerine)
+  3. GVK 67 stopaj ile 5/1-d istisna ilişkisinin hatalı muhasebeleştirilmesi
+  4. Fon sepeti yapısında alt fon bazında portföy ayrımının yapılmaması
+  5. Portföy satış kazancında maliyet yöntemi tutarsızlığı
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Tescil Belgesi ve EGM Kayıt Yazısı
+    detay: "EYF'nin SPK nezdinde tescilini ve EGM'de kaydını kanıtlayan belge. Fon türü, kuruluş tarihi ve portföy yatırım stratejisi açıkça görünmeli. Güncel ve geçerli olmalı."
+    temin_yeri: "SPK / EGM resmi yazısı veya lisans belgesi"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Fon İç Tüzüğü ve İzahname (Portföy Kapsamı İçin)
+    detay: "EYF'nin portföy yatırım stratejisini, araç türlerini ve SPK Tebliği III-52.1 kapsamındaki yatırım limitlerini tanımlayan temel belge. Taşınmaz yatırım limiti burada tespit edilir."
+    temin_yeri: "SPK onaylı fon iç tüzüğü / izahname"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Portföy Varlık Listesi ve Dönem Faaliyeti Raporu
+    detay: "Dönem boyunca portföyde yer alan tüm varlıkların listesi (dönem başı ve sonu). Her varlığın türü, iktisap tarihi, değeri ve portföy payı bilgileri. Taşınmaz içerip içermediğinin tespiti için zorunludur."
+    temin_yeri: "Saklama kuruluşu raporu / EGM portföy bildirim formu"
+  - kategori: zorunlu
+    "no": 4
+    baslik: Fon Gelir Tablosu ve Portföy İçi/Dışı Ayrım Belgesi
+    detay: "EYF'nin portföy işletmeciliği gelirlerini portföy dışı gelirlerden (yönetim ücreti vb.) ayıran muhasebe belgesi. Ayrı hesap veya dağıtım anahtarı yöntemi kullanılıyorsa bu yöntemin açıklaması da eklenmeli."
+    temin_yeri: "Muhasebe kayıtları / Yönetim muhasebesi / EGM dönem raporu"
+  - kategori: zorunlu
+    "no": 5
+    baslik: GVK Geçici Md.67 Stopaj Mutabakat Tablosu
+    detay: "Fon düzeyinde kesilen GVK 67 stopaj tutarlarının dökümü. Stopaj tutarı ile beyanname matrahı ve 5/1-d istisnası ilişkisini gösteren mutabakat tablosu."
+    temin_yeri: "Muhasebe kayıtları / Banka/aracı kurum stopaj bildirimleri"
+  - kategori: zorunlu
+    "no": 6
+    baslik: Beyanname 398 Satırı Mutabakat Tablosu
+    detay: "Beyanname 398. satırındaki tutarın fon gelir tablosu ve bu çalışma kâğıdı veri girişi ile birebir uyumunu gösteren 3 kademe mutabakat belgesi: Muhasebe = Çalışma kâğıdı = Beyanname."
+    temin_yeri: "GİB e-Beyanname sistemi / İnternet Vergi Dairesi"
+  - kategori: destekleyici
+    "no": 7
+    baslik: Portföy Değerleme Tablosu (Dönem Sonu — SPK Esasları)
+    detay: "EYF portföy varlıklarının dönem sonu değerlemesini SPK mevzuatına uygun olarak gösteren tablo. Değerleme artış/azalışlarının beyanname tutumuyla mutabakatı."
+    temin_yeri: "Değerleme raporu / Saklama kuruluşu değerleme özeti"
+  - kategori: destekleyici
+    "no": 8
+    baslik: Bağımsız Denetim Raporu (EYF Faaliyet Raporu)
+    detay: "EYF'nin ilgili hesap dönemine ait bağımsız denetim raporu. Portföy büyüklüğü ve gelir yapısı teyidi için kullanılır."
+    temin_yeri: "Bağımsız denetim kuruluşu"
+
+k_checklist:
+  - id: K1
+    soru: "EYF'nin SPK tescili ve EGM kaydı güncel ve geçerli mi? Lisans belgesi temin edildi mi?"
+    referans: "KVK Md. 5/1-d | 4632 Sayılı Kanun | SPK Tebliği III-52.1"
+  - id: K2
+    soru: "Portföy işletmeciliği kazancı, yönetim ücreti ve portföy dışı gelirlerden ayrıştırıldı mı? (Muhasebede ayrı hesap veya dağıtım anahtarı)"
+    referans: "KVK Md. 5/1-d | Portföy içi/dışı ayrımı zorunlu"
+  - id: K3
+    soru: "Taşınmaz veya taşınmaza dayalı araçlardan elde edilen kazançlar bu satırdan çıkarılarak 399 satırında ayrıca gösterildi mi?"
+    referans: "398 ↔ 399 satır ayrımı | SPK portföy limitleri"
+  - id: K4
+    soru: "GVK Geçici Md.67 kapsamında fon düzeyinde kesilen stopaj tutarları muhasebe ve beyanname ile mutabık mı?"
+    referans: "GVK Geçici Md. 67 | KVK Md. 5/1-d stopaj-istisna ilişkisi"
+  - id: K5
+    soru: "Portföy satış kazançlarında maliyet yöntemi (FIFO / ağırlıklı ortalama) tutarlı uygulandı ve belgelendi mi?"
+    referans: "Değerleme yöntemi tutarlılığı | SPK değerleme esasları"
+  - id: K6
+    soru: "Fon sepeti yapısında alt fon bazında portföy içi/dışı ayrımı yapıldı mı?"
+    referans: "KVK Md. 5/1-d | SPK Tebliği III-52.1 fon sepeti hükümleri"
+  - id: K7
+    soru: "YİAKV (KVK Md.32/C) matrahında 398 istisnasının etkisi dönem tebliğleriyle teyit edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"
+  - id: K8
+    soru: "Beyanname 398 satırı (3 kademe): Muhasebe = Çalışma kâğıdı = Beyanname uyumu sağlandı mı?"
+    referans: "3 kademe uyum kontrolü | 398 satır beyanname konumu"

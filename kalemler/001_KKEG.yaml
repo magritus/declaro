@@ -1,0 +1,85 @@
+ic_kod: kkeg
+baslik: Kanunen Kabul Edilmeyen Giderler (KKEG)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 100 }
+  - { donem: 2026, kod: 100 }
+
+mevzuat_dayanagi:
+  - KVK Madde 11
+  - GVK Madde 40 (atıf)
+
+beyanname_bolumu: ilave
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-01-01"
+  bitis: null
+
+ana_kategori: kkeg
+
+wizard_agaci:
+  tetikleyici_soru: "Dönemde kanunen kabul edilmeyen gider (KKEG) mevcut mu?"
+  info_modal: |
+    ## Kanunen Kabul Edilmeyen Giderler (KKEG)
+
+    KVK Md.11 ve GVK Md.40 kapsamında gider olarak dikkate alınamayan harcamalar ticari kâra
+    **eklenerek** kurumlar vergisi matrahı tespit edilir.
+
+    **Sık karşılaşılan KKEG kalemleri:**
+    - Özel ve aile giderleri ile cezalar (KVK Md.11/1-d)
+    - Para cezaları ve vergi cezaları (KVK Md.11/1-d)
+    - İş kazaları sebebiyle ödenen tazminatlar (mahkeme kararı olmaksızın)
+    - Menkul kıymet değer düşüklüğü karşılıkları (KVK Md.11/1-i)
+    - KVK Md.11/1-b: Hesaplanan kurumlar vergisi
+    - Finansman gider kısıtlaması kapsamına giren giderler
+    - Belgesiz / belgesi yetersiz giderler
+
+    **Beyanname yansıması:** KV Beyannamesi "İlaveler" bölümü.
+  kapi_sorulari: []
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: kkeg_toplami
+      etiket: "KKEG toplamı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Dönem içinde muhasebeleştirilen ve KVK/GVK kapsamında gider kabul edilmeyen tüm
+        tutarların toplamı. Muhasebe kayıtlarından KKEG izleme hesabı (689, 770 vb.)
+        kullanılıyorsa oradan alınabilir.
+  formuller:
+    istisna_tutari: "kkeg_toplami"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "kkeg_toplami >= 0"
+      hata: "KKEG toplamı negatif olamaz."
+
+denetci_notlari: |
+  ## KKEG Kontrolü
+
+  KKEG kalemi matrah ARTIRICI bir kalemdir — ticari kâra eklenir.
+
+  Beyanname üzerinde "İlaveler" bölümünde yer alır.
+
+  Detaylı KKEG listesi ve tutarları çalışma kağıdına ek olarak sunulmalıdır.
+  KVK Md.11 ve GVK Md.40 kapsamındaki her kalem ayrı ayrı doğrulanmalıdır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: KKEG Detay Listesi
+    detay: "Her bir KKEG kaleminin tutarı, muhasebe hesabı ve yasal dayanağı."
+    temin_yeri: Muhasebe / YMM
+
+k_checklist:
+  - id: K1
+    soru: "KKEG kalemleri KVK Md.11 ve GVK Md.40 kapsamında sınıflandırıldı mı?"
+    referans: "KVK Md.11 | GVK Md.40"
+  - id: K2
+    soru: "KKEG toplamı beyanname 'İlaveler' bölümüyle mutabık mı?"
+    referans: "KV Beyannamesi"

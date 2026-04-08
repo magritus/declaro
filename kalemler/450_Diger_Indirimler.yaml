@@ -18,7 +18,7 @@ yururluk_araligi:
   baslangic: "2006-06-21"
   bitis: null
 
-ana_kategori: hizmet_indirimleri
+ana_kategori: diger_indirimler
 
 wizard_agaci:
   tetikleyici_soru: "Standart kodlarda (402–467) karşılığı bulunmayan, mevzuata dayalı bir indirim kalemine sahip misiniz?"
@@ -98,8 +98,6 @@ hesaplama_sablonu:
   validasyonlar:
     - kural: "indirim_tutari > 0"
       hata: "İndirim tutarı sıfırdan büyük olmalıdır."
-    - kural: "len(yasal_dayanak_aciklamasi) > 0"
-      hata: "Yasal dayanak açıklaması boş bırakılamaz."
 
 denetci_notlari: |
   ## Yasal Dayanak

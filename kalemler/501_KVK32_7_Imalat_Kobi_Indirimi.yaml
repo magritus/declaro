@@ -1,0 +1,246 @@
+ic_kod: imalat_kobi_indirimli_kv_32_7
+baslik: İmalat/Sanayi Sicil İndirimli KV (KVK Md.32/7)
+ust_kalem: null
+
+beyanname_kodlari: []
+dahili_ref: "IKV-32/7"  # İndirimli KV — imalat/sanayi sicil indirimi (KVK 32/7); standart satır kodu yok
+
+mevzuat_dayanagi:
+  - KVK Madde 32/7
+  - Sanayi Sicil Kanunu
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: mulga
+yururluk_araligi:
+  baslangic: "2022-01-01"
+  bitis: null
+
+ana_kategori: yatirim_tesvikleri
+
+wizard_agaci:
+  tetikleyici_soru: "Sanayi sicil belgesine sahip olup imalat faaliyetinden kazanç elde ettiniz mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 32/7** kapsamında, **sanayi sicil belgesine sahip** ve imalat
+    faaliyetinde bulunan kurumlar vergisi mükellefleri, münhasıran bu faaliyetten
+    elde ettikleri kazançlarına kurumlar vergisini **1 puan indirimli** olarak
+    uygulayabilir.
+
+    ## İndirim Özeti
+
+    - **Normal KV oranı:** %25
+    - **İndirimli KV oranı:** %24 (1 puan indirim)
+    - **İndirim puanı:** 1 (sabit)
+
+    ## Kapsam
+
+    Bu indirimden yararlanabilmek için:
+    - Geçerli bir **sanayi sicil belgesi** bulunmalıdır.
+    - İndirim yalnızca **imalat faaliyetinden elde edilen kazanç** üzerine uygulanır.
+    - Diğer faaliyetlerden elde edilen kazançlar bu indirimden yararlanamaz.
+
+    ## Formül
+
+    **KV Tasarrufu = İmalat Kazanç Matrahı × %1**
+
+    Alternatif gösterim:
+    - Normal KV = İmalat Matrahı × %25
+    - İndirimli KV = İmalat Matrahı × %24
+    - Tasarruf = Normal KV − İndirimli KV
+
+    ## Diğer İndirimlerle Birlikte Uygulama
+
+    - **KVK Md.32/A (İndirimli KV)** ile eş zamanlı uygulanabilir; ancak
+      matrahların çakışmaması gerekir.
+    - **KVK Md.32/8 (İhracat indirimi)** ile birlikte uygulanacaksa matrah
+      bölüştürme tablosu hazırlanmalıdır; imalat matrahı ile ihracat matrahı
+      ayrıştırılmalıdır.
+
+    ## YİAKV İlişkisi
+
+    **KVK Md.32/7 kapsamındaki imalat indirimi, YİAKV (KVK 32/C) matrahından
+    DÜŞÜLEMEZ.** YİAKV çalışma kâğıdında bilgi amaçlı gösterilir; matraha
+    etki etmez.
+
+    ## Pratik Notlar
+
+    - Sanayi sicil belgesinin geçerliliği (askıya alınma, iptal) her dönem
+      kontrol edilmelidir.
+    - İmalat faaliyetine ilişkin kazanç, diğer faaliyet kazançlarından muhasebe
+      kayıtlarında ayrıştırılmış olmalıdır.
+    - YMM teyidi önerilir; tam tasdik kapsamındaki mükelleflerde ayrıca rapor
+      düzenlenmez.
+  kapi_sorulari:
+    - id: sanayi_sicil_belgesi_var
+      soru: "Geçerli bir sanayi sicil belgeniz var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK Md.32/7 indirimi yalnızca Sanayi Sicil Kanunu kapsamında sanayi sicil belgesine sahip kurumlara tanınmıştır. Belgesi bulunmayan veya belgesi askıya alınmış kurumlar bu indirimden yararlanamaz."
+    - id: imalat_faaliyeti_var
+      soru: "Söz konusu dönemde imalat faaliyetinden kazanç elde ettiniz mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirim münhasıran imalat faaliyetinden elde edilen kazanca uygulanır. Ticaret, hizmet veya diğer faaliyetlerden elde edilen kazançlar kapsam dışıdır."
+    - id: imalat_kazanc_ayristi
+      soru: "İmalat faaliyetine ait kazanç, diğer faaliyet kazançlarından muhasebe kayıtlarında ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İmalat matrahının doğru tespiti için imalat faaliyetine ait gelir ve giderlerin muhasebe kayıtlarında diğer faaliyetlerden bağımsız izlenmesi zorunludur. Ayrıştırma yapılmamışsa indirim uygulanamaz."
+
+parametreler:
+  indirim_puani: 1
+  indirimli_oran: 0.24
+  normal_oran: 0.25
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: sanayi_sicil_no
+      etiket: "Sanayi sicil belgesi numarası"
+      tip: metin
+      zorunlu: true
+      yardim: "Bakanlık tarafından verilen sanayi sicil belgesi numarası. Belgenin geçerlilik durumu dönem başında ve sonunda kontrol edilmelidir."
+    - id: sanayi_sicil_tarihi
+      etiket: "Sanayi sicil belgesi tarihi"
+      tip: tarih
+      zorunlu: true
+      yardim: "Sanayi sicil belgesinin düzenlenme veya son yenileme tarihi. Belgenin ilgili hesap döneminde geçerli olduğunun teyidi için kullanılır."
+    - id: imalat_kazanc_matrahi
+      etiket: "İmalat faaliyetinden elde edilen vergi matrahı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Münhasıran imalat faaliyetinden elde edilen ve kurumlar vergisine tabi vergi matrahı. Diğer faaliyet kazançlarından ayrıştırılmış olmalıdır. Bu tutar üzerine 1 puan indirimli KV uygulanır."
+    - id: toplam_matrah
+      etiket: "Dönem toplam kurumlar vergisi matrahı (kontrol için) (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Tüm faaliyetlerden elde edilen dönem toplam kurumlar vergisi matrahı. İmalat matrahının toplam matrahı aşmadığının kontrolü için girilir."
+    - id: normal_kv_orani
+      etiket: "Normal kurumlar vergisi oranı (%)"
+      tip: sayi
+      varsayilan: 25
+      zorunlu: true
+      yardim: "Cari dönem için uygulanan normal kurumlar vergisi oranı (örn. 25). 1 puan indirim bu oran üzerinden hesaplanır."
+  formuller:
+    normal_kv: "imalat_kazanc_matrahi * normal_kv_orani / 100"
+    indirim_tutari: "imalat_kazanc_matrahi * 1 / 100"
+    indirimli_kv: "imalat_kazanc_matrahi * (normal_kv_orani - 1) / 100"
+    kv_tasarrufu: "normal_kv - indirimli_kv"
+  sonuc_alan: kv_tasarrufu
+  validasyonlar:
+    - kural: "imalat_kazanc_matrahi > 0"
+      hata: "İmalat matrahı sıfırdan büyük olmalıdır."
+    - kural: "imalat_kazanc_matrahi <= toplam_matrah"
+      hata: "İmalat matrahı toplam matrahı aşamaz. İmalat kazancı, dönem toplam kurumlar vergisi matrahının bir alt kalemi olmalıdır."
+    - kural: "normal_kv_orani > 0"
+      hata: "Normal kurumlar vergisi oranı pozitif olmalıdır."
+
+denetci_notlari: |
+  ## ⚠️ KULLANIMDAN KALDIRILDI
+  BU KALEM ARTIK KULLANILMAMAKTADIR. Bunun yerine 503_KVK32_78_Birlesik (ic_kod: imalat_ihracat_indirimli_kv_32_7_32_8) kalemini kullanın; bu kalem hem 32/7 hem 32/8'i tek gelir tablosuyla birlikte hesaplar.
+
+  ## Yasal Dayanak
+  KVK Madde 32/7: Sanayi sicil belgesine sahip ve fiilen üretim faaliyetiyle
+  iştigal eden kurumlar vergisi mükelleflerine münhasıran üretim faaliyetinden
+  elde ettikleri kazançlarına uygulanmak üzere kurumlar vergisi oranı 1 puan
+  indirimli uygulanır. Buna göre normal %25 oranı yerine %24 oranı uygulanır.
+  Sanayi sicil belgesinin ilgili hesap döneminde geçerli olması zorunludur.
+
+  ## Uygulama Kapsamı
+
+  - Yalnızca sanayi sicil belgesine sahip kurumlar yararlanabilir.
+  - İndirim münhasıran imalat/üretim faaliyetinden elde edilen kazanca uygulanır.
+  - Ticaret, hizmet veya diğer faaliyet kazançları kapsam dışıdır.
+  - İmalat matrahının muhasebe kayıtlarında ayrıştırılmış olması şarttır.
+
+  ## Diğer İndirimlerle Eş Zamanlı Uygulama
+
+  KVK Md.32/7 ile KVK Md.32/A (indirimli KV) eş zamanlı uygulanabilir; ancak
+  her iki indirim için kullanılan matrahların birbirinden farklı ve çakışmayan
+  kazanç dilimlerine tekabül etmesi gerekir. Çakışma durumunda çifte indirim
+  söz konusu olacağından beyanname konsolidasyonuna dikkat edilmelidir.
+
+  KVK Md.32/8 (ihracat indirimi) ile birlikte uygulanacaksa, imalat matrahı
+  ile ihracat matrahı bölüştürme tablosu ile açıkça ortaya konulmalıdır.
+  İhracat gelirlerinin imalat faaliyetinden kaynaklanması durumunda bu
+  ayrıştırma kritik önem taşır.
+
+  ## İndirim Formülü
+  KV Tasarrufu = İmalat Kazanç Matrahı × %1
+  (Normal KV − İndirimli KV = Matrah × %25 − Matrah × %24)
+
+  ## YİAKV Etkisi
+  KVK Md.32/7 kapsamındaki imalat indirimi (1 puan) YİAKV (KVK 32/C)
+  matrahından DÜŞÜLEMEZ. YİAKV çalışma kâğıdında bilgi amaçlı gösterilir;
+  matraha etki etmez.
+
+  ## Sanayi Sicil Belgesi Geçerliliği
+  Belgenin askıya alınması veya iptali halinde indirim uygulanamaz. Her
+  hesap döneminde belgenin güncel durumu Sanayi ve Teknoloji Bakanlığı
+  kayıtlarından teyit edilmelidir.
+
+  ## YMM Teyidi
+  İndirim tutarı ≥500.000 TL ise YMM teyidi önerilir. Tam tasdik
+  kapsamındaki mükelleflerde ayrıca tasdik raporu düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## İndirimli KV Karşılığı
+  İmalat faaliyetinden elde edilen kazanç üzerine %24 oranıyla hesaplanan
+  kurumlar vergisi karşılığı normal dönem KV kaydıyla birlikte yapılır.
+  İndirim sonucu oluşan tasarruf ayrı bir kayıt gerektirmez; beyannamede
+  hesaplanan KV satırında %24 oranı uygulanmış olarak yansır.
+
+  ## Beyanname
+  İmalat matrahı üzerinden %24 ile hesaplanan KV tutarı 730. satıra aktarılır.
+  Normal oran (%25) ile indirimli oran (%24) arasındaki fark (tasarruf)
+  beyanname üzerinde açıkça izlenebilmelidir.
+  MIN(İndirimli KV, Toplam Hesaplanan KV) = Beyanname 730.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Sanayi Sicil Belgesi
+    detay: "Sanayi ve Teknoloji Bakanlığı tarafından verilen ve ilgili hesap döneminde geçerli olan sanayi sicil belgesi. Belge numarası, düzenlenme tarihi ve faaliyet konusu açıkça görünmeli; belgenin askıya alınmadığı veya iptal edilmediği teyit edilmelidir."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı / Şirket Dosyası
+  - kategori: zorunlu
+    "no": 2
+    baslik: İmalat Faaliyeti Gelir Tablosu / Maliyet Tablosu
+    detay: "İmalat faaliyetinden elde edilen gelir ve bu faaliyete ilişkin giderlerin diğer faaliyet gelir/giderlerinden ayrıştırıldığını gösteren ayrıntılı gelir tablosu veya maliyet muhasebesi çıktısı. İmalat matrahının dayandığı muhasebe kaydı zincirini oluşturur."
+    temin_yeri: Muhasebe / Mali Müşavirlik
+  - kategori: zorunlu
+    "no": 3
+    baslik: Matrah Hesaplama ve Bölüştürme Tablosu
+    detay: "İmalat faaliyetine atfedilen vergi matrahının toplam dönem matrahından nasıl ayrıştırıldığını gösteren hesaplama tablosu. Diğer faaliyet matrahları ile toplamın beyannamedeki toplam matrahla uyumunu göstermelidir."
+    temin_yeri: Muhasebe / YMM Çalışma Dosyası
+  - kategori: destekleyici
+    "no": 4
+    baslik: KVK 32/A veya 32/8 Konsolidasyon Notu (varsa)
+    detay: "KVK Md.32/A (indirimli KV) veya Md.32/8 (ihracat indirimi) ile eş zamanlı uygulama varsa, matrahların çakışmadığını ve her indirim için ayrı matrah dilimi kullanıldığını açıklayan konsolidasyon notu veya hesaplama özeti."
+    temin_yeri: YMM / Mali Müşavirlik Çalışma Dosyası
+
+k_checklist:
+  - id: K1
+    soru: "Sanayi sicil belgesinin ilgili hesap döneminde geçerli olduğu (askıya alınmadığı, iptal edilmediği) teyit edildi mi?"
+    referans: "KVK Md.32/7 | Sanayi Sicil Kanunu"
+  - id: K2
+    soru: "İndirime konu kazancın münhasıran imalat/üretim faaliyetinden elde edildiği tespit edildi mi? (Ticaret ve hizmet gelirleri ayrıştırıldı mı?)"
+    referans: "KVK Md.32/7"
+  - id: K3
+    soru: "İmalat faaliyetine ait matrah, diğer faaliyet matrahlarından muhasebe kayıtlarında ayrıştırılarak hesaplandı mı?"
+    referans: "KVK Md.32/7"
+  - id: K4
+    soru: "İmalat kazanç matrahı toplam dönem kurumlar vergisi matrahını aşmıyor mu?"
+    referans: "KVK Md.32/7"
+  - id: K5
+    soru: "KVK Md.32/A (indirimli KV) eş zamanlı uygulanıyorsa matrahların çakışmadığı kontrol edildi mi?"
+    referans: "KVK Md.32/A | KVK Md.32/7"
+  - id: K6
+    soru: "KVK Md.32/8 (ihracat indirimi) eş zamanlı uygulanıyorsa matrah bölüştürme tablosu hazırlandı mı?"
+    referans: "KVK Md.32/8 | KVK Md.32/7"
+  - id: K7
+    soru: "Hesaplanan KV tasarrufu (matrah × %1) muhasebe kayıtları ve beyanname verileriyle uyumlu mu?"
+    referans: "KVK Md.32/7"
+  - id: K8
+    soru: "YMM teyidi/tasdik durumu değerlendirildi mi? (Tasarruf ≥500.000 TL eşiği kontrol edildi mi?)"
+    referans: "KVK Md.32/7 | GVK Mükerrer Md.227"

@@ -64,6 +64,33 @@ export function useDeleteCalisma(donemId: number | undefined) {
   })
 }
 
+export function useIstekListesiGuncelle(calismaId: number | undefined) {
+  const queryClient = useQueryClient()
+  return useMutation<Calisma, Error, string[]>({
+    mutationFn: async (icKodlar) => {
+      if (!calismaId) throw new Error('calismaId is required')
+      const { data } = await apiClient.put<Calisma>(`/calisma/${calismaId}/istek-listesi`, {
+        ic_kodlar: icKodlar,
+      })
+      return data
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['calisma', calismaId] })
+    },
+  })
+}
+
+export function useKalemSonuclari(calismaId: number | undefined) {
+  return useQuery<Record<string, number | null>>({
+    queryKey: ['kalem-sonuclari', calismaId],
+    queryFn: async () => {
+      const { data } = await apiClient.get<Record<string, number | null>>(`/calisma/${calismaId}/kalem-sonuclari`)
+      return data
+    },
+    enabled: !!calismaId,
+  })
+}
+
 export function useCreateCalisma(donemId: number | undefined) {
   const queryClient = useQueryClient()
   return useMutation<Calisma, Error, void>({

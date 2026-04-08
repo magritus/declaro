@@ -1,0 +1,219 @@
+ic_kod: ksk_arastirma_altyapi_arge_istisnasi
+baslik: Araştırma Altyapılarının Ar-Ge ve Yenilik Faaliyetlerinden Elde Ettikleri Kazanç İstisnası (6550 s.K.)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 391 }
+  - { donem: 2026, kod: 391 }
+
+mevzuat_dayanagi:
+  - 6550 Sayılı Araştırma Altyapılarının Desteklenmesine Dair Kanun Madde 7
+  - Araştırma Altyapılarının Desteklenmesine Dair Yönetmelik
+  - Bilim Teknoloji Yüksek Kurulu (BTYK) Kararları
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+coklu_instance: false
+yururluk_araligi:
+  baslangic: "2016-02-26"
+  bitis: null
+
+ana_kategori: ar_ge_istisna
+
+wizard_agaci:
+  tetikleyici_soru: "6550 sayılı Kanun kapsamında araştırma altyapısı olarak tanınan ve tescilli bir kurum musunuz?"
+  info_modal: |
+    ## 6550 s.K. Madde 7 — Araştırma Altyapıları Ar-Ge Kazanç İstisnası
+
+    6550 sayılı Araştırma Altyapılarının Desteklenmesine Dair Kanun kapsamında
+    **araştırma altyapısı** olarak tanımlanan kuruluşların, Ar-Ge ve yenilik
+    faaliyetlerinden elde ettikleri kazançlar **kurumlar vergisinden tamamen istisnadır**.
+
+    ### "Araştırma Altyapısı" Nedir?
+
+    - Yükseköğretim Kalite Kurulu (YÖKAK) tarafından tanınan
+    - Bilim Teknoloji Yüksek Kurulu (BTYK) kararıyla belirlenen ve
+    - Cumhurbaşkanlığı kararıyla tescil edilen kuruluşlardır.
+
+    Üniversitelere bağlı araştırma merkezleri, ulusal laboratuvarlar ve benzeri
+    yapılar bu kapsamda değerlendirilebilir.
+
+    ### İstisnanın Kapsamı
+
+    - **Yalnızca Ar-Ge ve yenilik faaliyetlerinden elde edilen kazançlar** istisna kapsamındadır.
+    - Ticari faaliyetler, kira gelirleri veya diğer gelirler istisna kapsamında değildir.
+    - Gelir ayrımı (Ar-Ge / diğer) için **ayrı muhasebe tutulması zorunludur**.
+
+    ### TGB (Teknoloji Geliştirme Bölgesi) ile Farkı
+
+    - TGB istisnası (KVK 4691 s.K.): **31.12.2028 tarihine kadar** geçici
+    - 6550 s.K. istisnası: **Süresiz** (kanunda bitiş tarihi yoktur)
+    - Araştırma altyapısı tescili TGB'den bağımsızdır
+
+    ### YİAKV İlişkisi
+
+    Bu istisna, Yurt İçi Asgari Kurumlar Vergisi (KVK 32/C) matrahından DÜŞÜLÜR.
+  kapi_sorulari:
+    - id: btyk_tescil_var_mi
+      soru: "Kurumunuz BTYK kararı ve Cumhurbaşkanlığı kararıyla araştırma altyapısı olarak tescil edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "6550 s.K. kapsamında istisna için BTYK kararı ve Cumhurbaşkanlığı tescili zorunludur. Tescil belgesi olmadan istisna uygulanamaz."
+    - id: yokak_taninma_var_mi
+      soru: "Yükseköğretim Kalite Kurulu (YÖKAK) tarafından tanınma belgeniz var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "YÖKAK tanınması, araştırma altyapısı statüsünün ön koşullarından biridir."
+    - id: arge_geliri_var_mi
+      soru: "Dönemde Ar-Ge ve yenilik faaliyetlerinden kazanç elde edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sadece Ar-Ge ve yenilik faaliyetlerinden elde edilen kazançlar istisna kapsamındadır. Diğer gelirlerin ayrıştırılması zorunludur."
+    - id: ayri_muhasebe_tutuluyor_mu
+      soru: "Ar-Ge faaliyetlerine ilişkin gelir ve giderler ayrı muhasebe hesaplarında izleniyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna kapsamındaki Ar-Ge gelirlerinin diğer gelirlerden ayrıştırılması için ayrı muhasebe tutulması şarttır."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: arge_geliri_toplam
+      etiket: "Ar-Ge ve yenilik faaliyetlerinden elde edilen toplam gelir (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Dönemde Ar-Ge ve yenilik faaliyetlerinden (proje gelirleri, teknoloji transferi, lisans vb.)
+        elde edilen toplam gelir. Sadece 6550 s.K. kapsamındaki faaliyetlere ilişkin tutar.
+    - id: arge_giderleri
+      etiket: "Ar-Ge faaliyetlerine doğrudan atfedilebilen giderler (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Ar-Ge projelerine doğrudan yüklenen personel gideri, malzeme, amortisman ve diğer giderler. Genel giderlerden paylaştırılan kısım dahil edilmemeli."
+    - id: genel_gider_payi
+      etiket: "Ar-Ge faaliyetlerine isabet eden genel gider payı (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Ar-Ge faaliyetlerine atfedilen genel yönetim, idari gider payı. Dağıtım anahtarı belgelenmelidir."
+    - id: diger_istisna_geliri
+      etiket: "Ar-Ge dışı faaliyetlerden (istisna kapsamı dışı) elde edilen gelir (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Ticari faaliyet, kira, faiz gibi Ar-Ge dışı gelirler. Bilgi amaçlı girilir; istisna hesabına dahil edilmez."
+  formuller:
+    toplam_arge_gideri: "arge_giderleri + (genel_gider_payi if genel_gider_payi else 0)"
+    arge_kazanci: "arge_geliri_toplam - toplam_arge_gideri"
+    istisna_tutari: "max(0, arge_kazanci)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "arge_geliri_toplam > 0"
+      hata: "Ar-Ge faaliyetlerinden elde edilen gelir sıfırdan büyük olmalıdır."
+    - kural: "arge_giderleri >= 0"
+      hata: "Ar-Ge giderleri negatif olamaz."
+    - kural: "arge_geliri_toplam >= toplam_arge_gideri or true"
+      hata: "Uyarı: Ar-Ge giderleri Ar-Ge gelirini aşıyor; istisna tutarı sıfır alınacaktır."
+
+denetci_notlari: |
+  ## I. 6550 s.K. Md.7 — Araştırma Altyapısı Kazanç İstisnası
+
+  Araştırma altyapısı olarak tescil edilen kuruluşların Ar-Ge ve yenilik
+  faaliyetlerinden elde ettikleri kazançların TAMAMI kurumlar vergisinden istisnadır.
+
+  FORMÜL: İstisna = Ar-Ge Gelirleri − Ar-Ge Giderleri (Kazanç pozitif ise tamamı)
+
+  ## II. Tescil Şartı — Kritik Ön Koşul
+
+  Aşağıdaki ÜÇ koşulun TAMAMININ sağlanmış olması zorunludur:
+  1. YÖKAK tarafından tanınma
+  2. BTYK kararıyla belirleme
+  3. Cumhurbaşkanlığı kararıyla tescil
+
+  Tescil belgesi olmadan istisna uygulanamaz. Tescil tarihinden önce elde edilen
+  gelirler için geriye dönük istisna uygulanamaz.
+
+  ## III. Gelir Ayrımı — Zorunlu Şart
+
+  İstisna YALNIZCA Ar-Ge ve yenilik faaliyetlerinden elde edilen kazançlara uygulanır.
+  Diğer faaliyetlerden (ticari, kira, faiz vb.) elde edilen gelirler istisna dışıdır.
+
+  Gelir ayrımı için muhasebe sistemi yeterli olmuyorsa oranlama yöntemi kabul görebilir;
+  ancak bu durumda GİB özelgesi talep edilmesi önerilir.
+
+  ## IV. Ayrı Muhasebe Zorunluluğu
+
+  - Ar-Ge projelerine ilişkin gelir ve giderler ayrı muhasebe hesaplarında izlenmelidir
+  - Genel gider dağıtım anahtarı belgelenmelidir (metrekare, personel sayısı, zaman vb.)
+  - Ayrı muhasebe bulunmaması durumunda tüm istisna reddedilebilir
+
+  ## V. TGB ve 5746 s.K. Ar-Ge ile Birliktelik
+
+  - Aynı kurum hem TGB'de faaliyet gösterebilir hem de 6550 s.K. kapsamında olabilir
+  - Çifte istisna uygulaması için aynı kazancın iki ayrı istisnaya konu edilmemesi gerekir
+  - Hangi kazancın hangi istisna kapsamında değerlendirileceği açıkça belirlenmelidir
+
+  ## VI. YİAKV Etkisi
+
+  6550 s.K. kapsamındaki istisna YİAKV (KVK 32/C) matrahından DÜŞÜLÜR.
+  YİAKV çalışma kâğıdında A sütununda istisna olarak gösterilir.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: BTYK Tescil Kararı (Cumhurbaşkanlığı Kararı)
+    detay: "6550 s.K. kapsamında araştırma altyapısı statüsünü veren Cumhurbaşkanlığı veya BTYK kararının Resmi Gazete'de yayımlanan sureti."
+    temin_yeri: Resmi Gazete / BTYK Sekretaryası
+  - kategori: zorunlu
+    "no": 2
+    baslik: YÖKAK Tanınma Belgesi
+    detay: "Yükseköğretim Kalite Kurulu'nun araştırma altyapısını tanıdığına dair resmi belge."
+    temin_yeri: YÖKAK
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Ar-Ge Faaliyet Raporu
+    detay: "Dönemde yürütülen Ar-Ge ve yenilik projelerini, proje hedeflerini, sonuçlarını ve elde edilen gelirleri gösteren faaliyet raporu. İstisna kapsamındaki gelirlerin proje bazında belgelenmesi."
+    temin_yeri: Ar-Ge / Proje Yönetimi Birimi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Ayrı Muhasebe Defteri / Proje Bazlı Maliyet Tablosu
+    detay: "Ar-Ge ve yenilik faaliyetlerine ilişkin gelir ve giderlerin ayrı muhasebe hesaplarında izlendiğini gösteren muhasebe dökümü veya proje bazlı maliyet raporu."
+    temin_yeri: Muhasebe
+  - kategori: zorunlu
+    "no": 5
+    baslik: Genel Gider Dağıtım Anahtarı ve Hesaplama Tablosu
+    detay: "Ar-Ge faaliyetlerine isabet eden genel gider payının hesaplanmasında kullanılan dağıtım anahtarı (metrekare, personel oranı vb.) ve hesaplama tablosu."
+    temin_yeri: Muhasebe / Mali İşler
+  - kategori: destekleyici
+    "no": 6
+    baslik: TÜBİTAK / Fon Kuruluşu Proje Sözleşmeleri
+    detay: "Ar-Ge projelerine ilişkin TÜBİTAK, AB veya diğer fon kuruluşlarıyla yapılan sözleşmeler. Gelirin Ar-Ge faaliyetine ilişkin olduğunun tevsiki."
+    temin_yeri: Ar-Ge Birimi
+
+k_checklist:
+  - id: K1
+    soru: "Araştırma altyapısı tescili (BTYK + Cumhurbaşkanlığı kararı) güncel ve geçerli mi?"
+    referans: "6550 s.K. Md.2 | Md.7"
+  - id: K2
+    soru: "YÖKAK tanınma belgesi geçerliliği teyit edildi mi?"
+    referans: "6550 s.K. | Araştırma Altyapıları Yönetmeliği"
+  - id: K3
+    soru: "İstisna kapsamındaki Ar-Ge gelirleri diğer gelirlerden ayrıştırıldı mı?"
+    referans: "6550 s.K. Md.7 | Ayrı muhasebe zorunluluğu"
+  - id: K4
+    soru: "Ar-Ge faaliyetlerine ilişkin giderler ayrı muhasebe hesaplarında izleniyor mu?"
+    referans: "6550 s.K. Md.7"
+  - id: K5
+    soru: "Genel gider dağıtım anahtarı belgelenmiş ve tutarlı mı?"
+    referans: "Muhasebe standardı / GİB özelgesi"
+  - id: K6
+    soru: "TGB veya 5746 s.K. Ar-Ge istisnasıyla çifte sayım riski değerlendirildi mi?"
+    referans: "KVK Md.5 | 4691 s.K. | 5746 s.K."
+  - id: K7
+    soru: "YİAKV matrahından düşüm etkisi değerlendirildi mi?"
+    referans: "KVK Md.32/C"
+  - id: K8
+    soru: "İstisna süresizdir — TGB gibi 31.12.2028 tarihi uygulanmadı mı?"
+    referans: "6550 s.K. Md.7 (süresiz)"

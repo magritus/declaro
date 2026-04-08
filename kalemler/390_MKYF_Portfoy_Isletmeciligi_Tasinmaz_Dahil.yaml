@@ -1,0 +1,387 @@
+ic_kod: mkyf_portfoy_tasinmaz_dahil
+baslik: Menkul Kıymetler Yatırım Fonu Portföy İşletmeciliği Kazancı (Taşınmaz Dahil)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 390 }
+  - { donem: 2026, kod: 390 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-d (Menkul kıymetler yatırım fonları — taşınmaz dahil portföy işletmeciliği)
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.4
+  - SPK III-52.1 Tebliği (Yatırım Fonlarına İlişkin Esaslar Tebliği)
+  - GVK Geçici Madde 67 (Fon düzeyinde stopaj — menkul kıymet gelirleri)
+  - KVK Madde 15/1 (Taşınmaz kira/satış stopajı — farklı rejim)
+  - 7524 Sayılı Kanun (02.08.2024 — GYF/GYO kâr dağıtım şartı — dolaylı etki analizi)
+  - 49 Seri No.lu KV Genel Tebliği (30.12.2025)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+# KVK 5/1-d (390) MKYF taşınmaz dahil portföy işletmeciliği kazancı
+# YİAKV matrahından DÜŞÜLEBİLİR. Bu satır hem menkul kıymet hem de taşınmazdan
+# elde edilen portföy gelirlerini kapsar. Taşınmaz kaynaklı gelirlerin stopaj
+# rejimi GVK Geçici Md. 67'den farklı olduğundan ayrı takip zorunludur.
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+  not: "2025 beyanname döneminden itibaren ayrı satır kodu (390) ile gösterilmektedir. Önceki dönemlerde 302 kodlu genel portföy işletmeciliği satırı kullanılıyordu. 390, portföyünde taşınmaz varlık bulunduran ve taşınmazdan gelir elde eden MKYF'ler için kullanılır."
+
+ana_kategori: portfoy_isletmeciligi
+
+wizard_agaci:
+  tetikleyici_soru: "Kurum bir Menkul Kıymetler Yatırım Fonu (MKYF) mu ve portföyünde taşınmaz varlık bulunduruyor ve bu taşınmazdan kira veya satış kazancı elde etti mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-d kapsamında Türkiye'de kanunların öngördüğü şekilde kurulan **Menkul Kıymetler Yatırım Fonlarının (MKYF)** portföy işletmeciliğinden doğan kazançların tamamı kurumlar vergisinden **%100 tam istisna** olarak muaftır. Beyanname **"Zarar Olsa Dahi İndirilecek"** bölümünde **390** numaralı satırda gösterilir.
+
+    Bu kalem (390), **taşınmaz dahil** tüm portföy gelirlerini kapsar: portföyde kayıtlı taşınmazlardan elde edilen kira gelirleri ve taşınmaz satış kazançları ile menkul kıymet gelirleri. Portföyünde taşınmaz bulunmayan ya da taşınmazdan gelir elde etmeyen MKYF'ler için **389** kodlu satır kullanılır.
+
+    ## Temel Koşullar
+
+    - **SPK Lisansı ve portföyde taşınmaz yetkisi:** Fonun SPK tarafından kuruluşuna izin verilmiş MKYF statüsünde olması ve izahnamesinde taşınmaz yatırımına izin verilmiş olması zorunludur. SPK III-52.1 Tebliği kapsamında taşınmaz yatırım oranı sınırlarına uygunluk kontrol edilmelidir.
+    - **Portföy taşınmaz listesi:** Portföyde kayıtlı taşınmazların tapu senedi ve portföy kayıt belgesiyle belgelenmesi zorunludur. Portföyde kayıtlı olmayan taşınmazlardan elde edilen gelirler istisna kapsamında değerlendirilemez.
+    - **Portföy içi/dışı ayrımı:** İstisna YALNIZCA portföy kapsamındaki varlıklardan (hem menkul kıymet hem taşınmaz) elde edilen gelirlere uygulanır. Yönetim ücreti, performans/başarı primi, portföyde kayıtlı olmayan varlıklardan gelirler vergiye tabidir.
+    - **Taşınmaz ve menkul kıymet gelirlerinin ayrı takibi:** Stopaj rejimleri farklı olduğundan (GVK Geçici Md. 67 — menkul kıymet; KVK Md. 15 — taşınmaz kira stopajı) iki gelir türünün muhasebede ayrı hesaplarda izlenmesi zorunludur.
+    - **Muhasebede ayrı hesap:** Portföy içi ve portföy dışı gelirlerin, ayrıca taşınmaz ve menkul kıymet gelirlerinin muhasebede ayrı hesap veya belgelenmiş dağıtım anahtarıyla izlenmesi zorunludur.
+
+    ## Portföy İçi Gelir Ayrımı — Taşınmaz Kaynaklı
+
+    **PORTFÖY İÇİ TAŞINMAZ GELİRİ (İstisna — 390):**
+    - Portföydeki taşınmazlardan elde edilen kira gelirleri
+    - Portföy taşınmazlarının satışından doğan kazançlar
+    - Portföy taşınmazlarının dönem sonu değerleme artışları (VUK/SPK esasları)
+
+    **PORTFÖY İÇİ MENKUL KIYMETTen GELİR (İstisna — 390):**
+    - Portföydeki tahvil, bono, eurobond faiz gelirleri
+    - Portföydeki hisse senedi temettü gelirleri
+    - Portföy menkul kıymet satış kazançları
+    - Portföy dönem sonu menkul kıymet değerleme artışları
+    - Repo, ters repo faiz gelirleri
+
+    **PORTFÖY DIŞI (Vergiye Tabi):**
+    - Yönetim ücreti, performans/başarı primi, danışmanlık komisyonu
+    - Portföyde kayıtlı olmayan varlıklardan gelirler
+
+    ## Taşınmaz Stopaj Rejimi — Kritik Fark
+
+    MKYF'nin portföy taşınmazından elde ettiği kira geliri KVK Madde 15/1 kapsamında stopaja tabi olabilir. Bu stopaj, GVK Geçici Madde 67 kapsamındaki menkul kıymet stopajından farklı bir rejimdir. Taşınmaz kira stopajının doğru uygulanıp uygulanmadığı ve beyanname 390 istisnasıyla ilişkisi dönem mevzuatı çerçevesinde ayrıca analiz edilmelidir.
+
+    ## 389 / 390 Ayrımı
+
+    - **389**: Portföyde taşınmaz geliri YOKSA veya taşınmaz yatırımı yapılmıyorsa
+    - **390**: Portföyde taşınmaz bulunuyor ve taşınmazdan gelir elde edildiyse
+    - Her iki satır aynı anda kullanılamaz; fon ya 389 ya da 390 kullanır
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-d (390) portföy işletmeciliği kazancı (taşınmaz dahil tüm portföy) **YİAKV matrahından düşülebilir**. YİAKV çalışma kâğıdında 390 tutarının tamamı matrahtan doğru biçimde düşülmelidir.
+
+    ## Pratik Notlar
+
+    - Portföy yöneticisi tarafından hazırlanan dönem sonu portföy değerleme raporu hem taşınmaz hem menkul kıymet varlıklarını kapsamalı ve dosyaya eklenmelidir.
+    - Tapu senetleri ve portföy kayıt belgeleri dosyada bulunmalıdır; taşınmazların portföy kaydı yalnızca belgeyle kanıtlanabilir.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
+  kapi_sorulari:
+    - id: mkyf_statüsü
+      soru: "Kurum SPK lisanslı Menkul Kıymetler Yatırım Fonu (MKYF) mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d: MKYF statüsü SPK kuruluş izni ve KAP kaydıyla belgelenmeli."
+    - id: portfoy_tasinmaz_geliri_var
+      soru: "Portföyde kayıtlı taşınmazdan (kira geliri veya satış kazancı) GELİR VAR mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: 390 satırı YALNIZCA portföyde taşınmaz geliri OLAN MKYF'ler içindir. Taşınmaz geliri yoksa 389 satırı kullanılmalıdır. Her ikisi birden kullanılamaz."
+    - id: portfoy_tasinmaz_kaydi
+      soru: "Taşınmazın portföy kaydı (tapu senedi + portföy kayıt belgesi) mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yalnızca portföyde kayıtlı taşınmazlardan elde edilen gelirler istisna kapsamındadır. Portföyde kayıtlı olmayan taşınmazlardan gelir istisna dışıdır ve 390'a yazılamaz."
+    - id: portfoy_ici_disi_ayrim
+      soru: "Portföy işletmeciliği kazancı (hem menkul kıymet hem taşınmaz), portföy DIŞI gelirlerden ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna YALNIZCA portföy kapsamındaki varlıklardan elde edilen gelirler için geçerlidir. Yönetim ücreti ve benzeri portföy dışı gelirler vergiye tabidir."
+    - id: tasinmaz_stopaj_analizi
+      soru: "Portföy taşınmaz kira gelirinin stopaj rejimi (KVK Md. 15/1) analiz edildi mi?"
+      tip: evet_hayir
+      aciklama: "Taşınmaz kira stopajı, GVK Geçici Md. 67 menkul kıymet stopajından farklıdır. Dönem mevzuatı çerçevesinde ayrıca analiz gereklidir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: portfoy_tasinmaz_kira
+      etiket: "Portföydeki taşınmazlardan elde edilen kira gelirleri (portföy kaydı zorunlu)"
+      tip: para
+      zorunlu: false
+      yardim: "YALNIZCA portföyde kayıtlı taşınmazların kira gelirleri. Tapu senedi ve portföy kayıt belgesiyle desteklenmeli. Portföyde kayıtlı olmayan taşınmazlardan kira geliri bu alana girilmez."
+    - id: portfoy_tasinmaz_satis_kazanci
+      etiket: "Portföy taşınmaz satış kazançları"
+      tip: para
+      zorunlu: false
+      yardim: "Portföyde kayıtlı taşınmazların satışından doğan kazanç. Satış bedeli − VUK/SPK maliyet değeri farkı."
+    - id: portfoy_tasinmaz_deger_artisi
+      etiket: "Portföy taşınmaz dönem sonu değerleme artışı (VUK/SPK esasları)"
+      tip: para
+      zorunlu: false
+      yardim: "Dönem sonu bağımsız değerleme raporuna dayanan taşınmaz değerleme artışı. SPK mevzuatına uygun bağımsız değerleme kuruluşu raporu zorunlu."
+    - id: portfoy_faiz_gelirleri
+      etiket: "Portföy menkul kıymet faiz gelirleri (tahvil, bono, eurobond vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "Portföydeki sabit getirili menkul kıymetlerden faiz ve kupon gelirleri."
+    - id: portfoy_temettu_gelirleri
+      etiket: "Portföy hisse senedi temettü / kâr payı gelirleri"
+      tip: para
+      zorunlu: false
+      yardim: "Portföydeki hisse senetlerinden temettü ve kâr payı gelirleri (brüt)."
+    - id: portfoy_mk_satis_kazanci
+      etiket: "Portföy menkul kıymet satış kazançları (hisse, tahvil, bono vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "FIFO veya ağırlıklı ortalama maliyet yöntemi tutarlı uygulanmalı ve belgelenmeli."
+    - id: portfoy_mk_deger_artisi
+      etiket: "Portföy menkul kıymetler dönem sonu değerleme artışları"
+      tip: para
+      zorunlu: false
+      yardim: "Borsa rayici veya gerçeğe uygun değer esasına göre hesaplanan dönem sonu değerleme artışı."
+    - id: portfoy_repo_gelirleri
+      etiket: "Portföy repo / ters repo faiz gelirleri"
+      tip: para
+      zorunlu: false
+    - id: portfoy_diger_gelirler
+      etiket: "Diğer portföy işletmeciliği gelirleri"
+      tip: para
+      zorunlu: false
+    - id: portfoy_giderleri
+      etiket: "Portföy işletme giderleri (−) — Net kazanç hesabı için"
+      tip: para
+      zorunlu: false
+      yardim: "Portföy işletmeciliğiyle doğrudan ilişkili giderler. Taşınmaz ve menkul kıymet giderleri ayrı izlenmeli; karma giderler için dağıtım anahtarı belgelenmeli."
+    - id: istisna_tutari_beyan
+      etiket: "Net portföy işletmeciliği kazancı (taşınmaz dahil) — Beyan edilecek istisna tutarı (Beyanname Satır 390)"
+      tip: para
+      zorunlu: true
+  formuller:
+    portfoy_tasinmaz_toplam: "portfoy_tasinmaz_kira + portfoy_tasinmaz_satis_kazanci + portfoy_tasinmaz_deger_artisi"
+    portfoy_mk_toplam: "portfoy_faiz_gelirleri + portfoy_temettu_gelirleri + portfoy_mk_satis_kazanci + portfoy_mk_deger_artisi + portfoy_repo_gelirleri + portfoy_diger_gelirler"
+    portfoy_toplam_gelir: "portfoy_tasinmaz_toplam + portfoy_mk_toplam"
+    net_portfoy_kazanci: "portfoy_toplam_gelir - portfoy_giderleri"
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "portfoy_tasinmaz_kira > 0 OR portfoy_tasinmaz_satis_kazanci > 0 OR portfoy_tasinmaz_deger_artisi > 0"
+      hata: "390 satırı için taşınmaz kaynaklı gelir bulunmalıdır. Taşınmaz geliri yoksa 389 satırı kullanılmalıdır."
+    - kural: "istisna_tutari_beyan != 0"
+      hata: "İstisna tutarı sıfır olamaz (zarar olsa dahi indirilecek bölümüdür)"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-d: Türkiye'de kanunların öngördüğü şekilde kurulan menkul kıymetler
+  yatırım fonlarının portföy işletmeciliğinden doğan kazançları kurumlar vergisinden
+  istisnadır. %100 tam istisna. 2025 beyanname döneminden itibaren portföyünde taşınmaz
+  bulunduran MKYF'ler için ayrı satır kodu (390) kullanılmaktadır.
+
+  ## Bu Satırın Kapsamı — Taşınmaz Dahil Ayrımı
+  390 satırı hem taşınmaz hem menkul kıymet portföy gelirlerini kapsar.
+  YALNIZCA portföyde kayıtlı taşınmazların gelirleri istisna kapsamındadır.
+
+  PORTFÖY TAŞINMAZ GELİRİ (İstisna — 390):
+  - Portföyde kayıtlı taşınmazlardan kira gelirleri
+  - Portföy taşınmaz satış kazançları
+  - Portföy taşınmazı dönem sonu değerleme artışları
+
+  PORTFÖY MENKUL KIYMET GELİRİ (İstisna — 390):
+  - Tahvil, bono, eurobond faiz/kupon gelirleri
+  - Hisse senedi temettü gelirleri
+  - Menkul kıymet satış kazançları ve değerleme artışları
+  - Repo, ters repo faiz gelirleri
+
+  PORTFÖY DIŞI (Vergiye Tabi):
+  - Yönetim ücreti, performans/başarı primi, danışmanlık komisyonu
+  - Portföyde kayıtlı olmayan varlıklardan gelirler
+
+  ## 389 / 390 Ayrımı — Kritik Karar Noktası
+  - Portföyde taşınmaz geliri YOK → 389
+  - Portföyde taşınmaz geliri VAR → 390
+  - Her iki satır aynı anda kullanılamaz
+  - 2024 ve öncesi dönemlerde her ikisi de 302 genel satırına alınıyordu
+
+  ## Taşınmaz Stopaj Rejimi Farkı
+  - Menkul kıymet gelirleri → GVK Geçici Md. 67 stopajı (fon düzeyinde)
+  - Taşınmaz kira gelirleri → KVK Md. 15/1 kapsamında stopaj rejimi
+  Bu iki rejim birbirinden farklıdır ve muhasebede ayrı hesaplarda izlenmelidir.
+  KV beyannamesi 390 istisnası her iki türü kapsamakla birlikte stopaj
+  boyutu ayrıca analiz edilmelidir.
+
+  ## Portföy Taşınmaz Kaydı — Kritik Belge Şartı
+  Portföyde kayıtlı taşınmazın tapu senedi ve portföy kayıt belgesiyle
+  kanıtlanması zorunludur. Belgesi olmayan taşınmaz geliri istisna dışıdır.
+  Bu, GYO inşaat/geliştirme tartışmasından farklı bir noktadır; MKYF
+  portföy taşınmazının varlığı ve kaydı somut belgelerle ispat edilmeli.
+
+  ## YİAKV Etkisi
+  KVK 5/1-d (390) portföy işletmeciliği kazancı YİAKV matrahından
+  DÜŞÜLEBİLİR. Hem taşınmaz hem menkul kıymet kaynaklı portföy gelirleri
+  toplam 390 tutarı olarak matrahtan düşülmelidir.
+
+  ## Beyanname Konumu
+  "Zarar Olsa Dahi İndirilecek İstisna ve İndirimler" bölümü — 390 kodlu satır.
+  389 (taşınmaz hariç) ile karıştırılmamalı; aynı fon için her ikisi birden kullanılamaz.
+
+  ## Risk Alanları
+  1. Portföyde kayıtlı olmayan taşınmaz gelirinin 390'a dahil edilmesi
+  2. Portföy dışı gelirin (yönetim ücreti vb.) 390'a yazılması
+  3. Muhasebede taşınmaz / menkul kıymet geliri ayrımının kurulmamış olması
+  4. Taşınmaz kira stopajı ile GVK Geçici 67 stopajının karıştırılması
+  5. Portföy taşınmaz değerleme raporunun bağımsız değerleme kuruluşundan alınmamış olması
+  6. 389 ve 390'ın aynı anda kullanılması (sadece biri kullanılabilir)
+  7. Portföy satış kazancında maliyet yöntemi tutarsızlığı
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Portföy Taşınmaz Kira Geliri Tahakkuku
+  Borç: 127 Diğer Ticari Alacaklar ← Portföy taşınmaz kira alacağı
+  Alacak: 602 Kira Gelirleri ← Portföy taşınmaz kira geliri
+  Açıklama: YALNIZCA portföyde kayıtlı taşınmazların kira geliri — KVK 5/1-d istisna (390).
+  Portföy kaydı tapu senedi ve portföy belgesiyle desteklenmeli. KVK Md. 15/1 stopajı ayrıca kontrol edilmeli.
+
+  ## Kayıt 2 — Portföy Taşınmaz Satış Kazancı
+  Borç: 102 Bankalar ← Satış bedeli
+  Alacak: 250/252 Taşınmazlar ← Maliyet değeri
+  Alacak: 679 Diğer Olağandışı Kâr/Zarar ← Satış kazancı
+  Açıklama: KVK 5/1-d istisna — portföy taşınmaz satış kazancı; 390 satırına alınır.
+
+  ## Kayıt 3 — Portföy Taşınmaz Dönem Sonu Değerleme Artışı
+  Borç: 250/252 Taşınmazlar ← Değerleme artışı
+  Alacak: 679 Diğer Olağandışı Kâr ← Taşınmaz değerleme artışı
+  Açıklama: SPK onaylı bağımsız değerleme kuruluşu raporu esas — KVK 5/1-d istisna (390 satırı).
+
+  ## Kayıt 4 — Portföy Menkul Kıymet Faiz / Temettü Geliri
+  Borç: 127 Diğer Ticari Alacaklar ← Portföy MK faiz/temettü alacağı
+  Alacak: 642 Faiz Gelirleri / 640 Temettü Gelirleri ← Portföy MK geliri
+  Açıklama: KVK 5/1-d istisna — portföy MK faiz/temettü; GVK Geçici 67 stopajı ayrı kaydedilir.
+
+  ## Kayıt 5 — Portföy Menkul Kıymet Satış Kazancı
+  Borç: 102 Bankalar ← Satış bedeli
+  Alacak: 111-118 Menkul Kıymetler ← Maliyet
+  Alacak: 645 Menkul Kıymet Satış Kârı ← Satış kazancı
+  Açıklama: KVK 5/1-d istisna — portföy MK satış kazancı; 390 satırına alınır.
+
+  ## Kayıt 6 — Portföy Dışı Gelir (Yönetim Ücreti — Vergiye Tabi)
+  Borç: 136 Diğer Çeşitli Alacaklar ← Yönetim ücreti alacağı
+  Alacak: 649 Diğer Olağandışı Gelir ← Yönetim/performans ücreti
+  Açıklama: PORTFÖY DIŞI — 390 satırına YAZILMAZ. Matrahta kalır; ayrı hesapta izlenmeli.
+
+  ## Beyanname 390 Akışı (Mutabakat)
+  1. Portföy taşınmaz gelirleri (602, 679 taşınmaz kısmı) → Taşınmaz portföy toplamı
+  2. Portföy MK gelirleri (640, 642, 645, 649 MK kısmı) → MK portföy toplamı
+  3. KV Beyannamesi 390 Satırı: Toplam net portföy kazancı → "Zarar Olsa Dahi İndirilecek"
+  3 KADEME UYUM: Muhasebe portföy hesapları = VERİ GİRİŞİ toplamı = Beyanname 390
+  KRİTİK: Taşınmaz geliri bulunduğundan 389 değil 390 kullanılır; her ikisi aynı anda kullanılamaz.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Kuruluş İzni ve KAP Tescil Belgesi (Taşınmaz Yatırımı Yetkisi Dahil)
+    detay: "Fonun SPK tarafından kuruluşuna izin verildiğini ve portföyünde taşınmaz bulundurabildiğini gösteren belge. İzahnamede taşınmaz yatırımına izin verilip verilmediği açıkça yer almalıdır. SPK III-52.1 Tebliği'ndeki taşınmaz oranı sınırlarına uygunluk kontrol edilmeli."
+    temin_yeri: "SPK resmi yazısı / KAP portal / Fon izahnamesi"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Portföy Taşınmaz Listesi — Tapu Senedi ve Portföy Kayıt Belgesi
+    detay: "Portföyde kayıtlı her taşınmaz için tapu senedi ve portföy kayıt belgesi zorunludur. Portföyde kayıtlı olmayan taşınmazlardan kira/satış geliri 390 istisna kapsamı dışındadır. Bu belge 390 satırının kullanımının temel dayanağıdır."
+    temin_yeri: "Tapu Müdürlüğü tapu senedi / Portföy saklama kuruluşu kayıt belgesi"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Portföy Taşınmaz Bağımsız Değerleme Raporu (Dönem Sonu)
+    detay: "SPK onaylı bağımsız değerleme kuruluşu tarafından hazırlanan dönem sonu taşınmaz değerleme raporu. Taşınmaz değerleme artışlarının hesaplanması için zorunludur. Değerleme tarihi dönem sonuyla uyumlu olmalı."
+    temin_yeri: "SPK lisanslı bağımsız değerleme kuruluşu"
+  - kategori: zorunlu
+    "no": 4
+    baslik: Portföy Taşınmaz Kira Gelirleri — Kira Sözleşmeleri ve Dekontlar
+    detay: "Portföydeki taşınmazların kira sözleşmeleri, kira tahsilat dekontları ve dönem kira geliri toplamı. KVK Md. 15/1 kapsamındaki stopaj kesintisi teyit edilmeli."
+    temin_yeri: "Kira sözleşmeleri / Banka hesap dekontları / Muhasebe 602 hesap kartı"
+  - kategori: zorunlu
+    "no": 5
+    baslik: Portföy Menkul Kıymet Varlık Listesi (Saklama Kuruluşu Raporu)
+    detay: "Dönem boyunca portföyde yer alan tüm menkul kıymet varlıklarının saklama kuruluşu onaylı listesi. Her varlığın kodu, türü, adedi ve değeri. MK portföy gelirlerinin dayandığı belgedir."
+    temin_yeri: "MKK (Merkezi Kayıt Kuruluşu) portföy raporu / Saklama kuruluşu"
+  - kategori: zorunlu
+    "no": 6
+    baslik: Portföy İçi / Dışı Gelir ve Taşınmaz / MK Geliri Muhasebe Ayrım Belgesi
+    detay: "Portföy işletmeciliği gelirlerinin portföy dışı gelirlerden ayrıştırıldığını gösteren belge. Ayrıca taşınmaz kaynaklı ve MK kaynaklı portföy gelirlerinin muhasebede ayrı hesaplarda izlendiğini gösteren hesap planı veya dağıtım anahtarı. Bu ayrım stopaj rejimi analizi için de kritiktir."
+    temin_yeri: "Muhasebe politikası belgesi / Hesap planı / Dağıtım anahtarı tablosu"
+  - kategori: zorunlu
+    "no": 7
+    baslik: Portföy Dönem Sonu Değerleme Tablosu (Hem Taşınmaz Hem MK)
+    detay: "Portföydeki tüm varlıkların (taşınmaz + MK) dönem sonu değerleme hesabı. Taşınmaz → Bağımsız değerleme raporu. MK → Borsa rayici / gerçeğe uygun değer. SPK/VUK esaslarına uygunluk."
+    temin_yeri: "Bağımsız değerleme raporu (taşınmaz) / Saklama kuruluşu değerleme özeti (MK)"
+  - kategori: zorunlu
+    "no": 8
+    baslik: KV Beyannamesi Taslağı — 390. Satır
+    detay: "Beyanname 390. satırındaki tutarın çalışma kâğıdı tutarıyla birebir uyumlu olduğu teyit edilmeli. 389 ve 390'ın aynı anda kullanılmadığı kontrol edilmeli."
+    temin_yeri: "GİB e-Beyanname sistemi / İnternet Vergi Dairesi"
+  - kategori: destekleyici
+    "no": 9
+    baslik: KVK Md. 15/1 Taşınmaz Kira Stopajı Analizi
+    detay: "MKYF portföy taşınmazından elde edilen kira gelirleri üzerinden KVK Md. 15/1 kapsamında stopaj kesintisi yapılıp yapılmadığının analizi. Bu stopaj GVK Geçici 67'den farklıdır. Muhtasar beyanname kaydıyla uyum kontrol edilmeli."
+    temin_yeri: "Muhtasar ve prim hizmet beyannamesi / Vergi dairesi kaydı / YMM analiz notu"
+  - kategori: destekleyici
+    "no": 10
+    baslik: GVK Geçici Madde 67 Stopaj Belgesi (MK Gelirleri — Fon Düzeyi)
+    detay: "MKYF'nin GVK Geçici Md. 67 kapsamında menkul kıymet gelirleri için ödediği stopaj. Taşınmaz stopajından ayrı muhasebeleştirilmeli ve beyanname 390 ile ilişkisi açıklanmalıdır."
+    temin_yeri: "Muhtasar beyannamesi / Vergi dairesi kayıtları"
+  - kategori: destekleyici
+    "no": 11
+    baslik: YİAKV Matrah Hesaplama Tablosu (390 Tutarının Düşümü)
+    detay: "KVK 32/C kapsamındaki YİAKV hesabında 390 istisnasının (taşınmaz dahil toplam portföy kazancı) matrahtan düşüldüğünü gösteren çalışma tablosu."
+    temin_yeri: "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri"
+  - kategori: destekleyici
+    "no": 12
+    baslik: Önceki Dönem Beyannamesi Karşılaştırma Notu (302 → 390 Geçiş)
+    detay: "2024 ve önceki dönemlerde bu gelir türünün hangi satırda (302) beyan edildiğinin açıklandığı not. 2025'ten itibaren 390 ayrı satırına geçişin belgelenmesi."
+    temin_yeri: "Geçmiş dönem KV beyannameleri / YMM çalışma notu"
+
+k_checklist:
+  - id: K1
+    soru: "Kurum SPK lisanslı MKYF mi? İzahnamede taşınmaz yatırımına izin verilmiş mi?"
+    referans: "KVK Md. 5/1-d | SPK III-52.1 Tebliği | Fon izahnamesi"
+  - id: K2
+    soru: "Portföyde kayıtlı taşınmazdan gelir elde edildiği tapu senedi ve portföy kayıt belgesiyle teyit edildi mi?"
+    referans: "KVK Md. 5/1-d | 390 satırı — taşınmaz dahil koşulu"
+  - id: K3
+    soru: "Portföyde kayıtlı olmayan taşınmazlardan elde edilen gelir 390'a dahil edilmedi mi?"
+    referans: "KVK Md. 5/1-d | Portföy kaydı zorunlu"
+  - id: K4
+    soru: "Portföy içi / dışı gelir ayrımı muhasebede doğru kuruldu mu? (Ayrı hesap veya dağıtım anahtarı)"
+    referans: "KVK Md. 5/1-d | Muhasebe ayrım yöntemi zorunlu"
+  - id: K5
+    soru: "Taşınmaz ve menkul kıymet portföy gelirleri muhasebede ayrı hesaplarda izlendi mi? (Stopaj rejimi farkı)"
+    referans: "GVK Geçici Md. 67 (MK) vs KVK Md. 15/1 (taşınmaz) — farklı stopaj rejimleri"
+  - id: K6
+    soru: "Portföy taşınmaz değerlemesi SPK onaylı bağımsız değerleme kuruluşu raporuna dayanıyor mu?"
+    referans: "SPK III-52.1 Tebliği | Bağımsız değerleme zorunluluğu"
+  - id: K7
+    soru: "Portföy dışı gelirler (yönetim ücreti vb.) beyanname matrahında doğru yansıtıldı mı? (390'a yazılmadı mı?)"
+    referans: "KVK Md. 5/1-d | Portföy dışı = vergiye tabi"
+  - id: K8
+    soru: "KVK Md. 15/1 taşınmaz kira stopajı analizi yapıldı mı? Muhtasar beyannameyle uyum kontrol edildi mi?"
+    referans: "KVK Md. 15/1 | Taşınmaz kira stopajı"
+  - id: K9
+    soru: "389 ve 390 satırlarının aynı anda kullanılmadığı teyit edildi mi? (Sadece biri kullanılabilir)"
+    referans: "389 / 390 münhasırlık kuralı"
+  - id: K10
+    soru: "YİAKV matrahında 390 istisnasının (toplam portföy kazancı) düşüldüğü teyit edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri | 5/1-d = düşülebilir"
+  - id: K11
+    soru: "Beyanname 390 satırı çalışma kâğıdı tutarıyla uyumlu mu? (3 kademe: muhasebe = çalışma kâğıdı = beyanname)"
+    referans: "3 kademe uyum kontrolü"
+  - id: K12
+    soru: "2024 ve önceki dönemlerle karşılaştırma yapıldı mı? (302 → 390 geçiş notu eklendi mi?)"
+    referans: "2025 beyanname düzenlemesi | 302 genel satırından 390 ayrı satırına geçiş"
+  - id: K13
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (≥500.000 TL tek satır)"
+    referans: "49 No.lu KV GT (30.12.2025)"

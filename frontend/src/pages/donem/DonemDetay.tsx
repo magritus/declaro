@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { useCalismalar, useCreateCalisma, useDeleteCalisma } from '@/api/calisma'
+import { fazToStepKey } from '@/config/wizardSteps'
 import { useDonem } from '@/api/donem'
 import Spinner from '@/components/ui/Spinner'
 import ErrorBox from '@/components/ui/ErrorBox'
@@ -20,7 +21,7 @@ export default function DonemDetay() {
   const handleCreateCalisma = () => {
     createCalisma.mutate(undefined, {
       onSuccess: (calisma) => {
-        navigate(`/calisma/${calisma.id}/wizard/faz0`)
+        navigate(`/calisma/${calisma.id}/wizard/donem-acilis`)
       },
     })
   }
@@ -121,10 +122,8 @@ export default function DonemDetay() {
                       {calismalar.map((c, idx) => {
                         const hedef = c.wizard_faz >= 3
                           ? `/calisma/${c.id}/istek-listesi`
-                          : `/calisma/${c.id}/wizard/faz${c.wizard_faz}`
-                        const duzenleme = c.wizard_faz >= 1
-                          ? `/calisma/${c.id}/wizard/faz1`
-                          : `/calisma/${c.id}/wizard/faz0`
+                          : `/calisma/${c.id}/wizard/${fazToStepKey(c.wizard_faz)}`
+                        const duzenleme = `/calisma/${c.id}/wizard/donem-acilis`
                         return (
                         <tr
                           key={c.id}

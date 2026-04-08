@@ -1,0 +1,185 @@
+ic_kod: gvk_muk121_vergi_indirimi
+baslik: Hesaplanan Vergi İndirimi (GVK Mük.Md.121 — %5)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 121 }
+  - { donem: 2026, kod: 121 }
+
+mevzuat_dayanagi:
+  - GVK Mükerrer Madde 121
+  - GVK Mükerrer Madde 121 Fıkra 4 (Yeniden Değerleme — Üst Sınır)
+
+beyanname_bolumu: hesaplanan_kv_indirimi
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2018-01-01"
+  bitis: null
+
+ana_kategori: vergi_indirimleri
+
+wizard_agaci:
+  tetikleyici_soru: "Vergiye uyumlu mükellef indirimi (%5) uygulamak istiyor musunuz? (GVK Mük.121)"
+  info_modal: |
+    ## Hesaplanan Vergi İndirimi (GVK Mük.Md.121 — %5)
+
+    Vergiye uyumlu mükelleflere hesaplanan kurumlar vergisinin **%5'i** kadar indirim sağlanır.
+
+    **Kapsam dışı kurumlar:** Finans ve bankacılık sektörü, sigorta ve reasürans şirketleri,
+    emeklilik şirketleri ve emeklilik yatırım fonları bu indirimden **yararlanamaz**.
+
+    **Hesaplama:** MIN(Hesaplanan KV × %5, Üst Sınır)
+    - 2025 üst sınırı: 9.900.000 TL
+    - 2026 beklenen üst sınırı: ~12.400.000 TL (resmi tebliğ ile netleşecektir)
+
+    **Mahsup sırası:** Önce KV'den düşülür. Kalan tutar, beyanname tarihini izleyen 1 yıl içinde
+    diğer vergilerden mahsup edilebilir. Süre geçtikten sonra **iade yapılmaz**.
+
+    **Şart ihlali:** 5 şartın herhangi birinin sonradan ihlali tespitinde vergi ziyaı cezası
+    uygulanmaksızın geri alınır; ancak gecikme faizi uygulanır + 3 yıl indirim yasağı.
+
+    **Bu indirim hesaplanan KV'den düşülür — KV matrahından değil.**
+  kapi_sorulari:
+    - id: kapsam_disi_sektör_degil
+      soru: "Finans, bankacılık, sigorta, reasürans veya emeklilik sektöründe faaliyet göstermiyor musunuz?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bu sektörler GVK Mük.121 kapsamı dışındadır."
+
+parametreler:
+  oran: 1.0
+  indirim_ust_siniri: 12400000
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: s1_beyanname_sure
+      etiket: "Ş1: Son 3 yıl beyannameler kanuni süresinde verildi mi?"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: |
+        2024, 2025, 2026 hesap dönemlerine ait tüm beyanname türleri (KV, KDV, muhtasar vb.)
+        kanuni süresinde verilmiş olmalıdır. Düzeltme ve pişmanlık beyannameleri bu şartı ihlal saymaz.
+    - id: s2_vergi_borcu_yok
+      etiket: "Ş2: Beyanname verildiği tarihte 1.000 TL'yi aşan vadesi geçmiş vergi borcunuz yok mu?"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: |
+        Beyanname verildiği tarih itibarıyla vadesi geçmiş 1.000 TL+ vergi borcu indirimi engeller.
+        Mahsuben ödeme yolunun açık olup olmadığı kontrol edilmeli.
+    - id: s3_tarhiyat_sinir
+      etiket: "Ş3: Son 3 yılda kesinleşmiş tarhiyat toplamı üst sınırın %1'ini (~124.000 TL) aşmıyor mu?"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: |
+        İtiraz veya dava aşamasındaki tarhiyat henüz kesinleşmemiştir.
+        Uzlaşma, yargı kararı veya idari kesinleşme ile kesinleşen tarhiyatlar sayılır.
+    - id: s4_vuk359_yok
+      etiket: "Ş4: Son 5 yılda VUK Md.359 kapsamında kaçakçılık fiili yok mu?"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: |
+        Sahte/yanıltıcı belge düzenleme/kullanma, defter tahrifi, muhasebe hileleri gibi
+        VUK Md.359 kapsamı fiillerin tespiti indirimi engeller.
+    - id: s5_sektor_uygun
+      etiket: "Ş5: Finans/bankacılık/sigorta/emeklilik sektörü dışında mısınız?"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: "GVK Mük.121 kapsamı dışı sektörler: bankalar, sigorta, reasürans, emeklilik şirketleri ve yatırım fonları."
+    - id: indirim_ust_siniri
+      etiket: "İndirim üst sınırı (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        2025: 9.900.000 TL. 2026 beklenen: ~12.400.000 TL (resmi tebliğ ile netleşecektir).
+        Boş bırakılırsa 12.400.000 TL varsayılan olarak kullanılır.
+  formuller:
+    tum_sartlar_saglanmis: "1 if (s1_beyanname_sure == 'evet') and (s2_vergi_borcu_yok == 'evet') and (s3_tarhiyat_sinir == 'evet') and (s4_vuk359_yok == 'evet') and (s5_sektor_uygun == 'evet') else 0"
+    efektif_ust_sinir: "indirim_ust_siniri if indirim_ust_siniri else 12400000"
+    ham_indirim: "hesaplanan_kv * 0.05"
+    istisna_tutari: "min(ham_indirim, efektif_ust_sinir) if tum_sartlar_saglanmis else 0"
+  sonuc_alan: istisna_tutari
+  validasyonlar: []
+
+denetci_notlari: |
+  ## I. GVK Mük.Md.121 — 5 Şart Kontrolü
+
+  Tüm 5 şartın EKSİKSİZ karşılanması gerekir. Tek şartın ihlali → İndirim hakkı kaybedilir.
+  Şartlar beyanname VERİLDİĞİ TARİH itibarıyla değerlendirilir.
+
+  ## II. Hesaplama
+
+  İNDİRİM = MIN(Hesaplanan KV × %5, Üst Sınır)
+
+  NOT: Bu indirim KV MATRAHINDEN değil, HESAPLANAN KV'DEN düşülür.
+  Beyannamede "Hesaplanan Vergi İndirimi" satırında gösterilir.
+
+  ## III. Mahsup Sırası
+
+  1. Önce ödenecek KV'den indirilir.
+  2. Artanı beyanname tarihini izleyen 1 tam yıl içinde diğer vergilerden mahsup edilebilir.
+  3. Süre geçtikten sonra İADE YAPILMAZ.
+
+  ## IV. Şart İhlali Sonuçları
+
+  - Vergi ziyaı cezası UYGULANMAZ (cezasız tarhiyat)
+  - Gecikme faizi uygulanır
+  - Şart ihlalinin tespit edildiği yılı izleyen 3 hesap dönemi indirimden yararlanılamaz
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Son 3 Yıl Beyanname Süre İspat Belgesi
+    detay: "GİB e-Beyanname sisteminden son 3 yılın tüm beyanname türleri için verilme tarihleri."
+    temin_yeri: GİB e-Beyanname
+  - kategori: zorunlu
+    "no": 2
+    baslik: Vadesi Geçmiş Vergi Borcu Yokluğu Yazısı
+    detay: "Beyanname verilen tarihe yakın GİB'den veya GİB İnteraktif Vergi Dairesi'nden alınan borç durumu belgesi."
+    temin_yeri: GİB / Vergi Dairesi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Kesinleşmiş Tarhiyat Tablosu (Son 3 Yıl)
+    detay: "Son 3 yılda kesinleşmiş tarhiyatların listesi ve toplamının %1 sınırını (~124.000 TL) aşmadığının teyidi."
+    temin_yeri: Vergi Dairesi / YMM
+  - kategori: zorunlu
+    "no": 4
+    baslik: VUK Md.359 Araştırma Notu
+    detay: "Son 5 yılda VUK Md.359 kapsamı kaçakçılık fiili bulunmadığına ilişkin YMM değerlendirme notu."
+    temin_yeri: YMM
+  - kategori: zorunlu
+    "no": 5
+    baslik: 2026 Güncel Üst Sınır Tebliği
+    detay: "GVK Mük.121 f.4 kapsamında 2026 için geçerli üst sınırı belirleyen Resmi Gazete tebliği (~12.400.000 TL)."
+    temin_yeri: Resmi Gazete / GİB
+  - kategori: zorunlu
+    "no": 6
+    baslik: KV Beyannamesi — Hesaplanan KV ve İndirim Satırı Mutabakat
+    detay: "Beyanname 'Hesaplanan KV' ve 'Hesaplanan Vergi İndirimi' satırları ile bu çalışma kâğıdı mutabakatı."
+    temin_yeri: GİB e-Beyanname
+
+k_checklist:
+  - id: K1
+    soru: "5 şartın tamamı karşılandığı teyit edildi mi?"
+    referans: "GVK Mük.121/2"
+  - id: K2
+    soru: "Son 3 yıl TÜM beyanname türleri süresinde verildi mi? (KV, KDV, muhtasar, damga)"
+    referans: "GVK Mük.121/2-1"
+  - id: K3
+    soru: "Beyanname tarihi itibarıyla 1.000 TL+ vadesi geçmiş vergi borcu yok mu?"
+    referans: "GVK Mük.121/2-2"
+  - id: K4
+    soru: "Tarhiyat toplamının üst sınır %1'ini (~124.000 TL) aşmadığı teyit edildi mi?"
+    referans: "GVK Mük.121/2-2"
+  - id: K5
+    soru: "Son 5 yıl VUK Md.359 kapsamı fiil araştırması yapıldı mı?"
+    referans: "GVK Mük.121/2-3"
+  - id: K6
+    soru: "2026 güncel üst sınır Resmi Gazete'den teyit edildi mi?"
+    referans: "GVK Mük.121 f.4"
+  - id: K7
+    soru: "İndirim hesabı MIN(KV × %5, Üst Sınır) formülü ile doğrulandı mı?"
+    referans: "GVK Mük.121/1"
+  - id: K8
+    soru: "Devreden indirim için 1 yıl mahsup süresi takip tablosu hazırlandı mı?"
+    referans: "GVK Mük.121/1"

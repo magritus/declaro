@@ -1,0 +1,181 @@
+ic_kod: tpk_md12_5_itfa_payi
+baslik: 6491 s.K. Md.12/5 İtfa Payı Olarak Addolunan Gelirler
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 450 }
+  - { donem: 2026, kod: 450 }
+
+mevzuat_dayanagi:
+  - 6491 Sayılı Türk Petrol Kanunu Madde 12/5
+  - VUK Madde 316 (Madenler Amortismanı)
+  - Enerji ve Tabii Kaynaklar Bakanlığı + HMB Müşterek İtfa Oranı Onayı
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: tartismali
+durum: aktif
+coklu_instance: true
+yururluk_araligi:
+  baslangic: "2013-06-11"
+  bitis: null
+
+ana_kategori: diger_indirimler_alt
+
+wizard_agaci:
+  tetikleyici_soru: "6491 sayılı Türk Petrol Kanunu kapsamında petrol hakkı sahibi misiniz?"
+  info_modal: |
+    ## TPK Md.12/5 — İtfa Payı Olarak Addolunan Gelirler
+
+    6491 Sayılı Türk Petrol Kanunu Madde 12/5 kapsamında petrol hakkı sahibinin yatırım maliyetine
+    tekabül eden üretim gelirleri itfa payı olarak kabul edilir ve kurumlar vergisinden indirilir.
+
+    - **Tam mükellef (yerli kurum):** Yatırım maliyeti, VUK hükümleri kapsamında itfa yoluyla gidere dönüşür.
+    - **Dar mükellef (yabancı kurum):** Sermayenin cari kur üzerinden geri alınmasına kadar itfa payı sayılır.
+    - **Saha bazlı:** Her petrollü arazi için ayrı itfa oranı (Enerji Bakanlığı + HMB müşterek onayı).
+    - **Gelir tavanı:** İtfa payı, cari dönem petrol işlemi gelirini aşamaz. Aşan kısım sonraki döneme **devredilmez**.
+    - **Birden fazla saha:** Her saha için ayrı çalışma kağıdı eklenmelidir (+ ekle butonu).
+  kapi_sorulari:
+    - id: petrol_hakki_var_mi
+      soru: "6491 sayılı Türk Petrol Kanunu kapsamında geçerli petrol arama veya işletme ruhsatınız var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "MAPEG tarafından verilmiş geçerli ruhsat zorunludur."
+    - id: kazanc_var_mi
+      soru: "Petrol işlemi faaliyetlerinden dönemde gelir elde edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Gelir sıfır veya negatif ise itfa payı indirimi uygulanamaz."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: saha_adi
+      etiket: "Saha adı / ruhsat numarası"
+      tip: metin
+      zorunlu: true
+      yardim: "MAPEG tarafından verilmiş petrol işletme ruhsat numarası veya saha adı."
+    - id: mukellefiyet_turu
+      etiket: "Mükellefiyet türü"
+      tip: secenek
+      secenekler:
+        - deger: tam_mukellefiyet
+          etiket: "Tam mükellefiyet (yerli kurum)"
+        - deger: dar_mukellefiyet
+          etiket: "Dar mükellefiyet (yabancı kurum)"
+      zorunlu: true
+    - id: toplam_yatirim_maliyeti
+      etiket: "Toplam yatırım maliyeti (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Saha bazında toplam yatırım maliyeti. VUK Md.316 amortismanına tabi tutar."
+    - id: onceki_donem_kumulatif_itfa
+      etiket: "Önceki dönem kümülatif itfa toplamı (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Bugüne kadar (bu dönem hariç) itfa edilmiş toplam tutar. İlk yıl için 0."
+    - id: vuk316_orani
+      etiket: "VUK Md.316 itfa oranı (%)"
+      tip: sayi
+      zorunlu: true
+      yardim: "Enerji ve Tabii Kaynaklar Bakanlığı ile HMB'nin saha için müştereken belirlediği oran."
+    - id: brut_petrol_geliri
+      etiket: "Brüt petrol işlemi gelirleri (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Dönemde elde edilen ham petrol, doğal gaz ve diğer petrol işlemi satış gelirleri."
+    - id: devlet_hissesi
+      etiket: "Devlet hissesi (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "6491 s.K. Md.12/6 kapsamında devlete ödenen hisse tutarı."
+  formuller:
+    kalan_itfa_hakki: "max(0, toplam_yatirim_maliyeti - onceki_donem_kumulatif_itfa)"
+    hesaplanan_itfa: "min(toplam_yatirim_maliyeti * vuk316_orani / 100, kalan_itfa_hakki)"
+    net_petrol_geliri: "brut_petrol_geliri - devlet_hissesi"
+    istisna_tutari: "min(hesaplanan_itfa, net_petrol_geliri)"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "toplam_yatirim_maliyeti > 0"
+      hata: "Toplam yatırım maliyeti sıfırdan büyük olmalıdır."
+    - kural: "vuk316_orani > 0"
+      hata: "VUK Md.316 itfa oranı sıfırdan büyük olmalıdır. Bakanlık onaylı oran gereklidir."
+    - kural: "vuk316_orani <= 100"
+      hata: "İtfa oranı %100'ü aşamaz."
+    - kural: "brut_petrol_geliri >= 0"
+      hata: "Brüt petrol geliri negatif olamaz."
+    - kural: "net_petrol_geliri >= 0"
+      hata: "Net petrol işlemi geliri (brüt − devlet hissesi) negatif olamaz."
+
+denetci_notlari: |
+  ## I. 6491 s.K. Md.12/5 — İtfa Payı Hesaplama
+
+  Petrol hakkı sahibinin petrol işlemi için yaptığı yatırımlara tekabül eden sermayesi karşılığında
+  üretimden elde edeceği gelirler itfa payı olarak addolunur.
+
+  FORMÜL: İtfa Payı = MIN(VUK Md.316 Hesaplanan İtfa, Net Petrol Geliri)
+
+  ## II. Kritik Kurallar
+
+  SAHA BAZLILIK: İtfa oranları her petrollü arazi için ayrı ayrı, Enerji Bakanlığı (MAPEG) ve
+  HMB tarafından müştereken tespit edilir. Onay belgesi olmadan itfa hesabı yapılamaz.
+
+  DEVİR YASAĞI: Kullanılmayan itfa payı bir sonraki döneme DEVREDİLEMEZ. Ancak düzeltme
+  beyannamesi yoluyla talep edilebileceğine ilişkin GİB özelgesi mevcuttur.
+
+  GELİR TAVANI: Hesaplanan itfa payı cari dönem net petrol gelirini aşamaz.
+
+  KÜMÜLATIF KONTROL: Toplam itfa = toplam yatırım maliyetini aşamaz.
+
+  YİAKV: GİB Rehberi No:607 kapsamında YMM tarafından ayrıca değerlendirilmeli.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Petrol İşletme Ruhsatı (MAPEG)
+    detay: "Geçerli ruhsat tarihi, saha sınırları ve faaliyet konusu. Süresi dolmuş ruhsat indirimi ortadan kaldırır."
+    temin_yeri: MAPEG / Enerji Bakanlığı
+  - kategori: zorunlu
+    "no": 2
+    baslik: VUK Md.316 İtfa Oranı Bakanlık Onayı
+    detay: "Enerji ve Tabii Kaynaklar Bakanlığı ile HMB'nin saha için müştereken belirlediği itfa oranı yazısı."
+    temin_yeri: Enerji Bakanlığı + HMB
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Yatırım Maliyeti ve Kümülatif İtfa Tablosu
+    detay: "Toplam yatırım maliyeti, önceki dönemler kümülatif itfa ve cari dönem hesaplanan itfa."
+    temin_yeri: Maliyet Muhasebesi
+  - kategori: zorunlu
+    "no": 4
+    baslik: Dönem Petrol İşlemi Gelirleri Özeti
+    detay: "Devlet hissesi düşüldükten sonraki net petrol işlemi geliri. Gelir tavanı kontrolü için."
+    temin_yeri: Satış / Muhasebe
+  - kategori: destekleyici
+    "no": 5
+    baslik: Petrol İşlemleri Ayrı Muhasebe Defteri
+    detay: "KV'de petrol faaliyeti ayrı beyan edilmeli — ayrı muhasebe defteri zorunludur."
+    temin_yeri: Muhasebe
+
+k_checklist:
+  - id: K1
+    soru: "Petrol işletme ruhsatı geçerli ve yürürlükte mi?"
+    referans: "6491 s.K. Md.12"
+  - id: K2
+    soru: "Her saha için ayrı itfa oranı Bakanlık onaylı mı?"
+    referans: "VUK Md.316 | Enerji Bakanlığı + HMB"
+  - id: K3
+    soru: "İtfa payı net petrol gelirini aşmıyor mu? (Gelir tavanı)"
+    referans: "6491 s.K. Md.12/5"
+  - id: K4
+    soru: "Kümülatif itfa toplam yatırım maliyetini aşmıyor mu?"
+    referans: "VUK Md.316"
+  - id: K5
+    soru: "Devir yasağı bilinciyle kullanılmayan itfa için düzeltme beyannamesi değerlendirildi mi?"
+    referans: "GİB Özelge"
+  - id: K6
+    soru: "Petrol işlemleri ayrı muhasebe defterinde izleniyor mu?"
+    referans: "6491 s.K."
+  - id: K7
+    soru: "YİAKV etkisi GİB Rehberi No:607 kapsamında değerlendirildi mi?"
+    referans: "KVK Md.32/C"

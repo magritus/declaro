@@ -1,0 +1,434 @@
+ic_kod: indirimli_kv_kvk_32a_ytb
+baslik: İndirimli Kurumlar Vergisi — YTB Başına Hesaplama (KVK Md.32/A)
+ust_kalem: null
+
+beyanname_kodlari: []
+dahili_ref: "IKV-YTB"  # İndirimli KV — YTB bazlı (KVK 32/A); beyannamede ayrı YTB tablosunda işlenir
+
+mevzuat_dayanagi:
+  - KVK Madde 32/A
+  - 1 Seri No.lu Kurumlar Vergisi Genel Tebliği (Bölüm 32/A)
+  - 2012/3305 Sayılı Yatırımlarda Devlet Yardımları Hakkında Karar
+  - 2016/9495 Sayılı Yatırımlarda Devlet Yardımları Hakkında Karar
+  - 2022/6 Sayılı Cumhurbaşkanlığı Kararı
+  - Yatırım Teşvik Uygulamalarına İlişkin Tebliğ (2012/1)
+  - 49 Seri No.lu KV Genel Tebliği (30.12.2025)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+coklu_instance: true
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: yatirim_tesvikleri
+
+wizard_agaci:
+  tetikleyici_soru: "Sanayi ve Teknoloji Bakanlığı'ndan alınmış geçerli bir Yatırım Teşvik Belgesi (YTB) kapsamında yatırım veya üretim/işletme faaliyetiniz var mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 32/A** kapsamında, Sanayi ve Teknoloji Bakanlığı tarafından
+    düzenlenen **Yatırım Teşvik Belgesi (YTB)** sahiplerine, belgede öngörülen
+    yatırıma katkı tutarına (YKT) ulaşılıncaya kadar **indirimli oranda kurumlar
+    vergisi** uygulanır.
+
+    Bu kalem her YTB için **ayrı ayrı** eklenir. Birden fazla YTB varsa her biri
+    için ayrı kalem satırı oluşturulur.
+
+    ## Temel Kavramlar
+
+    **Yatırıma Katkı Tutarı (YKT):** Devletin hibe ettiği vergi desteğinin üst sınırı.
+    YKT = Yatırım Tutarı × Yatırıma Katkı Oranı (%si).
+
+    **Vergi İndirim Oranı:** Normal KV oranına uygulanacak indirim yüzdesi.
+    Örn. %80 vergi indirimi → indirimli oran = %25 × (1 − %80) = %5.
+
+    **Yatırım Dönemi:** YTB onayından tamamlama vizesine kadar olan süre.
+    Yatırım döneminde diğer faaliyetlerden elde edilen kazançlara, bölge limitiyle
+    sınırlı olmak üzere indirimli KV uygulanabilir.
+
+    **İşletme Dönemi:** Tamamlama vizesinden sonra; bu YTB'den elde edilen
+    yatırım kazancına doğrudan indirimli KV uygulanır.
+
+    ## Dönem Durumuna Göre İndirimli Matrah Belirlenmesi
+
+    ### Yatırım Döneminde
+    1. YKT Limiti = YKT × Bölge Yüzde Limiti / 100
+    2. Kümülatif Azami Kullanım = MIN(YKT Limiti, Kümülatif Yatırım Harcaması)
+    3. Kullanılabilir YKT = MAX(0, Kümülatif Azami Kullanım − Önceki Dönem Kümülatif Kullanım)
+    4. İndirimli Matrah = MIN(Diğer Faaliyetler Kazancı, Kullanılabilir YKT ÷ Normal KV Oranı)
+
+    ### İşletme Döneminde
+    İndirimli matrah = Beyan Edilen Yatırım Kazancı (bu YTB'den elde edilen kazanç)
+
+    ## KV Tasarrufu (Fiili YKT Kullanımı)
+
+    KV Tasarrufu = İndirimli Matrah × (İndirimsiz Oran − İndirimli Oran)
+    Bu tutar, pipeline'da matrah sonrası KV'den doğrudan düşülür.
+
+    ## Bölge Yüzde Limitleri (Yatırım Dönemi)
+
+    | Bölge | Yatırım Döneminde Limit |
+    |-------|------------------------|
+    | 1. Bölge | %10 |
+    | 2. Bölge | %10 |
+    | 3. Bölge | %20 |
+    | 4. Bölge | %30 |
+    | 5. Bölge | %50 |
+    | 6. Bölge | %80 |
+
+    ## Devreden YKT
+
+    Cari dönemde kullanılamayan YKT bakiyesi sonraki dönemlere devredilir:
+    Devreden YKT = MAX(0, (YKT − Önceki Dönem Kümülatif Kullanım) − KV Tasarrufu)
+
+    ## Tevsi Yatırımlarında Oran Belirlenmesi
+
+    Tevsi yatırımında indirimli KV oranı, tevsi yatırım tutarı / toplam sabit kıymet
+    oranı esas alınarak hesaplanır (orantılama). Bu oran beyanname hazırlanırken
+    ayrıca dikkate alınmalıdır.
+
+    ## YİAKV İlişkisi
+
+    **KVK 32/A kapsamındaki indirimli KV, YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.**
+    YİAKV uygulaması KVK 32/A'dan bağımsız olarak hesaplanır.
+  kapi_sorulari:
+    - id: ytb_gecerli
+      soru: "Sanayi ve Teknoloji Bakanlığı tarafından düzenlenmiş geçerli bir Yatırım Teşvik Belgeniz (YTB) var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 32/A uygulaması için YTB zorunludur. Teşvik belgesi olmadan indirimli KV uygulanamaz. Belge geçerlilik süresi ve iptal/revize durumu mutlaka kontrol edilmelidir."
+    - id: sektor_uygun
+      soru: "Yatırım konusu, indirimli KV uygulamasından yararlanabilecek sektörler arasında mı? (Finansal kiralama, sağlık amaçlı mülk edinimi vb. istisnalar hariç)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Teşvik mevzuatında bazı sektörler ve yatırım konuları desteksiz yatırımlar kapsamındadır. YTB'nin kapsadığı yatırım konusunun indirimli KV'den yararlanıp yararlanamayacağı teyit edilmelidir."
+    - id: ytb_suresi_gecmemis
+      soru: "YTB'nin geçerlilik süresi dolmamış mı ve tamamlama vizesi için gerekli şartlar devam ediyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Süresi dolan ve uzatılmayan YTB'ler kapsamında gerçekleştirilemeyen yatırımlar için indirimli KV avantajı ortadan kalkar. Belge geçerlilik süresi takip edilmelidir."
+    - id: donem_durumu_net
+      soru: "YTB'nin mevcut dönem için yatırım döneminde mi yoksa işletme döneminde mi (tamamlama vizesi alınmış) olduğu netleştirildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirimli matrah hesaplama yöntemi dönem durumuna göre farklılaşır. Tamamlama vizesi tarihi, yatırım/işletme dönemi ayrımının temel kriteridir."
+
+parametreler:
+  varsayilan_normal_kv_orani: 25
+  bolge_yuzde_limitleri:
+    "1": 10
+    "2": 10
+    "3": 20
+    "4": 30
+    "5": 50
+    "6": 80
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: ytb_no
+      etiket: "YTB Numarası"
+      tip: metin
+      zorunlu: true
+      yardim: "Sanayi ve Teknoloji Bakanlığı tarafından verilen Yatırım Teşvik Belgesi numarası. Her YTB için ayrı kalem satırı oluşturulur."
+    - id: ytb_tarihi
+      etiket: "YTB Düzenleme Tarihi (GG.AA.YYYY)"
+      tip: tarih
+      zorunlu: true
+      yardim: "YTB'nin Sanayi ve Teknoloji Bakanlığı tarafından düzenlendiği tarih."
+    - id: yatirim_bolgesi
+      etiket: "Yatırım Bölgesi"
+      tip: secenek
+      secenekler:
+        - deger: "1"
+          etiket: "1. Bölge"
+        - deger: "2"
+          etiket: "2. Bölge"
+        - deger: "3"
+          etiket: "3. Bölge"
+        - deger: "4"
+          etiket: "4. Bölge"
+        - deger: "5"
+          etiket: "5. Bölge"
+        - deger: "6"
+          etiket: "6. Bölge"
+      zorunlu: true
+      yardim: "YTB'de belirtilen yatırım bölgesi. Bölge, hem yatırıma katkı oranını hem de yatırım döneminde uygulanabilecek bölge limitini belirler."
+    - id: yatirim_turu
+      etiket: "Yatırım Türü"
+      tip: secenek
+      secenekler:
+        - deger: "Komple Yeni"
+          etiket: "Komple Yeni"
+        - deger: "Tevsi"
+          etiket: "Tevsi"
+        - deger: "Modernizasyon"
+          etiket: "Modernizasyon"
+        - deger: "Diger"
+          etiket: "Diğer"
+      zorunlu: true
+      yardim: "YTB'de belirtilen yatırım türü. Tevsi yatırımlarında orantılama yöntemi uygulanması gerekebilir; bu durumda denetçi notlarına bakınız."
+    - id: yatirim_tutari
+      etiket: "YTB Yatırım Tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "YTB'de belirtilen toplam sabit yatırım tutarı. YKT hesabında esas alınır."
+    - id: ykt_orani
+      etiket: "Yatırıma Katkı Oranı (%) — YTB'den"
+      tip: sayi
+      zorunlu: true
+      yardim: "YTB'de kayıtlı yatırıma katkı oranı (örn. 20, 30, 40, 55). Bölgeye ve sektöre göre değişir. Bu oran yüzde değer olarak girilir (örn. 40 → %40)."
+    - id: vergi_indirim_orani
+      etiket: "Vergi İndirim Oranı (%) — YTB'den"
+      tip: sayi
+      zorunlu: true
+      yardim: "YTB'de kayıtlı vergi indirim oranı (örn. 50, 60, 80, 100). Normal KV oranına uygulanacak indirim yüzdesidir. Bu oran yüzde değer olarak girilir (örn. 80 → %80)."
+    - id: normal_kv_orani
+      etiket: "Normal KV Oranı (%)"
+      tip: sayi
+      zorunlu: false
+      varsayilan: 25
+      yardim: "Kurumlar vergisi normal oranı. 2024 ve sonrası için %25; önceki dönemler için farklılaşabilir. Değiştirilmediği takdirde %25 varsayılan olarak uygulanır."
+    - id: donem_durumu
+      etiket: "YTB Dönem Durumu"
+      tip: secenek
+      secenekler:
+        - deger: "Yatirim Doneminde"
+          etiket: "Yatırım Döneminde (Tamamlama Vizesi Alınmamış)"
+        - deger: "Isletme Doneminde"
+          etiket: "İşletme Döneminde (Tamamlama Vizesi Alınmış)"
+      zorunlu: true
+      yardim: "Tamamlama vizesi alınmışsa İşletme Dönemi, alınmamışsa Yatırım Dönemi seçilir. Dönem tespiti, hem indirimli matrah yöntemi hem de uygulama şekli açısından kritik önem taşır."
+    - id: bolge_yuzde_limiti
+      etiket: "Bölge Yüzde Limiti (%) — Yatırım Döneminde Geçerli"
+      tip: sayi
+      zorunlu: false
+      varsayilan: 10
+      yardim: |
+        Yatırım döneminde diğer faaliyetlerden elde edilen kazançlara indirimli KV
+        uygulanabilecek YKT payını sınırlayan oran.
+        Bölgeye göre varsayılan değerler:
+        1. Bölge → %10 | 2. Bölge → %10 | 3. Bölge → %20
+        4. Bölge → %30 | 5. Bölge → %50 | 6. Bölge → %80
+        İşletme döneminde bu alan kullanılmaz.
+    - id: kumulatif_yatirim_harcamasi
+      etiket: "Kümülatif Yatırım Harcaması (TL) — Yatırım Döneminde"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: "YTB kapsamında dönem sonuna kadar gerçekleştirilen toplam yatırım harcaması. Yatırım döneminde kullanılan YKT tavanını belirler. İşletme döneminde bu alan kullanılmaz."
+    - id: onceki_donem_kumulatif_ykt
+      etiket: "Önceki Dönem Kümülatif YKT Kullanımı (TL)"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: "Bu YTB kapsamında önceki dönemlerde toplam olarak kullanılan YKT (birikimli KV tasarrufu) tutarı. İlk dönende 0 girilir. Sonraki dönemlerde, önceki tüm dönemlerdeki KV tasarrufu toplamını yansıtmalıdır."
+    - id: beyan_edilen_diger_kazanc
+      etiket: "Beyan Edilen Diğer Faaliyetler Kazancı (TL) — Yatırım Döneminde"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: "Yatırım döneminde, bu YTB kapsamındaki yatırımdan elde edilen kazanç dışında kalan diğer faaliyetlerden elde edilen kurum kazancı. Yatırım döneminde indirimli KV uygulanabilecek matrahın üst sınırını belirler. İşletme döneminde bu alan kullanılmaz."
+    - id: beyan_edilen_yatirim_kazanci
+      etiket: "Beyan Edilen Yatırım Kazancı (TL) — İşletme Döneminde"
+      tip: para
+      zorunlu: false
+      varsayilan: 0
+      yardim: "İşletme döneminde bu YTB kapsamındaki yatırımdan elde edilen kazanç. Bu tutar doğrudan indirimli KV matrahı olarak alınır. Yatırım döneminde bu alan kullanılmaz."
+  formuller:
+    ykt: "yatirim_tutari * ykt_orani / 100"
+    indirimsiz_oran: "normal_kv_orani / 100"
+    indirimli_oran: "normal_kv_orani * (1 - vergi_indirim_orani / 100) / 100"
+    ykt_limiti_yatirim: "ykt * bolge_yuzde_limiti / 100"
+    kumulatif_azami_kullanim: "min(ykt_limiti_yatirim, kumulatif_yatirim_harcamasi)"
+    kullanilabilir_ykt: "max(0, kumulatif_azami_kullanim - onceki_donem_kumulatif_ykt)"
+    indirimli_matrah_yatirim: "min(beyan_edilen_diger_kazanc, kullanilabilir_ykt / (normal_kv_orani / 100))"
+    indirimli_matrah_isletme: "beyan_edilen_yatirim_kazanci"
+    indirimli_matrah: "if(donem_durumu == 'Yatirim Doneminde', indirimli_matrah_yatirim, indirimli_matrah_isletme)"
+    kv_tasarrufu: "indirimli_matrah * (indirimsiz_oran - indirimli_oran)"
+    devreden_ykt: "max(0, (ykt - onceki_donem_kumulatif_ykt) - kv_tasarrufu)"
+  sonuc_alan: kv_tasarrufu
+  ek_sonuc_alanlari:
+    - devreden_ykt
+    - indirimli_matrah
+    - ykt
+  validasyonlar:
+    - kural: "yatirim_tutari > 0"
+      hata: "Yatırım tutarı sıfırdan büyük olmalıdır."
+    - kural: "ykt_orani > 0 and ykt_orani <= 100"
+      hata: "Yatırıma katkı oranı 0 ile 100 arasında olmalıdır."
+    - kural: "vergi_indirim_orani > 0 and vergi_indirim_orani <= 100"
+      hata: "Vergi indirim oranı 0 ile 100 arasında olmalıdır."
+    - kural: "normal_kv_orani > 0 and normal_kv_orani <= 100"
+      hata: "Normal KV oranı 0 ile 100 arasında olmalıdır."
+    - kural: "bolge_yuzde_limiti >= 0 and bolge_yuzde_limiti <= 100"
+      hata: "Bölge yüzde limiti 0 ile 100 arasında olmalıdır."
+    - kural: "kumulatif_yatirim_harcamasi >= 0"
+      hata: "Kümülatif yatırım harcaması negatif olamaz."
+    - kural: "onceki_donem_kumulatif_ykt >= 0"
+      hata: "Önceki dönem kümülatif YKT kullanımı negatif olamaz."
+    - kural: "beyan_edilen_diger_kazanc >= 0"
+      hata: "Beyan edilen diğer faaliyetler kazancı negatif olamaz."
+    - kural: "beyan_edilen_yatirim_kazanci >= 0"
+      hata: "Beyan edilen yatırım kazancı negatif olamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 32/A: Yatırım Teşvik Belgesi (YTB) kapsamındaki yatırımlara, devlet
+  desteği niteliğinde yatırıma katkı tutarına (YKT) ulaşılıncaya kadar indirimli
+  kurumlar vergisi uygulanır. 2012/3305 ve 2016/9495 Sayılı Cumhurbaşkanlığı
+  Kararları ve 1 No.lu KV GT hükümleri esas alınmıştır.
+
+  ## Önemli Uyarı — Çoklu YTB
+  Bu kalem her YTB için AYRI AYRI eklenir. Birden fazla YTB varsa her biri için
+  ayrı kalem satırı oluşturun. Konsolidasyon pipeline adım 8'de yapılır.
+
+  ## Temel Kavramlar ve Formül Özeti
+
+  YKT = Yatırım Tutarı × Yatırıma Katkı Oranı
+  İndirimsiz Oran = Normal KV Oranı / 100
+  İndirimli Oran = Normal KV Oranı × (1 − Vergi İndirim Oranı/100) / 100
+
+  ### Yatırım Döneminde İndirimli Matrah Hesabı
+  1. YKT Limiti = YKT × Bölge Yüzde Limiti / 100
+  2. Kümülatif Azami Kullanım = MIN(YKT Limiti, Kümülatif Yatırım Harcaması)
+  3. Kullanılabilir YKT = MAX(0, Kümülatif Azami Kullanım − Önceki Dönem Kümülatif YKT)
+  4. İndirimli Matrah = MIN(Diğer Faaliyetler Kazancı, Kullanılabilir YKT ÷ (Normal KV Oranı/100))
+
+  ### İşletme Döneminde İndirimli Matrah Hesabı
+  İndirimli Matrah = Beyan Edilen Yatırım Kazancı (bu YTB'ye özgü kazanç)
+
+  ### KV Tasarrufu ve Devreden YKT
+  KV Tasarrufu = İndirimli Matrah × (İndirimsiz Oran − İndirimli Oran)
+  Devreden YKT = MAX(0, (YKT − Önceki Dönem Kümülatif YKT) − KV Tasarrufu)
+
+  NOT: Sonuç alanı (kv_tasarrufu), standart bir indirim tutarı değildir. Bu kalem,
+  hesaplama pipeline'ında matrah hesaplaması tamamlandıktan sonra, kurumlar
+  vergisinden doğrudan düşülen bir tutar olarak işlenir.
+
+  ## Bölge Yüzde Limitleri (Yatırım Dönemi)
+
+  1. Bölge → %10
+  2. Bölge → %10
+  3. Bölge → %20
+  4. Bölge → %30
+  5. Bölge → %50
+  6. Bölge → %80
+
+  ## Tevsi Yatırımlarında Orantılama
+
+  Tevsi yatırımlarında indirimli KV, yalnızca tevsi yatırımına isabet eden
+  kazanç payı üzerinden uygulanır. Hesaplama yöntemi:
+  Tevsi Oranı = Tevsi Yatırım Tutarı / Toplam Sabit Kıymet Tutarı
+  İndirimli Matrah = Toplam Kurum Kazancı × Tevsi Oranı
+  (1 No.lu KV GT ve ilgili sirkülere göre)
+
+  ## YİAKV Etkisi
+  KVK 32/A indirimli KV uygulaması, YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV hesabı bağımsız olarak devam eder. Beyanname 500. satırı YİAKV
+  çalışma kâğıdında bilgi satırı olarak gösterilir.
+
+  ## YMM Tasdik Yükümlülüğü
+  - Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL → YMM raporu zorunludur (49 No.lu KV GT).
+  - Yatırım döneminde yararlanmak için YTB kapsamındaki yatırım harcamalarını
+    destekleyen belgelerin YMM tarafından tasdik edilmesi gerekir.
+  - Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmeyebilir.
+
+  ## Dikkat Edilmesi Gereken Riskler
+
+  1. YTB geçerlilik süresi: Süresi dolmuş ve uzatılmamış YTB ile indirimli KV uygulanamaz.
+  2. Tamamlama vizesi: Tamamlama vizesi alınıp alınmadığı dönem tespitini etkiler.
+  3. Asgari yatırım tutarı: Gerçekleşen harcama YTB'deki asgari tutara ulaşmamışsa hak kaybı riski.
+  4. Önceki dönem kümülatif kullanım: Hatalı giriş YKT bakiyesini bozar; önceki beyannamelerle mutabakat zorunludur.
+  5. Çapraz uygulama: Aynı kazanç için hem 32/A hem de farklı istisna uygulanması (çifte avantaj) mevzuata aykırıdır.
+
+muhasebe_kayitlari: |
+  ## İndirimli KV Kaydı
+  İndirimli KV uygulaması nedeniyle oluşan KV tasarrufu, muhasebe kayıtlarına
+  doğrudan gelir olarak alınmaz. Hesaplanan KV tutarı aşağıdaki şekilde kaydedilir:
+
+  Borç: 370 Dönem Kârı Vergi ve Diğer Yük. Karşılıkları (Hesaplanan gerçek KV)
+  Alacak: 371 Dönem Kârı Vergi ve Diğer Yük. Karşılıkları (KV tahakkuku)
+  Açıklama: İndirimli oran uygulandıktan sonra hesaplanan nihai KV tutarı.
+
+  ## Ertelenmiş Vergi (TMS 12 Uygulaması — Gerekiyorsa)
+  TMS/TFRS uygulayan mükellefler için, YKT kullanımına bağlı olarak ertelenmiş
+  vergi varlığı/yükümlülüğü değerlendirmesi yapılmalıdır.
+
+  ## Beyanname
+  Her YTB için hesaplanan KV tasarrufu ayrı ayrı beyanname 500. satırına aktarılır.
+  Konsolidasyondan sonra toplam tutar KV'den mahsup edilir.
+  Devreden YKT bakiyesi, izleyen dönem beyannamesinin başlangıç değeri olarak
+  kullanılmak üzere kayıt altına alınır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Yatırım Teşvik Belgesi (YTB) Aslı veya Noter Onaylı Sureti
+    detay: "YTB ve ekleri: yatırım yeri, yatırım tutarı, yatırıma katkı oranı, vergi indirim oranı, yatırım bölgesi ve geçerlilik süresi bilgilerini içermelidir. Revize edilmişse en güncel versiyon alınmalıdır."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı / e-TUYS
+  - kategori: zorunlu
+    "no": 2
+    baslik: Tamamlama Vizesi (İşletme Dönemi İçin)
+    detay: "Tamamlama vizesi alınmışsa (işletme dönemi) vize tarihi ve kapsamını gösteren belge. Bu belge, yatırım/işletme dönemi ayrımını ispatlar ve indirimli matrah yöntemini belirler."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı / e-TUYS
+  - kategori: zorunlu
+    "no": 3
+    baslik: Yatırım Harcamaları Tablosu ve Destekleyici Belgeler
+    detay: "YTB kapsamında gerçekleştirilen yatırım harcamalarının döneme ait özeti. Kümülatif harcama tutarı, fatura/makbuz bazında muhasebe kayıtlarıyla uyumlu olmalıdır."
+    temin_yeri: Muhasebe / Mali İşler
+  - kategori: zorunlu
+    "no": 4
+    baslik: Kazanç Ayrıştırma Tablosu (Tevsi Yatırımları İçin)
+    detay: "Tevsi yatırımlarında, toplam kurum kazancının yatırıma isabet eden payının hesaplandığı tablo. Tevsi yatırım tutarı / toplam sabit kıymet oranı ile indirimli matrahın belirlenmesi. Komple yeni yatırımlar için gerekmez."
+    temin_yeri: Muhasebe / YMM
+  - kategori: zorunlu
+    "no": 5
+    baslik: YMM Raporu (49 No.lu Sirkülere Göre)
+    detay: "KV tasarrufu tutarı ≥500.000 TL veya toplam ≥1.000.000 TL ise 49 No.lu KV GT kapsamında YMM tasdik raporu. Yatırım döneminde gerçekleşen harcamaların belgelenmesi ve indirimli KV hesabının teyidi içermelidir."
+    temin_yeri: YMM
+  - kategori: destekleyici
+    "no": 6
+    baslik: Önceki Dönemler KV Beyannameleri (Kümülatif YKT Kullanımı İspat)
+    detay: "Bu YTB kapsamında önceki dönemlerde kullanılan kümülatif YKT tutarlarını gösteren beyanname kayıtları. Önceki dönem kümülatif giriş değeriyle mutabık olmalıdır."
+    temin_yeri: Beyanname Arşivi / Muhasebe
+  - kategori: destekleyici
+    "no": 7
+    baslik: Yatırım Dönemine Ait Diğer Faaliyetler Kazanç Belgesi
+    detay: "Yatırım döneminde diğer faaliyetlerden elde edilen kazancı gösteren belge. İndirimli matrah bu kazançla sınırlı olduğundan tutarın izah edilebilir olması gerekir."
+    temin_yeri: Muhasebe / KV Beyannamesi Taslağı
+
+k_checklist:
+  - id: K1
+    soru: "YTB'nin geçerlilik süresi ve en güncel revize versiyonu teyit edildi mi? (Süresi dolan veya iptal edilen YTB ile indirimli KV uygulanamaz)"
+    referans: "KVK Md.32/A | 2012/3305 Sayılı Karar"
+  - id: K2
+    soru: "Yatırım konusunun indirimli KV uygulamasından yararlanabilecek sektörler arasında olduğu doğrulandı mı? (Desteksiz yatırımlar kontrolü)"
+    referans: "KVK Md.32/A | 2012/3305 Sayılı Karar — Ek-4 Listesi"
+  - id: K3
+    soru: "Yatırım bölgesi ve buna bağlı yatırıma katkı oranı ile vergi indirim oranının YTB'deki değerlerle uyumlu olduğu kontrol edildi mi?"
+    referans: "KVK Md.32/A | YTB belgesi"
+  - id: K4
+    soru: "Aynı kazanç için hem KVK 32/A (indirimli KV) hem de farklı bir istisna/indirim birlikte uygulanmadığı (çapraz uygulama yasağı) doğrulandı mı?"
+    referans: "KVK Md.32/A | 1 No.lu KV GT"
+  - id: K5
+    soru: "Önceki dönem kümülatif YKT kullanımı, önceki beyanname kayıtlarıyla mutabık mı ve doğru şekilde girildi mi?"
+    referans: "KVK Md.32/A — Kümülatif YKT takibi"
+  - id: K6
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (KV tasarrufu tek satır ≥500.000 TL veya toplam ≥1.000.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"
+  - id: K7
+    soru: "YİAKV (KVK 32/C) matrahına etkisi analiz edildi mi? (KVK 32/A indirimli KV YİAKV matrahından DÜŞÜLEMEZ)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. No:607"
+  - id: K8
+    soru: "Tevsi yatırımı ise kazanç ayrıştırma tablosu (tevsi oranı = tevsi yatırım tutarı / toplam sabit kıymet) hazırlandı mı?"
+    referans: "KVK Md.32/A | 1 No.lu KV GT — Tevsi Yatırım Hükümleri"
+  - id: K9
+    soru: "Dönem durumu (yatırım dönemi / işletme dönemi) teyit edildi mi? Tamamlama vizesi tarihi netleştirildi mi?"
+    referans: "KVK Md.32/A | 2012/3305 Sayılı Karar — Tamamlama Vizesi"
+  - id: K10
+    soru: "Muhasebe kaydında indirimli KV tutarı doğru olarak tahakkuk ettirildi mi ve devreden YKT bakiyesi kayıt altına alındı mı?"
+    referans: "KVK Md.32/A | Muhasebe kaydı gereklilikleri"

@@ -1,0 +1,436 @@
+ic_kod: gecmis_yil_zarari_mahsubu
+baslik: Geçmiş Yıl Zararları Mahsubu (KVK Madde 9)
+ust_kalem: null
+
+beyanname_kodlari: []
+# Açıklama: GYZ, beyannamede tek satır kodu olmayan bir tablo yapısıdır.
+# gecmisYilZararTipleri XML bloğunda yıl bazlı iki tip gösterim yapılır:
+# Tip 1 — Diğer Zararlar (normal geçmiş yıl ticari zararı)
+# Tip 2 — İstisnadan Kaynaklanan Zararlar
+# Toplam mahsup tutarı pipeline tarafından dönem mali kârı ile karşılaştırılarak sınırlanır.
+
+beyanname_bolumu: gecmis_yil_zarari
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: gecmis_yil_zararlari
+
+mevzuat_dayanagi:
+  - KVK Madde 9/1 — Zarar mahsubu (genel çerçeve, 5 yıl sınırı, FIFO)
+  - KVK Madde 9/2 — Yurt dışı şube/daimi temsilci zararı özel şartları
+  - KVK Madde 12 — Örtülü sermaye kaynağından doğan faiz/kur farkı zararı kısıtlaması
+  - KVK Madde 13 — Transfer fiyatlandırması kaynaklı zarar kısıtlaması
+  - GVK Madde 88 — Birleşik gelir zararları (kıyasen uygulama)
+  - 1 Seri No.lu KV Genel Tebliği (9. Madde açıklamaları ve örnekleri)
+  - 7456 sayılı Kanun — Taşınmaz satış kazancı istisna oranı değişikliği (istisna kaynaklı zarar etkisi)
+
+wizard_agaci:
+  tetikleyici_soru: "Önceki 5 takvim yılına ait mahsup edilmemiş geçmiş yıl zararın var mı?"
+  info_modal: |
+    ## KVK Madde 9 — Genel Çerçeve
+
+    Kurumlar vergisi mükellefleri, beş (5) takvim yılını aşmamak koşuluyla geçmiş yıllara ait **beyannamede gösterilen** ticari zararlarını cari yıl matrahından mahsup edebilir. 2025 yılı beyannamesinde en geriye 2020 yılı zararları mahsup edilebilir; 2019 ve öncesine ait zararlar 5 yıl süresini doldurduğundan artık mahsup edilemez.
+
+    ### İki Zarar Tipi — Beyannamede Ayrı Satırlar
+
+    Geçmiş yıl zararları beyannamede iki tip halinde ayrı gösterilir:
+    - **Tip 1 — Diğer Zararlar:** Normal ticari faaliyetten kaynaklanan geçmiş yıl zararları. Örtülü sermaye (KVK 12) veya transfer fiyatlandırması (KVK 13) kısıtı uygulanmış sonraki tutarlar bu tipte yer alır.
+    - **Tip 2 — İstisnadan Kaynaklanan Zararlar:** Kurumlar vergisinden istisna olan bir faaliyetten (örneğin taşınmaz satış istisnası, iştirak hissesi satış istisnası) kaynaklanan dönem zararı. Bu tür zararlar da mahsup edilebilir; ancak beyannamede Tip 1'den ayrı biçimde gösterilmesi zorunludur.
+
+    ### Mahsup Sırası — FIFO Zorunluluğu
+
+    Geçmiş yıl zararları en eski yıldan başlayarak sırayla (FIFO — First In, First Out) mahsup edilir; mükellefin sıra seçme serbestisi yoktur. 2025 beyannamesinde önce 2020 zararı, sonra 2021, 2022, 2023 ve son olarak 2024 zararı mahsup edilir.
+
+    ### Beyanname Yerleşimi ve Hesaplama Akışı
+
+    KV Beyannamesi Section D — Matrah Tespitine İlişkin Bildirim içindeki yerleşim şöyledir:
+
+    ```
+    Ticari Kâr (Muhasebe Kârı)
+    + KKEG (Kanunen Kabul Edilmeyen Giderler)
+    + Finansman Fonu ve Diğer Eklemeler
+    ─────────────────────────────────────────
+    = Düzeltilmiş Ticari Kâr
+    − ZDI (Zarar Olsa Dahi İndirilecek İstisnalar — Örn. İştirak kâr payları, yurt dışı iştirak)
+    ─────────────────────────────────────────
+    = Dönem Mali Kârı   ◄── GYZ mahsubu BURADAN yapılır
+    − GYZ Mahsubu (Tip 1 + Tip 2; en fazla dönem mali kârı kadar)
+    − KVI (Kazanç Varsa İndirilecek İstisnalar — Örn. Taşınmaz satışı, TGB)
+    − Diğer İndirimler (Ar-Ge, sponsorluk vb.)
+    ─────────────────────────────────────────
+    = Kurumlar Vergisi Matrahı
+    ```
+
+    **Kritik kural:** Mahsup tutarı, dönem mali kârını aşamaz; "vergi kaybı" oluşturmaz. Dönem mali kârı sıfır veya negatifse GYZ mahsubu yapılamaz.
+
+    ### Önemli Kısıtlamalar ve Özel Durumlar
+
+    **1. 5 yıl zamanaşımı:**
+    2025 beyannamesi için mahsup edilebilir en eski yıl 2020'dir (2019 ve öncesi mahsup edilemez, süre dolmuştur).
+
+    **2. Sadece beyannamedeki zararlar:**
+    Vergi incelemesi sonucunda tespit edilen (tarhiyatla ortaya çıkan) zararlar mahsup kapsamına girmez; yalnızca döneminde verilmiş beyannamesinde gösterilen ticari zararlar esas alınır.
+
+    **3. Örtülü sermaye (KVK Madde 12) kısıtı:**
+    Örtülü sermaye sayılan borçlanmalardan kaynaklanan faiz giderleri ve kur farkı giderlerinin KKEG olarak eklenmesiyle oluşan zarar kısıtlaması, geçmiş yıl zararı hesabına yansıtılmış olmalıdır. Örtülü sermaye tespiti yapılmadan hesaplanan zarar tutarları hatalı olabilir.
+
+    **4. Transfer fiyatlandırması (KVK Madde 13) kısıtı:**
+    Emsale aykırı işlemlerden örtülü kazanç dağıtımı yapıldığı tespit edilen dönemlerde, bu işlemlerden kaynaklanan giderlerin KKEG olarak eklenmesi gerekir; bu düzeltme yapılmadan hesaplanan zararlar kullanılamaz.
+
+    **5. Yurt dışı zarar — KVK Madde 9/2:**
+    Yurt dışı şube veya daimi temsilci faaliyetlerinden kaynaklanan zararların mahsubu için özel şartlar mevcuttur:
+    - Yurt dışı faaliyetler Türkiye'de tam konsolidasyon usulünde beyan edilmiş olmalı
+    - Söz konusu ülke kanunlarına göre mahsup imkânı tüketilmiş (zarar kapatılmamış) olmalı
+    - Belgeleme zorunluluğu: Yurt dışı beyanname, denetimden geçmiş mali tablolar
+    - Faaliyet ülkesindeki vergi yükü Türkiye'deki kurumlar vergisi oranından düşükse ilave kısıtlamalar geçerli olabilir
+
+    **6. İstisna kaynaklı zarar — Tip 2:**
+    Örneğin bir taşınmazı satarken uygulanan KVK 5/1-e istisnasına konu işlemden dönem zararı doğmuşsa, bu zarar Tip 2 olarak beyannamede ayrıca gösterilir ve mahsup edilebilir. 7456 sayılı Kanun'la değişen oran uygulamalarında oluşan zararlar da bu kapsama girebilir.
+
+    ### YİAKV İlişkisi
+
+    Geçmiş yıl zararları mahsubu **YİAKV (Yurt İçi Asgari Kurumlar Vergisi — KVK 32/C) matrahından DÜŞÜLEMEZ.** YİAKV hesabı, KVK 32/C kapsamında bağımsız bir paralel hesaptır. GYZ mahsubu normal matrah akışında yer alırken YİAKV matrahında bu indirim söz konusu değildir. YİAKV çalışma kâğıdında GYZ mahsubu hiçbir zaman matrahtan çıkarılmamalıdır.
+
+    ### Devir ve Birleşme Durumları
+
+    KVK Madde 18-20 kapsamında gerçekleşen devir ve birleşmelerde, devreden kurumun geçmiş yıl zararları belirli koşullar altında devralan kurum tarafından mahsup edilebilir. Bu durum ayrıca değerlendirilmeli ve 1 Seri No.lu KV Genel Tebliği'nin ilgili bölümündeki şartlar sağlanmalıdır.
+
+    ### Pratik Notlar
+
+    - Her yılın zararı bağımsız kayıt ve takip gerektirdiğinden 5 yıllık izleme tablosu tutulması önerilir.
+    - Mahsup sonrası kalan zarar bakiyesi, bir sonraki döneme taşınmaz; 5 yıl içinde kullanılmayan zarar zamanaşımına uğrar.
+    - Yurt dışı şube/daimi temsilci zararları için ayrı belgeleme dosyası oluşturulması zorunludur.
+    - YMM tasdik raporu eşiği varsa (≥500.000 TL satır veya ≥1.000.000 TL toplam) rapor düzenlenmeden mahsup risklidir.
+  kapi_sorulari:
+    - id: gyzo_var_mi
+      soru: "Son 5 takvim yılında (2020–2024) mahsup edilmemiş geçmiş yıl ticari zararın var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Vergi incelemesiyle tespit edilen değil; döneminde verilmiş beyannamede gösterilen ticari zararlar esas alınır. Tüm zararlar kullanılmışsa bu kalem uygulanmaz."
+    - id: yurtdisi_zarar_var_mi
+      soru: "Bu zararlar arasında yurt dışı şube veya daimi temsilci kaynaklı zarar var mı? (KVK Md. 9/2)"
+      tip: evet_hayir
+      aciklama: "Evet ise yurt dışında mahsup imkânı tüketilmeli, belgeleme zorunlu (yurt dışı beyanname + denetimli mali tablo). Koşullar sağlanmadan Türkiye'de mahsup yapılamaz."
+    - id: ortulu_sermaye_var_mi
+      soru: "Zararlı dönemlerde KVK Md. 12 kapsamında örtülü sermaye tespiti yapıldı mı veya riski var mı?"
+      tip: evet_hayir
+      aciklama: "Örtülü sermaye faiz/kur farkı KKEG olarak eklendikten sonra kalan zarar tutarı mahsup edilebilir. Düzeltme yapılmadan hesaplanan zarar hatalı olabilir."
+
+parametreler:
+  max_gecmis_yil: 5
+  # Yıl bazlı mahsup limiti pipeline tarafından dönem mali kârı üzerinden uygulanır.
+  # Dönem mali kârı = Ticari kâr + KKEG - ZDI istisnalar
+  # GYZ mahsubu bu tutarı aşamaz.
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    # 2025 beyannamesi için 5 yıl × 2 tip = 10 giriş alanı
+    # Tip 1 — Diğer (Normal) Geçmiş Yıl Zararı
+    # Tip 2 — İstisnadan Kaynaklanan Geçmiş Yıl Zararı
+
+    - id: y2020_t1
+      etiket: "2020 Yılı — Tip 1 Zarar (Diğer/Normal)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2020 yılı kurumlar vergisi beyannamesinde gösterilen ve henüz mahsup edilmemiş normal ticari zarar tutarı (TL). 2025 beyannamesi için mahsup edilebilecek en eski yıldır."
+
+    - id: y2020_t2
+      etiket: "2020 Yılı — Tip 2 Zarar (İstisnadan Kaynaklanan)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2020 yılında istisna kapsamındaki bir faaliyetten (örn. taşınmaz/hisse satışı istisnası) kaynaklanan ve henüz mahsup edilmemiş zarar. Beyannamede Tip 1'den ayrı gösterilir."
+
+    - id: y2021_t1
+      etiket: "2021 Yılı — Tip 1 Zarar (Diğer/Normal)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2021 yılı kurumlar vergisi beyannamesinde gösterilen ve henüz mahsup edilmemiş normal ticari zarar tutarı (TL). FIFO sırasında 2020 zararından sonra gelir."
+
+    - id: y2021_t2
+      etiket: "2021 Yılı — Tip 2 Zarar (İstisnadan Kaynaklanan)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2021 yılında istisna kapsamındaki bir faaliyetten kaynaklanan ve henüz mahsup edilmemiş zarar tutarı (TL)."
+
+    - id: y2022_t1
+      etiket: "2022 Yılı — Tip 1 Zarar (Diğer/Normal)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2022 yılı kurumlar vergisi beyannamesinde gösterilen ve henüz mahsup edilmemiş normal ticari zarar tutarı (TL)."
+
+    - id: y2022_t2
+      etiket: "2022 Yılı — Tip 2 Zarar (İstisnadan Kaynaklanan)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2022 yılında istisna kapsamındaki bir faaliyetten kaynaklanan ve henüz mahsup edilmemiş zarar tutarı (TL)."
+
+    - id: y2023_t1
+      etiket: "2023 Yılı — Tip 1 Zarar (Diğer/Normal)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2023 yılı kurumlar vergisi beyannamesinde gösterilen ve henüz mahsup edilmemiş normal ticari zarar tutarı (TL)."
+
+    - id: y2023_t2
+      etiket: "2023 Yılı — Tip 2 Zarar (İstisnadan Kaynaklanan)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2023 yılında istisna kapsamındaki bir faaliyetten kaynaklanan ve henüz mahsup edilmemiş zarar tutarı (TL)."
+
+    - id: y2024_t1
+      etiket: "2024 Yılı — Tip 1 Zarar (Diğer/Normal)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2024 yılı kurumlar vergisi beyannamesinde gösterilen ve henüz mahsup edilmemiş normal ticari zarar tutarı (TL). FIFO sırasında en son mahsup edilen yıldır."
+
+    - id: y2024_t2
+      etiket: "2024 Yılı — Tip 2 Zarar (İstisnadan Kaynaklanan)"
+      tip: para
+      zorunlu: false
+      default: 0
+      yardim: "2024 yılında istisna kapsamındaki bir faaliyetten kaynaklanan ve henüz mahsup edilmemiş zarar tutarı (TL). En yakın geçmiş yıl — FIFO'da son sıradadır."
+
+  formuller:
+    toplam_t1: "y2020_t1 + y2021_t1 + y2022_t1 + y2023_t1 + y2024_t1"
+    toplam_t2: "y2020_t2 + y2021_t2 + y2022_t2 + y2023_t2 + y2024_t2"
+    toplam_mahsup: "toplam_t1 + toplam_t2"
+
+  sonuc_alan: toplam_mahsup
+  # NOT: Pipeline, toplam_mahsup tutarını dönem mali kârıyla (ZDI sonrası oluşan kâr)
+  # karşılaştırarak üst sınırı uygular. Mahsup, dönem mali kârını aşamaz.
+
+  validasyonlar:
+    - kural: "y2020_t1 >= 0"
+      hata: "2020 Tip 1 zarar negatif olamaz."
+    - kural: "y2020_t2 >= 0"
+      hata: "2020 Tip 2 zarar negatif olamaz."
+    - kural: "y2021_t1 >= 0"
+      hata: "2021 Tip 1 zarar negatif olamaz."
+    - kural: "y2021_t2 >= 0"
+      hata: "2021 Tip 2 zarar negatif olamaz."
+    - kural: "y2022_t1 >= 0"
+      hata: "2022 Tip 1 zarar negatif olamaz."
+    - kural: "y2022_t2 >= 0"
+      hata: "2022 Tip 2 zarar negatif olamaz."
+    - kural: "y2023_t1 >= 0"
+      hata: "2023 Tip 1 zarar negatif olamaz."
+    - kural: "y2023_t2 >= 0"
+      hata: "2023 Tip 2 zarar negatif olamaz."
+    - kural: "y2024_t1 >= 0"
+      hata: "2024 Tip 1 zarar negatif olamaz."
+    - kural: "y2024_t2 >= 0"
+      hata: "2024 Tip 2 zarar negatif olamaz."
+    - kural: "toplam_mahsup > 0"
+      hata: "Toplam mahsup tutarı sıfır. En az bir yılda sıfırdan büyük zarar giriniz."
+
+denetci_notlari: |
+  ## Yasal Dayanak — KVK Madde 9 Özeti
+
+  KVK Madde 9/1: Kurumlar vergisi beyannamesinde her yıla ilişkin tutarlar ayrı ayrı gösterilmek ve beş yıldan fazla nakledilmemek koşuluyla, önceki dönemlere ait geçmiş yıl zararları kurum kazancından mahsup edilebilir.
+  KVK Madde 9/2: Yurt dışı faaliyetlerden doğan zararların mahsubunda ilave şartlar geçerlidir (tam beyan, yurt dışında kapatılmamış olma ve belgeleme).
+  KVK Madde 12: Örtülü sermaye faiz/kur farkı giderleri KKEG → Bu giderlerden doğan zarar kısmı mahsup kapsamı dışında.
+  KVK Madde 13: TF uyumsuzluğundan doğan örtülü kazanç dağıtımı → KKEG eklenmesi sonrası kalan zarar mahsup edilebilir.
+  1 Seri No.lu KV GT: 9. madde uygulamasına ilişkin ayrıntılı açıklamalar ve örnekler.
+
+  ## Tip 1 vs Tip 2 Ayrımı
+
+  Beyannamede gecmisYilZararTipleri XML bloğunda iki farklı tip kodu kullanılır:
+  - Tip 1 — Diğer Zararlar: Normal ticari faaliyet sonucunda oluşan, örtülü sermaye ve TF düzeltmeleri sonrası kalan zarar.
+  - Tip 2 — İstisnadan Kaynaklanan Zararlar: KVK 5/1-e (taşınmaz/hisse satışı), TGB, AR-GE gibi istisna kapsamındaki faaliyetlerde dönem zararı oluşmuşsa bu tutarlar. 7456 sayılı Kanun sonrasında bazı istisna kazançlarının oransal değişimiyle birlikte Tip 2 zararlar önem kazanmıştır.
+  Her iki tip de beyannamede ayrı satırlarda gösterilmeli; muhasebede de yıl ve tip bazında izlenmelidir.
+
+  ## 5 Yıl Zamanaşımı Tablosu (2025 Beyannamesi)
+
+  | Zarar Yılı | Durum            | Mahsup Edilebilir mi? |
+  |------------|------------------|-----------------------|
+  | 2019       | Zamanaşımı doldu | HAYIR                 |
+  | 2020       | 5. yıl (son)     | EVET — Son yıl        |
+  | 2021       | 4. yıl           | EVET                  |
+  | 2022       | 3. yıl           | EVET                  |
+  | 2023       | 2. yıl           | EVET                  |
+  | 2024       | 1. yıl (en yeni) | EVET                  |
+
+  2026 beyannamesi için: 2020 zararı zamanaşımına uğrar; tablo 2021–2025 olarak güncellenir.
+
+  ## FIFO Uygulaması
+
+  Mahsup sırası yasa gereği sabittir: En eski yıl önce. Mükellefin tercih hakkı yoktur.
+  Örnek: 2025 matrahı 1.000.000 TL; 2020'de 600.000 TL, 2021'de 800.000 TL zarar varsa:
+  → Önce 2020'nin 600.000 TL'sinin tamamı mahsup edilir.
+  → Kalan 400.000 TL için 2021 zararından mahsup yapılır.
+  → 2021'den 400.000 TL mahsup edilir; geriye 400.000 TL 2021 zararı bir sonraki yıla devreder.
+
+  ## Örtülü Sermaye (KVK 12) Kısıtlaması
+
+  Şirketin ilişkili kişilerden yüksek tutarda borç kullandığı durumlarda, bu borçlanmadan kaynaklanan faiz giderleri ve kur farkı giderleri KVK 12 uyarınca KKEG sayılabilir. Bu durumda:
+  - Zararlı dönemde KKEG düzeltmesi yapılarak "düzeltilmiş zarar" hesaplanmalıdır.
+  - Düzeltme yapılmamış ham zarar rakamları beyannamede kullanılamaz.
+  - Denetçi, zararlı her dönem için KVK 12 değerlendirmesi yapıldığını teyit etmelidir.
+
+  ## Transfer Fiyatlandırması (KVK 13) Kısıtlaması
+
+  İlişkili taraflarla gerçekleştirilen emsalsiz işlemlerden örtülü kazanç dağıtımı yapıldığı saptanırsa, dağıtılan kazanç KKEG olarak eklenir. Bu düzeltme geçmiş dönemlere ait zarar rakamlarını da etkiler. TF analizi tamamlanmadan hesaplanan zarar tutarlarının kullanılması vergi riski doğurur.
+
+  ## Yurt Dışı Zarar — KVK Madde 9/2 Özel Şartları
+
+  Yurt dışı şube veya daimi temsilci faaliyetlerinden kaynaklanan zararların Türkiye'de mahsup edilebilmesi için şu koşulların tamamı sağlanmalıdır:
+  1. Yurt dışı faaliyet Türkiye'de tam konsolidasyon usulünde beyan edilmiş olmalı (yurt dışı gelirler ve giderler Türkiye beyannamesine dahil).
+  2. Faaliyet ülkesi mevzuatına göre söz konusu zararın mahsup imkânı tüketilmiş olmalı (yani yurt dışında henüz kapatılabilir zarar varsa önce orada kapatılmalı).
+  3. Denetimden geçmiş yurt dışı mali tablolar ve vergi beyannameleri dosyada bulunmalı.
+  4. Türkiye'de mahsup edilen yurt dışı zarar, ilerleyen yıllarda yurt dışında da kâra dönüşürse bu kâr Türkiye beyannamesine eklenerek düzeltme yapılmalıdır.
+
+  ## YİAKV Etkisi — Kritik Ayrım
+
+  Geçmiş yıl zararları mahsubu, KVK 32/C kapsamındaki YİAKV (Yurt İçi Asgari Kurumlar Vergisi) matrahından DÜŞÜLEMEZ.
+  - Normal KV matrahı akışı: Dönem mali kârı → GYZ mahsubu → KVI istisnalar → Matrah
+  - YİAKV matrahı: Ticari kâr + KKEG − belirli istisnalar (GYZ mahsubu YİAKV'dan çıkarılmaz)
+  YİAKV çalışma kâğıdında GYZ mahsubu satırı yer almamalıdır. Bu hatanın gözden kaçırılması, YİAKV matrahının düşük hesaplanmasına ve eksik tarhiyata yol açar.
+
+  ## Pipeline İçindeki Yeri — Hesaplama Adım Sırası
+
+  Adım 1: Ticari Kâr (muhasebe tabanlı)
+  Adım 2: + KKEG eklemeleri
+  Adım 3: + Diğer eklemeler (finansman fonu vb.)
+  Adım 4: − ZDI istisnalar (zarar olsa dahi indirilecek — örn. iştirak kâr payları)
+  Adım 5: = Dönem Mali Kârı
+  Adım 6: − GYZ Mahsubu (Tip 1 + Tip 2; dönem mali kârını aşamaz)  ◄── BU KALEM
+  Adım 7: − KVI istisnalar (kazanç varsa indirilecek — örn. taşınmaz, TGB)
+  Adım 8: − Diğer indirimler (Ar-Ge, nakdi sermaye, sponsorluk)
+  Adım 9: = Kurumlar Vergisi Matrahı
+
+  GYZ mahsubu ZDI'dan sonra, KVI'den önce gelir. Dönem mali kârı sıfır veya negatifse GYZ mahsup edilemez; zarar miktarı ertesi döneme taşınmaz (o yılın zararı olarak kalır, 5 yıl sayacı işlemeye devam eder).
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Zararın Oluştuğu Dönemde Yıl Sonu Kapanış
+
+  Dönem sonunda net zarar oluştuğunda:
+  Borç: 590 Dönem Net Zararı — Dönem ticari zararı tutarı
+  Alacak: 580 Geçmiş Yıllar Zararları — Geçen yıla devir (ya da aynı hesapta biriktirilir)
+  NOT: Her yılın zararı ayrı alt hesap veya kayıt düzeyinde takip edilmelidir. 580 hesabı yıl bazlı izlenebilir (örn. 580.2020, 580.2021 vb.) ya da muhasebe dışında ayrı tablo tutulmalıdır.
+
+  ## Kayıt 2 — Cari Dönemde GYZ Mahsup Kararı (Dönem Sonunda)
+
+  GYZ mahsubu vergi beyannamesi aşamasında hesaplanır; muhasebe kaydı dönem kârıyla karşılaştırma esasına göre yapılır.
+  Mahsup edilen tutarın muhasebe kaydı:
+  Borç: 580 Geçmiş Yıllar Zararları — Mahsup edilen geçmiş yıl zarar tutarı
+  Alacak: 570 Geçmiş Yıllar Kârları / 590 Dönem Net Kârı — Dönem kârıyla kapatma
+  NOT: Vergi matrahında yapılan GYZ mahsubu, gelir tablosunu etkilemez; sadece vergi matrahı hesaplamasını düşürür. 580 ve 570/590 arasındaki kayıt özkaynak dengesini düzeltir.
+
+  ## Beyanname Akışı (Vergi Boyutu)
+
+  1. Muhasebe kayıtlarından gelen ticari kâr KV beyannamesine aktarılır.
+  2. KKEG ve diğer eklemeler yapılarak dönem mali kârına ulaşılır.
+  3. ZDI istisnalar dönem mali kârından düşülür.
+  4. Kalan dönem mali kârı pozitifse, GYZ mahsup tutarı (Tip 1 + Tip 2, yıl sırasıyla FIFO) dönem mali kârını aşmayacak biçimde beyannamede gösterilir.
+  5. GYZ mahsuptan sonra kalan tutardan KVI istisnalar ve diğer indirimler düşülür; sonuç matrah olarak tarhiyata esas alınır.
+  6. Mahsup edilen zarar tutarları 580 hesabından silinir; kalan bakiye (kullanılmayan zarar) bir sonraki döneme devrolur.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Geçmiş Yıl Kurumlar Vergisi Beyannameleri (Mahsup Edilecek Her Yıl)
+    detay: "2020–2024 dönemlerine ait onaylı KV beyannameleri. Beyannamede gösterilen zarar rakamları esas alınır; inceleme tarhiyatıyla oluşan zararlar kabul edilmez. Her yıl için ayrı beyanname örneği dosyada bulunmalıdır."
+    temin_yeri: GİB e-Beyanname sistemi / İnternet Vergi Dairesi / Mükellefiyet dosyası
+
+  - kategori: zorunlu
+    "no": 2
+    baslik: Bilanço ve Gelir Tabloları — Zararlı Dönemler
+    detay: "Mahsup edilecek her yıla ait (2020–2024) bilanço ve gelir tablosu. Zarar tutarının beyannamedeki rakamla örtüştüğü teyit edilmelidir. YMM veya SMMM onaylı olması tercih edilir."
+    temin_yeri: Şirket muhasebe kayıtları / Vergi müşaviri arşivi / YMM tasdik raporu eki
+
+  - kategori: zorunlu
+    "no": 3
+    baslik: GYZ Mahsup İzleme Tablosu (5 Yıllık)
+    detay: "Her yıl için başlangıç zarası, cari dönemde mahsup edilen tutar ve kalan bakiyeyi gösteren 5 yıllık tablo. FIFO sırasını ve dönem mali kârı kısıtını açıkça ortaya koymalıdır. Pipeline hesaplama çıktısıyla uyumlu olmalıdır."
+    temin_yeri: Şirket içi çalışma tablosu / Declaro çalışma kâğıdı
+
+  - kategori: zorunlu
+    "no": 4
+    baslik: Örtülü Sermaye Değerlendirme Notu (KVK 12 Teyidi)
+    detay: "Zararlı dönemlerde şirketin ilişkili kişilerden borçlanma yapısının KVK 12 kapsamında incelendiğini ve KKEG düzeltmesinin doğru uygulandığını gösteren not veya analiz. Örtülü sermaye riski yoksa bu da belgelenmeli."
+    temin_yeri: Vergi müşaviri analiz notu / YMM çalışma dosyası
+
+  - kategori: zorunlu
+    "no": 5
+    baslik: Transfer Fiyatlandırması Analizi (KVK 13 Teyidi)
+    detay: "Zararlı dönemlerde ilişkili taraflarla işlem varsa, emsale uygunluk analizinin yapıldığı ve KKEG düzeltmesi gerekip gerekmediğinin değerlendirildiği belge. TF analizi tamamlanmadan zarar tutarı kullanılamaz."
+    temin_yeri: TF raporu veya özet analiz notu / Danışman çalışma dosyası
+
+  - kategori: zorunlu
+    "no": 6
+    baslik: KV Beyannamesi Taslağı — GYZ Bölümü
+    detay: "Cari dönem beyannamesinin gecmisYilZararTipleri XML bloğu veya GYZ bölümü çıktısı. Tip 1 ve Tip 2 tutarlarının yıl bazında ayrıştırılmış gösterimi pipeline çıktısıyla birebir uyumlu olmalıdır."
+    temin_yeri: GİB e-Beyanname sistemi / İnternet Vergi Dairesi beyanname taslağı
+
+  - kategori: destekleyici
+    "no": 7
+    baslik: Yurt Dışı Zarar Belgeleme Paketi (KVK Md. 9/2 — Varsa)
+    detay: "Yurt dışı şube/daimi temsilci zararı varsa: (a) yurt dışı ülkede denetimden geçmiş mali tablolar, (b) yurt dışı vergi beyannamesi, (c) yurt dışında mahsup imkânının tüketildiğine dair yerel danışman beyanı veya resmi belge. Belgeler noterce onaylı veya apostilli olmalıdır."
+    temin_yeri: Yurt dışı muhasebe/danışmanlık firması / Apostil veya konsolosluk onayı
+
+  - kategori: destekleyici
+    "no": 8
+    baslik: Devir/Birleşme Belgeleri (KVK 18-20 — Varsa)
+    detay: "Geçmiş yıl zararları devir veya birleşme yoluyla kazanılmışsa, devreden kurumun ilgili beyanname ve mali tabloları ile devir/birleşme tescil belgesi. KVK 18-20 şartlarının sağlandığını ortaya koymalıdır."
+    temin_yeri: Ticaret sicil gazetesi / Birleşme sözleşmesi / Devir beyannamesi
+
+  - kategori: destekleyici
+    "no": 9
+    baslik: YİAKV Matrah Hesaplama Tablosu (GYZ Dahil Edilmemeli)
+    detay: "KVK 32/C kapsamında YİAKV matrahının hesaplandığı çalışma tablosu. GYZ mahsubunun YİAKV matrahından çıkarılmadığı açıkça görülmelidir. YİAKV ve normal KV matrahı paralel hesapları karşılaştırmalı gösterilmelidir."
+    temin_yeri: YİAKV çalışma kâğıdı / Declaro YİAKV modülü çıktısı
+
+  - kategori: destekleyici
+    "no": 10
+    baslik: YMM Tasdik Raporu (Eşik Kontrolü)
+    detay: "Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL mahsup söz konusuysa YMM tasdik raporu gerekip gerekmediği değerlendirilmelidir. 49 Seri No.lu KV Genel Tebliği kapsamındaki eşikler kontrol edilmeli."
+    temin_yeri: YMM bürosu / 49 S.No.lu KV GT
+
+k_checklist:
+  - id: K1
+    soru: "Her yılın zararı 5 yıl sınırına uygun mu? 2025 beyannamesi için 2019 ve öncesi zararlar DIŞARDA bırakıldı mı?"
+    referans: "KVK Md. 9/1 — 5 yıl sınırı"
+  - id: K2
+    soru: "★ FIFO sırasına uyuldu mu? En eski yıldan (2020) başlayarak sırayla mahsup yapıldı mı? Sıra atlandı mı?"
+    referans: "KVK Md. 9/1 | 1 S.No.lu KV GT"
+  - id: K3
+    soru: "Tip 1 (Diğer) ve Tip 2 (İstisnadan Kaynaklanan) zararlar beyannamede ayrı satırlarda gösterildi mi?"
+    referans: "KVK Md. 9/1 — gecmisYilZararTipleri XML bloğu"
+  - id: K4
+    soru: "Zararlı dönemlerin KVK Md. 12 örtülü sermaye analizi tamamlandı mı? KKEG düzeltmesi doğru uygulandı mı?"
+    referans: "KVK Md. 12 | KVK Md. 9/1"
+  - id: K5
+    soru: "Zararlı dönemlerde TF analizi yapıldı mı? KVK Md. 13 KKEG düzeltmesi gerekiyorsa uygulandı mı?"
+    referans: "KVK Md. 13 | KVK Md. 9/1"
+  - id: K6
+    soru: "Yurt dışı zarar varsa KVK Md. 9/2 özel şartları sağlandı mı? (Tam beyan, yurt dışında kapatılmamış, belgeleme)"
+    referans: "KVK Md. 9/2"
+  - id: K7
+    soru: "★ Mahsup tutarı dönem mali kârını (ZDI sonrası) aşmıyor mu? Negatif veya sıfır dönem mali kârında GYZ mahsubu yapılmadı mı?"
+    referans: "KVK Md. 9/1 — Dönem mali kârı kısıtı"
+  - id: K8
+    soru: "★ GYZ mahsubu YİAKV (KVK 32/C) matrahından DÜŞÜLMEDI mi? YİAKV çalışma kâğıdında teyit edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"
+  - id: K9
+    soru: "Önceki yıl beyannamelerindeki zarar tutarları ile cari dönem GYZ tablosundaki başlangıç bakiyeleri uyumlu mu?"
+    referans: "Önceki yıl beyannameleri teyidi"
+  - id: K10
+    soru: "Beyanname sadece beyannamede gösterilen zararları kapsıyor; vergi incelemesi/tarhiyatla oluşan zararlar DIŞARIDA bırakıldı mı?"
+    referans: "KVK Md. 9/1 — Beyanname şartı"
+  - id: K11
+    soru: "Devir veya birleşme yoluyla gelen zararlar varsa KVK 18-20 şartları sağlandı mı ve belgeleme tamamlandı mı?"
+    referans: "KVK Md. 18-20 | KVK Md. 9/1"
+  - id: K12
+    soru: "YMM tasdik raporu eşiği kontrol edildi mi? (49 No.lu GT — Tek satır ≥500.000 TL veya toplam ≥1.000.000 TL)"
+    referans: "49 S.No.lu KV GT (30.12.2025)"

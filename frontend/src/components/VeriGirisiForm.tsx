@@ -1,6 +1,7 @@
-import { useForm, Controller } from 'react-hook-form'
+import { useForm, Controller, FormProvider, useWatch } from 'react-hook-form'
 import type { VeriGirisiAlani, HesapSonucu } from '@/api/kalem'
 import { NumberInput } from '@/components/NumberInput'
+import MatrisInput from '@/components/MatrisInput'
 
 // Human-readable labels for snake_case option values
 const SECENEK_ETIKETLERI: Record<string, string> = {
@@ -40,16 +41,18 @@ const SECENEK_ETIKETLERI: Record<string, string> = {
   hayir_odenmedi: 'Hayır, ödenmedi — istisna uygulanamaz',
 }
 
-function secenekEtiketi(value: string): string {
+// Kept for potential future use; secenekler now carry their own etiket from the API
+function _secenekEtiketi(value: string): string {
   return SECENEK_ETIKETLERI[value] ?? value
 }
+void _secenekEtiketi // suppress unused warning
 
 // Human-readable labels for snake_case formula/intermediate result keys
 const ARA_ALAN_ETIKETLERI: Record<string, string> = {
   brut_kar_payi_tl: 'Brüt Kâr Payı (TL)',
   deger_farki: 'Değerleme Farkı',
   emisyon_primi_tutari: 'Emisyon Primi Tutarı',
-  faaliyet_kari: 'Faaliyet Kârı',
+  faaliyet_kari_ozet: 'Faaliyet Kârı',
   fiili_vergi_yuku_oran: 'Fiili Vergi Yükü Oranı',
   gsyf_toplam: 'GSYF Toplam Kazanç',
   gsyo_toplam: 'GSYO Toplam Kazanç',
@@ -107,6 +110,59 @@ const ARA_ALAN_ETIKETLERI: Record<string, string> = {
   toplam_kullanilabilir: 'Toplam Kullanılabilir İndirim (TL)',
   toplam_sponsorluk: 'Toplam Sponsorluk (TL)',
   yillik_faiz: 'Yıllık Faiz Oranı',
+  // Yatırım teşvikleri (500-502) ara sonuç etiketleri
+  ytb_no: 'YTB Numarası',
+  ytb_tarihi: 'YTB Düzenleme Tarihi',
+  yatirim_bolgesi: 'Yatırım Bölgesi',
+  yatirim_turu: 'Yatırım Türü',
+  yatirim_tutari: 'Toplam Yatırım Tutarı (TL)',
+  ykt_orani: 'YKT Oranı (%)',
+  vergi_indirim_orani: 'Vergi İndirim Oranı (%)',
+  donem_durumu: 'Dönem Durumu',
+  bolge_yuzde_limiti: 'Bölge Yüzde Limiti (%)',
+  kumulatif_yatirim_harcamasi: 'Kümülatif Yatırım Harcaması (TL)',
+  onceki_donem_kumulatif_ykt: 'Önceki Dönem Kümülatif YKT Kullanımı (TL)',
+  beyan_edilen_diger_kazanc: 'Beyan Edilen Diğer Faaliyet Kazancı (TL)',
+  beyan_edilen_yatirim_kazanci: 'Beyan Edilen Yatırım Kazancı (TL)',
+  sanayi_sicil_no: 'Sanayi Sicil Belge No',
+  sanayi_sicil_tarihi: 'Sanayi Sicil Belge Tarihi',
+  imalat_kazanc_matrahi: 'İmalat Faaliyeti Kazanç Matrahı (TL)',
+  toplam_matrah: 'Dönem Toplam KV Matrahı (TL)',
+  normal_kv_orani: 'Normal KV Oranı (%)',
+  matrah_belirleme_yontemi: 'Matrah Belirleme Yöntemi',
+  ihracat_hasilati: 'İhracat Hasılatı (TL)',
+  toplam_hasilat: 'Toplam Hasılat (TL)',
+  ihracat_orani: 'İhracat Oranı (% - opsiyonel)',
+  ihracat_kazanc_matrahi: 'İhracat Faaliyeti Kazanç Matrahı (TL)',
+  kv_tasarrufu: 'KV Tasarrufu (TL)',
+  devreden_ykt: 'Devreden YKT (TL)',
+  indirimli_matrah: 'İndirimli Matrah (TL)',
+  ykt: 'Yatırıma Katkı Tutarı (YKT)',
+
+  // 503 KVK 32/7+32/8 Birleşik Gelir Tablosu ara sonuçları
+  brut_satis_ihracat: 'Brüt Satışlar — İhracat Payı (TL)',
+  brut_satis_imalat: 'Brüt Satışlar — İmalat Payı (TL)',
+  brut_satis_toplam: 'Brüt Satışlar Toplamı (TL)',
+  net_satis_ihracat: 'Net Satışlar — İhracat Payı (TL)',
+  net_satis_imalat: 'Net Satışlar — İmalat Payı (TL)',
+  net_satis_toplam: 'Net Satışlar Toplamı (TL)',
+  ihracat_hasilat_orani: 'İhracat Hasılat Oranı',
+  imalat_hasilat_orani: 'İmalat Hasılat Oranı',
+  brut_satis_kari: 'Brüt Satış Karı (TL)',
+  faaliyet_kari: 'Faaliyet Karı (TL)',
+  donem_kari: 'Dönem Karı / Ticari Bilanço Karı (TL)',
+  kv_matrahi: 'KV Matrahı — Safi Kurum Kazancı (TL)',
+  ihracat_matrahi: 'İhracat Faaliyeti KV Matrahı (TL)',
+  imalat_matrahi: 'İmalat Faaliyeti KV Matrahı (TL)',
+  diger_matrahi: 'Diğer Faaliyetler KV Matrahı (TL)',
+  kv_32_7_normal: '32/7 — Normal KV (TL)',
+  kv_32_7_indirim: '32/7 — 1 Puan İndirim Tutarı (TL)',
+  kv_32_7_indirimli: '32/7 — İndirimli KV %24 (TL)',
+  kv_tasarrufu_32_7: '32/7 İmalat KV Tasarrufu (TL)',
+  kv_32_8_normal: '32/8 — Normal KV (TL)',
+  kv_32_8_indirim: '32/8 — 5 Puan İndirim Tutarı (TL)',
+  kv_32_8_indirimli: '32/8 — İndirimli KV %20 (TL)',
+  kv_tasarrufu_32_8: '32/8 İhracat KV Tasarrufu (TL)',
 }
 
 function araAlaniEtiketi(key: string): string {
@@ -122,6 +178,86 @@ interface VeriGirisiFormProps {
   onSubmit: (data: FormValues) => void
   isLoading?: boolean
   hesapSonucu?: HesapSonucu | null
+  ticariKarZarar?: number | null
+}
+
+function UzlastirmaKarti({
+  kaynakAlan,
+  ticariKarZarar,
+  yardim,
+}: {
+  kaynakAlan: string
+  ticariKarZarar: number | null | undefined
+  yardim?: string
+}) {
+  const donemKari = useWatch({ name: `${kaynakAlan}_toplam` }) as number | undefined
+  const dk = Number(donemKari) || 0
+  const tk = Number(ticariKarZarar) || 0
+  const fark = dk - tk
+  const farkYuzde = tk !== 0 ? Math.abs(fark / tk) * 100 : null
+  const uyumlu = Math.abs(fark) < 1
+
+  const durumRenk = uyumlu
+    ? 'border-green-300 bg-green-50 dark:bg-green-950 dark:border-green-700'
+    : Math.abs(fark) < 1000
+      ? 'border-yellow-300 bg-yellow-50 dark:bg-yellow-950 dark:border-yellow-700'
+      : 'border-red-300 bg-red-50 dark:bg-red-950 dark:border-red-700'
+
+  const fmt = (v: number) =>
+    new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY', minimumFractionDigits: 2 }).format(v)
+
+  return (
+    <div className={`rounded-lg border p-4 space-y-3 ${durumRenk}`}>
+      <div className="flex items-center justify-between">
+        <h4 className="text-sm font-semibold text-primary">Dönem Kârı — Ticari Bilanço Kârı Uyumu</h4>
+        <span
+          className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+            uyumlu
+              ? 'bg-green-200 text-green-800 dark:bg-green-800 dark:text-green-200'
+              : Math.abs(fark) < 1000
+                ? 'bg-yellow-200 text-yellow-800 dark:bg-yellow-800 dark:text-yellow-200'
+                : 'bg-red-200 text-red-800 dark:bg-red-800 dark:text-red-200'
+          }`}
+        >
+          {uyumlu ? '✓ Uyumlu' : '⚠ Uyumsuz'}
+        </span>
+      </div>
+
+      <div className="grid grid-cols-1 gap-2 text-sm">
+        <div className="flex justify-between items-center py-1 border-b border-current/10">
+          <span className="text-secondary">Gelir Tablosu — Dönem Kârı</span>
+          <span className="font-mono font-semibold text-primary">{fmt(dk)}</span>
+        </div>
+        <div className="flex justify-between items-center py-1 border-b border-current/10">
+          <span className="text-secondary">Sistemdeki Ticari Bilanço Kârı</span>
+          <span className="font-mono font-semibold text-primary">
+            {ticariKarZarar != null ? fmt(tk) : <span className="text-muted italic">Girilmemiş</span>}
+          </span>
+        </div>
+        {!uyumlu && (
+          <div className="flex justify-between items-center py-1">
+            <span className="text-secondary font-medium">Fark (Dönem Kârı − Ticari Kar)</span>
+            <span className={`font-mono font-bold ${fark > 0 ? 'text-blue-600' : 'text-red-600'}`}>
+              {fark > 0 ? '+' : ''}{fmt(fark)}
+              {farkYuzde != null && (
+                <span className="ml-1 text-xs font-normal opacity-70">(%{farkYuzde.toFixed(1)})</span>
+              )}
+            </span>
+          </div>
+        )}
+      </div>
+
+      {!uyumlu && (
+        <p className="text-xs text-muted mt-1">
+          Fark; kayıt dışı kalemler, KKEG, ertelenmiş vergi ya da geçici farklar nedeniyle oluşuyor olabilir.
+          Hesaplama doğruluğu için tutarların uyumlu olması önerilir.
+        </p>
+      )}
+      {yardim && uyumlu && (
+        <p className="text-xs text-muted">{yardim}</p>
+      )}
+    </div>
+  )
 }
 
 function formatCurrency(value: number): string {
@@ -138,20 +274,55 @@ export default function VeriGirisiForm({
   onSubmit,
   isLoading = false,
   hesapSonucu,
+  ticariKarZarar,
 }: VeriGirisiFormProps) {
-  const {
-    register,
-    control,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<FormValues>({
+  const methods = useForm<FormValues>({
     defaultValues: defaultValues ?? {},
   })
+  const { register, control, handleSubmit, formState: { errors } } = methods
 
   return (
+    <FormProvider {...methods}>
     <div className="space-y-6">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-        {alanlar.map((alan) => (
+        {alanlar.map((alan) => {
+          // Section header — not a form input
+          if (alan.tip === 'bolum') {
+            return (
+              <div key={alan.id} className="pt-3 pb-1 border-b border-accent/30 mt-2">
+                <h4 className="text-xs font-bold text-accent uppercase tracking-widest">
+                  {alan.etiket}
+                </h4>
+              </div>
+            )
+          }
+
+          if (alan.tip === 'matris') {
+            return (
+              <div key={alan.id} className="space-y-1">
+                <label className="block text-sm font-medium text-secondary">{alan.etiket}</label>
+                {alan.yardim && <p className="text-xs text-muted">{alan.yardim}</p>}
+                <MatrisInput
+                  alanId={alan.id}
+                  satirlar={alan.satirlar ?? []}
+                  sutunlar={alan.sutunlar ?? []}
+                />
+              </div>
+            )
+          }
+
+          if (alan.tip === 'uzlastirma') {
+            return (
+              <UzlastirmaKarti
+                key={alan.id}
+                kaynakAlan={alan.kaynak_alan ?? 'ara_donem_kari'}
+                ticariKarZarar={ticariKarZarar}
+                yardim={alan.yardim}
+              />
+            )
+          }
+
+          return (
           <div key={alan.id} className="space-y-1">
             <label className="block text-sm font-medium text-secondary">
               {alan.etiket}
@@ -159,7 +330,15 @@ export default function VeriGirisiForm({
             </label>
 
             {alan.yardim && (
-              <p className="text-xs text-muted">{alan.yardim}</p>
+              alan.tip === 'secenek' ? (
+                <div className="rounded-md bg-surface-raised border border-border-default p-3 space-y-1.5">
+                  {alan.yardim.trim().split('\n').filter(Boolean).map((line, i) => (
+                    <p key={i} className="text-xs text-secondary leading-relaxed">{line.trim()}</p>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-xs text-muted">{alan.yardim}</p>
+              )
             )}
 
             {alan.tip === 'para' && (
@@ -236,8 +415,8 @@ export default function VeriGirisiForm({
               >
                 <option value="">Seçiniz...</option>
                 {(alan.secenekler ?? []).map((sec) => (
-                  <option key={sec} value={sec}>
-                    {secenekEtiketi(sec)}
+                  <option key={sec.deger} value={sec.deger}>
+                    {sec.etiket}
                   </option>
                 ))}
               </select>
@@ -267,7 +446,8 @@ export default function VeriGirisiForm({
               </p>
             )}
           </div>
-        ))}
+          )
+        })}
 
         <button
           type="submit"
@@ -336,5 +516,6 @@ export default function VeriGirisiForm({
         </div>
       )}
     </div>
+    </FormProvider>
   )
 }

@@ -1,0 +1,353 @@
+ic_kod: gyf_portfoy_tasinmaz_haric
+baslik: Gayrimenkul Yatırım Fonu (GYF) Portföy İşletmeciliği Kazancı (Taşınmaz Hariç)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 396 }
+  - { donem: 2026, kod: 396 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-d
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.4
+  - SPK III-52.3 Tebliği (Gayrimenkul Yatırım Fonlarına İlişkin Esaslar Tebliği)
+  - Sermaye Piyasası Kanunu Madde 54 (Kolektif Yatırım Kuruluşları)
+  - 6362 Sayılı Sermaye Piyasası Kanunu
+  - 7524 Sayılı Kanun Madde — (02.08.2024 — GYF/GYO kâr dağıtım şartı)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+  not: "396 kodu 2025 ve sonraki dönemlerde GYF portföy işletmeciliği kazancının taşınmaz HARİÇ bileşenini ayrıştırarak göstermek için kullanılır. GYF portföyünün en az %51'i taşınmaz ve taşınmaza dayalı varlıklardan oluşmak zorundadır; ancak portföyde taşınmaz dışı varlıklar da bulunabilir ve bu varlıklardan elde edilen gelirler 396 kodunda gösterilir."
+
+ana_kategori: portfoy_isletmeciligi
+
+wizard_agaci:
+  tetikleyici_soru: "Kurum, SPK'ya tescilli bir Gayrimenkul Yatırım Fonu (GYF) mudur ve portföyündeki taşınmaz DIŞI varlıklardan (menkul kıymetler, repo, nakit vb.) portföy işletmeciliği kazancı elde etti mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-d kapsamında Türkiye'de **Sermaye Piyasası Kanunu** çerçevesinde kurulmuş
+    **Gayrimenkul Yatırım Fonlarının (GYF)** portföy işletmeciliğinden doğan kazançların
+    tamamı kurumlar vergisinden %100 tam istisna olarak muaftır. Bu form, söz konusu kazancın
+    **taşınmaz ve taşınmaza dayalı varlıklar dışındaki** portföy bileşeninden (menkul kıymetler,
+    tahvil, bono, repo, nakit yönetimi gelirleri vb.) elde edilen kısmını kapsar.
+
+    ## GYF Nedir?
+
+    GYF; portföyünü ağırlıklı olarak **gayrimenkul ve gayrimenkule dayalı varlıklara**
+    yatırım yaparak oluşturan, SPK III-52.3 Tebliği'ne göre kurulan ve SPK'ya tescil
+    ettirilen kolektif yatırım kuruluşudur.
+
+    **SPK III-52.3 Tebliği'ne göre GYF portföy yapısı:**
+    - Portföyün en az **%51'i** taşınmaz ve taşınmaza dayalı varlıklardan oluşmalıdır.
+    - Kalan %49'luk kısım menkul kıymetler (tahvil, bono, devlet iç borçlanma senetleri),
+      repo/ters repo, para piyasası araçları ve benzeri likit varlıklardan oluşabilir.
+    - GYF SPK'ya tescil ettirilerek ve içtüzük çerçevesinde faaliyet göstererek kurulur.
+
+    **GYF ile GSYF'nin farkı:**
+    GYF'nin ana yatırım konusu gayrimenkullerdir (%51+ zorunlu); GSYF'nin ana
+    yatırım konusu girişim şirketleri ve menkul kıymetlerdir. Bu nedenle 396 (GYF
+    taşınmaz hariç) ve 394 (GSYF taşınmaz hariç) ayrı kodlardır.
+
+    ## Bu Form Neyi Kapsar?
+
+    Beyanname kodu **396** yalnızca GYF portföyündeki **taşınmaz DIŞI varlıklardan**
+    elde edilen portföy işletmeciliği kazancını içerir:
+
+    - Portföydeki devlet iç borçlanma senetleri (DİBS), tahvil, bono faiz gelirleri
+    - Portföy repo/ters repo gelirleri
+    - Portföy para piyasası araçları gelirleri
+    - Portföy menkul kıymet satış kazançları (taşınmaz dışı)
+    - Portföy menkul kıymet dönem sonu değerleme artışları (taşınmaz dışı)
+    - Taşınmaz dışı diğer portföy varlıklarından gelirler
+
+    **Taşınmaz ve taşınmaza dayalı varlıklardan elde edilen gelirler bu forma
+    dahil EDİLMEZ** (→ 397 kodu).
+
+    ## Temel Koşullar
+
+    - **SPK tescili:** Fonun SPK III-52.3 Tebliği kapsamında tescil edilmiş ve
+      güncel SPK kaydının bulunması zorunludur.
+    - **%51 taşınmaz zorunluluğuna uyum:** GYF portföyünün en az %51'inin
+      taşınmaz ve taşınmaza dayalı varlıklardan oluştuğu dönem portföy raporuyla
+      teyit edilmelidir. Bu şart sağlanmazsa portföy yapısı GYF tanımıyla uyumsuz
+      hale gelir ve istisna riski doğar.
+    - **Portföy içi/dışı ayrımı:** Portföy işletmeciliği geliri ile fon yönetim ücreti,
+      performans/başarı primi ayrıştırılmalıdır. Yönetim ücreti ve başarı primi portföy
+      dışı gelirdir ve istisna kapsamına girmez.
+    - **Taşınmaz hariç/dahil ayrıştırması:** Taşınmaz dışı portföy gelirleri 396'ya,
+      taşınmaz portföy gelirleri 397'ye alınmalı; her iki kodun toplamı GYF toplam
+      portföy işletmeciliği kazancıyla mutabık olmalıdır.
+    - **7524 sayılı Kanun (01.01.2025) kâr dağıtım şartı:** GYF katılımcılarının
+      GYF'den elde ettikleri kâr payını KVK 5/1-a kapsamında istisna olarak
+      kullanabilmeleri için GYF'nin kâr dağıtım şartını (%80 dağıtım) yerine
+      getirmesi gerekir. Bu şart GYF'nin kendi istisna uygulamasını değil, yatırımcı
+      kurumların GYF'den alacağı kâr payı istisnasını etkiler.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **GYF portföyündeki %51 taşınmaz koşulunun altına düşülmesi:** Portföy yapısı
+      bozulursa GYF tanımından çıkılır ve istisna tehlikeye girer. Dönemsel portföy
+      uyum raporu zorunludur.
+    - **Fon yönetim ücreti portföy dışıdır:** Taşınmaz veya taşınmaz dışı portföy
+      gelirleriyle ilgili bile olsa yönetim ücreti istisna kapsamına alınamaz.
+    - **GYF ile GYO karıştırılmaması:** GYF bir fondur (tüzel kişiliği yoktur);
+      GYO bir anonim şirkettir. Vergisel uygulama ve beyanname kodları farklıdır.
+    - **Nakit yönetimi gelirleri:** GYF portföyündeki nakit ve likit araçların
+      repo/DİBS gelirlerinin portföy kapsamında değerlendirilip değerlendirilemeyeceği
+      hukuki nitelik bazında analiz edilmelidir.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-d kapsamındaki GYF portföy işletmeciliği kazancının (taşınmaz hariç)
+    YİAKV matrahından düşüleceği kabul edilir. Dönem mevzuatı ve GİB açıklamaları
+    her yıl için ayrıca teyit edilmelidir.
+
+    ## Pratik Notlar
+
+    - 396 (taşınmaz hariç) + 397 (taşınmaz dahil) toplamı GYF toplam portföy
+      işletmeciliği kazancıyla mutabık olmalıdır.
+    - Taşınmaz dışı portföy gelirleri ile taşınmaz portföy gelirlerinin ayrı hesaplarda
+      izlenmesi hem SPK raporlama hem de vergi ayrıştırması açısından zorunludur.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik
+      raporu eşiği kontrol edilmelidir.
+  kapi_sorulari:
+    - id: gyf_spk_tescili
+      soru: "Fon SPK III-52.3 Tebliği kapsamında tescilli bir GYF mi? (SPK tescil belgesi güncel mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d istisnası SPK'ya tescilli GYF'ler için geçerlidir. SPK III-52.3 Tebliği kapsamında tescil belgesi ve içtüzük dosyada yer almalıdır."
+    - id: gyf_yuzde51_uyum
+      soru: "GYF portföyünün en az %51'i taşınmaz ve taşınmaza dayalı varlıklardan oluşuyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: SPK III-52.3 gereği GYF portföyünün %51+ kısmı taşınmaz ve taşınmaza dayalı varlıklardan oluşmalıdır. Bu şartın sağlanmaması GYF statüsünü ve dolayısıyla KVK 5/1-d istisnasını tehlikeye atar. Dönem portföy raporu ile kontrol edilmeli."
+    - id: tasinmaz_disi_gelir_var
+      soru: "Portföyde taşınmaz DIŞI varlıklar (menkul kıymet, repo, DİBS vb.) var ve bu varlıklardan gelir elde edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Portföyde yalnızca taşınmaz varsa 396 satırı doldurulmaz. Taşınmaz dışı portföy geliri yoksa bu form ilgili değildir."
+    - id: tasinmaz_haric_ayrim
+      soru: "Taşınmaz dışı portföy geliri, taşınmaz portföy gelirinden muhasebede ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Gelir ayrıştırması zorunludur. 396 + 397 toplamının doğru oluşturulabilmesi için taşınmaz dışı ve taşınmaz portföy gelirlerinin ayrı hesaplarda izlenmesi şarttır."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: dibs_tahvil_bono_faiz
+      etiket: "Portföy DİBS/tahvil/bono faiz gelirleri"
+      tip: para
+      zorunlu: false
+      yardim: "GYF portföyündeki devlet iç borçlanma senetleri, tahvil ve bono faiz gelirleri. Portföy listesiyle mutabık olmalı."
+    - id: repo_nakit_geliri
+      etiket: "Portföy repo/ters repo ve nakit yönetimi gelirleri"
+      tip: para
+      zorunlu: false
+      yardim: "Portföydeki repo/ters repo işlemlerinden ve likit araç yönetiminden elde edilen gelirler."
+    - id: mkts_satis_kazanci
+      etiket: "Portföy menkul kıymet satış kazançları (taşınmaz dışı)"
+      tip: para
+      zorunlu: false
+      yardim: "Portföydeki tahvil, bono ve diğer menkul kıymetlerin satışından doğan kazançlar. FIFO veya ağırlıklı ortalama yöntemi tutarlı uygulanmalı."
+    - id: mkts_deger_artisi
+      etiket: "Portföy menkul kıymet değerleme artışları (taşınmaz dışı, dönem sonu)"
+      tip: para
+      zorunlu: false
+      yardim: "Portföydeki taşınmaz dışı varlıkların dönem sonu VUK/SPK değerleme artışları."
+    - id: tasinmaz_disi_diger
+      etiket: "Diğer taşınmaz dışı portföy işletmeciliği gelirleri"
+      tip: para
+      zorunlu: false
+    - id: tasinmaz_disi_giderler
+      etiket: "Taşınmaz dışı portföy işletme giderleri (−)"
+      tip: para
+      zorunlu: false
+      yardim: "Taşınmaz dışı portföy varlıklarıyla doğrudan ilişkili giderler. Karma giderler için dağıtım anahtarıyla taşınmaz dışı pay belirlenmeli."
+    - id: istisna_tutari_beyan
+      etiket: "Net taşınmaz dışı portföy işletmeciliği kazancı (Beyanname Satır 396)"
+      tip: para
+      zorunlu: true
+  formuller:
+    portfoy_tasinmaz_haric_toplam: "dibs_tahvil_bono_faiz + repo_nakit_geliri + mkts_satis_kazanci + mkts_deger_artisi + tasinmaz_disi_diger"
+    net_tasinmaz_disi_kazanci: "portfoy_tasinmaz_haric_toplam - tasinmaz_disi_giderler"
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "istisna_tutari_beyan != 0"
+      hata: "İstisna tutarı sıfır olamaz — portföyde taşınmaz dışı varlık yoksa 396 formu doldurulmaz"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-d: Türkiye'de kanunların öngördüğü şekilde kurulan yatırım fon ve
+  ortaklıklarının portföy işletmeciliğinden doğan kazançları kurumlar vergisinden istisnadır.
+  Bu kalem GYF'nin taşınmaz HARİÇ portföy işletmeciliği kazancını kapsayan 396
+  beyanname satırı için düzenlenmiştir.
+
+  SPK III-52.3 Tebliği: GYF portföy yapısını belirler. Portföyün en az %51'i taşınmaz
+  ve taşınmaza dayalı varlıklardan oluşmak zorundadır. Kalan %49'a kadar kısımda
+  menkul kıymetler ve likit araçlar bulunabilir.
+
+  ## Kritik Noktalar — Taşınmaz Hariç / Dahil Ayrımı
+
+  PORTFÖY İÇİ — TAŞINMAZ HARİÇ (396 — İstisna):
+  - DİBS, tahvil, bono faiz gelirleri
+  - Repo/ters repo gelirleri
+  - Menkul kıymet satış kazançları (taşınmaz dışı)
+  - Taşınmaz dışı menkul kıymet değerleme artışları
+  - Para piyasası aracı gelirleri
+
+  PORTFÖY İÇİ — TAŞINMAZ (397 — Ayrı Kod):
+  - Portföy taşınmazlarından kira gelirleri
+  - Portföy taşınmaz satış kazançları
+  - Taşınmaza dayalı varlık değerleme artışları
+
+  PORTFÖY DIŞI (Vergiye Tabi — 396/397'ye YAZILMAZ):
+  - Fon yönetim ücreti
+  - Performans/başarı primi
+  - Portföyde kayıtlı olmayan varlıklardan gelirler
+
+  ## GYF'ye Özgü Riskler
+  1. GYF portföyünün %51 taşınmaz koşulunun altına düşmesi halinde GYF statüsü
+     tartışmalı hale gelir ve KVK 5/1-d istisnası uygulanamaz.
+  2. Fon yönetim ücretinin portföy geliri sayılması tarhiyat riski yaratır.
+  3. Taşınmaz dışı portföy gelirinin 397 koduna yazılması veya taşınmaz gelirinin
+     396'ya dahil edilmesi.
+  4. 396 + 397 toplamının GYF toplam portföy kazancıyla uyumsuzluğu.
+  5. GYF ile GYO karıştırılması — GYF fon, GYO anonim şirket; beyanname kodları farklı.
+  6. 7524 s.K. kâr dağıtım şartının GYF'nin kendi istisnası ile yatırımcı kurumun
+     kâr payı istisnasının karıştırılması.
+
+  ## YİAKV Etkisi
+  KVK 5/1-d GYF portföy işletmeciliği kazancı (taşınmaz hariç — 396) YİAKV matrahından
+  düşülür. Dönem mevzuatı ve GİB açıklamaları her yıl için teyit edilmelidir.
+
+  ## Beyanname Konumu
+  "Zarar Olsa Dahi İndirilecek İstisna ve İndirimler" bölümü — 396 kodlu satır.
+  396 (taşınmaz hariç) + 397 (taşınmaz dahil) = GYF toplam portföy işletmeciliği kazancı.
+
+  ## 3 Kademe Uyum Kontrolü
+  Muhasebe taşınmaz dışı portföy hesapları (net tutar) = Çalışma kâğıdı 396 = Beyanname 396.
+  396 + 397 = Toplam GYF portföy işletmeciliği kazancı (ana mutabakat noktası).
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — GYF Portföy DİBS/Tahvil Faiz Tahakkuku (Taşınmaz Dışı — İstisna)
+  Borç: 181 Gelir Tahakkukları ← DİBS/tahvil faiz alacağı
+  Alacak: 641 Faiz Gelirleri ← GYF portföy taşınmaz dışı faiz geliri
+  Açıklama: KVK 5/1-d istisna kapsamı — 396 satırı
+
+  ## Kayıt 2 — GYF Portföy Repo Geliri
+  Borç: 102 Bankalar / 111 Menkul Kıymetler ← Repo anaparası + faizi
+  Alacak: 641 Faiz Gelirleri ← Repo faiz geliri
+  Açıklama: GYF portföy repo geliri — KVK 5/1-d (396 satırı)
+
+  ## Kayıt 3 — GYF Portföy Menkul Kıymet Satış Kazancı (Taşınmaz Dışı)
+  Borç: 102 Bankalar ← Satış bedeli
+  Alacak: 111 Menkul Kıymetler ← Maliyet
+  Alacak: 645 Menkul Kıymet Satış Kârı ← Kazanç
+  Açıklama: KVK 5/1-d portföy işletmeciliği satış kazancı — 396 satırı
+
+  ## Kayıt 4 — Portföy Değerleme Artışı (Dönem Sonu — Taşınmaz Dışı Kısım)
+  Borç: 111-118 İlgili Menkul Kıymet Hesabı ← Değer artışı
+  Alacak: 644/649 Değerleme Gelirleri ← Değerleme artışı
+  Açıklama: SPK/VUK değerleme esaslarına uygun — 396 satırı
+
+  ## Beyanname 396 Akışı (Mutabakat)
+  Taşınmaz dışı portföy gelirleri net tutarı → Beyanname 396
+  Taşınmaz portföy gelirleri net tutarı → Beyanname 397
+  Portföy dışı (yönetim ücreti vb.) → Matrahta kalır
+  3 KADEME UYUM: Muhasebe = Çalışma kâğıdı 396 = Beyanname 396
+  ANA KONTROL: 396 + 397 = Toplam GYF portföy işletmeciliği kazancı
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Tescil Belgesi ve GYF Güncel Statüsü
+    detay: "SPK III-52.3 Tebliği kapsamında fonun tescil edildiğini gösteren SPK belgesi. Tescil tarihi, fon adı, portföy yatırım stratejisi ve taşınmaz yatırım zorunluluğu görünmeli."
+    temin_yeri: "SPK Kamuyu Aydınlatma Platformu (KAP) / SPK resmi yazısı"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Fon İçtüzüğü ve İzahnamesi (%51 Taşınmaz Koşulu ve Portföy Kapsamı)
+    detay: "Fonun portföy yatırım stratejisi, %51 taşınmaz zorunluluğu ve taşınmaz dışı varlık yatırım sınırlarını tanımlayan içtüzük. Portföy kapsamı bu belgeden belirlenir."
+    temin_yeri: "Portföy yönetim şirketi / SPK KAP / Fon içtüzüğü"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Portföy Uyum Raporu (%51 Taşınmaz Koşuluna Uyum)
+    detay: "Dönem boyunca GYF portföyünün %51 taşınmaz koşulunu sağladığını gösteren portföy uyum raporu. Koşulun sağlanmadığı dönemler varsa analiz yapılmalı; istisna uygulanıp uygulanamayacağı değerlendirilmeli."
+    temin_yeri: "Portföy yönetim şirketi / SPK raporlama"
+  - kategori: zorunlu
+    "no": 4
+    baslik: Taşınmaz Dışı Portföy Varlık Listesi ve Gelir Dökümü
+    detay: "Dönem boyunca portföyde yer alan taşınmaz dışı varlıkların listesi (DİBS, tahvil, bono, repo araçları). Her varlığın portföy kodu, türü, geliri. Portföy içi/dışı ve taşınmaz hariç/dahil ayrımının dayanağıdır."
+    temin_yeri: "Saklama kuruluşu raporu / Portföy yönetim şirketi"
+  - kategori: zorunlu
+    "no": 5
+    baslik: Portföy İçi/Dışı ve Taşınmaz Hariç/Dahil Gelir Muhasebe Ayrım Belgesi
+    detay: "GYF portföy işletmeciliği gelirlerinin portföy dışı gelirlerden; taşınmaz dışı portföy gelirlerinin taşınmaz portföy gelirlerinden nasıl ayrıştırıldığını gösteren muhasebe politikası belgesi veya dağıtım anahtarı."
+    temin_yeri: "Muhasebe politikası belgesi / Hesap planı / Dağıtım anahtarı tablosu"
+  - kategori: zorunlu
+    "no": 6
+    baslik: Fon Yönetim Ücreti Ayrıştırma Tablosu
+    detay: "Fon yönetim ücreti ve performans/başarı priminin portföy dışı gelir olarak ayrıştırıldığını gösteren belge. Bu gelirler 396'ya ve 397'ye dahil edilmez."
+    temin_yeri: "Yönetim sözleşmesi / Muhasebe hesap kartları"
+  - kategori: zorunlu
+    "no": 7
+    baslik: KV Beyannamesi Taslağı — 396. Satır ve 396+397 Mutabakat
+    detay: "Beyanname 396 satırındaki tutarın çalışma kâğıdıyla uyumu. 396 + 397 toplamının GYF toplam portföy işletmeciliği kazancıyla mutabakatı."
+    temin_yeri: "GİB e-Beyanname sistemi / İnternet Vergi Dairesi"
+  - kategori: destekleyici
+    "no": 8
+    baslik: Taşınmaz Dışı Portföy Değerleme Tablosu (Dönem Sonu)
+    detay: "Portföydeki taşınmaz dışı varlıkların dönem sonu SPK/VUK değerleme hesabı. Değerleme artışı/düşüşü muhasebe kaydıyla mutabık olmalı."
+    temin_yeri: "Değerleme raporu / Saklama kuruluşu / Portföy yönetim şirketi"
+  - kategori: destekleyici
+    "no": 9
+    baslik: YİAKV Matrah Hesaplama Tablosu (396 Etkisi)
+    detay: "KVK 32/C kapsamındaki YİAKV hesabında 396 istisnasının etkisi. Dönem mevzuatı ve GİB açıklamaları esas alınmalıdır."
+    temin_yeri: "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri"
+  - kategori: destekleyici
+    "no": 10
+    baslik: 7524 s.K. GYF Kâr Dağıtım Şartı Uyum Belgesi (Yatırımcı Kurumlar için)
+    detay: "7524 s.K. ile getirilen GYF kâr dağıtım şartı (%80) GYF'nin kendi KVK 5/1-d istisnasını değil, yatırımcı kurumların GYF'den alacağı kâr payı istisnasını etkiler. GYF'nin kâr dağıtım durumu ve yatırımcı kurumlar açısından etkileri analiz edilmeli."
+    temin_yeri: "GYF kâr dağıtım kararı / 7524 s.K. uyum notu"
+
+k_checklist:
+  - id: K1
+    soru: "Fonun SPK III-52.3 kapsamında tescilli GYF olduğu ve tescilinin güncel/geçerli olduğu doğrulandı mı?"
+    referans: "KVK Md. 5/1-d | SPK III-52.3 Tebliği | Tescil belgesi"
+  - id: K2
+    soru: "GYF portföyünün %51+ kısmının taşınmaz ve taşınmaza dayalı varlıklardan oluştuğu teyit edildi mi?"
+    referans: "SPK III-52.3 | %51 zorunluluk | Dönem portföy uyum raporu"
+  - id: K3
+    soru: "Taşınmaz dışı portföy geliri (DİBS, tahvil, repo vb.) taşınmaz portföy gelirinden muhasebede ayrıştırıldı mı?"
+    referans: "Beyanname 396 / 397 kod ayrımı | Muhasebe ayrım zorunluluğu"
+  - id: K4
+    soru: "396 + 397 toplamı GYF toplam portföy işletmeciliği kazancıyla mutabık mı?"
+    referans: "3 kademe uyum: muhasebe = çalışma kâğıdı = beyanname"
+  - id: K5
+    soru: "Fon yönetim ücreti ve performans/başarı primi portföy dışı olarak ayrıldı mı? (396'ya dahil edilmedi mi?)"
+    referans: "Portföy işletmeciliği tanımı | Yönetim ücreti = portföy dışı"
+  - id: K6
+    soru: "GYF ile GYO ayrımı yapıldı mı? (GYF = fon; GYO = anonim şirket — farklı beyanname kodları)"
+    referans: "Fon türü kontrolü | GYF ≠ GYO"
+  - id: K7
+    soru: "Taşınmaz dışı portföy varlıkları değerleme yöntemi tutarlı mı? (FIFO veya ağırlıklı ortalama; VUK/SPK uyumlu)"
+    referans: "VUK değerleme hükümleri | SPK III-52.3"
+  - id: K8
+    soru: "7524 s.K. GYF kâr dağıtım şartı — GYF'nin kendi istisnası ile yatırımcı kurumun kâr payı istisnası doğru ayrıştırıldı mı?"
+    referans: "7524 s.K. | KVK Md. 5/1-a ve 5/1-d farkı"
+  - id: K9
+    soru: "YİAKV matrahında 396 istisnasının etkisi analiz edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"
+  - id: K10
+    soru: "Beyanname 396 satırı 'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldı mı?"
+    referans: "Beyanname bölüm kontrolü"
+  - id: K11
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (≥500.000 TL tek satır)"
+    referans: "49 No.lu KV GT (30.12.2025)"

@@ -1,0 +1,334 @@
+ic_kod: gsyf_portfoy_tasinmaz_dahil
+baslik: Girişim Sermayesi Yatırım Fonu Portföy İşletmeciliği Kazancı (Taşınmaz Dahil)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 395 }
+  - { donem: 2026, kod: 395 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-d
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.4
+  - SPK III-52.4 Tebliği (Girişim Sermayesi Yatırım Fonlarına İlişkin Esaslar Tebliği)
+  - Sermaye Piyasası Kanunu Madde 54 (Kolektif Yatırım Kuruluşları)
+  - 6362 Sayılı Sermaye Piyasası Kanunu
+  - VUK Madde 269-270 (Gayrimenkul Değerleme)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+  not: "395 kodu 2025 ve sonraki dönemlerde GSYF portföy işletmeciliği kazancının taşınmaz DAHİL bileşenini ayrıştırarak göstermek için kullanılır. GSYF'lerin taşınmaz yatırımları SPK mevzuatı ile sınırlandırılmıştır; portföy limitine uyum kritik önem taşır."
+
+ana_kategori: portfoy_isletmeciligi
+
+wizard_agaci:
+  tetikleyici_soru: "GSYF portföyünde taşınmaz veya taşınmaza dayalı varlık var mı ve bu varlıklardan portföy işletmeciliği kazancı elde edildi mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-d kapsamında Türkiye'de SPK çerçevesinde kurulmuş **Girişim Sermayesi
+    Yatırım Fonlarının (GSYF)** portföy işletmeciliğinden doğan kazançların tamamı kurumlar
+    vergisinden %100 istisnadır. Bu form, söz konusu kazancın **taşınmaz ve taşınmaza dayalı
+    varlıklardan** elde edilen bileşenini kapsar.
+
+    ## GSYF'de Taşınmaz Yatırımı
+
+    SPK III-52.4 Tebliği'ne göre GSYF portföyü esas itibarıyla girişim şirketi payları ve
+    borçlanma araçlarından oluşur. Taşınmaz yatırımları **ikincil/tamamlayıcı** nitelikte
+    olup ciddi limitlerle kısıtlanmıştır:
+
+    - GSYF portföyünün **belirli bir oranını** aşacak biçimde taşınmaza yatırım yapılamaz
+      (SPK III-52.4'teki güncel limit için içtüzük ve SPK duyuruları esas alınmalıdır).
+    - Taşınmaz yatırımı açıkça içtüzük ve izahnamede düzenlenmiş olmalıdır.
+    - SPK portföy limit ihlali durumunda portföy işletmeciliği istisnası tartışmalı hale gelir.
+
+    **Bu durum GSYF'yi GYF'den (Gayrimenkul Yatırım Fonu) özünde ayırır:**
+    GYF portföyünün en az %51'i taşınmaz ve taşınmaza dayalı varlıklardan oluşmak
+    zorundayken, GSYF'de taşınmaz yatırımı sınırlı tutulur.
+
+    ## Bu Form Neyi Kapsar?
+
+    Beyanname kodu **395** yalnızca GSYF portföyündeki **taşınmaz ve taşınmaza dayalı
+    varlıklardan** elde edilen portföy işletmeciliği kazancını içerir:
+
+    - Portföyde kayıtlı taşınmazlardan kira gelirleri
+    - Portföydeki taşınmazların satışından doğan kazançlar
+    - Taşınmaza dayalı menkul kıymet (örn. kira sertifikası, taşınmaz yatırım ortaklığı payı)
+      gelirleri — portföy kapsamında ise
+    - Taşınmaz değerleme artışları (dönem sonu VUK/SPK değerlemesi)
+
+    **Taşınmaz dışı gelirler bu forma dahil EDİLMEZ** (→ 394 kodu).
+
+    ## Temel Koşullar
+
+    - **SPK tescili:** Fonun SPK III-52.4 kapsamında tescil edilmiş olması zorunludur.
+    - **Portföy limitine uyum:** Taşınmaz yatırımı SPK mevzuatındaki limitler dahilinde
+      kalmalıdır. Limit ihlali durumunda portföy dışı sayılan varlıktan elde edilen gelir
+      istisna kapsamında değerlendirilemez.
+    - **Taşınmaz portföy kaydı:** Portföyde yer alan taşınmazların portföy tescil/kayıt
+      belgesiyle belgelenmesi zorunludur.
+    - **Gelir ayrıştırması zorunluluğu:** Taşınmazdan elde edilen kazancın (kira, satış,
+      değerleme artışı) taşınmaz dışı portföy gelirlerinden muhasebede ayrıştırılması
+      hem 394/395 kod ayrımı hem de doğru belgeleme açısından zorunludur.
+    - **Portföy dışı ayrım:** Fon yönetim ücreti ve başarı primi portföy işletmeciliği
+      geliri değildir; 395'e yazılmamalıdır.
+
+    ## Önemli Sınırlamalar ve Riskler
+
+    - **GSYF'de taşınmaz limiti ihlali:** SPK limitini aşan taşınmaza yatırım yapılmışsa
+      limit üzerindeki kısmın portföy içi sayılamayacağı riski doğar; GİB özelgesi veya
+      hukuki görüş alınması önerilir.
+    - **GYF ile karıştırma:** GYF portföy geliri (taşınmaz dahil) için 397 kodu kullanılır;
+      GSYF taşınmaz geliri bu formda (395) gösterilir.
+    - **Taşınmaz satış kazancı — KVK 5/1-e ilişkisi:** Portföy taşınmazının satışında
+      KVK 5/1-e istisnasının ayrıca uygulanıp uygulanamayacağı değerlendirilmelidir;
+      portföy işletmeciliği istisnası (394/395) ile satış kazancı istisnası (5/1-e) birlikte
+      uygulanamaz, en avantajlı hüküm tercih edilmelidir.
+    - **Değerleme yöntemi:** Portföy taşınmazları VUK Md.269-270 veya SPK değerleme
+      esaslarına uygun değerlenmelidir. Yanlış yöntem uygulaması vergi farkı riski yaratır.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-d GSYF portföy işletmeciliği kazancı (taşınmaz dahil) YİAKV matrahından
+    düşüleceği kabul edilir. Ancak dönem mevzuatı ve GİB açıklamaları her yıl teyit
+    edilmelidir; taşınmaz gelir bileşeni için özelge araştırması önerilir.
+
+    ## Pratik Notlar
+
+    - 394 (taşınmaz hariç) + 395 (taşınmaz dahil) toplamı GSYF toplam portföy
+      işletmeciliği kazancıyla mutabık olmalıdır.
+    - Taşınmaz portföy geliri ile taşınmaz dışı portföy gelirinin ayrı hesaplarda
+      izlenmesi hem SPK raporlama hem de vergi ayrıştırması açısından zorunludur.
+    - GSYF portföyünde taşınmaz yatırımı yoksa bu form doldurulmaz, 395 satırı boş kalır.
+  kapi_sorulari:
+    - id: gsyf_spk_tescili
+      soru: "Fon SPK III-52.4 kapsamında tescilli bir GSYF mi? (Tescil belgesi güncel mi?)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d istisnası SPK'ya tescilli GSYF'ler için geçerlidir. Tescil belgesi ve içtüzük dosyada yer almalıdır."
+    - id: portfoyde_tasinmaz_var
+      soru: "GSYF portföyünde taşınmaz veya taşınmaza dayalı varlık var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Portföyde taşınmaz yoksa 395 satırı doldurulmaz. Taşınmaz varlığı portföy raporu ile belgelenmelidir."
+    - id: tasinmaz_spk_limiti
+      soru: "GSYF portföyündeki taşınmaz yatırımları SPK III-52.4 kapsamındaki limitler dahilinde mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: SPK portföy limitini aşan taşınmaz yatırımından elde edilen gelir portföy işletmeciliği sayılamaz. Dönem portföy uyum raporu ile kontrol zorunludur."
+    - id: tasinmaz_geliri_ayristirildi
+      soru: "Taşınmazdan elde edilen kazanç (kira, satış, değerleme artışı) taşınmaz dışı portföy gelirlerinden muhasebede ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Gelir ayrıştırması zorunludur. 394 + 395 toplamının doğru oluşturulabilmesi için taşınmaz gelirlerinin ayrı hesaplarda izlenmesi şarttır."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: tasinmaz_kira_geliri
+      etiket: "Portföy taşınmazlarından kira gelirleri"
+      tip: para
+      zorunlu: false
+      yardim: "GSYF portföyünde kayıtlı taşınmazlardan elde edilen kira gelirleri. Portföy dışı taşınmazdan kira geliri bu alana yazılmaz."
+    - id: tasinmaz_satis_kazanci
+      etiket: "Portföy taşınmaz satış kazançları"
+      tip: para
+      zorunlu: false
+      yardim: "Portföyde kayıtlı taşınmazların satışından doğan kazançlar (satış bedeli − VUK/SPK değeri). Portföy kaydı ve değerleme belgesi zorunlu."
+    - id: tasinmaza_dayali_gelirler
+      etiket: "Taşınmaza dayalı menkul kıymet gelirleri (portföy kapsamında)"
+      tip: para
+      zorunlu: false
+      yardim: "Portföyde kayıtlı taşınmaza dayalı kira sertifikası veya benzeri araçlardan gelirler (GSYF portföyü kapsamında ise)."
+    - id: tasinmaz_deger_artisi
+      etiket: "Portföy taşınmaz değerleme artışları (dönem sonu)"
+      tip: para
+      zorunlu: false
+      yardim: "Portföyddeki taşınmazların dönem sonu VUK veya SPK değerlemesinden doğan artışlar. Değerleme yöntemi tutarlı uygulanmalı."
+    - id: tasinmaz_portfoy_diger
+      etiket: "Diğer taşınmaz portföy işletmeciliği gelirleri"
+      tip: para
+      zorunlu: false
+    - id: tasinmaz_portfoy_giderleri
+      etiket: "Taşınmaz portföy işletme giderleri (−)"
+      tip: para
+      zorunlu: false
+      yardim: "Taşınmazla doğrudan ilişkili portföy giderleri. Karma giderler için dağıtım anahtarıyla taşınmaz payı belirlenmeli."
+    - id: istisna_tutari_beyan
+      etiket: "Net taşınmaz portföy işletmeciliği kazancı (Beyanname Satır 395)"
+      tip: para
+      zorunlu: true
+  formuller:
+    portfoy_tasinmaz_toplam: "tasinmaz_kira_geliri + tasinmaz_satis_kazanci + tasinmaza_dayali_gelirler + tasinmaz_deger_artisi + tasinmaz_portfoy_diger"
+    net_tasinmaz_kazanci: "portfoy_tasinmaz_toplam - tasinmaz_portfoy_giderleri"
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "istisna_tutari_beyan != 0"
+      hata: "İstisna tutarı sıfır olamaz — portföyde taşınmaz yoksa bu form doldurulmaz"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-d: Türkiye'de kanunların öngördüğü şekilde kurulan yatırım fon ve
+  ortaklıklarının portföy işletmeciliğinden doğan kazançları kurumlar vergisinden istisnadır.
+  Bu kalem GSYF'nin taşınmaz DAHİL portföy işletmeciliği kazancını kapsayan 395
+  beyanname satırı için düzenlenmiştir.
+
+  SPK III-52.4: GSYF'de taşınmaz yatırımı sınırlıdır. Portföy limitine uyum kritik önem
+  taşır; limit ihlali portföy işletmeciliği istisnasını tehlikeye atar.
+
+  ## Kritik Noktalar — Taşınmaz Geliri Ayrıştırması
+
+  PORTFÖY İÇİ — TAŞINMAZ (395 — İstisna):
+  - Portföy kaydındaki taşınmazlardan kira gelirleri
+  - Portföy taşınmazlarının satışından kazanç
+  - Taşınmaza dayalı araç gelirleri (portföy kapsamındaysa)
+  - Taşınmaz değerleme artışları (dönem sonu)
+
+  PORTFÖY İÇİ — TAŞINMAZ HARİÇ (394 — Ayrı Kod):
+  - Girişim şirketi payları, borçlanma araçları, menkul kıymet ve repo gelirleri
+
+  PORTFÖY DIŞI (Vergiye Tabi — 395'e YAZILMAZ):
+  - Fon yönetim ücreti ve başarı primi (taşınmaz işlemine bağlı bile olsa portföy dışı)
+
+  ## GSYF'ye Özgü Taşınmaz Riskleri
+  1. SPK portföy limitini aşan taşınmaz yatırımından elde edilen gelirin 395'e dahil
+     edilmesi. Limit ihlali durumunda söz konusu gelir portföy dışı sayılır.
+  2. GSYF taşınmaz gelirinin GYF (397) koduyla karıştırılması — farklı fon türleri,
+     farklı kodlar.
+  3. Portföy taşınmazının satışında KVK 5/1-e analizi yapılmadan doğrudan 395 uygulanması.
+     5/1-d (portföy işletmeciliği) ile 5/1-e (aktif satış) istisnalarının birlikte
+     uygulanamayacağı, en avantajlı hükmün seçilmesi gerektiği unutulmamalıdır.
+  4. Portföy taşınmaz değerlemesinde yanlış yöntem (VUK 269-270'e aykırı değerleme).
+  5. Taşınmaz gelirinin 394 koduna dahil edilmesi — tüm taşınmaz geliri 395'te olmalı.
+
+  ## YİAKV Etkisi
+  GSYF portföy işletmeciliği kazancının (taşınmaz dahil — 395) YİAKV matrahından
+  düşüleceği kural olarak kabul edilir. Taşınmaz geliri bileşeni için özelge araştırması
+  önerilir. Dönem mevzuatı teyidi zorunludur.
+
+  ## Beyanname Konumu
+  "Zarar Olsa Dahi İndirilecek İstisna ve İndirimler" bölümü — 395 kodlu satır.
+  394 (taşınmaz hariç) + 395 (taşınmaz dahil) = GSYF toplam portföy işletmeciliği kazancı.
+
+  ## 3 Kademe Uyum Kontrolü
+  Muhasebe taşınmaz portföy hesapları (net taşınmaz portföy kazancı) = Çalışma kâğıdı
+  395 = Beyanname 395.
+  394 + 395 = Toplam GSYF portföy işletmeciliği kazancı (ana mutabakat noktası).
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — GSYF Portföy Taşınmaz Kira Geliri (İstisna Kapsamı)
+  Borç: 127 Diğer Ticari Alacaklar ← Portföy taşınmaz kira tahakkuku
+  Alacak: 602 Kira Gelirleri ← GSYF portföy taşınmaz kira — KVK 5/1-d (395 satırı)
+  Açıklama: Yalnızca portföyde kayıtlı taşınmazların kira gelirleri; portföy dışı taşınmaz
+  kira vergiye tabidir.
+
+  ## Kayıt 2 — GSYF Portföy Taşınmaz Satış Kazancı
+  Borç: 102 Bankalar ← Satış bedeli
+  Alacak: 252/250 Taşınmaz ← VUK değeri (maliyet veya değerlenmiş değer)
+  Alacak: 679/649 Taşınmaz Satış Kârı ← Kazanç
+  Açıklama: KVK 5/1-d portföy işletmeciliği — 395 satırı; 5/1-e analizi ayrıca yapılmalı
+
+  ## Kayıt 3 — Portföy Taşınmaz Dönem Sonu Değerleme Artışı
+  Borç: 252/250 Taşınmazlar ← Değer artışı
+  Alacak: 649 Diğer Olağandışı Gelir / 679 ← Değerleme artışı
+  Açıklama: SPK/VUK değerleme esaslarına uygun — taşınmaz portföy değerleme artışı (395 satırı)
+
+  ## Beyanname 395 Akışı (Mutabakat)
+  Taşınmaz portföy gelirleri (kira + satış + değerleme artışı) net tutarı → Beyanname 395
+  Taşınmaz dışı portföy gelirleri net tutarı → Beyanname 394
+  Portföy dışı (yönetim ücreti vb.) → Matrahta kalır
+  3 KADEME UYUM: Muhasebe taşınmaz portföy hesapları = Çalışma kâğıdı = Beyanname 395
+  ANA KONTROL: 394 + 395 = Toplam GSYF portföy işletmeciliği kazancı
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Tescil Belgesi ve GSYF Güncel Statüsü
+    detay: "SPK III-52.4 Tebliği kapsamında fonun tescil edildiğini gösteren SPK belgesi. Tescil tarihi ve portföy yatırım stratejisi görünmeli."
+    temin_yeri: "SPK KAP / SPK resmi yazısı"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Fon İçtüzüğü — Taşınmaz Yatırım Limiti ve Kapsamı
+    detay: "GSYF içtüzüğünde taşınmaz yatırımına ilişkin hüküm ve limit. Portföyün kaçta kaçının taşınmaza ayrılabileceği, hangi taşınmaz türlerine yatırım yapılabileceği belirtilmelidir."
+    temin_yeri: "Fon içtüzüğü / SPK KAP"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Portföy Raporu — Taşınmaz Varlıklar
+    detay: "Dönem boyunca portföyde yer alan taşınmazların listesi (tapu bilgisi, iktisap tarihi, değeri, portföy kaydı). Portföy içi/dışı ve taşınmaz/taşınmaz dışı ayrımının dayanağıdır."
+    temin_yeri: "Saklama kuruluşu raporu / Portföy yönetim şirketi"
+  - kategori: zorunlu
+    "no": 4
+    baslik: SPK Portföy Limit Uyum Belgesi (Taşınmaz Limitine Uyum)
+    detay: "GSYF portföyündeki taşınmaz yatırımının SPK III-52.4 limitine uygunluğunu gösteren periyodik uyum raporu. Limit aşımı yoksa portföy işletmeciliği istisnası uygulanabilir."
+    temin_yeri: "Portföy yönetim şirketi / SPK raporlama"
+  - kategori: zorunlu
+    "no": 5
+    baslik: Taşınmaz Geliri Muhasebe Ayrım Belgesi (395 Gelirlerinin Ayrıştırılması)
+    detay: "Taşınmaz portföy gelirlerinin (kira, satış, değerleme artışı) taşınmaz dışı portföy gelirlerinden muhasebede ayrıştırıldığını gösteren hesap planı veya dağıtım anahtarı."
+    temin_yeri: "Muhasebe politikası belgesi / Hesap planı"
+  - kategori: zorunlu
+    "no": 6
+    baslik: Portföy Taşınmaz Değerleme Belgesi (Dönem Sonu)
+    detay: "Portföyddeki taşınmazların dönem sonu değerleme raporu. VUK Md.269-270 veya SPK değerleme esaslarına uygunluk. Değerleme artışının muhasebe kaydıyla mutabakatı."
+    temin_yeri: "Bağımsız değerleme raporu (SPK lisanslı) / Değerleme özeti"
+  - kategori: zorunlu
+    "no": 7
+    baslik: KV Beyannamesi Taslağı — 395. Satır ve 394+395 Mutabakat
+    detay: "Beyanname 395 satırındaki tutarın çalışma kâğıdıyla uyumu. 394 + 395 toplamının GSYF toplam portföy işletmeciliği kazancıyla mutabakatı."
+    temin_yeri: "GİB e-Beyanname sistemi / İnternet Vergi Dairesi"
+  - kategori: destekleyici
+    "no": 8
+    baslik: Taşınmaz Satışında KVK 5/1-e Analizi
+    detay: "Portföy taşınmazının satışında KVK 5/1-d (395) ile KVK 5/1-e istisnasının birlikte uygulanamayacağı; en avantajlı hükmün seçildiğini gösteren analiz notu."
+    temin_yeri: "YMM görüş notu / Vergi analiz raporu"
+  - kategori: destekleyici
+    "no": 9
+    baslik: YİAKV Matrah Hesaplama Tablosu (395 Etkisi)
+    detay: "KVK 32/C kapsamındaki YİAKV hesabında 395 istisnasının etkisi. Taşınmaz geliri bileşeni için özelge araştırması yapılmış ise dosyaya eklenmeli."
+    temin_yeri: "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri / Özelge"
+  - kategori: destekleyici
+    "no": 10
+    baslik: Fon Yönetim Ücreti ve Başarı Primi Ayrıştırma Tablosu
+    detay: "Fon yönetim ücreti ve başarı priminin portföy dışı gelir olarak ayrıştırıldığını gösteren belge. Taşınmaz işlemlerine bağlı bile olsa bu gelirler 395'e dahil edilmez."
+    temin_yeri: "Yönetim sözleşmesi / Muhasebe hesap kartları"
+
+k_checklist:
+  - id: K1
+    soru: "Fonun SPK III-52.4 kapsamında tescilli GSYF olduğu ve tescilinin güncel/geçerli olduğu doğrulandı mı?"
+    referans: "KVK Md. 5/1-d | SPK III-52.4 Tebliği | Tescil belgesi"
+  - id: K2
+    soru: "GSYF portföyündeki taşınmaz yatırımı SPK III-52.4 portföy limitine uygun mu? (Limit ihlali var mı?)"
+    referans: "SPK III-52.4 Tebliği | Portföy limit kontrolü"
+  - id: K3
+    soru: "Taşınmaz geliri (kira, satış, değerleme artışı) taşınmaz dışı portföy gelirlerinden muhasebede ayrıştırıldı mı?"
+    referans: "Beyanname 394 / 395 kod ayrımı | Muhasebe ayrım zorunluluğu"
+  - id: K4
+    soru: "394 + 395 toplamı GSYF toplam portföy işletmeciliği kazancıyla mutabık mı?"
+    referans: "3 kademe uyum: muhasebe = çalışma kâğıdı = beyanname"
+  - id: K5
+    soru: "Portföy taşınmaz değerlemesi VUK Md.269-270 veya SPK değerleme esaslarına uygun mu?"
+    referans: "VUK Md. 269-270 | SPK değerleme tebliğleri"
+  - id: K6
+    soru: "Portföy taşınmazının satışında KVK 5/1-d (395) ile 5/1-e analizi yapıldı mı? En avantajlı hüküm seçildi mi?"
+    referans: "KVK Md. 5/1-d ve 5/1-e | Birlikte uygulama yasağı"
+  - id: K7
+    soru: "Portföy dışı taşınmazlardan gelir varsa 395'e dahil edilmediği teyit edildi mi?"
+    referans: "Portföy içi/dışı ayrım | KVK Md. 5/1-d"
+  - id: K8
+    soru: "Fon yönetim ücreti ve başarı primi portföy dışı olarak ayrıldı mı? (395'e dahil edilmedi mi?)"
+    referans: "Portföy işletmeciliği tanımı | Yönetim ücreti = portföy dışı"
+  - id: K9
+    soru: "YİAKV matrahında 395 istisnasının (taşınmaz geliri dahil) etkisi analiz edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri | Özelge araştırması"
+  - id: K10
+    soru: "Beyanname 395 satırı 'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldı mı?"
+    referans: "Beyanname bölüm kontrolü"
+  - id: K11
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (≥500.000 TL tek satır)"
+    referans: "49 No.lu KV GT (30.12.2025)"

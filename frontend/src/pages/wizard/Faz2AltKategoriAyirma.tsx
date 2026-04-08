@@ -1,12 +1,20 @@
-import { useState, useMemo } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useState, useMemo, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import { apiClient } from '@/api/client'
+import { useWizardNavigation } from '@/hooks/useWizardNavigation'
 import { useWizardStore } from '@/store/wizardStore'
-import { useKatalogKalemler, KalemSchema } from '@/api/kalem'
+import { useKatalogKalemler, useAnaKategoriler, KalemSchema } from '@/api/kalem'
+import { useCalisma } from '@/api/calisma'
 import KalemInfoModal from '@/components/KalemInfoModal'
 
 const KATEGORI_BASLIKLAR: Record<string, string> = {
+  // İlaveler
+  kkeg: 'İlaveler',
+  enflasyon_duzeltmesi: 'Enflasyon Düzeltmesi Farklarından İlaveler',
+  // Zarar olsa dahi
+  gecmis_yil_zararlari: 'Geçmiş Yıl Zararları Mahsubu',
   istirak_kazanc_istisnalari: 'İştirak Kazancı İstisnaları',
+  portfoy_isletmeciligi: 'Portföy İşletmeciliği Kazancı İstisnaları',
   serbest_bolge_tgb_istisnalari: 'Serbest Bölge ve TGB İstisnaları',
   yurtdisi_istisnalar: 'Yurtdışı Faaliyet İstisnaları',
   doviz_alacak_istisnalari: 'Döviz/Altın Hesabı Dönüşüm İstisnaları (Geçici Md.14)',
@@ -14,10 +22,22 @@ const KATEGORI_BASLIKLAR: Record<string, string> = {
   ar_ge_istisna: 'Ar-Ge ve Sınai Mülkiyet Hakları İstisnası',
   egitim_saglik_istisnalari: 'Eğitim, Öğretim ve Rehabilitasyon İstisnası',
   diger_istisnalar: 'Diğer İndirim ve İstisnalar',
+  // Kazanç varsa
   arge_tasarim_indirimleri: 'Ar-Ge, Tasarım ve Teknogirişim İndirimleri',
+  arge_indirimleri: 'Ar-Ge İndirimleri',
   bagis_yardim_sponsorluk: 'Bağış, Yardım ve Sponsorluk İndirimleri',
+  bagis_yardim_indirimleri: 'Bağış ve Yardım İndirimleri',
+  sponsorluk_indirimi: 'Sponsorluk Harcaması İndirimi',
   yatirim_tesvikleri: 'Yatırım Teşvikleri ve Özel İndirimler',
-  hizmet_indirimleri: 'Sağlık, Eğitim ve Hizmet İndirimleri',
+  yatirim_indirimi: 'Yatırım İndirimi (GVK Geçici Md.61)',
+  nakdi_sermaye_indirimi: 'Nakdi Sermaye Artırımı Faiz İndirimi',
+  hizmet_indirimleri: 'Risturn ve Korumalı İşyeri İndirimi',
+  saglik_egitim_hizmet_indirimi: 'Sağlık ve Eğitim Hizmeti İndirimi',
+  risturn_ve_saglik_indirimleri: 'Risturn, Sağlık/Eğitim ve Korumalı İşyeri İndirimi',
+  diger_indirimler: 'Diğer İndirimler',
+  diger_indirimler_alt: 'Diğer Özel İndirimler',
+  // Hesaplanan KV indirimleri
+  vergi_indirimleri: 'Hesaplanan Vergi İndirimleri',
 }
 
 interface InfoState {
@@ -27,18 +47,43 @@ interface InfoState {
 
 export default function Faz2AltKategoriAyirma() {
   const { calismaId } = useParams<{ calismaId: string }>()
-  const navigate = useNavigate()
-  const { faz1, setFaz2 } = useWizardStore()
+  const { navigateNext, navigatePrev } = useWizardNavigation()
+  const { getFaz1, setFaz2 } = useWizardStore()
+  const faz1 = getFaz1(calismaId ?? '')
   const [seciliKalemler, setSeciliKalemler] = useState<Set<string>>(new Set())
   const [yukleniyor, setYukleniyor] = useState(false)
   const [infoModal, setInfoModal] = useState<InfoState | null>(null)
   const [infoYukleniyor, setInfoYukleniyor] = useState<string | null>(null)
 
+  const calismaIdNum = calismaId ? parseInt(calismaId) : undefined
+  const { data: calisma } = useCalisma(calismaIdNum)
   const { data: katalogKalemler = [], isLoading } = useKatalogKalemler()
+  const { data: anaKategoriler = [] } = useAnaKategoriler()
 
-  const seciliKategoriler = Object.entries(faz1 ?? {})
-    .filter(([, evet]) => evet)
-    .map(([id]) => id)
+  // Daha önce kaydedilmiş seçimleri yükle
+  useEffect(() => {
+    const kaydedilen = calisma?.istek_listesi
+    if (kaydedilen && kaydedilen.length > 0) {
+      setSeciliKalemler(new Set(kaydedilen))
+    }
+  }, [calisma?.istek_listesi])
+
+  // Faz1'de seçilen kategorileri DB sira'sına göre sırala
+  // Store boşsa (sayfa yenileme, direkt URL) DB'den faz1 cevaplarına fallback yap
+  const seciliKategoriler = useMemo(() => {
+    const faz1Kaynak: Record<string, boolean> | null =
+      faz1 ?? (calisma?.wizard_cevaplari?.['faz1'] as Record<string, boolean> | undefined) ?? null
+    const secilen = new Set(
+      Object.entries(faz1Kaynak ?? {}).filter(([, evet]) => evet).map(([id]) => id)
+    )
+    if (anaKategoriler.length > 0) {
+      return anaKategoriler
+        .filter((k) => secilen.has(k.kod))
+        .sort((a, b) => a.sira - b.sira)
+        .map((k) => k.kod)
+    }
+    return [...secilen]
+  }, [faz1, calisma, anaKategoriler])
 
   const kalemlerByKategori = useMemo(() => {
     const result: Record<string, typeof katalogKalemler> = {}
@@ -51,11 +96,37 @@ export default function Faz2AltKategoriAyirma() {
     return result
   }, [katalogKalemler, seciliKategoriler])
 
+  const katalogMap = useMemo(
+    () => Object.fromEntries(katalogKalemler.map((k) => [k.ic_kod, k])),
+    [katalogKalemler]
+  )
+
+  const isChecked = (icKod: string): boolean => {
+    if (seciliKalemler.has(icKod)) return true
+    // coklu_instance: any _N variant counts as checked
+    if (katalogMap[icKod]?.coklu_instance) {
+      return Array.from(seciliKalemler).some((k) => k.match(new RegExp(`^${icKod}_\\d+$`)))
+    }
+    return false
+  }
+
   const toggleKalem = (icKod: string) => {
+    const coklu = katalogMap[icKod]?.coklu_instance
     setSeciliKalemler((prev) => {
       const next = new Set(prev)
-      if (next.has(icKod)) next.delete(icKod)
-      else next.add(icKod)
+      if (isChecked(icKod)) {
+        // Remove — for coklu, remove all _N instances
+        if (coklu) {
+          for (const k of Array.from(next)) {
+            if (k.match(new RegExp(`^${icKod}_\\d+$`))) next.delete(k)
+          }
+        } else {
+          next.delete(icKod)
+        }
+      } else {
+        // Add — for coklu, add _1 instance
+        next.add(coklu ? `${icKod}_1` : icKod)
+      }
       return next
     })
   }
@@ -81,8 +152,8 @@ export default function Faz2AltKategoriAyirma() {
         secilen_kalemler: seciliArray,
         kapi_soru_cevaplari: {},
       })
-      setFaz2({ secilen_kalemler: seciliArray, kapi_soru_cevaplari: {} })
-      navigate(`/calisma/${calismaId}/istek-listesi`)
+      setFaz2(calismaId!, { secilen_kalemler: seciliArray, kapi_soru_cevaplari: {} })
+      navigateNext()
     } finally {
       setYukleniyor(false)
     }
@@ -106,16 +177,21 @@ export default function Faz2AltKategoriAyirma() {
           <h2 className="text-base font-semibold text-primary mb-3 pb-2 border-b border-border-subtle">
             {KATEGORI_BASLIKLAR[katId] ?? katId}
             <span className="ml-2 text-xs font-normal text-muted">
-              ({kalemler.filter((k) => seciliKalemler.has(k.ic_kod)).length}/{kalemler.length} seçili)
+              ({kalemler.filter((k) => isChecked(k.ic_kod)).length}/{kalemler.length} seçili)
             </span>
           </h2>
 
           <div className="space-y-2">
             {kalemler.map((kalem) => {
-              const secili = seciliKalemler.has(kalem.ic_kod)
-              const kodlar = kalem.beyanname_kodlari
+              const secili = isChecked(kalem.ic_kod)
+              const kodlar = kalem.beyanname_kodlari && kalem.beyanname_kodlari.length > 0
                 ? [...new Set(kalem.beyanname_kodlari.map((b: { kod: number }) => b.kod))].join('/')
-                : ''
+                : null
+              const refLabel = kodlar
+                ? `Beyanname: ${kodlar}`
+                : kalem.dahili_ref
+                ? `Ref: ${kalem.dahili_ref}`
+                : null
               return (
                 <label
                   key={kalem.ic_kod}
@@ -132,13 +208,8 @@ export default function Faz2AltKategoriAyirma() {
                     className="mt-0.5 accent-accent"
                   />
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="text-sm font-medium text-primary">{kalem.baslik}</span>
-                      {kodlar && (
-                        <span className="text-xs text-muted font-mono">{kodlar}</span>
-                      )}
-                    </div>
-                    <div className="flex items-center gap-2 mt-1.5">
+                    <span className="text-sm font-medium text-primary">{kalem.baslik}</span>
+                    <div className="flex items-center gap-2 mt-1.5 flex-wrap">
                       <span className={`text-xs px-1.5 py-0.5 rounded font-medium ${
                         kalem.yiakv_etkisi === 'dusulur'
                           ? 'bg-green-100 dark:bg-green-950 text-green-700 dark:text-green-300'
@@ -159,6 +230,11 @@ export default function Faz2AltKategoriAyirma() {
                           ? <span className="inline-block w-3 h-3 border border-current border-t-transparent rounded-full animate-spin" />
                           : 'ℹ Detay'}
                       </button>
+                      {refLabel && (
+                        <span className="text-xs text-muted font-mono px-1.5 py-0.5 rounded border border-border-default bg-surface-overlay select-none">
+                          {refLabel}
+                        </span>
+                      )}
                     </div>
                   </div>
                 </label>
@@ -180,13 +256,21 @@ export default function Faz2AltKategoriAyirma() {
         </div>
       )}
 
-      <button
-        onClick={devamEt}
-        disabled={seciliArray.length === 0 || yukleniyor}
-        className="w-full bg-accent text-white py-2.5 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium text-sm transition-colors"
-      >
-        {yukleniyor ? 'Kaydediliyor...' : `${seciliArray.length} Kalem ile Devam Et →`}
-      </button>
+      <div className="flex gap-3">
+        <button
+          onClick={navigatePrev}
+          className="flex-shrink-0 bg-surface-raised border border-border-default text-primary py-2.5 px-4 rounded-md hover:bg-surface-overlay font-medium text-sm transition-colors"
+        >
+          ← Geri
+        </button>
+        <button
+          onClick={devamEt}
+          disabled={seciliArray.length === 0 || yukleniyor}
+          className="flex-1 bg-accent text-white py-2.5 px-4 rounded-md hover:bg-accent-hover disabled:opacity-50 font-medium text-sm transition-colors"
+        >
+          {yukleniyor ? 'Kaydediliyor...' : `${seciliArray.length} Kalem ile Devam Et →`}
+        </button>
+      </div>
 
       {infoModal && (
         <KalemInfoModal

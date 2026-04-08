@@ -1,0 +1,105 @@
+ic_kod: onceki_yil_finansman_fonu
+baslik: Önceki Yıl Ayrılan Finansman Fonu
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 202 }
+  - { donem: 2026, kod: 202 }
+
+mevzuat_dayanagi:
+  - GVK Madde 41/9 (Finansman Gider Kısıtlaması — eski finansman fonu hükmü)
+  - KVK Madde 11 (atıf)
+  - 334 Seri No.lu GVK Genel Tebliği
+
+beyanname_bolumu: ilave
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-01-01"
+  bitis: null
+
+ana_kategori: kkeg
+
+wizard_agaci:
+  tetikleyici_soru: "Önceki yıllarda ayrılan ve bu dönemde matrahı etkileyen finansman fonu var mı?"
+  info_modal: |
+    ## Önceki Yıl Ayrılan Finansman Fonu
+
+    Geçmiş dönemlerde **GVK Madde 41/9** veya ilgili tebliğler kapsamında ayrılmış finansman
+    fonunun, cari dönemde kullanılması veya amacı dışında sarf edilmesi halinde bu tutar
+    kurumlar vergisi matrahına **ilave edilir**.
+
+    **Ne zaman gündeme gelir?**
+    - Önceki yıllarda yatırım amacıyla finansman fonu ayrılmışsa
+    - Bu fon cari yılda amacı dışında kullanıldıysa veya yatırım gerçekleşmeden çözüldüyse
+    - 5 yıllık yatırım süresi dolmadan fon dağıtıldıysa
+
+    **Beyanname yansıması:** KV Beyannamesi "İlaveler" bölümü, satır 202.
+
+    **Dikkat:** Bu kalem, mevcut finansman gider kısıtlaması (FGK — KVK Md.11/1-i) ile
+    karıştırılmamalıdır. FGK cari dönem gideri kısıtlarken, bu kalem geçmiş yıl ayrılan
+    fon rezervinin matrahı etkileyen geri dönüşünü ifade eder.
+  kapi_sorulari:
+    - id: fon_cozuldu_mu
+      soru: "Önceki yıl(larda) finansman fonu ayrıldı ve bu dönemde çözüldü ya da amacı dışında kullanıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Fon amacına uygun kullanıldıysa matrah ilavesi gerekmez."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: fon_tutari
+      etiket: "Önceki yıl ayrılan finansman fonu tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Geçmiş dönem(ler)de ayrılmış finansman fonu rezervinden bu dönem matrahına
+        eklenmesi gereken tutar. İlgili hesap hareketleri (549 veya benzeri) dikkate alınmalıdır.
+    - id: aciklama_notu
+      etiket: "Açıklama / Kaynak dönem"
+      tip: metin
+      zorunlu: false
+      yardim: "Fonun hangi yılda ayrıldığı ve çözülme gerekçesi (isteğe bağlı)."
+  formuller:
+    istisna_tutari: "fon_tutari"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "fon_tutari >= 0"
+      hata: "Finansman fonu tutarı negatif olamaz."
+
+denetci_notlari: |
+  ## Önceki Yıl Finansman Fonu — Denetçi Notu
+
+  Bu kalem MATRAH ARTIRICI bir ilavedir — ticari kâra eklenir.
+
+  Fon ayrılma ve çözülme kayıtları muhasebe defterlerinde izlenmelidir.
+  Ayrılma yılı, kullanım amacı ve çözülme gerekçesi belgelenmelidir.
+
+  GVK Md.41/9 kapsamı ile KVK Md.11 atfı dikkate alınarak değerlendirme yapılmalıdır.
+  Özelge talep edilmesi gereken durumlarda YMM görüşü alınmalıdır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Finansman Fonu Ayrılma ve Çözülme Kayıtları
+    detay: "Önceki dönem fon ayrılma muhasebe kaydı ve cari dönem çözülme kaydı."
+    temin_yeri: Muhasebe / Yevmiye Defteri
+  - kategori: destekleyici
+    "no": 2
+    baslik: YMM / Danışman Değerlendirme Notu
+    detay: "Fonun amacı dışında kullanıldığına veya çözüleceğine ilişkin YMM görüşü."
+    temin_yeri: YMM
+
+k_checklist:
+  - id: K1
+    soru: "Fonun ayrılma yılı ve tutarı muhasebe kayıtlarından doğrulandı mı?"
+    referans: "GVK Md.41/9"
+  - id: K2
+    soru: "Çözülme gerekçesi (amaç dışı kullanım / süre dolumu) belgelendi mi?"
+    referans: "334 s. GVK Genel Tebliği"
+  - id: K3
+    soru: "Beyanname 202. satırı ile çalışma kağıdı mutabık mı?"
+    referans: "KV Beyannamesi"

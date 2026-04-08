@@ -6,7 +6,7 @@ import yaml
 from pathlib import Path
 from app.pipeline.types import PipelineAdim, PipelineSonucu, KalemHesapSonucu
 from app.pipeline.kalem_hesaplayici import kalem_hesapla
-from app.katalog.cache import get_katalog
+from app.katalog.cache import get_katalog, katalog_kalem_bul
 
 logger = logging.getLogger(__name__)
 
@@ -77,18 +77,50 @@ def pipeline_calistir(
     adimlar.append(PipelineAdim(1, "Ticari bilanço kârı/zararı", Decimal("0"), ara,
                                 f"Ticari bilanço kârı: {ara:,.2f} TL"))
 
-    # Adım 2: KKEG ve ilaveler
+    # Adım 2: KKEG ve ilaveler (Faz0 doğrudan değerleri)
+    # Katalog kaleminden hesaplanıyorsa çift sayım önlemek için atla
     kkeg_dec = Decimal(str(kkeg))
     finansman_dec = Decimal(str(finansman_fonu))
+    kkeg_kalem_secili = "kkeg" in istek_listesi
+    finansman_kalem_secili = "onceki_yil_finansman_fonu" in istek_listesi
+    kkeg_ekle = Decimal("0") if kkeg_kalem_secili else kkeg_dec
+    finansman_ekle = Decimal("0") if finansman_kalem_secili else finansman_dec
     onceki = ara
-    ara = ara + kkeg_dec + finansman_dec
+    ara = ara + kkeg_ekle + finansman_ekle
+    adim2_parcalar = []
+    if kkeg_ekle:
+        adim2_parcalar.append(f"KKEG: {kkeg_ekle:,.2f} TL")
+    elif kkeg_kalem_secili and kkeg_dec:
+        adim2_parcalar.append(f"KKEG: kalem kataloğunda ({kkeg_dec:,.2f} TL referans)")
+    if finansman_ekle:
+        adim2_parcalar.append(f"Finansman fonu: {finansman_ekle:,.2f} TL")
+    elif finansman_kalem_secili and finansman_dec:
+        adim2_parcalar.append(f"Finansman fonu: kalem kataloğunda ({finansman_dec:,.2f} TL referans)")
     adimlar.append(PipelineAdim(2, "(+) KKEG ve ilaveler", onceki, ara,
-                                f"KKEG: {kkeg_dec:,.2f} TL, Finansman fonu: {finansman_dec:,.2f} TL"))
+                                ", ".join(adim2_parcalar) if adim2_parcalar else "Tümü kalem kataloğundan"))
 
-    # Adım 3: Zarar olsa dahi indirilecek istisnalar (kod 297-386)
+    # Adım 2b: Kalem ilaveleri (beyanname_bolumu = ilave — matrah artırıcı)
+    ilave_toplam = Decimal("0")
+    for ic_kod in istek_listesi:
+        _, kalem = katalog_kalem_bul(ic_kod)
+        if not kalem or kalem.beyanname_bolumu.value != "ilave":
+            continue
+        girdi = kalem_verileri.get(ic_kod, {})
+        kalem_sonuc = kalem_hesapla(kalem, girdi, donem_yili)
+        sonuc.kalem_sonuclari[ic_kod] = kalem_sonuc
+        if not kalem_sonuc.hatalar:
+            ilave_toplam += kalem_sonuc.istisna_tutari
+
+    if ilave_toplam:
+        onceki = ara
+        ara = ara + ilave_toplam
+        adimlar.append(PipelineAdim(3, "(+) Kalem ilaveleri", onceki, ara,
+                                    f"Toplam: {ilave_toplam:,.2f} TL"))
+
+    # Adım 3→4: Zarar olsa dahi indirilecek istisnalar (kod 297-386)
     zarar_olsa_dahi_toplam = Decimal("0")
     for ic_kod in istek_listesi:
-        kalem = katalog.get(ic_kod)
+        _, kalem = katalog_kalem_bul(ic_kod)
         if not kalem or kalem.beyanname_bolumu.value != "zarar_olsa_dahi":
             continue
         girdi = kalem_verileri.get(ic_kod, {})
@@ -115,16 +147,35 @@ def pipeline_calistir(
         adimlar.append(PipelineAdim(6, "(−) Kazanç varsa indirilecek kalemler", ara, ara,
                                     "Zarar nedeniyle atlandı"))
     else:
-        # Adım 5: Geçmiş yıl zarar mahsubu (şimdilik 0 — v1 basit)
-        adimlar.append(PipelineAdim(5, "Geçmiş yıl zarar mahsubu", ara, ara,
-                                    "Geçmiş yıl zararı yok"))
+        # Adım 5: Geçmiş yıl zarar mahsubu
+        gyzo_toplam = Decimal("0")
+        for ic_kod in istek_listesi:
+            _, kalem = katalog_kalem_bul(ic_kod)
+            if not kalem or kalem.beyanname_bolumu.value != "gecmis_yil_zarari":
+                continue
+            girdi = kalem_verileri.get(ic_kod, {})
+            kalem_sonuc = kalem_hesapla(kalem, girdi, donem_yili)
+            sonuc.kalem_sonuclari[ic_kod] = kalem_sonuc
+            if not kalem_sonuc.hatalar:
+                gyzo_toplam += kalem_sonuc.istisna_tutari
+
+        # Cap at available fiscal profit (cannot exceed ara)
+        gyzo_mahsup = min(gyzo_toplam, ara)
+        sonuc.gyzo_mahsup = gyzo_mahsup
+        onceki = ara
+        ara = ara - gyzo_mahsup
+        adimlar.append(PipelineAdim(5, "(−) Geçmiş yıl zarar mahsubu", onceki, ara,
+                                    f"Talep edilen: {gyzo_toplam:,.2f} TL, Mahsup edilen: {gyzo_mahsup:,.2f} TL"))
 
         # Adım 6: Kazanç varsa indirilecek
         for ic_kod in istek_listesi:
-            kalem = katalog.get(ic_kod)
+            _, kalem = katalog_kalem_bul(ic_kod)
             if not kalem or kalem.beyanname_bolumu.value != "kazanc_varsa":
                 continue
-            girdi = kalem_verileri.get(ic_kod, {})
+            girdi = dict(kalem_verileri.get(ic_kod, {}))
+            # pipeline_matrah: true olan kalemler için mevcut ara değeri otomatik enjekte et
+            if kalem.parametreler.get("pipeline_matrah"):
+                girdi["kv_matrahi_giris"] = float(ara)
             kalem_sonuc = kalem_hesapla(kalem, girdi, donem_yili)
             sonuc.kalem_sonuclari[ic_kod] = kalem_sonuc
             if not kalem_sonuc.hatalar:
@@ -150,11 +201,34 @@ def pipeline_calistir(
     adimlar.append(PipelineAdim(9, f"Hesaplanan KV (oran: %{kv_orani * 100:.0f})", matrah, hesaplanan_kv,
                                 f"{matrah:,.2f} × {kv_orani} = {hesaplanan_kv:,.2f} TL"))
 
+    # Adım 9b: Hesaplanan KV indirimleri (beyanname_bolumu = hesaplanan_kv_indirimi)
+    kv_indirimi_toplam = Decimal("0")
+    for ic_kod in istek_listesi:
+        _, kalem = katalog_kalem_bul(ic_kod)
+        if not kalem or kalem.beyanname_bolumu.value != "hesaplanan_kv_indirimi":
+            continue
+        girdi = dict(kalem_verileri.get(ic_kod, {}))
+        # hesaplanan_kv'yi otomatik enjekte et
+        girdi["hesaplanan_kv"] = float(hesaplanan_kv)
+        kalem_sonuc = kalem_hesapla(kalem, girdi, donem_yili)
+        sonuc.kalem_sonuclari[ic_kod] = kalem_sonuc
+        if not kalem_sonuc.hatalar:
+            kv_indirimi_toplam += kalem_sonuc.istisna_tutari
+
+    if kv_indirimi_toplam:
+        kv_indirimi_toplam = min(kv_indirimi_toplam, hesaplanan_kv)
+        sonuc.hesaplanan_kv_indirimi = kv_indirimi_toplam
+        onceki_kv = hesaplanan_kv
+        hesaplanan_kv = hesaplanan_kv - kv_indirimi_toplam
+        sonuc.hesaplanan_kv = hesaplanan_kv
+        adimlar.append(PipelineAdim(10, "(−) Hesaplanan vergi indirimleri", onceki_kv, hesaplanan_kv,
+                                    f"Toplam: {kv_indirimi_toplam:,.2f} TL"))
+
     # Adım 10: YİAKV paralel hesap
     if yiakv_orani and donem_yili >= 2025:
         yiakv_matrahi = Decimal(str(ticari_kar_zarar)) + kkeg_dec + finansman_dec
         for ic_kod in istek_listesi:
-            kalem = katalog.get(ic_kod)
+            _, kalem = katalog_kalem_bul(ic_kod)
             if kalem and kalem.yiakv_etkisi.value == "dusulur":
                 ks = sonuc.kalem_sonuclari.get(ic_kod)
                 if ks and not ks.hatalar:

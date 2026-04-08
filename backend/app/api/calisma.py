@@ -18,6 +18,7 @@ from app.katalog.cache import get_katalog
 from app.schemas.calisma import (
     BelgeDurumuGuncelle,
     CalismaResponse,
+    IstekListesiGuncelle,
     KalemVeriGirdisi,
     KChecklistGuncelle,
     WizardFaz0Girdi,
@@ -82,10 +83,9 @@ async def wizard_faz0(
 ):
     calisma = await verify_calisma_owner(calisma_id, current_user, db)
 
-    calisma.ticari_kar_zarar = data.ticari_kar_zarar
-    calisma.kkeg = data.kkeg
-    calisma.finansman_fonu = data.finansman_fonu
-    calisma.kar_mi_zarar_mi = "kar" if data.ticari_kar_zarar > 0 else "zarar"
+    ticari_kar_zarar = data.ticari_kar - data.ticari_zarar
+    calisma.ticari_kar_zarar = ticari_kar_zarar
+    calisma.kar_mi_zarar_mi = "kar" if ticari_kar_zarar > 0 else "zarar"
     calisma.wizard_faz = 1
 
     await db.commit()
@@ -162,6 +162,20 @@ async def calisma_yeniden_ac(
 ):
     calisma = await verify_calisma_owner(calisma_id, current_user, db)
     calisma.tamamlandi = False
+    await db.commit()
+    await db.refresh(calisma)
+    return calisma
+
+
+@kalem_router.put("/{calisma_id}/istek-listesi", response_model=CalismaResponse)
+async def istek_listesi_guncelle(
+    calisma_id: int,
+    data: IstekListesiGuncelle,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    calisma = await verify_calisma_owner(calisma_id, current_user, db)
+    calisma.istek_listesi = data.ic_kodlar
     await db.commit()
     await db.refresh(calisma)
     return calisma
@@ -254,6 +268,27 @@ async def belge_durumu_guncelle(
     kalem_verisi.belge_durumu = data.durum
     await db.commit()
     return {"ic_kod": ic_kod, "belge_durumu": data.durum}
+
+
+@kalem_router.get("/{calisma_id}/kalem-sonuclari")
+async def kalem_sonuclari(
+    calisma_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """İstek listesindeki tüm kalemler için istisna_tutari değerlerini döner."""
+    calisma = await verify_calisma_owner(calisma_id, current_user, db)
+    istek_listesi: list[str] = calisma.istek_listesi or []
+    if not istek_listesi:
+        return {}
+
+    result = await db.execute(
+        select(KalemVerisi.ic_kod, KalemVerisi.istisna_tutari)
+        .where(KalemVerisi.calisma_id == calisma_id)
+        .where(KalemVerisi.ic_kod.in_(istek_listesi))
+    )
+    return {row.ic_kod: float(row.istisna_tutari) if row.istisna_tutari is not None else None
+            for row in result.fetchall()}
 
 
 @kalem_router.get("/{calisma_id}/istek-listesi/excel")

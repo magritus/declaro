@@ -1,12 +1,15 @@
 from decimal import Decimal
 from enum import Enum
-from typing import Any
-from pydantic import BaseModel, field_validator
+from typing import Annotated, Any
+from pydantic import BaseModel, BeforeValidator, field_validator
 
 
 class BeyannameBolumuEnum(str, Enum):
     ZARAR_OLSA_DAHI = "zarar_olsa_dahi"
     KAZANC_VARSA = "kazanc_varsa"
+    GECMIS_YIL_ZARARI = "gecmis_yil_zarari"
+    ILAVE = "ilave"
+    HESAPLANAN_KV_INDIRIMI = "hesaplanan_kv_indirimi"
 
 
 class YiakVEtkisiEnum(str, Enum):
@@ -28,6 +31,9 @@ class VeriGirisiTipiEnum(str, Enum):
     EVET_HAYIR = "evet_hayir"
     METIN = "metin"
     SAYI = "sayi"
+    BOLUM = "bolum"
+    MATRIS = "matris"
+    UZLASTIRMA = "uzlastirma"
 
 
 class BelgeKategorisiEnum(str, Enum):
@@ -38,6 +44,7 @@ class BelgeKategorisiEnum(str, Enum):
 class BeyannamKodu(BaseModel):
     donem: int
     kod: int
+    aciklama: str | None = None
 
 
 class YururlukAraligi(BaseModel):
@@ -59,13 +66,30 @@ class WizardAgaci(BaseModel):
     kapi_sorulari: list[KapiSorusu] = []
 
 
+def _secenekler_normalize(v: Any) -> Any:
+    """str → {deger, etiket} dönüşümü — hem plain string hem dict kabul eder."""
+    if isinstance(v, list):
+        return [{"deger": x, "etiket": x} if isinstance(x, str) else x for x in v]
+    return v
+
+
+class SecebekItem(BaseModel):
+    """Zengin seçenek: {deger, etiket}. YAML'da hem plain string hem dict kabul edilir."""
+    deger: str
+    etiket: str
+
+
 class VeriGirisiAlani(BaseModel):
     id: str
     etiket: str
     tip: VeriGirisiTipiEnum
     zorunlu: bool = False
-    secenekler: list[str] | None = None
+    varsayilan: str | int | float | bool | None = None
+    secenekler: Annotated[list[SecebekItem] | None, BeforeValidator(_secenekler_normalize)] = None
     yardim: str | None = None
+    satirlar: list[dict[str, Any]] | None = None   # matris rows: [{id, etiket}]
+    sutunlar: list[dict[str, Any]] | None = None   # matris cols: [{id, etiket, zorunlu?}]
+    kaynak_alan: str | None = None                  # uzlastirma: watched form field id
 
 
 class Validasyon(BaseModel):
@@ -99,6 +123,7 @@ class KalemSchema(BaseModel):
     baslik: str
     ust_kalem: str | None = None
     beyanname_kodlari: list[BeyannamKodu] = []
+    dahili_ref: str | None = None  # XML'de karşılığı olmayan özel iç referans (ör. "IKV-YTB")
     mevzuat_dayanagi: list[str] = []
     beyanname_bolumu: BeyannameBolumuEnum
     yiakv_etkisi: YiakVEtkisiEnum
@@ -107,6 +132,7 @@ class KalemSchema(BaseModel):
     ana_kategori: str | None = None
     wizard_agaci: WizardAgaci | None = None
     parametreler: dict[str, Any] = {}
+    coklu_instance: bool = False  # aynı kalemden birden fazla eklenebilir (ör. YTB)
     hesaplama_sablonu: HesaplamaSablonu = HesaplamaSablonu()
     denetci_notlari: str | None = None
     muhasebe_kayitlari: str | None = None

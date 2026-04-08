@@ -13,7 +13,7 @@ from app.db.models.kalem_verisi import KalemVerisi
 from app.db.models.mukellef import Mukellef
 from app.db.models.user import User
 from app.db.session import get_db
-from app.katalog.cache import get_katalog
+from app.katalog.cache import get_katalog, katalog_kalem_bul
 from app.pipeline.kalem_hesaplayici import kalem_hesapla
 from app.pipeline.pipeline import pipeline_calistir
 
@@ -67,8 +67,7 @@ async def kalem_hesapla_endpoint(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    katalog = get_katalog()
-    kalem = katalog.get(ic_kod)
+    _, kalem = katalog_kalem_bul(ic_kod)
     if not kalem:
         raise HTTPException(status_code=404, detail=f"Kalem bulunamadi: {ic_kod}")
 
@@ -77,7 +76,36 @@ async def kalem_hesapla_endpoint(
     if ic_kod not in (calisma.istek_listesi or []):
         raise HTTPException(status_code=400, detail=f"{ic_kod} bu calismanin istek listesinde degil")
 
-    sonuc = kalem_hesapla(kalem, data.girdi_verileri)
+    girdi = dict(data.girdi_verileri)
+
+    # hesaplanan_kv_indirimi kalemler için hesaplanan_kv'yi pipeline'dan otomatik inject et
+    if kalem.beyanname_bolumu.value == "hesaplanan_kv_indirimi":
+        result_kv = await db.execute(
+            select(KalemVerisi).where(KalemVerisi.calisma_id == calisma_id)
+        )
+        kalem_verileri_db = {kv.ic_kod: kv.girdi_verileri or {} for kv in result_kv.scalars().all()}
+        donem = await db.get(Donem, calisma.donem_id)
+        donem_yili = donem.yil if donem else 2025
+        mukellef = await db.get(Mukellef, donem.mukellef_id) if donem else None
+        kv_orani_override = float(mukellef.kv_orani) if mukellef and mukellef.kv_orani else None
+        # Partial pipeline: hesaplanan_kv_indirimi kalemlerini dışarıda bırak
+        from app.katalog.cache import katalog_kalem_bul as _kbul
+        istek_partial = [
+            k for k in (calisma.istek_listesi or [])
+            if not (_kbul(k)[1] and _kbul(k)[1].beyanname_bolumu.value == "hesaplanan_kv_indirimi")
+        ]
+        partial = pipeline_calistir(
+            ticari_kar_zarar=float(calisma.ticari_kar_zarar or 0),
+            kkeg=float(calisma.kkeg or 0),
+            finansman_fonu=float(calisma.finansman_fonu or 0),
+            istek_listesi=istek_partial,
+            kalem_verileri=kalem_verileri_db,
+            donem_yili=donem_yili,
+            kv_orani_override=kv_orani_override,
+        )
+        girdi["hesaplanan_kv"] = float(partial.hesaplanan_kv)
+
+    sonuc = kalem_hesapla(kalem, girdi)
 
     result = await db.execute(
         select(KalemVerisi).where(
@@ -86,15 +114,17 @@ async def kalem_hesapla_endpoint(
         )
     )
     kalem_verisi = result.scalar_one_or_none()
+    # Pipeline-injected fields (hesaplanan_kv vb.) DB'ye kaydedilmez
+    girdi_kayit = {k: v for k, v in girdi.items() if k not in ("hesaplanan_kv",)}
     if kalem_verisi:
-        kalem_verisi.girdi_verileri = data.girdi_verileri
+        kalem_verisi.girdi_verileri = girdi_kayit
         kalem_verisi.hesap_sonucu = {k: str(v) for k, v in sonuc.ara_sonuclar.items()}
         kalem_verisi.istisna_tutari = float(sonuc.istisna_tutari)
     else:
         kalem_verisi = KalemVerisi(
             calisma_id=calisma_id,
             ic_kod=ic_kod,
-            girdi_verileri=data.girdi_verileri,
+            girdi_verileri=girdi_kayit,
             hesap_sonucu={k: str(v) for k, v in sonuc.ara_sonuclar.items()},
             istisna_tutari=float(sonuc.istisna_tutari),
         )
@@ -145,10 +175,12 @@ async def pipeline_hesapla_endpoint(
     return {
         "matrah": float(sonuc.matrah),
         "hesaplanan_kv": float(sonuc.hesaplanan_kv),
+        "hesaplanan_kv_indirimi": float(sonuc.hesaplanan_kv_indirimi),
         "yiakv": float(sonuc.yiakv),
         "odenecek_kv": float(sonuc.odenecek_kv),
         "yiakv_uygulanmis": sonuc.yiakv_uygulanmis,
         "kazanc_varsa_gruplari_atlanmis": sonuc.kazanc_varsa_gruplari_atlanmis,
+        "gyzo_mahsup": float(sonuc.gyzo_mahsup),
         "adimlar": [
             {
                 "adim_no": a.adim_no,

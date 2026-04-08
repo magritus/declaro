@@ -23,6 +23,7 @@ export interface Calisma {
   finansman_fonu?: number
   kar_mi_zarar_mi?: string
   wizard_faz: number
+  wizard_cevaplari?: Record<string, unknown>
   tamamlandi: boolean
   istek_listesi?: string[]
   created_at: string

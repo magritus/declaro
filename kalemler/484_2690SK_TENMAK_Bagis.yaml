@@ -1,0 +1,193 @@
+ic_kod: tenmak_bagis_indirimi
+baslik: TENMAK'a Yapılan Nakdi Bağış ve Yardım İndirimi (2690 s.K.)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 484 }
+  - { donem: 2026, kod: 484 }
+
+mevzuat_dayanagi:
+  - 2690 Sayılı Türkiye Nükleer Enerji Kurumu Kanunu
+  - KVK Madde 10/1-c (Kamu kuruluşlarına bağış indirimi mekanizması)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "1982-07-13"
+  bitis: null
+
+ana_kategori: bagis_yardim_sponsorluk
+
+wizard_agaci:
+  tetikleyici_soru: "2690 sayılı Kanun kapsamında Türkiye Nükleer Enerji Kurumu'na (TENMAK) nakdi bağış veya yardım yaptınız mı?"
+  info_modal: |
+    ## 2690 s.K. — TENMAK'a Bağış ve Yardım İndirimi
+
+    2690 sayılı Türkiye Nükleer Enerji Kurumu Kanunu kapsamında **TENMAK'a** yapılan
+    nakdi bağış ve yardımların **tamamı** (beyan edilen kazancı aşmamak üzere)
+    kurumlar vergisi matrahından indirilir.
+
+    ### Temel Kurallar
+
+    - Bağış **NAKDEN** yapılmış olmalıdır (banka havalesi veya çek zorunlu).
+    - Ayni bağışlar (mal, hizmet vb.) bu kalem kapsamında **değildir**.
+    - İndirim **beyan edilen kazanç** ile sınırlıdır; kazancı aşan kısım ileriki dönemlere **devredilmez**.
+    - TENMAK'ın **resmi makbuzu** zorunludur.
+
+    ### Alıcı Niteliği
+
+    Sadece **Türkiye Nükleer Enerji Kurumu (TENMAK)** bu kapsamda geçerlidir.
+    TENMAK'a bağlı veya benzer isimli başka kuruluşlara yapılan bağışlar bu kalem kapsamına girmez.
+
+    ### YİAKV İlişkisi
+
+    484 kapsamındaki TENMAK bağış indirimi **YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ**.
+    YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir ancak matraha etki etmez.
+  kapi_sorulari:
+    - id: alici_tenmak
+      soru: "Bağış doğrudan TENMAK'a (Türkiye Nükleer Enerji Kurumu) mı yapıldı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sadece TENMAK'a yapılan bağışlar bu kapsamdadır. TENMAK'a bağlı birimler veya benzer isimli diğer kuruluşlara yapılan bağışlar kapsam dışıdır."
+    - id: nakdi_odeme
+      soru: "Bağış banka havalesi veya çek ile nakden gerçekleşti mi? (Ayni bağış değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Mal, hizmet veya diğer ayni değerler bu kalem kapsamında değildir. Ödeme TENMAK'ın resmi banka hesabına yapılmış olmalıdır."
+    - id: makbuz_alindi
+      soru: "TENMAK'tan resmi bağış makbuzu veya alındı belgesi alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "TENMAK tarafından düzenlenen resmi makbuz veya alındı belgesi olmadan indirim uygulanamaz."
+    - id: banka_dekontu_var_mi
+      soru: "Ödemeye ait banka dekontu mevcut mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Banka EFT/havale dekontu veya çek ödemesine ilişkin belge zorunludur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: bagis_tutari
+      etiket: "TENMAK'a yapılan nakdi bağış tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Banka EFT/havale veya çek ile TENMAK'a yapılan nakdi bağışın toplam tutarı.
+        Birden fazla ödeme varsa dönem toplamı girilir.
+    - id: beyan_edilen_kazanc
+      etiket: "Beyan edilen kazanç (TL) — İndirim üst sınırı kontrolü için"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Bağış indirimi uygulanmadan önceki beyan edilen kazanç. Bağış bu tutarı aşamaz.
+        Boş bırakılırsa sistem uyarı verir; indirimin kazanç sınırını aşmadığı YMM tarafından doğrulanmalıdır.
+  formuller:
+    sinirli_indirim: "min(bagis_tutari, beyan_edilen_kazanc) if beyan_edilen_kazanc else bagis_tutari"
+    istisna_tutari: "sinirli_indirim"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "bagis_tutari > 0"
+      hata: "Bağış tutarı sıfırdan büyük olmalıdır."
+    - kural: "bagis_tutari >= 0"
+      hata: "Bağış tutarı negatif olamaz."
+    - kural: "beyan_edilen_kazanc >= bagis_tutari if beyan_edilen_kazanc else true"
+      hata: "Uyarı: Bağış tutarı beyan edilen kazancı aşıyor. İndirim beyan edilen kazanç ile sınırlıdır; aşan kısım devredilemez."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+
+  2690 sayılı Türkiye Nükleer Enerji Kurumu Kanunu kapsamında TENMAK'a yapılan
+  nakdi bağış ve yardımların TAMAMI kurumlar vergisi matrahından indirilir
+  (beyan edilen kazancı aşmamak üzere).
+  GİB KV Beyan Rehberi Mart 2026 (Yayın No:606) esas alınmıştır.
+
+  ## İndirim Kuralları
+
+  - İndirim oranı: Tamamının indirimi (KVK 10/1-c benzeri mekanizma)
+  - Kazanç sınırı: Beyan edilen kazancı aşamaz
+  - Devir yasağı: Kazancı aşan kısım sonraki yıla DEVREDİLEMEZ
+
+  ## Kritik Kontroller
+
+  NAKDİ ŞART: Bağış mutlaka banka havalesi veya çek ile nakden yapılmış olmalı.
+  Ayni bağışlar (mal, hizmet, taşınmaz vb.) bu kalem kapsamında geçerli değildir.
+
+  ALICI TEYİDİ: Sadece TENMAK (Türkiye Nükleer Enerji Kurumu) geçerlidir.
+  Benzer isimli veya TENMAK'a bağlı diğer kuruluşlara yapılan bağışlar ayrıca
+  değerlendirilmelidir.
+
+  MAKBUZ ZORUNLULUĞU: TENMAK tarafından düzenlenen resmi makbuz / alındı belgesi
+  olmadan indirim uygulanamaz. Banka dekontu tek başına yeterli değildir.
+
+  FİİLİ ÖDEME: Taahhüt aşamasındaki bağış indirime konu edilemez.
+  Dönemde fiilen ödenmiş bağışlar dikkate alınır.
+
+  ## YİAKV Etkisi
+
+  484 TENMAK bağış indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  YİAKV çalışma kâğıdı E.11 bilgi satırında gösterilir; matraha etki etmez.
+
+  ## YMM Tasdik
+
+  İndirim tutarı ≥500.000 TL ise YMM tasdik raporu zorunludur (49 No.lu KV GT).
+  Tam tasdik kapsamındaki mükelleflerde ayrıca rapor düzenlenmez.
+
+muhasebe_kayitlari: |
+  ## Nakdi Bağış Kaydı
+  Borç: 689 Diğer Olağandışı Gider ve Zararlar (Bağış gideri)
+  Alacak: 102 Bankalar
+  Açıklama: 2690 s.K. kapsamında TENMAK'a nakdi bağış.
+
+  ## Beyanname
+  Hesaplanan bağış tutarı beyanname 484. satırına aktarılır.
+  Kazancı aşan kısım devredilemez; kazanç tutarı kontrol edilmeli.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: TENMAK Resmi Bağış Makbuzu / Alındı Belgesi
+    detay: "TENMAK tarafından düzenlenen ve bağışı teyit eden resmi makbuz veya alındı belgesi. Tarih, tutar ve bağışçı bilgilerini içermelidir."
+    temin_yeri: TENMAK
+  - kategori: zorunlu
+    "no": 2
+    baslik: Banka Dekontu (EFT / Havale)
+    detay: "Bağış tutarının TENMAK'ın resmi banka hesabına aktarıldığını gösteren banka EFT veya havale dekontu. Nakdi ödeme zorunluluğunun tevsiki."
+    temin_yeri: Banka
+  - kategori: zorunlu
+    "no": 3
+    baslik: TENMAK'ın Resmi Banka Hesap Bilgisi Teyidi
+    detay: "Ödemenin TENMAK'ın resmi hesabına yapıldığını teyit eden belge (TENMAK resmi yazısı veya web sitesi duyurusu). Yanlış hesaba ödeme riski."
+    temin_yeri: TENMAK / Resmi Kaynaklar
+  - kategori: destekleyici
+    "no": 4
+    baslik: Yönetim Kurulu / Yetkili Organ Bağış Kararı
+    detay: "Bağış yapılmasına ilişkin şirket yetkili organının (YK, ortaklar kurulu vb.) kararı. Bağışın kurumsal karar sürecinden geçtiğini gösterir."
+    temin_yeri: Şirket Sekreterliği
+
+k_checklist:
+  - id: K1
+    soru: "Bağış alıcısının TENMAK (Türkiye Nükleer Enerji Kurumu) olduğu teyit edildi mi?"
+    referans: "2690 s.K. | GİB Beyan Reh. 2026 (No:606)"
+  - id: K2
+    soru: "Bağış nakden (banka havalesi/çek) yapıldı mı? (Ayni bağış değil)"
+    referans: "2690 s.K. | Nakdi şart"
+  - id: K3
+    soru: "TENMAK'tan resmi makbuz veya alındı belgesi alındı mı?"
+    referans: "2690 s.K. | Makbuz zorunluluğu"
+  - id: K4
+    soru: "Bağış tutarı beyan edilen kazancı aşmıyor mu? (Kazanç sınırı kontrolü)"
+    referans: "2690 s.K. | KVK Md.10/1-c benzeri sınır"
+  - id: K5
+    soru: "Kazancı aşan kısmın sonraki yıla devredilmeyeceği anlaşıldı mı?"
+    referans: "Devir yasağı"
+  - id: K6
+    soru: "YİAKV matrahına etkisi analiz edildi mi? (484 DÜŞÜLEMEZ — E.11 bilgi satırı)"
+    referans: "KVK Md.32/C | GİB Beyan Reh. 2026 E.11"
+  - id: K7
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği (≥500.000 TL) kontrol edildi mi?"
+    referans: "49 S.No.lu KV GT"

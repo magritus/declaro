@@ -1,0 +1,340 @@
+ic_kod: mkyf_portfoy_tasinmaz_haric
+baslik: Menkul Kıymetler Yatırım Fonu Portföy İşletmeciliği Kazancı (Taşınmaz Hariç)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 389 }
+  - { donem: 2026, kod: 389 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-d (Menkul kıymetler yatırım fonları portföy işletmeciliği)
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.4
+  - SPK III-52.1 Tebliği (Yatırım Fonlarına İlişkin Esaslar Tebliği)
+  - GVK Geçici Madde 67 (Fon düzeyinde stopaj rejimi)
+  - 49 Seri No.lu KV Genel Tebliği (30.12.2025)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+# KVK 5/1-d (389) menkul kıymetler yatırım fonu portföy işletmeciliği kazancı
+# YİAKV matrahından DÜŞÜLEBİLİR. Fon, taşınmaz geliri elde etmediğinden
+# taşınmaz kaynaklı gelir ayrımı gerekmez. Bu kalem yalnızca taşınmaz dışı
+# (menkul kıymet, repo, faiz, temettü vb.) portföy gelirlerini kapsar.
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+  not: "2025 beyanname döneminden itibaren ayrı satır kodu (389) ile gösterilmektedir. Önceki dönemlerde 302 kodlu genel portföy işletmeciliği satırı kullanılıyordu."
+
+ana_kategori: portfoy_isletmeciligi
+
+wizard_agaci:
+  tetikleyici_soru: "Kurum bir Menkul Kıymetler Yatırım Fonu (MKYF) mu ve portföy işletmeciliğinden (taşınmaz hariç) kazanç elde etti mi?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    KVK Madde 5/1-d kapsamında Türkiye'de kanunların öngördüğü şekilde kurulan **Menkul Kıymetler Yatırım Fonlarının (MKYF)** portföy işletmeciliğinden doğan kazançları kurumlar vergisinden **%100 tam istisna** olarak muaftır. Beyanname **"Zarar Olsa Dahi İndirilecek"** bölümünde **389** numaralı satırda gösterilir.
+
+    Bu kalem (389) yalnızca **taşınmaz dışı** portföy gelirlerini kapsar: hisse senedi, tahvil, bono, eurobond, repo, ters repo, varant, sertifika ve benzeri menkul kıymetlerden elde edilen faiz, temettü, satış kazancı ve değerleme artışları. Portföyünde taşınmazdan elde edilen gelir bulunuyorsa **390** kodlu satır kullanılır.
+
+    ## Temel Koşullar
+
+    - **SPK Lisansı:** Fonun SPK tarafından kuruluşuna izin verilmiş ve tescil edilmiş MKYF statüsünde olması zorunludur; güncel kuruluş izni ve Kamuyu Aydınlatma Platformu (KAP) kaydı dosyada yer almalıdır.
+    - **Türkiye'de kurulu tam mükellef:** Fonun Türkiye'de kurulu ve tam mükellef statüsünde olması gerekir; yabancı fonlar veya serbest bölgede kurulan yapılar kapsam dışıdır.
+    - **Portföy içi/dışı ayrımı:** İstisna **yalnızca** portföy kapsamındaki menkul kıymet varlıklardan elde edilen gelirlere uygulanır. Yönetim ücreti, performans/başarı primi, portföyde kayıtlı olmayan varlıklardan gelirler vergiye tabidir.
+    - **Taşınmaz geliri olmadığının teyidi:** Bu satırda (389) taşınmazdan elde edilen herhangi bir portföy geliri bulunmamalıdır. Taşınmaz varlık satışı veya kirası varsa 390 satırı kullanılır.
+    - **Muhasebede ayrı hesap:** Portföy içi ve portföy dışı gelirlerin muhasebede ayrı hesap veya belgelenmiş dağıtım anahtarıyla izlenmesi zorunludur.
+
+    ## Portföy İçi / Dışı Gelir Ayrımı
+
+    **PORTFÖY İÇİ (İstisna — 389):**
+    - Portföydeki tahvil, bono, eurobond faiz gelirleri
+    - Portföydeki hisse senedi temettü/kâr payı gelirleri
+    - Portföy menkul kıymet satış kazançları (hisse, tahvil, bono vb.)
+    - Portföy varlıklarının dönem sonu VUK/SPK değerleme artışları
+    - Repo, ters repo faiz gelirleri (portföy kapsamında)
+    - Varant, sertifika, fon katılma payı değer artışları
+
+    **PORTFÖY DIŞI (Vergiye Tabi):**
+    - Yönetim ücreti, performans/başarı primi, danışmanlık komisyonu
+    - Portföyde kayıtlı olmayan varlıklardan elde edilen her türlü gelir
+    - Faaliyetle ilgili olmayan finansman gelirleri
+
+    ## GVK Geçici Madde 67 — Fon Düzeyinde Stopaj
+
+    MKYF'ler GVK Geçici Madde 67 kapsamında **fon düzeyinde stopaja** tabidir. Fon, menkul kıymet alım-satım kazançları ve faiz gelirleri üzerinden stopaj keser; bu stopaj nihai vergidir. KV beyannamesi düzeyinde 389 satırı ile kurumlar vergisi istisnası uygulanırken fon portföyünden elde edilen gelirlerin zaten fon düzeyinde stopaja tabi tutulduğu göz önünde bulundurulmalıdır. Fon ve fona yatırım yapan kurum vergilendirmesi karıştırılmamalıdır.
+
+    ## YİAKV İlişkisi
+
+    KVK 5/1-d (389) portföy işletmeciliği kazancı **YİAKV matrahından düşülebilir**. MKYF'nin bu satırda gösterdiği istisna tutarı, YİAKV (KVK Madde 32/C) matrahından düşülmelidir. YİAKV çalışma kâğıdında 389 tutarı matrahtan doğru biçimde düşülmelidir.
+
+    ## Pratik Notlar
+
+    - 3 kademe uyum kontrolü: Muhasebe portföy hesapları = çalışma kâğıdı = KV beyannamesi 389 satırı. Bu üçlü uyum YMM tasdik dosyasının temel doğrulama adımıdır.
+    - Portföy yöneticisi tarafından hazırlanan dönem sonu portföy değerleme raporu dosyaya eklenmelidir.
+    - Portföy işletme giderleri için karma gider dağıtımı gerekiyorsa dağıtım anahtarı yazılı ve tutarlı biçimde belgelenmelidir.
+    - Aynı fon hem 389 hem 390 satırını kullanamaz; taşınmaz geliri varsa yalnızca 390 kullanılır.
+    - 49 No.lu KV Genel Tebliği kapsamında tek satır ≥500.000 TL ise YMM tasdik raporu eşiği kontrol edilmelidir.
+  kapi_sorulari:
+    - id: mkyf_statüsü
+      soru: "Kurum SPK lisanslı Menkul Kıymetler Yatırım Fonu (MKYF) mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d: MKYF statüsü SPK kuruluş izni ve KAP kaydıyla belgelenmeli. Lisans belgesi güncel ve geçerli olmalı."
+    - id: tasinmaz_geliri_yok
+      soru: "Portföyde taşınmazdan (kira, satış kazancı vb.) elde edilen GELİR YOK mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KRİTİK: 389 satırı YALNIZCA taşınmaz dışı portföy gelirleri içindir. Portföyde taşınmaz geliri varsa 390 satırı kullanılmalıdır. Her ikisi birden kullanılamaz."
+    - id: portfoy_ici_disi_ayrim
+      soru: "Portföy işletmeciliği kazancı, portföy DIŞI gelirlerden ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna YALNIZCA portföy kapsamındaki varlıklardan elde edilen gelirler için geçerlidir. Yönetim ücreti, danışmanlık komisyonu, başarı primi portföy dışıdır ve vergiye tabidir."
+    - id: portfoy_kapsami_mevzuat
+      soru: "Portföy kapsamı SPK mevzuatına (III-52.1 Tebliği) uygun tanımlandı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "MKYF portföy kapsamı SPK III-52.1 Tebliği'ne uygun olmalıdır. Portföy dışına çıkan varlıklardan elde edilen gelir istisna değildir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: portfoy_faiz_gelirleri
+      etiket: "Portföy sabit getirili menkul kıymet faiz gelirleri (tahvil, bono, eurobond, kira sertifikası vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "MKYF'nin portföyündeki tahvil, Devlet İç Borçlanma Senedi (DİBS), eurobond vb. menkul kıymetlerden elde edilen faiz ve kupon gelirleri. Portföy listesiyle mutabık olmalı."
+    - id: portfoy_temettu_gelirleri
+      etiket: "Portföy hisse senedi temettü / kâr payı gelirleri"
+      tip: para
+      zorunlu: false
+      yardim: "MKYF portföyündeki yerli ve yabancı hisse senetlerinden elde edilen temettü ve kâr payı gelirleri (brüt)."
+    - id: portfoy_satis_kazanci
+      etiket: "Portföy menkul kıymet satış kazançları (hisse, tahvil, bono, eurobond vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "FIFO veya ağırlıklı ortalama maliyet yöntemi tutarlı uygulanmalı ve belgelenmeli. Satış kazancı = Satış bedeli − Maliyet."
+    - id: portfoy_deger_artisi
+      etiket: "Portföy varlıkları dönem sonu değerleme artışları (VUK/SPK esaslarına göre)"
+      tip: para
+      zorunlu: false
+      yardim: "Dönem sonu SPK/VUK değerlemesinde oluşan artışlar (borsa rayici, gerçeğe uygun değer vb.). Değerleme kaybı bu alana girilmez."
+    - id: portfoy_repo_gelirleri
+      etiket: "Portföy repo / ters repo faiz gelirleri"
+      tip: para
+      zorunlu: false
+      yardim: "Portföy kapsamındaki repo işlemlerinden elde edilen faiz gelirleri."
+    - id: portfoy_diger_gelirler
+      etiket: "Diğer portföy işletmeciliği gelirleri (varant, sertifika, fon katılma payı vb.)"
+      tip: para
+      zorunlu: false
+      yardim: "MKYF portföyündeki diğer menkul kıymet araçlarından elde edilen gelirler. Taşınmaz geliri burada gösterilemez."
+    - id: portfoy_giderleri
+      etiket: "Portföy işletme giderleri (−) — Net kazanç hesabı için"
+      tip: para
+      zorunlu: false
+      yardim: "Portföy işletmeciliğiyle doğrudan ilişkili giderler. Karma giderler için belgelenmiş dağıtım anahtarıyla portföy payı ayrıştırılmalı."
+    - id: istisna_tutari_beyan
+      etiket: "Net portföy işletmeciliği kazancı — Beyan edilecek istisna tutarı (Beyanname Satır 389)"
+      tip: para
+      zorunlu: true
+  formuller:
+    portfoy_toplam_gelir: "portfoy_faiz_gelirleri + portfoy_temettu_gelirleri + portfoy_satis_kazanci + portfoy_deger_artisi + portfoy_repo_gelirleri + portfoy_diger_gelirler"
+    net_portfoy_kazanci: "portfoy_toplam_gelir - portfoy_giderleri"
+    istisna_tutari: "istisna_tutari_beyan"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "istisna_tutari_beyan != 0"
+      hata: "İstisna tutarı sıfır olamaz (zarar olsa dahi indirilecek bölümüdür — negatif değer girilebilir)"
+
+denetci_notlari: |
+  ## Yasal Dayanak
+  KVK Madde 5/1-d: Türkiye'de kanunların öngördüğü şekilde kurulan menkul kıymetler
+  yatırım fonlarının portföy işletmeciliğinden doğan kazançları kurumlar vergisinden
+  istisnadır. %100 tam istisna. 2025 beyanname döneminden itibaren 389 numaralı
+  ayrı satırla gösterilmektedir (önceki dönemde 302 genel satırında yer alıyordu).
+
+  ## Bu Satırın Kapsamı — Taşınmaz Hariç Ayrımı
+  389 satırı YALNIZCA taşınmaz dışı portföy gelirlerini kapsar:
+  - Hisse senedi, tahvil, bono, eurobond faiz/temettü gelirleri
+  - Menkul kıymet satış kazançları
+  - Repo, ters repo faiz gelirleri
+  - Portföy varlıkları dönem sonu değerleme artışları
+  - Varant, sertifika, fon katılma payı gelirleri
+
+  TAŞINMAZ GELİRİ VARSA: 390 satırı kullanılır (389 ve 390 birlikte kullanılamaz).
+
+  ## Kritik Noktalar — Portföy İçi / Dışı Ayrımı
+  İstisna YALNIZCA portföy işletmeciliğinden doğan kazançlara uygulanır.
+
+  PORTFÖY İÇİ (İstisna — 389):
+  - Portföydeki menkul kıymetlerden elde edilen faiz, temettü
+  - Portföy menkul kıymet satış kazançları
+  - Portföy varlıkları dönem sonu değerleme artışları (VUK/SPK esasları)
+  - Repo ve ters repo faiz gelirleri
+
+  PORTFÖY DIŞI (Vergiye Tabi):
+  - Yönetim ücreti, performans/başarı primi, danışmanlık komisyonu
+  - Portföyde kayıtlı olmayan varlıklardan elde edilen gelirler
+  - Faaliyetle ilgili olmayan finansman gelirleri
+
+  ## GVK Geçici Madde 67 İlişkisi
+  MKYF'ler GVK Geçici Madde 67 kapsamında fon düzeyinde stopaja tabidir.
+  Bu stopaj, fon portföyündeki menkul kıymet alım-satım kazançları ve faiz
+  gelirleri üzerinden uygulanır ve nihai vergi niteliğindedir.
+  KV beyannamesi 389 satırında kurumlar vergisi düzeyindeki istisna ayrıca
+  gösterilir. Fon düzeyindeki stopaj ile KV beyannamedeki istisna birbirini
+  dışlamaz; her biri kendi mevzuat çerçevesinde değerlendirilir.
+
+  ## YİAKV Etkisi
+  KVK 5/1-d (389) portföy işletmeciliği kazancı YİAKV matrahından
+  DÜŞÜLEBİLİR. Bu husus 302 döneminden farklı değildir; istisna tutarı
+  YİAKV çalışma kâğıdında matrahtan doğru şekilde düşülmelidir.
+
+  ## Beyanname Konumu
+  "Zarar Olsa Dahi İndirilecek İstisna ve İndirimler" bölümü — 389 kodlu satır.
+  2025 öncesi dönemlerde bu gelir türü 302 genel portföy işletmeciliği satırında
+  gösteriliyordu. Dönem ayrımı önceki dönem karşılaştırmasında not edilmelidir.
+
+  ## Risk Alanları
+  1. Portföy dışı gelirin (yönetim ücreti vb.) 389 satırına dahil edilmesi
+  2. Muhasebe portföy içi/dışı ayrımının kurulmamış olması
+  3. Portföyde taşınmaz geliri varken 389 kullanılması (390 yerine)
+  4. Portföy satış kazancında maliyet yöntemi tutarsızlığı (FIFO/ortalama)
+  5. GVK Geçici 67 stopaj ile KV istisnası arasındaki ilişkinin yanlış kurulması
+  6. Değerleme artışlarının SPK/VUK esaslarına uygun hesaplanmaması
+  7. Karma gider dağıtım anahtarının belgelenmemesi
+
+muhasebe_kayitlari: |
+  ## Kayıt 1 — Portföy Menkul Kıymet Faiz Geliri Tahakkuku
+  Borç: 127 Diğer Ticari Alacaklar ← Portföy MK faiz alacağı
+  Alacak: 642 Faiz Gelirleri ← Portföy menkul kıymet faiz geliri
+  Açıklama: KVK 5/1-d istisna kapsamı — 389 satırı. GVK Geçici 67 stopajı ayrıca kaydedilir.
+
+  ## Kayıt 2 — Portföy Hisse Senedi Temettü Geliri
+  Borç: 102 Bankalar ← Brüt temettü
+  Alacak: 640 İştiraklerden Temettü Gelirleri ← Portföy hisse temettüsü
+  Açıklama: KVK 5/1-d istisna — portföy hisse senedi kâr payı; 389 satırına alınır.
+
+  ## Kayıt 3 — Portföy Menkul Kıymet Satış Kazancı
+  Borç: 102 Bankalar ← Satış bedeli
+  Alacak: 111-118 Menkul Kıymetler ← Maliyet (FIFO veya ağırlıklı ortalama)
+  Alacak: 645 Menkul Kıymet Satış Kârı ← Satış kazancı
+  Açıklama: KVK 5/1-d istisna — portföy MK satış kazancı; FIFO veya ortalama maliyet tutarlı uygulanmalı.
+
+  ## Kayıt 4 — Portföy Varlıkları Dönem Sonu Değerleme Artışı
+  Borç: 111-118 Menkul Kıymetler ← Değerleme artışı
+  Alacak: 649 Diğer Olağandışı Gelir ← Portföy değerleme artışı
+  Açıklama: SPK/VUK esaslarına uygun dönem sonu değerleme — KVK 5/1-d istisna (389 satırı).
+
+  ## Kayıt 5 — Portföy Dışı Gelir (Yönetim Ücreti — Vergiye Tabi)
+  Borç: 136 Diğer Çeşitli Alacaklar ← Yönetim ücreti alacağı
+  Alacak: 649 Diğer Olağandışı Gelir ← Yönetim/performans ücreti
+  Açıklama: PORTFÖY DIŞI — 389 satırına YAZILMAZ. Matrahta kalır; ayrı hesapta izlenmeli.
+
+  ## Beyanname 389 Akışı (Mutabakat)
+  1. Portföy içi gelirler (640, 642, 645, 649 portföy kısmı) → Net portföy kazancı
+  2. Portföy dışı gelirler (yönetim ücreti vb.) → Matrahta kalır (389'e yazılmaz)
+  3. KV Beyannamesi 389 Satırı: Net portföy kazancı → "Zarar Olsa Dahi İndirilecek"
+  3 KADEME UYUM: Muhasebe portföy hesapları = VERİ GİRİŞİ toplamı = Beyanname 389
+  KRİTİK: Taşınmaz geliri yoksa 390 yerine 389 kullanılır; her iki satır aynı anda kullanılamaz.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Kuruluş İzni ve KAP Tescil Belgesi
+    detay: "Fonun SPK tarafından kuruluşuna izin verildiğini gösteren belge ve KAP (Kamuyu Aydınlatma Platformu) kaydı. MKYF statüsü ve portföy kapsamı açıkça görünmeli. İzin belgesi güncel olmalı; askıya alınma veya iptal durumu kontrol edilmeli."
+    temin_yeri: "SPK resmi yazısı / KAP portal (www.kap.org.tr)"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Fon İzahnamesi / Katılma Belgesi (Portföy Kapsamı Teyidi)
+    detay: "Fonun portföy yatırım stratejisi ve kapsamını tanımlayan SPK onaylı izahname veya katılma belgesi. Portföyde yer alabilecek menkul kıymetler, taşınmaz yatırımı yapılıp yapılmadığı net tanımlanmış olmalı. Bu belge 389 / 390 ayrımının dayanağıdır."
+    temin_yeri: "SPK onaylı fon izahnamesi / KAP"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Dönem Portföy Varlık Listesi (Saklama Kuruluşu Raporu)
+    detay: "Dönem boyunca (01.01–31.12) portföyde yer alan tüm menkul kıymet varlıklarının listesi. Her varlığın kodu, türü, adedi, birim değeri ve toplam değeri. Portföyde taşınmaz olmadığını teyit eder (389 için kritik). Saklama kuruluşu tarafından onaylanmış olmalı."
+    temin_yeri: "Saklama kuruluşu (Merkezi Kayıt Kuruluşu / MKK) portföy raporu"
+  - kategori: zorunlu
+    "no": 4
+    baslik: Portföy İçi / Dışı Gelir Muhasebe Ayrım Belgesi
+    detay: "Portföy işletmeciliği gelirlerinin (istisna kapsamı) portföy dışı gelirlerden (vergiye tabi) nasıl ayrıştırıldığını gösteren belge. Ayrı muhasebe hesabı veya yazılı ve tutarlı dağıtım anahtarı. Bu belge olmadan 389 istisnası güvenilir şekilde tespit edilemez."
+    temin_yeri: "Muhasebe politikası belgesi / Hesap planı / Dağıtım anahtarı tablosu"
+  - kategori: zorunlu
+    "no": 5
+    baslik: Portföy Değerleme Tablosu (Dönem Sonu — SPK Değerleme Esasları)
+    detay: "Portföy menkul kıymet varlıklarının dönem sonu değerleme hesabı ve kullanılan yöntem (borsa rayici, gerçeğe uygun değer). SPK III-52.1 Tebliği'ne uygunluk. Değerleme artış/azalışları muhasebe kayıtlarıyla ve 389 istisna tutarıyla mutabık olmalıdır."
+    temin_yeri: "Saklama kuruluşu değerleme raporu / Portföy yöneticisi değerleme özeti"
+  - kategori: zorunlu
+    "no": 6
+    baslik: Portföy Satış Kazancı Hesabı (FIFO / Ağırlıklı Ortalama Maliyet)
+    detay: "Dönem içi portföy menkul kıymet satışlarında uygulanan maliyet yöntemi ve kazanç hesabı. Seçilen yöntem (FIFO veya ağırlıklı ortalama) tutarlı uygulanmalı ve belgelenmeli. Kazanç = Satış bedeli − Maliyet."
+    temin_yeri: "Muhasebe çalışma kâğıdı / Portföy işlem raporları / Saklama kuruluşu verisi"
+  - kategori: zorunlu
+    "no": 7
+    baslik: KV Beyannamesi Taslağı — 389. Satır
+    detay: "Beyanname 389. satırındaki tutarın çalışma kâğıdı tutarıyla birebir uyumlu olduğu teyit edilmeli. 'Zarar Olsa Dahi İndirilecek' bölümünde doğru konumlandırıldığı kontrol edilmeli. 390 ile karıştırılmamalı."
+    temin_yeri: "GİB e-Beyanname sistemi / İnternet Vergi Dairesi"
+  - kategori: destekleyici
+    "no": 8
+    baslik: GVK Geçici Madde 67 Stopaj Belgesi (Fon Düzeyi)
+    detay: "MKYF'nin GVK Geçici Md. 67 kapsamında ödediği stopaj tutarı ve döneme ait stopaj beyannameleri. Fon düzeyi stopaj ile KV beyannamesi 389 istisnasının ilişkisi açıklanmalıdır."
+    temin_yeri: "Muhtasar ve prim hizmet beyannamesi / Vergi dairesi kayıtları"
+  - kategori: destekleyici
+    "no": 9
+    baslik: Portföy İşletme Giderleri Dağıtım Anahtarı Belgesi
+    detay: "Karma gider varsa portföy işletmeciliğine isabet eden giderin hesabı ve dağıtım anahtarı. Belgesiz dağıtım anahtar uygulaması kabul görmez."
+    temin_yeri: "Muhasebe birimi / Vergi danışmanı çalışma notu"
+  - kategori: destekleyici
+    "no": 10
+    baslik: YİAKV Matrah Hesaplama Tablosu (389 Tutarının Düşümü)
+    detay: "KVK 32/C kapsamındaki YİAKV hesabında 389 istisnasının matrahtan düşüldüğünü gösteren çalışma tablosu. YİAKV matrahından düşülebilir olduğu teyit edilmelidir."
+    temin_yeri: "YİAKV çalışma kâğıdı / KVK 32/C Tebliğleri"
+  - kategori: destekleyici
+    "no": 11
+    baslik: Önceki Dönem Beyannamesi Karşılaştırma Notu
+    detay: "2024 ve önceki dönemlerde bu gelir türünün hangi satırda (302) beyan edildiğinin açıklandığı not. 2025'ten itibaren 389 ayrı satırının kullanımına geçişin belgelenmesi."
+    temin_yeri: "Geçmiş dönem KV beyannameleri / YMM çalışma notu"
+
+k_checklist:
+  - id: K1
+    soru: "Kurum SPK lisanslı MKYF mi? Kuruluş izni ve KAP kaydı güncel ve geçerli mi?"
+    referans: "KVK Md. 5/1-d | SPK III-52.1 Tebliği | KAP kaydı"
+  - id: K2
+    soru: "Portföyde taşınmazdan elde edilen gelir YOK mu teyit edildi mi? (389 için kritik koşul)"
+    referans: "KVK Md. 5/1-d | 389 / 390 satır ayrımı"
+  - id: K3
+    soru: "Portföy içi / dışı gelir ayrımı muhasebede doğru kuruldu mu? (Ayrı hesap veya dağıtım anahtarı)"
+    referans: "KVK Md. 5/1-d | Muhasebe ayrım yöntemi zorunlu"
+  - id: K4
+    soru: "Portföy kapsamı SPK III-52.1 Tebliği'ne uygun mu? Portföy dışı menkul kıymet var mı?"
+    referans: "SPK III-52.1 Tebliği | Portföy yatırım limitleri"
+  - id: K5
+    soru: "Portföy dışı gelirler (yönetim ücreti vb.) beyanname matrahında doğru yansıtıldı mı? (389'e yazılmadı mı?)"
+    referans: "KVK Md. 5/1-d | Portföy dışı = vergiye tabi"
+  - id: K6
+    soru: "Portföy satış kazancı hesaplama yöntemi tutarlı mı? (FIFO veya ağırlıklı ortalama — belgelenmiş mi?)"
+    referans: "Değerleme yöntemi tutarlılığı | SPK/VUK esasları"
+  - id: K7
+    soru: "Dönem sonu değerleme artışları SPK/VUK esaslarına uygun hesaplandı mı?"
+    referans: "VUK ilgili maddeleri | SPK III-52.1 değerleme esasları"
+  - id: K8
+    soru: "GVK Geçici Madde 67 stopajı ile KV beyannamesi 389 istisnası ilişkisi doğru kuruldu mu?"
+    referans: "GVK Geçici Madde 67 | KVK Md. 5/1-d"
+  - id: K9
+    soru: "YİAKV matrahında 389 istisnasının düşüldüğü teyit edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri | 5/1-d = düşülebilir"
+  - id: K10
+    soru: "Beyanname 389 satırı çalışma kâğıdı tutarıyla uyumlu mu? (3 kademe: muhasebe = çalışma kâğıdı = beyanname)"
+    referans: "3 kademe uyum kontrolü | 389 = portföy içi net kazanç"
+  - id: K11
+    soru: "Karma gider dağıtım anahtarı (varsa) yazılı ve tutarlı biçimde belgelendi mi?"
+    referans: "VUK Md. 175 | Gider dağıtım anahtarı zorunluluğu"
+  - id: K12
+    soru: "2024 ve önceki dönemlerle karşılaştırma yapıldı mı? (302 → 389 geçiş notu eklendi mi?)"
+    referans: "2025 beyanname düzenlemesi | 302 genel satırından 389 ayrı satırına geçiş"
+  - id: K13
+    soru: "49 No.lu Tebliğ kapsamında YMM tasdik raporu eşiği kontrol edildi mi? (≥500.000 TL tek satır)"
+    referans: "49 No.lu KV GT (30.12.2025)"

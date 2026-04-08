@@ -87,21 +87,21 @@ hesaplama_sablonu:
     - id: rejim
       etiket: "Ruhsat rejimi"
       tip: secenek
-      secenekler: ["rejim_1_2004_oncesi", "rejim_2_2004_sonrasi"]
+      secenekler:
+        - deger: rejim_1_2004_oncesi
+          etiket: "Rejim 1 — 06.02.2004 öncesi ruhsat"
+        - deger: rejim_2_2004_sonrasi
+          etiket: "Rejim 2 — 06.02.2004 sonrası ruhsat"
       zorunlu: true
       yardim: |
-        Rejim 1 (06.02.2004 öncesi ruhsat): Ruhsatta belirtilen süre boyunca tüm faaliyetlerden elde edilen
-        kazançlar istisna kapsamında (imalat+ticaret+hizmet; taşınmaz geliri hariç).
-        Rejim 2 (06.02.2004 sonrası ruhsat): 01.01.2025 itibarıyla yalnızca imalat faaliyetinden ve
-        münhasıran yurt dışına yapılan satışlardan elde edilen kazançlar istisna kapsamında.
+        Rejim 1 (06.02.2004 öncesi ruhsat): Ruhsatta belirtilen süre ve faaliyet konusu kapsamında tüm faaliyetlerden elde edilen kazançlar istisna kapsamındadır — imalat, ticaret, hizmet (taşınmaz geliri hariç).
+        Rejim 2 (06.02.2004 sonrası ruhsat): Yalnızca imalat faaliyetinden, münhasıran yurt dışına yapılan satışlardan doğan kazançlar istisna kapsamındadır. 01.01.2025 itibarıyla yurt içi satış ve SB içi satış kapsam dışıdır.
     - id: kapsam_ici_kazanc
       etiket: "Kapsam içi (net istisna) kazanç tutarı"
       tip: para
       zorunlu: true
       yardim: |
-        Serbest bölge gelir ayrıştırma tablosundan (C bölümü) türetilen ve üretim maliyeti ile
-        kapsama düşen gider payı düşüldükten sonraki net istisna kazanç tutarı (D.7 karşılığı).
-        Kapsam dışı gelirler (faiz, kur farkı, vade farkı, yurt içi satış — 01.01.2025+) dahil edilmez.
+        Brüt hasılat değil, maliyet ve giderler düşüldükten sonraki net kazanç yazılır. Faiz, kur farkı, vade farkı ile yurt içi satış gelirleri (01.01.2025+) bu tutara dahil edilmez.
   formuller:
     istisna_tutari: "kapsam_ici_kazanc * oran"
   sonuc_alan: istisna_tutari

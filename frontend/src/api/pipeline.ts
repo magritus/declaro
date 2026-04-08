@@ -15,6 +15,7 @@ export interface PipelineSonucu {
   odenecek_kv: number
   yiakv_uygulanmis: boolean
   kazanc_varsa_gruplari_atlanmis: boolean
+  gyzo_mahsup: number
   adimlar: PipelineAdim[]
   kalemler: Record<string, { istisna_tutari: number; hatalar: string[]; uyarilar: string[]; aciklama: string }>
 }

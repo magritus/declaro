@@ -1,0 +1,523 @@
+ic_kod: imalat_ihracat_indirimli_kv_32_7_32_8
+baslik: İmalat ve İhracat İndirimli KV (KVK Md.32/7 ve 32/8)
+ust_kalem: null
+
+beyanname_kodlari: []
+dahili_ref: "IKV-32/7+32/8"  # İndirimli KV — imalat+ihracat birleşik (KVK 32/7 ve 32/8); standart satır kodu yok
+
+mevzuat_dayanagi:
+  - "KVK Madde 32/7 (Sanayi Sicil Belgesi — İmalat, 1 puan indirim)"
+  - "KVK Madde 32/8 (İhracat Faaliyeti, 5 puan indirim)"
+  - "6772 sayılı Kanun (32/7 yürürlük)"
+  - "7491 sayılı Kanun (32/8 yürürlük)"
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: aktif
+yururluk_araligi:
+  baslangic: "2022-01-01"
+  bitis: null
+
+ana_kategori: yatirim_tesvikleri
+
+wizard_agaci:
+  tetikleyici_soru: "Dönem içinde imalat faaliyeti veya ihracat geliri var mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Md.32/7** sanayi sicil belgesi sahibi imalatçılara imalat faaliyetinden
+    elde edilen kazanç üzerinden **1 puan indirim (%24 efektif)** uygular.
+
+    **KVK Md.32/8** ihracat faaliyetinden gelir elde eden kurumlara ihracat
+    kazancı üzerinden **5 puan indirim (%20 efektif)** uygular.
+
+    ## Birlikte Uygulama
+
+    Aynı dönemde her iki indirim birlikte uygulanabilir. Bu kalem gelir tablosunu
+    **tek seferinde** alır ve her iki hesaplamayı otomatik olarak yapar.
+    Matrah dağılımı net satışlar içindeki faaliyet payına (oransal yöntem) göre
+    belirlenir; gerçek usul takip edilen durumlarda doğrudan girilebilir.
+
+    ## Faaliyet Bazında Matrah Ayrıştırması
+
+    | Faaliyet | KV Oranı | İndirim Puanı | Efektif Oran |
+    |----------|----------|---------------|--------------|
+    | İmalat (32/7) | %25 | 1 puan | %24 |
+    | İhracat (32/8) | %25 | 5 puan | %20 |
+    | Diğer | %25 | — | %25 |
+
+    ## 32/A YTB ile Birlikte Uygulama
+
+    32/A YTB indirimi ile birlikte uygulanacaksa matrahların toplamı KV matrahını
+    aşmamalıdır. Matrah çakışması riski yüksek; K6 kontrol kalemi ile doğrulayın.
+
+    ## Yürürlük
+
+    - 32/7: 6772 sayılı Kanun ile 01.01.2022'den itibaren
+    - 32/8: 7491 sayılı Kanun ile 01.01.2023'ten itibaren
+  kapi_sorulari:
+    - id: imalat_veya_ihracat_var_mi
+      soru: "İmalat faaliyeti (32/7) veya ihracat geliri (32/8) var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "En az biri uygulanabilir olmalıdır. Sanayi sicil belgesi olmasa bile ihracat faaliyeti tek başına 32/8'i açar."
+    - id: kv_matrahi_pozitif_mi
+      soru: "Dönem kurumlar vergisi matrahı pozitif mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "32/7 ve 32/8 yalnızca pozitif matrahta uygulanır. Zarar durumunda indirim uygulanamaz ve devretmez."
+    - id: sanayi_sicil_var_mi
+      soru: "32/7 için: Güncel sanayi sicil belgeniz var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Yalnızca 32/8 uygulayacaksanız (imalat faaliyeti yoksa) Hayır seçebilirsiniz; sistem 32/7 hesabını devre dışı bırakır."
+
+parametreler:
+  imalat_indirim_puani: 1
+  ihracat_indirim_puani: 5
+  normal_kv_orani_varsayilan: 25
+  imalat_efektif_oran: 24
+  ihracat_efektif_oran: 20
+  pipeline_matrah: true
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+
+    # ── GELİR TABLOSU MATRİSİ (A'dan J'ye tam gelir tablosu) ────────────────
+    - id: matris_gelir_tablosu
+      etiket: "GELİR TABLOSU — Faaliyet Bazında Dağılım"
+      tip: matris
+      yardim: >
+        Her satır için Toplam, İhracat ve İmalat sütunlarını doldurun.
+        Diğer = Toplam − İhracat − İmalat otomatik hesaplanır.
+        Gider satırlarına pozitif değer girin (formüller eksi olarak alır).
+      satirlar:
+        - id: bolum_a
+          etiket: "A — BRÜT SATIŞLAR"
+          tip: bolum
+        - id: yurtici_satis
+          etiket: "  Yurtiçi Satışlar (600)"
+        - id: yurtdisi_satis
+          etiket: "  Yurtdışı Satışlar (601)"
+        - id: diger_gelirler
+          etiket: "  Diğer Gelirler (602)"
+        - id: ara_brut_satislar_toplam
+          etiket: "A — BRÜT SATIŞLAR TOPLAMI"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: yurtici_satis, isaret: 1 }
+            - { satir: yurtdisi_satis, isaret: 1 }
+            - { satir: diger_gelirler, isaret: 1 }
+        - id: bolum_b
+          etiket: "B — SATIŞ İNDİRİMLERİ (-)"
+          tip: bolum
+        - id: satis_iadeleri
+          etiket: "  Satış İadeleri (610)"
+        - id: satis_iskontolari
+          etiket: "  Satış İskontoları (611)"
+        - id: diger_indirimler
+          etiket: "  Diğer İndirimler (612)"
+        - id: ara_satis_indirimleri_toplam
+          etiket: "B — SATIŞ İNDİRİMLERİ TOPLAMI"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: satis_iadeleri, isaret: 1 }
+            - { satir: satis_iskontolari, isaret: 1 }
+            - { satir: diger_indirimler, isaret: 1 }
+        - id: ara_net_satislar
+          etiket: "= C — NET SATIŞLAR (A − B)"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: yurtici_satis, isaret: 1 }
+            - { satir: yurtdisi_satis, isaret: 1 }
+            - { satir: diger_gelirler, isaret: 1 }
+            - { satir: satis_iadeleri, isaret: -1 }
+            - { satir: satis_iskontolari, isaret: -1 }
+            - { satir: diger_indirimler, isaret: -1 }
+        - id: bolum_d
+          etiket: "D — SATIŞLARIN MALİYETİ (-)"
+          tip: bolum
+        - id: satilan_mamul
+          etiket: "  Satılan Mamul Maliyeti (621)"
+        - id: satilan_ticari_mal
+          etiket: "  Satılan Ticari Mal Maliyeti (622)"
+        - id: satilan_hizmet
+          etiket: "  Satılan Hizmet Maliyeti (623)"
+        - id: ara_satislarin_maliyeti_toplam
+          etiket: "D — SATIŞLARIN MALİYETİ TOPLAMI"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: satilan_mamul, isaret: 1 }
+            - { satir: satilan_ticari_mal, isaret: 1 }
+            - { satir: satilan_hizmet, isaret: 1 }
+        - id: ara_brut_satis_kari
+          etiket: "= BRÜT SATIŞ KÂRI / ZARARI (C − D)"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: yurtici_satis, isaret: 1 }
+            - { satir: yurtdisi_satis, isaret: 1 }
+            - { satir: diger_gelirler, isaret: 1 }
+            - { satir: satis_iadeleri, isaret: -1 }
+            - { satir: satis_iskontolari, isaret: -1 }
+            - { satir: diger_indirimler, isaret: -1 }
+            - { satir: satilan_mamul, isaret: -1 }
+            - { satir: satilan_ticari_mal, isaret: -1 }
+            - { satir: satilan_hizmet, isaret: -1 }
+        - id: faaliyet_dagilim
+          tip: dagilim_secim
+          etiket: "Faaliyet Giderleri Dağılımı"
+        - id: bolum_e
+          etiket: "E — FAALİYET GİDERLERİ (-)"
+          tip: bolum
+        - id: arge_giderleri
+          etiket: "  Ar-Ge Giderleri (630)"
+          grup: faaliyet_gideri
+        - id: pazarlama_satis
+          etiket: "  Pazarlama/Satış/Dağıtım (631)"
+          grup: faaliyet_gideri
+        - id: genel_yonetim
+          etiket: "  Genel Yönetim Giderleri (632)"
+          grup: faaliyet_gideri
+        - id: ara_faaliyet_giderleri_toplam
+          etiket: "E — FAALİYET GİDERLERİ TOPLAMI"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: arge_giderleri, isaret: 1 }
+            - { satir: pazarlama_satis, isaret: 1 }
+            - { satir: genel_yonetim, isaret: 1 }
+        - id: ara_faaliyet_kari
+          etiket: "= FAALİYET KÂRI / ZARARI (Brüt Kâr − E)"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: yurtici_satis, isaret: 1 }
+            - { satir: yurtdisi_satis, isaret: 1 }
+            - { satir: diger_gelirler, isaret: 1 }
+            - { satir: satis_iadeleri, isaret: -1 }
+            - { satir: satis_iskontolari, isaret: -1 }
+            - { satir: diger_indirimler, isaret: -1 }
+            - { satir: satilan_mamul, isaret: -1 }
+            - { satir: satilan_ticari_mal, isaret: -1 }
+            - { satir: satilan_hizmet, isaret: -1 }
+            - { satir: arge_giderleri, isaret: -1 }
+            - { satir: pazarlama_satis, isaret: -1 }
+            - { satir: genel_yonetim, isaret: -1 }
+        - id: bolum_f
+          etiket: "F — DİĞER FAALİYET GELİRLERİ (+)"
+          tip: bolum
+        - id: diger_faaliyet_gelirleri
+          etiket: "  Diğer Faaliyet Gelirleri (64x)"
+        - id: bolum_g
+          etiket: "G — DİĞER FAALİYET GİDERLERİ (-)"
+          tip: bolum
+        - id: diger_faaliyet_giderleri
+          etiket: "  Diğer Faaliyet Giderleri (65x)"
+        - id: bolum_h
+          etiket: "H — FİNANSMAN GİDERLERİ (-)"
+          tip: bolum
+        - id: finansman_giderleri
+          etiket: "  Finansman Giderleri (660-661)"
+        - id: ara_olagan_kar
+          etiket: "= OLAĞAN KÂR / ZARAR (Faaliyet Kârı + F − G − H)"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: yurtici_satis, isaret: 1 }
+            - { satir: yurtdisi_satis, isaret: 1 }
+            - { satir: diger_gelirler, isaret: 1 }
+            - { satir: satis_iadeleri, isaret: -1 }
+            - { satir: satis_iskontolari, isaret: -1 }
+            - { satir: diger_indirimler, isaret: -1 }
+            - { satir: satilan_mamul, isaret: -1 }
+            - { satir: satilan_ticari_mal, isaret: -1 }
+            - { satir: satilan_hizmet, isaret: -1 }
+            - { satir: arge_giderleri, isaret: -1 }
+            - { satir: pazarlama_satis, isaret: -1 }
+            - { satir: genel_yonetim, isaret: -1 }
+            - { satir: diger_faaliyet_gelirleri, isaret: 1 }
+            - { satir: diger_faaliyet_giderleri, isaret: -1 }
+            - { satir: finansman_giderleri, isaret: -1 }
+        - id: bolum_i
+          etiket: "I — OLAĞANDIŞI GELİRLER (+)"
+          tip: bolum
+        - id: olaganidisi_gelirler
+          etiket: "  Olağandışı Gelirler (670-679)"
+        - id: bolum_j
+          etiket: "J — OLAĞANDIŞI GİDERLER (-)"
+          tip: bolum
+        - id: olaganidisi_giderler
+          etiket: "  Olağandışı Giderler (680-689)"
+        - id: ara_donem_kari
+          etiket: "= DÖNEM KÂRI / ZARARI (Faaliyet Kârı + F − G − H + I − J)"
+          tip: ara_toplam
+          bilesenler:
+            - { satir: yurtici_satis, isaret: 1 }
+            - { satir: yurtdisi_satis, isaret: 1 }
+            - { satir: diger_gelirler, isaret: 1 }
+            - { satir: satis_iadeleri, isaret: -1 }
+            - { satir: satis_iskontolari, isaret: -1 }
+            - { satir: diger_indirimler, isaret: -1 }
+            - { satir: satilan_mamul, isaret: -1 }
+            - { satir: satilan_ticari_mal, isaret: -1 }
+            - { satir: satilan_hizmet, isaret: -1 }
+            - { satir: arge_giderleri, isaret: -1 }
+            - { satir: pazarlama_satis, isaret: -1 }
+            - { satir: genel_yonetim, isaret: -1 }
+            - { satir: diger_faaliyet_gelirleri, isaret: 1 }
+            - { satir: diger_faaliyet_giderleri, isaret: -1 }
+            - { satir: finansman_giderleri, isaret: -1 }
+            - { satir: olaganidisi_gelirler, isaret: 1 }
+            - { satir: olaganidisi_giderler, isaret: -1 }
+      sutunlar:
+        - id: toplam
+          etiket: "Toplam"
+          renk: "#1F3864"
+        - id: ihracat
+          etiket: "İhracat"
+          renk: "#0D47A1"
+        - id: imalat
+          etiket: "İmalat"
+          renk: "#1B5E20"
+        - id: diger
+          etiket: "Diğer"
+          renk: "#546E7A"
+          hesapli: true
+
+    # ── DÖNEM KÂRI / TİCARİ KAR UZLAŞTIRMASI ────────────────────────────────
+    - id: uzlastirma_donem_kari
+      etiket: "Dönem Kârı — Ticari Bilanço Kârı Uyumu"
+      tip: uzlastirma
+      kaynak_alan: ara_donem_kari
+      yardim: >
+        Gelir tablosunun alt satırındaki Dönem Kârı ile sisteme girilen
+        Ticari Bilanço Kârını karşılaştırır. Fark varsa kayıt dışı kalemler,
+        KKEG ya da geçici farklar nedeniyle oluşuyor olabilir. Hesaplama
+        doğruluğu için mümkün olduğunca uyumlu olması önerilir.
+
+    # ── BÖLÜM 8: KV MATRAHI VE UYGULAMA SEÇENEKLERİ ────────────────────────
+    - id: bolum_indirim_uygulama
+      etiket: "KV MATRAHI VE 32/7 – 32/8 UYGULAMA SEÇENEKLERİ"
+      tip: bolum
+
+    - id: imalat_32_7_uygulansin_mi
+      etiket: "32/7 İmalat İndirimi uygulanacak mı?"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: "Güncel sanayi sicil belgesi olan ve imalat faaliyeti yürüten kurumlar için Evet seçin."
+
+    - id: ihracat_32_8_uygulansin_mi
+      etiket: "32/8 İhracat İndirimi uygulanacak mı?"
+      tip: evet_hayir
+      zorunlu: true
+      yardim: "İhracat hasılatı olan kurumlar için Evet seçin."
+
+    - id: normal_kv_orani
+      etiket: "Normal KV Oranı (%)"
+      tip: sayi
+      zorunlu: true
+      varsayilan: 25
+      yardim: "2024 ve 2025 için %25. Finans kurumları %30 uygular."
+
+  formuller:
+    # ── A: Brüt Satışlar (toplam = ihracat + imalat + diger, form tarafından otomatik hesaplanır)
+    brut_satis_ihracat: "yurtici_satis_ihracat + yurtdisi_satis_ihracat + diger_gelirler_ihracat"
+    brut_satis_imalat: "yurtici_satis_imalat + yurtdisi_satis_imalat + diger_gelirler_imalat"
+    brut_satis_toplam: "yurtici_satis_toplam + yurtdisi_satis_toplam + diger_gelirler_toplam"
+
+    # ── B: Satış İndirimleri (-)
+    satis_indirimleri_ihracat: "satis_iadeleri_ihracat + satis_iskontolari_ihracat + diger_indirimler_ihracat"
+    satis_indirimleri_imalat: "satis_iadeleri_imalat + satis_iskontolari_imalat + diger_indirimler_imalat"
+    satis_indirimleri_toplam: "satis_iadeleri_toplam + satis_iskontolari_toplam + diger_indirimler_toplam"
+
+    # ── C: Net Satışlar — hasılat oranlarının kaynağı
+    net_satis_ihracat: "brut_satis_ihracat - satis_indirimleri_ihracat"
+    net_satis_imalat: "brut_satis_imalat - satis_indirimleri_imalat"
+    net_satis_toplam: "brut_satis_toplam - satis_indirimleri_toplam"
+
+    # ── Hasılat Dağılım Oranları (matrah ayrıştırması için)
+    ihracat_hasilat_orani: "net_satis_ihracat / net_satis_toplam"
+    imalat_hasilat_orani: "net_satis_imalat / net_satis_toplam"
+
+    # ── D: Satışların Maliyeti (-)
+    satislarin_maliyeti_toplam: "satilan_mamul_toplam + satilan_ticari_mal_toplam + satilan_hizmet_toplam"
+
+    # ── Brüt Satış Kârı
+    brut_satis_kari: "net_satis_toplam - satislarin_maliyeti_toplam"
+
+    # ── E: Faaliyet Giderleri (-)
+    faaliyet_giderleri_toplam: "arge_giderleri_toplam + pazarlama_satis_toplam + genel_yonetim_toplam"
+
+    # ── Faaliyet Kârı
+    faaliyet_kari: "brut_satis_kari - faaliyet_giderleri_toplam"
+
+    # ── Dönem Kârı (yalnızca görsel ara hesaplama; matrah için kv_matrahi_giris kullanılır)
+    donem_kari: "faaliyet_kari + diger_faaliyet_gelirleri_toplam - diger_faaliyet_giderleri_toplam - finansman_giderleri_toplam + olaganidisi_gelirler_toplam - olaganidisi_giderler_toplam"
+
+    # ── Faaliyet Bazında Matrah Dağılımı (kv_matrahi_giris oransal yöntemle bölünür)
+    ihracat_matrahi: "kv_matrahi_giris * ihracat_hasilat_orani"
+    imalat_matrahi: "kv_matrahi_giris * imalat_hasilat_orani"
+    diger_matrahi: "kv_matrahi_giris - ihracat_matrahi - imalat_matrahi"
+
+    # ── KV Tasarrufları
+    kv_tasarrufu_32_7: "imalat_matrahi * 1 / 100"
+    kv_tasarrufu_32_8: "ihracat_matrahi * 5 / 100"
+    istisna_tutari: "kv_tasarrufu_32_7 + kv_tasarrufu_32_8"
+
+  sonuc_alan: istisna_tutari
+
+  ek_sonuc_alanlari:
+    - kv_tasarrufu_32_7
+    - kv_tasarrufu_32_8
+    - ihracat_matrahi
+    - imalat_matrahi
+    - diger_matrahi
+    - ihracat_hasilat_orani
+    - imalat_hasilat_orani
+    - donem_kari
+
+  validasyonlar:
+    - kural: "net_satis_toplam > 0"
+      hata: "Net satışlar toplamı sıfırdan büyük olmalıdır."
+    - kural: "kv_matrahi_giris > 0"
+      hata: "KV matrahı pozitif olmalıdır. Zarar durumunda 32/7 ve 32/8 uygulanamaz."
+    - kural: "ihracat_hasilat_orani + imalat_hasilat_orani <= 1"
+      hata: "İhracat + imalat hasılat oranları toplamı 1'i (100%) aşamaz."
+
+denetci_notlari: |
+  ## Yasal Dayanak
+
+  **KVK Madde 32/7** kapsamında sanayi sicil belgesi sahibi imalatçılara imalat
+  faaliyetinden elde edilen kazanç üzerinden 1 puan (%24 efektif) indirim uygulanır.
+  6772 sayılı Kanun ile 01.01.2022 tarihinden itibaren yürürlüktedir.
+
+  **KVK Madde 32/8** kapsamında ihracatçılara ihracat faaliyetinden elde edilen
+  kazanç üzerinden 5 puan (%20 efektif) indirim uygulanır. 7491 sayılı Kanun ile
+  01.01.2023 tarihinden itibaren yürürlüktedir.
+
+  Bu kalem her iki indirimi tek bir gelir tablosu üzerinden birlikte hesaplar;
+  matrah dağılımı net satışlar içindeki faaliyet payına (oransal yöntem) göre yapılır.
+
+  ## Hesaplama Özeti
+
+  1. Gelir tablosu tek seferinde girilir (brüt satışlar faaliyet bazında ayrıştırılır)
+  2. Net satışlar içindeki ihracat ve imalat payları → hasılat oranları hesaplanır
+  3. KV matrahı (safi kurum kazancı) bu oranlarla faaliyet paylarına bölünür
+  4. 32/7: imalat matrahına 1 puan → tasarruf = imalat matrahı × %1
+  5. 32/8: ihracat matrahına 5 puan → tasarruf = ihracat matrahı × %5
+  6. Toplam KV tasarrufu = 32/7 tasarrufu + 32/8 tasarrufu
+
+  ## Gerçek Usul ile Oransal Yöntem Farkı
+
+  - **Oransal yöntem (varsayılan):** Gelir/gider dağılımı net satışlar içindeki
+    hasılat payına göre matematiksel olarak yapılır.
+  - **Gerçek usul:** Gelir ve giderlerin doğrudan faaliyet bazında izlendiği
+    durumlarda faaliyet payları doğrudan girilebilir; kalan 'Diğer' payı
+    formül tarafından otomatik hesaplanır.
+
+  ## 32/A YTB ile Çakışma Riski
+
+  KVK 32/A YTB (Yatırım Teşvik Belgesi) indirimi ile birlikte uygulanacaksa
+  32/7 imalat matrahı + 32/8 ihracat matrahı + 32/A matrahı toplamı KV matrahını
+  aşmamalıdır. Matrah çakışması durumunda öncelik sırası mükellef tercihine
+  bırakılmış olup içtihat incelenmelidir.
+
+  ## Beyanname Satırları
+
+  - KVK 32/7 matrahı → Beyanname 730. satır
+  - KVK 32/8 matrahı → Beyanname 740. satır
+  - Her iki satır birlikte doldurulabilir; matrahlar birbirini dışlamaz.
+
+  ## YİAKV Etkisi
+
+  Bu kalem YİAKV (KVK 32/C) matrahından düşülmez (yiakv_etkisi: dusulmez).
+  32/7 ve 32/8 indirimleri gelir tablosuna yansıtılmaz; yalnızca KV beyannamesi
+  üzerinde etkilidir.
+
+muhasebe_kayitlari: |
+  ## Gelir Tablosu Kaydı
+
+  32/7 ve 32/8 indirimleri finansal tablolara yansıtılmaz. Vergisel indirim
+  yalnızca KV beyannamesinde ve vergi gideri hesaplamasında etkilidir.
+
+  ## Ertelenmiş Vergi Etkisi (TMS 12 / TFRS Kapsamındaki Şirketler)
+
+  İndirimli KV oranının uygulandığı faaliyetlere ilişkin geçici farklar için
+  ertelenmiş vergi hesaplanırken ilgili faaliyet matrahına uygulanan efektif
+  oran kullanılmalıdır (%24 imalat, %20 ihracat, %25 diğer).
+
+  ## Beyanname
+
+  32/7: Kurumlar vergisi hesaplanırken imalat matrahına %24 oran uygulanır;
+  normal oran (%25) ile fark (1 puan) tasarruf olarak hesaplanır.
+  Beyanname 730. satırına imalat matrahı aktarılır.
+
+  32/8: İhracat matrahına %20 oran uygulanır; normal oran (%25) ile fark
+  (5 puan) tasarruf olarak hesaplanır.
+  Beyanname 740. satırına ihracat matrahı aktarılır.
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Sanayi Sicil Belgesi (32/7 için)
+    detay: "Güncel ve geçerli sanayi sicil belgesi. Belge tarihi ve faaliyet kodu imalat sanayii kapsamında olmalıdır. Belgenin dönem boyunca geçerli olduğu doğrulanmalıdır."
+    temin_yeri: Sanayi ve Teknoloji Bakanlığı / İl Müdürlüğü
+  - kategori: zorunlu
+    "no": 2
+    baslik: İhracat Gümrük Beyannameleri (32/8 için)
+    detay: "Dönem içinde gerçekleştirilen ihracata ait gümrük çıkış beyannameleri. Beyan edilen ihracat hasılatı ile muhasebe kayıtlarının uyumu doğrulanmalıdır."
+    temin_yeri: Gümrük ve Ticaret Bakanlığı e-Devlet / Gümrük Müdürlüğü
+  - kategori: zorunlu
+    "no": 3
+    baslik: DAB — Döviz Alım Belgeleri (32/8 için)
+    detay: "İhracat bedelinin Türkiye'ye transferini ve döviz satışını gösteren DAB'lar. Hasılatın yurda getirildiğinin ve bankaya satıldığının teyidi için gereklidir."
+    temin_yeri: Aracı Bankalar
+  - kategori: zorunlu
+    "no": 4
+    baslik: Faaliyet Bazında Gelir Tablosu (Dağılımlı)
+    detay: "Net satışlar içinde ihracat ve imalat paylarını gösteren detaylı gelir tablosu. Oransal yöntem kullanılıyorsa hasılat dağılım tablosu; gerçek usul uygulanıyorsa doğrudan faaliyet bazlı muhasebe dökümü."
+    temin_yeri: Muhasebe / Mali İşler
+  - kategori: zorunlu
+    "no": 5
+    baslik: KV Matrahı Hesap Tablosu
+    detay: "Dönem ticari kârından KV matrahına ulaşılan hesap tablosu. KKEG, istisnalar, geçmiş yıl zararları ve diğer indirimlerin ayrıntılı gösterimi ile matrah dağılımı (ihracat/imalat/diğer)."
+    temin_yeri: Mali İşler / YMM
+  - kategori: destekleyici
+    "no": 6
+    baslik: 32/A YTB Konsolidasyon Notu
+    detay: "KVK 32/A kapsamında YTB indirimi de uygulanıyorsa matrah çakışması analizi ve öncelik sırası açıklaması. İhracat + imalat + YTB matrahlarının KV matrahını aşmadığının kontrolü."
+    temin_yeri: Mali İşler / YMM
+  - kategori: destekleyici
+    "no": 7
+    baslik: Matrah Ayrıştırma Metodoloji Notu
+    detay: "Oransal yöntem yerine gerçek usul uygulanmışsa faaliyet bazında gelir ve gider ayrıştırma metodolojisinin açıklandığı not. Dağıtım anahtarının tutarlı uygulandığını gösteren dönemler arası karşılaştırma."
+    temin_yeri: Mali İşler / YMM
+
+k_checklist:
+  - id: K1
+    soru: "Sanayi sicil belgesi güncel ve geçerli mi? Dönem boyunca kesintisiz yürürlükte mi? (32/7 için)"
+    referans: "KVK Md.32/7 | Sanayi Sicil Kanunu"
+  - id: K2
+    soru: "Sanayi sicil belgesindeki faaliyet kodu imalat sanayii kapsamında mı?"
+    referans: "KVK Md.32/7 | Sanayi ve Teknoloji Bakanlığı Tebliğleri"
+  - id: K3
+    soru: "İhracat faaliyeti gümrük beyannameleri ve DAB'larla belgelendi mi? (32/8 için)"
+    referans: "KVK Md.32/8 | İhracat Mevzuatı"
+  - id: K4
+    soru: "Gelir tablosu tüm hesap kalemleri ile eksiksiz hazırlandı mı?"
+    referans: "KVK Md.32/7 ve 32/8 | 1 No.lu KV GT"
+  - id: K5
+    soru: "Net satışlar içindeki ihracat ve imalat payları doğru ayrıştırıldı mı? (çift sayım yok mu?)"
+    referans: "KVK Md.32/7 ve 32/8 — Matrah ayrıştırma"
+  - id: K6
+    soru: "32/A YTB indirimi varsa matrah çakışması kontrol edildi mi? Toplam dağıtılan matrah KV matrahını aşmıyor mu?"
+    referans: "KVK Md.32/A — Çakışma analizi"
+  - id: K7
+    soru: "İhracat matrahı + imalat matrahı toplamı KV matrahını aşmıyor mu?"
+    referans: "KVK Md.32/7 ve 32/8 — Validasyon"
+  - id: K8
+    soru: "KKEG ve istisnalar doğru ve eksiksiz uygulandı mı? Ayrı kalemlerdeki tutarlarla uyum var mı?"
+    referans: "KVK Md.11, 12, 13, 5 — KKEG ve istisnalar"
+  - id: K9
+    soru: "Geçmiş yıl zararları mahsubu dikkate alındı mı? 5 yıl sınırı aşılmadı mı?"
+    referans: "KVK Md.9/1-a — Zarar mahsubu"
+  - id: K10
+    soru: "Beyanname 730. satırı (32/7 imalat matrahı) ve 740. satırı (32/8 ihracat matrahı) doğru dolduruldu mu?"
+    referans: "KV Beyannamesi — Satır 730 ve 740"

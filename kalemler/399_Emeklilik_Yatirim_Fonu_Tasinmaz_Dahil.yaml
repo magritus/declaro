@@ -1,0 +1,255 @@
+ic_kod: eyf_portfoy_tasinmaz_dahil
+baslik: Emeklilik Yatırım Fonu Portföy İşletmeciliği Kazancı (Taşınmaz Dahil)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 399 }
+  - { donem: 2026, kod: 399 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-d
+  - 4632 Sayılı Bireysel Emeklilik Tasarruf ve Yatırım Sistemi Kanunu
+  - GVK Geçici Madde 67 (fon düzeyinde stopaj)
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.4
+  - SPK Tebliği III-52.1 (Yatırım Fonlarına İlişkin Esaslar Tebliği — Taşınmaz limitleri)
+  - Emeklilik Gözetim Merkezi (EGM) Mevzuatı
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2006-06-21"
+  bitis: null
+
+ana_kategori: portfoy_isletmeciligi
+
+wizard_agaci:
+  tetikleyici_soru: "EYF portföyünde taşınmaz veya taşınmaza dayalı araçlardan (GYO katılma payı kira/kâr gelirleri, gayrimenkule dayalı kira sertifikası vb.) elde edilen kazanç var mı?"
+  info_modal: |
+    ## Emeklilik Yatırım Fonu Portföy İşletmeciliği Kazancı (Taşınmaz Dahil)
+
+    **KVK Madde 5/1-d** kapsamında kurulan **Emeklilik Yatırım Fonlarının (EYF)** portföy işletmeciliğinden doğan kazançları kurumlar vergisinden %100 tam istisna olarak muaftır.
+
+    **Bu satır (399): Taşınmaz GELİRİ DAHİL portföy işletmeciliği kazancını kapsar.**
+    Taşınmaz geliri HARİÇ portföy kazancı için 398 numaralı satır ayrıca doldurulur.
+
+    ### Bu Satırın Kapsamı
+
+    399 numaralı satır, EYF portföyünün **taşınmaz veya taşınmaza dayalı araçlardan elde ettiği kazançları** kapsar:
+
+    - Portföydeki GYO katılma paylarından alınan kira ve kâr payı gelirleri
+    - Gayrimenkule dayalı kira sertifikası faiz/değerleme gelirleri
+    - Taşınmaza dayalı GYF (Gayrimenkul Yatırım Fonu) katılma payı gelirleri
+    - SPK mevzuatı çerçevesinde taşınmaz niteliğinde sayılan diğer araçlardan gelirler
+
+    ### EYF'de Taşınmaz Yatırım Limitleri
+
+    SPK Tebliği III-52.1 kapsamında EYF'lerin **doğrudan taşınmaz yatırımı yapma yetkisi** bulunmamaktadır. Taşınmaz maruziyeti yalnızca dolaylı yollarla (GYO katılma payı, GYF katılma payı, gayrimenkule dayalı kira sertifikası gibi araçlar) sağlanabilir.
+
+    - **Taşınmaz yatırım limiti:** SPK tebliği ile her EYF türü için ayrı ayrı belirlenmiştir. Limit yüzdeleri değişebileceğinden güncel tebliğ kontrol edilmelidir.
+    - **Limit aşımı riski:** Portföy dağılımının dönem boyunca limit dahilinde kalıp kalmadığı kontrol edilmelidir. Limit aşımı hem SPK idari yaptırımına hem de portföy içi/dışı sınıflandırma hatasına yol açabilir.
+
+    ### 398 ve 399 Satırlarının İlişkisi
+
+    - **398 satırı:** EYF taşınmaz hariç portföy işletmeciliği kazancı
+    - **399 satırı:** EYF taşınmaz dahil (taşınmazdan elde edilen) portföy işletmeciliği kazancı
+    - İki satırın toplamı EYF toplam portföy kazancına eşit olmalıdır.
+    - Taşınmaz geliri yoksa (EYF portföyünde hiç taşınmaz/taşınmaz araç yoksa) 399 satırı doldurulmaz.
+
+    ### GVK Geçici Md.67 Stopaj İlişkisi
+
+    Taşınmaz gelirleri de dahil olmak üzere EYF bünyesinde GVK Geçici Md.67 kapsamında stopaj uygulanır. Fon düzeyinde kesilen stopaj, emeklilik şirketinin elinde KVK 5/1-d istisnasına tabi tutulan kazançla ilişkilidir. Stopaj tutarı ile istisna tutarı arasındaki bağlantı muhasebe kayıtlarında şeffaf biçimde gösterilmelidir.
+  kapi_sorulari:
+    - id: eyf_tescil_kayit
+      soru: "Kurum SPK nezdinde tescilli ve EGM'de kayıtlı bir Emeklilik Yatırım Fonu (EYF) mudur?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d koşulu: 4632 Sayılı Kanun kapsamında kurulan ve SPK/EGM denetiminde faaliyet gösteren fon olması zorunludur."
+    - id: tasinmaz_geliri_var
+      soru: "EYF portföyünde taşınmaz veya taşınmaza dayalı araçlardan elde edilen kazanç var mı? (GYO/GYF katılma payı, gayrimenkule dayalı kira sertifikası vb.)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Bu satır YALNIZCA taşınmaz kaynaklı portföy kazancı olan EYF'ler için doldurulur. Taşınmaz geliri yoksa 399 satırı boş bırakılır."
+    - id: spk_tasinmaz_limit
+      soru: "EYF portföyündeki taşınmaz araç yatırımları SPK Tebliği III-52.1 kapsamındaki limitlere uygun mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "EYF'lerin taşınmaz araç yatırım limitleri SPK tebliği ile sınırlanmıştır. Portföy dağılımının dönem boyunca limit dahilinde kalıp kalmadığı kontrol edilmelidir."
+    - id: portfoy_398_ayrim
+      soru: "Taşınmazdan elde edilen portföy kazançları 398 satırındaki (taşınmaz hariç) kazançlardan muhasebede ayrı izleniyor mu?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "398 ve 399 satırlarının toplamı EYF toplam portföy kazancına eşit olmalıdır. İki satır arasındaki ayrım muhasebe kayıtlarıyla belgelenmelidir."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: gyo_katilma_payi_kira
+      etiket: "GYO katılma payı kira ve kâr payı gelirleri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        EYF portföyündeki Gayrimenkul Yatırım Ortaklığı (GYO) katılma paylarından alınan
+        kira geliri ve kâr payı dağıtımları. GYO'nun portföy içi işletmeciliğinden kaynaklanan
+        kazanç payı bu alana girilir.
+    - id: gyf_katilma_payi_geliri
+      etiket: "GYF (Gayrimenkul Yatırım Fonu) katılma payı gelirleri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        EYF portföyündeki Gayrimenkul Yatırım Fonu (GYF) katılma paylarından elde edilen
+        kira geliri, değerleme artışı ve diğer portföy gelirleri.
+    - id: kira_sertifikasi_tasinmaz
+      etiket: "Gayrimenkule dayalı kira sertifikası faiz/geliri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        EYF portföyündeki gayrimenkule dayalı (icare) kira sertifikalarından elde edilen faiz
+        ve değerleme gelirleri. Kira sertifikasının dayandığı varlık taşınmaz ise bu alana girilir.
+    - id: tasinmaz_diger_gelir
+      etiket: "Diğer taşınmaz araçlarından portföy gelirleri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        SPK mevzuatı çerçevesinde taşınmaz niteliğinde sayılan ancak yukarıda ayrıca
+        sayılmayan diğer portföy araçlarından elde edilen gelirler.
+    - id: tasinmaz_portfoy_giderleri
+      etiket: "Taşınmaz gelirlerine ilişkin portföy giderleri (eksi) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Taşınmaz araçlarına özgü portföy yönetim, saklama ve diğer işletme giderleri.
+        Karma giderler için taşınmaz payına düşen tutar dağıtım anahtarıyla belirlenmeli.
+    - id: fon_portfoy_kazanci
+      etiket: "Net EYF taşınmaz dahil portföy işletmeciliği kazancı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Taşınmaz kaynaklı portföy gelirlerinin toplamından taşınmaza ilişkin portföy giderleri
+        düşüldükten sonra kalan net kazanç. Bu tutar beyanname 399 satırına yazılır.
+        398 satırıyla birlikte EYF toplam portföy kazancına ulaşılır.
+  formuller:
+    tasinmaz_gelir_toplam: "gyo_katilma_payi_kira + gyf_katilma_payi_geliri + kira_sertifikasi_tasinmaz + tasinmaz_diger_gelir"
+    net_tasinmaz_portfoy_kazanci_kontrol: "tasinmaz_gelir_toplam - tasinmaz_portfoy_giderleri"
+    istisna_tutari: "fon_portfoy_kazanci"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "fon_portfoy_kazanci != 0"
+      hata: "İstisna tutarı sıfır olamaz."
+    - kural: "tasinmaz_portfoy_giderleri >= 0"
+      hata: "Portföy giderleri negatif girilemez."
+
+denetci_notlari: |
+  ## I. Yasal Dayanak — KVK Md.5/1-d
+
+  KVK Madde 5/1-d kapsamında 4632 Sayılı Kanun çerçevesinde kurulan EYF'lerin portföy
+  işletmeciliğinden doğan kazançları kurumlar vergisinden %100 tam istisna olarak muaftır.
+  Bu satır (399) taşınmaz dahil portföy kazancını kapsar; beyanname "Zarar Olsa Dahi
+  İndirilecek" bölümünde 399 numaralı satırda gösterilir.
+
+  ## II. EYF'de Taşınmaz Yatırımının Hukuki Çerçevesi
+
+  EYF'ler SPK Tebliği III-52.1 kapsamında DOĞRUDAN taşınmaz iktisap edemez.
+  Taşınmaz maruziyeti yalnızca aşağıdaki DOLAYLI araçlar üzerinden sağlanabilir:
+  - GYO katılma payları (Gayrimenkul Yatırım Ortaklığı)
+  - GYF katılma payları (Gayrimenkul Yatırım Fonu)
+  - Gayrimenkule dayalı kira sertifikaları (icare sukuku)
+
+  Bu araçların portföy ağırlığı SPK tebliği limitlerini aşamaz. Limit aşımı hem idari
+  yaptırıma hem de portföy içi/dışı sınıflandırma hatasına yol açabilir.
+
+  ## III. 398 ve 399 Satırları Arası Ayrım (KRİTİK)
+
+  BU SATIRA (399) YAZILACAKLAR:
+  - GYO katılma payı kira ve kâr payı gelirleri
+  - GYF katılma payı kira/değerleme gelirleri
+  - Gayrimenkule dayalı kira sertifikası faiz/gelirleri
+  - Taşınmaz niteliğindeki diğer SPK onaylı araçlardan gelirler
+
+  398 SATIRINA YAZILACAKLAR (bu satırda YER ALMAZ):
+  - Tahvil, bono, eurobond, pay senedi, repo, altın ve taşınmaz dışı portföy gelirleri
+
+  TOPLAMLAR: 398 + 399 = EYF toplam portföy işletmeciliği kazancı.
+  Muhasebede iki satır arasındaki ayrım ayrı hesaplarla belgelenmelidir.
+
+  ## IV. GVK Geçici Md.67 Stopaj İlişkisi
+
+  Taşınmaza dayalı gelirler dahil tüm EYF portföy gelirleri üzerinden fon bünyesinde
+  GVK Geçici Md.67 stopajı uygulanır. Emeklilik şirketinin elinde kalan kazanç
+  KVK 5/1-d istisnasına tabidir. Stopaj-istisna mutabakatı 399 satırı için ayrıca
+  yapılmalı; 398 satırı stopaj mutabakatından bağımsız izlenmelidir.
+
+  ## V. YİAKV (KVK Md.32/C) Etkisi
+
+  KVK 5/1-d kapsamındaki EYF taşınmaz dahil portföy işletmeciliği kazancı YİAKV
+  matrahından DÜŞÜLEBİLİR. Dönem tebliğleri ve GİB açıklamaları ile teyit edilmelidir.
+
+  ## VI. Risk Alanları
+
+  1. EYF'nin doğrudan taşınmaz iktisap etmesi ve bu gelirin 399'a yazılması (SPK ihlali)
+  2. SPK taşınmaz limiti aşımının portföy içi/dışı sınıflandırmaya etkisi
+  3. GYO katılma payı üzerinden alınan gelirin niteliğinin (kira/kâr payı) yanlış ayrımı
+  4. 398 ve 399 satırlarının toplamının EYF toplam kazancından sapması
+  5. Taşınmaz giderlerinin taşınmaz hariç portföy giderleriyle karıştırılması
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Tescil Belgesi ve EGM Kayıt Yazısı
+    detay: "EYF'nin SPK nezdinde tescilini ve EGM'de kaydını kanıtlayan güncel belge. Fon türü ve portföy yatırım stratejisi açıkça görünmeli."
+    temin_yeri: "SPK / EGM resmi yazısı veya lisans belgesi"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Fon İç Tüzüğü — Taşınmaz Araç Yatırım Limitleri
+    detay: "SPK Tebliği III-52.1 kapsamında EYF'ye izin verilen taşınmaz araç türlerini ve yatırım limitlerini gösteren iç tüzük bölümü. Dönem içinde limit uyumu kontrol edilmeli."
+    temin_yeri: "SPK onaylı fon iç tüzüğü / güncel SPK Tebliği III-52.1"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Portföy Varlık Listesi — Taşınmaz Araçlar (Dönem Başı ve Sonu)
+    detay: "EYF portföyündeki GYO katılma payları, GYF katılma payları ve gayrimenkule dayalı kira sertifikalarının dönem başı/sonu listesi. Her varlığın türü, adedi, değeri ve portföy ağırlığı."
+    temin_yeri: "Saklama kuruluşu raporu / EGM portföy bildirim formu"
+  - kategori: zorunlu
+    "no": 4
+    baslik: Taşınmaz Araç Gelir Tablosu ve 398/399 Ayrım Belgesi
+    detay: "GYO/GYF katılma payı kira/kâr gelirleri, kira sertifikası faiz gelirleri ve taşınmaz giderlerinin ayrı hesaplarda izlendiğini gösteren muhasebe belgesi. 398 ↔ 399 satır ayrımının dayanağıdır."
+    temin_yeri: "Muhasebe kayıtları / EGM dönem raporu"
+  - kategori: zorunlu
+    "no": 5
+    baslik: GVK Geçici Md.67 Stopaj Mutabakat Tablosu (Taşınmaz Geliri Dahil)
+    detay: "Taşınmaz gelirlerine ilişkin fon düzeyi stopaj tutarlarının dökümü. 399 satırı stopaj-istisna ilişkisi mutabakatı."
+    temin_yeri: "Muhasebe kayıtları / Banka/aracı kurum stopaj bildirimleri"
+  - kategori: zorunlu
+    "no": 6
+    baslik: 398 + 399 Toplam Mutabakat Tablosu ve Beyanname 399 Satırı
+    detay: "398 ve 399 satırlarının toplamının EYF toplam portföy kazancına eşitliğini ve 399 satırının çalışma kâğıdı veri girişiyle birebir uyumunu gösteren 3 kademe mutabakat belgesi."
+    temin_yeri: "GİB e-Beyanname sistemi / Muhasebe çalışma kâğıdı"
+  - kategori: destekleyici
+    "no": 7
+    baslik: GYO/GYF Dönem Kira ve Kâr Payı Dağıtım Bildirimleri
+    detay: "EYF portföyündeki GYO/GYF'lerin katılımcılara yaptığı kira ve kâr payı dağıtım bildirimleri. 399 satırındaki tutarın kaynağını destekler."
+    temin_yeri: "GYO/GYF yönetici şirketi veya saklama kuruluşu bildirimi"
+
+k_checklist:
+  - id: K1
+    soru: "EYF'nin SPK tescili ve EGM kaydı güncel ve geçerli mi?"
+    referans: "KVK Md. 5/1-d | 4632 Sayılı Kanun | SPK Tebliği III-52.1"
+  - id: K2
+    soru: "EYF portföyündeki taşınmaz araç yatırımları SPK Tebliği III-52.1 limitlerini aşmıyor mu? Dönem boyunca limit uyumu sağlandı mı?"
+    referans: "SPK Tebliği III-52.1 | Taşınmaz araç yatırım limitleri"
+  - id: K3
+    soru: "Taşınmaz kaynaklı portföy gelirleri (GYO/GYF katılma payı kira, kira sertifikası faizi vb.) 398 satırındaki gelirlerden muhasebede ayrı izleniyor mu?"
+    referans: "398 ↔ 399 satır ayrımı | Muhasebe ayrım belgesi"
+  - id: K4
+    soru: "398 + 399 satırlarının toplamı EYF toplam portföy kazancına eşit mi?"
+    referans: "Toplam mutabakat | 3 kademe uyum kontrolü"
+  - id: K5
+    soru: "GVK Geçici Md.67 kapsamında taşınmaz gelirlere ilişkin stopaj tutarları muhasebe ve beyanname ile mutabık mı?"
+    referans: "GVK Geçici Md. 67 | Stopaj-istisna ilişkisi"
+  - id: K6
+    soru: "EYF'nin doğrudan taşınmaz iktisabı yapmadığı teyit edildi mi? (SPK ihlali riski)"
+    referans: "SPK Tebliği III-52.1 | Dolaylı taşınmaz araçları"
+  - id: K7
+    soru: "YİAKV (KVK Md.32/C) matrahında 399 istisnasının etkisi dönem tebliğleriyle teyit edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"

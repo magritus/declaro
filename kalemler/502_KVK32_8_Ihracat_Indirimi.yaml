@@ -1,0 +1,308 @@
+ic_kod: ihracat_indirimli_kv_32_8
+baslik: İhracat Kazançlarında İndirimli KV (KVK Md.32/8)
+ust_kalem: null
+
+beyanname_kodlari: []
+dahili_ref: "IKV-32/8"  # İndirimli KV — ihracat kazancı indirimi (KVK 32/8); standart satır kodu yok
+
+mevzuat_dayanagi:
+  - KVK Madde 32/8
+  - 7491 sayılı Kanun
+
+beyanname_bolumu: kazanc_varsa
+yiakv_etkisi: dusulmez
+durum: mulga
+yururluk_araligi:
+  baslangic: "2023-01-01"
+  bitis: null
+
+ana_kategori: yatirim_tesvikleri
+
+wizard_agaci:
+  tetikleyici_soru: "Dönem içinde mal veya hizmet ihracatından elde edilen kazancınız var mı?"
+  info_modal: |
+    ## Genel Çerçeve
+
+    **KVK Madde 32/8** kapsamında, **ihracat faaliyetinden elde edilen kazançlara**
+    5 puanlık indirimli kurumlar vergisi uygulanır. Standart %25 oranı yerine
+    **%20 efektif oran** geçerlidir.
+
+    ## İndirim Mekanizması
+
+    - **Normal KV Oranı:** %25
+    - **İndirim Puanı:** 5 puan
+    - **İndirimli Oran:** %20
+    - **Vergi Tasarrufu:** İhracat kazancı matrahının %5'i
+
+    ## Matrah Belirleme Yöntemleri
+
+    **1. Direkt Yöntem**
+    İhracat faaliyetine ait gelir ve giderler muhasebe kayıtlarında ayrı
+    hesaplarda takip ediliyorsa, ihracat kazancı doğrudan tespit edilir.
+
+    **2. Oranlama Yöntemi**
+    İhracat kazancı ayrı hesaplarda takip edilmiyorsa, toplam matrahtan
+    ihracat hasılatının toplam hasılata oranı esas alınarak ihracat payı
+    hesaplanır.
+
+    **Formül (Oranlama):**
+    İhracat Matrahı = Toplam Matrah × (İhracat Hasılatı / Toplam Hasılat)
+
+    ## Vergi Tasarrufu
+
+    **İndirim Tutarı = İhracat Kazancı Matrahı × %5**
+
+    Örnek: İhracat matrahı 10.000.000 TL ise
+    - Normal KV: 10.000.000 × %25 = 2.500.000 TL
+    - İndirimli KV: 10.000.000 × %20 = 2.000.000 TL
+    - Tasarruf: 500.000 TL
+
+    ## KVK 32/7 (İmalat İndirimi) ile Birlikte Kullanım
+
+    Her iki indirimden aynı anda yararlanılabilir; ancak imalat
+    ve ihracat matrahlarının toplamı toplam kurumlar vergisi
+    matrahını aşmamalıdır. Çakışan matrahlar için tek indirim
+    uygulanır — en yüksek indirim tercih edilir.
+
+    ## 32/A (Yatırım Teşvik) ile İlişki
+
+    KVK 32/A kapsamında yatırım indirimine konu matrahlar KVK 32/8
+    kapsamı dışındadır. Matrah ayrıştırması sırasında bu örtüşme
+    dikkate alınmalıdır.
+
+    ## Önemli Notlar
+
+    - **İhracat belgesi zorunluluğu:** Gümrük beyannameleri ve DAB
+      belgelerinin temin edilmesi şarttır.
+    - **Yetkilendirilmiş yükümlü (YY):** YY statüsündeki kurumlar
+      ilave avantajlardan yararlanabilir; durum teyit edilmelidir.
+    - **Yıllık beyanname:** 32/8 indirimi yıllık KV beyannamesinde
+      matrahtan indirim olarak değil, indirimli oran uygulaması
+      şeklinde yer alır.
+  kapi_sorulari:
+    - id: ihracat_faaliyeti_var
+      soru: "Dönem içinde mal veya hizmet ihracatından elde edilen gelir var mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK Md.32/8 yalnızca ihracat faaliyetinden elde edilen kazançlara uygulanır. İhracat geliri yoksa indirim uygulanamaz."
+    - id: kv_matrahi_pozitif
+      soru: "İlgili dönem kurumlar vergisi matrahı pozitif mi? (Zarar veya sıfır beyan durumu değil)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İndirimli oran uygulaması ancak pozitif kurumlar vergisi matrahı varlığında anlam taşır. Zarar veya sıfır matrah durumunda 32/8 etkisi bulunmaz."
+    - id: ihracat_belgeleri_mevcut
+      soru: "İhracata ait gümrük beyannameleri ve döviz alım belgeleri (DAB) temin edildi mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 32/8 uygulaması için ihracat gelirinin belgelenmesi zorunludur. Gümrük beyannameleri ve bankacılık DAB belgelerinin dosyada bulunması şarttır."
+    - id: matrah_belirleme_yontemi_secildi
+      soru: "İhracat kazancı matrahı belirlenebiliyor mu? (Direkt hesaplama veya oranlama yöntemiyle)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İhracat kazancına isabet eden kurumlar vergisi matrahının direkt (ayrı muhasebe) veya oranlama (ihracat/toplam hasılat) yöntemiyle tespit edilmesi gerekmektedir."
+
+parametreler:
+  normal_kv_orani: 0.25
+  indirimli_kv_orani: 0.20
+  indirim_puani: 5
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: matrah_belirleme_yontemi
+      etiket: "Matrah belirleme yöntemi"
+      tip: secenek
+      secenekler:
+        - "direkt"
+        - "oranlama"
+      secenekler_etiketler:
+        - "Direkt — İhracat kazancı ayrı hesaplarda takip ediliyor"
+        - "Oranlama — Toplam matrahtan ihracat payı hesaplanacak"
+      zorunlu: true
+      yardim: "Muhasebe kayıtlarında ihracat faaliyetine ait gelir ve giderler ayrı hesaplarda izleniyorsa 'Direkt' seçiniz. İzlenmiyorsa hasılat oranlamasıyla matrah belirlenmesi için 'Oranlama' seçiniz."
+    - id: ihracat_kazanc_matrahi
+      etiket: "İhracat kazancı matrahı (TL) — Direkt yöntem"
+      tip: para
+      zorunlu: false
+      goster_kosul: "matrah_belirleme_yontemi == 'direkt'"
+      yardim: "Muhasebe kayıtlarında ayrı hesaplarda izlenen ihracat faaliyetine ait vergi matrahı. Kurumlar vergisi beyannamesine esas alınan ihracat kazancı tutarı."
+    - id: toplam_matrah
+      etiket: "Toplam kurumlar vergisi matrahı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: "Kurumlar vergisi beyannamesindeki toplam vergi matrahı. 32/8 ihracat indirimi hesabının ve matrah çakışma kontrolünün dayanağıdır."
+    - id: ihracat_hasilati
+      etiket: "İhracat hasılatı (TL)"
+      tip: para
+      zorunlu: false
+      goster_kosul: "matrah_belirleme_yontemi == 'oranlama'"
+      yardim: "Dönem içinde gerçekleştirilen mal ve hizmet ihracatından elde edilen toplam hasılat. Oranlama yöntemiyle matrah belirlenmesinde payda kullanılır."
+    - id: toplam_hasilat
+      etiket: "Toplam hasılat (TL)"
+      tip: para
+      zorunlu: false
+      goster_kosul: "matrah_belirleme_yontemi == 'oranlama'"
+      yardim: "Dönem içinde elde edilen toplam hasılat (ihracat + yurt içi). İhracat oranının hesaplanmasında payda olarak kullanılır. Sıfır olamaz."
+    - id: ihracat_orani
+      etiket: "İhracat oranı (%) — opsiyonel, manuel giriş"
+      tip: sayi
+      zorunlu: false
+      goster_kosul: "matrah_belirleme_yontemi == 'oranlama'"
+      yardim: "Boş bırakılırsa ihracat_hasılati / toplam_hasılat formülüyle otomatik hesaplanır. Manuel olarak girmek istiyorsanız 0-100 arasında yüzde değeri giriniz (örn. 45.8)."
+    - id: normal_kv_orani
+      etiket: "Normal KV oranı (%)"
+      tip: sayi
+      zorunlu: true
+      varsayilan: 25
+      yardim: "Uygulanabilir normal kurumlar vergisi oranı. Standart oran %25'tir. Kurumun farklı bir orandan tabi olduğu durumda güncel oranı giriniz."
+  formuller:
+    hesaplanan_ihracat_orani: "ihracat_hasilati / toplam_hasilat if matrah_belirleme_yontemi == 'oranlama' else null"
+    efektif_ihracat_orani: "ihracat_orani / 100 if ihracat_orani else hesaplanan_ihracat_orani"
+    ihracat_matrahi_hesaplanan: "toplam_matrah * efektif_ihracat_orani if matrah_belirleme_yontemi == 'oranlama' else null"
+    efektif_ihracat_matrahi: "ihracat_kazanc_matrahi if matrah_belirleme_yontemi == 'direkt' else ihracat_matrahi_hesaplanan"
+    normal_kv: "efektif_ihracat_matrahi * normal_kv_orani / 100"
+    indirim_tutari: "efektif_ihracat_matrahi * 5 / 100"
+    indirimli_kv: "efektif_ihracat_matrahi * (normal_kv_orani - 5) / 100"
+    kv_tasarrufu: "normal_kv - indirimli_kv"
+  sonuc_alan: kv_tasarrufu
+  validasyonlar:
+    - kural: "efektif_ihracat_matrahi <= toplam_matrah"
+      hata: "İhracat kazancı matrahı toplam kurumlar vergisi matrahını aşamaz."
+    - kural: "toplam_hasilat > 0 if matrah_belirleme_yontemi == 'oranlama' else true"
+      hata: "Oranlama yönteminde toplam hasılat sıfırdan büyük olmalıdır."
+    - kural: "ihracat_hasilati <= toplam_hasilat if matrah_belirleme_yontemi == 'oranlama' else true"
+      hata: "İhracat hasılatı toplam hasılatı aşamaz."
+    - kural: "efektif_ihracat_matrahi > 0"
+      hata: "Efektif ihracat matrahı pozitif olmalıdır. Girilen değerleri kontrol ediniz."
+    - kural: "normal_kv_orani > 5"
+      hata: "Normal KV oranı indirim puanından (5) büyük olmalıdır. Geçerli bir oran giriniz."
+
+denetci_notlari: |
+  ## ⚠️ KULLANIMDAN KALDIRILDI
+  BU KALEM ARTIK KULLANILMAMAKTADIR. Bunun yerine 503_KVK32_78_Birlesik (ic_kod: imalat_ihracat_indirimli_kv_32_7_32_8) kalemini kullanın; bu kalem hem 32/7 hem 32/8'i tek gelir tablosuyla birlikte hesaplar.
+
+  ## Yasal Dayanak
+  KVK Md.32/8 (7491 sayılı Kanun ile eklendi, 01.01.2023 tarihinden itibaren
+  geçerli): İhracat yapan kurumların münhasıran ihracat faaliyetlerinden elde
+  ettikleri kazançlarına kurumlar vergisi oranı 5 puan indirimli olarak
+  uygulanır. Normal %25 oran yerine %20 efektif oran geçerlidir.
+
+  ## İndirim Tutarı Hesaplama
+  İndirim Tutarı = İhracat Kazancı Matrahı × 5/100
+
+  Normal KV = Matrah × %25
+  İndirimli KV = Matrah × %20
+  KV Tasarrufu = Matrah × %5 (= İndirim Tutarı)
+
+  ## Matrah Belirleme Yöntemleri
+
+  DIREKT YÖNTEM:
+  İhracat faaliyetine ait gelir, gider ve maliyet unsurları muhasebe
+  kayıtlarında ayrı hesaplarda takip ediliyorsa ihracat kazancı doğrudan
+  tespit edilir. Bu yöntem tercih edilen ve daha güvenli yaklaşımdır.
+
+  ORANLAMA YÖNTEMİ:
+  İhracat kazancının ayrı hesaplarda izlenmediği durumlarda toplam kurumlar
+  vergisi matrahından ihracat payı aşağıdaki formülle hesaplanır:
+  İhracat Matrahı = Toplam Matrah × (İhracat Hasılatı / Toplam Hasılat)
+
+  ## KVK 32/7 (İmalat İndirimi) ile Birlikte Kullanım
+  Kurum aynı dönemde hem imalat hem ihracat faaliyeti yürütüyorsa her iki
+  indirimden aynı anda yararlanılabilir. Ancak matrahların toplamı toplam
+  kurumlar vergisi matrahını aşmamalıdır. İhracata konu olan imalat kazancı
+  varsa bu matrah için tek indirim uygulanır — mükelleflerin en yüksek puanı
+  tercih etmesi önerilir.
+
+  ## KVK 32/A (Yatırım Teşvik) ile İlişki
+  KVK 32/A kapsamında indirimli kurumlar vergisi uygulanan yatırım kazancı
+  KVK 32/8 kapsamı dışındadır. Matrah ayrıştırması yapılırken 32/A matrahı
+  ihracat matrahına dahil edilmemelidir.
+
+  ## YİAKV Etkisi
+  KVK 32/8 ihracat kazancı indirimi YİAKV (KVK 32/C) matrahından DÜŞÜLEMEZ.
+  Beyanname 740. satırında indirimli oran uygulaması olarak yansır.
+
+  ## İhracat Belgesi Zorunluluğu
+  Döviz alım belgeleri (DAB), gümrük beyannameleri ve ihracat hasılatını
+  gösteren banka kayıtlarının dosyada bulundurulması şarttır. Belgesiz
+  ihracat hasılatı indirime konu edilemez.
+
+  ## Yetkilendirilmiş Yükümlü (YY) Statüsü
+  YY statüsündeki kurumların ilave teşvik unsurlarından yararlanıp
+  yararlanamayacağı gümrük mevzuatı çerçevesinde ayrıca değerlendirilmelidir.
+
+muhasebe_kayitlari: |
+  ## İhracat Kazancı Vergi Hesabı
+  KVK Md.32/8 uyarınca ihracat kazancına %20 efektif oran uygulanır.
+  Normal oran (%25) ile indirimli oran (%20) arasındaki fark vergi tasarrufu
+  olarak kayıtlara yansımaz; vergi gideri doğrudan indirimli oran üzerinden hesaplanır.
+
+  Borç: 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (İndirimli KV tutarı)
+  Alacak: 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülükler Karşılığı
+  Açıklama: KVK Md.32/8 — İhracat kazancına %20 indirimli KV uygulaması.
+
+  ## Beyanname
+  İhracat matrahı 740. satırda indirimli oran kapsamında raporlanır.
+  İhracat kazancı = 740. satır matrahı
+  Uygulanan oran = %20 (5 puan indirimli)
+  Beyanname 740. satır tutarı = İhracat Kazancı × %20
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: İhracat Gümrük Beyannameleri
+    detay: "Dönem içinde gerçekleştirilen ihracata ait gümrük çıkış beyannameleri. İhracat hasılatının ve gerçekleşme tarihinin teyidinde kullanılır. Tüm ihracat işlemleri için temin edilmelidir."
+    temin_yeri: Gümrük İdaresi / Şirket Lojistik Birimi
+  - kategori: zorunlu
+    "no": 2
+    baslik: İhracat Hasılatı Tablosu
+    detay: "Dönem içindeki tüm ihracat işlemlerini, hasılat tutarlarını, döviz cinslerini ve TL karşılıklarını gösteren özet tablo. Oranlama yöntemi için ihracat/toplam hasılat oranının hesaplanmasında esas alınır."
+    temin_yeri: Muhasebe / Mali İşler Birimi
+  - kategori: zorunlu
+    "no": 3
+    baslik: Matrah Ayrıştırma / Oranlama Hesabı
+    detay: "Direkt yöntemde: ihracat faaliyetine ait gelir-gider hesap dökümleri. Oranlama yönteminde: ihracat hasılatı / toplam hasılat oranı ve ihracat matrahı hesaplama tablosu. YMM çalışma dosyasında bulunmalıdır."
+    temin_yeri: YMM Çalışma Dosyası / Muhasebe
+  - kategori: zorunlu
+    "no": 4
+    baslik: Bankacılık DAB Belgeleri (Döviz Alım Belgeleri)
+    detay: "İhracat bedellerinin yurda getirildiğini ve bankaya bozdurulduğunu gösteren döviz alım belgeleri. İhracat hasılatının belgelenmesinde zorunludur."
+    temin_yeri: Banka
+  - kategori: destekleyici
+    "no": 5
+    baslik: Yetkilendirilmiş Yükümlü Statü Belgesi
+    detay: "Kurum YY statüsüne sahipse Ticaret Bakanlığı tarafından düzenlenen YY sertifikası. YY statüsünün sunduğu ilave imkânların değerlendirilmesinde kullanılır."
+    temin_yeri: Ticaret Bakanlığı / Gümrük ve Dış Ticaret Birimi
+  - kategori: destekleyici
+    "no": 6
+    baslik: KVK 32/7 ve 32/A Matrah Çakışma Analizi
+    detay: "Kurumun imalat veya yatırım teşvik indiriminden de yararlandığı durumlarda matrahların çakışmadığını ve toplamlarının toplam matrahı aşmadığını gösteren analiz tablosu."
+    temin_yeri: YMM Çalışma Dosyası
+
+k_checklist:
+  - id: K1
+    soru: "İhracat faaliyetinden elde edilen kazancın varlığı ve döneme ait gümrük beyannameleri teyit edildi mi?"
+    referans: "KVK Md.32/8 | 7491 sayılı Kanun"
+  - id: K2
+    soru: "Yetkilendirilmiş yükümlü (YY) durumu değerlendirildi mi? (Varsa ilave avantajlar incelendi mi?)"
+    referans: "KVK Md.32/8 | Gümrük Mevzuatı"
+  - id: K3
+    soru: "Matrah belirleme yöntemi seçildi mi? (Direkt — ayrı muhasebe hesapları, veya Oranlama — hasılat oranlaması)"
+    referans: "KVK Md.32/8 | GİB Rehberi"
+  - id: K4
+    soru: "Oranlama yöntemi kullanılıyorsa ihracat ve toplam hasılat verileri temin edildi mi ve oran doğrulandı mı?"
+    referans: "KVK Md.32/8"
+  - id: K5
+    soru: "KVK 32/7 (imalat indirimi) ile çakışma analizi yapıldı mı? (Matrahların toplamı toplam matrahı aşıyor mu?)"
+    referans: "KVK Md.32/7 — Md.32/8 çakışma kuralı"
+  - id: K6
+    soru: "KVK 32/A (yatırım teşvik) ile matrah örtüşmesi kontrol edildi mi? (32/A matrahı 32/8'den ayrıştırıldı mı?)"
+    referans: "KVK Md.32/A — Md.32/8 ilişkisi"
+  - id: K7
+    soru: "Yıllık ihracat beyannamesi ve dönem sonu ihracat tutarları muhasebe kayıtlarıyla uyumlu mu?"
+    referans: "KVK Md.32/8 | Gümrük Beyannamesi"
+  - id: K8
+    soru: "Döviz geliri belgeleri (DAB — Döviz Alım Belgesi) temin edildi mi ve ihracat hasılatıyla eşleşiyor mu?"
+    referans: "KVK Md.32/8 | Kambiyo Mevzuatı"
+  - id: K9
+    soru: "Muhasebe kaydı ve beyanname 740. satır tutarı indirimli oran (%20) üzerinden doğru hesaplandı mı?"
+    referans: "KVK Md.32/8 | KV Beyannamesi 740. Satır"

@@ -1,0 +1,219 @@
+ic_kod: kvk5_1a_istirak_tam_mukellefiyet
+baslik: İştirak Kazancı İstisnası — Tam Mükellef Kurumlardan Elde Edilen (KVK 5/1-a)
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 297 }
+  - { donem: 2026, kod: 297 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-a (Tam mükellef kurumların iştiraklerinden elde ettikleri kazançlar)
+  - KVK Madde 15/2 (Kâr dağıtımı stopajı — %10)
+  - GVK Madde 94/6-b (Kâr payı tevkifatı)
+  - GİB KV Beyan Rehberi Mart 2026 (Yayın No:606)
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+coklu_instance: true
+yururluk_araligi:
+  baslangic: "2006-01-01"
+  bitis: null
+
+ana_kategori: istirak_kazanc_istisnalari
+
+wizard_agaci:
+  tetikleyici_soru: "Tam mükellefiyete tabi başka bir kurumun sermayesine katılmadan kâr payı (iştirak kazancı) elde ettiniz mi?"
+  info_modal: |
+    ## KVK 5/1-a — Tam Mükellef Kurumlardan Elde Edilen İştirak Kazancı İstisnası
+
+    Tam mükellefiyete tabi kurumların, yine tam mükellefiyete tabi başka bir kurumun
+    sermayesine katılmalarından (iştirakten) elde ettikleri kâr payları **%100 oranında**
+    kurumlar vergisinden istisnadır.
+
+    ### Temel Özellikler
+
+    - **Asgari hisse oranı şartı yoktur.** %1 hisse ile de tam istisnadan yararlanılır.
+    - **Asgari elde tutma süresi şartı yoktur.** (KVK 5/1-b'den farklı olarak)
+    - Her iki taraf da **tam mükellef kurum** olmalıdır.
+    - Dağıtımı yapan kurumun dağıttığı kârı üzerinden **kurumlar vergisi ödemiş olması** gerekir.
+    - AŞ ve Ltd.Şti. kâr paylarının tamamı bu kapsamda değerlendirilebilir.
+
+    ### Stopaj (Tevkifat) Mekanizması
+
+    - Dağıtımı yapan kurum **%10 stopaj** keser (KVK 15/2, GVK 94/6-b).
+    - Elde eden kurumun hesaplarına geçen tutar **brüt (stopaj öncesi) tutardır**.
+    - Kesilen stopaj, kurumun hesaplanacak kurumlar vergisinden **mahsup edilebilir**.
+    - İstisna brüt kâr payı tutarına uygulanır — net tutar değil.
+
+    ### YİAKV İlişkisi
+
+    İştirak kazancı istisnasına konu kâr payları, Yurt İçi Asgari Kurumlar Vergisi (KVK 32/C)
+    matrahından düşülür. İstisnadan yararlanan tutar YİAKV hesaplamasında dikkate alınmaz.
+
+    ### KVK 5/1-b ile Fark
+
+    Bu kalem **yurt içi** tam mükellef kurumlardan elde edilen kâr payları içindir.
+    Yurt dışı iştiraklerden elde edilen kazançlar KVK 5/1-b kapsamında ayrı değerlendirilir.
+  kapi_sorulari:
+    - id: tam_mukellef_dagitan_kurum
+      soru: "Kâr payı dağıtan kurum Türkiye'de tam mükellefiyete tabi bir kurum mu? (AŞ, Ltd.Şti., vb.)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Dağıtan kurum yurt içinde tam mükellef olmalıdır. Yurt dışı iştiraklere KVK 5/1-b uygulanır."
+    - id: sermaye_katilimi_var_mi
+      soru: "Kâr payını dağıtan kurumun sermayesine iştirak edilmiş mi? (Hisse senedi veya iştirak payı)"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sadece sermaye katılımından elde edilen kâr payları istisna kapsamındadır. Borç faizleri veya hizmet bedelleri kapsam dışıdır."
+    - id: fiili_dagitim_yapildi_mi
+      soru: "Kâr dağıtım kararı alınmış ve kâr payı fiilen ödenmiş mi?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Sadece tahakkuk etmiş değil, fiilen dağıtıma konu edilmiş kâr payları istisna kapsamındadır."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: dagitan_kurum_unvani
+      etiket: "Kâr payı dağıtan kurumun unvanı"
+      tip: metin
+      zorunlu: true
+      yardim: "Kâr payını dağıtan tam mükellef kurumun tam ticaret unvanı. Birden fazla iştirak için her biri ayrı instance olarak eklenir."
+    - id: dagitan_kurum_vkn
+      etiket: "Dağıtan kurumun VKN (Vergi Kimlik Numarası)"
+      tip: metin
+      zorunlu: true
+      yardim: "10 haneli VKN. Dağıtan kurumun tam mükellefiyetinin teyidi için gereklidir."
+    - id: istirak_orani
+      etiket: "İştirak oranı (%)"
+      tip: sayi
+      zorunlu: false
+      yardim: "Sermayeye katılım oranı. İstisna için asgari oran şartı yoktur; bilgi amaçlı girilir."
+    - id: brut_kar_payi
+      etiket: "Brüt kâr payı tutarı (TL) — Stopaj öncesi tutar"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Stopaj kesilmeden önceki brüt kâr payı tutarı. Net kâr payı aldıysanız:
+        Brüt = Net / 0,90 (stopaj oranı %10 ise)
+        İstisna brüt tutar üzerinden hesaplanır.
+    - id: tevkifat_tutari
+      etiket: "Kesilen stopaj (tevkifat) tutarı (TL)"
+      tip: para
+      zorunlu: false
+      yardim: "Dağıtan kurum tarafından kesilen %10 stopaj tutarı (KVK 15/2). Hesaplanan KV'den mahsup edilebilir. Boş bırakılırsa brüt × %10 olarak hesaplanır."
+    - id: kar_dagitim_yili
+      etiket: "Kâr dağıtımının ait olduğu dönem"
+      tip: metin
+      zorunlu: false
+      yardim: "Dağıtılan kârın ait olduğu hesap dönemi (örn. 2024). Bilgi amaçlı."
+  formuller:
+    hesaplanan_tevkifat: "brut_kar_payi * 0.10"
+    efektif_tevkifat: "tevkifat_tutari if tevkifat_tutari else hesaplanan_tevkifat"
+    istisna_tutari: "brut_kar_payi"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "brut_kar_payi > 0"
+      hata: "Brüt kâr payı tutarı sıfırdan büyük olmalıdır."
+    - kural: "istirak_orani <= 100 if istirak_orani else true"
+      hata: "İştirak oranı %100'ü aşamaz."
+    - kural: "tevkifat_tutari <= brut_kar_payi if tevkifat_tutari else true"
+      hata: "Stopaj tutarı brüt kâr payını aşamaz."
+
+denetci_notlari: |
+  ## I. KVK 5/1-a — İştirak Kazancı İstisnası (Tam Mükellef)
+
+  Tam mükellef kurumların, tam mükellef başka kurumların sermayesine katılmalarından
+  elde ettikleri kâr paylarının TAMAMI kurumlar vergisinden istisnadır.
+
+  FORMÜL: İstisna Tutarı = Brüt Kâr Payı (Tevkifat Öncesi)
+
+  ## II. KVK 5/1-b ile Temel Farklar
+
+  - KVK 5/1-a → Yurt içi tam mükellef kurumlardan kâr payı — asgari oran veya süre YOKTUR
+  - KVK 5/1-b → Yurt dışı iştirakten kâr payı — en az %10 iştirak + 1 yıl elde tutma şartları
+  - İki kalem karıştırılmamalıdır.
+
+  ## III. Stopaj (Tevkifat) Mahsubu
+
+  - Dağıtan kurum %10 stopaj keser (KVK 15/2, GVK 94/6-b)
+  - Elde eden kurumun eline geçen kâr payı BRÜT tutardır; stopaj mükellefi adına mahsup hakkı doğurur
+  - Brüt tutarın tamamı hem gelir hem istisna olarak beyannamede yer alır
+  - Kesilen stopaj KV'den mahsup edilir, iade veya nakden mahsup hakkı doğabilir
+
+  ## IV. Dağıtan Kurumun Kurumlar Vergisi Ödeme Şartı
+
+  - Dağıtılan kârın daha önce kurumlar vergisine tabi tutulmuş olması gerekir
+  - Kurumlar vergisinden muaf olan veya istisna kapsamında kalan kârların dağıtımı bu istisnadan yararlanamaz (GİB görüşleri incelenmeli)
+  - Özelge ile net olmayan durumlarda mukteza talep edilmesi önerilir
+
+  ## V. YİAKV Etkisi
+
+  - KVK 5/1-a istisnası YİAKV (KVK 32/C) matrahından DÜŞÜLÜR
+  - YİAKV çalışma kâğıdında A sütununda gösterilir (istisna/indirim olarak)
+
+  ## VI. Birden Fazla İştirak
+
+  - Her iştirak için ayrı çalışma kâğıdı (coklu_instance: true)
+  - Tüm iştirakler toplamı beyanname 297. satırına aktarılır
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: Kâr Dağıtım Kararı (Genel Kurul veya Ortaklar Kurulu)
+    detay: "Kâr dağıtımına ilişkin genel kurul veya ortaklar kurulu kararı. Kararın tarihi, dağıtılan kâr tutarı ve iştirak payına düşen kısım belirtilmelidir."
+    temin_yeri: Dağıtan Kurum
+  - kategori: zorunlu
+    "no": 2
+    baslik: Stopaj Makbuzu / Vergi Kesintisi Belgesi
+    detay: "Dağıtan kurum tarafından düzenlenen vergi kesintisi makbuzu veya muhtasar beyanname özeti. Kesilen %10 stopaj tutarı mahsup için zorunludur."
+    temin_yeri: Dağıtan Kurum
+  - kategori: zorunlu
+    "no": 3
+    baslik: İştirak Teyit Belgesi (Hisse Senedi / Pay Defteri)
+    detay: "Dağıtan kurumun sermayesine katılımı gösteren hisse senedi, pay defteri kaydı veya MKK dökümü. Tam mükellef iştirak niteliğini teyit eder."
+    temin_yeri: Muhasebe / MKK
+  - kategori: zorunlu
+    "no": 4
+    baslik: Banka Dekontu (Kâr Payı Ödemesi)
+    detay: "Kâr payının fiilen ödendiğini gösteren banka dekontu veya hesap özeti."
+    temin_yeri: Banka
+  - kategori: destekleyici
+    "no": 5
+    baslik: Dağıtan Kurumun KV Beyannamesi veya Ödeme Belgesi
+    detay: "Dağıtılan kârın önceden kurumlar vergisine tabi tutulduğunu gösteren dağıtan kurumun KV beyannamesi veya ödeme belgesi. Tartışmalı durumlarda zorunludur."
+    temin_yeri: Dağıtan Kurum
+  - kategori: destekleyici
+    "no": 6
+    baslik: İştirak Muhasebe Kartı
+    detay: "Elde eden kurumun muhasebesindeki 240/242 İştirakler hesabı kartı. Brüt kâr payı kaydının teyidi."
+    temin_yeri: Muhasebe
+
+k_checklist:
+  - id: K1
+    soru: "Dağıtan kurum Türkiye'de tam mükellef kurum mu? (AŞ, Ltd.Şti., Kooperatif vb.)"
+    referans: "KVK Md.5/1-a"
+  - id: K2
+    soru: "Kâr dağıtım kararı alınmış ve fiilen ödenmiş mi? (Taahhüt değil, gerçekleşmiş)"
+    referans: "KVK Md.5/1-a | GİB Beyan Reh. 2026"
+  - id: K3
+    soru: "İstisna brüt (stopaj öncesi) tutar üzerinden mi hesaplandı?"
+    referans: "KVK Md.5/1-a | KVK Md.15/2"
+  - id: K4
+    soru: "Kesilen %10 stopaj tutarı KV mahsubunda dikkate alındı mı?"
+    referans: "KVK Md.15/2 | GVK Md.94/6-b"
+  - id: K5
+    soru: "Dağıtılan kârın daha önce KV'ye tabi tutulduğu teyit edildi mi?"
+    referans: "KVK Md.5/1-a uygulama şartı"
+  - id: K6
+    soru: "Yurt dışı iştirak kâr payı ile karıştırılmadı mı? (KVK 5/1-b ayrı kalem)"
+    referans: "KVK Md.5/1-a / 5/1-b ayrımı"
+  - id: K7
+    soru: "YİAKV matrahından düşüm etkisi değerlendirildi mi?"
+    referans: "KVK Md.32/C"
+  - id: K8
+    soru: "Birden fazla iştirak var ise her biri için ayrı çalışma kâğıdı hazırlandı mı?"
+    referans: "KVK Md.5/1-a"

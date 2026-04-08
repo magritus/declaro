@@ -1,6 +1,8 @@
-import { useState, useEffect, useRef } from 'react'
-import { useParams } from 'react-router-dom'
+import { useState, useEffect, useRef, useMemo } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import VeriGirisiForm from '@/components/VeriGirisiForm'
+import GYZVeriGirisi from '@/components/kalem/GYZVeriGirisi'
+import { downloadWithAuth } from '@/lib/downloadWithAuth'
 import ChecklistTab from '@/components/kalem/ChecklistTab'
 import BelgelerTab from '@/components/kalem/BelgelerTab'
 import {
@@ -12,6 +14,7 @@ import {
   useUpdateBelgeler,
 } from '@/api/kalem'
 import type { HesapSonucu, ChecklistDurum, BelgeDurum } from '@/api/kalem'
+import { useCalisma, useIstekListesiGuncelle } from '@/api/calisma'
 
 const ARA_ALAN_ETIKETLERI: Record<string, string> = {
   brut_kar_payi_tl: 'Brüt Kâr Payı (TL)',
@@ -99,18 +102,94 @@ function formatCurrency(value: number): string {
   }).format(value)
 }
 
+function parseInstanceNo(ic_kod: string): number | null {
+  const m = ic_kod?.match(/^.+_(\d+)$/)
+  return m ? parseInt(m[1]) : null
+}
+
+function baseIcKod(ic_kod: string): string {
+  const m = ic_kod?.match(/^(.+)_\d+$/)
+  return m ? m[1] : ic_kod
+}
+
 export default function KalemSayfasi() {
   const { calismaId, icKod } = useParams<{ calismaId: string; icKod: string }>()
+  const navigate = useNavigate()
 
   const [activeTab, setActiveTab] = useState<Tab>('veri')
   const [hesapSonucu, setHesapSonucu] = useState<HesapSonucu | null>(null)
   const [checklistDurum, setChecklistDurum] = useState<ChecklistDurum>({})
   const [belgeDurum, setBelgeDurum] = useState<BelgeDurum>({})
   const [kayitMesaji, setKayitMesaji] = useState<string | null>(null)
+  const [downloadHata, setDownloadHata] = useState<string | null>(null)
+
+  const handleExcelIndir = async () => {
+    setDownloadHata(null)
+    try {
+      await downloadWithAuth(
+        `/api/calisma/${calismaId}/export/kalem/${icKod}`,
+        `${icKod}.xlsx`,
+      )
+    } catch (e) {
+      setDownloadHata(e instanceof Error ? e.message : 'İndirme başarısız')
+    }
+  }
   const kayitMesajiTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const { data: kalem, isLoading: schemaYukleniyor, error: schemaHata } = useKalemSchema(icKod)
   const { data: kalemVeri } = useKalemVeri(calismaId, icKod)
+  const calismaIdNum = calismaId ? parseInt(calismaId) : undefined
+  const { data: calisma } = useCalisma(calismaIdNum)
+  const istekListesiGuncelle = useIstekListesiGuncelle(calismaIdNum)
+
+  // coklu_instance: istek listesindeki tüm instance'ları bul
+  const base = icKod ? baseIcKod(icKod) : ''
+  const tumInstances = useMemo(() => {
+    const liste: string[] = calisma?.istek_listesi ?? []
+    // Include legacy base entry (no suffix) and suffixed entries
+    return liste.filter((k) => {
+      if (k === base) return true
+      const m = k.match(/^(.+)_(\d+)$/)
+      return m ? m[1] === base : false
+    })
+  }, [calisma?.istek_listesi, base])
+
+  const ytbEkle = () => {
+    const liste: string[] = calisma?.istek_listesi ?? []
+    const nolar = tumInstances
+      .map((k) => parseInstanceNo(k))
+      .filter((n): n is number => n !== null)
+    const yeniNo = nolar.length > 0 ? Math.max(...nolar) + 1 : tumInstances.length + 1
+    const yeniKod = `${base}_${yeniNo}`
+    istekListesiGuncelle.mutate([...liste, yeniKod], {
+      onSuccess: () => navigate(`/calisma/${calismaId}/kalem/${yeniKod}`),
+    })
+  }
+
+  const instanceKaldir = () => {
+    if (!icKod || tumInstances.length <= 1) return
+    const liste: string[] = calisma?.istek_listesi ?? []
+    const yeni = liste.filter((k) => k !== icKod)
+    // Navigate to first remaining instance
+    const kalan = tumInstances.filter((k) => k !== icKod)
+    istekListesiGuncelle.mutate(yeni, {
+      onSuccess: () => navigate(`/calisma/${calismaId}/kalem/${kalan[0]}`),
+    })
+  }
+
+  // Schema'daki varsayilan değerleri form default'larına ekle (kayıtlı veri varsa üzerine geçmez)
+  const formDefaultValues = useMemo(() => {
+    const schemaDefaults: Record<string, string | number | boolean | null> = {}
+    if (kalem) {
+      for (const alan of kalem.hesaplama_sablonu.veri_girisi_alanlari) {
+        if (alan.varsayilan !== undefined && alan.varsayilan !== null) {
+          schemaDefaults[alan.id] = alan.varsayilan as string | number | boolean | null
+        }
+      }
+    }
+    const saved = kalemVeri?.girdi_verileri as Record<string, string | number | boolean | null> | null
+    return saved ? { ...schemaDefaults, ...saved } : (Object.keys(schemaDefaults).length > 0 ? schemaDefaults : undefined)
+  }, [kalem, kalemVeri])
 
   useEffect(() => {
     if (kalemVeri?.k_checklist_durumu) {
@@ -207,14 +286,27 @@ export default function KalemSayfasi() {
       {/* Header */}
       <div className="mb-6 flex items-start justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-primary">{kalem.baslik}</h1>
+          <h1 className="text-2xl font-bold text-primary flex items-center gap-2 flex-wrap">
+            {kalem.baslik}
+            {icKod && parseInstanceNo(icKod) !== null && (
+              <span className="text-base font-semibold bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">
+                #{parseInstanceNo(icKod)}
+              </span>
+            )}
+          </h1>
           {kalem.kisa_aciklama && (
             <p className="text-muted mt-1 text-sm">{kalem.kisa_aciklama}</p>
           )}
         </div>
         <div className="flex items-center gap-2 flex-shrink-0">
           <button
-            onClick={() => window.open(`/api/calisma/${calismaId}/export/kalem/${icKod}`, '_blank')}
+            onClick={() => navigate(`/calisma/${calismaId}/istek-listesi`)}
+            className="border border-border-default text-secondary px-3 py-1.5 rounded text-sm hover:bg-surface-raised flex items-center gap-1 transition-colors"
+          >
+            ← İstek Listesi
+          </button>
+          <button
+            onClick={handleExcelIndir}
             className="bg-green-600 text-white px-3 py-1.5 rounded text-sm hover:bg-green-700 flex items-center gap-1"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -226,10 +318,58 @@ export default function KalemSayfasi() {
         </div>
       </div>
 
+      {/* coklu_instance: instance navigasyon + ekle/kaldır */}
+      {kalem.coklu_instance && (
+        <div className="mb-5 p-3 bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded-lg flex items-center gap-2 flex-wrap">
+          <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 mr-1">YTB Listesi:</span>
+          {tumInstances.map((k, i) => {
+            const no = parseInstanceNo(k) ?? (i + 1)
+            const aktif = k === icKod
+            return (
+              <button
+                key={k}
+                onClick={() => navigate(`/calisma/${calismaId}/kalem/${k}`)}
+                className={`px-2.5 py-1 rounded text-xs font-semibold transition-colors ${
+                  aktif
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-white dark:bg-blue-900 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 hover:bg-blue-100 dark:hover:bg-blue-800'
+                }`}
+              >
+                YTB {no}
+              </button>
+            )
+          })}
+          <button
+            onClick={ytbEkle}
+            disabled={istekListesiGuncelle.isPending}
+            className="px-2.5 py-1 rounded text-xs font-semibold border border-dashed border-blue-400 text-blue-600 dark:text-blue-300 hover:bg-blue-100 dark:hover:bg-blue-900 transition-colors ml-1"
+          >
+            {istekListesiGuncelle.isPending ? '…' : '+ Yeni YTB Ekle'}
+          </button>
+          {tumInstances.length > 1 && (
+            <button
+              onClick={instanceKaldir}
+              disabled={istekListesiGuncelle.isPending}
+              className="ml-auto text-xs text-red-500 hover:text-red-700 border border-transparent hover:border-red-300 px-2 py-1 rounded transition-colors"
+              title="Bu YTB'yi kaldır"
+            >
+              Bu YTB'yi Kaldır
+            </button>
+          )}
+        </div>
+      )}
+
       {/* Başarı mesajı */}
       {kayitMesaji && (
         <div className="mb-4 p-3 bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-md text-green-700 dark:text-green-300 text-sm">
           {kayitMesaji}
+        </div>
+      )}
+
+      {/* Download hata */}
+      {downloadHata && (
+        <div className="mb-4 p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded-md text-red-700 dark:text-red-300 text-sm">
+          {downloadHata}
         </div>
       )}
 
@@ -256,20 +396,37 @@ export default function KalemSayfasi() {
 
       {activeTab === 'veri' && (
         <>
-          <VeriGirisiForm
-            alanlar={kalem.hesaplama_sablonu.veri_girisi_alanlari}
-            defaultValues={(kalemVeri?.girdi_verileri as Record<string, string | number | boolean | null>) ?? undefined}
-            onSubmit={handleVeriSubmit}
-            isLoading={hesaplaMutation.isPending || saveVeriMutation.isPending}
-            hesapSonucu={hesapSonucu ?? (kalemVeri?.istisna_tutari != null ? {
-              ic_kod: icKod ?? '',
-              istisna_tutari: kalemVeri.istisna_tutari,
-              ara_sonuclar: kalemVeri.ara_sonuclar ?? {},
-              hatalar: [],
-              uyarilar: [],
-              aciklama: '',
-            } : null)}
-          />
+          {icKod === 'gecmis_yil_zarari_mahsubu' ? (
+            <GYZVeriGirisi
+              defaultValues={formDefaultValues}
+              onSubmit={handleVeriSubmit}
+              isLoading={hesaplaMutation.isPending || saveVeriMutation.isPending}
+              hesapSonucu={hesapSonucu ?? (kalemVeri?.istisna_tutari != null ? {
+                ic_kod: icKod ?? '',
+                istisna_tutari: kalemVeri.istisna_tutari,
+                ara_sonuclar: kalemVeri.ara_sonuclar ?? {},
+                hatalar: [],
+                uyarilar: [],
+                aciklama: '',
+              } : null)}
+            />
+          ) : (
+            <VeriGirisiForm
+              alanlar={kalem.hesaplama_sablonu.veri_girisi_alanlari}
+              defaultValues={formDefaultValues}
+              onSubmit={handleVeriSubmit}
+              isLoading={hesaplaMutation.isPending || saveVeriMutation.isPending}
+              ticariKarZarar={calisma?.ticari_kar_zarar ?? null}
+              hesapSonucu={hesapSonucu ?? (kalemVeri?.istisna_tutari != null ? {
+                ic_kod: icKod ?? '',
+                istisna_tutari: kalemVeri.istisna_tutari,
+                ara_sonuclar: kalemVeri.ara_sonuclar ?? {},
+                hatalar: [],
+                uyarilar: [],
+                aciklama: '',
+              } : null)}
+            />
+          )}
           {hesaplaMutation.error && (
             <div className="mt-3 p-3 bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 rounded text-sm text-red-700 dark:text-red-300">
               Hesaplama hatası: {hesaplaMutation.error instanceof Error ? hesaplaMutation.error.message : 'Bilinmeyen hata'}

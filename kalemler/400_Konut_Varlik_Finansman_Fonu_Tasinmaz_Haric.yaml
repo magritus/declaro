@@ -1,0 +1,315 @@
+ic_kod: kvf_portfoy_tasinmaz_haric
+baslik: Konut Finansmanı Fonu ve Varlık Finansmanı Fonu Portföy İşletmeciliği Kazancı
+ust_kalem: null
+
+beyanname_kodlari:
+  - { donem: 2025, kod: 400 }
+  - { donem: 2026, kod: 400 }
+
+mevzuat_dayanagi:
+  - KVK Madde 5/1-d
+  - 5582 Sayılı Konut Finansmanı Sistemine İlişkin Çeşitli Kanunlarda Değişiklik Yapılması Hakkında Kanun
+  - SPK Tebliği III-58.1 (Konut Finansmanı Fonlarına İlişkin Esaslar Tebliği)
+  - SPK Tebliği III-58.2 (Varlık Finansmanı Fonlarına İlişkin Esaslar Tebliği)
+  - Sermaye Piyasası Kanunu (6362 Sayılı) Madde 57-60
+  - 1 Seri No.lu KV Genel Tebliği Bölüm 5.4
+
+beyanname_bolumu: zarar_olsa_dahi
+yiakv_etkisi: dusulur
+durum: aktif
+yururluk_araligi:
+  baslangic: "2007-03-06"
+  bitis: null
+
+ana_kategori: portfoy_isletmeciligi
+
+wizard_agaci:
+  tetikleyici_soru: "Kurum, SPK denetiminde 5582 Sayılı Kanun veya SPK Tebliği III-58.1/III-58.2 kapsamında kurulmuş bir Konut Finansmanı Fonu (KFF) veya Varlık Finansmanı Fonu (VFF) mudur?"
+  info_modal: |
+    ## Konut Finansmanı Fonu ve Varlık Finansmanı Fonu Portföy İşletmeciliği Kazancı
+
+    **KVK Madde 5/1-d** kapsamında Türkiye'de Sermaye Piyasası Kanunu ve ilgili SPK tebliğleri çerçevesinde kurulan **Konut Finansmanı Fonlarının (KFF)** ve **Varlık Finansmanı Fonlarının (VFF)** portföy işletmeciliğinden doğan kazançları kurumlar vergisinden **%100 tam istisna** olarak muaftır.
+
+    **Bu satır (400): Taşınmaz GELİRİ HARİÇ portföy işletmeciliği kazancını kapsar.**
+
+    Her iki fon türünün (KFF ve VFF) istisnası tek bir beyanname satırında (400) gösterilir; birden fazla fon türü varsa kazançlar toplanarak tek tutarda yazılır.
+
+    ---
+
+    ### Konut Finansmanı Fonu (KFF) Nedir?
+
+    KFF; konut kredisi vb. konut finansmanı alacaklarının menkul kıymetleştirilmesi amacıyla 5582 Sayılı Kanun ve **SPK Tebliği III-58.1** kapsamında kurulan **mortgage destekli menkul kıymet (MDMK)** ihraç fonudur.
+
+    - **İşleyiş:** Bankalar ve finans kuruluşlarının kullandırdığı konut kredisi alacakları fona devredilir. Fon bu alacakları teminat göstererek ipoteğe dayalı menkul kıymet (İDMK) veya ipotek teminatlı menkul kıymet (İTMK) ihraç eder.
+    - **Varlık havuzu:** Konut kredisi alacakları, ipotek teminatlı menkul kıymetler, Türk Devleti iç borçlanma araçları ve SPK onaylı diğer varlıklar.
+    - **Amaç:** Konut finansmanı piyasasının geliştirilmesi ve uzun vadeli fon sağlanması.
+    - **Denetim:** SPK Tebliği III-58.1 kapsamında SPK denetimi.
+
+    ### Varlık Finansmanı Fonu (VFF) Nedir?
+
+    VFF; konut finansmanı dışındaki alacakların (tüketici kredisi, otomobil kredisi, kredi kartı alacakları, ticari alacaklar vb.) menkul kıymetleştirilmesi amacıyla **SPK Tebliği III-58.2** kapsamında kurulan **varlığa dayalı menkul kıymet (VDMK)** ihraç fonudur.
+
+    - **İşleyiş:** Finansal kuruluşların çeşitli türdeki alacakları fona devredilir. Fon bu alacakları teminat göstererek varlığa dayalı menkul kıymet ihraç eder.
+    - **Varlık havuzu:** Tüketici kredisi alacakları, kredi kartı alacakları, finansal kiralama alacakları, ihracat alacakları ve SPK onaylı diğer varlıklar.
+    - **Amaç:** Sermaye piyasası yoluyla alternatif finansman ve risk dağılımı.
+    - **Denetim:** SPK Tebliği III-58.2 kapsamında SPK denetimi.
+
+    ### KFF ve VFF'de Portföy İşletmeciliği Kazancı
+
+    Her iki fon türünde portföy işletmeciliği kazancı; fonun tuttuğu varlık havuzundan elde edilen:
+    - Konut/tüketici/ticari alacak faiz gelirleri ve tahsilatları
+    - Menkul kıymet faiz ve değerleme gelirleri
+    - Fon bünyesindeki devlet tahvili/hazine bonosu gelirleri
+    - Varlık havuzu satış veya devir kazançları
+
+    **Bu satıra yazılmayacaklar:**
+    - Konut finansmanı/varlık finansmanı kapsamı dışında kalan gelirler
+    - Fon yöneticisi kurumun aldığı yönetim ücreti ve komisyon gelirleri
+    - Taşınmaz niteliğindeki varlıklardan elde edilen kazançlar (bu satır taşınmaz hariç)
+
+    ### Hukuki Koşullar
+
+    - Fonun SPK nezdinde tescilli ve yetkili olması zorunludur.
+    - İstisna yalnızca portföy işletmeciliğinden doğan kazançlara uygulanır.
+    - Fon kuruluş belgesi ve SPK tescil yazısı denetimde ibraz edilmelidir.
+  kapi_sorulari:
+    - id: kff_vff_tescil
+      soru: "Kurum SPK nezdinde tescilli bir Konut Finansmanı Fonu (KFF) veya Varlık Finansmanı Fonu (VFF) mudur?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "KVK 5/1-d koşulu: 5582 Sayılı Kanun ve SPK Tebliği III-58.1 veya III-58.2 kapsamında kurulmuş ve SPK denetiminde faaliyet gösteren fon olması zorunludur."
+    - id: portfoy_ici_disi_ayrim
+      soru: "Portföy işletmeciliği kazancı, yönetim ücreti ve portföy dışı gelirlerden muhasebede ayrıştırıldı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "İstisna yalnızca portföy işletmeciliğinden doğan kazançlara uygulanır. Fon yöneticisinin aldığı yönetim ücreti ve komisyon bu satıra dahil edilemez."
+    - id: varlık_havuzu_tanim
+      soru: "Varlık havuzu SPK tebliğine (III-58.1 veya III-58.2) uygun olarak tanımlandı ve kayıt altına alındı mı?"
+      tip: evet_hayir
+      zorunlu_cevap: evet
+      aciklama: "Portföy kapsamı SPK tebliğine uygun belirlenmeli. KFF için konut finansmanı alacak türleri, VFF için uygun varlık havuzu SPK onaylı olmalıdır."
+    - id: kff_vff_birden_fazla
+      soru: "Birden fazla KFF veya VFF mevcut ise tüm fonların kazançları bu satırda toplanarak gösterilecek mi?"
+      tip: evet_hayir
+      aciklama: "Her iki fon türünün istisnası 400 numaralı tek satırda gösterilir. Birden fazla fon varsa toplamı bu satıra yazılır; fon bazında detay çalışma kâğıdında tutulur."
+
+parametreler:
+  oran: 1.0
+
+hesaplama_sablonu:
+  veri_girisi_alanlari:
+    - id: fon_turu
+      etiket: "Fon türü"
+      tip: secenek
+      secenekler:
+        - Konut_Finansmanı_Fonu
+        - Varlık_Finansmanı_Fonu
+        - KFF_ve_VFF_birlikte
+      zorunlu: true
+    - id: konut_alacak_faiz
+      etiket: "Konut finansmanı alacakları faiz ve tahsilat gelirleri (TL) — KFF için"
+      tip: para
+      zorunlu: false
+      yardim: |
+        KFF'nin tuttuğu konut kredisi alacak havuzundan elde edilen faiz gelirleri ve
+        anapara tahsilatları. İDMK (ipoteğe dayalı menkul kıymet) ve İTMK (ipotek teminatlı
+        menkul kıymet) faiz gelirleri dahildir.
+    - id: varlik_havuzu_faiz
+      etiket: "Varlık havuzu alacak faiz ve tahsilat gelirleri (TL) — VFF için"
+      tip: para
+      zorunlu: false
+      yardim: |
+        VFF'nin tuttuğu alacak havuzundan (tüketici kredisi, kredi kartı, finansal kiralama,
+        ticari alacak vb.) elde edilen faiz gelirleri ve anapara tahsilatları.
+        VDMK (varlığa dayalı menkul kıymet) faiz gelirleri dahildir.
+    - id: mkts_faiz_deger_artisi
+      etiket: "Fon portföyündeki devlet tahvili, bono ve diğer MKTS faiz ve değerleme gelirleri (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        KFF ve VFF'nin likidite rezervi olarak tuttuğu devlet tahvili, hazine bonosu ve
+        diğer SPK onaylı menkul kıymetlerden elde edilen faiz ve dönem sonu değerleme artışları.
+    - id: varlik_satis_kazanci
+      etiket: "Varlık havuzu devir/satış kazançları (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Fon varlık havuzundaki alacakların üçüncü taraflara devri veya satışından doğan kazançlar.
+        Maliyet hesabında uygulanan yöntem belgelenmelidir.
+    - id: diger_portfoy_gelir
+      etiket: "Diğer portföy işletmeciliği gelirleri (TL)"
+      tip: para
+      zorunlu: false
+    - id: portfoy_giderleri
+      etiket: "Portföy işletme giderleri (eksi) (TL)"
+      tip: para
+      zorunlu: false
+      yardim: |
+        Fon varlık havuzu yönetimi, saklama, bağımsız denetim ve portföy işletmeciliği ile
+        doğrudan ilişkili diğer giderler. Yönetim ücreti olarak fon kurucusuna ödenen tutar
+        bu alana dahil edilmez; o tutar portföy dışı olarak ayrı muhasebe hesabında izlenir.
+    - id: fon_portfoy_kazanci
+      etiket: "Net KFF/VFF portföy işletmeciliği kazancı — Beyan edilecek istisna tutarı (TL)"
+      tip: para
+      zorunlu: true
+      yardim: |
+        Tüm portföy gelirlerinin toplamından portföy giderleri düşüldükten sonra kalan
+        net kazanç. Birden fazla fon (KFF+VFF) varsa toplamı girilir; fon bazında detay
+        çalışma kâğıdı ekine eklenir. Bu tutar beyanname 400 satırına yazılır.
+  formuller:
+    portfoy_gelir_toplam: "konut_alacak_faiz + varlik_havuzu_faiz + mkts_faiz_deger_artisi + varlik_satis_kazanci + diger_portfoy_gelir"
+    net_portfoy_kazanci_kontrol: "portfoy_gelir_toplam - portfoy_giderleri"
+    istisna_tutari: "fon_portfoy_kazanci"
+  sonuc_alan: istisna_tutari
+  validasyonlar:
+    - kural: "fon_portfoy_kazanci != 0"
+      hata: "İstisna tutarı sıfır olamaz."
+    - kural: "portfoy_giderleri >= 0"
+      hata: "Portföy giderleri negatif girilemez."
+
+denetci_notlari: |
+  ## I. Yasal Dayanak — KVK Md.5/1-d
+
+  KVK Madde 5/1-d: Türkiye'de Sermaye Piyasası Kanunu ve ilgili SPK tebliğleri kapsamında
+  kurulan Konut Finansmanı Fonları (KFF) ve Varlık Finansmanı Fonlarının (VFF) portföy
+  işletmeciliğinden doğan kazançları kurumlar vergisinden %100 tam istisna olarak muaftır.
+  Beyanname "Zarar Olsa Dahi İndirilecek" bölümünde 400 numaralı satırda gösterilir.
+
+  ## II. Fon Türü Kimliği ve Hukuki Çerçeve
+
+  KFF (Konut Finansmanı Fonu):
+  - Dayanak: 5582 Sayılı Kanun + SPK Tebliği III-58.1
+  - Amaç: Konut kredisi alacaklarının menkul kıymetleştirilmesi (İDMK/İTMK ihracı)
+  - Varlık havuzu: Konut kredisi alacakları, ipotek teminatlı araçlar, Devlet tahvili/bonosu
+  - Denetim: SPK
+
+  VFF (Varlık Finansmanı Fonu):
+  - Dayanak: SPK Tebliği III-58.2 + 6362 Sayılı SPKn Md.57-60
+  - Amaç: Konut dışı alacakların menkul kıymetleştirilmesi (VDMK ihracı)
+  - Varlık havuzu: Tüketici kredisi, kredi kartı, finansal kiralama, ticari alacaklar ve diğer
+    SPK onaylı varlıklar
+  - Denetim: SPK
+
+  Her iki fon türünün istisnası 400 NUMARALI TEK SATIRDA gösterilir.
+  Birden fazla fon varsa toplamı yazılır; fon bazında detay çalışma kâğıdı ekine eklenir.
+
+  ## III. Portföy İçi / Dışı Ayrımı (KRİTİK)
+
+  PORTFÖY İÇİ (İstisna — 400 satırı):
+  - Konut/tüketici/ticari alacak havuzu faiz ve tahsilat gelirleri
+  - MDMK/VDMK faiz ve değerleme gelirleri
+  - Fon bünyesindeki devlet tahvili/bono faiz ve değerleme artışları
+  - Varlık havuzu devir/satış kazançları
+
+  PORTFÖY DIŞI (Vergiye Tabi — 400 satırına YAZILMAZ):
+  - Fon kurucusu/yöneticisine ödenen yönetim ücreti (yönetici şirket geliri)
+  - Varlık havuzu kapsamı dışındaki alacak ve gelirler
+  - Portföyde kayıtlı olmayan finansman araçlarından gelirler
+
+  ## IV. KFF'de İDMK/İTMK Gelirlerinin Niteliği
+
+  İDMK (İpoteğe Dayalı Menkul Kıymet): Konut kredisi alacak havuzuna dayandırılmış, fon
+  ihraçlarından elde edilen faiz ve değerleme artışları portföy işletmeciliği kazancı sayılır.
+
+  İTMK (İpotek Teminatlı Menkul Kıymet): Konut kredisi varlıkları teminat gösterilerek
+  ihraç edilir; anapara ve faiz ödemeleri fon portföy gelirleri içinde yer alır.
+
+  KFF'de taşınmazın kendisinden gelir elde edilmesi (kira vb.) mümkün değildir; taşınmaz
+  yalnızca konut kredisi teminatı olarak fonun bilançosuna yansır. Bu nedenle 400 satırı
+  taşınmaz hariç olarak nitelendirilmiştir.
+
+  ## V. VFF'de VDMK Gelirlerinin Niteliği
+
+  Varlığa Dayalı Menkul Kıymet (VDMK): VFF bünyesindeki tüketici/ticari alacak havuzundan
+  yapılan ihraçların faiz ve değerleme gelirleri portföy işletmeciliği kazancıdır.
+  Alacak havuzunun türü (tüketici, kredi kartı, finansal kiralama, ticari) fark etmeksizin
+  portföy kapsamında değerlendirilir; SPK tebliğine uygunluk esas alınır.
+
+  ## VI. Birden Fazla Fon Durumu
+
+  Aynı kurumun birden fazla KFF veya VFF'si varsa tüm fonların net portföy işletmeciliği
+  kazançları toplanarak tek tutarda 400 satırına yazılır. Fon bazında ayrıştırma çalışma
+  kâğıdında tutulur ve beyanname ekine eklenir.
+
+  ## VII. YİAKV (KVK Md.32/C) Etkisi
+
+  KVK 5/1-d kapsamındaki KFF/VFF portföy işletmeciliği kazancı YİAKV matrahından
+  DÜŞÜLEBİLİR. Dönem tebliğleri ve GİB açıklamaları ile teyit edilmelidir.
+
+  ## VIII. Risk Alanları
+
+  1. Fon yöneticisi kurumun yönetim/komisyon gelirinin portföy kazancına dahil edilmesi
+  2. Varlık havuzu dışı alacak gelirinin 400 satırına yazılması (portföy dışı hata)
+  3. Birden fazla fonun kazançlarının hatalı ayrıştırılarak çifte beyan riski
+  4. KFF alacak havuzunda temerrüt karşılıklarının portföy kazancına etkisinin
+     hatalı değerlendirilmesi
+  5. VFF'de varlık devir kazancının hesabında maliyet yöntemi tutarsızlığı
+  6. SPK tescil belgesi olmaksızın istisna uygulaması
+
+belge_listesi:
+  - kategori: zorunlu
+    "no": 1
+    baslik: SPK Tescil Belgesi (KFF ve/veya VFF)
+    detay: "Her fonun SPK nezdinde tescilini kanıtlayan güncel lisans/tescil belgesi. Fon türü (KFF veya VFF), kuruluş tarihi ve dayanak tebliğ (III-58.1 veya III-58.2) açıkça görünmeli."
+    temin_yeri: "SPK resmi yazısı veya tescil belgesi"
+  - kategori: zorunlu
+    "no": 2
+    baslik: Fon Kuruluş Sözleşmesi / İzahname (Varlık Havuzu Kapsamı İçin)
+    detay: "KFF/VFF'nin varlık havuzu türlerini, portföy yatırım stratejisini ve SPK tebliği kapsamındaki varlık limitlerini tanımlayan temel belge. Portföy içi/dışı ayrımının dayanağıdır."
+    temin_yeri: "SPK onaylı fon kuruluş sözleşmesi / izahname"
+  - kategori: zorunlu
+    "no": 3
+    baslik: Varlık Havuzu Dökümü (Dönem Başı ve Sonu)
+    detay: "Fon bünyesindeki alacak havuzunun dönem başı/sonu listesi: alacak türleri, tutarları, faiz oranları ve vadeler. Portföy kapsamı doğrulaması için zorunludur. Birden fazla fon varsa her fon için ayrı döküm hazırlanır."
+    temin_yeri: "Saklama kuruluşu / Fon kayıt defteri / Alacak devir sözleşmeleri"
+  - kategori: zorunlu
+    "no": 4
+    baslik: Fon Gelir Tablosu ve Portföy İçi/Dışı Ayrım Belgesi
+    detay: "KFF/VFF'nin portföy işletmeciliği gelirlerini portföy dışı gelirlerden (yönetim ücreti vb.) ayıran muhasebe belgesi. Fon bazında ve birden fazla fon varsa konsolide gelir tablosu."
+    temin_yeri: "Muhasebe kayıtları / Fon muhasebe raporları"
+  - kategori: zorunlu
+    "no": 5
+    baslik: MDMK/VDMK İhraç ve Faiz Ödeme Tablosu
+    detay: "KFF'nin İDMK/İTMK ve VFF'nin VDMK ihraçlarının faiz ödeme takvimi ve dönem faiz giderleri. Portföy kazancından düşülen menkul kıymet faiz giderleri ile fon gelirlerinin mutabakatı."
+    temin_yeri: "SPK / Merkezi Kayıt Kuruluşu (MKK) / Fon saklama kuruluşu"
+  - kategori: zorunlu
+    "no": 6
+    baslik: Beyanname 400 Satırı Mutabakat Tablosu
+    detay: "Beyanname 400. satırındaki tutarın fon gelir tablosu ve bu çalışma kâğıdı veri girişi ile birebir uyumunu gösteren 3 kademe mutabakat belgesi: Muhasebe = Çalışma kâğıdı = Beyanname. Birden fazla fon varsa fon bazında ayrıştırma eki."
+    temin_yeri: "GİB e-Beyanname sistemi / Muhasebe çalışma kâğıdı"
+  - kategori: destekleyici
+    "no": 7
+    baslik: Bağımsız Denetim Raporu (KFF/VFF Faaliyet Dönem Raporu)
+    detay: "KFF/VFF'nin ilgili hesap dönemine ait bağımsız denetim raporu. Varlık havuzu büyüklüğü, gelir yapısı ve portföy kalitesinin teyidi için kullanılır."
+    temin_yeri: "Bağımsız denetim kuruluşu"
+  - kategori: destekleyici
+    "no": 8
+    baslik: Kredi Temerrüt Karşılıkları ve Değer Düşüklüğü Tablosu (KFF için)
+    detay: "KFF alacak havuzunda temerrüt/değer düşüklüğü karşılıklarının dökümü. Bu karşılıkların portföy kazancı hesabına etkisinin analizi."
+    temin_yeri: "Muhasebe kayıtları / Bağımsız değerleme raporu"
+
+k_checklist:
+  - id: K1
+    soru: "KFF/VFF'nin SPK tescil belgesi güncel ve geçerli mi? Fon türü (III-58.1 veya III-58.2) doğrulandı mı?"
+    referans: "KVK Md. 5/1-d | SPK Tebliği III-58.1 / III-58.2"
+  - id: K2
+    soru: "Varlık havuzu SPK tebliğine uygun tanımlandı mı? Portföy kapsamı dışındaki alacak ve gelirlerin 400 satırına dahil edilmediği teyit edildi mi?"
+    referans: "SPK Tebliği III-58.1/III-58.2 | Portföy içi/dışı ayrımı"
+  - id: K3
+    soru: "Fon yöneticisi/kurucusu kurumun yönetim ücreti ve komisyon gelirleri portföy dışı hesaplarda ayrı izleniyor mu? (400 satırına dahil edilmedi mi?)"
+    referans: "KVK Md. 5/1-d | Portföy dışı gelir ayrımı"
+  - id: K4
+    soru: "Birden fazla KFF veya VFF varsa tüm fon kazançları toplanarak tek satırda gösterildi; fon bazında detay çalışma kâğıdında mevcut mu?"
+    referans: "400 satırı: KFF+VFF toplamı | Fon bazında ayrıştırma"
+  - id: K5
+    soru: "KFF alacak havuzunda temerrüt karşılıklarının portföy kazancı hesabına etkisi analiz edildi mi?"
+    referans: "KFF varlık havuzu kalitesi | VUK karşılık hükümleri"
+  - id: K6
+    soru: "MDMK/VDMK ihraçlarının faiz giderleri portföy kazancından doğru şekilde düşüldü mü?"
+    referans: "KFF İDMK/İTMK | VFF VDMK faiz gider mutabakatı"
+  - id: K7
+    soru: "YİAKV (KVK Md.32/C) matrahında 400 istisnasının etkisi dönem tebliğleriyle teyit edildi mi?"
+    referans: "KVK Md. 32/C | YİAKV Tebliğleri"
+  - id: K8
+    soru: "Beyanname 400 satırı (3 kademe): Muhasebe = Çalışma kâğıdı = Beyanname uyumu sağlandı mı?"
+    referans: "3 kademe uyum kontrolü | 400 satır beyanname konumu"
