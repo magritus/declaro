@@ -14,6 +14,7 @@ export default defineConfig({
     port: 5173,
     allowedHosts: true,
     hmr: false,
+    ws: false,
     proxy: {
       '/api': {
         target: 'http://backend:8000',
