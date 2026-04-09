@@ -6,6 +6,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.deps import get_current_user, verify_mukellef_owner
 from app.db.models.mukellef import Mukellef
+from app.db.models.mukellef_yetki import MukellefYetki
 from app.db.models.user import User
 from app.db.session import get_db
 from app.schemas.mukellef import MukellefCreate, MukellefResponse, MukellefUpdate
@@ -30,6 +31,10 @@ async def mukellef_olustur(
 
     mukellef = Mukellef(**data.model_dump(), owner_id=current_user.id)
     db.add(mukellef)
+    await db.flush()
+    # Otomatik yetki kaydı oluştur
+    yetki = MukellefYetki(user_id=current_user.id, mukellef_id=mukellef.id)
+    db.add(yetki)
     await db.commit()
     await db.refresh(mukellef)
     logger.info("Mukellef created: id=%d owner=%d", mukellef.id, current_user.id)
@@ -43,12 +48,13 @@ async def mukellef_listele(
     db: AsyncSession = Depends(get_db),
     current_user: User = Depends(get_current_user),
 ):
-    result = await db.execute(
-        select(Mukellef)
-        .order_by(Mukellef.unvan)
-        .offset(skip)
-        .limit(limit)
-    )
+    q = select(Mukellef)
+    if current_user.role.value != "admin":
+        yetkili_ids = select(MukellefYetki.mukellef_id).where(MukellefYetki.user_id == current_user.id)
+        q = q.where(
+            (Mukellef.owner_id == current_user.id) | (Mukellef.id.in_(yetkili_ids))
+        )
+    result = await db.execute(q.order_by(Mukellef.unvan).offset(skip).limit(limit))
     return result.scalars().all()
 
 

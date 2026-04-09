@@ -25,6 +25,18 @@ export interface AdminStats {
   user_count: number
 }
 
+export interface MukellefKisa {
+  id: number
+  unvan: string
+  vkn: string
+  is_owner: boolean
+}
+
+export interface KullaniciSirketler {
+  yetkili_sirketler: MukellefKisa[]
+  tum_sirketler: MukellefKisa[]
+}
+
 export const adminApi = {
   listUsers: (params?: { page?: number; page_size?: number; role?: string; is_active?: boolean }) =>
     apiClient.get<UserListResponse>('/admin/users', { params }).then(r => r.data),
@@ -33,4 +45,10 @@ export const adminApi = {
     apiClient.patch<AdminUser>(`/admin/users/${id}`, data).then(r => r.data),
   deleteUser: (id: number) => apiClient.delete(`/admin/users/${id}`),
   getStats: () => apiClient.get<AdminStats>('/admin/stats').then(r => r.data),
+  getUserSirketler: (userId: number) =>
+    apiClient.get<KullaniciSirketler>(`/admin/users/${userId}/sirketler`).then(r => r.data),
+  addUserSirket: (userId: number, mukellefId: number) =>
+    apiClient.post(`/admin/users/${userId}/sirketler`, { mukellef_id: mukellefId }).then(r => r.data),
+  removeUserSirket: (userId: number, mukellefId: number) =>
+    apiClient.delete(`/admin/users/${userId}/sirketler/${mukellefId}`),
 }

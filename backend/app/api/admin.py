@@ -6,8 +6,15 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.deps import get_current_admin
 from app.db.models.mukellef import Mukellef
+from app.db.models.mukellef_yetki import MukellefYetki
 from app.db.models.user import User, UserRole
 from app.db.session import get_db
+from app.schemas.mukellef_yetki import (
+    KullaniciSirketlerResponse,
+    MukellefKisaResponse,
+    MukellefYetkiResponse,
+    YetkiIslemRequest,
+)
 from app.schemas.user import (
     AdminStatsResponse,
     AdminUpdateUserRequest,
@@ -156,4 +163,129 @@ async def get_stats(
         total_mukellefler=total_mukellefler,
         admin_count=admin_count,
         user_count=user_count,
+    )
+
+
+# ─── Kullanıcı – Şirket Yetki Yönetimi ───────────────────────────────────
+
+
+@router.get("/users/{user_id}/sirketler", response_model=KullaniciSirketlerResponse)
+async def get_user_sirketler(
+    user_id: int,
+    db: AsyncSession = Depends(get_db),
+    _: User = Depends(get_current_admin),
+):
+    # Kullanıcının var olduğunu kontrol et
+    user_result = await db.execute(select(User).where(User.id == user_id))
+    if not user_result.scalar_one_or_none():
+        raise HTTPException(status_code=404, detail="Kullanici bulunamadi")
+
+    # Yetkili şirket ID'leri (MukellefYetki tablosundan)
+    yetki_result = await db.execute(
+        select(MukellefYetki.mukellef_id).where(MukellefYetki.user_id == user_id)
+    )
+    yetkili_ids = set(yetki_result.scalars().all())
+
+    # Owner olduğu şirketler
+    owner_result = await db.execute(
+        select(Mukellef.id).where(Mukellef.owner_id == user_id)
+    )
+    owner_ids = set(owner_result.scalars().all())
+
+    # Birleşik yetkili set
+    tum_yetkili_ids = yetkili_ids | owner_ids
+
+    # Tüm şirketler
+    all_result = await db.execute(select(Mukellef).order_by(Mukellef.unvan))
+    all_mukellefler = all_result.scalars().all()
+
+    yetkili_sirketler = [
+        MukellefKisaResponse(
+            id=m.id, unvan=m.unvan, vkn=m.vkn, is_owner=(m.id in owner_ids)
+        )
+        for m in all_mukellefler
+        if m.id in tum_yetkili_ids
+    ]
+    tum_sirketler = [
+        MukellefKisaResponse(
+            id=m.id, unvan=m.unvan, vkn=m.vkn, is_owner=(m.owner_id == user_id)
+        )
+        for m in all_mukellefler
+    ]
+
+    return KullaniciSirketlerResponse(
+        yetkili_sirketler=yetkili_sirketler,
+        tum_sirketler=tum_sirketler,
+    )
+
+
+@router.post("/users/{user_id}/sirketler", response_model=MukellefYetkiResponse, status_code=201)
+async def add_user_sirket(
+    user_id: int,
+    data: YetkiIslemRequest,
+    db: AsyncSession = Depends(get_db),
+    current_admin: User = Depends(get_current_admin),
+):
+    # Kullanıcı ve mükellef var mı kontrol et
+    user_result = await db.execute(select(User).where(User.id == user_id))
+    if not user_result.scalar_one_or_none():
+        raise HTTPException(status_code=404, detail="Kullanici bulunamadi")
+    mukellef_result = await db.execute(select(Mukellef).where(Mukellef.id == data.mukellef_id))
+    if not mukellef_result.scalar_one_or_none():
+        raise HTTPException(status_code=404, detail="Mukellef bulunamadi")
+
+    # Zaten yetki var mı
+    existing = await db.execute(
+        select(MukellefYetki).where(
+            MukellefYetki.user_id == user_id,
+            MukellefYetki.mukellef_id == data.mukellef_id,
+        )
+    )
+    if existing.scalar_one_or_none():
+        raise HTTPException(status_code=409, detail="Bu yetki zaten mevcut")
+
+    yetki = MukellefYetki(user_id=user_id, mukellef_id=data.mukellef_id)
+    db.add(yetki)
+    await db.commit()
+    await db.refresh(yetki)
+    logger.info(
+        "Yetki added: user=%d mukellef=%d by admin=%d",
+        user_id, data.mukellef_id, current_admin.id,
+    )
+    return yetki
+
+
+@router.delete("/users/{user_id}/sirketler/{mukellef_id}", status_code=204)
+async def remove_user_sirket(
+    user_id: int,
+    mukellef_id: int,
+    db: AsyncSession = Depends(get_db),
+    current_admin: User = Depends(get_current_admin),
+):
+    # Owner kontrolü — owner yetkisi kaldırılamaz
+    mukellef_result = await db.execute(select(Mukellef).where(Mukellef.id == mukellef_id))
+    mukellef = mukellef_result.scalar_one_or_none()
+    if not mukellef:
+        raise HTTPException(status_code=404, detail="Mukellef bulunamadi")
+    if mukellef.owner_id == user_id:
+        raise HTTPException(
+            status_code=400,
+            detail="Sirket sahibinin yetkisi kaldirilamaz. Sahipligi degistirmek icin sirket duzenlemeyi kullanin.",
+        )
+
+    yetki_result = await db.execute(
+        select(MukellefYetki).where(
+            MukellefYetki.user_id == user_id,
+            MukellefYetki.mukellef_id == mukellef_id,
+        )
+    )
+    yetki = yetki_result.scalar_one_or_none()
+    if not yetki:
+        raise HTTPException(status_code=404, detail="Yetki kaydi bulunamadi")
+
+    await db.delete(yetki)
+    await db.commit()
+    logger.info(
+        "Yetki removed: user=%d mukellef=%d by admin=%d",
+        user_id, mukellef_id, current_admin.id,
     )

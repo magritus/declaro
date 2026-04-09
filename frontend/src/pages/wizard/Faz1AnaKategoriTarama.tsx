@@ -23,6 +23,12 @@ export default function Faz1AnaKategoriTarama() {
   const faz0 = getFaz0(calismaId ?? '')
   const faz1 = getFaz1(calismaId ?? '')
   const [cevaplar, setCevaplar] = useState<Record<string, boolean>>(() => faz1 ?? {})
+
+  // calismaId değiştiğinde state'i sıfırla
+  useEffect(() => {
+    const stored = getFaz1(calismaId ?? '')
+    setCevaplar(stored ?? {})
+  }, [calismaId])
   const [acikModal, setAcikModal] = useState<string | null>(null)
   const [yukleniyor, setYukleniyor] = useState(false)
 

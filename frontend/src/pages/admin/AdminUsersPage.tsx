@@ -3,6 +3,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query'
 import { adminApi, type AdminUser } from '@/api/admin'
 import Spinner from '@/components/ui/Spinner'
 import ErrorBox from '@/components/ui/ErrorBox'
+import SirketYetkiModal from '@/components/admin/SirketYetkiModal'
 
 const PAGE_SIZE = 20
 
@@ -11,6 +12,7 @@ export default function AdminUsersPage() {
   const [page, setPage] = useState(1)
   const [roleFilter, setRoleFilter] = useState<string>('')
   const [activeFilter, setActiveFilter] = useState<string>('')
+  const [sirketModalUser, setSirketModalUser] = useState<AdminUser | null>(null)
 
   const statsQuery = useQuery({
     queryKey: ['admin-stats'],
@@ -167,6 +169,12 @@ export default function AdminUsersPage() {
                       <td className="px-4 py-3">
                         <div className="flex items-center justify-end gap-2">
                           <button
+                            onClick={() => setSirketModalUser(user)}
+                            className="px-2.5 py-1 rounded-md text-xs font-medium border border-blue-200 dark:border-blue-800 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 transition"
+                          >
+                            Sirketler
+                          </button>
+                          <button
                             onClick={() => handleToggleActive(user)}
                             disabled={updateMutation.isPending}
                             className="px-2.5 py-1 rounded-md text-xs font-medium border border-border-default text-secondary hover:bg-surface-overlay transition disabled:opacity-50"
@@ -224,6 +232,15 @@ export default function AdminUsersPage() {
           </div>
         )}
       </main>
+
+      {sirketModalUser && (
+        <SirketYetkiModal
+          userId={sirketModalUser.id}
+          userEmail={sirketModalUser.email}
+          isOpen={!!sirketModalUser}
+          onClose={() => setSirketModalUser(null)}
+        />
+      )}
     </div>
   )
 }
