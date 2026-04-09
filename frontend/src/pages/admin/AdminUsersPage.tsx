@@ -13,6 +13,9 @@ export default function AdminUsersPage() {
   const [roleFilter, setRoleFilter] = useState<string>('')
   const [activeFilter, setActiveFilter] = useState<string>('')
   const [sirketModalUser, setSirketModalUser] = useState<AdminUser | null>(null)
+  const [resetPasswordUser, setResetPasswordUser] = useState<AdminUser | null>(null)
+  const [newPassword, setNewPassword] = useState('')
+  const [resetError, setResetError] = useState<string | null>(null)
 
   const statsQuery = useQuery({
     queryKey: ['admin-stats'],
@@ -48,6 +51,29 @@ export default function AdminUsersPage() {
       void queryClient.invalidateQueries({ queryKey: ['admin-stats'] })
     },
   })
+
+  const resetPasswordMutation = useMutation({
+    mutationFn: ({ id, password }: { id: number; password: string }) =>
+      adminApi.resetPassword(id, password),
+    onSuccess: () => {
+      setResetPasswordUser(null)
+      setNewPassword('')
+      setResetError(null)
+    },
+    onError: () => {
+      setResetError('Şifre sıfırlanamadı. Lütfen tekrar deneyin.')
+    },
+  })
+
+  const handleResetPassword = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!resetPasswordUser) return
+    if (newPassword.length < 5) {
+      setResetError('Şifre en az 5 karakter olmalıdır.')
+      return
+    }
+    resetPasswordMutation.mutate({ id: resetPasswordUser.id, password: newPassword })
+  }
 
   const handleDelete = (user: AdminUser) => {
     if (window.confirm(`"${user.email}" kullanıcısını silmek istediğinizden emin misiniz?`)) {
@@ -175,6 +201,12 @@ export default function AdminUsersPage() {
                             Sirketler
                           </button>
                           <button
+                            onClick={() => { setResetPasswordUser(user); setNewPassword(''); setResetError(null) }}
+                            className="px-2.5 py-1 rounded-md text-xs font-medium border border-amber-200 dark:border-amber-800 text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/40 transition"
+                          >
+                            Şifre Sıfırla
+                          </button>
+                          <button
                             onClick={() => handleToggleActive(user)}
                             disabled={updateMutation.isPending}
                             className="px-2.5 py-1 rounded-md text-xs font-medium border border-border-default text-secondary hover:bg-surface-overlay transition disabled:opacity-50"
@@ -240,6 +272,49 @@ export default function AdminUsersPage() {
           isOpen={!!sirketModalUser}
           onClose={() => setSirketModalUser(null)}
         />
+      )}
+
+      {resetPasswordUser && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
+          <div className="bg-surface-raised border border-border-default rounded-2xl shadow-xl p-6 w-full max-w-sm space-y-4">
+            <h2 className="text-base font-semibold text-primary">Şifre Sıfırla</h2>
+            <p className="text-sm text-muted">{resetPasswordUser.email}</p>
+            <form onSubmit={handleResetPassword} className="space-y-3">
+              <div>
+                <label className="block text-sm font-medium text-secondary mb-1.5">Yeni Şifre</label>
+                <input
+                  type="password"
+                  value={newPassword}
+                  onChange={e => { setNewPassword(e.target.value); setResetError(null) }}
+                  minLength={5}
+                  required
+                  autoFocus
+                  placeholder="En az 5 karakter"
+                  className="w-full bg-surface-overlay border border-border-default focus:border-accent focus:ring-1 focus:ring-accent rounded-lg px-3.5 py-2.5 text-primary text-sm outline-none transition-colors"
+                />
+              </div>
+              {resetError && (
+                <p className="text-xs text-red-500">{resetError}</p>
+              )}
+              <div className="flex gap-2 justify-end pt-1">
+                <button
+                  type="button"
+                  onClick={() => { setResetPasswordUser(null); setNewPassword(''); setResetError(null) }}
+                  className="px-3.5 py-2 rounded-lg text-sm font-medium border border-border-default text-secondary hover:bg-surface-overlay transition"
+                >
+                  İptal
+                </button>
+                <button
+                  type="submit"
+                  disabled={resetPasswordMutation.isPending}
+                  className="px-3.5 py-2 rounded-lg text-sm font-semibold bg-accent hover:bg-accent-hover disabled:opacity-50 text-white transition"
+                >
+                  {resetPasswordMutation.isPending ? 'Kaydediliyor…' : 'Sıfırla'}
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       )}
     </div>
   )

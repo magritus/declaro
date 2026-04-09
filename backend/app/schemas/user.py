@@ -29,12 +29,16 @@ class UpdateProfileRequest(BaseModel):
 
 class ChangePasswordRequest(BaseModel):
     current_password: str
-    new_password: str = Field(..., min_length=8)
+    new_password: str = Field(..., min_length=5)
 
 
 class AdminUpdateUserRequest(BaseModel):
     role: Optional[str] = None  # "user" | "admin"
     is_active: Optional[bool] = None
+
+
+class AdminResetPasswordRequest(BaseModel):
+    new_password: str = Field(..., min_length=5)
 
 
 class AdminStatsResponse(BaseModel):

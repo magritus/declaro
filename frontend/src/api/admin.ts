@@ -51,4 +51,6 @@ export const adminApi = {
     apiClient.post(`/admin/users/${userId}/sirketler`, { mukellef_id: mukellefId }).then(r => r.data),
   removeUserSirket: (userId: number, mukellefId: number) =>
     apiClient.delete(`/admin/users/${userId}/sirketler/${mukellefId}`),
+  resetPassword: (userId: number, newPassword: string) =>
+    apiClient.post(`/admin/users/${userId}/reset-password`, { new_password: newPassword }),
 }

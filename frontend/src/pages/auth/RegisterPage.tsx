@@ -72,10 +72,12 @@ export default function RegisterPage() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                minLength={5}
                 autoComplete="new-password"
                 className="w-full bg-surface-overlay border border-border-default focus:border-accent focus:ring-1 focus:ring-accent rounded-lg px-3.5 py-2.5 text-primary text-sm outline-none transition-colors"
                 placeholder="••••••••"
               />
+              <p className="text-xs text-muted mt-1">En az 5 karakter</p>
             </div>
 
             <button

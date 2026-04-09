@@ -5,6 +5,7 @@ from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.auth.deps import get_current_admin
+from app.auth.security import hash_password
 from app.db.models.mukellef import Mukellef
 from app.db.models.mukellef_yetki import MukellefYetki
 from app.db.models.user import User, UserRole
@@ -16,6 +17,7 @@ from app.schemas.mukellef_yetki import (
     YetkiIslemRequest,
 )
 from app.schemas.user import (
+    AdminResetPasswordRequest,
     AdminStatsResponse,
     AdminUpdateUserRequest,
     UserDetailResponse,
@@ -164,6 +166,22 @@ async def get_stats(
         admin_count=admin_count,
         user_count=user_count,
     )
+
+
+@router.post("/users/{user_id}/reset-password", status_code=204)
+async def reset_user_password(
+    user_id: int,
+    data: AdminResetPasswordRequest,
+    db: AsyncSession = Depends(get_db),
+    current_admin: User = Depends(get_current_admin),
+):
+    result = await db.execute(select(User).where(User.id == user_id))
+    user = result.scalar_one_or_none()
+    if not user:
+        raise HTTPException(status_code=404, detail="Kullanıcı bulunamadı")
+    user.hashed_password = hash_password(data.new_password)
+    await db.commit()
+    logger.info("Password reset for user id=%d by admin id=%d", user_id, current_admin.id)
 
 
 # ─── Kullanıcı – Şirket Yetki Yönetimi ───────────────────────────────────
